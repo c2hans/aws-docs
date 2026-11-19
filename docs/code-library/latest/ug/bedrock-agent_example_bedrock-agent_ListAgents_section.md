@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-agent_exa
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListAgents` with an AWS SDK
-<a name="bedrock-agent_example_bedrock-agent_ListAgents_section"></a>
 
 The following code examples show how to use `ListAgents`.
 

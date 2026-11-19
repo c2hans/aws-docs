@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/host-static-website/faq.
 ---
 
 # Frequently Asked Questions
-<a name="faq"></a>
 
 ## Understanding static websites
 <a name="understanding-static-websites"></a>

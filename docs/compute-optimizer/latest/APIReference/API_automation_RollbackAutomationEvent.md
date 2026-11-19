@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RollbackAutomationEvent
-<a name="API_automation_RollbackAutomationEvent"></a>
 
  Initiates a rollback for a completed automation event.
 

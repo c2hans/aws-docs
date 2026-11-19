@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateCodeInterpreter
-<a name="API_CreateCodeInterpreter"></a>
 
 Creates a custom code interpreter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetBenefitAllocation
-<a name="API_benefits_GetBenefitAllocation"></a>
 
 Retrieves detailed information about a specific benefit allocation that has been granted to a partner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-quer
 ---
 
 # Run and manage CloudTrail Lake queries with the AWS CLI
-<a name="lake-queries-cli"></a>
 
 You can use the AWS CLI to run and manage your CloudTrail Lake queries. When using the AWS CLI, remember that your commands run in the AWS Region configured for your profile. If you want to run the commands in a different Region, either change the default Region for your profile, or use the **--region** parameter with the command.
 

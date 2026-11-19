@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-se
 ---
 
 # Understand service execution role
-<a name="msk-connect-service-execution-role"></a>
 
 **Note**
 Amazon MSK Connect does not support using the [Service-linked role](mkc-using-service-linked-roles.md) as the service execution role. You must create a separate service execution role. For instructions on how to create a custom IAM role, see [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *IAM User Guide*.

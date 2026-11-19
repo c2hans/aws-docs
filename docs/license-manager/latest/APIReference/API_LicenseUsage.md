@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # LicenseUsage
-<a name="API_LicenseUsage"></a>
 
 Describes the entitlement usage associated with a license.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListF
 ---
 
 # ListFoldersForResource
-<a name="API_ListFoldersForResource"></a>
 
 List all folders that a resource is a member of.
 

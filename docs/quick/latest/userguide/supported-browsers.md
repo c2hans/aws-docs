@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/supported-browser
 ---
 
 # Supported browsers
-<a name="supported-browsers"></a>
 
 Before you start working with AWS Quick, use the following table to verify that your browser is supported for Quick access.
 

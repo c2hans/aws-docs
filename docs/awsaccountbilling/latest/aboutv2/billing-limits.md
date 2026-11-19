@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing
 ---
 
 # Quotas and restrictions
-<a name="billing-limits"></a>
 
 You can use the following tables to find the current quotas, restrictions, and naming constraints within the AWS Billing and Cost Management console.
 

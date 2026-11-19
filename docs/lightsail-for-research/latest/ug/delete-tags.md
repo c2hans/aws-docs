@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/delete-
 ---
 
 # Remove tags from Lightsail for Research resources
-<a name="delete-tags"></a>
 
 Complete the following steps to delete a tag from your Lightsail for Research virtual computer. The steps are similar for Lightsail for Research disks and snapshots.
 

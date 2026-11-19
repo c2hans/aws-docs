@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbNodeSummar
 ---
 
 # DbNodeSummary
-<a name="API_DbNodeSummary"></a>
 
 Information about a DB node.
 

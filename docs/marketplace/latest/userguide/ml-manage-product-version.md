@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-manage-p
 ---
 
 # Managing product versions
-<a name="ml-manage-product-version"></a>
 
  As a seller, you can manage your product versions in AWS Marketplace by updating existing version information, adding new versions, or removing versions that are no longer supported. Each version has a unique SageMaker AI ARN and associated information that buyers use to evaluate and deploy your product.
 

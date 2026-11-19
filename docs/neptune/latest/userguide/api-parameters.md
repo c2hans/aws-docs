@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-parameters.
 ---
 
 # Neptune Parameters API
-<a name="api-parameters"></a>
 
 **Actions:**
 + [CopyDBParameterGroup (action)](#CopyDBParameterGroup)

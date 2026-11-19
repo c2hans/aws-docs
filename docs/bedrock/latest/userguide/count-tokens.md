@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.ht
 ---
 
 # Monitor your token usage by counting tokens before running inference
-<a name="count-tokens"></a>
 
 When you run model inference, the number of tokens that you send in the input contributes to the cost of the request and towards the quota of tokens that you can use per minute and per day. The [CountTokens](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_CountTokens.html) API helps you estimate token usage before sending requests to foundation models by returning the token count that would be used if the same input were sent to the model in an inference request.
 

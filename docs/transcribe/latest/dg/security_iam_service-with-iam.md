@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/security_iam_servic
 ---
 
 # How Amazon Transcribe works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Transcribe, learn what IAM features are available to use with Amazon Transcribe.
 

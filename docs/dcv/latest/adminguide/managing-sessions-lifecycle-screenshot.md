@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/managing-sessions-
 ---
 
 # Taking a screenshot in a Amazon DCV Session
-<a name="managing-sessions-lifecycle-screenshot"></a>
 
 You can use the `dcv get-screenshot` command to take a screenshot of the desktop for the running session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Expira
 ---
 
 # ExpirationSettings
-<a name="API_ExpirationSettings"></a>
 
 Determines the interval after which an `AppInstanceUser` is automatically deleted.
 

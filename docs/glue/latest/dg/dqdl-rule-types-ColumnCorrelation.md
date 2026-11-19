@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnCor
 ---
 
 # ColumnCorrelation
-<a name="dqdl-rule-types-ColumnCorrelation"></a>
 
 Checks the *correlation* between two columns against a given expression. AWS Glue Data Quality uses the Pearson correlation coefficient to measure the linear correlation between two columns. The result is a number between -1 and 1 that measures the strength and direction of the relationship.
 

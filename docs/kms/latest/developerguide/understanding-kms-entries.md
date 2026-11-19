@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/understanding-
 ---
 
 # Examples of AWS KMS log entries
-<a name="understanding-kms-entries"></a>
 
 AWS KMS writes entries to your CloudTrail log when you call an AWS KMS operation and when an AWS service calls an operation on your behalf. AWS KMS also writes an entry when it calls an operation for you. For example, it writes an entry when it [deletes a KMS key](ct-delete-key.md) that you scheduled for deletion.
 

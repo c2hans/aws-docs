@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTFleetWise::SignalCatalog Attribute
-<a name="aws-properties-iotfleetwise-signalcatalog-attribute"></a>
 
 A signal that represents static information about the vehicle, such as engine type or manufacturing date.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/upgrade-ccp-st
 ---
 
 # Upgrade your Contact Control Panel (CCP) when using the Connect Customer Streams API
-<a name="upgrade-ccp-streams-api"></a>
 
 **Note**
 The Connect Customer Streams API remains the same between the earlier and latest versions of the CCP. We recommend validating custom implementations built using the Connect Customer Streams API when upgrading versions to ensure consistency in behavior.

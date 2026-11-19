@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_CsvOpti
 ---
 
 # CsvOptions
-<a name="API_CsvOptions"></a>
 
 Represents a set of options that define how DataBrew will read a comma-separated value (CSV) file when creating a dataset from that file.
 

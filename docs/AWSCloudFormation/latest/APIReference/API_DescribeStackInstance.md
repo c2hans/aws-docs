@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeStackInstance
-<a name="API_DescribeStackInstance"></a>
 
 Returns the stack instance that's associated with the specified StackSet, AWS account, and AWS Region.
 

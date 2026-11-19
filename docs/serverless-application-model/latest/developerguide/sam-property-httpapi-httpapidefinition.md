@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # HttpApiDefinition
-<a name="sam-property-httpapi-httpapidefinition"></a>
 
 An OpenAPI document defining the API.
 

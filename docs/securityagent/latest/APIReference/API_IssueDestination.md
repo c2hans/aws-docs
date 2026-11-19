@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Is
 ---
 
 # IssueDestination
-<a name="API_IssueDestination"></a>
 
 The destination for filing findings as issues in an integrated issue tracker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/okta-saml-sso.html
 ---
 
 # Configure single sign-on using ODBC, SAML 2.0, and the Okta Identity Provider
-<a name="okta-saml-sso"></a>
 
 To connect to data sources, you can use Amazon Athena with identity providers (IdPs) like PingOne, Okta, OneLogin, and others. Starting with Athena ODBC driver version 1.1.13 and Athena JDBC driver version 2.0.25, a browser SAML plugin is included that you can configure to work with any SAML 2.0 provider. This topic shows you how to configure the Amazon Athena ODBC driver and the browser-based SAML plugin to add single sign-on (SSO) capability using the Okta identity provider.
 

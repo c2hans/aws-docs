@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_WaitDetails.html
 ---
 
 # WaitDetails
-<a name="API_WaitDetails"></a>
 
 Details about a wait operation.
 

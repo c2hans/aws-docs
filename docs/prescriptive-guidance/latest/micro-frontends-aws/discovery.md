@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Service discovery
-<a name="discovery"></a>
 
 The frontend discovery pattern improves the development experience when you develop, test, and deliver micro-frontends. The pattern uses a shareable configuration that describes the entry point of micro-frontends. The shareable configuration also includes additional metadata that supports safe deployments in each environment through canary releases.
 

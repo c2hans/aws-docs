@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-r
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Recommendation refresh and data freshness
-<a name="agent-refresh-cadence"></a>
 
 AWS WA Agent keeps recommendations current through scheduled refresh cycles:
 + **Scheduled refresh:** Resource and application recommendations are refreshed automatically every two weeks after the initial set of recommendations is generated. You do not need to trigger this manually.

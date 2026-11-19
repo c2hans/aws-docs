@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectTargetedSentiment
-<a name="API_BatchDetectTargetedSentiment"></a>
 
 Inspects a batch of documents and returns a sentiment analysis for each entity identified in the documents.
 

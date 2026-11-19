@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # BillingAdjustmentSummary
-<a name="API_marketplace-agreements_BillingAdjustmentSummary"></a>
 
 Summary view of a billing adjustment request.
 
@@ -62,7 +61,7 @@ Required: Yes
  ** originalInvoiceId **   <a name="AWSMarketplaceService-Type-marketplace-agreements_BillingAdjustmentSummary-originalInvoiceId"></a>
 The identifier of the original invoice being adjusted.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: Yes
 
  ** status **   <a name="AWSMarketplaceService-Type-marketplace-agreements_BillingAdjustmentSummary-status"></a>

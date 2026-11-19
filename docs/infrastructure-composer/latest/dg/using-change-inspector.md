@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # View code updates with the Change Inspector in Infrastructure Composer
-<a name="using-change-inspector"></a>
 
 As you design in Infrastructure Composer console, your infrastructure code is automatically created. Use the **Change Inspector** to view your template code updates and learn what Infrastructure Composer is creating for you.
 

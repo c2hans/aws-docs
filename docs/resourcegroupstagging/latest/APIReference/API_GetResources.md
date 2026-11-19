@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # GetResources
-<a name="API_GetResources"></a>
 
 Returns all the tagged or previously tagged resources that are located in the specified AWS Region for the account.
 

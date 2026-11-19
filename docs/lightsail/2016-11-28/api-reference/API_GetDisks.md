@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDisks
-<a name="API_GetDisks"></a>
 
 Returns information about all block storage disks in your AWS account and region.
 

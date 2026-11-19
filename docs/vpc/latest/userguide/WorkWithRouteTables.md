@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables
 ---
 
 # Manage subnet route tables
-<a name="WorkWithRouteTables"></a>
 
 Use the following procedures to manage VPC routing using route tables.
 

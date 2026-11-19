@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 ---
 
 # Content Domain 3: Modeling
-<a name="machine-learning-specialty-01-domain3"></a>
 
 **Topics**
 + [Task 3.1: Frame business problems as ML problems](#machine-learning-specialty-01-domain3-task1)

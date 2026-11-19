@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-data-export-s
 ---
 
 # Create a schedule to automatically process new data
-<a name="canvas-data-export-schedule-job"></a>
 
 **Note**
 The following section only applies to SageMaker Processing jobs. If you used the default Canvas settings or EMR Serverless to create a remote job to apply transforms to your full dataset, this section doesn’t apply.

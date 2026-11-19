@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding the AWS Quick Sight Q search bar for registered users
-<a name="embedded-analytics-q-search-bar-for-authenticated-users"></a>
 
 |  |
 | --- |

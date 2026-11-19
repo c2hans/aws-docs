@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/get-e
 ---
 
 # get-export-task
-<a name="get-export-task"></a>
 
  This command queries the status of an export task that was started using the `start-export-task` command. This gives information such as the current state of the export, the approximate progress of the export, how long the export has been running etc.
 

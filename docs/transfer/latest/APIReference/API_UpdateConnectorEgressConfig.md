@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateC
 ---
 
 # UpdateConnectorEgressConfig
-<a name="API_UpdateConnectorEgressConfig"></a>
 
 Structure for updating the egress configuration of an existing connector. Allows modification of how traffic is routed from the connector to the SFTP server, including VPC\_LATTICE settings.
 

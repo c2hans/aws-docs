@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_S3Prope
 ---
 
 # S3PropertiesInput
-<a name="API_S3PropertiesInput"></a>
 
 The Amazon S3 properties of a connection.
 

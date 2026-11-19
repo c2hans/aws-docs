@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_T
 ---
 
 # Amazon DynamoDB Streams
-<a name="API_Types_Amazon_DynamoDB_Streams"></a>
 
 The following data types are supported by Amazon DynamoDB Streams:
 +  [AttributeValue](API_streams_AttributeValue.md)

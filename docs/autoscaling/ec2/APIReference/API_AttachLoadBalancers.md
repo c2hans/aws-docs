@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AttachL
 ---
 
 # AttachLoadBalancers
-<a name="API_AttachLoadBalancers"></a>
 
 **Note**
 This API operation is superseded by [AttachTrafficSources](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_AttachTrafficSources.html), which can attach multiple traffic sources types. We recommend using `AttachTrafficSources` to simplify how you manage traffic sources. However, we continue to support `AttachLoadBalancers`. You can use both the original `AttachLoadBalancers` API operation and `AttachTrafficSources` on the same Auto Scaling group.

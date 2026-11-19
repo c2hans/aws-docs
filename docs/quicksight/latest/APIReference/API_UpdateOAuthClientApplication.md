@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateOAuthClientApplication
-<a name="API_UpdateOAuthClientApplication"></a>
 
 Updates an OAuthClientApplication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsMetricDimensionGroup
-<a name="API_PerformanceInsightsMetricDimensionGroup"></a>
 
 A logical grouping of Performance Insights metrics for a related subject area. For example, the `db.sql` dimension group consists of the following dimensions: `db.sql.id`, `db.sql.db_id`, `db.sql.statement`, and `db.sql.tokenized_id`.
 

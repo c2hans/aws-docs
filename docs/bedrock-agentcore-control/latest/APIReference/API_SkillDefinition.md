@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SkillDefinition
-<a name="API_SkillDefinition"></a>
 
 The structured skill definition with schema version and content.
 

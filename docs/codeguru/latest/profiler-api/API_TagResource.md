@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_TagReso
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
  Use to assign one or more tags to a resource.
 

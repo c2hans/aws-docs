@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeClusterNode
-<a name="API_DescribeClusterNode"></a>
 
 Retrieves information of a node (also called a *instance* interchangeably) of a SageMaker HyperPod cluster.
 

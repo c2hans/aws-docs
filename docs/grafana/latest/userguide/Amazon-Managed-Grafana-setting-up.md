@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Amazon-Managed-
 ---
 
 # Set up AWS to use Amazon Managed Grafana
-<a name="Amazon-Managed-Grafana-setting-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

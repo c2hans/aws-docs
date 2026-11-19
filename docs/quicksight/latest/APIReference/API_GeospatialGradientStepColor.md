@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialGradientStepColor
-<a name="API_GeospatialGradientStepColor"></a>
 
 The gradient step color for a single step.
 

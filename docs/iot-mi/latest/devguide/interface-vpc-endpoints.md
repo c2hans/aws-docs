@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/interface-vpc-end
 ---
 
 # Use Managed Integrations with interface VPC endpoints
-<a name="interface-vpc-endpoints"></a>
 
 You can establish a private connection between your Amazon VPC and AWS IoT Managed Integrations by creating an interface Amazon VPC endpoint. Interface endpoints are powered by AWS PrivateLink, a technology that enables you to privately access services by using private IP addresses. AWS PrivateLink restricts all network traffic between your VPC and IoT Managed Integrations to the Amazon network. You don't need an internet gateway, NAT device, or VPN connection.
 

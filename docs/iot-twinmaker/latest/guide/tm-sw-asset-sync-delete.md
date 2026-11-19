@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-asset-s
 ---
 
 # Delete a sync job
-<a name="tm-sw-asset-sync-delete"></a>
 
 Use the following procedure to delete a sync job.
 

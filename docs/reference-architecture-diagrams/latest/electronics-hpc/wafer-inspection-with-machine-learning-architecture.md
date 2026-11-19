@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Wafer Inspection with Machine Learning
-<a name="wafer-inspection-with-machine-learning-architecture"></a>
 
 Publication date: **September 16, 2022 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/h
 ---
 
 # HTTP 404 status code (Not Found)
-<a name="http-404-not-found"></a>
 
 CloudFront returns a 404 (Not Found) error when the client attempts to access a resource that doesn’t exist. If you receive this error with your CloudFront distribution, common causes include the following:
 + Resource doesn't exist.

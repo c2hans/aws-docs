@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/using-clou
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # AWS CloudTrail Examples Using the AWS SDK for Go
-<a name="using-cloudtrail-with-go-sdk"></a>
 
 CloudTrail is an AWS service that helps you enable governance, compliance, and operational and risk auditing of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface, and AWS SDKs and APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ProjectCon
 ---
 
 # ProjectContinuousIntegrationScanConfiguration
-<a name="API_ProjectContinuousIntegrationScanConfiguration"></a>
 
 Contains the continuous integration scan configuration settings applied to a specific project.
 

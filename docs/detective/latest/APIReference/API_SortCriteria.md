@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_SortCr
 ---
 
 # SortCriteria
-<a name="API_SortCriteria"></a>
 
 Details about the criteria used for sorting investigations.
 

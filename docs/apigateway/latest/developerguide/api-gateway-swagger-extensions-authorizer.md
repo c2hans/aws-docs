@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-authorizer object
-<a name="api-gateway-swagger-extensions-authorizer"></a>
 
  Defines a Lambda authorizer, Amazon Cognito user pool, or JWT authorizer to be applied for authorization of method invocations in API Gateway. This extension applies to the security definition in [OpenAPI 2](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/2.0.md#security-definitions-object) and the security scheme in [OpenAPI 3](https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.0.1.md#security-scheme-object).
 

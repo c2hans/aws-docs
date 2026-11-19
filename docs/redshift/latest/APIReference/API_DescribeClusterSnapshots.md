@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeClusterSnapshots
-<a name="API_DescribeClusterSnapshots"></a>
 
 Returns one or more snapshot objects, which contain metadata about your cluster snapshots. By default, this operation returns information about all snapshots of all clusters that are owned by your AWS account. No information is returned for snapshots owned by inactive AWS accounts.
 
@@ -38,7 +37,7 @@ Type: Timestamp
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterSnapshots](#API_DescribeClusterSnapshots) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterSnapshots](API_DescribeClusterSnapshots.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

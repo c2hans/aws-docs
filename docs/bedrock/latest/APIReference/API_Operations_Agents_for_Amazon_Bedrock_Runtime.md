@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operatio
 ---
 
 # Agents for Amazon Bedrock Runtime
-<a name="API_Operations_Agents_for_Amazon_Bedrock_Runtime"></a>
 
 The following actions are supported by Agents for Amazon Bedrock Runtime:
 +  [AgenticRetrieveStream](API_agent-runtime_AgenticRetrieveStream.md)

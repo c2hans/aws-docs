@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # JSON and XML for T-SQL
-<a name="chap-sql-server-aurora-pg.tsql.json"></a>
 
 This topic provides reference information about XML and JSON support in SQL Server and PostgreSQL, which is relevant for migrating from Microsoft SQL Server 2019 to Amazon Aurora PostgreSQL. You can understand the similarities and differences in how these database systems handle semi-structured data formats. The topic explores the native support for XML and JSON in both SQL Server and PostgreSQL, including data types, functions, and indexing capabilities.
 

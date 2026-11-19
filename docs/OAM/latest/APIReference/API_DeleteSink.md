@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_DeleteSink.h
 ---
 
 # DeleteSink
-<a name="API_DeleteSink"></a>
 
 Deletes a sink. You must delete all links to a sink before you can delete that sink.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_PutRe
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another AWS account to import the custom model, which replicates it in Amazon Comprehend in their account.
 

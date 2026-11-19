@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Access Methods
-<a name="access-methods"></a>
 
 Users interact with the solution through multiple interfaces:
 

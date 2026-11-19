@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetManagedRu
 ---
 
 # GetManagedRuleSet
-<a name="API_GetManagedRuleSet"></a>
 
 Retrieves the specified managed rule set.
 

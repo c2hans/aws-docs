@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootDMSTableErrors`
-<a name="awssupport-troubleshoot-dms-table-errors"></a>
 
  **Description**
 

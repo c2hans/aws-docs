@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-unr
 ---
 
 # Troubleshoot an unreachable Amazon EC2 instance
-<a name="troubleshoot-unreachable-instance"></a>
 
 The following information can help you troubleshoot unreachable Amazon EC2 instances. You can capture screenshots or access console output to help diagnose problems and determine if you should reboot your instance. For unreachable Windows instances, troubleshoot by reviewing screenshots returned by the service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_RemovePermission.html
 ---
 
 # RemovePermission
-<a name="API_RemovePermission"></a>
 
 Removes a statement from a topic's access control policy.
 

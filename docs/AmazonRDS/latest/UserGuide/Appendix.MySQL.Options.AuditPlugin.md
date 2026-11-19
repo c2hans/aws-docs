@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # MariaDB Audit Plugin support for MySQL
-<a name="Appendix.MySQL.Options.AuditPlugin"></a>
 
 Amazon RDS offers an audit plugin for MySQL database instances based on the open source MariaDB Audit Plugin. For more information, see the [Audit Plugin for MySQL Server GitHub repository](https://github.com/aws/audit-plugin-for-mysql).
 

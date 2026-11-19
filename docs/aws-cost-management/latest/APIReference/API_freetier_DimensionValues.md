@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DimensionValues
-<a name="API_freetier_DimensionValues"></a>
 
 Contains the specifications for the filters to use for your request.
 

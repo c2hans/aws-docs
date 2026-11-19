@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rft-prepare-dat
 ---
 
 # Prepare data for open-weight models
-<a name="rft-prepare-data-open-weight"></a>
 
 When you fine-tune open-weight models with reinforcement fine-tuning using OpenAI-compatible APIs, provide training data by bringing your own prompts in JSONL format with the purpose `fine-tune`.
 

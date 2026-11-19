@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-troubles
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Troubleshooting AWS IoT Greengrass
-<a name="gg-troubleshooting"></a>
 
 This section provides troubleshooting information and possible solutions to help resolve issues with AWS IoT Greengrass.
 
@@ -846,4 +845,4 @@ For AWS IoT Greengrass Core software v1.6 and earlier, the default `shadowSyncTi
 ## Check AWS re:Post
 <a name="troubleshooting-repost"></a>
 
-If you're unable to resolve your issue using the troubleshooting information in this topic, you can search the [Troubleshooting AWS IoT Greengrass](#gg-troubleshooting) or check the [AWS IoT Greengrass tag on AWS re:Post](https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass) for related issues or post a new question. Members of the AWS IoT Greengrass team actively monitor AWS re:Post.
+If you're unable to resolve your issue using the troubleshooting information in this topic, you can search the [Troubleshooting AWS IoT Greengrass](gg-troubleshooting.md) or check the [AWS IoT Greengrass tag on AWS re:Post](https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass) for related issues or post a new question. Members of the AWS IoT Greengrass team actively monitor AWS re:Post.

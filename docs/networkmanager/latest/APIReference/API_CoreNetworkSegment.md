@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkSegment
-<a name="API_CoreNetworkSegment"></a>
 
 Describes a core network segment, which are dedicated routes. Only attachments within this segment can communicate with each other.
 

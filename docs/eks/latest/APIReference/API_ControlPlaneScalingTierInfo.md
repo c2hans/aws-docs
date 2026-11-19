@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ControlPlane
 ---
 
 # ControlPlaneScalingTierInfo
-<a name="API_ControlPlaneScalingTierInfo"></a>
 
 Information about a provisioned control plane scaling tier.
 

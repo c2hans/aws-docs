@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ExecutionStats
-<a name="API_query_ExecutionStats"></a>
 
 Statistics for a single scheduled query run.
 

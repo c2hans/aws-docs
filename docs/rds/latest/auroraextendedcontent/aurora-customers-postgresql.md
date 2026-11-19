@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Aurora PostgreSQL
-<a name="aurora-customers-postgresql"></a>
 
 ## Amazon.com
 <a name="aurora-customers-amazon-com"></a>

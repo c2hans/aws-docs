@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/insig
 ---
 
 # Insights
-<a name="insights"></a>
 
 You can use AWS Supply Chain Insights to generate inventory shortage and excess and lead time deviation insights based on the watchlist configured. Insights also provides recommendations on how to resolve the deviations. Insights scans for inventory and lead time risks every 24 hours or when new data is ingested into data lake.
 

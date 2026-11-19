@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableApp
 ---
 
 # EnableApplicationStatusCheckSuppression
-<a name="API_EnableApplicationStatusCheckSuppression"></a>
 
 Suppresses application status checks for the specified instances. While suppressed, health checks continue to run but do not affect the instance-level application status. The following rules apply:
 + You can specify a maximum of 100 instance IDs for each request.

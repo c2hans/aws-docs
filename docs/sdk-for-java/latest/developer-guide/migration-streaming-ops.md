@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Streaming operation differences between 1.x and 2.x of the AWS SDK for Java
-<a name="migration-streaming-ops"></a>
 
 Streaming operations, such as Amazon S3 `getObject` and `putObject` methods, support non-blocking I/O in version 2.x of the SDK. As a result, the request and response model objects no longer take an `InputStream` as a parameter. Instead, for synchronous requests the request object accepts `RequestBody`, which is a stream of bytes. The asynchronous equivalent accepts an `AsyncRequestBody`.
 

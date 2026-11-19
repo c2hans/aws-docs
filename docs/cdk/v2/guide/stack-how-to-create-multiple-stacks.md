@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/stack-how-to-create-multipl
 ---
 
 # Example: Create a CDK app with multiple stacks
-<a name="stack-how-to-create-multiple-stacks"></a>
 
 You can create an AWS Cloud Development Kit (AWS CDK) application containing multiple [stacks](stacks.md). When you deploy the AWS CDK app, each stack becomes its own AWS CloudFormation template. You can also synthesize and deploy each stack individually using the AWS CDK CLI `cdk deploy` command.
 

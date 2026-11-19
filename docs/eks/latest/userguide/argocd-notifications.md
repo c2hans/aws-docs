@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-notification
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Send notifications for Argo CD Applications
-<a name="argocd-notifications"></a>
 
 The EKS Capability for Argo CD runs a managed notifications controller. Use it to send a message when an Application syncs, fails to sync, or changes health, so that your team learns about deployment outcomes without watching the Argo CD UI.
 

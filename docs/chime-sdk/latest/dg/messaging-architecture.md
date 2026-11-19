@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/messaging-architectu
 ---
 
 # Understanding Amazon Chime SDK messaging architecture
-<a name="messaging-architecture"></a>
 
 You can use Amazon Chime SDK messaging as a server-side and a client-side SDK. The server-side APIs create an `AppInstance` and `AppInstanceUser`. You can use various hooks and configurations to add application specific business logic and validation. For more information about doing that, see [Streaming messaging data in Amazon Chime SDK messaging](streaming-export.md). Additionally, server-side processes can call APIs on behalf of an `AppInstanceUser`, or control a dedicated `AppInstanceUser` that represents back-end processes.
 

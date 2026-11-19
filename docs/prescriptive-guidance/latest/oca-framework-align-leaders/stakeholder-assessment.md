@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 2.2 Stakeholder assessment
-<a name="stakeholder-assessment"></a>
 
 ## Overview
 <a name="stakeholder-assessment-overview"></a>

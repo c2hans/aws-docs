@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TransferData
 ---
 
 # TransferData
-<a name="API_TransferData"></a>
 
 Data used to transfer a certificate to an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteLakeFormationIdentityCenterConfiguration
-<a name="API_DeleteLakeFormationIdentityCenterConfiguration"></a>
 
 Deletes an IAM Identity Center connection with Lake Formation.
 

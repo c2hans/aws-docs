@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/voice-analytics.html
 ---
 
 # Using Amazon Chime SDK voice analytics
-<a name="voice-analytics"></a>
 
 The Amazon Chime SDK voice analytics feature enables you to implement speaker search and voice tone analysis. You use speaker search to identify and enroll new callers, and to identify repeat callers and assign a confidence score to those identifications. You use voice tone analysis to predict a caller's sentiment as `negative`, `neutral`, or `positive`.
 

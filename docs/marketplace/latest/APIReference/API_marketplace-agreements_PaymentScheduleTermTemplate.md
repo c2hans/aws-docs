@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PaymentScheduleTermTemplate
-<a name="API_marketplace-agreements_PaymentScheduleTermTemplate"></a>
 
 Defines the payment schedule that is applied to the renewed agreement.
 

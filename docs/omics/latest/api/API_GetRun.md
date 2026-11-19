@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetRun.html
 ---
 
 # GetRun
-<a name="API_GetRun"></a>
 
 Gets detailed information about a specific run using its ID.
 

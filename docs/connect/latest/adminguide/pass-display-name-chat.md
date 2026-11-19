@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/pass-display-n
 ---
 
 # Pass the customer display name when a Connect Customer chat starts
-<a name="pass-display-name-chat"></a>
 
 To deliver a more personalized experience for both your customers and agents, you can customize the Connect Customer communications widget to pass the customer display name during contact initialization. The name is visible to both the customer and agent throughout the chat interaction. This display name is recorded in the chat transcript.
 

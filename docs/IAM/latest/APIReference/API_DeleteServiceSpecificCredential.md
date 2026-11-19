@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteServic
 ---
 
 # DeleteServiceSpecificCredential
-<a name="API_DeleteServiceSpecificCredential"></a>
 
 Deletes the specified service-specific credential.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # Transaction condition expressions
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-transaction-condition-expressions"></a>
 
 Transaction condition expressions are available in request mapping templates of all four types of operations in `TransactWriteItems`, namely, `PutItem`, `DeleteItem`, `UpdateItem`, and `ConditionCheck`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListPolicies
 ---
 
 # ListPoliciesGrantingServiceAccess
-<a name="API_ListPoliciesGrantingServiceAccess"></a>
 
 Retrieves a list of policies that the IAM identity (user, group, or role) can use to access each specified service.
 

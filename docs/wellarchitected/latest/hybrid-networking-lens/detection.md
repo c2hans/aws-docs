@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Detection
-<a name="detection"></a>
 
  Detection or detective controls can be used to identify a potential security threat or incident. You can get detailed insights into your hybrid network performance and use that information to detect misconfiguration or potential malicious activities and further optimize your deployment.
 

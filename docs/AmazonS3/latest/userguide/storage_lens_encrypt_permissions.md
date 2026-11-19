@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_e
 ---
 
 # Using an AWS KMS key to encrypt your metrics exports
-<a name="storage_lens_encrypt_permissions"></a>
 
 To grant Amazon S3 Storage Lens permission to encrypt your metrics exports by using a customer managed key, you must use a key policy. To update your key policy so that you can use a KMS key to encrypt your S3 Storage Lens metrics exports, follow these steps.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC 10  How do you anticipate, respond to, and recover from incidents?
-<a name="sec-10"></a>
 
 Preparation is critical to timely and effective investigation, response to, and recovery from security incidents to help minimize disruption to your organization.
 

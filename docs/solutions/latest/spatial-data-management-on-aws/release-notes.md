@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
 This section provides information about releases of the Spatial Data Management on AWS.
 

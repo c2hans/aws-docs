@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/policy-cond
 ---
 
 # Policy condition keys for AWS Security Incident Response
-<a name="policy-condition-keys-for-aws-security-incident-response"></a>
 
  **Supports service-specific policy condition keys:** No
 

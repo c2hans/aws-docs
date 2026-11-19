@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/notificati
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Sending notifications to Slack channels
-<a name="notifications-projects"></a>
 
 You can configure CodeCatalyst to send notifications about project events to your team's Slack channels. By doing this, you can help ensure that your entire team is aware of important events, such as when a workflow run fails.
 

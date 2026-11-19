@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Ec2InstanceSavingsPlansConfiguration
-<a name="API_CostOptimizationHub_Ec2InstanceSavingsPlansConfiguration"></a>
 
 The EC2 instance Savings Plans configuration used for recommendations.
 

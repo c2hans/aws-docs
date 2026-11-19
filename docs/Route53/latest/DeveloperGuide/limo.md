@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/limo.html
 ---
 
 # .limo
-<a name="limo"></a>
 
 Used by chauffeurs, limousine companies, and car rental agencies.
 

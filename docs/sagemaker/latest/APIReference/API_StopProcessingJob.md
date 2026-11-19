@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopPr
 ---
 
 # StopProcessingJob
-<a name="API_StopProcessingJob"></a>
 
 Stops a processing job.
 

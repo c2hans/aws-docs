@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Affect
 ---
 
 # AffectedPackage
-<a name="API_AffectedPackage"></a>
 
 A software package implicated by a finding.
 

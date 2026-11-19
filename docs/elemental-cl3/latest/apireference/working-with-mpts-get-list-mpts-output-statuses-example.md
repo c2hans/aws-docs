@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-mpts-get-list-mpts-output-statuses-example"></a>
 
 This request returns information for the two MPTS outputs that exist in the cluster.
 

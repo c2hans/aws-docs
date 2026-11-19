@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-logging-s
 ---
 
 # System log event schema for Lambda Web Functions
-<a name="web-functions-logging-system-log-schema"></a>
 
 Lambda writes the following system events to your Web Function's log group. Each event is a JSON object with the envelope fields described in [Event envelope](#web-functions-logging-system-log-schema-envelope) and a `record` object whose fields depend on the event type. The level of each event determines whether Lambda delivers it. For more information, see [System logs](web-functions-logging.md#web-functions-logging-system-logs).
 

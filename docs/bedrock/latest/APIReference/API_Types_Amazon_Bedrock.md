@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Bedrock
-<a name="API_Types_Amazon_Bedrock"></a>
 
 The following data types are supported by Amazon Bedrock:
 +  [AccountEnforcedGuardrailInferenceInputConfiguration](API_AccountEnforcedGuardrailInferenceInputConfiguration.md)

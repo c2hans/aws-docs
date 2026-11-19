@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Conflic
 ---
 
 # ConflictException
-<a name="API_ConflictException"></a>
 
 The request could not be completed due to a conflict with the current state of the resource.
 

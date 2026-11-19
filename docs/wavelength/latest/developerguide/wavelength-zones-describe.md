@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wavelength/latest/developerguide/wavelen
 ---
 
 # Find your AWS Wavelength Zones
-<a name="wavelength-zones-describe"></a>
 
 The number and mapping of Wavelength Zones per Region might vary between AWS accounts. The following procedures demonstrate how to find the Wavelength Zones that are available to your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # TemplateGroup
-<a name="API_TemplateGroup"></a>
 
 A named set of graphics-compositing templates used by the crop feature, specified in the templateGroups array of a CroppingConfig.
 

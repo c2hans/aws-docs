@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-amazo
 ---
 
 # Amazon Q Developer
-<a name="studio-updated-amazon-q"></a>
 
 Amazon Q Developer is a generative AI conversational assistant that helps you write better code. Amazon Q Developer is available in the following IDEs within Amazon SageMaker Studio:
 + JupyterLab

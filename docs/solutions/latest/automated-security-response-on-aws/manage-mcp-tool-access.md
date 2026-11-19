@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Manage MCP tool access
-<a name="manage-mcp-tool-access"></a>
 
 You can deploy the optional Model Context Protocol (MCP) server. Set **EnableMcpServer** to `yes` (see [MCP server for AI clients](mcp-server.md)), then connect an AI client as one of your Web UI users. That client can call only the tools you granted that user. Managing these grants is an administrator-only task.
 

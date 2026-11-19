@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SageMakerSavingsPlans
-<a name="API_CostOptimizationHub_SageMakerSavingsPlans"></a>
 
 The SageMaker Savings Plans recommendation details.
 

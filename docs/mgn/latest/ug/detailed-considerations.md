@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/detailed-considerations.ht
 ---
 
 # Full launch template setting review
-<a name="detailed-considerations"></a>
 
 This section reviews the entire EC2 launch template and identifies which fields should and should not be changed in order for the EC2 launch template to work with Application Migration Service. Editing or changing any fields that are marked as "do not edit" or "do not change" can cause AWS Transform MGN to not function.
 

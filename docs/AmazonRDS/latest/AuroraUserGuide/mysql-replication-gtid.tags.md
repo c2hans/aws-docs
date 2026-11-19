@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-r
 ---
 
 # Using GTID tags with an Aurora MySQL DB cluster
-<a name="mysql-replication-gtid.tags"></a>
 
 Starting with Aurora MySQL version 8.4.10, you can add a tag to the global transaction identifiers (GTIDs) of your transactions. Tags make it easier to identify and track groups of related transactions, such as the transactions from a specific application or batch job. A tagged GTID has the format `{{source_id}}:{{tag}}:{{transaction_id}}`, for example `ed102faf-eb00-11eb-8f20-0c5415bfaa1d:tag1:117`. Tagged and untagged GTIDs can exist together in the same DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeJobs
 ---
 
 # DescribeJobsRequestFilters
-<a name="API_DescribeJobsRequestFilters"></a>
 
 Request to describe Job log filters.
 

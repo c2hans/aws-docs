@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetInputDataConfig
-<a name="API_DatasetInputDataConfig"></a>
 
 Specifies the format and location of the input data for the dataset.
 

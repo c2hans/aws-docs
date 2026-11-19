@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateV
 ---
 
 # UpdateVirtualRouter
-<a name="API_UpdateVirtualRouter"></a>
 
 Updates an existing virtual router in a specified service mesh.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Auror
 ---
 
 # AuroraPostgreSqlParameters
-<a name="API_AuroraPostgreSqlParameters"></a>
 
 Parameters for Amazon Aurora PostgreSQL-Compatible Edition.
 

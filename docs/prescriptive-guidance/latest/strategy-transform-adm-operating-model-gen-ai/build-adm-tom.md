@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Building an AI-powered ADM target operating model
-<a name="build-adm-tom"></a>
 
 As you consider your ADM practices with generative AI, it's important to design a comprehensive *target operating model* (TOM). A TOM describes the desired state of an organization's operating model. Your organization's ADM TOM should align its people, processes, technology, organization, and governance with its strategic vision.
 

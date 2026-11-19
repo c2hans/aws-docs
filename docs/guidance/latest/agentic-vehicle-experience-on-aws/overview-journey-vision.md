@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # The Customer-Journey Vision
-<a name="overview-journey-vision"></a>
 
 AVX is designed around the full vehicle ownership lifecycle. The guidance organizes the customer journey into five stages:
 

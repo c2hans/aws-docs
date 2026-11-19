@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_Operati
 ---
 
 # Amazon WorkMail Message Flow
-<a name="API_Operations_Amazon_WorkMail_Message_Flow"></a>
 
 The following actions are supported by Amazon WorkMail Message Flow:
 +  [GetRawMessageContent](API_messageflow_GetRawMessageContent.md)

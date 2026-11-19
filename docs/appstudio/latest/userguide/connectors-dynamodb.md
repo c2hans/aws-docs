@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-dy
 ---
 
 # Connect to Amazon DynamoDB
-<a name="connectors-dynamodb"></a>
 
 To connect App Studio with DynamoDB to enable builders to access and use DynamoDB resources in applications, you must perform the following steps:
 

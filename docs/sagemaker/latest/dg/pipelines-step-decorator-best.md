@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-step-decor
 ---
 
 # Best Practices
-<a name="pipelines-step-decorator-best"></a>
 
 The following sections suggest best practices to follow when you use the `@step` decorator for your pipeline steps.
 

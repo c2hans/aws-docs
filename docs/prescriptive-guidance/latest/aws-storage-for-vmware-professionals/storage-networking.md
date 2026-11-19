@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Storage networking
-<a name="storage-networking"></a>
 
 In VMware environments, storage networking connects ESXi hosts to shared storage systems using protocols like iSCSI, Fibre Channel, and NFS. In contrast, AWS integrates storage services directly within its virtual private cloud (VPC) architecture, eliminating the need for separate storage networking infrastructure. AWS storage services are accessed through service endpoints with built-in security controls and network configurations, as detailed in the following table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-flows-limit
 ---
 
 # Quick Flows limits
-<a name="quick-flows-limits"></a>
 
 ## Flow limits
 <a name="flow-limits"></a>

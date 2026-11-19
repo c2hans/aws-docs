@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # Using the CONTAINS function with PartiQL for DynamoDB
-<a name="ql-functions.contains"></a>
 
 Returns `TRUE` if the attribute specified by the path is one of the following:
 + A String that contains a particular substring.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Security best practices
-<a name="security-best-practices"></a>
 
 This section provides several security features to consider, as you develop and implement your own security policies.
 

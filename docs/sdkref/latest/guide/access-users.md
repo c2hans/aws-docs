@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/access-users.html
 ---
 
 # Using AWS access keys to authenticate AWS SDKs and tools
-<a name="access-users"></a>
 
 Using AWS access keys is an option for authentication when using AWS SDKs and tools.
 

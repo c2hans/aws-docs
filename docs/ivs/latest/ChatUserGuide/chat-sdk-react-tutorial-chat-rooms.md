@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk-react-
 ---
 
 # IVS Chat Client Messaging SDK: React Native Tutorial Part 1: Chat Rooms
-<a name="chat-sdk-react-tutorial-chat-rooms"></a>
 
 This is the first of a two-part tutorial. You will learn the essentials of working with the Amazon IVS Chat Client Messaging JavaScript SDK by building a fully functional app using React Native. We call the app *Chatterbox*.
 

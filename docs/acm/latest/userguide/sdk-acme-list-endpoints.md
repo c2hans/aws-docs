@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-list-endpo
 ---
 
 # Listing ACME endpoints
-<a name="sdk-acme-list-endpoints"></a>
 
 The following example shows how to use the [ListAcmeEndpoints](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeEndpoints.html) function.
 

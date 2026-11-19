@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailTopicsTierConfig
-<a name="API_GuardrailTopicsTierConfig"></a>
 
 The tier that your guardrail uses for denied topic filters. Consider using a tier that balances performance, accuracy, and compatibility with your existing generative AI workflows.
 

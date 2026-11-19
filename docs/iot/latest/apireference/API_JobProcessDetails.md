@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobProcessDe
 ---
 
 # JobProcessDetails
-<a name="API_JobProcessDetails"></a>
 
 The job process details.
 

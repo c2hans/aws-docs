@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/findings-types.htm
 ---
 
 # Amazon Inspector finding types
-<a name="findings-types"></a>
 
  This section describes the different finding types in Amazon Inspector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/configuring-routin
 ---
 
 # Configure routing to access Multi-AZ file systems from outside your VPC
-<a name="configuring-routing-using-AWSTG"></a>
 
 If you have a Multi-AZ file system with an `EndpointIPv4AddressRange` or `EndpointIPv6AddressRange` that's outside your VPC's IP address range, you need to set up additional routing in your AWS Transit Gateway to access your file system from peered or on-premises networks.
 

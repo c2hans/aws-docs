@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAccountVpcEncryptionControl
-<a name="API_DescribeAccountVpcEncryptionControl"></a>
 
 Describes the account-level VPC Encryption Control configuration for your account. VPC Encryption Control enables you to enforce encryption for all data in transit within and between VPCs to meet compliance requirements.
 

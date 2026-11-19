@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SupportedDialect.
 ---
 
 # SupportedDialect
-<a name="API_SupportedDialect"></a>
 
 A structure specifying the dialect and dialect version used by the query engine.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servi
 ---
 
 # Source configuration for ServiceNow CMDB Audit Log
-<a name="servicenow-cmdb-source-setup"></a>
 
 ## Integrating with ServiceNow CMDB
 <a name="servicenow-cmdb-integration"></a>

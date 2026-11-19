@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/procedure-person-s
 ---
 
 # Searching stored videos for faces
-<a name="procedure-person-search-videos"></a>
 
 You can search a collection for faces that match faces of people who are detected in a stored video or a streaming video. This section covers searching for faces in a stored video. For information about searching for faces in a streaming video, see [Working with streaming video events](streaming-video.md).
 

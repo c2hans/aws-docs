@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Managing data access for data science teams
-<a name="managing-data-access-for-data-science-teams"></a>
 
  Data science teams need access to real-world data to do their jobs. Deidentification of production data is one approach that you can use to reduce the risk of improper data handling. However, deidentification can be challenging. The United States and other countries have differing definitions of PII. For example, in the EU, if a person can be re-identified, then the GDPR doesn't recognize the data as deidentified.
 

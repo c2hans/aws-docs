@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedSkillMdDefinition
-<a name="API_UpdatedSkillMdDefinition"></a>
 
 Wrapper for updating a skill markdown definition with PATCH semantics.
 

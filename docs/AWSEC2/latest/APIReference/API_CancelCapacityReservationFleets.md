@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelCap
 ---
 
 # CancelCapacityReservationFleets
-<a name="API_CancelCapacityReservationFleets"></a>
 
 Cancels one or more Capacity Reservation Fleets. When you cancel a Capacity Reservation Fleet, the following happens:
 + The Capacity Reservation Fleet's status changes to `cancelled`.

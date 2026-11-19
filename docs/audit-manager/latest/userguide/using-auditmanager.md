@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/using-aud
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Using AWS Audit Manager
-<a name="using-auditmanager"></a>
 
 You can access AWS Audit Manager through various options, depending on your specific needs and preferences. Here are some different ways you can interact with Audit Manager:
 + **Audit Manager console**

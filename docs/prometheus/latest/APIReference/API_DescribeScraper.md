@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeScraper
-<a name="API_DescribeScraper"></a>
 
 The `DescribeScraper` operation displays information about an existing scraper.
 

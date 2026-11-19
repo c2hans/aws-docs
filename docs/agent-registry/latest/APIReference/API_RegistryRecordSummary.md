@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_R
 ---
 
 # RegistryRecordSummary
-<a name="API_RegistryRecordSummary"></a>
 
  Summary information about a registry record, including its descriptors.
 

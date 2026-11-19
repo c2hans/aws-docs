@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Migrating from Database Mirroring to Always On Availability Groups
-<a name="USER_SQLServerMultiAZ.Migration"></a>
 
 In version 14.00.3049.1 of Microsoft SQL Server Enterprise Edition, Always On Availability Groups (AGs) are enabled by default.
 

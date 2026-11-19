@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Networking
-<a name="amazon-lightsail-faq-networking"></a>
 
 ## How do I use IP addresses in Lightsail?
 <a name="how-do-i-use-ips"></a>

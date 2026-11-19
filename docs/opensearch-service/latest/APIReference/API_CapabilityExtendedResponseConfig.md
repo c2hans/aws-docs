@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CapabilityExtendedResponseConfig
-<a name="API_CapabilityExtendedResponseConfig"></a>
 
 The extended configuration returned for a registered capability, including additional details beyond the base configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/get-started-exercise.
 ---
 
 # Step 3: Get Started Using the AWS CLI and AWS SDK API
-<a name="get-started-exercise"></a>
 
 After you've set up the AWS CLI and AWS SDKs that you want to use, you can build applications that use Amazon Textract. The following topics show you how to get started with Amazon Textract.
 + [Analyzing Document Text with Amazon Textract](analyzing-document-text.md)

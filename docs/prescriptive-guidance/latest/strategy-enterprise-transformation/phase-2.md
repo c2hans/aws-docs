@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Phase 2: Ready - Prepare and invent
-<a name="phase-2"></a>
 
 This phase focuses on leveraging and validating the high-level transformation strategy and roadmap by using  experience-based mechanisms, and mobilizing teams to accelerate business planning, conduct experiments, initiate new ways of working, align people and operations to business objectives, deliver initial wins, and define a detailed transformation strategy and roadmap. It is illustrated in the following diagram.
 

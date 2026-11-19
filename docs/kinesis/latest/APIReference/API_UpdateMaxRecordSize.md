@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateMa
 ---
 
 # UpdateMaxRecordSize
-<a name="API_UpdateMaxRecordSize"></a>
 
 This allows you to update the `MaxRecordSize` of a single record that you can write to, and read from a stream. You can ingest and digest single records up to 10240 KiB.
 

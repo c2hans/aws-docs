@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceRecordSet
-<a name="API_ResourceRecordSet"></a>
 
 Information about the resource record set to create or delete.
 

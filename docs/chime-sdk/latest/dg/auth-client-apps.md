@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/auth-client-apps.htm
 ---
 
 # Authenticating end-user client applications for Amazon Chime SDK messaging
-<a name="auth-client-apps"></a>
 
 You can also run Amazon Chime SDK messaging from end-user client applications. [Making SDK calls from a back-end service for Amazon Chime SDK messaging](call-from-backend.md) explains how to make API calls such as create-channel, send-channel-message, and list-channel-messages. End user client applications such as browsers and mobile applications make these same API calls. Client applications can also connect via WebSocket to receive real time updates on messages and events to channels they are members of. This section covers how to give IAM credentials to a client application scoped to a specific app instance user. Once the end users have these credentials, they can make the API calls shown in [Making SDK calls from a back-end service for Amazon Chime SDK messaging](call-from-backend.md). To see a full demo of a client application, see [ https://github.com/aws-samples/amazon-chime-sdk/tree/main/apps/chat](https://github.com/aws-samples/amazon-chime-sdk/tree/main/apps/chat). For more information about receiving real-time messages from the channels that a client app belongs to, see [Using WebSockets to receive messages in Amazon Chime SDK messaging](websockets.md).
 

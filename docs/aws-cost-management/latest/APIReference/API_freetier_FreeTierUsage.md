@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # FreeTierUsage
-<a name="API_freetier_FreeTierUsage"></a>
 
 Consists of a AWS Free Tier offer’s metadata and your data usage for the offer.
 

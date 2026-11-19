@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snapch
 ---
 
 # Creating a Snapchat Ad account and configuring the client app
-<a name="connecting-to-data-snapchat-ads-new-account"></a>
 
 **Topics**
 + [Sign up for Snapchat Ads](#snapchat-ads-sign-up)

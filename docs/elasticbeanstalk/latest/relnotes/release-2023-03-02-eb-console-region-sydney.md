@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk launches new console design in AWS Region Asia Pacific (Sydney) on March 02, 2023
-<a name="release-2023-03-02-eb-console-region-sydney"></a>
 
 AWS Elastic Beanstalk launches new console design in AWS Region *Asia Pacific (Sydney)*.
 

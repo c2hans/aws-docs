@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + James Kingsmill, Senior Solutions Architect, AWS Solutions Architecture

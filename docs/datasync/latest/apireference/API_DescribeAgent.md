@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeAgent
-<a name="API_DescribeAgent"></a>
 
 Returns information about an AWS DataSync agent, such as its name, service endpoint type, and status.
 

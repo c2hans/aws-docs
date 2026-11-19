@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/create-auto.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create a cluster with Amazon EKS Auto Mode
-<a name="create-auto"></a>
 
 This chapter explains how to create an Amazon EKS cluster with Auto Mode enabled using various tools and interfaces. Auto Mode simplifies cluster creation by automatically configuring and managing the cluster’s compute, networking, and storage infrastructure. You’ll learn how to create an Auto Mode cluster using the AWS CLI, AWS Management Console, or the eksctl command line tool.
 

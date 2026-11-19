@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Func
 ---
 
 # Function
-<a name="API_Function"></a>
 
 Defines reusable logic that MediaTailor executes at lifecycle hooks during ad insertion. The `FunctionType` determines the function's runtime behavior. For more information about functions, see [Working with functions](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html) in the *MediaTailor User Guide*.
 

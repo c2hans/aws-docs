@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Applied
 ---
 
 # AppliedOrchestrationConfiguration
-<a name="API_AppliedOrchestrationConfiguration"></a>
 
 The chat orchestration specific admin controls configured for an Amazon Q Business application. Determines whether Amazon Q Business automatically routes chat requests across configured plugins and data sources in your Amazon Q Business application.
 

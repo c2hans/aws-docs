@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteEndpointGroup
-<a name="API_DeleteEndpointGroup"></a>
 
 Delete an endpoint group from a listener.
 

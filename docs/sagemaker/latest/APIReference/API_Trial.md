@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Trial.
 ---
 
 # Trial
-<a name="API_Trial"></a>
 
 The properties of a trial as returned by the [Search](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API.
 

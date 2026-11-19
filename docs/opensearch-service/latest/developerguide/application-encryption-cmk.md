@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Encrypting OpenSearch UI application metadata with customer managed keys
-<a name="application-encryption-cmk"></a>
 
 Visual assets and configurations are stored as metadata for your OpenSearch UI applications. This includes saved queries, visualizations, and dashboards. Data from the associated data sources is not stored in the metadata. For information about encrypting data in your data sources, see [Data protection in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/data-protection.html) for OpenSearch domains and [Encryption in Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-encryption.html) for serverless collections.
 

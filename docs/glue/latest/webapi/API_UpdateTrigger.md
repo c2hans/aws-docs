@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateTrigger.htm
 ---
 
 # UpdateTrigger
-<a name="API_UpdateTrigger"></a>
 
 Updates a trigger definition.
 

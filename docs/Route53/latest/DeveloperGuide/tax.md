@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tax.html
 ---
 
 # .tax
-<a name="tax"></a>
 
 Used for information about taxes, tax preparation, and tax law.
 

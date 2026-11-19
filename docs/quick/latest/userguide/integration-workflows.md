@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/integration-workf
 ---
 
 # Integration workflows
-<a name="integration-workflows"></a>
 
 The following procedures describe the general workflows for creating and managing different types of integrations in AWS Quick.
 

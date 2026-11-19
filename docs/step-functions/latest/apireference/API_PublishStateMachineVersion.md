@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_P
 ---
 
 # PublishStateMachineVersion
-<a name="API_PublishStateMachineVersion"></a>
 
 Creates a [version](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-version.html) from the current revision of a state machine. Use versions to create immutable snapshots of your state machine. You can start executions from versions either directly or with an alias. To create an alias, use [CreateStateMachineAlias](API_CreateStateMachineAlias.md).
 
@@ -84,7 +83,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** ConflictException **
-Updating or deleting a resource can cause an inconsistent state. This error occurs when there're concurrent requests for [DeleteStateMachineVersion](API_DeleteStateMachineVersion.md), [PublishStateMachineVersion](#API_PublishStateMachineVersion), or [UpdateStateMachine](API_UpdateStateMachine.md) with the `publish` parameter set to `true`.
+Updating or deleting a resource can cause an inconsistent state. This error occurs when there're concurrent requests for [DeleteStateMachineVersion](API_DeleteStateMachineVersion.md), [PublishStateMachineVersion](API_PublishStateMachineVersion.md), or [UpdateStateMachine](API_UpdateStateMachine.md) with the `publish` parameter set to `true`.
 HTTP Status Code: 409
 HTTP Status Code: 400
 

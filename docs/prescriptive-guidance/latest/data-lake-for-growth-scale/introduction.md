@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 ---
 
 # Designing a data lake for growth and scale on the AWS Cloud
-<a name="introduction"></a>
 
 *Wei Shao and Tony Stricker, Amazon Web Services*
 

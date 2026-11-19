@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/describe-ec2-fle
 ---
 
 # Describe an EC2 Fleet, its instances, and its events
-<a name="describe-ec2-fleet"></a>
 
 You can describe your EC2 Fleet configuration, the instances in your EC2 Fleet, and the event history of your EC2 Fleet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # S3Configuration
-<a name="API_query_S3Configuration"></a>
 
 Details on S3 location for error reports that result from running a query.
 

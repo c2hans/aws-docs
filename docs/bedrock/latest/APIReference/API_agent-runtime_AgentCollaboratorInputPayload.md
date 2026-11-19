@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgentCollaboratorInputPayload
-<a name="API_agent-runtime_AgentCollaboratorInputPayload"></a>
 
 Input for an agent collaborator. The input can be text or an action invocation result.
 

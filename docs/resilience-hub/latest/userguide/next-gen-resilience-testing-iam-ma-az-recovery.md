@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Availability Zone: recovery
-<a name="next-gen-resilience-testing-iam-ma-az-recovery"></a>
 
 Attach the following permissions policy to the target role for the **Availability Zone: recovery** template.
 

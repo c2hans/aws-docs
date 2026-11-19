@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallPolicyDescription
-<a name="API_NetworkFirewallPolicyDescription"></a>
 
 The definition of the AWS Network Firewall firewall policy.
 

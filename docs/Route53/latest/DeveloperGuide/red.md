@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/red.html
 ---
 
 # .red
-<a name="red"></a>
 
 Used by those who like the color red or those who want to associate the color red with their business or brand.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Agent identity and permission management
-<a name="agentsec03"></a>
 
  Agents access resources, invoke tools, and interact with other services in two patterns:
 +  Explicitly on behalf of a user, where a human initiated the request and the agent's actions must be bounded by that user's permissions

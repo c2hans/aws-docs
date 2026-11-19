@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 ---
 
 # Migrating your custom test environments to the new iOS test hosts
-<a name="ios-host-migration"></a>
 
  For the full list of available test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
 

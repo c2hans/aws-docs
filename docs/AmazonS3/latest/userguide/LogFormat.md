@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/LogFormat.html
 ---
 
 # Amazon S3 server access log format
-<a name="LogFormat"></a>
 
 Server access logging provides detailed records for the requests that are made to an Amazon S3 bucket. You can use server access logs for the following purposes:
 + Performing security and access audits

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInst
 ---
 
 # DBInstanceStatusInfo
-<a name="API_DBInstanceStatusInfo"></a>
 
 Provides a list of status information for a DB instance.
 

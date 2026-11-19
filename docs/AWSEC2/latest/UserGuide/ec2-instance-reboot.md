@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-reb
 ---
 
 # Reboot your Amazon EC2 instance
-<a name="ec2-instance-reboot"></a>
 
 An instance reboot is equivalent to an operating system reboot. In most cases, it takes only a few minutes to reboot your instance.
 

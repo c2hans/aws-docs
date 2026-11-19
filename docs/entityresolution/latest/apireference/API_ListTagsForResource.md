@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Displays the tags associated with an AWS Entity Resolution resource. In AWS Entity Resolution, `SchemaMapping`, and `MatchingWorkflow` can be tagged.
 

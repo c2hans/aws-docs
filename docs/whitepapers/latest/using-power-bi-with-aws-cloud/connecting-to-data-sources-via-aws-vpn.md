@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Connecting to data sources via Site-to-Site VPN
-<a name="connecting-to-data-sources-via-aws-vpn"></a>
 
 In this model, Power BI Desktop installations connect to data sources in the AWS network using one of two Site-to-Site VPN methods: AWS Site-to-Site VPN or AWS Client VPN. Each connection type delivers a highly available, managed, and elastic cloud VPN solution to protect your network traffic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_LinkAttributes
 ---
 
 # LinkAttributes
-<a name="API_LinkAttributes"></a>
 
 Describes the attributes of a link.
 

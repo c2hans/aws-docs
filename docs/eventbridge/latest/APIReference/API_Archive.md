@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Arch
 ---
 
 # Archive
-<a name="API_Archive"></a>
 
 An `Archive` object that contains details about an archive.
 

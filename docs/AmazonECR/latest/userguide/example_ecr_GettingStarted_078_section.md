@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_G
 ---
 
 # Getting started with container registries
-<a name="example_ecr_GettingStarted_078_section"></a>
 
 The following code example shows how to:
 + Create a Docker image

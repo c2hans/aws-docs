@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.ht
 ---
 
 # General purpose buckets overview
-<a name="UsingBucket"></a>
 
 To upload your data (photos, videos, documents, etc.) to Amazon S3, you must first create an S3 bucket in one of the AWS Regions.
 

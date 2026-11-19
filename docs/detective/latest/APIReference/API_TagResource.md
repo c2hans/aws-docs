@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_TagRes
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Applies tag values to a behavior graph.
 

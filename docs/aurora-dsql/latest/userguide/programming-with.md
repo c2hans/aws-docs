@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/programming
 ---
 
 # Programming with Aurora DSQL
-<a name="programming-with"></a>
 
 Aurora DSQL provides you with the following tools to manage your Aurora DSQL resources programmatically.
 

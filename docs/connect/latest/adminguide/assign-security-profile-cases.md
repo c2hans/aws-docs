@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-securit
 ---
 
 # Security profile permissions for Cases
-<a name="assign-security-profile-cases"></a>
 
 This topic describes the security profiles permissions that are required to access and use Connect Customer Cases. For a list of Cases permissions and their API name, see [List of security profile permissions in Connect Customer](security-profile-list.md).
 

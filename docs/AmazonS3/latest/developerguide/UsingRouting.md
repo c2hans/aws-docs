@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/UsingRout
 ---
 
 # Request routing
-<a name="UsingRouting"></a>
 
 Programs that make requests against buckets created using the [CreateBucket](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucket.html) API that include a [CreateBucketConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConfiguration.html) must support redirects. Additionally, some clients that do not respect DNS TTLs might encounter issues.
 

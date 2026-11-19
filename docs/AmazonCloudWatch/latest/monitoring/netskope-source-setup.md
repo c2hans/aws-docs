@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/netsk
 ---
 
 # Source configuration for Netskope
-<a name="netskope-source-setup"></a>
 
 ## Integrating with Netskope
 <a name="netskope-integration"></a>

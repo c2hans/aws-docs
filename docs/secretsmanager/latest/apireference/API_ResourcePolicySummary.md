@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # ResourcePolicySummary
-<a name="API_ResourcePolicySummary"></a>
 
 A structure that contains details about a resource policy attached to a secret. It does not contain the contents of the resource policy. To view the contents of the policy, use [GetResourcePolicy](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetResourcePolicy.html) .
 

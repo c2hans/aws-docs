@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-acce
 ---
 
 # AWS CodeBuild permissions reference
-<a name="auth-and-access-control-permissions-reference"></a>
 
 You can use AWS-wide condition keys in your AWS CodeBuild policies to express conditions. For a list, see [Available Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html#AvailableKeys) in the *IAM User Guide*.
 

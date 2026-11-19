@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateSecurityGroupVpc
-<a name="API_AssociateSecurityGroupVpc"></a>
 
 Associates a security group with another VPC in the same Region. This enables you to use the same security group with network interfaces and instances in the specified VPC.
 

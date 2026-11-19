@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_S
 ---
 
 # SendEmail
-<a name="API_SendEmail"></a>
 
 Sends an email message. You can use the Amazon Pinpoint Email API to send two types of messages:
 +  **Simple** – A standard email message. When you create this type of message, you specify the sender, the recipient, and the message body, and Amazon Pinpoint assembles the message for you.

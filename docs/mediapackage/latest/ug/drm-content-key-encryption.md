@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/drm-content-key-e
 ---
 
 # Preparing and managing certificates for use with content keys
-<a name="drm-content-key-encryption"></a>
 
 AWS Elemental MediaPackage uses a Content Protection Information Exchange (CPIX) document to communicate with SPEKE about content keys that are used to encrypt your content. For the most secure digital rights management (DRM) encryption solution, use encrypted content keys in the CPIX document.
 

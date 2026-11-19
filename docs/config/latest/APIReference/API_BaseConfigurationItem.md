@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_BaseConfi
 ---
 
 # BaseConfigurationItem
-<a name="API_BaseConfigurationItem"></a>
 
 The detailed configurations of a specified resource.
 

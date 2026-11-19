@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/time-delay
 ---
 
 # Delay content availability from AWS Elemental MediaPackage
-<a name="time-delay"></a>
 
 You can specify a duration (in seconds) for MediaPackage to delay when content is available to players. The minimum time is 0 seconds. The following rules determine the maximum time:
 + If `startoverwindow` is equal to `0`, the maximum time is 86,400 seconds (24 hours).

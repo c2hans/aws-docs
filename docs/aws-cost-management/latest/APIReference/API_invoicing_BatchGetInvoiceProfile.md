@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchGetInvoiceProfile
-<a name="API_invoicing_BatchGetInvoiceProfile"></a>
 
 This gets the invoice profile associated with a set of accounts. The accounts must be linked accounts under the requester management account organization.
 

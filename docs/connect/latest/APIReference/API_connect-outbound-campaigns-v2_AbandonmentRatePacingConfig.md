@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AbandonmentRatePacingConfig
-<a name="API_connect-outbound-campaigns-v2_AbandonmentRatePacingConfig"></a>
 
 The configuration for abandonment-rate-based dialer pacing. The dialer adjusts its dialing rate to keep the call abandonment rate at or below the target rate.
 

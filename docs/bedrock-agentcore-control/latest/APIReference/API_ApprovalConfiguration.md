@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApprovalConfiguration
-<a name="API_ApprovalConfiguration"></a>
 
 Configuration for the registry record approval workflow. Controls whether records added to the registry require explicit approval before becoming active.
 

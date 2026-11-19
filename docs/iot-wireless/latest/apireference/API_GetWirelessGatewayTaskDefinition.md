@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessGatewayTaskDefinition
-<a name="API_GetWirelessGatewayTaskDefinition"></a>
 
 Gets information about a wireless gateway task definition.
 

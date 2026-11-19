@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/s
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Strategy Recommendations source code analysis
-<a name="source-code-analysis"></a>
 
 Migration Hub Strategy Recommendations automatically identifies the applications in your portfolio and creates application components for them. For example, if there is a Java application in your portfolio, it's identified as an application component with a component type of **java**.
 

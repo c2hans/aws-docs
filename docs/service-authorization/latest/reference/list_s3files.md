@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon S3 Files
-<a name="list_s3files"></a>
 
 Amazon S3 Files (service prefix: `s3files`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

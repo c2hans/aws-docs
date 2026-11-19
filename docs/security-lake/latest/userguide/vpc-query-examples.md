@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/vpc-query
 ---
 
 # Example Security Lake queries for Amazon VPC Flow Logs
-<a name="vpc-query-examples"></a>
 
 Amazon Virtual Private Cloud (Amazon VPC) provides details about IP traffic going to and from network interfaces in your VPC.
 

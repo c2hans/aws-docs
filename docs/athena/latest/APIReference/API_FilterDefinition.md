@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_FilterDef
 ---
 
 # FilterDefinition
-<a name="API_FilterDefinition"></a>
 
 A string for searching notebook names.
 

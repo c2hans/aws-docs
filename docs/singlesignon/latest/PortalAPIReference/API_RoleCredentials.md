@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # RoleCredentials
-<a name="API_RoleCredentials"></a>
 
 Provides information about the role credentials that are assigned to the user.
 

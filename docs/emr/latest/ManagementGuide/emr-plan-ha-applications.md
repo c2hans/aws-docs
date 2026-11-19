@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-a
 ---
 
 # Features that support high availability in an Amazon EMR cluster and how they work with open-source applications
-<a name="emr-plan-ha-applications"></a>
 
 This topic provides information about the Hadoop high-availability features of HDFS NameNode and YARN ResourceManager in an Amazon EMR cluster, and how the high-availability features work with open source applications and other Amazon EMR features.
 

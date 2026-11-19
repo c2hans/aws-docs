@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Reference: Date and time string formats for Systems Manager
-<a name="systems-manager-datetime-strings"></a>
 
 AWS Systems Manager API operations accept filters to limit the number of results returned by a request. Some of these API operations accept filters that require a formatted string to represent a specific date and time. For example, the `DescribeSessions` API operation accepts the `InvokedAfter` and `InvokedBefore` keys as some valid values for a `SessionFilter` object. Another example is the `DescribeAutomationExecutions` API operation, which accepts the `StartTimeBefore` and `StartTimeAfter` keys as some valid values for an `AutomationExecutionFilter` object. The values you provide for these keys when filtering your requests must match the ISO 8601 standard. For information about ISO 8601, see [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # CreateDirectoryRegistration
-<a name="API_CreateDirectoryRegistration"></a>
 
 Creates a directory registration that authorizes communication between AWS Private CA and an Active Directory
 

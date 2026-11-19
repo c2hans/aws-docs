@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackPr
 ---
 
 # AttackProperty
-<a name="API_AttackProperty"></a>
 
 Details of a AWS Shield event. This is provided as part of an [AttackDetail](API_AttackDetail.md).
 

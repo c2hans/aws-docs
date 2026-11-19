@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Kendra
 ---
 
 # KendraSettings
-<a name="API_KendraSettings"></a>
 
 The Amazon SageMaker Canvas application setting where you configure document querying.
 

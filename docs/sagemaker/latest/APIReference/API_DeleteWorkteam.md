@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteWorkteam
-<a name="API_DeleteWorkteam"></a>
 
 Deletes an existing work team. This operation can't be undone.
 

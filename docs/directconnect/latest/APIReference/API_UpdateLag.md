@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateLag
-<a name="API_UpdateLag"></a>
 
 Updates the attributes of the specified link aggregation group (LAG).
 

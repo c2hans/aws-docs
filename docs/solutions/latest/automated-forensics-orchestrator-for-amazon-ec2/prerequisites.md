@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 ## Tools
 <a name="tools"></a>

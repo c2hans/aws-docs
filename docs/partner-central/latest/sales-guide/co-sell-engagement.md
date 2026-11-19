@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/co-se
 ---
 
 # Agentic Co-sell engagement
-<a name="co-sell-engagement"></a>
 
 Agentic co-selling enables AWS Partners to accelerate co-selling with AWS by using AWS Partner Central agents throughout the opportunity lifecycle, so that they spend more time selling to customers and delivering customer outcomes. The agents act on the partner's behalf through conversation to enrich opportunity details, provide customer insights, recommendations, and sales plays, and assign a Co-sell motion and Opportunity Quality Score that directly influence how AWS engages.
 

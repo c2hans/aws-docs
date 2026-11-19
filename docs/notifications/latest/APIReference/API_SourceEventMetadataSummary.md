@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_So
 ---
 
 # SourceEventMetadataSummary
-<a name="API_SourceEventMetadataSummary"></a>
 
 Contains metadata about the event that caused the `NotificationEvent`. For other specific values, see `sourceEventMetadata`.
 

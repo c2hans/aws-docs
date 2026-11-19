@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/delete-id-m
 ---
 
 # Deleting an ID mapping table
-<a name="delete-id-mapping-table"></a>
 
 As a collaboration member, you can delete an ID mapping table that you have created. This action prevents the member who can query from querying the table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/open-da
 ---
 
 # Open Data
-<a name="open-data"></a>
 
 Amazon Location Service provides access to open source map data via the Open Data provider. Open Data provides global basemaps built from data provided by the [Overture Maps Foundation](https://overturemaps.org) website, including [OpenStreetMap (OSM)](https://www.openstreetmap.org/), [Natural Earth](https://www.naturalearthdata.com/), and other open data sources. The maps provided are designed to support different applications and use cases, including logistics and delivery, and data visualization in web and mobile environments. With over a million map makers, the OSM community updates hundreds of thousands of features per day. Amazon Location Service regularly incorporates these edits.
 

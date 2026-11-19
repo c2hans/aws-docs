@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # DATE
-<a name="recipe-actions.functions.DATE"></a>
 
 Creates a new column containing the date value, from the source columns or from values provided.
 

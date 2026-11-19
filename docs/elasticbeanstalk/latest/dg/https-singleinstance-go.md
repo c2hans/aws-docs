@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on EC2 instances running Go
-<a name="https-singleinstance-go"></a>
 
 For Go container types, you enable HTTPS with a [configuration file](ebextensions.md) and an nginx configuration file that configures the nginx server to use HTTPS.
 

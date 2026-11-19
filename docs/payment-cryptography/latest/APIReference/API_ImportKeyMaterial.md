@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ImportKeyMaterial
-<a name="API_ImportKeyMaterial"></a>
 
 Parameter information for key material import into AWS Payment Cryptography using TR-31 or TR-34 or RSA wrap and unwrap key exchange method.
 

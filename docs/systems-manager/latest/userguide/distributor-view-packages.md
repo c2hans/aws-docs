@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/distrib
 ---
 
 # View packages in Distributor
-<a name="distributor-view-packages"></a>
 
 To view packages that are available for installation, you can use the AWS Systems Manager console or your preferred AWS command line tool. Distributor is a tool in AWS Systems Manager. To access Distributor, open the AWS Systems Manager console and choose **Distributor** in the left navigation pane. You see all of the packages available to you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Create a conda channel using S3
-<a name="configure-jobs-s3-channel"></a>
 
 If your jobs need to run applications not available on the [`deadline-cloud`](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/create-queue-environment.html#conda-queue-environment) channel or the [`conda-forge`](https://conda-forge.org/) channel on the conda-forge website, you can host a custom conda channel to serve your own packages. When you create a queue in the AWS Deadline Cloud (Deadline Cloud) console, the console adds a conda queue environment by default. To make your packages available to jobs, add the custom channel to the queue environment.
 

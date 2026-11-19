@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # SSESpecification
-<a name="API_dax_SSESpecification"></a>
 
 Represents the settings used to enable server-side encryption.
 

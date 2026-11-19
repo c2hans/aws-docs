@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC07-BP01 Implement cognitive load management
-<a name="agentsec07-bp01"></a>
 
  A human reviewer is only as effective as the workload lets them be. Prioritization, queue management, and maximum review rates keep human oversight grounded in genuine judgment rather than fatigue-driven rubber-stamping.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/set-sub-attributes-deliver
 ---
 
 # SetSubscriptionAttributes delivery policy JSON format
-<a name="set-sub-attributes-delivery-policy-json"></a>
 
 If you send a request to the `SetSubscriptionAttributes` action and set the `AttributeName` parameter to a value of `DeliveryPolicy`, the value of the `AttributeValue` parameter must be a valid JSON object. For example, the following example sets the delivery policy to 5 total retries.
 

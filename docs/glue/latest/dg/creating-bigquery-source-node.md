@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-bigquery-source-
 ---
 
 # Creating a BigQuery source node
-<a name="creating-bigquery-source-node"></a>
 
 ## Prerequisites needed
 <a name="creating-bigquery-source-node-prerequisites"></a>

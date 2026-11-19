@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Connect
 ---
 
 # Connect
-<a name="API_Connect"></a>
 
 A structure that defines the Amazon Redshift connect service integration scope.
 

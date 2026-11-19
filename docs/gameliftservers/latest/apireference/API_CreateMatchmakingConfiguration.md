@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # CreateMatchmakingConfiguration
-<a name="API_CreateMatchmakingConfiguration"></a>
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 

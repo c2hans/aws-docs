@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/content-quality-a
 ---
 
 # Viewing content quality analysis for a flow
-<a name="content-quality-analysis-viewing-flows"></a>
 
 ## Prerequisites
 <a name="content-quality-analysis-viewing-flows-prerequisites"></a>

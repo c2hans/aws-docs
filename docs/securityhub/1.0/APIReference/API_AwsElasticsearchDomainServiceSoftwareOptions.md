@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainServiceSoftwareOptions
-<a name="API_AwsElasticsearchDomainServiceSoftwareOptions"></a>
 
 Information about the state of the domain relative to the latest service software.
 

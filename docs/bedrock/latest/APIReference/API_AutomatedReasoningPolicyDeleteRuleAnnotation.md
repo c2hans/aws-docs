@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteRuleAnnotation
-<a name="API_AutomatedReasoningPolicyDeleteRuleAnnotation"></a>
 
 An annotation for removing a rule from an Automated Reasoning policy.
 

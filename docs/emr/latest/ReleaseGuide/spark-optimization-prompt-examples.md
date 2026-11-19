@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-optimizati
 ---
 
 # Optimization prompt examples
-<a name="spark-optimization-prompt-examples"></a>
 
-You can use the following prompt examples with the Optimization Agent. Replace the placeholders with your own values.
+You can use the following prompt examples with the optimization agent. Replace the placeholders with your own values.
 
 ## Optimize a run for runtime
 <a name="spark-optimization-prompt-runtime"></a>

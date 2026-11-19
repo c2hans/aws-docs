@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetEnd
 ---
 
 # GetEndpointPolicy
-<a name="API_GetEndpointPolicy"></a>
 
 Returns the resource-based policy that is attached to an endpoint. If the endpoint doesn't have a policy, you get a `ValidationException`.
 

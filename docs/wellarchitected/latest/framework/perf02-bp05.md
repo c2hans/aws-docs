@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02-
 ---
 
 # PERF02-BP05 Use optimized hardware-based compute accelerators
-<a name="perf02-bp05"></a>
 
  Some workloads run far faster on specialized hardware than on a general-purpose processor. Accelerators, such as GPUs and purpose-built chips, handle massively parallel work such as model training or media processing at a throughput CPUs cannot match. They cost more than general-purpose processors and only pay off when the application offloads work to them and keeps them busy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Range
-<a name="API_Range"></a>
 
 Specifies one range of days or times to exclude from use for training an anomaly detection model.
 

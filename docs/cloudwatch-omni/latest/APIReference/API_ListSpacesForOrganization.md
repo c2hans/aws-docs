@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListSpacesForOrganization
-<a name="API_ListSpacesForOrganization"></a>
 
 Returns the spaces across all member accounts in the organization.
 

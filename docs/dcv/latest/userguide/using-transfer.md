@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-transfer.html
 ---
 
 # Transferring files
-<a name="using-transfer"></a>
 
 You can use Amazon DCV to upload files to and download files from Amazon DCV session storage. For instructions on how to enable and configure session storage, see [Enabling Session Storage](https://docs.aws.amazon.com/dcv/latest/adminguide/manage-storage.html) in the *Amazon DCV Administrator Guide*.
 

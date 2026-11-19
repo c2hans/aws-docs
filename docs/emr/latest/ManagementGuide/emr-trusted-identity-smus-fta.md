@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-trusted-i
 ---
 
 # Full Table Access with Amazon SageMaker Unified Studio and TIP on Amazon EMR on EC2
-<a name="emr-trusted-identity-smus-fta"></a>
 
 In Full Table Access (FTA) mode, Lake Formation grants authorized IAM Identity Center users access to full tables without row or column filtering. For more information about the FTA access model, see [Application integration for full table access](https://docs.aws.amazon.com/lake-formation/latest/dg/full-table-credential-vending.html).
 

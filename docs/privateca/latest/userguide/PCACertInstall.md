@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PCACertInstal
 ---
 
 # Installing the CA certificate
-<a name="PCACertInstall"></a>
 
 Complete the following procedures to create and install your private CA certificate. Your CA will then be ready to use.
 

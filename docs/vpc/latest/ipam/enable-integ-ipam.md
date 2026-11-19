@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html
 ---
 
 # Integrate IPAM with accounts in an AWS Organization
-<a name="enable-integ-ipam"></a>
 
 Optionally, you can follow the steps in this section to integrate IPAM with AWS Organizations and delegate a member account as the IPAM account.
 

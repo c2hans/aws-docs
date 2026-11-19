@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # Window functions
-<a name="recipe-actions.functions.window"></a>
 
 Following, find reference topics for window functions that work with recipe actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_IamProp
 ---
 
 # IamPropertiesInput
-<a name="API_IamPropertiesInput"></a>
 
 The IAM properties of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteTa
 ---
 
 # DeleteTaskTemplate
-<a name="API_DeleteTaskTemplate"></a>
 
 Deletes the task template.
 

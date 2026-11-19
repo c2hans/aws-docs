@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FrontOfQue
 ---
 
 # FrontOfQueueDetail
-<a name="API_FrontOfQueueDetail"></a>
 
 Contains a list of the first 100 `RUNNABLE` jobs associated to a single job queue.
 

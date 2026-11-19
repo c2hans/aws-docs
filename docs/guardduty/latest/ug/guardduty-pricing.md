@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-pricing.ht
 ---
 
 # Pricing in GuardDuty
-<a name="guardduty-pricing"></a>
 
 This section focuses on the AWS Free Tier model that GuardDuty uses for various protection plans, and how you can view estimated and actual usage costs. If you are looking for the pricing details associated with all the protection plans across supported Regions, see [GuardDuty pricing](https://aws.amazon.com/guardduty/pricing/).
 

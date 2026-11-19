@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAuthor
 ---
 
 # UpdateAuthorizer
-<a name="API_UpdateAuthorizer"></a>
 
 Updates an authorizer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayMulticastDomainRequestOptions
-<a name="API_CreateTransitGatewayMulticastDomainRequestOptions"></a>
 
 The options for the transit gateway multicast domain.
 

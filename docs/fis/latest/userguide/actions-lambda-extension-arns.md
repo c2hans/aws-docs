@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/actions-lambda-exte
 ---
 
 # Available versions of the AWS FIS extension for Lambda
-<a name="actions-lambda-extension-arns"></a>
 
 This section includes information about the AWS FIS Lambda extension versions. The extension supports Lambda functions developed for the x86-64 and ARM64 (Graviton2) platforms. Your Lambda function must be configured to use the specific Amazon Resource Name (ARN) for the AWS Region where it is currently hosted. You can view AWS Region and ARN details below.
 

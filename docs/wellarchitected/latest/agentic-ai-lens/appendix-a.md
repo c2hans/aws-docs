@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Appendix A: Best practice reference
-<a name="appendix-a"></a>
 
 This appendix provides a complete reference of all best practices defined in the Agentic AI Lens, organized by pillar and focus area.
 

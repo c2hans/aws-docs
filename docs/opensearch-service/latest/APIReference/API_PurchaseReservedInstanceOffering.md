@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PurchaseReservedInstanceOffering
-<a name="API_PurchaseReservedInstanceOffering"></a>
 
 Allows you to purchase Amazon OpenSearch Service Reserved Instances.
 

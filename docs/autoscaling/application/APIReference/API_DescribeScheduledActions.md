@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # DescribeScheduledActions
-<a name="API_DescribeScheduledActions"></a>
 
 Describes the Application Auto Scaling scheduled actions for the specified service namespace.
 

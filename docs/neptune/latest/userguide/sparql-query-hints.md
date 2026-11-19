@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-query-hi
 ---
 
 # SPARQL query hints
-<a name="sparql-query-hints"></a>
 
 You can use query hints to specify optimization and evaluation strategies for a particular SPARQL query in Amazon Neptune.
 

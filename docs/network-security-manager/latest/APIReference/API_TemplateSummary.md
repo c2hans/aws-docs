@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # TemplateSummary
-<a name="API_TemplateSummary"></a>
 
 Summary information about a template.
 

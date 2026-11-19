@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeRemediationTask
-<a name="API_CodeRemediationTask"></a>
 
 Represents a code remediation task that was initiated to fix a security finding.
 

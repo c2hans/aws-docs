@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeSour
 ---
 
 # DescribeSourceServers
-<a name="API_DescribeSourceServers"></a>
 
 Retrieves all SourceServers or multiple SourceServers by ID.
 

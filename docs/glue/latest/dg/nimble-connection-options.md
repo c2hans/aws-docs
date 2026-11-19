@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/nimble-connection-options
 ---
 
 # Nimble connection options
-<a name="nimble-connection-options"></a>
 
 The following are connection options for Nimble:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Nimble object to read.

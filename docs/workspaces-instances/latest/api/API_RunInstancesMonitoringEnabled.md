@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_RunI
 ---
 
 # RunInstancesMonitoringEnabled
-<a name="API_RunInstancesMonitoringEnabled"></a>
 
 Configures detailed monitoring for WorkSpace Instance.
 

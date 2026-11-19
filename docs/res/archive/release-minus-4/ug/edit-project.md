@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/edit-proj
 ---
 
 # Edit a project
-<a name="edit-project"></a>
 
 1. Select a project in the project list.
 

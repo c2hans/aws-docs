@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ErrorMessage
 ---
 
 # Amazon ElastiCache error messages
-<a name="ErrorMessages"></a>
 
 The following error messages are returned by Amazon ElastiCache. You may receive other error messages that are returned by ElastiCache, other AWS services, or by Valkey, Memcached, or Redis OSS. For descriptions of error messages from sources other than ElastiCache, see the documentation from the source that is generating the error message.
 + [Cluster node quota exceeded](#ErrorMessages.ClusterNodeQuota)

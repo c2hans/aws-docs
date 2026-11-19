@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-interacti
 ---
 
 # Denying AI-enhanced troubleshooting operations
-<a name="support-interaction-deny-ai-operations"></a>
 
 You can explicitly deny AI-enhanced troubleshooting operations by removing the following operations from your custom managed policy. Denying these operations prevents users from accessing the AI-powered interaction workflow and AWS assistant conversations in Support Center.
 

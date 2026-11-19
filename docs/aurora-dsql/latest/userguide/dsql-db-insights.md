@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-db-ins
 ---
 
 # Monitoring Aurora DSQL clusters with Aurora DSQL Database Insights
-<a name="dsql-db-insights"></a>
 
 Aurora DSQL database insights provides access to per-second sampled data for every active session on your cluster, collected by **DSQL Active Session History (DASH)** sampler which records the wait state and normalized SQL statement each session is running. Per-minute aggregated results from DASH are published as CloudWatch OpenTelemetry (OTel) metrics. Use this data to understand your database load, find the queries that consume the most resources, and diagnose performance issues.
 

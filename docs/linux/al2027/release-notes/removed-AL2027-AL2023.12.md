@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/removed-AL202
 ---
 
 # Packages in Amazon Linux 2023 not in Amazon Linux 2027
-<a name="removed-AL2027-AL2023.12"></a>
 
  There are 307 source packages and 8049 binary packages in Amazon Linux 2023 no longer in Amazon Linux 2027.
 

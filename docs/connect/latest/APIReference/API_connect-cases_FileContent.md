@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FileContent
-<a name="API_connect-cases_FileContent"></a>
 
 An object that represents a content of an Connect Customer file object.
 

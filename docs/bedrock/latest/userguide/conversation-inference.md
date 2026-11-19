@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-in
 ---
 
 # Inference using Converse API
-<a name="conversation-inference"></a>
 
 The Converse API is available on the `bedrock-runtime` endpoint only.
 

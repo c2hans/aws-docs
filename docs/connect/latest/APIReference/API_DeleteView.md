@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteVi
 ---
 
 # DeleteView
-<a name="API_DeleteView"></a>
 
 Deletes the view entirely. It deletes the view and all associated qualifiers (versions and aliases).
 

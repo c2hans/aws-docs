@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/contentful-configuring-co
 ---
 
 # Configuring Contentful connections
-<a name="contentful-configuring-connections"></a>
 
 Contentful connections support two authentication types: a Content Management API personal access token, or OAuth 2.0 (authorization code). For the token, store it in Secrets Manager; for OAuth 2.0, see [Setting up the authorization code flow for Contentful](contentful-setup-authorization-code-flow.md).
 

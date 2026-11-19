@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/outposts.html
 ---
 
 # AWS Outposts Support
-<a name="outposts"></a>
 
 **Warning**
 EKS Managed Nodegroups are not supported on Outposts.

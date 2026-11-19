@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkSecurityManager::Scope
-<a name="aws-resource-networksecuritymanager-scope"></a>
 
 The `AWS::NetworkSecurityManager::Scope` resource specifies an AWS Network Security Manager scope. A scope selects the accounts and the resources that a deployment applies to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdatePublicKey
-<a name="API_UpdatePublicKey"></a>
 
 Update public key information. Note that the only value you can change is the comment.
 

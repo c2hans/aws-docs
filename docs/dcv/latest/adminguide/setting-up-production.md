@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-product
 ---
 
 # Installing a production license
-<a name="setting-up-production"></a>
 
 The following sections in this topic describes how to purchase and use a production license (perpetual license or subscription).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Launch instances into an existing Capacity Reservation
-<a name="capacity-reservations-launch"></a>
 
 You can only launch an instance into a Capacity Reservation that:
 + Has matching attributes (instance type, platform, Availability Zone, and tenancy)

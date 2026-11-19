@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_BatchInference
 ---
 
 # BatchInferenceJobInput
-<a name="API_BatchInferenceJobInput"></a>
 
 The input configuration of a batch inference job.
 

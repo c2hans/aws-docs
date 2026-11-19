@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/welcome.html
 ---
 
 # AWS Events Reference
-<a name="welcome"></a>
 
 An *event* indicates a change in an environment or service. For example:
 + Amazon EC2 generates an event when the state of an instance changes, such as from pending to running.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure-pr
 ---
 
 # Prerequisites for integrating Amazon Inspector with Microsoft Azure
-<a name="inspector-azure-prereqs"></a>
 
 Before you create a connector, verify that your AWS account and Azure environment meet the following requirements. The Azure setup script handles most Azure configuration automatically (app registration, Event Hub, diagnostic settings, Azure role assignments, and Microsoft Graph API permissions).
 

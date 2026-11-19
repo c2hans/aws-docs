@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-sample-re
 ---
 
 # Sample conversational analytics streams to analyze chats in conversational analytics
-<a name="chat-sample-real-time-contact-analysis-segment-stream"></a>
 
 This topic provides sample segment streams for STARTED, SEGMENTS, COMPLETED, and FAILED events that occur during a chat contact.
 

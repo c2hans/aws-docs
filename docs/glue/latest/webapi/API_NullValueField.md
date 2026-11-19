@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_NullValueField.ht
 ---
 
 # NullValueField
-<a name="API_NullValueField"></a>
 
 Represents a custom null value such as a zeros or other value being used as a null placeholder unique to the dataset.
 

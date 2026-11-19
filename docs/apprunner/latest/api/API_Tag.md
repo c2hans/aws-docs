@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Describes a tag that is applied to an AWS App Runner resource. A tag is a metadata item consisting of a key-value pair.
 

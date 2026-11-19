@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-inferenc
 ---
 
 # Reporting usage for inference pricing
-<a name="ml-inference-metering"></a>
 
 If your product uses inference pricing, your container reports how many inferences each request or streaming session used. SageMaker AI passes the count to AWS Marketplace, which charges the buyer your price for each inference. What your container sends depends on how the buyer calls the endpoint. This topic covers real-time requests, streaming responses, and bidirectional streams.
 

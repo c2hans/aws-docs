@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testi
 ---
 
 # Restore testing inferred metadata
-<a name="restore-testing-inferred-metadata"></a>
 
 Restoring a recovery point requires restore metadata. To perform restore tests, AWS Backup automatically infers metadata that is likely to result in a successful restore. The command `get-restore-testing-inferred-metadata` can be used to preview what AWS Backup will infer. The command `get-restore-job-metadata` returns the set of metadata inferred by AWS Backup. Note that for some resource types (Amazon FSx), AWS Backup is not able to infer a complete set of metadata.
 

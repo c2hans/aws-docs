@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ExadbVmClust
 ---
 
 # ExadbVmClusterStorageDetails
-<a name="API_ExadbVmClusterStorageDetails"></a>
 
 Storage details for an Exascale VM cluster.
 

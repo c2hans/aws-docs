@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/specifying-sensit
 ---
 
 # Specify sensitive data with Systems Manager Parameter Store
-<a name="specifying-sensitive-data-parameters"></a>
 
 With AWS Batch, you can inject sensitive data into your containers by storing your sensitive data in AWS Systems Manager Parameter Store parameters and then referencing them in your container definition.
 

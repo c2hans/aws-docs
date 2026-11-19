@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Generate SDKs for an API using AWS CLI commands in API Gateway
-<a name="how-to-generate-sdk-cli"></a>
 
 You can use AWS CLI to generate and download an SDK of an API for a supported platform by calling the [get-sdk](https://docs.aws.amazon.com/cli/latest/reference/apigateway/get-sdk.html) command. We demonstrate this for some of the supported platforms in the following.
 

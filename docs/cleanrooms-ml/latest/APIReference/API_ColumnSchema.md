@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # ColumnSchema
-<a name="API_ColumnSchema"></a>
 
 Metadata for a column.
 

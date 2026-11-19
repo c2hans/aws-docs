@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribePers
 ---
 
 # DescribePersistentAppUI
-<a name="API_DescribePersistentAppUI"></a>
 
 Describes a persistent application user interface.
 

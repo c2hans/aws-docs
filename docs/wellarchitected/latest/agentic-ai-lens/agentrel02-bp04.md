@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL02-BP04 Develop clear instruction protocols for agents
-<a name="agentrel02-bp04"></a>
 
  Ad-hoc prompts interpreted slightly differently by each model call produce unpredictable behavior, and the problem multiplies in multi-agent workflows. Standardized instruction templates, versioned prompts, and explicit handoff schemas reduce ambiguity and make regressions traceable to a specific version.
 

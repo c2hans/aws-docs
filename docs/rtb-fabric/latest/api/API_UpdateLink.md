@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateLink.htm
 ---
 
 # UpdateLink
-<a name="API_UpdateLink"></a>
 
 Updates the configuration of a link between gateways.
 

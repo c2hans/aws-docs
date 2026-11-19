@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ebu-tt-font-styles.h
 ---
 
 # Font styles for EBU-TT-D
-<a name="ebu-tt-font-styles"></a>
 
 This section applies if you are [setting up EBU-TT-D captions](output-sidecar-and-smptett-mss.md) from source captions that are embedded or Teletext captions. You can optionally specify some of the font style information.
 

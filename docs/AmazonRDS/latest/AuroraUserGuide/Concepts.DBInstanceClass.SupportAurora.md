@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported DB engines for DB instance classes
-<a name="Concepts.DBInstanceClass.SupportAurora"></a><a name="instance_classes"></a>
+<a name="instance_classes"></a>
 
 The following tables show the supported DB instance classes for the Amazon Aurora DB engines.
 

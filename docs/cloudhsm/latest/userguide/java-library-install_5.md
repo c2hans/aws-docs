@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-library-i
 ---
 
 # Install the JCE provider for AWS CloudHSM Client SDK 5
-<a name="java-library-install_5"></a>
 
 The JCE provider for AWS CloudHSM Client SDK 5 is compatible with OpenJDK 17, OpenJDK 21, and OpenJDK 25. You can download OpenJDK from the [OpenJDK website](https://openjdk.java.net/).
 

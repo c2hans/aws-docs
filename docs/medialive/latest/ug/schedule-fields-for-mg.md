@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-
 ---
 
 # Fields for activating a motion graphics overlay
-<a name="schedule-fields-for-mg"></a>
 
 This table shows the fields that apply for an action to activate a motion graphics overlay.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FindMatchesTaskRu
 ---
 
 # FindMatchesTaskRunProperties
-<a name="API_FindMatchesTaskRunProperties"></a>
 
 Specifies configuration properties for a Find Matches task run.
 

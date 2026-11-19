@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Integrate Infrastructure Composer with Amazon Virtual Private Cloud (Amazon VPC)
-<a name="using-composer-services-vpc"></a>
 
 AWS Infrastructure Composer features an integration with the Amazon Virtual Private Cloud (Amazon VPC) service. Using Infrastructure Composer, you can do the following:
 + Identify the resources on your canvas that are in a VPC through a visual **VPC** tag.

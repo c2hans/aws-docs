@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-f
 ---
 
 # Using the Free Tier API
-<a name="using-free-tier-api"></a>
 
 [AWS Free Tier](https://aws.amazon.com/free) offers free usage each month for AWS services and products. You can use the Free Tier API to programmatically track your free tier usage against the monthly usage limits.
 

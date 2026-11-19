@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # LinkedinOauth2ProviderConfigInput
-<a name="API_LinkedinOauth2ProviderConfigInput"></a>
 
 Configuration settings for connecting to LinkedIn services using OAuth2 authentication. This includes the client credentials required to authenticate with LinkedIn's OAuth2 authorization server.
 

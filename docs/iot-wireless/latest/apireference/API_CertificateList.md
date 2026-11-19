@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cer
 ---
 
 # CertificateList
-<a name="API_CertificateList"></a>
 
 List of sidewalk certificates.
 

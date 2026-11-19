@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_WarmPoo
 ---
 
 # WarmPoolConfiguration
-<a name="API_WarmPoolConfiguration"></a>
 
 Describes a warm pool configuration.
 

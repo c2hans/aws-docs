@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Dn
 ---
 
 # DnsVerification
-<a name="API_DnsVerification"></a>
 
 Contains DNS verification details for a target domain, including the DNS record to create for domain ownership verification.
 

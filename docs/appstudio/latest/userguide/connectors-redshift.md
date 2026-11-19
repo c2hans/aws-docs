@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-re
 ---
 
 # Connect to Amazon Redshift
-<a name="connectors-redshift"></a>
 
 To connect App Studio with Amazon Redshift to enable builders to access and use Amazon Redshift resources in applications, you must perform the following steps:
 

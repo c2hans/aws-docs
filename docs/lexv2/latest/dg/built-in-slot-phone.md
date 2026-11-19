@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slot-phone.html
 ---
 
 # AMAZON.PhoneNumber
-<a name="built-in-slot-phone"></a>
 
 Converts the numbers or words that represent a phone number into a string format without punctuation as follows.
 

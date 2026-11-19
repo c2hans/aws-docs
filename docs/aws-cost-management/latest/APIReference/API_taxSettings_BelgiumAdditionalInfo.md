@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BelgiumAdditionalInfo
-<a name="API_taxSettings_BelgiumAdditionalInfo"></a>
 
 Additional tax information associated with your TRN in Belgium.
 

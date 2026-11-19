@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessage
-<a name="API_SendMessage"></a>
 
 Sends a chat message and streams the response for the specified agent space execution
 

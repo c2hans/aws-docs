@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_G
 ---
 
 # GroupingResource
-<a name="API_GroupingResource"></a>
 
 Indicates the resource that will be grouped in the recommended Application Component (AppComponent).
 

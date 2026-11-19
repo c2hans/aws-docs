@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-access-cont
 ---
 
 # Access control and setting permissions for SageMaker Studio notebooks
-<a name="security-access-control-studio-nb"></a>
 
 Amazon SageMaker Studio uses filesystem and container permissions for access control and isolation of Studio users and notebooks. This is one of the major differences between Studio notebooks and SageMaker notebook instances. This topic describes how permissions are set up to avoid security threats, what SageMaker AI does by default, and how the customer can customize the permissions. For more information about Studio notebooks and their runtime environment, see [Use Amazon SageMaker Studio Classic Notebooks](notebooks.md).
 

@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-prepare-roles.h
 ---
 
 # Prepare your IAM roles
-<a name="aam-prepare-roles"></a><a name="aam-identify-and-update-roles"></a>
+<a name="aam-identify-and-update-roles"></a>
 
 Before you start assigning IAM roles to IAM Identity Center users and groups, you need to:
 

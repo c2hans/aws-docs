@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/slate-management.h
 ---
 
 # MediaTailor slate ad insertion
-<a name="slate-management"></a>
 
 **Note**
 Slate is only available for live and live-to-VOD workflows.

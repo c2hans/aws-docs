@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelCap
 ---
 
 # CancelCapacityReservationFleetError
-<a name="API_CancelCapacityReservationFleetError"></a>
 
 Describes a Capacity Reservation Fleet cancellation error.
 

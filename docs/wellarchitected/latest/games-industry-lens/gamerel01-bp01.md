@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEREL01-BP01 Distribute game infrastructure across multiple Availability Zones and Regions to improve resiliency
-<a name="gamerel01-bp01"></a>
 
  To minimize the impact of localized infrastructure impairments on your players, you should distribute your infrastructure deployment uniformly across enough independent locations to be able to withstand unexpected impairments while still having enough capacity to meet the needs of your player demand.
 

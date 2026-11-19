@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetStora
 ---
 
 # GetStorageLensConfiguration
-<a name="API_control_GetStorageLensConfiguration"></a>
 
 **Note**
 This operation is not supported by directory buckets.
@@ -177,12 +176,24 @@ HTTP/1.1 200
          <IsEnabled>boolean</IsEnabled>
       </StorageLensTableDestination>
    </ExpandedPrefixesDataExport>
+   <CostAndUsageReportsPublish>
+      <PrefixLevel>
+         <IsEnabled>boolean</IsEnabled>
+         <SelectionCriteria>
+            <MaxDepth>integer</MaxDepth>
+            <MinDepth>integer</MinDepth>
+         </SelectionCriteria>
+      </PrefixLevel>
+   </CostAndUsageReportsPublish>
    <IsEnabled>boolean</IsEnabled>
    <AwsOrg>
       <Arn>string</Arn>
    </AwsOrg>
    <StorageLensArn>string</StorageLensArn>
    <PrefixDelimiter>string</PrefixDelimiter>
+   <IntAccessTiers>
+      <IsEnabled>boolean</IsEnabled>
+   </IntAccessTiers>
 </StorageLensConfiguration>
 ```
 
@@ -205,6 +216,10 @@ Type: [AccountLevel](API_control_AccountLevel.md) data type
 A container for the AWS organization for this S3 Storage Lens configuration.
 Type: [StorageLensAwsOrg](API_control_StorageLensAwsOrg.md) data type
 
+ ** [CostAndUsageReportsPublish](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-CostAndUsageReportsPublish"></a>
+A container for the configuration used to publish S3 Storage Lens cost data to AWS Cost and Usage Reports (AWS CUR).
+Type: [StorageLensCostAndUsageReportsPublish](API_control_StorageLensCostAndUsageReportsPublish.md) data type
+
  ** [DataExport](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-DataExport"></a>
 A container to specify the properties of your S3 Storage Lens metrics export including, the destination, schema and format.
 Type: [StorageLensDataExport](API_control_StorageLensDataExport.md) data type
@@ -226,6 +241,10 @@ Pattern: `[a-zA-Z0-9\-\_]+`
  ** [Include](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-Include"></a>
 A container for what is included in this configuration. This container can only be valid if there is no `Exclude` container submitted, and it's not empty.
 Type: [Include](API_control_Include.md) data type
+
+ ** [IntAccessTiers](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-IntAccessTiers"></a>
+A container element for S3 Storage Lens Intelligent-Tiering access tier metrics.
+Type: [IntAccessTiers](API_control_IntAccessTiers.md) data type
 
  ** [IsEnabled](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-IsEnabled"></a>
 A container for whether the S3 Storage Lens configuration is enabled.

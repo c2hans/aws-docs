@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-post-d
 ---
 
 # Post-deployment steps
-<a name="aft-post-deployment"></a>
 
 After the AFT infrastructure deployment is complete, follow these additional steps to complete the setup process and get ready to provision accounts.
 

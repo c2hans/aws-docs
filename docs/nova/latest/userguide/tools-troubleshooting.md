@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/tools-troubleshoot
 ---
 
 # Tool usage
-<a name="tools-troubleshooting"></a>
 
 You might see different errors when working with tools and Amazon Nova models. Here are a few examples and tips to help you troubleshoot.
 

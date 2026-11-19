@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/hosts.html
 ---
 
 # Hosts
-<a name="hosts"></a>
 
 On the **Hosts** page, you can view a list of host machines (either cloud or on-premises) you have installed Amazon DCV servers configured with Amazon DCV Session Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_LambdaFunc
 ---
 
 # LambdaFunctionAggregation
-<a name="API_LambdaFunctionAggregation"></a>
 
 The details that define a findings aggregation based on AWS Lambda functions.
 

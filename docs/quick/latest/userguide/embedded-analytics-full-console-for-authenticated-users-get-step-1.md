@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Step 1: Set up permissions
-<a name="embedded-analytics-full-console-for-authenticated-users-get-step-1"></a>
 
 **Important**
 AWS Quick Sight has new APIs for embedding analytics: `GenerateEmbedUrlForAnonymousUser` and `GenerateEmbedUrlForRegisteredUser`.

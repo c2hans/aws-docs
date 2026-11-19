@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workte
 ---
 
 # Workteam
-<a name="API_Workteam"></a>
 
 Provides details about a labeling work team.
 

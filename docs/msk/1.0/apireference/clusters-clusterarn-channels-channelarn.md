@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Clusters clusterArn Channels channelArn
-<a name="clusters-clusterarn-channels-channelarn"></a>
 
 ## URI
 <a name="clusters-clusterarn-channels-channelarn-url"></a>

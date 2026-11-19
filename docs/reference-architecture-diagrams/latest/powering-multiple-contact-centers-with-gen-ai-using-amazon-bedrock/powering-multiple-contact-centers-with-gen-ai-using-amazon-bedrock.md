@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Powering Multiple Contact Centers with GenAI Using Amazon Bedrock
-<a name="powering-multiple-contact-centers-with-gen-ai-using-amazon-bedrock"></a>
 
 Publication date: **October 4, 2023 ([Diagram history](#diagram-history))**
 

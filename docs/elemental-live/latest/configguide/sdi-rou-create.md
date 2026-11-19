@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/sdi-ro
 ---
 
 # Step B: Create the router
-<a name="sdi-rou-create"></a>
 
 Create the router on the Elemental Live node.
 

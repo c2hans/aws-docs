@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ge
 ---
 
 # GetAppMonitorData
-<a name="API_GetAppMonitorData"></a>
 
 Retrieves the raw performance events that RUM has collected from your web application, so that you can do your own processing or analysis of this data.
 

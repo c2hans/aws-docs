@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/show.html
 ---
 
 # .show
-<a name="show"></a>
 
 Used as a general extension, but ideal for the entertainment industry.
 

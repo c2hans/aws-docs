@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EpisodicConsolidationOverride
-<a name="API_EpisodicConsolidationOverride"></a>
 
 Contains configurations to override the default consolidation step for the episodic memory strategy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListCap
 ---
 
 # ListCapacityTasks
-<a name="API_ListCapacityTasks"></a>
 
 Lists the capacity tasks for your AWS account.
 

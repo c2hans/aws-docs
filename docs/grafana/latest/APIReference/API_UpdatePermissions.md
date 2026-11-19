@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_UpdatePe
 ---
 
 # UpdatePermissions
-<a name="API_UpdatePermissions"></a>
 
 Updates which users in a workspace have the Grafana `Admin` or `Editor` roles.
 

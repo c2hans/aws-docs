@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ReportO
 ---
 
 # ReportOverrides
-<a name="API_ReportOverrides"></a>
 
 The level of detail included in each aspect of your DataSync [task report](https://docs.aws.amazon.com/datasync/latest/userguide/task-reports.html).
 

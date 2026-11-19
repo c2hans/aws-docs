@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html
 ---
 
 # Working with access points
-<a name="efs-access-points"></a>
 
 EFS *access points *are application-specific entry points into an EFS file system that make it easier to manage application access to shared datasets. Access points can enforce a user identity, including the user's POSIX groups, for all file system requests that are made through the access point. Access points can also enforce a different root directory for the file system so that clients can only access data in the specified directory or its subdirectories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BlueG
 ---
 
 # BlueGreenDeploymentConfiguration
-<a name="API_BlueGreenDeploymentConfiguration"></a>
 
 Information about blue/green deployment options for a deployment group.
 

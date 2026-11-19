@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/legacy-subs
 ---
 
 # Legacy subscription router
-<a name="legacy-subscription-router-component"></a>
 
 The legacy subscription router (`aws.greengrass.LegacySubscriptionRouter`) manages subscriptions on the Greengrass core device. Subscriptions are a feature of AWS IoT Greengrass V1 that define the topics that Lambda functions can use for MQTT messaging on a core device. For more information, see [Managed subscriptions in the MQTT messaging workflow](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html#gg-msg-workflow) in the *AWS IoT Greengrass V1 Developer Guide*.
 

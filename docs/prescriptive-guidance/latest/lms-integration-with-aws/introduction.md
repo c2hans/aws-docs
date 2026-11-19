@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Integrating Learning Management Systems (LMS) with AWS
-<a name="introduction"></a>
 
 *Arnaud Lauer, Pete Davis, and Elie Elmalem, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Foundational capabilities for an AI-powered software development experience
-<a name="generative-ai-capabilities"></a>
 
 To successfully implement a generative AI-powered software development experience, you need to establish a set of foundational capabilities that span multiple personas in your organization. These capabilities represent your ability to effectively deploy resources, implement processes, and achieve desired outcomes in the context of AI-powered software development. By cultivating these capabilities, you create a robust foundation that helps you seamlessly integrate generative AI across all stages of the SDLC.
 

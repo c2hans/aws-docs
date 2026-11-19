@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteTape
-<a name="API_DeleteTape"></a>
 
 Deletes the specified virtual tape. This operation is only supported in the tape gateway type.
 

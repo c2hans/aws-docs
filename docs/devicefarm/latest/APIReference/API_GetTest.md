@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetTe
 ---
 
 # GetTest
-<a name="API_GetTest"></a>
 
 Gets information about a test.
 

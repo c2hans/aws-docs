@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5270-release
 ---
 
 # Amazon EMR release 5.27.0
-<a name="emr-5270-release"></a>
 
 ## 5.27.0 application versions
 <a name="emr-5270-app-versions"></a>

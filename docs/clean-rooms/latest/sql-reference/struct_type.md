@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/struct_
 ---
 
 # STRUCT type
-<a name="struct_type"></a>
 
 Use the STRUCT type to represent values with the structure described by a sequence of StructFields (fields).
 

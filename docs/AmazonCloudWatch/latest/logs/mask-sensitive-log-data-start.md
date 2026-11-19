@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensit
 ---
 
 # Create a data protection policy for a single log group
-<a name="mask-sensitive-log-data-start"></a>
 
 You can use the CloudWatch Logs console or AWS CLI commands to create a data protection policy to mask sensitive data.
 

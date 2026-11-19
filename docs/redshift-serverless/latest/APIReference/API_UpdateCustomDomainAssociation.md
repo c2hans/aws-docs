@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateCustomDomainAssociation
-<a name="API_UpdateCustomDomainAssociation"></a>
 
 Updates an Amazon Redshift Serverless certificate associated with a custom domain.
 

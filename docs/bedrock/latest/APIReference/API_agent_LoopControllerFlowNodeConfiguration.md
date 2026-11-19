@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Lo
 ---
 
 # LoopControllerFlowNodeConfiguration
-<a name="API_agent_LoopControllerFlowNodeConfiguration"></a>
 
 Contains configurations for the controller node of a DoWhile loop in the flow.
 

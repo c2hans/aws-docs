@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/resources.html
 ---
 
 # AWS Elemental MediaPackage related information
-<a name="resources"></a>
 
 The following table lists related resources that you'll find useful as you work with MediaPackage.
 

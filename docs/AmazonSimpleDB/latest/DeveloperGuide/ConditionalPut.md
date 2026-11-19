@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Con
 ---
 
 # Performing a Conditional Put
-<a name="ConditionalPut"></a>
 
  Conditional put enables you to insert or replace values for one or more attributes of an item if the existing value of an attribute matches a value that you specify. If the value does not match or is not present, the insert or update is rejected with a 409 (MultiValuedAttribute, ConditionalCheckFailed ) or 404 (AttributeDoesNotExist) error code.
 

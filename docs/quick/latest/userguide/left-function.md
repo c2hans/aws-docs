@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/left-function.htm
 ---
 
 # Left
-<a name="left-function"></a>
 
 `left` returns the leftmost characters from a string, including spaces. You specify the number of characters to be returned.
 

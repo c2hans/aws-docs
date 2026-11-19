@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BulkEmail
 ---
 
 # BulkEmailContent
-<a name="API_BulkEmailContent"></a>
 
 An object that contains the body of the message. You can specify a template message.
 

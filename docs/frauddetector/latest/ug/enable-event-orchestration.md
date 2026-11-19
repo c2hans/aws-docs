@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/enable-event-orc
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Enable event orchestration in Amazon Fraud Detector
-<a name="enable-event-orchestration"></a>
 
 You can enable event orchestration for an event either when you are creating your event type or after you have created your event type. Event orchestration can be enabled in the Amazon Fraud Detector console, using the `put-event-type` command, using the `PutEventType` API, or using the AWS SDK for Python (Boto3).
 

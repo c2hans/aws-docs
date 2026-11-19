@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_AbortConf
 ---
 
 # AbortConfigCriteria
-<a name="API_AbortConfigCriteria"></a>
 
 Structure representing one abort config criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/calcula
 ---
 
 # Route planning with a route matrix in Amazon Location
-<a name="calculate-route-matrix"></a>
 
 You can use Amazon Location Service to create inputs to your route planning and optimization software. You can create route results, including travel time and travel distance, for routes between a set of departure positions and a set of destination positions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GeoMatchParams
-<a name="API_voice-chime_GeoMatchParams"></a>
 
 The country and area code for a proxy phone number in a proxy phone session.
 

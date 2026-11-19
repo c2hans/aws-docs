@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsh
 ---
 
 # Data retrieval APIs for AWS Health APIs and Notifications
-<a name="awshealthapisandnotifications"></a>
 
 AWS Health APIs and Notifications provides the following APIs for data retrieval.
 

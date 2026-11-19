@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ModifyingProperties
-<a name="API_ModifyingProperties"></a>
 
 Information about the domain properties that are currently being modified.
 

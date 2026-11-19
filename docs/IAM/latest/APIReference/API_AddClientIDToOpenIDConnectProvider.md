@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AddClientIDT
 ---
 
 # AddClientIDToOpenIDConnectProvider
-<a name="API_AddClientIDToOpenIDConnectProvider"></a>
 
 Adds a new client ID (also known as audience) to the list of client IDs already registered for the specified IAM OpenID Connect (OIDC) provider resource.
 

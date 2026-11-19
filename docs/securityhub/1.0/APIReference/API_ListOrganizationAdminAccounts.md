@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListOrg
 ---
 
 # ListOrganizationAdminAccounts
-<a name="API_ListOrganizationAdminAccounts"></a>
 
 Lists the Security Hub CSPM administrator accounts. Can only be called by the organization management account.
 

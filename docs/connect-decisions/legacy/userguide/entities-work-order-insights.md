@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entit
 ---
 
 # Order Planning and Tracking
-<a name="entities-work-order-insights"></a>
 
 **Note**
 To generate an order insight, in addition to ingesting the required data entities and columns, you must configure your milestone and process definitions. For more information on configuring orders, see [Configuring Order Planning and Tracking for the first time](setting-up-work-orders.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerBfdStatus
-<a name="API_RouteServerBfdStatus"></a>
 
 The current status of Bidirectional Forwarding Detection (BFD) for a BGP session.
 

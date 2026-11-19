@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMESEC03-BP01 Determine your approach to identify and control player access to your game's environment and resources
-<a name="gamesec03-bp01"></a>
 
  This decision is influenced by your player acquisition and monetization strategy, player experience, and other factors such as the existing capabilities that might be provided by your game publishing partners. For example, a game might require purchases and require a player to create a user profile to associate real-money payment methods with their account.
 

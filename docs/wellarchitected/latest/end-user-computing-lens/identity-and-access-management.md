@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 |  EUCSEC04: How do you separate end user systems to meet your organization's policies?  |
 | --- |

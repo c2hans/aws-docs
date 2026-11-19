@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ClusterFor
 ---
 
 # ClusterForImageFilterCriteria
-<a name="API_ClusterForImageFilterCriteria"></a>
 
 The filter criteria to be used.
 

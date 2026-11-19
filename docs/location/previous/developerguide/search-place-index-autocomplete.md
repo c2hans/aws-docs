@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/search-
 ---
 
 # Autocomplete using Amazon Location
-<a name="search-place-index-autocomplete"></a>
 
 Autocomplete provides responsive feedback to end users as they are typing their search query. It provides suggestions for addresses and points of interest based on partial or misspelled free-form text. You can use place index resources to request autocomplete suggestions, and display the resulting suggestions in your application.
 

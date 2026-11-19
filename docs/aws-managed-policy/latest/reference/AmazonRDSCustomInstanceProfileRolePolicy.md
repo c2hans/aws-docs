@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSCustomInstanceProfileRolePolicy
-<a name="AmazonRDSCustomInstanceProfileRolePolicy"></a>
 
 **Description**: Allows Amazon RDS Custom to perform various automation actions and database management tasks through an EC2 instance profile.
 

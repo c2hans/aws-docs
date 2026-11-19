@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Configure networking, security groups, and IAM authentication
-<a name="best-practices-ecs-eks-networking-iam"></a>
 
 Containerized deployments on Amazon ECS or Amazon EKS require correct network configuration and IAM credential management to connect to Neptune.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/advanced-sys
 ---
 
 # Advanced systems with Amazon Nova
-<a name="advanced-systems"></a>
 
 ## Overview
 <a name="advanced-systems-overview"></a>

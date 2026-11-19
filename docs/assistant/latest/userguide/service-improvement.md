@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/service-impro
 ---
 
 # Service improvement for the AWS assistant
-<a name="service-improvement"></a>
 
 To help the AWS assistant provide the most relevant information, we may use certain content from the AWS assistant, such as questions that you ask the AWS assistant and its responses, for service improvement. This page explains what content we use and how to opt out.
 

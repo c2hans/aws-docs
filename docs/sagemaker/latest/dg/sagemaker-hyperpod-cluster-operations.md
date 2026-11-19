@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Tracking requests with SageMaker HyperPod cluster operations
-<a name="sagemaker-hyperpod-cluster-operations"></a>
 
 A cluster operation is a record of a single scaling or on-demand deep health check request on a SageMaker HyperPod cluster. HyperPod creates the operation when it receives your request and tracks it until HyperPod finishes working on it. Each operation has a unique ID, a status, and a record of what the request changed on each instance group. Tracking a request helps you follow it to completion and find the reason if it doesn't finish, without manually correlating cluster events.
 

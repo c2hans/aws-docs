@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-analytics-resou
 ---
 
 # Using the call analytics resource access role for the Amazon Chime SDK
-<a name="call-analytics-resource-access-role"></a>
 
 The calling account must create the resource access role used by a media insights pipeline configuration. You can't use cross-account roles.
 

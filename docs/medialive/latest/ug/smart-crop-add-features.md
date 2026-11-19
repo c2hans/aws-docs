@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smart-crop-add-featu
 ---
 
 # Adding more Elemental Inference features
-<a name="smart-crop-add-features"></a>
 
 In a MediaLive channel where Elemental Inference features are already set up, you can add more Elemental Inference features.
 

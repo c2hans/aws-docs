@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCovera
 ---
 
 # ListCoverageStatistics
-<a name="API_ListCoverageStatistics"></a>
 
 Lists Amazon Inspector coverage statistics for your environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Run/Debug Configurations dialog box
-<a name="run-debug-configurations-dialog"></a>
 
 The **Run/Debug Configurations** dialog box in the AWS Toolkit for JetBrains is displayed whenever you want to alter the run/debug configurations, whether locally, remotely, or in an Amazon Elastic Container Service (Amazon ECS) cluster.
 

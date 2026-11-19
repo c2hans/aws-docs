@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator KafkaClusterOAuthIamJwtBearer
-<a name="aws-properties-msk-replicator-kafkaclusteroauthiamjwtbearer"></a>
 
 <a name="aws-properties-msk-replicator-kafkaclusteroauthiamjwtbearer-description"></a>The `KafkaClusterOAuthIamJwtBearer` property type specifies Property description not available. for an [AWS::MSK::Replicator](aws-resource-msk-replicator.md).
 

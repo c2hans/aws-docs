@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetExadbVmCl
 ---
 
 # GetExadbVmCluster
-<a name="API_GetExadbVmCluster"></a>
 
 Returns information about the specified Exascale VM cluster.
 

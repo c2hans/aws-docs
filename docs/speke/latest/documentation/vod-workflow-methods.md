@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/vod-workflow-
 ---
 
 # SPEKE API v1 - VOD workflow method call examples
-<a name="vod-workflow-methods"></a>
 
  *Request Syntax Example*
 

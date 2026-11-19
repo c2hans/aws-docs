@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTes
 ---
 
 # StartTestCaseExecution
-<a name="API_StartTestCaseExecution"></a>
 
 Starts executing a published test case.
 

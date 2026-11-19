@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/export-local-disk.html
 ---
 
 # Exporting your data inventory to a local disk
-<a name="export-local-disk"></a>
 
 To export your inventory to a local disk, take the following steps:
 

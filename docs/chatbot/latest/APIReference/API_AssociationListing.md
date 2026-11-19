@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Associat
 ---
 
 # AssociationListing
-<a name="API_AssociationListing"></a>
 
 A listing of an association with a channel configuration.
 

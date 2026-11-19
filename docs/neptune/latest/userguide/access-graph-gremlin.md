@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Accessing a Neptune graph with Gremlin
-<a name="access-graph-gremlin"></a>
 
 Amazon Neptune is compatible with Apache TinkerPop and Gremlin. This means that you can connect to a Neptune DB instance and use the Gremlin traversal language to query the graph (see [The Graph](https://tinkerpop.apache.org/docs/current/reference/#graph) in the Apache TinkerPop documentation). For differences in the Neptune implementation of Gremlin, see [Gremlin standards compliance](access-graph-gremlin-differences.md).
 

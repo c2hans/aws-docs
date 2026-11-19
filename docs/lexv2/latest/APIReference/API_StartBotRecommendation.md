@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StartBotRe
 ---
 
 # StartBotRecommendation
-<a name="API_StartBotRecommendation"></a>
 
 Use this to provide your transcript data, and to start the bot recommendation process.
 

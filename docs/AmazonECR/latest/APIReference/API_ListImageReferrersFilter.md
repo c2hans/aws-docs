@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListIm
 ---
 
 # ListImageReferrersFilter
-<a name="API_ListImageReferrersFilter"></a>
 
 An object representing a filter on a [ListImageReferrers](API_ListImageReferrers.md) operation.
 

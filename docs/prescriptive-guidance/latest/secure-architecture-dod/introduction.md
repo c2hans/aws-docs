@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Secure Cloud Computing Architecture on AWS for the US Department of Defense
-<a name="introduction"></a>
 
 *Rob Higareda, Amazon Web Services*
 

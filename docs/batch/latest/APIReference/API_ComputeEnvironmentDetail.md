@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeEnv
 ---
 
 # ComputeEnvironmentDetail
-<a name="API_ComputeEnvironmentDetail"></a>
 
 An object that represents an AWS Batch compute environment.
 

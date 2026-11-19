@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantDetailsToAdd
-<a name="API_ParticipantDetailsToAdd"></a>
 
 The details to add for the participant.
 

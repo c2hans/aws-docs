@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayServiceNetworkConfiguration
-<a name="API_ExpressGatewayServiceNetworkConfiguration"></a>
 
 The network configuration for an Express service. By default, an Express service utilizes subnets and security groups associated with the default VPC.
 

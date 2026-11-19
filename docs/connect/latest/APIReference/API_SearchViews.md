@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchVi
 ---
 
 # SearchViews
-<a name="API_SearchViews"></a>
 
 Searches views based on name, description, or tags.
 

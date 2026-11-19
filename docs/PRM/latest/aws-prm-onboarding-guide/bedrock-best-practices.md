@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/bedr
 ---
 
 # Amazon Bedrock - Resource Tagging
-<a name="bedrock-best-practices"></a>
 
 Amazon Bedrock uses *application inference profiles* as the taggable resource for Partner Revenue Measurement. You must create an application inference profile, tag it with the `aws-apn-id-{{partner-central-aws-account-id}}` tag, and then use that profile for all model invocations. For how to construct your tag key, see [Constructing Your Tag Key and Value](manual-tagging.md#tag-key-construction).
 

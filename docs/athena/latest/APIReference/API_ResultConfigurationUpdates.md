@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultCon
 ---
 
 # ResultConfigurationUpdates
-<a name="API_ResultConfigurationUpdates"></a>
 
 The information about the updates in the query results, such as output location and encryption configuration for the query results.
 

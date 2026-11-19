@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCod
 ---
 
 # GetCodeFinding
-<a name="API_GetCodeFinding"></a>
 
 Retrieves the current state and details of a finding.
 

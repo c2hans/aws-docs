@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConfusionMatrix.h
 ---
 
 # ConfusionMatrix
-<a name="API_ConfusionMatrix"></a>
 
 The confusion matrix shows you what your transform is predicting accurately and what types of errors it is making.
 

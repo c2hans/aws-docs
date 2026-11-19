@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchAss
 ---
 
 # BatchAssociateAnalyticsDataSet
-<a name="API_BatchAssociateAnalyticsDataSet"></a>
 
 Associates a list of analytics datasets for a given Connect Customer instance to a target account. You can associate multiple datasets in a single call.
 

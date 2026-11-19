@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreateCommit
-<a name="API_CreateCommit"></a>
 
 Creates a commit for a repository on the tip of a specified branch.
 

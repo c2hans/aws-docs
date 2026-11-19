@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/sender-id-req
 ---
 
 # Request a sender ID in AWS End User Messaging SMS
-<a name="sender-id-request"></a>
 
 Before you request a sender ID verify that they are available, see [Supported countries and regions for SMS messaging with AWS End User Messaging SMS](phone-numbers-sms-by-country.md).
 

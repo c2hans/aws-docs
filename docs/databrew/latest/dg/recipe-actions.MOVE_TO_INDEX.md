@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MOVE_T
 ---
 
 # MOVE\_TO\_INDEX
-<a name="recipe-actions.MOVE_TO_INDEX"></a>
 
 Moves a column to a position specified by a number.
 

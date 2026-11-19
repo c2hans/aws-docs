@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-pre-
 ---
 
 # Pre-General Availability (GA) Amazon Linux 2023 release notes
-<a name="relnotes-pre-ga"></a>
 
 **Topics**
 + [AL2023 v2023.0.20230308 (RC1)](relnotes-2023.0.20230308rc1.md)

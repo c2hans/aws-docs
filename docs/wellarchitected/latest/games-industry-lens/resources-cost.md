@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Resources
-<a name="resources-cost"></a>
 
  Refer to the following resources to learn more about best practices for cost optimization:
 

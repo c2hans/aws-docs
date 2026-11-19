@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Cluste
 ---
 
 # ClusteringKey
-<a name="API_ClusteringKey"></a>
 
 The optional clustering column portion of your primary key determines how the data is clustered and sorted within each partition.
 

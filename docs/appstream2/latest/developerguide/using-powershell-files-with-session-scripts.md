@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/using-p
 ---
 
 # Using Windows PowerShell Files
-<a name="using-powershell-files-with-session-scripts"></a>
 
 To use Windows PowerShell files, specify the full path to the PowerShell file in the **filename** parameter:
 

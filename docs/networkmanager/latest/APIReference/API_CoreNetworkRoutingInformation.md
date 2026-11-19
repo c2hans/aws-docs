@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkRoutingInformation
-<a name="API_CoreNetworkRoutingInformation"></a>
 
 Routing information for a core network, including route details and BGP attributes.
 

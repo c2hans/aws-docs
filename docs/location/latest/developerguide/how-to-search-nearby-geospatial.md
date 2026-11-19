@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search nearby using geospatial context
-<a name="how-to-search-nearby-geospatial"></a>
 
 The SearchNearby API enables you to explore nearby, while restricting results within geospatial context (such as a circle or bounding box).
 

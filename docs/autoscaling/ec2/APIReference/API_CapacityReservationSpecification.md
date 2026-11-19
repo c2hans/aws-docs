@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Capacit
 ---
 
 # CapacityReservationSpecification
-<a name="API_CapacityReservationSpecification"></a>
 
  Describes the Capacity Reservation preference and targeting options. If you specify `open` or `none` for `CapacityReservationPreference`, do not specify a `CapacityReservationTarget`.
 

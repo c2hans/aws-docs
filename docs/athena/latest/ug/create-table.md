@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-table.html
 ---
 
 # CREATE TABLE
-<a name="create-table"></a>
 
 Creates a table with the name and the parameters that you specify.
 

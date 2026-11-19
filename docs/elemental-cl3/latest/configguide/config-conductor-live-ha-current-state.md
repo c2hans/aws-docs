@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Verifying the current HA state
-<a name="config-conductor-live-ha-current-state"></a>
 
 On the web interface for the primary Conductor Live node, go to the **Cluster** page and choose **Redundancy**.
 

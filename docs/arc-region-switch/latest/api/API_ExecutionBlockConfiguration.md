@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Executi
 ---
 
 # ExecutionBlockConfiguration
-<a name="API_ExecutionBlockConfiguration"></a>
 
 Execution block configurations for a workflow in a Region switch plan. An execution block represents a specific type of action to perform during a Region switch.
 

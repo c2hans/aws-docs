@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites one or more tags for the specified resource.
 

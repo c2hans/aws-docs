@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Del
 ---
 
 # DeleteOriginEndpointPolicy
-<a name="API_DeleteOriginEndpointPolicy"></a>
 
 Delete an origin endpoint policy.
 

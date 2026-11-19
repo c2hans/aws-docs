@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/timeseries-forecasti
 ---
 
 # Amazon SageMaker Autopilot data exploration notebook
-<a name="timeseries-forecasting-data-exploration-notebook"></a>
 
 Amazon SageMaker Autopilot cleans and pre-processes your dataset automatically. To help users understand their data, uncover patterns, relationships, and anomalies about the time-series, Amazon SageMaker Autopilot generates a **data exploration** static report in the form of a notebook for users to reference.
 

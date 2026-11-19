@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # GetSeries
-<a name="CloudWatch-PromQL-API-GetSeries"></a>
 
 The `GetSeries` operation returns the list of time series whose labels match one or more selectors.
 

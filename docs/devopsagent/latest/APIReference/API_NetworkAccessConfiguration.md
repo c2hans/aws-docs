@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Netw
 ---
 
 # NetworkAccessConfiguration
-<a name="API_NetworkAccessConfiguration"></a>
 
 Specifies how AWS DevOps Agent reaches your application using a Release Management Environment
 

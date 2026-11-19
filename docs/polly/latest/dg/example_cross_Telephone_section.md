@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_cross_Telephone_
 ---
 
 # Convert text to speech and back to text using an AWS SDK
-<a name="example_cross_Telephone_section"></a>
 
 The following code example shows how to:
 + Use Amazon Polly to synthesize a plain text (UTF-8) input file to an audio file.

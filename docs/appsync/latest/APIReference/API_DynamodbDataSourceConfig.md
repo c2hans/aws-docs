@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Dynamodb
 ---
 
 # DynamodbDataSourceConfig
-<a name="API_DynamodbDataSourceConfig"></a>
 
 Describes an Amazon DynamoDB data source configuration.
 

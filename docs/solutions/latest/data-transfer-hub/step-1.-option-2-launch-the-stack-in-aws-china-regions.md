@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/step-
 ---
 
 # Step 1. (Option 2) Launch the stack in AWS China Regions
-<a name="step-1.-option-2-launch-the-stack-in-aws-china-regions"></a>
 
 **Important**
 The following deployment instructions apply to AWS China Regions only. For deployment in AWS Regions refer to [Option 1](step-1.-option-1-launch-the-stack-in-aws-regions.md).

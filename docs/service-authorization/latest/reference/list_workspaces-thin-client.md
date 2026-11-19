@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon WorkSpaces Thin Client
-<a name="list_workspaces-thin-client"></a>
 
 Amazon WorkSpaces Thin Client (service prefix: `thinclient`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

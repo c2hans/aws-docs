@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_i
 ---
 
 # How Image Builder works with IAM policies and roles
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Image Builder, learn what IAM features are available to use with Image Builder.
 

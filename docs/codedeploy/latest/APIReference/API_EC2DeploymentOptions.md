@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_EC2De
 ---
 
 # EC2DeploymentOptions
-<a name="API_EC2DeploymentOptions"></a>
 
 Options that control how AWS CodeDeploy manages Amazon EC2 resources during a deployment.
 

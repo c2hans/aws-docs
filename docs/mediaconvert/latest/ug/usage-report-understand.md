@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/usage-report-unde
 ---
 
 # Understanding your AWS billing and usage reports for MediaConvert
-<a name="usage-report-understand"></a>
 
 AWS Elemental MediaConvert billing and usage reports use codes and abbreviations.
 

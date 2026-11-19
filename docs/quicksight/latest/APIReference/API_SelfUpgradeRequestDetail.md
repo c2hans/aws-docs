@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SelfU
 ---
 
 # SelfUpgradeRequestDetail
-<a name="API_SelfUpgradeRequestDetail"></a>
 
 Details of a self-upgrade request.
 

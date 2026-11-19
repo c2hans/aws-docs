@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeAppAssessment
-<a name="API_DescribeAppAssessment"></a>
 
 Describes an assessment for an AWS Resilience Hub application.
 

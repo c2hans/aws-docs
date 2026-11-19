@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Anomaly
-<a name="API_Anomaly"></a>
 
 An unusual cost pattern. This consists of the detailed metadata and the current status of the anomaly object.
 

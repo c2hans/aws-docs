@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_UngroupResou
 ---
 
 # UngroupResources
-<a name="API_UngroupResources"></a>
 
 Removes the specified resources from the specified group. This operation works only with static groups that you populated using the [GroupResources](API_GroupResources.md) operation. It doesn't work with any resource groups that are automatically populated by tag-based or CloudFormation stack-based queries.
 

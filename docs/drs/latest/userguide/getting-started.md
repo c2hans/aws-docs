@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/getting-started.htm
 ---
 
 # Getting started with AWS Elastic Disaster Recovery
-<a name="getting-started"></a>
 
 **Topics**
 + [Sign up for an AWS account](#sign-up-for-aws)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/annotation
 ---
 
 # AWS Flow Framework for Java Annotations
-<a name="annotations"></a>
 
 **Topics**
 + [@Activities](#annotations-activities)

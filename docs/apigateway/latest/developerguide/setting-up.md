@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/setting
 ---
 
 # Set up to use API Gateway
-<a name="setting-up"></a>
 
 Before you use Amazon API Gateway for the first time, complete the following tasks.
 

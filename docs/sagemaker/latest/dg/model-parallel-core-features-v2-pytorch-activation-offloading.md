@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Activation offloading
-<a name="model-parallel-core-features-v2-pytorch-activation-offloading"></a>
 
 **Important**
 In SMP v2.2.0, the activation offloading functionality of the SMP library doesn't work. Use the native PyTorch activation offloading instead.

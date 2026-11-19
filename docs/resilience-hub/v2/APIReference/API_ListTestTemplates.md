@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestTemplates
-<a name="API_ListTestTemplates"></a>
 
 Lists the available resilience test templates. A test template is a pre-configured, AWS recommended test that defines which resilience capability to validate.
 

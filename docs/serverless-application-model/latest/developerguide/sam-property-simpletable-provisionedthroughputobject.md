@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ProvisionedThroughputObject
-<a name="sam-property-simpletable-provisionedthroughputobject"></a>
 
 The object describing the properties of a provisioned throughput.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GpuInfo.h
 ---
 
 # GpuInfo
-<a name="API_GpuInfo"></a>
 
 Describes the GPU accelerators for the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/SPLIT_P
 ---
 
 # SPLIT\_PART function
-<a name="SPLIT_PART"></a>
 
 Splits a string on the specified delimiter and returns the part at the specified position.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Configure the Raspberry Pi camera
-<a name="producersdk-cpp-rpi-camera"></a>
 
 Follow these steps to configure the [Raspberry Pi camera module](https://www.raspberrypi.com/documentation/accessories/camera.html) to send video from the device to a Kinesis video stream.
 

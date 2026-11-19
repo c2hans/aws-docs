@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOpenSearchDashboardsFullAccess
-<a name="CloudWatchOpenSearchDashboardsFullAccess"></a>
 
 **Description**: This policy provides user access to create integration with OpenSearch to create, update, delete or view dashboards on the CloudWatch Logs console.
 

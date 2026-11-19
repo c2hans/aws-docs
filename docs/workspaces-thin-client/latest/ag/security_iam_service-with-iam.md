@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/securit
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # How Amazon WorkSpaces Thin Client works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to WorkSpaces Thin Client, learn what IAM features are available to use with WorkSpaces Thin Client.
 

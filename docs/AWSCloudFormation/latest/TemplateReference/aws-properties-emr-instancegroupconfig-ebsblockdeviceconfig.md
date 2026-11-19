@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceGroupConfig EbsBlockDeviceConfig
-<a name="aws-properties-emr-instancegroupconfig-ebsblockdeviceconfig"></a>
 
 Configuration of requested EBS block device associated with the instance group with count of volumes that are associated to every instance.
 

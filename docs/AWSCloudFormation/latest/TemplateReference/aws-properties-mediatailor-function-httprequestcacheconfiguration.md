@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaTailor::Function HttpRequestCacheConfiguration
-<a name="aws-properties-mediatailor-function-httprequestcacheconfiguration"></a>
 
 <a name="aws-properties-mediatailor-function-httprequestcacheconfiguration-description"></a>The `HttpRequestCacheConfiguration` property type specifies Property description not available. for an [AWS::MediaTailor::Function](aws-resource-mediatailor-function.md).
 

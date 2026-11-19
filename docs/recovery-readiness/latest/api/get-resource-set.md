@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-resour
 ---
 
 # Get a resource set
-<a name="get-resource-set"></a>
 
 The following is an example of a request to get a resource set, and the response.
 

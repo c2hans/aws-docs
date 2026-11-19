@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/develop-bp
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Developing a custom blueprint to meet project requirements
-<a name="develop-bp"></a>
 
 Before publishing a custom blueprint, you can develop the blueprint to meet specific requirements. You can develop your custom blueprint and test the blueprint by creating a project when previewing. You can develop the custom blueprint to include project components, such as specific source code, account connections, workflows, issues, or any other component that can be created in CodeCatalyst.
 

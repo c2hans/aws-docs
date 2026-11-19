@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Create a network analyzer configuration
-<a name="network-analyzer-create"></a>
 
 Before you can monitor your wireless gateways or wireless devices, you must create a network analyzer configuration. When creating the configuration, you only need to specify a configuration name. You can customize your configuration settings and add the resources that you want to monitor to your configuration even after it's created. The configuration settings determine the trace messaging information that you'll receive for those resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Represents a service in Resilience Hub. A service is the primary unit of resilience assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # DeleteKey
-<a name="API_geoapikeys_DeleteKey"></a>
 
 Deletes the specified API key. The API key must have been deactivated more than 90 days previously.
 

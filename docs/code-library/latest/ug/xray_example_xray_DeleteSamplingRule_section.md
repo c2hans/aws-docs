@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/xray_example_xray
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteSamplingRule` with an AWS SDK or CLI
-<a name="xray_example_xray_DeleteSamplingRule_section"></a>
 
 The following code examples show how to use `DeleteSamplingRule`.
 

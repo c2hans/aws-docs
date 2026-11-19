@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-configur
 ---
 
 # Enable agent memory
-<a name="agents-configure-memory"></a>
 
 To configure memory for your agent, you must first enable memory and then optionally specify the retention period for the memory. You can enable memory for your agent when you [create](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-create.html) or [update](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-manage.html#agents-edit) your agent.
 

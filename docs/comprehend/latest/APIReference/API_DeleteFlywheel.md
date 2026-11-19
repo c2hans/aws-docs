@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Delet
 ---
 
 # DeleteFlywheel
-<a name="API_DeleteFlywheel"></a>
 
 Deletes a flywheel. When you delete the flywheel, Amazon Comprehend does not delete the data lake or the model associated with the flywheel.
 

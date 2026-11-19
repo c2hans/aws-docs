@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterClusterSnapshotCopyStatus
-<a name="API_AwsRedshiftClusterClusterSnapshotCopyStatus"></a>
 
 You can configure Amazon Redshift to copy snapshots for a cluster to another AWS Region. This parameter provides information about a cross-Region snapshot copy.
 

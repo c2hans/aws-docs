@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Solution overview
-<a name="solution-overview"></a>
 
 AWS CodePipeline integrates with source control repositories and automatically triggers pipeline execution when code is committed. In this deployment strategy, the pipeline references an environment configuration file to select the appropriate version for each target environment. By using a centralized version-mapping configuration, the pipeline fetches the corresponding CloudFormation template versions for specific environments, providing consistent and controlled deployments across development, staging, and production.
 

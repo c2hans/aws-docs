@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GroupDetail.
 ---
 
 # GroupDetail
-<a name="API_GroupDetail"></a>
 
 Contains information about an IAM group, including all of the group's policies.
 

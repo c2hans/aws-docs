@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 +  [Amazon Q actions](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Q_Connect.html)
 +  [Amazon Q data types](https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Amazon_Q_Connect.html)
 
@@ -18,4 +17,4 @@ Use the Amazon Q in Connect APIs to create an assistant and a knowledge base, fo
 
 For more information, see [Use Amazon Q in Connect for generative AI powered agent assistance in real-time](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html) in the *Connect Customer Administrator Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeClusterOperation
-<a name="API_DescribeClusterOperation"></a>
 
 Retrieves detailed information about a specific operation for a given HyperPod cluster, such as a scaling operation or a deep health check. Use the `OperationId` returned by the `ListClusterOperations` operation to identify the operation to describe.
 

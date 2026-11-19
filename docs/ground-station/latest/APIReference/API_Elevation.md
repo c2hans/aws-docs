@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # Elevation
-<a name="API_Elevation"></a>
 
 Elevation angle of the satellite in the sky during a contact.
 

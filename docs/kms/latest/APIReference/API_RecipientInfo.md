@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_RecipientInf
 ---
 
 # RecipientInfo
-<a name="API_RecipientInfo"></a>
 
 Contains information about the party that receives the response from the API operation.
 

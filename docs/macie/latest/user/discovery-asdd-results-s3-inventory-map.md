@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-results
 ---
 
 # Visualizing data sensitivity with the S3 buckets map
-<a name="discovery-asdd-results-s3-inventory-map"></a>
 
 On the Amazon Macie console, the **S3 buckets** heat map provides an interactive, visual representation of data sensitivity across your Amazon Simple Storage Service (Amazon S3) data estate. It captures the results of automated sensitive data discovery activities that Macie has performed thus far for your Amazon S3 data in the current AWS Region.
 

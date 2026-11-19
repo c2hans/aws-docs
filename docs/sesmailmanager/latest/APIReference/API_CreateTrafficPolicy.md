@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateTrafficPolicy
-<a name="API_CreateTrafficPolicy"></a>
 
 Provision a new traffic policy resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Test run stops before completing
-<a name="next-gen-troubleshoot-test-stopped"></a>
 
 **Symptom:** A test run stops on its own before it finishes.
 

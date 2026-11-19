@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-
 ---
 
 # Investigate a WorkSpace
-<a name="workspaces-advisor-investigate"></a>
 
 Use Investigate a WorkSpace to identify and resolve issues impacting a specific WorkSpaces Personal resource. You start an investigation by describing the problem you're experiencing in your own words. WorkSpaces Advisor then reviews telemetry, knowledge bases, and best practices, anchored to your description. It surfaces the most relevant issues, along with recommended remediation actions, in the Amazon WorkSpaces console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-troubles
 ---
 
 # Troubleshoot the ODBC 2.x driver
-<a name="odbc-v2-driver-troubleshooting"></a>
 
 If you encounter issues with the Amazon Athena ODBC driver, you can contact Support (in the AWS Management Console, choose **Support**, **Support Center**).
 

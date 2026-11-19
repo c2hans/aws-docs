@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP02 Standardize cost attribution categories
-<a name="fnd06-bp02"></a>
 
  Establish organization-wide standards for cost attribution categories to allocate cloud costs to business units, departments, and projects. This standardization builds on the organization's resource tagging strategy. Consistent cost attribution supports financial governance and drives cost-aware behavior across the organization.
 

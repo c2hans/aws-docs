@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Trai
 ---
 
 # TrainingDataResult
-<a name="API_TrainingDataResult"></a>
 
 The data validation manifest created for the training dataset during model training.
 

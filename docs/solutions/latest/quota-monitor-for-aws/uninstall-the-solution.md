@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/u
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the Quota Monitor for AWS solution from the AWS Management Console or by using the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI).
 

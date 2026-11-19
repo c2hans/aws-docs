@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/Closing-gov
 ---
 
 # Closing an AWS GovCloud (US) account
-<a name="Closing-govcloud-account"></a>
 
 The following instructions describe the process to close an AWS GovCloud (US) account. Because AWS account management functions are not available in the AWS GovCloud (US) Management Console, closing an AWS GovCloud (US) account may require additional steps.
 

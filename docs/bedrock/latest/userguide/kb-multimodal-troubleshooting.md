@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-t
 ---
 
 # Troubleshooting multimodal knowledge bases
-<a name="kb-multimodal-troubleshooting"></a>
 
 This section provides guidance for resolving common issues encountered when working with multimodal knowledge bases. The troubleshooting information is organized by general limitations, common error scenarios with their causes and solutions, and performance optimization recommendations. Use this information to diagnose and resolve issues during setup, ingestion, or querying of your multimodal content.
 

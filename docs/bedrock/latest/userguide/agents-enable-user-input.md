@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-enable-u
 ---
 
 # Enable user input in Amazon Bedrock
-<a name="agents-enable-user-input"></a>
 
 Configure your agent to ask the user for more information if the required information is not available to complete a task. If user input is enabled, the agent reprompts the user for information about the missing parameters. You can configure the agent by enabling user input in your agent's action group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ser
 ---
 
 # ServiceProfile
-<a name="API_ServiceProfile"></a>
 
 Information about a service profile.
 

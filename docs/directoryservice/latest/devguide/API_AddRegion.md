@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Add
 ---
 
 # AddRegion
-<a name="API_AddRegion"></a>
 
 Adds two domain controllers in the specified Region for the specified directory.
 

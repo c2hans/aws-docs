@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/vpce-policy-co
 ---
 
 # Use VPC endpoints to control access to AWS KMS resources
-<a name="vpce-policy-condition"></a>
 
 You can control access to AWS KMS resources and operations when the request comes from VPC or uses a VPC endpoint. To do so, use one of the following [global condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#AvailableKeys) in a [key policy](key-policies.md) or [IAM policy](iam-policies.md).
 + Use the `aws:sourceVpce` condition key to grant or restrict access based on the VPC endpoint.

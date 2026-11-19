@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KbTem
 ---
 
 # KbTemplateConfiguration
-<a name="API_KbTemplateConfiguration"></a>
 
 The template configuration for a knowledge base. This object contains connector-specific configuration that defines how data is crawled and indexed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateExperi
 ---
 
 # UpdateExperimentTemplate
-<a name="API_UpdateExperimentTemplate"></a>
 
 Updates the specified experiment template.
 

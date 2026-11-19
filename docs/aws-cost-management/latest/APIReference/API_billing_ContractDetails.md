@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ContractDetails
-<a name="API_billing_ContractDetails"></a>
 
 The details of a contract returned by `GetContractInformation`. This is a union in which exactly one member is set, corresponding to the contract type. For a private pricing addendum, the `privatePricingAddendum` member is set. Check which member is present to determine the contract type.
 

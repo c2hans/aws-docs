@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-prereq
 ---
 
 # Prerequisites
-<a name="event-api-prerequisites"></a>
 
 Before you begin the getting started tutorials, confirm that you have completed the prerequisites to get set up with an AWS account.
 

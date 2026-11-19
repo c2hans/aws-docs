@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Import keys
-<a name="keys-import"></a>
 
 **Important**
  Examples require the latest version of the AWS CLI V2. Before getting started, make sure that you've upgraded to the [latest version](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).

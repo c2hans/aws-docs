@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/integrate-ota-
 ---
 
 # Integrating the OTA Agent into your application
-<a name="integrate-ota-agent"></a>
 
 The over-the-air (OTA) Agent is designed to simplify the amount of code you must write to add OTA update functionality to your product. That integration burden consists primarily of initialization of the OTA Agent and creating a custom callback function for responding to the OTA Agent event messages. During initialization OS, MQTT, HTTP (if HTTP is used for file download) and platform specific implementation (PAL) interfaces are passed to the OTA Agent. Buffers can also be initialized and passed to the OTA Agent.
 

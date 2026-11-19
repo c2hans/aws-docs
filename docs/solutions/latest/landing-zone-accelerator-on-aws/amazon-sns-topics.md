@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Amazon SNS topics
-<a name="amazon-sns-topics"></a>
 
 Two Amazon SNS topics are created with the solution by default. One topic is to notify on all `AWSAccelerator-Pipeline` pipeline events. The second notifies only on `AWSAccelerator-Pipeline` pipeline failures. You can choose to subscribe to these topics to increase the observability of your pipeline operations. For more information, refer to [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon SNS Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaImage
 ---
 
 # FpgaImage
-<a name="API_FpgaImage"></a>
 
 Describes an Amazon FPGA image (AFI).
 

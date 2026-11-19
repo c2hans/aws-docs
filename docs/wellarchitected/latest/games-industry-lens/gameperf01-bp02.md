@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF01-BP02 Consider operational overhead for scaling game servers
-<a name="gameperf01-bp02"></a>
 
  Consider the management and operational overhead associated with each hosting option.
 

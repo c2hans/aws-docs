@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telem
 ---
 
 # What is telemetry discovery and enablement?
-<a name="telemetry-config-what-is"></a>
 
 CloudWatch telemetry configuration gives you two core capabilities:
 + **Discovery and auditing** – Discover AWS resources across your account or organization and audit which resources have telemetry enabled. The experience shows the configuration status at the resource-type level and at more granular telemetry-detail levels.

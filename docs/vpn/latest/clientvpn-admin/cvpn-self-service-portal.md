@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-self-ser
 ---
 
 # AWS Client VPN access to the self-service portal
-<a name="cvpn-self-service-portal"></a>
 
 If you enabled the self-service portal for your Client VPN endpoint, you can provide your clients with a self-service portal URL. Clients can access the portal in a web browser, and use their user-based credentials to log in. In the portal, clients can download the Client VPN endpoint configuration file and they can download the latest version of the AWS provided client.
 

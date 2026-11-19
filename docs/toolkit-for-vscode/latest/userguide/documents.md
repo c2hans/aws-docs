@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/docu
 ---
 
 # AWS Documents
-<a name="documents"></a>
 
 The AWS Toolkit for Visual Studio Code supports the AWS Serverless Application Model `JSON Schema` for `AWS SAM templates`, enhancing the template authoring experience by enabling definitions, autocompletion, and validation directly in VS Code. AWS Documents supports all AWS SAM and CloudFormation resources. For additional details see the following resources:
 + For specific information about JSON Schema, see the [JSON Schema](https://json-schema.org/) JSON-Schema.org website.

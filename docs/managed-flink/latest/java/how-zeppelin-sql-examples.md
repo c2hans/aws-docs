@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-s
 ---
 
 # View example queries to analyza data in a Studio notebook
-<a name="how-zeppelin-sql-examples"></a>
 
 **Topics**
 + [Create tables with Amazon MSK/Apache Kafka](#how-zeppelin-examples-creating-tables)

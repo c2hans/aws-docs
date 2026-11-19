@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_B
 ---
 
 # BucketAccessLogConfig
-<a name="API_BucketAccessLogConfig"></a>
 
 Describes the access log configuration for a bucket in the Amazon Lightsail object storage service.
 

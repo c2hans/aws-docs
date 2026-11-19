@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-a
 ---
 
 # AWS managed policy: AWSMSKReplicatorExecutionRole
-<a name="security-iam-awsmanpol-AWSMSKReplicatorExecutionRole"></a>
 
 The `AWSMSKReplicatorExecutionRole` policy grants permissions to the Amazon MSK replicator to replicate data between MSK clusters. The permissions in this policy are grouped as follows:
 + **`cluster`** – Grants the Amazon MSK Replicator permissions to connect to the cluster using IAM authentication. Also grants permissions to describe and alter the cluster.

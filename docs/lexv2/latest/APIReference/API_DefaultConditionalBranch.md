@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DefaultCon
 ---
 
 # DefaultConditionalBranch
-<a name="API_DefaultConditionalBranch"></a>
 
 A set of actions that Amazon Lex should run if none of the other conditions are met.
 

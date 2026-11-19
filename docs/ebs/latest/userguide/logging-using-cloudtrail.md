@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/logging-using-cloud
 ---
 
 # Logging Amazon Data Lifecycle Manager API Calls Using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 With AWS CloudTrail, you can track user activity and API usage to demonstrate compliance with internal policies and regulatory standards. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 

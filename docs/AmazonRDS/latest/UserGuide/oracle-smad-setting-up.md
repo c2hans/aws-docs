@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-smad-s
 ---
 
 # Setting up self-managed Active Directory
-<a name="oracle-smad-setting-up"></a>
 
 Before you join an Amazon RDS for Oracle DB instance to your self-managed Active Directory (AD) domain, complete the following steps to prepare your AD domain and your AWS account. You complete these steps once, and you can use the Organizational Unit (OU), domain service account, AWS KMS key, and secret that they create for each DB instance in the same AWS account and AWS Region that you join to the domain. After you finish, join each DB instance to the domain and connect to it as described in [Configuring a Kerberos client and connecting to your DB instance](oracle-smad-connecting.md).
 + [Step 1: Create an Organizational Unit in your AD](#oracle-smad-setting-up.step1)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pipeli
 ---
 
 # PipelineExperimentConfig
-<a name="API_PipelineExperimentConfig"></a>
 
 Specifies the names of the experiment and trial created by a pipeline.
 

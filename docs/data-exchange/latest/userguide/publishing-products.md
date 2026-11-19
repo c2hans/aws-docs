@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/publishin
 ---
 
 # Publishing a new product in AWS Data Exchange
-<a name="publishing-products"></a>
 
 You can publish products on AWS Data Exchange using multiple AWS tools and consoles.
 

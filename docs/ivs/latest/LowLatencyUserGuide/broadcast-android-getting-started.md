@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/broadcast
 ---
 
 # Getting Started​ with the IVS Android Broadcast SDK \| Low-Latency Streaming
-<a name="broadcast-android-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the Amazon IVS low-latency streaming Android broadcast SDK.
 

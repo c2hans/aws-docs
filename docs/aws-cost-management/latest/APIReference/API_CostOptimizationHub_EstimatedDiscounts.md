@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EstimatedDiscounts
-<a name="API_CostOptimizationHub_EstimatedDiscounts"></a>
 
 Estimated discount details of the current and recommended resource configuration for a recommendation.
 

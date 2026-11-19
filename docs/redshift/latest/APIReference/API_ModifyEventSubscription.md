@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyE
 ---
 
 # ModifyEventSubscription
-<a name="API_ModifyEventSubscription"></a>
 
 Modifies an existing Amazon Redshift event notification subscription.
 

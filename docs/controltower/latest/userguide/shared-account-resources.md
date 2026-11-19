@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/shared-acc
 ---
 
 # Resources created in the service integration accounts
-<a name="shared-account-resources"></a>
 
 This section shows the resources that AWS Control Tower creates in the service integration accounts, when you set up your landing zone.
 

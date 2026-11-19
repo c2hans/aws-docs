@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_P
 ---
 
 # PartitionObjects
-<a name="API_PartitionObjects"></a>
 
 A structure containing a list of partition values and table objects.
 

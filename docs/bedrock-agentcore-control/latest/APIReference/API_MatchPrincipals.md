@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MatchPrincipals
-<a name="API_MatchPrincipals"></a>
 
 A condition that matches requests based on the caller's identity.
 

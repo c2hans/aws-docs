@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # GetMediaForFragmentList
-<a name="API_reader_GetMediaForFragmentList"></a>
 
 Gets media for a list of fragments (specified by fragment number) from the archived data in an Amazon Kinesis video stream.
 

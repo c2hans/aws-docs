@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # UpdateLicenseSpecificationsForResource
-<a name="API_UpdateLicenseSpecificationsForResource"></a>
 
 Adds or removes the specified license configurations for the specified AWS resource.
 

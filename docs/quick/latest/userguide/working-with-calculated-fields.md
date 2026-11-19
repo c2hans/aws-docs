@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-calc
 ---
 
 # Adding calculations
-<a name="working-with-calculated-fields"></a>
 
 Create calculated fields to transform your data by using one or more of the following:
 + [Operators](arithmetic-and-comparison-operators.md)

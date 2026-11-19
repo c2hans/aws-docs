@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListAccountActivities
-<a name="API_freetier_ListAccountActivities"></a>
 
  Returns a list of activities that are available. This operation supports pagination and filtering by status.
 

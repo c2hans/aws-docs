@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/define-ala
 ---
 
 # Define alarms on asset models in AWS IoT SiteWise
-<a name="define-alarms"></a>
 
 Asset models drive standardization of your industrial data and alarms. You can define alarm definitions on asset models to standardize the alarms for all assets based on an asset model.
 

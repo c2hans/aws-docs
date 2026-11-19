@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS03-BP03 Design publisher workloads to reduce defects and improve flow
-<a name="advops03-bp03"></a>
 
  Design Prebid, SGAI, FAST channel, and ad format workloads to minimize defects through automated testing, configuration validation, and progressive delivery. Treat all workload configurations as code. Use version control, automated linting, and integration testing to prevent configuration errors from reaching production.
 

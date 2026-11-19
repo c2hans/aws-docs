@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Container Insights Prometheus metrics monitoring
-<a name="ContainerInsights-Prometheus"></a>
 
 CloudWatch Container Insights monitoring for Prometheus automates the discovery of Prometheus metrics from containerized systems and workloads. Prometheus is an open-source systems monitoring and alerting toolkit. For more information, see [ What is Prometheus?](https://prometheus.io/docs/introduction/overview/) in the Prometheus documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_In
 ---
 
 # InvalidSignalDecoder
-<a name="API_InvalidSignalDecoder"></a>
 
 A reason that a signal decoder isn't valid.
 

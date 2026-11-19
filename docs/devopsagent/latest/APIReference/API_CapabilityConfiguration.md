@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Capa
 ---
 
 # CapabilityConfiguration
-<a name="API_CapabilityConfiguration"></a>
 
 Capability configuration for the AWS DevOps Agent.
 

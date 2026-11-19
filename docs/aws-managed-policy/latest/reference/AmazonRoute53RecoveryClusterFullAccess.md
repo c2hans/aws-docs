@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53RecoveryClusterFullAccess
-<a name="AmazonRoute53RecoveryClusterFullAccess"></a>
 
 **Description**: Provides full access to Amazon Route 53 Recovery Cluster
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRunt
 ---
 
 # UpdateRuntime
-<a name="API_UpdateRuntime"></a>
 
 Updates the properties of an existing customer-managed runtime, such as its description, license information, or lifecycle information.
 

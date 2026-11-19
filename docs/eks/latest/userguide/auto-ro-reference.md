@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-reference.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # EKS Auto Mode resource optimization resource reference
-<a name="auto-ro-reference"></a>
 
 EKS Auto Mode resource optimization uses two Kubernetes resources in the `eks.amazonaws.com/v1beta1` API group and two annotations that you set on workloads. Every EKS Auto Mode cluster that runs Kubernetes 1.36 or later includes the custom resource definitions. There’s no Amazon EKS API field for resource optimization.
 

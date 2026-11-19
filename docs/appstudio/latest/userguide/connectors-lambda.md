@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-la
 ---
 
 # Connect to AWS Lambda
-<a name="connectors-lambda"></a>
 
 To connect App Studio with Lambda to enable builders to access and use Lambda resources in applications, you must perform the following steps:
 

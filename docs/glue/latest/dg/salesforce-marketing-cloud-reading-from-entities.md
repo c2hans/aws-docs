@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Reading from Salesforce Marketing Cloud entities
-<a name="salesforce-marketing-cloud-reading-from-entities"></a>
 
 **Prerequisite**
 

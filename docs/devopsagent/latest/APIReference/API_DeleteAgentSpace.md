@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dele
 ---
 
 # DeleteAgentSpace
-<a name="API_DeleteAgentSpace"></a>
 
 Deletes an AgentSpace. This operation is idempotent and returns a 204 No Content response on success.
 

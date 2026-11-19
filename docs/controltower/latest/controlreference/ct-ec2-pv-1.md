@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.1] Require an Amazon EBS snapshot to be created from an encrypted EC2 volume
-<a name="ct-ec2-pv-1"></a>
 
 This control disallows creation of new snapshots that are based on unencrypted EBS volumes.
 

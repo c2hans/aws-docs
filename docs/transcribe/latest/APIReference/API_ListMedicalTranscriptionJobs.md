@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListM
 ---
 
 # ListMedicalTranscriptionJobs
-<a name="API_ListMedicalTranscriptionJobs"></a>
 
 Provides a list of medical transcription jobs that match the specified criteria. If no criteria are specified, all medical transcription jobs are returned.
 

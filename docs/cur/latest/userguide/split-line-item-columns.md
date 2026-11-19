@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/split-line-item-col
 ---
 
 # Split line item details
-<a name="split-line-item-columns"></a>
 
 Columns under the **splitLineItem** header in AWS Cost and Usage Reports are fields that appear in Cost and Usage Reports if you've opted in to the split cost allocation data feature. For more information, see [Understanding split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html). Split cost allocation data supports Amazon ECS (including Fargate), AWS Batch, Amazon EKS, Amazon S3, and networking flexible cost allocation. For networking, it allocates supported NAT gateway, Amazon EC2 instance, and VPC peering connection charges.
 

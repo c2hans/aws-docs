@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/Relat
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # AWS Data Pipeline Resources
-<a name="RelatedResources"></a>
 
 The following are resources to help you use AWS Data Pipeline.
 + **[AWS Data Pipeline Product Information](http://aws.amazon.com/datapipeline)**–The primary web page for information about AWS Data Pipeline.

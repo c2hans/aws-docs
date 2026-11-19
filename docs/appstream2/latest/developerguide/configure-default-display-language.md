@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Specify a Default Display Language
-<a name="configure-default-display-language"></a>
 
 There are two ways to specify the default display language for your users’ streaming sessions. Use the WorkSpaces Applications default application and Windows settings feature, or configure your image builder while signed in with an account that has local administrator permissions. The procedure in this section describes how to specify a default display language by using the WorkSpaces Applications default application and Windows settings feature.
 

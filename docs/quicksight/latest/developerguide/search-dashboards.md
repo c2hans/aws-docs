@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/search-
 ---
 
 # SearchDashboards
-<a name="search-dashboards"></a>
 
 Use the `SearchDashboards` API operation to search for dashboards in an AWS account. Following is an example AWS CLI command for this operation.
 

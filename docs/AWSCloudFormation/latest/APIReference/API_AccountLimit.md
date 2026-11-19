@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # AccountLimit
-<a name="API_AccountLimit"></a>
 
 Describes the current CloudFormation limits for your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon CloudWatch Internet Monitor
-<a name="list_internetmonitor"></a>
 
 Amazon CloudWatch Internet Monitor (service prefix: `internetmonitor`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

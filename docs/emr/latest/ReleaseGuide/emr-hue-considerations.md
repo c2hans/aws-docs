@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hue-consider
 ---
 
 # Considerations
-<a name="emr-hue-considerations"></a>
 
 Consider the following limitations when you use [Hue](https://gethue.com) on Amazon EMR.
 

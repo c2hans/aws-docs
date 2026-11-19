@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/c-
 ---
 
 # AWS Encryption SDK for C examples
-<a name="c-examples"></a>
 
 The following examples show you how to use the AWS Encryption SDK for C to encrypt and decrypt data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/byo-bedrock-kb-mo
 ---
 
 # Monitoring and observability
-<a name="byo-bedrock-kb-monitoring"></a>
 
 Amazon Bedrock emits AWS CloudTrail data events for `Retrieve` and `GetDocumentContent` API calls on your managed knowledge base. You can use these events to monitor successful usage and detect access failures. The following walkthrough sets up a CloudTrail trail that delivers data events to a Amazon CloudWatch Logs log group, then creates metric filters and alarms to alert on errors.
 

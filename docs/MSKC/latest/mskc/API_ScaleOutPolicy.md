@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ScaleOutPolicy.html
 ---
 
 # ScaleOutPolicy
-<a name="API_ScaleOutPolicy"></a>
 
 The scale-out policy for the connector.
 

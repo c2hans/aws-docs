@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Use multiple launch templates
-<a name="ec2-auto-scaling-mixed-instances-groups-launch-template-overrides"></a>
 
 In addition to using multiple instance types, you can also use multiple launch templates.
 

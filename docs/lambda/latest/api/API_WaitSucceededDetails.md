@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_WaitSucceededDetai
 ---
 
 # WaitSucceededDetails
-<a name="API_WaitSucceededDetails"></a>
 
 Details about a wait operation that succeeded.
 

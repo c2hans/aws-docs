@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppComponentCompliances
-<a name="API_ListAppComponentCompliances"></a>
 
 Lists the compliances for an AWS Resilience Hub AppComponent.
 

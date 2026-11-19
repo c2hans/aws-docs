@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-
 ---
 
 # Extend the file system after resizing an Amazon EBS volume
-<a name="recognize-expanded-volume-linux"></a>
 
 After you [increase the size of an EBS volume](requesting-ebs-volume-modifications.md), you must extend the partition and file system to the new, larger size. You can do this as soon as the volume enters the `optimizing` state.
 

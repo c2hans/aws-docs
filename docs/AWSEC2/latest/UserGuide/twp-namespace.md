@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/twp-namespace.ht
 ---
 
 # Check Amazon EC2 instance support for torn write prevention
-<a name="twp-namespace"></a>
 
 To confirm whether your instance and volume supports torn write prevention, and to view the NVMe namespace vendor-specific data that contains torn write prevention information, use the following command.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/threshold-alerts.
 ---
 
 # Working with threshold alerts in AWS Quick Sight
-<a name="threshold-alerts"></a>
 
 |  |
 | --- |

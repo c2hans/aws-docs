@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CustomP
 ---
 
 # CustomPluginConfiguration
-<a name="API_CustomPluginConfiguration"></a>
 
  Configuration information required to create a custom plugin.
 

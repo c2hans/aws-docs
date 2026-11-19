@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Delet
 ---
 
 # DeleteTracker
-<a name="API_DeleteTracker"></a>
 
 Deletes a tracker resource from your AWS account.
 

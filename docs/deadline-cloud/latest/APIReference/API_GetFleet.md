@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetFleet
-<a name="API_GetFleet"></a>
 
 Get a fleet.
 

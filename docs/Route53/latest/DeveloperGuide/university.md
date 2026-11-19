@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/university
 ---
 
 # .university
-<a name="university"></a>
 
 Used by universities and other educational organizations.
 

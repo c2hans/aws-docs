@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateProtectedJob
-<a name="API_UpdateProtectedJob"></a>
 
 Updates the processing of a currently running job.
 

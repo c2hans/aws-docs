@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteBrandAssignment
-<a name="API_DeleteBrandAssignment"></a>
 
 Deletes a brand assignment.
 

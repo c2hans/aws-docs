@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an
 ---
 
 # Overview of vectors
-<a name="vectors"></a>
 
 *Vectors *are numerical representations that help machines understand and process data. In generative AI, they serve two key purposes:
 + Representing latent spaces that capture data structure in compressed form

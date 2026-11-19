@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Enabling an automation rule in Security Hub
-<a name="securityhub-v2-automation-rules-enable"></a>
 
  This topic describes how to enable automation rules. When you enable automation rules, Security Hub resumes applying them. You can enable automation rules any time and in the AWS Region where you created them.
 

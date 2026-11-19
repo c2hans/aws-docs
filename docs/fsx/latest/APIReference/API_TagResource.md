@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_TagResource.
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags an Amazon FSx resource.
 

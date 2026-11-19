@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Deployment strategies
-<a name="deployment-strategies"></a>
 
  In addition to selecting the right tools to update your application code and supporting infrastructure, implementing the right deployment processes is a critical part of a complete, well-functioning deployment solution. The deployment processes that you choose to update your application can depend on your desired balance of control, speed, cost, risk tolerance, and other factors.
 

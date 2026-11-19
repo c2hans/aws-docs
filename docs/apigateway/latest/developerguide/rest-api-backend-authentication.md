@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Present client certificates to backend services with mutual TLS in API Gateway
-<a name="rest-api-backend-authentication"></a>
 
 API Gateway can present a client certificate to your backend during the TLS handshake. Your backend can then verify that requests come from API Gateway. This creates a mutual TLS connection between API Gateway and your backend service.
 

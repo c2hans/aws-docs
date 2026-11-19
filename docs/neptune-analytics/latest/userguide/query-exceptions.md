@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # Exceptions
-<a name="query-exceptions"></a>
 
 The following table lists query-side exceptions that could be encountered while using a query.
 

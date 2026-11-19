@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/call-mwaa-apis-web
 ---
 
 # Create a Apache Airflow webserver access token
-<a name="call-mwaa-apis-web"></a>
 
 You can use the commands on this page to create a web server access token. An access token provides access to your Amazon MWAA environment. For example, you can get a token, then deploy DAGs programmatically using Amazon MWAA APIs. The following section includes the steps to create an Apache Airflow web login token using the AWS CLI, a bash script, a POST API request, or a Python script. The token returned in the response is valid for 60 seconds.
 

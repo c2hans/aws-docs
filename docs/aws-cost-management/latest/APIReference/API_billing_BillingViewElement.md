@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingViewElement
-<a name="API_billing_BillingViewElement"></a>
 
 The metadata associated to the billing view.
 

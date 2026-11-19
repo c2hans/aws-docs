@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultGoogleDriveLocation
-<a name="API_agent-runtime_RetrievalResultGoogleDriveLocation"></a>
 
 The Google Drive location of a retrieval result.
 

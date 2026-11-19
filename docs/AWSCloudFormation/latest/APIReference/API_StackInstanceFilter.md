@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackInstanceFilter
-<a name="API_StackInstanceFilter"></a>
 
 The filter to apply to stack instances
 

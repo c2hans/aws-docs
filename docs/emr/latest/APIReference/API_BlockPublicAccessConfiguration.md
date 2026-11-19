@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_BlockPublicA
 ---
 
 # BlockPublicAccessConfiguration
-<a name="API_BlockPublicAccessConfiguration"></a>
 
 A configuration for Amazon EMR block public access. When `BlockPublicSecurityGroupRules` is set to `true`, Amazon EMR prevents cluster creation if one of the cluster's security groups has a rule that allows inbound traffic from 0.0.0.0/0 or ::/0 on a port, unless the port is specified as an exception using `PermittedPublicSecurityGroupRuleRanges`.
 

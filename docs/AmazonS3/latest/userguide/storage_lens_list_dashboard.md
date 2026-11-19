@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage_lens_l
 ---
 
 # List Amazon S3 Storage Lens dashboards
-<a name="storage_lens_list_dashboard"></a>
 
 ## Using the AWS CLI
 <a name="S3ListStorageLensConfigurationsCLI"></a>

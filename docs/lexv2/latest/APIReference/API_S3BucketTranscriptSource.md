@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_S3BucketTr
 ---
 
 # S3BucketTranscriptSource
-<a name="API_S3BucketTranscriptSource"></a>
 
 The object representing the Amazon S3 bucket containing the transcript, as well as the associated metadata.
 

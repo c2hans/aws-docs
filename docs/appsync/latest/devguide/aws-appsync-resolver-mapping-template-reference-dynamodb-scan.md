@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # Scan
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-scan"></a>
 
 The `Scan` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `Scan` request to DynamoDB, and enables you to specify the following:
 + A filter to exclude results

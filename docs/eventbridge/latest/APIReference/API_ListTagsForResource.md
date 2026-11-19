@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Displays the tags associated with an EventBridge resource. In EventBridge, rules and event buses can be tagged.
 

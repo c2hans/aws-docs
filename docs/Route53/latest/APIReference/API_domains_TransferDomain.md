@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # TransferDomain
-<a name="API_domains_TransferDomain"></a>
 
 Transfers a domain from another registrar to Amazon Route 53.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ElasticLoadBalancingV2::Listener JwtValidationConfig
-<a name="aws-properties-elasticloadbalancingv2-listener-jwtvalidationconfig"></a>
 
 <a name="aws-properties-elasticloadbalancingv2-listener-jwtvalidationconfig-description"></a>The `JwtValidationConfig` property type specifies Property description not available. for an [AWS::ElasticLoadBalancingV2::Listener](aws-resource-elasticloadbalancingv2-listener.md).
 

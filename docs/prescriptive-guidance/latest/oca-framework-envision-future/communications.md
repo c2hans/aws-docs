@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 3.2 Communications strategy and plan
-<a name="communications"></a>
 
 ## Overview
 <a name="communications-overview"></a>

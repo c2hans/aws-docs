@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Priv
 ---
 
 # PrivateNetworkAccess
-<a name="API_PrivateNetworkAccess"></a>
 
 Private network access to the resource inside a VPC, using a private connection.
 

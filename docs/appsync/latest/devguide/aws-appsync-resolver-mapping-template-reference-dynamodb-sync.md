@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # Sync
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-sync"></a>
 
 The `Sync` request mapping document lets you retrieve all the results from a DynamoDB table and then receive only the data altered since your last query (the delta updates). `Sync` requests can only be made to versioned DynamoDB data sources. You can specify the following:
 + A filter to exclude results

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-roles.html
 ---
 
 # Roles
-<a name="acxd-roles"></a>
 
 Manage permission roles that can be assigned to programmatic users. Roles define what actions a user can perform within a workspace.
 

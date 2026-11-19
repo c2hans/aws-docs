@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentConfigurationDetails
-<a name="API_EnvironmentConfigurationDetails"></a>
 
 The environment Configuration Details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # List shared opt-out lists with the AWS CLI
-<a name="nx-features-opt-out-lists-shared"></a>
 
 You can use the [describe-opt-out-lists](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/describe-opt-out-lists.html) to view opt-out lists shared with your account. For more information about shared resources, see the resource sharing documentation.
 

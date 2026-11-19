@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Phase 3: Scaling and optimization (weeks 5-6)
-<a name="phase-3"></a>
 
 When the pilot teams are running FMEA comfortably within their sprints, weeks 5-6 shift focus to rolling the process out across the organization and making it self-sustaining. This includes standardizing scoring criteria so risk data is comparable across teams, wiring risk gates into CI/CD pipelines, and establishing quarterly review cycles that keep the methodology sharp as your applications and architecture evolve.
 

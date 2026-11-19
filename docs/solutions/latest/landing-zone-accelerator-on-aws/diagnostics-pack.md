@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Diagnostics pack
-<a name="diagnostics-pack"></a>
 
 The diagnostics pack tool is deployed when the installer stack of the solution is deployed with `Yes` as the value for the **Enable Diagnostics Pack** parameter. To create diagnostic reports and other configuration files, the diagnostics pack tool creates the `${ACCELERATOR_PREFIX}-Diagnostic` AWS Lambda function and the `${ACCELERATOR_PREFIX}-DiagnosticProject` AWS CodeBuild project.
 

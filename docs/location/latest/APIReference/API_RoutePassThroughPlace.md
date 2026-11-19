@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePa
 ---
 
 # RoutePassThroughPlace
-<a name="API_RoutePassThroughPlace"></a>
 
 The place where the waypoint is passed through and not treated as a stop.
 

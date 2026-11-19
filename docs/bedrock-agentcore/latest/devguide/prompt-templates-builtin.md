@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/prompt
 ---
 
 # Prompt templates
-<a name="prompt-templates-builtin"></a>
 
 Each prompt template contains at least one placeholder, which is replaced with actual trace information before it is sent to the judge model.
 

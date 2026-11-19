@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Start
 ---
 
 # StartFHIRExportJob
-<a name="API_StartFHIRExportJob"></a>
 
 Start a FHIR export job.
 

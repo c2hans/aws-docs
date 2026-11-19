@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_TargetDataSe
 ---
 
 # TargetDataSetting
-<a name="API_TargetDataSetting"></a>
 
 Defines settings for a target data provider for a data migration.
 

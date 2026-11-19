@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 ---
 
 # Amazon GameLift Servers Realtime interface
-<a name="realtime-script-objects"></a>
 
 When an Amazon GameLift Servers Realtime script initializes, an interface to the Realtime server is returned. This topic describes the properties and methods available through the interface. Learn more about writing Realtime scripts and view a detailed script example in [Customize an Amazon GameLift Servers Realtime script](realtime-script.md).
 

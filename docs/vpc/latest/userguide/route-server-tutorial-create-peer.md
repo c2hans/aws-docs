@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-tutori
 ---
 
 # Step 6: Create route server peer
-<a name="route-server-tutorial-create-peer"></a>
 
 A route server peer is a session between a route server endpoint and the device deployed in AWS (such as a firewall appliance or other network security function running on an EC2 instance). The device must meet these requirements:
 + Have an elastic network interface in the VPC

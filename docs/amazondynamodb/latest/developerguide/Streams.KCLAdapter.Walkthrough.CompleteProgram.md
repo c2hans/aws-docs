@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Str
 ---
 
 # Complete program: DynamoDB Streams Kinesis adapter
-<a name="Streams.KCLAdapter.Walkthrough.CompleteProgram"></a>
 
 The following is the complete Java program that performs the tasks described in [Walkthrough: DynamoDB Streams Kinesis adapter](Streams.KCLAdapter.Walkthrough.md). When you run it, you should see output similar to the following.
 

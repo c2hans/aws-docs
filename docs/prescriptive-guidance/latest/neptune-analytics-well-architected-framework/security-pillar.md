@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Security pillar
-<a name="security-pillar"></a>
 
 Cloud security is the highest priority at AWS. As an AWS customer, you benefit from a data center and network architecture that is built to meet the requirements of the most security-sensitive organizations. Security is a shared responsibility between you and AWS. The [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) describes this as security *of* the cloud and security *in* the cloud:
 + **Security of the cloud** – AWS is responsible for protecting the infrastructure that runs AWS services in the AWS Cloud. AWS also provides you with services that you can use securely. Third-party auditors regularly test and verify the effectiveness of AWS security as part of [AWS compliance programs](https://aws.amazon.com/compliance/programs/). To learn about the compliance programs that apply to Neptune, see [AWS Services in Scope by Compliance Program](https://aws.amazon.com/compliance/services-in-scope/).

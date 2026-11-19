@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJo
 ---
 
 # DescribeJobDefinitions
-<a name="API_DescribeJobDefinitions"></a>
 
 Describes a list of job definitions. You can specify a `status` (such as `ACTIVE`) to only return job definitions that match that status.
 

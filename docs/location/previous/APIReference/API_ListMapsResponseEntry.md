@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListM
 ---
 
 # ListMapsResponseEntry
-<a name="API_ListMapsResponseEntry"></a>
 
 Contains details of an existing map resource in your AWS account.
 

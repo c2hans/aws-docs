@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # Filter
-<a name="API_amazon-q-connect_Filter"></a>
 
 A search filter.
 

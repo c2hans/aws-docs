@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UnarchiveWav
 ---
 
 # UnarchiveWave
-<a name="API_UnarchiveWave"></a>
 
 Unarchive wave.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UnusedAccessTypeStatistics
-<a name="API_UnusedAccessTypeStatistics"></a>
 
 Contains information about the total number of findings for a type of unused access.
 

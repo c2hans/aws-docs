@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # DomainNetworkSettings
-<a name="API_DomainNetworkSettings"></a>
 
 Contains network settings for the Active Directory domain.
 

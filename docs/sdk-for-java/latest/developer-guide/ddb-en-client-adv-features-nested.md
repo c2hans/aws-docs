@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Work with attributes that are beans, maps, lists and sets
-<a name="ddb-en-client-adv-features-nested"></a>
 
 A bean definition, such as the `Person` class shown below, might define properties (or attributes) that refer to types with additional attributes. For instance, in the `Person` class, `mainAddress` is a property that refers to an `Address` bean that defines additional value attributes. `addresses` refers to a Java Map, whose elements refer to `Address` beans. These complex types can be thought of a containers of simple attributes that you use for their data value in the context of DynamoDB.
 

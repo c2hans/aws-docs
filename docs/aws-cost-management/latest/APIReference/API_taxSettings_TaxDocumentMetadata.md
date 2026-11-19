@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxDocumentMetadata
-<a name="API_taxSettings_TaxDocumentMetadata"></a>
 
 The metadata for your tax document.
 

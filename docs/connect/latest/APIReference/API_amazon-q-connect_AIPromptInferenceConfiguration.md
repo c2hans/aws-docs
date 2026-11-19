@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIPromptInferenceConfiguration
-<a name="API_amazon-q-connect_AIPromptInferenceConfiguration"></a>
 
 The configuration for inference parameters when using AI Prompts.
 

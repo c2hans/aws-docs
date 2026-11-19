@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/integra
 ---
 
 # Integrating with ServiceNow
-<a name="integrations-partners-servicenow"></a>
 
 ServiceNow provides a cloud-based service management system to create and manage organization-level workflows, such as for IT services, ticketing systems, and support. The AWS Service Management Connector integrates ServiceNow with Systems Manager to provision, manage, and operate AWS resources from ServiceNow. You can use the AWS Service Management Connector to integrate ServiceNow with Automation, Change Manager, Incident Manager, and OpsCenter, all tools in AWS Systems Manager.
 

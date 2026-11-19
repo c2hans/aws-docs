@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mo
 ---
 
 # MonthlySchedule
-<a name="API_agent_MonthlySchedule"></a>
 
 A monthly sync on a specified day of the month.
 

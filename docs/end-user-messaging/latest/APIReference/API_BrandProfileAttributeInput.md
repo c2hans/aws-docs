@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # BrandProfileAttributeInput
-<a name="API_BrandProfileAttributeInput"></a>
 
 Specifies an attribute to create for a brand profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Copy Lightsail snapshots across AWS Regions
-<a name="amazon-lightsail-copying-snapshots-from-one-region-to-another"></a>
 
 In Amazon Lightsail, you can copy instance snapshots and block storage disk snapshots from one AWS Region to another, or within the same Region. For example, you can copy snapshots between Regions if you created and configured resources in one Region, but later decide that a different Region is more appropriate. You might also decide to replicate your resources across multiple Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericSeparatorConfiguration
-<a name="API_NumericSeparatorConfiguration"></a>
 
 The options that determine the numeric separator configuration.
 

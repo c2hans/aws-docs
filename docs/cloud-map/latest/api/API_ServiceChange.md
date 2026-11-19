@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ServiceChange.h
 ---
 
 # ServiceChange
-<a name="API_ServiceChange"></a>
 
 A complex type that contains changes to an existing service.
 

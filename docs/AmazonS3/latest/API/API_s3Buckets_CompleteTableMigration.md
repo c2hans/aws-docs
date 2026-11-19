@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Comple
 ---
 
 # CompleteTableMigration
-<a name="API_s3Buckets_CompleteTableMigration"></a>
 
 Completes the migration of a table. The table's most recent migration must be in the `succeeded`, `failed` or `cancelled` state. After you complete the migration, you can't sync the table again, and you can write to and maintain the table as you do any other table: compaction starts, and unreferenced file removal follows the table bucket's configuration. You can't undo this operation. Calling it again for the same table returns a `ConflictException`.
 

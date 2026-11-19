@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Mean time to respond
-<a name="mean-time-to-respond"></a>
 
  Mean time to respond is the average time it takes to begin the initial response to a possible security incident. Specifically, this is the time between initial alert or discovery of a possible security incident and first actions taken to respond. This is similar to mean time to acknowledge, but is the measurement of specific responsive actions (for example, acquire system data, contain the system) compared to simple recognition or acknowledgement of the situation.
 

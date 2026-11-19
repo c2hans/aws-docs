@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sap-abap_1_pinpoi
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Amazon Pinpoint SMS and Voice API examples using SDK for SAP ABAP
-<a name="sap-abap_1_pinpoint-sms-voice_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for SAP ABAP with Amazon Pinpoint SMS and Voice API.
 

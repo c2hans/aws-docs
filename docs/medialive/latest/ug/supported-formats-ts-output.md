@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/supported-formats-ts
 ---
 
 # Captions formats supported in UDP, SRT, MediaConnect Router, or multiplex outputs
-<a name="supported-formats-ts-output"></a>
 
 In this table, look up your input container and captions type. Then read across to find the caption formats that are supported in MediaLive in an MPEG-TS streaming output or in an MPTS multiplex output, when you have this input container and captions type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Monetization
 ---
 
 # MonetizationFilter
-<a name="API_MonetizationFilter"></a>
 
 A filter for narrowing monetization statistics and settlement record results. Specify a filter name and one or more values to match.
 

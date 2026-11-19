@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/compute-
 ---
 
 # Compute and hardware
-<a name="compute-and-hardware"></a>
 
 | IOTPERF02: How do you measure and maintain the performance of your IoT solution? |
 | --- |

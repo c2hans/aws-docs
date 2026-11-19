@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/step-3-deploy.
 ---
 
 # Step 3: Deploy to AWS
-<a name="step-3-deploy"></a>
 
 Nova Act provides two deployment approaches depending on your needs.
 

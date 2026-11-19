@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNet
 ---
 
 # CreateNetworkAcl
-<a name="API_CreateNetworkAcl"></a>
 
 Creates a network ACL in a VPC. Network ACLs provide an optional layer of security (in addition to security groups) for the instances in your VPC.
 

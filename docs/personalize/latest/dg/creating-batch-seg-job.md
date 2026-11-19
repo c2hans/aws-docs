@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/creating-batch-seg
 ---
 
 # Getting user segments with a batch segment job
-<a name="creating-batch-seg-job"></a>
 
  If you used a USER\_SEGMENTATION recipe, you can create batch segment jobs to get user segments with your solution version. Each user segment is sorted in descending order based on the probability that each user will interact with items in your inventory. Depending on the recipe, your input data must be a list of items ([Item-Affinity recipe](item-affinity-recipe.md)) or item attributes ([Item-Attribute-Affinity recipe](item-attribute-affinity-recipe.md)) in JSON format. You can create a batch segment job with the Amazon Personalize console, the AWS Command Line Interface (AWS CLI), or AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/oauth-privatelin
 ---
 
 # AWS PrivateLink
-<a name="oauth-privatelink"></a>
 
 AWS Sign-In OAuth APIs support AWS PrivateLink, enabling you to access OAuth authorization endpoints from within your Amazon VPC without traversing the public internet. You can configure VPC endpoints for AWS Sign-In to keep OAuth authorization traffic on the AWS network.
 

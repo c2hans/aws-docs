@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Message.ht
 ---
 
 # Message
-<a name="API_Message"></a>
 
 The object that provides message text and its type.
 

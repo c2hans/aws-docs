@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-amazon
 ---
 
 # Using Amazon States Language to define Step Functions workflows
-<a name="concepts-amazon-states-language"></a>
 
 The Amazon States Language is a JSON-based, structured language used to define your state machine, a collection of [states](workflow-states.md), that can do work (`Task` states), determine which states to transition to next (`Choice` states), stop an execution with an error (`Fail` states), and so on.
 

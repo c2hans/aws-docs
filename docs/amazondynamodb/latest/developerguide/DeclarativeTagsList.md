@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dec
 ---
 
 # DynamoDB attributes from the .NET object persistence model
-<a name="DeclarativeTagsList"></a>
 
 This section describes the attributes that the object persistence model offers so that you can map your classes and properties to DynamoDB tables and attributes.
 

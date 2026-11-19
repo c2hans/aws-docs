@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08-
 ---
 
 # COST08-BP02 Implement a buffer or throttle to manage demand
-<a name="cost08-bp02"></a>
 
  Demand rarely arrives at a steady rate. When a workload provisions capacity for every peak, that capacity sits idle between peaks. You pay for the peak, even though average demand is lower. Buffering and throttling smooth the incoming rate so the workload runs closer to average demand. Buffering stores requests for later processing, while throttling asks clients to slow down and retry.
 

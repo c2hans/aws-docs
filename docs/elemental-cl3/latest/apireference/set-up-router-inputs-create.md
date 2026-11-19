@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Create a Router Input
-<a name="set-up-router-inputs-create"></a>
 
 This request creates a new input for the specified router. Use this command repeatedly to set up all the router inputs. The total number of Router Input entities for a specified router must not exceed the `max_input `on that Router entity: it must not exceed the actual physical inputs on the router.
 

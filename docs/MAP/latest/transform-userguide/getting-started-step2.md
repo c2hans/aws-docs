@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Tagging Resources
-<a name="getting-started-step2"></a>
 
 You can begin tagging your migrated resources in order for them to be included in your MAP 2.0 incentive calculations. Tagging your migrated workloads with the `aws-apn-id` tag gives you the following benefits:
 

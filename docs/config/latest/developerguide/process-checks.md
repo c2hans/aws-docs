@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/process-che
 ---
 
 # AWS Config Process Checks Within a Conformance Pack for AWS Config
-<a name="process-checks"></a>
 
 Process checks is a type of AWS Config rule that allows you to track your external and internal tasks that require verification as part of the conformance packs. These checks can be added to an existing conformance pack or a new conformance pack. You can track all compliance that includes AWS Configurations and manual checks in a single location.
 

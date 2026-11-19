@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions-get
 ---
 
 # GetCalculatedAttributesForCustomerProfile
-<a name="interactions-getcalculatedattributesforcustomerprofile"></a>
 
 Retrieve calculated attributes for a customer profile. Customer Profiles must be enabled for your Connect Customer instance.
 

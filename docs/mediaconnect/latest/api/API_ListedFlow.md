@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedFlow.h
 ---
 
 # ListedFlow
-<a name="API_ListedFlow"></a>
 
  A summary of a flow, including its ARN, Availability Zone, and source type.
 

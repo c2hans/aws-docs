@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/participate-meetings.htm
 ---
 
 # Participating in meetings
-<a name="participate-meetings"></a>
 
 Amazon Chime provides several tools for interacting with other attendees in a meeting. For example, you can raise your hand, show or hide video tiles, and use the in-meeting chat panel to send messages to meeting attendees. The following topics start from the left side of the meetings window.
 

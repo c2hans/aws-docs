@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolFunct
 ---
 
 # ListSolFunctionInstanceInfo
-<a name="API_ListSolFunctionInstanceInfo"></a>
 
 Lists information about a network function instance.
 

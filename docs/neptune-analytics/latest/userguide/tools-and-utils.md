@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/tools
 ---
 
 # Neptune Analytics tools and utilities
-<a name="tools-and-utils"></a>
 
 Neptune Analytics provides tools and utilities that can simplify and automate your work with a graph. Among these are the following:
 

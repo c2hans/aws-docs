@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListScheduledQueries
-<a name="API_ListScheduledQueries"></a>
 
 Lists all scheduled queries in your account and region. You can filter results by state to show only enabled or disabled queries.
 

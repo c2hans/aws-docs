@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # UserDefined
-<a name="API_geospatial_UserDefined"></a>
 
 The output resolution (in target georeferenced units) of the result of the operation
 

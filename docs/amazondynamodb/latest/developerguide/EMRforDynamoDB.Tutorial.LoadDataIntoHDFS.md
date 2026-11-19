@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Step 4: Load data into HDFS
-<a name="EMRforDynamoDB.Tutorial.LoadDataIntoHDFS"></a>
 
 In this step, you will copy a data file into Hadoop Distributed File System (HDFS), and then create an external Hive table that maps to the data file.
 

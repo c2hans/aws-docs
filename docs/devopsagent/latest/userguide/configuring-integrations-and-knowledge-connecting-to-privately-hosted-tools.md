@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Connecting to privately hosted tools
-<a name="configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools"></a>
 
 ## Private connections overview
 <a name="private-connections-overview"></a>

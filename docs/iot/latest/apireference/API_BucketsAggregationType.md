@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BucketsAggre
 ---
 
 # BucketsAggregationType
-<a name="API_BucketsAggregationType"></a>
 
 The type of bucketed aggregation performed.
 

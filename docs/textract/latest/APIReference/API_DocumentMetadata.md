@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Documen
 ---
 
 # DocumentMetadata
-<a name="API_DocumentMetadata"></a>
 
 Information about the input document.
 

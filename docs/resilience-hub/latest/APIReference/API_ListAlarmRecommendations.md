@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAlarmRecommendations
-<a name="API_ListAlarmRecommendations"></a>
 
 Lists the alarm recommendations for an AWS Resilience Hub application.
 

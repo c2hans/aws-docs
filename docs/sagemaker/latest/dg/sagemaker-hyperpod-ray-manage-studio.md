@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Managing Ray workloads with Studio
-<a name="sagemaker-hyperpod-ray-manage-studio"></a>
 
 Amazon SageMaker Studio manages Ray workloads from a web interface. Open your cluster in the HyperPod console, then choose the **Tasks** tab. The tab lists the Ray resources in the namespaces you have access to, and the **Task type** filter switches between `RayCluster`, `RayJob`, `RayCronJob`, and `RayService`.
 

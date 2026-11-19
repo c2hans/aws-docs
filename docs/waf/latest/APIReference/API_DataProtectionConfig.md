@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DataProtecti
 ---
 
 # DataProtectionConfig
-<a name="API_DataProtectionConfig"></a>
 
 Specifies data protection to apply to the web request data for the web ACL. This is a web ACL level data protection option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Start
 ---
 
 # StartSoftwareDeploymentToImageBuilder
-<a name="API_StartSoftwareDeploymentToImageBuilder"></a>
 
 Initiates license included applications deployment to an image builder instance.
 

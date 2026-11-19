@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/resource-profi
 ---
 
 # Resource Sensitivity Profile
-<a name="resource-profiles"></a>
 
 The Resource Sensitivity Profile resource provides statistical data for sensitive data discovery metrics that apply to individual Amazon Simple Storage Service (Amazon S3) buckets for your account. If you're the Amazon Macie administrator for an organization, this includes S3 buckets that your member accounts own.
 

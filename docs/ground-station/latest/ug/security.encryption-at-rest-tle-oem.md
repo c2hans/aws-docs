@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryp
 ---
 
 # Encryption at rest for TLE and OEM ephemeris data
-<a name="security.encryption-at-rest-tle-oem"></a>
 
 ## Key policy requirements for TLE and OEM ephemeris
 <a name="w2aac62c22c29b3"></a>

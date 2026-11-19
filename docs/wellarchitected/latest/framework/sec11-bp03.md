@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP03 Automate testing throughout the development and release lifecycle
-<a name="sec11-bp03"></a>
 
  Manual security checks run late and inconsistently, and they depend on a reviewer being available. Automated tests run the same way every time and give builders feedback while the code is still new. Automate security testing across the development and release lifecycle so issues appear early and known flaws do not reach production.
 

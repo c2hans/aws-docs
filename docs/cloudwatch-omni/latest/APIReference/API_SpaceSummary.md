@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # SpaceSummary
-<a name="API_SpaceSummary"></a>
 
 Summary of a space. Call GetSpace for the full space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchLoc
 ---
 
 # SearchLocalGatewayRoutes
-<a name="API_SearchLocalGatewayRoutes"></a>
 
 Searches for routes in the specified local gateway route table.
 

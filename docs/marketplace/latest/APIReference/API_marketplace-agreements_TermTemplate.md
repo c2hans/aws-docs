@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # TermTemplate
-<a name="API_marketplace-agreements_TermTemplate"></a>
 
 Defines how a specific type of term changes each time the agreement renews. Exactly one of the following fields is set.
 

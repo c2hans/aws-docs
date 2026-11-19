@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Cr
 ---
 
 # CreateSubscriber
-<a name="API_CreateSubscriber"></a>
 
 Creates a subscriber on an event bus, which delivers matching events to the configured target. The bus must be ACTIVE. Retries carrying the same ClientToken are idempotent.
 

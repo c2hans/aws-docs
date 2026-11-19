@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/authentic
 ---
 
 # Use Amazon Cognito to authenticate
-<a name="authenticating-using-cognito"></a>
 
 You can use Amazon Cognito authentication as an alternative to directly using AWS Identity and Access Management (IAM) users with frontend SDK requests.
 
@@ -14,7 +13,7 @@ For more information, see [Getting Started with User Pools](https://docs.aws.ama
 You may want to use this form of authentication for the following reasons:
 + **Unauthenticated users** – If you have a website with anonymous users, you can use Amazon Cognito identity pools.
 
-  For more information, see the section on [Use Amazon Cognito to authenticate](#authenticating-using-cognito).
+  For more information, see the section on [Use Amazon Cognito to authenticate](authenticating-using-cognito.md).
 + **Your own authentication** – If you would like to use your own authentication process, or combine multiple authentication methods, you can use Amazon Cognito Federated Identities.
 
   For more information, see [Getting Started with Federated Identities](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html) in the *Amazon Cognito Developer Guide*.

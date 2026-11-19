@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Recreate an API mapping using routing rules
-<a name="rest-api-routing-rules-recreate-api-mapping"></a>
 
 You can recreate an API mapping using routing rules. To recreate an API mapping, make sure to turn on base path striping. This preserves the behavior of API mappings. For more information, see [Strip the base path with base path conditions](rest-api-routing-rules.md#rest-api-routing-rules-condition-path-split).
 

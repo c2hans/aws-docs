@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/cdn-auth-s
 ---
 
 # Configure MediaPackage CDN authorization setup
-<a name="cdn-auth-setup"></a>
 
 Configure AWS Elemental MediaPackage CDN authorization to secure your streaming content by setting up custom HTTP headers, storing secrets, and configuring IAM permissions. This procedure ensures that only authorized CDN requests can access your MediaPackage endpoints.
 

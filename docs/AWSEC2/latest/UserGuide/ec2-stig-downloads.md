@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stig-downloa
 ---
 
 # STIG hardening script downloads
-<a name="ec2-stig-downloads"></a>
 
 Amazon groups STIG hardening scripts together into operating system related bundles for each release. Bundles are archive files that are appropriate for the target operating system where they download and run. Linux script bundles are stored as TAR files (.tgz file extension). Windows script bundles are stored as ZIP files (.zip file extension).
 

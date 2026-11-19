@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListTags
 ---
 
 # ListTagsForResources
-<a name="API_ListTagsForResources"></a>
 
 Lists tags for up to 10 health checks or hosted zones.
 

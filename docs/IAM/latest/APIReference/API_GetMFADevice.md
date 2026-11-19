@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetMFADevice
 ---
 
 # GetMFADevice
-<a name="API_GetMFADevice"></a>
 
 Retrieves information about an MFA device for a specified user.
 

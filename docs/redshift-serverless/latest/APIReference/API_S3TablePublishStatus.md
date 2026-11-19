@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # S3TablePublishStatus
-<a name="API_S3TablePublishStatus"></a>
 
 Describes the state of Amazon S3 Tables system-table log publishing for a namespace.
 

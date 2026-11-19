@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowFieldPriorityDedupeStrategyConfiguration
-<a name="API_DataIntegrationFlowFieldPriorityDedupeStrategyConfiguration"></a>
 
 The field priority deduplication strategy details.
 

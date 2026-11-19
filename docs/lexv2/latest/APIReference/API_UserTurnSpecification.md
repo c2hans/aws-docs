@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnSp
 ---
 
 # UserTurnSpecification
-<a name="API_UserTurnSpecification"></a>
 
 Contains information about the expected and input values for the user turn.
 

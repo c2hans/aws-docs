@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Tag
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or updates tags for a resource in AWS CodeArtifact.
 

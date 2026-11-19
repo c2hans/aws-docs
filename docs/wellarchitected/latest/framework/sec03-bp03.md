@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03-b
 ---
 
 # SEC03-BP03 Analyze public and cross-account access
-<a name="sec03-bp03"></a>
 
  Some resources need to be reachable from outside their own account, whether publicly or by another account, to support shared data or common tools. Such access tends to persist beyond the reason it was granted. Keep an inventory of which resources are shared and with whom, monitor it continuously, and reduce public and cross-account access to only the resources that require it. Apply the same scrutiny to internal access to sensitive resources, and verify which principals in your organization can reach them so access stays limited to those you intend.
 

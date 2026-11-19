@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Training
-<a name="training"></a>
 
 When you start your migration journey to AWS, your software development, operations, support, and security teams need to be equipped with knowledge of Amazon OpenSearch Service. Consider all teams that interact with your solution. When you are migrating from an Elasticsearch or an OpenSearch environment, most of the knowledge can be carried over. Provide training to the following teams:
 + **Software development team** – Educate your software development team on the APIs and features, such as mechanisms for configuring data ingestion.

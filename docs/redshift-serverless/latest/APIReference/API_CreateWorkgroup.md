@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # CreateWorkgroup
-<a name="API_CreateWorkgroup"></a>
 
 Creates an workgroup in Amazon Redshift Serverless.
 

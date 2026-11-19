@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployme
 ---
 
 # Lifecycle hooks for Amazon ECS service deployments
-<a name="deployment-lifecycle-hooks"></a>
 
 When a deployment starts, it progresses through lifecycle stages. Each stage can be in a state such as `IN_PROGRESS` or `SUCCEEDED`. You can configure lifecycle hooks at specific stages to run custom logic or introduce decision points before the deployment proceeds. Amazon ECS supports two types of lifecycle hooks:
 

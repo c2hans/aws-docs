@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/garbage-colle
 ---
 
 # Garbage collection in Amazon DocumentDB
-<a name="garbage-collection"></a>
 
 Amazon DocumentDB implements a multi-version concurrency control (MVCC) database architecture that creates new versions of document and index entries for every update operation. This architecture provides enables transaction isolation, preventing one transaction's changes from appearing in another.
 

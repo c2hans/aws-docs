@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetSummary
-<a name="API_OfferSetSummary"></a>
 
 Summarized information about an offer set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/auto
 ---
 
 # Automated User Agent
-<a name="automated-user-agent"></a>
 
 For partner solutions that make multiple regular AWS API/CLI calls, you can automate User Agent string inclusion using AWS SDK Application ID settings instead of instrumenting every call individually.
 

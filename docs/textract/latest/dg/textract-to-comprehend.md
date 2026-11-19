@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-to-comprehen
 ---
 
 # Extracting and Sending Text to AWS Comprehend for Analysis
-<a name="textract-to-comprehend"></a>
 
 Amazon Textract lets you include document text detection and analysis in your applications. With Amazon Textract you can extract text from a variety of different document types using both synchronous and asynchronous document processing. The extracted text can then be saved to a file or database, or sent to another AWS service for further processing.
 

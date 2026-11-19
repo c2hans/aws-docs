@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Action
-<a name="API_Action"></a>
 
 The action that starts at the beginning of an incident. The response plan defines the action.
 

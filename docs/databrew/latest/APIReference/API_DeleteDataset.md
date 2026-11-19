@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DeleteD
 ---
 
 # DeleteDataset
-<a name="API_DeleteDataset"></a>
 
 Deletes a dataset from DataBrew.
 

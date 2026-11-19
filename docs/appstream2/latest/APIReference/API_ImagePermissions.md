@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImagePermissions
-<a name="API_ImagePermissions"></a>
 
 Describes the permissions for an image.
 

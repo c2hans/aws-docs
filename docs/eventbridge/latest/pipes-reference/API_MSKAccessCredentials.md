@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_M
 ---
 
 # MSKAccessCredentials
-<a name="API_MSKAccessCredentials"></a>
 
 The AWS Secrets Manager secret that stores your stream credentials.
 

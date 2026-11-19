@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Endpoin
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Describes a connection endpoint.
 

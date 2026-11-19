@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/comprehend_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create an Amazon Lex V2 chatbot to engage your website visitors
-<a name="comprehend_example_cross_LexChatbotLanguages_section"></a>
 
 The following code examples show how to create a chatbot to engage your website visitors.
 

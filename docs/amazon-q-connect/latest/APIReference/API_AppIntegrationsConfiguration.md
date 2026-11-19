@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AppIntegrationsConfiguration
-<a name="API_amazon-q-connect_AppIntegrationsConfiguration"></a>
 
 Configuration information for Amazon AppIntegrations to automatically ingest content.
 

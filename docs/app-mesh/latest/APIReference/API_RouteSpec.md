@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteSp
 ---
 
 # RouteSpec
-<a name="API_RouteSpec"></a>
 
 An object that represents a route specification. Specify one route type.
 

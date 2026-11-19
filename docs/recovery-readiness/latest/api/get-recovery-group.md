@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-recove
 ---
 
 # Get a recovery group
-<a name="get-recovery-group"></a>
 
 The following is an example of a request to get a recovery group, and the response.
 

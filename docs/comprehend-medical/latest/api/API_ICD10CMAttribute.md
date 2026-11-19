@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ICD10C
 ---
 
 # ICD10CMAttribute
-<a name="API_ICD10CMAttribute"></a>
 
 The detected attributes that relate to an entity. This includes an extracted segment of the text that is an attribute of an entity, or otherwise related to an entity. InferICD10CM detects the following attributes: `Direction`, `System, Organ or Site`, and `Acuity`.
 

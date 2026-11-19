@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/consistency.ht
 ---
 
 # Supported Apache Cassandra read and write consistency levels and associated costs
-<a name="consistency"></a>
 
 The topics in this section describe which Apache Cassandra consistency levels are supported for read and write operations in Amazon Keyspaces (for Apache Cassandra).
 

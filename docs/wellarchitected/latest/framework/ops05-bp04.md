@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 ---
 
 # OPS05-BP04 Assess operational readiness
-<a name="ops05-bp04"></a>
 
  An operational readiness review (ORR) is a structured check that your team can operate a workload safely before it goes live and as it evolves. It uses a checklist built from best practices and past incidents to surface gaps while they are still cheap to fix.
 

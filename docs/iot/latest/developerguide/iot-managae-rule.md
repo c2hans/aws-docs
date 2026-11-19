@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-ru
 ---
 
 # Managing an AWS IoT rule
-<a name="iot-managae-rule"></a>
 
 You can use the following actions to manage your AWS IoT rules.
 

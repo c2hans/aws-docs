@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicV2DataSetRelationEndpoint
-<a name="API_TopicV2DataSetRelationEndpoint"></a>
 
 A structure that represents an endpoint of a data set relation of a topic.
 

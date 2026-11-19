@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/understanding
 ---
 
 # SSL/TLS certificates in Lightsail
-<a name="understanding-tls-ssl-certificates-in-lightsail-https"></a>
 
 Amazon Lightsail uses SSL/TLS certificates to validate custom (registered) domains that you can use with Lightsail load balancers, content delivery network (CDN) distributions, and container services. After a validated certificate is attached to one of those Lightsail resources, the traffic that is routed to that resource through the domain is encrypted using Hypertext Transfer Protocol Secure (HTTPS).
 

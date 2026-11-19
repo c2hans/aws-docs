@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-data
 ---
 
 # Working with data in apps in Quick
-<a name="working-with-data-apps"></a>
 
 You can persist and manage data within your apps in Quick apps in multiple ways.
 

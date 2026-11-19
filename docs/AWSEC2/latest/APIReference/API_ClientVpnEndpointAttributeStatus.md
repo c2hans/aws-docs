@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnEndpointAttributeStatus
-<a name="API_ClientVpnEndpointAttributeStatus"></a>
 
 Describes the status of the Client VPN endpoint attribute.
 

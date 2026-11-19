@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/creditcard
 ---
 
 # .creditcard
-<a name="creditcard"></a>
 
 Used by companies or banks that issue credit cards.
 

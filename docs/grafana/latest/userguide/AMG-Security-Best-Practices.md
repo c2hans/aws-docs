@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-Security-Be
 ---
 
 # Security best practices
-<a name="AMG-Security-Best-Practices"></a>
 
 The topics in this section explain the best practices to follow to best maintain security in your Amazon Managed Grafana deployment.
 

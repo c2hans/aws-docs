@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/reinfo
 ---
 
 # Reinforcement learning overview
-<a name="reinforcement-learning-overview"></a>
 
 In reinforcement learning, an agent, such as a physical or virtual AWS DeepRacer vehicle, with an objective to achieve an intended goal interacts with an environment to maximize the agent’s total reward. The agent takes an action, guided by a strategy referred to as a policy, at a given environment state and reaches a new state. There is an immediate reward associated with any action. The reward is a measure of the desirability of the action. This immediate reward is considered to be returned by the environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-options.
 ---
 
 # VPC configuration options
-<a name="create-vpc-options"></a>
 
 You can specify the following configuration options when you create a VPC.
 

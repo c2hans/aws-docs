@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SupportPlan
-<a name="API_channel_SupportPlan"></a>
 
 Configuration for different types of support plans.
 

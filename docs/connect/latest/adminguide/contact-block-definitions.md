@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-block-
 ---
 
 # Flow block definitions in the flow designer in Connect Customer
-<a name="contact-block-definitions"></a>
 
 Use flow blocks to create flows in the flow designer. Drag flow blocks and drop them onto a canvas to arrange a flow.
 

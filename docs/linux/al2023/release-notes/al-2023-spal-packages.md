@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/al-2023-spal-
 ---
 
 # List of SPAL packages available as of the 2023.12.20261021 release
-<a name="al-2023-spal-packages"></a>
 
 **Important**
 SPAL packages are not covered by the same level of support as core AL2023 packages, which receive support for the entire life of Amazon Linux 2023:

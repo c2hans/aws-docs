@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/customizing-speech-vad-s
 ---
 
 # Configuring voice activity detection sensitivity
-<a name="customizing-speech-vad-sensitivity"></a>
 
 Voice Activity Detection (VAD) is a technology that determines when speech is present in an audio signal. Amazon Lex V2 uses VAD to optimize speech recognition accuracy by distinguishing between actual speech and background noise. You can configure the VAD sensitivity level to improve your bot's performance in different acoustic environments.
 

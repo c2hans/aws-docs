@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Specifies the type and name of a resource referenced by an event.
 

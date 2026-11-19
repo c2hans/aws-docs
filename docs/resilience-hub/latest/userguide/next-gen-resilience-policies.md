@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Resilience policies
-<a name="next-gen-resilience-policies"></a>
 
 Match your organizational resilience requirements with resilience policies. A resilience policy defines your resilience expectations through modular, composable requirements. Rather than choosing a single rigid policy type, you construct policies by selecting the requirements that matter to your application.
 

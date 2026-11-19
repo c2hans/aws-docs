@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/iceberg-v3-features.h
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Apache Iceberg v3 features in Amazon Redshift
-<a name="iceberg-v3-features"></a>
 
 Amazon Redshift supports Apache Iceberg v3 tables. Iceberg v3 introduces default column values, row lineage tracking, and deletion vectors. You can create new v3 tables or upgrade existing v2 tables to v3.
 

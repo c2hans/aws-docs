@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchFolders
-<a name="API_SearchFolders"></a>
 
 Searches the subfolders in a folder.
 

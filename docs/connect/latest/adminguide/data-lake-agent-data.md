@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-agen
 ---
 
 # Agent data in the Connect Customer data lake
-<a name="data-lake-agent-data"></a>
 
 The following tables contain agent data.
 

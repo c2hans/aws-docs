@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapFileSys
 ---
 
 # OntapFileSystemIdentity
-<a name="API_OntapFileSystemIdentity"></a>
 
 Specifies the file system user identity that will be used for authorizing all file access requests that are made using the S3 access point. The identity can be either a UNIX user or a Windows user.
 

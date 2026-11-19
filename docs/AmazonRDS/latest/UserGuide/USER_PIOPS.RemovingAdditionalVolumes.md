@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.Re
 ---
 
 # Removing additional storage volumes
-<a name="USER_PIOPS.RemovingAdditionalVolumes"></a>
 
 You can remove additional storage volumes from RDS for Oracle and RDS for SQL Server DB instances when they are no longer needed. Before removing a volume, make sure that you have moved all database files off the volume and that no database objects are referencing it. Verify that the volume status is `Not-in-use`.
 

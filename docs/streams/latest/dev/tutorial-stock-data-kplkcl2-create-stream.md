@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Create a data stream
-<a name="tutorial-stock-data-kplkcl2-create-stream"></a>
 
 First, you must create the data stream that you will use in subsequent steps of this tutorial.
 

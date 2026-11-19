@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Connector
 ---
 
 # ConnectorDestinationSummary
-<a name="API_ConnectorDestinationSummary"></a>
 
 Structure containing summary information about a connector destination, which defines how a cloud-to-cloud connector connects to a customer's AWS account.
 

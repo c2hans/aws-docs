@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InlineArchiveRule
-<a name="API_InlineArchiveRule"></a>
 
 An criterion statement in an archive rule. Each archive rule may have multiple criteria.
 

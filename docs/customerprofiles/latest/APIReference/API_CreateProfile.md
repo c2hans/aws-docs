@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateProfile
-<a name="API_connect-customer-profiles_CreateProfile"></a>
 
 Creates a standard profile.
 

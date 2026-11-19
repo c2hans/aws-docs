@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/objectacl.html
 ---
 
 # Working with the Object ACL field
-<a name="objectacl"></a>
 
 An Amazon S3 Inventory report contains a list of the objects in the S3 source bucket and metadata for each object. The Object access control list (ACL) field is a metadata field that is available in Amazon S3 Inventory. Specifically, the Object ACL field contains the access control list (ACL) for each object. The ACL for an object defines which AWS accounts or groups are granted access to this object and the type of access that is granted. For more information, see [Access control list (ACL) overview](acl-overview.md) and [Amazon S3 Inventory list](storage-inventory.md#storage-inventory-contents).
 

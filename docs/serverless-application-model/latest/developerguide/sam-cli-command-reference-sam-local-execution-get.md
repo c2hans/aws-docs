@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # sam local execution get
-<a name="sam-cli-command-reference-sam-local-execution-get"></a>
 
 Retrieve the details of a specific durable function execution.
 

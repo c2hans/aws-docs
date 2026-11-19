@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableOutputConfiguration
-<a name="API_IntermediateTableOutputConfiguration"></a>
 
 Contains the output configuration of an intermediate table when a protected query populates it.
 

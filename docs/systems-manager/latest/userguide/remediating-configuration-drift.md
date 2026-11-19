@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/remedia
 ---
 
 # Diagnosing and remediating drifted configurations
-<a name="remediating-configuration-drift"></a>
 
 Systems Manager can diagnose and then help you remediate the following types of drifted configurations:
 + Core setup for organization member accounts

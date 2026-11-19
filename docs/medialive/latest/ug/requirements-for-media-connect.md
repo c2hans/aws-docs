@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-med
 ---
 
 # Requirements for AWS Elemental MediaConnect
-<a name="requirements-for-media-connect"></a>
 
 Your deployment might include using a flow from AWS Elemental MediaConnect as an input to AWS Elemental MediaLive.
 

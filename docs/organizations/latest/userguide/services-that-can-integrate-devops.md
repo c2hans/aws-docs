@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon DevOps Guru and AWS Organizations
-<a name="services-that-can-integrate-devops"></a>
 
 Amazon DevOps Guru analyzes operational data and application metrics and events to identify behaviors that deviate from normal operating patterns. Users are notified when DevOps Guru detects an operational issue or risk.
 

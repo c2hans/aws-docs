@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP02 Throttle requests
-<a name="rel05-bp02"></a>
 
  Your workload can only process so many requests before it runs out of resources. Throttling protects that capacity by accepting requests up to a defined rate and rejecting the excess with a response that signals the request was throttled. This keeps your workload processing its supported volume during traffic spikes, flooding attacks, and retry storms instead of collapsing under load.
 

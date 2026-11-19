@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoadSna
 ---
 
 # RoadSnapTrailerOptions
-<a name="API_RoadSnapTrailerOptions"></a>
 
 Trailer options corresponding to the vehicle.
 

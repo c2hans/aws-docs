@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/datazone-limit
 ---
 
 # Quotas for Amazon DataZone
-<a name="datazone-limits"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is region-specific.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Delete cards in Infrastructure Composer
-<a name="using-composer-cards-delete"></a>
 
 This section provides instructions for deleting cards in AWS Infrastructure Composer.
 

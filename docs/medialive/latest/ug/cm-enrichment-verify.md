@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cm-enrichment-verify
 ---
 
 # Verify that enrichment is working
-<a name="cm-enrichment-verify"></a>
 
 After you start the channel, you can verify that contextual metadata enrichment is working. Capture an output stream and inspect the SCTE-35 markers.
 

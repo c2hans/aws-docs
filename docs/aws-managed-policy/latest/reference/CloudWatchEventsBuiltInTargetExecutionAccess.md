@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchEventsBuiltInTargetExecutionAccess
-<a name="CloudWatchEventsBuiltInTargetExecutionAccess"></a>
 
 **Description**: Allows built-in targets in Amazon CloudWatch Events to perform EC2 actions on your behalf.
 

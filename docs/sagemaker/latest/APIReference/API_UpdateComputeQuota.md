@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateComputeQuota
-<a name="API_UpdateComputeQuota"></a>
 
 Update the compute allocation definition.
 

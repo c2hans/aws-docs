@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineS
 ---
 
 # LineSeriesAxisDisplayOptions
-<a name="API_LineSeriesAxisDisplayOptions"></a>
 
 The series axis configuration of a line chart.
 

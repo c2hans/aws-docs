@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-ba
 ---
 
 # Backup creation by resource type
-<a name="creating-a-backup"></a>
 
 With AWS Backup, you can create backups automatically using backup plans or manually by initiating an on-demand backup.
 

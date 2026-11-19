@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS05-BP03 Implement structured logging and comprehensive audit trails
-<a name="agentops05-bp03"></a>
 
  Free-text logs look useful until someone tries to query them at scale. Structured logs, immutable audit trails, and defined retention policies make your logs an active operational tool that provides evidence for compliance.
 

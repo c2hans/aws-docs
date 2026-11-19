@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ListClusters
 ---
 
 # ListClusters
-<a name="API_ListClusters"></a>
 
 Returns a list of running clusters in your account.
 

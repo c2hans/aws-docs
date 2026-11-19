@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StartTestS
 ---
 
 # StartTestSetGeneration
-<a name="API_StartTestSetGeneration"></a>
 
 The action to start the generation of test set.
 

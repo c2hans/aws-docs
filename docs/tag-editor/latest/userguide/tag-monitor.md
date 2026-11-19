@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-monitor.
 ---
 
 # Monitor tag changes with serverless workflows and Amazon EventBridge
-<a name="tag-monitor"></a>
 
 Amazon EventBridge supports tag changes on AWS resources. Using this EventBridge type, you can build EventBridge rules to match tag changes and route the events to one or more targets. For example, a target might be an AWS Lambda function to invoke automated workflows. This topic provides a tutorial for using Lambda to build a cost-effective serverless solution to securely process tag changes on your AWS resources.
 

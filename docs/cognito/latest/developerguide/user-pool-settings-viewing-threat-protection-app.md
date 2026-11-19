@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-
 ---
 
 # Collecting data for threat protection in applications
-<a name="user-pool-settings-viewing-threat-protection-app"></a>
 
 Amazon Cognito [adaptive authentication](cognito-user-pool-settings-adaptive-authentication.md) evaluates risk levels for attempted account takeover from contextual details of users' sign-in attempts. Your application must add *context data* to API requests so that Amazon Cognito threat protection can more accurately evaluate risk. Context data is information like IP address, browser agent, device information, and request headers that provides contextual information about how a user connected to your user pool.
 

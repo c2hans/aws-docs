@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationConfig
-<a name="API_EvaluationConfig"></a>
 
 The configuration details of either an automated or human-based evaluation job.
 

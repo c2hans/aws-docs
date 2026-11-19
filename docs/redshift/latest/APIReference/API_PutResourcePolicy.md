@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_PutReso
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Updates the resource policy for a specified resource.
 

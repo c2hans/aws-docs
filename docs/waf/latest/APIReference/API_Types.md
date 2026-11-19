@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by AWS WAFV2:
 +  [ActionCondition](API_ActionCondition.md)

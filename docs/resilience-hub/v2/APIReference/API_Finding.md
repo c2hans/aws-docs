@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Findi
 ---
 
 # Finding
-<a name="API_Finding"></a>
 
 Represents a resilience finding from a failure mode assessment.
 

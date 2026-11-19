@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Delete.html
 ---
 
 # Delete
-<a name="API_Delete"></a>
 
 Container for the objects to delete.
 

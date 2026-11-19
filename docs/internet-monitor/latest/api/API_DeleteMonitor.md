@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_DeleteMo
 ---
 
 # DeleteMonitor
-<a name="API_DeleteMonitor"></a>
 
 Deletes a monitor in Internet Monitor.
 

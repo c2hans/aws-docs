@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/dns-renewal-validat
 ---
 
 # Renewal for domains validated by DNS
-<a name="dns-renewal-validation"></a>
 
 Managed renewal is fully automated for ACM certificates that were originally issued using [DNS validation](dns-validation.md).
 

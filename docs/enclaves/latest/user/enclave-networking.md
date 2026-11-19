@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/enclave-networking.
 ---
 
 # Getting started: Connect the parent instance with an enclave by using virtio-vsock
-<a name="enclave-networking"></a>
 
 The vsock socket is the only communication channel between an Amazon EC2 instance (also called the parent instance) and its associated AWS Nitro Enclaves.
 

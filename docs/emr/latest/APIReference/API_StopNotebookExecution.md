@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StopNotebook
 ---
 
 # StopNotebookExecution
-<a name="API_StopNotebookExecution"></a>
 
 Stops a notebook execution.
 

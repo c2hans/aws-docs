@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-def
 ---
 
 # Amazon ECS task definition template
-<a name="task-definition-template"></a>
 
 An empty task definition template is shown as follows. You can use this template to create your task definition, which can then be pasted into the console JSON input area or saved to a file and used with the AWS CLI `--cli-input-json` option. For more information, see [Amazon ECS task definition parameters for Fargate](task_definition_parameters.md).
 

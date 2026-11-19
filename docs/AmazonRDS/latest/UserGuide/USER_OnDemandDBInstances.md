@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_OnDemand
 ---
 
 # On-Demand DB instances for Amazon RDS
-<a name="USER_OnDemandDBInstances"></a>
 
 Amazon RDS on-demand DB instances are billed based on the class of the DB instance (for example, db.t3.small or db.m5.large). For Amazon RDS pricing information, see the [Amazon RDS product page](https://aws.amazon.com/rds/pricing).
 

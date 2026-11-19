@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-single-table-form
 ---
 
 # Single table format for KCL
-<a name="kcl-single-table-format"></a>
 
 Starting with KCL 3.5, you can consolidate all DynamoDB metadata into a single lease table using the **single table format**. By default, KCL 3.x creates three DynamoDB tables for each application: the lease table, the worker metrics table, and the coordinator state table. The single table format reduces these three tables to one, which helps you avoid DynamoDB account-level table limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/approved-am
 ---
 
 # approved-amis-by-id
-<a name="approved-amis-by-id"></a>
 
 Checks if EC2 instances are using specified Amazon Machine Images (AMIs). Specify a list of approved AMI IDs. Running instances with AMIs that are not on this list are NON\_COMPLIANT.
 

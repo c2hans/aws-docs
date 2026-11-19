@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/root-squash.html
 ---
 
 # Lustre root squash
-<a name="root-squash"></a>
 
 Root squash is an administrative feature that adds an additional layer of file access control on top of the current network-based access control and POSIX file permissions. Using the root squash feature, you can restrict root level access from clients that try to access your FSx for Lustre file system as root.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-con
 ---
 
 # Connect to a Linux instance using EC2 Instance Connect
-<a name="ec2-instance-connect-methods"></a>
 
 The following instructions explain how to connect to your Linux instance using EC2 Instance Connect through the Amazon EC2 console, the AWS CLI, or an SSH client.
 

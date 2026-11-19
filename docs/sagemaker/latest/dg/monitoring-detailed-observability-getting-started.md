@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-detailed-
 ---
 
 # Getting started with detailed observability
-<a name="monitoring-detailed-observability-getting-started"></a>
 
 Detailed observability is controlled by the `EnableDetailedObservability` flag in your endpoint configuration. The behavior of this flag depends on when the endpoint configuration was created. The following sections describe the different cases and how to enable the feature for each.
 

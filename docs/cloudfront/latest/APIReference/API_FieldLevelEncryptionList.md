@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Field
 ---
 
 # FieldLevelEncryptionList
-<a name="API_FieldLevelEncryptionList"></a>
 
 List of field-level encryption configurations.
 

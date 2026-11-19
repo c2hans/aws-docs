@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pi
 ---
 
 # Control Objective 7: Equipment used to process PINs and keys is managed in a secure manner.
-<a name="pin-compliance-control-7"></a>
 
 *Requirement 29:* Your requirements for physical and logical protections for HSMs are met by use of AWS Payment Cryptography.
 

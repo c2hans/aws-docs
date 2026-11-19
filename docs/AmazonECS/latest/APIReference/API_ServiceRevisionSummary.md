@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceRevisionSummary
-<a name="API_ServiceRevisionSummary"></a>
 
 The information about the number of requested, pending, and running tasks for a service revision.
 

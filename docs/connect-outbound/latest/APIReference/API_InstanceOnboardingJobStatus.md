@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # InstanceOnboardingJobStatus
-<a name="API_connect-outbound-campaigns_InstanceOnboardingJobStatus"></a>
 
 Contains information about the status of the workflow to onboard to outbound campaigns.
 

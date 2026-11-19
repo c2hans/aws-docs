@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # Common Response Elements
-<a name="SDB_API_CommonResponseElements"></a>
 
 |  Name  |  Description  |
 | --- | --- |

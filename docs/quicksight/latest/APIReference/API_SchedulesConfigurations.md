@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sched
 ---
 
 # SchedulesConfigurations
-<a name="API_SchedulesConfigurations"></a>
 
 The schedules configuration for an embedded Quick Sight dashboard.
 

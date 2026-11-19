@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-a
 ---
 
 # Amazon MSK updates to AWS managed policies
-<a name="security-iam-awsmanpol-updates"></a>
 
 View details about updates to AWS managed policies for Amazon MSK since this service began tracking these changes.
 

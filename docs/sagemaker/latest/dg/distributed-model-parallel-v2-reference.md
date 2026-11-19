@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-model-pa
 ---
 
 # The SageMaker model parallel library v2 reference
-<a name="distributed-model-parallel-v2-reference"></a>
 
 The following are references for the SageMaker model parallel library v2 (SMP v2).
 

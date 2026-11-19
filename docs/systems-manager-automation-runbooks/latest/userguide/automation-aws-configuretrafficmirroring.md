@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-ConfigureTrafficMirroring`
-<a name="automation-aws-configuretrafficmirroring"></a>
 
  **Description**
 

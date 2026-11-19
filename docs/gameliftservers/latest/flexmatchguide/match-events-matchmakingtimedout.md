@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # MatchmakingTimedOut
-<a name="match-events-matchmakingtimedout"></a>
 
 Matchmaking ticket has failed by timing out.
 

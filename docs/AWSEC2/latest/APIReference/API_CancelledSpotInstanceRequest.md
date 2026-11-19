@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Cancelled
 ---
 
 # CancelledSpotInstanceRequest
-<a name="API_CancelledSpotInstanceRequest"></a>
 
 Describes a request to cancel a Spot Instance.
 

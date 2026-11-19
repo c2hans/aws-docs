@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-server-
 ---
 
 # iam-server-certificate-tagged
-<a name="iam-server-certificate-tagged"></a>
 
 Checks if AWS IAM server certificates have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

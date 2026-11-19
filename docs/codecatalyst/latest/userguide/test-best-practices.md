@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/test-best-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Best practices for testing
-<a name="test-best-practices"></a>
 
 When using the testing features provided by CodeCatalyst, we recommend that you follow these best practices.
 

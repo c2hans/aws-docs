@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/update-dns-
 ---
 
 # Update DNS servers for WorkSpaces Personal
-<a name="update-dns-server"></a>
 
 If you need to update the DNS server IP addresses for your Active Directory after launching your WorkSpaces, you must also update your WorkSpaces with the new DNS server settings.
 

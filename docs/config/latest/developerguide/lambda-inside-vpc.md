@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-insi
 ---
 
 # lambda-inside-vpc
-<a name="lambda-inside-vpc"></a>
 
 Checks if a Lambda function is allowed access to a virtual private cloud (VPC). The rule is NON\_COMPLIANT if the Lambda function is not VPC enabled.
 

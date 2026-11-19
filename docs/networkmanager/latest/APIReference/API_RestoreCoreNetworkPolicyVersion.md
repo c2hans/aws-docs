@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RestoreCoreNetworkPolicyVersion
-<a name="API_RestoreCoreNetworkPolicyVersion"></a>
 
 Restores a previous policy version as a new, immutable version of a core network policy. A subsequent change set is created showing the differences between the LIVE policy and restored policy.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RDS::DBInstance DBInstanceRole
-<a name="aws-properties-rds-dbinstance-dbinstancerole"></a>
 
 Information about an AWS Identity and Access Management (IAM) role that is associated with a DB instance.
 

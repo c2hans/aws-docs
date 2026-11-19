@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-table-blo
 ---
 
 # Flow block in Connect Customer: Data Table
-<a name="data-table-block"></a>
 
 ## Description
 <a name="data-table-block-description"></a>

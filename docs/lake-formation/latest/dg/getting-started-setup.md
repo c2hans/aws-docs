@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started
 ---
 
 # Getting started with Lake Formation
-<a name="getting-started-setup"></a>
 
 If you haven't signed up for AWS or need assistance getting started, be sure to complete the following tasks.
 

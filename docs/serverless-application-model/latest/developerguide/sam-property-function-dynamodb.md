@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # DynamoDB
-<a name="sam-property-function-dynamodb"></a>
 
 The object describing a `DynamoDB` event source type. For more information, see [Using AWS Lambda with Amazon DynamoDB](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html) in the *AWS Lambda Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # GetWhatsAppBusinessPublicKey
-<a name="API_GetWhatsAppBusinessPublicKey"></a>
 
 Retrieves the business public key for a phone number and its signature status.
 

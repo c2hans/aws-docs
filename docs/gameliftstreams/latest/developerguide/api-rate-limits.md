@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/ap
 ---
 
 # Amazon GameLift Streams API rate limits
-<a name="api-rate-limits"></a>
 
 These limits reflect the maximum rate of requests per second from your AWS account to the Amazon GameLift Streams service in an AWS Region.
 

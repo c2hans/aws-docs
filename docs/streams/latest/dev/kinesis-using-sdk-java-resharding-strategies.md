@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-jav
 ---
 
 # Decide on a strategy for resharding
-<a name="kinesis-using-sdk-java-resharding-strategies"></a>
 
 The purpose of resharding in Amazon Kinesis Data Streams is to enable your stream to adapt to changes in the rate of data flow. You split shards to increase the capacity (and cost) of your stream. You merge shards to reduce the cost (and capacity) of your stream.
 

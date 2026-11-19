@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/limits.html
 ---
 
 # Amazon MSK quota
-<a name="limits"></a>
 
 Your AWS account has default quotas for Amazon MSK. Unless otherwise stated, each per-account quota is Region-specific within your AWS account.
 

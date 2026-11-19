@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/lustre-quotas.
 ---
 
 # Storage quotas
-<a name="lustre-quotas"></a>
 
 You can create storage quotas for users and groups on Amazon File Cache resources. With storage quotas, you can limit the amount of disk space and the number of files that a user or a group can consume. Storage quotas automatically track user and group-level usage so you can monitor consumption whether or not you choose to set storage limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Location Service Places
-<a name="amazonlocationserviceplaces"></a>
 
 Amazon Location Service Places provides the following APIs for data retrieval.
 

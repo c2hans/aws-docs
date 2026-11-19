@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/getting-started-with-ipa
 ---
 
 # Getting started with IPAM using the AWS CLI
-<a name="getting-started-with-ipam-using-the-aws-cli"></a>
 
 This tutorial guides you through the process of setting up and using Amazon VPC IP Address Manager (IPAM) with the AWS CLI using a single AWS account. By the end of this tutorial, you will have created an IPAM, created a hierarchy of IP address pools, and allocated a CIDR to a VPC.
 

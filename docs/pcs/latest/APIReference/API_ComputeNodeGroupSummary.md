@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ComputeNodeG
 ---
 
 # ComputeNodeGroupSummary
-<a name="API_ComputeNodeGroupSummary"></a>
 
 The object returned by the `ListComputeNodeGroups` API action.
 

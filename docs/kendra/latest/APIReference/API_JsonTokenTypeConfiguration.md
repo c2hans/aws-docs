@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_JsonToken
 ---
 
 # JsonTokenTypeConfiguration
-<a name="API_JsonTokenTypeConfiguration"></a>
 
 Provides the configuration information for the JSON token type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Onboarding new customers
-<a name="onboard"></a>
 
 When migration is complete, you'll want to onboard new and existing users to SAS Grid on AWS. This might also involve training for SAS end-users or administrators. We recommend the following tasks:
 + SAS Grid administration onboarding and training (if appropriate)

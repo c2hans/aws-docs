@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ExecuteFastR
 ---
 
 # ExecuteFastReset
-<a name="API_ExecuteFastReset"></a>
 
 The fast reset REST API lets you reset a Neptune graph quicky and easily, removing all of its data.
 

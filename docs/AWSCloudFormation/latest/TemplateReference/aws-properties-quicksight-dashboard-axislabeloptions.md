@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Dashboard AxisLabelOptions
-<a name="aws-properties-quicksight-dashboard-axislabeloptions"></a>
 
 The label options for a chart axis. You must specify the field that the label is targeted to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_StartAcco
 ---
 
 # StartAccountAssociationRefresh
-<a name="API_StartAccountAssociationRefresh"></a>
 
 Initiates a refresh of an existing account association to update its authorization and connection status.
 

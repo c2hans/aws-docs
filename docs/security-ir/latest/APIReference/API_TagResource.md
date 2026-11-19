@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_TagR
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds a tag(s) to a designated resource.
 

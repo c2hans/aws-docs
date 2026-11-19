@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Servic
 ---
 
 # Service
-<a name="API_Service"></a>
 
 Contains additional information about the generated finding.
 

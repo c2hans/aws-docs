@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Boolean
 ---
 
 # BooleanFilter
-<a name="API_BooleanFilter"></a>
 
 Boolean filter for querying findings.
 

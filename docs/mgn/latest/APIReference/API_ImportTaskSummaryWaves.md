@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportTaskSu
 ---
 
 # ImportTaskSummaryWaves
-<a name="API_ImportTaskSummaryWaves"></a>
 
 Import task summary waves.
 

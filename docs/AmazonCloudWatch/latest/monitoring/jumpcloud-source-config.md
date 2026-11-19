@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/jumpc
 ---
 
 # Source configuration for JumpCloud
-<a name="jumpcloud-source-config"></a>
 
 ## Supported API and platform versions
 <a name="jumpcloud-supported-versions"></a>

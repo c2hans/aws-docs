@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/creating-an-analy
 ---
 
 # Starting an analysis in Quick Sight
-<a name="creating-an-analysis"></a>
 
 In Quick Sight, you analyze and visualize your data in analyses. When you're finished, you can publish your analysis as a dashboard to share with others in your organization.
 

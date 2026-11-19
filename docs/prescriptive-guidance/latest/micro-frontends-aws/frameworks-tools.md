@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Frameworks and tools
-<a name="frameworks-tools"></a>
 
 Many frontend frameworks, such as Angular and Next.js, do not design for micro-frontends as a primary use case. As a result, they can lack mechanisms to address the challenges of micro-frontend architecture.
 

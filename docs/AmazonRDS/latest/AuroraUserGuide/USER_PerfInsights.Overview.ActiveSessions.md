@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # Database load
-<a name="USER_PerfInsights.Overview.ActiveSessions"></a>
 
 *Database load (DB load)* measures the level of session activity in your database. `DBLoad` is the key metric in Database Insights, and Database Insights collects DB load every second.
 

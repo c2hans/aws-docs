@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # CFD approaches on AWS
-<a name="cfd-approaches-on-aws"></a>
 
  Most CFD solvers have locality of data and use sparse matrix solvers. Once properly organized (application dependent), a well-configured job exhibits good strong and weak scaling on simple AWS cluster architectures. “Structured” and “Unstructured” codes are commonly run on AWS. Spectral and pseudo-spectral methods involve [fast Fourier transforms](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (FFTs), and while less common than traditional CFD algorithms, they also scale well on AWS. Your architectural decisions have tradeoffs, and AWS makes it quick and easy to try different architectures to optimize for cost and performance.
 

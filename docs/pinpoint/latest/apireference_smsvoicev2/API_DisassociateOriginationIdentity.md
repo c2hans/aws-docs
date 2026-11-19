@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DisassociateOriginationIdentity
-<a name="API_DisassociateOriginationIdentity"></a>
 
 Removes the specified origination identity from an existing pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html
 ---
 
 # Deploy Node.js Lambda Event Functions with .zip file archives
-<a name="nodejs-package"></a>
 
  Your AWS Lambda function’s code comprises a .js or .mjs file containing your function’s handler code, together with any additional packages and modules your code depends on. To deploy this function code to Lambda, you use a *deployment package*. This package may either be a .zip file archive or a container image. For more information about using container images with Node.js, see [Deploy Node.js Lambda Event Functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-image.html).
 
@@ -26,7 +25,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html
 
  Lambda periodically updates the SDK libraries in the Node.js runtime to include the latest features and security upgrades. Lambda also applies security patches and updates to the other libraries included in the runtime. To have full control of the dependencies in your package, you can add your preferred version of any runtime-included dependency to your deployment package. For example, if you want to use a particular version of the SDK for JavaScript, you can include it in your .zip file as a dependency. For more information on adding runtime-included dependencies to your .zip file, see [Dependency search path and runtime-included libraries](#nodejs-package-searchpath).
 
- Under the [AWS shared responsibility model](lambda-runtimes.md#runtimes-shared-responsibility), you are responsible for the management of any dependencies in your functions' deployment packages. This includes applying updates and security patches. To update dependencies in your function's deployment package, first create a new .zip file and then upload it to Lambda. See [Creating a .zip deployment package with dependencies](#nodejs-package-create-dependencies) and [Creating and updating Node.js Lambda Event Functions using .zip files](#nodejs-package-create-update) for more information.
+ Under the [AWS shared responsibility model](runtime-support-policy.md#runtimes-shared-responsibility), you are responsible for the management of any dependencies in your functions' deployment packages. This includes applying updates and security patches. To update dependencies in your function's deployment package, first create a new .zip file and then upload it to Lambda. See [Creating a .zip deployment package with dependencies](#nodejs-package-create-dependencies) and [Creating and updating Node.js Lambda Event Functions using .zip files](#nodejs-package-create-update) for more information.
 
 ## Creating a .zip deployment package with no dependencies
 <a name="nodejs-package-create-no-dependencies"></a>

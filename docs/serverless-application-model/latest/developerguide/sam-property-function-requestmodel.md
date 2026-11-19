@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # RequestModel
-<a name="sam-property-function-requestmodel"></a>
 
 Configures a Request Model for a specific Api\+Path\+Method.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cshell-exa
 ---
 
 # Interact with AWS Control Tower through AWS CloudShell
-<a name="cshell-examples"></a>
 
 After you launch AWS CloudShell from the AWS Management Console, you can immediately start to interact with AWS Control Tower from the command line interface. AWS CLI commands work in the standard way in CloudShell.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/updating_blueprints.html
 ---
 
 # Updating a blueprint in AWS Glue
-<a name="updating_blueprints"></a>
 
 You can update a blueprint if you have a revised layout script, a revised set of blueprint parameters, or revised supporting files. Updating a blueprint creates a new version.
 

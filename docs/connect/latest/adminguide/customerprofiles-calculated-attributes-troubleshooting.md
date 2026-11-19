@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofil
 ---
 
 # Error messages and resolutions for Connect Customer Customer Profiles calculated attributes
-<a name="customerprofiles-calculated-attributes-troubleshooting"></a>
 
 The following table shows calculated attributes error messages, cause, and resolution for each error.
 

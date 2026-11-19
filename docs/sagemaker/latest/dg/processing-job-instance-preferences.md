@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-insta
 ---
 
 # Instance preference lists for processing jobs
-<a name="processing-job-instance-preferences"></a>
 
 A processing job can accept an ordered list of up to 5 instance types instead of one. SageMaker AI launches the job on the first type in the list that has capacity, so the job starts sooner when your preferred type is constrained. It then runs, is monitored, and is billed exactly as if you had requested that type directly.
 

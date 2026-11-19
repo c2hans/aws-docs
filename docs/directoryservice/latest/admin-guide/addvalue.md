@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/addv
 ---
 
 # Add a value to the new attribute - Optional
-<a name="addvalue"></a>
 
 Use this optional step when you have created a new attribute and want to add a new value to the attribute in your AWS Managed Microsoft AD directory.
 

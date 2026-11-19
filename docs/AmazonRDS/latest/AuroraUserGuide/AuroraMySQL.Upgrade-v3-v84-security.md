@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Security considerations for upgrading from Aurora MySQL version 3 to version 8.4
-<a name="AuroraMySQL.Upgrade-v3-v84-security"></a>
 
 When migrating from Aurora MySQL version 3 (MySQL 8.0-compatible) to Aurora MySQL version 8.4, several important security-related changes require careful planning and consideration. This guide outlines the key security changes and provides recommendations for a smooth migration.
 

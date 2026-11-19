@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/cr
 ---
 
 # AWS Encryption SDK CLI syntax and parameter reference
-<a name="crypto-cli-reference"></a>
 
 This topic provides syntax diagrams and brief parameter descriptions to help you use the AWS Encryption SDK Command Line Interface (CLI). For help with wrapping keys and other parameters, see [How to use the AWS Encryption CLI](crypto-cli-how-to.md). For examples, see [Examples of the AWS Encryption CLI](crypto-cli-examples.md). For complete documentation, see [Read the Docs](https://aws-encryption-sdk-cli.readthedocs.io/en/latest/).
 

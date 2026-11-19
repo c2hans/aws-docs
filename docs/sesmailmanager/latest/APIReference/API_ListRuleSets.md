@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListRuleSets
-<a name="API_ListRuleSets"></a>
 
 List rule sets for this account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend the following best practices when you design your decoupled data architecture:
 + **Plan your data migration** – Develop a detailed plan on how to migrate data from a single production environment to a multi-environment setup early on in the design process. This can help you identify bottlenecks, reduce risks, and properly allocate the time and resources that are required for the migration.

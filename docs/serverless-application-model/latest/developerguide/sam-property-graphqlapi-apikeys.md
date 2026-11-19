@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ApiKeys
-<a name="sam-property-graphqlapi-apikeys"></a>
 
 Create a unique key that can be used to perform GraphQL operations requiring an API key.
 

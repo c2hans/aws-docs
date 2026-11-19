@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schedule
 ---
 
 # Tutorial: Schedule automated Amazon EBS snapshots
-<a name="eb-scheduled-snapshot"></a>
 
 **Note**
 Scheduled rules are a legacy feature of EventBridge.

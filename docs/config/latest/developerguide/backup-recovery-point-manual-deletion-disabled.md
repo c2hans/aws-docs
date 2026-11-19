@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/backup-reco
 ---
 
 # backup-recovery-point-manual-deletion-disabled
-<a name="backup-recovery-point-manual-deletion-disabled"></a>
 
 Checks if a backup vault has an attached resource-based policy which prevents deletion of recovery points. The rule is NON\_COMPLIANT if the Backup Vault does not have resource-based policies or has policies without a suitable 'Deny' statement (statement with backup:DeleteRecoveryPoint, backup:UpdateRecoveryPointLifecycle, and backup:PutBackupVaultAccessPolicy permissions).
 

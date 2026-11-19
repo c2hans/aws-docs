@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-m
 ---
 
 # IVS Broadcast SDK: Token Exchange \| Real-Time Streaming
-<a name="broadcast-mobile-token-exchange"></a>
 
 Token exchange enables you to upgrade or downgrade participant-token capabilities and update token attributes within the broadcast SDK, without requiring participants to reconnect. This is useful for scenarios like co-hosting, where participants may start with subscribe-only capabilities and later need publish capabilities.
 

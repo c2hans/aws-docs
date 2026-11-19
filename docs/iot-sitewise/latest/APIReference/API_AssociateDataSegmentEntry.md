@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssociateDataSegmentEntry
-<a name="API_AssociateDataSegmentEntry"></a>
 
 Contains information about a data segment entry to associate with a dataset.
 

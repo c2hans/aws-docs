@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteArtifact
-<a name="API_DeleteArtifact"></a>
 
 Deletes an artifact. Either `ArtifactArn` or `Source` must be specified.
 

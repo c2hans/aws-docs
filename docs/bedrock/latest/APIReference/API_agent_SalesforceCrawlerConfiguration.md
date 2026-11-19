@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sa
 ---
 
 # SalesforceCrawlerConfiguration
-<a name="API_agent_SalesforceCrawlerConfiguration"></a>
 
 The configuration of the Salesforce content. For example, configuring specific types of Salesforce content.
 

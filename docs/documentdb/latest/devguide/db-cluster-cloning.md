@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-cl
 ---
 
 # Cloning a volume for an Amazon DocumentDB cluster
-<a name="db-cluster-cloning"></a><a name="cloning"></a>
+<a name="cloning"></a>
 
 By using Amazon DocumentDB cloning, you can create a new cluster that uses the same Amazon DocumentDB cluster volume and has the same data as the original. The process is designed to be fast and cost-effective. The new cluster with its associated data volume is known as a *clone*. Creating a clone is faster and more space-efficient than physically copying the data using other techniques, such as restoring a snapshot.
 

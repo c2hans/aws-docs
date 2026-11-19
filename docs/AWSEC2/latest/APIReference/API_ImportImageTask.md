@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIma
 ---
 
 # ImportImageTask
-<a name="API_ImportImageTask"></a>
 
 Describes an import image task.
 

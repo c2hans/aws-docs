@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Writing a Python canary script
-<a name="CloudWatch_Synthetics_Canaries_WritingCanary_Python"></a>
 
 This script passes as a successful run, and returns a string. To see what a failing canary looks like, change fail = False to fail = True
 

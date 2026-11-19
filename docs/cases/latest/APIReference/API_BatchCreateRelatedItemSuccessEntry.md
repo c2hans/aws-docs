@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchCreat
 ---
 
 # BatchCreateRelatedItemSuccessEntry
-<a name="API_connect-cases_BatchCreateRelatedItemSuccessEntry"></a>
 
 Information about a related item that was created.
 

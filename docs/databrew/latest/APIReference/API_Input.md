@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Input.h
 ---
 
 # Input
-<a name="API_Input"></a>
 
 Represents information on how DataBrew can find data, in either the AWS Glue Data Catalog or Amazon S3.
 

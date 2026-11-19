@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into-etl.ht
 ---
 
 # Use CTAS and INSERT INTO for ETL and data analysis
-<a name="ctas-insert-into-etl"></a>
 
 You can use Create Table as Select ([CTAS](ctas.md)) and [INSERT INTO](insert-into.md) statements in Athena to extract, transform, and load (ETL) data into Amazon S3 for data processing. This topic shows you how to use these statements to partition and convert a dataset into columnar data format to optimize it for data analysis.
 

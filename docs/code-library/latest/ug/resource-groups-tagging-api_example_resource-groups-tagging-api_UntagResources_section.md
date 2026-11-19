@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/resource-groups-t
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `UntagResources` with a CLI
-<a name="resource-groups-tagging-api_example_resource-groups-tagging-api_UntagResources_section"></a>
 
 The following code examples show how to use `UntagResources`.
 

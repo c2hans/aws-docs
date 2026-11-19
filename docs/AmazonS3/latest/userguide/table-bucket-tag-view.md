@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-bucket-t
 ---
 
 # Viewing table bucket tags
-<a name="table-bucket-tag-view"></a>
 
 You can view or list tags applied to Amazon S3 table buckets. For more information about tagging table buckets, see [Using tags with S3 table buckets](table-bucket-tagging.md).
 

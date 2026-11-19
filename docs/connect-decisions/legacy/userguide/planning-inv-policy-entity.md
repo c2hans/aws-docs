@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/plann
 ---
 
 # inv\_policy
-<a name="planning-inv-policy-entity"></a>
 
 **Primary key (PK)**
 

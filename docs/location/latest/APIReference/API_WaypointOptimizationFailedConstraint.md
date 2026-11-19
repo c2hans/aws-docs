@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationFailedConstraint
-<a name="API_WaypointOptimizationFailedConstraint"></a>
 
 The failed constraint.
 

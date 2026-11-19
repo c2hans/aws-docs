@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streak-connector-limitati
 ---
 
 # Limitations and notes for the Streak connector
-<a name="streak-connector-limitations"></a>
 
 The following are limitations and notes for the Streak connector:
 + Streak is supported as a source only. Writing to Streak is not supported.

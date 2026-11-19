@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeDestinations
-<a name="API_DescribeDestinations"></a>
 
 Lists all your destinations. The results are ASCII-sorted by destination name.
 

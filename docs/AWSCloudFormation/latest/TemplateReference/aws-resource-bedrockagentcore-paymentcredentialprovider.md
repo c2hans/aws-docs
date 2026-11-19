@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::PaymentCredentialProvider
-<a name="aws-resource-bedrockagentcore-paymentcredentialprovider"></a>
 
 Specifies a payment credential provider for Amazon Bedrock AgentCore. A payment credential provider stores and manages credentials for third-party payment vendors used by AI agents. Credentials are encrypted and stored in AWS Secrets Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-pr
 ---
 
 # Error handling
-<a name="service-managed-pk-producing-errors"></a>
 
 The following errors are specific to writing records to service-managed streams:
 

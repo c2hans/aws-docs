@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/custom-transcode-p
 ---
 
 # Custom transcode profiles
-<a name="custom-transcode-profiles"></a>
 
 A custom transcode profile (CTP) is an explicitly authored AWS Elemental MediaConvert job configuration that you register with MediaTailor. When a CTP is associated with a MediaTailor configuration, MediaTailor uses your defined settings to transcode every ad, bumper, and slate, giving you precise control over codecs, bitrates, audio normalization levels, segment lengths, PID values, sample rates, and more. Because a CTP completely overrides dynamic transcoding, you must explicitly configure all features you need, including trickplay features (I-frame manifests, thumbnails, and image streams), within the profile.
 

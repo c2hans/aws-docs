@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListLenses
-<a name="API_ListLenses"></a>
 
 List the available lenses.
 

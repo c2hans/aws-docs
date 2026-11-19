@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/resource-matc
 ---
 
 # Enabling resource matching
-<a name="resource-matching-enabling"></a>
 
 Resource matching is available in preview and is enabled per request.
 

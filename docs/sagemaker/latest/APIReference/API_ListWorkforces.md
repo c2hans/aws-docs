@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListWo
 ---
 
 # ListWorkforces
-<a name="API_ListWorkforces"></a>
 
 Use this operation to list all private and vendor workforces in an AWS Region. Note that you can only have one private workforce per AWS Region.
 

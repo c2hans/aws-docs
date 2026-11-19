@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # LoadStateConfig
-<a name="API_training_session_runtime_LoadStateConfig"></a>
 
 The configuration for loading training state from a previously saved checkpoint. This restores model weights and optionally optimizer state.
 

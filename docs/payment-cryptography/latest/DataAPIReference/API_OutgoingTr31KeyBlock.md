@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # OutgoingTr31KeyBlock
-<a name="API_OutgoingTr31KeyBlock"></a>
 
 Parameter information of the TR31WrappedKeyBlock containing the transaction key wrapped using a KEK.
 

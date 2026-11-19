@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBInst
 ---
 
 # DescribeDBInstances
-<a name="API_DescribeDBInstances"></a>
 
 Returns information about provisioned instances, and supports pagination.
 

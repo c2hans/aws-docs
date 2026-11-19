@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Reusable artifacts
-<a name="reusable-artifacts"></a>
 
 Reusable artifacts allow your organization to save time and improve the [Don't repeat yourself (DRY)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (Wikipedia) level in the organization. Using reusable artifacts includes the following common challenges:
 + Not using Git release versioning

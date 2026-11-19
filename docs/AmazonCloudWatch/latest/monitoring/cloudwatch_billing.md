@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # Analyzing, optimizing, and reducing CloudWatch costs
-<a name="cloudwatch_billing"></a>
 
 This section describes how Amazon CloudWatch features generate costs. It also provides methods that can help you analyze, optimize, and reduce CloudWatch costs. Throughout this section, this guide sometimes refers to pricing when describing CloudWatch features. For information about pricing, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/?nc1=h_ls).
 

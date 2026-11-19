@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_UserFee
 ---
 
 # UserFeedback
-<a name="API_UserFeedback"></a>
 
 Feedback that can be submitted for each instance of an anomaly by the user. Feedback is be used for improvements in generating recommendations for the application.
 

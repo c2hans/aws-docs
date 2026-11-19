@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monitor-profile-debug-oom
 ---
 
 # Debugging OOM exceptions and job abnormalities
-<a name="monitor-profile-debug-oom-abnormalities"></a>
 
 You can debug out-of-memory (OOM) exceptions and job abnormalities in AWS Glue. The following sections describe scenarios for debugging out-of-memory exceptions of the Apache Spark driver or a Spark executor.
 + [Debugging a driver OOM exception](#monitor-profile-debug-oom-driver)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF06-BP05 Minimize SGAI ad break latency with CDN-cached manifests, pre-transcoded creatives, and scaled ADS
-<a name="advperf06-bp05"></a>
 
  Ad breaks in SGAI (Server-Guided Ad Insertion) workflows must start with no viewer-perceptible buffering. Non-personalized manifests stay cacheable on a CDN, so origin requests don't grow with viewer count, and a pre-transcoded creative library removes transcoding from the critical path between the ad decision and playback.
 

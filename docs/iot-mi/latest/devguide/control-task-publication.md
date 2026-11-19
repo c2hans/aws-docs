@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/control-task-publ
 ---
 
 # Control task publication
-<a name="control-task-publication"></a>
 
 Use these methods to publish control-related requests to the managed integrations components.
 

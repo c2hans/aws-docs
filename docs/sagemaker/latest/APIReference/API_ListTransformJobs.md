@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTr
 ---
 
 # ListTransformJobs
-<a name="API_ListTransformJobs"></a>
 
 Lists transform jobs.
 

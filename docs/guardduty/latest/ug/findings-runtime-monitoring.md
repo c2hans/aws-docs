@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/findings-runtime-mon
 ---
 
 # GuardDuty Runtime Monitoring finding types
-<a name="findings-runtime-monitoring"></a>
 
 Amazon GuardDuty generates the following Runtime Monitoring findings to indicate potential threats based on the operating system-level behavior from Amazon EC2 hosts and containers in your Amazon EKS clusters, Fargate and Amazon ECS workloads, and Amazon EC2 instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetD
 ---
 
 # GetDomainVerification
-<a name="API_GetDomainVerification"></a>
 
  Retrieves information about a domain verification.ß
 

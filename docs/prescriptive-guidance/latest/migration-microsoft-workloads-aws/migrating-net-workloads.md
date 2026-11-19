@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating .NET applications
-<a name="migrating-net-workloads"></a>
 
 Migrating your .NET applications to AWS enables you to create highly available workloads with elastic scaling capabilities, reduce operation overhead, and increase your business agility by focusing on your differentiating value.
 

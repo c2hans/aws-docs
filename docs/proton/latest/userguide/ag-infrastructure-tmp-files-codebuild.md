@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-infrastructur
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CodeBuild provisioning template bundle
-<a name="ag-infrastructure-tmp-files-codebuild"></a>
 
 With CodeBuild provisioning, instead of using IaC templates to render IaC files and run them using an IaC provisioning engine, AWS Proton simply runs your shell commands. To do that, AWS Proton creates an AWS CodeBuild project for the environment, in the environment account, and starts a job to run your commands for each AWS Proton resource creation or update. When you author a template bundle, you provide a manifest that specifies infrastructure provisioning and deprovisioning commands, and any programs, scripts, and other files that these commands may need. Your commands can read inputs that AWS Proton provides, and are responsible for provisioning or deprovisioning infrastructure and generating output values.
 

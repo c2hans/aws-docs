@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-termina
 ---
 
 # Methods for terminating an instance
-<a name="instance-terminate-methods"></a>
 
 **Warning**
 **Terminating an instance is permanent and irreversible.**

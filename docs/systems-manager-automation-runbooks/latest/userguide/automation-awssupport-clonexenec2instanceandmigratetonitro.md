@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-CloneXenEC2InstanceAndMigrateToNitro`
-<a name="automation-awssupport-clonexenec2instanceandmigratetonitro"></a>
 
  **Description**
 

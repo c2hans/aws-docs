@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListIntegrationTa
 ---
 
 # ListIntegrationTableProperties
-<a name="API_ListIntegrationTableProperties"></a>
 
 Lists the integration table properties in your account. This operation supports filtering and pagination.
 

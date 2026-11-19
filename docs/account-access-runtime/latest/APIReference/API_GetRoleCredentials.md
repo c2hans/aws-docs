@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # GetRoleCredentials
-<a name="API_GetRoleCredentials"></a>
 
 Returns temporary AWS credentials for a role that you are entitled to assume within a tenant. You can use these credentials for programmatic access with the AWS CLI or an AWS SDK. If you aren't entitled to the role, the request fails with an `AccessDeniedException` error. This operation requires the `account_access:assume` scope.
 

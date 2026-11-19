@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/automatic-subtitling
 ---
 
 # Setting up Smart Subtitles (console)
-<a name="automatic-subtitling-setup-console"></a>
 
 Follow these steps to enable Smart Subtitles in a channel using the MediaLive console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # ImportKeyPair
-<a name="API_ImportKeyPair"></a>
 
 Imports a public SSH key from a specific key pair.
 

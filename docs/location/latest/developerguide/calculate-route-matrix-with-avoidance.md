@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to calculate route matrix with avoidance
-<a name="calculate-route-matrix-with-avoidance"></a>
 
 The CalculateRouteMatrix API computes routes and returns travel time and distance from each origin to each destination in the specified lists. The response includes `Distance` in meters and `Duration` in seconds. The API can be used to set avoidance options for specific areas or road features, ensuring routes avoid specified zones or conditions. If an alternative route is not feasible, the avoidance preference may be bypassed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksResults
-<a name="API_runtime_GuardrailChecksResults"></a>
 
 The results from the guardrail checks evaluation, organized by check type.
 

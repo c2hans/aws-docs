@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapFileSys
 ---
 
 # OntapFileSystemConfiguration
-<a name="API_OntapFileSystemConfiguration"></a>
 
 Configuration for the FSx for NetApp ONTAP file system.
 

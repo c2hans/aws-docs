@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ApiCache
 ---
 
 # ApiCache
-<a name="API_ApiCache"></a>
 
 The `ApiCache` object.
 

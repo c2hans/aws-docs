@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::ComponentType PropertyDefinition
-<a name="aws-properties-iottwinmaker-componenttype-propertydefinition"></a>
 
 PropertyDefinition is an object that maps strings to the property definitions in the component type.
 

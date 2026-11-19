@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionStatistics
-<a name="API_IngestionStatistics"></a>
 
 Processing statistics for an ingestion job or ingestion stream.
 

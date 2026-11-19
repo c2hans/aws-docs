@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Creating a SageMaker HyperPod cluster
-<a name="sagemaker-hyperpod-multihead-slurm-create"></a>
 
 After setting up all the required resources and uploading the scripts to the Amazon S3 bucket, you can create a cluster.
 

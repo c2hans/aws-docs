@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # TraceMetadata
-<a name="API_TraceMetadata"></a>
 
 One TRACES query selector block on a node/edge (see LogMetadata).
 

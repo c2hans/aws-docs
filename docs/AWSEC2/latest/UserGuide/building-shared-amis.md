@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/building-shared-
 ---
 
 # Recommendations for creating shared Linux AMIs
-<a name="building-shared-amis"></a>
 
 Use the following guidelines to reduce the attack surface and improve the reliability of the AMIs you create.
 

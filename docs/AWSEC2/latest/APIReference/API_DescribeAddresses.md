@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAddresses
-<a name="API_DescribeAddresses"></a>
 
 Describes the specified Elastic IP addresses or all of your Elastic IP addresses.
 

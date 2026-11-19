@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartConfiguration
-<a name="API_WaterfallChartConfiguration"></a>
 
 The configuration for a waterfall visual.
 

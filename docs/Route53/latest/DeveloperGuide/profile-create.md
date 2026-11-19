@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-cr
 ---
 
 # Creating Route 53 Profiles
-<a name="profile-create"></a>
 
 To create Route 53 Profiles, follow the guidance in this topic. Choose a tab to create a Route 53 Profile by using the Route 53 console, or AWS CLI.
 + [Console](#profile_create_console)

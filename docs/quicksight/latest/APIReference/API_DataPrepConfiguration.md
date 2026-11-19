@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPrepConfiguration
-<a name="API_DataPrepConfiguration"></a>
 
 Configuration for data preparation operations, defining the complete pipeline from source tables through transformations to destination tables.
 

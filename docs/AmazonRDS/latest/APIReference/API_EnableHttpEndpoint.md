@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Enable
 ---
 
 # EnableHttpEndpoint
-<a name="API_EnableHttpEndpoint"></a>
 
 Enables the HTTP endpoint for the DB cluster. By default, the HTTP endpoint isn't enabled.
 

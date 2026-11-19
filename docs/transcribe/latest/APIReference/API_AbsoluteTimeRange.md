@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Absol
 ---
 
 # AbsoluteTimeRange
-<a name="API_AbsoluteTimeRange"></a>
 
 A time range, in milliseconds, between two points in your media file.
 

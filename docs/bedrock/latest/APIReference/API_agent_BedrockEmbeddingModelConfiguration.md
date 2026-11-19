@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Be
 ---
 
 # BedrockEmbeddingModelConfiguration
-<a name="API_agent_BedrockEmbeddingModelConfiguration"></a>
 
 The vector configuration details for the Bedrock embeddings model.
 

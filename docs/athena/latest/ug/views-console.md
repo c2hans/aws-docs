@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views-console.html
 ---
 
 # Work with Athena views
-<a name="views-console"></a>
 
 Athena views can be easily created, updated, and managed in the Athena console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Multipart Amazon S3 uploads using AWS SDK for Swift
-<a name="using-multipart-uploads"></a>
 
 ## Overview
 <a name="multipart-overview"></a>

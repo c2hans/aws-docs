@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-del
 ---
 
 # Deleting vectors from a vector index
-<a name="s3-vectors-delete"></a>
 
 You can delete specific vectors from a vector index by specifying their vector keys using the [DeleteVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_DeleteVectors.html) API. This operation is useful for removing outdated or incorrect data while preserving the rest of your vector data.
 

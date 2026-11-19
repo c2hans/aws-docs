@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSAS.Disable.
 ---
 
 # Turning off SSAS
-<a name="SSAS.Disable"></a>
 
 To turn off SSAS, remove the `SSAS` option from its option group.
 

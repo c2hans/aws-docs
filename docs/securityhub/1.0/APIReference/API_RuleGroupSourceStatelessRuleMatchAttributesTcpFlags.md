@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatelessRuleMatchAttributesTcpFlags
-<a name="API_RuleGroupSourceStatelessRuleMatchAttributesTcpFlags"></a>
 
 A set of TCP flags and masks to inspect for.
 

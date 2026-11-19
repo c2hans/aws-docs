@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListObjectTypeAttributeItem
-<a name="API_connect-customer-profiles_ListObjectTypeAttributeItem"></a>
 
 Item that contains the attribute and when it was last updated.
 

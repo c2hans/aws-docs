@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-
 ---
 
 # Managing versions for AMI-based products on AWS Marketplace
-<a name="single-ami-versions"></a>
 
 When you create an Amazon Machine Image (AMI) based product on AWS Marketplace, you include a specific version of your software. The lifecycle of an AMI-based product for AWS Marketplace doesn't end after you publish the first version. You should keep your product up-to-date with new versions of your software. The following sections show you how to manage your versions, which includes updating version information (such as descriptions and dates), adding new versions, and restricting access to previous versions.
 

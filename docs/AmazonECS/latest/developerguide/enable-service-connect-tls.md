@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-s
 ---
 
 # Enabling TLS for Amazon ECS Service Connect
-<a name="enable-service-connect-tls"></a>
 
 You enable traffic encryption when you create or update a Service Connect service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Data strategy roadmap
-<a name="roadmap"></a>
 
 Based on the diagram in the previous section, you can select the stories to work on (marked as red and yellow), group them in enablement projects, and then build the roadmap needed to achieve your company's business goals. The following diagram shows this process.
 

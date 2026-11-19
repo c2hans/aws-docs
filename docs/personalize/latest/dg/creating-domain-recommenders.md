@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/creating-domain-re
 ---
 
 # Creating domain recommenders in Amazon Personalize
-<a name="creating-domain-recommenders"></a>
 
 You can create recommenders with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs. The following includes detailed steps to create recommenders with the Amazon Personalize console and code examples that show how to create a recommender with only the required fields.
 + For code samples that show how to enable metadata in recommendations, see [Enabling metadata in recommendations](create-recommender-return-metadata.md).

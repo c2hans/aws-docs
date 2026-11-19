@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bingo.html
 ---
 
 # .bingo
-<a name="bingo"></a>
 
 Used for online gaming websites or for sharing information about the game of bingo.
 

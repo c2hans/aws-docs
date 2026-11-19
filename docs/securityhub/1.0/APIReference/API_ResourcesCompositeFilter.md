@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesCompositeFilter
-<a name="API_ResourcesCompositeFilter"></a>
 
 Enables the creation of criteria for AWS resources in Security Hub CSPM.
 
@@ -22,7 +21,7 @@ Required: No
 
  ** NestedCompositeFilters **   <a name="securityhub-Type-ResourcesCompositeFilter-NestedCompositeFilters"></a>
  Provides an additional level of filtering, creating a three-layer nested structure. The first layer is a `CompositeFilters` array with a `CompositeOperator` (`AND`/`OR`). The second layer is a `CompositeFilter` object that contains direct filters and `NestedCompositeFilters`. The third layer is `NestedCompositeFilters`, which contains additional filter conditions.
-Type: Array of [ResourcesCompositeFilter](#API_ResourcesCompositeFilter) objects
+Type: Array of [ResourcesCompositeFilter](API_ResourcesCompositeFilter.md) objects
 Required: No
 
  ** NumberFilters **   <a name="securityhub-Type-ResourcesCompositeFilter-NumberFilters"></a>

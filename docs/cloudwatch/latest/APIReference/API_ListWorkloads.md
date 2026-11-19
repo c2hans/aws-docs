@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListW
 ---
 
 # ListWorkloads
-<a name="API_ListWorkloads"></a>
 
 Lists the workloads that are configured on a given component.
 

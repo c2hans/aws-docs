@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Example: Use explicit sorting to find best matches
-<a name="match-examples-4"></a>
 
 This example sets up a simple match with two teams of three players. It illustrates how to use explicit sorting rules to help find the best possible matches as quickly as possible. These rules sort all active matchmaking tickets to create the best matches based on certain key requirements. This example is implemented with the following instructions:
 + Create two teams of players.

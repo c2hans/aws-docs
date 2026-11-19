@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Supported languages for Amazon Inspector code security
-<a name="code-security-assessments-supported-languages"></a>
 
  This topic includes the supported languages for Amazon Inspector Code Security.
 

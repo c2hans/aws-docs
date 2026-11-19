@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-data-from-t
 ---
 
 # Using Amazon Timestream data with AWS Quick Sight
-<a name="using-data-from-timestream"></a>
 
 Following, you can find how to connect to your Amazon Timestream data using AWS Quick Sight. For a brief overview, see the [Getting started with Amazon Timestream and Amazon QuickSight](https://youtu.be/TzW4HWl-L8s) video tutorial on YouTube.
 

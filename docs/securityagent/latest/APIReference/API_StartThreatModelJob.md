@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_St
 ---
 
 # StartThreatModelJob
-<a name="API_StartThreatModelJob"></a>
 
 Starts a new threat model job for a threat model configuration.
 

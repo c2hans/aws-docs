@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/delete-a-layou
 ---
 
 # Delete a layout
-<a name="delete-a-layout"></a>
 
 Remove layouts that you no longer need from the **Profile layouts** page.
 

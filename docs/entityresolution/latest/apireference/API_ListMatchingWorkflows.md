@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListMatchingWorkflows
-<a name="API_ListMatchingWorkflows"></a>
 
 Returns a list of all the `MatchingWorkflows` that have been created for an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_R
 ---
 
 # RawMessage
-<a name="API_RawMessage"></a>
 
 The raw email message.
 

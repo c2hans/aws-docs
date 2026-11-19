@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-serv
 ---
 
 # Service-linked role to share procurement data
-<a name="buyer-service-linked-role-procurement"></a>
 
 AWS Marketplace uses the `AWSServiceRoleForProcurementInsightsPolicy` service-linked role to access and describe the data in your AWS organization. You must create this role to use the [Procurement insights dashboard](procurement-insights.md).
 

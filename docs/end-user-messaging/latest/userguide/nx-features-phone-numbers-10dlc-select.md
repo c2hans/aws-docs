@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Requesting a 10DLC phone number by area code
-<a name="nx-features-phone-numbers-10dlc-select"></a>
 
 When you request a 10 digit long code (10DLC) phone number, you can search for and choose a specific number instead of receiving a random assignment. You can search by area code or by a pattern within the phone number. You can also request an exact phone number. This feature is available for United States 10DLC phone numbers only.
 

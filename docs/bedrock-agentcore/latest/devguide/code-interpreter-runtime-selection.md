@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Runtime selection
-<a name="code-interpreter-runtime-selection"></a>
 
 For a language, you can optionally specify a particular runtime. The following table shows the supported languages and their available runtimes.
 

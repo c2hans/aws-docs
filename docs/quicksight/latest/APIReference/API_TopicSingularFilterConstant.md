@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicSingularFilterConstant
-<a name="API_TopicSingularFilterConstant"></a>
 
 A structure that represents a singular filter constant, used in filters to specify a single value to match against.
 

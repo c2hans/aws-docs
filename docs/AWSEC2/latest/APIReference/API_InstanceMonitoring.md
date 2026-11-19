@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceM
 ---
 
 # InstanceMonitoring
-<a name="API_InstanceMonitoring"></a>
 
 Describes the monitoring of an instance.
 

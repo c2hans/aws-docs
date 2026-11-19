@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_C
 ---
 
 # CsvOptions
-<a name="API_CsvOptions"></a>
 
  Processing options for the CSV file being imported.
 

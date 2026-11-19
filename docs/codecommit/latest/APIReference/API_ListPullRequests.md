@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListP
 ---
 
 # ListPullRequests
-<a name="API_ListPullRequests"></a>
 
 Returns a list of pull requests for a specified repository. The return list can be refined by pull request status or pull request author ARN.
 

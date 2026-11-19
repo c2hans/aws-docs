@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ModelPackage S3ModelDataSource
-<a name="aws-properties-sagemaker-modelpackage-s3modeldatasource"></a>
 
 Specifies the S3 location of ML model data to deploy.
 

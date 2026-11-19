@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SourceD
 ---
 
 # SourceDescription
-<a name="API_SourceDescription"></a>
 
 Details about a Kinesis data stream used as the source for a Firehose stream.
 

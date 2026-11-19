@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # PutWhatsAppBusinessAccountEventDestinations
-<a name="API_PutWhatsAppBusinessAccountEventDestinations"></a>
 
 Add an event destination to log event data from WhatsApp for a WhatsApp Business Account (WABA). A WABA can only have one event destination at a time. All resources associated with the WABA use the same event destination.
 

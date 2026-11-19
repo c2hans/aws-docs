@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/updating-vcenter-or-aws-cr
 ---
 
 # Updating the vCenter or AWS Credentials
-<a name="updating-vcenter-or-aws-credentials"></a>
 
 **Important**
 Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).

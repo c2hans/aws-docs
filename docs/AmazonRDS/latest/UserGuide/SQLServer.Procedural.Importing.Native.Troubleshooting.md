@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 ---
 
 # Troubleshooting
-<a name="SQLServer.Procedural.Importing.Native.Troubleshooting"></a>
 
 The following are issues you might encounter when you use native backup and restore.
 

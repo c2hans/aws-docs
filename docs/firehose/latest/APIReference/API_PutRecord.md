@@ -3,15 +3,14 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_PutReco
 ---
 
 # PutRecord
-<a name="API_PutRecord"></a>
 
 Writes a single data record into an Firehose stream. To write multiple data records into a Firehose stream, use [PutRecordBatch](API_PutRecordBatch.md). Applications using these operations are referred to as producers.
 
-By default, each Firehose stream can take in up to 2,000 transactions per second, 5,000 records per second, or 5 MB per second. If you use [PutRecord](#API_PutRecord) and [PutRecordBatch](API_PutRecordBatch.md), the limits are an aggregate across these two operations for each Firehose stream. For more information about limits and how to request an increase, see [Amazon Firehose Limits](https://docs.aws.amazon.com/firehose/latest/dev/limits.html).
+By default, each Firehose stream can take in up to 2,000 transactions per second, 5,000 records per second, or 5 MB per second. If you use [PutRecord](API_PutRecord.md) and [PutRecordBatch](API_PutRecordBatch.md), the limits are an aggregate across these two operations for each Firehose stream. For more information about limits and how to request an increase, see [Amazon Firehose Limits](https://docs.aws.amazon.com/firehose/latest/dev/limits.html).
 
 Firehose accumulates and publishes a particular metric for a customer account in one minute intervals. It is possible that the bursts of incoming bytes/records ingested to a Firehose stream last only for a few seconds. Due to this, the actual spikes in the traffic might not be fully visible in the customer's 1 minute CloudWatch metrics.
 
-You must specify the name of the Firehose stream and the data record when using [PutRecord](#API_PutRecord). The data record consists of a data blob that can be up to 1,000 KiB in size, and any kind of data. For example, it can be a segment from a log file, geographic location data, website clickstream data, and so on.
+You must specify the name of the Firehose stream and the data record when using [PutRecord](API_PutRecord.md). The data record consists of a data blob that can be up to 1,000 KiB in size, and any kind of data. For example, it can be a segment from a log file, geographic location data, website clickstream data, and so on.
 
 For multi record de-aggregation, you can not put more than 500 records even if the data blob length is less than 1000 KiB. If you include more than 500 records, the request succeeds but the record de-aggregation doesn't work as expected and transformation lambda is invoked with the complete base64 encoded data blob instead of de-aggregated base64 decoded records.
 

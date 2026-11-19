@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_RedshiftData
 ---
 
 # RedshiftDataProviderSettings
-<a name="API_RedshiftDataProviderSettings"></a>
 
 Provides information that defines an Amazon Redshift data provider.
 

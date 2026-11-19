@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeCrossAccountAttachment
-<a name="API_DescribeCrossAccountAttachment"></a>
 
 Gets configuration information about a cross-account attachment.
 

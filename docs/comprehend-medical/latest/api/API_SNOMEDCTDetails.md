@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_SNOMED
 ---
 
 # SNOMEDCTDetails
-<a name="API_SNOMEDCTDetails"></a>
 
  The information about the revision of the SNOMED-CT ontology in the response. Specifically, the details include the SNOMED-CT edition, language, and version date.
 

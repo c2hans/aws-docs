@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-quota-manag
 ---
 
 # Quota Management
-<a name="fsrm-quota-management"></a>
 
 You can use File Server Resource Manager (FSRM) quota management to control the amount of storage space that users consume on your FSx for Windows File Server file system. Quotas help you manage storage capacity by limiting the amount of data that can be stored in specific folders and by generating notifications when storage usage approaches or exceeds defined thresholds.
 

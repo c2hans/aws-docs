@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/register-tg
 ---
 
 # Register a transit gateway using AWS Network Manager
-<a name="register-tgw"></a>
 
 Register a transit gateway created using Amazon Virtual Private Cloud with your AWS global network using either the Network Manager console or using the CLI. You cannot register a transit gateway with more than one global network.
 

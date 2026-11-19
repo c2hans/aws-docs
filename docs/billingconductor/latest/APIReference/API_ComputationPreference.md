@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ComputationPreference
-<a name="API_ComputationPreference"></a>
 
 The preferences and settings that will be used to compute the AWS charges for a billing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_OAuth2C
 ---
 
 # OAuth2ClientCredentialConfiguration
-<a name="API_OAuth2ClientCredentialConfiguration"></a>
 
 Information about the OAuth 2.0 authentication credential/token used to configure a plugin.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-access-s
 ---
 
 # Setting up hybrid access mode - common scenarios
-<a name="hybrid-access-setup"></a>
 
 As with Lake Formation permissions, you generally have two types of scenarios in which you can use hybrid access mode to manage data access: Provide access to principals within one AWS account and provide access to an external AWS account or principal.
 

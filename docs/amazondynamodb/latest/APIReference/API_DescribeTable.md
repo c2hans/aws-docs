@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DescribeTable
-<a name="API_DescribeTable"></a>
 
 Returns information about the table, including the current status of the table, when it was created, the primary key schema, and any indexes on the table.
 

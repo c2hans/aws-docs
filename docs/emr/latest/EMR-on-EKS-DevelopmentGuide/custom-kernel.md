@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/c
 ---
 
 # Custom kernel image with interactive endpoint
-<a name="custom-kernel"></a>
 
 To ensure that you have the correct dependencies for your application when you run interactive workloads from Amazon EMR Studio, you can customize Docker images for interactive endpoints and run customized base kernel images. To create an interactive endpoint and connect it with a custom Docker image, perform the following steps.
 

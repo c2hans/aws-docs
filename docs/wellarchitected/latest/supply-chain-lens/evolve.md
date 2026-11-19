@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Evolve
-<a name="evolve"></a>
 
 | SCOPS12: How do you continuously evolve your supply chain operations? |
 | --- |

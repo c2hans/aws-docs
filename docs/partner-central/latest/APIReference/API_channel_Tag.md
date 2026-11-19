@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # Tag
-<a name="API_channel_Tag"></a>
 
 A key-value pair that can be associated with a resource.
 

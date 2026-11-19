@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Jupyte
 ---
 
 # JupyterLabAppSettings
-<a name="API_JupyterLabAppSettings"></a>
 
 The settings for the JupyterLab application.
 

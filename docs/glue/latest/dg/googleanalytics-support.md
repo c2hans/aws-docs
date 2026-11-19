@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-support.h
 ---
 
 # AWS Glue support for Google Analytics 4
-<a name="googleanalytics-support"></a>
 
 AWS Glue supports Google Analytics 4 as follows:
 

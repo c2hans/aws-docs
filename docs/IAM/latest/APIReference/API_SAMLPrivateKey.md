@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SAMLPrivateK
 ---
 
 # SAMLPrivateKey
-<a name="API_SAMLPrivateKey"></a>
 
 Contains the private keys for the SAML provider.
 

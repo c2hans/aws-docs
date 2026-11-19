@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-StartStopAuroraCluster`
-<a name="start-stop-aurora-cluster"></a>
 
 **Description**
 

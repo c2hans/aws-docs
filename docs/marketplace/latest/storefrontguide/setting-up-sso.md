@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/setti
 ---
 
 # Setting up single sign-on for your organization
-<a name="setting-up-sso"></a>
 
 Single sign-on (SSO) lets your organization members sign in to AWS Marketplace Storefront with your identity provider. AWS Marketplace Storefront supports Okta and Microsoft Entra ID. Only organization Owners can configure SSO.
 

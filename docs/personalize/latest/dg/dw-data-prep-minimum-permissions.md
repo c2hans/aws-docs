@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/dw-data-prep-minim
 ---
 
 # Setting up permissions
-<a name="dw-data-prep-minimum-permissions"></a>
 
 To prepare data with Data Wrangler, you must set up the following permissions:
 + **Create a service role for Amazon Personalize:** If you haven't already, complete the instructions in [Setting up Amazon Personalize](setup.md) to create an IAM service role for Amazon Personalize. This role must have `GetObject` and `ListBucket` permissions for the Amazon S3 buckets that store your processed data. And it must have permission to use any AWS KMS keys.

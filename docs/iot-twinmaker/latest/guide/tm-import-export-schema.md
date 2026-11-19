@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-import-exp
 ---
 
 # AWS IoT TwinMaker metadata transfer job schema
-<a name="tm-import-export-schema"></a>
 
 **metadataTransferJob import schema:** Use this AWS IoT TwinMaker metadata schema to validate your data when you upload it to an Amazon S3 bucket:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytic
 ---
 
 # ![AWS Analytics category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/analytics-icon.jpg)Analytics
-<a name="analytics"></a>
 
 AWS provides a comprehensive set of analytics services that fit all your data analytics needs and enables organizations of all sizes and industries to reinvent their business with data. From storage and management, data governance, actions, and experiences, AWS offers purpose-built services that provide the best price-performance, scalability, and lowest cost.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_FileSystemPr
 ---
 
 # FileSystemProtectionDescription
-<a name="API_FileSystemProtectionDescription"></a>
 
 Describes the protection on a file system.
 

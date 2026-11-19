@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/rust.html
 ---
 
 # Rust in AL2
-<a name="rust"></a>
 
  You might want to build your own code written in [Rust](https://www.rust-lang.org/) on AL2 using a toolchain provided with AL2.
 

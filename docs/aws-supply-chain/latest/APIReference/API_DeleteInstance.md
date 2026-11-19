@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DeleteInstance
-<a name="API_DeleteInstance"></a>
 
 Enables you to programmatically delete an AWS Supply Chain instance by deleting the KMS keys and relevant information associated with the API without using the AWS console.
 

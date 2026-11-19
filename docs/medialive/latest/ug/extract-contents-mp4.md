@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-contents-mp4
 ---
 
 # Identifying content in an MP4 source
-<a name="extract-contents-mp4"></a>
 
 The content in an MP4 source always consists of one video track, one or more audio tracks, and optional captions.
 

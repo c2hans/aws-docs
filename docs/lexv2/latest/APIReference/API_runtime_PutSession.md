@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Pu
 ---
 
 # PutSession
-<a name="API_runtime_PutSession"></a>
 
 Creates a new session or modifies an existing session with an Amazon Lex bot. Use this operation to enable your application to set the state of the bot.
 

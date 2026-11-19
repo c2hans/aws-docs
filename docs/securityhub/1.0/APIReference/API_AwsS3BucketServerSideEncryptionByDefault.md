@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketServerSideEncryptionByDefault
-<a name="API_AwsS3BucketServerSideEncryptionByDefault"></a>
 
 Specifies the default server-side encryption to apply to new objects in the bucket.
 

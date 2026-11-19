@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Event types for SMS, MMS, and voice
-<a name="configuration-sets-event-types"></a>
 
 The easiest way to use event destinations is to send all SMS, MMS and voice events to a single destination. However, you can configure event destinations so that specific types of events are sent to different destinations. For example, you could send all delivery-related events to Firehose for storage, and all failure events to an Amazon SNS topic so that you can be notified when they occur. You can also send SMS events and voice events to different locations.
 

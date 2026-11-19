@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configure Machine Learning on Amazon OpenSearch Serverless
-<a name="serverless-configure-machine-learning"></a>
 
 ## Machine Learning
 <a name="serverless-configure-machine-learning-what-is"></a>

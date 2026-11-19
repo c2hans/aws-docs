@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDataProductRevision
-<a name="API_CreateDataProductRevision"></a>
 
 Creates a data product revision.
 

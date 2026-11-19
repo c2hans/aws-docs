@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/id3-enable-result.ht
 ---
 
 # Different mechanisms for including metadata
-<a name="id3-enable-result"></a>
 
 You can include metadata in the following ways.
 + Passthrough — Pass through metadata that is already present in the source input. You set up to include this metadata when you create or modify the channel.

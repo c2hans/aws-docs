@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateConfiguredTable
-<a name="API_UpdateConfiguredTable"></a>
 
 Updates a configured table.
 

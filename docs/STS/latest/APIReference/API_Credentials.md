@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
  AWS credentials for API authentication.
 

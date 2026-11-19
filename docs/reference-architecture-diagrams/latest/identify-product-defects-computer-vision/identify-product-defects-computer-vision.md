@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Identify Product Defects using Industrial Computer Vision
-<a name="identify-product-defects-computer-vision"></a>
 
 Publication date: **October 10, 2024 ([Diagram history](#ipd-diagram-history))**
 

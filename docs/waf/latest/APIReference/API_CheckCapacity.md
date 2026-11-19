@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CheckCapacit
 ---
 
 # CheckCapacity
-<a name="API_CheckCapacity"></a>
 
 Returns the web ACL capacity unit (WCU) requirements for a specified scope and set of rules. You can use this to check the capacity requirements for the rules you want to use in a [RuleGroup](API_RuleGroup.md) or [WebACL](API_WebACL.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedTaskRunSessionActionDefinition
-<a name="API_AssignedTaskRunSessionActionDefinition"></a>
 
 The specific task, step, and parameters to include.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/emr-block-p
 ---
 
 # emr-block-public-access
-<a name="emr-block-public-access"></a>
 
 Checks if an account with Amazon EMR has block public access settings enabled. The rule is NON\_COMPLIANT if BlockPublicSecurityGroupRules is false, or if true, ports other than Port 22 are listed in PermittedPublicSecurityGroupRuleRanges.
 

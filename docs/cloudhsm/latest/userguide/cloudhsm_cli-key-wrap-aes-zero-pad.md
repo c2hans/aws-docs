@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # Wrap a key with AES-ZERO-PAD using CloudHSM CLI
-<a name="cloudhsm_cli-key-wrap-aes-zero-pad"></a>
 
 Use the **key wrap aes-zero-pad** command in CloudHSM CLI to wrap a payload key using an AES key on the hardware security module HSM) and the `AES-ZERO-PAD` wrapping mechanism. The payload key’s `extractable` attribute must be set to `true`.
 

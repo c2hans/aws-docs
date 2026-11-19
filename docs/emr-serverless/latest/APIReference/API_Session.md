@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # Session
-<a name="API_Session"></a>
 
 Information about a session, including the session state, configuration, and timestamps.
 

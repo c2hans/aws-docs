@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEndpoi
 ---
 
 # VpcEndpointConnection
-<a name="API_VpcEndpointConnection"></a>
 
 Describes a VPC endpoint connection to a service.
 

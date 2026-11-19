@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # EmailMessageTemplateContentBody
-<a name="API_amazon-q-connect_EmailMessageTemplateContentBody"></a>
 
 The body to use in email messages.
 

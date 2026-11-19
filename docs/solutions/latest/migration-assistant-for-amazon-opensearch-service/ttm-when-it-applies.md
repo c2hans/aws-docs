@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # When type-mapping transformation applies
-<a name="ttm-when-it-applies"></a>
 
 Type-mapping transformation applies only when your source cluster predates the removal of multiple mapping types:
 +  **Elasticsearch 6.x and earlier** — Indexes can contain multiple types, so transformation is relevant. Elasticsearch 5.x and earlier commonly use multiple types per index; Elasticsearch 6.x permits at most one type per index but still carries the type layer.

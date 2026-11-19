@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GoogleDri
 ---
 
 # GoogleDriveConfiguration
-<a name="API_GoogleDriveConfiguration"></a>
 
 Provides the configuration information to connect to Google Drive as your data source.
 

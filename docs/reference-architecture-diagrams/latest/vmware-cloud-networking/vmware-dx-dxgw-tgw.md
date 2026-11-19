@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/v
 ---
 
 # On-Premises Connectivity Using AWS Direct Connect with Direct Connect Gateway and AWS Transit Gateway
-<a name="vmware-dx-dxgw-tgw"></a>
 
 Publication date: **March 10, 2022 ([Diagram history](#vmdxg-diagram-history))**
 

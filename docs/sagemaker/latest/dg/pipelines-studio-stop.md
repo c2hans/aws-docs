@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-studio-sto
 ---
 
 # Stop a pipeline
-<a name="pipelines-studio-stop"></a>
 
 You can stop a pipeline run in the Amazon SageMaker Studio console.
 

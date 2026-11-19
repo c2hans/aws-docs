@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_CHANGE_USER_PRIORIT
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # CHANGE\_USER\_PRIORITY
-<a name="r_CHANGE_USER_PRIORITY"></a>
 
 CHANGE\_USER\_PRIORITY enables superusers to modify the priority of all queries issued by a user that are either running or waiting in workload management (WLM). Only one user, session, or query can run with the priority `CRITICAL`.
 

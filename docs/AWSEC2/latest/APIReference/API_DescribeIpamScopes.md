@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamScopes
-<a name="API_DescribeIpamScopes"></a>
 
 Get information about your IPAM scopes.
 

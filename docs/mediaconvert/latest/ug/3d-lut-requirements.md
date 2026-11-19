@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/3d-lut-requiremen
 ---
 
 # 3D LUTs job settings requirements
-<a name="3d-lut-requirements"></a>
 
 When you include 3D LUTs as part of your MediaConvert job, you must also include the following settings:
 

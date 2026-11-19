@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/conn
 ---
 
 # Connect your Gateway Load Balancer to a transit gateway
-<a name="connect-gwlb-tgw"></a>
 
 A network function attachment of type Gateway Load Balancer connects a transit gateway to your Gateway Load Balancer VPC endpoint service. Transit Gateway creates one Gateway Load Balancer endpoint in each Availability Zone you select.
 

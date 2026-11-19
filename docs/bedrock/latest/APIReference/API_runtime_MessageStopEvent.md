@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # MessageStopEvent
-<a name="API_runtime_MessageStopEvent"></a>
 
 The stop event for a message.
 

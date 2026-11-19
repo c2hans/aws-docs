@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionInput.ht
 ---
 
 # PartitionInput
-<a name="API_PartitionInput"></a>
 
 The structure used to create and update a partition.
 

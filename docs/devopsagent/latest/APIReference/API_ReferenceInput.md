@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Refe
 ---
 
 # ReferenceInput
-<a name="API_ReferenceInput"></a>
 
 Reference information linking a task to external systems - for input with validation
 

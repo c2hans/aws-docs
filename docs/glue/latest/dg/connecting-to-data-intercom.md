@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-interc
 ---
 
 # Connecting to Intercom in AWS Glue Studio
-<a name="connecting-to-data-intercom"></a>
 
  Intercom is the Engagement OS, an open channel between your business and your customers—in product, in the moment, and on their terms—creating an ongoing dialogue that enables you to make the most of every engagement across the customer journey.
 

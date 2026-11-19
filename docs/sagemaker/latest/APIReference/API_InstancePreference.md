@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Instan
 ---
 
 # InstancePreference
-<a name="API_InstancePreference"></a>
 
 A candidate instance type preference in an `InstancePreferences` list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-unmanaged.ht
 ---
 
 # Unmanaged nodegroups
-<a name="nodegroup-unmanaged"></a>
 
 In `eksctl`, setting `--managed=false` or using the `nodeGroups` field creates an unmanaged nodegroup. Bear in mind that unmanaged nodegroups do not appear in the EKS console, which as a general rule only knows about EKS-managed nodegroups.
 

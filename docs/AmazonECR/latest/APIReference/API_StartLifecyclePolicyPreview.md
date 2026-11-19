@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartL
 ---
 
 # StartLifecyclePolicyPreview
-<a name="API_StartLifecyclePolicyPreview"></a>
 
 Starts a preview of a lifecycle policy for the specified repository. This allows you to see the results before associating the lifecycle policy with the repository.
 

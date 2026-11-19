@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Observ
 ---
 
 # Observations
-<a name="API_Observations"></a>
 
 Contains information about the observed behavior.
 

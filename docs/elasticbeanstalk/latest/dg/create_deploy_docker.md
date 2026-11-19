@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Deploying with Docker containers to Elastic Beanstalk
-<a name="create_deploy_docker"></a>
 
 This chapter explains how you can use Elastic Beanstalk to deploy web applications from Docker containers. Docker containers are self contained and include all the configuration information and software that your web application requires to run. With Docker containers you can define your own runtime environment. You can also choose your own programming language and application dependencies, such as package managers or tools, which typically aren't supported by other Elastic Beanstalk platforms.
 

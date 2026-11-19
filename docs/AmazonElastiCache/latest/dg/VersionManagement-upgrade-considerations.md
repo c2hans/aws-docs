@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManag
 ---
 
 # Upgrade considerations when working with node-based clusters
-<a name="VersionManagement-upgrade-considerations"></a>
 
 **Note**
 The following considerations only apply when upgrading node-based clusters. They do not apply to ElastiCache Serverless.

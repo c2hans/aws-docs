@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 5.1 Rewards and recognition
-<a name="rewards"></a>
 
 ## Overview
 <a name="rewards-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/how-runtime-monitori
 ---
 
 # Deploying the security agent to Amazon EKS
-<a name="how-runtime-monitoring-works-eks"></a>
 
 GuardDuty Runtime Monitoring monitors your Amazon EKS clusters for threats by deploying the GuardDuty security agent to them. On Amazon EKS, GuardDuty deploys the agent as the [EKS add-on `aws-guardduty-agent`](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html#workloads-add-ons-available-eks).
 

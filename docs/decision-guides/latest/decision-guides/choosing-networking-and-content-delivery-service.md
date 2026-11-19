@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # Choosing an AWS networking and content delivery service
-<a name="choosing-networking-and-content-delivery-service"></a>
 
 |  |  |
 | --- |--- |

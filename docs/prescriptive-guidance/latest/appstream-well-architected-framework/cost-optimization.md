@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Cost optimization pillar
-<a name="cost-optimization"></a>
 
 The [cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html) of the AWS Well-Architected Framework focuses on delivering business value at the lowest price point. It helps you align your spending on cloud resources with your organizational objectives.
 

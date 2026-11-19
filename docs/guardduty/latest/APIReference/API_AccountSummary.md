@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # AccountSummary
-<a name="API_AccountSummary"></a>
 
 Contains the number of findings in an AWS account.
 

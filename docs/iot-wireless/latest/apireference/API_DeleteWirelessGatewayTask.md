@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteWirelessGatewayTask
-<a name="API_DeleteWirelessGatewayTask"></a>
 
 Deletes a wireless gateway task.
 

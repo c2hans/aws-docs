@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # AssociateMpaTeam
-<a name="API_AssociateMpaTeam"></a>
 
 Associates a Multi-Party Approval (MPA) team with a protected operation. For more information, see [Multi-Party Approval](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/mpa.html) in the * AWS Payment Cryptography User Guide.*
 

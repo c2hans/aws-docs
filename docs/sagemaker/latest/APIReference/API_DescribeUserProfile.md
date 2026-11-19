@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeUserProfile
-<a name="API_DescribeUserProfile"></a>
 
 Describes a user profile. For more information, see `CreateUserProfile`.
 

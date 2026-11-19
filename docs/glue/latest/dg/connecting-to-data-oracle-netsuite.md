@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-oracle
 ---
 
 # Connecting to Oracle NetSuite
-<a name="connecting-to-data-oracle-netsuite"></a>
 
 Oracle NetSuite is an all-in-one cloud business management solution that helps organizations operate more effectively by automating core processes and providing real-time visibility into operational and financial performance. With a single, integrated suite of applications for managing accounting, order processing, inventory management, production, supply chain and warehouse operations, Oracle NetSuite gives companies clear visibility into their data and tighter control over their businesses.
 

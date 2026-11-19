@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyWorkspac
 ---
 
 # ModifyWorkspaceProperties
-<a name="API_ModifyWorkspaceProperties"></a>
 
 Modifies the specified WorkSpace properties. For important information about how to modify the size of the root and user volumes, see [ Modify a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/wiki.html
 ---
 
 # .wiki
-<a name="wiki"></a>
 
 Used for information about online documentation.
 

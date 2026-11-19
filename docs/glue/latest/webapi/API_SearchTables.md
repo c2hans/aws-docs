@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchTables.html
 ---
 
 # SearchTables
-<a name="API_SearchTables"></a>
 
 Searches a set of tables based on properties in the table metadata as well as on the parent database. You can search against text or filter conditions.
 

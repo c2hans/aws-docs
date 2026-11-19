@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # UserType
-<a name="API_UserType"></a>
 
 The type of owner of the correspondence, either customer or AWS operator.
 

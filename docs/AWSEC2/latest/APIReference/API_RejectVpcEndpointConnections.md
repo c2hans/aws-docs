@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectVpc
 ---
 
 # RejectVpcEndpointConnections
-<a name="API_RejectVpcEndpointConnections"></a>
 
 Rejects VPC endpoint connection requests to your VPC endpoint service.
 

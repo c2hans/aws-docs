@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/variant-store-availabil
 ---
 
 # AWS HealthOmics variant store and annotation store availability change
-<a name="variant-store-availability-change"></a>
 
 After careful consideration, we decided to close AWS HealthOmics variant stores and annotation stores to new customers starting November 7th, 2025. Existing customers can continue to use the service as normal.
 

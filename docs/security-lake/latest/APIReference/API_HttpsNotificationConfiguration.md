@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Ht
 ---
 
 # HttpsNotificationConfiguration
-<a name="API_HttpsNotificationConfiguration"></a>
 
 The configurations used for HTTPS subscriber notification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Step.htm
 ---
 
 # Step
-<a name="API_Step"></a>
 
 Step signifies the criteria to be used for routing to an agent
 

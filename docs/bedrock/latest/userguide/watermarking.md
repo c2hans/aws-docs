@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/watermarking.ht
 ---
 
 # Watermarking in Amazon Bedrock
-<a name="watermarking"></a>
 
 A watermark is a machine-readable signal embedded in AI-generated content. Some models in Amazon Bedrock add a watermark to the content that they generate. In text, the watermark is a statistical pattern in the model's token choices. In speech, it is a signal embedded in the media. Watermarks are not perceptible to people. Instead, detection tools, where the model provider makes them available, can identify the watermark.
 

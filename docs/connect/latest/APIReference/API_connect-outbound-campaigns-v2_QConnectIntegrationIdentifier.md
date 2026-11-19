@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # QConnectIntegrationIdentifier
-<a name="API_connect-outbound-campaigns-v2_QConnectIntegrationIdentifier"></a>
 
 The identifier for the integration with Amazon Q in Connect.
 

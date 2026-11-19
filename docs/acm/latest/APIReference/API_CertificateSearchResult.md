@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateS
 ---
 
 # CertificateSearchResult
-<a name="API_CertificateSearchResult"></a>
 
 Contains information about a certificate returned by the [SearchCertificates](API_SearchCertificates.md) action. This structure includes the certificate ARN, X.509 attributes, and ACM metadata.
 

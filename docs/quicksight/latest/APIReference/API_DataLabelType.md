@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataL
 ---
 
 # DataLabelType
-<a name="API_DataLabelType"></a>
 
 The option that determines the data label type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10-b
 ---
 
 # SEC10-BP04 Run simulations
-<a name="sec10-bp04"></a>
 
  Simulations, sometimes called game days, put your team through realistic security scenarios so they practice their roles, tools, and communication before a real incident. Regular exercises reveal gaps in plans and playbooks while the stakes are low.
 

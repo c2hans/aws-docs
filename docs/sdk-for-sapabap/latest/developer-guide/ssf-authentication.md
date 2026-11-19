@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Using Secret Access Key Authentication with SSF Encryption
-<a name="ssf-authentication"></a>
 
 On-premises SAP systems (or systems running in other clouds) can be authenticated on AWS by using secret access key authentication with AWS Identity and Access Management. SAP's [Secure Store and Forward Mechanism](https://help.sap.com/docs/ABAP_PLATFORM_NEW/cf1026f0534f408e849ee7feed288a66/53251a355d0c4d78e10000009b38f83b.html) (SSF) is used to encrypt and securely store AWS credentials (Access Key ID and a Secret Access Key) of an IAM user. The SAP system logs into AWS using an IAM user, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) for information.
 

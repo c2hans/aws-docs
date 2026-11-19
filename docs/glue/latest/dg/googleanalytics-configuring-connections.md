@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleanalytics-configuri
 ---
 
 # Configuring Google Analytics 4 connections
-<a name="googleanalytics-configuring-connections"></a>
 
 To configure a Google Sheet connection:
 

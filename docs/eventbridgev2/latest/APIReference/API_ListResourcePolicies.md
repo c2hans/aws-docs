@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Li
 ---
 
 # ListResourcePolicies
-<a name="API_ListResourcePolicies"></a>
 
 Lists the resource policies attached to an event bus as summaries (policy name and revision ID). Use GetResourcePolicy to retrieve a policy document.
 

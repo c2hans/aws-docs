@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FairshareC
 ---
 
 # FairshareCapacityUsage
-<a name="API_FairshareCapacityUsage"></a>
 
 The capacity usage for a fairshare scheduling job queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Repos
 ---
 
 # RepositoryNameIdPair
-<a name="API_RepositoryNameIdPair"></a>
 
 Information about a repository name and ID.
 

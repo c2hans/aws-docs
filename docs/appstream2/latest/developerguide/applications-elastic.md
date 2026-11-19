@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/applica
 ---
 
 # Applications
-<a name="applications-elastic"></a>
 
 Applications contain the details necessary to launch your application after the VHD has been mounted. Applications also include the name and icon that are displayed to your user on the application catalog. Applications are associated with the app block resource that contains the files and binaries for that application.
 

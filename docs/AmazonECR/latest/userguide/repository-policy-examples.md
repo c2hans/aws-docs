@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-po
 ---
 
 # Private repository policy examples in Amazon ECR
-<a name="repository-policy-examples"></a>
 
 **Important**
 The repository policy examples on this page are meant to be applied to Amazon ECR private repositories. They will not work properly if used with an IAM principal directly unless modified to specify the Amazon ECR repository as the resource. For more information on setting repository policies, see [Setting a private repository policy statement in Amazon ECR](set-repository-policy.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Resource.h
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Details about the resource involved in a finding.
 

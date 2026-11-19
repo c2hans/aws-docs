@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-com
 ---
 
 # Create component models
-<a name="create-component-models"></a>
 
 Use AWS IoT SiteWise component models to define subassemblies that you can reference from asset models or other component models. In this way, you can re-use the definition of the component across multiple other models, or multiple times within the same model.
 

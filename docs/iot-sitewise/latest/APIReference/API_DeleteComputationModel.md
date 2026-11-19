@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteComputationModel
-<a name="API_DeleteComputationModel"></a>
 
 Deletes a computation model. This action can't be undone.
 

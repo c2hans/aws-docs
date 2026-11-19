@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListMem
 ---
 
 # ListMembers
-<a name="API_ListMembers"></a>
 
 Lists details about all member accounts for the current Security Hub CSPM administrator account.
 

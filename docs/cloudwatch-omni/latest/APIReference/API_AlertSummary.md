@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertSummary
-<a name="API_AlertSummary"></a>
 
 Summary representation of an alert used in list responses.
 

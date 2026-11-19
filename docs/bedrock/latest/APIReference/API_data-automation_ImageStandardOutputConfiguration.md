@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ImageStandardOutputConfiguration
-<a name="API_data-automation_ImageStandardOutputConfiguration"></a>
 
 Output settings for processing images.
 

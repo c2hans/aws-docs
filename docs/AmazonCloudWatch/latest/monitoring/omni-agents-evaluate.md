@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Evaluate agent quality
-<a name="omni-agents-evaluate"></a>
 
 Agents fail in ways that do not show up as errors: the run completes, but the answer is wrong, incomplete, or against your policies. Evaluation is how you measure response quality, so you can catch these failures and tell whether a change to a prompt, a model, or a tool made your agent better or worse.
 

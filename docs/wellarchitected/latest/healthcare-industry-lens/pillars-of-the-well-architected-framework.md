@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Pillars of the Well-Architected Framework
-<a name="pillars-of-the-well-architected-framework"></a>
 
  This section maps the six pillars of the Well-Architected Framework to healthcare workloads. Each pillar discusses design principles, definitions, best practices, evaluation questions, considerations, key AWS services, and useful links.
 

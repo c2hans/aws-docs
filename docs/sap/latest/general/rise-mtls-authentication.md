@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-mtls-authenticat
 ---
 
 # mTLS Authentication
-<a name="rise-mtls-authentication"></a>
 
 Mutual Transport Layer Security (mTLS) authentication establishes a secure connection where both client and server authenticate each other using digital certificates. Unlike standard TLS, where only the server presents a certificate, mTLS requires both parties to present and verify certificates.
 

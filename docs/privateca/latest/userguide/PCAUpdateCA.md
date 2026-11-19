@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PCAUpdateCA.h
 ---
 
 # Update a private CA in AWS Private Certificate Authority
-<a name="PCAUpdateCA"></a>
 
 You can update the status of a private CA or change its [revocation configuration](revocation-setup.md) after creating it. This topic provides details about CA status and the CA lifecycle, along with examples of console and CLI updates to CAs.
 

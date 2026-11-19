@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcEncryptionControl
-<a name="API_ModifyVpcEncryptionControl"></a>
 
 Modifies the encryption control configuration for a VPC. You can update the encryption mode and exclusion settings for various gateway types and peering connections.
 

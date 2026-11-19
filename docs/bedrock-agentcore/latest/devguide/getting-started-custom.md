@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gettin
 ---
 
 # Get started without the AgentCore CLI
-<a name="getting-started-custom"></a>
 
 You can create an AgentCore Runtime agent without the AgentCore CLI. Instead, you can use a combination of command line tools to configure and deploy your agent to an AgentCore Runtime. If you prefer a CLI-managed workflow, see [Get started with AgentCore Runtime using the AgentCore CLI](runtime-get-started-cli.md).
 

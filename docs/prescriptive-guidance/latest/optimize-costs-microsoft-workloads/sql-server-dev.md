@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Evaluate SQL Server Developer edition
-<a name="sql-server-dev"></a>
 
 ## Overview
 <a name="sql-server-dev-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-python.html
 ---
 
 # Using CodeArtifact with Python
-<a name="using-python"></a>
 
 These topics describe how to use `pip`, the Python package manager, and `twine`, the Python package publishing utility, with CodeArtifact.
 

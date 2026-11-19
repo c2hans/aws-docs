@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_poli
 ---
 
 # Editing tags attached to organization policies with AWS Organizations
-<a name="orgs_policies_edit"></a>
 
 This topic describes how to edit tags attached policies with AWS Organizations. A *policy* defines the controls that you want to apply to a group of AWS accounts.
 

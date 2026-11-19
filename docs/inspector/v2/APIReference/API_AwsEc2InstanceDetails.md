@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEc2Inst
 ---
 
 # AwsEc2InstanceDetails
-<a name="API_AwsEc2InstanceDetails"></a>
 
 Details of the Amazon EC2 instance involved in a finding.
 

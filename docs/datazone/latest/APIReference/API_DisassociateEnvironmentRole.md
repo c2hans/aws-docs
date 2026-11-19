@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Disasso
 ---
 
 # DisassociateEnvironmentRole
-<a name="API_DisassociateEnvironmentRole"></a>
 
 Disassociates the environment role in Amazon DataZone.
 

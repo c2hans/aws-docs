@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Update the expiration date of a private offer to a future date using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_UpdateOfferExpirationDateOfPrivateOffer_section"></a>
 
 The following code examples show how to update the expiration date of a private offer to a date in the future to give buyers more time to evaluate and accept the offer.
 

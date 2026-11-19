@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protectio
 ---
 
 # Amazon SNS sensitive data types: Financial
-<a name="sns-message-data-protection-sensitive-data-types-financial"></a>
 
 The following table lists and describes the types of financial information that Amazon SNS can detect using managed data identifiers.
 

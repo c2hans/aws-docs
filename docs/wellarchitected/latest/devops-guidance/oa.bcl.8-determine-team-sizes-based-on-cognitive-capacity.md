@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.8] Determine team sizes based on cognitive capacity
-<a name="oa.bcl.8-determine-team-sizes-based-on-cognitive-capacity"></a>
 
  **Category:** FOUNDATIONAL
 

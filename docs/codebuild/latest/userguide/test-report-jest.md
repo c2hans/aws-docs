@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-report-j
 ---
 
 # Set up test reporting with Jest
-<a name="test-report-jest"></a>
 
 The following procedure demonstrates how to set up test reporting in AWS CodeBuild with the [Jest testing framework](https://jestjs.io/).
 

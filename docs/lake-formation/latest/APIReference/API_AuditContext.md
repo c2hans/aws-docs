@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_A
 ---
 
 # AuditContext
-<a name="API_AuditContext"></a>
 
 A structure used to include auditing information on the privileged API.
 

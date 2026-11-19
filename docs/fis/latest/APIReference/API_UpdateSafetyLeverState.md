@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateSafety
 ---
 
 # UpdateSafetyLeverState
-<a name="API_UpdateSafetyLeverState"></a>
 
  Updates the specified safety lever state.
 

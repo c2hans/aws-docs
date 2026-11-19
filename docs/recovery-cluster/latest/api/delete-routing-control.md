@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/delete-routi
 ---
 
 # Delete a routing control
-<a name="delete-routing-control"></a>
 
 The following is an example of a request to delete a routing control. Deleting a routing control doesn't return a response.
 

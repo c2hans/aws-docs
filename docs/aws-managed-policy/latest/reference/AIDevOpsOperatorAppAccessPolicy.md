@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDe
 ---
 
 # AIDevOpsOperatorAppAccessPolicy
-<a name="AIDevOpsOperatorAppAccessPolicy"></a>
 
 **Description**: Provides access to use the AWS DevOps operator web app for an Agent Space.
 

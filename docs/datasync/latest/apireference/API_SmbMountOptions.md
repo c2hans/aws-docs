@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_SmbMoun
 ---
 
 # SmbMountOptions
-<a name="API_SmbMountOptions"></a>
 
 Specifies the version of the Server Message Block (SMB) protocol that AWS DataSync uses to access an SMB file server.
 

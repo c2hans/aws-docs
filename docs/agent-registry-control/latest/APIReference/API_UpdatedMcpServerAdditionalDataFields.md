@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedMcpServerAdditionalDataFields
-<a name="API_UpdatedMcpServerAdditionalDataFields"></a>
 
 The set of MCP server additional-data fields that can be individually updated.
 

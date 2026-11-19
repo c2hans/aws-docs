@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetRouterOut
 ---
 
 # GetRouterOutput
-<a name="API_GetRouterOutput"></a>
 
 Retrieves information about a specific router output in AWS Elemental MediaConnect.
 

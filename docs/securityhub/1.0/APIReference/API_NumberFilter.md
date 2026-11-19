@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_NumberF
 ---
 
 # NumberFilter
-<a name="API_NumberFilter"></a>
 
 A number filter for querying findings.
 

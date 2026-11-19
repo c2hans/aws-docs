@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Choosing Desktop View or Application View
-<a name="choosing-desktop-view-or-application-view"></a>
 
  The determination for choosing an application view or desktop view has no impact on performance or cost. Only one view is accessible at any given time per WorkSpaces Applications fleet. You can change the **Stream view** option. Plan this change during off-peak business hours, as changing the stream view requires a restart of the fleet.
 

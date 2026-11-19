@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleTrainingSessionWithResponseStream
-<a name="API_SampleTrainingSessionWithResponseStream"></a>
 
 Streams inference responses from the model associated with the specified training session. Use this operation for real-time token-by-token generation. The service passes the request body to the model without modification.
 

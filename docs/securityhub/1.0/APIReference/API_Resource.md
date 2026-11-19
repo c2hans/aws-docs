@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 A resource related to a finding.
 

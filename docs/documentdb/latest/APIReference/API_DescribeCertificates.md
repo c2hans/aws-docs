@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeCertificates
-<a name="API_DescribeCertificates"></a>
 
 Returns a list of certificate authority (CA) certificates provided by Amazon DocumentDB for this AWS account.
 

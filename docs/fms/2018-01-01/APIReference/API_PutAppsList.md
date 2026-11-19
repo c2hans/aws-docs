@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PutAppsL
 ---
 
 # PutAppsList
-<a name="API_PutAppsList"></a>
 
 Creates an AWS Firewall Manager applications list.
 

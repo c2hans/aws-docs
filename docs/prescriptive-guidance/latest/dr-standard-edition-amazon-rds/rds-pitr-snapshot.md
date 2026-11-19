@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Amazon RDS PITR snapshot replication
-<a name="rds-pitr-snapshot"></a>
 
 An Amazon RDS database instance can be configured to replicate snapshots and transaction logs to a destination AWS Region of your choice. After you configure [backup replication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html) for a DB instance, Amazon RDS initiates a cross-Region copy of all snapshots and transaction logs as soon as they are ready on the DB instance.
 

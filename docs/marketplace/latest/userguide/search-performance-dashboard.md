@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/search-perf
 ---
 
 # Search performance dashboard
-<a name="search-performance-dashboard"></a>
 
 The **Search Performance** dashboard helps you optimize your product discoverability with comprehensive search insights for both external search engines, such as Google, as well as AWS Marketplace search.
 

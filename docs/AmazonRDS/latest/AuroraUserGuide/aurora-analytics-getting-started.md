@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Getting started
-<a name="aurora-analytics-getting-started"></a>
 
 Aurora PostgreSQL includes the analytics feature by default on supported engine versions. To use it, you enable the feature through a DB cluster parameter group setting, then install the `aurora_analytics` extension in each database where you want to use it.
 

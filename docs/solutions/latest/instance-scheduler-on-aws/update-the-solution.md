@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 Instance Scheduler is designed to be safe to update in-place using AWS CloudFormation. The general procedure to do this is as follows:
 

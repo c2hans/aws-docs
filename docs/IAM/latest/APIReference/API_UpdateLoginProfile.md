@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateLoginP
 ---
 
 # UpdateLoginProfile
-<a name="API_UpdateLoginProfile"></a>
 
 Changes the password for the specified IAM user. You can use the AWS CLI, the AWS API, or the **Users** page in the IAM console to change the password for any IAM user. Use [ChangePassword](https://docs.aws.amazon.com/IAM/latest/APIReference/API_ChangePassword.html) to change your own password in the **My Security Credentials** page in the AWS Management Console.
 

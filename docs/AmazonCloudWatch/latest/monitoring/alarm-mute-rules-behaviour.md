@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # How alarm mute rules work
-<a name="alarm-mute-rules-behaviour"></a>
 
 The following scenarios illustrate how alarm mute rules affect the targeted alarms and how the alarm actions are muted or executed.
 

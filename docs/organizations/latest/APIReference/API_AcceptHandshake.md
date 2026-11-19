@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ac
 ---
 
 # AcceptHandshake
-<a name="API_AcceptHandshake"></a>
 
 Accepts a handshake by sending an `ACCEPTED` response to the sender. You can view accepted handshakes in API responses for 30 days before they are deleted.
 

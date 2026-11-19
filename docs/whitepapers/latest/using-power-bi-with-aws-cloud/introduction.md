@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Introduction
-<a name="introduction"></a>
 
 Customers with businesses of all sizes are using AWS products and services to store their data reliably, cost effectively, and securely. This is due in part to the broad ecosystem of mature data storage and analytics offerings that are available. Some of these offerings include the following services:
 + [ Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) provides a simple, scalable, secure, and cost-effective data repository. It has become an industry standard for storing application data, as well as a first choice for customer data lakes.

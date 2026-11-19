@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Google
-<a name="identity-idp-google"></a>
 
 Google can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Google’s OAuth2 service and obtain access tokens for Google API resources.
 

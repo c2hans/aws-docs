@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/workbench.comm
 ---
 
 # Commit to Apache Cassandra
-<a name="workbench.commit.cassandra"></a>
 
 This section walks you through making the connections to an Apache Cassandra cluster to commit the data model created or edited with NoSQL Workbench.
 

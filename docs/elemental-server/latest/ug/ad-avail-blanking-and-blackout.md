@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/ad-avail-blan
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Ad Avail Blanking and Blackout
-<a name="ad-avail-blanking-and-blackout"></a>
 
 You can turn on one or both of the following features to blank out the content associated with a SCTE-35 event:
 + “Blackout”: Blank out the content for other types of SCTE-35 messages such as chapters and programs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTab
 ---
 
 # PutTableBucketEncryption
-<a name="API_s3Buckets_PutTableBucketEncryption"></a>
 
 Sets the encryption configuration for a table bucket.
 

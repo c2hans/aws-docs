@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [prerequisites](prerequisites.md), [cost](cost1.md), [configurations for ECS Auto Scaling](configurations-for-elastic.md), [security](security-1.md), [Region](#supported-aws-regions), [deployment scenarios](#deployment-scenarios), and [quota](quotas.md) considerations for planning your deployment.
 

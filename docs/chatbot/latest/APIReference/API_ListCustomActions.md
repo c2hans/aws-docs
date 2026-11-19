@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListCust
 ---
 
 # ListCustomActions
-<a name="API_ListCustomActions"></a>
 
 Lists custom actions defined in this account.
 

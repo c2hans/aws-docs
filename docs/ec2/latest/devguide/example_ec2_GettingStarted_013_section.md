@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_GettingS
 ---
 
 # Getting started with virtual machines
-<a name="example_ec2_GettingStarted_013_section"></a>
 
 The following code example shows how to:
 + Create a key pair

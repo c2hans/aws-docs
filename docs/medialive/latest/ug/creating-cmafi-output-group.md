@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-cmafi-outpu
 ---
 
 # Create a CMAF Ingest output group
-<a name="creating-cmafi-output-group"></a>
 
 You create the output group and its outputs when you [create or edit a MediaLive channel](creating-a-channel-step4.md).
 

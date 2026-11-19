@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteDocument
 ---
 
 # DeleteDocumentationVersion
-<a name="API_DeleteDocumentationVersion"></a>
 
 Deletes a documentation version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Creating OpsItems manually (PowerShell)
-<a name="OpsCenter-creating-OpsItems-Powershell"></a>
 
 The following procedure describes how to create an OpsItem by using AWS Tools for Windows PowerShell.
 

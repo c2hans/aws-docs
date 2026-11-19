@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # View the tags of a table
-<a name="Tagging.Operations.view.table"></a>
 
 The following examples show how to view the tags of a table in Amazon Keyspaces using the console, CQL, or the AWS CLI.
 

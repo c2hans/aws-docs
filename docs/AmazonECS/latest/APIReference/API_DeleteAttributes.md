@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Delete
 ---
 
 # DeleteAttributes
-<a name="API_DeleteAttributes"></a>
 
 Deletes one or more custom attributes from an Amazon ECS resource.
 

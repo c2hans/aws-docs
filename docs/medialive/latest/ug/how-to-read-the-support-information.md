@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/how-to-read-the-supp
 ---
 
 # How to read the supported captions information
-<a name="how-to-read-the-support-information"></a>
 
 With captions, there are constraints on the ability to produce a specific output format from the input format.
 

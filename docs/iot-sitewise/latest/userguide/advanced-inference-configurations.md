@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/advanced-i
 ---
 
 # Advanced inference configurations
-<a name="advanced-inference-configurations"></a>
 
 AWS IoT SiteWise allows customers to configure model inference schedules tailored to their operational needs.
 

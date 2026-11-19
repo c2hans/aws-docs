@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # HandshakeDetail
-<a name="API_channel_HandshakeDetail"></a>
 
 Contains detailed information about different types of handshakes.
 

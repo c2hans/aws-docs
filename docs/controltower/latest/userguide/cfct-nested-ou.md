@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-neste
 ---
 
 # Nested OU
-<a name="cfct-nested-ou"></a>
 
 CfCT supports listing one or more nested OUs under the `organizational_units` keyword in manifest V2 version (2021-03-15).
 

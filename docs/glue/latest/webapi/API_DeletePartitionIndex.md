@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeletePartitionIn
 ---
 
 # DeletePartitionIndex
-<a name="API_DeletePartitionIndex"></a>
 
 Deletes a specified partition index from an existing table.
 

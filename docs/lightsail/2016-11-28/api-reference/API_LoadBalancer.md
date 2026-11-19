@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancer
-<a name="API_LoadBalancer"></a>
 
 Describes a load balancer.
 

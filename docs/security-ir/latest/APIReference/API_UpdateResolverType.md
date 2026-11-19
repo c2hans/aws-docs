@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Upda
 ---
 
 # UpdateResolverType
-<a name="API_UpdateResolverType"></a>
 
 Updates the resolver type for a case.
 

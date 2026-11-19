@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/get-wo
 ---
 
 # Get workload access token
-<a name="get-workload-access-token"></a>
 
 Understanding what workload access tokens are, how to obtain them, and the security aspects of working with them is essential for building secure agent applications. This section covers the key concepts and implementation patterns you need to know.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/register-server-dns-
 ---
 
 # register-server-dns-mappings
-<a name="register-server-dns-mappings"></a>
 
 Register the DCV Servers - DNS names mappings coming from a JSON file.
 

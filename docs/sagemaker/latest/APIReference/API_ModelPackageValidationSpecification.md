@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageValidationSpecification
-<a name="API_ModelPackageValidationSpecification"></a>
 
 Specifies batch transform jobs that SageMaker runs to validate your model package.
 

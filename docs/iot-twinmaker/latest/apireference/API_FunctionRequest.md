@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fu
 ---
 
 # FunctionRequest
-<a name="API_FunctionRequest"></a>
 
 The function request body.
 

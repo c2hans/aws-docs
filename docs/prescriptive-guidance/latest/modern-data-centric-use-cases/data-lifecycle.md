@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Data lifecycle
-<a name="data-lifecycle"></a>
 
 To build a data pipeline, you must first ingest data into AWS from an external or internal data source, such as a file server, database, storage bucket, or from an API call. The ingested data may or may not go through transformation, such as anonymization, column dropping, or data cleaning.
 

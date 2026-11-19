@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/OnRealTimeCallAn
 ---
 
 # OnRealTimeCallAnalysisAvailable
-<a name="OnRealTimeCallAnalysisAvailable"></a>
 
 ## RealTimeCall words or phrases - Exact match
 <a name="realtime-exactmatch"></a>

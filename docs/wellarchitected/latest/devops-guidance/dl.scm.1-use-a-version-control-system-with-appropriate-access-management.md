@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.1] Use a version control system with appropriate access management
-<a name="dl.scm.1-use-a-version-control-system-with-appropriate-access-management"></a>
 
  **Category:** FOUNDATIONAL
 

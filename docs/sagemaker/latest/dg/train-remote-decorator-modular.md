@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-decorat
 ---
 
 # Using modular code with the @remote decorator
-<a name="train-remote-decorator-modular"></a>
 
 You can organize your code into modules for ease of workspace management during development and still use the @remote function to invoke a function. You can also replicate the local modules from your development environment to the remote job environment. To do so, set the parameter `include_local_workdir` to `True`, as shown in the following code example.
 

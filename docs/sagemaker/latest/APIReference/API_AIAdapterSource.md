@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIAdap
 ---
 
 # AIAdapterSource
-<a name="API_AIAdapterSource"></a>
 
 The source of LoRA adapters for an AI recommendation job. This is a union type — specify exactly one of the members.
 

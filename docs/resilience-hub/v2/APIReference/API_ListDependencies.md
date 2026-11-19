@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListD
 ---
 
 # ListDependencies
-<a name="API_ListDependencies"></a>
 
 Lists dependencies discovered for services.
 

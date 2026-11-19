@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/review-co
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Reviewing an assessment control in AWS Audit Manager
-<a name="review-controls"></a>
 
 When you need to review the controls in an assessment, you'll find the information organized into several sections on the assessment control details page. These sections help you easily access and understand the relevant information for your task.
 

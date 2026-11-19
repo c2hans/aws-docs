@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricDatum
-<a name="API_MetricDatum"></a>
 
 Encapsulates the information sent to either create a metric or add new values to be aggregated into an existing metric.
 

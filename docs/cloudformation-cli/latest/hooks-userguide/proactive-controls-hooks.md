@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # AWS Control Tower proactive controls as Hooks
-<a name="proactive-controls-hooks"></a>
 
 The AWS Control Tower Control Catalog provides pre-built compliance rules (proactive controls) that you can implement as Hooks. This approach saves setup time and helps you validate resource configurations against AWS best practices across your organization without writing code.
 

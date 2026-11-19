@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateKe
 ---
 
 # CreateKeySigningKey
-<a name="API_CreateKeySigningKey"></a>
 
 Creates a new key-signing key (KSK) associated with a hosted zone. You can only have two KSKs per hosted zone.
 

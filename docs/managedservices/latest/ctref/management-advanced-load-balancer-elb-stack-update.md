@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Load Balancer (ELB) Stack \| Update
-<a name="management-advanced-load-balancer-elb-stack-update"></a>
 
 Modify the properties of an existing Amazon ELB Classic Load Balancer created using CT id ct-12amsdz909cfh, version 3.0.
 

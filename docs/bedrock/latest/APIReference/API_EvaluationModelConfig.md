@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationModelConfig
-<a name="API_EvaluationModelConfig"></a>
 
 Defines the models used in the model evaluation job.
 

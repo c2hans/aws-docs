@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Managed
 ---
 
 # ManagedEndpointCredentials
-<a name="API_ManagedEndpointCredentials"></a>
 
 The managed endpoint credentials of the EMR on EKS cluster.
 

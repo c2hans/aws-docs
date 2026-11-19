@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/example_a
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Create an Audit Manager custom framework that contains Security Hub CSPM controls using an AWS SDK
-<a name="example_auditmanager_Scenario_CustomFrameworkFromSecurityHub_section"></a>
 
 The following code example shows how to:
 + Get a list of all standard controls that have Security Hub CSPM as their data source.

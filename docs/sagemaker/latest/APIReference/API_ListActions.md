@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAc
 ---
 
 # ListActions
-<a name="API_ListActions"></a>
 
 Lists the actions in your account and their properties.
 

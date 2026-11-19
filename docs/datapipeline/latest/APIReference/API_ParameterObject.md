@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Par
 ---
 
 # ParameterObject
-<a name="API_ParameterObject"></a>
 
 Contains information about a parameter object.
 

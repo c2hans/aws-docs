@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MetadataKeyValueP
 ---
 
 # MetadataKeyValuePair
-<a name="API_MetadataKeyValuePair"></a>
 
 A structure containing a key value pair for metadata.
 

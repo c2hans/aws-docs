@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/ase-planning.ht
 ---
 
 # Planning
-<a name="ase-planning"></a>
 
 Plan your SAP system landscape according to the SAP Master Guide for your version of SAP system running ASE on Linux. We recommend referring to the following SAP Notes (require SAP portal access).
 +  [SAP Note 1748888 - SYB: Inst.Systems Based on NW 7.3 and Higher: SAP ASE](https://me.sap.com/notes/1748888)

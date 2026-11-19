@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SlotDateT
 ---
 
 # SlotDateTimeRangeRequest
-<a name="API_SlotDateTimeRangeRequest"></a>
 
 Describes the time period for a Scheduled Instance to start its first schedule. The time period must span less than one day.
 

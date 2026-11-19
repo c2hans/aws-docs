@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/orc-sap-nw-lx.h
 ---
 
 # Oracle for SAP NetWeaver on AWS Deployment and Operations Guide for Linux
-<a name="orc-sap-nw-lx"></a>
 
  *SAP specialists, Amazon Web Services*
 

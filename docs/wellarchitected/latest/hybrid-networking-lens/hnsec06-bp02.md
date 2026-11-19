@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNSEC06-BP02 Automate incident response
-<a name="hnsec06-bp02"></a>
 
  Implement automated response capabilities to enhance incident containment speed and reliability while reducing manual intervention requirements. This approach ensures consistent execution of response procedures while minimizing human error during critical security events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/state-compatib
 ---
 
 # State compatibility guide for Flink 2.2 upgrades
-<a name="state-compatibility"></a>
 
 When upgrading from Flink 1.x to Flink 2.2, state compatibility issues may prevent your application from restoring from snapshots. This guide helps you identify potential compatibility issues and provides migration strategies.
 

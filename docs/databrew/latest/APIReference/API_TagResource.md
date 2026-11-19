@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_TagReso
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds metadata tags to a DataBrew resource, such as a dataset, project, recipe, job, or schedule.
 

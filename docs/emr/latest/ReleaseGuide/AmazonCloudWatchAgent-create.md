@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/AmazonCloudWatch
 ---
 
 # Create an EMR cluster that uses Amazon CloudWatch agent
-<a name="AmazonCloudWatchAgent-create"></a>
 
 The procedures in this section describe the steps to create a cluster in Amazon EMR with Amazon CloudWatch agent from the AWS Management Console and the AWS CLI.
 

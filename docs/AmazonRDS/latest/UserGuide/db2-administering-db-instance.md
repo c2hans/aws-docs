@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-administe
 ---
 
 # Administering your Amazon RDS for Db2 DB instance
-<a name="db2-administering-db-instance"></a>
 
 This topic covers the common management tasks that you perform with an Amazon RDS for Db2 DB instance. Some tasks are the same for all Amazon RDS DB instances. Other tasks are specific to RDS for Db2.
 

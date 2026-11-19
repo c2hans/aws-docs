@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-g
 ---
 
 # Auto Scaling groups
-<a name="auto-scaling-groups"></a>
 
 **Note**
 If you are new to Auto Scaling groups, work through the steps in the [Create your first Auto Scaling group](create-your-first-auto-scaling-group.md) tutorial to get started and see how an Auto Scaling group responds when an instance in the group terminates.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AgentTracesConfig
-<a name="API_AgentTracesConfig"></a>
 
 The configuration specifying where to read agent traces from for recommendation analysis.
 

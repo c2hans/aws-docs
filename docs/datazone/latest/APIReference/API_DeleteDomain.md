@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteD
 ---
 
 # DeleteDomain
-<a name="API_DeleteDomain"></a>
 
 Deletes a Amazon DataZone domain.
 

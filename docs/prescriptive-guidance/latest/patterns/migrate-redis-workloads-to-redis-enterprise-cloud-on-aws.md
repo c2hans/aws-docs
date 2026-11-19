@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Redis workloads to Redis Enterprise Cloud on AWS
-<a name="migrate-redis-workloads-to-redis-enterprise-cloud-on-aws"></a>
 
 *Antony Prasad Thevaraj, Amazon Web Services*
 

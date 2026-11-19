@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisTargetR
 ---
 
 # CisTargetResourceAggregation
-<a name="API_CisTargetResourceAggregation"></a>
 
 The CIS target resource aggregation.
 

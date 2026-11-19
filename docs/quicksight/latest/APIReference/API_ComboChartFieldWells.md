@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboChartFieldWells
-<a name="API_ComboChartFieldWells"></a>
 
 The field wells of the visual.
 

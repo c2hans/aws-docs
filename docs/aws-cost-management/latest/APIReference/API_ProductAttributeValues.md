@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProductAttributeValues
-<a name="API_ProductAttributeValues"></a>
 
 The product attribute values that you can use to filter the costs of supported services. Currently, Amazon Bedrock is the only supported service.
 

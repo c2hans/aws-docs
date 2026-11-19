@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/troubleshootin
 ---
 
 # Troubleshooting connection errors in Amazon Keyspaces
-<a name="troubleshooting.connecting"></a>
 
 Having trouble connecting? Here are some common issues and how to resolve them.
 

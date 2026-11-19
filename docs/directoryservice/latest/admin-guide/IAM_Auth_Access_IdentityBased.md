@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/IAM_
 ---
 
 # Using identity-based policies (IAM policies) for Directory Service
-<a name="IAM_Auth_Access_IdentityBased"></a>
 
  This topic provides examples of identity-based policies in which an account administrator can attach permissions policies to IAM identities (users, groups, and roles). These examples demonstrate IAM policies in Directory Service. You should modify and create your own policies to suit your needs and environment.
 

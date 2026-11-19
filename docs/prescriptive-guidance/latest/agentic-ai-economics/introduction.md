@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Economics for agentic AI on AWS
-<a name="introduction"></a>
 
 *Hans Schabert and Prasanta Roy, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_HttpInstanceSum
 ---
 
 # HttpInstanceSummary
-<a name="API_HttpInstanceSummary"></a>
 
 In a response to a [DiscoverInstances](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html) request, `HttpInstanceSummary` contains information about one instance that matches the values that you specified in the request.
 

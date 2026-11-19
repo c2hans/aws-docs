@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3HudiCatalogTarg
 ---
 
 # S3HudiCatalogTarget
-<a name="API_S3HudiCatalogTarget"></a>
 
 Specifies a target that writes to a Hudi data source in the AWS Glue Data Catalog.
 

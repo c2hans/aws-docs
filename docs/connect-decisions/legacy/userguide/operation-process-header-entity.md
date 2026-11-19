@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/opera
 ---
 
 # process\_header
-<a name="operation-process-header-entity"></a>
 
 **Primary key (PK)**
 

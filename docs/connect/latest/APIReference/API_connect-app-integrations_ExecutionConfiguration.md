@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ExecutionConfiguration
-<a name="API_connect-app-integrations_ExecutionConfiguration"></a>
 
 The configuration for how the files should be pulled from the source.
 

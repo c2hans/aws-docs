@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Attach
 ---
 
 # AttachClusterNodeVolume
-<a name="API_AttachClusterNodeVolume"></a>
 
  Attaches your Amazon Elastic Block Store (Amazon EBS) volume to a node in your EKS orchestrated HyperPod cluster.
 

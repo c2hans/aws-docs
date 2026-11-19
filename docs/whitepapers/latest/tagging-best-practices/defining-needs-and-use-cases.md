@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Defining needs and use cases
-<a name="defining-needs-and-use-cases"></a>
 
 Start building your strategy by engaging with stakeholders who have a fundamental underlying need to consume metadata. These teams define the metadata that resources need to be tagged with to support their activities, such as reporting, automation, and data classification. They outline how the resources need to be organized and which policies they need to be mapped to. Examples of roles and functions that these stakeholders can have in organizations include:
 + **Finance** and **Line of Business** need to understand the value of investment by mapping it to costs to prioritize actions that need to be taken when addressing ineﬃciency. Understanding *cost vs value generated* helps to identify unsuccessful lines of business or product offerings. This leads to informed decisions about continuing support, adopting an alternative (for example, using a SaaS offering or managed service), or retiring an unprofitable business offering.

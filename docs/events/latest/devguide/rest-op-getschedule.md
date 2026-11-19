@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-getschedu
 ---
 
 # GetSchedule
-<a name="rest-op-getschedule"></a>
 
 Gets your own schedule for an event. This includes the sessions you reserved, your favorites, your personal time entries, and the sessions you are invited to. You must sign in.
 

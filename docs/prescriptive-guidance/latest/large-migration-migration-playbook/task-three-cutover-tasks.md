@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 3: Performing cutover tasks
-<a name="task-three-cutover-tasks"></a>
 
 At this point, you have completed the migration tasks and tested all of the servers and apps, and you are ready for cutover. Use the RACI matrices you created in the [Foundation playbook for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-foundation-playbook/) to manage the tasks and ownership of each cutover task, and use your migration runbook for each pattern to perform the cutover activities. The following table is an example of how you might track and manage cutover progress. It is common to have multiple migration patterns in the same wave for different applications.
 

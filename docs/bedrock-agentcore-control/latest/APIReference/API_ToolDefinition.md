@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ToolDefinition
-<a name="API_ToolDefinition"></a>
 
 A tool definition for a gateway target. This structure defines a tool that the target exposes through the Model Context Protocol.
 

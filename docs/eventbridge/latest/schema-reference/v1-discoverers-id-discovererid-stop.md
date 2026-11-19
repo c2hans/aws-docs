@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-d
 ---
 
 # Stop Discoverer
-<a name="v1-discoverers-id-discovererid-stop"></a>
 
 ## URI
 <a name="v1-discoverers-id-discovererid-stop-url"></a>

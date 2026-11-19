@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cross-account-a
 ---
 
 # Cross-account access to Amazon S3 bucket for custom model import jobs
-<a name="cross-account-access-cmi"></a>
 
 If you are importing your model from an Amazon S3 bucket in a different AWS account, you will need to grant permissions for accessing the bucket before you import your customized model. See [Prerequisites for importing custom model](custom-model-import-prereq.md).
 

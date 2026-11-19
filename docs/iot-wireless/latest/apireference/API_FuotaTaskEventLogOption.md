@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Fuo
 ---
 
 # FuotaTaskEventLogOption
-<a name="API_FuotaTaskEventLogOption"></a>
 
 The log options for a FUOTA task event and can be used to set log levels for a specific FUOTA task event.
 

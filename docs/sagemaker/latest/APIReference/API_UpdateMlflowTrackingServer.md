@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateMlflowTrackingServer
-<a name="API_UpdateMlflowTrackingServer"></a>
 
 Updates properties of an existing MLflow Tracking Server.
 

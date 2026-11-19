@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/awsflow-ba
 ---
 
 # AWS Flow Framework Basic Concepts: Data Exchange Between Applications and Workflow Executions
-<a name="awsflow-basics-data-exchange-workflows-application"></a>
 
 A workflow entry point method can have one or more parameters, which allows the workflow starter to pass initial data to the workflow. It can also useful to provide additional data to the workflow during execution. For example, if a customer changes their shipping address, you could notify the order-processing workflow so that it can make appropriate changes.
 

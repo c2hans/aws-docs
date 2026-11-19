@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetResourcePolicy
-<a name="API_agent_GetResourcePolicy"></a>
 
 Retrieves the resource policy associated with a knowledge base.
 

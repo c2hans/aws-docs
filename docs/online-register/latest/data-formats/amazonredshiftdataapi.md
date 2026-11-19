@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Redshift Data API
-<a name="amazonredshiftdataapi"></a>
 
 Amazon Redshift Data API provides the following APIs for data retrieval.
 

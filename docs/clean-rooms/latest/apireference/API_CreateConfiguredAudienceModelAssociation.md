@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateConfiguredAudienceModelAssociation
-<a name="API_CreateConfiguredAudienceModelAssociation"></a>
 
 Provides the details necessary to create a configured audience model association.
 

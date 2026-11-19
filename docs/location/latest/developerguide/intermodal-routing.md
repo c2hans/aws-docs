@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/intermoda
 ---
 
 # Intermodal routing
-<a name="intermodal-routing"></a>
 
 Intermodal routing calculates routes that combine multiple transport types in a single journey. When the travel mode is set to `Intermodal`, the route may include transit, pedestrian, rental, taxi, and vehicle legs. Pedestrian legs are always enabled and are used to connect between other transport types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-regi
 ---
 
 # Supported AWS Regions
-<a name="kb-managed-regions"></a>
 
 Managed Amazon Bedrock knowledge bases are available in the following AWS Regions:
 

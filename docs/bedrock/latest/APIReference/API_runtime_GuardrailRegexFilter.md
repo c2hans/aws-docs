@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailRegexFilter
-<a name="API_runtime_GuardrailRegexFilter"></a>
 
 A Regex filter configured in a guardrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/example_eve
 ---
 
 # Learn the basics of EventBridge with an AWS SDK
-<a name="example_eventbridge_Scenario_GettingStarted_section"></a>
 
 The following code examples show how to:
 + Create a rule and add a target to it.

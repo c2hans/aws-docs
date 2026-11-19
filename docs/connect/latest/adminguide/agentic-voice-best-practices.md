@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice-
 ---
 
 # Agentic voice best practices
-<a name="agentic-voice-best-practices"></a>
 
 Amazon Connect agentic voice combines advanced speech recognition (ASR) with expressive, natural-sounding voices to deliver a complete voice AI experience. Advanced ASR provides natural, low-latency turn taking in real-time conversations, while the voice engine delivers lifelike speech across 50\+ locales. Together, these components power seamless, human-like interactions between callers and Amazon Connect AI agents. This guide covers configuration and best practices for both components, so you can get the most out of the full agentic voice experience.
 

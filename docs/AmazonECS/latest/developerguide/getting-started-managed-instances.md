@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-
 ---
 
 # Learn how to create a task for Amazon ECS Managed Instances
-<a name="getting-started-managed-instances"></a>
 
 Learn how to use Amazon ECS with Amazon ECS Managed Instances to run a containerized application.
 

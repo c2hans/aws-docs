@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SubmitBenefitApplication
-<a name="API_benefits_SubmitBenefitApplication"></a>
 
 Submits a benefit application for review and processing by AWS.
 

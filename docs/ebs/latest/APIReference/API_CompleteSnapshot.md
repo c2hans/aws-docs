@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_CompleteSnap
 ---
 
 # CompleteSnapshot
-<a name="API_CompleteSnapshot"></a>
 
 Seals and completes the snapshot after all of the required blocks of data have been written to it. Completing the snapshot changes the status to `completed`. You cannot write new blocks to a snapshot after it has been completed.
 

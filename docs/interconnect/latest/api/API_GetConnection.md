@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_GetConnectio
 ---
 
 # GetConnection
-<a name="API_GetConnection"></a>
 
 Describes the current state of a Connection resource as specified by the identifier.
 

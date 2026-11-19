@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeBinaryAudioEvent
-<a name="API_MedicalScribeBinaryAudioEvent"></a>
 
 An event containing raw binary audio data for the Medical Scribe stream. The audio is sent as a raw binary payload rather than as a base64-encoded value.
 

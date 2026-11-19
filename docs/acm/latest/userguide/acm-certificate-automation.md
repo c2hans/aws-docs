@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-aut
 ---
 
 # AWS Workload Credentials Provider
-<a name="acm-certificate-automation"></a>
 
 The AWS Workload Credentials Provider automates the use of [public](https://docs.aws.amazon.com/acm/latest/userguide/acm-exportable-certificates.html) and [private](https://docs.aws.amazon.com/acm/latest/userguide/export-private.html) TLS certificates exported from ACM. The provider periodically retrieves certificates and their private keys, writes them to configured paths, and optionally runs a command to reload dependent services such as web servers.
 

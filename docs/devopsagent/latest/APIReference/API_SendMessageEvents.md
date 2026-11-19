@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageEvents
-<a name="API_SendMessageEvents"></a>
 
 Event stream for chat message responses using the content block model. Events follow a lifecycle: responseCreated -> responseInProgress -> (contentBlockStart/contentBlockDelta/contentBlockStop events) -> responseCompleted\|responseFailed SendMessage always uses content block mode — legacy per-field events (outputTextDelta, functionCallArgumentsDelta, etc.) are not emitted.
 

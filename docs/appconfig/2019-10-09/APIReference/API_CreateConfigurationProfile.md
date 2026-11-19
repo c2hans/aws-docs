@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Cr
 ---
 
 # CreateConfigurationProfile
-<a name="API_CreateConfigurationProfile"></a>
 
 Creates a configuration profile, which is information that enables AWS AppConfig to access the configuration source. Valid configuration sources include the following:
 + Configuration data in YAML, JSON, and other formats stored in the AWS AppConfig hosted configuration store

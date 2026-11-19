@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/troubleshootin
 ---
 
 # Troubleshooting: gateway offline issues
-<a name="troubleshooting-gateway-offline"></a>
 
 Use the following troubleshooting information to determine what to do if the AWS Storage Gateway console shows that your gateway is offline.
 

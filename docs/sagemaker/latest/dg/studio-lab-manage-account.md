@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lab-manage-ac
 ---
 
 # Manage your account
-<a name="studio-lab-manage-account"></a>
 
  The following topic gives information about managing your account, including changing your password, deleting your account, and getting information that we have collected. These topics require that you sign in to your Amazon SageMaker Studio Lab account. For more information, see [Sign in to Studio Lab](studio-lab-onboard.md#studio-lab-onboard-signin).
 

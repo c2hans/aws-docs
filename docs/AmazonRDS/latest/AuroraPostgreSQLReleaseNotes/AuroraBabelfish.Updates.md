@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLRelease
 ---
 
 # Babelfish for Aurora PostgreSQL updates
-<a name="AuroraBabelfish.Updates"></a>
 
 Following, you can find information about versions of the Babelfish that have been released for Aurora PostgreSQL. Babelfish is an option available with Aurora PostgreSQL version 13.4 and higher releases. Updates to Babelfish become available with certain new releases of the Aurora PostgreSQL database engine.
 

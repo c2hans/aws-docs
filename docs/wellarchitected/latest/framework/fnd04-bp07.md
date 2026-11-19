@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP07 Establish cross-Region replication and failover capabilities
-<a name="fnd04-bp07"></a>
 
  Cross-Region replication and failover are technical capabilities that workloads with high availability or disaster recovery requirements depend on. Without central patterns, workload teams design their own replication approaches and failover mechanisms. During the first real event, they discover that a critical item (a key, a route, a quota, or a piece of state) is missing from the secondary Region. A central foundation for replication and failover gives workload teams tested primitives so they can meet their resilience requirements without reinventing the mechanics.
 

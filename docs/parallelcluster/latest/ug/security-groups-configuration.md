@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/security-group
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Configuring security groups for restricted environments
-<a name="security-groups-configuration"></a>
 
 By default, AWS ParallelCluster creates and configures security groups that allow all traffic between cluster nodes. In highly restricted environments, you might need to limit network access to only the ports required for cluster operation. This section describes how to configure custom security groups with restricted access for your AWS ParallelCluster deployment.
 

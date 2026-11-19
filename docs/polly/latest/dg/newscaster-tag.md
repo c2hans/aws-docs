@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/newscaster-tag.html
 ---
 
 # Newscaster speaking style
-<a name="newscaster-tag"></a>
 
 *<amazon:domain name="news">*
 

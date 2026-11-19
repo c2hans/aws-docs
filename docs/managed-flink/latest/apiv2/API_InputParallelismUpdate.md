@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_InputPara
 ---
 
 # InputParallelismUpdate
-<a name="API_InputParallelismUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, provides updates to the parallelism count.
 

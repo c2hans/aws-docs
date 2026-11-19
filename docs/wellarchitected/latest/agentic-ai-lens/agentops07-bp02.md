@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS07-BP02 Establish operational knowledge management systems
-<a name="agentops07-bp02"></a>
 
  Teams that capture what they learn from incidents build institutional memory that survives personnel changes. Teams that don't lose the insight the moment the person who had it leaves, and pay the same lesson twice.
 

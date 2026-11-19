@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Compatibility with the SMDDP library optimized for AWS infrastructure
-<a name="model-parallel-core-features-v2-smddp-allgather"></a>
 
 You can use the SageMaker model parallelism library v2 (SMP v2) in conjunction with the [SageMaker distributed data parallelism (SMDDP) library](data-parallel.md) that offers the `AllGather` collective communication operation optimized for AWS infrastructure. In distributed training, collective communication operations are designed for synchronizing multiple GPU workers and exchange information between them. `AllGather` is one of the core collective communication operations typically used in sharded data parallelism. To learn more about the SMDDP `AllGather` operation, see [SMDDP `AllGather` collective operation](data-parallel-intro.md#data-parallel-allgather) Optimizing such collective communication operations would directly contribute to a faster end-to-end training without side effects on convergence.
 

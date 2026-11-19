@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-sup
 ---
 
 # Elastic Beanstalk platform support policy
-<a name="platforms-support-policy"></a>
 
 Elastic Beanstalk supports platform branches that still receive ongoing minor and patch updates from their suppliers (owners or community). For a complete definition of related terms, see [Elastic Beanstalk platforms glossary](platforms-glossary.md).
 

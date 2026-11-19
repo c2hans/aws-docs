@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingScopes
-<a name="API_FindingScopes"></a>
 
 Defines the data boundary for a findings query. Scopes determine which organizational units or organizations to retrieve data from.
 

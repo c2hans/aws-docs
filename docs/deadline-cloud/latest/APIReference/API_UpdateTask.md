@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateTask
-<a name="API_UpdateTask"></a>
 
 Updates a task.
 

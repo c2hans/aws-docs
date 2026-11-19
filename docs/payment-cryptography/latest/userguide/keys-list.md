@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ke
 ---
 
 # Listing keys
-<a name="keys-list"></a>
 
  Use the **ListKeys** operation to get a list of keys accessible to you in your account and Region.
 

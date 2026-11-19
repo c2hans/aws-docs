@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/codedeploy-
 ---
 
 # codedeploy-ec2-minimum-healthy-hosts-configured
-<a name="codedeploy-ec2-minimum-healthy-hosts-configured"></a>
 
 Checks if the deployment group for EC2/On-Premises Compute Platform is configured with a minimum healthy hosts fleet percentage or host count greater than or equal to the input threshold. The rule is NON\_COMPLIANT if either is below the threshold.
 

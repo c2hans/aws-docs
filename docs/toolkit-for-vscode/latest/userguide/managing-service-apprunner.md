@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/mana
 ---
 
 # Managing App Runner services
-<a name="managing-service-apprunner"></a>
 
 After creating an App Runner service, you can manage it by using the AWS Explorer pane to carry out the following activities:
 + [Pausing and resuming App Runner services](#pause-resume-apprunner)

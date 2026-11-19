@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Broker Storage
-<a name="clusters-clusterarn-nodes-storage"></a>
 
 Represents the EBS storage associated with the brokers.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Adding comments about a control during a control set review
-<a name="delegation-for-delegates-add-comment"></a>
 
 You can add comments for any controls that you review. These comments are visible to the audit owner.
 

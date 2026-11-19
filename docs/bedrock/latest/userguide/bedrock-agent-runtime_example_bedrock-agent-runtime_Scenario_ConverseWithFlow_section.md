@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent-r
 ---
 
 # Converse with an Amazon Bedrock flow
-<a name="bedrock-agent-runtime_example_bedrock-agent-runtime_Scenario_ConverseWithFlow_section"></a>
 
 The following code example shows how to use InvokeFlow to converse with an Amazon Bedrock flow that includes an agent node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-describe.htm
 ---
 
 # View AWS Certificate Manager certificate details
-<a name="gs-acm-describe"></a>
 
 You can use the ACM console or the AWS CLI to list detailed metadata about your certificates.
 

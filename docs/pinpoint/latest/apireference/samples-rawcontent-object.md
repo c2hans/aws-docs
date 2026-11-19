@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/samples-raw
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Schema sample: RawContent object for a push notification
-<a name="samples-rawcontent-object"></a>
 
 When you send a push notification through a push notification channel, you have the option of using a `RawContent` object to specify the settings and contents of the notification. Using a `RawContent` object can be helpful when you want to send custom data to an app for processing, as part of sending a notification. If you use a `RawContent` object to define the settings and contents of a push notification, the settings and content that you specify in the object override all other settings and content for the notification.
 

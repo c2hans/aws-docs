@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Creating message templates with the CreateWhatsAppMessageTemplate API
-<a name="nx-features-whatsapp-templates-examples"></a>
 
 You can create customized WhatsApp message templates using the AWS End User Messaging API. This section describes how to use the [CreateWhatsAppMessageTemplate](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_CreateWhatsAppMessageTemplate.html) operation to create a variety of WhatsApp message templates.
 

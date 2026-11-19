@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/c
 ---
 
 # AWS CloudTrail or Amazon CloudWatch?
-<a name="cloudtrail-or-cloudwatch"></a>
 
 **Understand the differences and pick the one that's right for you**
 

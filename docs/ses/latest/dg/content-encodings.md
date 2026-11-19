@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/content-encodings.html
 ---
 
 # Content encodings supported by Amazon SES
-<a name="content-encodings"></a>
 
 The following is provided for reference.
 

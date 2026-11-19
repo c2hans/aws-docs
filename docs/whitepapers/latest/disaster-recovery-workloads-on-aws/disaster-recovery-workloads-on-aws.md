@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Disaster Recovery of Workloads on AWS: Recovery in the Cloud
-<a name="disaster-recovery-workloads-on-aws"></a>
 
 Publication date: **February 12, 2021** ([Document history](document-revisions.md))
 

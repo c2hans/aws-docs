@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-c
 ---
 
 # Confluence
-<a name="kb-managed-ds-confluence"></a>
 
 Atlassian Confluence is a collaborative work-management tool for sharing, storing, and working on documents and pages. You can connect your Confluence Cloud instance as a data source for your managed knowledge base to crawl pages, blog posts, and their attachments. Only Confluence Cloud (SaaS) is supported; Confluence Server and Data Center are not.
 

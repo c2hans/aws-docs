@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Up
 ---
 
 # UpdateDataLakeExceptionSubscription
-<a name="API_UpdateDataLakeExceptionSubscription"></a>
 
 Updates the specified notification subscription in Amazon Security Lake for the organization you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-pyth
 ---
 
 # Using Python virtual environments with AWS Glue
-<a name="aws-glue-programming-python-virtual-environments"></a>
 
  Starting with AWS Glue 5.0, you can run your ETL jobs in a Python virtual environment (venv). Virtual environments remove runtime dependency resolution from your job runs, ensure that each run uses the same packages, and prevent failures caused by upstream package changes.
 

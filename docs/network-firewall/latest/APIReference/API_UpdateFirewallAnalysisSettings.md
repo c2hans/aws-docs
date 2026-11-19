@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallAnalysisSettings
-<a name="API_UpdateFirewallAnalysisSettings"></a>
 
 Enables specific types of firewall analysis on a specific firewall you define.
 

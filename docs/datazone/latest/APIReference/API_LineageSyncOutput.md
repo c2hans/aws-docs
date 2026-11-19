@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageSyncOutput
-<a name="API_LineageSyncOutput"></a>
 
 Contains the current state of lineage sync for a Snowflake connection, including the schedule, timezone, enabled state, and the ID of the associated lineage job.
 

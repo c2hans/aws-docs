@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-archived-message-
 ---
 
 # Formatting Amazon SNS notifications for storage in Amazon S3 destinations
-<a name="firehose-archived-message-format-S3"></a>
 
 The following example shows an Amazon SNS notification sent to an Amazon Simple Storage Service (Amazon S3) bucket, with indentation for readability.
 

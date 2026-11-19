@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/deploy-custom-m
 ---
 
 # Deploy a custom model for on-demand inference
-<a name="deploy-custom-model-on-demand"></a>
 
  After you create a custom model with a model customization job or import a SageMaker AI-trained custom Amazon Nova model, you can set up on-demand inference for the model. With on-demand inference, you only pay for what you use and you don't need to set up provisioned compute resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeClus
 ---
 
 # DescribeClusterVersions
-<a name="API_DescribeClusterVersions"></a>
 
 Lists available Kubernetes versions for Amazon EKS clusters.
 

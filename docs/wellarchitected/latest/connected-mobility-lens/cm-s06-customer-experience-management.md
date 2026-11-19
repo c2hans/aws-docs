@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # CM-S06 Customer experience management
-<a name="cm-s06-customer-experience-management"></a>
 
  Insights from vehicle data help provide a personalized in-cabin experience, which can also be portable to other vehicles. Vehicle Manufacturers can also use such data to predict customer's needs at different touch points throughout the vehicle lifecycle and provide a more seamless experience to address those needs.
 

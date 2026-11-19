@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListMembershipItem
-<a name="API_ListMembershipItem"></a>
 
 ## Contents
 <a name="API_ListMembershipItem_Contents"></a>

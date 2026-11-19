@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/backup-restore-
 ---
 
 # Sharing a DB Cluster Snapshot
-<a name="backup-restore-share-snapshot"></a>
 
 Using Neptune, you can share a manual DB cluster snapshot in the following ways:
 + Sharing a manual DB cluster snapshot, whether encrypted or unencrypted, enables authorized AWS accounts to copy the snapshot.

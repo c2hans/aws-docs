@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/mcp-ser
 ---
 
 # Add an API Gateway REST API as a target for Amazon Bedrock AgentCore Gateway
-<a name="mcp-server"></a>
 
 An Amazon Bedrock AgentCore Gateway provides AI agent developers a secure way to expose your API Gateway REST APIs as Model Context Protocol (MCP)-compatible tools. AgentCore Gateway uses targets to define tools. When you add your stage as a target, your Gateway becomes a single MCP URL that enables access to the tools for an agent. For more information, see [API Gateway REST API stages as targets](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-api-gateway.html) in the *Amazon Bedrock AgentCore Gateway Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-GetPo
 ---
 
 # GetPolicy
-<a name="JavaApi-GetPolicy"></a>
 
 The following Java sample shows how to use the [GetPolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetPolicy.html) operation.
 

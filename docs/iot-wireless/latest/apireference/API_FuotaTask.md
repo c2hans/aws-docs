@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Fuo
 ---
 
 # FuotaTask
-<a name="API_FuotaTask"></a>
 
 A FUOTA task.
 

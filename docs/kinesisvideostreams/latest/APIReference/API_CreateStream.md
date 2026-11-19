@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # CreateStream
-<a name="API_CreateStream"></a>
 
 Creates a new Kinesis video stream.
 

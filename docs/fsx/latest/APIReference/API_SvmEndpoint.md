@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_SvmEndpoint.
 ---
 
 # SvmEndpoint
-<a name="API_SvmEndpoint"></a>
 
 An Amazon FSx for NetApp ONTAP storage virtual machine (SVM) has four endpoints that are used to access data or to manage the SVM using the NetApp ONTAP CLI, REST API, or NetApp CloudManager. They are the `Iscsi`, `Management`, `Nfs`, and `Smb` endpoints.
 

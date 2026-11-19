@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-groups-add.ht
 ---
 
 # Add Capacity Reservations to a group
-<a name="cr-groups-add"></a>
 
 You can add Capacity Reservations that you own in your account, or Capacity Reservations that are shared with you by other AWS accounts to a group.
 

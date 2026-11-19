@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/gam-integration-fi
 ---
 
 # Optimizing ad fill rate with Google Ad Manager
-<a name="gam-integration-fill-rate"></a>
 
 When you use Google Ad Manager (GAM) as your ad server with MediaTailor, your ADS template URL parameters directly affect ad fill rate and revenue. Incorrect parameter values are one of the most common causes of low fill rates.
 

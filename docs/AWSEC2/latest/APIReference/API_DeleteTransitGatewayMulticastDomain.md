@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayMulticastDomain
-<a name="API_DeleteTransitGatewayMulticastDomain"></a>
 
 Deletes the specified transit gateway multicast domain.
 

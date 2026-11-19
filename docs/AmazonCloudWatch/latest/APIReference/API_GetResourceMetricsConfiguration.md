@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetResourceMetricsConfiguration
-<a name="API_GetResourceMetricsConfiguration"></a>
 
 Retrieves the current resource metrics configuration for an AWS resource. The response includes the resource ARN, any metric selections, and the times at which the configuration was created and last updated.
 

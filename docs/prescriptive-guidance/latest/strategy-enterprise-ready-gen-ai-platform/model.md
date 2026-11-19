@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Layer 2: Approved set of foundation models and tools
-<a name="model"></a>
 
 As organizations navigate the early stages of generative AI adoption, they quickly realize that no single model can address all use cases effectively. Different models excel in various domains and tasks, and enterprises need to balance capability, cost, and performance for each specific application. This reality drives the need for a flexible, yet controlled, approach to foundation model access.
 

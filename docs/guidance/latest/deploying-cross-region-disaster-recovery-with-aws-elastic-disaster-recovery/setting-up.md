@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Setting up
-<a name="setting-up"></a>
 
 AWS Elastic Disaster Recovery is only one part of a larger disaster recovery strategy, and being prepared for these unforeseen events requires proper coordination across people, processes, and technology. The recovery plan should be documented and clearly define the stakeholders with roles and responsibilities, along with the steps that should be taken in the event of a real disaster. Below is a checklist of key concepts to consider as part of the planning process.
 

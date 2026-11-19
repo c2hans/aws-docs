@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/example-use-param
 ---
 
 # Parameter substitution
-<a name="example-use-parameters"></a>
 
 The following example job definition illustrates how to allow for parameter substitution and to set default values.
 

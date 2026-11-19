@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RelatedItemsUpdate
-<a name="API_RelatedItemsUpdate"></a>
 
 Details about the related item you're adding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/how-sentiment.html
 ---
 
 # Sentiment
-<a name="how-sentiment"></a>
 
 Use Amazon Comprehend to determine the sentiment of content in UTF-8 encoded text documents. For example, you can use sentiment analysis to determine the sentiments of comments on a blog posting to determine if your readers liked the post.
 

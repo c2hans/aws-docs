@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/CARDINA
 ---
 
 # CARDINALITY function
-<a name="CARDINALITY"></a>
 
 The CARDINALITY function returns the size of an ARRAY or MAP expression (*expr*).
 

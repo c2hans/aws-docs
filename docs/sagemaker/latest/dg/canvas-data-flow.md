@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-data-flow.htm
 ---
 
 # Create a data flow
-<a name="canvas-data-flow"></a>
 
 Use a Data Wrangler flow in SageMaker Canvas, or *data flow*, to create and modify a data preparation pipeline. We recommend that you use Data Wrangler for datasets larger than 5 GB.
 

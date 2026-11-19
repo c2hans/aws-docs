@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BasicLayout
-<a name="API_connect-cases_BasicLayout"></a>
 
 Content specific to `BasicLayout` type. It configures fields in the top panel and More Info tab of agent application.
 

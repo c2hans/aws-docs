@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_iot_sqs.
 ---
 
 # aws-iot-sqs
-<a name="aws_iot_sqs"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

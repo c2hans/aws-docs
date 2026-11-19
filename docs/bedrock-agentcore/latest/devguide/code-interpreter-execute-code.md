@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Executing code
-<a name="code-interpreter-execute-code"></a>
 
 Once you have started a Code Interpreter session, you can execute code in the session.
 

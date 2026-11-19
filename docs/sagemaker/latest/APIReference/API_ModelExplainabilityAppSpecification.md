@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelE
 ---
 
 # ModelExplainabilityAppSpecification
-<a name="API_ModelExplainabilityAppSpecification"></a>
 
 Docker container image configuration object for the model explainability job.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Permissions management
-<a name="permissions-management"></a>
 
 This section discusses the best practices for setting up commonly used IAM roles, policies, and guardrails for provisioning and operating the SageMaker AI Studio domain.
 

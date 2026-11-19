@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AccountEnrollmentStatus
-<a name="API_CostOptimizationHub_AccountEnrollmentStatus"></a>
 
 Describes the enrollment status of an organization's member accounts in Cost Optimization Hub.
 

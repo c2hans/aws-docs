@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetS
 ---
 
 # GetSchemaAnalysisRule
-<a name="API_GetSchemaAnalysisRule"></a>
 
 Retrieves a schema analysis rule.
 

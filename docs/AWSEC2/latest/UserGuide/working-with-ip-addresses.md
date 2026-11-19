@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ip-
 ---
 
 # Manage the IPv4 addresses for your EC2 instances
-<a name="working-with-ip-addresses"></a>
 
 You can assign a public IPv4 address to your instance when you launch it. You can view the IPv4 addresses for your instance in the console through either the **Instances** page or the **Network Interfaces** page.
 

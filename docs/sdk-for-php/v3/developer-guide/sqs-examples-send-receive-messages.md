@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examp
 ---
 
 # Sending and receiving messages in Amazon SQS with AWS SDK for PHP Version 3
-<a name="sqs-examples-send-receive-messages"></a>
 
 To learn about Amazon SQS messages, see [Sending a Message to an SQS Queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-send-message.html) and [Receiving and Deleting a Message from an SQS Queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-receive-delete-message.html.html) in the Service Quotas User Guide.
 

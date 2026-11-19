@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS06-BP01 Track regulatory changes across jurisdictions
-<a name="dsops06-bp01"></a>
 
  Regulations change at different times across jurisdictions, and a change in one can diverge from requirements in another. Without a structured approach to tracking these changes, organizations risk falling out of compliance or discovering divergences too late to address them cost-effectively.
 

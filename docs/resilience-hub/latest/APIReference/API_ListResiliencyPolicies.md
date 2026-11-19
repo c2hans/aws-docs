@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListResiliencyPolicies
-<a name="API_ListResiliencyPolicies"></a>
 
 Lists the resiliency policies for the AWS Resilience Hub applications.
 

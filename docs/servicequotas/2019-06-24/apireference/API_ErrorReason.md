@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ErrorReason
-<a name="API_ErrorReason"></a>
 
 An error that explains why an action did not succeed.
 

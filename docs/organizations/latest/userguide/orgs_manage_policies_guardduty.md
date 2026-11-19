@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Amazon GuardDuty policies
-<a name="orgs_manage_policies_guardduty"></a>
 
 Amazon GuardDuty policies let you centrally enable and manage GuardDuty across accounts in your organization. With a GuardDuty policy, you specify which organizational entities (root, OUs, or accounts) have GuardDuty and its protection plans automatically enabled and managed through the GuardDuty delegated administrator account. You can use GuardDuty policies to simplify service-wide onboarding and ensure consistent protection coverage across all existing and newly created accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_EventLogC
 ---
 
 # EventLogConfigurationSummary
-<a name="API_EventLogConfigurationSummary"></a>
 
 List of event log configurations.
 

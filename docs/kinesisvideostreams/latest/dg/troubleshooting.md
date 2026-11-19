@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/troublesho
 ---
 
 # Troubleshooting Kinesis Video Streams
-<a name="troubleshooting"></a>
 
 Use the following information to troubleshoot common issues encountered with Amazon Kinesis Video Streams.
 

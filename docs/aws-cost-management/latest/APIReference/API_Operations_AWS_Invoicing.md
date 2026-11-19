@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Invoicing
-<a name="API_Operations_AWS_Invoicing"></a>
 
 The following actions are supported by AWS Invoicing:
 +  [BatchGetInvoiceProfile](API_invoicing_BatchGetInvoiceProfile.md)

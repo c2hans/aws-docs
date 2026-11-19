@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-te
 ---
 
 # Lake Formation terminology
-<a name="how-it-works-terminology"></a>
 
 The following are some important terms that you will encounter in this guide.
 

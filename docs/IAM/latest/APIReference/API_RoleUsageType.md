@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RoleUsageTyp
 ---
 
 # RoleUsageType
-<a name="API_RoleUsageType"></a>
 
 An object that contains details about how a service-linked role is used, if that information is returned by the service.
 

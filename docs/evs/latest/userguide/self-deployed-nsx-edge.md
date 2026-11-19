@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-nsx-e
 ---
 
 # Step 5: Configure NSX networking
-<a name="self-deployed-nsx-edge"></a>
 
 After the VMware Cloud Foundation (VCF) Installer completes bringup, NSX Manager is operational. The NSX Edge cluster and the Tier-0 gateway aren’t yet configured for connectivity with Amazon VPC Route Server. In this step, you deploy the Edge cluster, create the Tier-0 gateway, and configure Border Gateway Protocol (BGP) peering with the route server in NSX Manager.
 

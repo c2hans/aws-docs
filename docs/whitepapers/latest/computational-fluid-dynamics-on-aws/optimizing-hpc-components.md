@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Optimizing HPC components
-<a name="optimizing-hpc-components"></a>
 
  The AWS Cloud provides a broad range of scalable, flexible infrastructure services that you select to match your workloads and tasks. This gives you the ability to choose the most appropriate mix of resources for your specific applications. Cloud computing makes it easy to experiment with infrastructure components and architecture design. The HPC solution components listed below are a great starting point to set up and manage your HPC cluster. Always test various solution configurations to find the best performance at the lowest cost.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Monitoring the solution post-deployment
-<a name="monitoring"></a>
 
 After deploying the solution, we recommend continuously monitoring the solution’s resources using Amazon CloudWatch alarms and metrics.
 

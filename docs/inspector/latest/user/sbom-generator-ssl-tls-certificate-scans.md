@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-ssl
 ---
 
 # Amazon Inspector SBOM Generator SSL/TLS certificate scans
-<a name="sbom-generator-ssl-tls-certificate-scans"></a>
 
  This section describes how to use the Amazon Inspector SBOM Generator to inventory SSL/TLS certificates. The Sbomgen inventories SSL/TLS certificates by searching for certificates in predefined locations as well as directories provided by the user. The feature is intended to enable users to inventory SSL/TLS certificates as well as identify expired certificates. CA certificates will also appear in the output inventory.
 

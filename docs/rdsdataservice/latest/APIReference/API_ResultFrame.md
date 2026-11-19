@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_R
 ---
 
 # ResultFrame
-<a name="API_ResultFrame"></a>
 
 The result set returned by a SQL statement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Foundations
-<a name="foundations"></a>
 
 |  EUCREL01: How do you increase resilience and minimize impact of failure in your EUC environment?  |
 | --- |

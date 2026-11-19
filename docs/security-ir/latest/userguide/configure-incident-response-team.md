@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/configure-i
 ---
 
 # Step 2: Configure your incident response team
-<a name="configure-incident-response-team"></a>
 
  After you complete deployment, configure your incident response team to ensure proper notification and escalation during security events.
 

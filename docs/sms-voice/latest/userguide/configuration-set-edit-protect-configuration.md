@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Edit a configuration set protect configuration association in AWS End User Messaging SMS
-<a name="configuration-set-edit-protect-configuration"></a>
 
 To change a configuration set's associated protect configuration, you can use the AWS End User Messaging SMS console, the `AssociaterotectConfiguration` action in the AWS End User Messaging SMS and voice v2 API, or the `aws sms-voice associate-protect-configuration` command in the AWS CLI. This section shows how to change a configuration set's protect configuration using the AWS End User Messaging SMS console and the AWS CLI.
 

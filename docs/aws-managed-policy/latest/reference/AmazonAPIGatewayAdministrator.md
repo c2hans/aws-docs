@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAPIGatewayAdministrator
-<a name="AmazonAPIGatewayAdministrator"></a>
 
 **Description**: Provides full access to create/edit/delete APIs in Amazon API Gateway via the AWS Management Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_SdkConfigurati
 ---
 
 # SdkConfigurationProperty
-<a name="API_SdkConfigurationProperty"></a>
 
 A configuration property of an SDK type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MLUserDataEncrypt
 ---
 
 # MLUserDataEncryption
-<a name="API_MLUserDataEncryption"></a>
 
 The encryption-at-rest settings of the transform that apply to accessing user data.
 

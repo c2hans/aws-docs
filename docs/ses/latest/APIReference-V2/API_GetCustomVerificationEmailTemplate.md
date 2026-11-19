@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetCustom
 ---
 
 # GetCustomVerificationEmailTemplate
-<a name="API_GetCustomVerificationEmailTemplate"></a>
 
 Returns the custom email verification template for the template name you specify.
 

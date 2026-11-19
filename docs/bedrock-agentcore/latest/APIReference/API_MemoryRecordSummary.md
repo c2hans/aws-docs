@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordSummary
-<a name="API_MemoryRecordSummary"></a>
 
 Contains summary information about a memory record.
 

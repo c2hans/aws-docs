@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_FastResetTok
 ---
 
 # FastResetToken
-<a name="API_FastResetToken"></a>
 
 A structure containing the fast reset token used to initiate a fast reset.
 

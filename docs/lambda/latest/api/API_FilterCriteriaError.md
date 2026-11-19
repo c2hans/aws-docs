@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FilterCriteriaErro
 ---
 
 # FilterCriteriaError
-<a name="API_FilterCriteriaError"></a>
 
 An object that contains details about an error related to filter criteria encryption.
 

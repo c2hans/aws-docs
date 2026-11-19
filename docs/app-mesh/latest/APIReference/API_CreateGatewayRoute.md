@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateG
 ---
 
 # CreateGatewayRoute
-<a name="API_CreateGatewayRoute"></a>
 
 Creates a gateway route.
 

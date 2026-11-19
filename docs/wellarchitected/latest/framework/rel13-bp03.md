@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 ---
 
 # REL13-BP03 Test disaster recovery implementation to validate the implementation
-<a name="rel13-bp03"></a>
 
  Assumptions about capacity, permissions, and timing go stale as a system evolves. Test failover regularly, under production conditions, to confirm that recovery works and that the team can perform it within the objectives you set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with CloudWatch alarms
-<a name="examples-cloudwatch-create-alarms"></a>
 
 ## Create an alarm
 <a name="create-an-alarm"></a>

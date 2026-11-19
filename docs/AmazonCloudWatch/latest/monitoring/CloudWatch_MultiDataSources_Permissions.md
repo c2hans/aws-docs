@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Managing access to data sources
-<a name="CloudWatch_MultiDataSources_Permissions"></a>
 
  CloudWatch uses CloudFormation to create the required resources in your account. We recommend that you use the `cloudformation:TemplateUrl` condition to control access to CloudFormation templates when you grant `CreateStack` permissions to IAM users.
 

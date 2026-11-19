@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SupportedAssociation
-<a name="API_SupportedAssociation"></a>
 
 The processing rules for when a registration can be associated with an origination identity and disassociated from an origination identity.
 

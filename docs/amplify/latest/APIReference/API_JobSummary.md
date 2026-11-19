@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_JobSumma
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 Describes the summary for an execution job for an Amplify app.
 

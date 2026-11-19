@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Simulation platform
-<a name="simulation-platform"></a>
 
 The solution provides two simulation modes: a local service for development and a cloud service for automated testing and demos.
 

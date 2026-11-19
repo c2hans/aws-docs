@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/ami-image-
 ---
 
 # Create and update AMI image pipelines
-<a name="ami-image-pipelines"></a>
 
 You can manage AMI image pipelines from the Image Builder console, the API, SDKs, the AWS CLI, or AWS Tools for PowerShell. In the console, you can use the **Create image pipeline** console wizard to guide you through the following steps.
 + Specify pipeline details such as name, description, and resource tags.

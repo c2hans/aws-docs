@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/wha
 ---
 
 # What Is the AWS Elemental MediaPackage VOD API Reference?
-<a name="what-is-mp-vod"></a>
 
 This is the AWS Elemental MediaPackage VOD REST API Reference. It contains examples of REST resources and their operations for video on demand (VOD).
 

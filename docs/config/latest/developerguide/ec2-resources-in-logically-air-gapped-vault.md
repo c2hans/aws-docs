@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-resourc
 ---
 
 # ec2-resources-in-logically-air-gapped-vault
-<a name="ec2-resources-in-logically-air-gapped-vault"></a>
 
 Checks if Amazon Elastic Compute Cloud (Amazon EC2) instances are in a logically air-gapped vault. The rule is NON\_COMPLIANT if an Amazon EC2 instance is not in a logically air-gapped vault within the specified time period.
 

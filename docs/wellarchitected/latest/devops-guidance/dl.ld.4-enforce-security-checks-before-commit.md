@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.4] Enforce security checks before commit
-<a name="dl.ld.4-enforce-security-checks-before-commit"></a>
 
  **Category:** FOUNDATIONAL
 

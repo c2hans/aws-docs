@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-associa
 ---
 
 # Associate a transit gateway policy table in AWS Transit Gateway
-<a name="tgw-policy-tables-associate"></a>
 
 Associate a policy table with one or more transit gateway attachments. An attachment can be associated with either a policy table or a route table, but not both. If the attachment currently has a route table associated, you must disassociate it first.
 

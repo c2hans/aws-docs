@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-instance-r
 ---
 
 # Use an instance refresh to update instances in an Auto Scaling group
-<a name="asg-instance-refresh"></a>
 
 You can use an instance refresh to update the instances in your Auto Scaling group. This feature can be useful when a configuration change requires you to replace instances or their root volumes, especially if your Auto Scaling group contains a large number of instances.
 

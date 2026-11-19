@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Co
 ---
 
 # CollectionScheme
-<a name="API_CollectionScheme"></a>
 
 Specifies what data to collect and how often or when to collect it.
 

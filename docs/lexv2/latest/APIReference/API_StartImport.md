@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StartImpor
 ---
 
 # StartImport
-<a name="API_StartImport"></a>
 
 Starts importing a bot, bot locale, or custom vocabulary from a zip archive that you uploaded to an S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-common-type
 ---
 
 # languageCodes
-<a name="acxd-common-types-languagecodes"></a>
 
 Type: `Array`
 

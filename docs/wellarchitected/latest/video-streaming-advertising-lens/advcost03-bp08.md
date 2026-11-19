@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVCOST03-BP08 Use volume-tier pricing by consolidating traffic
-<a name="advcost03-bp08"></a>
 
  RTB Fabric pricing drops sharply after the first 2 trillion transactions per month. When you consolidate traffic from multiple accounts or partners under a single billing entity, you reach lower pricing tiers faster and lower per-transaction costs.
 

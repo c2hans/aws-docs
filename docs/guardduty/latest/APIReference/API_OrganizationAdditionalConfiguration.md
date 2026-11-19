@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationAdditionalConfiguration
-<a name="API_OrganizationAdditionalConfiguration"></a>
 
 A list of additional configurations which will be configured for the organization.
 

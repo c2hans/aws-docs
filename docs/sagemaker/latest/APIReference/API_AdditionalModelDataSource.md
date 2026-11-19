@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Additi
 ---
 
 # AdditionalModelDataSource
-<a name="API_AdditionalModelDataSource"></a>
 
 Data sources that are available to your model in addition to the one that you specify for `ModelDataSource` when you use the `CreateModel` action.
 

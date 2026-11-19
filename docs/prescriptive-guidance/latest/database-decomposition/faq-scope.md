@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # FAQs about defining scope and requirements
-<a name="faq-scope"></a>
 
 The [Defining the scope and requirements for database decomposition](scope.md) section of this guide discusses how to analyze interactions, map dependencies, and establish success criteria. This FAQ section addresses key questions about establishing and managing project boundaries. Whether you're dealing with unclear technical constraints, conflicting departmental needs, or evolving business requirements, these FAQs provide practical guidance on maintaining a balanced approach.
 

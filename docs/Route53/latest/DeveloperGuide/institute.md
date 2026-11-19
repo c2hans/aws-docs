@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/institute.
 ---
 
 # .institute
-<a name="institute"></a>
 
 Used by any organization or group, especially research and educational organizations.
 

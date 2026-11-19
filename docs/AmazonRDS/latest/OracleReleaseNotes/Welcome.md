@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welc
 ---
 
 # Release notes for Amazon Relational Database Service (Amazon RDS) for Oracle
-<a name="Welcome"></a>
 
 The Amazon RDS for Oracle release notes provide details about the Oracle Database versions that are supported by Amazon RDS.
 

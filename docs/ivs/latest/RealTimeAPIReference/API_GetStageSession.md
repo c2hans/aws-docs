@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetS
 ---
 
 # GetStageSession
-<a name="API_GetStageSession"></a>
 
 Gets information for the specified stage session.
 

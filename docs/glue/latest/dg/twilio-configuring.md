@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twilio-configuring.html
 ---
 
 # Configuring Twilio
-<a name="twilio-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Twilio, you must meet these requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecuti
 ---
 
 # StopDurableExecution
-<a name="API_StopDurableExecution"></a>
 
 Stops a running or paused [durable execution](https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html). The execution transitions to STOPPED status and cannot be resumed. Any in-progress operations are terminated.
 

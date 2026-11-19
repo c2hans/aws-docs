@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Resolving VPC connectivity problems in OpenSearch UI
-<a name="application-troubleshooting-vpc"></a>
 
 When an OpenSearch UI application cannot reach a domain in a VPC, the cause is usually a missing VPC endpoint authorization, a security group that blocks port 443, or DNS attributes that are turned off on the VPC. The following table lists the symptoms and likely causes of VPC connectivity problems, so that you can identify where to start.
 

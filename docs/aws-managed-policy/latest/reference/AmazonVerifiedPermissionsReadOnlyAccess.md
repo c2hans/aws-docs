@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVerifiedPermissionsReadOnlyAccess
-<a name="AmazonVerifiedPermissionsReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to the Verified Permissions service.
 

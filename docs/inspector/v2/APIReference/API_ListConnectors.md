@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListConnec
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Lists connectors in your account. Results are paginated. Use the `nextToken` parameter to retrieve the next page of results.
 

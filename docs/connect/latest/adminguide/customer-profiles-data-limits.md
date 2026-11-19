@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Quotas and data limits in Customer Profiles
-<a name="customer-profiles-data-limits"></a>
 
 With Connect Customer Customer Profiles, you can customize data onboarding by setting ingestion limits on the various types of customer data you use to build a unified profile. Setting limits across mappings helps you prioritize which sources get capacity on each profile. The default maximum across all mappings per profile is 1000 objects.
 

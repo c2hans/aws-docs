@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-azure-mon
 ---
 
 # Connect to an Azure Monitor data source
-<a name="using-azure-monitor-in-AMG"></a>
 
  The Azure Monitor data source supports multiple services in the Azure cloud:
 +  **Azure Monitor service** is the platform service that provides a single source for monitoring Azure resources. For more information, see [Querying the Azure Monitor service](#query-the-azure-monitor-service).

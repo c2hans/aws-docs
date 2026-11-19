@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Continuous yield optimization
-<a name="advops07"></a>
 
  The standard Well-Architected OE pillar includes an Evolve area focused on learning, sharing, and improving (OPS11). This capability maps those nine OPS11 best practices to publisher yield optimization: ongoing improvement feedback loops, game days and failure injection exercises, A/B testing frameworks for ad format experimentation, post-incident reviews for revenue-affecting events, and knowledge sharing across publisher workload teams. Organizations that design advertising workloads should adopt practices that improve yield through continual refinement, safe experimentation, and learning from failures.
 

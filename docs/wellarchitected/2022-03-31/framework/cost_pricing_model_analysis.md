@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST07-BP01 Perform pricing model analysis
-<a name="cost_pricing_model_analysis"></a>
 
  Analyze each component of the workload. Determine if the component and resources will be running for extended periods (for commitment discounts), or dynamic and short-running (for Spot or On-Demand Instances). Perform an analysis on the workload using the Recommendations feature in AWS Cost Explorer.
 

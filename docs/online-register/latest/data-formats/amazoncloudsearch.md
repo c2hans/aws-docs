@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon CloudSearch
-<a name="amazoncloudsearch"></a>
 
 Amazon CloudSearch provides the following APIs for data retrieval.
 

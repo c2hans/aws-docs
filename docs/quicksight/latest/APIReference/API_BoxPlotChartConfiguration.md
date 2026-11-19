@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotChartConfiguration
-<a name="API_BoxPlotChartConfiguration"></a>
 
 The configuration of a `BoxPlotVisual`.
 

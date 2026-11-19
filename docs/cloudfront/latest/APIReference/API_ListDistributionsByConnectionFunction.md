@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByConnectionFunction
-<a name="API_ListDistributionsByConnectionFunction"></a>
 
 Lists distributions by connection function.
 

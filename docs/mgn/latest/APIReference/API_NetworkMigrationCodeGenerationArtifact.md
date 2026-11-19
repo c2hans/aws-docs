@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_NetworkMigra
 ---
 
 # NetworkMigrationCodeGenerationArtifact
-<a name="API_NetworkMigrationCodeGenerationArtifact"></a>
 
 An artifact generated during code generation, such as a CloudFormation template or Terraform file.
 

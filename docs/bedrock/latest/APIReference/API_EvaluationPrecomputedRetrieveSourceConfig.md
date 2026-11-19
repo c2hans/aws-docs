@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationPrecomputedRetrieveSourceConfig
-<a name="API_EvaluationPrecomputedRetrieveSourceConfig"></a>
 
 A summary of a RAG source used for a retrieve-only Knowledge Base evaluation job where you provide your own inference response data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListResource
 ---
 
 # ListResourceTags
-<a name="API_ListResourceTags"></a>
 
 Returns all tags on the specified KMS key.
 

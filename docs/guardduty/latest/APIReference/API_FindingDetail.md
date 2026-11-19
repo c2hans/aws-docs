@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingDetail
-<a name="API_FindingDetail"></a>
 
 Contains details about a GuardDuty finding.
 

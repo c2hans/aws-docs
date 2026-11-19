@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-loca
 ---
 
 # Local quantum device emulator
-<a name="braket-local-emulator"></a>
 
 With Amazon Braket's local emulator tool, you can emulate your verbatim quantum programs locally before running them on actual quantum hardware. The emulator uses device calibration data to validate the verbatim circuits, allowing you to catch compatibility issues earlier.
 

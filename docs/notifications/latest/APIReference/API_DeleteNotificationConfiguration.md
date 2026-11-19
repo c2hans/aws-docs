@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_De
 ---
 
 # DeleteNotificationConfiguration
-<a name="API_DeleteNotificationConfiguration"></a>
 
 Deletes a `NotificationConfiguration`.
 

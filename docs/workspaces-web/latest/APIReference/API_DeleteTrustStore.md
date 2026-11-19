@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteTrustStore
-<a name="API_DeleteTrustStore"></a>
 
 Deletes the trust store.
 

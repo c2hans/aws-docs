@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-mon
 ---
 
 # Monitoring auto upgrades
-<a name="auto-version-upgrades-monitoring-auto-upgrades"></a>
 
 You can follow an auto upgrade with the job, its job runs, the evaluation record, the summaries, and Amazon EventBridge events.
 

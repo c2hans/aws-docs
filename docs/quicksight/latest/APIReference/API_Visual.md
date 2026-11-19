@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # Visual
-<a name="API_Visual"></a>
 
 A visual displayed on a sheet in an analysis, dashboard, or template.
 

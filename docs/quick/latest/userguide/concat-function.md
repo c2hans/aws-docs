@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/concat-function.h
 ---
 
 # Concat
-<a name="concat-function"></a>
 
 `concat` concatenates two or more strings.
 

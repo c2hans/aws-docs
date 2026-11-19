@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS03-BP01 Align partner connectivity capacity with bid activity to reduce idle energy draw
-<a name="advsus03-bp01"></a>
 
  NAT gateways continuously process data and consume energy regardless of traffic quality. A transaction-oriented connectivity model matches real-time bidding (RTB) patterns and is more resource-efficient for connectivity to AdTech partners.
 

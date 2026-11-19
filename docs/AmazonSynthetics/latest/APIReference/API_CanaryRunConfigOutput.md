@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryRunConfigOutput
-<a name="API_CanaryRunConfigOutput"></a>
 
 A structure that contains information about a canary run.
 

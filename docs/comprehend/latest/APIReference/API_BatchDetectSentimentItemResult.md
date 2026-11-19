@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Batch
 ---
 
 # BatchDetectSentimentItemResult
-<a name="API_BatchDetectSentimentItemResult"></a>
 
 The result of calling the [BatchDetectSentiment](API_BatchDetectSentiment.md) operation. The operation returns one object for each document that is successfully processed by the operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_S
 ---
 
 # StructValue
-<a name="API_StructValue"></a>
 
 A structure value returned by a call.
 

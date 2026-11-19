@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/using-systems-
 ---
 
 # Use AWS Systems Manager parameters instead of AMI IDs in launch templates
-<a name="using-systems-manager-parameters"></a>
 
 This section shows you how to create a launch template that specifies an AWS Systems Manager parameter that references an Amazon Machine Image (AMI) ID. You can use a parameter stored in your same AWS account, a parameter shared from another AWS account, or a public parameter for a public AMI maintained by AWS.
 

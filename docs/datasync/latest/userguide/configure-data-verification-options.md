@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/configure-data
 ---
 
 # Configuring how AWS DataSync verifies data integrity
-<a name="configure-data-verification-options"></a>
 
 During a transfer, AWS DataSync uses checksum verification to verify the integrity of the data that you copy between locations. You also can configure DataSync to perform additional verification at the end of your transfer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/compute
 ---
 
 # Create and manage virtual computers on Lightsail for Research
-<a name="computers"></a>
 
 With Amazon Lightsail for Research, you can create virtual computers in the AWS Cloud.
 

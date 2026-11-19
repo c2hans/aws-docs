@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino-perfor
 ---
 
 # Collect and Utilize table statistics
-<a name="emr-trino-performance-areas-collect-stats"></a>
 
  Collecting table statistics allows Trino’s cost-based optimizer to make informed decisions about join orders, filter pushdown, and partition pruning, resulting in better performance.
 

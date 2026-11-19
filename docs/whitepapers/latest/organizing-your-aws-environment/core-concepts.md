@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Core concepts
-<a name="core-concepts"></a>
 
 **Topics**
 + [AWS Organizations](aws-organizations.md)

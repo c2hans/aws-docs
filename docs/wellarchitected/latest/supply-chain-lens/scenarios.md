@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  The AWS Well-Architected Framework provides architectural guidance for building effective supply chain solutions. This section presents eight scenarios demonstrating how AWS services solve specific supply chain challenges, from planning and forecasting to warehouse automation and product traceability. Each scenario includes a description of typical use cases and reference architecture with metrics aligned to Well-Architected principles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sender-configuring.html
 ---
 
 # Configuring Sender
-<a name="sender-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Sender, you must meet the following requirements:
 

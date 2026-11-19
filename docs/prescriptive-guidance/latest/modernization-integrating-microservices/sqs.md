@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Amazon SQS
-<a name="sqs"></a>
 
 [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) supports standard queues, which do not guarantee ordering, and FIFO queues, which do guarantee ordering within a given *message group*.
 

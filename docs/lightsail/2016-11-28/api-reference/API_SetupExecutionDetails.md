@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SetupExecutionDetails
-<a name="API_SetupExecutionDetails"></a>
 
 Returns details about the commands that were run.
 

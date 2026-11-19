@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Cre
 ---
 
 # CreateCustomActionType
-<a name="API_CreateCustomActionType"></a>
 
 Creates a new custom action that can be used in all pipelines associated with the AWS account. Only used for custom actions.
 

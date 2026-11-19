@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafAcfpConfig
-<a name="API_WafAcfpConfig"></a>
 
 Describes the configuration of the account creation fraud prevention Web Application Firewall (WAF) rule group. The rule group inspects account creation requests to your application.
 

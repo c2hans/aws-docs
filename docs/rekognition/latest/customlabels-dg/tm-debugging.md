@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tm-de
 ---
 
 # Debugging a failed model training
-<a name="tm-debugging"></a>
 
 You might encounter errors during model training. Amazon Rekognition Custom Labels reports training errors in the console and in the response from [DescribeProjectVersions](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions).
 

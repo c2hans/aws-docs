@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_N
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 The network configuration for customer VPC connectivity.
 

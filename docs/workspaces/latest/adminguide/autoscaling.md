@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/autoscaling
 ---
 
 # Auto scaling for WorkSpaces Pools
-<a name="autoscaling"></a>
 
 Auto Scaling lets you change the size of your pools automatically to match the supply of available instances to user demand. The size of your pool determines the number of users who can stream concurrently. One instance is required for each user session. You can specify your pool capacity in terms of instances. Based on your pool configurations and auto scaling policies, the required number of instances will be made available. You can define scaling policies that adjust the size of your pool automatically based on a variety of utilization metrics, and optimize the number of available instances to match user demand. You can also choose to turn off automatic scaling and make the pool run at a fixed size.
 

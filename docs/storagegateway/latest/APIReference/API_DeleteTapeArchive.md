@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteTapeArchive
-<a name="API_DeleteTapeArchive"></a>
 
 Deletes the specified virtual tape from the virtual tape shelf (VTS). This operation is only supported in the tape gateway type.
 

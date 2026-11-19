@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteAsset
-<a name="API_DeleteAsset"></a>
 
 Deletes an asset. This action can't be undone. For more information, see [Deleting assets and models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-assets-and-models.html) in the * AWS IoT SiteWise User Guide*.
 

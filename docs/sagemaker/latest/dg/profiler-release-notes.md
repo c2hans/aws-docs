@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/profiler-release-not
 ---
 
 # Release notes for profiling capabilities of Amazon SageMaker AI
-<a name="profiler-release-notes"></a>
 
 See the following release notes to track the latest updates for profiling capabilities of
 

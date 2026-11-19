@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 1: Create the Serverless security policies
-<a name="pb-aoss-create-security-policies"></a>
 
 Create the collection’s security policies **before** you create the collection. A collection that comes up without a matching encryption policy fails, and without network and data access policies the migration cannot write to it. Create them in this order: encryption, network, then the data access policy.
 

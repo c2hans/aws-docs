@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monday-configuring-connec
 ---
 
 # Configuring Monday connections
-<a name="monday-configuring-connections"></a>
 
 Monday supports following two types for authentication mechanism:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/install-pkcs11
 ---
 
 # Install the PKCS \#11 library for AWS CloudHSM Client SDK 3
-<a name="install-pkcs11-v3"></a>
 
 This topic provides instructions for installing the PKCS \#11 library for the AWS CloudHSM Client SDK 3 version series. For more information about the Client SDK or PKCS \#11 library, see [Using the Client SDK](use-hsm.md) and [PKCS \#11 library](pkcs11-library.md).
 

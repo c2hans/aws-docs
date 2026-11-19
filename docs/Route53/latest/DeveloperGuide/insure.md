@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/insure.htm
 ---
 
 # .insure
-<a name="insure"></a>
 
 Used by insurance companies and insurance brokers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/subnetgroups.ip
 ---
 
 # Ensuring sufficient IP addresses for scaling operations
-<a name="subnetgroups.ipcapacity"></a>
 
 When you scale out a cluster by adding shards or replicas, MemoryDB provisions new nodes. Each node requires an available IP address in a subnet within the target Availability Zone. If the subnets in an Availability Zone do not have enough free IP addresses, the scaling operation can fail.
 

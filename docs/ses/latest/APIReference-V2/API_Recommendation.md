@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Recommend
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 A recommendation generated for your account.
 

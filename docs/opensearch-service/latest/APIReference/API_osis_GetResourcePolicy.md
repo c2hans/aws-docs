@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetResourcePolicy
-<a name="API_osis_GetResourcePolicy"></a>
 
 Retrieves the resource-based policy attached to an OpenSearch Ingestion resource.
 

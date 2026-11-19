@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Foundations
-<a name="foundations"></a>
 
 | AOSREL01: How do you keep your OpenSearch version up to date? |
 | --- |

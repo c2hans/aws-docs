@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-stagi
 ---
 
 # Update a model package stage and status in Studio
-<a name="model-registry-staging-construct-update-studio"></a>
 
 To use a model package stage construct, you will need to assume an execution role with the relevant permissions. The following page provides information on how to update the stage status using Amazon SageMaker Studio.
 

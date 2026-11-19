@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_OptionSp
 ---
 
 # OptionSpecification
-<a name="API_OptionSpecification"></a>
 
 A specification identifying an individual configuration option.
 

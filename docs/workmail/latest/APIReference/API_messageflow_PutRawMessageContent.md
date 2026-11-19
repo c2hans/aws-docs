@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_message
 ---
 
 # PutRawMessageContent
-<a name="API_messageflow_PutRawMessageContent"></a>
 
 Updates the raw content of an in-transit email message, in MIME format.
 

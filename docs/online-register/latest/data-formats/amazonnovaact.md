@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Nova Act
-<a name="amazonnovaact"></a>
 
 Amazon Nova Act provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # SplitterConfiguration
-<a name="API_data-automation_SplitterConfiguration"></a>
 
 Document splitter settings. If a document is too large to be processed in one pass, the document splitter splits it into smaller documents.
 

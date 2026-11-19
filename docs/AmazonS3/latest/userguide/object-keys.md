@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.ht
 ---
 
 # Naming Amazon S3 objects
-<a name="object-keys"></a>
 
 The *object key* (or key name) uniquely identifies the object in an Amazon S3 bucket. When you create an object, you specify the key name. For example, on the [Amazon S3 console](https://console.aws.amazon.com/s3/home), when you select a bucket, a list of objects in your bucket appears. These names are the *object keys*.
 

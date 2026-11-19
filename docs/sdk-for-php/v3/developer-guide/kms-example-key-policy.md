@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kms-examp
 ---
 
 # Working with AWS KMS key policies using the AWS SDK for PHP Version 3
-<a name="kms-example-key-policy"></a>
 
 When you create an [AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys), you determine who can use and manage that KMS key. These permissions are contained in a document called the key policy. You can use the key policy to add, remove, or modify permissions at any time for a customer managed KMS key, but you cannot edit the key policy for an AWS managed KMS key. For more information, see [Authentication and access control for AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/control-access.html).
 

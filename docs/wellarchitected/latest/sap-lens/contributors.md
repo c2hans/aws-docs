@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/contribu
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals and organizations contributed to this document:
 + Peter Perbellini: ERP on AWS Specialist Solutions Architecture Lead, APJ, Amazon Web Services

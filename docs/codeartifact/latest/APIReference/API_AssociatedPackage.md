@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Ass
 ---
 
 # AssociatedPackage
-<a name="API_AssociatedPackage"></a>
 
  A package associated with a package group.
 

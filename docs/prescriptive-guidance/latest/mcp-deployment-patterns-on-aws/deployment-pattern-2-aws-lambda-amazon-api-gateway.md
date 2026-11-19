@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Pattern 2 - AWS Lambda \+ Amazon API Gateway
-<a name="deployment-pattern-2-aws-lambda-amazon-api-gateway"></a>
 
 AWS Lambda with Amazon API Gateway represents the serverless approach where MCP server logic runs in ephemeral functions triggered by API requests. Lambda automatically manages the underlying compute resources, scaling from zero to thousands of concurrent executions without manual intervention. This pattern reduces infrastructure management overhead, making it well suited for variable workloads and teams that prioritize rapid development over operational control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.a
 ---
 
 # Configuring advanced RDS for Oracle features
-<a name="CHAP_Oracle.advanced-features"></a>
 
 RDS for Oracle supports various advanced features, including HugePages, an instance store, and extended data types.
 

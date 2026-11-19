@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ViewCont
 ---
 
 # ViewContent
-<a name="API_ViewContent"></a>
 
 View content containing all content necessary to render a view except for runtime input data.
 

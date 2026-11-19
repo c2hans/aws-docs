@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeSec
 ---
 
 # RevokeSecurityGroupEgress
-<a name="API_RevokeSecurityGroupEgress"></a>
 
 Removes the specified outbound (egress) rules from the specified security group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resou
 ---
 
 # Reverting an import operation
-<a name="resource-import-revert"></a>
 
 To revert an import operation, specify a `Retain` deletion policy for the resource you want to remove from the template to ensure that it's preserved when you delete it from the stack.
 

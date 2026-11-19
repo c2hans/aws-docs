@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Step 2. Await initial environment deployment
-<a name="step-2.-await-initial-environment-deployment"></a>
 
 Use the following procedure to ensure the Landing Zone Accelerator on AWS deploys a minimum configuration to your environment.
 

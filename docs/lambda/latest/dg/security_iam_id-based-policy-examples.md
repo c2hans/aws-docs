@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/security_iam_id-based-p
 ---
 
 # Identity-based policy examples for AWS Lambda
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Lambda resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

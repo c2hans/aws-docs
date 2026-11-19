@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/using-sear
 ---
 
 # Searching for products, services, features, and more using Unified Search in the AWS Management Console
-<a name="using-search"></a>
 
 The search box in the navigation bar provides a unified search tool for finding AWS services and features, service documentation, AWS Marketplace products, and more. Just enter a few characters or a question to start generating results from all available content types. Each word you enter further refines your results. The available content types include:
 + Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisDetectModerationLabelsConfig
-<a name="API_MediaAnalysisDetectModerationLabelsConfig"></a>
 
 Configuration for Moderation Labels Detection.
 

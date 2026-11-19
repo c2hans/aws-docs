@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # SQL Server 2018 deprecated features list
-<a name="chap-sql-server-aurora-mysql.deprecatedfeatures"></a>
 
 This topic provides reference information for deprecated features from SQL Server 2018. For more information, refer to the linked topics.
 

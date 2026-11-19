@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Ipv6
 ---
 
 # Ipv6PrefixSpecificationRequest
-<a name="API_Ipv6PrefixSpecificationRequest"></a>
 
 Specifies IPv6 prefix configuration for network interfaces.
 

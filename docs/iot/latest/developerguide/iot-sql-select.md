@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-select
 ---
 
 # SELECT clause
-<a name="iot-sql-select"></a>
 
 The AWS IoT SELECT clause is essentially the same as the ANSI SQL SELECT clause, with some minor differences.
 

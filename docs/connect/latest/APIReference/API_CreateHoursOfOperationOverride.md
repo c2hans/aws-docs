@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateHo
 ---
 
 # CreateHoursOfOperationOverride
-<a name="API_CreateHoursOfOperationOverride"></a>
 
 Creates an hours of operation override in an Connect Customer hours of operation resource.
 

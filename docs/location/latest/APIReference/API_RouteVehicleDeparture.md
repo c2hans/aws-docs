@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleDeparture
-<a name="API_RouteVehicleDeparture"></a>
 
 Details corresponding to the departure for the leg.
 

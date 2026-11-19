@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/security_iam_se
 ---
 
 # How AWS Step Functions works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Step Functions, learn what IAM features are available to use with Step Functions.
 

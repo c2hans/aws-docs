@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionTimedOutEventAttributes
-<a name="API_ChildWorkflowExecutionTimedOutEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionTimedOut` event.
 

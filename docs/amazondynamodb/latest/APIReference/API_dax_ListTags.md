@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # ListTags
-<a name="API_dax_ListTags"></a>
 
 List all of the tags for a DAX cluster. You can call `ListTags` up to 10 times per second, per account.
 

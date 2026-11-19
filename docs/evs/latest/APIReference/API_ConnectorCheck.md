@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ConnectorChe
 ---
 
 # ConnectorCheck
-<a name="API_ConnectorCheck"></a>
 
 A check on a connector to identify connectivity health.
 

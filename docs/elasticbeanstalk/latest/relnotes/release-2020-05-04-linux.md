@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Amazon Linux AMI platform updates on May 4, 2020
-<a name="release-2020-05-04-linux"></a>
 
 This release provides new versions for AWS Elastic Beanstalk platforms based on Amazon Linux AMI. The release includes third party security updates. It also includes Docker, Go, Node.js, and Ruby updates.
 

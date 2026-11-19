@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-internet-gateway.html
 ---
 
 # AWS.Networking.InternetGateway
-<a name="node-internet-gateway"></a>
 
 Defines an AWS Internet Gateway Node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Endpoint security
-<a name="gensec01"></a>
 
 | GENSEC01: How do you manage access to generative AI endpoints? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/zone.html
 ---
 
 # .zone
-<a name="zone"></a>
 
 Used for information about any kind of zone, including time zones, climate zones, and sports zones.
 

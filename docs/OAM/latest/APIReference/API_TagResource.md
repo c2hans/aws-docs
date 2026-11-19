@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_TagResource.
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns one or more tags (key-value pairs) to the specified resource. Both sinks and links can be tagged.
 

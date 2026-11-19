@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # Viewing surrounding logs in CloudWatch Logs Insights
-<a name="CWL_AnalyzeLogData_SurroundingLogs"></a>
 
 You can view log events that occurred before and after a specific log record returned by your CloudWatch Logs Insights query. Surrounding logs help you understand the context around errors, warnings, or other significant events.
 

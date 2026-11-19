@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Event
 ---
 
 # EventActor
-<a name="API_EventActor"></a>
 
 Identifies the actor that triggered an event.
 

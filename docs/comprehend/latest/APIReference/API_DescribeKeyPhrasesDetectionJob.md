@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeKeyPhrasesDetectionJob
-<a name="API_DescribeKeyPhrasesDetectionJob"></a>
 
 Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
 

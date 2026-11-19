@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # WidgetConfig
-<a name="API_bcmDashboards_WidgetConfig"></a>
 
 Defines the complete configuration for a widget, including data retrieval settings and visualization preferences.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ExtractedParamete
 ---
 
 # ExtractedParameter
-<a name="API_ExtractedParameter"></a>
 
 Parameter extraction configuration that defines how to extract and map values from API responses to request parameters.
 

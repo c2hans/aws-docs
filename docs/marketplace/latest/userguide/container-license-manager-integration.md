@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-l
 ---
 
 # Contract pricing for container products with AWS License Manager
-<a name="container-license-manager-integration"></a>
 
 For container-based products with contract pricing, you can use AWS License Manager to associate licenses with your product. AWS License Manager is a license management tool that enables your application to track and update licenses (also known as entitlements) that have been purchased by a customer. This section provides information about how to integrate your product with AWS License Manager. After the integration is complete, you can publish your product listing on AWS Marketplace.
 

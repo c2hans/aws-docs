@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/configure-gateway-in
 ---
 
 # Integrating with the Amazon DCV Connection Gateway
-<a name="configure-gateway-integration"></a>
 
 [Amazon DCV Connection Gateway](https://docs.aws.amazon.com/dcv/latest/gw-admin/what-is-gw.html) is an installable software package that enables users to access a fleet of Amazon DCV servers through a single access point to a LAN or VPC.
 

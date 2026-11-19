@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RDSInstanceDetails
-<a name="API_RDSInstanceDetails"></a>
 
 Details about the Amazon RDS reservations that AWS recommends that you purchase.
 

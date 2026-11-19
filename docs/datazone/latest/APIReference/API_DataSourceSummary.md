@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataSou
 ---
 
 # DataSourceSummary
-<a name="API_DataSourceSummary"></a>
 
 The details of the data source.
 

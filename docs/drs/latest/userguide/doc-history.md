@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/doc-history.html
 ---
 
 # Document history for the AWS Elastic Disaster Recovery User Guide
-<a name="doc-history"></a>
 
 The following are the latest documentation updates for AWS Elastic Disaster Recovery. We update the documentation frequently to address the feedback that you send us.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobWarning
-<a name="API_AssetBundleImportJobWarning"></a>
 
 Describes a warning that occurred during an Asset Bundle import job.
 

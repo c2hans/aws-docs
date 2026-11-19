@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security_
 ---
 
 # Identity-based policy examples for IAM Roles Anywhere
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify IAM Roles Anywhere resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

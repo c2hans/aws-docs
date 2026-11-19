@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkInterfacePermission
-<a name="API_DeleteNetworkInterfacePermission"></a>
 
 Deletes a permission for a network interface. By default, you cannot delete the permission if the account for which you're removing the permission has attached the network interface to an instance. However, you can force delete the permission, regardless of any attachment.
 

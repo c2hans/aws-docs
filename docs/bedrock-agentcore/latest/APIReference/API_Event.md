@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Event
-<a name="API_Event"></a>
 
 Contains information about an event in an AgentCore Memory resource.
 

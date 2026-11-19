@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Li
 ---
 
 # ListTrustAnchors
-<a name="API_ListTrustAnchors"></a>
 
 Lists the trust anchors in the authenticated account and AWS Region.
 

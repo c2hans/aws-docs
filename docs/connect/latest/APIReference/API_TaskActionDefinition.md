@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskActi
 ---
 
 # TaskActionDefinition
-<a name="API_TaskActionDefinition"></a>
 
 Information about the task action.
 

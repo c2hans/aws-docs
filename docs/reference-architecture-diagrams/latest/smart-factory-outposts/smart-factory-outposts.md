@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Smart Factory on AWS Outposts
-<a name="smart-factory-outposts"></a>
 
 Publication date: **March 16, 2022 ([Diagram history](#sfo-diagram-history))**
 

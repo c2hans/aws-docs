@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotO
 ---
 
 # SnapshotOperationInfo
-<a name="API_SnapshotOperationInfo"></a>
 
 Provides summary information about an operation that was performed on an enhanced snapshot.
 

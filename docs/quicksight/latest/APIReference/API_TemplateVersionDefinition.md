@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Templ
 ---
 
 # TemplateVersionDefinition
-<a name="API_TemplateVersionDefinition"></a>
 
 The detailed definition of a template.
 

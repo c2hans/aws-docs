@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetDomainMaintenanceStatus
-<a name="API_GetDomainMaintenanceStatus"></a>
 
 The status of the maintenance action.
 

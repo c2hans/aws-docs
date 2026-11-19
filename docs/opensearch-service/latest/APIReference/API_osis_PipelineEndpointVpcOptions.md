@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineEndpointVpcOptions
-<a name="API_osis_PipelineEndpointVpcOptions"></a>
 
 Configuration settings for the VPC endpoint, specifying network access controls.
 

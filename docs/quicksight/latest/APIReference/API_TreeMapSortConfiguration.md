@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TreeM
 ---
 
 # TreeMapSortConfiguration
-<a name="API_TreeMapSortConfiguration"></a>
 
 The sort configuration of a tree map.
 

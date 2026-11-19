@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetPo
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
 Retrieves a resilience policy by ARN.
 

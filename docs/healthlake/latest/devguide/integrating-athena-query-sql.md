@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/integrating-a
 ---
 
 # Querying HealthLake data with SQL
-<a name="integrating-athena-query-sql"></a>
 
 When you import your FHIR data into HealthLake data store, the nested JSON FHIR data simultaneously undergoes an ETL process and is stored in Apache Iceberg open table format in Amazon S3. Each FHIR resource type from your HealthLake data store is converted into a table, where it can be queried using Amazon Athena. The tables can be queried individually or as group using SQL-based queries. Because of the structure of data stores, your data is imported into Athena as multiple different data types. To learn more about creating SQL queries that can access these data types, see [Query arrays with complex types and nested structures](https://docs.aws.amazon.com/athena/latest/ug/rows-and-structs.html) in the *Amazon Athena User Guide*.
 

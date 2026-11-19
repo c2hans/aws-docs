@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-explain
 ---
 
 # Using the Gremlin `explain` API in Neptune
-<a name="gremlin-explain-api"></a>
 
 The Amazon Neptune Gremlin `explain` API returns the query plan that would be executed if a specified query were run. Because the API doesn't actually run the query, the plan is returned almost instantaneously.
 

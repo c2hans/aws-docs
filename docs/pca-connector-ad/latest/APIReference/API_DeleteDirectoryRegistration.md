@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # DeleteDirectoryRegistration
-<a name="API_DeleteDirectoryRegistration"></a>
 
 Deletes a directory registration. Deleting a directory registration deauthorizes AWS Private CA with the directory.
 

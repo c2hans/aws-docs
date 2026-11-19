@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_VirtualMa
 ---
 
 # VirtualMachine
-<a name="API_VirtualMachine"></a>
 
 A virtual machine that is on a hypervisor.
 

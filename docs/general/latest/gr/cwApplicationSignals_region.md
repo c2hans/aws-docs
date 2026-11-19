@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/cwApplicationSignals_r
 ---
 
 # Amazon CloudWatch Application Signals endpoints and quotas
-<a name="cwApplicationSignals_region"></a>
 
 | Region Name | Region | Endpoint | Protocol |
 | --- | --- | --- | --- |

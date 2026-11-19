@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeAccountAttributes
-<a name="API_DescribeAccountAttributes"></a>
 
 Returns a list of attributes attached to an account
 

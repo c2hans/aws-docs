@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TlsContext.h
 ---
 
 # TlsContext
-<a name="API_TlsContext"></a>
 
 Specifies the TLS context to use for the test authorizer request.
 

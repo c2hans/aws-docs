@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestG
 ---
 
 # TestGridSessionArtifact
-<a name="API_TestGridSessionArtifact"></a>
 
 Artifacts are video and other files that are produced in the process of running a browser in an automated context.
 

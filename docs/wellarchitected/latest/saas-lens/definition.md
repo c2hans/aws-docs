@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/definit
 ---
 
 # Definition
-<a name="definition"></a>
 
  There are three best practice areas for operational excellence in the cloud:
 +  Prepare

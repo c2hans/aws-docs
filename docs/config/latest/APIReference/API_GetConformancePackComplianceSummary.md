@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetConfor
 ---
 
 # GetConformancePackComplianceSummary
-<a name="API_GetConformancePackComplianceSummary"></a>
 
 Returns compliance details for the conformance pack based on the cumulative compliance results of all the rules in that conformance pack.
 

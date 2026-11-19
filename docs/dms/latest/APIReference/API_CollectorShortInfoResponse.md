@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CollectorSho
 ---
 
 # CollectorShortInfoResponse
-<a name="API_CollectorShortInfoResponse"></a>
 
 Briefly describes a Fleet Advisor collector.
 

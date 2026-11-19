@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/integra
 ---
 
 # Running scripts from Amazon S3
-<a name="integration-s3"></a>
 
 This section describes how to download and run scripts from Amazon Simple Storage Service (Amazon S3). The following topic includes information and terminology relating to Amazon S3. To learn more about Amazon S3, see [What is Amazon S3?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) You can run different types of scripts, including Ansible Playbooks, Python, Ruby, Shell, and PowerShell.
 

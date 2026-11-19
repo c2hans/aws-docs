@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Disabl
 ---
 
 # DisableOrganizationAdminAccount
-<a name="API_DisableOrganizationAdminAccount"></a>
 
 Removes the existing GuardDuty delegated administrator of the organization. Only the organization's management account can run this API operation.
 

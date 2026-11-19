@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpcPeeringConnectionStatusDetails
-<a name="API_AwsEc2VpcPeeringConnectionStatusDetails"></a>
 
 Details about the status of the VPC peering connection.
 

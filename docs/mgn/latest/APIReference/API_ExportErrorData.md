@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ExportErrorD
 ---
 
 # ExportErrorData
-<a name="API_ExportErrorData"></a>
 
 Export errors data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Put
 ---
 
 # PutApplicationAccessScope
-<a name="API_PutApplicationAccessScope"></a>
 
 Adds or updates the list of authorized targets for an IAM Identity Center access scope for an application.
 

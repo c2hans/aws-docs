@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/tag-workspa
 ---
 
 # Tag resources in WorkSpaces Personal
-<a name="tag-workspaces-resources"></a>
 
 You can organize and manage the resources for your WorkSpaces by assigning your own metadata to each resource in the form of *tags*. You specify a *key* and a *value* for each tag. A key can be a general category, such as "project," "owner," or "environment," with specific associated values. Using tags is a simple yet powerful way to manage AWS resources and to organize data, including billing data.
 

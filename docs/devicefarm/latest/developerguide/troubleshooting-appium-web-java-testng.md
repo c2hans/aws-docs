@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting Appium Java TestNG web applications in AWS Device Farm
-<a name="troubleshooting-appium-web-java-testng"></a>
 
 The following topic lists error messages that can occur for Appium Java TestNG Web application tests and recommends workarounds to resolve each error.
 

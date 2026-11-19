@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-uninsta
 ---
 
 # Uninstalling the Amazon DCV Server
-<a name="setting-up-uninstalling"></a>
 
 The following topic describes how to uninstall the Amazon DCV server.
 

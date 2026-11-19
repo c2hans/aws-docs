@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-video-selector
 ---
 
 # Input settings—Video selector
-<a name="input-video-selector"></a>
 
 This section lets you identify the video to extract from the input, and lets you enable the optional color space feature.
 

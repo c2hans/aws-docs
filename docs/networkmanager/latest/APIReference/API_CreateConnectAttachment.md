@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateConnectAttachment
-<a name="API_CreateConnectAttachment"></a>
 
 Creates a core network Connect attachment from a specified core network attachment.
 

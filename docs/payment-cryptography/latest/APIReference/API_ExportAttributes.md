@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportAttributes
-<a name="API_ExportAttributes"></a>
 
 The attributes for IPEK generation during export.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_PutResour
 ---
 
 # PutResourcePermissionStatement
-<a name="API_PutResourcePermissionStatement"></a>
 
 Creates a permission statement in the account's AWS Sign-In resource-based policy that specifies under what conditions principals can access AWS resources. Conditions can scope access by source VPC, source VPC endpoint, source IP, or excluded principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Rollin
 ---
 
 # RollingDeploymentPolicy
-<a name="API_RollingDeploymentPolicy"></a>
 
 The configurations that SageMaker uses when updating the AMI versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.09 Encrypt Amazon RDS databases
-<a name="wkld-09"></a>
 
 Enable encryption for [Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/rds/) databases to protect data at rest. Amazon RDS encrypts data at the underlying volume level and delivers the same IOPS performance as unencrypted volumes with a minimal effect on latency. For more information, see [Overview of encrypting Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html) in the Amazon RDS documentation.
 

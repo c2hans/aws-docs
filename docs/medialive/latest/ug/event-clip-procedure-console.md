@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/event-clip-procedure
 ---
 
 # Setting up event clipping
-<a name="event-clip-procedure-console"></a>
 
 You can set up event clipping in a new MediaLive channel that you are creating. Or you can update an existing channel to include event clipping . You can set up event clipping and other Elemental Inference features at the same time, in either a new channel or an existing channel.
 

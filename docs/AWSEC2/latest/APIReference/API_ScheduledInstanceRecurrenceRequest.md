@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstanceRecurrenceRequest
-<a name="API_ScheduledInstanceRecurrenceRequest"></a>
 
 Describes the recurring schedule for a Scheduled Instance.
 

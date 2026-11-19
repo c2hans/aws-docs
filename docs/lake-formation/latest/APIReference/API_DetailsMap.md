@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DetailsMap
-<a name="API_DetailsMap"></a>
 
 A structure containing the additional details to be returned in the `AdditionalDetails` attribute of `PrincipalResourcePermissions`.
 

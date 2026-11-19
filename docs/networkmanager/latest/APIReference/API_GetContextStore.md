@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetContextStore
-<a name="API_GetContextStore"></a>
 
 Returns information about a context store.
 

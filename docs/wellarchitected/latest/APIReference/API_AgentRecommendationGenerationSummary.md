@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AgentRecommendationGenerationSummary
-<a name="API_AgentRecommendationGenerationSummary"></a>
 
 Summary of a recommendation generation process initiated through the agent API.
 

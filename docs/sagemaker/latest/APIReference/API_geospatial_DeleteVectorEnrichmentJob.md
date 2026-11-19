@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # DeleteVectorEnrichmentJob
-<a name="API_geospatial_DeleteVectorEnrichmentJob"></a>
 
 Use this operation to delete a Vector Enrichment job.
 

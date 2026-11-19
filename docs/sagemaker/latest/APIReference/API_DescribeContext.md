@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeContext
-<a name="API_DescribeContext"></a>
 
 Describes a context.
 

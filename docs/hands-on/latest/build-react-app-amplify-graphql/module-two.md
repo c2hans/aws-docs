@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 ---
 
 # Task 2: Initialize a Local Amplify App
-<a name="module-two"></a>
 
 |  |  |
 | --- |--- |

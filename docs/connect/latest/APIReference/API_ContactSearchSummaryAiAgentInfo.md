@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactS
 ---
 
 # ContactSearchSummaryAiAgentInfo
-<a name="API_ContactSearchSummaryAiAgentInfo"></a>
 
 Information of the AI agent involved in the contact.
 

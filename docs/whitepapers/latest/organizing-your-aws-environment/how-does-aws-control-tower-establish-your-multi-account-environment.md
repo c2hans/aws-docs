@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # How does AWS Control Tower establish your multi-account environment?
-<a name="how-does-aws-control-tower-establish-your-multi-account-environment"></a>
 
  AWS Control Tower offers a straightforward way to set up and govern an AWS multi-account environment, following prescriptive best practices. AWS Control Tower *orchestrates* the capabilities of several other AWS services, including AWS Organizations, Service Catalog, and AWS IAM Identity Center. This section describes at a high level how AWS Control Tower establish a multi-account environment and landing zone. Your landing zone is a well-architected multi-account environment for all of your AWS resources. You can use this environment to enforce compliance regulations on all of your AWS accounts.
 

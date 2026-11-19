@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality
 ---
 
 # Data Quality API
-<a name="aws-glue-api-data-quality-api"></a>
 
 The Data Quality API describes the data quality data types, and includes the API for creating, deleting, or updating data quality rulesets, runs and evaluations.
 

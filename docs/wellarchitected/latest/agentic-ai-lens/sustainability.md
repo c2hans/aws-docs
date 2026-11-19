@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/s
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
 Organizations that build sustainable agent practices from the start scale their automation investments confidently, preserving institutional expertise, maximizing resource efficiency, and delivering compounding value as agent portfolios grow. Agentic AI systems introduce new sustainability challenges as agents consume compute, memory, and cognitive resources across extended workflows. This pillar addresses how organizations can build agent systems that maximize resource efficiency, minimize waste through reusable architectures, and maintain sustainable adoption patterns that preserve organizational knowledge and meet long-term business needs.
 

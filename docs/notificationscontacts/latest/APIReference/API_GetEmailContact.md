@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notificationscontacts/latest/APIReferenc
 ---
 
 # GetEmailContact
-<a name="API_GetEmailContact"></a>
 
 Returns an email contact.
 

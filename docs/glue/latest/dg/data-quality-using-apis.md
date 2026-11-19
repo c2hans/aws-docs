@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-using-apis.h
 ---
 
 # Using APIs to measure and manage data quality
-<a name="data-quality-using-apis"></a>
 
 This topic describes how to use APIs to measure and manage data quality.
 

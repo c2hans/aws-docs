@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Private
 ---
 
 # PrivateConnectivityConfig
-<a name="API_PrivateConnectivityConfig"></a>
 
 Information about the private connectivity configuration for an Outpost.
 

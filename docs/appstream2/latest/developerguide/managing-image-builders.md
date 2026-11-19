@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/managin
 ---
 
 # Image Builders
-<a name="managing-image-builders"></a>
 
 Amazon WorkSpaces Applications uses EC2 instances to stream applications. You launch instances from base images, called *image builders*, which WorkSpaces Applications provides. To create your own custom image, you connect to an image builder instance, install and configure your applications for streaming, and then create your image by creating a snapshot of the image builder instance.
 

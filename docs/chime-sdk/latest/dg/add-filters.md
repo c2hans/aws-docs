@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/add-filters.html
 ---
 
 # Adding background filters to your application for the Amazon Chime SDK
-<a name="add-filters"></a>
 
 The process of adding background filters follows these broad steps:
 + Check for supported browsers.

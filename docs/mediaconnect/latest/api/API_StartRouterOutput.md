@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StartRouterO
 ---
 
 # StartRouterOutput
-<a name="API_StartRouterOutput"></a>
 
 Starts a router output in AWS Elemental MediaConnect.
 

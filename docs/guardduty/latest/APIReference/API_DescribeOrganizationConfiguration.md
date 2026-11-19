@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Descri
 ---
 
 # DescribeOrganizationConfiguration
-<a name="API_DescribeOrganizationConfiguration"></a>
 
 Returns information about the account selected as the delegated administrator for GuardDuty.
 

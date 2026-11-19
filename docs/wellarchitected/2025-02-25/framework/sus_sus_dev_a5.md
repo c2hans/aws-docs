@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS06-BP05 Use managed device farms for testing
-<a name="sus_sus_dev_a5"></a>
 
  Use managed device farms to efficiently test a new feature on a representative set of hardware.
 

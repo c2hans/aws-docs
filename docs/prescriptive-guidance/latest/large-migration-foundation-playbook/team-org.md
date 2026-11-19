@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Team organization and composition
-<a name="team-org"></a>
 
 This section includes the following topics:
 + [Best practices for team organization and composition](#bp-team-org)

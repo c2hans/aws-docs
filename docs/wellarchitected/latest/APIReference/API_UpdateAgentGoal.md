@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateAgentGoal
-<a name="API_UpdateAgentGoal"></a>
 
 Updates the pillars and title of an existing goal associated with a profile.
 

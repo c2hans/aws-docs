@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # Understanding CI/CD
-<a name="understanding-cicd"></a>
 
 Continuous integration and continuous delivery (CI/CD) is the process of automating the software release lifecycle. In some cases, the *D* in CI/CD can also mean *deployment*. The difference between *continuous delivery* and* continuous deployment* occurs when you release a change to the production environment. With continuous delivery, a manual approval is required before promoting changes to production. Continuous deployment features an uninterrupted flow through the entirety of the pipeline, and no explicit approvals are required. Because this strategy discusses general CI/CD concepts, the recommendations and information provided are applicable to both the continuous delivery and continuous deployment approaches.
 

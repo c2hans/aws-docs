@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/End
 ---
 
 # Region Endpoints
-<a name="Endpoints"></a>
 
  To improve latency and to store data in a location that meets your requirements, Amazon SimpleDB enables you to select different Region endpoints.
 

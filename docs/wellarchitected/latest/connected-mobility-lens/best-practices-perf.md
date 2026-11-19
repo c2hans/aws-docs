@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Best practices
-<a name="best-practices-perf"></a>
 
 **Topics**
 + [Selection](selection.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Use query parameters to provide dynamic values in SQL queries
-<a name="sagemaker-sql-extension-features-sql-execution-query-parameters"></a>
 
 Query parameters can be used to provide dynamic values in SQL queries.
 

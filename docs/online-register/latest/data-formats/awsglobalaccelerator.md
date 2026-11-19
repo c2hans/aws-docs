@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 ---
 
 # Data retrieval APIs for AWS Global Accelerator
-<a name="awsglobalaccelerator"></a>
 
 AWS Global Accelerator provides the following APIs for data retrieval.
 

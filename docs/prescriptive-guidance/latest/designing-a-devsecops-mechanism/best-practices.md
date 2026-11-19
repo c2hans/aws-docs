@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 When implementing a new DevSecOps mechanism, it's crucial to consider the various sources of code authorship and how they will be empowered or potentially blocked. Often, engineers may only interface with one of these sources. However, the introduction of a new mechanism can bring new authorship sources to the forefront or highlight challenges from sources not previously considered. Let's explore each of the following aspects in more detail:
 + [Application team developers](code-authorship.md#application-team-developers) – These are the developers responsible for the core application code. They must be empowered to make changes and updates to the application code as needed, but their work must also align with the new DevSecOps mechanism.

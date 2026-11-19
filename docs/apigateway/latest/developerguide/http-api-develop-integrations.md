@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Create integrations for HTTP APIs in API Gateway
-<a name="http-api-develop-integrations"></a>
 
 *Integrations* connect a route to backend resources. HTTP APIs support Lambda proxy, AWS service, and HTTP proxy integrations. For example, you can configure a `POST` request to the `/signup` route of your API to integrate with a Lambda function that handles signing up customers.
 

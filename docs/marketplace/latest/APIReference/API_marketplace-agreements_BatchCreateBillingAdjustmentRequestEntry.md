@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # BatchCreateBillingAdjustmentRequestEntry
-<a name="API_marketplace-agreements_BatchCreateBillingAdjustmentRequestEntry"></a>
 
 An individual entry in a batch billing adjustment request, specifying the invoice and adjustment details.
 
@@ -49,7 +48,7 @@ Required: Yes
  ** originalInvoiceId **   <a name="AWSMarketplaceService-Type-marketplace-agreements_BatchCreateBillingAdjustmentRequestEntry-originalInvoiceId"></a>
 The identifier of the original invoice to adjust.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: Yes
 
  ** description **   <a name="AWSMarketplaceService-Type-marketplace-agreements_BatchCreateBillingAdjustmentRequestEntry-description"></a>

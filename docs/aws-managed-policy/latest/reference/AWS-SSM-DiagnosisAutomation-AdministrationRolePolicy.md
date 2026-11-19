@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-
 ---
 
 # AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy
-<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy"></a>
 
 **Description**: Provide permission for Diagnosing issues with SSM services by executing activities defined within Automation Documents, primarily used for running the Automation documents in a cross-account cross-region setup by triggering child automations within member accounts.
 

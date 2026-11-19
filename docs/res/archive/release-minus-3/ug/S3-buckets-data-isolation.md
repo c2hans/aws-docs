@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/S3-bucket
 ---
 
 # Data Isolation
-<a name="S3-buckets-data-isolation"></a>
 
 When you add an S3 bucket to RES, you have options to isolate the data within the bucket to specific projects and users. On the **Add Bucket** page, you can select a mode of Read Only (R) or Read and Write (R/W).
 

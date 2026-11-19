@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalActivationsGenerateLicenses
-<a name="ElementalActivationsGenerateLicenses"></a>
 
 **Description**: Access to view purchased assets and generate software licenses for pending activations
 

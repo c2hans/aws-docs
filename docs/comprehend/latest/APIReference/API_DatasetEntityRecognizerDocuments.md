@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Datas
 ---
 
 # DatasetEntityRecognizerDocuments
-<a name="API_DatasetEntityRecognizerDocuments"></a>
 
 Describes the documents submitted with a dataset for an entity recognizer model.
 

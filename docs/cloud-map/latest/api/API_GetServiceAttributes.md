@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetServiceAttri
 ---
 
 # GetServiceAttributes
-<a name="API_GetServiceAttributes"></a>
 
 Returns the attributes associated with a specified service.
 

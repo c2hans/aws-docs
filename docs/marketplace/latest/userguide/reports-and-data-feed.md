@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/reports-and
 ---
 
 # Seller reports, data feeds, and dashboards in AWS Marketplace
-<a name="reports-and-data-feed"></a>
 
 As an AWS Marketplace seller, you can use the following tools for collecting and analyzing information about your product sales:
 + [Data feeds](data-feeds.md) that provide additional customer information that you can use to identify customer information for transactions listed in the reports.

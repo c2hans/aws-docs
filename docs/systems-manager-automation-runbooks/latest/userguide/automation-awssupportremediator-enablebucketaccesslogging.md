@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableBucketAccessLogging`
-<a name="automation-awssupportremediator-enablebucketaccesslogging"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/change-settings
 ---
 
 # Changing the default settings for your data lake
-<a name="change-settings"></a>
 
 To maintain backward compatibility with AWS Glue, AWS Lake Formation has the following initial security settings:
 + The `Super` permission is granted to the group `IAMAllowedPrincipals` on all existing AWS Glue Data Catalog resources.

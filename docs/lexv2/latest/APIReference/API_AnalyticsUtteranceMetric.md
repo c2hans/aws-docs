@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceMetric
-<a name="API_AnalyticsUtteranceMetric"></a>
 
 Contains the metric and the summary statistic you want to calculate, and the order in which to sort the results, for the utterances across the user sessions with the bot.
 

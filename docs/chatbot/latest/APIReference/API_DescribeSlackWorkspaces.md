@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Describe
 ---
 
 # DescribeSlackWorkspaces
-<a name="API_DescribeSlackWorkspaces"></a>
 
 List all authorized Slack workspaces connected to the AWS Account onboarded with Amazon Q Developer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Endpoint.html
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 Specifies a connection endpoint.
 

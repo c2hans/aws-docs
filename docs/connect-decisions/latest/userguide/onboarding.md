@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/onboa
 ---
 
 # Onboarding
-<a name="onboarding"></a>
 
 ## Onboarding for Amazon Connect Decisions
 <a name="onboarding-overview"></a>

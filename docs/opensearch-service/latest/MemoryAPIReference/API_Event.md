@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # Event
-<a name="API_Event"></a>
 
 An event, including its payload.
 

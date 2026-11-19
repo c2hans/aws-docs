@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-pinpoint.html
 ---
 
 # Create an Amazon Pinpoint application for Amazon Chime SDK messaging
-<a name="create-pinpoint"></a>
 
 To send push notifications, the Amazon Chime SDK requires an Amazon Pinpoint application configured to send pushes to your mobile app. The following steps explain how to use the AWS console to create a Pinpoint application.
 

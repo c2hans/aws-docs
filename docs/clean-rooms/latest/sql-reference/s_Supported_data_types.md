@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/s_Suppo
 ---
 
 # Data types
-<a name="s_Supported_data_types"></a>
 
 Each value that AWS Clean Rooms Spark SQL stores or retrieves has a data type with a fixed set of associated properties. Data types are declared when tables are created. A data type constrains the set of values that a column or argument can contain.
 

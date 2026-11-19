@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskAssessmentRun
-<a name="API_ReplicationTaskAssessmentRun"></a>
 
 Provides information that describes a premigration assessment run that you have started using the `StartReplicationTaskAssessmentRun` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle database to Amazon RDS for Oracle by using Oracle GoldenGate flat file adapters
-<a name="migrate-an-oracle-database-to-amazon-rds-for-oracle-by-using-oracle-goldengate-flat-file-adapters"></a>
 
 *Dhairya Jindani and Baji Shaik, Amazon Web Services*
 

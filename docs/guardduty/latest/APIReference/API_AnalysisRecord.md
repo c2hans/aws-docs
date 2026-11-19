@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Analys
 ---
 
 # AnalysisRecord
-<a name="API_AnalysisRecord"></a>
 
 Contains an assessment that GuardDuty derived from the data during an investigation, such as a threat assessment, a comparison against normal behavior, or a process lineage. The record contains at most one of the payload members, the one that corresponds to `AnalysisType`. `Indicators` can accompany any analysis type.
 

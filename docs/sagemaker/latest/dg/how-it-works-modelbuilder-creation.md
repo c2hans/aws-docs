@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-modelbu
 ---
 
 # Create a model in Amazon SageMaker AI with ModelBuilder
-<a name="how-it-works-modelbuilder-creation"></a>
 
 Preparing your model for deployment on a SageMaker AI endpoint requires multiple steps, including choosing a model image, setting up the endpoint configuration, coding your serialization and deserialization functions to transfer data to and from server and client, identifying model dependencies, and uploading them to Amazon S3. `ModelBuilder` can reduce the complexity of initial setup and deployment to help you create a deployable model in a single step.
 

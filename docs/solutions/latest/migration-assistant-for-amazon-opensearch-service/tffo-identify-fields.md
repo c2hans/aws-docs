@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Identifying flattened fields
-<a name="tffo-identify-fields"></a>
 
 Before you migrate, you can confirm whether any source index uses the `flattened` type so you know which indexes the transformation will touch. Run the following from the Migration Console pod (`migration-console-0`) to inspect the source mappings:
 

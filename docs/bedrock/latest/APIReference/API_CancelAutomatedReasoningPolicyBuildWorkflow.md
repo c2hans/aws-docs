@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CancelAu
 ---
 
 # CancelAutomatedReasoningPolicyBuildWorkflow
-<a name="API_CancelAutomatedReasoningPolicyBuildWorkflow"></a>
 
 Cancels a running Automated Reasoning policy build workflow. This stops the policy generation process and prevents further processing of the source documents.
 

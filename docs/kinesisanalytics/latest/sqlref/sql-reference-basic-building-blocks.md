@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Streaming SQL Language Elements
-<a name="sql-reference-basic-building-blocks"></a>
 
 The following topics discuss the language elements in Kinesis Data Analytics that underlie its syntax and operations:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_U
 ---
 
 # UpdatePipeSourceManagedStreamingKafkaParameters
-<a name="API_UpdatePipeSourceManagedStreamingKafkaParameters"></a>
 
 The parameters for using an MSK stream as a source.
 

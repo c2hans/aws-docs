@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_HTTPRequest.
 ---
 
 # HTTPRequest
-<a name="API_HTTPRequest"></a>
 
 Part of the response from [GetSampledRequests](API_GetSampledRequests.md). This is a complex type that appears as `Request` in the response syntax. `HTTPRequest` contains information about one of the web requests.
 

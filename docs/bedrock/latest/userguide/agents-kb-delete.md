@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-kb-delet
 ---
 
 # Disassociate a knowledge base from an agent
-<a name="agents-kb-delete"></a>
 
 To learn how to disassociate a knowledge base from an agent, choose the tab for your preferred method, and then follow the steps:
 

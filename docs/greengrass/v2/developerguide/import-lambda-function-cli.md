@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/import-lamb
 ---
 
 # Import a Lambda function as a component (AWS CLI)
-<a name="import-lambda-function-cli"></a>
 
 Use the [CreateComponentVersion](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CreateComponentVersion.html) operation to create components from Lambda functions. When you call this operation, specify `lambdaFunction` to import a Lambda function.
 

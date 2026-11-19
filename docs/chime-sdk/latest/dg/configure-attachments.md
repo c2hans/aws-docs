@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/configure-attachment
 ---
 
 # Configuring attachments in Amazon Chime SDK messaging
-<a name="configure-attachments"></a>
 
 The Amazon Chime SDK allows you to use your own storage for message attachments, and include them as message metadata. Amazon Simple Storage Service (S3) is the easiest way to get started with attachments.
 

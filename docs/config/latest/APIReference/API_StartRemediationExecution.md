@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StartReme
 ---
 
 # StartRemediationExecution
-<a name="API_StartRemediationExecution"></a>
 
 Runs an on-demand remediation for the specified AWS Config rules against the last known remediation configuration. It runs an execution against the current state of your resources. Remediation execution is asynchronous.
 

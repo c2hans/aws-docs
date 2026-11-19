@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Customer
 ---
 
 # CustomerVoiceActivity
-<a name="API_CustomerVoiceActivity"></a>
 
 Information about customer’s voice activity.
 

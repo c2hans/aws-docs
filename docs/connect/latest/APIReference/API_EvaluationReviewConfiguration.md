@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationReviewConfiguration
-<a name="API_EvaluationReviewConfiguration"></a>
 
 Configuration settings for evaluation reviews.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Renaming a Amazon RDS for Microsoft SQL Server database in a Multi-AZ deployment
-<a name="Appendix.SQLServer.CommonDBATasks.RenamingDB"></a>
 
 To rename a Microsoft SQL Server database instance that uses Multi-AZ, use the following procedure:
 

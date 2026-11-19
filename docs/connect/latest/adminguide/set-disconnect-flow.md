@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-disconnect
 ---
 
 # Flow block in Connect Customer: Set disconnect flow
-<a name="set-disconnect-flow"></a>
 
 This topic defines the flow block for specifying which flow to run when a call is disconnected during a contact.
 

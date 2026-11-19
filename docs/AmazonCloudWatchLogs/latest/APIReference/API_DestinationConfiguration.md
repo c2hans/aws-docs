@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DestinationConfiguration
-<a name="API_DestinationConfiguration"></a>
 
 Configuration for where to deliver scheduled query results. Specifies the destination type and associated settings for result delivery.
 

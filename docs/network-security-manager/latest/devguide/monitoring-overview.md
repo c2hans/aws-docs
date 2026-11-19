@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Monitoring AWS Network Security Manager
-<a name="monitoring-overview"></a>
 
 Monitoring AWS Network Security Manager helps you understand whether your resources are protected as intended. AWS Network Security Manager provides the following monitoring capabilities:
 + **Synchronization status APIs** – Query the protection state of individual resources across your deployments.

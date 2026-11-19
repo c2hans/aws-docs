@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-iam-pe
 ---
 
 # IAM for SageMaker training plans
-<a name="training-plan-iam-permissions"></a>
 
 SageMaker training plans requires specific permissions for two distinct roles::
 
@@ -102,7 +101,7 @@ You must also include permissions for `CreateReservedCapacity` and `AddTags`, an
 ### Individual permissions per type of user
 <a name="training-plan-permissions-per-user-type"></a>
 
-This section provides a detailed breakdown of the individual permissions required for each role, as mentioned in the [IAM for SageMaker training plans](#training-plan-iam-permissions) section.
+This section provides a detailed breakdown of the individual permissions required for each role, as mentioned in the [IAM for SageMaker training plans](training-plan-iam-permissions.md) section.
 
 For plan creators, the following permissions are necessary:
 + `sagemaker:SearchTrainingPlanOfferings`

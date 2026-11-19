@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_PrivateDnsPrope
 ---
 
 # PrivateDnsPropertiesMutable
-<a name="API_PrivateDnsPropertiesMutable"></a>
 
 DNS properties for the private DNS namespace.
 

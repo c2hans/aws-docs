@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # VectorEnrichmentJobDataSourceConfigInput
-<a name="API_geospatial_VectorEnrichmentJobDataSourceConfigInput"></a>
 
 The input structure for the data source that represents the storage type of the input data objects.
 

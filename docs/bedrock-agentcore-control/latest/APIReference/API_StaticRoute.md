@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StaticRoute
-<a name="API_StaticRoute"></a>
 
 A static route to a single gateway target.
 

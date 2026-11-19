@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # Unlock
-<a name="API_devicemanagement_Unlock"></a>
 
 A structure used to unlock a device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListAddonInstances
-<a name="API_ListAddonInstances"></a>
 
 Lists all Add On instances in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Permiss
 ---
 
 # PermissionCondition
-<a name="API_PermissionCondition"></a>
 
 Defines a condition that restricts when a permission is effective. Conditions allow you to control access based on specific attributes of the request.
 

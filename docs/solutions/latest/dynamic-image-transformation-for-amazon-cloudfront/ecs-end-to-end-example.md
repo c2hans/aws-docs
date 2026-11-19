@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # End-to-end example
-<a name="ecs-end-to-end-example"></a>
 
 This example ties the three configuration entities together to serve WebP-optimized product images from an Amazon S3 bucket under the `/products/*` path. It assumes your source images live in an S3 bucket reachable at `my-product-images.s3.us-east-1.amazonaws.com` under a `catalog/` prefix.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # AgentCore Gateway and Policy in AgentCore IAM Permissions
-<a name="policy-permissions"></a>
 
 This guide provides the required IAM permissions for using Amazon Bedrock AgentCore Gateway with Policy in AgentCore for fine-grained authorization control using Cedar policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyIpPools
-<a name="API_ModifyIpPools"></a>
 
 [Application Load Balancers] Modify the IP pool associated to a load balancer.
 

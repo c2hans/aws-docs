@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-text-fo
 ---
 
 # Enable text formatting in Connect Customer for your customer's chat experience
-<a name="enable-text-formatting-chat"></a>
 
 With Connect Customer message formatting, you can enable your customers and agents to quickly add structure and clarity to their chat messages.
 

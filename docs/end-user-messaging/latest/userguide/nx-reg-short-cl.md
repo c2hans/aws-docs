@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Chile
-<a name="nx-reg-short-cl"></a>
 
 To send messages that use a short code in Chile, you must complete the Chile short code registration.
 

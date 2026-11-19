@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Step 4: Deploy the Compute stack
-<a name="step4-deploy-compute-stack"></a>
 
 In this step, you deploy the compute resources required for the ISB application.
 

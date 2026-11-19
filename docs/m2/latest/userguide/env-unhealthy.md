@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/env-unhealthy.html
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Troubleshooting error: Environment unhealthy
-<a name="env-unhealthy"></a>
 
 This page describes how you can resolve your error when you receive a notification that one of your AWS Mainframe Modernization environments are unhealthy.
 + Engine: AWS Transform for mainframe and Rocket Software (formerly Micro Focus)

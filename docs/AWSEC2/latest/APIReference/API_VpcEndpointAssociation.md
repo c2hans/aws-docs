@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEndpoi
 ---
 
 # VpcEndpointAssociation
-<a name="API_VpcEndpointAssociation"></a>
 
 Describes the VPC resources, VPC endpoint services, Lattice services, or service networks associated with the VPC endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Migrating existing data**
 

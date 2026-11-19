@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/revise-depl
 ---
 
 # Revise deployments
-<a name="revise-deployments"></a>
 
 Each target thing or thing group can have one active deployment at a time. When you create a deployment for a target that already has a deployment, the software components in the new deployment replace those from the previous deployment. If the new deployment doesn't define a component that the previous deployment defines, the AWS IoT Greengrass Core software removes that component from the target core devices. You can revise an existing deployment so that you don't remove the components that run on core devices from a previous deployment to a target.
 

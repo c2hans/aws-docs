@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/job-queue-hopping
 ---
 
 # Viewing hopped job history
-<a name="job-queue-hopping-history"></a>
 
 When a job hops queues, the values for the settings `queue` and `priority` remain how you set them when you created the job. You can see the values for the job's post-hop destination and queue priority. The following tabs provide two options for viewing a job's history and queue priority.
 

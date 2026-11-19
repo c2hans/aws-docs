@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Api
-<a name="apis-apiid"></a>
 
 Represents an API.
 

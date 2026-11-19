@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/downgr
 ---
 
 # Step A: Get ready
-<a name="downgrades-cl3-upg-locate-res-dn"></a>
 
 The following steps prepare you for downgrading. Perform these steps to ensure that you don't lose any data.
 

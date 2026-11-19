@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [ActivateOrganizationsAccess](API_ActivateOrganizationsAccess.md)

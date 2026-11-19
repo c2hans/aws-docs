@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
 [AWS Cloud Adoption Framework (AWS CAF)](https://aws.amazon.com/cloud-adoption-framework/):
 + [eBook](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf)

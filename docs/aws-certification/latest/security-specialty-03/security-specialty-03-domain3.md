@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/security-specia
 ---
 
 # Content Domain 3: Infrastructure Security
-<a name="security-specialty-03-domain3"></a>
 
 **Topics**
 + [Task 3.1: Design, implement, and troubleshoot security controls for network edge services](#security-specialty-03-domain3-task1)

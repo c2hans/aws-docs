@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Managing Access to Amazon S3 Buckets Using Bucket Policies
-<a name="examples-s3-bucket-policies"></a>
 
 You can set, get, or delete a *bucket policy* to manage access to your Amazon S3 buckets.
 

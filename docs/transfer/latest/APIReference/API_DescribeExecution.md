@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeExecution
-<a name="API_DescribeExecution"></a>
 
 You can use `DescribeExecution` to check the details of the execution of the specified workflow.
 

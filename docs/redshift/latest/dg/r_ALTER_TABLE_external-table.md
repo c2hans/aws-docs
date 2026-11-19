@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE_externa
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # ALTER EXTERNAL TABLE examples
-<a name="r_ALTER_TABLE_external-table"></a>
 
 The following examples use an Amazon S3 bucket located in the US East (N. Virginia) Region (`us-east-1`) AWS Region and the example tables created in [Examples](r_CREATE_EXTERNAL_TABLE_examples.md) for CREATE TABLE. For more information about how to use partitions with external tables, see [Partitioning Redshift Spectrum external tables](c-spectrum-external-tables.md#c-spectrum-external-tables-partitioning).
 

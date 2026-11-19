@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/add-custom-
 ---
 
 # Record Configuration Items with AWS Config for Third-Party Resources using the AWS CLI
-<a name="add-custom-resource-type-cli"></a>
 
 Record a configuration item for a third-party resource or a custom resource type using the following procedure:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/example-notebo
 ---
 
 # Create a Studio notebook with Kinesis Data Streams
-<a name="example-notebook-streams"></a>
 
 This tutorial describes how to create a Studio notebook that uses a Kinesis data stream as a source.
 

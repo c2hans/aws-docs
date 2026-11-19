@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops07-b
 ---
 
 # OPS07-BP02 Identify and drive improvements
-<a name="ops07-bp02"></a>
 
  With clear drivers for improvement, you evaluate opportunities against business outcomes and data, rank them by their effect, and automate work where the return justifies the effort.
 

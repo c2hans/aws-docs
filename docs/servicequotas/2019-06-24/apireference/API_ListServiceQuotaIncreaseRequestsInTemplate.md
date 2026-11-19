@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListServiceQuotaIncreaseRequestsInTemplate
-<a name="API_ListServiceQuotaIncreaseRequestsInTemplate"></a>
 
 Lists the quota increase requests in the specified quota request template.
 

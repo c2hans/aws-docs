@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Authentication troubleshooting
-<a name="authentication-troubleshooting"></a>
 
 ## Problem: WebSocket connection returns HTTP 401
 <a name="problem-websocket-401"></a>

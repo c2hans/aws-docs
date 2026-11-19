@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-i
 ---
 
 # Amazon SageMaker HyperPod Inference release notes
-<a name="sagemaker-hyperpod-inference-release-notes"></a>
 
 This topic covers release notes that track updates, fixes, and new features for Amazon SageMaker HyperPod Inference. SageMaker HyperPod Inference enables you to deploy and scale machine learning models on your HyperPod clusters with enterprise-grade reliability. For general Amazon SageMaker HyperPod platform releases, updates, and improvements, see [Amazon SageMaker HyperPod release notes](sagemaker-hyperpod-release-notes.md).
 

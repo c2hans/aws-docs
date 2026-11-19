@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageScanFindingsFilter
-<a name="API_ImageScanFindingsFilter"></a>
 
 A name value pair that Image Builder applies to streamline results from the vulnerability scan findings list action.
 

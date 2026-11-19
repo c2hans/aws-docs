@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-rest
 ---
 
 # Restore an application from an enhanced snapshot
-<a name="snapshots-restore"></a>
 
 This page describes how to start or update an Amazon Managed Service for Apache Flink application from an enhanced snapshot. It also describes how to start an application without state, how to roll back, and how to fix restore errors.
 

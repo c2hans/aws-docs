@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_AuthenticationC
 ---
 
 # AuthenticationConfiguration
-<a name="API_AuthenticationConfiguration"></a>
 
 Describes resources needed to authenticate access to some source repositories. The specific resource depends on the repository provider.
 

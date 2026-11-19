@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AWSManagedRu
 ---
 
 # AWSManagedRulesATPRuleSet
-<a name="API_AWSManagedRulesATPRuleSet"></a>
 
 Details for your use of the account takeover prevention managed rule group, `AWSManagedRulesATPRuleSet`. This configuration is used in `ManagedRuleGroupConfig`.
 

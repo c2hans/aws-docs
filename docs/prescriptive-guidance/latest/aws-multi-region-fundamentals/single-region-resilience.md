@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Engineering and operating for resilience in a single Region
-<a name="single-region-resilience"></a>
 
 Before you dive into multi-Region concepts, start by confirming that your workload is already as resilient as possible in a single Region. To achieve this, evaluate your workload against the [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) and [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html) of the AWS Well-Architected Framework, and make any necessary changes based on trade-offs and risk assessment. The following concepts are covered in the AWS Well-Architected Framework:
 + [Workload segmentation based on domain boundaries](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-service-architecture.html)

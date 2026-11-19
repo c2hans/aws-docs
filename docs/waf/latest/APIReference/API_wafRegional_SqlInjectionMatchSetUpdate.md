@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # SqlInjectionMatchSetUpdate
-<a name="API_wafRegional_SqlInjectionMatchSetUpdate"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -16,7 +15,7 @@ Specifies the part of a web request that you want to inspect for snippets of mal
 <a name="API_wafRegional_SqlInjectionMatchSetUpdate_Contents"></a>
 
  ** Action **   <a name="WAF-Type-wafRegional_SqlInjectionMatchSetUpdate-Action"></a>
-Specify `INSERT` to add a [SqlInjectionMatchSetUpdate](#API_wafRegional_SqlInjectionMatchSetUpdate) to a [SqlInjectionMatchSet](API_wafRegional_SqlInjectionMatchSet.md). Use `DELETE` to remove a `SqlInjectionMatchSetUpdate` from a `SqlInjectionMatchSet`.
+Specify `INSERT` to add a [SqlInjectionMatchSetUpdate](API_wafRegional_SqlInjectionMatchSetUpdate.md) to a [SqlInjectionMatchSet](API_wafRegional_SqlInjectionMatchSet.md). Use `DELETE` to remove a `SqlInjectionMatchSetUpdate` from a `SqlInjectionMatchSet`.
 Type: String
 Valid Values: `INSERT | DELETE`
 Required: Yes

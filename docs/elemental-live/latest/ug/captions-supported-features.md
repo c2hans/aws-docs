@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-suppor
 ---
 
 # Supported features
-<a name="captions-supported-features"></a>
 
 This section provides information on the various features of captions that Elemental Live supports.
 

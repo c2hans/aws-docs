@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Re
 ---
 
 # RelationshipValue
-<a name="API_RelationshipValue"></a>
 
 A value that associates a component and an entity.
 

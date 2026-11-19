@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/vpc-eg
 ---
 
 # Connect to private resources in your VPC using VPC Lattice
-<a name="vpc-egress-private-endpoints"></a>
 
 Amazon Bedrock AgentCore supports private connectivity to resources hosted inside your AWS VPC or on-premises environments connected to your VPC, such as private MCP servers, internal REST APIs, or databases, without exposing those services to the public internet.
 

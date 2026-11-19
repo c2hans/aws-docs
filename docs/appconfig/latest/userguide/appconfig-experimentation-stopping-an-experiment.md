@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Stopping an experiment
-<a name="appconfig-experimentation-stopping-an-experiment"></a>
 
 You can stop an experiment run at any time. Common reasons for stopping include:
 + **Operational issues, invalid experiment behavior, or unexpected treatment performance**: Stopping the experiment run prevents additional users from being exposed to treatments and returns users to the currently deployed feature flag configuration.

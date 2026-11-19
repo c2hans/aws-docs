@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy NetworkAclEntrySet
-<a name="aws-properties-fms-policy-networkaclentryset"></a>
 
 The configuration of the first and last rules for the network ACL policy, and the remediation settings for each.
 

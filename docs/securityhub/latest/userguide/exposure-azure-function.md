@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-az
 ---
 
 # Remediating exposures for Azure Function apps
-<a name="exposure-azure-function"></a>
 
 AWS Security Hub can generate exposure findings for Azure Function apps.
 

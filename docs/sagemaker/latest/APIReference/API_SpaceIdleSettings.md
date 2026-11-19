@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceI
 ---
 
 # SpaceIdleSettings
-<a name="API_SpaceIdleSettings"></a>
 
 Settings related to idle shutdown of Studio applications in a space.
 

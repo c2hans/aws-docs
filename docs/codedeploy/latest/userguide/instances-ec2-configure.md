@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-ec
 ---
 
 # Configure an Amazon EC2 instance to work with CodeDeploy
-<a name="instances-ec2-configure"></a>
 
 These instructions show you how to configure an Amazon EC2 instance running Amazon Linux, Ubuntu Server, Red Hat Enterprise Linux (RHEL), or Windows Server for use in CodeDeploy deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryArrival
-<a name="API_RouteFerryArrival"></a>
 
 Details corresponding to the arrival for the leg.
 

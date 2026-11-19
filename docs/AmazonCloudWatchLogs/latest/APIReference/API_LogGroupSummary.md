@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogGroupSummary
-<a name="API_LogGroupSummary"></a>
 
 This structure contains information about one log group in your account.
 

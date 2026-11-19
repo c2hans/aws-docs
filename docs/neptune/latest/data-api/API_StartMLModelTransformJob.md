@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_StartMLModel
 ---
 
 # StartMLModelTransformJob
-<a name="API_StartMLModelTransformJob"></a>
 
 Creates a new model transform job. See [Use a trained model to generate new model artifacts](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-model-transform.html).
 

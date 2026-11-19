@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/adding-cu
 ---
 
 # Adding a custom source in Security Lake
-<a name="adding-custom-sources"></a>
 
 After creating the IAM role to invoke the AWS Glue crawler, follow these steps to add a custom source in Security Lake.
 

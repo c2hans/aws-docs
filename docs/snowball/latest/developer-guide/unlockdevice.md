@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/unlockde
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Unlocking the Snowball Edge
-<a name="unlockdevice"></a>
 
 This section describes unlocking the Snowball Edge device using the Snowball Edge Client. To unlock the device using AWS OpsHub, a graphical user interface (GUI) tool for Snowball Edge, see [Unlock a device](https://docs.aws.amazon.com/snowball/latest/developer-guide/connect-unlock-device.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ContactVersion
-<a name="API_ContactVersion"></a>
 
 Version information for a contact.
 

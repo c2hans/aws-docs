@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Contributors
-<a name="about-authors"></a>
 
 The following people at AWS authored and contributed to this guide.
 

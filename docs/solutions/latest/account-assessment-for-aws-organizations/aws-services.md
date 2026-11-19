@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # AWS services used in this guidance
-<a name="aws-services"></a>
 
 | AWS service | Description |
 | --- | --- |

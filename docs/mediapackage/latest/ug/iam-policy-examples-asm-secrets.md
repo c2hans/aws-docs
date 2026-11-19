@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/iam-policy-exampl
 ---
 
 # IAM policy examples for secrets in AWS Secrets Manager
-<a name="iam-policy-examples-asm-secrets"></a>
 
 During setup, [you create an IAM policy](setting-up-create-trust-rel.md#setting-up-create-trust-rel-policy) that you assign to AWS Elemental MediaPackage. This policy allows AWS Elemental MediaPackage to read secrets that you have stored in AWS Secrets Manager. The settings for this policy are entirely up to you. The policy can range from most restrictive (allowing access to only specific secrets) to least restrictive (allowing access to any secret that you create using this AWS account). We recommend using the most restrictive policy as a best practice. However, the examples in this section show you how to set up policies with different levels of restriction. Because AWS Elemental MediaPackage needs only read access to secrets, all the examples in this section show only the actions necessary to read the values that you store.
 

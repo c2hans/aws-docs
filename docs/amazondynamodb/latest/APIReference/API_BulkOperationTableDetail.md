@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BulkOperationTableDetail
-<a name="API_BulkOperationTableDetail"></a>
 
 Contains identifying information for a table associated with a bulk operation.
 

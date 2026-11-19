@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteD
 ---
 
 # DeleteDataSource
-<a name="API_DeleteDataSource"></a>
 
 Deletes a data source in Amazon DataZone.
 

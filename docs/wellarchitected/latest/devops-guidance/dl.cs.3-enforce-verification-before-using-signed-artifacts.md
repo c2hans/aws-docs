@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CS.3] Enforce verification before using signed artifacts
-<a name="dl.cs.3-enforce-verification-before-using-signed-artifacts"></a>
 
  **Category:** RECOMMENDED
 

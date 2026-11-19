@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayElbNetworkConfiguration
-<a name="API_GatewayElbNetworkConfiguration"></a>
 
 The network configuration for the load balancers that a gateway manages.
 

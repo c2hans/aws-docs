@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/setup-2110-inpu
 ---
 
 # Setting up a SMPTE 2110 input using NMOS
-<a name="setup-2110-input-nmos"></a>
 
 Follow this procedure if you have a SMPTE 2110 source and your organization uses NMOS IS-04 and IS-05.
 

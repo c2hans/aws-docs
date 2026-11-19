@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_InferS
 ---
 
 # InferSNOMEDCT
-<a name="API_InferSNOMEDCT"></a>
 
  InferSNOMEDCT detects possible medical concepts as entities and links them to codes from the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED-CT) ontology.
 

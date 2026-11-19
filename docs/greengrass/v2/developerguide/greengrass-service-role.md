@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Greengrass service role
-<a name="greengrass-service-role"></a>
 
 <a name="greengrass-service-role-intro"></a>The Greengrass service role is an AWS Identity and Access Management (IAM) service role that authorizes AWS IoT Greengrass to access resources from AWS services on your behalf. This role makes it possible for AWS IoT Greengrass to verify the identity of client devices and manage core device connectivity information.
 

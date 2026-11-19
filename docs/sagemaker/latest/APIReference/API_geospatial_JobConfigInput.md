@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # JobConfigInput
-<a name="API_geospatial_JobConfigInput"></a>
 
 The input structure for the JobConfig in an EarthObservationJob.
 

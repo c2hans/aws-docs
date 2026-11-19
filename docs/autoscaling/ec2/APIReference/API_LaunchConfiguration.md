@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_LaunchC
 ---
 
 # LaunchConfiguration
-<a name="API_LaunchConfiguration"></a>
 
 Describes a launch configuration.
 

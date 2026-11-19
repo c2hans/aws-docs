@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Recording
 ---
 
 # RecordingGroup
-<a name="API_RecordingGroup"></a>
 
 Specifies which resource types AWS Config records for configuration changes. By default, AWS Config records configuration changes for all current and future supported resource types in the AWS Region where you have enabled AWS Config, excluding the global IAM resource types: IAM users, groups, roles, and customer managed policies.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/device-management-n
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Use time-slicing with NVIDIA GPUs on Amazon EKS
-<a name="device-management-nvidia-time-slicing"></a>
 
 Time-slicing lets multiple Pods share a single physical NVIDIA GPU. The Kubernetes scheduler places multiple Pods on the same GPU, and the GPU’s CUDA scheduler time-multiplexes the work. Time-slicing is the simplest GPU-sharing strategy. It uses software only, requires no special hardware, and works on every NVIDIA GPU instance type on AWS. Time-slicing does not offer memory or compute isolation between Pods that share a GPU. It best suits workloads with low GPU utilization, such as inference services that idle between requests or development environments where several users share a GPU. For workloads that require hardware-level memory and compute isolation, use Multi-Instance GPU (MIG) instead.
 

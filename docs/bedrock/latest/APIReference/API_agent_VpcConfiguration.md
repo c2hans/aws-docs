@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Vp
 ---
 
 # VpcConfiguration
-<a name="API_agent_VpcConfiguration"></a>
 
 Contains the details of a VPC configuration, including its connection settings, resolution mode, and current lifecycle status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # IncreaseNodeGroupsInGlobalReplicationGroup
-<a name="API_IncreaseNodeGroupsInGlobalReplicationGroup"></a>
 
 Increase the number of node groups in the Global datastore
 

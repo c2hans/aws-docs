@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/algorithms-text.html
 ---
 
 # Built-in SageMaker AI Algorithms for Text Data
-<a name="algorithms-text"></a>
 
 SageMaker AI provides algorithms that are tailored to the analysis of textual documents used in natural language processing, document classification or summarization, topic modeling or classification, and language transcription or translation.
 + [BlazingText algorithm](blazingtext.md)—a highly optimized implementation of the Word2vec and text classification algorithms that scale to large datasets easily. It is useful for many downstream natural language processing (NLP) tasks.

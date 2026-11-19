@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # Amazon S3 Encryption Client for Go examples
-<a name="go-examples"></a>
 
 The following examples show you how to use the Amazon S3 Encryption Client for Go to encrypt and decrypt Amazon S3 objects. These examples show how to use version 4.*x* of the Amazon S3 Encryption Client for Go.
 

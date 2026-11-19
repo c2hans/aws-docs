@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeJob
-<a name="API_DescribeJob"></a>
 
 Returns the definition of a specific DataBrew job.
 

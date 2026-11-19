@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # S3FilesConfiguration
-<a name="API_S3FilesConfiguration"></a>
 
 The configuration for mounting an Amazon Simple Storage Service (Amazon S3) Files access point that you own into a session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_CustomH
 ---
 
 # CustomHttpHeader
-<a name="API_CustomHttpHeader"></a>
 
 Represents a custom HTTP header that can be included in AS2 messages. Each header consists of a key-value pair.
 

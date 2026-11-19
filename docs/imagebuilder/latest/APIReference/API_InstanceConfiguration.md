@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ins
 ---
 
 # InstanceConfiguration
-<a name="API_InstanceConfiguration"></a>
 
 Defines a custom base AMI and block device mapping configurations of an instance used for building and testing container images.
 

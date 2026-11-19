@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_JoinO
 ---
 
 # JoinOperandProperties
-<a name="API_JoinOperandProperties"></a>
 
 Properties that control how columns are handled for a join operand, including column name overrides.
 

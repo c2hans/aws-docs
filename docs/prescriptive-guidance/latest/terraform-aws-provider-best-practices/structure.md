@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Best practices for code base structure and organization
-<a name="structure"></a>
 
 Proper code base structure and organization becomes increasingly important as Terraform usage grows across large teams and organizations. A structured, maintainable code base enables collaboration at scale. This section provides recommendations on Terraform modularity, naming conventions, documentation, and coding standards that support quality and consistency.
 

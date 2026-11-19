@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Price.html
 ---
 
 # Price
-<a name="API_Price"></a>
 
 The price per request for a payment network, specifying the amount and cryptocurrency.
 

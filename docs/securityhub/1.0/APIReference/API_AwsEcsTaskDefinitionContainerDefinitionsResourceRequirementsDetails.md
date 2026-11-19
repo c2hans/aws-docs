@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetails"></a>
 
 A resource to assign to a container.
 

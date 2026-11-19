@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/outbound-tutorial-
 ---
 
 # Step 1: Setting up Amazon S3 buckets
-<a name="outbound-tutorial-step1-s3-setup"></a>
 
 B2B Data Interchange requires Amazon S3 buckets to store your input JSON files and output EDI documents. You must configure appropriate permissions and enable EventBridge notifications for automated document processing.
 

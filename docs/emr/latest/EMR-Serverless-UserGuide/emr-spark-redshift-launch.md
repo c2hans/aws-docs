@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Launching a Spark application with the Amazon Redshift integration for Apache Spark
-<a name="emr-spark-redshift-launch"></a>
 
 To use the integration with EMR Serverless 6.9.0, pass the required Spark-Redshift dependencies with your Spark job. Use `--jars` to include Redshift connector related libraries. To access other file locations supported by the `--jars` option, refer to the [Advanced Dependency Management](https://spark.apache.org/docs/latest/submitting-applications.html#advanced-dependency-management) section of the Apache Spark documentation.
 + `spark-redshift.jar`

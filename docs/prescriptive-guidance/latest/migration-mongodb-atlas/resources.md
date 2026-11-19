@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Additional resources
-<a name="resources"></a>
 
 ## MongoDB documentation
 <a name="mongodb-documentation.044755a6-64db-5dce-b2d5-33f820f30bdc"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_IdentityDkim
 ---
 
 # IdentityDkimAttributes
-<a name="API_IdentityDkimAttributes"></a>
 
 Represents the DKIM attributes of a verified email address or a domain.
 

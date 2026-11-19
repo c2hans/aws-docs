@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # Instance
-<a name="API_devicemanagement_Instance"></a>
 
 The description of an instance. Currently, Amazon EC2 instances are the only supported instance type.
 

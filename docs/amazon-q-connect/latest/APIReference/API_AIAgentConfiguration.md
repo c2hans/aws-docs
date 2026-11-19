@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIAgentConfiguration
-<a name="API_amazon-q-connect_AIAgentConfiguration"></a>
 
 A typed union that specifies the configuration based on the type of AI Agent.
 

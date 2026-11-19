@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/monitoring-cloudt
 ---
 
 # Monitoring AWS Quick using CloudTrail
-<a name="monitoring-cloudtrail"></a>
 
 AWS Quick is integrated with AWS CloudTrail. This service provides a record of actions taken by a user, role, or an AWS service in AWS Quick. CloudTrail captures API calls for AWS Quick as events. The calls captured include some calls from the console and all code calls to API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for AWS Quick. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine who made a request to AWS Quick and when. You can also identify the source IP address, the specific request, and other details.
 

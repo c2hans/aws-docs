@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Export harness to code
-<a name="harness-export"></a>
 
 Export harness to code takes a managed harness configuration and generates a runtime agent from it as editable Python source code using the Strands framework. The generated agent is a normal AgentCore runtime agent: you own the code, can modify it freely, and deploy it like any other agent. The generated agent carries over the harness’s model, execution limits, filesystem mounts, and the tools, skills, and memory configuration that export supports. Export records configuration that it cannot map in `EXPORT_NOTES.md`.
 

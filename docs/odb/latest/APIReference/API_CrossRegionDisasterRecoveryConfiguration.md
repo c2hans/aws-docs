@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CrossRegionD
 ---
 
 # CrossRegionDisasterRecoveryConfiguration
-<a name="API_CrossRegionDisasterRecoveryConfiguration"></a>
 
 The configuration for creating an Autonomous Database as a cross-Region disaster recovery peer.
 

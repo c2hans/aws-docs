@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-terminate-an
 ---
 
 # Terminate sessions for another user
-<a name="rstudio-terminate-another"></a>
 
 The following topic demonstrates how to terminate sessions for another user in RStudio on Amazon SageMaker AI.
 

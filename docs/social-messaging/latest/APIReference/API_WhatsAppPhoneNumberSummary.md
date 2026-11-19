@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppPhoneNumberSummary
-<a name="API_WhatsAppPhoneNumberSummary"></a>
 
 The details of a linked phone number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListS
 ---
 
 # ListSystemEvents
-<a name="API_ListSystemEvents"></a>
 
 Lists events for a system.
 

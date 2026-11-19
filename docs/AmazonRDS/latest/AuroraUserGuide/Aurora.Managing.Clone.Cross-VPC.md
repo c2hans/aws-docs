@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Cross-VPC cloning with Amazon Aurora
-<a name="Aurora.Managing.Clone.Cross-VPC"></a>
 
  Suppose that you want to impose different network access controls on the original cluster and the clone. For example, you might use cloning to make a copy of a production Aurora cluster in a different VPC for development and testing. Or you might create a clone as part of a migration from public subnets to private subnets, to enhance your database security.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/compare-packa
 ---
 
 # Package changes in Amazon Linux 2027
-<a name="compare-packages"></a>
 
 **Topics**
 + [Summary of package changes in Amazon Linux 2027](summary.md)

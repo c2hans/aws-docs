@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMem
 ---
 
 # GetMembers
-<a name="API_GetMembers"></a>
 
 Retrieves GuardDuty member accounts (of the current GuardDuty administrator account) specified by the account IDs.
 

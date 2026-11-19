@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tams-input-gap-ha
 ---
 
 # Gap handling options
-<a name="tams-input-gap-handling"></a>
 
 When processing TAMS content, you might encounter gaps where segments are missing from the timeline. MediaConvert detects gaps by comparing the end time of each segment with the start time of the next segment. Gaps smaller than 100 milliseconds are ignored to account for minor timing variations. Choose from the following three options for handling these gaps:
 

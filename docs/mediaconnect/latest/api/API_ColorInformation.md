@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ColorInforma
 ---
 
 # ColorInformation
-<a name="API_ColorInformation"></a>
 
 The color signaling of the video stream.
 

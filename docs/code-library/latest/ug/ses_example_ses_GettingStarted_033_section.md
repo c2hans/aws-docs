@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_ses_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Setting up email sending services
-<a name="ses_example_ses_GettingStarted_033_section"></a>
 
 The following code example shows how to:
 + Verify an email address

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glacier.html
 ---
 
 # Query restored Amazon Glacier objects
-<a name="querying-glacier"></a>
 
 You can use Athena to query restored objects from the Amazon Glacier Flexible Retrieval (formerly Glacier) and Amazon Glacier Deep Archive [Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-glacier). You must enable this capability on a per-table basis. If you do not enable the feature on a table before you run a query, Athena skips all of the table's Amazon Glacier Flexible Retrieval and Amazon Glacier Deep Archive objects during query execution.
 

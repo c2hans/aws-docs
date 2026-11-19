@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # AddressIdentifierFilter
-<a name="API_AddressIdentifierFilter"></a>
 
 This is the container for the unique public address on the blockchain.
 

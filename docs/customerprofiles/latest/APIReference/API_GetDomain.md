@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetDomain
-<a name="API_connect-customer-profiles_GetDomain"></a>
 
 Returns information about a specific domain.
 

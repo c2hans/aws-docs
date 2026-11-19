@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-task-c
 ---
 
 # Monitor task creation in Connect Customer
-<a name="monitor-task-creation"></a>
 
 After your connection is established, if it stops working, in Connect Customer disassociate the connection, and then re-establish it. If that doesn't solve the issue, do the following:
 

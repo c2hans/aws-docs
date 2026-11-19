@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateV
 ---
 
 # UpdateVirtualGateway
-<a name="API_UpdateVirtualGateway"></a>
 
 Updates an existing virtual gateway in a specified service mesh.
 

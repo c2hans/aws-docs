@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ProviderUserIdentifierType
-<a name="API_ProviderUserIdentifierType"></a>
 
 The characteristics of a source or destination user for linking a federated user profile to a local user profile.
 

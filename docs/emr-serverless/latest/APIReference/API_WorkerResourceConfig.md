@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_W
 ---
 
 # WorkerResourceConfig
-<a name="API_WorkerResourceConfig"></a>
 
 The cumulative configuration requirements for every worker instance of the worker type.
 

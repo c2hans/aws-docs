@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Pe
 ---
 
 # PeriodontalReview
-<a name="API_PeriodontalReview"></a>
 
 An item of the periodontal chart that needs the clinician's confirmation.
 

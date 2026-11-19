@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-p
 ---
 
 # Find instance profiles used with AWS PCS
-<a name="security-instance-profiles_find"></a>
 
 1. If you don't know the exact names of your IAM roles for AWS PCS, use the following AWS CLI command to list the IAM roles that meet the AWS PCS name requirements.
 

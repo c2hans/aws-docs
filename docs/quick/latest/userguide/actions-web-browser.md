@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-web-brows
 ---
 
 # Web browser
-<a name="actions-web-browser"></a>
 
 ## Overview
 <a name="web-browser-overview"></a>

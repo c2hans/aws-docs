@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Row Level Security
-<a name="row-level-security"></a>
 
 ## Introduction
 <a name="introduction"></a>

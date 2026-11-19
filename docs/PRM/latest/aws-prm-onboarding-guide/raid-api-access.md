@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/raid
 ---
 
 # API Access
-<a name="raid-api-access"></a>
 
 In addition to managing Revenue Attribution IDs through AWS Partner Central, you can manage them programmatically through the Partner Revenue Measurement APIs and the Marketplace Revenue Share APIs.
 

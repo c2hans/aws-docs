@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Bid construction and templating
-<a name="yield-optimization-bid-construction"></a>
 
 This page explains how MediaTailor builds an OpenRTB bid request from your template, how variable interpolation works, and what values MediaTailor sets automatically.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ComputeNodeG
 ---
 
 # ComputeNodeGroupConfiguration
-<a name="API_ComputeNodeGroupConfiguration"></a>
 
 The compute node group configuration for a queue.
 

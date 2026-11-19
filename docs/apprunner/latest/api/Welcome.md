@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS App Runner is an application service that provides a fast, simple, and cost-effective way to go directly from an existing container image or source code to a running service in the AWS Cloud in seconds. You don't need to learn new technologies, decide which compute service to use, or understand how to provision and configure AWS resources.
 
@@ -17,4 +16,4 @@ For more information about App Runner, see the [AWS App Runner Developer Guide](
 
 For a list of Region-specific endpoints that App Runner supports, see [AWS App Runner endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/apprunner.html) in the * AWS General Reference*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

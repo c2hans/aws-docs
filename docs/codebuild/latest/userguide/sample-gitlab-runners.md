@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-gitlab
 ---
 
 # Tutorial: Configure a CodeBuild-hosted GitLab runner
-<a name="sample-gitlab-runners"></a>
 
 This tutorial shows you how to configure your CodeBuild projects to run GitLab CI/CD pipeline jobs. For more information about using GitLab or GitLab Self Managed with CodeBuild, see [Self-managed GitLab runners in AWS CodeBuild](gitlab-runner.md).<a name="sample-gitlab-runners-prerequisites"></a>
 

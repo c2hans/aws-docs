@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AccountMetaData
-<a name="API_taxSettings_AccountMetaData"></a>
 
  The meta data information associated with the account.
 

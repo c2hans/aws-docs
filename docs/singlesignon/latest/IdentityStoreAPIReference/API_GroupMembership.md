@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # GroupMembership
-<a name="API_GroupMembership"></a>
 
 Contains the identifiers for a group, a group member, and a `GroupMembership` object in the identity store.
 

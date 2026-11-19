@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/su-co
 ---
 
 # Step 2: Set up Amazon Rekognition Custom Labels console permissions
-<a name="su-console-policy"></a>
 
 To use the Amazon Rekognition console you need add to have appropriate permissions. If you want to store your training files in a bucket other than the [console bucket](su-create-console-bucket.md), you need additional permissions.
 

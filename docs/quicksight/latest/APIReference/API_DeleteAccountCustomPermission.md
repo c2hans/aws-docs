@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteAccountCustomPermission
-<a name="API_DeleteAccountCustomPermission"></a>
 
 Unapplies a custom permissions profile from an account.
 

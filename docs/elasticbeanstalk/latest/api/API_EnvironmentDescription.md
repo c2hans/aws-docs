@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Environm
 ---
 
 # EnvironmentDescription
-<a name="API_EnvironmentDescription"></a>
 
 Describes the properties of an environment.
 

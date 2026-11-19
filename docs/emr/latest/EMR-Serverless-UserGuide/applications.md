@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/appl
 ---
 
 # Interact with and configure an EMR Serverless application
-<a name="applications"></a>
 
 This section covers how to interact with your Amazon EMR Serverless application with the AWS CLI. It also describes configuration of an application, performing customizations, and defaults for Spark and Hive engines.
 

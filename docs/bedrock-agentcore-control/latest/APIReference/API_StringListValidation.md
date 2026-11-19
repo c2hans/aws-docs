@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StringListValidation
-<a name="API_StringListValidation"></a>
 
 Validation for STRINGLIST fields.
 

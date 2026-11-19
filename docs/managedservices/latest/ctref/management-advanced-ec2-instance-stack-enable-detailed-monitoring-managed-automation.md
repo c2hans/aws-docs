@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # EC2 Instance Stack \| Enable Detailed Monitoring (Managed Automation)
-<a name="management-advanced-ec2-instance-stack-enable-detailed-monitoring-managed-automation"></a>
 
 Enable detailed monitoring for the specified EC2 instance. Detailed monitoring incurs a charge. EC2 detailed monitoring provides more frequent metrics, published at one-minute intervals, instead of the five-minute intervals used in Amazon EC2 basic monitoring.
 

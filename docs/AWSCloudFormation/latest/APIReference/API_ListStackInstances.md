@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackInstances
-<a name="API_ListStackInstances"></a>
 
 Returns summary information about stack instances that are associated with the specified StackSet. You can filter for stack instances that are associated with a specific AWS account name or Region, or that have a specific status.
 

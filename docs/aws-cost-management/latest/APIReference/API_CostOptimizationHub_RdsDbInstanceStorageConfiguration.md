@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RdsDbInstanceStorageConfiguration
-<a name="API_CostOptimizationHub_RdsDbInstanceStorageConfiguration"></a>
 
 The Amazon RDS DB instance storage configuration used for recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cm-set-up-s3-exp
 ---
 
 # Setting up an Amazon S3 bucket for Capacity Manager data exports
-<a name="cm-set-up-s3-export"></a>
 
 To receive Capacity Manager data exports, you must have an Amazon S3 bucket in your AWS account to receive and store your export files. When creating a data export in the Capacity Manager console, you can select an existing Amazon S3 bucket that you own or create a new bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Update a DynamoDB item with a TTL using an AWS SDK
-<a name="example_dynamodb_UpdateItemTTL_section"></a>
 
 The following code examples show how to update an item's TTL.
 

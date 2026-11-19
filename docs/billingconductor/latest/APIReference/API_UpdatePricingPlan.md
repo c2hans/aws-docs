@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdatePricingPlan
-<a name="API_UpdatePricingPlan"></a>
 
 This updates an existing pricing plan.
 

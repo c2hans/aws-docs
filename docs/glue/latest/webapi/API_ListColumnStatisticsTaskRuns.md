@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListColumnStatist
 ---
 
 # ListColumnStatisticsTaskRuns
-<a name="API_ListColumnStatisticsTaskRuns"></a>
 
 List all task runs for a particular account.
 

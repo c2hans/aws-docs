@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListIm
 ---
 
 # ListImageReferrers
-<a name="API_ListImageReferrers"></a>
 
 Lists the artifacts associated with a specified subject image.
 

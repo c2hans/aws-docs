@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamDisco
 ---
 
 # IpamDiscoveredPublicAddress
-<a name="API_IpamDiscoveredPublicAddress"></a>
 
 A public IP Address discovered by IPAM.
 

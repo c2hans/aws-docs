@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Tenant.html
 ---
 
 # Tenant
-<a name="API_Tenant"></a>
 
 Contains information about an application tenant.
 

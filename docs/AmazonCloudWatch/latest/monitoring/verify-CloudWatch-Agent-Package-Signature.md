@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/verif
 ---
 
 # Verifying the signature of the CloudWatch agent package
-<a name="verify-CloudWatch-Agent-Package-Signature"></a>
 
  GPG signature files are included for CloudWatch agent packages on Linux servers. You can use a public key to verify the agent download file is original and unmodified.
 

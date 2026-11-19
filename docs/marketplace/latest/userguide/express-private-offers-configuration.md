@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/express-pri
 ---
 
 # Express private offer configuration
-<a name="express-private-offers-configuration"></a>
 
 Configuring express private offers involves establishing the necessary permissions, selecting appropriate rate card types, and setting global controls to manage your automated private offer generation process.
 

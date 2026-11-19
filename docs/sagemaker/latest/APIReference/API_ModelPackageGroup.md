@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageGroup
-<a name="API_ModelPackageGroup"></a>
 
 A group of versioned models in the Model Registry.
 

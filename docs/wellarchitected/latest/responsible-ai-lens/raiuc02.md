@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Identify use case stakeholders
-<a name="raiuc02"></a>
 
 | RAIUC02: How will you identify the stakeholders of your use case? |
 | --- |

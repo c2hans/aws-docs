@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Privat
 ---
 
 # PrivateIpAddressDetails
-<a name="API_PrivateIpAddressDetails"></a>
 
 Contains other private IP address information of the EC2 instance.
 

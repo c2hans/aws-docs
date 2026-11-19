@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ImageSource
-<a name="API_agent-runtime_ImageSource"></a>
 
 The source for an image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanJ
 ---
 
 # ScanJobSummary
-<a name="API_ScanJobSummary"></a>
 
 Contains summary information about scan jobs, including counts and metadata for a specific time period and criteria.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST05-BP05 Select components of this workload to optimize cost in line with organization priorities
-<a name="cost_select_service_select_for_cost"></a>
 
  Factor in cost when selecting all components. This includes using application level and managed services, such as Amazon Relational Database Service ([Amazon RDS](https://aws.amazon.com/rds)), [Amazon DynamoDB](https://docs.aws.amazon.com/dynamodb/?id=docs_gateway), Amazon Simple Notification Service ([Amazon SNS](https://docs.aws.amazon.com/sns/?id=docs_gateway)), and Amazon Simple Email Service ([Amazon SES](https://docs.aws.amazon.com/ses/?id=docs_gateway)) to reduce overall organization cost. Use serverless and containers for compute, such as AWS Lambda, Amazon Simple Storage Service ([Amazon S3](https://docs.aws.amazon.com/s3/?id=docs_gateway))for static websites, and Amazon Elastic Container Service ([Amazon ECS](https://docs.aws.amazon.com/ecs/?id=docs_gateway)). Minimize license costs by using open source software, or software that does not have license fees: for example, Amazon Linux for compute workloads or migrate databases to [Amazon Aurora](https://docs.aws.amazon.com/rds/?id=docs_gateway).
 

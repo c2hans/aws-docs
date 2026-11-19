@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetIt
 ---
 
 # AssetItemAdditionalAttributes
-<a name="API_AssetItemAdditionalAttributes"></a>
 
 The additional attributes of an inventory asset.
 

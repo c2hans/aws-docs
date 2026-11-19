@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Tr
 ---
 
 # TriggerFilterGroup
-<a name="API_TriggerFilterGroup"></a>
 
 A set of conditions that start an automatic code review when they all pass. A filter group must include `events`, `filters`, or both.
 

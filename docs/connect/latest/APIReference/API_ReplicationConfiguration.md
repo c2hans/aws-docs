@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Replicat
 ---
 
 # ReplicationConfiguration
-<a name="API_ReplicationConfiguration"></a>
 
 Details about the status of the replication of a source Connect Customer instance across AWS Regions. Use these details to understand the general status of a given replication. For information about why a replication process may fail, see [Why a ReplicateInstance call fails](https://docs.aws.amazon.com/connect/latest/adminguide/create-replica-connect-instance.html#why-replicateinstance-fails) in the *Create a replica of your existing Connect Customer instance* topic in the *Connect Customer Administrator Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateE
 ---
 
 # CreateEnvironmentProfile
-<a name="API_CreateEnvironmentProfile"></a>
 
 Creates an Amazon DataZone environment profile.
 

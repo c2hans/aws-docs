@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailPiiEntity
-<a name="API_GuardrailPiiEntity"></a>
 
 The PII entity configured for the guardrail.
 

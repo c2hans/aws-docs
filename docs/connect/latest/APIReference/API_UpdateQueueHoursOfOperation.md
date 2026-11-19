@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueHoursOfOperation
-<a name="API_UpdateQueueHoursOfOperation"></a>
 
 Updates the hours of operation for the specified queue.
 

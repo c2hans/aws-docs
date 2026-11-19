@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## How can I combine different integration patterns?
 <a name="faq1"></a>

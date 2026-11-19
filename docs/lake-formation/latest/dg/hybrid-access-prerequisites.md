@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-access-p
 ---
 
 # Prerequisites for setting up hybrid access mode
-<a name="hybrid-access-prerequisites"></a>
 
 The following are the prerequisites for setting up hybrid access mode:
 

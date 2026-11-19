@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemPolicyAssociatedMetadata
-<a name="API_SystemPolicyAssociatedMetadata"></a>
 
 Metadata for a system policy associated event.
 

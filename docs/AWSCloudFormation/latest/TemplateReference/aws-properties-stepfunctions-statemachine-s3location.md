@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::StepFunctions::StateMachine S3Location
-<a name="aws-properties-stepfunctions-statemachine-s3location"></a>
 
 Defines the S3 bucket location where a state machine definition is stored. The state machine definition must be a JSON or YAML file.
 

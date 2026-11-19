@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_InspectorS
 ---
 
 # InspectorScoreDetails
-<a name="API_InspectorScoreDetails"></a>
 
 Information about the Amazon Inspector score given to a finding.
 

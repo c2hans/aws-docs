@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/customizing-
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Reference materials for customizing the visual theme
-<a name="customizing-web-experience-themes-reference-materials"></a>
 
 **Topics**
 + [Color considerations for accessibility](#customizing-web-experience-themes-color-format)

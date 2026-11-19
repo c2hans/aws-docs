@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-zeppelin.h
 ---
 
 # Working with Flink jobs from Zeppelin in Amazon EMR
-<a name="flink-zeppelin"></a>
 
 ## Introduction
 <a name="flink-zeppelin-intro"></a>

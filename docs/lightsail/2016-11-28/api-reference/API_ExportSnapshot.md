@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_E
 ---
 
 # ExportSnapshot
-<a name="API_ExportSnapshot"></a>
 
 Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the `create cloud formation stack` operation to create new Amazon EC2 instances.
 

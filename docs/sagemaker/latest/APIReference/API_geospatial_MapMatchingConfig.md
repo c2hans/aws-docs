@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # MapMatchingConfig
-<a name="API_geospatial_MapMatchingConfig"></a>
 
 The input structure for Map Matching operation type.
 

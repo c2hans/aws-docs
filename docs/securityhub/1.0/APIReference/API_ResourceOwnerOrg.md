@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceOwnerOrg
-<a name="API_ResourceOwnerOrg"></a>
 
 Information about the organization that owns a resource, for example, an Azure Tenant.
 

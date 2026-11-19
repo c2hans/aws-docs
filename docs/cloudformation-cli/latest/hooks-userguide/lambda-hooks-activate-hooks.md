@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Activate a Lambda Hook in your account
-<a name="lambda-hooks-activate-hooks"></a>
 
 The following topic shows you how to activate a Lambda Hook in your account, which makes it usable in the account and Region it was activated in.
 

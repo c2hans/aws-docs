@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetUpgradeHistory
-<a name="API_GetUpgradeHistory"></a>
 
 Retrieves the complete history of the last 10 upgrades performed on an Amazon OpenSearch Service domain.
 

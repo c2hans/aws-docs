@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/examp
 ---
 
 # Examples of qualification projects
-<a name="examples-qualification"></a>
 
 Here is an example of a FreeRTOS Featured IoT Integration.
 

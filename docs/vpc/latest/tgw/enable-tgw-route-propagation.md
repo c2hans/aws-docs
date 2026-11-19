@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/enable-tgw-route-propagat
 ---
 
 # Enable route propagation to a transit gateway route table in AWS Transit Gateway
-<a name="enable-tgw-route-propagation"></a>
 
 Use route propagation to add a route from an attachment to a route table.
 

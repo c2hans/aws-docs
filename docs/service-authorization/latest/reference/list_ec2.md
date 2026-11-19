@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon EC2
-<a name="list_ec2"></a>
 
 Amazon EC2 (service prefix: `ec2`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpRou
 ---
 
 # HttpRouteAction
-<a name="API_HttpRouteAction"></a>
 
 An object that represents the action to take if a match is determined.
 

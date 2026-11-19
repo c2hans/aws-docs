@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Enab
 ---
 
 # EnableRule
-<a name="API_EnableRule"></a>
 
 Enables the specified rule. If the rule does not exist, the operation fails.
 

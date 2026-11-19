@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/set-topic-attributes-deliv
 ---
 
 # SetTopicAttributes delivery policy JSON format
-<a name="set-topic-attributes-delivery-policy-json"></a>
 
 If you send a request to the `SetTopicAttributes` action and set the `AttributeName` parameter to a value of `DeliveryPolicy`, the value of the `AttributeValue` parameter must be a valid JSON object. For example, the following example sets the delivery policy to 5 total retries.
 

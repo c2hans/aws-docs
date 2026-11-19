@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Replatforming mainframe applications using a shared IBM Db2 for z/OS database for gradual migration
-<a name="introduction"></a>
 
 *Luis Gustavo Dantas and Andre Botura, Amazon Web Services*
 

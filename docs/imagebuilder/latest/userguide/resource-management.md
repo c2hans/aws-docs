@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/resource-m
 ---
 
 # Manage Image Builder resources
-<a name="resource-management"></a>
 
 These topics cover operations that apply across Image Builder resource types: validate a configuration with a dry run before you create the resource, share resources that you own, tag resources, and delete resources that you no longer need.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Cancel Job
-<a name="load-api-reference-cancel"></a>
 
 Cancels a load job.
 

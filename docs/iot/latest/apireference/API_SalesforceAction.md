@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SalesforceAc
 ---
 
 # SalesforceAction
-<a name="API_SalesforceAction"></a>
 
 Describes an action to write a message to a Salesforce IoT Cloud Input Stream.
 

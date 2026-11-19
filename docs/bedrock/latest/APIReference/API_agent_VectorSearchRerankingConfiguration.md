@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ve
 ---
 
 # VectorSearchRerankingConfiguration
-<a name="API_agent_VectorSearchRerankingConfiguration"></a>
 
 Specifies how retrieved results from a knowledge base are reranked to improve relevance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/clusters.html
 ---
 
 # Clusters
-<a name="clusters"></a>
 
 This chapter covers creating and configuring EKS clusters using eksctl. It also includes add-ons and EKS Auto Mode.
 

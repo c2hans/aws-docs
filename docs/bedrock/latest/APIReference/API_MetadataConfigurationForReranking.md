@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Metadata
 ---
 
 # MetadataConfigurationForReranking
-<a name="API_MetadataConfigurationForReranking"></a>
 
 Configuration for how metadata should be used during the reranking process in Knowledge Base vector searches. This determines which metadata fields are included or excluded when reordering search results.
 

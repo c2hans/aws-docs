@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-create-table.html
 ---
 
 # SHOW CREATE TABLE
-<a name="show-create-table"></a>
 
 Analyzes an existing table named `table_name` to generate the query that created it.
 

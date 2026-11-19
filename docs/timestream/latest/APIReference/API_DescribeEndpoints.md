@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Descr
 ---
 
 # DescribeEndpoints
-<a name="API_DescribeEndpoints"></a>
 
 Returns a list of available endpoints to make Timestream API calls against. This API operation is available through both the Write and Query APIs.
 

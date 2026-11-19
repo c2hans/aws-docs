@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-content-sh
 ---
 
 # Add a notebook
-<a name="jumpstart-content-sharing-notebooks"></a>
 
 To add a notebook, choose **Shared by my organization**, and then select **Add notebook** from the **Add** dropdown list. Enter the basic information for your notebook and provide an Amazon S3 URI for the location of that notebook.
 

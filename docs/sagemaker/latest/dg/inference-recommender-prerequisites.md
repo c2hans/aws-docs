@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommende
 ---
 
 # Prerequisites for using Amazon SageMaker Inference Recommender
-<a name="inference-recommender-prerequisites"></a>
 
 Before you can use Amazon SageMaker Inference Recommender, you must complete the prerequisite steps. As an example, we show how to use a PyTorch (v1.7.1) ResNet-18 pre-trained model for both types of Amazon SageMaker Inference Recommender recommendation jobs. The examples shown use the AWS SDK for Python (Boto3).
 

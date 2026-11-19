@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # SelectionConfig
-<a name="API_SelectionConfig"></a>
 
 Defines how operations are selected for a service-level SLO.
 

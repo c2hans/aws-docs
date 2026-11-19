@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Key AWS services
-<a name="key-aws-services-3"></a>
 
  The key AWS service for performance efficiency is Amazon CloudWatch, which monitors your resources and systems, providing visibility into your overall performance and operational health. The following services are important in the areas of performance efficiency:
 +  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)

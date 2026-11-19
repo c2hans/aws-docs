@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-lic
 ---
 
 # Amazon Inspector SBOM Generator license collection
-<a name="sbom-generator-license-collection"></a>
 
  The Amazon Inspector SBOM Generator helps track license information in a software bill of materials (SBOM). It collects license information from supported packages across operating systems and programming languages. With standardized license expressions in your generated SBOM, you can understand your licensing obligations.
 

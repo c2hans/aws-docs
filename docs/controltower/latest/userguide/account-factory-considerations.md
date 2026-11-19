@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/account-fa
 ---
 
 # Resource Considerations for Account Factory
-<a name="account-factory-considerations"></a>
 
 When an account is provisioned with Account Factory, the following AWS resources are created within the account.
 

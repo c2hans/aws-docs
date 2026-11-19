@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Configuring the position of LoRaWAN gateways
-<a name="lorawan-location-gateways"></a>
 
 When you add your gateway to AWS IoT Core for LoRaWAN, you can specify the static position data. If you've activated Amazon Location Service maps, the position data is displayed on an Amazon Location map.
 

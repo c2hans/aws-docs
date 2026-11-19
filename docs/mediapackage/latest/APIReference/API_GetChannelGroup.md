@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetChannelGroup
-<a name="API_GetChannelGroup"></a>
 
 Retrieves the specified channel group that's configured in AWS Elemental MediaPackage.
 

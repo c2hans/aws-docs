@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # PathPatternConditionConfig
-<a name="API_PathPatternConditionConfig"></a>
 
 Information about a path pattern condition.
 

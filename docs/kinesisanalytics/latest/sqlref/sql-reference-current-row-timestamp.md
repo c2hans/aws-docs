@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CURRENT\_ROW\_TIMESTAMP
-<a name="sql-reference-current-row-timestamp"></a>
 
 CURRENT\_ROW\_TIMESTAMP is an Amazon Kinesis Data Analytics extension to the SQL:2008 specification. This function returns the current timestamp as defined by the environment on which the Amazon Kinesis Data Analytics application is running. CURRENT\_ROW\_TIMESTAMP is always returned as UTC, not the local timezone.
 
@@ -16,4 +15,4 @@ If that column instead contains CURRENT\_ROW\_TIMESTAMP, each output row gets a 
 **Note**
 CURRENT\_ROW\_TIMESTAMP is not defined in the SQL:2008 specification; it is an Amazon Kinesis Data Analytics extension.
 
-For more information, see [CURRENT\_TIME](sql-reference-current-time.md), [CURRENT\_DATE](sql-reference-current-date.md), [CURRENT\_TIMESTAMP](sql-reference-current-timestamp.md), [LOCALTIMESTAMP](sql-reference-local-timestamp.md), [LOCALTIME](sql-reference-localtime.md), and [CURRENT\_ROW\_TIMESTAMP](#sql-reference-current-row-timestamp).
+For more information, see [CURRENT\_TIME](sql-reference-current-time.md), [CURRENT\_DATE](sql-reference-current-date.md), [CURRENT\_TIMESTAMP](sql-reference-current-timestamp.md), [LOCALTIMESTAMP](sql-reference-local-timestamp.md), [LOCALTIME](sql-reference-localtime.md), and [CURRENT\_ROW\_TIMESTAMP](sql-reference-current-row-timestamp.md).

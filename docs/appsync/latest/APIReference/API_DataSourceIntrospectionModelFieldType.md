@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSour
 ---
 
 # DataSourceIntrospectionModelFieldType
-<a name="API_DataSourceIntrospectionModelFieldType"></a>
 
 Represents the type data for each field retrieved from the introspection.
 
@@ -27,7 +26,7 @@ Required: No
  ** type **   <a name="appsync-Type-DataSourceIntrospectionModelFieldType-type"></a>
 The `DataSourceIntrospectionModelFieldType` object data. The `type` is only present if `DataSourceIntrospectionModelFieldType.kind` is set to `NonNull` or `List`.
 The `type` typically contains its own `kind` and `name` fields to represent the actual type data. For instance, `type` could contain a `kind` value of `Scalar` with a `name` value of `String`. The values `Scalar` and `String` will be collectively stored in the `values` field.
-Type: [DataSourceIntrospectionModelFieldType](#API_DataSourceIntrospectionModelFieldType) object
+Type: [DataSourceIntrospectionModelFieldType](API_DataSourceIntrospectionModelFieldType.md) object
 Required: No
 
  ** values **   <a name="appsync-Type-DataSourceIntrospectionModelFieldType-values"></a>

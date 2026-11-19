@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Related resources
-<a name="related-resources"></a>
 
 The [Resource Scheduler](https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-setup-scheduler.html) is a similar to Instance Scheduler on AWS, but its implementation differs in the following ways:
 

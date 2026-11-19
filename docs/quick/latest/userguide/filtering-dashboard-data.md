@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/filtering-dashboa
 ---
 
 # Using filters on AWS Quick Sight dashboard data
-<a name="filtering-dashboard-data"></a>
 
 You can use filters to refine the data displayed in a visual. Filters are applied to the data before any aggregate functions. If you have multiple filters, all top-level filters apply together using AND. If the filters are grouped inside a top-level filter, the filters in the group apply using OR.
 

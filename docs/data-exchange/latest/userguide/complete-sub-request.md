@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/complete-
 ---
 
 # Completing a subscription request in AWS Data Exchange
-<a name="complete-sub-request"></a>
 
 AWS Data Exchange public products require subscription verification. After choosing **Continue to subscribe**, you must complete an additional form on the **Complete subscription request** page.
 

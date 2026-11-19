@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Send OpenTelemetry metrics to CloudWatch and alarm on them with PromQL using an AWS SDK
-<a name="cloudwatch_example_cloudwatch_Scenario_OTelMetrics_section"></a>
 
 The following code examples show how to:
 + Send OTLP metrics to the CloudWatch metrics endpoint with an OpenTelemetry Collector.

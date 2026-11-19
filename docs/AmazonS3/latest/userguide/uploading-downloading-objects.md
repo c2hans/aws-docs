@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/uploading-down
 ---
 
 # Working with objects in Amazon S3
-<a name="uploading-downloading-objects"></a>
 
 To store your data in Amazon S3, you work with resources known as buckets and objects. A *bucket* is a container for objects. An *object* is a file and any metadata that describes that file.
 

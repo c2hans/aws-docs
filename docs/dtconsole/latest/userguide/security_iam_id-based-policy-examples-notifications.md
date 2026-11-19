@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/security_iam_
 ---
 
 # Permissions and examples for AWS CodeStar Notifications
-<a name="security_iam_id-based-policy-examples-notifications"></a>
 
 The following policy statements and examples can help you manage AWS CodeStar Notifications.
 

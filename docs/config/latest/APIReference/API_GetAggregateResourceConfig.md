@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggreg
 ---
 
 # GetAggregateResourceConfig
-<a name="API_GetAggregateResourceConfig"></a>
 
 Returns configuration item that is aggregated for your specific resource in a specific source account and region.
 

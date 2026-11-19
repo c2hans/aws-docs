@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Paren
 ---
 
 # ParentDataSet
-<a name="API_ParentDataSet"></a>
 
 References a parent dataset that serves as a data source, including its columns and metadata.
 

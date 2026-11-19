@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 This solution deploys to Amazon Elastic Kubernetes Service (Amazon EKS). The Amazon EKS deployment is the recommended deployment for Migration Assistant 3.0 and is the deployment used throughout the rest of this implementation guide. A legacy Amazon ECS deployment remains available in support-only mode for existing deployments.
 

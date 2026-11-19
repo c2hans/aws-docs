@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Senti
 ---
 
 # SentimentFilter
-<a name="API_SentimentFilter"></a>
 
 Flag the presence or absence of specific sentiments detected in your Call Analytics transcription output.
 

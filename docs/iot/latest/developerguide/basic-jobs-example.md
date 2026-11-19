@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/basic-jobs-exa
 ---
 
 # Basic job policy example
-<a name="basic-jobs-example"></a>
 
 This sample shows the policy statments required for a job target that's a single device to receive a job request and communicate job execution status with AWS IoT.
 

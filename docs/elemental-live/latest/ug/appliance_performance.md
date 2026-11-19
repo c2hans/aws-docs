@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/appliance_perfo
 ---
 
 # Performance of Elemental Live appliances
-<a name="appliance_performance"></a>
 
 This section looks at the factors that affect the performance of an AWS Elemental Live appliance, with particular emphasis on the newest appliances. It provides guidance about how to maximize performance while achieving the preferred balance between density, speed, and quality.
 + **Density** is the number of output encodes or events that you can run on an appliance.

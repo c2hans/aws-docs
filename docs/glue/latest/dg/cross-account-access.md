@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/cross-account-access.html
 ---
 
 # Granting cross-account access
-<a name="cross-account-access"></a>
 
 Granting access to Data Catalog resources across accounts enables your extract, transform, and load (ETL) jobs to query and join data from different accounts.
 

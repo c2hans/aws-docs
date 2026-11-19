@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/contract-pr
 ---
 
 # Contract pricing
-<a name="contract-pricing"></a>
 
 Using the contract pricing model, you can offer upfront pricing to customers that enables them to buy a license for 1 month, 12 months, 24 months, or 36 months.
 

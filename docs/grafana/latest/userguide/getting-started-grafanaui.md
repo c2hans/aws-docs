@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/getting-started
 ---
 
 # Create your first dashboard
-<a name="getting-started-grafanaui"></a>
 
 ## Creating a dashboard
 <a name="create-a-dashboard"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/troubleshooting
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Troubleshooting AWS Cloud9
-<a name="troubleshooting"></a>
 
 Use the following information to identify and address issues with AWS Cloud9.
 
@@ -274,7 +273,7 @@ docker image prune -a
 
 If you're repeatedly having issues with SAM CLI commands because of disk-space restrictions, switch to a development environment uses a different [instance type](create-environment-main.md#create-environment-console).
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Can't load IDE using earlier versions of Microsoft Edge browser
 <a name="forbidden-edge-ide"></a>
@@ -285,7 +284,7 @@ If you're repeatedly having issues with SAM CLI commands because of disk-space r
 
 **Recommended solutions:** To update the browser, choose the ellipsis (...) button in the Microsoft Edge toolbar. From the menu, choose **Settings** and then choose **About Microsoft Edge**. If an update is required, it's automatically downloaded and installed.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Can't create the sub-folder structure **/home/ec2-user/environment/home/ec2-user/environment** in the AWS Cloud9 IDE File Explorer.
 <a name="c9-folder-error"></a>
@@ -296,7 +295,7 @@ If you're repeatedly having issues with SAM CLI commands because of disk-space r
 
 **Recommended solutions**: Use a different file name and structure.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Can't create the sub-folder structure **/projects/projects** within the File Explorer of the AWS Cloud9 IDE for CodeCatalyst.
 <a name="codecatalyst-folder-error"></a>
@@ -307,7 +306,7 @@ If you're repeatedly having issues with SAM CLI commands because of disk-space r
 
 **Recommended solutions**: Use a different file name and structure.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Can't interact with the terminal window in AWS Cloud9 because of `tmux` session errors
 <a name="tmux-terminal-error"></a>
@@ -355,7 +354,7 @@ The following steps are for the new EC2 console.
    sudo rmdir /tmp/tmux-*
    ```
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ## Amazon EC2
 <a name="troubleshooting-ec2-group"></a>
@@ -598,7 +597,7 @@ To install SAM Local yourself, follow the instructions in [Installing the AWS SA
 
  For more information about this task, see [Create an AWS Cloud9 that uses Amazon EBS volumes with default encryption](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-an-aws-cloud9-ide-that-uses-amazon-ebs-volumes-with-default-encryption.html) in *AWS Prescriptive Guidance Patterns*.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ### Can't launch AWS Cloud9 from console when an AWS License Manager license configuration is associated with Amazon EC2 instances
 <a name="license-config-deny"></a>
@@ -611,7 +610,7 @@ Older versions of **AWSCloud9ServiceRolePolicy** for the AWSServiceRoleForAWSClo
 
 **Recommended solutions**: If you can't access an existing AWS Cloud9 environment and use License Manager, replace the old **AWSCloud9ServiceRolePolicy** service-linked role with the [version of the SLR](using-service-linked-roles.md#service-linked-role-permissions) that explicitly allows EC2 actions when a `license-configuration` applies to the instance. You can replace the old role simply by deleting it. The updated role is then created automatically.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ## Application preview
 <a name="troubleshooting-preview-group"></a>
@@ -804,7 +803,7 @@ Choosing a larger Amazon EC2 instance might cause your AWS account to incur addi
 
 **Recommended solutions**: Remove the insecure HTTP scripts or content from the web site that you're trying to preview in the IDE. Follow instructions for your web server or content management system for guidance on implementing HTTPS.
 
-([back to top](#troubleshooting))
+([back to top](troubleshooting.md))
 
 ## Third party applications and services
 <a name="troubleshooting-third-party-group"></a>

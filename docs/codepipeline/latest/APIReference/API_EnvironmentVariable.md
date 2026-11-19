@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Env
 ---
 
 # EnvironmentVariable
-<a name="API_EnvironmentVariable"></a>
 
 The environment variables for the action.
 

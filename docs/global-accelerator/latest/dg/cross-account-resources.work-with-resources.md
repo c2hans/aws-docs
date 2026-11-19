@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Work with cross-account resources in Global Accelerator
-<a name="cross-account-resources.work-with-resources"></a>
 
 If your account, or an accelerator that you have permission to access, is specified as a principal in a cross-account attachment in AWS Global Accelerator, you can use resources that have been shared with you from another account.
 

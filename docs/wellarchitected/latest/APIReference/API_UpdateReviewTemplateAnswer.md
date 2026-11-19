@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateReviewTemplateAnswer
-<a name="API_UpdateReviewTemplateAnswer"></a>
 
 Update a review template answer.
 

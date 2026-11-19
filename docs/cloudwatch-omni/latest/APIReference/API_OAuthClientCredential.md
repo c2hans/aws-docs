@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # OAuthClientCredential
-<a name="API_OAuthClientCredential"></a>
 
 Credentials for an OAuth 2.0 client-credentials grant used to authenticate an integration with its external system.
 

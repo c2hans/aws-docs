@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/notify-tiers.
 ---
 
 # Notify tiers
-<a name="notify-tiers"></a>
 
 Notify offers two service tiers with different capabilities and limits. All new configurations start on the Basic tier. You can upgrade to the Advanced tier after completing tier upgrade verification.
 

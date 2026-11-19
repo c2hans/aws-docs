@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_WisdomIn
 ---
 
 # WisdomInfo
-<a name="API_WisdomInfo"></a>
 
 Information about Connect Customer Wisdom.
 

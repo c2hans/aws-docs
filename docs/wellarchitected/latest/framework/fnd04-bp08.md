@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP08 Establish resilience testing tooling
-<a name="fnd04-bp08"></a>
 
  Resilience testing (fault injection, chaos engineering, game days) validates that workloads handle the failures they are designed to handle. Without central tooling, workload teams either build their own testing infrastructure or, more often, skip testing entirely. A central resilience testing foundation gives workload teams ready-to-use experiment templates, safe execution environments, and the observability they need to learn from each experiment.
 

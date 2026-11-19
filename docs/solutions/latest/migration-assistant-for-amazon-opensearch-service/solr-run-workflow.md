@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Configure and run the backfill workflow
-<a name="solr-run-workflow"></a>
 
 After your Solr S3 repository is ready, configure and run the migration from the Migration Console pod (`migration-console-0`) in the `ma` namespace, the same way you would for any other source.
 

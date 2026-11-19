@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchUpd
 ---
 
 # BatchUpdateDataTableValueSuccessResult
-<a name="API_BatchUpdateDataTableValueSuccessResult"></a>
 
 A batch update data table value success result.
 

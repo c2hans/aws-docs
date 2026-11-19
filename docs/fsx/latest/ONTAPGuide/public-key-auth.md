@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/public-key-auth.ht
 ---
 
 # Configuring public key authentication
-<a name="public-key-auth"></a>
 
  To enable SSH public key authentication, you must first generate an SSH key and associate it with an administrator account by using the `security login publickey create` command. This allows the account to access the SVM. The `security login publickey create` command accepts the following parameters.
 

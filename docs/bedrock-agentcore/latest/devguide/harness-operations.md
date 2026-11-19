@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # Observability and cost controls
-<a name="harness-operations"></a>
 
 This page covers monitoring your harness, controlling execution costs, and managing resource tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qna-mult
 ---
 
 # AMAZON.QnAIntent (multiple use support)
-<a name="built-in-intent-qna-multi"></a>
 
 You can choose to have multiple AMAZON.QnAIntents within a locale. Amazon Lex V2 support up to 5 AMAZON.QnAIntents within a bot locale.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/mixins.html
 ---
 
 # Mixins
-<a name="mixins"></a>
 
 Mixins are reusable features that you apply to constructs using the `.with()` method. They add features to both L1 (CloudFormation-level) and L2 (intent-based) constructs, such as versioning, auto-deleting objects, or blocking public access. Each mixin works on a single resource. To connect two resources, use [Facades](facades.md) instead.
 

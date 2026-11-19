@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # DomainMetadata
-<a name="SDB_API_DomainMetadata"></a>
 
 ## Description
 <a name="SDB_API_DomainMetadata_Description"></a>

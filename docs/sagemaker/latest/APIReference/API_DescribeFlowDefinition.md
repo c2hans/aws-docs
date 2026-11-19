@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeFlowDefinition
-<a name="API_DescribeFlowDefinition"></a>
 
 Returns information about the specified flow definition.
 

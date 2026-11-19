@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Shared repositories and contributions
-<a name="shared-repositories"></a>
 
 Some resource structures benefit from using a shared repository where contribution is expected from a wide audience. Common use cases involve the following access management issues:
 + Central AWS Identity and Access Management (IAM) role creation and management

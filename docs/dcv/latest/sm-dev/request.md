@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/request.html
 ---
 
 # Step 3: Get an access token and make an API request
-<a name="request"></a>
 
 This example will walk through the steps to get your access token set up, then show you how to make a basic API request. This will give you the foundational knowledge to start building more advanced applications powered by the Amazon DCV API.
 

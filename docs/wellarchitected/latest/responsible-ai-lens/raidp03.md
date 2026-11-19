@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Dataset issues
-<a name="raidp03"></a>
 
 | RAIDP03: How will you identify and mitigate potential responsible AI issues in the datasets? |
 | --- |

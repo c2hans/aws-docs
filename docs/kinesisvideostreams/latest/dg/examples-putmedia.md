@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/examples-p
 ---
 
 # Example: Sending data to Kinesis Video Streams using the PutMedia API
-<a name="examples-putmedia"></a>
 
 This example demonstrates how to use the [PutMedia](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_dataplane_PutMedia.html) API. It shows how to send data that's already in a container format (MKV). If your data must be assembled into a container format before sending (for example, if you are assembling camera video data into frames), see [Upload to Kinesis Video Streams](producer-sdk.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GiMinorVersi
 ---
 
 # GiMinorVersionSummary
-<a name="API_GiMinorVersionSummary"></a>
 
 Summary information about an Oracle Grid Infrastructure (GI) minor version.
 

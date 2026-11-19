@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/common-respo
 ---
 
 # Common response headers
-<a name="common-response-headers"></a>
 
 The following table describes response headers that are common to most RTB Fabric responses.
 

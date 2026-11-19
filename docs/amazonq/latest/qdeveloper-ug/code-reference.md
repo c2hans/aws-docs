@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-refere
 ---
 
 # Using code references
-<a name="code-reference"></a>
 
 Amazon Q learns, in part, from open-source projects. Sometimes, a suggestion it's giving you may be similar to publicly available code. Code references include information about the source Amazon Q used to generate a recommendation.
 

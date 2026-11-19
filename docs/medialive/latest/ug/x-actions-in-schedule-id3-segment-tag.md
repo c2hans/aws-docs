@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/x-actions-in-schedul
 ---
 
 # How ID3 segment tag actions work
-<a name="x-actions-in-schedule-id3-segment-tag"></a>
 
 You can set up an action to insert ID3 data in each segment in the following types of outputs:
 + CMAF Ingest

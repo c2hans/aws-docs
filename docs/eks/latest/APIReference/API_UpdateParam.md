@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateParam.
 ---
 
 # UpdateParam
-<a name="API_UpdateParam"></a>
 
 An object representing the details of an update request.
 

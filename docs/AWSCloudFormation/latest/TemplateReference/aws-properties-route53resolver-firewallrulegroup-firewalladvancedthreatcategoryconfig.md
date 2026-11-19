@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Route53Resolver::FirewallRuleGroup FirewallAdvancedThreatCategoryConfig
-<a name="aws-properties-route53resolver-firewallrulegroup-firewalladvancedthreatcategoryconfig"></a>
 
 The configuration for a threat category-based filtering rule. This specifies which threat category to use for DNS query evaluation.
 

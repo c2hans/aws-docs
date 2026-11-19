@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamA
 ---
 
 # AwsIamAttachedManagedPolicy
-<a name="API_AwsIamAttachedManagedPolicy"></a>
 
 A managed policy that is attached to an IAM principal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-users.ht
 ---
 
 # Managing user access inside AWS Quick
-<a name="managing-users"></a>
 
 |  |
 | --- |

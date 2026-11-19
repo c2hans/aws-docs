@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/endpionts-and
 ---
 
 # Endpoints and quotas
-<a name="endpionts-and-quotas"></a>
 
 ## AWS IoT TwinMaker endpoints and quotas
 <a name="w2aac53b5"></a>

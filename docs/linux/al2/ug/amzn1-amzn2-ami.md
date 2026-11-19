@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/amzn1-amzn2-ami.html
 ---
 
 # Comparing packages installed on AL1 and AL2 AMIs
-<a name="amzn1-amzn2-ami"></a>
 
 | Package | AL1 AMI | AL2 AMI |
 | --- | --- | --- |

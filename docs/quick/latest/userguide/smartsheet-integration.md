@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/smartsheet-integr
 ---
 
 # Smartsheet integration
-<a name="smartsheet-integration"></a>
 
 With the Smartsheet connector, you can manage sheets, rows, reports, and search across your Smartsheet workspaces directly in AWS Quick through natural language.
 

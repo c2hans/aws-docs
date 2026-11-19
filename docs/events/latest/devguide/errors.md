@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/errors.html
 ---
 
 # Handling errors
-<a name="errors"></a>
 
  The API returns errors with an HTTP status code and, in most cases, a JSON body containing a `message`. Not every response comes from the API itself. The edge can refuse a request with no body at all, or answer with an HTML error of its own, so do not assume the body is JSON.
 

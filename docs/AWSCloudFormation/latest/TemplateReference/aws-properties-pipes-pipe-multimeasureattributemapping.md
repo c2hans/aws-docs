@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pipes::Pipe MultiMeasureAttributeMapping
-<a name="aws-properties-pipes-pipe-multimeasureattributemapping"></a>
 
 A mapping of a source event data field to a measure in a Timestream for LiveAnalytics record.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairg
 ---
 
 # Logically air-gapped vault
-<a name="logicallyairgappedvault"></a>
 
 ## Overview of logically air-gapped vaults
 <a name="lag-overview"></a>
@@ -557,7 +556,7 @@ When creating a logically air-gapped vault with a customer managed key, you must
 **Key policy for copy/restore**
 
 To prevent job failures, review your AWS KMS key policy to ensure it includes all required permissions and doesn't contain any deny statements that could block operations. The following conditions apply:
-+ For all copy scenarios, the CMKs must be shared with the source copy role
++ For all copy scenarios, the logically air-gapped vault's CMK must be shared with the source copy role. For the source resource's CMK, see [Key policy for CMK encrypted source resources](#key-policy-lag-source-resource).
 
 ```
 {
@@ -696,12 +695,52 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
         }
     }
 }
+```<a name="key-policy-lag-source-resource"></a>
+
+**Key policy for CMK encrypted source resources**
+
+For resources that don't support [full AWS Backup management](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html#full-management), such as Amazon EBS, Amazon EC2, Aurora, and Amazon RDS, a backup keeps the encryption key of the source resource. If that key is a customer managed key, AWS Backup uses it and creates a grant on it when it copies the backup into a logically air-gapped vault. This applies whether the vault uses an AWS owned key or a customer managed key, and to primary backups as well as copy jobs.
+
+The source key's policy must allow the IAM role that AWS Backup uses for the job to use the key and create grants on it. That's the role in your backup plan, or the role you specify for an on-demand copy. Add the following statements to the source resource's key policy. If they're missing, the copy job fails.
+
+```
+{
+    "Sid": "Allow use of the source resource key for copy to a logically air-gapped vault",
+    "Effect": "Allow",
+    "Principal": {
+        "AWS": "arn:aws:iam::[source-account-id]:role/service-role/AWSBackupDefaultServiceRole"      //[AWS Backup role]
+    },
+    "Action": [
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
+    ],
+    "Resource": "*"
+},
+{
+    "Sid": "Allow AWS Backup to create grant on the source resource key",
+    "Effect": "Allow",
+    "Principal": {
+        "AWS": "arn:aws:iam::[source-account-id]:role/service-role/AWSBackupDefaultServiceRole"      //[AWS Backup role]
+    },
+    "Action": [
+        "kms:CreateGrant"
+    ],
+    "Resource": "*",
+    "Condition": {
+        "Bool": {
+            "kms:GrantIsForAWSResource": "true"
+        }
+    }
+}
 ```
 
 **IAM Role**
 
 When performing logically air-gapped vault copy operations, customers can utilize the `AWSBackupDefaultServiceRole` which includes the AWS-managed policy `AWSBackupServiceRolePolicyForBackup`. However, if customers prefer to implement a least-privilege policy approach, their IAM policy must include a specific requirement:
-+ The source account's copy role must have access permissions to both the source and destination CMKs.
++ The source account's copy role must have access permissions to the source resource's CMK and to the source and destination logically air-gapped vault CMKs.
 
 ```
 {
@@ -712,6 +751,7 @@ When performing logically air-gapped vault copy operations, customers can utiliz
             "Effect": "Allow",
             "Action": "kms:DescribeKey",
             "Resource": [
+                "arn:aws:kms:*:[source-resource-key-account-id]:key/*",  //[Source resource CMK]
                 "arn:aws:kms:*:[source-account-id]:key/*",  //[Source logically air-gapped vault CMK]
                 "arn:aws:kms:*:[destination-account-id]:key/*"  //[Destination logically air-gapped vault CMK]
             ]
@@ -721,6 +761,7 @@ When performing logically air-gapped vault copy operations, customers can utiliz
             "Effect": "Allow",
             "Action": "kms:CreateGrant",
             "Resource": [
+                "arn:aws:kms:*:[source-resource-key-account-id]:key/*",  //[Source resource CMK]
                 "arn:aws:kms:*:[source-account-id]:key/*",  //[Source logically air-gapped vault CMK]
                 "arn:aws:kms:*:[destination-account-id]:key/*"  //[Destination logically air-gapped vault CMK]
             ],
@@ -816,8 +857,17 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 
 **Resolution:** Update your EventBridge rule event pattern to exclude operations performed by AWS Backup. Specifically, exclude events where `userIdentity.invokedBy` is `backup.amazonaws.com` to ensure your auto-remediation logic does not revoke the temporary cross-account permissions that AWS Backup grants during the copy process.
 
-### `AccessDeniedException`
+### Copy job to a logically air-gapped vault fails with AccessDenied on `kms:CreateGrant`
 <a name="w2aac15c13c31b7"></a>
+
+**Error:** `User: arn:aws:sts::{{account-id}}:assumed-role/{{role-name}}/AWSBackup-{{role-name}} is not authorized to perform: kms:CreateGrant on resource: arn:aws:kms:{{region}}:{{account-id}}:key/{{key-id}} because no resource-based policy allows the kms:CreateGrant action`
+
+**Possible cause:** The source resource is encrypted with a customer managed key, and that key's policy doesn't allow the AWS Backup role to create grants on it. The key in the error is the source resource's key, not the vault's key. This applies to resources that don't support full AWS Backup management, such as Amazon EBS, Aurora, and Amazon RDS.
+
+**Resolution:** Add the statements in [Key policy for CMK encrypted source resources](#key-policy-lag-source-resource) to the source key's policy, then retry the copy. For [primary backups](lag-vault-primary-backup.md), the temporary recovery point stays in your backup vault. You can copy it to the logically air-gapped vault manually, and AWS Backup deletes it after that copy completes.
+
+### `AccessDeniedException`
+<a name="w2aac15c13c31b9"></a>
 
 **Error:** `An error occured (AccessDeniedException) when calling the [command] operation: Insufficient privileges to perform this action."`
 
@@ -831,7 +881,7 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 **Resolution:** Retry the command that returned the error, but include the parameter `--backup-vault-account-id` that specifies the account that owns the vault.
 
 ### `OperationNotPermittedException`
-<a name="w2aac15c13c31b9"></a>
+<a name="w2aac15c13c31c11"></a>
 
 **Error:** `OperationNotPermittedException` is returned after a `CreateResourceShare` call.
 
@@ -840,7 +890,7 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 **Resolution:** Retry the operation, but specify an account as the value for `principals` instead of an organization or OU.
 
 ### Encryption key type not displayed
-<a name="w2aac15c13c31c11"></a>
+<a name="w2aac15c13c31c13"></a>
 
 **Issue:** The encryption key type is not visible when viewing a logically air-gapped vault or its recovery points.
 
@@ -856,7 +906,7 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 + For shared vaults, verify that the vault is properly shared through AWS Resource Access Manager
 
 ### "FAILED" VaultState with AccessDeniedException in CloudTrail logs
-<a name="w2aac15c13c31c13"></a>
+<a name="w2aac15c13c31c15"></a>
 
 **Error in CloudTrail:** `"User: <assumed role> is not authorized to perform: kms:CreateGrant on this resource because the resource does not exist in this Region, no resource-based policies allow access, or a resource-based policy explicitly denies access"`
 
@@ -867,7 +917,7 @@ This can similarly happen for copy jobs for other resources like Amazon FSx.
 + Grant the permissions specified in the [Key policy for CMK encrypted logically air-gapped vault creation](#key-policy-lag-vault-creation) section, then retry the vault creation workflow.
 
 ### Restore access backup vault in "FAILED" state cannot be removed
-<a name="w2aac15c13c31c15"></a>
+<a name="w2aac15c13c31c17"></a>
 
 **Error: **A restore access backup vault is stuck in FAILED state. `RevokeRestoreAccessBackupVault` returns an error requiring the vault to be in AVAILABLE state, and `CreateRestoreAccessBackupVault` returns `LimitExceededException`.
 

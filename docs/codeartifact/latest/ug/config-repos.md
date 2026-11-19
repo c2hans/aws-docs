@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/config-repos.html
 ---
 
 # View or modify a repository configuration
-<a name="config-repos"></a>
 
  You can view and update details about your repository using the CodeArtifact console or the AWS Command Line Interface (AWS CLI).
 

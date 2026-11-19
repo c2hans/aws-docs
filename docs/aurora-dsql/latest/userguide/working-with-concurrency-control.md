@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Concurrency control in Aurora DSQL
-<a name="working-with-concurrency-control"></a>
 
 Concurrency allows multiple sessions to access and modify data simultaneously without compromising data integrity and consistency. Aurora DSQL provides [ PostgreSQL compatibility](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-with-postgresql-compatibility.html) while implementing a modern, lock-free concurrency control mechanism. It maintains full ACID compliance through snapshot isolation, ensuring data consistency and reliability.
 

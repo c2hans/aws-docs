@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-nacl-cong.h
 ---
 
 # Create a network ACL for VLAN subnet traffic
-<a name="evs-env-nacl-cong"></a>
 
 A network access control list (ACL) allows or denies specific inbound or outbound traffic at the subnet level. You use network ACLs to control traffic to and from your Amazon Elastic VMware Service VLAN subnets, because security groups don’t apply to them. You can use the default network ACL of your VPC, or create a custom network ACL with the Amazon VPC console or the AWS CLI.
 

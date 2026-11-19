@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StartInstance
-<a name="API_StartInstance"></a>
 
 Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the `reboot instance` operation.
 

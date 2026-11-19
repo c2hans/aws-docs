@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Put
 ---
 
 # Use `PutRolePermissionsBoundary` with a CLI
-<a name="iam_example_iam_PutRolePermissionsBoundary_section"></a>
 
 The following code examples show how to use `PutRolePermissionsBoundary`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Connect
 ---
 
 # ConnectionPropertiesInput
-<a name="API_ConnectionPropertiesInput"></a>
 
 The properties of a connection.
 

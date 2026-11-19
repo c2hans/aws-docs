@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsFileMessage
-<a name="API_RcsFileMessage"></a>
 
 A file message containing a media file (image, video, audio, or PDF) with an optional thumbnail.
 

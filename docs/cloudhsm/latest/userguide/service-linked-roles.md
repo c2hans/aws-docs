@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/service-linked
 ---
 
 # Service-linked roles for AWS CloudHSM
-<a name="service-linked-roles"></a>
 
 The IAM policy that you created previously to [Customer managed policies for AWS CloudHSM](identity-access-management.md#permissions-for-cloudhsm) includes the `iam:CreateServiceLinkedRole` action. AWS CloudHSM defines a [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) named **AWSServiceRoleForCloudHSM**. The role is predefined by AWS CloudHSM and includes permissions that AWS CloudHSM requires to call other AWS services on your behalf. The role makes setting up your service easier because you don’t need to manually add the role policy and trust policy permissions.
 

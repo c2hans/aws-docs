@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ti
 ---
 
 # TimeRange
-<a name="API_TimeRange"></a>
 
 A structure that defines the time range that you want to retrieve results from.
 

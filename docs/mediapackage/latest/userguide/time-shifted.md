@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/time-shift
 ---
 
 # Time-shifted viewing with AWS Elemental MediaPackage
-<a name="time-shifted"></a>
 
 Time-shifted viewing is available with live workflows in AWS Elemental MediaPackage.
 

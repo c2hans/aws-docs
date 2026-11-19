@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Regulatory change management
-<a name="dsops06"></a>
 
  Regulations change at different times across jurisdictions, and a change in one jurisdiction can diverge from requirements in another. Organizations that catch regulatory changes only after enforcement dates end up with compliance gaps and rushed, higher-risk implementations. Good regulatory change management catches changes early, assesses their impact across jurisdictions and workloads, and updates controls before enforcement dates.
 

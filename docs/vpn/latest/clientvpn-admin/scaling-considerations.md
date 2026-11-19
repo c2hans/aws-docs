@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/scaling-consi
 ---
 
 # Client VPN scaling considerations
-<a name="scaling-considerations"></a>
 
 When you create a Client VPN endpoint, consider the maximum number of concurrent VPN connections that you plan to support. You should take into account the number of clients that you currently support, and whether your Client VPN endpoint can scale to meet additional demand if needed.
 

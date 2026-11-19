@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelPackages
-<a name="API_ListModelPackages"></a>
 
 Lists the model packages that have been created.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Creat
 ---
 
 # CreateDBClusterSnapshot
-<a name="API_CreateDBClusterSnapshot"></a>
 
 Creates a snapshot of a cluster.
 

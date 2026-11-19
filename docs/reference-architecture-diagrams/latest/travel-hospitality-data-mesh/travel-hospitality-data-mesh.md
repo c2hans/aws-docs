@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Implementing Travel and Hospitality Data Mesh
-<a name="travel-hospitality-data-mesh"></a>
 
 Publication date: **August 3, 2021 ([Diagram history](#travel-hospitality-data-mesh-history))**
 

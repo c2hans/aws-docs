@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Kinesis Data Streams
-<a name="amazonkinesisdatastreams"></a>
 
 Amazon Kinesis Data Streams provides the following APIs for data retrieval.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/search-face-with-i
 ---
 
 # Searching for a face with an image
-<a name="search-face-with-image-procedure"></a>
 
 You can use the [SearchFacesByImage](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFacesByImage.html) operation to search for faces in a collection that match the largest face in a supplied image.
 

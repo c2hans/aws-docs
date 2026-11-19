@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/unionWith.htm
 ---
 
 # $unionWith
-<a name="unionWith"></a>
 
 New from version 8.0.3.
 

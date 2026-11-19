@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Architecture
-<a name="architecture"></a>
 
  **AWS GovCloud architecture diagram showing account types, services, and network connections.**
 

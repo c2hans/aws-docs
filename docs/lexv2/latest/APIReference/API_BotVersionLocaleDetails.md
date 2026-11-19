@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotVersion
 ---
 
 # BotVersionLocaleDetails
-<a name="API_BotVersionLocaleDetails"></a>
 
 The version of a bot used for a bot locale.
 

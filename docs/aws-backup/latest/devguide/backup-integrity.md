@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-integr
 ---
 
 # Integrity of Data in AWS Backup
-<a name="backup-integrity"></a>
 
 ## AWS Backup data integrity goal
 <a name="backup-integrity-goal"></a>

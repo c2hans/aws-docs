@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomPromptInterface
-<a name="API_CustomPromptInterface"></a>
 
 The custom prompt interface configuration that defines how an agent's prompt is configured.
 

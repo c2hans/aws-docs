@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeAccessLevel
-<a name="API_ChangeTypeAccessLevel"></a>
 
 The access level of the change type.
 

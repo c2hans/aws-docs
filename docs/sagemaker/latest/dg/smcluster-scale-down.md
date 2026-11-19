@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-scale-down
 ---
 
 # Scaling down a SageMaker HyperPod cluster
-<a name="smcluster-scale-down"></a>
 
 You can scale down the number of instances running on your Amazon SageMaker HyperPod cluster. You might want to scale down a cluster for various reasons, such as reduced resource utilization or cost optimization.
 

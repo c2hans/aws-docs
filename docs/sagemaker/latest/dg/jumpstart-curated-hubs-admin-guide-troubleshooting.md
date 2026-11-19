@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hu
 ---
 
 # Troubleshooting
-<a name="jumpstart-curated-hubs-admin-guide-troubleshooting"></a>
 
 The following sections give information about IAM permissions issues that might arise when creating a private model hub, as well as informationa bout how to resolve those issues.
 

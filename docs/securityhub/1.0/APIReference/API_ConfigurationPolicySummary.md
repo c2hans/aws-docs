@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Configu
 ---
 
 # ConfigurationPolicySummary
-<a name="API_ConfigurationPolicySummary"></a>
 
  An object that contains the details of an AWS Security Hub CSPM configuration policy that’s returned in a `ListConfigurationPolicies` request.
 

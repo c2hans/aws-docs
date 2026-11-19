@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetIterableF
 ---
 
 # BatchGetIterableForms
-<a name="API_BatchGetIterableForms"></a>
 
 Retrieves multiple items from an iterable form on an asset in AWS Glue Data Catalog in a single request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayListenerTls
-<a name="API_VirtualGatewayListenerTls"></a>
 
 An object that represents the Transport Layer Security (TLS) properties for a listener.
 

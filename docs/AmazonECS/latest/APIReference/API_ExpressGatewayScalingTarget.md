@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayScalingTarget
-<a name="API_ExpressGatewayScalingTarget"></a>
 
 Defines the auto-scaling configuration for an Express service. This determines how the service automatically adjusts the number of running tasks based on demand metrics such as CPU utilization, memory utilization, or request count per target.
 

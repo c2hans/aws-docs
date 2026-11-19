@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCPERF03-BP01 Engineer optimal traffic flow for the edge solution
-<a name="drhcperf03-bp01"></a>
 
  Design network routing for data residency requirements.
 

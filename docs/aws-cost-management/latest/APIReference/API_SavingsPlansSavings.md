@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansSavings
-<a name="API_SavingsPlansSavings"></a>
 
 The amount of savings that you're accumulating, against the public On-Demand rate of the usage accrued in an account.
 

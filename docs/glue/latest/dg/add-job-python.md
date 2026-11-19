@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/add-job-python.html
 ---
 
 # Configuring job properties for Python shell jobs in AWS Glue
-<a name="add-job-python"></a>
 
  You can use a Python shell job to run Python scripts as a shell in AWS Glue. With a Python shell job, you can run scripts that are compatible with Python 3.6 or Python 3.9.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessPointPolicyStatus
-<a name="API_control_GetAccessPointPolicyStatus"></a>
 
 **Note**
 This operation is not supported by directory buckets.

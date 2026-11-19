@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/res-disc-work-with-delet
 ---
 
 # Delete a resource discovery
-<a name="res-disc-work-with-delete"></a>
 
 This section describes how to delete a resource discovery.
 

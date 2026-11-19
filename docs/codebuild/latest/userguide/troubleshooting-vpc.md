@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/troubleshooti
 ---
 
 # Troubleshoot your VPC setup
-<a name="troubleshooting-vpc"></a>
 
 Use the information that appears in the error message to help you identify, diagnose, and address issues.
 

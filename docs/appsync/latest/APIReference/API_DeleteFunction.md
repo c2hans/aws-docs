@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteFu
 ---
 
 # DeleteFunction
-<a name="API_DeleteFunction"></a>
 
 Deletes a `Function`.
 

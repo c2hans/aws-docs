@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOrchestratorEksConfig
-<a name="API_ClusterOrchestratorEksConfig"></a>
 
 The configuration settings for the Amazon EKS cluster used as the orchestrator for the SageMaker HyperPod cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ServiceSpeci
 ---
 
 # ServiceSpecificCredential
-<a name="API_ServiceSpecificCredential"></a>
 
 Contains the details of a service-specific credential.
 

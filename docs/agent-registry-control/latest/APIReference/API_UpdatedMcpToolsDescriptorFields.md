@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedMcpToolsDescriptorFields
-<a name="API_UpdatedMcpToolsDescriptorFields"></a>
 
 The set of MCP tools descriptor fields that can be individually updated.
 

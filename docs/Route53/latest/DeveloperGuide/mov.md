@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/mov.html
 ---
 
 # .mov
-<a name="mov"></a>
 
 Used for moving pictures and other things that move.
 

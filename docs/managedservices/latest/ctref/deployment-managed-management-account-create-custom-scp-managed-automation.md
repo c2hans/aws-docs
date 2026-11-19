@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Management Account \| Create Custom SCP (Managed Automation)
-<a name="deployment-managed-management-account-create-custom-scp-managed-automation"></a>
 
 Create a custom service control policy (SCP) to manage permissions across AWS organization.
 

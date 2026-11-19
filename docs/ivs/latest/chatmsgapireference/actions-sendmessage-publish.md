@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-s
 ---
 
 # SendMessage (Publish)
-<a name="actions-sendmessage-publish"></a>
 
 Sends a message to participants of the room.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Sample code for canary scripts
-<a name="CloudWatch_Synthetics_Canaries_Samples"></a>
 
 This section contains code samples that illustrate some possible functions for CloudWatch Synthetics canary scripts.
 

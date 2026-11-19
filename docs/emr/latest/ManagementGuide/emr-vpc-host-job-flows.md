@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-vpc-host-
 ---
 
 # Set up a VPC to host Amazon EMR clusters
-<a name="emr-vpc-host-job-flows"></a>
 
 Before you can launch clusters in a VPC, you must create a VPC and a subnet. For public subnets, you must create an internet gateway and attach it to the subnet. The following instructions describe how to create a VPC capable of hosting Amazon EMR clusters.
 

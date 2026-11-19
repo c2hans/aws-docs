@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Priv
 ---
 
 # PrivateIpAddressSpecification
-<a name="API_PrivateIpAddressSpecification"></a>
 
 Defines private IP address configuration for network interface.
 

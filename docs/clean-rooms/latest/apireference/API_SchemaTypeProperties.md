@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # SchemaTypeProperties
-<a name="API_SchemaTypeProperties"></a>
 
 Information about the schema type properties.
 

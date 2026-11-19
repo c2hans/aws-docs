@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
  The following diagram describes the overall data lake architecture; how data is ingested, curated, cataloged, and queried.
 

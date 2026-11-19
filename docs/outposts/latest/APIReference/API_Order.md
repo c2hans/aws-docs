@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Order.h
 ---
 
 # Order
-<a name="API_Order"></a>
 
 Information about an order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Tailing OS files using Fleet Manager
-<a name="fleet-manager-tailing-os-files"></a>
 
 You can use Fleet Manager to tail a file on a managed node.
 

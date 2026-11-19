@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numbe
 ---
 
 # NumberFormatConfiguration
-<a name="API_NumberFormatConfiguration"></a>
 
 Formatting configuration for number fields.
 

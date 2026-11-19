@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ListAnalyzedResources
-<a name="API_ListAnalyzedResources"></a>
 
 Retrieves a list of resources of the specified type that have been analyzed by the specified analyzer.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST 10  How do you evaluate new services?
-<a name="cost-10"></a>
 
 As AWS releases new services and features, it's a best practice to review your existing architectural decisions to ensure they continue to be the most cost effective.
 

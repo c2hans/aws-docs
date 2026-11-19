@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_In
 ---
 
 # InviteOrganizationToTransferResponsibility
-<a name="API_InviteOrganizationToTransferResponsibility"></a>
 
 Sends an invitation to another organization's management account to designate your account with the specified responsibilities for their organization. The invitation is implemented as a [Handshake](API_Handshake.md) whose details are in the response.
 

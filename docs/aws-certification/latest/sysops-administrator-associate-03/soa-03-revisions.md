@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # Revisions
-<a name="soa-03-revisions"></a>
 
 AWS exam guides are periodically reviewed and revised to ensure that each certification exam tests skills and AWS services and features that are current and relevant for the job role(s) that the certification is designed to target. Exam guide revisions will be published at least 1 month before changes are reflected on your exam.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template GeneralFlagsV4
-<a name="aws-properties-pcaconnectorad-template-generalflagsv4"></a>
 
 General flags for v4 template schema that defines if the template is for a machine or a user and if the template can be issued using autoenrollment.
 

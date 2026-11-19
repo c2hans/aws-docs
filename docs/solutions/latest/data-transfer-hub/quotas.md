@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/quota
 ---
 
 # Quotas
-<a name="quotas"></a>
 
 ## Quotas for AWS services in this Guidance
 <a name="quotas-for-aws-services-in-this-solution"></a>

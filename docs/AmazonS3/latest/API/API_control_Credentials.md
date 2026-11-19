@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Credenti
 ---
 
 # Credentials
-<a name="API_control_Credentials"></a>
 
 The AWS Security Token Service temporary credential that S3 Access Grants vends to grantees and client applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/games.html
 ---
 
 # .games
-<a name="games"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

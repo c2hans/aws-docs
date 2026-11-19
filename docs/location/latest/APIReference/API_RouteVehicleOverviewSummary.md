@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleOverviewSummary
-<a name="API_RouteVehicleOverviewSummary"></a>
 
 Summary including duration and distance for the entire leg.
 

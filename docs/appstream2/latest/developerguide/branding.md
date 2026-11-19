@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/brandin
 ---
 
 # Add Your Custom Branding to Amazon WorkSpaces Applications
-<a name="branding"></a>
 
 To create a familiar experience for your users when they stream applications, you can customize the appearance of WorkSpaces Applications with your own branding images, text, and website links, and you can choose from one of several color palettes. When you customize WorkSpaces Applications, your branding is displayed to users during application streaming sessions rather than the default WorkSpaces Applications branding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-serial-conso
 ---
 
 # Prerequisites for the EC2 Serial Console
-<a name="ec2-serial-console-prerequisites"></a>
 
 **Topics**
 + [AWS Regions](#sc-prereqs-regions)

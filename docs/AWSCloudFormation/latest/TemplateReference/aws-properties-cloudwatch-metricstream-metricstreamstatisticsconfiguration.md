@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::MetricStream MetricStreamStatisticsConfiguration
-<a name="aws-properties-cloudwatch-metricstream-metricstreamstatisticsconfiguration"></a>
 
 This structure specifies a list of additional statistics to stream, and the metrics to stream those additional statistics for.
 

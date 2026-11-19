@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/add-alias-new-fi
 ---
 
 # Associating DNS aliases with file systems
-<a name="add-alias-new-filesystem"></a>
 
 You can associate DNS aliases when creating a new FSx for Windows File Server file system from scratch, or when restoring a backup to a new file system, using the AWS Management Console, AWS CLI, and API, described the following procedures.
 

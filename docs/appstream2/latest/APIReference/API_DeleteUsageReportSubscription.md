@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Delet
 ---
 
 # DeleteUsageReportSubscription
-<a name="API_DeleteUsageReportSubscription"></a>
 
 Disables usage report generation.
 

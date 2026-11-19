@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Standard broker configurations
-<a name="msk-configuration-standard"></a>
 
 This section describes configuration properties for Standard brokers.
 

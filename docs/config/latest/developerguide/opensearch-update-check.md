@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/opensearch-
 ---
 
 # opensearch-update-check
-<a name="opensearch-update-check"></a>
 
 Checks if Amazon OpenSearch Service version updates are available but not installed. The rule is NON\_COMPLIANT for an OpenSearch domain if the latest software updates are not installed.
 

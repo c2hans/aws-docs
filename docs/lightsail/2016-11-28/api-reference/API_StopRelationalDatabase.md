@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StopRelationalDatabase
-<a name="API_StopRelationalDatabase"></a>
 
 Stops a specific database that is currently running in Amazon Lightsail.
 

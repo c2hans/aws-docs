@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/generate-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Preparing an assessment report in AWS Audit Manager
-<a name="generate-assessment-report"></a>
 
 After you've collected and reviewed the evidence for your assessment, you can generate an assessment report. An assessment report summarizes your assessment and provides links to an organized set of folders that contain the related evidence.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ImmediateFab
 ---
 
 # ImmediateFabricSwitchingConfiguration
-<a name="API_ImmediateFabricSwitchingConfiguration"></a>
 
 The switching configuration where the router output switches to the new router input immediately. This type does not require any additional settings.
 

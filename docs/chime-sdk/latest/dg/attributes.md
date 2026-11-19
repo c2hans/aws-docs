@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/attributes.html
 ---
 
 # Using call detail records in the Amazon Chime SDK PTSN audio service
-<a name="attributes"></a>
 
 Amazon Chime SDK administrators can configure Amazon Chime SDK Voice Connectors to store *call detail records* (CDRs). For more information about configuring Amazon Chime SDK Voice Connectors to store CDRs, see [Managing global settings in Amazon Chime SDK](https://docs.aws.amazon.com/chime-sdk/latest/ag/manage-global.html) in the *Amazon Chime SDK Administration Guide*.
 

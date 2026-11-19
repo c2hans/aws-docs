@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/downloading-documents
 ---
 
 # Downloading reports in AWS Artifact
-<a name="downloading-documents"></a>
 
 You can download reports from the AWS Artifact console. When you download a report from AWS Artifact, the report is generated specifically for you, and every report has a unique watermark. For this reason, you should share the reports only with those you trust. Don't email the reports as attachments, and don't share them online. To share a report, use a secure sharing service. Some reports require you to accept the **Terms and conditions** before you can download them.
 

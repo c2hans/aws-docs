@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Cluster Apache Kafka Version
-<a name="clusters-clusterarn-version"></a>
 
 The Apache Kafka version that is on the cluster.
 

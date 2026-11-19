@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2config-proxy.
 ---
 
 # Configure .NET proxy settings for the EC2Config service
-<a name="ec2config-proxy"></a>
 
 You can configure the EC2Config service to communicate through a proxy using one of the following methods: the AWS SDK for .NET, the `system.net` element, or Microsoft Group Policy and Internet Explorer. Using the AWS SDK for .NET is the preferred method because you can specify sign-in credentials.
 

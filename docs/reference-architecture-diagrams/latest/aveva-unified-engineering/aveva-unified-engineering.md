@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AVEVA Unified Engineering Deployment on AWS
-<a name="aveva-unified-engineering"></a>
 
 Publication date: **April 5, 2022 ([Diagram history](#aveva-diagram-history))**
 

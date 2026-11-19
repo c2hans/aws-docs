@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-app-create-ap
 ---
 
 # Create an app using the AWS CLI
-<a name="mlflow-app-create-app-cli"></a>
 
 You can create an app using the AWS CLI for more granular security customization.
 

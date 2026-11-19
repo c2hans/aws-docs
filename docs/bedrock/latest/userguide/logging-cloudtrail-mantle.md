@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/logging-cloudtr
 ---
 
 # Monitor `bedrock-mantle` API calls using CloudTrail
-<a name="logging-cloudtrail-mantle"></a>
 
 The `bedrock-mantle.{{region}}.api.aws` endpoint integrates with AWS CloudTrail. CloudTrail records calls to the `bedrock-mantle` API operations as events, including calls from the AWS Management Console, the AWS CLI, the OpenAI SDK, the Anthropic SDK, and direct HTTPS calls. Events have an `eventSource` of `bedrock-mantle.amazonaws.com`.
 

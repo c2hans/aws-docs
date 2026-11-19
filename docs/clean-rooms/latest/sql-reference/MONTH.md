@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/MONTH.h
 ---
 
 # MONTH function
-<a name="MONTH"></a>
 
 The MONTH function is a time extraction function that takes a time or timestamp as input and returns the month component (a value between 0 and 12).
 

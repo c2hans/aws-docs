@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-test.h
 ---
 
 # Checking DNS responses from Route 53
-<a name="dns-test"></a>
 
 If you created an Amazon Route 53 hosted zone for your domain, you can use the DNS checking tool in the console to see how Route 53 responds to DNS queries when you set up your domain to use Route 53 as your DNS service. For geolocation, geoproximity, and latency records, you can also test queries from a given DNS resolver or client IP address to see what response Route 53 would return.
 

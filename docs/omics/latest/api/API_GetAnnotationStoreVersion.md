@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetAnnotationStoreV
 ---
 
 # GetAnnotationStoreVersion
-<a name="API_GetAnnotationStoreVersion"></a>
 
  Retrieves the metadata for an annotation store version.
 

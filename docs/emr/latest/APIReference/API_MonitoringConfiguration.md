@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_MonitoringCo
 ---
 
 # MonitoringConfiguration
-<a name="API_MonitoringConfiguration"></a>
 
 Contains CloudWatch log configuration and S3 logging configuration metadata and settings.
 

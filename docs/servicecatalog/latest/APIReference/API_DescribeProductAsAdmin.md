@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeProductAsAdmin
-<a name="API_DescribeProductAsAdmin"></a>
 
 Gets information about the specified product. This operation is run with administrator access.
 

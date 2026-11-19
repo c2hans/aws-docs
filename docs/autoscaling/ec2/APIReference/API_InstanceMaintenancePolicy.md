@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceMaintenancePolicy
-<a name="API_InstanceMaintenancePolicy"></a>
 
 Describes an instance maintenance policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogAdminReadOnlyAccess
-<a name="AWSServiceCatalogAdminReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to Service Catalog admin capabilities
 

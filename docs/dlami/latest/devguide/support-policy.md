@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/support-policy.htm
 ---
 
 # DLAMI Support Policy
-<a name="support-policy"></a>
 
 Here you can find details of the support policy for AWS Deep Learning AMIs (DLAMI).
 

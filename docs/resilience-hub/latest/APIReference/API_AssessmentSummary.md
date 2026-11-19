@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AssessmentSummary
-<a name="API_AssessmentSummary"></a>
 
 Indicates the AI-generated summary for the AWS Resilience Hub assessment, providing a concise overview that highlights the top risks and recommendations.
 

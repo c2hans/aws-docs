@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Amazon EventBridge
-<a name="eventbridge"></a>
 
 [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) is a serverless event bus service and often acts as the foundation for an event-driven architecture (EDA). You can also use it to route and deliver messages asynchronously between microservices. Using EventBridge, producers publish events to a bus. You configure rules that match events based on their content and choose one or more targets that events matching that rule will be delivered to. EventBridge supports a [wide range of rule targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html). Using an event bus enables you to decouple producers from consumers and consolidate your routing and delivery logic.
 

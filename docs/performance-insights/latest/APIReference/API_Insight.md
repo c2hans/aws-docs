@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 Retrieves the list of performance issues which are identified.
 
@@ -73,7 +72,7 @@ Required: No
 
  ** SupportingInsights **   <a name="performanceinsights-Type-Insight-SupportingInsights"></a>
 List of supporting insights that provide additional factors for the insight.
-Type: Array of [Insight](#API_Insight) objects
+Type: Array of [Insight](API_Insight.md) objects
 Required: No
 
 ## See Also

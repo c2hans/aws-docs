@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Minimal
 ---
 
 # MinimalWorkflow
-<a name="API_MinimalWorkflow"></a>
 
 A simplified representation of a workflow in a Region switch plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Destination
 ---
 
 # DestinationFlowConfig
-<a name="API_DestinationFlowConfig"></a>
 
  Contains information about the configuration of destination connectors present in the flow.
 

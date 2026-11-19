@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # POST Start: Start an MPTS
-<a name="working-with-mpts-start"></a>
 
 Start an MPTS output. If the specified MPTS output is currently idle, then it will start. If the MPTS output is currently running, it will simply continue running.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsRequestLocationAction
-<a name="API_RcsRequestLocationAction"></a>
 
 A suggested action that requests the recipient's current location.
 

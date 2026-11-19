@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipeliner-support.html
 ---
 
 # AWS Glue support for Pipeliner
-<a name="pipeliner-support"></a>
 
 AWS Glue supports Pipeliner as follows:
 

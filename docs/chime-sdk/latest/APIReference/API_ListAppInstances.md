@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_ListAp
 ---
 
 # ListAppInstances
-<a name="API_ListAppInstances"></a>
 
 Lists all Amazon Chime `AppInstance`s created under a single AWS account.
 

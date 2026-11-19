@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateSvmAct
 ---
 
 # UpdateSvmActiveDirectoryConfiguration
-<a name="API_UpdateSvmActiveDirectoryConfiguration"></a>
 
 Specifies updates to an FSx for ONTAP storage virtual machine's (SVM) Microsoft Active Directory (AD) configuration. Note that account credentials are not returned in the response payload.
 

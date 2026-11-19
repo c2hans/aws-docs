@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_firs
 ---
 
 # FIRST\_VALUE window function
-<a name="WF_first_value"></a>
 
  Given an ordered set of rows, FIRST\_VALUE returns the value of the specified expression with respect to the first row in the window frame.
 

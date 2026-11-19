@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListExecu
 ---
 
 # ListExecutors
-<a name="API_ListExecutors"></a>
 
 Lists, in descending order, the executors that joined a session. Newer executors are listed first; older executors are listed later. The result can be optionally filtered by state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuthoriz
 ---
 
 # ListAuthorizers
-<a name="API_ListAuthorizers"></a>
 
 Lists the authorizers registered in your account.
 

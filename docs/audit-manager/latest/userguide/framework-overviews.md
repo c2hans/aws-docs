@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/framework
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Supported frameworks in AWS Audit Manager
-<a name="framework-overviews"></a>
 
 When you explore the framework library in AWS Audit Manager, you'll find a comprehensive list of pre-built standard frameworks that can help you to streamline your compliance efforts. These prebuilt frameworks are based on AWS best practices for various compliance standards and regulations. You can use these frameworks to assist you with your audit preparation, whether you need to assess your environment against HIPAA, PCI DSS, SOC 2, or more.
 

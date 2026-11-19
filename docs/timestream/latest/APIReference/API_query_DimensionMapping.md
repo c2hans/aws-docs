@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # DimensionMapping
-<a name="API_query_DimensionMapping"></a>
 
 This type is used to map column(s) from the query result to a dimension in the destination table.
 

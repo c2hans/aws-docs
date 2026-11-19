@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-tags.html
 ---
 
 # Tagging APIs in AWS Glue
-<a name="aws-glue-api-tags"></a>
 
 ## Data types
 <a name="aws-glue-api-tags-objects"></a>

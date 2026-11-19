@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/customize
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Making an editable copy of a control in AWS Audit Manager
-<a name="customize-control-from-existing"></a>
 
 Instead of creating a custom control from scratch, you can use an existing standard control or custom control as a starting point and make an editable copy that meets your needs. When you do this, the existing standard control remains in the control library, and a new control is created with your custom settings.
 

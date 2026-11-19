@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_As
 ---
 
 # AssetDestinationEntry
-<a name="API_AssetDestinationEntry"></a>
 
 The destination for the asset.
 

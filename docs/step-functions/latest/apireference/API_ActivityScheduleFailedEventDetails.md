@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityScheduleFailedEventDetails
-<a name="API_ActivityScheduleFailedEventDetails"></a>
 
 Contains details about an activity schedule failure that occurred during an execution.
 

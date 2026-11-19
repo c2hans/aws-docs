@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StopRouterIn
 ---
 
 # StopRouterInput
-<a name="API_StopRouterInput"></a>
 
 Stops a router input in AWS Elemental MediaConnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-notificati
 ---
 
 # Contents of notifications for Amazon SES email receiving
-<a name="receiving-email-notifications-contents"></a>
 
 All notifications for email receiving are published to Amazon Simple Notification Service (Amazon SNS) topics in JavaScript Object Notation (JSON) format.
 

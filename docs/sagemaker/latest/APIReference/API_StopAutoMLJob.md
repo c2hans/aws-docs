@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopAu
 ---
 
 # StopAutoMLJob
-<a name="API_StopAutoMLJob"></a>
 
 A method for forcing a running job to shut down.
 

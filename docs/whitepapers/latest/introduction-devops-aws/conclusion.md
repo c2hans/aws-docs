@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 To make the journey to the cloud smooth, efficient, and effective, technology companies should embrace DevOps principles and practices. These principles are embedded in AWS, and form the cornerstone of numerous AWS services, especially those in the deployment and monitoring offerings.
 

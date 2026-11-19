@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSupportAccess
-<a name="AWSSupportAccess"></a>
 
 **Description**: Allows users to access the AWS Support Center.
 

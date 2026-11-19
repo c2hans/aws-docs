@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Migration guides
-<a name="container-insights-eks-migration-hub"></a>
 
 This section provides step-by-step migration guides for moving from your current Container Insights setup to OTel Container Insights — the recommended, actively developed approach.
 

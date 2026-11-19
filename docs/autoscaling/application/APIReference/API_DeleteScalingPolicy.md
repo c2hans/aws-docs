@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # DeleteScalingPolicy
-<a name="API_DeleteScalingPolicy"></a>
 
 Deletes the specified scaling policy for an Application Auto Scaling scalable target.
 

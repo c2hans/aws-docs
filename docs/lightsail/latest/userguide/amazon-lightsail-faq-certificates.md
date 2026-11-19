@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Certificates
-<a name="amazon-lightsail-faq-certificates"></a>
 
 ## How can I use Lightsail-provisioned certificates?
 <a name="how-can-i-use-lightsail-provisioned-certificates"></a>

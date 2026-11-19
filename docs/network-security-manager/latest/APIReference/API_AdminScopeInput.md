@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScopeInput
-<a name="API_AdminScopeInput"></a>
 
 The administrative scope configuration provided on input, using account and organizational unit IDs.
 

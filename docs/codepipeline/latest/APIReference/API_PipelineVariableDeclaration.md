@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineVariableDeclaration
-<a name="API_PipelineVariableDeclaration"></a>
 
 A variable declared at the pipeline level.
 

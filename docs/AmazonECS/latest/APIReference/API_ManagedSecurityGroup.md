@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedSecurityGroup
-<a name="API_ManagedSecurityGroup"></a>
 
 A security group associated with the Express service.
 

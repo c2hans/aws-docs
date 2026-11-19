@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/GettingStarted
 ---
 
 # Getting started with Amazon S3 using the AWS CLI
-<a name="GettingStartedS3CLI"></a>
 
 You can get started with Amazon S3 by using the AWS Command Line Interface (AWS CLI) to work with general purpose buckets and objects. A bucket is a container for objects. An object is a file and any metadata that describes that file.
 

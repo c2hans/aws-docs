@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateUser
 ---
 
 # UpdateUserDetails
-<a name="API_UpdateUserDetails"></a>
 
 Contains the modifiable details for updating an existing user, including name, password, security group membership, and invitation settings.
 

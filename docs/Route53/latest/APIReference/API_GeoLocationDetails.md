@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoLocat
 ---
 
 # GeoLocationDetails
-<a name="API_GeoLocationDetails"></a>
 
 A complex type that contains the codes and full continent, country, and subdivision names for the specified `geolocation` code.
 

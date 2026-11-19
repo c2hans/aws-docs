@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides a high-level overview of how MDAA enables flexible deployment of data platforms on AWS. MDAA supports multiple architectural patterns that can evolve as your organization’s needs change.
 

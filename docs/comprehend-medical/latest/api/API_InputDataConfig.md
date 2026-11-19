@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_InputD
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
 The input properties for an entities detection job. This includes the name of the S3 bucket and the path to the files to be analyzed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Participatin
 ---
 
 # ParticipatingServer
-<a name="API_ParticipatingServer"></a>
 
 Server participating in Job.
 

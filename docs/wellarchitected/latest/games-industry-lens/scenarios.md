@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  In this section, we cover several scenarios that are common in a game architecture. Each scenario includes the common characteristics that drive the design and an example reference architecture diagram.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ServiceStatus
-<a name="API_ServiceStatus"></a>
 
 Overall service status information for License Manager.
 

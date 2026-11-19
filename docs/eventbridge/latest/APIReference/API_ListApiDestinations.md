@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_List
 ---
 
 # ListApiDestinations
-<a name="API_ListApiDestinations"></a>
 
 Retrieves a list of API destination in the account in the current Region.
 

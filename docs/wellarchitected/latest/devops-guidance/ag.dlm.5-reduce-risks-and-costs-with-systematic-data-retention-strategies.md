@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.5] Reduce risks and costs with systematic data retention strategies
-<a name="ag.dlm.5-reduce-risks-and-costs-with-systematic-data-retention-strategies"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vercel-connection-options
 ---
 
 # Vercel connection options
-<a name="vercel-connection-options"></a>
 
 The following are connection options for Vercel:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Vercel object to read. For a project-scoped or team-scoped entity, append a forward slash and the parent identifier, as described in [Reading from Vercel entities](vercel-reading-from-entities.md).

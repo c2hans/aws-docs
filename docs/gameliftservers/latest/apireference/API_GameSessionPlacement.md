@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameSessionPlacement
-<a name="API_GameSessionPlacement"></a>
 
 Represents a potential game session placement, including the full details of the original placement request and the current status.
 

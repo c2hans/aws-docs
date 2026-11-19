@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ChallengeJav
 ---
 
 # ChallengeJavascriptSdkInjectionConfig
-<a name="API_ChallengeJavascriptSdkInjectionConfig"></a>
 
 Specifies whether the associated CloudFront distribution inserts the AWS WAF challenge JavaScript SDK into the HTML responses that it returns. The structure is empty: including it turns insertion on, and removing it turns insertion off.
 

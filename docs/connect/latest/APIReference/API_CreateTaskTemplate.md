@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTa
 ---
 
 # CreateTaskTemplate
-<a name="API_CreateTaskTemplate"></a>
 
 Creates a new task template in the specified Connect Customer instance.
 

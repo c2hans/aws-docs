@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/updating-best-practice.h
 ---
 
 # Best practices for safely deploying updates
-<a name="updating-best-practice"></a>
 
  Amazon Linux 2023 (AL2023) has several features designed to aid in safely deploying updates to the Operating System, and being able to know what changed between updates, and if necessary, easily revert to the older version. This section explores lessons learned by AWS from more than a decade of internal and external use of Amazon Linux.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutLife
 ---
 
 # PutLifecycleHook
-<a name="API_PutLifecycleHook"></a>
 
 Creates or updates a lifecycle hook for the specified Auto Scaling group.
 

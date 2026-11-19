@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApiMDL-Ac
 ---
 
 # Activate an issuing authority certificate authority (IACA) certificate
-<a name="JavaApiMDL-ActivateIACA"></a>
 
 This Java sample shows how to use the [BlankRootCACertificate\_PathLen0\_APIPassthrough/V1 definition](template-definitions.md#BlankRootCACertificate_PathLen0_APIPassthrough) template to create and install an [ISO/IEC mDL standard](https://www.iso.org/standard/69084.html)-compliant issuing authority certificate authority (IACA) certificate. You must generate base64-encoded values for `KeyUsage`, `IssuerAlternativeName`, and `CRLDistributionPoint`, and pass them through `CustomExtensions`.
 

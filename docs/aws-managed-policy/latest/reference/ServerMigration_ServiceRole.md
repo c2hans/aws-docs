@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Serv
 ---
 
 # ServerMigration\_ServiceRole
-<a name="ServerMigration_ServiceRole"></a>
 
 **Description**: Permissions to allow the AWS Server Migration Service to migrate VMs to EC2: allows the Server Migration Service to place the migrated resources into the customer's EC2 account.
 

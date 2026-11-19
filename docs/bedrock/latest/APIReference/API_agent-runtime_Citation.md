@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Citation
-<a name="API_agent-runtime_Citation"></a>
 
 An object containing a segment of the generated response that is based on a source in the knowledge base, alongside information about the source.
 

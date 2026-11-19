@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS Panorama
-<a name="awspanorama"></a>
 
 AWS Panorama provides the following APIs for data retrieval.
 

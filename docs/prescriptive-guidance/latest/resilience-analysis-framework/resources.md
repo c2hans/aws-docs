@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Conclusion and resources
-<a name="resources"></a>
 
 This guide presents a framework for performing resilience analysis in a continuous and consistent way. This framework helps you identify how single points of failure, excessive load, excessive latency, misconfiguration and bugs, and shared fate might affect the components of your workload. The identification of these failure modes help you determine an appropriate mitigation strategy as part of building a recovery-oriented architecture.
 

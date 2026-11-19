@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # AWS Industrial IoT Predictive Maintenance ML Model
-<a name="industrial-iot-predictive-maintenance-ml"></a>
 
 Publication date: **July 8, 2020 ([Diagram history](#pdm-diagram-history))**
 

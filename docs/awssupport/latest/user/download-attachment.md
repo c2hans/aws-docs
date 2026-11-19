@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/download-attachme
 ---
 
 # Downloading an attachment
-<a name="download-attachment"></a>
 
 After a case is submitted, you can download attachments from the case correspondence.
 

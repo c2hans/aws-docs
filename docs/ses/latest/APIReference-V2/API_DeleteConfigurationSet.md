@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteCon
 ---
 
 # DeleteConfigurationSet
-<a name="API_DeleteConfigurationSet"></a>
 
 Delete an existing configuration set.
 

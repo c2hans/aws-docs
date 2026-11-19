@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Replicator KafkaClusterOAuthClientCredentials
-<a name="aws-properties-msk-replicator-kafkaclusteroauthclientcredentials"></a>
 
 <a name="aws-properties-msk-replicator-kafkaclusteroauthclientcredentials-description"></a>The `KafkaClusterOAuthClientCredentials` property type specifies Property description not available. for an [AWS::MSK::Replicator](aws-resource-msk-replicator.md).
 

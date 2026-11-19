@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_StartQuer
 ---
 
 # StartQueryExecution
-<a name="API_StartQueryExecution"></a>
 
 Runs the SQL query statements contained in the `Query`. Requires you to have access to the workgroup in which the query ran. Running queries against an external catalog requires [GetDataCatalog](API_GetDataCatalog.md) permission to the catalog. For code samples using the AWS SDK for Java, see [Examples and Code Samples](http://docs.aws.amazon.com/athena/latest/ug/code-samples.html) in the *Amazon Athena User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps-provisi
 ---
 
 # Partner AI App provisioning
-<a name="partner-apps-provision"></a>
 
 After admins have set up the required permissions, they can explore and provision Amazon SageMaker Partner AI Apps for users in the domain.
 

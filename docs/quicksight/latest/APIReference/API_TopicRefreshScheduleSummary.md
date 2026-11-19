@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicRefreshScheduleSummary
-<a name="API_TopicRefreshScheduleSummary"></a>
 
 A summary of the refresh schedule details for a dataset.
 

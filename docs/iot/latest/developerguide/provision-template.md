@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/provision-temp
 ---
 
 # Provisioning templates
-<a name="provision-template"></a>
 
 A provisioning template is a JSON document that uses parameters to describe the resources your device must use to interact with AWS IoT. A provisioning template contains two sections: `Parameters` and `Resources`. There are two types of provisioning templates in AWS IoT. One is used for just-in-time provisioning (JITP) and bulk registration, and the second is used for fleet provisioning.
 
@@ -369,7 +368,7 @@ For more information about how to use this template for just-in-time provisionin
 ## Fleet provisioning
 <a name="fleet-provision-template"></a>
 
-Fleet provisioning templates are used by AWS IoT to set up cloud and device configuration. These templates use the same parameters and resources as the JITP and bulk registration templates. For more information, see [Provisioning templates](#provision-template). Fleet provisioning templates can contain a `Mapping` section and a `DeviceConfiguration` section. You can use intrinsic functions inside a fleet provisioning template to generate a device-specific configuration. Fleet provisioning templates are named resources and are identified by ARNs (for example, `arn:aws:iot:us-west-2:1234568788:provisioningtemplate/{{templateName}}`).
+Fleet provisioning templates are used by AWS IoT to set up cloud and device configuration. These templates use the same parameters and resources as the JITP and bulk registration templates. For more information, see [Provisioning templates](provision-template.md). Fleet provisioning templates can contain a `Mapping` section and a `DeviceConfiguration` section. You can use intrinsic functions inside a fleet provisioning template to generate a device-specific configuration. Fleet provisioning templates are named resources and are identified by ARNs (for example, `arn:aws:iot:us-west-2:1234568788:provisioningtemplate/{{templateName}}`).
 
 ### Mappings
 <a name="mappings"></a>

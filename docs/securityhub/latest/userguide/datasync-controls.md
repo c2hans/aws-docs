@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/datasync-co
 ---
 
 # Security Hub CSPM controls for AWS DataSync
-<a name="datasync-controls"></a>
 
 These Security Hub CSPM controls evaluate the AWS DataSync service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
 

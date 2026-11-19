@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationPurchaseRecommendationDetail
-<a name="API_ReservationPurchaseRecommendationDetail"></a>
 
 Details about your recommended reservation purchase.
 

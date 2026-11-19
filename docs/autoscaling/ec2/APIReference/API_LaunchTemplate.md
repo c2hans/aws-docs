@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_LaunchT
 ---
 
 # LaunchTemplate
-<a name="API_LaunchTemplate"></a>
 
 Use this structure to specify the launch templates and instance types (overrides) for a mixed instances policy.
 

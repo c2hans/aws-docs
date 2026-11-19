@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotUserConfiguration
-<a name="API_SnapshotUserConfiguration"></a>
 
 A structure that contains information about the users that the dashboard snapshot is generated for.
 

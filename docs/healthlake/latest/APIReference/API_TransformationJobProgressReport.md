@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Trans
 ---
 
 # TransformationJobProgressReport
-<a name="API_TransformationJobProgressReport"></a>
 
 Contains progress metrics for a data transformation job, including counts of files scanned, converted, and failed.
 

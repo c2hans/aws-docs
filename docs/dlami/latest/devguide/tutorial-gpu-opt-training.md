@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-gpu-opt-t
 ---
 
 # Training
-<a name="tutorial-gpu-opt-training"></a>
 
 With mixed-precision training you can deploy larger networks with the same amount of memory, or reduce memory usage compared to your single or double precision network, and you will see compute performance increases. You also get the benefit of smaller and faster data transfers, an important factor in multiple node distributed training. To take advantage of mixed-precision training you need to adjust data casting and loss scaling. The following are guides describing how to do this for the frameworks that support mixed-precision.
 + [NVIDIA Deep Learning SDK](https://docs.nvidia.com/deeplearning/sdk/mixed-precision-training/) - docs on the NVIDIA website describing mixed-precision implementation for MXNet, PyTorch, and TensorFlow.
@@ -19,4 +18,4 @@ You might be interested in these other topics on GPU monitoring and optimization
   + [Monitor GPUs with CloudWatch](tutorial-gpu-monitoring-gpumon.md)
 + [Optimization](tutorial-gpu-opt.md)
   + [Preprocessing](tutorial-gpu-opt-preprocessing.md)
-  + [Training](#tutorial-gpu-opt-training)
+  + [Training](tutorial-gpu-opt-training.md)

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::HealthLake::DataTransformationProfile Tag
-<a name="aws-properties-healthlake-datatransformationprofile-tag"></a>
 
 A label consisting of a user-defined key and value. The form for tags is {"Key", "Value"}
 

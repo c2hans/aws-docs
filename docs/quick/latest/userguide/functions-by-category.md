@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/functions-by-cate
 ---
 
 # Functions by category
-<a name="functions-by-category"></a>
 
 In this section, you can find a list of the functions available in AWS Quick, sorted by category.
 

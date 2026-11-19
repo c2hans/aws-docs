@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/source-server-info.
 ---
 
 # AWS DRS server info
-<a name="source-server-info"></a>
 
 The **Server info** tab shows general server information, hardware, and network information:
 + **General information**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/pqtls-how-to.h
 ---
 
 # Configure hybrid post-quantum TLS
-<a name="pqtls-how-to"></a>
 
 In this procedure, add a Maven dependency for the AWS Common Runtime HTTP Client. Next, configure an HTTP client that prefers post-quantum TLS. Then, create an AWS KMS client that uses the HTTP client.
 

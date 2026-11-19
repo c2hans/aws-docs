@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Installing the SageMaker HyperPod CLI
-<a name="sagemaker-hyperpod-eks-run-jobs-access-nodes"></a>
 
 SageMaker HyperPod provides the [SageMaker HyperPod command line interface](https://github.com/aws/sagemaker-hyperpod-cli) (CLI) package.
 

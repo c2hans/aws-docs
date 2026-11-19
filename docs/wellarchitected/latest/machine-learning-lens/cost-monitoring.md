@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Monitoring
-<a name="cost-monitoring"></a>
 
 **Topics**
 + [MLCOST06-BP01 Monitor usage and cost by ML activity](mlcost06-bp01.md)

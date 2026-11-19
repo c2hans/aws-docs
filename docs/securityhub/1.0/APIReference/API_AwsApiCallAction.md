@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiC
 ---
 
 # AwsApiCallAction
-<a name="API_AwsApiCallAction"></a>
 
 Provided if `ActionType` is `AWS_API_CALL`. It provides details about the API call that was detected.
 

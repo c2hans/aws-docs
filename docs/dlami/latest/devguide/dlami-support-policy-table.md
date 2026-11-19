@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/dlami-support-poli
 ---
 
 # DLAMI Support Policy Table
-<a name="dlami-support-policy-table"></a>
 
 For more details see the [Support Policy](https://docs.aws.amazon.com/dlami/latest/devguide/support-policy.html).
 

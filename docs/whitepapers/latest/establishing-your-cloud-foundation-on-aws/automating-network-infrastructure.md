@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Automating network infrastructure
-<a name="automating-network-infrastructure"></a>
 
 In cloud environments, network engineers not only configure the networks, but they should also accustom themselves to orchestration tools using Infrastructure as Code (IaC) to deploy network infrastructure at scale. This helps in reducing deployment time, minimizes human error when configuring repeatable patterns, and provides ease in lift and shift for your current network infrastructure if it needs to be replicated in a different environment.
 

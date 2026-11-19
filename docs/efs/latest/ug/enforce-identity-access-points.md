@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/enforce-identity-access-po
 ---
 
 # Enforcing a user identity using an access point
-<a name="enforce-identity-access-points"></a>
 
 You can use an access point to enforce user and group information for all file system requests made through the access point. To enable this feature, you need to specify the operating system identity to enforce when you create the access point.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-groups-remove
 ---
 
 # Remove Capacity Reservations from a group
-<a name="cr-groups-remove"></a>
 
 You can remove a Capacity Reservation from a group at any time. Instances that target the group continue running in their current Capacity Reservation and are not affected by the removal. The Capacity Reservation restores the capacity only when you terminate the instances.
 

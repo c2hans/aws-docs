@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # LteLocalId
-<a name="API_WaypointTracking_LteLocalId"></a>
 
 LTE local identification information (local ID).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Adding a new playbook
-<a name="add-new-playbook"></a>
 
 Download the Automated Security Response on AWS solution playbooks and deployment source code from the [GitHub repository](https://github.com/aws-solutions/automated-security-response-on-aws/tree/main).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # ShardFilter
-<a name="API_streams_ShardFilter"></a>
 
 This optional field contains the filter definition for the `DescribeStream` API.
 

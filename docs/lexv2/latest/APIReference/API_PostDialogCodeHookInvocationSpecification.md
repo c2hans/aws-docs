@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_PostDialog
 ---
 
 # PostDialogCodeHookInvocationSpecification
-<a name="API_PostDialogCodeHookInvocationSpecification"></a>
 
 Specifies next steps to run after the dialog code hook finishes.
 

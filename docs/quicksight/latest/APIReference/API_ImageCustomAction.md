@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageCustomAction
-<a name="API_ImageCustomAction"></a>
 
 A custom action defined on an image.
 

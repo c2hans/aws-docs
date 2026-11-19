@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Understanding the workload
-<a name="workload-review"></a>
 
 In order to apply the framework, start by understanding the workload that you want to analyze. A system architecture diagram provides a starting point for documenting the most relevant details of the system. However, trying to analyze an entire workload can be complex, because many systems have numerous components and interactions. Instead, we recommend that you focus on [user stories](https://en.wikipedia.org/wiki/User_story), which are informal, general explanations of software features written from the perspective of the end user. Their purpose is to articulate how a software feature provides value to the customer. You can then model these user stories with architecture diagrams and data flow diagrams to make it easier to assess the technical components that provide the described business functionality. For example, an in-app mobile game purchasing solution might have two user stories, "buying in-app credits" and "obtaining in-app refunds," as shown in the following diagram. (This example architecture highlights how you can decompose a system into user stories; it's not intended to represent a highly resilient application.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dynatrace-configuring-con
 ---
 
 # Configuring Dynatrace connections
-<a name="dynatrace-configuring-connections"></a>
 
 Dynatrace supports custom authentication.
 

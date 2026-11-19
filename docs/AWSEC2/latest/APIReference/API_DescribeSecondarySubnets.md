@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSecondarySubnets
-<a name="API_DescribeSecondarySubnets"></a>
 
 Describes one or more of your secondary subnets.
 

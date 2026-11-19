@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/conditions-att
 ---
 
 # AWS KMS condition keys for attested platforms
-<a name="conditions-attestation"></a>
 
 AWS KMS provides condition keys to support cryptographic attestation for [AWS Nitro Enclaves](https://docs.aws.amazon.com/enclaves/latest/user/) and NitroTPM. AWS Nitro Enclaves is an Amazon EC2 capability that lets you create isolated compute environments called [enclaves](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-concepts.html#term-enclave) to protect and process highly sensitive data. NitroTPM extends similar attestation functionality to EC2 instances.
 

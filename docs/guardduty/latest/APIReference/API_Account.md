@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Accoun
 ---
 
 # Account
-<a name="API_Account"></a>
 
 Contains information about the AWS account within which the activity took place.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references"></a>

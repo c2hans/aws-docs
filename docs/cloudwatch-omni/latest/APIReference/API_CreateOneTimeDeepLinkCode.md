@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateOneTimeDeepLinkCode
-<a name="API_CreateOneTimeDeepLinkCode"></a>
 
 Generates a one-time code for deep-link authentication.
 

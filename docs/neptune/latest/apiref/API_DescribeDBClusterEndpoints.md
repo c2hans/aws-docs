@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBClus
 ---
 
 # DescribeDBClusterEndpoints
-<a name="API_DescribeDBClusterEndpoints"></a>
 
 Returns information about endpoints for an Amazon Neptune DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Anth
 ---
 
 # AnthropicSelfHostedEnvironmentAccess
-<a name="AnthropicSelfHostedEnvironmentAccess"></a>
 
 **Description**: Provides access to operate a self-hosted environment runner for Claude Managed Agents
 

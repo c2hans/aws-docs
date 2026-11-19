@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner
 ---
 
 # Content Domain 3: Applications of Foundation Models
-<a name="ai-practitioner-01-domain3"></a>
 
 Domain 3 covers applications of foundation models and represents 28% of the scored content on the exam.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_Delet
 ---
 
 # Use `DeleteStream` with an AWS SDK or CLI
-<a name="example_kinesis_DeleteStream_section"></a>
 
 The following code examples show how to use `DeleteStream`.
 

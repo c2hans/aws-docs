@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_TagRes
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to a resource.
 

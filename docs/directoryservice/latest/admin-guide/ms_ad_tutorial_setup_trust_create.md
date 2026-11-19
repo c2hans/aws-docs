@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Step 3: Create the trust relationship
-<a name="ms_ad_tutorial_setup_trust_create"></a>
 
 Now that the preparation work is complete, the final steps are to create the trusts. First you create the trust on your self-managed domain, and then finally on your AWS Managed Microsoft AD. If you have any issues during the trust creation process, see [Trust creation status reasons](ms_ad_troubleshooting_trusts.md) for assistance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 ---
 
 # GetLandingZoneOperation
-<a name="API_GetLandingZoneOperation"></a>
 
 Returns the status of the specified landing zone operation. Details for an operation are available for 90 days.
 

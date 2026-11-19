@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-studio-exp
 ---
 
 # Access experiment data from a pipeline
-<a name="pipelines-studio-experiments"></a>
 
 **Note**
 SageMaker Experiments is a feature provided in Studio Classic only.

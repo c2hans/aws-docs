@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create an Amazon CloudWatch event destination in AWS End User Messaging
-<a name="nx-features-configuration-sets-cloudwatch-add"></a>
 
 After you create the IAM role and the CloudWatch group, you can create the event destination.
 

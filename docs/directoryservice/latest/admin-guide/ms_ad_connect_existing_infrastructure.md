@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Connect AWS Managed Microsoft AD to your existing Active Directory infrastructure
-<a name="ms_ad_connect_existing_infrastructure"></a>
 
 This section describes how to configure trust relationships between AWS Managed Microsoft AD and your existing Active Directory infrastructure.
 

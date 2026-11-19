@@ -3,11 +3,12 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/create
 ---
 
 # Create online evaluation
-<a name="create-online-evaluations"></a>
 
 The `CreateOnlineEvaluationConfig` API creates a new online evaluation configuration that continuously monitors your agent’s performance using live traffic. This asynchronous operation tells the service to evaluate agent traces as they are generated during normal operation.
 
 To create an online evaluation, provide a unique configuration name, choose what to monitor, select up to 25 evaluators, and provide an IAM service role ARN for execution. The data source can be CloudWatch Logs, selected by exact log group names or log group name prefixes, or an agent endpoint. The required `enableOnCreate` parameter controls the initial `executionStatus`: `true` starts the configuration in `ENABLED`, and `false` starts it in `DISABLED`.
+
+To continuously find recurring failure patterns, include `Builtin.FailureAnalysis` in `evaluators`. The Insight Evaluator writes session-level failure analysis results. When the default Agent Insight Store is enabled and active, the evaluator also generates Agent Insights that are aggregated at the agent level by `serviceName`. The Agent Insights APIs represent this value as `applicationName`. For the complete workflow, see [Insights in online evaluation](online-evaluations-insights.md).
 
 **Topics**
 + [Execution status control](#execution-status-control)

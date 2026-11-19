@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-create.ht
 ---
 
 # Creating a Lambda Web Function
-<a name="web-functions-create"></a>
 
 To deploy an app with Lambda Web Functions, you create a Web Function with a revision and an endpoint to receive traffic. The console and the `aws lambda-web deploy` command can create the Web Function, its first revision, and its first endpoint. Revisions are immutable snapshots of your code and configuration. An endpoint routes requests to an active revision. For more information about these resources, see [Core concepts](web-functions-how-it-works.md). This topic shows how to create them using the Lambda console and the AWS CLI.
 

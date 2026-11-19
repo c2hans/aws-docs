@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/API
 ---
 
 # Making API Requests
-<a name="APIRequests"></a>
 
 **Topics**
 + [Region Endpoints](Endpoints.md)

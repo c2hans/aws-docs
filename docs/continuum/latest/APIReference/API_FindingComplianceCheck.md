@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingComplianceCheck
-<a name="API_FindingComplianceCheck"></a>
 
 One compliance check behind a posture finding.
 

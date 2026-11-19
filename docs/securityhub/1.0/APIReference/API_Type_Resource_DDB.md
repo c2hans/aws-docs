@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon DynamoDB
-<a name="API_Type_Resource_DDB"></a>
 
 ****Amazon DynamoDB objects****
 + [AwsDynamoDbTableAttributeDefinition](API_AwsDynamoDbTableAttributeDefinition.md)

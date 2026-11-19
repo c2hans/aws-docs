@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-supported
 ---
 
 # Amazon RDS for Db2 parameters
-<a name="db2-supported-parameters"></a>
 
 Amazon RDS for Db2 uses three types of parameters: database manager configuration parameters, registry variables, and database configuration parameters. You can manage the first two types through parameter groups and the last type through the [rdsadmin.update\_db\_param](db2-sp-managing-databases.md#db2-sp-update-db-param) stored procedure.
 

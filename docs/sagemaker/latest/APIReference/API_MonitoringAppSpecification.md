@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringAppSpecification
-<a name="API_MonitoringAppSpecification"></a>
 
 Container image configuration object for the monitoring job.
 

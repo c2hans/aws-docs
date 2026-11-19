@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # OrderBy
-<a name="API_CostOptimizationHub_OrderBy"></a>
 
 Defines how rows will be sorted in the response.
 

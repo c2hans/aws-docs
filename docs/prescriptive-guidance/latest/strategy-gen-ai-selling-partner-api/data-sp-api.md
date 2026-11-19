@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Data available through the Amazon Selling Partner API
-<a name="data-sp-api"></a>
 
 The [Amazon Selling Partner API](https://developer-docs.amazon.com/sp-api/docs/welcome) (SP-API) is a REST-based API that helps Amazon sellers and vendors programmatically access their data on orders, shipments, payments, and much more. The data from this API can increase selling efficiency, reduce labor requirements, and improve the response time to customers. This guide focuses on the data that you can access through [Selling Partner API for Reports](https://developer-docs.amazon.com/sp-api/docs/reports-api-v2021-06-30-use-case-guide) (Reports API) and the [Selling Partner API for Data Kiosk](https://developer-docs.amazon.com/sp-api/docs/data-kiosk-workflow-guide) (Data Kiosk API).
 

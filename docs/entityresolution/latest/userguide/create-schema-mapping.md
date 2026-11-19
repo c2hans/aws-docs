@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating a schema mapping
-<a name="create-schema-mapping"></a>
 
 This procedure describes the process of creating a schema mapping using the [AWS Entity Resolution console](https://console.aws.amazon.com/entityresolution/home).
 

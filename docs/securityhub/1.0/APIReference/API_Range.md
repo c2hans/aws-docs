@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Range.h
 ---
 
 # Range
-<a name="API_Range"></a>
 
 Identifies where the sensitive data begins and ends.
 

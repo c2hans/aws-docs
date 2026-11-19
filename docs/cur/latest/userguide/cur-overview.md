@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-overview.html
 ---
 
 # Legacy Cost and Usage Reports
-<a name="cur-overview"></a>
 
 This section provides information on the Legacy Cost and Usage Reports feature.
 

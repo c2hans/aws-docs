@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configu
 ---
 
 # Requirements for running Amazon Linux 2023 on Hyper-V
-<a name="hyperv-supported-configurations"></a>
 
  This section covers the requirements for running Amazon Linux 2023 on Hyper-V. The Hyper-V images of AL2023 are available only for the `x86-64` architecture. Hyper-V images for `aarch64` are not available or supported at this time.
 

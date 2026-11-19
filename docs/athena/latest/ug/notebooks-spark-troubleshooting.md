@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Troubleshoot Athena for Spark
-<a name="notebooks-spark-troubleshooting"></a>
 
 Use the following information to troubleshoot issues you may have when using notebooks and sessions on Athena.
 

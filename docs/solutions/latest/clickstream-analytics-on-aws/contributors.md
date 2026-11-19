@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Contributors
-<a name="contributors"></a>
 + Chen, Haiyun
 + Deng, Mingtong
 + Li, Jingnan

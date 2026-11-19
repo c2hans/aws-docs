@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchDescribeUserLimits
-<a name="API_BatchDescribeUserLimits"></a>
 
 Describes the effective resource limits for one or more Amazon Quick Sight users, including the limits that apply to each user based on their profile assignments.
 

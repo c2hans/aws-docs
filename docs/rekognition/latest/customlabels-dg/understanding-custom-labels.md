@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/under
 ---
 
 # Understanding Amazon Rekognition Custom Labels
-<a name="understanding-custom-labels"></a>
 
 This section gives you an overview of the workflow to train and use an Amazon Rekognition Custom Labels model with the console and the AWS SDK.
 

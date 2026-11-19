@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/security-iam-ac
 ---
 
 # Managing access to Amazon Neptune databases using IAM policies
-<a name="security-iam-access-manage"></a>
 
 [IAM policies](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html) are JSON objects that define permissions to use actions and resources.
 

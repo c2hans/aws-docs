@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeTranscriptSegment
-<a name="API_MedicalScribeTranscriptSegment"></a>
 
 A segment of transcript text with timing and channel information
 

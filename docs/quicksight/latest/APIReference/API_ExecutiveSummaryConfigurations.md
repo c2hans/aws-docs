@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Execu
 ---
 
 # ExecutiveSummaryConfigurations
-<a name="API_ExecutiveSummaryConfigurations"></a>
 
 The executive summary settings of an embedded Quick Sight console or dashboard.
 

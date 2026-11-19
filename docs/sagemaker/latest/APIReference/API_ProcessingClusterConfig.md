@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Proces
 ---
 
 # ProcessingClusterConfig
-<a name="API_ProcessingClusterConfig"></a>
 
 Configuration for the cluster used to run a processing job.
 

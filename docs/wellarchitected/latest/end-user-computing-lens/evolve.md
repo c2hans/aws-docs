@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Evolve
-<a name="evolve"></a>
 
  End User Computing solutions evolve over time. New features are added or deprecated, end user requirements change, and business requirements evolve to maintain competitive advantage. This section discusses how change should be embraced and incorporated into the day to day activities which govern your EUC deployment.
 

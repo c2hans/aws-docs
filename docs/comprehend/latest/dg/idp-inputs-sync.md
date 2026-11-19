@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/idp-inputs-sync.htm
 ---
 
 # Inputs for real-time custom analysis
-<a name="idp-inputs-sync"></a>
 
 Real-time analysis using custom models takes a single document as input. The following topics describe the input document types that you can use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Installing Elemental Live on a worker node
-<a name="migrate-topic-install-worker"></a>
 
 This install procedure isn't the same as the install procedure on a newly obtained appliance (as described in [AWS Elemental Live Installation Guide](https://docs.aws.amazon.com/elemental-live/latest/installguide/)). You don't have to configure the node.
 

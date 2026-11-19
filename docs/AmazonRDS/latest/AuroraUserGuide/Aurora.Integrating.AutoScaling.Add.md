@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Adding an auto scaling policy to an Amazon Aurora DB cluster
-<a name="Aurora.Integrating.AutoScaling.Add"></a>
 
 You can add a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.
 

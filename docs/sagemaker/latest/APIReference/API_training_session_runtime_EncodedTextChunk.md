@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # EncodedTextChunk
-<a name="API_training_session_runtime_EncodedTextChunk"></a>
 
 A chunk of pre-tokenized text represented as a list of token IDs.
 

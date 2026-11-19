@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/datadog.html
 ---
 
 # Datadog
-<a name="datadog"></a>
 
 The following are the requirements and connection instructions for using Datadog with Amazon AppFlow.
 

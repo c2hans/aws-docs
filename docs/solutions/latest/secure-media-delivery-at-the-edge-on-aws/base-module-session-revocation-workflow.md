@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Base module: Session revocation workflow
-<a name="base-module-session-revocation-workflow"></a>
 
  The base module also comes with a series of components linked together that allows you to block any ongoing playback session based on the optional **sessionId** attribute that can be associated with the token at the time of token generation. To make use of session revocation, your playback API must include session IDs while creating the token and appended as specified before. There are two paths of emitting sessions IDs that were evaluated to be blocked - manual and automatic. Manual path provides you the flexibility in implementing custom mechanism of detecting compromised sessions while the solution provides you with an interface (in the form of library method or API endpoint) to submit the sessions you identified for blocking. For example, employing A/B watermarking type of traffic mapping and backend analysis to associate leaked stream with the session ID. To push a session ID identified in such a way, you can use a dedicated method defined in secret class, which will push that session into a dedicated DynamoDB table for this purpose, associated with the solution stack. In the automatic approach, to detect and inform about compromised sessions, an automated process is invoked at regular intervals to inspect anomalies in traffic pattern and its composition for each session, and capture the ones that deviate notably from the established norm.
 

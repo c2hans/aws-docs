@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/manage-connections
 ---
 
 # Managing connections to Apache Airflow
-<a name="manage-connections"></a>
 
 This chapter describes how to configure an Apache Airflow connection for an Amazon Managed Workflows for Apache Airflow environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-ghost.
 ---
 
 # Connecting to Ghost in AWS Glue Studio
-<a name="connecting-to-data-ghost"></a>
 
 Ghost is an open-source publishing platform. Because you are a Ghost user, you can connect AWS Glue to your Ghost account. You can then use Ghost as a data source in your AWS Glue ETL jobs to transfer data between Ghost and AWS services or other supported applications.
 

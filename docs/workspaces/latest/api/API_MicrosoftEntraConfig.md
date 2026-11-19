@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_MicrosoftEntra
 ---
 
 # MicrosoftEntraConfig
-<a name="API_MicrosoftEntraConfig"></a>
 
 Specifies the configurations of the Microsoft Entra.
 

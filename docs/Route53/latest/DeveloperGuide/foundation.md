@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/foundation
 ---
 
 # .foundation
-<a name="foundation"></a>
 
 Used by non-profit organizations, charities, and other kinds of foundations.
 

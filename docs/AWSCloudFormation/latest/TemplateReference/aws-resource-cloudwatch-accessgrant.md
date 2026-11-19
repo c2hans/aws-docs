@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::AccessGrant
-<a name="aws-resource-cloudwatch-accessgrant"></a>
 
 Resource Type definition for `AWS::CloudWatch::AccessGrant`. An access grant authorizes a principal to perform a set of actions on resources in a space.
 

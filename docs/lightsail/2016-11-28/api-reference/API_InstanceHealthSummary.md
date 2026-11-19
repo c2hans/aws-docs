@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceHealthSummary
-<a name="API_InstanceHealthSummary"></a>
 
 Describes information about the health of the instance.
 

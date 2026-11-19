@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # MessageTemplateData
-<a name="API_amazon-q-connect_MessageTemplateData"></a>
 
 The data of a message template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Im
 ---
 
 # ImportConfiguration
-<a name="API_ImportConfiguration"></a>
 
 The configuration options for different types of import operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchEvidentlyServiceRolePolicy
-<a name="AmazonCloudWatchEvidentlyServiceRolePolicy"></a>
 
 **Description**: Allows CloudWatch Evidently Service to manage associated AWS Resources on behalf of the customer
 

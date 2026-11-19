@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_E
 ---
 
 # ExpireSession
-<a name="API_ExpireSession"></a>
 
 Expires an active secure browser session.
 

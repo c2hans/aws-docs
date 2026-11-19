@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-parameter
 ---
 
 # Using dataset parameters in Quick analyses
-<a name="dataset-parameters-analysis"></a>
 
 Once you create a dataset parameter, after you add the dataset to an analysis, map the dataset parameter to a new or existing analysis parameter. After you map a dataset parameter to an analysis parameter, you can use them with filters, controls, and any other analysis parameter feature.
 

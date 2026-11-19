@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-use.html
 ---
 
 # RStudio on Amazon SageMaker AI user guide
-<a name="rstudio-use"></a>
 
 With RStudio support in Amazon SageMaker AI, you can put your production workflows in place and take advantage of SageMaker AI features. The following topics show how to launch an RStudio session and complete key workflows. For information about managing RStudio on SageMaker AI, see [RStudio on Amazon SageMaker AI management](rstudio-manage.md).
 

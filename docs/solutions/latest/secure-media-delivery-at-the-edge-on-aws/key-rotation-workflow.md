@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Key rotation workflow
-<a name="key-rotation-workflow"></a>
 
  Managing the signing keys used at both token generation and validation steps is a crucial token-based access control mechanism. Any change to the keys, for instance during the key rotation step, must be carefully coordinated to avoid a transient state of inconsistency. In this state, playback API and CloudFront Functions become out-of-sync, where one of these components uses a signing key that the other does not recognize. To prevent that from happening, as part of the base module an automated key rotation pipeline is built. This pipeline is initiated the first time after the base module stack is deployed, and after that periodically according to the key rotation setting specified when launching the solution. The configuration about when the key rotation process must be initiated is saved as an EventBridge rule. Any time that workflow is initiated, the subsequent steps are controlled via AWS Step Functions workflow as depicted in the following diagram.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/general-api.html
 ---
 
 # General API
-<a name="general-api"></a>
 
 ## GetDcvInfo
 <a name="getdcvinfo"></a>

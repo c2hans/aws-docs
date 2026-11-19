@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Install the AWS SAM CLI
-<a name="install-sam-cli"></a>
 
 Install the latest release of the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) on supported operating systems by following instructions in [Step 1: Install the AWS CLI](prerequisites.md#prerequisites-install-cli).
 
@@ -365,7 +364,7 @@ If you receive this error, your shell can't locate the AWS SAM CLI executable i
 
 If you receive this error, you're using an unsupported version of Linux, and the built-in glibc version is out of date. Try either of the following:
 + Upgrade your Linux host to the 64-bit version of a recent distribution of CentOS, Fedora, Ubuntu, or Amazon Linux 2.
-+ Follow the instructions for [Install the AWS SAM CLI](#install-sam-cli).
++ Follow the instructions for [Install the AWS SAM CLI](install-sam-cli.md).
 
 ### macOS
 <a name="sam-cli-troubleshoot-install-macos"></a>

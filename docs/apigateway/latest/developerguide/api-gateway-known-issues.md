@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Amazon API Gateway important notes
-<a name="api-gateway-known-issues"></a>
 
 The following section details notes that might impact your use of API Gateway.
 

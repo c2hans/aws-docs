@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # CreateCluster
-<a name="API_elastic_CreateCluster"></a>
 
 Creates a new Amazon DocumentDB elastic cluster and returns its cluster structure.
 

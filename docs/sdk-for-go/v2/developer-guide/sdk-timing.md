@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-timing
 ---
 
 # Timing SDK operations
-<a name="sdk-timing"></a>
 
  When debugging timeout/latency issues in the SDK, it is critical to identify the components of the operation lifecycle which are taking more time to execute than expected. As a starting point, you will generally need to inspect the timing breakdown between the overall operation call and the HTTP call itself.
 

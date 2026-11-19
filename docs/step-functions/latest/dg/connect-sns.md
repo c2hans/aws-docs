@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-sns.htm
 ---
 
 # Publish messages to an Amazon SNS topic with Step Functions
-<a name="connect-sns"></a>
 
 Learn how to use Step Functions to publish messages to an Amazon SNS topic. This page lists the supported Amazon SNS API actions and provides example `Task` states to publish message to Amazon SNS.
 

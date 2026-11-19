@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Trigger Schedule
-<a name="aws-properties-devopsagent-trigger-schedule"></a>
 
 <a name="aws-properties-devopsagent-trigger-schedule-description"></a>The `Schedule` property type specifies Property description not available. for an [AWS::DevOpsAgent::Trigger](aws-resource-devopsagent-trigger.md).
 

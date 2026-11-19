@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 7: Validate the data model
-<a name="step7-hierarchical-model"></a>
 
 In this step, the business user validates the query results and checks whether they satisfy business needs. You can use the following table to check the access patterns against the requirements of the user.
 

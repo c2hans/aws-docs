@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GeoRe
 ---
 
 # GeoRestriction
-<a name="API_GeoRestriction"></a>
 
 A complex type that controls the countries in which your content is distributed. CloudFront determines the location of your users using `MaxMind` GeoIP databases.
 

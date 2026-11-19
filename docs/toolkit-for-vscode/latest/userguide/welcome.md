@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welc
 ---
 
 # AWS Toolkit for Visual Studio Code
-<a name="welcome"></a>
 
 This is the user guide for the **AWS Toolkit for VS Code**. If you are looking for the **AWS Toolkit for Visual Studio**, see the *[User Guide for the AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/AWSToolkitVS/latest/UserGuide/).*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-instan
 ---
 
 # Tutorial: Configure EC2 Fleet to use instance weighting
-<a name="ec2-fleet-instance-weighting-walkthrough"></a>
 
 This tutorial uses a fictitious company called Example Corp to illustrate the process of requesting an EC2 Fleet using instance weighting.
 

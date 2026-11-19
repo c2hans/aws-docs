@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/baseline-K
 ---
 
 # Baseline KMS key policy
-<a name="baseline-KMS-key-policy"></a>
 
 The following KMS key policy covers the most common deployment scenario: an IAM Identity Center instance with delegated administrators and AWS managed applications, including AWS Control Tower, SSO to Amazon EC2 instances, and custom workflows. Use this policy as your starting point when creating a customer managed KMS key for IAM Identity Center. If you need more granular access controls, such as restricting the key to a specific IAM Identity Center instance or application, see [Advanced KMS key policy statements](advanced-kms-policy.md). Please note if using a multi-Region key, the same policy should be used across all replicas to help ensure consistent authorization.
 

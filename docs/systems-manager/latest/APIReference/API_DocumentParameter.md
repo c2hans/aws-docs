@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DocumentParameter
-<a name="API_DocumentParameter"></a>
 
 Parameters specified in a Systems Manager document that run on the server when the command is run.
 

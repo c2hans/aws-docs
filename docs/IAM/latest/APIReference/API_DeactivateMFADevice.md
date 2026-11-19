@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeactivateMF
 ---
 
 # DeactivateMFADevice
-<a name="API_DeactivateMFADevice"></a>
 
 Deactivates the specified MFA device and removes it from association with the user name for which it was originally enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreatePartner
-<a name="API_account_CreatePartner"></a>
 
 Creates a new partner account in the AWS Partner Network with the specified details and configuration.
 

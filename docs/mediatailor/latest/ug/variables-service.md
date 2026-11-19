@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/variables-service.
 ---
 
 # MediaTailor service variables for session control
-<a name="variables-service"></a>
 
 AWS Elemental MediaTailor reserves the `aws.` query parameter namespace for service variables that control session-level behavior. Unlike `ads.` parameters (which are forwarded to the ADS) and `manifest.` parameters (which are appended to the personalized manifest URLs), `aws.` parameters are consumed directly by MediaTailor and are not forwarded to the origin server or the ADS.
 

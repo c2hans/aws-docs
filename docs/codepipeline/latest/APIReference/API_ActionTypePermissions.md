@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypePermissions
-<a name="API_ActionTypePermissions"></a>
 
 Details identifying the users with permissions to use the action type.
 

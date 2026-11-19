@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerCanvasEMRServerlessExecutionRolePolicy
-<a name="AmazonSageMakerCanvasEMRServerlessExecutionRolePolicy"></a>
 
 **Description**: This policy grants permissions to Amazon EMR Serverless for services such as S3, used by Amazon SageMaker Canvas for large data processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Oper
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [BatchGetCollaborationAnalysisTemplate](API_BatchGetCollaborationAnalysisTemplate.md)

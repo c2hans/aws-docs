@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-suppor
 ---
 
 # Logical operators
-<a name="sql-supported-logical"></a>
 
 AWS IoT SiteWise supports the following logical operators.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_EntityFil
 ---
 
 # EntityFilter
-<a name="API_EntityFilter"></a>
 
 The values to use to filter results from the [DescribeAffectedEntities](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedEntities.html) operation.
 
@@ -48,15 +47,14 @@ Valid Values: `IMPAIRED | UNIMPAIRED | UNKNOWN | PENDING | RESOLVED`
 Required: No
 
  ** tags **   <a name="AWSHealth-Type-EntityFilter-tags"></a>
-A map of entity tags attached to the affected entity.
-Currently, the `tags` property isn't supported.
-Type: Array of string to string maps
-Array Members: Maximum number of 50 items.
-Map Entries: Maximum number of 50 items.
-Key Length Constraints: Maximum length of 127.
-Key Pattern: `.{0,127}`
-Value Length Constraints: Maximum length of 255.
-Value Pattern: `.{0,255}`
+A map of tag keys to lists of tag values. A tag matches when its key is in the map and its value is one of the values listed for that key. The filter matches when at least one key in the map matches.
+Type: String to array of strings map
+Map Entries: Minimum number of 0 items. Maximum number of 10 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 127.
+Key Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{1,127}`
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Length Constraints: Minimum length of 0. Maximum length of 255.
+Pattern: `[a-zA-Z0-9 _.:\/=+\-@]{0,255}`
 Required: No
 
 ## See Also

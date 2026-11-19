@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Map application attributes
-<a name="map-application-attributes"></a>
 
 In this step, you map application attributes to the user attribute in IAM Identity Center, using the email address for authentication.
 

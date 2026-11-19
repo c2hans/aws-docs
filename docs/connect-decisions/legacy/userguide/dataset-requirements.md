@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/datas
 ---
 
 # Dataset requirements
-<a name="dataset-requirements"></a>
 
 The following are important dataset requirements:
 + Default roles automatically include access to all required datasets.

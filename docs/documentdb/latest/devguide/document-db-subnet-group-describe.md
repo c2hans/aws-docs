@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-s
 ---
 
 # Describing an Amazon DocumentDB subnet group
-<a name="document-db-subnet-group-describe"></a>
 
 You can use the AWS Management Console or the AWS CLI to get the details of an Amazon DocumentDB subnet group.
 

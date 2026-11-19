@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Dele
 ---
 
 # DeleteVolume
-<a name="API_DeleteVolume"></a>
 
 Deletes a specified volume.
 

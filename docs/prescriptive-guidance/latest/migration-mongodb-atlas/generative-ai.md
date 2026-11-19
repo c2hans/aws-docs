@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Generative AI with Amazon SageMaker AI JumpStart and MongoDB Atlas Vector Search
-<a name="generative-ai"></a>
 
 [Amazon SageMaker AIJumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html) provides pre-trained AI foundation models such as Retrieval Augmented Generation (RAG) for intelligent text applications. You can combine JumpStart with [MongoDB Atlas Vector Search](https://www.mongodb.com/products/platform/atlas-vector-search), which enables semantic similarity queries on text, image, and other data, to build powerful search experiences. For example, your developers can implement intuitive semantic search over customer conversations by using Atlas Vector Search, and use Amazon SageMaker AI RAG models to add interactive summarization and translation, as illustrated in the following diagram.
 

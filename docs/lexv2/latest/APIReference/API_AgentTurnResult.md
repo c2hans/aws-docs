@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AgentTurnR
 ---
 
 # AgentTurnResult
-<a name="API_AgentTurnResult"></a>
 
 The information about the agent turn in a test set execution.
 

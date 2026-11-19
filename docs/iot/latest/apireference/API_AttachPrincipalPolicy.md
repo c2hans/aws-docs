@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPrinci
 ---
 
 # AttachPrincipalPolicy
-<a name="API_AttachPrincipalPolicy"></a>
 
 Attaches the specified policy to the specified principal (certificate or other credential).
 

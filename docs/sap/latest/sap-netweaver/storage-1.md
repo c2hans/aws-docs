@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/storage-1.html
 ---
 
 # Storage
-<a name="storage-1"></a>
 
 The following list includes Amazon storage services included in this guide.
 

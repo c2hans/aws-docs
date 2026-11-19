@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnStatic
 ---
 
 # VpnStaticRoute
-<a name="API_VpnStaticRoute"></a>
 
 Describes a static route for a VPN connection.
 

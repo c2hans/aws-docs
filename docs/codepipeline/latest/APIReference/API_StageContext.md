@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageContext
-<a name="API_StageContext"></a>
 
 Represents information about a stage to a job worker.
 

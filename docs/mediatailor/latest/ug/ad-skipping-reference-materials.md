@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-skipping-refere
 ---
 
 # MediaTailor ad skipping reference guide
-<a name="ad-skipping-reference-materials"></a>
 
 This section provides comprehensive reference information about ad skip reasons and links to related documentation for AWS Elemental MediaTailor. Use this reference guide to understand the specific meanings of different skip reasons and find additional troubleshooting resources.
 

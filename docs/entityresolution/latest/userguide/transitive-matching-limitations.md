@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/transi
 ---
 
 # Limitations
-<a name="transitive-matching-limitations"></a>
 
 Transitive matching has the following limitations:
 + Available for Advanced Matching workflows only. Not available for Simple rule type or machine learning-based matching workflows.

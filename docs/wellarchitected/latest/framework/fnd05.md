@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05.h
 ---
 
 # Security and compliance
-<a name="fnd05"></a>
 
  A strong security posture combines preventive, proactive, detective, and reactive controls so issues are blocked where they can be, caught before they are deployed, detected in running resources, and remediated when they appear. Security and compliance at the foundation level sets up emergency access, standardized log and telemetry destinations, auditable inventory, threat detection, vulnerability management, dedicated security tooling, forensic readiness, shift-left compliance checks, and organization-wide encryption and key management. This capability covers the best practices that protect your organization's resources and let security teams prevent, detect, and respond to events effectively.
 

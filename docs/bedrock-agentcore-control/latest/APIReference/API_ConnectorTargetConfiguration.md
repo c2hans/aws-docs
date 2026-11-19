@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConnectorTargetConfiguration
-<a name="API_ConnectorTargetConfiguration"></a>
 
 Configuration for a connector integration target. Connectors provide pre-built integrations with AWS services and third-party tools.
 

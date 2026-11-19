@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 A Cloud Operating Model is a collection of capabilities that are required to build, mature, and optimize one or more cloud environments. Building capability in a considered and managed way is key to ensuring that your IT organization is aligned with your overall business objectives and is providing value to your organization.
 

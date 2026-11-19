@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-time-series
 ---
 
 # Tooltip options
-<a name="v13-time-series-panel-tooltip"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

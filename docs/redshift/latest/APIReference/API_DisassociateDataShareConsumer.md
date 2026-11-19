@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Disasso
 ---
 
 # DisassociateDataShareConsumer
-<a name="API_DisassociateDataShareConsumer"></a>
 
 From a datashare consumer account, remove association for the specified datashare.
 

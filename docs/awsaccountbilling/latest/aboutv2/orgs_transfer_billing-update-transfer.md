@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Updating transfers
-<a name="orgs_transfer_billing-update-transfer"></a>
 
 When you sign in to your organization's management account, you can update the name assigned to transfers that allow you to manage and pay for another organization’s consolidated bill. This can help you identify and organize your transfers.
 

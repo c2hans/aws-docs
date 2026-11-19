@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetDefaul
 ---
 
 # GetDefaultEncryptionConfiguration
-<a name="API_GetDefaultEncryptionConfiguration"></a>
 
  Retrieves information about the default encryption configuration for the AWS account in the default or specified region. For more information, see [Key management](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/key-management.html) in the *AWS IoT SiteWise User Guide*.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/dyna
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Using the Document Model
-<a name="dynamodb-integration-docmodel"></a>
 
 The Document Model provides wrapper classes around the low-level .NET API. The Table and Document are the key wrapper classes. You can use the Document Model to create, retrieve, update and delete items. To create, update and delete tables, you must use the low-level API. For instructions on how to use the low-level API, see [Using the DynamoDB Service Level APIs](dynamodb-integration-lowlevelapi.md). The low-level API is available in the Amazon.DynamoDB.DocumentModel namespace.
 

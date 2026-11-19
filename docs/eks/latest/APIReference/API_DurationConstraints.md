@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DurationCons
 ---
 
 # DurationConstraints
-<a name="API_DurationConstraints"></a>
 
 Constraints for a duration parameter.
 

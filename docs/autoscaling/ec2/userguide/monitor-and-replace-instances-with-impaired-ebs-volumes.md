@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/monitor-and-re
 ---
 
 # Monitor Auto Scaling instances with impaired Amazon EBS volumes using health checks
-<a name="monitor-and-replace-instances-with-impaired-ebs-volumes"></a>
 
 You can turn on the Amazon EBS health checks for your Auto Scaling group to make sure that Amazon EC2 Auto Scaling monitors the entire system on which your application runs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on EC2 instances running Java SE
-<a name="https-singleinstance-java"></a>
 
 For Java SE container types, you enable HTTPS with an .ebextensions [configuration file](ebextensions.md), and an nginx configuration file that configures the nginx server to use HTTPS.
 

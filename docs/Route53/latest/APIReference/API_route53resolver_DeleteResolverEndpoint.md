@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # DeleteResolverEndpoint
-<a name="API_route53resolver_DeleteResolverEndpoint"></a>
 
 Deletes a Resolver endpoint. The effect of deleting a Resolver endpoint depends on whether it's an inbound or an outbound Resolver endpoint:
 +  **Inbound**: DNS queries from your network are no longer routed to the DNS service for the specified VPC.

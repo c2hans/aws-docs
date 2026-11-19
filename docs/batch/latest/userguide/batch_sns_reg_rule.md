@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch_sns_reg_rul
 ---
 
 # Tutorial: Register an event rule
-<a name="batch_sns_reg_rule"></a>
 
  Next, register an event rule that captures only job-failed events.
 

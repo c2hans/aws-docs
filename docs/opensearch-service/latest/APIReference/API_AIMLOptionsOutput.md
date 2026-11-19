@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AIMLOptionsOutput
-<a name="API_AIMLOptionsOutput"></a>
 
 Container for parameters representing the state of machine learning features on the specified domain.
 

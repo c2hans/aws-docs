@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeMlflowApp
-<a name="API_DescribeMlflowApp"></a>
 
 Returns information about an MLflow App.
 

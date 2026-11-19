@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateSpace
-<a name="API_CreateSpace"></a>
 
 Creates a space in a domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/installing-agent-blocked.h
 ---
 
 # Installing the Agent on a secured network
-<a name="installing-agent-blocked"></a>
 
 The AWS Transform MGN AWS Replication Agent installer needs network access to MGN and Amazon S3 endpoints. If your on premises network is not open to MGN and Amazon S3 endpoints, then you can install the Agent with the aid of PrivateLink.
 

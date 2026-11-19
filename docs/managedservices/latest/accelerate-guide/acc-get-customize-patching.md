@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Customize patching in Accelerate
-<a name="acc-get-customize-patching"></a>
 
 Patching ensures that your software is up-to-date and meets your compliance policies.
 

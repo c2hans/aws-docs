@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel
 ---
 
 # CreateControlPanel, UpdateControlPanel
-<a name="controlpanel"></a>
 
 ## URI
 <a name="controlpanel-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # UpdateBatchPrediction
-<a name="API_UpdateBatchPrediction"></a>
 
 Updates the `BatchPredictionName` of a `BatchPrediction`.
 

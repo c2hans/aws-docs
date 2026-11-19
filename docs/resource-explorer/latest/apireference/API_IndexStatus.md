@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # IndexStatus
-<a name="API_IndexStatus"></a>
 
 Contains information about the status of a Resource Explorer index operation in a specific Region.
 

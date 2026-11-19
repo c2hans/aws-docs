@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DescribeInstancePatchStatesForPatchGroup` with a CLI
-<a name="example_ssm_DescribeInstancePatchStatesForPatchGroup_section"></a>
 
 The following code examples show how to use `DescribeInstancePatchStatesForPatchGroup`.
 

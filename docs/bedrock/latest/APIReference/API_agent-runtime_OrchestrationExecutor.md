@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # OrchestrationExecutor
-<a name="API_agent-runtime_OrchestrationExecutor"></a>
 
 The structure of the executor invoking the actions in custom orchestration.
 

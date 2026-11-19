@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ImportF
 ---
 
 # ImportFindingsError
-<a name="API_ImportFindingsError"></a>
 
 The list of the findings that cannot be imported. For each finding, the list provides the error.
 

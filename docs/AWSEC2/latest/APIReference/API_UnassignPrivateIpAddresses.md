@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnassignP
 ---
 
 # UnassignPrivateIpAddresses
-<a name="API_UnassignPrivateIpAddresses"></a>
 
 Unassigns the specified secondary private IP addresses or IPv4 Prefix Delegation prefixes from a network interface.
 

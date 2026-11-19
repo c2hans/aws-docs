@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS
 ---
 
 # Configure instance metadata options for new instances
-<a name="configuring-IMDS-new-instances"></a>
 
 You can configure the following instance metadata options for new instances.
 

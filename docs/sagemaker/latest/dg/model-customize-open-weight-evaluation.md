@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # Model evaluation job submission
-<a name="model-customize-open-weight-evaluation"></a>
 
 This section describes open-weight custom model evaluation. It gets you started through a walk through of the evaluation job submission process. Additional resources are provided for more advanced evaluation job submission use cases.
 

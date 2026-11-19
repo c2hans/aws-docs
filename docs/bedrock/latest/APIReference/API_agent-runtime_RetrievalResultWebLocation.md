@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalResultWebLocation
-<a name="API_agent-runtime_RetrievalResultWebLocation"></a>
 
 The web URL/URLs data source location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RequestInspe
 ---
 
 # RequestInspection
-<a name="API_RequestInspection"></a>
 
 The criteria for inspecting login requests, used by the ATP rule group to validate credentials usage.
 

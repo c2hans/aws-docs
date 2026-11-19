@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-unr
 ---
 
 # Handling unresolved or non-standard version references in the Amazon Inspector SBOM Generator
-<a name="sbom-generator-unresolved-non-standard-version-reference"></a>
 
  The Amazon Inspector SBOM Generator locates and parses supported artifacts within a system by identifying dependencies directly from source files. It's not a package manager and does not resolve version ranges, infer versions based on dynamic references, or handle registry lookups. It collects dependencies only as they're defined in project source artifacts. In many cases, dependencies in package manifests, such as `package.json`, `pom.xml`, or `requirements.txt`, are specified using unresolved or range-based versions. This topic includes examples of how these dependencies might look.
 

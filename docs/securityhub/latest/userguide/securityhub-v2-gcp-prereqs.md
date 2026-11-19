@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Prerequisites for integrating Security Hub with Google Cloud Platform
-<a name="securityhub-v2-gcp-prereqs"></a>
 
 Before you integrate Google Cloud Platform (GCP) with AWS Security Hub, complete the following tasks in your AWS and GCP environments. This helps ensure that you and Security Hub have the resources and permissions that you need to monitor your GCP resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListJo
 ---
 
 # ListJobSchemaVersions
-<a name="API_ListJobSchemaVersions"></a>
 
 Lists available configuration schema versions for a specified job category. Use the schema versions with `DescribeJobSchemaVersion` to retrieve the full schema document.
 

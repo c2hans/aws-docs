@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListMe
 ---
 
 # ListMembers
-<a name="API_ListMembers"></a>
 
 Retrieves the list of member accounts for a behavior graph.
 

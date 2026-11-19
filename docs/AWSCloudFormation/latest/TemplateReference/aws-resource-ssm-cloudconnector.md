@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SSM::CloudConnector
-<a name="aws-resource-ssm-cloudconnector"></a>
 
 The `AWS::SSM::CloudConnector` resource creates a cloud connector in AWS Systems Manager. With a cloud connector, you can manage resources in external cloud providers such as Microsoft Azure.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # The initial motivation
-<a name="the-initial-motivation"></a>
 
  To understand SaaS, let’s start with a fairly simple notion of what we’re trying to achieve when creating a SaaS business. The best place to start is by looking at how traditional (non-SaaS) software has been created, managed, and operated.
 

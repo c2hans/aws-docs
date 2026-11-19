@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/virtualization.html
 ---
 
 # Virtualization on Amazon Linux 2023
-<a name="virtualization"></a>
 
 Amazon Linux 2023 includes a scoped virtualization stack for development, testing, and continuous integration workloads. You can run virtual machines on any Amazon EC2 instance. Hardware acceleration through KVM is faster but optional, and requires either a bare metal instance or a virtual instance with nested virtualization enabled. The stack comprises QEMU (system and userspace emulation for `x86-64` and `aarch64`), libvirt for virtual machine lifecycle management, and boot firmware (SeaBIOS and EDK2 UEFI).
 

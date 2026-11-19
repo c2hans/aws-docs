@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_rekognitio
 ---
 
 # Hello Amazon Rekognition
-<a name="example_rekognition_Hello_section"></a>
 
 The following code example shows how to get started using Amazon Rekognition.
 

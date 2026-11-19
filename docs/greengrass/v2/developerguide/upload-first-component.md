@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/upload-firs
 ---
 
 # Step 5: Create your component in the AWS IoT Greengrass service
-<a name="upload-first-component"></a>
 
 When you finish developing a component on your core device, you can upload it to the AWS IoT Greengrass service in the AWS Cloud. You can also directly create the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass). AWS IoT Greengrass provides a component management service that hosts your components so that you can deploy them to individual devices or fleets of devices. To upload a component to the AWS IoT Greengrass service, you complete the following steps:
 + Upload component artifacts to an S3 bucket.

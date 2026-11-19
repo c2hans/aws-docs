@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ProviderPrefix
-<a name="API_ProviderPrefix"></a>
 
 The configuration that controls how a provider prefix is applied to model IDs during translation.
 

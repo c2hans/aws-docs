@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Data Resilience, Operations, and Insights (DROID) Dashboard
-<a name="droid-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>

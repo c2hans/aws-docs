@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/listing-j
 ---
 
 # List jobs
-<a name="listing-jobs"></a>
 
 Use the `ListJobs` operation to list all existing address validation jobs. You can use the results of this operation to check the status of multiple jobs at the same time, or to find the `Name` and `JobId` for a specific job that you want to cancel or monitor individually.
 

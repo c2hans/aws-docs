@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2rl_moduledev.
 ---
 
 # Develop EC2Rescue modules for Amazon EC2 Linux instances
-<a name="ec2rl_moduledev"></a>
 
 Modules are written in YAML, a data serialization standard. A module's YAML file consists of a single document, representing the module and its attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateCode
 ---
 
 # UpdateCodeSecurityIntegration
-<a name="API_UpdateCodeSecurityIntegration"></a>
 
 Updates an existing code security integration.
 

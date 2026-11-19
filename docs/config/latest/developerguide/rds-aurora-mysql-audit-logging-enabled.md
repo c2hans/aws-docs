@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-aurora-
 ---
 
 # rds-aurora-mysql-audit-logging-enabled
-<a name="rds-aurora-mysql-audit-logging-enabled"></a>
 
 Checks if Amazon Aurora MySQL-Compatible Edition clusters are configured to publish audit logs to Amazon CloudWatch Logs. The rule is NON\_COMPLIANT if Aurora MySQL-Compatible Edition clusters do not have audit log publishing configured.
 

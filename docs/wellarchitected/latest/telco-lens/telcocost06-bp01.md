@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # TELCOCOST06-BP01 Implement load-balancing techniques to achieve better utilization of hybrid network resources
-<a name="telcocost06-bp01"></a>
 
  Establish a comprehensive traffic classification system that identifies different types of network traffic (for example, real-time communications, bulk data transfers, best-effort traffic). Monitor the utilization of your hybrid network connections in real time. Use load-balancing mechanisms to distribute network traffic across multiple hybrid network connections, both on-premises and in the cloud.
 

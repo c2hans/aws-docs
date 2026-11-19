@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTableVersions.
 ---
 
 # GetTableVersions
-<a name="API_GetTableVersions"></a>
 
 Retrieves a list of strings that identify available versions of a specified table.
 

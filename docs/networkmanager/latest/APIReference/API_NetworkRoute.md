@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkRoute
-<a name="API_NetworkRoute"></a>
 
 Describes a network route.
 

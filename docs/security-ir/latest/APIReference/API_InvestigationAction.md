@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Inve
 ---
 
 # InvestigationAction
-<a name="API_InvestigationAction"></a>
 
 Represents a specific action or recommendation generated during a security investigation. Investigation actions provide guidance on steps to take in response to security incidents.
 

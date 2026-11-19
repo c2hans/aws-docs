@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/create-flow-logs-role.htm
 ---
 
 # Create or update an IAM role for AWS Transit Gateway Flow Logs
-<a name="create-flow-logs-role"></a>
 
 You can update an existing role or use the following procedure to create a new role for use with flow logs using the AWS Identity and Access Management console.
 

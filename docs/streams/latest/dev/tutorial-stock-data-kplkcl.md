@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Tutorial: Process real-time stock data using KPL and KCL 1.x
-<a name="tutorial-stock-data-kplkcl"></a>
 
 The scenario for this tutorial involves ingesting stock trades into a data stream and writing a simple Amazon Kinesis Data Streams application that performs calculations on the stream. You will learn how to send a stream of records to Kinesis Data Streams and implement an application that consumes and processes the records in near real time.
 

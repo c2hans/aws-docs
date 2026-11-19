@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Up
 ---
 
 # UpdateVehicleError
-<a name="API_UpdateVehicleError"></a>
 
 An HTTP error resulting from updating the description for a vehicle.
 

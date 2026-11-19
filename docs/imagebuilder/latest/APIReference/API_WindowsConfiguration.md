@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Win
 ---
 
 # WindowsConfiguration
-<a name="API_WindowsConfiguration"></a>
 
 Windows-specific configuration settings for an ISO import, including the edition to install from a multi-edition Windows ISO file.
 

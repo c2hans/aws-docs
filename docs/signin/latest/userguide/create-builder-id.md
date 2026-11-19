@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/create-builder-i
 ---
 
 # Create your AWS Builder ID
-<a name="create-builder-id"></a>
 
 You create your AWS Builder ID when you sign up for one of the AWS tools and services that use it. Sign up as part of the sign-up process for an AWS tool or service with your email address, name, and password, or choose a supported third-party provider such as Google or Apple.
 

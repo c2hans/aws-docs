@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-deleteper
 ---
 
 # DeletePersonalTime
-<a name="rest-op-deletepersonaltime"></a>
 
 Removes a personal time entry. Give its ID in the path. IDs come from [GetSchedule](rest-op-getschedule.md). You must sign in.
 

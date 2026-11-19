@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Dele
 ---
 
 # DeleteConnection
-<a name="API_iotdata_DeleteConnection"></a>
 
 Disconnects a connected MQTT client from AWS IoT Core. When you disconnect a client, AWS IoT Core closes the client's network connection and optionally cleans the session state.
 

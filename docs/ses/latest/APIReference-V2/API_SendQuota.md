@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendQuota
 ---
 
 # SendQuota
-<a name="API_SendQuota"></a>
 
 An object that contains information about the per-day and per-second sending limits for your Amazon SES account in the current AWS Region.
 

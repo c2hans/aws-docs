@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_AddTagsT
 ---
 
 # AddTagsToStream
-<a name="API_AddTagsToStream"></a>
 
 Adds or updates tags for the specified Kinesis data stream. You can assign up to 50 tags to a data stream.
 
@@ -12,7 +11,7 @@ When invoking this API, you must use either the `StreamARN` or the `StreamName` 
 
 If tags have already been assigned to the stream, `AddTagsToStream` overwrites any existing tags that correspond to the specified tag keys.
 
- [AddTagsToStream](#API_AddTagsToStream) has a limit of five transactions per second per account.
+ [AddTagsToStream](API_AddTagsToStream.md) has a limit of five transactions per second per account.
 
 ## Request Syntax
 <a name="API_AddTagsToStream_RequestSyntax"></a>

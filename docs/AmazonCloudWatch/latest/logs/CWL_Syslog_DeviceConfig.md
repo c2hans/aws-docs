@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Syslog_
 ---
 
 # Configuring syslog devices
-<a name="CWL_Syslog_DeviceConfig"></a>
 
 After setting up syslog ingestion, configure your syslog sources to send messages to the VPC endpoint DNS name. Your devices reach the endpoint via your VPN or Direct Connect connection to the VPC.
 

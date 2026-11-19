@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetCodeInterpreter
-<a name="API_GetCodeInterpreter"></a>
 
 Gets information about a custom code interpreter.
 

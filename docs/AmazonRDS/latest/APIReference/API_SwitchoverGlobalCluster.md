@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Switch
 ---
 
 # SwitchoverGlobalCluster
-<a name="API_SwitchoverGlobalCluster"></a>
 
 Switches over the specified secondary DB cluster to be the new primary DB cluster in the global database cluster. Switchover operations were previously called "managed planned failovers."
 

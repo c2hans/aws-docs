@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/connect-a
 ---
 
 # Connect AWS Security Agent to Azure DevOps repositories
-<a name="connect-azure-devops"></a>
 
 Connect your AWS Security Agent to Azure DevOps repositories to enable code review, threat modeling, penetration testing, and automated remediation capabilities. Before you begin, review [How integrations work with Agent Spaces](about-integrations.md) to understand how a registration is reused across Agent Spaces and shared across capabilities.
 

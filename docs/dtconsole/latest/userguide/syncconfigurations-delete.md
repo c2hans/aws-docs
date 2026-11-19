@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/syncconfigura
 ---
 
 # Delete a sync configuration
-<a name="syncconfigurations-delete"></a>
 
 You can use the **delete-sync-configuration** command in the AWS Command Line Interface (AWS CLI) to delete a sync configuration.
 

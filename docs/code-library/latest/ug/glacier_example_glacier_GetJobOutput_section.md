@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/glacier_example_g
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetJobOutput` with an AWS SDK or CLI
-<a name="glacier_example_glacier_GetJobOutput_section"></a>
 
 The following code examples show how to use `GetJobOutput`.
 

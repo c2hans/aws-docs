@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamInternetRegistryAssociations
-<a name="API_DescribeIpamInternetRegistryAssociations"></a>
 
 Describes one or more IPAM internet registry associations. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

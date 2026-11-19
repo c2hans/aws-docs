@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Transl
 ---
 
 # TranslateText
-<a name="API_TranslateText"></a>
 
 Translates input text from the source language to the target language. For a list of available languages and language codes, see [Supported languages](https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html) in the Amazon Translate Developer Guide.
 

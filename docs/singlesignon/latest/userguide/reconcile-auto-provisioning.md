@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/reconcile-
 ---
 
 # Audit and reconcile auto-provisioned resources
-<a name="reconcile-auto-provisioning"></a>
 
 SCIM enables you to automatically provision users, groups, and group memberships from your identity source to IAM Identity Center. This guide helps you verify and reconcile these resources to maintain accurate synchronization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_CrossRegionC
 ---
 
 # CrossRegionCopyAction
-<a name="API_CrossRegionCopyAction"></a>
 
  **[Event-based policies only]** Specifies a cross-Region copy action for event-based policies.
 

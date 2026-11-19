@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeDataSharesForConsumer
-<a name="API_DescribeDataSharesForConsumer"></a>
 
 Returns a list of datashares where the account identifier being called is a consumer account identifier.
 
@@ -19,7 +18,7 @@ Length Constraints: Maximum length of 2147483647.
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForConsumer](#API_DescribeDataSharesForConsumer) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForConsumer](API_DescribeDataSharesForConsumer.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No
@@ -45,7 +44,7 @@ Shows the results of datashares available for consumers.
 Type: Array of [DataShare](API_DataShare.md) objects
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForConsumer](#API_DescribeDataSharesForConsumer) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDataSharesForConsumer](API_DescribeDataSharesForConsumer.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 

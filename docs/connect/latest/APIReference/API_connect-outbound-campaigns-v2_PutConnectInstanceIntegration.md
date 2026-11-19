@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PutConnectInstanceIntegration
-<a name="API_connect-outbound-campaigns-v2_PutConnectInstanceIntegration"></a>
 
 Puts an integration for the Connect Customer instance.
 

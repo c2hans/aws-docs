@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Create
 ---
 
 # CreateDBSecurityGroup
-<a name="API_CreateDBSecurityGroup"></a>
 
 Creates a new DB security group. DB security groups control access to a DB instance.
 

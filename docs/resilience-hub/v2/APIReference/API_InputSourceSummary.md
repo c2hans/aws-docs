@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Input
 ---
 
 # InputSourceSummary
-<a name="API_InputSourceSummary"></a>
 
 Contains summary information about an input source for a service.
 

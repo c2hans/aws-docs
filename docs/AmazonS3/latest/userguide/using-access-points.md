@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-access-p
 ---
 
 # Using Amazon S3 access points for general purpose buckets
-<a name="using-access-points"></a>
 
 The following examples demonstrate how to use access points for general purpose buckets with compatible operations in Amazon S3.
 

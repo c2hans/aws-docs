@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # StackSets concepts
-<a name="stacksets-concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of StackSets.
 

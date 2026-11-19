@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemoryMetadataValue
-<a name="API_agent-runtime_AgenticRetrieveMemoryMetadataValue"></a>
 
 A metadata value that a filter expression compares against. Set exactly one member.
 

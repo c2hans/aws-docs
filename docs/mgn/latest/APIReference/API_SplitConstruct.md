@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SplitConstru
 ---
 
 # SplitConstruct
-<a name="API_SplitConstruct"></a>
 
 A split target specifying the CIDR block for the new construct.
 

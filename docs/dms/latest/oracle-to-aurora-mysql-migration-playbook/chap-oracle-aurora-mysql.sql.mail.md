@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle UTL\_MAIL or UTL\_SMTP and Amazon Simple Notification Service
-<a name="chap-oracle-aurora-mysql.sql.mail"></a>
 
 With AWS DMS, you can migrate email functionality from Oracle databases to Amazon Simple Notification Service (Amazon SNS). Oracle `UTL_MAIL` and `UTL_SMTP` packages provide database email capabilities, which AWS Database Migration Service can help you transition to the fully managed Amazon SNS service. The following sections detail the process of replicating Oracle `UTL_MAIL/UTL_SMTP` functionality using Amazon SNS with AWS DMS.
 

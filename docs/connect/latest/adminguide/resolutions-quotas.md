@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-qu
 ---
 
 # Resolutions quotas
-<a name="resolutions-quotas"></a>
 
 ## Resolutions
 <a name="resolutions-quotas-resolutions"></a>

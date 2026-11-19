@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tag
 ---
 
 # Tagging DynamoDB Streams
-<a name="Tagging.Streams"></a>
 
 **Tagging on creation not supported**
 DynamoDB Streams does not currently support tagging on creation. You can only add tags to existing streams.

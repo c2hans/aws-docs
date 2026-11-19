@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateGroup
-<a name="create-group"></a>
 
 Use the `CreateGroup` API operation to create a user group in AWS Quick Sight. Following is an example AWS CLI command for this operation.
 

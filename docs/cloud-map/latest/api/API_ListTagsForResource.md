@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ListTagsForReso
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists tags for the specified resource.
 

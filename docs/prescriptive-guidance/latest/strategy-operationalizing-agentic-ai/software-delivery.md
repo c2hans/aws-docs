@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Evolving software delivery for agentic AI
-<a name="software-delivery"></a>
 
 Modern software delivery has been shaped by a simple assumption—that you control the systems you ship. You define requirements, write logic, test against expected outcomes, and deploy predictable services. Even Agile and DevOps approaches still rely on the principle that each sprint delivers something deterministic, verifiable, and largely within human oversight.
 

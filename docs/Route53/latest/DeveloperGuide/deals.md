@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/deals.html
 ---
 
 # .deals
-<a name="deals"></a>
 
 Used to provide information about online bargains and sales.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Further reading
-<a name="resources"></a>
 
 For additional information, refer to:
 + [AWS Architecture Center](https://aws.amazon.com/architecture/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/edit-a-user.ht
 ---
 
 # Edit a user
-<a name="edit-a-user"></a>
 
 When you choose a user from the **User management** page, the user detail page opens. The detail page organizes settings into sections, including **User information**, **Routing profile**, and **Phone configuration**. To edit a section, choose **Edit** in the section header.
 

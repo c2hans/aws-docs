@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_PutPolic
 ---
 
 # PutPolicy
-<a name="API_PutPolicy"></a>
 
 Creates an AWS Firewall Manager policy.
 

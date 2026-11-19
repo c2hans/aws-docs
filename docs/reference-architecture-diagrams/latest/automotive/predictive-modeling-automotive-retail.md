@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Predictive Modeling for Automotive Retail
-<a name="predictive-modeling-automotive-retail"></a>
 
 Publication date: **September 15, 2021 ([Diagram history](diagram-history.md))**
 

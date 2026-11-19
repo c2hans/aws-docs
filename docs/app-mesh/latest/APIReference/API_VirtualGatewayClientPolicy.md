@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayClientPolicy
-<a name="API_VirtualGatewayClientPolicy"></a>
 
 An object that represents a client policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetAgentGoal
-<a name="API_GetAgentGoal"></a>
 
 Retrieves detailed information about a specific optimization goal.
 

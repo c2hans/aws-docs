@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # SQL Server on Amazon EC2
-<a name="single-node"></a>
 
 The following diagram illustrates a recommended architecture for a single-node SQL Server on Amazon Elastic Compute Cloud (Amazon EC2) before adding support for high availability (HA) and disaster recovery (DR).
 

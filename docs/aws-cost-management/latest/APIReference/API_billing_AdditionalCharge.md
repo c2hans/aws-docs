@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AdditionalCharge
-<a name="API_billing_AdditionalCharge"></a>
 
 An additional charge applied to an Enterprise Support contract.
 

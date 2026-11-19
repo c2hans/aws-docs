@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBAutonomousDatabaseAdmin
-<a name="AmazonODBAutonomousDatabaseAdmin"></a>
 
 **Description**: Provides administrative access to manage Autonomous Database resources in Oracle Database@AWS.
 

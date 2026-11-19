@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DescribeResourcePolicies
-<a name="API_DescribeResourcePolicies"></a>
 
 Lists the resource policies in this account.
 

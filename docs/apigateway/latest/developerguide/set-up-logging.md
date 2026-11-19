@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Set up CloudWatch logging for REST APIs in API Gateway
-<a name="set-up-logging"></a>
 
 To help debug issues related to request execution or client access to your API, you can enable Amazon CloudWatch Logs to log API calls. For more information about CloudWatch, see [Monitor REST API execution with Amazon CloudWatch metrics](monitoring-cloudwatch.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-optimiza
 ---
 
 # Optimize and migrate prompts in Amazon Bedrock
-<a name="prompt-optimization-migration"></a>
 
 Amazon Bedrock offers prompt optimization, a model migration and optimization tool that helps you get the best performance from foundation models. Amazon Bedrock provides two prompt optimization options.
 + [Simple optimization](prompt-management-optimize.md) performs a fast, heuristic rewrite of a single short prompt for one model.

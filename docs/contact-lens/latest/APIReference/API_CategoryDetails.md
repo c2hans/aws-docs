@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Cat
 ---
 
 # CategoryDetails
-<a name="API_connect-contact-lens_CategoryDetails"></a>
 
 Provides information about the category rule that was matched.
 

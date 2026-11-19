@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayRepositoryCredentials
-<a name="API_ExpressGatewayRepositoryCredentials"></a>
 
 The repository credentials for private registry authentication to pass to the container.
 

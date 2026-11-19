@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/view-multicast-group.html
 ---
 
 # View multicast groups in AWS Transit Gateway
-<a name="view-multicast-group"></a>
 
 You can view information about your multicast groups to verify that members were discovered using the IGMPv2 protocol. **Member type** (in the console), or `MemberType` (in the AWS CLI) displays IGMP when AWS discovered members with the protocol.
 

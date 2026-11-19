@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Clien
 ---
 
 # ClientCredentialsGrantDetails
-<a name="API_ClientCredentialsGrantDetails"></a>
 
 Configuration details for OAuth2 client credentials grant flow, including client ID, client secret, token endpoint, and optional scopes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingIn
 ---
 
 # Change instance initiated shutdown behavior
-<a name="Using_ChangingInstanceInitiatedShutdownBehavior"></a>
 
 **Warning**
 **Terminating an instance is permanent and irreversible.**

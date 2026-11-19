@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Foundational concepts
-<a name="micro-frontend-concepts"></a>
 
 Micro-frontend architecture draws on three prior architectural concepts:
 + *Domain-driven design* is a mental model for structuring complex applications into coherent domains.

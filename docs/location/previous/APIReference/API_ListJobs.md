@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListJ
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
  `ListJobs` retrieves a list of jobs with optional filtering and pagination support.
 

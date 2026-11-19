@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableFieldWells
-<a name="API_PivotTableFieldWells"></a>
 
 The field wells for a pivot table visual.
 

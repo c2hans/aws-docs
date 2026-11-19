@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_RetryB
 ---
 
 # RetryBuild
-<a name="API_RetryBuild"></a>
 
 Restarts a build.
 

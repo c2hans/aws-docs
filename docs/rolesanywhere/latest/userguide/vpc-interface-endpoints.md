@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/vpc-inter
 ---
 
 # IAM Roles Anywhere and interface VPC endpoints (AWS PrivateLink)
-<a name="vpc-interface-endpoints"></a>
 
 You can establish a private connection between your VPC and AWS Identity and Access Management Roles Anywhere by creating an *interface VPC endpoint*. Interface endpoints are powered by [AWS PrivateLink](https://aws.amazon.com/privatelink), a technology that enables you to privately access IAM Roles Anywhere APIs without an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Instances in your VPC don't need public IP addresses to communicate with IAM Roles Anywhere APIs. Traffic between your VPC and IAM Roles Anywhere does not leave the Amazon network.
 

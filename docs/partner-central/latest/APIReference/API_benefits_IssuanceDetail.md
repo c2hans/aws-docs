@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # IssuanceDetail
-<a name="API_benefits_IssuanceDetail"></a>
 
 Represents detailed information about a specific issuance of benefit value.
 

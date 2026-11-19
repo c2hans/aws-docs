@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/bedrock-age
 ---
 
 # bedrock-agentcore-memory-event-expiry-duration
-<a name="bedrock-agentcore-memory-event-expiry-duration"></a>
 
 Checks whether Amazon Bedrock AgentCore Memory event expiry duration meets the minimum required days. The rule is NON\_COMPLIANT if AgentCore Memory has EventExpiryDuration set to less than the minimum required value.
 

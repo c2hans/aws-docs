@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # DestinationLogsConfiguration
-<a name="API_DestinationLogsConfiguration"></a>
 
 Configuration for centralization destination log groups, including encryption and backup settings.
 

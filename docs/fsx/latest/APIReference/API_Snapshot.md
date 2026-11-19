@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Snapshot.htm
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 A snapshot of an Amazon FSx for OpenZFS volume.
 

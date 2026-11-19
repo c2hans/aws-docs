@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/describe-collectio
 ---
 
 # Describing a collection
-<a name="describe-collection-procedure"></a>
 
 You can use the [DescribeCollection](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeCollection.html) operation to get the following information about a collection:
 + The number of faces that are indexed into the collection.

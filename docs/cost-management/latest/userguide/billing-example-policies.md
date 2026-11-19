@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/billing
 ---
 
 # AWS Cost Management policy examples
-<a name="billing-example-policies"></a>
 
 **Note**
 The following AWS Identity and Access Management (IAM) actions have reached the end of standard support on July 2023:

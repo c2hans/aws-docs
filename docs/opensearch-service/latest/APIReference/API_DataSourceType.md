@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DataSourceType
-<a name="API_DataSourceType"></a>
 
 The type of data source.
 

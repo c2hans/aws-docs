@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-monitori
 ---
 
 # Monitoring Amazon EventBridge
-<a name="eb-monitoring"></a>
 
 EventBridge sends metrics to Amazon CloudWatch every minute for everything from the number of matched [events](eb-events.md) to the number of times a [target](eb-targets.md) is invoked by a [rule](eb-rules.md).
 

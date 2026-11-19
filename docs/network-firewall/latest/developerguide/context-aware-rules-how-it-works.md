@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # How context-aware rules work
-<a name="context-aware-rules-how-it-works"></a>
 
 When traffic travels through an AWS Transit Gateway, the transit gateway tags each packet with the sending resource's context: its VPC, subnet, transit gateway attachment, and Amazon VPC security groups. Traffic carries up to 5 Amazon VPC security groups per network interface, which is the default Amazon VPC quota for security groups per interface. A transit gateway-attached network firewall reads this context and matches it against the context IDs in your rules.
 

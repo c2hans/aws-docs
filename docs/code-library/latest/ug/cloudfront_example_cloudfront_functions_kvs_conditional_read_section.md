@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event
-<a name="cloudfront_example_cloudfront_functions_kvs_conditional_read_section"></a>
 
 The following code example shows how to rewrite a request URI based on KeyValueStore configuration for a CloudFront Functions viewer request event.
 

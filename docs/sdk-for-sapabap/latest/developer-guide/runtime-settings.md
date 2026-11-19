@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/r
 ---
 
 # Runtime settings
-<a name="runtime-settings"></a>
 
 This section covers the following topics.
 

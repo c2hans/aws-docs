@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/alter-seque
 ---
 
 # `ALTER SEQUENCE`
-<a name="alter-sequence-syntax-support"></a>
 
 `ALTER SEQUENCE` — change the definition of a sequence generator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentInf
 ---
 
 # AgentInfo
-<a name="API_AgentInfo"></a>
 
 Information about the agent who accepted the contact.
 

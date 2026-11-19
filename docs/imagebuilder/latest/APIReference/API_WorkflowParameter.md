@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowParameter
-<a name="API_WorkflowParameter"></a>
 
 Contains a key/value pair that sets the named workflow parameter.
 

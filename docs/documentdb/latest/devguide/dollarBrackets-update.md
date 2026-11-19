@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dollarBracket
 ---
 
 # $[]
-<a name="dollarBrackets-update"></a>
 
 The `$[]` all positional operator updates all elements in an array. It is used when you need to modify every element in an array field.
 

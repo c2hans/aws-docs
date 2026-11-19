@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Ident
 ---
 
 # IdentityCenterConfiguration
-<a name="API_IdentityCenterConfiguration"></a>
 
 The parameters for an IAM Identity Center configuration.
 

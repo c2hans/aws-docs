@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazo
 ---
 
 # Amazon S3 Vectors
-<a name="API_Operations_Amazon_S3_Vectors"></a>
 
 The following actions are supported by Amazon S3 Vectors:
 +  [CreateIndex](API_S3VectorBuckets_CreateIndex.md)

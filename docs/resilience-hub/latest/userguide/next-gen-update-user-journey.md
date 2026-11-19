@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Update a user journey
-<a name="next-gen-update-user-journey"></a>
 
 **To update a user journey (console)**
 

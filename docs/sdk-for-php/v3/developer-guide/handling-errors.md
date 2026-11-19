@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/handling-
 ---
 
 # Handling errors in the AWS SDK for PHP Version 3
-<a name="handling-errors"></a>
 
 ## Synchronous Error Handling
 <a name="synchronous-error-handling"></a>

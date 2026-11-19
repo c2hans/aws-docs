@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Algorithm.html
 ---
 
 # Algorithm
-<a name="API_Algorithm"></a>
 
 Describes a custom algorithm.
 

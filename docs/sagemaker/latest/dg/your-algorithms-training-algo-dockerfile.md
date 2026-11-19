@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-trai
 ---
 
 # How Amazon SageMaker AI Runs Your Training Image
-<a name="your-algorithms-training-algo-dockerfile"></a>
 
 You can use a custom entrypoint script to automate infrastructure to train in a production environment. If you pass your entrypoint script into your Docker container, you can also run it as a standalone script without rebuilding your images. SageMaker AI processes your training image using a Docker container entrypoint script.
 

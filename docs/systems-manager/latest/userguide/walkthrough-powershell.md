@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/walkthr
 ---
 
 # Walkthrough: Use the AWS Tools for Windows PowerShell with Run Command
-<a name="walkthrough-powershell"></a>
 
 The following examples show how to use the AWS Tools for Windows PowerShell to view information about commands and command parameters, how to run commands, and how to view the status of those commands. This walkthrough includes an example for each of the pre-defined AWS Systems Manager documents.
 

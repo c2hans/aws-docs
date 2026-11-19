@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_GetRe
 ---
 
 # Use `GetRecords` with an AWS SDK or CLI
-<a name="example_kinesis_GetRecords_section"></a>
 
 The following code examples show how to use `GetRecords`.
 

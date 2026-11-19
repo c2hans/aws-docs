@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-h
 ---
 
 # High CPU Utilization
-<a name="performance-high-cpu-utilization"></a>
 
 High CPU utilization is one of the issues you might encounter at some point while working with Amazon DocumentDB. This section provides insights to resolve the issue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TelephonyChannelSubtypeParameters
-<a name="API_connect-outbound-campaigns-v2_TelephonyChannelSubtypeParameters"></a>
 
 The overridden telephony parameters for an outbound request of a campaign.
 

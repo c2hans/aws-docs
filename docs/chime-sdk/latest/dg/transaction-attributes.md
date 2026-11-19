@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/transaction-attribut
 ---
 
 # Using TransactionAttributes
-<a name="transaction-attributes"></a>
 
 You use the `TransactionAttributes` data structure to store application-specific information, such as call states or meeting IDs, and then pass that data to AWS Lambda invocations. This structure removes the need for storing data in external databases such as Amazon DynamoDB.
 

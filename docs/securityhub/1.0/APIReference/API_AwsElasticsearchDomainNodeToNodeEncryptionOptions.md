@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainNodeToNodeEncryptionOptions
-<a name="API_AwsElasticsearchDomainNodeToNodeEncryptionOptions"></a>
 
 Details about the configuration for node-to-node encryption.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing
 ---
 
 # Customizing your Billing preferences
-<a name="billing-pref"></a>
 
 Use the **AWS Billing preferences** page to manage invoice delivery, alerts, procurement portal settings, credit sharing, Reserved Instances (RI) and Savings Plans discount sharing, and detailed billing reports (legacy). Some sections can be updated only by the payer account. If you use billing transfer, the preferences set in the bill transfer account apply to all organizations that transfer their bills to it.
 

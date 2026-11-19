@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 ---
 
 # Task 4: Access your AWS Transfer Family web app
-<a name="module-4"></a>
 
 |  |  |
 | --- |--- |

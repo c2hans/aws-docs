@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteTaxRegistration
-<a name="API_taxSettings_DeleteTaxRegistration"></a>
 
 Deletes tax registration for a single account.
 

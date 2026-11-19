@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # Source configuration for Cisco ISE
-<a name="cisco-ise-source-config"></a>
 
 ## Integrating with Cisco ISE
 <a name="cisco-ise-integration"></a>

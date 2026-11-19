@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/parqu
 ---
 
 # Sample Parquet output
-<a name="parquet-output"></a>
 
  Given a Parquet file like this:
 

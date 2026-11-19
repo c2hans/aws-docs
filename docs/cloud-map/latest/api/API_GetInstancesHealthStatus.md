@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetInstancesHea
 ---
 
 # GetInstancesHealthStatus
-<a name="API_GetInstancesHealthStatus"></a>
 
 Gets the current health status (`Healthy`, `Unhealthy`, or `Unknown`) of one or more instances that are associated with a specified service.
 

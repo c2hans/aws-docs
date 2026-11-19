@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Limit
 ---
 
 # LimitsPerLabelSet
-<a name="API_LimitsPerLabelSet"></a>
 
 This structure defines one label set used to enforce active time series limits for the workspace, and defines the limit for that label set.
 

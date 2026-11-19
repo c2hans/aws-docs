@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetRegi
 ---
 
 # GetRegionOptStatus
-<a name="API_GetRegionOptStatus"></a>
 
 Retrieves the opt-in status of a particular Region.
 

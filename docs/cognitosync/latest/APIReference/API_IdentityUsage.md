@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Iden
 ---
 
 # IdentityUsage
-<a name="API_IdentityUsage"></a>
 
 Usage information for the identity.
 

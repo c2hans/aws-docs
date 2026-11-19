@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/lang-tag.html
 ---
 
 # Specifying another language for specific words
-<a name="lang-tag"></a>
 
 *<lang>*
 

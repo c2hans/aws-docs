@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/configuring-se
 ---
 
 # View SFTP, FTPS, and FTP server details
-<a name="configuring-servers-view-info"></a>
 
 You can find a list of details and properties for an individual AWS Transfer Family server. Server properties include protocols, identity provider, status, endpoint type, custom hostname, endpoint, users, logging role, server host key, and tags.
 

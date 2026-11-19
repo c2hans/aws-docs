@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-client-lib.
 ---
 
 # Learn about the Amazon Chime SDK client libraries
-<a name="mtgs-sdk-client-lib"></a>
 
 Before you can build real-time meeting clients with the Amazon Chime SDK, you must integrate your client application with an Amazon Chime SDK client library. The following client libraries are available:
 + [Amazon Chime SDK client library for Android](https://github.com/aws/amazon-chime-sdk-android) – A Kotlin library that helps you build Amazon Chime SDK applications on supported Android devices.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF02-BP02 Implement Java memory utilization monitoring
-<a name="aosperf02-bp02"></a>
 
  Keep `JVMMemoryPressure` below 85% to maintain efficient memory utilization and prevent potential performance issues.
 

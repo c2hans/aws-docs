@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/extensions-configuratio
 ---
 
 # Configuring Lambda extensions
-<a name="extensions-configuration"></a>
 
 ## Configuring extensions (.zip file archive)
 <a name="using-extensions-config"></a>

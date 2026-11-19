@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/alb-target.html
 ---
 
 # Application Load Balancers as targets in VPC Lattice
-<a name="alb-target"></a>
 
 You can create a VPC Lattice target group, register a single internal Application Load Balancer as the target, and configure your VPC Lattice service to forward traffic to this target group. In this scenario, the Application Load Balancer takes over the routing decision as soon as traffic reaches it. This configuration allows you to use the layer 7 request-based routing feature of the Application Load Balancer in combination with features that VPC Lattice supports, such as IAM authentication and authorization, and connectivity across VPCs and accounts.
 

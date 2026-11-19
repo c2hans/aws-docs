@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateJobQ
 ---
 
 # UpdateJobQueue
-<a name="API_UpdateJobQueue"></a>
 
 Updates a job queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ts
 ---
 
 # How do I resolve dependency conflicts?
-<a name="ts-faq-dep-conflict-resolution"></a>
 
 When you use the AWS SDK for Kotlin, it needs certain AWS and third-party dependencies to work properly. If these dependencies are missing or unexpected versions at runtime, you might see errors like `NoSuchMethodError` or `NoClassDefFoundError`. These dependency issues usually fall into two groups:
 + SDK/Smithy dependency conflicts

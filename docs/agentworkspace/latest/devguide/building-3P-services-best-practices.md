@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 ---
 
 # Best practices and recommendations
-<a name="building-3P-services-best-practices"></a>
 
 ## Service creation management
 <a name="building-3P-services-service-creation-management"></a>

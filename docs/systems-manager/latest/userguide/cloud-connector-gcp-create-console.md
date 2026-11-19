@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Create a Cloud Connector (AWS Management Console)
-<a name="cloud-connector-gcp-create-console"></a>
 
 We recommend that you use the AWS Management Console to create a Cloud Connector. The console wizard collects your GCP host project and target project details, and then generates a setup script that configures the GCP side for you. The generated script does the following:
 + Creates or reuses a Workload Identity Pool, an OpenID Connect (OIDC) provider, and a connector service account in your host project.

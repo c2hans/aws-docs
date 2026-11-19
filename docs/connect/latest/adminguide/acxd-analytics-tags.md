@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-analytics
 ---
 
 # Analytics tags
-<a name="acxd-analytics-tags"></a>
 
 Analytics tags help you mark important moments in a conversation flow so you can track how users move through your agentic CX designer application.
 

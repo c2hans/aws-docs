@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ReservedInstance
-<a name="API_ReservedInstance"></a>
 
 Details of an OpenSearch Reserved Instance.
 

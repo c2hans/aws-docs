@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Mul
 ---
 
 # MulticastWirelessMetadata
-<a name="API_MulticastWirelessMetadata"></a>
 
 Wireless metadata that is to be sent to multicast group.
 

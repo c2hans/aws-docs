@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_SnapshotBu
 ---
 
 # SnapshotBuild
-<a name="API_SnapshotBuild"></a>
 
 Contains size information about a MicroVM image snapshot build.
 

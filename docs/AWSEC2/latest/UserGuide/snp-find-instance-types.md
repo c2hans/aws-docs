@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snp-find-instanc
 ---
 
 # Find EC2 instance types that support AMD SEV-SNP
-<a name="snp-find-instance-types"></a>
 
 You can find instance types that support AMD SEV-SNP. The Amazon EC2 console does not display this information for an instance type.
 

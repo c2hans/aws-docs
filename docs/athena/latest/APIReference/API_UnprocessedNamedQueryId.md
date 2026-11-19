@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Unprocess
 ---
 
 # UnprocessedNamedQueryId
-<a name="API_UnprocessedNamedQueryId"></a>
 
 Information about a named query ID that could not be processed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Choosing a security model
-<a name="choosing-a-security-model"></a>
 
 You can choose from various security models or approaches for AWS. The choice of approach and the best-fitting model depends on your audience, the target business outcomes, and the overall business process. It is possible to use a blend of multiple models.
 

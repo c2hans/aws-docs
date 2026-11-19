@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetRouterInp
 ---
 
 # GetRouterInput
-<a name="API_GetRouterInput"></a>
 
 Retrieves information about a specific router input in AWS Elemental MediaConnect.
 

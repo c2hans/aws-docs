@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGe
 ---
 
 # BatchGetStandardsControlAssociations
-<a name="API_BatchGetStandardsControlAssociations"></a>
 
  For a batch of security controls and standards, identifies whether each control is currently enabled or disabled in a standard.
 

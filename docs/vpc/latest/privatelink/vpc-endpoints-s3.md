@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.
 ---
 
 # Gateway endpoints for Amazon S3
-<a name="vpc-endpoints-s3"></a>
 
 You can access Amazon S3 from your VPC using gateway VPC endpoints. After you create the gateway endpoint, you can add it as a target in your route table for traffic destined from your VPC to Amazon S3.
 

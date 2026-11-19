@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_SlurmAuthKey
 ---
 
 # SlurmAuthKey
-<a name="API_SlurmAuthKey"></a>
 
 The shared Slurm key for authentication, also known as the **cluster secret**.
 

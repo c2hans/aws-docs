@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Li
 ---
 
 # ListDataLakeExceptions
-<a name="API_ListDataLakeExceptions"></a>
 
 Lists the Amazon Security Lake exceptions that you can use to find the source of problems and fix them.
 

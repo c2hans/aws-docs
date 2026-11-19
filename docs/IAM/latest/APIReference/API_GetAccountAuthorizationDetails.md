@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountAu
 ---
 
 # GetAccountAuthorizationDetails
-<a name="API_GetAccountAuthorizationDetails"></a>
 
 Retrieves information about all IAM users, groups, roles, and policies in your AWS account, including their relationships to one another. Use this operation to obtain a snapshot of the configuration of IAM permissions (users, groups, roles, and policies) in your account.
 

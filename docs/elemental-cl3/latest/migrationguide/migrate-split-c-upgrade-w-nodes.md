@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step E: Upgrade the worker nodes
-<a name="migrate-split-c-upgrade-w-nodes"></a>
 
 You must now remove each worker from the original cluster (that is controlled by node Y), upgrade it, and add it to the new cluster (that is controlled by node X).
 

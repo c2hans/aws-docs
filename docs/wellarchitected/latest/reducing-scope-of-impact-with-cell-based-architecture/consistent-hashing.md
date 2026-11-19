@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Consistent hashing
-<a name="consistent-hashing"></a>
 
  Consistent hashing is a family of algorithms that map keys to buckets (cells) with a small amount of fairly stable state and a minimal amount of churn when adding or removing buckets.
 

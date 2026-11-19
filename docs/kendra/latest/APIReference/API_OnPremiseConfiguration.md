@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_OnPremise
 ---
 
 # OnPremiseConfiguration
-<a name="API_OnPremiseConfiguration"></a>
 
 Provides the configuration information to connect to GitHub Enterprise Server (on premises).
 

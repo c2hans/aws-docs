@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Redac
 ---
 
 # RedactionConfig
-<a name="API_RedactionConfig"></a>
 
 Provides configuration parameters for PII entity redaction.
 

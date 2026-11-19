@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step F: Upgrade node Y
-<a name="migrate-split-c-upgrade-secondary"></a>
 
 After you remove the last worker node, the original cluster no longer exists. Node Y is no longer controlling any worker nodes. The deployment now looks like the following diagram.
 

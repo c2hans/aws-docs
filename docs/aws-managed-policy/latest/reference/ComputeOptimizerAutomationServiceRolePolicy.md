@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Comp
 ---
 
 # ComputeOptimizerAutomationServiceRolePolicy
-<a name="ComputeOptimizerAutomationServiceRolePolicy"></a>
 
 **Description**: The ComputeOptimizerAutomationServiceRolePolicy managed policy is attached to a service-linked role that allows Compute Optimizer to perform actions on your behalf
 

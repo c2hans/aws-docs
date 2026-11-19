@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/self-troubleshooting
 ---
 
 # Troubleshooting Amazon Chime SDK meetings
-<a name="self-troubleshooting"></a>
 
 The sections in this topic explain several ways to self-troubleshoot Amazon Chime SDK meetings.
 

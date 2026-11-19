@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteInfrastructureConfiguration
-<a name="API_DeleteInfrastructureConfiguration"></a>
 
 Deletes an infrastructure configuration. You can't delete a configuration that an image pipeline still references. The request fails with `ResourceDependencyException`. Update or delete the referencing pipelines first.
 

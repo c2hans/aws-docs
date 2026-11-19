@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-using-e
 ---
 
 # Using Amazon DocumentDB Elastic Clusters
-<a name="docdb-using-elastic-clusters"></a>
 
 Amazon DocumentDB elastic clusters support workloads with millions of reads/writes per second and petabytes of storage capacity. Elastic clusters also simplify how developers interact with Amazon DocumentDB by eliminating the need to choose, manage or upgrade instances.
 

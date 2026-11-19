@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDMSServerlessServiceRolePolicy
-<a name="AWSDMSServerlessServiceRolePolicy"></a>
 
 **Description**: Grants AWS DMS Serverless permissions to create and manage DMS resources in your account on your behalf
 

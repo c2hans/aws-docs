@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCo
 ---
 
 # ListCompilationJobs
-<a name="API_ListCompilationJobs"></a>
 
 Lists model compilation jobs that satisfy various filters.
 

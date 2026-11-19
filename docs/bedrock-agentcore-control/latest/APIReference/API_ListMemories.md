@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListMemories
-<a name="API_ListMemories"></a>
 
 Lists the available Amazon Bedrock AgentCore Memory resources in the current AWS Region.
 

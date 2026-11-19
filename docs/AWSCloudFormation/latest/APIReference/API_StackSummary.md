@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSummary
-<a name="API_StackSummary"></a>
 
 The `StackSummary` Data Type
 

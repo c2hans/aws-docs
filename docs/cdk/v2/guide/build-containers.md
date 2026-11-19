@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/build-containers.html
 ---
 
 # Build and deploy container image assets in CDK apps
-<a name="build-containers"></a>
 
 When you build container image assets with the AWS Cloud Development Kit (AWS CDK), Docker is utilized by default to perform these actions. If you want to use a different container management tool, you can replace Docker through the `CDK_DOCKER` environment variable.
 

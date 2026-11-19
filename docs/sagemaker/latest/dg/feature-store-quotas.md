@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-quotas
 ---
 
 # Quotas, naming rules and data types
-<a name="feature-store-quotas"></a>
 
 ## Quota terminologies
 <a name="feature-store-terminologies"></a>

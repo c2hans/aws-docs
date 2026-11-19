@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Managing your Bacs direct debit payment method
-<a name="manage-bacs-emea"></a>
 
  AWS Europe customers can add a bank account to allow Bacs direct debit payments. You can use any personal or business bank account, provided that the account is located in the UK and payments are made using British pound (GBP).
 

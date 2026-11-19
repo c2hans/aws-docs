@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Fulfillmen
 ---
 
 # FulfillmentCodeHookSettings
-<a name="API_FulfillmentCodeHookSettings"></a>
 
 Determines if a Lambda function should be invoked for a specific intent.
 

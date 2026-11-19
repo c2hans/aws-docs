@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Automation dispatch role
-<a name="cloud-connector-gcp-automation-dispatch-role"></a>
 
 The automation dispatch role is the role State Manager uses when it starts an Automation execution against a Cloud Connector. State Manager passes the automation assume role to Automation through this role. The dispatch role also assumes the GCP federation role directly so State Manager can resolve which GCP virtual machines match a Cloud Connector's targets when an association runs.
 

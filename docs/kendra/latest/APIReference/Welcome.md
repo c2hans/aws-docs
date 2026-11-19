@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Kendra
 <a name="Welcome_Amazon_Kendra"></a>

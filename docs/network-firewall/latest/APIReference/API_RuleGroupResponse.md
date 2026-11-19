@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleGroupResponse
-<a name="API_RuleGroupResponse"></a>
 
 The high-level properties of a rule group. This, along with the [RuleGroup](API_RuleGroup.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](API_DescribeRuleGroup.md).
 

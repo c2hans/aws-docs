@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_War
 ---
 
 # WarmTierRetentionPeriod
-<a name="API_WarmTierRetentionPeriod"></a>
 
 Set this period to specify how long your data is stored in the warm tier before it is deleted. You can set this only if cold tier is enabled.
 

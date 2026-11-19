@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/datasources-se
 ---
 
 # Data Sources - Search
-<a name="datasources-search-resources"></a>
 
 The Search Data Sources resource provides statistical data and other information about AWS resources that Amazon Macie monitors and analyzes for your account. The information includes quantitative breakdowns that indicate how much data Macie can analyze to detect sensitive data in a resource, and whether and when that analysis occurred. The data is available for all the AWS resources that Macie monitors and analyzes for your account. If you're the Macie administrator for an organization, this includes resources that your member accounts own.
 

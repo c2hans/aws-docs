@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/task-options.h
 ---
 
 # Choosing what AWS DataSync transfers
-<a name="task-options"></a>
 
 AWS DataSync lets you choose what to transfer and how you want your data handled. Some options include:
 + Transferring an exact list of files or object by using a manifest.

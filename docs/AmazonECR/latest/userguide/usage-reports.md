@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/usage-reports
 ---
 
 # Amazon ECR usage reports
-<a name="usage-reports"></a>
 
 AWS provides a free reporting tool called Cost Explorer that enables you to analyze the cost and usage of your Amazon ECR resources.
 

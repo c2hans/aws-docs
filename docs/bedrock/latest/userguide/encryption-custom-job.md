@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-cust
 ---
 
 # Encryption of custom models
-<a name="encryption-custom-job"></a>
 
 Amazon Bedrock uses your training data with the [CreateModelCustomizationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelCustomizationJob.html) action, or with the [console](model-customization-submit.md), to create a custom model which is a fine tuned version of an Amazon Bedrock foundational model. Your custom models are managed and stored by AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobe-analytics-support.h
 ---
 
 # AWS Glue support for Adobe Analytics
-<a name="adobe-analytics-support"></a>
 
 AWS Glue supports Adobe Analytics as follows:
 

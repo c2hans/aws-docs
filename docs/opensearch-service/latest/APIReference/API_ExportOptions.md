@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ExportOptions
-<a name="API_ExportOptions"></a>
 
 Options to filter the scope of saved objects to export during a migration.
 

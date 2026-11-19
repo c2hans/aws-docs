@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PostContactSummary
-<a name="API_connect-contact-lens_PostContactSummary"></a>
 
 Information about the post-contact summary.
 

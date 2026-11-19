@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LambdaFunctionScheduledEventDetails
-<a name="API_LambdaFunctionScheduledEventDetails"></a>
 
 Contains details about a Lambda function scheduled during an execution.
 

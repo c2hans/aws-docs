@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/monitoring_do
 ---
 
 # Monitoring and logging in Amazon DocumentDB
-<a name="monitoring_docdb"></a>
 
 Monitoring your AWS services is an important part of keeping your systems healthy and functioning optimally. Collect monitoring data from all parts of your AWS solution so that you can more easily debug and fix failures or performance issues. Before you begin monitoring your AWS solutions, consider the following questions:
 + What are your monitoring goals?

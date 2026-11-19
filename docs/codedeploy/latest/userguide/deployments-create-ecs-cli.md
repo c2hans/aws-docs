@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Create an Amazon ECS Compute Platform deployment (CLI)
-<a name="deployments-create-ecs-cli"></a>
 
 After you have created the application and revision (in Amazon ECS deployments, this is the AppSpec file):
 

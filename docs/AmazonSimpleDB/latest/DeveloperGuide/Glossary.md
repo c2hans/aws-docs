@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Glo
 ---
 
 # Amazon SimpleDB Glossary
-<a name="Glossary"></a>
 
 **account**<a name="glossary_Account"></a>
 AWS account associated with a particular developer.

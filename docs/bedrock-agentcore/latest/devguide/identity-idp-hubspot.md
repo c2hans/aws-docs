@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # HubSpot
-<a name="identity-idp-hubspot"></a>
 
 HubSpot can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through HubSpot’s OAuth2 service and obtain access tokens for HubSpot API resources.
 

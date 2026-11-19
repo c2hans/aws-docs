@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-
 ---
 
 # Windows containers on Fargate considerations for Amazon ECS
-<a name="windows-considerations"></a>
 
 The following are the differences and considerations to know when you run Windows containers on AWS Fargate.
 

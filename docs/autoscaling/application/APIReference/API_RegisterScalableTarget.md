@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # RegisterScalableTarget
-<a name="API_RegisterScalableTarget"></a>
 
 Registers or updates a scalable target, which is the resource that you want to scale.
 

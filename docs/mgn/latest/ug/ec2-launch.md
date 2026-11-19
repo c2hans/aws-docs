@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/ec2-launch.html
 ---
 
 # EC2 launch template
-<a name="ec2-launch"></a>
 
 AWS Transform MGN uses EC2 launch templates to launch test and cutover EC2 instances for each source server.
 
@@ -13,6 +12,7 @@ MGN selects defaults to provide the best performance while migrating your server
 + You can't use the same template for multiple servers.
 + You can edit the launch template only from the Amazon EC2 console.
 + Some EC2 launch template settings aren't used by the MGN launch process, and some might interfere with it.
++ When you migrate to an AWS Outpost, MGN validates the launch template subnet, security groups, instance type, and volume types against the Outpost. For more information, see [Migrating to AWS Outposts](outposts.md).
 
 [Learn more about individual launch template settings.](detailed-considerations.md)
 

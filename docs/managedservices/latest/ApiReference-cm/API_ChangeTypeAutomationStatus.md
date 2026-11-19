@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeAutomationStatus
-<a name="API_ChangeTypeAutomationStatus"></a>
 
 The automation status of a change type (`Automated` or `Manual`).
 

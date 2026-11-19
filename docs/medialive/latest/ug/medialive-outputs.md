@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/medialive-outputs.ht
 ---
 
 # Setup: Creating output groups and outputs
-<a name="medialive-outputs"></a>
 
 This section describes how to plan and create output groups and outputs in an AWS Elemental MediaLive.
 

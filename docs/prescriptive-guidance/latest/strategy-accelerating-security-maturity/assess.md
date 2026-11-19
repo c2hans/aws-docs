@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Assess: Evaluating your current cloud security posture
-<a name="assess"></a>
 
 Before you deploy anything to the landing zone, assess your landing zone to make sure it meets your requirements and to establish a baseline. This practice is called a *cloud posture assessment*. It helps you identify and remediate risks across your cloud infrastructure. Assessing your cloud security posture provides visibility of the relevant security controls in the cloud environment.
 

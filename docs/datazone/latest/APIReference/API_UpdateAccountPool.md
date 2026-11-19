@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAccountPool
-<a name="API_UpdateAccountPool"></a>
 
 Updates the account pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StartI
 ---
 
 # StartICD10CMInferenceJob
-<a name="API_StartICD10CMInferenceJob"></a>
 
 Starts an asynchronous job to detect medical conditions and link them to the ICD-10-CM ontology. Use the `DescribeICD10CMInferenceJob` operation to track the status of a job.
 

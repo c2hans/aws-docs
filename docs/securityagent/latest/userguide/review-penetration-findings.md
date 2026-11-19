@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-pe
 ---
 
 # Review findings from a penetration test
-<a name="review-penetration-findings"></a>
 
 Monitor penetration test execution in real time on the Penetration Test Logs page after AWS Security Agent starts a penetration test. AWS Security Agent logs every action during the penetration test. After completion, review the penetration test summary, which includes application overview, coverage with identified endpoints, and risk assessment of security findings.
 

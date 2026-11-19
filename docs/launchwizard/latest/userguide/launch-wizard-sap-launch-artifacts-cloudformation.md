@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Launch CloudFormation templates created in Launch Wizard
-<a name="launch-wizard-sap-launch-artifacts-cloudformation"></a>
 
 You can launch CloudFormation stacks from the CloudFormation templates that you saved from your successful Launch Wizard deployments. Perform the following steps to find and launch your CloudFormation templates created with Launch Wizard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/l
 ---
 
 # AWS Lambda runtimes and support in the AWS Toolkit for JetBrains
-<a name="lambda-runtimes"></a>
 
 AWS Lambda supports multiple languages through the use of runtimes. A runtime provides a language-specific environment that relays invocation events, context information, and responses between Lambda and the function. For detailed information about the Lambda service and supported runtimes, see the [Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html#runtime-support-policy) topic in the *AWS Lambda User Guide*.
 

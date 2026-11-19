@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/asset-t
 ---
 
 # Asset tracking applications
-<a name="asset-tracking"></a>
 
 The following is an illustration of an asset tracking application architecture using Amazon Location:
 

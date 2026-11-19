@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # CreateEvent
-<a name="API_CreateEvent"></a>
 
 Submits an event (conversation turns, structured data, or a PDF, PNG, or JPEG file stored in Amazon S3) to a session in a space.
 

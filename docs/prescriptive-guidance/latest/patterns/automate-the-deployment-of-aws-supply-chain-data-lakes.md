@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate Supply Chain data lakes deployment in a multi-repository setup
-<a name="automate-the-deployment-of-aws-supply-chain-data-lakes"></a>
 
 *Keshav Ganesh, Amazon Web Services*
 

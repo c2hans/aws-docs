@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Pu
 ---
 
 # PutInsightSelectors
-<a name="API_PutInsightSelectors"></a>
 
 Lets you enable Insights event logging on specific event categories by specifying the Insights selectors that you want to enable on an existing trail or event data store. You also use `PutInsightSelectors` to turn off Insights event logging, by passing an empty list of Insights types. The valid Insights event types are `ApiErrorRateInsight` and `ApiCallRateInsight`, and valid EventCategories are `Management` and `Data`.
 

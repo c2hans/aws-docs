@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_SourceCloudP
 ---
 
 # SourceCloudProperties
-<a name="API_SourceCloudProperties"></a>
 
 Properties of the cloud environment where this Source Server originated from.
 

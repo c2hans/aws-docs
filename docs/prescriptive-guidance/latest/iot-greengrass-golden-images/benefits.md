@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Why use golden images?
-<a name="benefits"></a>
 
 There are numerous reasons for using a golden image to program devices in the factory.
 

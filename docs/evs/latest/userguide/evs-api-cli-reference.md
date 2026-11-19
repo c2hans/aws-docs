@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-api-cli-referen
 ---
 
 # Use the AWS CLI, SDKs, and API with Amazon EVS
-<a name="evs-api-cli-reference"></a>
 
 The AWS CLI, API, and AWS CloudFormation references for Amazon Elastic VMware Service give the exact command, operation, or resource property that a procedure in this guide uses.
 

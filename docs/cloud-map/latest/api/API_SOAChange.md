@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_SOAChange.html
 ---
 
 # SOAChange
-<a name="API_SOAChange"></a>
 
 Updated Start of Authority (SOA) properties for a public or private DNS namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Specify a specific credentials provider in the AWS SDK for Java 2.x
-<a name="credentials-providers"></a>
 
 While the default credentials provider chain is convenient for many scenarios, explicitly specifying credentials providers gives you greater control over authentication behavior, performance, and security.
 

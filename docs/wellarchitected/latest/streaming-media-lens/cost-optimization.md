@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
 The cost optimization pillar covers managing and reducing costs across streaming media workloads while maintaining quality and performance. Storage, data transfer, encoding compute, and delivery represent the primary cost centers.
 

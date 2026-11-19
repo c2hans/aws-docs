@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::RuleGroup ConnectedAccountConfig
-<a name="aws-properties-wafv2-rulegroup-connectedaccountconfig"></a>
 
 A connected account configuration for AI bot monetization. Specifies the connected account that payments settle to and the per-network pricing. Settlement through a connected account is an alternative to the self-managed wallets in `CryptoConfig`; wallet addresses are managed for the connected account rather than configured by you. If the referenced connected account is not active or not enabled for crypto settlement, the `CreateWebACL`, `UpdateWebACL`, `CreateRuleGroup`, or `UpdateRuleGroup` request that includes it is rejected. Specifically, a request that references the account is rejected with `WAFInvalidOperationException` if the account or its crypto settlement capability isn't active, `WAFNonexistentItemException` if the ARN no longer exists, `AccessDeniedException` if you don't have `payments:GetConnectedAccount`, or `WAFInvalidParameterException` if the ARN is invalid or the partition is unsupported. Connected accounts are available only in the commercial AWS partition.
 

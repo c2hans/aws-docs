@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ev
 ---
 
 # AWS security service evaluation
-<a name="service-evaluation"></a>
 
 A *proof of technology (POT)* is similar to a proof of concept. The goal of a POT is to determine whether a potential solution to a technical problem is viable. For example, you might use a POT to prove that a specific configuration can achieve a certain outcome. In this section, you use a POT to evaluate and demonstrate whether a given AWS security service meets your business and technical requirements.
 

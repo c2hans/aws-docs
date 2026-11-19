@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # On-demand dataset runner
-<a name="dataset-evaluations-on-demand"></a>
 
 The `OnDemandEvaluationDatasetRunner` orchestrates the entire evaluation lifecycle client-side: invoke the agent, wait for telemetry ingestion, collect spans from CloudWatch, and call the Evaluate API, all in a single `run()` call.
 

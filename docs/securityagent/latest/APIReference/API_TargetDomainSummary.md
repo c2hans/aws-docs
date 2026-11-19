@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ta
 ---
 
 # TargetDomainSummary
-<a name="API_TargetDomainSummary"></a>
 
 Contains summary information about a target domain.
 

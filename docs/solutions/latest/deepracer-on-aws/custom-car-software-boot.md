@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # First boot and updates
-<a name="custom-car-software-boot"></a>
 
 1. Insert the SD card into the Raspberry Pi 5 and power on the vehicle.
 

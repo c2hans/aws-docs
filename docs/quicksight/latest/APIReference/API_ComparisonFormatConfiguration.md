@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Compa
 ---
 
 # ComparisonFormatConfiguration
-<a name="API_ComparisonFormatConfiguration"></a>
 
 The format of the comparison.
 

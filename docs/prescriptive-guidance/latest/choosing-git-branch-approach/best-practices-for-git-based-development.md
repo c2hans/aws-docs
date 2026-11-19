@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Best practices for Git-based development
-<a name="best-practices-for-git-based-development"></a>
 
 To successfully adopt Git-based development, it's important to follow a set of best practices that promote collaboration, maintain code quality, and support continuous integration and continuous delivery (CI/CD). In addition to the best practices in this guide, review the [AWS Well-Architected DevOps Guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/devops-guidance.html). The following are some key best practices for Git-based development on AWS:
 + **Keep changes small and frequent** – Encourage developers to commit small, incremental changes or features. This reduces the risk of merge conflicts and makes it easier to identify and fix issues quickly.

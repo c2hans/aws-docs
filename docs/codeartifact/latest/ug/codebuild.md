@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/codebuild.html
 ---
 
 # Using CodeArtifact with CodeBuild
-<a name="codebuild"></a>
 
  These topics describe how to use packages in a CodeArtifact repository in an AWS CodeBuild build project.
 

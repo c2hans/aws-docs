@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDMSRedshiftS3Role
-<a name="AmazonDMSRedshiftS3Role"></a>
 
 **Description**: Provides access to manage S3 settings for Redshift endpoints for DMS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_
 ---
 
 # Supported Regions and DB engines for RDS Custom
-<a name="Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSCustom"></a>
 
 Amazon RDS Custom automates database administration tasks and operations. By using RDS Custom, as a database administrator you can access and customize your database environment and operating system. With RDS Custom, you can customize to meet the requirements of legacy, custom, and packaged applications. For more information, see [Amazon RDS Custom](rds-custom.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Attribution
-<a name="API_agent-runtime_Attribution"></a>
 
 Contains citations for a part of an agent response.
 

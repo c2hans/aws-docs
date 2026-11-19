@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Drill
 ---
 
 # DrillDownFilter
-<a name="API_DrillDownFilter"></a>
 
 The drill down filter for the column hierarchies.
 

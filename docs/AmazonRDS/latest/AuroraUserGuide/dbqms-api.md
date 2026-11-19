@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/dbqms-a
 ---
 
 # Database Query Metadata Service (DBQMS) API reference
-<a name="dbqms-api"></a>
 
 The Database Query Metadata Service (`dbqms`) is an internal-only service. It provides your recent and saved queries for the query editor on the AWS Management Console for multiple AWS services, including Amazon RDS.
 

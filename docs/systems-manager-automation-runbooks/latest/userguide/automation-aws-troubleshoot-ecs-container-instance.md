@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootECSContainerInstance`
-<a name="automation-aws-troubleshoot-ecs-container-instance"></a>
 
  **Description**
 

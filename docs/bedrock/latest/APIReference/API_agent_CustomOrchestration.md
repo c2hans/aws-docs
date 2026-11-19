@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cu
 ---
 
 # CustomOrchestration
-<a name="API_agent_CustomOrchestration"></a>
 
  Details of custom orchestration.
 

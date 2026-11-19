@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateIdMappingTable
-<a name="API_UpdateIdMappingTable"></a>
 
 Provides the details that are necessary to update an ID mapping table.
 

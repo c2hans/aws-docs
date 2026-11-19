@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-direct-inges
 ---
 
 # Delete documents from a knowledge base directly
-<a name="kb-direct-ingestion-delete"></a>
 
 If you no longer need a document in your knowledge base, you can delete it directly. To learn how to delete documents from your data source and knowledge base, expand the section that corresponds to your use case:
 

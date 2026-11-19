@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 ---
 
 # Creating a third-party service
-<a name="building-3P-services-creating"></a>
 
 ## Third-party service setup
 <a name="building-3P-services-setup"></a>

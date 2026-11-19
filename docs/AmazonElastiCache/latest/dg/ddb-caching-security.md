@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ddb-caching-
 ---
 
 # Security in DynamoDB caching
-<a name="ddb-caching-security"></a>
 
 Amazon DynamoDB caching encrypts your data, authenticates connections to the serverless cache, and authorizes access to DynamoDB table data. The following sections describe each of these security controls.
 

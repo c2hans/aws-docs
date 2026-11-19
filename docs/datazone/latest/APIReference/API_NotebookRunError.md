@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Noteboo
 ---
 
 # NotebookRunError
-<a name="API_NotebookRunError"></a>
 
 The error details of a failed notebook run in Amazon SageMaker Unified Studio.
 

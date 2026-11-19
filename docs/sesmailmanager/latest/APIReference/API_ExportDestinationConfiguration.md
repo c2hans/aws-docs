@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_E
 ---
 
 # ExportDestinationConfiguration
-<a name="API_ExportDestinationConfiguration"></a>
 
 The destination configuration for delivering exported email data.
 

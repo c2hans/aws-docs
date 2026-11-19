@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Resources
-<a name="resources"></a>
 
 The following resources provide additional context, technical details, and implementation guidance to support your organization's generative AI journey. As AWS continues to innovate with generative AI, you can regularly check these resources for updates and new capabilities.
 

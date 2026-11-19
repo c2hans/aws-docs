@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary
-<a name="AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary"></a>
 
 **Description**: The AmazonDataZoneSageMakerEnvironmentRolePermissionsBoundary policy is the list of permissions that are permitted on an execution role created in a SageMaker environment provisioned by Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelCardExportJob
-<a name="API_DescribeModelCardExportJob"></a>
 
 Describes an Amazon SageMaker Model Card export job.
 

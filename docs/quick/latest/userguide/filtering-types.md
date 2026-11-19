@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/filtering-types.h
 ---
 
 # Filter types in AWS Quick
-<a name="filtering-types"></a>
 
 You can create several different types of filters in Quick. The type of filter you create mostly depends on the data type of the field that you want to filter.
 

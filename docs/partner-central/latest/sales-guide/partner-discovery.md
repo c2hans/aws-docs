@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/partn
 ---
 
 # Partner Discovery
-<a name="partner-discovery"></a>
 
 From Partner Discovery, you can find or search for other partners to view their details or send them connection requests.
 

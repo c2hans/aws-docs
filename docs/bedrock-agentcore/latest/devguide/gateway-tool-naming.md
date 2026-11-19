@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Understand how AgentCore Gateway tools are named
-<a name="gateway-tool-naming"></a>
 
 The name of a tool in your gateway is dependent on the name of the target through which the tool can be accessed. Tool names are constructed in the following pattern:
 

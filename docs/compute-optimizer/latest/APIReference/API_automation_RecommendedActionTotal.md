@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RecommendedActionTotal
-<a name="API_automation_RecommendedActionTotal"></a>
 
 Aggregate totals for a group of recommended actions, including count and estimated monthly savings.
 

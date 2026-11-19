@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Cell deployment
-<a name="cell-deployment"></a>
 
  Unless you are already working on a workload that is multi-Region, you currently have one instance of your workload to develop, deploy and operate. Now with your workload using a cell-based architecture, you have tens, hundreds or even thousands of instances of your workload to deploy and operate, depending on the limits, scale units, and cell size you set. In summary, it is a very complex challenge to deploy in a production environment.
 

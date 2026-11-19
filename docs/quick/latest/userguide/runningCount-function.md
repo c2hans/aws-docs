@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/runningCount-func
 ---
 
 # runningCount
-<a name="runningCount-function"></a>
 
 The `runningCount` function calculates a running count for a measure or dimension, based on the specified dimensions and sort orders.
 

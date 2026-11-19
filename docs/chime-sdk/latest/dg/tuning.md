@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/tuning.html
 ---
 
 # Tuning resource utilization for the Amazon Chime SDK
-<a name="tuning"></a>
 
 When creating the `VideoFxProcessor`, you can supply the optional `processingBudgetPerFrame` parameter and control the amount of CPU and GPU that the filters use.
 

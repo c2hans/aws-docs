@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/s1
 ---
 
 # Reference architecture
-<a name="s1-reference-architecture"></a>
 
  The following diagram illustrates the solution architecture and its key components for data cataloging, security, compliance, and data access requirements using DataHub.
 

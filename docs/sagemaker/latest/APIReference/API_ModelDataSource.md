@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDataSource
-<a name="API_ModelDataSource"></a>
 
 Specifies the location of ML model data to deploy. If specified, you must specify one and only one of the available data sources.
 

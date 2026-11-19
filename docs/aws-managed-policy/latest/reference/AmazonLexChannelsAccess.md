@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLexChannelsAccess
-<a name="AmazonLexChannelsAccess"></a>
 
 **Description**: This policy allows customers to call Lex runtime from channels
 

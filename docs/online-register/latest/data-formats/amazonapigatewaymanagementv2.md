@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon API Gateway Management V2
-<a name="amazonapigatewaymanagementv2"></a>
 
 Amazon API Gateway Management V2 provides the following APIs for data retrieval.
 

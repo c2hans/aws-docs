@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_DeleteComput
 ---
 
 # DeleteComputeNodeGroup
-<a name="API_DeleteComputeNodeGroup"></a>
 
 Deletes a compute node group. You must delete all queues associated with the compute node group first.
 

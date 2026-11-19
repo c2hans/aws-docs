@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Fundamentals
-<a name="browser-resource-session-management"></a>
 
 The following topics show how the Amazon Bedrock AgentCore Browser works and how you can create the resources and manage sessions.
 

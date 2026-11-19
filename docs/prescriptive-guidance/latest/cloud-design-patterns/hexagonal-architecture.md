@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Hexagonal architecture pattern
-<a name="hexagonal-architecture"></a>
 
 ## Intent
 <a name="hexagonal-architecture-intent"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # TagQueryConfiguration
-<a name="API_app-registry_TagQueryConfiguration"></a>
 
  The definition of `tagQuery`. Specifies which resources are associated with an application.
 

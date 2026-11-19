@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteNotification
-<a name="API_budgets_DeleteNotification"></a>
 
 Deletes a notification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/drawing
 ---
 
 # Drawing data features on a map
-<a name="drawing-on-a-map"></a>
 
 After you have an application that renders a map, using Amplify, MapLibre, or Tangram to render the map, a natural next step is to draw features on top of the map. For example, you might want to render your customer locations as markers on the map.
 

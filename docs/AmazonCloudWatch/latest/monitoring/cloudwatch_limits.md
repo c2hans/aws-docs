@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloud
 ---
 
 # CloudWatch service quotas
-<a name="cloudwatch_limits"></a>
 
 Amazon CloudWatch provides monitoring and observability for your AWS resources and applications. To help ensure optimal performance and prevent abuse, CloudWatch imposes service quotas on various aspects of its functionality. This chapter outlines the key quotas for CloudWatch services, including metrics, alarms, API requests, and notifications. Understanding these quotas is crucial for effectively planning and managing your CloudWatch usage.
 

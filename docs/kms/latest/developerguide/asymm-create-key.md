@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/asymm-create-k
 ---
 
 # Create an asymmetric KMS key
-<a name="asymm-create-key"></a>
 
 You can create [asymmetric KMS keys](symmetric-asymmetric.md) in the AWS KMS console, by using the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) API, or by using the [AWS::KMS::Key CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kms-key.html). An asymmetric KMS key represents a public and private key pair that can be used for encryption, signing, or deriving shared secrets. The private key remains within AWS KMS. To download the public key for use outside of AWS KMS, see [Download public key](download-public-key.md).
 

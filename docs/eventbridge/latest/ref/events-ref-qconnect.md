@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-qconne
 ---
 
 # Amazon Q in Connect events
-<a name="events-ref-qconnect"></a>
 
 Amazon Q in Connect sends service events to EventBridge via AWS CloudTrail.
 

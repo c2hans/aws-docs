@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetails
-<a name="API_AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetails"></a>
 
  Specifies an IPv6 address in an Amazon EC2 launch template.
 

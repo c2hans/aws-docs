@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/installguide/instal
 ---
 
 # Step A: Prepare the hardware and download files
-<a name="install-cl3-ig-prep"></a>
 
 ## Prepare the hardware and network
 <a name="install-cl3-ig-prep-hw"></a>

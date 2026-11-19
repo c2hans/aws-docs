@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Ge
 ---
 
 # GetDatastore
-<a name="API_GetDatastore"></a>
 
 Get data store properties.
 

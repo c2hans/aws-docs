@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-zendes
 ---
 
 # Connecting to Zendesk
-<a name="connecting-to-data-zendesk"></a>
 
 Zendesk is a cloud-based help desk management solution offering customizable tools to build a customer service portal, knowledge base and online communities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListCoreD
 ---
 
 # ListCoreDevices
-<a name="API_ListCoreDevices"></a>
 
 Retrieves a paginated list of Greengrass core devices.
 

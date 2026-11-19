@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Create
 ---
 
 # CreatedAt
-<a name="API_CreatedAt"></a>
 
 The optional filter to narrow the `ListServiceDeployment` results.
 

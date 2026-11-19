@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateUserProficiencies
-<a name="API_AssociateUserProficiencies"></a>
 
 Associates a set of proficiencies with a user.
 

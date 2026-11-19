@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Enable or disable autoshifts
-<a name="getting-started-cli-zonal-autoshift.update-autoshift"></a>
 
 You enable or disable autoshifts for a resource by updating the zonal autoshift status with the CLI. To change the zonal autoshift status, use the `update-zonal-autoshift-configuration` command.
 

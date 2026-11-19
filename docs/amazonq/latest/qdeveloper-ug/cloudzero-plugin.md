@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/cloudzero-p
 ---
 
 # Configuring the Amazon Q Developer CloudZero plugin
-<a name="cloudzero-plugin"></a>
 
 The CloudZero plugin is now part of the AWS assistant.
 

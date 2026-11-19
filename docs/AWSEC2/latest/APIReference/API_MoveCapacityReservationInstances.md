@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveCapac
 ---
 
 # MoveCapacityReservationInstances
-<a name="API_MoveCapacityReservationInstances"></a>
 
 Move available capacity from a source Capacity Reservation to a destination Capacity Reservation. The source Capacity Reservation and the destination Capacity Reservation must be `active`, owned by your AWS account, and share the following:
 + Instance type

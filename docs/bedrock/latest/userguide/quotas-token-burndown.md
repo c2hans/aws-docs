@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-token-bu
 ---
 
 # How tokens are counted in Amazon Bedrock
-<a name="quotas-token-burndown"></a>
 
 When you run model inference, there are quotas on the number of tokens that can be processed depending on which Amazon Bedrock model you use. Review the following terminology related to token quotas:
 

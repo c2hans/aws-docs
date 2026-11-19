@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/create-routi
 ---
 
 # Create a routing control
-<a name="create-routing-control"></a>
 
 When you create a routing control, at a minimum you must specify the Amazon Resource Name (ARN) of the cluster that you want the routing control to be in. You can also specify the ARN of a control panel for the routing control. You'll also need to specify the cluster where the control panel is located.
 

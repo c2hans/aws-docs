@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-wh
 ---
 
 # What's new in Amazon Cognito
-<a name="cognito-whats-new"></a>
 
 This page lists changes to Amazon Cognito that affect how your applications, users, or administrators work with the service. Changes are newest first. Each entry starts with a label line. The label line shows the type of change, the component it applies to, the feature plan it requires (when one applies), and the date the change became available.
 

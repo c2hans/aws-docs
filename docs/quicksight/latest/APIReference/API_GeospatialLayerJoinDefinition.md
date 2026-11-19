@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialLayerJoinDefinition
-<a name="API_GeospatialLayerJoinDefinition"></a>
 
 The custom actions for a layer.
 

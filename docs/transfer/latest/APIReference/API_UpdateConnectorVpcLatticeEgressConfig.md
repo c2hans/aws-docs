@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateC
 ---
 
 # UpdateConnectorVpcLatticeEgressConfig
-<a name="API_UpdateConnectorVpcLatticeEgressConfig"></a>
 
 VPC\_LATTICE egress configuration updates for modifying how the connector routes traffic through customer VPCs. Changes to these settings may require connector restart to take effect.
 

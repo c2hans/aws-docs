@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteMarkerEntr
 ---
 
 # DeleteMarkerEntry
-<a name="API_DeleteMarkerEntry"></a>
 
 Information about the delete marker.
 

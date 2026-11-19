@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RegisteredDomainDelegationInfo
-<a name="API_RegisteredDomainDelegationInfo"></a>
 
 Describes the delegation state of an Amazon Route 53 registered domain to Amazon Lightsail.
 

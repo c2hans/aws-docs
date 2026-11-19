@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpnConnectionOptionsTunnelOptionsDetails
-<a name="API_AwsEc2VpnConnectionOptionsTunnelOptionsDetails"></a>
 
 The VPN tunnel options.
 

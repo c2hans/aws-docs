@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Introduction to software agents
-<a name="overview"></a>
 
 The concept of software agents has evolved significantly from its foundations in autonomous entities in the 1960s to its formal exploration in the early 1990s. As digital systems grow increasingly complex—from deterministic scripts to adaptive, intelligent applications—software agents have become essential building blocks for enabling autonomous, context-aware, and goal-driven behavior in computing systems. In the context of cloud-native and AI-enhanced architectures, particularly with the advent of generative AI, large language models (LLMs), and platforms such as Amazon Bedrock, software agents are being redefined through new lenses of capability and scale.
 

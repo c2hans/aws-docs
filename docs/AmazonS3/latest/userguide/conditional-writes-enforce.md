@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-wr
 ---
 
 # Enforce conditional writes on Amazon S3 buckets
-<a name="conditional-writes-enforce"></a>
 
 By using Amazon S3 bucket policies, you can enforce conditional writes for object uploads in your general purpose buckets.
 

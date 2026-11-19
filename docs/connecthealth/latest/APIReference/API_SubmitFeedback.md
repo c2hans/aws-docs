@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Su
 ---
 
 # SubmitFeedback
-<a name="API_SubmitFeedback"></a>
 
 Submits feedback on a clinical document or a set of medical codes that Amazon Connect Health generated.
 

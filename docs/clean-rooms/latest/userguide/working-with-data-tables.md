@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Prepare data tables in AWS Clean Rooms
-<a name="working-with-data-tables"></a>
 
 **Note**
 Preparing data tables can take place before or after you have joined a collaboration. After a table is prepared, you can reuse it across multiple collaborations as long as your privacy needs for that table are the same.

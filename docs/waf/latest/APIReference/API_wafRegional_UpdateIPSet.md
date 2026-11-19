@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # UpdateIPSet
-<a name="API_wafRegional_UpdateIPSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -29,7 +28,7 @@ To create and configure an `IPSet`, perform the following steps:
 
 1. Submit a [CreateIPSet](API_wafRegional_CreateIPSet.md) request.
 
-1. Use [GetChangeToken](API_wafRegional_GetChangeToken.md) to get the change token that you provide in the `ChangeToken` parameter of an [UpdateIPSet](#API_wafRegional_UpdateIPSet) request.
+1. Use [GetChangeToken](API_wafRegional_GetChangeToken.md) to get the change token that you provide in the `ChangeToken` parameter of an [UpdateIPSet](API_wafRegional_UpdateIPSet.md) request.
 
 1. Submit an `UpdateIPSet` request to specify the IP addresses that you want AWS WAF to watch for.
 

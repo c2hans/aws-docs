@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-age
 ---
 
 # Working with SSM Agent on EC2 instances for macOS
-<a name="ssm-agent-macos"></a>
 
 AWS Systems Manager (SSM Agent) processes Systems Manager requests and configures your machine as specified in the request. Use the following procedures to install, configure, or uninstall SSM Agent for macOS.
 

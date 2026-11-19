@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Update CloudFormation StackSets
-<a name="stacksets-update"></a>
 
 You can update your StackSet using either the CloudFormation console or the AWS CLI.
 

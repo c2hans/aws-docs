@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/changing-visual-s
 ---
 
 # Range and scale on visual types in Quick
-<a name="changing-visual-scale-axis-range"></a>
 
 To change the scale of the values shown on the visual, you can use the **Properties** pane to set the range for one or both axes of the visual. This option is available for the value axes on bar charts, combo charts, line charts, and scatter plots.
 

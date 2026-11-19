@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-
 ---
 
 # Enable automatic key rotation
-<a name="rotating-keys-enable"></a>
 
 By default, when you enable *automatic key rotation* for a KMS key, AWS KMS generates new cryptographic material for the KMS key every year. You can also specify a custom [rotation-period](rotate-keys.md#rotation-period) to define the number of days after you enable automatic key rotation that AWS KMS will rotate your key material, and the number of days between each automatic rotation thereafter.
 

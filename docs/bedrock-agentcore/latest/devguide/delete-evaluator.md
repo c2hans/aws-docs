@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/delete
 ---
 
 # Delete evaluator
-<a name="delete-evaluator"></a>
 
 The `DeleteEvaluator` API permanently removes a custom evaluator and all its configuration data. This asynchronous operation is irreversible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Discovery phase
-<a name="discover"></a>
 
 In the discovery phase, you create a list of the SSIS packages that you want to migrate to AWS. Different development teams follow different styles, standards, and patterns for developing ETL jobs. We recommend that you review your organization's existing documents to understand these patterns. However, the documentation is often incomplete. You can automate the extraction of important information from the ETL scripts. This saves manual effort and time, reduces human errors, and standardizes the migration approach. Here are some of the important details you'll want to extract:
 + Total number of control flow tasks

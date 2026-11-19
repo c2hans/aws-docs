@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_NetworkInter
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 Network interface.
 

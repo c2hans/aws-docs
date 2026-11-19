@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Launch replacement instances before terminating old ones
-<a name="ec2-auto-scaling-launch-before-terminate-account-setting"></a>
 
 *Launch before terminate* is an Amazon EC2 Auto Scaling feature that changes how your Auto Scaling groups replace instances. With launch before terminate, Amazon EC2 Auto Scaling launches replacement instances and waits for them to pass health checks before terminating the instances they replace, which prioritizes availability during replacement.
 

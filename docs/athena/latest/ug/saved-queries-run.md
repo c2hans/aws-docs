@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-run.html
 ---
 
 # Run a saved query
-<a name="saved-queries-run"></a>
 
 **To run a saved query**
 

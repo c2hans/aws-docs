@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TextToSqlConfiguration
-<a name="API_agent-runtime_TextToSqlConfiguration"></a>
 
 Contains configurations for transforming text to SQL.
 

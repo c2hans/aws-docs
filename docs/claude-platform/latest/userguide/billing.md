@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/billing
 ---
 
 # Billing
-<a name="billing"></a>
 
 Claude Platform on AWS uses [AWS Marketplace](https://aws.amazon.com/marketplace) as a billing backend for consumption-based metering. Anthropic meters usage hourly through AWS Marketplace, and AWS issues monthly invoices on your existing AWS bill.
 

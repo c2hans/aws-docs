@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Idle cluster cleanup: Decommission or consolidation
-<a name="1-cluster-cleanup-identifying-idle-clusters"></a>
 
 Before optimizing how your clusters run, eliminate what shouldn't be running at all. Idle clusters and abandoned workloads are pure waste as they consume resources 24/7 while delivering no business value. A cluster is considered idle when it has fewer than 5 application pods running (excluding kube-system, karpenter, monitoring namespaces) and node CPU utilization remains below 10% for 7\+ consecutive days.
 

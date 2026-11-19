@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/mysql-s3datalake.choosing
 ---
 
 # Choosing an instance class and storage size
-<a name="mysql-s3datalake.choosinginstanceandstorage"></a>
 
 Before you start migrating your database, you need to consider your source, target, and replication instance resources such as CPU, memory, disk space, and network bandwidth/latency. How much workload will be placed on the source database, how to determine the sizing of the replication instance, and what instance class should be used for the target database are common questions when starting a migration.
 

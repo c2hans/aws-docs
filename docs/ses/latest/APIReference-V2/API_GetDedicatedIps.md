@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDedica
 ---
 
 # GetDedicatedIps
-<a name="API_GetDedicatedIps"></a>
 
 List the dedicated IP addresses that are associated with your AWS account.
 

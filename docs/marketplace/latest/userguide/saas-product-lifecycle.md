@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-produc
 ---
 
 # SaaS product lifecycle in AWS Marketplace
-<a name="saas-product-lifecycle"></a>
 
 When you create a software as a service (SaaS) product in AWS Marketplace, it's initially published with limited visibility so that only your account can access it. When you're ready, you can publish it to the AWS Marketplace catalog to allow buyers to subscribe and purchase your product. The following topic provides information about the SaaS product lifecycle. For more information about creating a SaaS product, see [Creating a SaaS product in AWS Marketplace](saas-create-product.md),
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/d
 **End of support notice:** On October 30, 2026, AWS will end support for Amazon Pinpoint. After October 30, 2026, you will no longer be able to access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Document History
-<a name="doc-history"></a>
 
 The following table describes the important changes to the documentation since the last release of the Amazon Pinpoint SMS and Voice API.
 + **API version:** 2018-09-05 (latest)

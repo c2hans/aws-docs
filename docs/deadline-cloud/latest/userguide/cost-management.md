@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/cost-man
 ---
 
 # Understand estimated and actual costs for Deadline Cloud
-<a name="cost-management"></a>
 
 AWS Deadline Cloud budgets and the usage explorer estimate costs for your jobs. The estimates don't guarantee the amount that you owe for Deadline Cloud or other AWS services. Your actual bill can differ because of calculation limitations and charges from connected AWS services.
 

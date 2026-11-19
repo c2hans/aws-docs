@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv6Pool.
 ---
 
 # Ipv6Pool
-<a name="API_Ipv6Pool"></a>
 
 Describes an IPv6 address pool.
 

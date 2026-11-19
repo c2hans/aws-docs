@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_TeacherM
 ---
 
 # TeacherModelConfig
-<a name="API_TeacherModelConfig"></a>
 
 Details about a teacher model used for model customization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceCreditSpecification
-<a name="API_ModifyInstanceCreditSpecification"></a>
 
 Modifies the credit option for CPU usage on a running or stopped burstable performance instance. The credit options are `standard` and `unlimited`.
 

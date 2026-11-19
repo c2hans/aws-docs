@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/install-sap-nw-
 ---
 
 # Install SAP
-<a name="install-sap-nw-sles"></a>
 
 The following topics provide information about installing SAP on AWS Cloud in a highly available cluster. Review SAP Documentation for more details.
 

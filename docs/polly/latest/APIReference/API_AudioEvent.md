@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_AudioEvent
 ---
 
 # AudioEvent
-<a name="API_AudioEvent"></a>
 
 Contains a chunk of synthesized audio data.
 

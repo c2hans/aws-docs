@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchForSuggestionsResult
-<a name="API_SearchForSuggestionsResult"></a>
 
 Contains a place suggestion resulting from a place suggestion query that is run on a place index resource.
 

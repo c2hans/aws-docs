@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Troubleshooting point-in-time-recovery failures due to a log sequence number gap
-<a name="Appendix.SQLServer.CommonDBATasks.PITR-LSN-Gaps"></a>
 
 When attempting point-in-time-recovery (PITR) in RDS for SQL Server, you might encounter failures due to gaps in log sequence numbers (LSNs). These gaps prevent RDS from restoring your database to the requested time and RDS places your restoring instance in `incompatible-restore` state.
 

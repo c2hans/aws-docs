@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSV
 ---
 
 # AWSVPCS2SVpnServiceRolePolicy
-<a name="AWSVPCS2SVpnServiceRolePolicy"></a>
 
 **Description**: Allow Site-to-Site VPN to create and manage resources related to your VPN Connections.
 

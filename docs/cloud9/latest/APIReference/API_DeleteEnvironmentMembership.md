@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DeleteEnv
 ---
 
 # DeleteEnvironmentMembership
-<a name="API_DeleteEnvironmentMembership"></a>
 
 Deletes an environment member from a development environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-online-expla
 ---
 
 # Pre-check the model container
-<a name="clarify-online-explainability-precheck"></a>
 
 This section shows how to pre-check the model container inputs and outputs for compatibility before configuring an endpoint. The SageMaker Clarify explainer is **model agnostic**, but it has requirements for model container input and output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-connector-installing-s
 ---
 
 # Installing the MGN connector on a secured network
-<a name="mgn-connector-installing-secured-network"></a>
 
  The MGN connector and the AWS Replication Agents that the MGN connector installs, require network access to various AWS endpoints. If your on-premises network is not open to AWS endpoints, then you can install the MGN connector and the AWS Replication Agents with the aid of PrivateLink.
 

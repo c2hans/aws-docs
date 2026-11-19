@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/managed
 ---
 
 # Exporting Managed Dashboards
-<a name="managed-dashboards-exporting"></a>
 
 You can export Managed Dashboards using the same export options available for custom dashboards:
 + **PDF export** – Export an entire Managed Dashboard as a PDF file for offline viewing and sharing with stakeholders. You can also export a single widget visualization as a PDF file.

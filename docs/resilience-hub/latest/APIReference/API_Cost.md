@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # Cost
-<a name="API_Cost"></a>
 
 Defines a cost object.
 

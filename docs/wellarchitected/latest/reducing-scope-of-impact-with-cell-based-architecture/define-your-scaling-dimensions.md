@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Define your scaling dimensions
-<a name="define-your-scaling-dimensions"></a>
 
  This subject of cell sizing is closely related to your partition key, it is what will define in which cell the workload traffic will be directed and stored. In cell sizing, we are focusing on *how much* of this factor a cell will support before it needs to scale. Remember that in this case, your architecture does scale-out, it scales by adding more cells that have the same limit capacity.
 

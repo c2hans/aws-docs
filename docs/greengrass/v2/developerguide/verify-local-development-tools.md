@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/verify-loca
 ---
 
 # Verify the Greengrass CLI installation on the device
-<a name="verify-local-development-tools"></a>
 
 **Note**
 These steps do not apply to nucleus lite.

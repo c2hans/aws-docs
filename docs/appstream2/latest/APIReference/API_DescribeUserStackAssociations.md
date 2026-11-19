@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeUserStackAssociations
-<a name="API_DescribeUserStackAssociations"></a>
 
 Retrieves a list that describes the UserStackAssociation objects. You must specify either or both of the following:
 + The stack name

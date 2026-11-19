@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/resolving-
 ---
 
 # Resolving drift
-<a name="resolving-drift"></a>
 
 Although detection is automatic, the steps to resolve drift must be done manually through the console, or with the APIs. (Except in certain cases when auto-enroll is enabled for accounts that are moved.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PaletteC
 ---
 
 # PaletteCanvas
-<a name="API_PaletteCanvas"></a>
 
 Contains color configuration for canvas elements in a workspace theme.
 

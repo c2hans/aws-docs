@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedCustomMetadataSchemaConfiguration
-<a name="API_UpdatedCustomMetadataSchemaConfiguration"></a>
 
 The custom metadata schema configuration patch wrapper. Omit to leave the existing schema unchanged.
 

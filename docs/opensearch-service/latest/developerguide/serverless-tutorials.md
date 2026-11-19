@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Getting started with security in Amazon OpenSearch Serverless
-<a name="serverless-tutorials"></a>
 
 The following tutorials help you get started using Amazon OpenSearch Serverless. Both tutorials accomplish the same basic steps, but one uses the console and the other uses the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_StartSch
 ---
 
 # StartSchemaMerge
-<a name="API_StartSchemaMerge"></a>
 
 Initiates a merge operation. Returns a status that shows the result of the merge operation.
 

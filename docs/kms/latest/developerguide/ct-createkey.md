@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-createkey.h
 ---
 
 # CreateKey
-<a name="ct-createkey"></a>
 
 These examples show AWS CloudTrail log entries for the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) operation.
 

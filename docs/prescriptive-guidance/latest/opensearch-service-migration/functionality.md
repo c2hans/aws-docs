@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Functionality
-<a name="functionality"></a>
 
 The functionality focus area helps you ensure that you do not lose any functionality when you migrate to a target Amazon OpenSearch Service environment. We recommend paying close attention to the following aspects:
 + Current solution functionality

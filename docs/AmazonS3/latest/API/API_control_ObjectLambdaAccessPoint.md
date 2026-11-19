@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLa
 ---
 
 # ObjectLambdaAccessPoint
-<a name="API_control_ObjectLambdaAccessPoint"></a>
 
 An access point with an attached AWS Lambda function used to access transformed data from an Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataC
 ---
 
 # DataColor
-<a name="API_DataColor"></a>
 
 Determines the color that is applied to a particular data value.
 

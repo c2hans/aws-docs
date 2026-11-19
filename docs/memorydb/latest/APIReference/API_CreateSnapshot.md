@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_CreateS
 ---
 
 # CreateSnapshot
-<a name="API_CreateSnapshot"></a>
 
 Creates a copy of an entire cluster at a specific moment in time.
 

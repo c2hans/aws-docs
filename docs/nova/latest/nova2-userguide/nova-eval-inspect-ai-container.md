@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-eval-in
 ---
 
 # Evaluate with Inspect AI Container
-<a name="nova-eval-inspect-ai-container"></a>
 
 The SageMaker Inspect AI container runs LLM model evaluations on SageMaker Training Jobs. The container uses [Inspect AI](https://inspect.ai-safety-institute.org.uk/) to provide a standardized evaluation process for models deployed to SageMaker inference endpoints or Amazon Bedrock — including Amazon Nova 1.0 (Micro, Lite, Pro) and 2.0 (Lite 2) models.
 

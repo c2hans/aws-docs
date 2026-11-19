@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/rls-policies-be
 ---
 
 # Best practices for RLS policies
-<a name="rls-policies-best-practices"></a>
 
 This section provides best practices for implementing and managing row-level security (RLS) policies in Lake Formation, including guidance for customers migrating from data cell filters (DCF) to RLS policies.
 

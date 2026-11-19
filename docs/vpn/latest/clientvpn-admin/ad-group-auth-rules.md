@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/ad-group-auth
 ---
 
 # Troubleshooting AWS Client VPN: Authorization rules for Active Directory groups not working as expected
-<a name="ad-group-auth-rules"></a>
 
 **Problem**
 I have configured authorization rules for my Active Directory groups, but they are not working as I expected. I have added an authorization rule for `0.0.0.0/0` to authorize traffic for all networks, but traffic still fails for specific destination CIDRs.

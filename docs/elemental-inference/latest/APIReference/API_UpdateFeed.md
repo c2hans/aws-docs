@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # UpdateFeed
-<a name="API_UpdateFeed"></a>
 
 Updates the name and/or outputs in a feed.
 

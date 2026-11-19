@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/config-fsx-nfs-data
 ---
 
 # Configure FSx for ONTAP as an NFS datastore
-<a name="config-fsx-nfs-datastore"></a>
 
 You can mount an Amazon FSx for NetApp ONTAP volume as an NFS datastore on the ESX hosts in your Amazon Elastic VMware Service environment. In this procedure, you use the Amazon FSx console and the vSphere Client to create the datastore.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansUtilizationAggregates
-<a name="API_SavingsPlansUtilizationAggregates"></a>
 
 The aggregated utilization metrics for your Savings Plans usage.
 

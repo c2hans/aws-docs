@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateJob.html
 ---
 
 # UpdateJob
-<a name="API_UpdateJob"></a>
 
 Updates an existing job definition. The previous job definition is completely overwritten by this information.
 

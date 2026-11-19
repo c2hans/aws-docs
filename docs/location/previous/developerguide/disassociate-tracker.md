@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/disasso
 ---
 
 # Tutorial: Disconnect a tracker from a geofence collection
-<a name="disassociate-tracker"></a>
 
 You can disconnect a tracker from a geofence collection using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 

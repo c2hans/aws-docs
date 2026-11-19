@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode assessment completed event
-<a name="next-gen-eventbridge-assessment-completed"></a>
 
 The following is an example event emitted when a failure mode assessment completes successfully.
 

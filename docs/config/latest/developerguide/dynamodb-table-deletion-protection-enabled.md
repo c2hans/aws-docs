@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-ta
 ---
 
 # dynamodb-table-deletion-protection-enabled
-<a name="dynamodb-table-deletion-protection-enabled"></a>
 
 Checks if an Amazon DynamoDB table have deletion protection set to enabled. The rule is NON\_COMPLIANT if the table have deletion protection set to disabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBReco
 ---
 
 # DBRecommendation
-<a name="API_DBRecommendation"></a>
 
 The recommendation for your DB instances, DB clusters, and DB parameter groups.
 

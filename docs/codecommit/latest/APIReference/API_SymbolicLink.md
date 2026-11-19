@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Symbo
 ---
 
 # SymbolicLink
-<a name="API_SymbolicLink"></a>
 
 Returns information about a symbolic link in a repository folder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteReviewTemplate
-<a name="API_DeleteReviewTemplate"></a>
 
 Delete a review template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Uploa
 ---
 
 # UploadUrl
-<a name="API_UploadUrl"></a>
 
 A presigned URL for uploading a single part of a multipart attachment upload, along with the part index and the date and time the URL expires. Returned by [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md).
 

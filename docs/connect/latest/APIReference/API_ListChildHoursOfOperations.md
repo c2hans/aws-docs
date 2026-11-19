@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListChil
 ---
 
 # ListChildHoursOfOperations
-<a name="API_ListChildHoursOfOperations"></a>
 
 Provides information about the child hours of operations for the specified parent hours of operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-sr.html
 ---
 
 # Enable screen recording for your Connect Customer instance
-<a name="enable-sr"></a>
 
 This topic provides steps to enable screen recording for your Connect Customer instance, download and install the Connect Customer Client Application, and perform key configuration steps.
 

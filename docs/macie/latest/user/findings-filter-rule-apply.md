@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-filter-rule-a
 ---
 
 # Applying a filter rule to Macie findings
-<a name="findings-filter-rule-apply"></a>
 
 When you apply a filter rule, Amazon Macie uses the rule's criteria to determine which findings to include or exclude from your view of findings on the console. Macie also displays the criteria to help you determine which criteria you applied.
 

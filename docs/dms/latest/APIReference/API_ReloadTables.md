@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReloadTables
 ---
 
 # ReloadTables
-<a name="API_ReloadTables"></a>
 
 Reloads the target database table with the source data.
 

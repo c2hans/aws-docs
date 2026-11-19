@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Te
 ---
 
 # TerminateResponsibilityTransfer
-<a name="API_TerminateResponsibilityTransfer"></a>
 
 Ends a transfer. A *transfer* is an arrangement between two management accounts where one account designates the other with specified responsibilities for their organization.
 

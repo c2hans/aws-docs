@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventResumeReason.
 ---
 
 # EventResumeReason
-<a name="API_EventResumeReason"></a>
 
 The reason for resuming a durable execution, as recorded in the execution history.
 

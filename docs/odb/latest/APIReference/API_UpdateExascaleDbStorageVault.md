@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExasca
 ---
 
 # UpdateExascaleDbStorageVault
-<a name="API_UpdateExascaleDbStorageVault"></a>
 
 Updates the specified Exascale storage vault.
 

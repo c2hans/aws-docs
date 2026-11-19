@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBl
 ---
 
 # GetBlob
-<a name="API_GetBlob"></a>
 
 Returns the base-64 encoded content of an individual blob in a repository.
 

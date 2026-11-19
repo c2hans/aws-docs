@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepDependency
-<a name="API_StepDependency"></a>
 
 The details of step dependency.
 

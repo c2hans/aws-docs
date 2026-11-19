@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_ge
 ---
 
 # Getting compute node group details in AWS PCS
-<a name="working-with_cng_get-details"></a>
 
 You can use the AWS Management Console or the AWS CLI to get details about a compute node group, such as its ID, Amazon Resource Name (ARN), and status. You often need these values for AWS PCS API actions and configurations. The details also include the [instance settings](working-with_cng_instance-settings.md) on the compute node group: the AMI ID, security groups, and SSH key pair.
 

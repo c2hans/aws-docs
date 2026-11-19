@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Control and manage access to WebSocket APIs in API Gateway
-<a name="apigateway-websocket-api-control-access"></a>
 
 API Gateway supports multiple mechanisms for controlling and managing access to your WebSocket API.
 

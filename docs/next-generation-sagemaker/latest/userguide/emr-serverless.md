@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Get started using EMR Serverless in Amazon SageMaker Unified Studio
-<a name="emr-serverless"></a>
 
 ## Overview
 <a name="overview"></a>

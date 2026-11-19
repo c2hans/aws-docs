@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/monitor
 ---
 
 # Understanding command statuses
-<a name="monitor-commands"></a>
 
 Run Command reports detailed status information about the different states a command experiences during processing and for each managed node that processed the command. You can monitor command statuses using the following methods:
 + Choose the **Refresh** icon on the **Commands** tab in the Run Command console interface.

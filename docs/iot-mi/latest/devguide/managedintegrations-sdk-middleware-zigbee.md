@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Zigbee middleware code organization
-<a name="managedintegrations-sdk-middleware-zigbee"></a>
 
 The following shows the Zigbee reference middleware code organization.
 

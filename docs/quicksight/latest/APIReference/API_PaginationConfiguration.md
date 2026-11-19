@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pagin
 ---
 
 # PaginationConfiguration
-<a name="API_PaginationConfiguration"></a>
 
 The pagination configuration for a table visual or boxplot.
 

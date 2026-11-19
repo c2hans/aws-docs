@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationCodeGenerationSegments
-<a name="API_ListNetworkMigrationCodeGenerationSegments"></a>
 
 Lists code generation segments, which represent individual infrastructure components generated as code templates.
 

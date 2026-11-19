@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Priv
 ---
 
 # PrivateConnectionSummary
-<a name="API_PrivateConnectionSummary"></a>
 
 Summary of a Private Connection.
 

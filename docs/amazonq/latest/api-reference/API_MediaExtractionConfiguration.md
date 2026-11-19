@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_MediaEx
 ---
 
 # MediaExtractionConfiguration
-<a name="API_MediaExtractionConfiguration"></a>
 
 The configuration for extracting information from media in documents.
 

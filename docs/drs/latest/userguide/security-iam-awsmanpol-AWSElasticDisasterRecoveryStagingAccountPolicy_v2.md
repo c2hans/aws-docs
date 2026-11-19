@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/security-iam-awsman
 ---
 
 # AWS managed policy: AWSElasticDisasterRecoveryStagingAccountPolicy\_v2
-<a name="security-iam-awsmanpol-AWSElasticDisasterRecoveryStagingAccountPolicy_v2"></a>
 
 This policy is used by AWS Elastic Disaster Recovery (AWS DRS) to recover source servers into a separate target account and to allow failing back. We do not recommend that you attach this policy to your users or roles.
 

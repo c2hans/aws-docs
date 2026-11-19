@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ResourceRe
 ---
 
 # ResourceRequirement
-<a name="API_ResourceRequirement"></a>
 
 The type and amount of a resource to assign to a container. The supported resources include `GPU`, `MEMORY`, and `VCPU`.
 

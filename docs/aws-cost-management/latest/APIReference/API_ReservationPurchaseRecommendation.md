@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationPurchaseRecommendation
-<a name="API_ReservationPurchaseRecommendation"></a>
 
 A specific reservation that AWS recommends for purchase.
 

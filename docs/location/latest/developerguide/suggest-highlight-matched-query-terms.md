@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/suggest-h
 ---
 
 # Choose a route using Suggest and the ability to highlight matched query terms
-<a name="suggest-highlight-matched-query-terms"></a>
 
 With the Suggest API, you get real-time autocomplete suggestions as users type their search queries for places or categories. Results are ranked by relevance, with the most likely matches appearing first. The API response includes highlighting information that shows how each suggestion matches the user's query.
 

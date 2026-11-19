@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeScheduledInstanceAvailability
-<a name="API_DescribeScheduledInstanceAvailability"></a>
 
 Finds available schedules that meet the specified criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3
 ---
 
 # Install and configure AWS Backint Agent for SAP HANA
-<a name="aws-backint-agent-s3-installing-configuring"></a>
 
 This section provides information to help you install the AWS Backint agent using an AWS Systems Manager document or AWS Backint installer. It also provides information to help you configure the agent, view logs, and get the current agent version.
 

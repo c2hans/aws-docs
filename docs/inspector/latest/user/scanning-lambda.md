@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-lambda.ht
 ---
 
 # Scanning AWS Lambda functions with Amazon Inspector
-<a name="scanning-lambda"></a>
 
  Amazon Inspector support for AWS Lambda functions and layers provides continuous automated security vulnerability assessments. Amazon Inspector offers two types of Lambda function scanning:
 

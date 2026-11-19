@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # View an account pool
-<a name="account-pools-view"></a>
 
 To use the AWS CLI to view the accounts in an account pool, use the `get-account-pool` command.
 + Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the `get-account-pool` command with the following format, where the domain ID and account pool ID are required arguments.

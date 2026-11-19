@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Memory record streaming
-<a name="memory-record-streaming"></a>
 
 Memory record streaming in Amazon Bedrock AgentCore Memory delivers real-time notifications when memory records are created, updated, or deleted. Instead of polling APIs to detect changes, you receive push-based events to a Kinesis Data Stream in your account, enabling event-driven architectures that react to memory record lifecycle changes as they occur.
 

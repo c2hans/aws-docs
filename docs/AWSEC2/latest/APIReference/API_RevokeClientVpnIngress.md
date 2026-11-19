@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RevokeCli
 ---
 
 # RevokeClientVpnIngress
-<a name="API_RevokeClientVpnIngress"></a>
 
 Removes an ingress authorization rule from a Client VPN endpoint.
 

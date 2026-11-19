@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_WorkDocsC
 ---
 
 # WorkDocsConfiguration
-<a name="API_WorkDocsConfiguration"></a>
 
 Provides the configuration information to connect to WorkDocs as your data source.
 

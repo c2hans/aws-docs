@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAIWorkloadConfig
-<a name="API_DeleteAIWorkloadConfig"></a>
 
 Deletes the specified AI workload configuration. You cannot delete a configuration that is referenced by an active benchmark job.
 

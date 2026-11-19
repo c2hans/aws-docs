@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetails
-<a name="API_AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetails"></a>
 
  One or more private IPv4 addresses.
 

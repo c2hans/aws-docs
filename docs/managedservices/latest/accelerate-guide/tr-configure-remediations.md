@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Configure Trusted Advisor check remediation in Trusted Remediator
-<a name="tr-configure-remediations"></a>
 
 Configurations are stored in AWS AppConfig as part of the Trusted Remediator application. Each Trusted Advisor check category has a separate configuration profile. For more information on Trusted Advisor categories, see [View check categories](https://docs.aws.amazon.com/awssupport/latest/user/get-started-with-aws-trusted-advisor.html#view-check-categories).
 

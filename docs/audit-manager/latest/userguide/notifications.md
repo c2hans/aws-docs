@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/notificat
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Notifications in AWS Audit Manager
-<a name="notifications"></a>
 
 AWS Audit Manager can notify you about user actions through [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/).
 

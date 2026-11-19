@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Change User Environment Variables
-<a name="customize-fleets-user-environment-variables"></a>
 
 Follow these steps to change user environment variables across your fleet instances.
 

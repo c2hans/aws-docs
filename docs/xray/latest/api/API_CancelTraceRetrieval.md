@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_CancelTraceRetrieval
 ---
 
 # CancelTraceRetrieval
-<a name="API_CancelTraceRetrieval"></a>
 
  Cancels an ongoing trace retrieval job initiated by `StartTraceRetrieval` using the provided `RetrievalToken`. A successful cancellation will return an HTTP 200 response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ia
 ---
 
 # IamRegistrationResponse
-<a name="API_IamRegistrationResponse"></a>
 
 Information about registering an AWS Identity and Access Management (IAM) resource so AWS IoT FleetWise edge agent software can transfer your vehicle data to Amazon Timestream.
 

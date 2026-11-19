@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_S3Settings.h
 ---
 
 # S3Settings
-<a name="API_S3Settings"></a>
 
 Settings for exporting data to Amazon S3.
 

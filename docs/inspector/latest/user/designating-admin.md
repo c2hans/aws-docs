@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/designating-admin.
 ---
 
 # Designating a delegated administrator account for Amazon Inspector
-<a name="designating-admin"></a>
 
  The delegated administrator is an account that manages a service for an organiztion. This topic describes how to designate a delegated administrator for Amazon Inspector.
 

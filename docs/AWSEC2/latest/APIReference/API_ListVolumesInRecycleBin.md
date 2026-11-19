@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ListVolum
 ---
 
 # ListVolumesInRecycleBin
-<a name="API_ListVolumesInRecycleBin"></a>
 
 Lists one or more volumes that are currently in the Recycle Bin.
 

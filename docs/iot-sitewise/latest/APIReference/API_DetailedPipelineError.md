@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Det
 ---
 
 # DetailedPipelineError
-<a name="API_DetailedPipelineError"></a>
 
 Contains a detailed error entry for granular troubleshooting of pipeline failures.
 

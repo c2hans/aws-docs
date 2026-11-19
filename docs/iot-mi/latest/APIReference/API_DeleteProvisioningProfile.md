@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeletePro
 ---
 
 # DeleteProvisioningProfile
-<a name="API_DeleteProvisioningProfile"></a>
 
 Delete a provisioning profile.
 

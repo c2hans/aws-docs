@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_fargate_
 ---
 
 # aws-fargate-secretsmanager
-<a name="aws_fargate_secretsmanager"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snow/latest/swsbe-pack/turnitoff.html
 ---
 
 # Powering off the device
-<a name="turnitoff"></a>
 
 When you've finished using the device, prepare it to return to AWS.
 

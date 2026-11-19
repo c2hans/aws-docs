@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessSkillAwsSkillsSource
-<a name="API_HarnessSkillAwsSkillsSource"></a>
 
 Passed to show that AWS Skills should be included.
 

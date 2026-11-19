@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Up
 ---
 
 # UpdateWorkspace
-<a name="API_UpdateWorkspace"></a>
 
 Updates a workspace.
 

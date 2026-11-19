@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DocumentItem
-<a name="API_marketplace-discovery_DocumentItem"></a>
 
 A legal document associated with a legal term, such as a EULA or data subscription agreement.
 

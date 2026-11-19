@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/support_example_s
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn the basics of Support with an AWS SDK
-<a name="support_example_support_Scenario_GetStartedSupportCases_section"></a>
 
 The following code examples show how to:
 + Get and display available services and severity levels for cases.

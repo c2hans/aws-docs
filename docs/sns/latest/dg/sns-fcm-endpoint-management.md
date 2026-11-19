@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-fcm-endpoint-managemen
 ---
 
 # Amazon SNS management of Firebase Cloud Messaging endpoints
-<a name="sns-fcm-endpoint-management"></a>
 
 ## Managing and maintaining device tokens
 <a name="sns-managing-device-tokens"></a>

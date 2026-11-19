@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-known-issues.html
 ---
 
 # Known issues for AWS Glue
-<a name="glue-known-issues"></a>
 
 Note the following known issues for AWS Glue.
 

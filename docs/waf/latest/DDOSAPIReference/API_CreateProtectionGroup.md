@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_CreatePr
 ---
 
 # CreateProtectionGroup
-<a name="API_CreateProtectionGroup"></a>
 
 Creates a grouping of protected resources so they can be handled as a collective. This resource grouping improves the accuracy of detection and reduces false positives.
 

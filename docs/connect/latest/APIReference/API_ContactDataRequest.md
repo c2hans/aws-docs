@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactD
 ---
 
 # ContactDataRequest
-<a name="API_ContactDataRequest"></a>
 
 Request object with information to create a contact.
 

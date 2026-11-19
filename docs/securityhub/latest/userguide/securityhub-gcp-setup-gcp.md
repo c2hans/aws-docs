@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Google Cloud Platform to integrate with Security Hub CSPM
-<a name="securityhub-gcp-setup-gcp"></a>
 
 After you complete the [prerequisite tasks](securityhub-gcp-prereqs.md), you can configure your Google Cloud Platform (GCP) environment to support integration with AWS Security Hub CSPM. To help you do this, the Security Hub CSPM console generates a setup script that is customized for your configuration.
 
@@ -64,8 +63,8 @@ $ gcloud services enable \
 
 $ gcloud services enable \
   firestore.googleapis.com iam.googleapis.com iamcredentials.googleapis.com \
-  logging.googleapis.com monitoring.googleapis.com orgpolicy.googleapis.com \
-  pubsub.googleapis.com run.googleapis.com secretmanager.googleapis.com \
+  logging.googleapis.com monitoring.googleapis.com pubsub.googleapis.com \
+  run.googleapis.com secretmanager.googleapis.com \
   serviceusage.googleapis.com sqladmin.googleapis.com sts.googleapis.com \
   storage.googleapis.com vpcaccess.googleapis.com \
   --project {{management-project}}
@@ -93,19 +92,19 @@ $ gcloud iam workload-identity-pools providers create-oidc connector-oidc-{{aws-
   --issuer-uri="https://{{uuid}}.tokens.sts.global.api.aws" \
   --allowed-audiences="https://sts.googleapis.com" \
   --attribute-mapping="google.subject=assertion.sub,attribute.aws_role=assertion.sub" \
-  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{aws-account-id}}:role/AWSConfigThirdPartyCloudFederationRole', 'arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty']"
+  --attribute-condition="attribute.aws_role in ['arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty']"
 ```
 
 Key values:
 + **Issuer** – Your Token Issuer URL from IAM Outbound Identity Federation. This follows the format `https://{{uuid}}.tokens.sts.global.api.aws`.
 + **Audience** – `https://sts.googleapis.com`.
-+ **Attribute condition** – The IAM roles that can exchange a token. AWS Config might authenticate as either its customer-managed federation role or its service-linked role, so both are admitted. Each role ARN is the plain role ARN, not an assumed-role ARN. AWS creates the service-linked role automatically when you create the connector.
++ **Attribute condition** – The IAM role that can exchange a token. AWS Config authenticates using its service-linked role. The role ARN is the plain role ARN, not an assumed-role ARN. AWS creates the service-linked role automatically when you create the connector.
 
 The following table lists the IAM roles that the provider admits, by capability.
 
 | Capability | Role ARN admitted by the provider |
 | --- | --- |
-| Resource configuration discovery (AWS Config) | arn:aws:iam::{{aws-account-id}}:role/AWSConfigThirdPartyCloudFederationRole and arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty |
+| Resource configuration discovery (AWS Config) | arn:aws:iam::{{aws-account-id}}:role/aws-service-role/thirdparty.config.amazonaws.com/AWSServiceRoleForConfigThirdParty |
 | Vulnerability management (Amazon Inspector, if enabled) | Additional role ARNs documented in the Amazon Inspector User Guide. The Inspector setup script adds them to the same provider. |
 
 Note the provider resource name. You provide it as the **Workload identity pool provider** value when you create the connector in the Security Hub CSPM console:

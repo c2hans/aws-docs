@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the * AWS Entity Resolution API Reference*.
 
@@ -13,4 +12,4 @@ Welcome to the * AWS Entity Resolution API Reference*.
 
 To learn more about AWS Entity Resolution concepts, procedures, and best practices, see the [AWS Entity Resolution User Guide](https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

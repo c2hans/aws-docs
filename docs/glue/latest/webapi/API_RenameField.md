@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RenameField.html
 ---
 
 # RenameField
-<a name="API_RenameField"></a>
 
 Specifies a transform that renames a single data property key.
 

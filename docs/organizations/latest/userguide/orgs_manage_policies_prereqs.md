@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Prerequisites and permissions for declarative policies for AWS Organizations
-<a name="orgs_manage_policies_prereqs"></a>
 
 This page describes the prerequisites and required permissions for declarative policies for AWS Organizations.
 

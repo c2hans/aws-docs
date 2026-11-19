@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TaskStatisti
 ---
 
 # TaskStatistics
-<a name="API_TaskStatistics"></a>
 
 Statistics for the checks performed during the audit.
 

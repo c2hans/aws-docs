@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cust
 ---
 
 # CustomizationFeatureContentModerationConfig
-<a name="API_CustomizationFeatureContentModerationConfig"></a>
 
 Configuration options for Content Moderation training.
 

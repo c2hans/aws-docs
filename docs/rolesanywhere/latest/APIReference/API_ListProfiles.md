@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Li
 ---
 
 # ListProfiles
-<a name="API_ListProfiles"></a>
 
 Lists all profiles in the authenticated account and AWS Region.
 

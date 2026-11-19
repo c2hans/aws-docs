@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentContainerSpecification
-<a name="API_InferenceComponentContainerSpecification"></a>
 
 Defines a container that provides the runtime environment for a model that you deploy with an inference component.
 

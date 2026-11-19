@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/uninstall-s
 ---
 
 # Uninstall the AWS Systems Manager Agent
-<a name="uninstall-systems-manager-agent"></a>
 
 If you no longer want to manage a Greengrass core device with AWS Systems Manager, you can deregister the core device from Systems Manager and uninstall the AWS Systems Manager Agent (Systems Manager Agent) from the device.
 

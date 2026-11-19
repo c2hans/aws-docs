@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/large-attachments
 ---
 
 # Required permissions for large attachments
-<a name="large-attachments-permissions"></a>
 
 To attach files larger than 5 MB or more than 3 files to a support case, your AWS Identity and Access Management (IAM) identity must have the correct permissions.
 

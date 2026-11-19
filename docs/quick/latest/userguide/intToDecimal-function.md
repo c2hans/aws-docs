@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/intToDecimal-func
 ---
 
 # intToDecimal
-<a name="intToDecimal-function"></a>
 
 `intToDecimal` converts an integer value to the decimal data type.
 

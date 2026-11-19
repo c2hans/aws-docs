@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/senti
 ---
 
 # Source configuration for SentinelOne
-<a name="sentinelone-source-setup"></a>
 
 ## Integrating with SentinelOne Singularity Endpoint
 <a name="sentinelone-integration"></a>

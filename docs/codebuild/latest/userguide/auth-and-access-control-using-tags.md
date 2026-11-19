@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/auth-and-acce
 ---
 
 # Using tags to control access to AWS CodeBuild resources
-<a name="auth-and-access-control-using-tags"></a>
 
 Conditions in IAM policy statements are part of the syntax that you can use to specify permissions to CodeBuild project-based actions. You can create a policy that allows or denies actions on projects based on the tags associated with those projects, and then apply those policies to the IAM groups you configure for managing users. For information about applying tags to a project using the console or AWS CLI, see [Create a build project in AWS CodeBuild](create-project.md). For information about applying tags using the CodeBuild SDK, see [CreateProject ](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CreateProject.html#API_CreateProject_RequestSyntax) and [Tags](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Tag.html) in the *CodeBuild API Reference*. For information about using tags to control access to AWS resources, see [Controlling Access to AWS Resources Using Resource Tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*.
 

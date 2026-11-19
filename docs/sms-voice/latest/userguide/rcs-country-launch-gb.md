@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # Launching RCS in the United Kingdom
-<a name="rcs-country-launch-gb"></a>
 
 To launch your AWS RCS agent in the United Kingdom, submit a country launch registration using the `GB_RCS_LAUNCH_REGISTRATION` registration type. The United Kingdom has a multi-step out-of-band approval process that involves direct communication with multiple carriers and third-party verification services.
 

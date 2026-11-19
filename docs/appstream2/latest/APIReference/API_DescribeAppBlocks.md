@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeAppBlocks
-<a name="API_DescribeAppBlocks"></a>
 
 Retrieves a list that describes one or more app blocks.
 

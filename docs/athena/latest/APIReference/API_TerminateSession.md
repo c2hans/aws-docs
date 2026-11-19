@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Terminate
 ---
 
 # TerminateSession
-<a name="API_TerminateSession"></a>
 
 Terminates an active session. A `TerminateSession` call on a session that is already inactive (for example, in a `FAILED`, `TERMINATED` or `TERMINATING` state) succeeds but has no effect. Calculations running in the session when `TerminateSession` is called are forcefully stopped, but may display as `FAILED` instead of `STOPPED`.
 

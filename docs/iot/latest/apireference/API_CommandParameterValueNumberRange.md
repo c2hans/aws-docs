@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParam
 ---
 
 # CommandParameterValueNumberRange
-<a name="API_CommandParameterValueNumberRange"></a>
 
 The numerical range value type to compare a command parameter value against.
 

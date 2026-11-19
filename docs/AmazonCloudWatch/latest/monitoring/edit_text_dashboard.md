@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/edit_
 ---
 
 # Editing a text widget on a CloudWatch dashboard
-<a name="edit_text_dashboard"></a>
 
 **To edit a text widget on a dashboard**
 

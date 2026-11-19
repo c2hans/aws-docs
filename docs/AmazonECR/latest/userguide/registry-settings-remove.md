@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-sett
 ---
 
 # Removing private image replication settings in Amazon ECR
-<a name="registry-settings-remove"></a>
 
 To remove or disable replication settings for your private registry, you need to configure an empty replication configuration. There is no dedicated removal command in the AWS CLI.
 

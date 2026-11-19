@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/service_code_examp
 ---
 
 # Code examples for Amazon Rekognition using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Amazon Rekognition with an AWS software development kit (SDK). The code examples in this chapter are intended to supplement the code examples found throughout the rest of this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # AWS Support authorization
-<a name="support-authorization"></a>
 
 AWS Support authorization gives you auditable control over AWS Support access to information about your services that might contain your data during support case resolution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Linked servers
-<a name="chap-sql-server-aurora-pg.management.linkedservers"></a>
 
 This topic provides reference information about linked servers in SQL Server and their equivalent functionality in PostgreSQL. You can understand how linked servers enable SQL Server to connect to external data sources, allowing for distributed queries and data access across heterogeneous systems. The topic explains the benefits of using linked servers, how they are configured, and the methods for accessing remote data.
 

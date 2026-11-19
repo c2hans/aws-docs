@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Base backup
-<a name="base-backups-considerations"></a>
 
 A base backup is for rehosting to the AWS Cloud without changing your database and Linux versions. Base backups are applicable to databases smaller than 500 GB. To perform a base backup, you must use Direct Connect to set up a direct link between your on-premises PostgreSQL database and the AWS Cloud.
 

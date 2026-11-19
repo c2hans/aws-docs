@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessMetadataEvent
-<a name="API_HarnessMetadataEvent"></a>
 
 Token usage and latency metrics for the invocation.
 

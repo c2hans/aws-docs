@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/concepts.html
 ---
 
 # AWS Blocks concepts
-<a name="concepts"></a>
 
 This topic explains the key concepts you need to understand when building applications with AWS Blocks.
 

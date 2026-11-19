@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome
 ---
 
 # What is Amazon MQ?
-<a name="welcome"></a>
 
  Amazon MQ is a managed message broker service for [Apache ActiveMQ](https://activemq.apache.org/) Classic and [RabbitMQ](https://www.rabbitmq.com/) that manages the setup, operation, and maintenance of message brokers. You can create a new Amazon MQ broker using industry standard messaging protocols, or migrate existing message brokers to Amazon MQ without rewriting messaging code.
 

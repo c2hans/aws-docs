@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_V
 ---
 
 # VCpuCountRange
-<a name="API_VCpuCountRange"></a>
 
 The allowable range of vCPU processing power for the fleet.
 

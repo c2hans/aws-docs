@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # EXACT
-<a name="recipe-actions.functions.EXACT"></a>
 
 Creates a new column populated with one of the following:
 + `True` if one string in a column (or value) exactly matches another string in a different column (or value).

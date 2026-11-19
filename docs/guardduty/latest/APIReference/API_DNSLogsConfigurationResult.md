@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DNSLog
 ---
 
 # DNSLogsConfigurationResult
-<a name="API_DNSLogsConfigurationResult"></a>
 
 Contains information on the status of DNS logs as a data source.
 

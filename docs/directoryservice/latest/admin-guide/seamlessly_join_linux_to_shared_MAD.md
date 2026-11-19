@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/seam
 ---
 
 # Seamlessly joining an Amazon EC2 Linux instance to a shared AWS Managed Microsoft AD
-<a name="seamlessly_join_linux_to_shared_MAD"></a>
 
 In this procedure, you will seamlessly join an Amazon EC2 Linux instance to a shared AWS Managed Microsoft AD. To do this, you will create an AWS Secrets Manager IAM read policy in the EC2 instance role in the account where you wish to launch the EC2 Linux instance. This will be referred to as `Account 2` in this procedure. This instance will be using the AWS Managed Microsoft AD that is being shared from the other account which is referred to as `Account 1`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-monitoring.html
 ---
 
 # Monitoring an integration
-<a name="zero-etl-monitoring"></a>
 
 ## Viewing Amazon CloudWatch logs for an integration
 <a name="zero-etl-cloudwatch-logs"></a>

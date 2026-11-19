@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Queue.ht
 ---
 
 # Queue
-<a name="API_Queue"></a>
 
 Contains information about a queue.
 

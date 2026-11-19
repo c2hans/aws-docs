@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Grant.
 ---
 
 # S3Grant
-<a name="API_control_S3Grant"></a>
 
 ## Contents
 <a name="API_control_S3Grant_Contents"></a>

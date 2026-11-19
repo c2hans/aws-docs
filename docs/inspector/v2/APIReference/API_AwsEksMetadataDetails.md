@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsEksMeta
 ---
 
 # AwsEksMetadataDetails
-<a name="API_AwsEksMetadataDetails"></a>
 
 The metadata for an Amazon EKS pod where an Amazon ECR image is in use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContextFilters
-<a name="API_ContextFilters"></a>
 
 Filters for `ListResourcesInContextStore`. Both filters are optional. If you specify both, Network Firewall returns only the resources that match both.
 

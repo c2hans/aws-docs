@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-redundant-manif-
 ---
 
 # Combining redundant manifests with other features
-<a name="hls-redundant-manif-combine"></a>
 
 ## Combining redundant manifests and custom path feature
 <a name="hls-redundant-manif-with-custom-paths"></a>

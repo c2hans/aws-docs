@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_U
 ---
 
 # UpdatePipeSourceSqsQueueParameters
-<a name="API_UpdatePipeSourceSqsQueueParameters"></a>
 
 The parameters for using a Amazon SQS stream as a source.
 

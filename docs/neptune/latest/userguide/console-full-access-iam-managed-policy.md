@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/console-full-ac
 ---
 
 # Granting `NeptuneConsoleFullAccess` using AWS managed policy
-<a name="console-full-access-iam-managed-policy"></a>
 
 The [NeptuneConsoleFullAccess](https://console.aws.amazon.com/iam/home#policies/NeptuneConsoleFullAccess) managed policy below grants full access to all Neptune actions and resources for administrative purposes, but not for data-access purposes. It also includes additional permissions to simplify Neptune access from the console, including limited IAM and Amazon EC2 (VPC) permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/startupadvisor/latest/userguide/using-id
 ---
 
 # Using the AWS Startup Advisor IDE extension
-<a name="using-ide-extension"></a>
 
 The AWS Startup Advisor IDE extension (for VS Code, Kiro, and Cursor) brings personalized AWS guidance into your editor. The panel has three tabs: **For you**, **Prompts**, and **Alerts**. It also includes a **Cost & Credits** view for tracking your startup’s AWS spend and promotional credit balance, and an **Exclusive Offers** link to AWS Startups offers.
 

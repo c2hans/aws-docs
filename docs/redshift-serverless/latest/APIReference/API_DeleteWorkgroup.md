@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteWorkgroup
-<a name="API_DeleteWorkgroup"></a>
 
 Deletes a workgroup.
 

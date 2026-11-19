@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetG
 ---
 
 # CreateDatasetGroup
-<a name="API_CreateDatasetGroup"></a>
 
 Creates an empty dataset group. A dataset group is a container for Amazon Personalize resources. A dataset group can contain at most three datasets, one for each type of dataset:
 + Item interactions

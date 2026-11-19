@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedE
 ---
 
 # ListedExecution
-<a name="API_ListedExecution"></a>
 
 Returns properties of the execution that is specified.
 

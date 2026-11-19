@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS04-BP01 Implement a scaling methodology in WorkSpaces Applications
-<a name="eucsus04-bp01"></a>
 
  Scaling policies improve resource utilization and cost management for application streaming workloads.
 

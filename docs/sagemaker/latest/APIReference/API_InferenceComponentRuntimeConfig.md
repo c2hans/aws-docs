@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentRuntimeConfig
-<a name="API_InferenceComponentRuntimeConfig"></a>
 
 Runtime settings for a model that is deployed with an inference component.
 

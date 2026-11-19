@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-securit
 ---
 
 # Create a security group for your Amazon EC2 instance
-<a name="creating-security-group"></a>
 
 Security groups act as a firewall for associated instances, controlling both inbound and outbound traffic at the instance level. You can add rules to a security group that enable you to connect to your instance using SSH (Linux instances) or RDP (Windows instances). You can also add rules that allow client traffic, for example, HTTP and HTTPS traffic destined to a web server.
 

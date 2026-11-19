@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AntennaDemodDecodeDetails
-<a name="API_AntennaDemodDecodeDetails"></a>
 
 Details about an antenna demod decode `Config` used in a contact.
 

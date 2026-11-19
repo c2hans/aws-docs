@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DisableE
 ---
 
 # DisableEnhancedMonitoring
-<a name="API_DisableEnhancedMonitoring"></a>
 
 Disables enhanced monitoring.
 

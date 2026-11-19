@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lif
 ---
 
 # Amazon EC2 instance state changes
-<a name="ec2-instance-lifecycle"></a>
 
 An Amazon EC2 instance transitions through different states from the moment you launch it through to its termination.
 

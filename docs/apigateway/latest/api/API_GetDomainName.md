@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDomainName.
 ---
 
 # GetDomainName
-<a name="API_GetDomainName"></a>
 
 Represents a domain name that is contained in a simpler, more intuitive URL that can be called.
 

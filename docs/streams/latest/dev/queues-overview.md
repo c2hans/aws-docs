@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/queues-overview.html
 ---
 
 # Consume records with a queue
-<a name="queues-overview"></a>
 
 A queue delivers records from an On-demand stream to a *queue consumer*, the application that consumes the stream through the queue. A *consumer instance* is one running instance of that application. Queue consumer instances do not lease shards. Each instance receives the next visible record, so you can add instances to process more records in parallel. A queue delivers each record at least once, and does not necessarily deliver records in the order that producers wrote them to the stream.
 

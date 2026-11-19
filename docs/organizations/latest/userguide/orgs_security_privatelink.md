@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_secu
 ---
 
 # AWS PrivateLink for AWS Organizations
-<a name="orgs_security_privatelink"></a>
 
 With AWS PrivateLink for AWS Organizations, you can access the AWS Organizations service from within the Virtual Private Cloud (VPC) without having to cross the public internet.
 

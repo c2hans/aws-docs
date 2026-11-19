@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-SSK.
 ---
 
 # Step 5: Create a shared secret key
-<a name="create-SSK"></a>
 
 To encrypt the data tables, the collaboration participants must agree upon and securely share a shared secret key.
 

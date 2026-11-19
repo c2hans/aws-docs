@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.
 ---
 
 # Using tags to control access to Elastic Beanstalk resources
-<a name="AWSHowTo.iam.policies.access-tags"></a>
 
 This topic explains how tag-based access control can help you create and manage IAM policies.
 

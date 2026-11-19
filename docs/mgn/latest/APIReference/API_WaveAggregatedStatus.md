@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_WaveAggregat
 ---
 
 # WaveAggregatedStatus
-<a name="API_WaveAggregatedStatus"></a>
 
 Wave aggregated status.
 

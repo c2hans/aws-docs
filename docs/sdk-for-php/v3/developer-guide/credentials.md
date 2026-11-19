@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/credentia
 ---
 
 # Authenticating with AWS using AWS SDK for PHP Version 3
-<a name="credentials"></a>
 
 You must establish how your code authenticates with AWS when developing with AWS services. You can configure programmatic access to AWS resources in different ways depending on the environment and the AWS access available to you.
 

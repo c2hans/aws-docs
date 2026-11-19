@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/floor.html
 ---
 
 # $floor
-<a name="floor"></a>
 
 New from version 4.0.
 

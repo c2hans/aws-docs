@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_TargetNetwor
 ---
 
 # TargetNetworkUpdate
-<a name="API_TargetNetworkUpdate"></a>
 
 Updated configuration for the target network topology and addressing.
 

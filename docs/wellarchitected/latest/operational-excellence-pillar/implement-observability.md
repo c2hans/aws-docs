@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Implement observability
-<a name="implement-observability"></a>
 
 Implement observability in your workload so that you can understand its state and make data-driven decisions based on business requirements.
 

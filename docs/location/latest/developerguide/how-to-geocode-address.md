@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode an address
-<a name="how-to-geocode-address"></a>
 
 The Geocode API enables you to geocode a specific point address, interpolated address, or street. The API response contains location information, including geographical coordinates and match scores that i ndicate how accurately the result aligns with the query.
 

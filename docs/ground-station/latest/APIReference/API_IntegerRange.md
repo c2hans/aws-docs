@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_I
 ---
 
 # IntegerRange
-<a name="API_IntegerRange"></a>
 
 An integer range that has a minimum and maximum value.
 

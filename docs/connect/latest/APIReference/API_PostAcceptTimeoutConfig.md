@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PostAcce
 ---
 
 # PostAcceptTimeoutConfig
-<a name="API_PostAcceptTimeoutConfig"></a>
 
 Countdown timer configuration after the agent accepted the contact.
 

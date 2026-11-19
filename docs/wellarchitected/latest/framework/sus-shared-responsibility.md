@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus-sha
 ---
 
 # The shared responsibility model for sustainability
-<a name="sus-shared-responsibility"></a>
 
  Environmental sustainability is a shared responsibility between customers and AWS.
 +  AWS is responsible for optimizing the sustainability *of* the cloud – delivering efficient, shared infrastructure, water stewardship, and sourcing renewable power.

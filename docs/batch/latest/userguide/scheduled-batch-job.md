@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/scheduled-batch-j
 ---
 
 # Tutorial: Create a scheduled AWS Batch job
-<a name="scheduled-batch-job"></a>
 
 You can use Amazon EventBridge Scheduler to submit an AWS Batch job on a recurring schedule, such as every hour, or once at a specific date and time. EventBridge Scheduler invokes the AWS Batch [SubmitJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitJob.html) API operation on the schedule that you define, using an IAM execution role that grants EventBridge Scheduler permission to submit jobs on your behalf.
 

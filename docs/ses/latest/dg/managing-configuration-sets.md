@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/managing-configuration-set
 ---
 
 # Managing configuration sets in Amazon SES
-<a name="managing-configuration-sets"></a>
 
 After creating a configuration set, you can manage it with the view, edit, and delete options using the SES console, the Amazon SES API v2, and the Amazon SES CLI v2. Configuration sets can also be assigned to a verified identity as its default configuration set that is applied every time email is sent from the identity.
 

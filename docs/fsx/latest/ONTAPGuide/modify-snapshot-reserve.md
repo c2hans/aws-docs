@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/modify-snapshot-re
 ---
 
 # Updating your volume's snapshot reserve
-<a name="modify-snapshot-reserve"></a>
 
 You can change the amount of snapshot reserve on a volume using the NetApp ONTAP CLI or API, described in the following procedure.
 

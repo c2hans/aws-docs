@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-alias-cre
 ---
 
 # Create an alias of a flow in Amazon Bedrock
-<a name="flows-alias-create"></a>
 
 To invoke a flow, you must first create an alias that points to a version of the flow. To learn how to create an alias, choose the tab for your preferred method, and then follow the steps:
 

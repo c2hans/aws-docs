@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/mw
 ---
 
 # Key concepts
-<a name="mwaas-concepts"></a>
 
  Understanding Amazon MWAA Serverless concepts helps you design, deploy, and manage your workflow orchestration solutions. This section explains the core concepts and how they relate to traditional Apache Airflow terminology.
 +  **Workflow**: The Amazon MWAA Serverless resource that represents your orchestration logic. A workflow is created through the Amazon MWAA Serverless API, or CLI. It contains metadata about scheduling, execution roles, and the orchestrated data processing steps (tasks).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/contribu
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 +  Ryan Dsouza, Principal Solutions Architect, Amazon Web Services

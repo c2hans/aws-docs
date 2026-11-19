@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-automat
 ---
 
 # efs-automatic-backups-enabled
-<a name="efs-automatic-backups-enabled"></a>
 
 Checks if an Amazon Elastic File System (Amazon EFS) file system has automatic backups enabled. The rule is NON\_COMPLIANT if `BackupPolicy.Status` is set to DISABLED.
 

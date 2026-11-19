@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/deploy-event-search-analyt
 ---
 
 # Deploying and subscribing the Event Search and Analytics Pipeline to Amazon SNS
-<a name="deploy-event-search-analytics-pipeline"></a>
 
 |  |
 | --- |

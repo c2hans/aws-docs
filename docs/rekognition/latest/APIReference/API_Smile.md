@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Smil
 ---
 
 # Smile
-<a name="API_Smile"></a>
 
 Indicates whether or not the face is smiling, and the confidence level in the determination.
 

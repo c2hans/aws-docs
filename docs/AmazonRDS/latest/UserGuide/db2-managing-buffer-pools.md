@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-managing-
 ---
 
 # Common tasks for buffer pools
-<a name="db2-managing-buffer-pools"></a>
 
 You can create, alter, or drop buffer pools for an RDS for Db2 database. Creating, altering, or dropping buffer pools requires higher-level `SYSADM` or `SYSCTRL` authority, which isn't available to the master user. Instead, use Amazon RDS stored procedures.
 

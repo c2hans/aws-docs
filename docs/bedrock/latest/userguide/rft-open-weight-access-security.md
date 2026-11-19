@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rft-open-weight
 ---
 
 # Access and security for open-weight models
-<a name="rft-open-weight-access-security"></a>
 
 Before you begin reinforcement fine-tuning (RFT), make sure that you understand what kind of access Amazon Bedrock needs for RFT-specific operations. RFT requires additional permissions beyond standard fine-tuning due to its reward function execution capabilities.
 

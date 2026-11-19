@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/windows.html
 ---
 
 # Connect to an AWS Client VPN endpoint using a Windows client application
-<a name="windows"></a>
 
 These sections describe how to establish a VPN connection using Windows-based VPN clients.
 

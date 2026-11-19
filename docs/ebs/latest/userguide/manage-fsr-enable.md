@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/manage-fsr-enable.h
 ---
 
 # Configure fast snapshot restore for an Amazon EBS snapshot
-<a name="manage-fsr-enable"></a>
 
 Fast snapshot restore is disabled for a snapshot by default. You can enable or disable fast snapshot restore for snapshots that you own and for snapshots that are shared with you. When you enable or disable fast snapshot restore for a snapshot, the changes apply to your account only.
 

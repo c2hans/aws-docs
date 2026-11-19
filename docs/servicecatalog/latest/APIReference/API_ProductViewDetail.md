@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProductViewDetail
-<a name="API_ProductViewDetail"></a>
 
 Information about a product view.
 

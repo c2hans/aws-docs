@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/implementing-digi
 ---
 
 # Content encryption and DRM in AWS Elemental MediaConvert
-<a name="implementing-digital-rights-management-drm"></a>
 
 Protect your content from unauthorized use through encryption. Digital rights management (DRM) systems provide keys to AWS Elemental MediaConvert for content encryption, and licenses to supported players and other consumers for decryption.
 

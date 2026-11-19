@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListCodeInterpreters
-<a name="API_ListCodeInterpreters"></a>
 
 Lists all custom code interpreters in your account.
 

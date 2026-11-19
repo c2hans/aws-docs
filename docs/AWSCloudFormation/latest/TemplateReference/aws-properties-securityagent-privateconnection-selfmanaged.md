@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityAgent::PrivateConnection SelfManaged
-<a name="aws-properties-securityagent-privateconnection-selfmanaged"></a>
 
 <a name="aws-properties-securityagent-privateconnection-selfmanaged-description"></a>The `SelfManaged` property type specifies Property description not available. for an [AWS::SecurityAgent::PrivateConnection](aws-resource-securityagent-privateconnection.md).
 

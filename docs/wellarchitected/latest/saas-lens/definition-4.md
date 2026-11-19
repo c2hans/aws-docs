@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/definit
 ---
 
 # Definition
-<a name="definition-4"></a>
 
  There are four best practice areas for cost optimization in the cloud:
 +  Cost-effective resources

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-s
 ---
 
 # Enable instance store swap volume for M1 and C1 EC2 instances
-<a name="instance-store-swap-volumes"></a>
 
 **Note**
 This topic applies to `c1.medium` and `m1.small` Linux instances only.

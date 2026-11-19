@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Prerequisites
-<a name="nx-notify-get-set-up-prerequisites"></a>
 
 Before you begin, complete the following:
 

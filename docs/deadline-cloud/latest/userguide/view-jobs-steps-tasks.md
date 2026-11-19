@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-job
 ---
 
 # Manage jobs, steps, and tasks in Deadline Cloud
-<a name="view-jobs-steps-tasks"></a>
 
 When you select a queue, the job monitor section of the Deadline Cloud monitor shows you the jobs in that queue, the steps in the job, and the tasks in each step. When you select a job, step, or task, you can use the **Actions** menu to manage each.
 

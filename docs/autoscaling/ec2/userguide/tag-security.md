@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/tag-security.h
 ---
 
 # Tags for security
-<a name="tag-security"></a>
 
 Use tags to verify that the requester (such as an IAM user or role) has permissions to create, modify, or delete specific Auto Scaling groups. Provide tag information in the condition element of an IAM policy by using one or more of the following condition keys:
 + Use `autoscaling:ResourceTag/{{tag-key}}: {{tag-value}}` to allow (or deny) user actions on Auto Scaling groups with specific tags.

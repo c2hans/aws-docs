@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-ur
 ---
 
 # Connecting to a Amazon DCV session using URI
-<a name="using-connecting-uri"></a>
 
 Using a URI automatically opens a locally installed Amazon DCV client with information passed into from the URI.
 

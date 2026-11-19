@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/us
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Use an anonymous callback function
-<a name="using-a-callback-function"></a>
 
 Each service object method can accept an anonymous callback function as the last parameter. The signature of this callback function is as follows.
 

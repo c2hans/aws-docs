@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultFilterControlConfiguration
-<a name="API_DefaultFilterControlConfiguration"></a>
 
 The default configuration for all dependent controls of the filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CreatePricingPlan
-<a name="API_CreatePricingPlan"></a>
 
 Creates a pricing plan that is used for computing AWS charges for billing groups.
 

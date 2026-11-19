@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FlowD
 ---
 
 # FlowDetail
-<a name="API_FlowDetail"></a>
 
 The full details of a flow, including its definition specifying the steps.
 

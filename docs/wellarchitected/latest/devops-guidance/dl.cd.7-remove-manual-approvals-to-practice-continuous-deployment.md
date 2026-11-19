@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.7] Remove manual approvals to practice continuous deployment
-<a name="dl.cd.7-remove-manual-approvals-to-practice-continuous-deployment"></a>
 
  **Category:** OPTIONAL
 

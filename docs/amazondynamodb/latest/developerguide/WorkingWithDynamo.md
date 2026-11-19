@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Wor
 ---
 
 # Working with tables, items, queries, scans, and indexes
-<a name="WorkingWithDynamo"></a>
 
 This section provides details about working with tables, items, queries, and more in Amazon DynamoDB.
 

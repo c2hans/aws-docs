@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkUpdateImportInfo
-<a name="API_SidewalkUpdateImportInfo"></a>
 
 Sidewalk object information for updating an import task.
 

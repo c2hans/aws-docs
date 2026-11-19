@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/delegates.html
 ---
 
 # Creating delegates
-<a name="delegates"></a>
 
 If you have Amazon Chime Pro permissions, you can assign delegate status to other Pro users. This status allows them to schedule meetings on your behalf and use the meeting host actions. For more information about the host actions available to delegates, see [Hosting meetings](chime-organizer-call-controls.md).
 

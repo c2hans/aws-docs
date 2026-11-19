@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lan
 ---
 
 # LandingZoneOperationSummary
-<a name="API_LandingZoneOperationSummary"></a>
 
 Returns a summary of information about a landing zone operation.
 

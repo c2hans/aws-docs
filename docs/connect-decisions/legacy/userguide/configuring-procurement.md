@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/confi
 ---
 
 # Procurement
-<a name="configuring-procurement"></a>
 
 You can view the procurement details for all the items ordered as part of a order. By default, you can view the supply chain processes for procurement and you can use the filters to view a subset of procurement processes. You can select the **Material Name** to view the corresponding procurement summary.
 

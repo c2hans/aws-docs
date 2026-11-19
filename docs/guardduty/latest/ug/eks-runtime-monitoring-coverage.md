@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/eks-runtime-monitori
 ---
 
 # Runtime coverage and troubleshooting for Amazon EKS clusters
-<a name="eks-runtime-monitoring-coverage"></a>
 
 After you enable Runtime Monitoring and install the GuardDuty security agent (add-on) for EKS either manually or through automated agent configuration, you can start assessing the coverage for your EKS clusters.
 

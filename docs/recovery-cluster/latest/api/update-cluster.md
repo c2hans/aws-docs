@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/update-clust
 ---
 
 # Update a cluster
-<a name="update-cluster"></a>
 
 The following is an example of a request to update a cluster, and the response.
 

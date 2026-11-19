@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleRevision
-<a name="API_RuleRevision"></a>
 
 The change to a rule that creates a revision of the rule.
 

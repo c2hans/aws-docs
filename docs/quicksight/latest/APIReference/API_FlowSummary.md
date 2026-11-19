@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_FlowS
 ---
 
 # FlowSummary
-<a name="API_FlowSummary"></a>
 
 The basic information of the flow exluding its definition specifying the steps.
 

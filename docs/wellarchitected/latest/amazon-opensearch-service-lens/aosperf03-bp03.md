@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF03-BP03 Use storage types that provide higher IOPs and throughput baseline
-<a name="aosperf03-bp03"></a>
 
  Improve storage performance with higher baseline IOPs and throughput using more scalable and efficient volume types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/detective-integratio
 ---
 
 # Integrating with Amazon Detective
-<a name="detective-integration"></a>
 
 [Amazon Detective](https://docs.aws.amazon.com/detective/latest/userguide/what-is-detective.html) helps you quickly analyze and investigate security events across one or more AWS accounts by generating data visualizations that represent the ways your resources behave and interact over time. Detective creates visualizations of GuardDuty findings.
 

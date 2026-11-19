@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # RespondToAuthChallenge
-<a name="API_RespondToAuthChallenge"></a>
 
 Some API operations in a user pool generate a challenge, like a prompt for an MFA code, for device authentication that bypasses MFA, or for a custom authentication challenge. A `RespondToAuthChallenge` API request provides the answer to that challenge, like a code or a secure remote password (SRP). The parameters of a response to an authentication challenge vary with the type of challenge.
 
@@ -240,7 +239,7 @@ Valid Values: `SMS_MFA | EMAIL_OTP | SOFTWARE_TOKEN_MFA | SELECT_MFA_TYPE | MFA_
 
  ** [ChallengeParameters](#API_RespondToAuthChallenge_ResponseSyntax) **   <a name="CognitoUserPools-RespondToAuthChallenge-response-ChallengeParameters"></a>
 The parameters that define your response to the next challenge.
-Take the values in `ChallengeParameters` and provide values for them in the `ChallengeResponses` of the next [RespondToAuthChallenge](#API_RespondToAuthChallenge) request.
+Take the values in `ChallengeParameters` and provide values for them in the `ChallengeResponses` of the next [RespondToAuthChallenge](API_RespondToAuthChallenge.md) request.
 Type: String to string map
 Key Length Constraints: Minimum length of 0. Maximum length of 131072.
 Value Length Constraints: Minimum length of 0. Maximum length of 131072.

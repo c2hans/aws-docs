@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Amazon Titan Image Generator G1 models
-<a name="model-parameters-titan-image"></a>
 
 The Amazon Titan Image Generator G1 V1 and Titan Image Generator G1 V2 models support the following inference parameters and model responses when carrying out model inference.
 

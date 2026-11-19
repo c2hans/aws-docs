@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Content delivery
-<a name="contentdelivery-pattern-list"></a>
 
 **Topics**
 + [Send AWS WAF logs to Splunk by using AWS Firewall Manager and Amazon Data Firehose](send-aws-waf-logs-to-splunk-by-using-aws-firewall-manager-and-amazon-data-firehose.md)

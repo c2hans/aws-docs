@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-data-invent
 ---
 
 # Amazon Simple Storage Service data inventory
-<a name="s3-data-inventory"></a>
 
 ## Amazon S3
 <a name="s3-intro"></a>

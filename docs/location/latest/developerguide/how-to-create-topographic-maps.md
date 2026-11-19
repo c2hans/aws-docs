@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-cr
 ---
 
 # How to create topographic maps
-<a name="how-to-create-topographic-maps"></a>
 
 Amazon Location Service allows you to create topographic maps using Terrain and Contour density features to visualize elevation changes and geographic characteristics.
 

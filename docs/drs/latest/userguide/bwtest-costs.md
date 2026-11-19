@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-costs.html
 ---
 
 # Costs of the network bandwidth test
-<a name="bwtest-costs"></a>
 
 This procedure has two cost line items, and the second is the larger one.
 + The instance-hour is minor for the lifetime of a test, and an in-use public IPv4 address adds a small hourly charge on top of it.

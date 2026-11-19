@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/access-metrics-cw.
 ---
 
 # Apache Airflow environment metrics in CloudWatch
-<a name="access-metrics-cw"></a>
 
 Apache Airflow v2 and v3 are already set-up to collect and send [StatsD](https://github.com/etsy/statsd) metrics for an Amazon Managed Workflows for Apache Airflow environment to Amazon CloudWatch. The complete list of metrics Apache Airflow sends is available on the [Metrics](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/metrics.html) page in the *Apache Airflow reference guide*. This page describes the Apache Airflow metrics available in CloudWatch and how to access metrics in the CloudWatch console.
 

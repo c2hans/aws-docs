@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migration patterns by workload
-<a name="migration-migration-patterns-by-workload-pattern-list"></a>
 
 **Topics**
 + [IBM](migration-migration-patterns-by-workload-ibm-pattern-list.md)

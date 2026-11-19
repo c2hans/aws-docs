@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 ---
 
 # RestoreJobsListMember
-<a name="API_RestoreJobsListMember"></a>
 
 Contains metadata about a restore job.
 

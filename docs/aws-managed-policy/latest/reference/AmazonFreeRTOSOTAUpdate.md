@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonFreeRTOSOTAUpdate
-<a name="AmazonFreeRTOSOTAUpdate"></a>
 
 **Description**: Allows user to access Amazon FreeRTOS OTA Update
 

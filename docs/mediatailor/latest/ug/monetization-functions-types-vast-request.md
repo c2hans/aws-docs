@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # VAST request
-<a name="monetization-functions-types-vast-request"></a>
 
 ## When to use
 <a name="monetization-functions-types-vast-request-when"></a>

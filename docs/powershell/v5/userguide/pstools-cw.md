@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # CloudWatch from the AWS Tools for Windows PowerShell
-<a name="pstools-cw"></a>
 
 This section shows an example of how to use the Tools for Windows PowerShell to publish custom metric data to CloudWatch.
 

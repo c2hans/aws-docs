@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetAdConfiguration
-<a name="API_GetAdConfiguration"></a>
 
 Gets the ad configuration represented by the specified ARN.
 

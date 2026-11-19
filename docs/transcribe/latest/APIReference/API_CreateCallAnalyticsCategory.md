@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Creat
 ---
 
 # CreateCallAnalyticsCategory
-<a name="API_CreateCallAnalyticsCategory"></a>
 
 Creates a new Call Analytics category.
 

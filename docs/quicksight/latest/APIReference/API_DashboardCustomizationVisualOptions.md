@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardCustomizationVisualOptions
-<a name="API_DashboardCustomizationVisualOptions"></a>
 
 The options that define customizations available to dashboard readers for a specific visual
 

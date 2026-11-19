@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upgrad
 ---
 
 # Step A: Get ready
-<a name="upgrades-cl3-upg-red-single-ver-version"></a>
 
 The following steps prepare you for upgrading. Perform these steps to ensure that you don't lose any data.
 

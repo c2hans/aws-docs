@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The Tag type enables you to specify a key-value pair that can be used to store information about an CloudFormation stack.
 

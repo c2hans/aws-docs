@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-i
 ---
 
 # Getting Started​ with the IVS iOS Broadcast SDK \| Real-Time Streaming
-<a name="broadcast-ios-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the IVS real-time streaming iOS broadcast SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DEGREES
 ---
 
 # DEGREES function
-<a name="DEGREES"></a>
 
 Converts an angle in radians to its equivalent in degrees.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_StartDo
 ---
 
 # StartDocumentAnalysis
-<a name="API_StartDocumentAnalysis"></a>
 
 Starts the asynchronous analysis of an input document for relationships between detected items such as key-value pairs, tables, and selection elements.
 

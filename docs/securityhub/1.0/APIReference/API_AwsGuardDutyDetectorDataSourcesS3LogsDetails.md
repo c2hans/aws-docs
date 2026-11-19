@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesS3LogsDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesS3LogsDetails"></a>
 
  An object that contains information on the status of S3 data event logs as a data source for the detector.
 

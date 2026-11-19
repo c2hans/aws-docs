@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Invalid choice: "kinesisanalyticsv2"
-<a name="troubleshooting-cli-update"></a>
 
 To use v2 of the Managed Service for Apache Flink API, you need the latest version of the AWS Command Line Interface (AWS CLI).
 

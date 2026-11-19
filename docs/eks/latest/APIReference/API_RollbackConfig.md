@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_RollbackConf
 ---
 
 # RollbackConfig
-<a name="API_RollbackConfig"></a>
 
 The rollback configuration for the cluster version rollback.
 

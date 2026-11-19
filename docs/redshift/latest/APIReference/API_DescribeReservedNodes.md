@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeReservedNodes
-<a name="API_DescribeReservedNodes"></a>
 
 Returns the descriptions of the reserved nodes.
 
@@ -13,7 +12,7 @@ Returns the descriptions of the reserved nodes.
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeReservedNodes](#API_DescribeReservedNodes) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeReservedNodes](API_DescribeReservedNodes.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

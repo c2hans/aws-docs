@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Scheduled
 ---
 
 # ScheduledInstancesMonitoring
-<a name="API_ScheduledInstancesMonitoring"></a>
 
 Describes whether monitoring is enabled for a Scheduled Instance.
 

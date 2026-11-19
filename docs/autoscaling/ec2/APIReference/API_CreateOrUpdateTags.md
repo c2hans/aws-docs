@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateO
 ---
 
 # CreateOrUpdateTags
-<a name="API_CreateOrUpdateTags"></a>
 
 Creates or updates tags for the specified Auto Scaling group.
 

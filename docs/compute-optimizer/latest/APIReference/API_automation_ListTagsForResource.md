@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListTagsForResource
-<a name="API_automation_ListTagsForResource"></a>
 
  Lists the tags for a specified resource.
 

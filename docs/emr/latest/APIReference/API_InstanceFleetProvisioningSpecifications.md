@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetProvisioningSpecifications
-<a name="API_InstanceFleetProvisioningSpecifications"></a>
 
 The launch specification for On-Demand and Spot Instances in the fleet.
 

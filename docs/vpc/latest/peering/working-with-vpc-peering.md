@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/working-with-vpc-peer
 ---
 
 # VPC peering connections
-<a name="working-with-vpc-peering"></a>
 
 VPC peering enables you to connect two VPCs in the same or different AWS Regions. This enables instances in one VPC to communicate with instances in the other VPC as if they were all part of the same network.
 

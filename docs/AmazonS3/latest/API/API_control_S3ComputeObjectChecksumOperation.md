@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Comput
 ---
 
 # S3ComputeObjectChecksumOperation
-<a name="API_control_S3ComputeObjectChecksumOperation"></a>
 
 Directs the specified job to invoke the ComputeObjectChecksum operation on every object listed in the job's manifest.
 

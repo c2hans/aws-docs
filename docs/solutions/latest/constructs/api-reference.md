@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/api-referenc
 ---
 
 # API Reference
-<a name="api-reference"></a>
 
 AWS Solutions Constructs (Constructs) is an open-source extension of the AWS Cloud Development Kit (AWS CDK) that provides multi-service, well-architected patterns for quickly defining solutions in code to create predictable and repeatable infrastructure. Constructs’s goal is to accelerates the experience for developers to build solutions of any size using pattern-based definitions for their architecture.
 

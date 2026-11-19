@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Run Docker containers with NVIDIA GPUs on Deadline Cloud workers
-<a name="examples-host-config-docker-nvidia"></a>
 
 The [docker\_nvidia\_container\_toolkit](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/docker_nvidia_container_toolkit) host configuration script on the GitHub website installs Docker and the NVIDIA Container Toolkit on Linux service-managed fleet workers, which lets jobs run GPU containers directly with `docker run`. Many GPU workloads, such as ComfyUI and Stable Diffusion inference servers, ship as container images and require Docker with GPU passthrough. Containers also provide a clean way to package complex dependency stacks (CUDA, Python, application-specific libraries) without polluting the host or conflicting with other jobs on the fleet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Virtual Data Center Security Stack
-<a name="virtual-data-center-security-stack"></a>
 
 The purpose of the Virtual Data Center Security Stack (VDSS) is to protect DOD mission-owner applications that are hosted in AWS. The VDSS provides an enclave for security services. The VDSS performs the bulk of the security operations in the SCCA. This component contains security and network services, such as inbound connectivity access controls and perimeter protections services, including web application firewalls, DDOS protection, load balancers, and networking routing resources. The VDSS can reside in the cloud infrastructure or on premises, in your data center. AWS or third-party vendors can provide VDSS capabilities through infrastructure as a service (IaaS), or AWS can offer these capabilities through software as a service (SaaS) solutions. For more information about the VDSS, see the [DoD Cloud Computing Security Requirements Guide](https://public.cyber.mil/dccs/dccs-documents/).
 

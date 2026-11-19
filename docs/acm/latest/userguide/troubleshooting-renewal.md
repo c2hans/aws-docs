@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-ren
 ---
 
 # Troubleshoot managed certificate renewal
-<a name="troubleshooting-renewal"></a>
 
 ACM tries to automatically renew your ACM certificates before they expire so that no action is required from you. Consult the following topics if you have trouble with [Managed certificate renewal in AWS Certificate Manager](managed-renewal.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.04 Prevent application secrets from being exposed
-<a name="wkld-04"></a>
 
 During local development, you might store application secrets in local configuration or code files and accidentally check them in to source code repositories. If a repository hosted on a public service provider doesn't have access controls, unauthorized users can access it and discover exposed secrets. Use secret-scanning tools to prevent your team from committing secrets to your repository. During code reviews, check for hardcoded credentials, API keys, and other secrets before you merge changes.
 

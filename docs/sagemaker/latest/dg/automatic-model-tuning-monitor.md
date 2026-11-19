@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Monitor the Progress of a Hyperparameter Tuning Job
-<a name="automatic-model-tuning-monitor"></a>
 
 To monitor the progress of a hyperparameter tuning job and the training jobs that it launches, use the Amazon SageMaker AI console.
 

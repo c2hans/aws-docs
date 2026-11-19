@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/opt-in-directo
 ---
 
 # Enable accounts for Local Zones
-<a name="opt-in-directory-bucket-lz"></a>
 
 The following topics describe how accounts are enabled for AWS Local Zones:
 

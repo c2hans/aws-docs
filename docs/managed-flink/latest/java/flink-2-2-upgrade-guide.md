@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-2-upgr
 ---
 
 # Upgrading to Flink 2.2: Complete guide
-<a name="flink-2-2-upgrade-guide"></a>
 
 This guide provides step-by-step instructions for upgrading your Amazon Managed Service for Apache Flink application from Flink 1.x to Flink 2.2. This is a major version upgrade with breaking changes that require careful planning and testing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/create
 ---
 
 # Create a model
-<a name="create-a-model"></a>
 
 A model is a reinforcement learning neural network that enables the race car, either virtual or physical, to make real-time driving decisions on its own. The model is created by training the vehicle through trial and error in a simulated environment, where it learns to navigate a track by optimizing for rewards defined in the reward function.
 

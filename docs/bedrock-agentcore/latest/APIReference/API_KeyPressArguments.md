@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # KeyPressArguments
-<a name="API_KeyPressArguments"></a>
 
 Arguments for a key press action.
 

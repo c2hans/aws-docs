@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asso
 ---
 
 # Association
-<a name="API_Association"></a>
 
 Represents a service association within an AgentSpace, defining how the agent interacts with external services.
 

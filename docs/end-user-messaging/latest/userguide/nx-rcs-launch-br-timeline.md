@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Brand approval and launch timeline
-<a name="nx-rcs-launch-br-timeline"></a>
 
 In Brazil, ABR Telecom represents the three mobile operators (Claro, TIM, and Vivo) and manages the RCS agent launch workflow. You do not need to send a separate brand approval email to AWS. Complete brand approval as follows:
 

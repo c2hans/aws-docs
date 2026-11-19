@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the * AWS Private Certificate Authority API Reference*. It provides descriptions, syntax, and usage examples for each of the actions and data types involved in creating and managing a private certificate authority (CA) for your organization.
 
@@ -13,4 +12,4 @@ Each AWS Private CA API operation has a quota that determines the number of time
 
 To see an up-to-date list of your AWS Private CA quotas, or to request a quota increase, log into your AWS account and visit the [Service Quotas](https://console.aws.amazon.com/servicequotas/) console.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

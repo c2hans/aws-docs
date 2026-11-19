@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/custom-termina
 ---
 
 # Change the termination policy for an Auto Scaling group
-<a name="custom-termination-policy"></a>
 
 To change the termination policy for your Auto Scaling group, use one of the following methods.
 

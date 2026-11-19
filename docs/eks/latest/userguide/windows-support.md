@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/windows-support.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy Windows nodes on EKS clusters
-<a name="windows-support"></a>
 
 Learn how to enable and manage Windows support for your Amazon EKS cluster to run Windows containers alongside Linux containers.
 

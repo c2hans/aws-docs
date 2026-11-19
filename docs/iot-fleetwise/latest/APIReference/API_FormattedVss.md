@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Fo
 ---
 
 # FormattedVss
-<a name="API_FormattedVss"></a>
 
  [Vehicle Signal Specification (VSS)](https://www.w3.org/auto/wg/wiki/Vehicle_Signal_Specification_(VSS)/Vehicle_Data_Spec) is a precise language used to describe and model signals in vehicle networks. The JSON file collects signal specificiations in a VSS format.
 

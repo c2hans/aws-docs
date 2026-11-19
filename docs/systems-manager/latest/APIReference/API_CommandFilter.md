@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CommandFilter
-<a name="API_CommandFilter"></a>
 
 Describes a command filter.
 

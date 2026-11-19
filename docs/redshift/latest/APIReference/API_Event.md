@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Event.h
 ---
 
 # Event
-<a name="API_Event"></a>
 
 Describes an event.
 

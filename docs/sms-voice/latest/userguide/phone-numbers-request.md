@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers
 ---
 
 # Request a phone number in AWS End User Messaging SMS
-<a name="phone-numbers-request"></a>
 
 Using the AWS End User Messaging SMS console, we’ll recommend one of the below origination identities depending on your use-case. Recommendations are based on your input criteria including if you require SMS, MMS, and/or voice capabilities, a two-way number, and estimate monthly messages.
 

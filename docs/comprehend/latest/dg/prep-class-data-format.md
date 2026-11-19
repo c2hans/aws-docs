@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/prep-class-data-for
 ---
 
 # Classifier training file formats
-<a name="prep-class-data-format"></a>
 
 For a plain-text model, you can provide classifier training data as a CSV file or as an augmented manifest file that you create using SageMaker AI Ground Truth. The CSV file or augmented manifest file includes the text for each training document, and its associated labels.
 

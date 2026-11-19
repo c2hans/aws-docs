@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-managing-
 ---
 
 # Common tasks for databases
-<a name="db2-managing-databases"></a>
 
 You can create, drop, or restore databases on your RDS for Db2 DB instance. Creating, dropping, or restoring databases requires higher-level `SYSADM` authority, which isn't available to the master user. Instead, use Amazon RDS stored procedures.
 

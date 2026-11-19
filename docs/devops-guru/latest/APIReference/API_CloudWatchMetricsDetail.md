@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Clou
 ---
 
 # CloudWatchMetricsDetail
-<a name="API_CloudWatchMetricsDetail"></a>
 
  Information about an Amazon CloudWatch metric.
 

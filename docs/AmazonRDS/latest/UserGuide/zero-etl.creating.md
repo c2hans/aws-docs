@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.crea
 ---
 
 # Creating Amazon RDS zero-ETL integrations with Amazon Redshift
-<a name="zero-etl.creating"></a>
 
 When you create an Amazon RDS zero-ETL integration, you specify the source RDS database and the target Amazon Redshift data warehouse. You can also customize encryption settings and add tags. Amazon RDS creates an integration between the source database and its target. Once the integration is active, any data that you insert into the source database will be replicated into the configured Amazon Redshift target.
 

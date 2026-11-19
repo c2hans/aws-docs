@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/stack-how-to-create-multipl
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Create an app with multiple stacks
-<a name="stack-how-to-create-multiple-stacks"></a>
 
 Most of the other code examples in the *AWS CDK Developer Guide* involve only a single stack. However, you can create apps containing any number of stacks. Each stack results in its own CloudFormation template. Stacks are the *unit of deployment:* each stack in an app can be synthesized and deployed individually using the `cdk deploy` command.
 

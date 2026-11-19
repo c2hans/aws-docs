@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/publi
 ---
 
 # Publishing Demand Plans
-<a name="publishing-demand-plans"></a>
 
 After planners have reviewed and refined forecasts, you can publish the final plan to make it available for downstream processes.
 

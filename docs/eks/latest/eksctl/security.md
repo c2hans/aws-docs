@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/security.html
 ---
 
 # Security
-<a name="security"></a>
 
  `eksctl` provides some options that can improve the security of your EKS cluster.
 

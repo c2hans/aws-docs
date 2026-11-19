@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Set up for AWS Launch Wizard for SAP
-<a name="launch-wizard-sap-setting-up"></a>
 
 This section describes the prerequisites that you must verify to deploy an SAP application with AWS Launch Wizard.
 

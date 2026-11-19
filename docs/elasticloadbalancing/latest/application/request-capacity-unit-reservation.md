@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Request Load balancer Capacity Unit reservation for your Application Load Balancer
-<a name="request-capacity-unit-reservation"></a>
 
 Before you use LCU reservation, review the following:
 + Capacity is reserved at the regional level and is evenly distributed across availability zones. Confirm you have enough evenly distributed targets in each availability zone before turning on LCU reservation.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ErrorI
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
 This is an error field object that contains the error code and the reason for an operation failure.
 

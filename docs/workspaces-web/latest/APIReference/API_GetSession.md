@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_G
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Gets information for a secure browser session.
 

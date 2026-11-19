@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/signing-job
 ---
 
 # Create a signing job for IoT in AWS Signer
-<a name="signing-jobs-iot"></a>
 
 To start a signing job, you need to specify the following:
 + The source S3 bucket of the IoT binary to be signed

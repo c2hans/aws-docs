@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/create-suppression-r
 ---
 
 # Creating suppression rules in GuardDuty
-<a name="create-suppression-rules-guardduty"></a>
 
 A suppression rule is a set of criteria that includes using filter attributes and providing values for which you don't want GuardDuty to generate a finding type. The finding types that match this criteria are automatically archived. To reduce noise, the suppressed findings are not sent to any of the AWS services with which you may integrate. For more information about common use cases for creating suppression rules, see [Suppression rules](findings_suppression-rule.md).
 

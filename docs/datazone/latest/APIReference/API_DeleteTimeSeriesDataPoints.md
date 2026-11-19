@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteT
 ---
 
 # DeleteTimeSeriesDataPoints
-<a name="API_DeleteTimeSeriesDataPoints"></a>
 
 Deletes the specified time series form for the specified asset.
 

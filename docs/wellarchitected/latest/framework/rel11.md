@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel11.h
 ---
 
 # Design your workload to withstand component failures
-<a name="rel11"></a>
 
  Hardware faults, software defects, network partitions, and the loss of an Availability Zone may all occur in normal operation. Design each workload to expect these failures and keep serving customers when they happen, rather than assuming its components stay healthy.
 

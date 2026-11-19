@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-steps-in-f
 ---
 
 # Action steps
-<a name="action-steps-in-flows"></a>
 
 Action steps let your flows perform read or write operations in connected applications. The available operations depend on the action integrations that you have configured or that have been shared with you. For prerequisites, authentication methods, and available integrations, see [Working with integrations](working-with-integrations.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Deleting Resource Types with `$bulk-delete`
-<a name="reference-fhir-operations-bulk-delete"></a>
 
 AWS HealthLake supports the `$bulk-delete` operation, enabling deletion of all resources of a specific type within a datastore. This operation is particularly useful when you need to:
 + Perform seasonal auditing and clean-up

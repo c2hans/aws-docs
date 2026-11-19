@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastTestReverted
-<a name="API_LifeCycleLastTestReverted"></a>
 
 Lifecycle last Test reverted.
 

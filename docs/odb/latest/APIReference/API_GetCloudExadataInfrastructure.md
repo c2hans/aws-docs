@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetCloudExad
 ---
 
 # GetCloudExadataInfrastructure
-<a name="API_GetCloudExadataInfrastructure"></a>
 
 Returns information about the specified Exadata infrastructure.
 

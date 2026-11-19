@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-octopu
 ---
 
 # Connecting to Octopus Deploy in AWS Glue Studio
-<a name="connecting-to-data-octopus"></a>
 
 Octopus Deploy automates releases. Because you are an Octopus Deploy user, you can connect AWS Glue to your Octopus Deploy account. You can then use Octopus Deploy as a data source in your AWS Glue ETL jobs to transfer data between Octopus Deploy and AWS services or other supported applications.
 

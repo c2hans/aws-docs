@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/Traffic_Mirroring_S
 ---
 
 # Traffic Mirroring example configuration scenarios
-<a name="Traffic_Mirroring_Scenarios"></a>
 
 This section consists of step-by-step instructions you can use to configure Traffic Mirroring for the following scenarios:
 + [Mirror inbound TCP traffic to a single appliance](#tm-example-inbound-tcp)

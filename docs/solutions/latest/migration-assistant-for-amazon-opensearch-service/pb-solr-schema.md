@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Schema translation reference
-<a name="pb-solr-schema"></a>
 
 During metadata migration, Migration Assistant translates the Apache Solr `schema.xml` field types into OpenSearch field types. This playbook summarizes the behavior; the full reference is in [Migrate from Apache Solr](migrate-from-solr.md).
 

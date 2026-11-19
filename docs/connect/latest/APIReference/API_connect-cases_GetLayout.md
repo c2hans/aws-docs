@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetLayout
-<a name="API_connect-cases_GetLayout"></a>
 
 Returns the details for the requested layout.
 

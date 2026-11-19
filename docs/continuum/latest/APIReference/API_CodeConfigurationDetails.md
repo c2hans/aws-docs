@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_CodeCo
 ---
 
 # CodeConfigurationDetails
-<a name="API_CodeConfigurationDetails"></a>
 
 The code Configuration Details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateSh
 ---
 
 # UpdateShardCount
-<a name="API_UpdateShardCount"></a>
 
 Updates the shard count of the specified stream to the specified number of shards. This API is only supported for the data streams with the provisioned capacity mode.
 

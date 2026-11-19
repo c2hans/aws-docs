@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSupportAppReadOnlyAccess
-<a name="AWSSupportAppReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to the AWS Support App.
 

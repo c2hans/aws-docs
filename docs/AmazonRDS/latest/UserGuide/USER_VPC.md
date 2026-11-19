@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html
 ---
 
 # Amazon VPC and Amazon RDS
-<a name="USER_VPC"></a>
 
 Amazon Virtual Private Cloud (Amazon VPC) makes it possible for you to launch AWS resources, such as Amazon RDS DB instances, into a virtual private cloud (VPC).
 

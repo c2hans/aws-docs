@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Using Performance Monitor
-<a name="CloudWatch-PerformanceMonitor"></a>
 
 Performance Monitor monitors the traffic of the VPCs that you select to determine whether the AWS network is causing issues for your workloads. Performance Monitor measures network degradation across paths between Availability Zones, across Regions, and to AWS services such as Amazon S3 and Amazon DynamoDB.
 

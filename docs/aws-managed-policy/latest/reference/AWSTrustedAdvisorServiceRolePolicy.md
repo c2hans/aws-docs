@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTrustedAdvisorServiceRolePolicy
-<a name="AWSTrustedAdvisorServiceRolePolicy"></a>
 
 **Description**: Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.
 

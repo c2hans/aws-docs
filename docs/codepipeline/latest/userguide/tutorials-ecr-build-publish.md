@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Build and push a Docker image to Amazon ECR with CodePipeline (V2 type)
-<a name="tutorials-ecr-build-publish"></a>
 
 This tutorial helps you to create a build action in CodePipeline that runs and pushes your Docker image to Amazon ECR after a change to your source code. This tutorial also shows you how to add an Amazon ECS deploy action that deploys your pushed image.
 

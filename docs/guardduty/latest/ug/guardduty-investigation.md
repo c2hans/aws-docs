@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-investigat
 ---
 
 # GuardDuty Investigation (Preview)
-<a name="guardduty-investigation"></a>
 
 GuardDuty Investigation provides AI-powered security analysis of your GuardDuty findings and accounts. When you create an investigation, GuardDuty examines finding context, related activity from the last 90 days, affected resources, threat intelligence and threat indicators using knowledge graphs. Each investigation provides a threat disposition assessment with confidence scoring, MITRE ATT&CK® technique classification, supporting evidence, and actionable recommendations.
 

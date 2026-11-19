@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/delete-input.html
 ---
 
 # Deleting an input
-<a name="delete-input"></a>
 
 1. Open the MediaLive console at [https://console.aws.amazon.com/medialive/](https://console.aws.amazon.com/medialive/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stop
 ---
 
 # StopProjectVersion
-<a name="API_StopProjectVersion"></a>
 
 **Note**
 This operation applies only to Amazon Rekognition Custom Labels.

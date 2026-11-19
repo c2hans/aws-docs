@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/editing-router-ne
 ---
 
 # Updating a router network interface in MediaConnect
-<a name="editing-router-network-interface"></a>
 
 After creating a router network interface in MediaConnect, you can modify its configuration to adapt to changing network requirements. This enables you to update the properties of your public and VPC interfaces, ensuring that your network setup remains flexible and up-to-date.
 

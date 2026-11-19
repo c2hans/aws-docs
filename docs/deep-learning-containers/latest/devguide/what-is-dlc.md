@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deep-learning-containers/latest/devguide
 ---
 
 # AWS Deep Learning Containers Documentation Has Moved
-<a name="what-is-dlc"></a>
 
 The AWS Deep Learning Containers Developer Guide documentation has moved to a new location.
 

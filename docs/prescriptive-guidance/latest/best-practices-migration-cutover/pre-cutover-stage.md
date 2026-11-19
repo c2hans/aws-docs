@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Pre-cutover stage
-<a name="pre-cutover-stage"></a>
 
 Your cutover options depend on various factors, including what migration pattern you're using and the tools, technologies, and configurations of both your source and target environment. For example, the cutover options are different for migrating a VMware environment to AWS compared to building a completely new stack.
 

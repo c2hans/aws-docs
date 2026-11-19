@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Transforms for listener rules
-<a name="rule-transforms"></a>
 
 A rule transform rewrites inbound requests before they are routed to targets. Rewriting a request does not change the routing decision made when evaluating the rule conditions. This is useful when clients send a different URL or host header than what the targets expect.
 

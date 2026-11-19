@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_PutAccountCo
 ---
 
 # PutAccountConfiguration
-<a name="API_PutAccountConfiguration"></a>
 
 Adds or modifies account-level configurations in ACM.
 

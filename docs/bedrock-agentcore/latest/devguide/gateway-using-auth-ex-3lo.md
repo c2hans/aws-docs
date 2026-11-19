@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Example: Authentication with an authorization code grant when invoking a gateway
-<a name="gateway-using-auth-ex-3lo"></a>
 
 If you set up your gateway target with an authorization code grant (for more information, see [OAuth authorization](gateway-building-adding-targets-authorization.md#gateway-building-adding-targets-authorization-oauth) ), the `defaultReturnUrl` that you specified when creating the gateway will be the link that the user’s browser redirects to after authentication.
 

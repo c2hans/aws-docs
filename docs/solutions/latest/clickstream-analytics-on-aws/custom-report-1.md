@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Custom report
-<a name="custom-report-1"></a>
 
  One of the key benefits of this guidance is that you have complete control over the clickstream data collected from your apps and websites. You have complete flexbility to analyze the data for your specific business needs. This article illustrates the steps of creating a custom report with an example of creating funnel analysis by using Redshift Serverless as analytics engine and QuickSight as reporting tools.
 

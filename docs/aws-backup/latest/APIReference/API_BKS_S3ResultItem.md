@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # S3ResultItem
-<a name="API_BKS_S3ResultItem"></a>
 
 These are the items returned in the results of a search of Amazon S3 backup metadata.
 

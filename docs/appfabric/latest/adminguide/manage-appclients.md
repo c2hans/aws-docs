@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/manage-appcl
 ---
 
 # Manage AppFabric for productivity AppClients
-<a name="manage-appclients"></a>
 
 |  |
 | --- |

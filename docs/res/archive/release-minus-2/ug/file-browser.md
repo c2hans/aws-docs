@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/file-brow
 ---
 
 # File browser
-<a name="file-browser"></a>
 
 File browser allows you to access the global shared EFS filesystem through the web portal. You can manage all available files you have permission to access on the underlying filesystem. This is the same file system that is shared by your Linux virtual desktops. Updating files on your virtual desktop is the same as updating a file through the terminal or web-based file browser.
 

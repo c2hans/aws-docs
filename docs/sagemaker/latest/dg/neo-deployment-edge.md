@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-edge.
 ---
 
 # Deploy Models
-<a name="neo-deployment-edge"></a>
 
 You can deploy the compute module to resource-constrained edge devices by: downloading the compiled model from Amazon S3 to your device and using [DLR](https://github.com/neo-ai/neo-ai-dlr), or you can use [AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html).
 

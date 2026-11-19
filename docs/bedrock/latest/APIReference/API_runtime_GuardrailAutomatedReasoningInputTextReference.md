@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningInputTextReference
-<a name="API_runtime_GuardrailAutomatedReasoningInputTextReference"></a>
 
 References a portion of the original input text that corresponds to logical elements.
 

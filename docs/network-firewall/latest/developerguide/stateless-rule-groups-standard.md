@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 ---
 
 # Working with stateless rule groups in AWS Network Firewall
-<a name="stateless-rule-groups-standard"></a>
 
 For stateless rule groups, the AWS Network Firewall stateless rules engine examines each packet in isolation. Network Firewall doesn't consider context such as traffic direction or other related packets.
 

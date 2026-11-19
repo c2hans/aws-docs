@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-c
 ---
 
 # Creating connections for API targets in EventBridge
-<a name="eb-target-connection-create"></a>
 
 The following steps walk you through how to create a connection to an HTTPS endpoint.
 

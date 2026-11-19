@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Using AppConfig to deploy Accelerate alarm configuration changes
-<a name="acc-mem-deploy-change-appconfig"></a>
 
 Once the customization is completed, use AppConfig to deploy your changes with [StartDeployment](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_StartDeployment.html).
 

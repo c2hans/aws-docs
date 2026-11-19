@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSODirectoryAdministrator
-<a name="AWSSSODirectoryAdministrator"></a>
 
 **Description**: Administrator access for SSO Directory
 

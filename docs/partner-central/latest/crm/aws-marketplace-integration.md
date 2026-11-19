@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/aws-marketpla
 ---
 
 # Configuring the connector for AWS Marketplace
-<a name="aws-marketplace-integration"></a>
 
 **Note**
 The topics in this section assume you've completed the prerequisites for an AWS Partner Central integration, an AWS Marketplace integration, or both. For more information, refer to [Integration prerequisites](crm-integration-setting-up.md) and [Getting started](crm-integration-getting-started.md) earlier in this guide.

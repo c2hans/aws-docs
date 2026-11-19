@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryResourceAssociation
-<a name="API_CostCategoryResourceAssociation"></a>
 
 A reference to a cost category association that contains information on an associated resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableAws
 ---
 
 # EnableAwsNetworkPerformanceMetricSubscription
-<a name="API_EnableAwsNetworkPerformanceMetricSubscription"></a>
 
 Enables Infrastructure Performance subscriptions.
 

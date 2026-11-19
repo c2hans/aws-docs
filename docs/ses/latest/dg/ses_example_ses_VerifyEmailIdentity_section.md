@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_VerifyEmai
 ---
 
 # Use `VerifyEmailIdentity` with an AWS SDK or CLI
-<a name="ses_example_ses_VerifyEmailIdentity_section"></a>
 
 The following code examples show how to use `VerifyEmailIdentity`.
 

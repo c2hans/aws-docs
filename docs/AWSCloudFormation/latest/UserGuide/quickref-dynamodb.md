@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon DynamoDB template snippets
-<a name="quickref-dynamodb"></a>
 
 **Topics**
 + [Application Auto Scaling with an Amazon DynamoDB table](#quickref-dynamodb-application-autoscaling)

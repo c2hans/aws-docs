@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeCon
 ---
 
 # DescribeConnector
-<a name="API_DescribeConnector"></a>
 
 Describes the given custom connector registered in your AWS account. This API can be used for custom connectors that are registered in your account and also for Amazon authored connectors.
 

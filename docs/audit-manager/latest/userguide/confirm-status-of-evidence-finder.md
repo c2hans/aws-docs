@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/confirm-s
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Confirming the status of evidence finder
-<a name="confirm-status-of-evidence-finder"></a>
 
 After you submit your request to enable evidence finder, it takes up to 10 minutes to enable the feature and create an event data store. As soon as the event data store is created, all new evidence is ingested into the event data store moving forward.
 

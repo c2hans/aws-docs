@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chat-webhooks.html
 ---
 
 # Adding webhooks to a chat room
-<a name="chat-webhooks"></a>
 
 Webhooks send messages to chat rooms programmatically. For example, a webhook can notify a customer service team about the creation of a new, high-priority ticket and add a link to the ticket in the chat message. Webhooks require custom development or third-party tools that can help integrate external systems with Amazon Chime.
 

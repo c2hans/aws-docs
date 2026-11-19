@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/search-face-with-i
 ---
 
 # Searching for a face with a face ID
-<a name="search-face-with-id-procedure"></a>
 
 You can use the [SearchFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFaces.html) operation to search for users in a collection that match the largest face in a supplied image.
 

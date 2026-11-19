@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTrafficMirrorTargets
-<a name="API_DescribeTrafficMirrorTargets"></a>
 
 Information about one or more Traffic Mirror targets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Design principles
-<a name="design-principles-cost"></a>
 
  In addition to the design principles from the cost optimization pillar of the Well-Architected Framework, the following design principles optimize the costs of running your game workload in the cloud.
 +  **Measure the infrastructure cost per player, system, and game feature:** Understand and track the infrastructure costs required for specific player experiences and features across game systems. This can identify areas of your architecture that may need cost optimization.

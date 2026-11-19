@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dg-u
 ---
 
 # Working with Amazon SWF APIs
-<a name="swf-dg-using-swf-api"></a>
 
 In addition to using the AWS SDKs that are described in [Develop with AWS SDKs](intro.md#aws-sdks), you can use the HTTP API directly.
 

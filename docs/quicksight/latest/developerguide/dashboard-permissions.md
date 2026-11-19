@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/dashboa
 ---
 
 # Dashboard permissions
-<a name="dashboard-permissions"></a>
 
 With dashboard permissions API operations, you can view and update permissions for dashboards. For more information, see the following API operations.
 

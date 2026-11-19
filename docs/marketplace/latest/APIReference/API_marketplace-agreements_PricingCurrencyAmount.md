@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PricingCurrencyAmount
-<a name="API_marketplace-agreements_PricingCurrencyAmount"></a>
 
 Monetary amounts associated with an invoice line item group.
 
@@ -21,7 +20,7 @@ Pattern: `(.)+`
 Required: No
 
  ** currencyCode **   <a name="AWSMarketplaceService-Type-marketplace-agreements_PricingCurrencyAmount-currencyCode"></a>
-The 3-letter ISO 4217 currency code (e.g., `USD`, `EUR`, `JPY`).
+The 3-letter ISO 4217 currency code (for example, `USD`, `EUR`, `JPY`).
 Type: String
 Length Constraints: Fixed length of 3.
 Pattern: `[A-Z]+`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-guides-in-
 ---
 
 # Use step-by-step guides in workspaces
-<a name="use-guides-in-manager-workspace"></a>
 
 You can use step-by-step guides for users other than the agents in your contact center, including managers and other business users. Add a guide to a workspace page, so these users can follow a structured workflow outside of a contact. Before you start, [set up a workspace](amazon-connect-workspaces.md).
 

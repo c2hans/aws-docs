@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_ProgramSe
 ---
 
 # ProgramSetValidationFailure
-<a name="API_ProgramSetValidationFailure"></a>
 
 Contains information about validation failures that occurred during the processing of a program set in a quantum task.
 

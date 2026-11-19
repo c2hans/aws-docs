@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/api-and-sdk-referenc
 ---
 
 # API Reference
-<a name="api-and-sdk-reference"></a>
 
 Making API calls directly from code is cumbersome, and requires you to write code to authenticate your requests. Amazon SageMaker AI provides the following alternatives:
 

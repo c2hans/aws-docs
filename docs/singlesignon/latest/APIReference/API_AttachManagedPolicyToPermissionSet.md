@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Att
 ---
 
 # AttachManagedPolicyToPermissionSet
-<a name="API_AttachManagedPolicyToPermissionSet"></a>
 
 Attaches an AWS managed policy ARN to a permission set.
 

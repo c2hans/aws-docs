@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-i
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Implementing recommendations in AWS Well-Architected Agent
-<a name="agent-implement-rec"></a>
 
 AWS WA Agent provides multiple implementation options including automated remediation through AWS Systems Manager, self-service guided actions, and human-in-the-loop support available with Premier Support plans.
 

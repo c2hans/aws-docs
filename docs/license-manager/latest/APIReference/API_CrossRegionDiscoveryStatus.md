@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CrossRegionDiscoveryStatus
-<a name="API_CrossRegionDiscoveryStatus"></a>
 
 Status information for cross-region discovery.
 

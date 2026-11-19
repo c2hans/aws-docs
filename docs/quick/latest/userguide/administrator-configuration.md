@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/administrator-con
 ---
 
 # Administrator configuration
-<a name="administrator-configuration"></a>
 
 |  |
 | --- |

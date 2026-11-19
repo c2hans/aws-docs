@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestRunSourceEvents
-<a name="API_ListTestRunSourceEvents"></a>
 
 Lists the state-change events observed for a test run monitoring source. Events are returned for one source per call, in chronological order.
 

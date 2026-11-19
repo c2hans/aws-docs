@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-chat.html
 ---
 
 # Using Messages view
-<a name="mobile-chat"></a>
 
 You use the **Messages** view to:
 + Send messages to individual contacts, as well as groups of contacts. You can send a message to a maximum of 50 people at once. To send messages to a chat room, use the [Rooms view](mobile-rooms.md).

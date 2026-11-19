@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryPlace
-<a name="API_RouteFerryPlace"></a>
 
 Position provided in the request.
 

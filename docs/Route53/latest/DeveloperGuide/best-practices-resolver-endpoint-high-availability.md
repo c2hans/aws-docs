@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # High availability for Resolver endpoints
-<a name="best-practices-resolver-endpoint-high-availability"></a>
 
 When you create your VPC Resolver inbound endpoints, Route 53 requires that you create at least two IP addresses that the DNS resolvers on your network will forward queries to. You should also specify IP addresses in at least two Availability Zones for redundancy.
 

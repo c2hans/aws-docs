@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/opensearch-rul
 ---
 
 # OpenSearch
-<a name="opensearch-rule-action"></a>
 
 The OpenSearch (`openSearch`) action writes data from MQTT messages to an Amazon OpenSearch Service domain. You can then use tools like OpenSearch Dashboards to query and visualize data in OpenSearch Service.
 

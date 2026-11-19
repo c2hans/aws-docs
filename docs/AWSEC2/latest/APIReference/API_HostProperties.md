@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostPrope
 ---
 
 # HostProperties
-<a name="API_HostProperties"></a>
 
 Describes the properties of a Dedicated Host.
 

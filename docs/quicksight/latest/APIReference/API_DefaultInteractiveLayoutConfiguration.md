@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultInteractiveLayoutConfiguration
-<a name="API_DefaultInteractiveLayoutConfiguration"></a>
 
 The options that determine the default settings for interactive layout configuration.
 

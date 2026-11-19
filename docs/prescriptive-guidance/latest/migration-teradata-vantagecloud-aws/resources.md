@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Resources
-<a name="resources"></a>
 + [Teradata \+ Partners](https://www.teradata.com/Partners)
 + [Teradata Partners Directory](https://www.teradata.com/Partners/All)
 + [Unlock data, activate analytics, accelerate value](https://www.teradata.com/VantageCloud)

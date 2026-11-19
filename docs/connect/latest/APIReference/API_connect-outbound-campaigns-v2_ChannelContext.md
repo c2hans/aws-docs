@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ChannelContext
-<a name="API_connect-outbound-campaigns-v2_ChannelContext"></a>
 
 Contains channel-specific context for the event trigger, currently scoped to web notifications.
 

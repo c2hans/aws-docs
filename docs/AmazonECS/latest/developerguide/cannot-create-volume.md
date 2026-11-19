@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-c
 ---
 
 # Troubleshooting Amazon ECS CannotCreateVolumeError errors
-<a name="cannot-create-volume"></a>
 
 The following are some CannotCreateVolumeError error messages and actions that you can take to fix the errors.
 

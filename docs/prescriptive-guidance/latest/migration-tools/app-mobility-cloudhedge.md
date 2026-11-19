@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # CloudHedge OmniDeq application modernization platform
-<a name="app-mobility-cloudhedge"></a>
 
 *Last update: June 3, 2024*
 

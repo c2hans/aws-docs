@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_UntagResource.html
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from an AWS X-Ray group or sampling rule. You cannot edit or delete system tags (those with an `aws:` prefix).
 

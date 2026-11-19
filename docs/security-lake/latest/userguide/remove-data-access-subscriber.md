@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/remove-da
 ---
 
 # Removing a data subscriber from Security Lake
-<a name="remove-data-access-subscriber"></a>
 
 If you no longer want a subscriber to consume data from Security Lake, you can remove the subscriber by following these steps.
 

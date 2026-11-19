@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # General reference for Amazon OpenSearch Service
-<a name="genref"></a>
 
  Amazon OpenSearch Service supports a variety of instances, operations, plugins, and other resources.
 

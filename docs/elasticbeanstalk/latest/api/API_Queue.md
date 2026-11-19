@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Queue.ht
 ---
 
 # Queue
-<a name="API_Queue"></a>
 
 Describes a queue.
 

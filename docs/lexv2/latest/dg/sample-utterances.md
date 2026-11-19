@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/sample-utterances.html
 ---
 
 # Sample utterances
-<a name="sample-utterances"></a>
 
 You create sample utterances that are variations of phrases that you expect users to use to initiate an intent. For example, for a **BookFlight** intent, you might include utterances such as the following:
 

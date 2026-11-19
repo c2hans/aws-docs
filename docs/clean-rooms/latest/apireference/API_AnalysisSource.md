@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisSource
-<a name="API_AnalysisSource"></a>
 
 The structure that defines the body of the analysis template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops04-b
 ---
 
 # OPS04-BP03 Develop and test rollout for consuming external dependencies
-<a name="ops04-bp03"></a>
 
  Workloads often depend on external software, from security agents to third-party libraries. Updates to these dependencies can be as disruptive as your own changes, yet they often arrive on the vendor's schedule and bypass your normal controls. Treat external updates as changes you own. Test them, roll them out gradually, and maintain the ability to rollback, so you stay current on security fixes without accepting an unvalidated change straight into production.
 

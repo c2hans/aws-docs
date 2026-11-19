@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # JobExecutionState
-<a name="API_iot-jobs-data_JobExecutionState"></a>
 
 Contains data about the state of a job execution.
 

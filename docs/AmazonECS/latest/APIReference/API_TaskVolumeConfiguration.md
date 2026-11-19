@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskVo
 ---
 
 # TaskVolumeConfiguration
-<a name="API_TaskVolumeConfiguration"></a>
 
 Configuration settings for the task volume that was `configuredAtLaunch` that weren't set during `RegisterTaskDef`.
 

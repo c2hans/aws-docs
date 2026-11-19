@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentRe
 ---
 
 # ExperimentReportConfigurationOutputs
-<a name="API_ExperimentReportConfigurationOutputs"></a>
 
 Describes the output destinations of the experiment report.
 

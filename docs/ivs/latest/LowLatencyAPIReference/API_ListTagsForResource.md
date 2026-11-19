@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Gets information about AWS tags for the specified ARN.
 

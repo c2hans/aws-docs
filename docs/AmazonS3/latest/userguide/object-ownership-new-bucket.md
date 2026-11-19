@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-ownersh
 ---
 
 # Setting Object Ownership when you create a bucket
-<a name="object-ownership-new-bucket"></a>
 
 When you create a bucket, you can configure S3 Object Ownership. To set Object Ownership for an existing bucket, see [Setting Object Ownership on an existing bucket](object-ownership-existing-bucket.md).
 

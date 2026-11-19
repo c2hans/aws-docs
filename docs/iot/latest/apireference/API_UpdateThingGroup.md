@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateThingG
 ---
 
 # UpdateThingGroup
-<a name="API_UpdateThingGroup"></a>
 
 Update a thing group.
 

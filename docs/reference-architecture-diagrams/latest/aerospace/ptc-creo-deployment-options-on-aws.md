@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # PTC Creo on Amazon WorkSpaces Applications: Amazon EC2 File Share for Users
-<a name="ptc-creo-deployment-options-on-aws"></a>
 
 Publication date: **March 24, 2022 ([Diagram history](diagram-history.md))**
 

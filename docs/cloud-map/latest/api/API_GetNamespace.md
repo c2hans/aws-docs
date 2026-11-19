@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_GetNamespace.ht
 ---
 
 # GetNamespace
-<a name="API_GetNamespace"></a>
 
 Gets information about a namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeUser
-<a name="API_DescribeUser"></a>
 
 Returns information about a user, given the user name.
 

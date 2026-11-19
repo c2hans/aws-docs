@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/inc.html
 ---
 
 # $inc
-<a name="inc"></a>
 
 The `$inc` operator is used to increment the value of a field by a specified amount. It is used to update a numeric field, such as a counter or a rating, without having to retrieve the current value, calculate the new value, and then update the field.
 

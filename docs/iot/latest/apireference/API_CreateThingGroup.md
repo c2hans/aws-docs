@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingG
 ---
 
 # CreateThingGroup
-<a name="API_CreateThingGroup"></a>
 
 Create a thing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateDesti
 ---
 
 # Step 1: Create a destination
-<a name="CreateDestination-Account"></a>
 
 **Important**
 All steps in this procedure are to be done in the log data recipient account.

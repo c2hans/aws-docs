@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AttributionSummary
-<a name="API_prm_AttributionSummary"></a>
 
 Summary representation of a revenue attribution returned in list operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobStoppingConditions
-<a name="API_LabelingJobStoppingConditions"></a>
 
 A set of conditions for stopping a labeling job. If any of the conditions are met, the job is automatically stopped. You can use these conditions to control the cost of data labeling.
 

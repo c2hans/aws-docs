@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateClo
 ---
 
 # CreateCloudConnector
-<a name="API_CreateCloudConnector"></a>
 
 Creates a C2C (cloud-to-cloud) connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemSummary
-<a name="API_OpsItemSummary"></a>
 
 A count of OpsItems.
 

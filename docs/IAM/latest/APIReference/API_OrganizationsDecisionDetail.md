@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Organization
 ---
 
 # OrganizationsDecisionDetail
-<a name="API_OrganizationsDecisionDetail"></a>
 
 Contains information about the effect that Organizations has on a policy simulation.
 

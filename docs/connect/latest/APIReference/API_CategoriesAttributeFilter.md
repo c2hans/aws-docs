@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Categori
 ---
 
 # CategoriesAttributeFilter
-<a name="API_CategoriesAttributeFilter"></a>
 
 A filter that matches category segments based on the tags assigned to the rules that create the categories. Provide exactly one of `OrConditions`, `AndCondition`, or `TagCondition`.
 

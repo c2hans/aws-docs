@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Destina
 ---
 
 # DestinationDescription
-<a name="API_DestinationDescription"></a>
 
 Describes the destination for a Firehose stream.
 

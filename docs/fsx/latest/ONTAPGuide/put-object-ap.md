@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/put-object-ap.html
 ---
 
 # Uploading a file using an S3 access point
-<a name="put-object-ap"></a>
 
 The following `put-object` example command shows how you can use the AWS CLI to upload a file through an access point. You must include an outfile, which is a file name for the uploaded object.
 

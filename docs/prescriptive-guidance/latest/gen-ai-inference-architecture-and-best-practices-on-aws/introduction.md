@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Generative AI inference architecture and best practices on AWS
-<a name="introduction"></a>
 
 *Oussama Kandakji, Mia Chang, Vivek Gangasani, Paco Gonzalez, Nicolas Jourdan, Christian Kamwangala, Marco Sgroi, and Hamza Usmani, Amazon Web Services*
 

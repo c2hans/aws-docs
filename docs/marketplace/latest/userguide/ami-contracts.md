@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ami-contrac
 ---
 
 # Contract pricing for AMI products on AWS Marketplace
-<a name="ami-contracts"></a>
 
 Contract pricing for Amazon Machine Image (AMI)-based products means that the buyer pays an upfront fee for a single AMI product or single AMI with AWS CloudFormation stack. For AMI-based products with contract pricing, AWS Marketplace bills your customers upfront or by the payment schedule that you define, based on the contract between you and your customer. After that point, they're entitled to use those resources. This topic provides more information about contract pricing.
 

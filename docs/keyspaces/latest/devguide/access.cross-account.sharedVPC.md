@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/access.cross-a
 ---
 
 # Configure cross-account access to Amazon Keyspaces using VPC endpoints in a shared VPC
-<a name="access.cross-account.sharedVPC"></a>
 
 You can create different AWS accounts to separate resources from applications. For example, you can create one account for your Amazon Keyspaces tables, a different account for applications in a development environment, and another account for applications in a production environment. This topic walks you through the configuration steps required to set up cross-account access for Amazon Keyspaces using interface VPC endpoints in a shared VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/secret-mana
 ---
 
 # Secret manager
-<a name="secret-manager-component"></a>
 
 The secret manager component (`aws.greengrass.SecretManager`) deploys secrets from AWS Secrets Manager to Greengrass core devices. Use this component to securely use credentials, such as passwords, in custom components on your Greengrass core devices. For more information about Secrets Manager, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) in the *AWS Secrets Manager User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ---
 
 # Content Domain 1: SDLC Automation
-<a name="devops-engineer-professional-02-domain1"></a>
 
 ## Task Statement 1.1: Implement CI/CD pipelines.
 <a name="dop-02-task-1-1"></a>

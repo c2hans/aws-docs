@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/Things-to-know
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Running commands using Amazon Q Developer in chat applications
-<a name="Things-to-know-about-cli"></a>
 
 Amazon Q Developer in chat applications tracks your use of command options and prompts you for any missing parameters before it runs the command you want.
 

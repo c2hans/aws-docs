@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/fleets.reserv
 ---
 
 # Reserved capacity fleet properties
-<a name="fleets.reserved-capacity-fleets"></a>
 
 A reserved capacity fleet contains the following properties. For more information about reserved capacity fleets, see [Run builds on reserved capacity fleets](fleets.md).
 

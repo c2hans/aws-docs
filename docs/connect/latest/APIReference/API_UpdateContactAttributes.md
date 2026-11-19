@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactAttributes
-<a name="API_UpdateContactAttributes"></a>
 
 Creates or updates user-defined contact attributes associated with the specified contact.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NatFlexCo
 ---
 
 # NatFlexCostAllocationPolicyDocument
-<a name="API_NatFlexCostAllocationPolicyDocument"></a>
 
 Describes the cost allocation policy document for NAT gateways.
 

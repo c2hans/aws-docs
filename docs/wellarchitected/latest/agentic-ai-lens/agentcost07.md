@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Agent cost governance and continuous optimization
-<a name="agentcost07"></a>
 
  Organizations that implement layered cost controls (including budget enforcement, anomaly detection, and systematic optimization reviews) can deploy autonomous agents with spending bounded at multiple layers. Autonomous agents can generate unpredictable cost patterns that traditional budget controls don't address well.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CloudtrailParameters
-<a name="API_CloudtrailParameters"></a>
 
  Parameters specific to AWS CloudTrail telemetry configuration.
 

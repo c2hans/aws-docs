@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation-config
 ---
 
 # Enabling tenant isolation for Lambda Event Functions
-<a name="tenant-isolation-configure"></a>
 
 To activate tenant isolation mode, create a new Lambda Event Function. You cannot enable tenant isolation on existing Event Functions.
 

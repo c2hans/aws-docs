@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteLimitsProfile
-<a name="API_DeleteLimitsProfile"></a>
 
 Deletes a limits profile.
 

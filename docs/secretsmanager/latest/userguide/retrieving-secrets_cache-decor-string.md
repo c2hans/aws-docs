@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # @InjectSecretString
-<a name="retrieving-secrets_cache-decor-string"></a>
 
 This decorator expects a secret ID string and [SecretCache](retrieving-secrets_cache-ref-secretcache.md) as the first and second arguments. The decorator returns the secret string value. The secret must contain a string.
 

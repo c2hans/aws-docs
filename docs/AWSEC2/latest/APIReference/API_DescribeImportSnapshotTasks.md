@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImportSnapshotTasks
-<a name="API_DescribeImportSnapshotTasks"></a>
 
 Describes your import snapshot tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Use secondary indices
-<a name="ddb-en-client-use-secindex"></a>
 
 The [primary key](ddb-en-client-gs-tableschema.md#ddb-en-client-gs-tableschema-anno-bean) of a table defines the primary index, which determines how DynamoDB stores and retrieves items by default.
 

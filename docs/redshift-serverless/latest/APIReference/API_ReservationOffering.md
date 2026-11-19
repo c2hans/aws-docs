@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ReservationOffering
-<a name="API_ReservationOffering"></a>
 
 The class of offering for the reservation. The offering class determines the payment schedule for the reservation.
 

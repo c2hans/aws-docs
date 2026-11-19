@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/metr
 ---
 
 # Output SDK metrics to the console using the AWS SDK for Java 2.x
-<a name="metric-pub-impl-logging"></a>
 
 The `[LoggingMetricPublisher](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/metrics/LoggingMetricPublisher.html)` implementation outputs metrics directly to your application's console or log files. This approach is ideal for development, debugging, and understanding what metrics the SDK collects without requiring external services like Amazon CloudWatch.
 

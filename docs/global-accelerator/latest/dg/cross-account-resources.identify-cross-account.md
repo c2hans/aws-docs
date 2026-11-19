@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Identify your cross-account resources in Global Accelerator
-<a name="cross-account-resources.identify-cross-account"></a>
 
 Resource owners and principals can identify shared resources by using the AWS Global Accelerator console or by using the AWS CLI with Global Accelerator operations. For example, you can do the following:
 + As an owner, you can see a list of your cross-account attachments, and view the principals and resources in each attachment.

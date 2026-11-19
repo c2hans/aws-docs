@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/getting-starte
 ---
 
 # Getting started with Docker
-<a name="getting-started-docker"></a>
 
 On any system that runs Docker, including Windows and macOS, you can run the emulator in a Docker container. We don’t publish a prebuilt image. You build one from a short Dockerfile that installs the Linux package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # Enable Data Quality Validation
-<a name="emr-spark-upgrade-agent-data-quality-validation"></a>
 
 You can enable data quality checks by providing both source and target cluster IDs in your prompt. The system runs your existing application on the source cluster to collect baseline metadata for comparison.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-s3-so
 ---
 
 # Set up Amazon S3 as the configuration source
-<a name="cfct-s3-source"></a>
 
 When you set up *Customizations for AWS Control Tower*, it stores an initial configuration file, called `_custom-control-tower-configuration.zip` file in an Amazon Simple Storage Service (Amazon S3) bucket, named `custom-control-tower-configuration-{{account-ID}}-{{region}}`.
 

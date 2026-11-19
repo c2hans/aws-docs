@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Design principles for your multi-account strategy
-<a name="design-principles-for-your-multi-account-strategy"></a>
 
  The following design principles helped develop the best practices described in this paper. You can also use these principles to help guide your initial account design and evolve it over time.
 

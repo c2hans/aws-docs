@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch-contai
 ---
 
 # Turn off Container Insights
-<a name="cloudwatch-container-insights-disable"></a>
 
 To explicitly disable Container Insights on a compute environment, set the value to `DISABLED`.
 

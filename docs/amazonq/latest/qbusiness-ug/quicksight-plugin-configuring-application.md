@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/quicksight-p
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring an Amazon Q Business application to use the plugin
-<a name="quicksight-plugin-configuring-application"></a>
 
 You configure an Amazon Q Business application to get insights from Quick answers in different ways depending on whether you have a Quick account.
 + If you don't have a Quick account, you can create one in the Amazon Q Business console, and then authorize Amazon Q Business to communicate with Quick.

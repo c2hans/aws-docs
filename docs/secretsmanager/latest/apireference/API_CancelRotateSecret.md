@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_C
 ---
 
 # CancelRotateSecret
-<a name="API_CancelRotateSecret"></a>
 
 Turns off automatic rotation, and if a rotation is currently in progress, cancels the rotation.
 

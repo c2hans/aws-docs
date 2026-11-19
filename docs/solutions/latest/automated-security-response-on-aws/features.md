@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Features and benefits
-<a name="features"></a>
 
 The Automated Security Response on AWS provides the following features:
 
@@ -13,7 +12,7 @@ Configure the solution to automatically remediate findings for specific controls
 
  **Remediate findings from multiple AWS security services**
 
-Beyond AWS Security Hub CSPM control findings, the solution can remediate findings from Amazon Inspector, Amazon GuardDuty, and Amazon Macie. The pre-processor maps each finding to the appropriate remediation and processes both the AWS Security Finding Format (ASFF) and the Open Cybersecurity Schema Framework (OCSF).
+Beyond AWS Security Hub CSPM control findings, the solution can remediate findings from Amazon Inspector, Amazon GuardDuty, Amazon Macie, and AWS Identity and Access Management Access Analyzer (IAM Access Analyzer). The pre-processor maps each finding to the appropriate remediation and processes both the AWS Security Finding Format (ASFF) and the Open Cybersecurity Schema Framework (OCSF).
 
  **Manage remediations across multiple accounts and Regions from one location**
 

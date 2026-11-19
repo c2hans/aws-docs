@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-smooth-
 ---
 
 # Stream selection fields
-<a name="endpoints-smooth-include-streams"></a>
 
 Define the streams to include.
 

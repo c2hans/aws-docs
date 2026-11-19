@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # GetTemplateGroupAccessControlEntry
-<a name="API_GetTemplateGroupAccessControlEntry"></a>
 
 Retrieves the group access control entries for a template.
 

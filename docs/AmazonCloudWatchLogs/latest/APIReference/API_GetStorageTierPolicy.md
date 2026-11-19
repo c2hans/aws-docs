@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetStorageTierPolicy
-<a name="API_GetStorageTierPolicy"></a>
 
 Returns the storage tier policy for the account.
 

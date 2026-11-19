@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAddressesAttribute
-<a name="API_DescribeAddressesAttribute"></a>
 
 Describes the attributes of the specified Elastic IP addresses. For requirements, see [Using reverse DNS for email applications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#Using_Elastic_Addressing_Reverse_DNS).
 

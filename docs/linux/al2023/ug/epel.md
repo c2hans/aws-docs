@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/epel.html
 ---
 
 # Extra Packages for Enterprise Linux (EPEL)
-<a name="epel"></a>
 
 **Warning**
  The AL2 `epel` Extra enabled the third party EPEL7 repository. As of 2024-06-30 the third-party EPEL7 repository is *no longer being maintained*.

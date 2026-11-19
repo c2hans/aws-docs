@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # AWS Organizational Change Acceleration (OCA) 6-Point Framework – 4. Engage the Organization
-<a name="introduction"></a>
 
 *Nicole Lenz, Melanie Gladwell, and Scott Watson, Amazon Web Services*
 

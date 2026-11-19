@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/integ-sns.
 ---
 
 # Amazon SNS integration in Image Builder
-<a name="integ-sns"></a>
 
 Amazon Simple Notification Service (Amazon SNS) is a managed service that provides asynchronous message delivery from publishers to subscribers (also known as producers and consumers).
 

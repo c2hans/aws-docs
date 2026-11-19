@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cyber-threa
 ---
 
 # CTI sharing model
-<a name="shared-responsibility-model"></a>
 
 The [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) defines how you share responsibility with AWS for security and compliance in the cloud. AWS secures the infrastructure that runs all of the services offered in the AWS Cloud, known as *security of the cloud*. You are responsible for securing your use of those services, such as your data and applications. This is known as *security in the cloud*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/java-integr
 ---
 
 # Integrating your container product using custom metering with the AWS Marketplace Metering Service and AWS SDK for Java
-<a name="java-integration-example-meterusage"></a>
 
 AWS Marketplace container products can have custom metering on up to 24 different pricing dimensions per product. To enable custom metering, you integrate your container product with AWS Marketplace Metering Service. You can define your own pricing units and custom metering for that usage to AWS for billing using the [`MeterUsage`](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html) API operation. The following example outlines an implementation that uses the AWS SDK for Java to integrate with the [AWS Marketplace Metering Service](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/Welcome.html) `MeterUsage` operation.
 

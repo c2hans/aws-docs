@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # PolicyGenerationDetails
-<a name="API_PolicyGenerationDetails"></a>
 
 Contains the ARN details about the IAM entity for which the policy is generated.
 

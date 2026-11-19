@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-s
 ---
 
 # Edit a trigger in a CodeDeploy deployment group
-<a name="monitoring-sns-event-notifications-edit-trigger"></a>
 
 If your notification requirements change, you can modify your trigger rather than create a new one.
 

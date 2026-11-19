@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # SmsOutboundConfig
-<a name="API_connect-outbound-campaigns-v2_SmsOutboundConfig"></a>
 
 The outbound configuration for SMS.
 

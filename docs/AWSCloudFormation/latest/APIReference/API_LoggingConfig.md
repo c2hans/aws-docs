@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # LoggingConfig
-<a name="API_LoggingConfig"></a>
 
 Contains logging configuration information for an extension.
 

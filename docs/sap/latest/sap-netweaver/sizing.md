@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sizing.html
 ---
 
 # Sizing
-<a name="sizing"></a>
 
  [SAP Quick Sizer](https://www.sap.com/about/benchmark/measuring.html) is generally used to size the SAP environment for new implementations. However, if you are migrating your existing SAP applications based on SQL Server to AWS, consider using the following additional tools to right-size your SAP environment based on current use.
 +  **SAP Early Watch Alerts (EWA):** SAP EWA reports are provided by SAP regularly. These reports provide an overview of historical system use. Analyze these reports to see if your existing SAP system is overused or underused. You can use this information to right size your environment.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Edit a keyword in a phone pool
-<a name="nx-features-keywords-pool-edit"></a>
 
 Use the AWS End User Messaging console or AWS CLI to edit keyword responses for your phone pool.
 

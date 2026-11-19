@@ -3,12 +3,12 @@ source_url: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2.html
 ---
 
 # Amazon Linux 2 release notes
-<a name="relnotes-al2"></a>
 
 The following table provides an overview of the important changes to Amazon Linux 2.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20261117.html) |  Amazon Linux 2 2.0.20261117.0 includes updated packages for this release. | November 17, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20261112.html) |  Amazon Linux 2 2.0.20261112.0 includes updated packages for this release. | November 12, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20261109.html) |  Amazon Linux 2 2.0.20261109.1 includes updated packages for this release. | November 7, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20261102.html) |  Amazon Linux 2 2.0.20261102.0 includes updated packages for this release. | October 30, 2026 |

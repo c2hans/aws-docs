@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityRulese
 ---
 
 # DataQualityRulesetListDetails
-<a name="API_DataQualityRulesetListDetails"></a>
 
 Describes a data quality ruleset returned by `GetDataQualityRuleset`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # Setting up Dynamic Flows
-<a name="managing-flows-dynamic"></a>
 
 A Dynamic Flow calls your own HTTPS endpoint at runtime to fetch screen content and decide navigation. Static Flows define all screens in the Flow JSON. Dynamic Flows instead use the `data_exchange` action to request data from your endpoint each time a user navigates between screens. This enables personalized, data-driven experiences such as showing a user their open orders, validating input server-side, or branching based on a backend decision.
 

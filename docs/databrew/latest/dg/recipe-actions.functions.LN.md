@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # LN
-<a name="recipe-actions.functions.LN"></a>
 
 Returns the natural logarithm (Euler’s number) of a value in a new column.
 

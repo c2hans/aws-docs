@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/setti
 ---
 
 # Manage Demand Plan settings
-<a name="settings"></a>
 
 You can update the Demand Planning settings at any time to make sure that your forecasts are more accurate and take effect when the forecast is successfully generated.
 

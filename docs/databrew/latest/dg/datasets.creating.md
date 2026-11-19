@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/datasets.creating.htm
 ---
 
 # Using datasets in AWS Glue DataBrew
-<a name="datasets.creating"></a>
 
 To view a list of your datasets in the DataBrew console, choose **DATASET** at left. In the datasets page, you can view detailed information for each dataset by clicking its name or choosing **Actions**, **Edit** from its context menu.
 

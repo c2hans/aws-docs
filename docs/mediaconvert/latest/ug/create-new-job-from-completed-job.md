@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/create-new-job-fr
 ---
 
 # Duplicating a job
-<a name="create-new-job-from-completed-job"></a>
 
 To create a job that is similar to one that you ran before, you can duplicate a job from your job history. You can also modify any settings if you want to change them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # MemberFrameworkAttributes
-<a name="API_MemberFrameworkAttributes"></a>
 
 Attributes relevant to a member for the blockchain framework that the Managed Blockchain network uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelB
 ---
 
 # ModelBiasJobInput
-<a name="API_ModelBiasJobInput"></a>
 
 Inputs for the model bias job.
 

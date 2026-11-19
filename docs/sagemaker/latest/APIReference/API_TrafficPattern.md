@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traffi
 ---
 
 # TrafficPattern
-<a name="API_TrafficPattern"></a>
 
 Defines the traffic pattern of the load test.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_last
 ---
 
 # LAST\_VALUE window function
-<a name="WF_last_value"></a>
 
  Given an ordered set of rows, The LAST\_VALUE function returns the value of the expression with respect to the last row in the frame.
 

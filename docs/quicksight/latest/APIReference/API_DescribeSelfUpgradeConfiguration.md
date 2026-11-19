@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeSelfUpgradeConfiguration
-<a name="API_DescribeSelfUpgradeConfiguration"></a>
 
 Describes the self-upgrade configuration for a Quick account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ListPerformanceAnalysisReports
-<a name="API_ListPerformanceAnalysisReports"></a>
 
 Lists all the analysis reports created for the DB instance. The reports are sorted based on the start time of each report.
 

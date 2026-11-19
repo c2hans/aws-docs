@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # GetSpeakerSearchTask
-<a name="API_media-pipelines-chime_GetSpeakerSearchTask"></a>
 
 Retrieves the details of the specified speaker search task.
 

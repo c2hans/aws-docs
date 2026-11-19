@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationOutput
-<a name="API_AddApplicationOutput"></a>
 
 Adds an external destination to your SQL-based Kinesis Data Analytics application.
 

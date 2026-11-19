@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appc
 ---
 
 # AWS Infrastructure Composer
-<a name="appcomposer"></a>
 
 You can use the AWS Toolkit for Visual Studio Code to work with the AWS Infrastructure Composer. AWS Infrastructure Composer is a visual builder for AWS applications that assists with designing your application architecture and visualizing your CloudFormation infrastructure.
 

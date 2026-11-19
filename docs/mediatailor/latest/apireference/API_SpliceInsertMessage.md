@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Spli
 ---
 
 # SpliceInsertMessage
-<a name="API_SpliceInsertMessage"></a>
 
 Splice insert message configuration.
 

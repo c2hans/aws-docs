@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Documen
 ---
 
 # Document
-<a name="API_Document"></a>
 
 The input document, either as bytes or as an S3 object.
 

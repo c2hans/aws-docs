@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-type-defi
 ---
 
 # Data type definitions for the Connect Customer data lake
-<a name="data-type-definitions"></a>
 
 This topic details the content in the Connect Customer data lake tables. Each table lists the column, type, and description of the content in the table.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/transcribe_code_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon Transcribe using AWS SDKs
-<a name="transcribe_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Transcribe with AWS SDKs.
 

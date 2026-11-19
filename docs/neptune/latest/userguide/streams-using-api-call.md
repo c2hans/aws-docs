@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-using-a
 ---
 
 # Calling the Neptune Streams REST API
-<a name="streams-using-api-call"></a>
 
 You access Neptune Streams using a REST API that sends an HTTP GET request to one of the following local endpoints:
 + For a SPARQL graph DB:   `https://{{Neptune-DNS}}:8182/sparql/stream`.

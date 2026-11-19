@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/sim
 ---
 
 # Creating a simple application using the AWS SDK for Swift
-<a name="simple-app"></a>
 
 This chapter explores how to use the [Swift Package Manager](https://swift.org/package-manager/) — part of the standard Swift toolchain — to create and build a small project. The project uses the AWS SDK for Swift to output a list of available Amazon Simple Storage Service (Amazon S3) buckets.
 

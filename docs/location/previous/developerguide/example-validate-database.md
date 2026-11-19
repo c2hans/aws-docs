@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Tutorial: Database enrichment
-<a name="example-validate-database"></a>
 
 ![Architecture diagram showing Aurora , Lambda , and Location Service with bidirectional arrows and address data flowing to Aurora .](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/database-validation_small.png)
 

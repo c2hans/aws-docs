@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Operations that you can schedule
-<a name="feed-scheduling-operations"></a>
 
 The following table lists the operations that you can schedule and the fields that each one takes. Each operation in the `operations` list must contain exactly one of these members.
 

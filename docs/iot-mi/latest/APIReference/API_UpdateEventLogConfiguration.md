@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateEve
 ---
 
 # UpdateEventLogConfiguration
-<a name="API_UpdateEventLogConfiguration"></a>
 
 Update an event log configuration by log configuration ID.
 

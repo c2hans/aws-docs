@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/requirements.html
 ---
 
 # Amazon DCV Session Manager requirements
-<a name="requirements"></a>
 
 The Amazon DCV Session Manager Agent and Broker have the following requirements.
 

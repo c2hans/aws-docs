@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContainerServiceMetricData
-<a name="API_GetContainerServiceMetricData"></a>
 
 Returns the data points of a specific metric of your Amazon Lightsail container service.
 

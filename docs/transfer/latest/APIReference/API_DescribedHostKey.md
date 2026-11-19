@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedHostKey
-<a name="API_DescribedHostKey"></a>
 
 The details for a server host key.
 

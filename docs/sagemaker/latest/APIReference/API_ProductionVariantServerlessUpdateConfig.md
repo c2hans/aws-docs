@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantServerlessUpdateConfig
-<a name="API_ProductionVariantServerlessUpdateConfig"></a>
 
 Specifies the serverless update concurrency configuration for an endpoint variant.
 

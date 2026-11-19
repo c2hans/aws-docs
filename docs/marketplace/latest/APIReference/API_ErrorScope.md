@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Erro
 ---
 
 # ErrorScope
-<a name="API_ErrorScope"></a>
 
 A name-value pair that identifies the resource or attribute that a `ControlError` applies to.
 

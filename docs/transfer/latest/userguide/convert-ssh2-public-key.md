@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/convert-ssh2-p
 ---
 
 # Converting an SSH2 key to SSH public key format
-<a name="convert-ssh2-public-key"></a>
 
  AWS Transfer Family only accepts SSH-formatted public keys. If you have an SSH2 public key, you need to convert it. An SSH2 public key has the following format:
 

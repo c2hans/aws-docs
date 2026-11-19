@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # StreamDeliveryResources
-<a name="API_StreamDeliveryResources"></a>
 
 Configuration for streaming memory record data to external resources.
 

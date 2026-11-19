@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-local-mode
 ---
 
 # Run pipelines using local mode
-<a name="pipelines-local-mode"></a>
 
 SageMaker Pipelines local mode is an easy way to test your training, processing and inference scripts, as well as the runtime compatibility of [pipeline parameters](https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_model_building_pipeline.html#pipeline-parameters) before you execute your pipeline on the managed SageMaker AI service. By using local mode, you can test your SageMaker AI pipeline locally using a smaller dataset. This allows quick and easy debugging of errors in user scripts and the pipeline definition itself without incurring the costs of using the managed service. The following topic shows you how to define and run pipelines locally.
 

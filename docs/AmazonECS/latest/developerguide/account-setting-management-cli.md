@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/account-
 ---
 
 # Managing Amazon ECS account settings using the AWS CLI
-<a name="account-setting-management-cli"></a>
 
 You can manage your account settings using the Amazon ECS API, AWS CLI or SDKs. The `dualStackIPv6`, `fargateFIPSMode`, `fargateTaskRetirementWaitPeriod` and the `fargateEventWindows` account settings can only be viewed or changed using those tools.
 

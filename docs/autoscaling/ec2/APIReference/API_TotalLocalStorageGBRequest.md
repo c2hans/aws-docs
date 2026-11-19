@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TotalLo
 ---
 
 # TotalLocalStorageGBRequest
-<a name="API_TotalLocalStorageGBRequest"></a>
 
 Specifies the minimum and maximum for the `TotalLocalStorageGB` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

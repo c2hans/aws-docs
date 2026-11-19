@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationAutoscalingLambdaConcurrencyPolicy
-<a name="AWSApplicationAutoscalingLambdaConcurrencyPolicy"></a>
 
 **Description**: Policy granting permissions to Application Auto Scaling to access Lambda and CloudWatch.
 

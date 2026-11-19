@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS08-BP03 Collect and analyze workload metrics
-<a name="ops_workload_health_collect_analyze_workload_metrics"></a>
 
  Perform regular proactive reviews of metrics to identify trends and determine where appropriate responses are needed.
 

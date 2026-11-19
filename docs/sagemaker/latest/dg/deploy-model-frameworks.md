@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model-framewo
 ---
 
 # Model servers for model deployment with Amazon SageMaker AI
-<a name="deploy-model-frameworks"></a>
 
 You can use popular model servers, such as TorchServe, DJL Serving, and Triton Inference Server, to deploy your models on SageMaker AI. The following topics explain how.
 

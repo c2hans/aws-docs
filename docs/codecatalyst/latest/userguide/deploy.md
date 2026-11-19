@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy.htm
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Deploying with workflows
-<a name="deploy"></a>
 
 Using [CodeCatalyst workflows](workflow.md), you can deploy applications and other resources to various targets such as Amazon ECS, AWS Lambda, and more.
 

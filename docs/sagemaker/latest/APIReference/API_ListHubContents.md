@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListHu
 ---
 
 # ListHubContents
-<a name="API_ListHubContents"></a>
 
 List the contents of a hub.
 

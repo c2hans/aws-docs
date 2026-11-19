@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/set-up-
 ---
 
 # Provide Access to Users in Amazon WorkSpaces Applications
-<a name="set-up-stacks-fleets-add"></a>
 
 After you create a stack with an associated fleet, you can provide access to users through the WorkSpaces Applications user pool, SAML 2.0 [single sign-on (SSO)], or the WorkSpaces Applications API. For more information, see [User Pool Administration in Amazon WorkSpaces Applications](user-pool-admin.md) and [Amazon WorkSpaces Applications Integration with SAML 2.0](external-identity-providers.md).
 

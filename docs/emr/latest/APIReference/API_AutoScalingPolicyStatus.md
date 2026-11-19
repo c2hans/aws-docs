@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_AutoScalingP
 ---
 
 # AutoScalingPolicyStatus
-<a name="API_AutoScalingPolicyStatus"></a>
 
 The status of an automatic scaling policy.
 

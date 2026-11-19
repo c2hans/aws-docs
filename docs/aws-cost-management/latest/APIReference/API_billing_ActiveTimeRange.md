@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActiveTimeRange
-<a name="API_billing_ActiveTimeRange"></a>
 
 A time range with a start and end time.
 

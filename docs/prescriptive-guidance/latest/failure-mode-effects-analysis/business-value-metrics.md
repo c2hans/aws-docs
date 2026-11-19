@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Business value metrics
-<a name="business-value-metrics"></a>
 
 Beyond process health and incident outcomes, these metrics help you quantify the financial return and compliance posture of your FMEA investment. Use them to build the business case for continued adoption and to demonstrate audit readiness.
 

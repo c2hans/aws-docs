@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/remove-tags.ht
 ---
 
 # Remove tags associated with a KMS key
-<a name="remove-tags"></a>
 
 Tags help identify and organize your AWS resources. You can remove the tags associated with your customer managed KMS keys in the AWS KMS console or by using the [UntagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_UntagResource.html) operation. You cannot edit or remove the tags of an AWS managed key.
 

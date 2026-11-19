@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # East/West Distributed Inspection
-<a name="distributed-east-west-inspection"></a>
 
 Publication date: **July 21, 2022 ([Diagram history](#dew-diagram-history))**
 

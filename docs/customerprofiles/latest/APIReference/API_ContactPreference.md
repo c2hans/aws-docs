@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ContactPreference
-<a name="API_connect-customer-profiles_ContactPreference"></a>
 
 Object that defines users contact preference.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/architecture-ebs.htm
 ---
 
 # Architecture
-<a name="architecture-ebs"></a>
 
 The following architecture diagrams show scale-up and scale-out environments for SAP HANA workloads using Amazon EBS volumes.
 

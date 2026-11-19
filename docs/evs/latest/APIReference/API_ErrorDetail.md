@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ErrorDetail.
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 An object that contains error details for an entitlement.
 

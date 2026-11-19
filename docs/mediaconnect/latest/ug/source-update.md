@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/source-update.htm
 ---
 
 # Updating the source of a MediaConnect flow
-<a name="source-update"></a>
 
 Updating the source of a flow allows you to modify where your content comes from without having to create a new flow. For most flows, you can make these updates even while the flow is running.
 

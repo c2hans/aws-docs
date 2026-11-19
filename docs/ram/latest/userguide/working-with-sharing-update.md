@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Update a resource share in AWS RAM
-<a name="working-with-sharing-update"></a>
 
 You can update a resource share in AWS RAM at any time in the following ways:
 + You can add principals, resources, or tags to a resource share that you created.

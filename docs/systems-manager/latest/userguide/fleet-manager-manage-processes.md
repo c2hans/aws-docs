@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Working with processes
-<a name="fleet-manager-manage-processes"></a>
 
 You can use Fleet Manager to work with processes on your managed nodes. Using Fleet Manager, you can view information about processes. For example, you can see the CPU utilization and memory usage of processes besides their handles and threads. With Fleet Manager, you can start and terminate processes from the console.
 

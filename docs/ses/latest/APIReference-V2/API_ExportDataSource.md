@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ExportDat
 ---
 
 # ExportDataSource
-<a name="API_ExportDataSource"></a>
 
 An object that contains details about the data source of the export job. It can only contain one of `MetricsDataSource` or `MessageInsightsDataSource` object.
 

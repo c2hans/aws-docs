@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # How AgentCore payments works
-<a name="payments-how-it-works"></a>
 
 Amazon Bedrock AgentCore payments offers payment connection, wallet management, payment limits, payment processing, and payment observability. Using the components and workflows described on this page, you can configure payment providers, connect to external wallet infrastructure, and enable your agents to autonomously pay for APIs, MCP servers, and web content using the x402 protocol or the Machine Payments Protocol (MPP).
 

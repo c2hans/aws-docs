@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ReplicationC
 ---
 
 # ReplicationConfigurationReplicatedDisk
-<a name="API_ReplicationConfigurationReplicatedDisk"></a>
 
 The configuration of a disk of the Source Server to be replicated.
 

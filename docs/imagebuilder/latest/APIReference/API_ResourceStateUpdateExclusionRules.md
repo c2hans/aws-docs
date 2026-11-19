@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Res
 ---
 
 # ResourceStateUpdateExclusionRules
-<a name="API_ResourceStateUpdateExclusionRules"></a>
 
 Additional rules to specify resources that should be exempt from ad-hoc lifecycle actions.
 

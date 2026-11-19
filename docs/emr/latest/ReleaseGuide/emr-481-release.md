@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-481-release.
 ---
 
 # Amazon EMR release 4.8.1
-<a name="emr-481-release"></a>
 
 ## 4.8.1 application versions
 <a name="emr-481-app-versions"></a>

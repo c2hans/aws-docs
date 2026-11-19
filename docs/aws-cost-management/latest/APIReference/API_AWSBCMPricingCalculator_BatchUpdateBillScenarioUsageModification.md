@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateBillScenarioUsageModification
-<a name="API_AWSBCMPricingCalculator_BatchUpdateBillScenarioUsageModification"></a>
 
  Update a newly added or existing usage lines. You can update the usage amounts, usage hour, and usage group based on a usage ID and a Bill scenario ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Appendix: Essential Eight controls matrices
-<a name="appendix-controls-matrices"></a>
 
 The following tables link the Essential Eight strategies to AWS implementation guidance and relevant best practices in the AWS Well-Architected Framework. For Essential Eight controls that are not applicable in the AWS Cloud, the tables include a link to additional guidance from the Australian Cyber Security Centre (ACSC).
 

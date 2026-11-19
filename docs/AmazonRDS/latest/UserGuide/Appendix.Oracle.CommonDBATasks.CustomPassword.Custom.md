@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # The create\_passthrough\_verify\_fcn procedure
-<a name="Appendix.Oracle.CommonDBATasks.CustomPassword.Custom"></a>
 
 The `create_passthrough_verify_fcn` procedure is supported for all versions of RDS for Oracle.
 

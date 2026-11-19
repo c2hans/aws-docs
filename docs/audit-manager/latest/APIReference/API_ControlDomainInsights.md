@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlDomainInsights
-<a name="API_ControlDomainInsights"></a>
 
 A summary of the latest analytics data for a specific control domain.
 

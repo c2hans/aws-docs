@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/discover
 ---
 
 # Add resource collections
-<a name="discover-structure"></a>
 
 This section discusses the following options that you can use to form the basis of your application structure:
 + [Add resource collections](#resource-collection)

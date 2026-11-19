@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/int-actions-troub
 ---
 
 # Troubleshooting
-<a name="int-actions-troubleshooting"></a>
 
 When connectors encounter issues, systematic troubleshooting helps you quickly identify and resolve problems. This guidance covers common issues and their solutions to minimize downtime and restore functionality.
 

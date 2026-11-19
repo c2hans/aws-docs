@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::IntegrationResourceProperty
-<a name="aws-resource-glue-integrationresourceproperty"></a>
 
 The `AWS::Glue::IntegrationResourceProperty` resource type can be used to setup `ResourceProperty` of the AWS Glue connection (for the SaaS source), DynamoDB Database (for DynamoDB source), or AWS Glue database ARN (for the target). ResourceProperty is used to define the properties requires to setup the integration, including the role to access the connection or database, KMS keys, event bus for event notifications and VPC connection. To set both source and target properties the same API needs to be invoked twice, once with the AWS Glue connection ARN as ResourceArn with SourceProcessingProperties and next, with the AWS Glue database ARN as ResourceArn with TargetProcessingProperties respectively.
 

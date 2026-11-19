@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-
 ---
 
 # Resources
-<a name="resources"></a>
 + [Awesome LLM Security](https://github.com/corca-ai/awesome-llm-security?tab=readme-ov-file#articles) (GitHub repository of resources pertaining to LLM security)
 + [Prompt Engineering Guide](https://www.promptingguide.ai/) (project by DAIR.AI)
 + [Prompt Engineering Guide](https://learnprompting.org/docs/introduction), by Sander Schulhoff (Learn Prompting website)

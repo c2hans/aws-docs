@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # BatchGetIncidentFindingsError
-<a name="API_BatchGetIncidentFindingsError"></a>
 
 Details about an error returned for a [BatchGetIncidentFindings](API_BatchGetIncidentFindings.md) operation.
 

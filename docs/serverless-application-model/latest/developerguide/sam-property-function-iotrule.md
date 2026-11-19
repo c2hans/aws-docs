@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # IoTRule
-<a name="sam-property-function-iotrule"></a>
 
 The object describing an `IoTRule` event source type.
 

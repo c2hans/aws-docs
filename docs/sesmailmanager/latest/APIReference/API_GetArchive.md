@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetArchive
-<a name="API_GetArchive"></a>
 
 Retrieves the full details and current state of a specified email archive.
 

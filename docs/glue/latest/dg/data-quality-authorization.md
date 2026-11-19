@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-authorizatio
 ---
 
 # Configure IAM permissions for AWS Glue Data Quality
-<a name="data-quality-authorization"></a>
 
 This topic provides information to help you understand the actions and resources that you an IAM administrator can use in an AWS Identity and Access Management (IAM) policy for AWS Glue Data Quality. It also includes sample IAM policies with the minimum permissions you need to use AWS Glue Data Quality with the AWS Glue Data Catalog.
 

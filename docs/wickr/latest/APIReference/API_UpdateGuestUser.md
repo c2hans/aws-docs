@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateGues
 ---
 
 # UpdateGuestUser
-<a name="API_UpdateGuestUser"></a>
 
 Updates the block status of a guest user in a Wickr network. This operation allows you to block or unblock a guest user from accessing the network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdateCustomLineItemFlatChargeDetails
-<a name="API_UpdateCustomLineItemFlatChargeDetails"></a>
 
  A representation of the new charge details that are associated with a flat custom line item.
 

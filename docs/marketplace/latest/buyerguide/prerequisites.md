@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/prerequisi
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 To use Private Marketplace, you need one or more AWS accounts managed in AWS Organizations with all features enabled.
 + Create an organization using [Tutorial: Creating and configuring an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_tutorials_basic.html).

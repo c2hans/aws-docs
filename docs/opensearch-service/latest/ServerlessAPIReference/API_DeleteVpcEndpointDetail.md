@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # DeleteVpcEndpointDetail
-<a name="API_DeleteVpcEndpointDetail"></a>
 
 Deletion details for an OpenSearch Serverless-managed interface endpoint.
 

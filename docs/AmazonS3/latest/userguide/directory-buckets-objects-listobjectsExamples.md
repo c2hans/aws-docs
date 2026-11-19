@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Listing objects from a directory bucket
-<a name="directory-buckets-objects-listobjectsExamples"></a>
 
  The following code examples show how to list objects in an Amazon S3 directory bucket by using the `ListObjectsV2` API operation.
 

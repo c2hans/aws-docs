@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/IV
 ---
 
 # AWS Encryption SDK initialization vector reference
-<a name="IV-reference"></a>
 
 |  |
 | --- |

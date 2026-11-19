@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleSumm
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 A list of `ActionTypes` associated with a rule.
 

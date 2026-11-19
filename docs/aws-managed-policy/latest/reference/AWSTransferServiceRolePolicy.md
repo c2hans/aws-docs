@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransferServiceRolePolicy
-<a name="AWSTransferServiceRolePolicy"></a>
 
 **Description**: Allows Transfer to integrate with other AWS services on your behalf
 

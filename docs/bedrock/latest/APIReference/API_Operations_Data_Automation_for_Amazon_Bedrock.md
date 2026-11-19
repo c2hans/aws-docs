@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operatio
 ---
 
 # Data Automation for Amazon Bedrock
-<a name="API_Operations_Data_Automation_for_Amazon_Bedrock"></a>
 
 The following actions are supported by Data Automation for Amazon Bedrock:
 +  [CopyBlueprintStage](API_data-automation_CopyBlueprintStage.md)

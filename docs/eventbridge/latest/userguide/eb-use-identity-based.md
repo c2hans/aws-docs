@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-iden
 ---
 
 # Using identity-based policies (IAM policies) for Amazon EventBridge
-<a name="eb-use-identity-based"></a>
 
 Identity-based policies are permissions policies that you can attach to IAM identities.
 

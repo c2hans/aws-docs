@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-sidecar-
 ---
 
 # Sidecar captions or SMPTE-TT captions in MS Smooth
-<a name="output-sidecar-and-smptett-mss"></a>
 
 Follow this procedure if the format of the captions asset that you want to add is a sidecar, as identified in [Step 4: Match formats to categories](categories-captions.md), or if the format is SMPTE-TT for an MS Smooth output.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomActionFilterOperation
-<a name="API_CustomActionFilterOperation"></a>
 
 The filter operation that filters data included in a visual or in an entire sheet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/directory-serv
 ---
 
 # Using AWS Directory Service for Microsoft Active Directory
-<a name="directory-services-users"></a>
 
 You can use AWS Transfer Family to authenticate your file transfer end users using AWS Directory Service for Microsoft Active Directory. It enables seamless migration of file transfer workflows that rely on Active Directory authentication without changing end users’ credentials or needing a custom authorizer.
 

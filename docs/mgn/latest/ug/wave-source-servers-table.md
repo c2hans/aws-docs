@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-source-servers-table.
 ---
 
 # Review the source servers in a wave
-<a name="wave-source-servers-table"></a>
 
 The **Source servers** table lists all the servers that are associated with the wave.
 

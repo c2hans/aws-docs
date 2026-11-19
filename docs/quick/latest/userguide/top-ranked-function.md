@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/top-ranked-functi
 ---
 
 # Top ranked computation
-<a name="top-ranked-function"></a>
 
 The top ranked computation finds the top ranking dimensions by value. For example, you can create a computation to find the top three states by sales revenue.
 

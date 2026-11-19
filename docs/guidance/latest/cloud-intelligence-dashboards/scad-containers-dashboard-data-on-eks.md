@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Data on EKS - Cost Allocation for Spark and Flink Applications Running on EKS
-<a name="scad-containers-dashboard-data-on-eks"></a>
 
 ## Introduction
 <a name="introduction"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ViewSummary
-<a name="API_ViewSummary"></a>
 
 Summary information about a view. Does not include the view definition.
 

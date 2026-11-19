@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Qu
 ---
 
 # QueryFilter
-<a name="API_QueryFilter"></a>
 
 A structure that defines a key and values that you can use to filter the results. The only performance events that are returned are those that have values matching the ones that you specify in one of your `QueryFilter` structures.
 

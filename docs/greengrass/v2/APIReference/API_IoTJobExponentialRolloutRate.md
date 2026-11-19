@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_IoTJobExp
 ---
 
 # IoTJobExponentialRolloutRate
-<a name="API_IoTJobExponentialRolloutRate"></a>
 
 Contains information about an exponential rollout rate for a configuration deployment job.
 

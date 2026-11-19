@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training
 ---
 
 # Get started with distributed training in Amazon SageMaker AI
-<a name="distributed-training-get-started"></a>
 
 The following page gives information about the steps needed to get started with distributed training in Amazon SageMaker AI. If you’re already familiar with distributed training, choose one of the following options that matches your preferred strategy or framework to get started. If you want to learn about distributed training in general, see [Distributed training concepts](distributed-training.md#distributed-training-basic-concepts).
 

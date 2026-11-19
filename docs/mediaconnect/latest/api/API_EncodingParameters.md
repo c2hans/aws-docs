@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_EncodingPara
 ---
 
 # EncodingParameters
-<a name="API_EncodingParameters"></a>
 
  A collection of parameters that determine how MediaConnect will convert the content. These fields only apply to outputs on flows that have a CDI source.
 

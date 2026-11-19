@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI
 ---
 
 # Multi-attribute keys pattern
-<a name="GSI.DesignPattern.MultiAttributeKeys"></a>
 
 ## Overview
 <a name="GSI.DesignPattern.MultiAttributeKeys.Overview"></a>

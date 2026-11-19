@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/pr
 ---
 
 # Process events asynchronously with Amazon API Gateway, Amazon SQS, and AWS Fargate
-<a name="process-events-asynchronously-with-amazon-api-gateway-amazon-sqs-and-aws-fargate"></a>
 
 *Andrea Meroni, Mariem Kthiri, Nadim Majed, Alessandro Trisolini, and Michael Wallner, Amazon Web Services*
 

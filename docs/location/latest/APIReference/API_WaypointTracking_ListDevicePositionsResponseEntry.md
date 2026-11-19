@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ListDevicePositionsResponseEntry
-<a name="API_WaypointTracking_ListDevicePositionsResponseEntry"></a>
 
 Contains the tracker resource details.
 

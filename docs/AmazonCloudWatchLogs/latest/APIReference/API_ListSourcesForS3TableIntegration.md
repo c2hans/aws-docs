@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListSourcesForS3TableIntegration
-<a name="API_ListSourcesForS3TableIntegration"></a>
 
 Returns a list of data source associations for a specified S3 Table Integration, showing which data sources are currently associated for query access.
 

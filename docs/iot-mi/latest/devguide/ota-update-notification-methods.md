@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/ota-update-notifi
 ---
 
 # Monitor OTA notifications
-<a name="ota-update-notification-methods"></a>
 
 You can monitor OTA updates using two different methods:
 

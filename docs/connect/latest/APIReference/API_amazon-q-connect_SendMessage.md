@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SendMessage
-<a name="API_amazon-q-connect_SendMessage"></a>
 
 Submits a message to the Amazon Q in Connect session.
 

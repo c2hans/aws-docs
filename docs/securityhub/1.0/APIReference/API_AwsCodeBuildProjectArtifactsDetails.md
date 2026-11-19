@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectArtifactsDetails
-<a name="API_AwsCodeBuildProjectArtifactsDetails"></a>
 
 Information about the build artifacts for the CodeBuild project.
 

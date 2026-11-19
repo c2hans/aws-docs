@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentMetric
-<a name="API_AnalyticsIntentMetric"></a>
 
 Contains the metric and the summary statistic you want to calculate, and the order in which to sort the results, for the intents in the bot.
 

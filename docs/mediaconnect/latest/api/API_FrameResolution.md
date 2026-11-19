@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FrameResolut
 ---
 
 # FrameResolution
-<a name="API_FrameResolution"></a>
 
  The frame resolution used by the video stream.
 

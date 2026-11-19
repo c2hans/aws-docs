@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Acknowle
 ---
 
 # AcknowledgeQueueRecordsResultEntry
-<a name="API_AcknowledgeQueueRecordsResultEntry"></a>
 
 A record that was acknowledged.
 

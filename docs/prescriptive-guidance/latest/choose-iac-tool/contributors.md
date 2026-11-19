@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Authoring
 <a name="authoring"></a>

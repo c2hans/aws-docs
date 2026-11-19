@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontology-R
 ---
 
 # RxNorm linking
-<a name="ontology-RxNorm"></a>
 
 Use the **InferRxNorm** operation to identify medications that are listed in a patient record as entities. The operation also links those entities to concept identifiers (RxCUI) from [ the RxNorm database from the National Library of Medicine](https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html ). The source for each RxCUI is the 2022-11-07 RxNorm and RxTerms Release. Each RxCUI is unique for different strengths and dose forms. Amazon Comprehend Medical lists the top potentially matching RxCUIs for each medication that it detects in descending order by confidence score. Use the RxCUI codes for downstream analysis that is not possible with unstructured text. Related information such as strength, frequency, dose, dose form, and route of administration are listed as attributes in JSON format.
 

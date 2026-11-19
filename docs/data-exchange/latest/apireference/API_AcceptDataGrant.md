@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ac
 ---
 
 # AcceptDataGrant
-<a name="API_AcceptDataGrant"></a>
 
 This operation accepts a data grant.
 

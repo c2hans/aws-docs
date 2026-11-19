@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object2vec-encoder-e
 ---
 
 # Encoder Embeddings for Object2Vec
-<a name="object2vec-encoder-embeddings"></a>
 
 The following page lists the input request and output response formats for getting encoder embedding inference from the Amazon SageMaker AI Object2Vec model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-dlm.ht
 ---
 
 # Amazon Data Lifecycle Manager events
-<a name="events-ref-dlm"></a>
 
 Amazon Data Lifecycle Manager sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

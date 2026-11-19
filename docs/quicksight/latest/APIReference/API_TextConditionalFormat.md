@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextC
 ---
 
 # TextConditionalFormat
-<a name="API_TextConditionalFormat"></a>
 
 The conditional formatting for the text.
 

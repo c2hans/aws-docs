@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/publish-com
 ---
 
 # Step 3: Publish the component to the AWS IoT Greengrass service
-<a name="publish-component-defer-updates"></a>
 
 In this section, you publish the Hello World component to the AWS IoT Greengrass cloud service. After a component is available in the AWS IoT Greengrass cloud service, you can deploy it to core devices. You use the GDK CLI to publish the component from your development computer to the AWS IoT Greengrass cloud service. The GDK CLI uploads the component's recipe and artifacts for you.
 

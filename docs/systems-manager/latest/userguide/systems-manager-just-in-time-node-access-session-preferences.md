@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Update just-in-time node access session preferences
-<a name="systems-manager-just-in-time-node-access-session-preferences"></a>
 
 With just-in-time node access, you can specify general session and logging preferences in each AWS account and AWS Region in your organization. Alternatively, you can use CloudFormation StackSets to create a session preferences document in multiple accounts and Regions to help you have consistent session preferences. For information about the schema for session preferences documents, see [Session document schema](session-manager-schema.md).
 

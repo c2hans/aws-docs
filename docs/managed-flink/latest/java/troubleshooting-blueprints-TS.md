@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Real-time vector embedding blueprints - troubleshooting
-<a name="troubleshooting-blueprints-TS"></a>
 
 Review the following troubleshooting topics about real-time vector embedding blueprints. For more information about real-time vector embedding blueprints, see [Real-time vector embedding blueprints](https://docs.aws.amazon.com/msk/latest/developerguide/ai-vector-embedding-integration-learn-more.html).
 

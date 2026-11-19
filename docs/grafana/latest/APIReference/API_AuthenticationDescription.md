@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Authenti
 ---
 
 # AuthenticationDescription
-<a name="API_AuthenticationDescription"></a>
 
 A structure containing information about the user authentication methods used by the workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetWorkload
-<a name="API_GetWorkload"></a>
 
 Get an existing workload.
 

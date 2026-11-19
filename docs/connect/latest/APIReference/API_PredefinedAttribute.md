@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Predefin
 ---
 
 # PredefinedAttribute
-<a name="API_PredefinedAttribute"></a>
 
 Information about a predefined attribute.
 

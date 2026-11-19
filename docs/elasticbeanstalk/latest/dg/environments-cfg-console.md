@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Environment configuration using the Elastic Beanstalk console
-<a name="environments-cfg-console"></a>
 
 This topic outlines the configuration options available through the Elastic Beanstalk console and explains how to navigate the configuration pages.
 

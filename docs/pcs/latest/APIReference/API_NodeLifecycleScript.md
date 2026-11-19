@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_NodeLifecycl
 ---
 
 # NodeLifecycleScript
-<a name="API_NodeLifecycleScript"></a>
 
 A script to run during a compute node lifecycle stage.
 

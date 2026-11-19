@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSImportExportReadOnlyAccess
-<a name="AWSImportExportReadOnlyAccess"></a>
 
 **Description**: Provides read only access to the jobs created under the AWS account.
 

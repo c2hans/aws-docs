@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Refre
 ---
 
 # RefreshFrequency
-<a name="API_RefreshFrequency"></a>
 
 Specifies the interval between each scheduled refresh of a dataset.
 

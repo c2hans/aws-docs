@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/regi
 ---
 
 # Setting the AWS Region for the AWS SDK for Java 2.x
-<a name="region-selection"></a>
 
 SDK clients connect to an AWS service in a specific AWS Region that you specify when you create the client. This configuration allows your application to interact with AWS resources in that geographical area. When you create a service client without explicitly setting a Region, the SDK uses the default Region from your external configuration.
 

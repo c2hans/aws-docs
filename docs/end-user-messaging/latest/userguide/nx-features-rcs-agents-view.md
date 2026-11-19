@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # View RCS agents
-<a name="nx-features-rcs-agents-view"></a>
 
 View the RCS agents in your account and check their status, including the status of the testing agent.
 

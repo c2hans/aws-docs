@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/v1-r
 ---
 
 # Delete Schema Version
-<a name="v1-registries-name-registryname-schemas-name-schemaname-version-schemaversion"></a>
 
 ## URI
 <a name="v1-registries-name-registryname-schemas-name-schemaname-version-schemaversion-url"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/trackers-
 ---
 
 # Trackers quota and usage
-<a name="trackers-quotas"></a>
 
 This topic provides a summary of rate limits and quotas for Amazon Location Service trackers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SupportedFi
 ---
 
 # SupportedFieldTypeDetails
-<a name="API_SupportedFieldTypeDetails"></a>
 
  Contains details regarding all the supported `FieldTypes` and their corresponding `filterOperators` and `supportedValues`.
 

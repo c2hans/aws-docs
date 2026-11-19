@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobj-ha-d
 ---
 
 # Additional Tips
-<a name="bobj-ha-dr-appendix-c"></a>
 
 ## Tagging AWS Resources
 <a name="bobj-ha-dr-tagging-resources"></a>

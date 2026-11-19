@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceFunctionDeletedMetadata
-<a name="API_ServiceFunctionDeletedMetadata"></a>
 
 Metadata for a service function deleted event.
 

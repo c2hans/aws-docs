@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetOffer
-<a name="API_marketplace-discovery_GetOffer"></a>
 
 Provides details about an offer, such as the pricing model, seller of record, availability dates, badges, and associated products.
 

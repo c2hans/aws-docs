@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/se
 ---
 
 # Set up an AWS user account
-<a name="setting-up-aws-login"></a>
 
 **Tip**
 Use these topics to get help with these tasks:

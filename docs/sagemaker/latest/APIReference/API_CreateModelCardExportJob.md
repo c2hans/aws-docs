@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateModelCardExportJob
-<a name="API_CreateModelCardExportJob"></a>
 
 Creates an Amazon SageMaker Model Card export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # ProjectResource
-<a name="API_ProjectResource"></a>
 
 Identifies a specific AWS IoT SiteWise Monitor project.
 

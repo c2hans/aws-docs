@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-workspace-v
 ---
 
 # Troubleshooting issues with updated workspaces
-<a name="AMG-workspace-version-update-troubleshoot"></a>
 
 Your updated workspace should continue to work after updating. This section can help you track down possible issues after you update.
 + **Differences between versions.**

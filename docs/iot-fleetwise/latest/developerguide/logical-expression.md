@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/logi
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Logical expressions for AWS IoT FleetWise campaigns
-<a name="logical-expression"></a>
 
 AWS IoT FleetWise uses a logical expression to recognize what data to collect as part of a campaign. For more information about expressions, see [Expressions](https://docs.aws.amazon.com/iotevents/latest/developerguide/iotevents-expressions.html) in the *AWS IoT Events Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a cross-account Amazon EventBridge connection in an organization
-<a name="create-cross-account-amazon-eventbridge-connection-organization"></a>
 
 *Sam Wilson and Robert Stone, Amazon Web Services*
 

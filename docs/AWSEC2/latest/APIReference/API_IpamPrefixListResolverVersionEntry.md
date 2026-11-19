@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverVersionEntry
-<a name="API_IpamPrefixListResolverVersionEntry"></a>
 
 Describes a CIDR entry in a specific version of an IPAM prefix list resolver. This represents a CIDR that was selected and synchronized at a particular point in time.
 

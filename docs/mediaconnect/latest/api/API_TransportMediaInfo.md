@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TransportMed
 ---
 
 # TransportMediaInfo
-<a name="API_TransportMediaInfo"></a>
 
  The metadata of the transport stream in the current flow's source.
 

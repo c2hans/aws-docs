@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeFeatureMetadata
-<a name="API_DescribeFeatureMetadata"></a>
 
 Shows the metadata for a feature within a feature group.
 

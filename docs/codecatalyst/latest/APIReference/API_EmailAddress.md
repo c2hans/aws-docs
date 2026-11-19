@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Ema
 ---
 
 # EmailAddress
-<a name="API_EmailAddress"></a>
 
 Information about an email address.
 

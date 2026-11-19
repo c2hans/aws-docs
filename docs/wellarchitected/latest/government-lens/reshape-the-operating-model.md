@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/r
 ---
 
 # Reshape the operating model
-<a name="reshape-the-operating-model"></a>
 
  As governments seek to digitally transform, technology expertise and experience is essential to achieving strategic policy outcomes. To verify that digital delivery of mission objectives can consistently evolve and be delivered successfully, organizational structures must be reshaped and be inclusive of both business and technology experts.
 

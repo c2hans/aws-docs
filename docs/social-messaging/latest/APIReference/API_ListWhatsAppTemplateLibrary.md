@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # ListWhatsAppTemplateLibrary
-<a name="API_ListWhatsAppTemplateLibrary"></a>
 
 Lists templates available in Meta's template library for WhatsApp messaging.
 

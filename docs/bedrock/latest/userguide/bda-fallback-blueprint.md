@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-fallback-bl
 ---
 
 # Using a fallback blueprint while using projects
-<a name="bda-fallback-blueprint"></a>
 
 When you use custom output with multiple blueprints, BDA attempts to match each document to the most appropriate blueprint. If no blueprint matches a document, BDA normally returns a `customOutputStatus` of `NO_MATCH` and no custom output is generated for that document. A fallback blueprint lets you specify a blueprint to use when no other blueprint matches, so you still receive custom output for every document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # VoutFilter
-<a name="API_VoutFilter"></a>
 
 This container specifies filtering attributes related to `BITCOIN_VOUT` event types
 

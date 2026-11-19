@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-drilldown.h
 ---
 
 # Drilldown apps in Grafana version 12
-<a name="v12-drilldown"></a>
 
 The Grafana Drilldown apps provide a queryless experience for exploring telemetry signals. Instead of writing complex queries, you can use intuitive point-and-click interactions to explore your metrics, logs, and traces data.
 

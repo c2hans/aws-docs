@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/API_PublicBui
 ---
 
 # PublicBuildBatch
-<a name="API_PublicBuildBatch"></a>
 
 **Note**
 This API element is not contained in the AWS CLI or AWS SDKs.

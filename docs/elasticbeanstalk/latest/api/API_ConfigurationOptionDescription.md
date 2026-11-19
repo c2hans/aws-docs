@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Configur
 ---
 
 # ConfigurationOptionDescription
-<a name="API_ConfigurationOptionDescription"></a>
 
 Describes the possible values for a configuration option.
 

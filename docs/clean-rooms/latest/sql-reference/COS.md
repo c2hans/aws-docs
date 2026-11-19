@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/COS.htm
 ---
 
 # COS function
-<a name="COS"></a>
 
 COS is a trigonometric function that returns the cosine of a number. The return value is in radians and is between `-1` and `1`, inclusive.
 

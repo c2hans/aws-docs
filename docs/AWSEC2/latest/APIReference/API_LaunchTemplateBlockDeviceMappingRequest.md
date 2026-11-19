@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateBlockDeviceMappingRequest
-<a name="API_LaunchTemplateBlockDeviceMappingRequest"></a>
 
 Describes a block device mapping.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrpop.htm
 ---
 
 # JSON.ARRPOP
-<a name="json-arrpop"></a>
 
 Remove and return element at the index from the array. Popping an empty array returns null.
 

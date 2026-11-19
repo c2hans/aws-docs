@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/decomp-faq.html
 ---
 
 # Troubleshoot decompression in Firehose
-<a name="decomp-faq"></a>
 
 The following table shows how Firehose handles errors during data decompression and processing, including delivering records to an error S3 bucket, logging errors, and emitting metrics. It also explains the error message returned for unauthorized data put operations.
 

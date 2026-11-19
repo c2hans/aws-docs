@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/console_sign-in-mfa
 ---
 
 # MFA enabled sign-in
-<a name="console_sign-in-mfa"></a>
 
 Users who are configured with [multi-factor authentication (MFA)](id_credentials_mfa.md) devices must use their MFA devices to sign in to the AWS Management Console. After the user enters their sign-in credentials, AWS checks the user's account to see if MFA is required for that user.
 

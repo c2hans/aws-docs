@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/schedule
 ---
 
 # Setup scheduled assessments and drift notification
-<a name="scheduled-assessment"></a>
 
 AWS Resilience Hub allows you to setup scheduled assessments and drift notification for assessing your application daily and getting notified when a drift is detected.
 

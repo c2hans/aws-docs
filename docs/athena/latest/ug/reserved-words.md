@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/reserved-words.html
 ---
 
 # Escape reserved keywords in queries
-<a name="reserved-words"></a>
 
 When you run queries in Athena that include reserved keywords, you must escape them by enclosing them in special characters. Use the lists in this topic to check which keywords are reserved in Athena.
 

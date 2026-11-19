@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/proacti
 ---
 
 # The InnoDB history list length increased significantly
-<a name="proactive-insights.history-list"></a>
 
 Starting on {{date}}, your history list for row changes increased significantly, up to {{length}} on {{db-instance}}. This increase affects query and database shutdown performance.
 

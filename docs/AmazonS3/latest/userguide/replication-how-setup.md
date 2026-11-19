@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-ho
 ---
 
 # Setting up live replication overview
-<a name="replication-how-setup"></a>
 
 **Note**
 Objects that existed before you set up replication aren't replicated automatically. In other words, Amazon S3 doesn't replicate objects retroactively. To replicate objects that were created before your replication configuration, use S3 Batch Replication. For more information about configuring Batch Replication, see [Replicating existing objects](s3-batch-replication-batch.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Distributed availability
-<a name="genrel05"></a>
 
 | GENREL05: How do you distribute inference workloads over multiple regions of availability? |
 | --- |

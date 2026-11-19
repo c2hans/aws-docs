@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/delivering-ts-o
 ---
 
 # Delivering TS output using the Zixi protocol
-<a name="delivering-ts-output-using-the-zixi-protocol"></a>
 
 In AWS Elemental Live , you can deliver TS output using the Zixi protocol. The destination is considered to be a *Zixi broadcaster*. You can choose to encrypt the content with AES. This Zixi delivery option is part of the Reliable TS output group.
 

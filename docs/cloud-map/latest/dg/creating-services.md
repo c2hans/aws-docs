@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/creating-services.ht
 ---
 
 # Creating an AWS Cloud Map service for an application component
-<a name="creating-services"></a>
 
 After creating a namespace, you can create services to represent different components of your application that serve particular purposes. For example, you can create a service for resources in your application that process payments.
 

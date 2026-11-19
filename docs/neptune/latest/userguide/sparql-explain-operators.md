@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-explain-
 ---
 
 # Neptune SPARQL `explain` operators
-<a name="sparql-explain-operators"></a>
 
 The following sections describe the operators and parameters for the SPARQL `explain` feature currently available in Amazon Neptune.
 

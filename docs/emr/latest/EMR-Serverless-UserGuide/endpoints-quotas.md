@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/endp
 ---
 
 # Endpoints and quotas for EMR Serverless
-<a name="endpoints-quotas"></a>
 
 ## Service endpoints
 <a name="endpoints"></a>

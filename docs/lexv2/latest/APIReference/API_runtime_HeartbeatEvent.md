@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_He
 ---
 
 # HeartbeatEvent
-<a name="API_runtime_HeartbeatEvent"></a>
 
 Event that Amazon Lex sends to indicate that the stream is still open between the client application and Amazon Lex
 

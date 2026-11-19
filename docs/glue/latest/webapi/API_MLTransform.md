@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_MLTransform.html
 ---
 
 # MLTransform
-<a name="API_MLTransform"></a>
 
 A structure for a machine learning transform.
 

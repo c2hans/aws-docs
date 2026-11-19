@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Report
 ---
 
 # ReportExportConfig
-<a name="API_ReportExportConfig"></a>
 
  Information about the location where the run of a report is exported.
 

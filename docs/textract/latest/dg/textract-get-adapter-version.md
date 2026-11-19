@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-get-adapter-
 ---
 
 # Get an Adapter version
-<a name="textract-get-adapter-version"></a>
 
 You can retrieve configuration information and the current status of an adapter version by calling the [GetAdapterVersion](https://docs.aws.amazon.com/textract/latest/APIReference/API_GetAdapterVersion.html) operation. When calling GetAdapterVersion, specify the AdapterId and the AdapterVersion. This returns information about the specified adapter version so that you can check the current operational status and configuration options.
 

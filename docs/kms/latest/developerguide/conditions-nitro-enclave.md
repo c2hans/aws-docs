@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/conditions-nit
 ---
 
 # Condition keys for Nitro Enclaves and Nitro Sandboxes
-<a name="conditions-nitro-enclave"></a>
 
 The following condition keys are specific to Nitro Enclaves and Nitro Sandboxes attestation:
 

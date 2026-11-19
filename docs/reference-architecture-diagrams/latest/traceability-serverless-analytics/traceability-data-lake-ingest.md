@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Tracing Data Lake Ingest and Processing
-<a name="traceability-data-lake-ingest"></a>
 
 Publication date: **July 15, 2021 ([Diagram history](#diagram-history))**
 

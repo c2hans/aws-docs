@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/security_i
 ---
 
 # AWS CodePipeline resource-based policy examples
-<a name="security_iam_resource-based-policy-examples"></a>
 
 **Topics**
 

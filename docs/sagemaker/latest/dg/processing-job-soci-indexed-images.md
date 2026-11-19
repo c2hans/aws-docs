@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-soci-
 ---
 
 # Speed up processing job startup with SOCI-indexed images
-<a name="processing-job-soci-indexed-images"></a>
 
 A processing job downloads its container image before it runs your script. For large images, such as images that bundle deep learning frameworks or many data-processing libraries, this adds minutes to every processing job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/Welcome.htm
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS Transfer Family offers fully managed support for the transfer of files over SFTP, AS2, FTPS, FTP, and web browser-based transfers directly into and out of AWS storage services.
 
@@ -24,4 +23,4 @@ This API interface reference for AWS Transfer Family contains documentation for 
 **Note**
 Rather than actually running a command, you can use the `--generate-cli-skeleton` parameter with any API call to generate and display a parameter template. You can then use the generated template to customize and use as input on a later command. For details, see [Generate and use a parameter skeleton file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-skeleton.html#cli-usage-skeleton-generate).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

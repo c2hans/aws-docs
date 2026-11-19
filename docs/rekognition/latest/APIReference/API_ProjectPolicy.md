@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Proj
 ---
 
 # ProjectPolicy
-<a name="API_ProjectPolicy"></a>
 
 Describes a project policy in the response from [ListProjectPolicies](API_ListProjectPolicies.md).
 

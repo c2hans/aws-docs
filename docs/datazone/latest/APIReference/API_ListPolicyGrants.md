@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListPol
 ---
 
 # ListPolicyGrants
-<a name="API_ListPolicyGrants"></a>
 
 Lists policy grants.
 

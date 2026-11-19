@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Relax large match requirements
-<a name="match-design-rulesets-large-relax"></a>
 
 As with small matches, you can use expansions to relax match requirements over time when no valid matches are possible. With large matches, you have the option to relax either the latency rules or the team player counts.
 

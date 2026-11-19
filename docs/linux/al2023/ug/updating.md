@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/updating.html
 ---
 
 # Updating AL2023
-<a name="updating"></a>
 
 It's important to keep up to date with AL2023 releases so that you can benefit from security updates and new features. With AL2023, you can ensure consistency between package versions and updates across your environment through [Deterministic upgrades through versioned repositories on AL2023](deterministic-upgrades.md).
 

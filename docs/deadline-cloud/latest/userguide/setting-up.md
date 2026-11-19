@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/setting-
 ---
 
 # Set up your AWS account
-<a name="setting-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

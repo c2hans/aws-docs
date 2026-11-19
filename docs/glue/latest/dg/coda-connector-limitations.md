@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/coda-connector-limitation
 ---
 
 # Limitations and notes for the Coda connector
-<a name="coda-connector-limitations"></a>
 
 The following are limitations and notes for the Coda connector:
 + Coda is supported as a source only. Writing to Coda is not supported.

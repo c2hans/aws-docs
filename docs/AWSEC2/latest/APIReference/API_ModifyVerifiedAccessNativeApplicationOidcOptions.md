@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessNativeApplicationOidcOptions
-<a name="API_ModifyVerifiedAccessNativeApplicationOidcOptions"></a>
 
 Describes the OpenID Connect (OIDC) options.
 

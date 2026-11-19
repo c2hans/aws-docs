@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/getti
 ---
 
 # Get statistics for a metric (GetMetricStatistics)
-<a name="getting-metric-statistics"></a>
 
 `GetMetricStatistics` is the legacy single-metric API. For new code, use [Retrieve metric data (GetMetricData)](metrics-classic-getdata.md) instead — it supports batch queries and math expressions.
 

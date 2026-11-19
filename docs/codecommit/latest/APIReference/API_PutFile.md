@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutFi
 ---
 
 # PutFile
-<a name="API_PutFile"></a>
 
 Adds or updates a file in a branch in an AWS CodeCommit repository, and generates a commit for the addition in the specified branch.
 
@@ -227,7 +226,7 @@ Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFileModeException **
-The specified file mode permission is not valid. For a list of valid file mode permissions, see [PutFile](#API_PutFile).
+The specified file mode permission is not valid. For a list of valid file mode permissions, see [PutFile](API_PutFile.md).
  ** message **
 Any message associated with the exception.
 HTTP Status Code: 400

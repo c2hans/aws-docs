@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessGrants
-<a name="API_control_ListAccessGrants"></a>
 
 Returns the list of access grants in your S3 Access Grants instance.
 

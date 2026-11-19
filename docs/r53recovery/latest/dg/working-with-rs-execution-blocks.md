@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/working-with-rs-ex
 ---
 
 # Add execution blocks
-<a name="working-with-rs-execution-blocks"></a>
 
 You add steps to workflows in your Region switch plan, to perform the individual steps to complete failover or switchover for your application. For details about the functionality and behavior of each type of execution block, see the following descriptions.
 

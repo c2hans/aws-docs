@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingC
 ---
 
 # RoutingCriteria
-<a name="API_RoutingCriteria"></a>
 
 Latest routing criteria on the contact.
 

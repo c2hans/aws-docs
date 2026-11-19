@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-api.h
 ---
 
 # Inference using Invoke API
-<a name="inference-api"></a>
 
 The Invoke API is available on the `bedrock-runtime` endpoint only. Amazon Bedrock offers the following API operations for carrying out model inference with the Invoke API:
 + [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) – Submit a prompt and generate a response. The request body is model-specific. To generate streaming responses, use [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html).
@@ -47,7 +46,7 @@ The following fields are required:
 
 | Field | Use case |
 | --- | --- |
-| modelId | To specify the model, inference profile, or prompt from Prompt management to use. To learn how to find this value, see [Inference using Invoke API](#inference-api). |
+| modelId | To specify the model, inference profile, or prompt from Prompt management to use. To learn how to find this value, see [Inference using Invoke API](inference-api.md). |
 | body | To specify the inference parameters for a model. To see inference parameters for different models, see [Inference request parameters and response fields for foundation models](model-parameters.md). If you specify a prompt from Prompt management in the modelId field, omit this field (if you include it, it will be ignored). |
 
 The following fields are optional:

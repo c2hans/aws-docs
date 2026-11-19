@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Week
 ---
 
 # WeeklyRecurrence
-<a name="API_WeeklyRecurrence"></a>
 
 Weekly recurrence
 

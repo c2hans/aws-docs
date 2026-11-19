@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/check-deplo
 ---
 
 # Check deployment status
-<a name="check-deployment-status"></a>
 
 You can check the status of a deployment that you create in AWS IoT Greengrass. You can also check the status of the AWS IoT jobs that roll out the deployment to each core device. While a deployment is active, the AWS IoT job's status is `IN_PROGRESS`. After you create a new revision of a deployment, the status of the previous revision's AWS IoT job changes to `CANCELLED`.
 

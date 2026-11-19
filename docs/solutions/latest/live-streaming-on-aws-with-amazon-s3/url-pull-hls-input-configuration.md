@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # URL Pull (HLS) input configuration
-<a name="url-pull-hls-input-configuration"></a>
 
 URL Pull provides the option to ingest an HLS stream over HTTP or HTTPS. The following parameters are required to configure the solution to ingest an HLS stream:
 +  **Source Input Type** - URL\_PULL

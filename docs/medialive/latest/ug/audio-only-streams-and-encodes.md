@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/audio-only-streams-a
 ---
 
 # Setting up the encodes
-<a name="audio-only-streams-and-encodes"></a>
 
 This section describes the rules for setting up the audio-only encode in a MediaLive channel.
 

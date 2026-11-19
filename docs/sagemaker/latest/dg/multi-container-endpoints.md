@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-container-endp
 ---
 
 # Multi-container endpoints
-<a name="multi-container-endpoints"></a>
 
 SageMaker AI multi-container endpoints enable customers to deploy multiple containers, that use different models or frameworks, on a single SageMaker AI endpoint. The containers can be run in a sequence as an inference pipeline, or each container can be accessed individually by using direct invocation to improve endpoint utilization and optimize costs.
 

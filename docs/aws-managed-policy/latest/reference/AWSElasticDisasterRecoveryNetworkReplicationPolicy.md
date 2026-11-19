@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticDisasterRecoveryNetworkReplicationPolicy
-<a name="AWSElasticDisasterRecoveryNetworkReplicationPolicy"></a>
 
 **Description**: This policy allows AWS Elastic Disaster Recovery (DRS) to support network replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanL
 ---
 
 # HumanLoopConfig
-<a name="API_HumanLoopConfig"></a>
 
 Describes the work to be performed by human workers.
 

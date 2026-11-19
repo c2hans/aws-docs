@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-input-
 ---
 
 # Information for SCC
-<a name="captions-input-scc"></a>
 
 This section provides information specific to SCC input captions. It describes the fields that appear when you choose **SCC** in the **Source** field in the **Caption Selector** section of the event. For more context, see this procedure.
 

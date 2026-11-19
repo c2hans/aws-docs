@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AssignSl
 ---
 
 # AssignSlaActionDefinition
-<a name="API_AssignSlaActionDefinition"></a>
 
 The AssignSla action definition.
 

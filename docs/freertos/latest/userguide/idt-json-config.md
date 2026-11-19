@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-json-confi
 ---
 
 # Create IDT test suite configuration files
-<a name="idt-json-config"></a>
 
 This section describes the formats in which you create configuration files that you include when you write a custom test suite.
 

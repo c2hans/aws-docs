@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteC
 ---
 
 # DeleteConnectorV2
-<a name="API_DeleteConnectorV2"></a>
 
 Grants permission to delete a connectorV2.
 

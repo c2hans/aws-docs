@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteFiel
 ---
 
 # DeleteField
-<a name="API_connect-cases_DeleteField"></a>
 
 Deletes a field from a Cases template.
 

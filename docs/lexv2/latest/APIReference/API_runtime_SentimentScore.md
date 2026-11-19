@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Se
 ---
 
 # SentimentScore
-<a name="API_runtime_SentimentScore"></a>
 
 The individual sentiment responses for the utterance.
 

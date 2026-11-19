@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Attribu
 ---
 
 # AttributeError
-<a name="API_AttributeError"></a>
 
 The attribute error.
 

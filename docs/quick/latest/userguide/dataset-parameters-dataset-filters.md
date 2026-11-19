@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-parameter
 ---
 
 # Adding dataset parameters to filters
-<a name="dataset-parameters-dataset-filters"></a>
 
 For datasets in direct query mode, dataset authors can use dataset parameters in filters without custom SQL. Dataset parameters can't be added to filters if the dataset is in SPICE.
 

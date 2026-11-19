@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-ram-p
 ---
 
 # Promote the permission and resource share
-<a name="model-registry-ram-promote"></a>
 
 If you use customized (customer managed) permissions, you need to promote the permission and the associated resource share in order for the model package group to be discoverable. Complete the following steps to promote the permission and resource share.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/fulfill-pr
 ---
 
 # If the account does not meet the prerequisites
-<a name="fulfill-prerequisites"></a>
 
  Remember that, as a prerequisite, accounts eligible to be enrolled into AWS Control Tower governance must be part of the same overall organization. To fulfill this prerequisite for account enrollment, you can follow these preparatory steps to move an account into the same organization as AWS Control Tower.
 

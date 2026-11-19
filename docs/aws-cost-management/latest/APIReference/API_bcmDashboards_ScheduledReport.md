@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ScheduledReport
-<a name="API_bcmDashboards_ScheduledReport"></a>
 
 Contains the full configuration and metadata of a scheduled report.
 

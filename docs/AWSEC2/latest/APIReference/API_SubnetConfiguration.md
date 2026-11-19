@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SubnetCon
 ---
 
 # SubnetConfiguration
-<a name="API_SubnetConfiguration"></a>
 
 Describes the configuration of a subnet for a VPC endpoint.
 

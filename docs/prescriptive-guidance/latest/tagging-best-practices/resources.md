@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.9f4f2096-a268-5ccb-be75-e99ec65bc0dd"></a>

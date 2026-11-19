@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/aws-mlops-framework/wel
 ---
 
 # Welcome
-<a name="welcome"></a>
 
 This solution has been renamed [*MLOps Workload Orchestrator*](https://aws.amazon.com/solutions/implementations/mlops-workload-orchestrator).
 

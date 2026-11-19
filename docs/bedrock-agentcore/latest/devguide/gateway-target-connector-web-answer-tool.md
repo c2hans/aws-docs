@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Web Answer
-<a name="gateway-target-connector-web-answer-tool"></a>
 
 Web Answer on Amazon Bedrock AgentCore takes a natural-language question and returns a synthesized answer with citations to current web sources. It is a managed connector that you add as a target to your AgentCore Gateway. Agents discover it with a standard `tools/list` call and invoke it like any other Model Context Protocol (MCP) tool.
 

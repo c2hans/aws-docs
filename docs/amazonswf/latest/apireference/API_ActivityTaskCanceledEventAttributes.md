@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskCanceledEventAttributes
-<a name="API_ActivityTaskCanceledEventAttributes"></a>
 
 Provides the details of the `ActivityTaskCanceled` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCOPS04-BP01 Prioritize AI integration based on business value, feasibility, and alignment with strategic supply chain objectives
-<a name="scops04-bp01"></a>
 
  Strategic AI integration begins with a clear prioritization framework. This involves identifying potential AI use cases across the supply chain and then rigorously assessing each one based on its potential business value, technical feasibility, and the readiness of the underlying data. Forming a cross-functional team with representatives from IT, supply chain operations, and business leadership is crucial for this evaluation process.
 

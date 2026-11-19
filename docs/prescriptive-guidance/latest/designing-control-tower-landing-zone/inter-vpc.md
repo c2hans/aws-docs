@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Inter-VPC connectivity through AWS Transit Gateway
-<a name="inter-vpc"></a>
 
 The following diagram shows how you can interconnect VPCs through a transit gateway in the same AWS Region.
 

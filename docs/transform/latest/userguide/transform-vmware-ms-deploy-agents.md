@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Step 3: Deploy replication agents
-<a name="transform-vmware-ms-deploy-agents"></a>
 
 To begin replicating data from your source servers to AWS, you install the AWS Replication Agent on each source server. AWS Transform offers three installation methods:
 + **Organization tools** – Use your organization's existing deployment tools (such as SCCM, Ansible, or Chef) to install agents across your servers. AWS Transform provides the installation commands with additional parameters for silent installation, including `--no-prompt`, `--aws-access-key-id`, `--aws-secret-access-key`, and `--aws-session-token`.

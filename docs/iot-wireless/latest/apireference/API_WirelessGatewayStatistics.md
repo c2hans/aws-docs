@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessGatewayStatistics
-<a name="API_WirelessGatewayStatistics"></a>
 
 Information about a wireless gateway's operation.
 

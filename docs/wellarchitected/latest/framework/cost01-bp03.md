@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost01-
 ---
 
 # COST01-BP03 Track project lifecycle
-<a name="cost01-bp03"></a>
 
  A project ends, a workload moves to production, an experiment concludes, yet the environments behind them keep running and costing money. Track the lifecycle of projects, teams, and environments so you can decommission or resize resources that no longer serve an active need.
 

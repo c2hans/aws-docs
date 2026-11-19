@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowInputField
-<a name="API_agent-runtime_FlowInputField"></a>
 
 Represents an input field provided to a flow during a flow execution.
 

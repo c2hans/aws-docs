@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fi
 ---
 
 # FilterByAssetModel
-<a name="API_FilterByAssetModel"></a>
 
 Filter by asset model.
 

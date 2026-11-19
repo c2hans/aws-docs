@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/custom-data-id
 ---
 
 # Custom Data Identifier Testing
-<a name="custom-data-identifiers-test"></a>
 
 The Custom Data Identifier Testing resource provides an environment for developing, testing, and refining detection criteria for a custom data identifier. A *custom data identifier* is a set of criteria that you define to detect sensitive data in a data source. By using custom data identifiers, you can detect sensitive data that reflects your particular scenarios, intellectual property, or proprietary data. You can supplement the managed data identifiers that Amazon Macie provides.
 

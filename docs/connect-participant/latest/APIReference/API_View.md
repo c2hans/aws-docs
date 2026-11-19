@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # View
-<a name="API_connect-participant_View"></a>
 
 A view resource object. Contains metadata and content necessary to render the view.
 

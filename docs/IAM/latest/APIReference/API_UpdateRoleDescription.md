@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRoleDe
 ---
 
 # UpdateRoleDescription
-<a name="API_UpdateRoleDescription"></a>
 
 Use [UpdateRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRole.html) instead.
 

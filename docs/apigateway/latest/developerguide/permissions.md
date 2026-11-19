@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/permiss
 ---
 
 # Control access to a REST API with IAM permissions
-<a name="permissions"></a>
 
  You control access to your Amazon API Gateway API with [IAM permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html) by controlling access to the following two API Gateway component processes:
 +  To create, deploy, and manage an API in API Gateway, you must grant the API developer permissions to perform the required actions supported by the API management component of API Gateway.

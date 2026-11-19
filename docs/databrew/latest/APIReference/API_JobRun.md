@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_JobRun.
 ---
 
 # JobRun
-<a name="API_JobRun"></a>
 
 Represents one run of a DataBrew job.
 

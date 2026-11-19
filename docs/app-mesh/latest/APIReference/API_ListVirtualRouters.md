@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVir
 ---
 
 # ListVirtualRouters
-<a name="API_ListVirtualRouters"></a>
 
 Returns a list of existing virtual routers in a service mesh.
 

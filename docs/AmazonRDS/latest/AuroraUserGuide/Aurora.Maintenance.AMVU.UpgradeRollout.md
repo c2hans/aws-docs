@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Using AWS Organizations upgrade rollout policy for automatic minor version upgrades
-<a name="Aurora.Maintenance.AMVU.UpgradeRollout"></a>
 
 Aurora supports AWS Organizations upgrade rollout policy to manage automatic minor version upgrades across multiple database resources and AWS accounts. This policy helps you implement a controlled upgrade strategy for your clusters by:
 

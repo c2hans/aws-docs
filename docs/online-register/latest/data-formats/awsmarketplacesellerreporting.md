@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Marketplace Seller Reporting
-<a name="awsmarketplacesellerreporting"></a>
 
 AWS Marketplace Seller Reporting provides the following APIs for data retrieval.
 

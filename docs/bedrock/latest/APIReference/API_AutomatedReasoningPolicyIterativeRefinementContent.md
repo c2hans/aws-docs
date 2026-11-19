@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyIterativeRefinementContent
-<a name="API_AutomatedReasoningPolicyIterativeRefinementContent"></a>
 
 Configuration for an iterative policy refinement workflow, including source documents to process and optional feedback to guide the refinement.
 

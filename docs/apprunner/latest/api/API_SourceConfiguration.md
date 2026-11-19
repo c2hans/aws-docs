@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_SourceConfigura
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 Describes the source deployed to an AWS App Runner service. It can be a code or an image repository.
 

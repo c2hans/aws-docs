@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateInputSource
-<a name="API_CreateInputSource"></a>
 
 Creates an input source for a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetLine
 ---
 
 # GetLineageEvent
-<a name="API_GetLineageEvent"></a>
 
 Describes the lineage event.
 

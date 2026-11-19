@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/using-agent-skills
 ---
 
 # Using agent skills with Amazon MWAA
-<a name="using-agent-skills"></a>
 
 Agent skills are instruction packages that guide an AI coding assistant through Amazon Managed Workflows for Apache Airflow operations. The AWS Data Analytics plugin (`aws-data-analytics`) in the open-source Agent Toolkit for AWS provides a set of skills that follow the open Agent Skills standard. After you install the skills, you describe what you want to do in natural language, and your assistant uses the matching skill to do the work. This guide describes the Amazon MWAA skills, how to install them for several assistants, and example prompts that you can use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/monitoring-provi
 ---
 
 # Monitoring provisioned SSD IOPS updates
-<a name="monitoring-provisioned-ssd-iops"></a>
 
 After you update the amount of provisioned SSD IOPS for your file system, you can monitor the progress of the SSD IOPS update using the Amazon FSx console, the AWS CLI, and the API, as described in the following procedures.
 

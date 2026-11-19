@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticFileSystemClientFullAccess
-<a name="AmazonElasticFileSystemClientFullAccess"></a>
 
 **Description**: Provides root client access to an Amazon EFS file system
 

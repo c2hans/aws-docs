@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/manage-global.html
 ---
 
 # Managing global settings for the Amazon Chime SDK
-<a name="manage-global"></a>
 
 Manage call detail record settings for the Amazon Chime SDK.
 

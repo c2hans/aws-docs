@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TimeR
 ---
 
 # TimeRangeDrillDownFilter
-<a name="API_TimeRangeDrillDownFilter"></a>
 
 The time range drill down filter.
 

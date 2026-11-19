@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactS
 ---
 
 # ContactSearchSummarySegmentAttributeValue
-<a name="API_ContactSearchSummarySegmentAttributeValue"></a>
 
 The value of a segment attribute. This is structured as a map with a single key-value pair. The key 'valueString' indicates that the attribute type is a string, and its corresponding value is the actual string value of the segment attribute.
 

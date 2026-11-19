@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/integration-secrets
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Manage application secrets with AWS Secrets Manager
-<a name="integration-secrets-manager"></a>
 
  [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) helps you manage, access, and rotate credentials, API keys, and other secrets throughout their lifecycle. With Secrets Manager, you can secure and manage secrets used to access resources in AWS, on third-party services, and on-premises. For more information, see the [AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html).
 

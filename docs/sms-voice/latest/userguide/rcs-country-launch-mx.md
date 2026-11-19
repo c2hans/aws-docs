@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # Launching RCS in Mexico
-<a name="rcs-country-launch-mx"></a>
 
 To launch your AWS RCS Agent in Mexico, submit a country launch registration using the `MX_RCS_LAUNCH_REGISTRATION` registration type. The Mexico registration form includes an additional company name field beyond the standard baseline.
 

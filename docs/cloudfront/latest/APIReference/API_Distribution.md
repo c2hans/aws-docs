@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # Distribution
-<a name="API_Distribution"></a>
 
 A distribution tells CloudFront where you want content to be delivered from, and the details about how to track and manage content delivery.
 

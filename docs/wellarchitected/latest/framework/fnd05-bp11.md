@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP11 Establish encryption and key management standards
-<a name="fnd05-bp11"></a>
 
  Encryption and key management are foundation services that every workload consumes. Without a central standard, each team decides where keys are stored, who can use them, how they rotate, and how they are shared across accounts. The result is fragmented key ownership, inconsistent rotation, and surprise lockouts when one account deletes a key that another account's workloads depend on. A central encryption foundation gives workload teams reliable primitives, so they do not design key management themselves.
 

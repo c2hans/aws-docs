@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Conta
 ---
 
 # ContainerLogRotationConfiguration
-<a name="API_ContainerLogRotationConfiguration"></a>
 
 The settings for container log rotation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Custom model development in Neptune ML
-<a name="machine-learning-custom-model-development"></a>
 
 A good way to start custom model development is by following [Neptune ML toolkit examples](https://github.com/awslabs/neptuneml-toolkit/tree/main/examples/custom-models/introduction) to structure and write your training module. The Neptune ML toolkit also implements modularized graph ML model components in the [modelzoo](https://github.com/awslabs/neptuneml-toolkit/tree/main/src/neptuneml_toolkit/modelzoo) that you can stack and use to create your custom model.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-runtime_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Send and process a document with Amazon Nova on Amazon Bedrock
-<a name="bedrock-runtime_example_bedrock-runtime_DocumentUnderstanding_AmazonNova_section"></a>
 
 The following code example shows how to send and process a document with Amazon Nova on Amazon Bedrock.
 

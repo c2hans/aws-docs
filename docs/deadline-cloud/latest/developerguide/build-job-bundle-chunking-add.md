@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/bui
 ---
 
 # Add task chunking to a job template
-<a name="build-job-bundle-chunking-add"></a>
 
 The following procedure converts a job template that renders one frame per task into one that renders chunks of frames. For background on chunking and how to choose a chunk size, see [Task chunking for job templates](build-job-bundle-chunking.md).
 

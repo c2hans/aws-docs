@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-optimize-routi
 ---
 
 # Request routing optimization for CDN and MediaTailor integrations
-<a name="cdn-optimize-routing"></a>
 
 Implement these routing optimizations for all AWS Elemental MediaTailor CDN integrations:
 + Create separate cache behaviors for manifest and segment requests

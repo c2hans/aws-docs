@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-work
 ---
 
 # Provide internet access for WorkSpaces Personal
-<a name="amazon-workspaces-internet-access"></a>
 
 Your WorkSpaces must have access to the internet so that you can install updates to the operating system and deploy applications. You can use one of the following options to allow your WorkSpaces in a virtual private cloud (VPC) to access the internet.
 

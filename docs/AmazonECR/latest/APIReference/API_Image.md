@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Image.
 ---
 
 # Image
-<a name="API_Image"></a>
 
 An object representing an Amazon ECR image.
 

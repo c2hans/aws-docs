@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.
 ---
 
 # Selecting the best size for a replication instance
-<a name="CHAP_BestPractices.SizingReplicationInstance"></a>
 
 Choosing the appropriate replication instance depends on several factors of your use case. To help understand how replication instance resources are used, see the following discussion. It covers the common scenario of a full load \+ CDC task.
 

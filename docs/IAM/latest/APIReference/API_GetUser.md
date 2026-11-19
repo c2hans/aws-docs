@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUser.html
 ---
 
 # GetUser
-<a name="API_GetUser"></a>
 
 Retrieves information about the specified IAM user, including the user's creation date, path, unique ID, and ARN.
 

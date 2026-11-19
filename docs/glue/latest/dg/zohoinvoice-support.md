@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohoinvoice-support.html
 ---
 
 # AWS Glue support for Zoho Invoice
-<a name="zohoinvoice-support"></a>
 
 AWS Glue supports Zoho Invoice as follows:
 

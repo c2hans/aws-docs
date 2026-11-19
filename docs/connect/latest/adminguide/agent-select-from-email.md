@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/agent-select-f
 ---
 
 # Select a From email address
-<a name="agent-select-from-email"></a>
 
 When agents reply to or initiate emails, they can select which From (system) email address to use. This is helpful when agents support multiple brands, departments, or business units within the same contact center.
 

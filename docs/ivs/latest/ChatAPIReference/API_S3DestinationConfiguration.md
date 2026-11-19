@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_S3Destin
 ---
 
 # S3DestinationConfiguration
-<a name="API_S3DestinationConfiguration"></a>
 
 Specifies an S3 location where chat logs will be stored.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This AWS CodeConnections API Reference provides descriptions and usage examples of the operations and data types for the AWS CodeConnections API. You can use the connections API to work with connections and installations.
 
@@ -32,4 +31,4 @@ You can work with tags in AWS CodeConnections by calling the following:
 
 For information about how to use AWS CodeConnections, see the [Developer Tools User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

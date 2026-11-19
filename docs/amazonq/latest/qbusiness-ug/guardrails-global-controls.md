@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-g
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Using global controls in Amazon Q Business
-<a name="guardrails-global-controls"></a>
 
 You can use Amazon Q Business global controls to configure settings that apply to conversations in your application environment.
 

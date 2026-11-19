@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/doc-histor
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Document history for AWS FinOps Agent
-<a name="doc-history"></a>
 
 The following table describes the documentation releases for AWS FinOps Agent.
 

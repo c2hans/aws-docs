@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Be
 ---
 
 # BedrockDataAutomationConfiguration
-<a name="API_agent_BedrockDataAutomationConfiguration"></a>
 
 Contains configurations for using Amazon Bedrock Data Automation as the parser for ingesting your data sources.
 

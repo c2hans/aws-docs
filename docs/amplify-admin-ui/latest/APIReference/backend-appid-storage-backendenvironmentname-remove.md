@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Storage backendEnvironmentName Remove
-<a name="backend-appid-storage-backendenvironmentname-remove"></a>
 
 Remove a storage resource from your Amplify app backend.
 

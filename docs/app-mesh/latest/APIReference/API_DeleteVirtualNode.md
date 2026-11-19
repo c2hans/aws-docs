@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteV
 ---
 
 # DeleteVirtualNode
-<a name="API_DeleteVirtualNode"></a>
 
 Deletes an existing virtual node.
 

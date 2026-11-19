@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Approxim
 ---
 
 # ApproximateDriftedResourceCount
-<a name="API_ApproximateDriftedResourceCount"></a>
 
 Contains an approximate count of the resources of a given type that are not yet in sync in a Region, along with the time the count was last calculated.
 

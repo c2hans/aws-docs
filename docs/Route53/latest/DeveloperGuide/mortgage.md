@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/mortgage.h
 ---
 
 # .mortgage
-<a name="mortgage"></a>
 
 Used by the mortgage industry.
 

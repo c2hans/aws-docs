@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-upda
 ---
 
 # Update a streaming table delivery
-<a name="data-delivery-st-update"></a>
 
  Update an existing streaming table delivery. On an existing delivery, you can change only the data freshness interval (`DataFreshnessInSeconds`) and the CloudWatch Logs configuration. All other properties are immutable after creation. To change any other setting, delete the delivery and create a new one.
 

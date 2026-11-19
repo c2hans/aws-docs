@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Set up cross-account access for Amazon EMR on EKS
-<a name="security-cross-account"></a>
 
 You can set up cross-account access for Amazon EMR on EKS. Cross-account access enables users from one AWS account to run Amazon EMR on EKS jobs and access the underlying data that belongs to another AWS account.
 

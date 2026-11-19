@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/getting-st
 ---
 
 # Next steps
-<a name="getting-started-next"></a>
 
 Now that your landing zone is set up, it's ready for use.
 

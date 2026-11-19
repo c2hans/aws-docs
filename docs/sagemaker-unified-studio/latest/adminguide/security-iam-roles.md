@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # IAM roles for Amazon SageMaker Unified Studio
-<a name="security-iam-roles"></a>
 
 **Topics**
 + [AmazonSageMakerDomainExecution role](AmazonSageMakerDomainExecution.md)

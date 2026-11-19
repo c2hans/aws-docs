@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RejectS
 ---
 
 # RejectSubscriptionRequest
-<a name="API_RejectSubscriptionRequest"></a>
 
 Rejects the specified subscription request.
 

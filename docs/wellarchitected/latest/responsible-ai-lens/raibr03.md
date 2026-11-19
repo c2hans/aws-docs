@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Assess risks
-<a name="raibr03"></a>
 
 | RAIBR03: How will you assess the risks posed by the potential harmful events? |
 | --- |

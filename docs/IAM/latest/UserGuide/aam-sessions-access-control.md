@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/aam-sessions-access
 ---
 
 # Sessions and access control
-<a name="aam-sessions-access-control"></a>
 
 ## Understanding sessions
 <a name="aam-understanding-sessions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetColumnStatisti
 ---
 
 # GetColumnStatisticsTaskRuns
-<a name="API_GetColumnStatisticsTaskRuns"></a>
 
 Retrieves information about all runs associated with the specified table.
 

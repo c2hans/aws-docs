@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateA
 ---
 
 # CreateAuthenticationProfile
-<a name="API_CreateAuthenticationProfile"></a>
 
 Creates an authentication profile with the specified parameters.
 

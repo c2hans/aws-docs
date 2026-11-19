@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RequestInspectionACFP
-<a name="aws-properties-wafv2-webacl-requestinspectionacfp"></a>
 
 The criteria for inspecting account creation requests, used by the ACFP rule group to validate and track account creation attempts.
 

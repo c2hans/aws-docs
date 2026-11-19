@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIAgentConfigurationData
-<a name="API_amazon-q-connect_AIAgentConfigurationData"></a>
 
 A type that specifies the AI Agent ID configuration data when mapping an AI Agents to be used for an AI Agent type on a session or assistant.
 

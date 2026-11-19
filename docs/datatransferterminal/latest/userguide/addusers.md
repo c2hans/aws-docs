@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/ad
 ---
 
 # Add personnel
-<a name="addusers"></a>
 
 Add Process owners and Data transfer specialists to your Transfer team to set up the data transfer and access the Data Transfer Terminal facility. To add personnel to your Transfer team, do the following:
 

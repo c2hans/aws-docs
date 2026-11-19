@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ConnectCampaignsV2::Campaign EntryLimitsConfig
-<a name="aws-properties-connectcampaignsv2-campaign-entrylimitsconfig"></a>
 
 Contains entry limits configuration for an outbound campaign. Entry limits control how many times a participant can enter a campaign and the minimum time interval between re-entries.
 

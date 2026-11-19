@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Using CodeArtifact in Visual Studio
-<a name="using-aws-codeartifact"></a>
 
 AWS CodeArtifact is a fully managed artifact repository service that makes it easy for organizations to securely store and share software packages used for application development. You can use CodeArtifact with popular build tools and package managers such as the NuGet and .NET Core CLIs and Visual Studio. You can also configure CodeArtifact to pull packages from an external, public repository such as [NuGet.org](https://www.nuget.org/).
 

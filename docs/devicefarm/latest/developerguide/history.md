@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/history
 ---
 
 # AWS Device Farm document history
-<a name="history"></a>
 
 The following table describes the important changes to the documentation since the last release of this guide.
 

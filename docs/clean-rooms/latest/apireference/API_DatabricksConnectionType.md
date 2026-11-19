@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Data
 ---
 
 # DatabricksConnectionType
-<a name="API_DatabricksConnectionType"></a>
 
 Type of the connector to be used for connecting to Databricks. Supported connector: Delta Sharing
 

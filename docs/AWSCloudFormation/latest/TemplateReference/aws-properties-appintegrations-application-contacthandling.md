@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::Application ContactHandling
-<a name="aws-properties-appintegrations-application-contacthandling"></a>
 
 <a name="aws-properties-appintegrations-application-contacthandling-description"></a>The `ContactHandling` property type specifies Property description not available. for an [AWS::AppIntegrations::Application](aws-resource-appintegrations-application.md).
 
@@ -35,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `Scope`  <a name="cfn-appintegrations-application-contacthandling-scope"></a>
 Property description not available.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Allowed values*: `CROSS_CONTACTS | PER_CONTACT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

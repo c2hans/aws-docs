@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Saving data from an Amazon Aurora MySQL DB cluster into text files in an Amazon S3 bucket
-<a name="AuroraMySQL.Integrating.SaveIntoS3"></a><a name="save_into_s3"></a><a name="select_into_outfile"></a>
+<a name="save_into_s3"></a><a name="select_into_outfile"></a>
 
 You can use the `SELECT INTO OUTFILE S3` statement to query data from an Amazon Aurora MySQL DB cluster and save it into text files stored in an Amazon S3 bucket. In Aurora MySQL, the files are first stored on the local disk, and then exported to S3. After the exports are done, the local files are deleted.
 

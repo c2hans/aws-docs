@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_VpcProp
 ---
 
 # VpcPropertiesPatch
-<a name="API_VpcPropertiesPatch"></a>
 
 The VPC connection properties used when updating a connection.
 

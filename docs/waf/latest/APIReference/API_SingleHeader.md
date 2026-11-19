@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SingleHeader
 ---
 
 # SingleHeader
-<a name="API_SingleHeader"></a>
 
 Inspect one of the headers in the web request, identified by name, for example, `User-Agent` or `Referer`. The name isn't case sensitive.
 

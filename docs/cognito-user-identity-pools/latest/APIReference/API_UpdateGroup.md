@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
 Given the name of a user pool group, updates any of the properties for precedence, IAM role, or description. For more information about user pool groups, see [Adding groups to a user pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-user-groups.html).
 

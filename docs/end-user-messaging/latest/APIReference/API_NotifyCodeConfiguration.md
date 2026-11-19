@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # NotifyCodeConfiguration
-<a name="API_NotifyCodeConfiguration"></a>
 
 Contains the settings of a notify code configuration, which is a reusable one-time passcode policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-drive-kb-a
 ---
 
 # Document-level access controls
-<a name="google-drive-kb-acl"></a>
 
 Admin-managed Google Drive knowledge bases include built-in document-level access control. AWS Quick syncs access control lists (ACLs) from Google Drive during each crawl and verifies each user's permissions at query time, so users only see answers from documents that they are authorized to access.
 

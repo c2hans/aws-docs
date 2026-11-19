@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateResiliencyGroup
-<a name="API_CreateResiliencyGroup"></a>
 
 Creates a resiliency group. A resiliency group lets you group Direct Connect connections together and manage them as a single unit to meet a target resiliency model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/troubleshooti
 ---
 
 # Troubleshooting connectivity issues
-<a name="troubleshooting.connecting"></a>
 
 Having trouble connecting? Here are some common scenarios and how to resolve them.
 

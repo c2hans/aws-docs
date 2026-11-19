@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-frame
 ---
 
 # XGBoost Framework Processor
-<a name="processing-job-frameworks-xgboost"></a>
 
 XGBoost is an open-source machine learning framework. The `XGBoostProcessor` in the Amazon SageMaker Python SDK provides you with the ability to run processing jobs with XGBoost scripts. When you use the XGBoostProcessor, you can leverage an Amazon-built Docker container with a managed XGBoost environment so that you don't need to bring your own container.
 

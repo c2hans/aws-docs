@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Databas
 ---
 
 # DatabaseColumnList
-<a name="API_DatabaseColumnList"></a>
 
 The structure used to configure the list of column patterns in source database endpoint for Firehose to read from.
 

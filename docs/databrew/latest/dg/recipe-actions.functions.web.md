@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # Web functions
-<a name="recipe-actions.functions.web"></a>
 
 Following, find reference topics for web functions that work with recipe actions.
 

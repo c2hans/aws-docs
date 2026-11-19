@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Effective
 ---
 
 # EffectiveDeploymentStatusDetails
-<a name="API_EffectiveDeploymentStatusDetails"></a>
 
 Contains all error-related information for the deployment record. The status details will be null if the deployment is in a success state.
 

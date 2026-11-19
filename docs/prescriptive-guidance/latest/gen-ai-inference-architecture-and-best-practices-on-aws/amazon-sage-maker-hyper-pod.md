@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Amazon SageMaker HyperPod
-<a name="amazon-sage-maker-hyper-pod"></a>
 
 ## Amazon SageMaker HyperPod
 <a name="amazon-sagemaker-hyperpod.6a09dca9-0adf-5419-b848-26b704f20637"></a>

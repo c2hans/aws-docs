@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/custom
 ---
 
 # Reboot and access the console
-<a name="custom-car-software-reboot-access"></a>
 
 1. Reboot the Raspberry Pi:
 

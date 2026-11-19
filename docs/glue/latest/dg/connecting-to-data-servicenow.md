@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-servic
 ---
 
 # Connecting to ServiceNow
-<a name="connecting-to-data-servicenow"></a>
 
 ServiceNow is a cloud-based SaaS platform for automating IT management workflows. The ServiceNow platform easily integrates with other tools, letting users manage projects, teams and customer interactions using a variety of apps and plugins. As a ServiceNow user you can connect AWS Glue to your ServiceNow account. Then, you can use ServiceNow as a data source in your ETL jobs. Run these jobs to transfer data between ServiceNow and AWS services or other supported applications.
 

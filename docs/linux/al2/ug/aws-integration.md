@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/aws-integration.html
 ---
 
 # AWS integration in AL2
-<a name="aws-integration"></a>
 
 ## AWS command line tools
 <a name="amazon-linux-aws-command-line-tools"></a>

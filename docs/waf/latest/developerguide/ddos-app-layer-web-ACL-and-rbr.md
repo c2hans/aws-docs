@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-app-layer
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Protecting the application layer with AWS WAF web ACLs and Shield Advanced
-<a name="ddos-app-layer-web-ACL-and-rbr"></a>
 
 This page explains how AWS WAF web ACLs and Shield Advanced work together to create basic application layer protections.
 

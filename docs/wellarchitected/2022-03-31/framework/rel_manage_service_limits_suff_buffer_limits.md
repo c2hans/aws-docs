@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL01-BP06 Ensure that a sufficient gap exists between the current quotas and the maximum usage to accommodate failover
-<a name="rel_manage_service_limits_suff_buffer_limits"></a>
 
  When a resource fails, it might still be counted against quotas until it’s successfully terminated. Ensure that your quotas cover the overlap of all failed resources with replacements before the failed resources are terminated. You should consider an Availability Zone failure when calculating this gap.
 

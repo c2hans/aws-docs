@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Command.html
 ---
 
 # Command
-<a name="API_Command"></a>
 
 An entity describing an executable that runs on a cluster.
 

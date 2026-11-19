@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stig-setting
 ---
 
 # STIG hardening settings for EC2 instances
-<a name="ec2-stig-settings"></a>
 
 STIG settings vary based on your instance operating system and the compliance level that you choose. The following content contains system-specific details for STIGs that are applied at each compliance level.
 

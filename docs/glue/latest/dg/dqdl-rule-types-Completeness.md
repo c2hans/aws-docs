@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Completen
 ---
 
 # Completeness
-<a name="dqdl-rule-types-Completeness"></a>
 
 Checks the percentage of complete (non-null) values in a column against a given expression.
 

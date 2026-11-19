@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTCommo
 ---
 
 # Common response headers
-<a name="RESTCommonResponseHeaders"></a>
 
 The following table describes response headers that are common to most Amazon S3 responses.
 

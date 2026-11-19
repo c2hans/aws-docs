@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestStatusChangedEventMetadata
-<a name="API_PullRequestStatusChangedEventMetadata"></a>
 
 Information about a change to the status of a pull request.
 

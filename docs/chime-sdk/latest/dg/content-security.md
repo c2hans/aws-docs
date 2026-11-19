@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/content-security.htm
 ---
 
 # Using a content-security policy with the Amazon Chime SDK client library for JavaScript
-<a name="content-security"></a>
 
 Modern web applications use a content security policy to protect users from certain classes of attacks. Applications that use the `VideoFxProcessor` must include the policy directives described in this section. The directives give the Amazon Chime SDK access to the resources it needs at runtime.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-zonal-shif
 ---
 
 # Enable zonal shift using the AWS Management Console or the AWS CLI
-<a name="asg-zonal-shift-enable"></a>
 
 To enable zonal shift, use one of the following methods.
 

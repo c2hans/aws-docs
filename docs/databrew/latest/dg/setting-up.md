@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/setting-up.html
 ---
 
 # Setting up AWS Glue DataBrew
-<a name="setting-up"></a>
 
 Before you get started with AWS Glue DataBrew, you need to set up some permissions, a user, and a role. Start by doing the following steps:
 

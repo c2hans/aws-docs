@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Identit
 ---
 
 # IdentityProviderConfiguration
-<a name="API_IdentityProviderConfiguration"></a>
 
 Provides information about the identity provider (IdP) used to authenticate end users of an Amazon Q Business web experience.
 

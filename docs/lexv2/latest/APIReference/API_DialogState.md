@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DialogStat
 ---
 
 # DialogState
-<a name="API_DialogState"></a>
 
 The current state of the conversation with the user.
 

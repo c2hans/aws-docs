@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModels
-<a name="API_ListModels"></a>
 
 Lists models created with the `CreateModel` API.
 

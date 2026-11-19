@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_RegexMat
 ---
 
 # RegexMatchSet
-<a name="API_waf_RegexMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -18,7 +17,7 @@ In a [GetRegexMatchSet](API_waf_GetRegexMatchSet.md) request, `RegexMatchSet` is
 <a name="API_waf_RegexMatchSet_Contents"></a>
 
  ** Name **   <a name="WAF-Type-waf_RegexMatchSet-Name"></a>
-A friendly name or description of the [RegexMatchSet](#API_waf_RegexMatchSet). You can't change `Name` after you create a `RegexMatchSet`.
+A friendly name or description of the [RegexMatchSet](API_waf_RegexMatchSet.md). You can't change `Name` after you create a `RegexMatchSet`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*\S.*`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Outlier
 ---
 
 # OutlierDetection
-<a name="API_OutlierDetection"></a>
 
 An object that represents the outlier detection for a virtual node's listener.
 

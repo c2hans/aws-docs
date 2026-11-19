@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Configuring AWS Marketplace to integrate with SAP Ariba
-<a name="procurement-system-integration-ariba"></a>
 
 The following topics explain how to configure AWS Marketplace to work with the SAP Ariba procurement system. Configuration enables users to search for and purchase AWS Marketplace software without having to leave SAP Ariba.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerListenerDescription
-<a name="API_AwsElbLoadBalancerListenerDescription"></a>
 
 Lists the policies that are enabled for a load balancer listener.
 

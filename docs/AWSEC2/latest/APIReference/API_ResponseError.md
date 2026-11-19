@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResponseE
 ---
 
 # ResponseError
-<a name="API_ResponseError"></a>
 
 Describes the error that's returned when you cannot delete a launch template version.
 

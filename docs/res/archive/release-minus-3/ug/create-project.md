@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/create-pr
 ---
 
 # Create a project
-<a name="create-project"></a>
 
 1. Choose **Create Project**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Key concepts
-<a name="key-concepts"></a>
 
  To get the most out of WorkSpaces Applications, be familiar with the following concepts:
 +  **Image** — An *image* is a pre-configured instance template*.* An image contains applications that you can stream to your users, and default Windows and application settings to enable your users to get started with their applications quickly. AWS provides base images that you can use to create images that include your own applications. After you create an image, you can't change it. To add other applications, update existing applications, or change image settings, you must create a new image. You can copy your images to other [*AWS Regions*](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) or share them with other AWS accounts in the same Region.

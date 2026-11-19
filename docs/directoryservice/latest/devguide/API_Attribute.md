@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Att
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 Represents a named directory attribute.
 

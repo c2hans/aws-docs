@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/confi
 ---
 
 # Configure Logging for AWS IoT Wireless
-<a name="configure-logging"></a>
 
 Before you can monitor and log AWS IoT Wireless activity, first enable logging for your AWS IoT Wireless resources. You can enable logging by using the AWS IoT console, the AWS IoT Wireless API, or the AWS CLI.
 

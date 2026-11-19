@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListCon
 ---
 
 # ListConnectors
-<a name="API_ListConnectors"></a>
 
 Lists the connectors for the specified Region.
 

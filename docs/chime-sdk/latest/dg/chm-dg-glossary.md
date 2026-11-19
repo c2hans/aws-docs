@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/chm-dg-glossary.html
 ---
 
 # Amazon Chime SDK PSTN audio service glossary
-<a name="chm-dg-glossary"></a>
 
 \| [A](#a) \| [C](#c) \| [E](#e) \| [I](#i) \| [L](#l) \| [M](#m) \| [N](#n) \| [O](#o) \| [P](#p) \| [S](#s) \| [T](#t) \| [V](#v) \|
 

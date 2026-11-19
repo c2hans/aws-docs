@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-contro
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Example – Challenging clients whose token came from a different type of network
-<a name="waf-bot-control-example-token-provenance"></a>
 
 A client that passes an AWS WAF challenge receives a token, and then presents the token with its later requests. Some bots take advantage of this by solving the challenge in one place and sending their traffic from another. For example, a bot can acquire tokens from a data center and then present them from residential proxy IP addresses. Those addresses belong to the same internet providers as your real users. Each request arrives with a valid token from an IP address that looks like a real user's. Neither the token nor the address identifies the bot.
 

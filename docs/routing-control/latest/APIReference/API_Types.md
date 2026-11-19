@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Route53 Recovery Cluster API contains several data types that various actions use. This section describes each data type in detail.
 

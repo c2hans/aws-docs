@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bike.html
 ---
 
 # .bike
-<a name="bike"></a>
 
 Used by businesses or groups that cater to cyclists, such as bike stores, motorcycle dealerships, and repair shops.
 

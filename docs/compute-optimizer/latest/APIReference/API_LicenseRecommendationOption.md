@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LicenseRecommendationOption
-<a name="API_LicenseRecommendationOption"></a>
 
  Describes the recommendation options for licenses.
 

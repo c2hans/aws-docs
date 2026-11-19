@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/qt-notificati
 ---
 
 # Notifications
-<a name="qt-notifications"></a>
 
 AWS Transform provides email notifications to keep you informed about workspace access changes, job status updates, and pending collaborator requests.
 

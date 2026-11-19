@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Suspend
 ---
 
 # SuspendProcesses
-<a name="API_SuspendProcesses"></a>
 
 Suspends the specified auto scaling processes, or all processes, for the specified Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/twinmaker-gs-
 ---
 
 # Create and manage a service role for AWS IoT TwinMaker
-<a name="twinmaker-gs-service-role"></a>
 
 AWS IoT TwinMaker requires that you use a service role to allow it to access resources in other services on your behalf. This role must have a trust relationship with AWS IoT TwinMaker. When you create a workspace, you must assign this role to the workspace. This topic contains example policies that show you how to configure permissions for common scenarios.
 

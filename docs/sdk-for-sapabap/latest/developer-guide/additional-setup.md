@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/a
 ---
 
 # Refresh, trace, and telemetry topics for AWS SDK for SAP ABAP
-<a name="additional-setup"></a>
 
 This section covers the following topics.
 

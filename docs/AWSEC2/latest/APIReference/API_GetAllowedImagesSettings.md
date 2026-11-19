@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetAllowe
 ---
 
 # GetAllowedImagesSettings
-<a name="API_GetAllowedImagesSettings"></a>
 
 Gets the current state of the Allowed AMIs setting and the list of Allowed AMIs criteria at the account level in the specified Region.
 

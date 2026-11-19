@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/stripe-connection-options
 ---
 
 # Stripe connection options
-<a name="stripe-connection-options"></a>
 
 The following are connection options for Stripe:
 +  `ENTITY_NAME`(String) - (Required) Used for Read/Write. The name of your Object in Stripe.

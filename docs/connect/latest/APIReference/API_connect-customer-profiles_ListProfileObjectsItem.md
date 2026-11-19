@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListProfileObjectsItem
-<a name="API_connect-customer-profiles_ListProfileObjectsItem"></a>
 
 A ProfileObject in a list of ProfileObjects.
 

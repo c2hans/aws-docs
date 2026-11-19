@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HTTP_En
 ---
 
 # Sending logs using the Structured JSON endpoint (Structured JSON Logs)
-<a name="CWL_HTTP_Endpoints_StructuredJSON"></a>
 
 The Structured JSON Logs endpoint (`/ingest/json`) accepts standard JSON – either a single JSON object or a JSON array of objects. This endpoint is designed for structured log data where each event is a JSON object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListMe
 ---
 
 # ListMembers
-<a name="API_ListMembers"></a>
 
 Lists details about all member accounts for the current GuardDuty administrator account.
 

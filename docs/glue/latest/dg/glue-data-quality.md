@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html
 ---
 
 # AWS Glue Data Quality
-<a name="glue-data-quality"></a>
 
 AWS Glue Data Quality allows you to measure and monitor the quality of your data so that you can make good business decisions. Built on top of the open-source DeeQu framework, AWS Glue Data Quality provides a managed, serverless experience. AWS Glue Data Quality works with Data Quality Definition Language (DQDL), which is a domain specific language that you use to define data quality rules. To learn more about DQDL and supported rule types, see [Data Quality Definition Language (DQDL) reference](dqdl.md).
 

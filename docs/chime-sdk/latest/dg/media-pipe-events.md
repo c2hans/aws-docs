@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-pipe-events.ht
 ---
 
 # Using Amazon Chime SDK media pipeline events
-<a name="media-pipe-events"></a>
 
 Each type of media pipeline sends lifecycle events, which you can use to trigger notifications and initiate downstream workflows. Some examples of using media pipeline events include:
 + Processing captured media after a media pipeline has completed.

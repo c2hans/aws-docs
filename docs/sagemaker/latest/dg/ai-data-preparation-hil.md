@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Human-in-the-loop annotation
-<a name="ai-data-preparation-hil"></a>
 
 ## What it is
 <a name="ai-data-preparation-hil-overview"></a>

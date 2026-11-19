@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions-create
 ---
 
 # Create a session to prepare to store conversation history and context
-<a name="sessions-create"></a>
 
 To create a session, you use the [CreateSession](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateSession.html) API operation. In the response, Amazon Bedrock returns a unique session ID and Amazon Resource Name (ARN) for the session. You use either the session ID or the ARN when you use the [CreateInvocation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateInvocation.html) and [PutInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html) API operations to record the session events.
 

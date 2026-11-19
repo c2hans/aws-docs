@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-detai
 ---
 
 # Remove a training job (Studio)
-<a name="model-registry-details-studio-training-remove"></a>
 
 You can remove a training job, created externally or with SageMaker AI, from your model by completing the following steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateAttachmentNatConfiguration
-<a name="API_UpdateAttachmentNatConfiguration"></a>
 
 Updates the NAT configuration of a core network attachment. You can enable or disable NAT gateway support, specify whether the core network installs system routes for the NAT CIDR blocks, and replace the NAT rules of the attachment. Specify at least one of `NatGatewaySupport`, `NatSystemRouteSupport`, or `NatGatewayRules`.
 

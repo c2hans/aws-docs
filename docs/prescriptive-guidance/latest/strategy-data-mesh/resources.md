@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Resources
-<a name="resources"></a>
 + [Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/what-is-datazone.html)
 + [Data.all](https://data-dot-all.github.io/dataall/)
 + [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)

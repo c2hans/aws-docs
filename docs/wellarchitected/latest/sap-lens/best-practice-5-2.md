@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 5.2 – Classify the data within your SAP workloads
-<a name="best-practice-5-2"></a>
 
 Data sensitivity can impact the controls required to mitigate risk. AWS suggests referring to standard frameworks within your industry or organization and adopting these to classify your SAP workloads and the data contained within them.
 

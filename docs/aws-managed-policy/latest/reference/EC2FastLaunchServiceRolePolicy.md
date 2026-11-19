@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2F
 ---
 
 # EC2FastLaunchServiceRolePolicy
-<a name="EC2FastLaunchServiceRolePolicy"></a>
 
 **Description**: Policy grants ec2fastlaunch to prepare and manage preprovisioned snapshots in customer's account & publish related metrics.
 

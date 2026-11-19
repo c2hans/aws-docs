@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Comp
 ---
 
 # ComparedFace
-<a name="API_ComparedFace"></a>
 
 Provides face metadata for target image faces that are analyzed by `CompareFaces` and `RecognizeCelebrities`.
 

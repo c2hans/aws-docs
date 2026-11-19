@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Un
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceAssociation
-<a name="API_ResourceAssociation"></a>
 
 Describes an association between a resource and another entity.
 

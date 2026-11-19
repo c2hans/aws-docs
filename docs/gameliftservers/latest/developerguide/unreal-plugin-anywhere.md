@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/un
 ---
 
 # Plugin for Unreal: Host your game locally with Amazon GameLift Servers Anywhere
-<a name="unreal-plugin-anywhere"></a>
 
 Use this workflow to set up your local workstation as a game server host using an Anywhere fleet. You can use it to test your game server integration before deploying to a cloud-based managed fleet. It can also be useful for local testing during iterative game development.
 

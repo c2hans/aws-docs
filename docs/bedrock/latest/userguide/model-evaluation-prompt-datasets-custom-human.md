@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Create a custom prompt dataset for a model evaluation job that uses human workers
-<a name="model-evaluation-prompt-datasets-custom-human"></a>
 
 To create a model evaluation job that uses human workers you must specify a custom prompt dataset. These prompts are then used during inference with the models you select to evaluate.
 

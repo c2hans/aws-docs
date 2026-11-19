@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-trusted-i
 ---
 
 # Common setup for Amazon SageMaker Unified Studio with TIP on Amazon EMR on EC2
-<a name="emr-trusted-identity-smus-tip-common-setup"></a>
 
 Complete the following setup steps before configuring either Full Table Access (FTA) or Fine-Grained Access Control (FGAC). These steps are shared across both use cases.
 

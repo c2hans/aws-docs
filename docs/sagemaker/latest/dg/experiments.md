@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/experiments.html
 ---
 
 # Amazon SageMaker Experiments in Studio Classic
-<a name="experiments"></a>
 
 **Important**
 Experiment tracking using the SageMaker Experiments Python SDK is only available in Studio Classic. We recommend using the new Studio experience and creating experiments using the latest SageMaker AI integrations with MLflow. There is no MLflow UI integration with Studio Classic. If you want to use MLflow with Studio, you must launch the MLflow UI using the AWS CLI. For more information, see [Launch the MLflow UI using the AWS CLI](mlflow-launch-ui.md#mlflow-launch-ui-cli).

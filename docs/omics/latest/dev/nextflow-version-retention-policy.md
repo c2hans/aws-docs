@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/nextflow-version-retent
 ---
 
 # Nextflow version retention policy
-<a name="nextflow-version-retention-policy"></a>
 
 ## Supported Nextflow engine versions
 <a name="nf-retention-supported-versions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AttributeDetails
-<a name="API_connect-customer-profiles_AttributeDetails"></a>
 
 Mathematical expression and a list of attribute items specified in that expression.
 

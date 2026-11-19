@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TrafficD
 ---
 
 # TrafficDistributionGroupUserSummary
-<a name="API_TrafficDistributionGroupUserSummary"></a>
 
 Summary information about a traffic distribution group user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreatePlaybackRestrictionPolicy
-<a name="API_CreatePlaybackRestrictionPolicy"></a>
 
 Creates a new playback restriction policy, for constraining playback by countries and/or origins.
 

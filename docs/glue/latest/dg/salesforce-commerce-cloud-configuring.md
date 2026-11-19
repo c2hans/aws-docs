@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-commerce-cloud
 ---
 
 # Configuring Salesforce Commerce Cloud
-<a name="salesforce-commerce-cloud-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Salesforce Commerce Cloud, you must meet these requirements:
 

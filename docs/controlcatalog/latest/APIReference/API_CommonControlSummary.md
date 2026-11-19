@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # CommonControlSummary
-<a name="API_CommonControlSummary"></a>
 
 A summary of metadata for a common control.
 

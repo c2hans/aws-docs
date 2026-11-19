@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-get-
 ---
 
 # Building your first circuit
-<a name="braket-get-started-run-circuit"></a>
 
 After your notebook instance has launched, open the instance with a standard Jupyter interface by choosing the notebook you just created.
 

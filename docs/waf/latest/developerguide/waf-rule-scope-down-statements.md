@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-scope
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using scope-down statements in AWS WAF
-<a name="waf-rule-scope-down-statements"></a>
 
 This section explains what a scope-down statement and how it works.
 

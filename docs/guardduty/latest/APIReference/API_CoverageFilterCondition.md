@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageFilterCondition
-<a name="API_CoverageFilterCondition"></a>
 
 Represents a condition that when matched will be added to the response of the operation.
 

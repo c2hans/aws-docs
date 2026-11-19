@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Common challenges for SAP operations
-<a name="common-challenges"></a>
 
 Enterprises have been reporting challenges in running their daily SAP operations. They report complexities associated with running a large number of SAP and non-SAP systems, often on heterogeneous environments across multiple locations and data centers. The following are challenges enterprises commonly face when manually operating an SAP system:
 + Lack of skills in the market

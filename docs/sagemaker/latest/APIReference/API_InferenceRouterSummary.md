@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceRouterSummary
-<a name="API_InferenceRouterSummary"></a>
 
 A summary of an inference router.
 

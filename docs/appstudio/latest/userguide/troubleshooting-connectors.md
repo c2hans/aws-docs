@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting connectors
-<a name="troubleshooting-connectors"></a>
 
 This topic contains troubleshooting guidance for common connector issues. You must be a member of an admin group to view or edit connectors.
 

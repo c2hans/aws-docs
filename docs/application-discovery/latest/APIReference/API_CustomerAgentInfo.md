@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # CustomerAgentInfo
-<a name="API_CustomerAgentInfo"></a>
 
 Inventory data for installed discovery agents.
 

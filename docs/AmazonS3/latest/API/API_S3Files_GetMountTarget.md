@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_GetMount
 ---
 
 # GetMountTarget
-<a name="API_S3Files_GetMountTarget"></a>
 
 Returns detailed resource information for the specified mount target including network configuration.
 

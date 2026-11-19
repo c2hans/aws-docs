@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # GET System Information: Get a List of System Details
-<a name="monitoring-query-alerts-messages-get-a-list-of-system-details"></a>
 
 Get a list of details about the Conductor Live system, including memory, CPU, and network information.
 

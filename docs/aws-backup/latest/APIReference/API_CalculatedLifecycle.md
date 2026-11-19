@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Calcu
 ---
 
 # CalculatedLifecycle
-<a name="API_CalculatedLifecycle"></a>
 
 Contains `DeleteAt` and `MoveToColdStorageAt` timestamps, which are used to specify a lifecycle for a recovery point.
 

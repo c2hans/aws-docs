@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-ping-cre
 ---
 
 # Ping credentials
-<a name="jdbc-v3-driver-ping-credentials"></a>
 
 A SAML-based authentication mechanism that enables authentication to Athena using the Ping Federate identity provider. This method assumes that a federation has already been set up between Athena and Ping Federate.
 

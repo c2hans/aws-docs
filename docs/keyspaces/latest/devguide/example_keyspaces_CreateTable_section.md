@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/example_keyspa
 ---
 
 # Use `CreateTable` with an AWS SDK
-<a name="example_keyspaces_CreateTable_section"></a>
 
 The following code examples show how to use `CreateTable`.
 

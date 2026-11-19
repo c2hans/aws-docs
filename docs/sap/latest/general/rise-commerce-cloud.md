@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-commerce-cloud.h
 ---
 
 # SAP Commerce Cloud
-<a name="rise-commerce-cloud"></a>
 
 ## Background
 <a name="_background"></a>

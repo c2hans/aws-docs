@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListStepDependencies
-<a name="API_ListStepDependencies"></a>
 
 Lists the dependencies for a step.
 

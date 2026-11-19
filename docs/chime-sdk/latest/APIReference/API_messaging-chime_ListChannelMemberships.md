@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannelMemberships
-<a name="API_messaging-chime_ListChannelMemberships"></a>
 
 Lists all channel memberships in a channel.
 

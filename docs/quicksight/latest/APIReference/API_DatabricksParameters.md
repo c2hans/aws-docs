@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Datab
 ---
 
 # DatabricksParameters
-<a name="API_DatabricksParameters"></a>
 
 The parameters that are required to connect to a Databricks data source.
 

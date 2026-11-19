@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithEIPs.html
 ---
 
 # Start using Elastic IP addresses
-<a name="WorkWithEIPs"></a>
 
 The following sections describe how you can get started using Elastic IP addresses.
 

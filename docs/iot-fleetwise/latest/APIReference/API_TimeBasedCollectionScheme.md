@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ti
 ---
 
 # TimeBasedCollectionScheme
-<a name="API_TimeBasedCollectionScheme"></a>
 
 Information about a collection scheme that uses a time period to decide how often to collect data.
 

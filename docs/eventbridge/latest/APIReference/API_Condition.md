@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Cond
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A JSON string which you can use to limit the event bus permissions you are granting to only accounts that fulfill the condition. Currently, the only supported condition is membership in a certain AWS organization. The string must contain `Type`, `Key`, and `Value` fields. The `Value` field specifies the ID of the AWS organization. Following is an example value for `Condition`:
 

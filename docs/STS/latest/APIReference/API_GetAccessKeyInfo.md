@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_GetAccessKey
 ---
 
 # GetAccessKeyInfo
-<a name="API_GetAccessKeyInfo"></a>
 
 Returns the account identifier for the specified access key ID.
 

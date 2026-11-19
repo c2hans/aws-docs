@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/update-suppression-r
 ---
 
 # Updating suppression rules in GuardDuty
-<a name="update-suppression-rules-guardduty"></a>
 
  This section provides the steps to update a suppression rule in your AWS account in a specific AWS Region.
 

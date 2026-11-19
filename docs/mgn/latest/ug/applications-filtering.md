@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/applications-filtering.htm
 ---
 
 # Filtering the Applications page
-<a name="applications-filtering"></a>
 
 You can customize the **Applications** page through filtering. Filtering allows you to easily filter your applications by one or multiple properties.
 

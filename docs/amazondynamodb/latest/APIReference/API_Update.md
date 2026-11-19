@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # Update
-<a name="API_Update"></a>
 
 Represents a request to perform an `UpdateItem` operation.
 

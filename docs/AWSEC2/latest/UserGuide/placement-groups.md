@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups
 ---
 
 # Placement groups for your Amazon EC2 instances
-<a name="placement-groups"></a>
 
 To meet the needs of your workload, you can launch a group of *interdependent* EC2 instances into a *placement group* to influence their placement.
 

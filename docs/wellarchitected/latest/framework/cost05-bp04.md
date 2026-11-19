@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP04 Select software with cost-effective licensing
-<a name="cost05-bp04"></a>
 
  Software licenses can rival infrastructure as a share of workload cost. Licenses tied to fixed attributes such as processor cores penalize cloud elasticity, because you pay for capacity whether it produces value. Favor open-source options and licenses priced by usage or business outcome, so licensing cost scales with the value the software delivers.
 

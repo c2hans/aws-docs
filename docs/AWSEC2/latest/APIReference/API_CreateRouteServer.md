@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRou
 ---
 
 # CreateRouteServer
-<a name="API_CreateRouteServer"></a>
 
 Creates a new route server to manage dynamic routing in a VPC.
 

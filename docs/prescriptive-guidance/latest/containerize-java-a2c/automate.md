@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/containeriz
 ---
 
 # Automation
-<a name="automate"></a>
 
 When migrating multiple servers, using the command line to run the AWS App2Container workflow is not a scalable solution. For example, manually managing and tracking the progress of each workflow can become overwhelming. The migration can be further complicated if the application server doesn't have internet access or sufficient hardware resources, or if the Docker engine can't be installed. If you manage servers by using Red Hat Ansible or Jenkins, you can use that tool to orchestrate the App2Container workflow.
 

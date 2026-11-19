@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # United Kingdom
-<a name="nx-reg-short-gb"></a>
 
 To send messages that use a short code in United Kingdom, you must complete the United Kingdom short code registration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 ---
 
 # Null data functions
-<a name="sql-functions-null"></a>
 
  Null data functions handle or manipulate NULL values, which represent the absence of a value. The functions allow you to replace NULLs with other values, check if a value is NULL, or perform operations that handle NULLs in a specific way.
 

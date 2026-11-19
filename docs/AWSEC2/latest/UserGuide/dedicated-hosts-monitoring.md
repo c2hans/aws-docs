@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Monitor the state of your Amazon EC2 Dedicated Hosts
-<a name="dedicated-hosts-monitoring"></a>
 
 Amazon EC2 constantly monitors the state of your Dedicated Hosts. Updates are communicated on the Amazon EC2 console. You can view information about a Dedicated Host using the following methods.
 

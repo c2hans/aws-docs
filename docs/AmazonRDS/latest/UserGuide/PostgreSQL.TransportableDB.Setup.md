@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Tr
 ---
 
 # Setting up to transport a PostgreSQL database
-<a name="PostgreSQL.TransportableDB.Setup"></a>
 
 Before you begin, make sure that your RDS for PostgreSQL DB instances meet the following requirements:
 + The RDS for PostgreSQL DB instances for source and destination must run the same version of PostgreSQL.

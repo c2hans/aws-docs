@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Finding
 ---
 
 # FindingAggregator
-<a name="API_FindingAggregator"></a>
 
 A finding aggregator is a Security Hub CSPM resource that specifies cross-Region aggregation settings, including the home Region and any linked Regions.
 

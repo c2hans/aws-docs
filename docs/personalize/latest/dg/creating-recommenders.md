@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/creating-recommend
 ---
 
 # Domain recommenders in Amazon Personalize
-<a name="creating-recommenders"></a>
 
 If you created a Domain dataset group, after you [import data](import-data.md) you are ready to create recommenders for your domain use cases. A *recommender* is a Domain dataset group resource that generates recommendations. You use a recommender in your application to get real-time recommendations with the [GetRecommendations](API_RS_GetRecommendations.md) operation.
 

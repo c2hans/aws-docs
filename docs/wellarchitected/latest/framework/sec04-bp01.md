@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec04-b
 ---
 
 # SEC04-BP01 Configure service and application logging
-<a name="sec04-bp01"></a>
 
  Capture access logs, network flow records, and configuration change events from every component in your workload. This evidence helps you detect threats and reconstruct incidents.
 

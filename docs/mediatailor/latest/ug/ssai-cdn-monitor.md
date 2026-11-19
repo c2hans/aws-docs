@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ssai-cdn-monitor.h
 ---
 
 # Monitor operations for CDN and MediaTailor integrations
-<a name="ssai-cdn-monitor"></a>
 
 AWS Elemental MediaTailor provides robust analytics capabilities that, when combined with content delivery network (CDN) metrics, offer comprehensive insights into your SSAI implementation. This topic covers:
 

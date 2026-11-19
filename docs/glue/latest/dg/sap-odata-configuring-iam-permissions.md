@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-configuring-iam
 ---
 
 # IAM policies
-<a name="sap-odata-configuring-iam-permissions"></a>
 
 ## Policies containing the API operations for creating and using connections
 <a name="sap-odata-policies-api-operations"></a>

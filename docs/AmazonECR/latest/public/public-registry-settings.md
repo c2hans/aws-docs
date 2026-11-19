@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-
 ---
 
 # Updating registry settings in Amazon ECR public
-<a name="public-registry-settings"></a>
 
 Your public registry provides settings to configure a custom alias and display name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_SourceSe
 ---
 
 # SourceSelectionCriteria
-<a name="API_control_SourceSelectionCriteria"></a>
 
 A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects.
 

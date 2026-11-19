@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_FsxUpda
 ---
 
 # FsxUpdateProtocol
-<a name="API_FsxUpdateProtocol"></a>
 
 Specifies the data transfer protocol that AWS DataSync uses to access your Amazon FSx file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/getting-started
 ---
 
 # Getting started with deploying an app to Amplify Hosting
-<a name="getting-started"></a>
 
 To help you understand how Amplify Hosting works, the following tutorials walk you through building and deploying applications created using common SSR frameworks that Amplify supports.
 

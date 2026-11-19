@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Delete
 ---
 
 # DeleteIntegration
-<a name="API_DeleteIntegration"></a>
 
 Deletes an integration and releases its name and account quota. Its retained CreateIntegration token receipt can still replay the original result without recreating the integration. Shared provider registrations are retained: deleting one integration does not remove provider access used by another integration. A fresh GitHub CreateIntegration attempt requires a fresh OAuth authorization code and a new clientToken.
 

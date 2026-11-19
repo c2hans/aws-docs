@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/launch-templates.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Customize managed nodes with launch templates
-<a name="launch-templates"></a>
 
 For the highest level of customization, you can deploy managed nodes with your own launch template based on the steps on this page. Using a launch template allows capabilities such as to provide bootstrap arguments during deployment of a node (e.g., extra [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) arguments), assign IP addresses to Pods from a different CIDR block than the IP address assigned to the node, deploy your own custom AMI to nodes, or deploy your own custom CNI to nodes.
 

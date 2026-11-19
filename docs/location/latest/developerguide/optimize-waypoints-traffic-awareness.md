@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/optimize-
 ---
 
 # How to optimize waypoints for a route with traffic awareness
-<a name="optimize-waypoints-traffic-awareness"></a>
 
 The OptimizeWaypoints API calculates the optimal route between multiple waypoints to minimize travel time or total distance. It utilizes advanced algorithms to solve the Traveling Salesman Problem, determining the most efficient path while accounting for factors such as road networks and real-time traffic conditions.
 

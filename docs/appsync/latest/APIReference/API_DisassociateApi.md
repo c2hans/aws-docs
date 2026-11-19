@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateApi
-<a name="API_DisassociateApi"></a>
 
 Removes an `ApiAssociation` object from a custom domain.
 

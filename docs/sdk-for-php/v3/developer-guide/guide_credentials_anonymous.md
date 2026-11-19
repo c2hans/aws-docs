@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_cre
 ---
 
 # Create anonymous clients in the SDK for PHP
-<a name="guide_credentials_anonymous"></a>
 
 In some cases, you might want to create a client that is not associated with any credentials. This enables you to make anonymous requests to a service.
 

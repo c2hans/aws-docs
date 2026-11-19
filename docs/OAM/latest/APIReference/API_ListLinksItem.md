@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_ListLinksIte
 ---
 
 # ListLinksItem
-<a name="API_ListLinksItem"></a>
 
 A structure that contains information about one of this source account's links to a monitoring account.
 

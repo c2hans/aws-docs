@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThingCertificate
-<a name="API_GetManagedThingCertificate"></a>
 
 Retrieves the certificate PEM for a managed IoT thing.
 

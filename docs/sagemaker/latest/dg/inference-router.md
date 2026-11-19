@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router.htm
 ---
 
 # Route requests across AWS Regions with cross-Region inference routing
-<a name="inference-router"></a>
 
 Cross-Region inference routing in Amazon SageMaker AI lets your application call one API for a model that you host in more than one AWS Region or AWS account. A router sends each request to a destination that's healthy and has capacity.
 

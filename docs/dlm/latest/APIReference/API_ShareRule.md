@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_ShareRule.ht
 ---
 
 # ShareRule
-<a name="API_ShareRule"></a>
 
  **[Custom snapshot policies only]** Specifies a rule for sharing snapshots across AWS accounts.
 

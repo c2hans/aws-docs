@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResponseL
 ---
 
 # ResponseLaunchTemplateData
-<a name="API_ResponseLaunchTemplateData"></a>
 
 The information for a launch template.
 

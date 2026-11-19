@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Del
 ---
 
 # DeleteQueuedSavingsPlan
-<a name="API_DeleteQueuedSavingsPlan"></a>
 
 Deletes the queued purchase for the specified Savings Plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-structure.
 ---
 
 # AWS service event metadata
-<a name="events-structure"></a>
 
 The following fields appear in all events delivered to an event bus, and comprise the event's *metadata*:
 

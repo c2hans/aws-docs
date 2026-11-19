@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENOPS01-BP02 Collect and monitor user feedback
-<a name="genops01-bp02"></a>
 
  Supplement model performance evaluation with direct feedback from users. Implement continuous feedback loops to optimize application performance and enhance user satisfaction. Systematically collect, analyze, and act on user feedback to drive continuous improvement. By integrating this approach, you can achieve higher operational excellence and reliability, which keeps applications performant and aligned with user expectations. This proactive strategy helps to improve user satisfaction and foster a culture of ongoing enhancement and innovation.
 

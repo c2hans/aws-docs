@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateAutomaticTapeCreationPolicy
-<a name="API_UpdateAutomaticTapeCreationPolicy"></a>
 
 Updates the automatic tape creation policy of a gateway. Use this to update the policy with a new set of automatic tape creation rules. This is only supported for tape gateways.
 

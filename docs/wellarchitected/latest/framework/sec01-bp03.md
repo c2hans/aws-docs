@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP03 Stay up to date with security threats and recommendations
-<a name="sec01-bp03"></a>
 
  Monitor trusted threat intelligence to keep pace with new vulnerabilities and attack techniques. Where possible, adopt services that fold new intelligence in automatically so detection improves without constant manual effort.
 

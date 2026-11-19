@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobsBy
 ---
 
 # ListJobsByConsumableResource
-<a name="API_ListJobsByConsumableResource"></a>
 
 Returns a list of AWS Batch jobs that require a specific consumable resource.
 

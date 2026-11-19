@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws/u
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the Live Streaming on AWS solution from the AWS Management Console or by using the [AWS Command Line Interface](https://aws.amazon.com/cli/). You must manually delete the Amazon Simple Storage Service (Amazon S3) bucket created by this solution. AWS Solutions Implementations do not automatically delete the S3 bucket in case you have stored data to retain.
 

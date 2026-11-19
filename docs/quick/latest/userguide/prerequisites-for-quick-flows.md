@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/prerequisites-for
 ---
 
 # Prerequisites for Quick Flows
-<a name="prerequisites-for-quick-flows"></a>
 
  Before you can create and use AWS Quick Flows, you need to ensure that your AWS Quick administrator has completed the following prerequisites.
 

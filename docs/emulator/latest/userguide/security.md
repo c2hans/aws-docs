@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/security.html
 ---
 
 # Security in AWS Emulator
-<a name="security"></a>
 
  AWS Emulator is a tool for building and testing on your own machine. It doesn’t run in the AWS Cloud, so security works differently from security for an AWS service. This topic tells you what not to test, how the emulator helps protect your environment, and what you must do.
 

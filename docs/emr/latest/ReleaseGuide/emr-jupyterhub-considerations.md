@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-jupyterhub-c
 ---
 
 # Considerations when using JupyterHub on Amazon EMR
-<a name="emr-jupyterhub-considerations"></a>
 
 Consider the following when using JupyterHub on Amazon EMR.
 +

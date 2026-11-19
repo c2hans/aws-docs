@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Pricing
-<a name="next-gen-assessment-pricing"></a>
 
 Each service includes **2 failure mode assessments per month** in the base $15 per service per month fee for services with up to 150 resources.
 

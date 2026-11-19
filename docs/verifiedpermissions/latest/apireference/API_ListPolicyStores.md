@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ListPolicyStores
-<a name="API_ListPolicyStores"></a>
 
 Returns a paginated list of all policy stores in the calling AWS account.
 

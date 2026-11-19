@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteJob
-<a name="API_DeleteJob"></a>
 
 Deletes a job. This operation is idempotent. If the job is currently running, you must stop it before deleting it by calling `StopJob`.
 

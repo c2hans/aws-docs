@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketInve
 ---
 
 # DeleteBucketInventoryConfiguration
-<a name="API_DeleteBucketInventoryConfiguration"></a>
 
 Deletes an S3 Inventory configuration (identified by the inventory ID) from the bucket.
 

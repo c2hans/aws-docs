@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/revisions
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 For more information, see the [ CHANGELOG.md](https://github.com/aws/res/blob/mainline/CHANGELOG.md) file in the GitHub repository.
 

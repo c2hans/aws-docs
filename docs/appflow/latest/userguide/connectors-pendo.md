@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-pend
 ---
 
 # Pendo connector for Amazon AppFlow
-<a name="connectors-pendo"></a>
 
 Pendo is a product analytics solution that helps teams record, monitor, and analyze data about the user experience in their apps. If you're a Pendo user, your account contains data about your users and their behavior in your product. You can use Amazon AppFlow to transfer data from Pendo to certain AWS services or other supported applications.
 

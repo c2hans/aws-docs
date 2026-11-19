@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Unt
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the specified tags from the given resource.
 

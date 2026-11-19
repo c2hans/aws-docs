@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MSTe
 ---
 
 # MSTeamsTransmissionTarget
-<a name="API_MSTeamsTransmissionTarget"></a>
 
 Specifies the Microsoft Teams channels that receive different types of agent notifications.
 

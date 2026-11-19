@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Token
-<a name="token"></a>
 
  The main objective of token class is to generate unique tokens for the playback session. There are two main inputs of expected structure that determine the resulting token: **viewerAttributes** and **tokenPolicy**. **viewerAttributes** details the viewer specific inputs, which are the basis for calculating internal signature unique to that viewer. **tokenPolicy** defines a set of parameters which directly inform how the resulting token will be calculated by describing what attributes should be included in the token, what are the path patterns, expiry time and other relevant fields. Below are the examples that illustrate the structure of both objects that need to be supplied as an input:
 

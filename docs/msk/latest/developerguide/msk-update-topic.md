@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-top
 ---
 
 # Update a topic in an Amazon MSK cluster
-<a name="msk-update-topic"></a>
 
 Update the partition count or topic-level configurations for an existing topic. This operation modifies the topic without requiring recreation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configura
 ---
 
 # Configuration Revision
-<a name="configurations-configuration-id-revisions-configuration-revision"></a>
 
 To keep track of the changes you make to your configuration, you can create configuration revisions. For more information, see [Configuration](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuration.html) in the Amazon MQ Developer Guide.
 

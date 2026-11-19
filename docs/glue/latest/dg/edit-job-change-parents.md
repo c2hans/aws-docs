@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-job-change-parents.h
 ---
 
 # Changing the parent nodes for a node in the job diagram
-<a name="edit-job-change-parents"></a>
 
 You can change a node's parents to move nodes within the job diagram or to change a data source for a node.
 

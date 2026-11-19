@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_S3Path.ht
 ---
 
 # S3Path
-<a name="API_S3Path"></a>
 
 Information required to find a specific file in an Amazon S3 bucket.
 

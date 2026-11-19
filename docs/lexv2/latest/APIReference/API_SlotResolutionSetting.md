@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotResolu
 ---
 
 # SlotResolutionSetting
-<a name="API_SlotResolutionSetting"></a>
 
 Contains information about whether assisted slot resolution is turned on for the slot or not.
 

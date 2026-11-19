@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scalin
 ---
 
 # Define a scaling policy
-<a name="endpoint-auto-scaling-add-code-define"></a>
 
 Before you add a scaling policy to your model, save your policy configuration as a JSON block in a text file. You use that text file when invoking the AWS Command Line Interface (AWS CLI) or the Application Auto Scaling API. You can optimize scaling by choosing an appropriate CloudWatch metric. However, before using a custom metric in production, you must test auto scaling with your custom metric.
 

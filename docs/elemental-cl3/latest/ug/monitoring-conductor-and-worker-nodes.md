@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/monitoring-condu
 ---
 
 # Monitoring nodes
-<a name="monitoring-conductor-and-worker-nodes"></a>
 
 You should monitor the nodes regularly to ensure that they are still all online.
 

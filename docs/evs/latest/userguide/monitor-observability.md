@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/monitor-observabili
 ---
 
 # Monitor hosts and VCF
-<a name="monitor-observability"></a>
 
 You monitor an Amazon Elastic VMware Service environment at two layers. Amazon CloudWatch and the EC2 status checks report on the EC2 instances that run your hosts. VMware Cloud Foundation (VCF) tools, such as VCF Operations, report on VCF components and workloads. You’re responsible for monitoring host health in both deployment modes, so we recommend that you set up both layers.
 

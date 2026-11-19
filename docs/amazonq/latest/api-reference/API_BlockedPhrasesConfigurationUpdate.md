@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Blocked
 ---
 
 # BlockedPhrasesConfigurationUpdate
-<a name="API_BlockedPhrasesConfigurationUpdate"></a>
 
 Updates a blocked phrases configuration in your Amazon Q Business application.
 

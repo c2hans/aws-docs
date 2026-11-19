@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-cons
 ---
 
 # Use the AWS VSS solution to restore data for your instance
-<a name="application-consistent-snapshots-restore"></a>
 
 You can restore EBS volumes for a Windows instance from VSS based snapshots created by the AWS VSS solution. If your AWS VSS solution snapshots contain backups of a Microsoft SQL Server database, you can restore the database using the `AWSEC2-RestoreSqlServerDatabaseWithVss` AWS Systems Manager Automation runbook.
 

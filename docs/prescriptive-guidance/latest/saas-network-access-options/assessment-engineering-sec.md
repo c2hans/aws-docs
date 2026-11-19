@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Security and governance metrics related to network access for SaaS offerings
-<a name="assessment-engineering-sec"></a>
 
 ## Security, compliance, and vulnerability management
 <a name="assessment-engineering-sec-compliance"></a>

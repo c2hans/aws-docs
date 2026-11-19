@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/certifi
 ---
 
 # Enable Certificate-based Authentication
-<a name="certificate-based-authentication-enable"></a>
 
 Complete the following steps to enable certificate-based authentication.
 

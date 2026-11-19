@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobDataSource
-<a name="API_LabelingJobDataSource"></a>
 
 Provides information about the location of input data.
 

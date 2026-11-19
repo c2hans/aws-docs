@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # StartMedicalScribeStream
-<a name="API_streaming_StartMedicalScribeStream"></a>
 
 Starts a bidirectional HTTP/2 stream, where audio is streamed to AWS HealthScribe and the transcription results are streamed to your application.
 

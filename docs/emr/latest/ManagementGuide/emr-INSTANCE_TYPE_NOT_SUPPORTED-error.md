@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-INSTANCE_
 ---
 
 # Amazon EMR cluster error: Instance type not supported
-<a name="emr-INSTANCE_TYPE_NOT_SUPPORTED-error"></a>
 
 If you create a cluster, and it fails with the error message "The requested instance type {{InstanceType}} is not supported in the requested Availability Zone," it means that you created the cluster and specified an instance type for one or more instance groups that is not supported by Amazon EMR in the Region and Availability Zone where the cluster was created. Amazon EMR may support an instance type in one Availability Zone within a Region and not another. The subnet you select for a cluster determines the Availability Zone within the Region.
 

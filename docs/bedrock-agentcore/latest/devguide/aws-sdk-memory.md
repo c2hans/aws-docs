@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/aws-sd
 ---
 
 # AWS SDK
-<a name="aws-sdk-memory"></a>
 
 Use the AWS SDK to directly interact with AgentCore Memory fine-grained control over memory operations. The following examples show how to access the AWS SDK with the [SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 

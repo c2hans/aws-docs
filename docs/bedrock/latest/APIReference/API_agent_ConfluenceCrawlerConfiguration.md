@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Co
 ---
 
 # ConfluenceCrawlerConfiguration
-<a name="API_agent_ConfluenceCrawlerConfiguration"></a>
 
 The configuration of the Confluence content. For example, configuring specific types of Confluence content.
 

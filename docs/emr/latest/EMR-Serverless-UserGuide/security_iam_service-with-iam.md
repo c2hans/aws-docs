@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/secu
 ---
 
 # Identity and Access Management (IAM) in Amazon EMR Serverless
-<a name="security_iam_service-with-iam"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be *authenticated* (signed in) and *authorized* (have permissions) to use Amazon EMR Serverless resources. IAM is an AWS service that you can use with no additional charge.
 
@@ -25,7 +24,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 
 How you use AWS Identity and Access Management (IAM) differs based on your role:
 + **Service user** - request permissions from your administrator if you cannot access features (see [Troubleshooting Amazon EMR Serverless identity and access](security_iam_troubleshoot.md))
-+ **Service administrator** - determine user access and submit permission requests (see [Identity and Access Management (IAM) in Amazon EMR Serverless](#security_iam_service-with-iam))
++ **Service administrator** - determine user access and submit permission requests (see [Identity and Access Management (IAM) in Amazon EMR Serverless](security_iam_service-with-iam.md))
 + **IAM administrator** - write policies to manage access (see [Sample identity-based policies for EMR Serverless](security-iam-serverless.md#security_iam_id-based-policy-examples))
 
 ## Authenticating with identities

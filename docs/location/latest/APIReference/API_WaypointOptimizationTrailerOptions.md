@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationTrailerOptions
-<a name="API_WaypointOptimizationTrailerOptions"></a>
 
 Trailer options corresponding to the vehicle.
 

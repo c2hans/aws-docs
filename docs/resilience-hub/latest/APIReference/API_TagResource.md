@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_T
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Applies one or more tags to a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_La
 ---
 
 # LakeFormationDataPermissionDetails
-<a name="API_LakeFormationDataPermissionDetails"></a>
 
 Details about the AWS Lake Formation data permission.
 

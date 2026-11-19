@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/diarization-output-
 ---
 
 # Example diarization output (batch)
-<a name="diarization-output-batch"></a>
 
 Here's an output example for a batch transcription with diarization enabled.
 

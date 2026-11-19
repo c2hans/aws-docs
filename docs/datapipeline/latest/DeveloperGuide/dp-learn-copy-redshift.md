@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-le
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Before You Begin: Configure COPY Options and Load Data
-<a name="dp-learn-copy-redshift"></a>
 
 Before copying data to Amazon Redshift within AWS Data Pipeline, ensure that you:
 + Load data from Amazon S3.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteAsset.html
 ---
 
 # DeleteAsset
-<a name="API_DeleteAsset"></a>
 
 Deletes an asset from AWS Glue Data Catalog.
 

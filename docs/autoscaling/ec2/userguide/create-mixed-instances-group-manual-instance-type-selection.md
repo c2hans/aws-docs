@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-mixed-i
 ---
 
 # Create a mixed instances group by manually choosing instance types
-<a name="create-mixed-instances-group-manual-instance-type-selection"></a>
 
 This topic shows you how to launch multiple instance types in a single Auto Scaling group by manually choosing your instance types.
 

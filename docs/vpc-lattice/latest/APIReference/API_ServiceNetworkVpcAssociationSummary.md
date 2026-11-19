@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Serv
 ---
 
 # ServiceNetworkVpcAssociationSummary
-<a name="API_ServiceNetworkVpcAssociationSummary"></a>
 
 Summary information about an association between a service network and a VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ConsentPortalSummary
-<a name="API_ConsentPortalSummary"></a>
 
 Summary information about a consent portal.
 

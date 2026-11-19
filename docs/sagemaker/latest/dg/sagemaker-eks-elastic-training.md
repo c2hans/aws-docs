@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-elasti
 ---
 
 # Using elastic training in Amazon SageMaker HyperPod
-<a name="sagemaker-eks-elastic-training"></a>
 
  Elastic training is a new Amazon SageMaker HyperPod capability that automatically scales training jobs based on compute resource availability and workload priority. Elastic training jobs can start with minimum compute resources required for model training and dynamically scale up or down through automatic checkpointing and resumption across different node configurations (world size). Scaling is achieved by automatically adjusting the number of data-parallel replicas. During high cluster utilization periods, elastic training jobs can be configured to automatically scale down in response to resource requests from higher-priority jobs, freeing up compute for critical workloads. When resources free up during off-peak periods, elastic training jobs automatically scale back up to accelerate training, then scale back down when higher-priority workloads need resources again.
 

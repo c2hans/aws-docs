@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Li
 ---
 
 # ListImageSetVersions
-<a name="API_ListImageSetVersions"></a>
 
 List image set versions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectEncryption
 ---
 
 # ObjectEncryption
-<a name="API_ObjectEncryption"></a>
 
  The updated server-side encryption type for this object. The `UpdateObjectEncryption` operation supports the SSE-S3 and SSE-KMS encryption types.
 

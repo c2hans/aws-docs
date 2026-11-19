@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Grant Lightsail access for an IAM user
-<a name="amazon-lightsail-managing-access-for-an-iam-user"></a>
 
 As an [AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html), or an AWS Identity and Access Management (IAM) user with administrator access, you can create one or more IAM users in your AWS account, and those users can be configured with different levels of access to services offered by AWS.
 

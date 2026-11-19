@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # VpcEndpointDetail
-<a name="API_VpcEndpointDetail"></a>
 
 Details about an OpenSearch Serverless-managed interface endpoint.
 

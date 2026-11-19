@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CreateSipMediaApplicationCall
-<a name="API_voice-chime_CreateSipMediaApplicationCall"></a>
 
 Creates an outbound call to a phone number from the phone number specified in the request, and it invokes the endpoint of the specified `sipMediaApplicationId`.
 

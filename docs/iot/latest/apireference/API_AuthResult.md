@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuthResult.h
 ---
 
 # AuthResult
-<a name="API_AuthResult"></a>
 
 The authorizer result.
 

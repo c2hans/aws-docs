@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting Up Members of a Conductor Redundancy Group
-<a name="set-up-members-conductor-redundancy-group"></a>
 
 **Topics**
 + [POST: Add a Node to a Conductor Redundancy Groups](set-up-members-conductor-redundancy-group-add-node.md)

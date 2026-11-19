@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetCont
 ---
 
 # GetContactInformation
-<a name="API_GetContactInformation"></a>
 
 Retrieves the primary contact information of an AWS account.
 

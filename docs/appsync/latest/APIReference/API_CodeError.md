@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CodeErro
 ---
 
 # CodeError
-<a name="API_CodeError"></a>
 
 Describes an AppSync error.
 

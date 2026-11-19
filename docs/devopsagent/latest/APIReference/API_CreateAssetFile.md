@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreateAssetFile
-<a name="API_CreateAssetFile"></a>
 
 Creates a file in an asset
 

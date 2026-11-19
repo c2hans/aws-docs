@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StartP
 ---
 
 # StartPHIDetectionJob
-<a name="API_StartPHIDetectionJob"></a>
 
 Starts an asynchronous job to detect protected health information (PHI). Use the `DescribePHIDetectionJob` operation to track the status of a job.
 

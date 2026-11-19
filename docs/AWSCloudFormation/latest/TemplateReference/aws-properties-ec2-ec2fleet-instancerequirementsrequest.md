@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::EC2Fleet InstanceRequirementsRequest
-<a name="aws-properties-ec2-ec2fleet-instancerequirementsrequest"></a>
 
 The attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with these attributes.
 

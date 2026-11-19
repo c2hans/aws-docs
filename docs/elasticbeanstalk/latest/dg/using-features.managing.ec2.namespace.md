@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Configuring Amazon EC2 instances with namespace options
-<a name="using-features.managing.ec2.namespace"></a>
 
 You can use the [configuration options](command-options.md) in the `aws:autoscaling:launchconfiguration` namespace to configure the instances for your environment, including additional options that aren't available in the console.
 

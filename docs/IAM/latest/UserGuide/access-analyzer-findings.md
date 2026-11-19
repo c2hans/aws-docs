@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-fin
 ---
 
 # IAM Access Analyzer findings
-<a name="access-analyzer-findings"></a>
 
 IAM Access Analyzer generates findings for external access, internal access, and unused access in your AWS account or organization.
 

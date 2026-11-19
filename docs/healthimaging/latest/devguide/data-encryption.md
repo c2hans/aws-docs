@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/data-encry
 ---
 
 # Data encryption
-<a name="data-encryption"></a>
 
 With AWS HealthImaging, you can add a layer of security to your data at rest in the cloud, providing scalable and efficient encryption features. These include:
 + Data at rest encryption capabilities available in most AWS services

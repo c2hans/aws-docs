@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListIntent
 ---
 
 # ListIntentPaths
-<a name="API_ListIntentPaths"></a>
 
 Retrieves summary statistics for a path of intents that users take over sessions with your bot. The following fields are required:
 +  `startDateTime` and `endDateTime` – Define a time range for which you want to retrieve results.

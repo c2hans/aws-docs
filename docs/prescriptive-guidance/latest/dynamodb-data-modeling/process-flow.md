@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Data-modeling process flow
-<a name="process-flow"></a>
 
 We recommend the following process when modeling data using Amazon DynamoDB. The steps are discussed in detail [later in this guide](steps.md).
 

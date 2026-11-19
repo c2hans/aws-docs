@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::Cluster Application
-<a name="aws-properties-emr-cluster-application"></a>
 
 `Application` is a property of `AWS::EMR::Cluster`. The `Application` property type defines the open-source big data applications for EMR to install and configure when a cluster is created.
 

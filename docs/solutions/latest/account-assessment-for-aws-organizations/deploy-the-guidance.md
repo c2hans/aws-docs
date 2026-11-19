@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Deploy the guidance
-<a name="deploy-the-guidance"></a>
 
 Guidance for Account Assessment for AWS Organizations uses the AWS Cloud Development Kit (AWS CDK) and AWS CloudFormation stacks to automate deployment. The AWS CDK code defines the AWS resources included in this guidance and their properties. AWS CDK synthesizes CloudFormation templates and deploys the stacks.
 

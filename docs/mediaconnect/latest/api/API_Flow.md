@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Flow.html
 ---
 
 # Flow
-<a name="API_Flow"></a>
 
  The settings for a flow, including its source, outputs, and entitlements.
 

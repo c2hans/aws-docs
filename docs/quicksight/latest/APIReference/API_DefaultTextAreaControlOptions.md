@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultTextAreaControlOptions
-<a name="API_DefaultTextAreaControlOptions"></a>
 
 The default options that correspond to the `TextArea` filter control type.
 

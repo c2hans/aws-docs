@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # ServiceManagedEc2AutoScalingConfiguration
-<a name="API_ServiceManagedEc2AutoScalingConfiguration"></a>
 
 The auto scaling configuration settings for a service managed EC2 fleet.
 

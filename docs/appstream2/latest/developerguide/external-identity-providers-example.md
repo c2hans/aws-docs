@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/externa
 ---
 
 # Example Authentication Workflow
-<a name="external-identity-providers-example"></a>
 
 The following diagram illustrates the authentication flow between WorkSpaces Applications and a third-party identity provider (IdP). In this example, the administrator has set up a sign-in page to access WorkSpaces Applications, called `applications.exampleco.com`. The webpage uses a SAML 2.0–compliant federation service to trigger a sign-on request. The administrator has also set up a user to allow access to WorkSpaces Applications.
 

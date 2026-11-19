@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Delete OAuth client
-<a name="identity-delete-oauth-client"></a>
 
 When you no longer need an OAuth client, you can delete it from your account. Deleting an OAuth client removes the stored configuration and credentials, making them unavailable to your agents. Any invocations that reference the deleted OAuth client will fail once it’s removed, and this outbound authentication might be used across multiple runtimes and gateways.
 

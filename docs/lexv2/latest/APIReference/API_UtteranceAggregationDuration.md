@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceA
 ---
 
 # UtteranceAggregationDuration
-<a name="API_UtteranceAggregationDuration"></a>
 
 Provides parameters for setting the time window and duration for aggregating utterance data.
 

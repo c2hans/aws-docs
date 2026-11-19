@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/cw-logs.html
 ---
 
 # Using CloudWatch Logs to log execution history in Step Functions
-<a name="cw-logs"></a>
 
 Standard Workflows record execution history in AWS Step Functions, although you can optionally configure logging to Amazon CloudWatch Logs.
 

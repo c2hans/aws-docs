@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Deployment
-<a name="rel-deployment"></a>
 
 **Topics**
 + [MLREL04-BP01 Automate endpoint changes through a pipeline](mlrel04-bp01.md)

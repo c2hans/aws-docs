@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # FaceMovementAndLightServerChallenge
-<a name="API_rekognitionstreaming_FaceMovementAndLightServerChallenge"></a>
 
 Contains information regarding the `OvalParameters` and `LightChallengeType` for a challenge.
 

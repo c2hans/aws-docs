@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-started-co
 ---
 
 # Getting started with a Domain dataset group (console)
-<a name="getting-started-console-domain"></a>
 
 In this exercise, you use the Amazon Personalize console to create a Domain dataset group and a recommender that returns movie recommendations for a given user.
 

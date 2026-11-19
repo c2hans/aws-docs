@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSUS10-BP01 Use document digitization as an ESG goal
-<a name="scsus10-bp01"></a>
 
  Explore opportunities to digitize any physical documentation used for supply chain operations within the company but also in operations involving partners and external entities. Digitization of physical documentation leads to a positive ripple effect over sustainability-related use cases, simplifying data sharing across companies and supply chains, data transparency, and solutions required to solve compliance-related needs.
 

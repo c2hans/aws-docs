@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetRe
 ---
 
 # GetRestoreTestingInferredMetadata
-<a name="API_GetRestoreTestingInferredMetadata"></a>
 
 This request returns the minimal required set of metadata needed to start a restore job with secure default settings. `BackupVaultName` and `RecoveryPointArn` are required parameters. `BackupVaultAccountId` is an optional parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/set-up.html
 ---
 
 # Set up to use ROSA
-<a name="set-up"></a>
 
 To prepare your environment for creating a ROSA cluster, you need to complete the following actions.
 

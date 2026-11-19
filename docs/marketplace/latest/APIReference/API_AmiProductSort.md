@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductSort
-<a name="API_AmiProductSort"></a>
 
 Objects that allows sorting on AMI products based on certain fields and sorting order.
 

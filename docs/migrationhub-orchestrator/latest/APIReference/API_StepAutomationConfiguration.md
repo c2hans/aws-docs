@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # StepAutomationConfiguration
-<a name="API_StepAutomationConfiguration"></a>
 
 The custom script to run tests on source or target environments.
 

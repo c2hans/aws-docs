@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 You can use configurations of this solution to support alignment with the following Regions and industries (see the [Landing Zone Accelerator on AWS page](https://aws.amazon.com/solutions/implementations/landing-zone-accelerator-on-aws/) for more information):
 + AWS opt-in Regions

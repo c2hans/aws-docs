@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::TaskDefinition LogConfiguration
-<a name="aws-properties-ecs-taskdefinition-logconfiguration"></a>
 
 The `LogConfiguration` property specifies log configuration options to send to a custom log driver for the container.
 

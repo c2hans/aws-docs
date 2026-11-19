@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Data encryption
-<a name="registry-data-encryption"></a>
 
 Data encryption typically falls into two categories: encryption at rest and encryption in transit.
 

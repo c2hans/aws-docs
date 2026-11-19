@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Op
 ---
 
 # OpenSearchManagedClusterFieldMapping
-<a name="API_agent_OpenSearchManagedClusterFieldMapping"></a>
 
 Contains the names of the fields to which to map information about the vector store.
 

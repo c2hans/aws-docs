@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # The agentic catalog experience
-<a name="catalog-integration-agentic-flow"></a>
 
 After you connect to a supported catalog, data curators (authors) can choose **Explore data** on the data source to launch the agentic experience. The AI agent guides you through the following steps in a conversational flow:
 

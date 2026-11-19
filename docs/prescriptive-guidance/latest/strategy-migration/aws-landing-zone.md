@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Landing zone
-<a name="aws-landing-zone"></a>
 
 A landing zone is an orchestration framework for your foundational AWS environment. It provides a baseline to get started with multi-account architecture, identity and access management, governance, data security, network design, and logging.
 

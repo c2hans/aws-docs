@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeE
 ---
 
 # DescribeEvents
-<a name="API_DescribeEvents"></a>
 
  Returns information about events that meet the specified filter criteria. Events are returned in a summary form and do not include the detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the [DescribeEventDetails](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventDetails.html) and [DescribeAffectedEntities](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeAffectedEntities.html) operations.
 
@@ -48,11 +47,9 @@ This API operation uses pagination. Specify the `nextToken` parameter in the nex
             "to": {{number}}
          }
       ],
-      "tags": [
-         {
-            "{{string}}" : "{{string}}"
-         }
-      ]
+      "tags": {
+         "{{string}}" : [ "{{string}}" ]
+      }
    },
    "locale": "{{string}}",
    "maxResults": {{number}},

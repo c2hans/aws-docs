@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ProvisionDat
 ---
 
 # ProvisionData
-<a name="API_ProvisionData"></a>
 
 Information about provisioning resources for an AWS DMS serverless replication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-host-logs-r
 ---
 
 # Related resources
-<a name="batch-host-logs-related"></a>
 + [Use Amazon EC2 launch templates with AWS Batch](launch-templates.md)
 + [Instance Metadata Service (IMDS) configuration](imds-compute-environments.md)
 + [Perform infrastructure updates](infrastructure-updates.md)

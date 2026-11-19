@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Tag
-<a name="API_automation_Tag"></a>
 
 A key-value pair used to categorize and organize AWS resources and automation rules.
 

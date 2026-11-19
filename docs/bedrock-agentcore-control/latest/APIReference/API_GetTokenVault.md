@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetTokenVault
-<a name="API_GetTokenVault"></a>
 
 Retrieves information about a token vault.
 

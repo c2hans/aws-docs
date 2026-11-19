@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Defaul
 ---
 
 # DefaultEbsStorageSettings
-<a name="API_DefaultEbsStorageSettings"></a>
 
 A collection of default EBS storage settings that apply to spaces created within a domain or user profile.
 

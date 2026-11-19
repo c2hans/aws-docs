@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayConnectPeer
-<a name="API_CreateTransitGatewayConnectPeer"></a>
 
 Creates a Connect peer for a specified transit gateway Connect attachment between a transit gateway and an appliance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # S3Object
-<a name="API_data-automation_S3Object"></a>
 
 An object stored in Amazon S3.
 

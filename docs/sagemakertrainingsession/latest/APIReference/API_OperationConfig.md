@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # OperationConfig
-<a name="API_OperationConfig"></a>
 
 The configuration for a training operation. Exactly one member must be set to specify the operation type and its parameters.
 

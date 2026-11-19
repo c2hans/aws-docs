@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-sessi
 ---
 
 # Add customer data to an AI agent session
-<a name="ai-agent-session"></a>
 
 Connect Customer supports adding custom data to an AI agent session so that it can be used to drive the generative AI driven solutions. Custom data can be used by first adding it to a session using the [UpdateSessionData](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_UpdateSessionData.html) API, and then using the data added to customize AI prompts..
 

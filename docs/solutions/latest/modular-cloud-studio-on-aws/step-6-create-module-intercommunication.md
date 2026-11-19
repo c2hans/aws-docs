@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 6: Create module intercommunication
-<a name="step-6-create-module-intercommunication"></a>
 
 To facilitate a pattern known as dynamic dependency loading, the configuration data is stored on the Systems Manager Parameter Store so that it can be lazy-loaded exactly when it is needed by an MCS module.
 

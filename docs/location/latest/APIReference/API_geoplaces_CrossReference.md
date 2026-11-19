@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # CrossReference
-<a name="API_geoplaces_CrossReference"></a>
 
 A reference to a third-party supplier's identifier for a place, enabling correlation of places across external systems.
 

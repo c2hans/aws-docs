@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-concepts.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # ACK concepts
-<a name="ack-concepts"></a>
 
 ACK manages AWS resources through Kubernetes APIs by continuously reconciling the desired state in your manifests with the actual state in AWS. When you create or update a Kubernetes custom resource, ACK makes the necessary AWS API calls to create or modify the corresponding AWS resource, then monitors it for drift and updates the Kubernetes status to reflect the current state. This approach lets you manage infrastructure using familiar Kubernetes tools and workflows while maintaining consistency between your cluster and AWS.
 

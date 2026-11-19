@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # BatchGetTokenBalanceErrorItem
-<a name="API_BatchGetTokenBalanceErrorItem"></a>
 
 Error generated from a failed `BatchGetTokenBalance` request.
 

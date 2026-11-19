@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Git
 ---
 
 # GitPullRequestFilter
-<a name="API_GitPullRequestFilter"></a>
 
 The event criteria for the pull request trigger configuration, such as the lists of branches or file paths to include and exclude.
 

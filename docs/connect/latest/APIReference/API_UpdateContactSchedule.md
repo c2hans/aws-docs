@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactSchedule
-<a name="API_UpdateContactSchedule"></a>
 
 Updates the scheduled time of a task contact that is already scheduled.
 

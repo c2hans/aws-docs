@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ReactStartCodegenJobData
-<a name="API_ReactStartCodegenJobData"></a>
 
 Describes the code generation job configuration for a React project.
 

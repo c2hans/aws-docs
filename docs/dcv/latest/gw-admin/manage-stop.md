@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/manage-stop.html
 ---
 
 # Stopping the Connection Gateway
-<a name="manage-stop"></a>
 
 Manually stop the Connection Gateway service using the command line.
 

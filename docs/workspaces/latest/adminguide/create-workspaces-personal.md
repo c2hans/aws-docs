@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/create-work
 ---
 
 # Create a WorkSpace in WorkSpaces Personal
-<a name="create-workspaces-personal"></a>
 
 WorkSpaces enables you to provision virtual, cloud-based Windows and Linux desktops for your users, known as *WorkSpaces*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ImportDes
 ---
 
 # ImportDestination
-<a name="API_ImportDestination"></a>
 
 An object that contains details about the resource destination the import job is going to target.
 

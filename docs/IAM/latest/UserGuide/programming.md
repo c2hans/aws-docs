@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/programming.html
 ---
 
 # Calling the IAM API using HTTP query requests
-<a name="programming"></a>
 
 **Topics**
 + [Endpoints](#IAMEndpoints)

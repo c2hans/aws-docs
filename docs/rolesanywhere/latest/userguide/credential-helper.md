@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credentia
 ---
 
 # Get temporary security credentials from IAM Roles Anywhere
-<a name="credential-helper"></a>
 
  To obtain temporary security credentials from AWS Identity and Access Management Roles Anywhere, use the credential helper tool that IAM Roles Anywhere provides. This tool is compatible with the `credential_process` feature available across the language SDKs. When used with an AWS SDK, these credentials automatically refresh before they expire, requiring no additional implementation for credential renewal. The helper manages the process of creating a signature with the certificate and calling the endpoint to obtain session credentials; it returns the credentials to the calling process in a standard JSON format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # UpdateCollectionGroup
-<a name="API_UpdateCollectionGroup"></a>
 
 Updates the description and capacity limits of a collection group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/action
 ---
 
 # Action space and reward function
-<a name="action-space-reward-function"></a>
 
 <a name="how-it-works-action-space"></a> **Action space**
 

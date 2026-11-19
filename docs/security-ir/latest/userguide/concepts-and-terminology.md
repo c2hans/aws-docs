@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/concepts-an
 ---
 
 # Concepts and Terminology
-<a name="concepts-and-terminology"></a>
 
  The following terms and concepts are important for understanding the AWS Security Incident Response service and how it works.
 

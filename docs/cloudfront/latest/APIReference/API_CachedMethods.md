@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CachedMethods
-<a name="API_CachedMethods"></a>
 
 A complex type that controls whether CloudFront caches the response to requests using the specified HTTP methods. There are two choices:
 + CloudFront caches responses to `GET` and `HEAD` requests.

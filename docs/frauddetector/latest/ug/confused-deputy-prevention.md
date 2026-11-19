@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/confused-deputy-
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Confused deputy prevention
-<a name="confused-deputy-prevention"></a>
 
 The confused deputy problem occurs when an entity that doesn't have permission to perform an action can coerce a more-privileged entity to perform the action. AWS provides tools that help you protect your account if you provide third-parties (called *cross-account*) or other AWS services (called *cross-service*) access to resources in your account.
 

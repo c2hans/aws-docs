@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_FieldInfo
 ---
 
 # FieldInfo
-<a name="API_FieldInfo"></a>
 
 Details about the fields such as name of the field.
 

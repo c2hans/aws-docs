@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Post-deployment activities
-<a name="post-deployment"></a>
 
 Resilience is an ongoing process and the evaluation of your application's resilience must continue after the application has been deployed. The results of your post-deployment activities, such as ongoing resilience assessments, might require that you re-evaluate and update some of the resilience activities you performed earlier in the resilience lifecycle.
 

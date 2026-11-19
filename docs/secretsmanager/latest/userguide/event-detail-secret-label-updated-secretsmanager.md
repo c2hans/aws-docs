@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/event-de
 ---
 
 # Secret Label Updated event
-<a name="event-detail-secret-label-updated-secretsmanager"></a>
 
 Secrets Manager sends a `Secret Label Updated` event when a staging label moves to a new version of a secret, for all labels except `AWSPENDING` and `AWSPREVIOUS`.
 

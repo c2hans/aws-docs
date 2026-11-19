@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami-p
 ---
 
 # Reference the latest AMIs using Systems Manager public parameters
-<a name="finding-an-ami-parameter-store"></a>
 
 AWS Systems Manager provides public parameters for public AMIs maintained by AWS. You can use the public parameters when launching instances to ensure that you're using the latest AMIs. For example, the public parameter `/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-arm64` is available in all Regions and always points to the latest version of the Amazon Linux 2023 AMI for arm64 architecture in a given Region.
 

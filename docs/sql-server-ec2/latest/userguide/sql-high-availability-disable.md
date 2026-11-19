@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/sql-high
 ---
 
 # Disable Amazon EC2 High Availability for SQL Server
-<a name="sql-high-availability-disable"></a>
 
 You can disable Amazon EC2 High Availability for SQL Server (SQL HA). Note only instances enabled by SQL HA can receive the SQL Server license savings. Use one of the following methods to disable SQL HA for your instances:
 

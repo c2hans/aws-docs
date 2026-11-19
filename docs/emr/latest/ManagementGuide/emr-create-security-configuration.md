@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-create-se
 ---
 
 # Create a security configuration with the Amazon EMR console or with the AWS CLI
-<a name="emr-create-security-configuration"></a>
 
 This topic covers general procedures to create a security configuration with the Amazon EMR console and the AWS CLI, followed by a reference for the parameters that comprise encryption, authentication, and IAM roles for EMRFS. For more information about these features, see the following topics:
 + [Encrypt data at rest and in transit with Amazon EMR](emr-data-encryption.md)

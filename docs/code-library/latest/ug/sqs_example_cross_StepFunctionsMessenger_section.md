@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sqs_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create a messenger application with Step Functions
-<a name="sqs_example_cross_StepFunctionsMessenger_section"></a>
 
 The following code example shows how to create an AWS Step Functions messenger application that retrieves message records from a database table.
 

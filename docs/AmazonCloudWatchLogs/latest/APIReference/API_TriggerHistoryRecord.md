@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # TriggerHistoryRecord
-<a name="API_TriggerHistoryRecord"></a>
 
 A record of a scheduled query execution, including execution status, timestamp, and destination processing results.
 

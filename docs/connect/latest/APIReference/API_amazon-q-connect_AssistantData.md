@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AssistantData
-<a name="API_amazon-q-connect_AssistantData"></a>
 
 The assistant data.
 

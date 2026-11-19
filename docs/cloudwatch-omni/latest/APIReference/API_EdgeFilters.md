@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # EdgeFilters
-<a name="API_EdgeFilters"></a>
 
 Criteria for filtering edges in a context graph query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GetMinuteUsage
-<a name="API_GetMinuteUsage"></a>
 
 Returns the number of reserved minutes used by account.
 

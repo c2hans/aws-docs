@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.CA.2] Optimize configuration item management
-<a name="ag.ca.2-optimize-configuration-item-management"></a>
 
  **Category:** FOUNDATIONAL
 

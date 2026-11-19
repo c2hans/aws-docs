@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetails"></a>
 
 The Linux capabilities for the container that are added to or dropped from the default configuration provided by Docker.
 

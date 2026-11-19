@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetQueueLimitAssociation
-<a name="API_GetQueueLimitAssociation"></a>
 
 Gets information about a specific association between a queue and a limit.
 

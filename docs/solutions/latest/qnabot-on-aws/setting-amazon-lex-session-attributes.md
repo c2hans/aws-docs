@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/setting-a
 ---
 
 # Setting Amazon Lex session attributes
-<a name="setting-amazon-lex-session-attributes"></a>
 
 The QnABot on AWS guidance provides support for a question in the content designer UI to set an Amazon Lex session attribute.
 

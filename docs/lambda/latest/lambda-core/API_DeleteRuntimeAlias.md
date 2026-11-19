@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteRunt
 ---
 
 # DeleteRuntimeAlias
-<a name="API_DeleteRuntimeAlias"></a>
 
 Schedules a runtime alias to be deleted. Runtime aliases scheduled for deletion enter the PENDING\_DELETION state and can be restored during the scheduled deletion window. Function invokes fail for functions using runtime aliases that are deleted or pending deletion.
 

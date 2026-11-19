@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/snaplock-complianc
 ---
 
 # Understanding SnapLock Compliance
-<a name="snaplock-compliance"></a>
 
 This section describes use cases and considerations for the SnapLock Compliance retention mode.
 

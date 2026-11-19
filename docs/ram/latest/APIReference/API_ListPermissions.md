@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListPermissi
 ---
 
 # ListPermissions
-<a name="API_ListPermissions"></a>
 
 Retrieves a list of available AWS RAM permissions that you can use for the supported resource types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_V
 ---
 
 # ValidateStateMachineDefinitionDiagnostic
-<a name="API_ValidateStateMachineDefinitionDiagnostic"></a>
 
 Describes potential issues found during state machine validation. Rather than raise an exception, validation will return a list of **diagnostic elements** containing diagnostic information.
 

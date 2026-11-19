@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Details about a field that failed policy validation.
 

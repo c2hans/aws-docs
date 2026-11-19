@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeGatewayConfiguration
-<a name="API_DescribeGatewayConfiguration"></a>
 
 The type-specific configuration for a gateway that is returned by `DescribeGateway`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ImportWo
 ---
 
 # ImportWorkspaceMedia
-<a name="API_ImportWorkspaceMedia"></a>
 
 Imports a media asset (such as a logo) for use in a workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/system-messages.html
 ---
 
 # Understanding system messages for Amazon Chime SDK messaging
-<a name="system-messages"></a>
 
 Amazon Chime SDK sends system messages to all connected clients for events that take place in channels. Events include:
 + `UPDATE_CHANNEL` – This event signifies any update made to the channel details, such as the name or metadata.

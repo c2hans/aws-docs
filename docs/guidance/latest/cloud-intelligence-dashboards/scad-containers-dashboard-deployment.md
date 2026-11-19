@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deployment
-<a name="scad-containers-dashboard-deployment"></a>
 
 ## Deployment
 <a name="deployment"></a>

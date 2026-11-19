@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # WafConfiguration
-<a name="API_WafConfiguration"></a>
 
 The AWS WAF configuration for the gateway. This configuration controls how the gateway behaves when the associated web ACL cannot be evaluated.
 

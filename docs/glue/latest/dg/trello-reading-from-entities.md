@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/trello-reading-from-entit
 ---
 
 # Reading from Trello entities
-<a name="trello-reading-from-entities"></a>
 
 **Prerequisites**
 

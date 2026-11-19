@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 ---
 
 # Manager assist in Connect Customer
-<a name="manager-assist"></a>
 
 As a supervisor or contact center manager, you can ask about your contact center performance in plain language instead of opening a dashboard or building a report. Type a question such as **How is my contact center performing over the last week?**, and manager assist returns a response that is generated from the metrics data in your instance.
 

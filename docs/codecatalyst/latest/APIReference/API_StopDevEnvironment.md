@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Sto
 ---
 
 # StopDevEnvironment
-<a name="API_StopDevEnvironment"></a>
 
 Pauses a specified Dev Environment and places it in a non-running state. Stopped Dev Environments do not consume compute minutes.
 

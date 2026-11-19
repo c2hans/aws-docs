@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSApplicationMigrationServiceRolePolicy
-<a name="AWSApplicationMigrationServiceRolePolicy"></a>
 
 **Description**: Allows AWS application Migration Service to create and manage AWS resources on your behalf.
 

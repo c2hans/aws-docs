@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Sta
 ---
 
 # StartSchemaExtension
-<a name="API_StartSchemaExtension"></a>
 
 Applies a schema extension to a Microsoft AD directory.
 

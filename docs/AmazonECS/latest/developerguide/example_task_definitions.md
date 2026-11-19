@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_
 ---
 
 # Example Amazon ECS task definitions
-<a name="example_task_definitions"></a>
 
 You can copy the examples and snippets to start creating your own task definitions.
 

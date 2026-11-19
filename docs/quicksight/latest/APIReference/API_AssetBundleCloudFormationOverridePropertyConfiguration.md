@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleCloudFormationOverridePropertyConfiguration
-<a name="API_AssetBundleCloudFormationOverridePropertyConfiguration"></a>
 
 An optional collection of CloudFormation property configurations that control how the export job is generated.
 

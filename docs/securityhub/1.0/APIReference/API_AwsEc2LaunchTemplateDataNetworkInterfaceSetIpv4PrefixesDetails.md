@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetails
-<a name="API_AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetails"></a>
 
  Provides details on one or more IPv4 prefixes for a network interface.
 

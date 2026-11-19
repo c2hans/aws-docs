@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/authenticat
 ---
 
 # Authentication and authorization for Aurora DSQL
-<a name="authentication-authorization"></a>
 
 Aurora DSQL uses IAM roles and policies for cluster authorization. You associate IAM roles with [PostgreSQL database roles](https://www.postgresql.org/docs/current/user-manag.html) for database authorization. This approach combines [ benefits from IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/intro-iam-features.html) with [ PostgreSQL privileges](https://www.postgresql.org/docs/current/user-manag.html). Aurora DSQL uses these features to provide a comprehensive authorization and access policy for your cluster, database, and data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkPolicyError
-<a name="API_CoreNetworkPolicyError"></a>
 
 Provides details about an error in a core network policy.
 

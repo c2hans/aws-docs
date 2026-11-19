@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/trigger-cu
 ---
 
 # Trigger custom actions on anomalous behavior (AWS Management Console)
-<a name="trigger-custom-actions-anomalous-behavior"></a>
 
 You can enable **custom actions in response to anomalous behavior** by using **AWS IoT SiteWise MQTT notifications** in combination with **AWS IoT Core**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Detecte
 ---
 
 # DetectedSignature
-<a name="API_DetectedSignature"></a>
 
 A structure that holds information regarding a detected signature on a page.
 

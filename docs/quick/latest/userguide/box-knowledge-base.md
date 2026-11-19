@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/box-knowledge-bas
 ---
 
 # Box knowledge base integration
-<a name="box-knowledge-base"></a>
 
 Use the Box knowledge base integration to index Box content so that AWS Quick agents can search and answer questions about it. You can sync all of the Box content that you have access to, or choose specific Box folders and files. You can also configure advanced indexing settings when needed.
 

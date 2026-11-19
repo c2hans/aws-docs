@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # PutWhatsAppBusinessPublicKey
-<a name="API_PutWhatsAppBusinessPublicKey"></a>
 
 Sets the business public key used to encrypt the data exchanged with the endpoint of a data exchange Flow.
 

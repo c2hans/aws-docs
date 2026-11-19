@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/resource-tagging-
 ---
 
 # Restrictions for tags on AWS Elemental MediaConvert resources
-<a name="resource-tagging-restrictions"></a>
 
 The following basic restrictions apply to tags:
 + Maximum number of tags per resource – 50.

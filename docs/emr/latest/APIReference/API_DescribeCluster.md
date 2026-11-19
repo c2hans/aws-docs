@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeClus
 ---
 
 # DescribeCluster
-<a name="API_DescribeCluster"></a>
 
 Provides cluster-level details including status, hardware and software configuration, VPC settings, and so on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Amazon Titan Text models on Amazon Bedrock using the Invoke Model API
-<a name="bedrock-runtime_example_bedrock-runtime_InvokeModel_TitanText_section"></a>
 
 The following code example shows how to send a text message to Amazon Titan Text, using the Invoke Model API.
 

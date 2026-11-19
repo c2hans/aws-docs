@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Oper
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [BatchGetMemberAccountDetails](API_BatchGetMemberAccountDetails.md)

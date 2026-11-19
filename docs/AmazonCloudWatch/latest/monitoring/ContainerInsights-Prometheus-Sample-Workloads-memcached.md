@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Set up memcached with a metric exporter on Amazon EKS and Kubernetes
-<a name="ContainerInsights-Prometheus-Sample-Workloads-memcached"></a>
 
 memcached is an open-source memory object caching system. For more information, see [What is Memcached?](https://www.memcached.org).
 

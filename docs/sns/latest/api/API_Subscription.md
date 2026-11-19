@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_Subscription.html
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 A wrapper type for the attributes of an Amazon SNS subscription.
 

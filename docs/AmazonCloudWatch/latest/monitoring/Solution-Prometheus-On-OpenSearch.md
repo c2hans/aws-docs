@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Solut
 ---
 
 # Amazon CloudWatch solution: Amazon OpenSearch Service insights
-<a name="Solution-Prometheus-On-OpenSearch"></a>
 
 This solution helps you monitor your Amazon OpenSearch Service domains in CloudWatch without running or scaling your own collection infrastructure. A Amazon CloudWatch managed Prometheus collector connects to your VPC, collects cluster, node, and index metrics from the domain, and delivers them to CloudWatch. For general information about all CloudWatch observability solutions, see [CloudWatch observability solutions](Monitoring-Solutions.md). For the complete collector setup walkthrough, including scraper creation and the example scrape configuration, see [Integrate Amazon OpenSearch Service](managed-prometheus-collectors-opensearch-setup.md).
 

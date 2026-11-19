@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/dataplane-
 ---
 
 # Working with data plane APIs in AWS Elemental MediaPackage
-<a name="dataplane-apis"></a>
 
 MediaPackage uses three data plane actions for ingesting and egressing video content. MediaPackage does not use these actions to configure Channel Group, Channel, or Origin Endpoint resources.
 

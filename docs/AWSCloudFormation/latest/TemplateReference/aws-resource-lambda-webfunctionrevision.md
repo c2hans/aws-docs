@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::WebFunctionRevision
-<a name="aws-resource-lambda-webfunctionrevision"></a>
 
 The `AWS::Lambda::WebFunctionRevision` resource creates an immutable revision for a Lambda web function. A revision represents a specific version of the function's code and configuration. You can't modify a revision after you create it. You also can't delete a revision that is currently serving traffic on an endpoint. To route traffic to a revision, reference it from the `RevisionWeights` property of an `AWS::Lambda::WebFunctionEndpoint` resource.
 

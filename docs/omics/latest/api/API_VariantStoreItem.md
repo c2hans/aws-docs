@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VariantStoreItem.ht
 ---
 
 # VariantStoreItem
-<a name="API_VariantStoreItem"></a>
 
 A variant store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Catalog
 ---
 
 # CatalogConfiguration
-<a name="API_CatalogConfiguration"></a>
 
  Describes the containers where the destination Apache Iceberg Tables are persisted.
 

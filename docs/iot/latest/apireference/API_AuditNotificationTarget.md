@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuditNotific
 ---
 
 # AuditNotificationTarget
-<a name="API_AuditNotificationTarget"></a>
 
 Information about the targets to which audit notifications are sent.
 

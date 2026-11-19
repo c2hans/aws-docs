@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowConditionalConnectionConfiguration
-<a name="API_agent_FlowConditionalConnectionConfiguration"></a>
 
 The configuration of a connection between a condition node and another node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access
 ---
 
 # View the block public access setting for Amazon EBS snapshots
-<a name="block-public-access-snapshots-view"></a>
 
 Block public access can be in one of the following states for each Region in your account.
 + **Block all sharing** — All public sharing of your snapshots is blocked. Users in the account can't request new public sharing. Additionally, snapshots that were already publicly shared are treated as private and are not publicly available.

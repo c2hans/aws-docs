@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Descri
 ---
 
 # DescribeOrganizationConfiguration
-<a name="API_DescribeOrganizationConfiguration"></a>
 
 Returns information about the configuration for the organization behavior graph. Currently indicates whether to automatically enable new organization accounts as member accounts.
 

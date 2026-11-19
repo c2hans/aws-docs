@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RollbackServiceSoftwareUpdate
-<a name="API_RollbackServiceSoftwareUpdate"></a>
 
 Rolls back a service software update for a domain to the previous version. For more information, see [Service software updates in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/service-software.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/cancel-instanc
 ---
 
 # Cancel an instance refresh using the AWS Management Console or AWS CLI
-<a name="cancel-instance-refresh"></a>
 
 You can cancel an instance refresh that is still in progress. You can't cancel it after it's finished.
 

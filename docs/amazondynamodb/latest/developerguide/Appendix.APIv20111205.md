@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/App
 ---
 
 # Previous low-level DynamoDB API version (2011-12-05)
-<a name="Appendix.APIv20111205"></a>
 
 This section documents the operations available in the previous DynamoDB low-level API version (2011-12-05). This version of the low-level API is maintained for backward compatibility with existing applications.
 

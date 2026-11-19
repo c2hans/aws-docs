@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/play-audio.html
 ---
 
 # PlayAudio
-<a name="play-audio"></a>
 
 Play an audio file on any leg of a call. The audio can be repeated any number of times. The in-progress audio can be terminated using the DTMF digits set in the `PlaybackTerminators`.
 

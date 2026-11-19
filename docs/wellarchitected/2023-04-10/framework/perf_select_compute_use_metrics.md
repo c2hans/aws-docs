@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF02-BP06 Continually evaluate compute needs based on metrics
-<a name="perf_select_compute_use_metrics"></a>
 
 Use a data-driven approach to continually evaluate and optimize the compute resources for your workload over time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Choosing parameter tiers in Parameter Store
-<a name="parameter-store-advanced-parameters"></a>
 
 To control parameter storage attributes, Parameter Store includes *standard parameters* and *advanced parameters*. You configure each parameter individually for an account and Region. The parameter tier determines the maximum size of a parameter value, the number of parameters in a specific tier that you can create, whether you can use parameter policies, and whether charges apply.
 

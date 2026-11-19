@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # SetRiskConfiguration
-<a name="API_SetRiskConfiguration"></a>
 
 Configures threat protection for a user pool or app client. Sets configuration for the following.
 + Responses to risks with adaptive authentication

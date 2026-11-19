@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-raw.html
 ---
 
 # Sending raw email using the Amazon SES API v2
-<a name="send-email-raw"></a>
 
 You can use the Amazon SES API v2 `SendEmail` operation with the content type specified as `raw` to send customized messages to your recipients using the raw email format.
 

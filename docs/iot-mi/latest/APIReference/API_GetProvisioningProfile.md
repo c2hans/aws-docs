@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetProvis
 ---
 
 # GetProvisioningProfile
-<a name="API_GetProvisioningProfile"></a>
 
 Get details of a provisioning profile.
 

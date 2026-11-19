@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateHubContent
-<a name="API_UpdateHubContent"></a>
 
 Updates SageMaker hub content (either a `Model` or `Notebook` resource).
 

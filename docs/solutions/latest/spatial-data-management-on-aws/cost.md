@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 ---
 
 # String functions
-<a name="sql-functions-string"></a>
 
  String functions are built-in tools used to manipulate and process text data. They enable tasks like concatenation, extraction, formatting, and searching within strings. These functions are essential for cleaning, transforming, and analyzing text-based data within a database.
 

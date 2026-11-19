@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CompleteMultipar
 ---
 
 # CompleteMultipartUpload
-<a name="API_CompleteMultipartUpload"></a>
 
 Completes a multipart upload by assembling previously uploaded parts.
 

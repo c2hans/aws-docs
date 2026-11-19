@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Sustainability pillar
-<a name="sustainability"></a>
 
 The [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/sustainability.html) focuses on minimizing the environmental impacts of running cloud workloads.  The sustainability pillar contains the following key focus areas:
 + Understanding your impact

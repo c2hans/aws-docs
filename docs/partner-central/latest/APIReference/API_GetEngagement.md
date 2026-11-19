@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetEngagement
-<a name="API_GetEngagement"></a>
 
 Use this action to retrieve the engagement record for a given `EngagementIdentifier`.
 

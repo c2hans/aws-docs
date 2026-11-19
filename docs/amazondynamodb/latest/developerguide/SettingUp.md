@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Set
 ---
 
 # Setting up DynamoDB
-<a name="SettingUp"></a>
 
  In addition to the Amazon DynamoDB web service, AWS provides a downloadable version of DynamoDB that you can run on your computer. The downloadable version is helpful for developing and testing your code. It lets you write and test applications locally without accessing the DynamoDB web service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_WebAppV
 ---
 
 # WebAppVpcConfig
-<a name="API_WebAppVpcConfig"></a>
 
 Contains the VPC configuration settings for hosting a web app endpoint, including the VPC ID, subnet IDs, and security group IDs for access control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorProperty
 ---
 
 # ConnectorProperty
-<a name="API_ConnectorProperty"></a>
 
 Defines a property configuration for connection types, default values, and where the property should be used in requests.
 

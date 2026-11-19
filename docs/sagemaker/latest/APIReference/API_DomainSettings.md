@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Domain
 ---
 
 # DomainSettings
-<a name="API_DomainSettings"></a>
 
 A collection of settings that apply to the `SageMaker Domain`. These settings are specified through the `CreateDomain` API call.
 

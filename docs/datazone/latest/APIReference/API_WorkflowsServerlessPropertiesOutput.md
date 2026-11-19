@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Workflo
 ---
 
 # WorkflowsServerlessPropertiesOutput
-<a name="API_WorkflowsServerlessPropertiesOutput"></a>
 
 The MWAA serverless properties.
 

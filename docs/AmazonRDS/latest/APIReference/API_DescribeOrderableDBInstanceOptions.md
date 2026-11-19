@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeOrderableDBInstanceOptions
-<a name="API_DescribeOrderableDBInstanceOptions"></a>
 
 Describes the orderable DB instance options for a specified DB engine.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/enable-
 ---
 
 # Enable OneDrive for Your WorkSpaces Applications Users
-<a name="enable-onedrive"></a>
 
 Before enabling OneDrive, you must do the following:
 + Have an active Microsoft Office 365 or OneDrive for Business account with a valid organizational domain and users in the domain to use with WorkSpaces Applications.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.1] Organize teams into distinct topology types to optimize the value stream
-<a name="oa.std.1-organize-teams-into-distinct-topology-types-to-optimize-the-value-stream"></a>
 
  **Category:** FOUNDATIONAL
 

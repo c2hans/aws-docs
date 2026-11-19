@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateDes
 ---
 
 # UpdateDestination
-<a name="API_UpdateDestination"></a>
 
  Update a destination specified by name.
 

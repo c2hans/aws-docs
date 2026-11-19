@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-costs.ht
 ---
 
 # Understand and optimize costs in Amazon Managed Service for Prometheus
-<a name="AMP-costs"></a>
 
 The following frequently asked questions and their answers may be helpful in understanding and optimizing costs associated with Amazon Managed Service for Prometheus.
 

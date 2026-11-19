@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/lambda-s3-tutorial
 ---
 
 # Detecting Labels in an Image Using Lambda and Python
-<a name="lambda-s3-tutorial-python"></a>
 
  AWS Lambda is a compute service that you can use to run code without provisioning or managing servers. You can call Rekognition API operations from within an Lambda function. The following instructions show how to create a Lambda function in Python that calls `DetectLabels`.
 

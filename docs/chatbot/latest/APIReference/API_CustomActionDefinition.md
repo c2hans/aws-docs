@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CustomAc
 ---
 
 # CustomActionDefinition
-<a name="API_CustomActionDefinition"></a>
 
 The definition of the command to run when invoked as an alias or as an action button.
 

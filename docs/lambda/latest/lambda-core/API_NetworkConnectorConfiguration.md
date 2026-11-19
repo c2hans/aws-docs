@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_NetworkCon
 ---
 
 # NetworkConnectorConfiguration
-<a name="API_NetworkConnectorConfiguration"></a>
 
 The network configuration for a network connector. Different connector types use different configuration shapes; specify the configuration that matches your connector type.
 

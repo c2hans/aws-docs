@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/historical
 ---
 
 # Query historical asset property values in AWS IoT SiteWise
-<a name="historical-values"></a>
 
 You can use the AWS IoT SiteWise API [GetAssetPropertyValueHistory](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValueHistory.html) operation to query the historical values of an asset property.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_BotStatistic
 ---
 
 # BotStatistics
-<a name="API_BotStatistics"></a>
 
 Statistics about a specific bot's traffic to a path, including the bot name, request count, and percentage of traffic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/create-
 ---
 
 # CreateDataSet
-<a name="create-data-set"></a>
 
 Use the `CreateDataSet` API operation to create a dataset. Following is an example AWS CLI command for this operation.
 

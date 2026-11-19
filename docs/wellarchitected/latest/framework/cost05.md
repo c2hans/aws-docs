@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05.
 ---
 
 # Evaluate cost when selecting services
-<a name="cost05"></a>
 
  Evaluating cost when selecting services means choosing each service and component on its full cost and fit. Total cost of ownership includes operational overhead, licensing, data transfer, and the effort to manage and maintain a component. A comparison based on listed price alone misleads. This capability covers the practices that make service selection a deliberate, cost-aware decision.
 

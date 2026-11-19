@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Specify metrics time frame
-<a name="nw-monitor-time-frame"></a>
 
 Metrics and events on the dashboards in Network Synthetic Monitor use a default time of two hours, calculated from the current time, but you can set a custom metrics default time frame to use. You can change the default to one of the following presets for the metrics time frame:
 + **1h** — one hour

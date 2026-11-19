@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FSxD
 ---
 
 # FSxDeleteServiceLinkedRoleAccess
-<a name="FSxDeleteServiceLinkedRoleAccess"></a>
 
 **Description**: Allows Amazon FSx to delete its Service Linked Roles for Amazon S3 access
 

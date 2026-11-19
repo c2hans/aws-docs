@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-tables.ht
 ---
 
 # Create and configure data tables
-<a name="data-tables"></a>
 
 ## What are data tables?
 <a name="understanding-data-tables"></a>

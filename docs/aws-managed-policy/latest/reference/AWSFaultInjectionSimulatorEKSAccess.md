@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFaultInjectionSimulatorEKSAccess
-<a name="AWSFaultInjectionSimulatorEKSAccess"></a>
 
 **Description**: This policy grants the Fault Injection Simulator Service permission in EKS and other required services to perform FIS actions.
 

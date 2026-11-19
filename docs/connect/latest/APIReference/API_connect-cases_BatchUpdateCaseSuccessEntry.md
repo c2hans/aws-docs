@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchUpdateCaseSuccessEntry
-<a name="API_connect-cases_BatchUpdateCaseSuccessEntry"></a>
 
 Information about a case that was updated.
 

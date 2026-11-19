@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # Processor
-<a name="API_messaging-chime_Processor"></a>
 
 The information about a processor in a channel flow.
 

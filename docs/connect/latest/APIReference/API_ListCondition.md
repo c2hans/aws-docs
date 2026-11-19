@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListCond
 ---
 
 # ListCondition
-<a name="API_ListCondition"></a>
 
 A leaf node condition which can be used to specify a List condition to search users with attributes included in Lists like Proficiencies.
 

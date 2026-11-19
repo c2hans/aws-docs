@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Actio
 ---
 
 # ActionConnectorError
-<a name="API_ActionConnectorError"></a>
 
 Contains error information for an action connector that is in an error state.
 

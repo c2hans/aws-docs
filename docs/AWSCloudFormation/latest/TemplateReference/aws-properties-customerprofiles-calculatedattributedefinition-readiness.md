@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::CalculatedAttributeDefinition Readiness
-<a name="aws-properties-customerprofiles-calculatedattributedefinition-readiness"></a>
 
 Information indicating if the Calculated Attribute is ready for use by confirming all historical data has been processed and reflected.
 

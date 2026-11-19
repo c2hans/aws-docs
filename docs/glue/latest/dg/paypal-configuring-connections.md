@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paypal-configuring-connec
 ---
 
 # Configuring PayPal connections
-<a name="paypal-configuring-connections"></a>
 
 PayPal supports the CLIENT CREDENTIALS grant type for OAuth2.
 + This grant type is considered 2-legged OAuth 2.0 as it is used by clients to obtain an access token outside of the context of a user. AWS Glue is able to use the client ID and client secret to authenticate the PayPal APIs which are provided by custom services that you define.

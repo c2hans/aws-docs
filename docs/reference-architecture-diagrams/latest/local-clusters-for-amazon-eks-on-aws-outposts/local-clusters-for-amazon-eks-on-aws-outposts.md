@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/l
 ---
 
 # Local Clusters for Amazon EKS on AWS Outposts
-<a name="local-clusters-for-amazon-eks-on-aws-outposts"></a>
 
 Publication date: **June 02, 2023 ([Diagram history](#diagram-history))**
 

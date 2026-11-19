@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # DisassociateManagedNotificationAdditionalChannel
-<a name="API_DisassociateManagedNotificationAdditionalChannel"></a>
 
 Disassociates an additional Channel from a particular `ManagedNotificationConfiguration`.
 

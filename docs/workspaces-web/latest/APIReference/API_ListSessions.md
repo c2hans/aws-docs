@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists information for multiple secure browser sessions from a specific portal.
 

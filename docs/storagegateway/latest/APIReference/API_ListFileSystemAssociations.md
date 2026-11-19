@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListFileSystemAssociations
-<a name="API_ListFileSystemAssociations"></a>
 
 Gets a list of `FileSystemAssociationSummary` objects. Each object contains a summary of a file system association. This operation is only supported for FSx File Gateways.
 

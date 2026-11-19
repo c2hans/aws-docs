@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ac
 ---
 
 # ActivateSubscription
-<a name="API_ActivateSubscription"></a>
 
 Activates a Subscription to enable billing for a user.
 

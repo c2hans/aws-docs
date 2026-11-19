@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ExportLabelsTaskR
 ---
 
 # ExportLabelsTaskRunProperties
-<a name="API_ExportLabelsTaskRunProperties"></a>
 
 Specifies configuration properties for an exporting labels task run.
 

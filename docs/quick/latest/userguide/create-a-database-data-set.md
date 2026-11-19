@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-database
 ---
 
 # Creating a dataset from a database
-<a name="create-a-database-data-set"></a>
 
 The following procedures walk you through connecting to database data sources and creating datasets. To create datasets from AWS data sources that your AWS Quick account autodiscovered, use [Creating a dataset from an autodiscovered Amazon Redshift cluster or Amazon RDS instance](#create-a-data-set-autodiscovered). To create datasets from any other database data sources, use [Creating a dataset using a database that's not autodiscovered](#create-a-data-set-database).
 

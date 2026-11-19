@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-tag.ht
 ---
 
 # Tags events
-<a name="events-ref-tag"></a>
 
 Tags sends service events directly to EventBridge.
 

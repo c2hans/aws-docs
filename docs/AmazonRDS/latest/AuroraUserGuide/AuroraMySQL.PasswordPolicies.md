@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Password policies and Password validation in Aurora MySQL
-<a name="AuroraMySQL.PasswordPolicies"></a>
 
 **Topics**
 + [Password policies](#AuroraMySQL.PasswordPolicies.overview)

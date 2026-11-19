@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Invoking DevOps Agent through Webhook
-<a name="configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook"></a>
 
 Webhooks allow external systems to automatically trigger AWS DevOps Agent investigations. This enables integration with ticketing systems, monitoring tools, and other platforms that can send HTTP requests when incidents occur.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeApplicationFleetAssociations
-<a name="API_DescribeApplicationFleetAssociations"></a>
 
 Retrieves a list that describes one or more application fleet associations. Either ApplicationArn or FleetName must be specified.
 

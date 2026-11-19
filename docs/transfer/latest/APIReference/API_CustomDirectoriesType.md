@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_CustomD
 ---
 
 # CustomDirectoriesType
-<a name="API_CustomDirectoriesType"></a>
 
 Contains Amazon S3 locations for storing specific types of AS2 message files.
 

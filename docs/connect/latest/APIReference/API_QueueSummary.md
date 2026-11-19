@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueSum
 ---
 
 # QueueSummary
-<a name="API_QueueSummary"></a>
 
 Contains summary information about a queue.
 

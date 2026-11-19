@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Manually clean up resources
-<a name="manually-cleanup-resources"></a>
 
 You must manually clean up the following resources:
 + S3 buckets

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/mqtt-topic
 ---
 
 # Understand asset properties in MQTT topics
-<a name="mqtt-topics"></a>
 
 Every asset property has a unique MQTT topic path in the following format.
 

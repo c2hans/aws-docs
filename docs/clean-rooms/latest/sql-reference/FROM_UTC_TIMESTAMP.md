@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/FROM_UT
 ---
 
 # FROM\_UTC\_TIMESTAMP function
-<a name="FROM_UTC_TIMESTAMP"></a>
 
 The FROM\_UTC\_TIMESTAMP function converts the input date from UTC (Coordinated Universal Time) to the specified time zone.
 

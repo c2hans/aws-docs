@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowVersion
-<a name="API_WorkflowVersion"></a>
 
 Contains details about this version of the workflow.
 

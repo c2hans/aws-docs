@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-s
 ---
 
 # Use the Java producer library
-<a name="producer-sdk-javaapi"></a>
 
 You can use the Amazon Kinesis Video Streams provided Java producer library to write application code with minimal configuration, to send media data from a device to a Kinesis video stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElastiCacheReadOnlyAccess
-<a name="AmazonElastiCacheReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon ElastiCache via the AWS Management Console.
 

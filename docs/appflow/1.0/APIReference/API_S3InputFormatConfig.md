@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_S3InputForm
 ---
 
 # S3InputFormatConfig
-<a name="API_S3InputFormatConfig"></a>
 
  When you use Amazon S3 as the source, the configuration format that you provide the flow input data.
 

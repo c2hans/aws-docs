@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_G
 ---
 
 # GetConfig
-<a name="API_GetConfig"></a>
 
 Returns `Config` information.
 

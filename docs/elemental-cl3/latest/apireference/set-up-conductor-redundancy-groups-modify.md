@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Modify a Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-modify"></a>
 
 Change the name, VIP or VRID of the specified Conductor redundancy group.
 

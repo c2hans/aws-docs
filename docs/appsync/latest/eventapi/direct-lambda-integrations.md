@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/direct-lambda-in
 ---
 
 # Direct data source integrations using Lambda
-<a name="direct-lambda-integrations"></a>
 
 AWS AppSync lets you integrate Lambda functions directly with your channel namespace without writing additional handler code. Both *publish* and *subscribe* operations are supported through `Request`/`Response` mode and `event` mode.
 

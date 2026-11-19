@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Cost Explorer
 <a name="Welcome_AWS_Cost_Explorer_Service"></a>

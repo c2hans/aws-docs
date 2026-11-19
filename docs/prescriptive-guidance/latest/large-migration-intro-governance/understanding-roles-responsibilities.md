@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Understanding roles and responsibilities
-<a name="understanding-roles-responsibilities"></a>
 
 Many organizations are not prepared for the people, process, and technology changes that occur over the duration of a large migration project. The Cloud Operating Model helps you adapt throughout the migration process and iterates as the organization matures. You can take a Cloud Operating Model workshop to help you visualize the journey ahead. This workshop can help you address questions like *Can I use the same resources to support on-premises and cloud infrastructure, or do I need a new support organization?* and *Can I handle support requests through a ticket system? *These are a sample of the key questions that organizations need to address to prepare the organization for the large migration.
 

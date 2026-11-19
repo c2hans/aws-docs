@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeServiceRolePolicy
-<a name="AmazonChimeServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS Resources used or managed by Amazon Chime
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AttachmentNatConfiguration
-<a name="API_AttachmentNatConfiguration"></a>
 
 Describes the NAT configuration of a core network attachment.
 

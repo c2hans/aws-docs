@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/view-ace-deta
 ---
 
 # Viewing sync log detail records for ACE opportunities
-<a name="view-ace-details"></a>
 
  You can view sync log details for AWS-delivered ACE opportunities on the **Related** section of the ACE opportunity record.
 

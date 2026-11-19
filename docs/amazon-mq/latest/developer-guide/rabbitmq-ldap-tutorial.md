@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Using LDAP authentication and authorization for Amazon MQ for RabbitMQ
-<a name="rabbitmq-ldap-tutorial"></a>
 
 This tutorial describes how to configure LDAP authentication and authorization for your Amazon MQ for RabbitMQ brokers using AWS Managed Microsoft AD.
 

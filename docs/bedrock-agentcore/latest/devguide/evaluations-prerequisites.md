@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Prerequisites
-<a name="evaluations-prerequisites"></a>
 
 Before you begin using Amazon Bedrock AgentCore Evaluations, ensure you have the necessary AWS permissions and service roles configured.
 

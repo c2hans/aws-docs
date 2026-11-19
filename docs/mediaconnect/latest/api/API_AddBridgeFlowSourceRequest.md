@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddBridgeFlo
 ---
 
 # AddBridgeFlowSourceRequest
-<a name="API_AddBridgeFlowSourceRequest"></a>
 
  Add a flow source to an existing bridge.
 

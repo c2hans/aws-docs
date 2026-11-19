@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterRelativeDateTimeControl
-<a name="API_FilterRelativeDateTimeControl"></a>
 
 A control from a date filter that is used to specify the relative date.
 

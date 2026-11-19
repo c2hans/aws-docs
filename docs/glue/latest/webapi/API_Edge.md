@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Edge.html
 ---
 
 # Edge
-<a name="API_Edge"></a>
 
 An edge represents a directed connection between two AWS Glue components that are part of the workflow the edge belongs to.
 

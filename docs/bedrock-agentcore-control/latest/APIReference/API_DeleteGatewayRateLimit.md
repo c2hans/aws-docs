@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteGatewayRateLimit
-<a name="API_DeleteGatewayRateLimit"></a>
 
 Deletes a gateway rate limit.
 

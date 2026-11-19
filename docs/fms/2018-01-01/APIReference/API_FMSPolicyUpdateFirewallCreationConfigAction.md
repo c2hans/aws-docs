@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_FMSPolic
 ---
 
 # FMSPolicyUpdateFirewallCreationConfigAction
-<a name="API_FMSPolicyUpdateFirewallCreationConfigAction"></a>
 
 Contains information about the actions that you can take to remediate scope violations caused by your policy's `FirewallCreationConfig`. `FirewallCreationConfig` is an optional configuration that you can use to choose which Availability Zones Firewall Manager creates Network Firewall endpoints in.
 

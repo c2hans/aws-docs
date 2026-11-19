@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceRes
 ---
 
 # ServiceResourceId
-<a name="API_ServiceResourceId"></a>
 
 The AWS Batch unique identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Create and Run Athena Queries
-<a name="configure-custom-reports-create-run-athena-queries"></a>
 
 To query your usage reports by using Athena, perform the following steps.
 **Note**

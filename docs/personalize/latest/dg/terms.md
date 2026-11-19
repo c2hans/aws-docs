@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/terms.html
 ---
 
 # Amazon Personalize terms
-<a name="terms"></a>
 
  This section introduces the terms used in Amazon Personalize.
 

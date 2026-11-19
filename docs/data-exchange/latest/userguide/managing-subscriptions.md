@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/managing-
 ---
 
 # Managing AWS Data Exchange subscriptions
-<a name="managing-subscriptions"></a>
 
 The following topics describe how to manage your subscriptions in AWS Data Exchange.
 

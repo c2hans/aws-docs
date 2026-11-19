@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # A2aDescriptor
-<a name="API_A2aDescriptor"></a>
 
  The A2A (Agent-to-Agent) descriptor configuration for a registry record.
 

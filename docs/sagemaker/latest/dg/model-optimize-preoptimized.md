@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize-preop
 ---
 
 # Deploy a pre-optimized model
-<a name="model-optimize-preoptimized"></a>
 
 Some models in JumpStart are pre-optimized by SageMaker AI, which means that you can deploy optimized versions of these models without first creating an inference optimization job.
 

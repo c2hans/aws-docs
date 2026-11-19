@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/decide-local-d
 ---
 
 # Deciding the amount of local disk storage
-<a name="decide-local-disks-and-sizes"></a>
 
 The number and size of disks that you want to allocate for your gateway is up to you. Depending on the storage solution you deploy, the gateway requires the following additional storage:
 + Tape Gateways require at least two disks. One to use as a cache, and one to use as an upload buffer.

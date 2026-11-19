@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DataSou
 ---
 
 # DataSourceConfigurationInput
-<a name="API_DataSourceConfigurationInput"></a>
 
 The configuration of the data source.
 

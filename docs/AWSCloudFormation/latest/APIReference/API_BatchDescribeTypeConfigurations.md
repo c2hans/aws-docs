@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # BatchDescribeTypeConfigurations
-<a name="API_BatchDescribeTypeConfigurations"></a>
 
 Returns configuration data for the specified CloudFormation extensions, from the CloudFormation registry in your current account and Region.
 

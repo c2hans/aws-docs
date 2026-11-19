@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/redeploy-ssg-to
 ---
 
 # Adding SSR functionality to a static Next.js app
-<a name="redeploy-ssg-to-ssr"></a>
 
 You can add SSR functionality to an existing static (SSG) Next.js app deployed with Amplify. Before you start the process of converting your SSG app to SSR, update the app to use Next.js version 12 or later and add SSR functionality. Then you will need to perform the following steps.
 

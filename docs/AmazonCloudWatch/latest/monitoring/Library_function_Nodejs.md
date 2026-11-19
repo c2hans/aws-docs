@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Libra
 ---
 
 # Library functions available for Node.js canary
-<a name="Library_function_Nodejs"></a>
 
 This section describes the library functions that are available for canary scripts using the Node.js runtime.
 

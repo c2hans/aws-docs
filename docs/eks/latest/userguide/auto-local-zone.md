@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-local-zone.htm
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy EKS Auto Mode nodes onto Local Zones
-<a name="auto-local-zone"></a>
 
 EKS Auto Mode provides simplified cluster management with automatic node provisioning. AWS Local Zones extend AWS infrastructure to geographic locations closer to your end users, reducing latency for latency-sensitive applications. This guide walks you through the process of deploying EKS Auto Mode nodes onto AWS Local Zones, enabling you to run containerized applications with lower latency for users in specific geographic areas.
 

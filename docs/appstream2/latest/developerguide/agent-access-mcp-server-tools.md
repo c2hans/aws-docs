@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Available tools
-<a name="agent-access-mcp-server-tools"></a>
 
 The Model Context Protocol (MCP) server provides the following tools, grouped into mouse, keyboard, screen, application, sequencing, session, and user tools. Agents use them to operate the desktop during a streaming session. All tool names use the `agentaccess___` prefix.
 

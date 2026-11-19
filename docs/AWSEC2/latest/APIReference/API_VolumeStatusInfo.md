@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeSta
 ---
 
 # VolumeStatusInfo
-<a name="API_VolumeStatusInfo"></a>
 
 Describes the status of a volume.
 

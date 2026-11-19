@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ReceiveQ
 ---
 
 # ReceiveQueueRecords
-<a name="API_ReceiveQueueRecords"></a>
 
 Receives up to 10 records from the specified queue. Each record is returned with a receipt handle, which is the identifier you use to acknowledge the record or change its visibility.
 

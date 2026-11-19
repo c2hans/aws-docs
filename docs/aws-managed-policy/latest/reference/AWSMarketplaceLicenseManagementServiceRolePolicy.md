@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceLicenseManagementServiceRolePolicy
-<a name="AWSMarketplaceLicenseManagementServiceRolePolicy"></a>
 
 **Description**: Enables access to AWS services and Resources used or managed by AWS Marketplace for license management.
 

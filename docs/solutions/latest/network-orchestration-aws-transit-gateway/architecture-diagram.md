@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Architecture diagram
-<a name="architecture-diagram"></a>
 
 Deploying with the default parameters builds the following components in your AWS account.
 

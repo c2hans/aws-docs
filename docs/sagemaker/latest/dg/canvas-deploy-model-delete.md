@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-deploy-model-
 ---
 
 # Delete a model deployment
-<a name="canvas-deploy-model-delete"></a>
 
 You can delete your model deployments from the Amazon SageMaker Canvas application. This action also deletes the endpoint from the SageMaker AI console and shuts down any endpoint-related resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Budgets
-<a name="API_Types_AWS_Budgets"></a>
 
 The following data types are supported by AWS Budgets:
 +  [Action](API_budgets_Action.md)

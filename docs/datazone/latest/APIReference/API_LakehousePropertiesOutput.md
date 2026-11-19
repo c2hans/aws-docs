@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lakehou
 ---
 
 # LakehousePropertiesOutput
-<a name="API_LakehousePropertiesOutput"></a>
 
 The lakehouse properties of a connection.
 

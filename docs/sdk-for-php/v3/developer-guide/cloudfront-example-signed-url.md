@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cloudfron
 ---
 
 # Signing Amazon CloudFront URLs with AWS SDK for PHP Version 3
-<a name="cloudfront-example-signed-url"></a>
 
 Signed URLs enable you to provide users access to your private content. A signed URL includes additional information (for example, expiration time) that gives you more control over access to your content. This additional information appears in a policy statement, which is based on either a canned policy or a custom policy. For information about how to set up private distributions and why you need to sign URLs, see [Serving Private Content through Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html) in the Amazon CloudFront Developer Guide.
 + Create a signed Amazon CloudFront URL using [getSignedURL](https://docs.aws.amazon.com/aws-sdk-php/v3/api/class-Aws.CloudFront.CloudFrontClient.html#_getSignedUrl).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-2-lite/overview.h
 ---
 
 # Amazon Nova 2 Lite
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-2-lite/images/card-background.jpg)
 

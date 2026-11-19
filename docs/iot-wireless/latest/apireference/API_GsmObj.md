@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gsm
 ---
 
 # GsmObj
-<a name="API_GsmObj"></a>
 
 GSM object.
 

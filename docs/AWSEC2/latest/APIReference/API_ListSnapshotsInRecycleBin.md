@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ListSnaps
 ---
 
 # ListSnapshotsInRecycleBin
-<a name="API_ListSnapshotsInRecycleBin"></a>
 
 Lists one or more snapshots that are currently in the Recycle Bin.
 

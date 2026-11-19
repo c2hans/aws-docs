@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/case-field-con
 ---
 
 # Conditionally required
-<a name="case-field-conditionally"></a>
 
 You can streamline how agents populate case fields, and reduce data entry errors, by conditionally requiring specific fields.
 

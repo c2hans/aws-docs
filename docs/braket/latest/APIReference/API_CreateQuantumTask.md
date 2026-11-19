@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_CreateQua
 ---
 
 # CreateQuantumTask
-<a name="API_CreateQuantumTask"></a>
 
 Creates a quantum task.
 

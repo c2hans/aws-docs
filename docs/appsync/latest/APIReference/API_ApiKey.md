@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ApiKey.h
 ---
 
 # ApiKey
-<a name="API_ApiKey"></a>
 
 Describes an API key.
 

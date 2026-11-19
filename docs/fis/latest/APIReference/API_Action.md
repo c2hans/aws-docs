@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_Action.html
 ---
 
 # Action
-<a name="API_Action"></a>
 
 Describes an action. For more information, see [AWS FIS actions](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html) in the * AWS Fault Injection Service User Guide*.
 

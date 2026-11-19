@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-alerting-se
 ---
 
 # Create and manage alerting resources using Terraform
-<a name="v12-alerting-setup-provision-terraform"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 12.x**.

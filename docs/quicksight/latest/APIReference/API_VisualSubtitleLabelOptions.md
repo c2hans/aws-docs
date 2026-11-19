@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualSubtitleLabelOptions
-<a name="API_VisualSubtitleLabelOptions"></a>
 
 The subtitle label options for a visual.
 

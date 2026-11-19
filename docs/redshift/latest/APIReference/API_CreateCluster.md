@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateC
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 Creates a new cluster with the specified parameters.
 

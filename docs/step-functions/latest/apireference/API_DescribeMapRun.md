@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_D
 ---
 
 # DescribeMapRun
-<a name="API_DescribeMapRun"></a>
 
 Provides information about a Map Run's configuration, progress, and results. If you've [redriven](https://docs.aws.amazon.com/step-functions/latest/dg/redrive-map-run.html) a Map Run, this API action also returns information about the redrives of that Map Run. For more information, see [Examining Map Run](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-examine-map-run.html) in the * AWS Step Functions Developer Guide*.
 

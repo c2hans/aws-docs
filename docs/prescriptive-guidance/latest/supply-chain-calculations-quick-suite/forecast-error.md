@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Forecast error
-<a name="forecast-error"></a>
 
 Forecast error calculations provide a quantitative estimate of the quality of past forecasts, and a wide range of calculations are available to help you statistically express the accuracy of a forecast.
 

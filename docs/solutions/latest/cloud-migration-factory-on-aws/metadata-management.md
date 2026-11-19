@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Metadata management
-<a name="metadata-management"></a>
 
 The Cloud Migration Factory on AWS solution provides an extensible datastore that allows records to be added, edited, and deleted from within the user interface. All updates to the data stored in the datastore are audited with record level audit stamps, which provide creation and update timestamps along with user details. All update access to records is controlled by the groups and associated policies that the logged in user is assigned. For more details about granting user permissions, refer to ** [Permission management](permission-management.md).**
 

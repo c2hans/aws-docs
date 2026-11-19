@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Data transfer
-<a name="telcocost03"></a>
 
 |  TELCOCOST03: How are you optimizing data transfer costs between and within your telco network infrastructure?  |
 | --- |

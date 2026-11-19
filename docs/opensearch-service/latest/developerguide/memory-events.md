@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with events in Amazon OpenSearch Memory
-<a name="memory-events"></a>
 
 In Amazon OpenSearch Memory, an *event* is content that your agent sends to a space: a set of conversation turns, a JSON object, or a document in Amazon S3. OpenSearch Memory stores the event as you sent it and extracts memories from it according to the space's strategies.
 

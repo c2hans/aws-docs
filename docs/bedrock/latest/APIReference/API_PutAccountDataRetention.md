@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PutAccou
 ---
 
 # PutAccountDataRetention
-<a name="API_PutAccountDataRetention"></a>
 
 Sets the account-wide data retention mode for Amazon Bedrock.
 

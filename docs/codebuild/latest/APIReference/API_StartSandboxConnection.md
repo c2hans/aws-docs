@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartS
 ---
 
 # StartSandboxConnection
-<a name="API_StartSandboxConnection"></a>
 
 Starts a sandbox connection.
 

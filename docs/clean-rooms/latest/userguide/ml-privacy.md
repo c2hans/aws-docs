@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/ml-privacy.
 ---
 
 # Privacy protections of AWS Clean Rooms ML
-<a name="ml-privacy"></a>
 
 Clean Rooms ML is designed to reduce the risk of *membership inference attacks* where the training data provider can learn who is in the seed data and the seed data provider can learn who is in the training data. Several steps are taken to prevent this attack.
 

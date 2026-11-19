@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Oper
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [BulkPublish](API_BulkPublish.md)

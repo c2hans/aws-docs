@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-delivered-message
 ---
 
 # Amazon SNS notification format for delivery to HTTP destinations
-<a name="firehose-delivered-message-format-http"></a>
 
 Here’s an example of an HTTP POST request body from Amazon SNS, sent through an delivery stream to an HTTP endpoint. The Amazon SNS notification is encoded as a base64 payload within the records property.
 

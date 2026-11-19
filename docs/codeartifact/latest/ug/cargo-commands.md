@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/cargo-commands.ht
 ---
 
 # Cargo command support
-<a name="cargo-commands"></a>
 
 The following sections summarize the Cargo commands that are supported by CodeArtifact repositories, in addition to specific commands that are not supported.
 

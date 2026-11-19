@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # SecurityConfigSummary
-<a name="API_SecurityConfigSummary"></a>
 
 A summary of a security configuration for OpenSearch Serverless.
 

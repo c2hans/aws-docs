@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/upda
 ---
 
 # Update the TCP idle timeout for your Network Load Balancer listener
-<a name="update-idle-timeout"></a>
 
 For each TCP request made through a Network Load Balancer, the state of that connection is tracked. If no data is sent through the connection by either the client or target for longer than the idle timeout, the connection is closed.
 

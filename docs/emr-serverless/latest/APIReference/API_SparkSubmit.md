@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # SparkSubmit
-<a name="API_SparkSubmit"></a>
 
 The configurations for the Spark submit job driver.
 

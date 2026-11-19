@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/supporte
 ---
 
 # Grant permission to tag resources on creation
-<a name="supported-iam-actions-tagging"></a>
 
 The following tag-on create Amazon ECS API actions allow you to specify tags when you create the resource. If tags are specified in the resource-creating action, AWS performs additional authorization to verify that the correct permissions are assigned to create tags.
 + `CreateCapacityProvider`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_V
 ---
 
 # VirtualMachine
-<a name="API_BGW_VirtualMachine"></a>
 
 A virtual machine that is on a hypervisor.
 

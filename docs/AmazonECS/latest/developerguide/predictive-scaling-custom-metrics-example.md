@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predicti
 ---
 
 # Constructing the JSON for predictive scaling custom metrics with Amazon ECS
-<a name="predictive-scaling-custom-metrics-example"></a>
 
 The following section contains examples for how to configure predictive scaling to query data from CloudWatch. There are two different methods to configure this option, and the method that you choose affects which format you use to construct the JSON for your predictive scaling policy. When you use metric math, the format of the JSON varies further based on the metric math being performed.
 

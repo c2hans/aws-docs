@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/sessions.html
 ---
 
 # Sessions
-<a name="sessions"></a>
 
 A session is a span of time when the Amazon DCV server is able to accept connections from a client. Each session has a specified owner and set of permissions.
 

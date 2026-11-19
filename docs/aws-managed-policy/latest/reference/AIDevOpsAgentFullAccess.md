@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIDe
 ---
 
 # AIDevOpsAgentFullAccess
-<a name="AIDevOpsAgentFullAccess"></a>
 
 **Description**: Provides full access to Amazon DevOps Agent via the AWS Management Console
 

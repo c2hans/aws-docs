@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Notebo
 ---
 
 # NotebookInstanceSummary
-<a name="API_NotebookInstanceSummary"></a>
 
 Provides summary information for an SageMaker AI notebook instance.
 

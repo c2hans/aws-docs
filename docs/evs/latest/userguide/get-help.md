@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/get-help.html
 ---
 
 # Get help from AWS Support and Broadcom
-<a name="get-help"></a>
 
 Contact AWS Support or Broadcom when the troubleshooting pages in this chapter don’t resolve your problem.
 

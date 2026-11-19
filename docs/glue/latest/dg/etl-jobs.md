@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/etl-jobs.html
 ---
 
 # Orchestration in AWS Glue
-<a name="etl-jobs"></a>
 
 The following sections provide information on orchestration of jobs in AWS Glue.
 

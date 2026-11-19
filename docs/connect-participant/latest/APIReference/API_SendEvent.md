@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # SendEvent
-<a name="API_connect-participant_SendEvent"></a>
 
 **Note**
 The `application/vnd.amazonaws.connect.event.connection.acknowledged` ContentType is no longer maintained since December 31, 2024. This event has been migrated to the [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html) API using the `ConnectParticipant` field.

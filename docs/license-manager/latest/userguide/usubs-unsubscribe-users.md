@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/usubs-u
 ---
 
 # Unsubscribe users from user-based product subscriptions in License Manager
-<a name="usubs-unsubscribe-users"></a>
 
 You must unsubscribe a user from a Microsoft Office or Visual Studio user-based subscription product to stop incurring charges for them. Microsoft RDS is billed on a per user, per month basis based on a combination of the user subscription and the client access license (CAL) token that's issued from the license server when the user connects to an instance that provides the subscription product. For more information, see [Microsoft RDS billing in License Manager](user-based-subscriptions.md#usubs-billing-rds).
 

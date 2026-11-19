@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/kernel-mglru-al2023.html
 ---
 
 # Using Multi-Gen LRU (MGLRU) on AL2023 kernels
-<a name="kernel-mglru-al2023"></a>
 
  The [Multi-Gen LRU](https://docs.kernel.org/admin-guide/mm/multigen_lru.html) is a modern page reclamation algorithm in the Linux kernel, designed to improve memory management performance under memory pressure. It replaces the traditional LRU (Least Recently Used) mechanism used for determining which memory pages to reclaim when the system runs low on memory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step C: Disable high availability
-<a name="upg-std-disable"></a>
 
 If you don't have high availability enabled, skip this step and go to [Step E: Stop the running channels](upg-std-stop.md).
 

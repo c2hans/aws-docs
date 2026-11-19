@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/stopping-a-ba
 ---
 
 # Stop a backup job
-<a name="stopping-a-backup-job"></a>
 
 You can stop a backup job in AWS Backup after it has been initiated. When you do this, the backup is not created, and the backup job record is retained with the status of **aborted**.
 

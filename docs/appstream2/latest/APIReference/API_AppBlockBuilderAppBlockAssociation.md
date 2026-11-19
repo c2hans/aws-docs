@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AppBl
 ---
 
 # AppBlockBuilderAppBlockAssociation
-<a name="API_AppBlockBuilderAppBlockAssociation"></a>
 
 Describes an association between an app block builder and app block.
 

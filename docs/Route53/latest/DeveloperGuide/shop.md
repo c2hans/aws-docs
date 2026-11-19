@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/shop.html
 ---
 
 # .shop
-<a name="shop"></a>
 
 Used for online and brick-and-mortar retail businesses, as well as service providers.
 

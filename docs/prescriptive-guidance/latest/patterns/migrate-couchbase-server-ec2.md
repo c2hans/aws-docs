@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a Couchbase Server database to Amazon EC2
-<a name="migrate-couchbase-server-ec2"></a>
 
 *Subhani Shaik, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceAssociations
-<a name="API_DescribeWorkspaceAssociations"></a>
 
 Describes the associations betweens applications and the specified WorkSpace.
 

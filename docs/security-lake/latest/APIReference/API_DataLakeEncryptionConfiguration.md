@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeEncryptionConfiguration
-<a name="API_DataLakeEncryptionConfiguration"></a>
 
 Provides encryption details of Amazon Security Lake object.
 

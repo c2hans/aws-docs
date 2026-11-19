@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_GetS
 ---
 
 # GetServiceSettings
-<a name="API_GetServiceSettings"></a>
 
 Returns settings configured for Quick Setup in the requesting AWS account and AWS Region.
 

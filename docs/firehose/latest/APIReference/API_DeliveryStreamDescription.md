@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Deliver
 ---
 
 # DeliveryStreamDescription
-<a name="API_DeliveryStreamDescription"></a>
 
 Contains information about a Firehose stream.
 

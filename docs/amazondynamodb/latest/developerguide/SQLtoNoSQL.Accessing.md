@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences in accessing a relational (SQL) database and DynamoDB
-<a name="SQLtoNoSQL.Accessing"></a>
 
 Before your application can access a database, it must be *authenticated* to make sure that the application is allowed to use the database. It must be *authorized* so that the application can perform only the actions for which it has permissions.
 

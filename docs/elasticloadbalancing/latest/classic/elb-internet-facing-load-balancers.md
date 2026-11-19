@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-
 ---
 
 # Internet-facing Classic Load Balancers
-<a name="elb-internet-facing-load-balancers"></a>
 
 When you create a Classic Load Balancer, you can make it an internal load balancer or an internet-facing load balancer. An internet-facing load balancer has a publicly resolvable DNS name, so it can route requests from clients over the internet to the EC2 instances that are registered with the load balancer.
 

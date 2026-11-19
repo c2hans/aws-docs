@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rudderstack-connection-op
 ---
 
 # RudderStack connection options
-<a name="rudderstack-connection-options"></a>
 
 The following are connection options for RudderStack:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the RudderStack object to read.

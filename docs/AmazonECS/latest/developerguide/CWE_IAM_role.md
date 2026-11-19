@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/CWE_IAM_
 ---
 
 # Amazon ECS EventBridge IAM Role
-<a name="CWE_IAM_role"></a>
 
 Before you can use Amazon ECS scheduled tasks with EventBridge rules and targets, the EventBridge service needs permissions to run Amazon ECS tasks on your behalf. These permissions come from the EventBridge IAM role (`ecsEventsRole`).
 

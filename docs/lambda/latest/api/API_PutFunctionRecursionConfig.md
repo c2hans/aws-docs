@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionRecursi
 ---
 
 # PutFunctionRecursionConfig
-<a name="API_PutFunctionRecursionConfig"></a>
 
 Sets the [recursive loop detection](https://docs.aws.amazon.com/lambda/latest/dg/invocation-recursion.html) configuration for a Lambda Event Function.
 

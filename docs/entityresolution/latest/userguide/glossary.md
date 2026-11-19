@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/glossa
 ---
 
 # AWS Entity Resolution Glossary
-<a name="glossary"></a>
 
 ## Amazon Resource Name (ARN)
 <a name="arn-definition"></a>

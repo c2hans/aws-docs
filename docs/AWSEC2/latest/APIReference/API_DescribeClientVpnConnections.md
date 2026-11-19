@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeClientVpnConnections
-<a name="API_DescribeClientVpnConnections"></a>
 
 Describes active client connections and connections that have been terminated within the last 60 minutes for the specified Client VPN endpoint.
 

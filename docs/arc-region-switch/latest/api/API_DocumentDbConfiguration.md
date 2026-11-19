@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Documen
 ---
 
 # DocumentDbConfiguration
-<a name="API_DocumentDbConfiguration"></a>
 
 Configuration for Amazon DocumentDB global clusters used in a Region switch plan.
 

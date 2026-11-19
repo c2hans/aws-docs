@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Claude Platform on AWS
-<a name="list_aws-external-anthropic"></a>
 
 Claude Platform on AWS (service prefix: `aws-external-anthropic`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

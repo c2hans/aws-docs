@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # PutIntelligenceConfiguration
-<a name="API_PutIntelligenceConfiguration"></a>
 
 Creates or updates the intelligence configuration for the calling account. Account is identified via FAS (caller identity).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterSelectableValues
-<a name="API_FilterSelectableValues"></a>
 
 A list of selectable values that are used in a control.
 

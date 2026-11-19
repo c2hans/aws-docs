@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Explore and query your telemetry
-<a name="omni-explore-and-query-your-telemetry"></a>
 
 Explore is where you query your telemetry directly. For how telemetry reaches your space, see [Send telemetry to CloudWatch Omni](omni-send-telemetry.md). Everything in your space (logs, metrics, and traces) is queryable from one surface, so an investigation can move from a chart into the raw records behind it without changing tools. The other web UI views answer predetermined questions; Explore answers the questions you write yourself.
 

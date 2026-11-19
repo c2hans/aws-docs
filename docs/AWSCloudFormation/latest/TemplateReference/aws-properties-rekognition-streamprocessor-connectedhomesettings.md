@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Rekognition::StreamProcessor ConnectedHomeSettings
-<a name="aws-properties-rekognition-streamprocessor-connectedhomesettings"></a>
 
 Connected home settings to use on a streaming video. Defining the settings is required in the request parameter for `CreateStreamProcessor`. Including this setting in the CreateStreamProcessor request lets you use the stream processor for connected home features. You can then select what you want the stream processor to detect, such as people or pets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Upload a stream of unknown size to an Amazon S3 object using an AWS SDK
-<a name="s3_example_s3_Scenario_UploadStream_section"></a>
 
 The following code examples show how to upload a stream of unknown size to an Amazon S3 object.
 

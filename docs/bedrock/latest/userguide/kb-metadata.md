@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-metadata.htm
 ---
 
 # Include metadata in a data source to improve knowledge base query
-<a name="kb-metadata"></a>
 
 When ingesting CSV (comma separate values) files, you have the ability to have the knowledge base treat certain columns as content fields versus metadata fields. Instead of potentially having hundreds or thousands of content/metadata file pairs, you can now have a single CSV file and a corresponding metadata.json file, giving the knowledge base hints as to how to treat each column inside of your CSV.
 

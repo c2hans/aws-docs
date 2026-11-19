@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Ta
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A set of key/value pairs that are used to manage the resource.
 

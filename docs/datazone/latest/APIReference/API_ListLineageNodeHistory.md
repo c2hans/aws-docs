@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListLin
 ---
 
 # ListLineageNodeHistory
-<a name="API_ListLineageNodeHistory"></a>
 
 Lists the history of the specified data lineage node.
 

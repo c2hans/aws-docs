@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Templa
 ---
 
 # TemplateProviderDetail
-<a name="API_TemplateProviderDetail"></a>
 
  Details about a template provider configuration and associated provisioning information.
 

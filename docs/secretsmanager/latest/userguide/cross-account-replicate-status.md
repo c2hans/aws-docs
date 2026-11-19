@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/cross-ac
 ---
 
 # Monitor cross-account replication
-<a name="cross-account-replicate-status"></a>
 
 Cross-account replication is asynchronous. To monitor progress, call [`DescribeSecret`](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DescribeSecret.html) periodically from either account and check the `ReplicationStatus` field.
 

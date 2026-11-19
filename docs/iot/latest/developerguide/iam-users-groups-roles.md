@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iam-users-grou
 ---
 
 # IAM users, groups, and roles
-<a name="iam-users-groups-roles"></a>
 
 IAM users, groups, and roles are the standard mechanisms for managing identity and authentication in AWS. You can use them to connect to AWS IoT HTTP interfaces using the AWS SDK and AWS CLI.
 

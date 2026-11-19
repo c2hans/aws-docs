@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedLoadBalancer
-<a name="API_ManagedLoadBalancer"></a>
 
 The Application Load Balancer associated with the Express service.
 

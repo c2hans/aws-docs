@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteCapacityProv
 ---
 
 # DeleteCapacityProvider
-<a name="API_DeleteCapacityProvider"></a>
 
 Deletes a capacity provider. You cannot delete a capacity provider that is currently being used by Lambda functions.
 

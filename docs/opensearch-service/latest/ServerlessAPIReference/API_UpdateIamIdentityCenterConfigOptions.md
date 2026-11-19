@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # UpdateIamIdentityCenterConfigOptions
-<a name="API_UpdateIamIdentityCenterConfigOptions"></a>
 
 Describes IAM Identity Center options for updating an OpenSearch Serverless security configuration in the form of a key-value map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ImportFileTaskInformation
-<a name="API_ImportFileTaskInformation"></a>
 
  Information about the import file tasks you request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity-a
 ---
 
 # Monitoring your usage statistics using the Amazon SES API
-<a name="monitor-sending-activity-api"></a>
 
 The Amazon SES API provides the `GetSendStatistics` operation, which returns information about your service usage. We recommend that you check your sending statistics regularly, so that you can make adjustments if needed.
 

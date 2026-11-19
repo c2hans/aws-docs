@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moon
 ---
 
 # Kimi K3
-<a name="model-card-moonshot-ai-kimi-k3"></a>
 
 ## ![Moonshot AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/kimik2.5.png) Moonshot AI — Kimi K3
 <a name="model-card-moonshot-ai-kimi-k3-header"></a>

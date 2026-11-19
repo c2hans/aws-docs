@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MatchPrincipalEntry
-<a name="API_MatchPrincipalEntry"></a>
 
 Union for principal matching. Currently supports IAM principal ARN glob matching.
 

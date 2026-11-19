@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVerifi
 ---
 
 # GetVerifiedAccessEndpointTargets
-<a name="API_GetVerifiedAccessEndpointTargets"></a>
 
 Gets the targets for the specified network CIDR endpoint for Verified Access.
 

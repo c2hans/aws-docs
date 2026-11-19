@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Resources
-<a name="resources"></a>
 
 **References**
 + [Amazon EKS Best Practices Guide: Cost Optimization](https://aws.github.io/aws-eks-best-practices/cost_optimization/)

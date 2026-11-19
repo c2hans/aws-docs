@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/marketplace-tag
 ---
 
 # Tag-based access control for Amazon Bedrock AWS Marketplace model endpoints
-<a name="marketplace-tag-based-access-control"></a>
 
 When you create an Amazon Bedrock AWS Marketplace model endpoint, Amazon Bedrock applies your specified tags to the underlying SageMaker AI endpoint. Amazon Bedrock does not support the `aws:ResourceTag` or `aws:RequestTag` condition keys on `bedrock:*MarketplaceModelEndpoint` actions.
 

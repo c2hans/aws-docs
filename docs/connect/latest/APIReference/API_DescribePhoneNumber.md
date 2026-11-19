@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribePhoneNumber
-<a name="API_DescribePhoneNumber"></a>
 
 Gets details and status of a phone number that’s claimed to your Connect Customer instance or traffic distribution group.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_GROUP_BY_clause.htm
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # GROUP BY clause
-<a name="r_GROUP_BY_clause"></a>
 
 The GROUP BY clause identifies the grouping columns for the query. It is used to group together those rows in a table that have the same values in all the columns listed. The order in which the columns are listed does not matter. The outcome is to combine each set of rows having common values into one group row that represents all rows in the group. Use a GROUP BY to eliminate redundancy in the output and to compute aggregates that apply to the groups. Grouping columns must be declared when the query computes aggregates with standard functions such as SUM, AVG, and COUNT. For more information, see [Aggregate functions](c_Aggregate_Functions.md).
 

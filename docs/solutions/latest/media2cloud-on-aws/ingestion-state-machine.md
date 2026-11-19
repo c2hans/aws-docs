@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 ---
 
 # Ingestion state machine
-<a name="ingestion-state-machine"></a>
 
  The Media2Cloud on AWS solution ingests videos, images, audio, and documents to extract media information and generate proxies using AWS Step Functions nested state machines and AWS Lambda functions. When a new media file is uploaded through the web interface, the solution sends an HTTPS request to the Amazon API Gateway RESTful API endpoint to start the ingestion process. A Lambda function invokes the main state machine that starts the nested ingestion state machine. Media2Cloud on AWS sends state machine progress and status to an AWS IoT topic that activates the web interface to display updated results to the user.
 

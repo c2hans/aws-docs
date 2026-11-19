@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualNodeTcpConnectionPool
-<a name="API_VirtualNodeTcpConnectionPool"></a>
 
 An object that represents a type of connection pool.
 

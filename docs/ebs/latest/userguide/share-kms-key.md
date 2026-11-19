@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/share-kms-key.html
 ---
 
 # Share the KMS key used to encrypt a shared Amazon EBS snapshot
-<a name="share-kms-key"></a>
 
 When you share an encrypted snapshot, you must also share the customer managed key used to encrypt the snapshot. You can apply cross-account permissions to a customer managed key either when it is created or at a later time.
 

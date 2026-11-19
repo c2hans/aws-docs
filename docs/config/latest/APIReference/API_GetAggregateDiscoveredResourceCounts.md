@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetAggreg
 ---
 
 # GetAggregateDiscoveredResourceCounts
-<a name="API_GetAggregateDiscoveredResourceCounts"></a>
 
 Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey.
 

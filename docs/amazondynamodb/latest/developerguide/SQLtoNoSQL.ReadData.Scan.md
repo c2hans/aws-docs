@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences in scanning a table
-<a name="SQLtoNoSQL.ReadData.Scan"></a>
 
 In SQL, a `SELECT` statement without a `WHERE` clause will return every row in a table. In Amazon DynamoDB, the `Scan` operation does the same thing. In both cases, you can retrieve all of the items or just some of them.
 

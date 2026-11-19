@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Contributors
-<a name="resources"></a>
 
 Authors and contributors to this paper include:
 + Chris Ibbitson, Principal Solutions Architect, AWS Financial Services

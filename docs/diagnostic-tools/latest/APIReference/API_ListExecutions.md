@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # ListExecutions
-<a name="API_ListExecutions"></a>
 
 List all of the executions available for the current user.
 

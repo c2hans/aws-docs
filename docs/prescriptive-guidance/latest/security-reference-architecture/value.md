@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # The value of the AWS SRA
-<a name="value"></a>
 
 AWS has a large (and growing) [set of security and security-related services](https://aws.amazon.com/products/security). Customers have expressed appreciation for the detailed information available through the service documentation, blog posts, tutorials, summits, and conferences. They also tell us that they want to better understand the big picture and get a strategic view of AWS security services. When we work with customers to get a deeper appreciation for what they need, three priorities emerge:
 + Customers want more information and recommended patterns for how they can deploy, configure, and operate the AWS security services holistically. In which accounts and toward which security objectives should the services be deployed and managed? Is there one security account where all or most services should operate? How does the choice of location (organizational unit or AWS account) inform security objectives? Which trade-offs (design considerations) should customers be aware of?

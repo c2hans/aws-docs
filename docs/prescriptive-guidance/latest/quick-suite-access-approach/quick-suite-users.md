@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Creating local users in Quick
-<a name="quick-suite-users"></a>
 
 ![Architecture diagram of user access through a locally configured Quick Suite user.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/396ab044-41c5-4689-b645-3cb60a1421f3.png)
 

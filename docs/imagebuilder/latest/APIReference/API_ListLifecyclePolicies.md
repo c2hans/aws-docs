@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListLifecyclePolicies
-<a name="API_ListLifecyclePolicies"></a>
 
 Retrieves a list of lifecycle policies in your AWS account.
 

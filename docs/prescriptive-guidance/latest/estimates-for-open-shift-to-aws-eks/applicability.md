@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Applicability
-<a name="applicability"></a>
 
 This guidance applies to:
 + Organizations migrating containerized workloads from Red Hat OpenShift (versions 4.x) to Amazon EKS

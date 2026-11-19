@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # License type conversions in License Manager
-<a name="license-conversion"></a>
 
 With License Manager, you can change your license type between AWS provided licensing and Bring Your Own License model (BYOL) as your business needs change. You can change your license type without redeploying your existing workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_GetSubscriptionAttrib
 ---
 
 # GetSubscriptionAttributes
-<a name="API_GetSubscriptionAttributes"></a>
 
 Returns all of the properties of a subscription.
 

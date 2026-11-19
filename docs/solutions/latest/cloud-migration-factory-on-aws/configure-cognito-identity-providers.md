@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 11: (Optional) Configure additional identity providers in Amazon Cognito
-<a name="configure-cognito-identity-providers"></a>
 
 If you selected `true` for the optional **Allow additional identity provider to be configured in Cognito** parameter when launching the stack, you can set up additional IdPs in Amazon Cognito to allow sign in using existing SAML IdP. The process for setting up the external IdP varies between providers. This section describes the Amazon Cognito configuration and generic steps to configure the external IdP.
 

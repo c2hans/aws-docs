@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterOperation
-<a name="API_FilterOperation"></a>
 
 A transform operation that filters rows based on a condition.
 

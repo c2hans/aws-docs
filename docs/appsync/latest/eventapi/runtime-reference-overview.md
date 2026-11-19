@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/runtime-referenc
 ---
 
 # AWS AppSync Event API runtime reference
-<a name="runtime-reference-overview"></a>
 
 AWS AppSync lets you respond to specific triggers that occur in the service with code that runs on AWS AppSync's JavaScript runtime (APPSYNC\_JS).
 

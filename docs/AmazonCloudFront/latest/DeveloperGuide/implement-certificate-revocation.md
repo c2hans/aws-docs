@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/i
 ---
 
 # Implement certificate revocation for mutual TLS (viewer) with CloudFront Functions and KeyValueStore
-<a name="implement-certificate-revocation"></a>
 
 You can use CloudFront Connection Functions with KeyValueStore to implement certificate revocation checking. With this, you can maintain a list of revoked certificate serial numbers and check client certificates against this list during the TLS handshake.
 

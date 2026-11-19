@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/authorize-xks-
 ---
 
 # Control access to your external key store
-<a name="authorize-xks-key-store"></a>
 
 All AWS KMS access control features — [key policies](key-policies.md), [IAM policies](iam-policies.md), and [grants](grants.md) — that you use with standard KMS keys, work the same way for KMS keys in an external key store. You can use IAM policies to control access to the API operations that create and manage external key stores. You use IAM policies and key policies to control access to the AWS KMS keys in your external key store. You can also use [service control policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) for your AWS organization and [VPC endpoint policies](https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html#edit-vpc-endpoint-policy) to control access to KMS keys in your external key store.
 

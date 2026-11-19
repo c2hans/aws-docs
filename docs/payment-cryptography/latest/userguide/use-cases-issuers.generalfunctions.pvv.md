@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Generate a random pin and the associated PVV and then verify the value
-<a name="use-cases-issuers.generalfunctions.pvv"></a>
 
 **Topics**
 + [Create the key(s)](#use-cases-issuers.generalfunctions.pvv.setup)

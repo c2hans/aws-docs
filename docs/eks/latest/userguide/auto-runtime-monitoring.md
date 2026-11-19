@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-runtime-monito
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Monitor the EKS Auto Mode runtime
-<a name="auto-runtime-monitoring"></a>
 
 Amazon EKS Auto Mode provides a streamlined experience for running Kubernetes on AWS. It automatically provisions nodes by using AWS-managed AMIs and Karpenter. EKS Auto Mode also runs a set of controllers in the control plane that aren’t visible to you. To close the observability gap this can create, EKS delivers [AWS-managed component logs](auto-managed-component-logs.md) for the control plane controllers. In addition, because the EKS Auto Mode runtime components are installed in the AMI and run on your nodes, you can configure your own log and metrics collectors to gather their logs and metrics.
 

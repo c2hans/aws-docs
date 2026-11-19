@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeStackRefactor
-<a name="API_DescribeStackRefactor"></a>
 
 Describes the stack refactor status.
 

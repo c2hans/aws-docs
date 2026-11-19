@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/connection-
 ---
 
 # Connecting to private APIs in EventBridge
-<a name="connection-private"></a>
 
 You can create connections to private HTTPS endpoints, to provide secure point-to-point network access to resources in VPCs or on-premises without having to traverse the public internet. For example, you can create a connection to access an HTTPS-based application behind an Amazon Elastic Load Balancer.
 

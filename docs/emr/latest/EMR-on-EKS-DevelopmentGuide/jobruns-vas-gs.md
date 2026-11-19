@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Getting started with vertical autoscaling for Amazon EMR on EKS
-<a name="jobruns-vas-gs"></a>
 
 Use vertical autoscaling for Amazon EMR on EKS when you want automatic tuning of memory and CPU resources to adapt to your Amazon EMR Spark application workload. For more information, see [Using vertical autoscaling with Amazon EMR Spark jobs](jobruns-vas.html).
 

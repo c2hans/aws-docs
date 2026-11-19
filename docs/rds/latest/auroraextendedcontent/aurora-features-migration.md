@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Migration support
-<a name="aurora-features-migration"></a>
 
 **Topics**
 + [MySQL migration](#aurora-features-mysql-migration)

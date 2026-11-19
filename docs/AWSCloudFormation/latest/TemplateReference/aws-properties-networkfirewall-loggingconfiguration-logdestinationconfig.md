@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::LoggingConfiguration LogDestinationConfig
-<a name="aws-properties-networkfirewall-loggingconfiguration-logdestinationconfig"></a>
 
 Defines where AWS Network Firewall sends logs for the firewall for one log type. This is used in logging configuration. You can send each type of log to an Amazon S3 bucket, a CloudWatch log group, or a Kinesis Data Firehose delivery stream.
 

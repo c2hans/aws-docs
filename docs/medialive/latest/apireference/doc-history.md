@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/doc-histor
 ---
 
 # Document History
-<a name="doc-history"></a>
 
 The following table describes the main changes to this documentation.
 + **API version: latest**

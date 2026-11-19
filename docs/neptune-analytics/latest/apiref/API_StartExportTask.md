@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Star
 ---
 
 # StartExportTask
-<a name="API_StartExportTask"></a>
 
 Export data from an existing Neptune Analytics graph to Amazon S3. The graph state should be `AVAILABLE`.
 

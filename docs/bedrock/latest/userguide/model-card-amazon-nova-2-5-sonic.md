@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 ---
 
 # Nova 2.5 Sonic
-<a name="model-card-amazon-nova-2-5-sonic"></a>
 
 ## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Nova 2.5 Sonic
 <a name="model-card-amazon-nova-2-5-sonic-header"></a>

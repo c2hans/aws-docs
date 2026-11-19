@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # Get
-<a name="API_Get"></a>
 
 Specifies an item and related attribute values to retrieve in a `TransactGetItem` object.
 

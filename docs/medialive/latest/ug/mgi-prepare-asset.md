@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mgi-prepare-asset.ht
 ---
 
 # Step 1: Prepare the motion graphic asset
-<a name="mgi-prepare-asset"></a>
 
 You use an authoring system to create the asset and to manage the content, including implementation of features such as fade or opacity.
 

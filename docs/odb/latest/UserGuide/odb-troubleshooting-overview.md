@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/odb-troubleshooting
 ---
 
 # Troubleshooting Oracle Database@AWS
-<a name="odb-troubleshooting-overview"></a>
 
 Use the following sections to help troubleshoot networking issues you may encounter with Oracle Database@AWS.
 

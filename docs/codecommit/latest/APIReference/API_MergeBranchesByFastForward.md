@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeBranchesByFastForward
-<a name="API_MergeBranchesByFastForward"></a>
 
 Merges two branches using the fast-forward merge strategy.
 

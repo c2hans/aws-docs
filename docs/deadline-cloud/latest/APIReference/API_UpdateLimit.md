@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateLimit
-<a name="API_UpdateLimit"></a>
 
 Updates the properties of the specified limit.
 

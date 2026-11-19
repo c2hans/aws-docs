@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListFlexComp
 ---
 
 # ListFlexComponents
-<a name="API_ListFlexComponents"></a>
 
 Returns information about the flex components that are available for an Exadata infrastructure.
 

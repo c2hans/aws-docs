@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/iceberg-time-travel.h
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Time travel queries on Iceberg tables in Amazon Redshift
-<a name="iceberg-time-travel"></a>
 
 With time travel queries, you can query an Apache Iceberg table as it was at an earlier point in time. Amazon Redshift reads the table snapshot that was current at that time. You can use time travel queries to compare a table with an earlier version, to undo changes, or to get the same results each time you rerun a report. Time travel queries only read data, and they don't change the table or its history. How far back you can query depends on the table's snapshot retention. For more information, see [Best practices for time travel queries](#iceberg-time-travel-best-practices).
 

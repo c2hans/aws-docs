@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStart
 ---
 
 # Create a Valkey serverless cache
-<a name="GettingStarted.serverless-valkey.step1"></a>
 
 When you create a Valkey serverless cache, you choose one of two connection types: VPC or Public. With the VPC connection type, which is the default, you access the cache privately from within your VPC. With the Public connection type, you access the cache over the internet through a public endpoint, without a VPC.
 

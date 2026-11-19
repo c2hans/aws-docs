@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_EndEvent.html
 ---
 
 # EndEvent
-<a name="API_EndEvent"></a>
 
 A message that indicates the request is complete and no more messages will be sent. You should not assume that the request is complete until the client receives an `EndEvent`.
 

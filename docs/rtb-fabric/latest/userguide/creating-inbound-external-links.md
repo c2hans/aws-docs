@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/creating-inb
 ---
 
 # Creating inbound external links
-<a name="creating-inbound-external-links"></a>
 
 **Important**
 The `CreateInboundExternalLink` API operation is deprecated on regular responder gateway. This API can only be used on an external responder gateway instead. Existing inbound external links created with `CreateInboundExternalLink` continue to function. For new configurations, use `CreateInboundExternalLink` on an external responder gateway. For more information about creating an external responder gateway, see [Creating a responder gateway](working-with-responder-gateways.md#creating-responder-gateway).

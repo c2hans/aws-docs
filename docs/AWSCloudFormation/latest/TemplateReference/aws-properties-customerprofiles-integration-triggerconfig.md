@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CustomerProfiles::Integration TriggerConfig
-<a name="aws-properties-customerprofiles-integration-triggerconfig"></a>
 
 The trigger settings that determine how and when Amazon AppFlow runs the specified flow.
 

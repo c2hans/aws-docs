@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Notificat
 ---
 
 # NotificationConfigurationSummary
-<a name="API_NotificationConfigurationSummary"></a>
 
 Structure describing a notification configuration.
 

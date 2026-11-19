@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialCoordinateBounds
-<a name="API_GeospatialCoordinateBounds"></a>
 
 The bound options (north, south, west, east) of the geospatial window options.
 

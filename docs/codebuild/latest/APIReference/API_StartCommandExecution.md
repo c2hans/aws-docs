@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StartC
 ---
 
 # StartCommandExecution
-<a name="API_StartCommandExecution"></a>
 
 Starts a command execution.
 

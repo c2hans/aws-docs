@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixAvoidanceZoneCategory
-<a name="API_RouteMatrixAvoidanceZoneCategory"></a>
 
 Zone categories to be avoided.
 

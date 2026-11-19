@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-s
 ---
 
 # Data mixing on SageMaker Training Jobs
-<a name="nova-forge-sft-datamix-smtj"></a>
 
 With Amazon Nova Forge data mixing, you can combine your custom training data with Amazon Nova's proprietary training data during supervised fine-tuning (SFT). This helps preserve the model's general capabilities while specializing it to your target domain.
 

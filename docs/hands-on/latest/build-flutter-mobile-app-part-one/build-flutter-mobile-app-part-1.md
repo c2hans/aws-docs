@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app
 ---
 
 # Build a Flutter Mobile App Using AWS Amplify - Part 1
-<a name="build-flutter-mobile-app-part-1"></a>
 
 **Create a trip planner app for iOS and Android**
 

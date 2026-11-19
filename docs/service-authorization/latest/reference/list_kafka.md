@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Managed Streaming for Apache Kafka
-<a name="list_kafka"></a>
 
 Amazon Managed Streaming for Apache Kafka (service prefix: `kafka`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListMoni
 ---
 
 # ListMonitors
-<a name="API_ListMonitors"></a>
 
 Lists all of your monitors for Internet Monitor and their statuses, along with the Amazon Resource Name (ARN) and name of each monitor.
 

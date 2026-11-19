@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FieldInputConfig
-<a name="API_FieldInputConfig"></a>
 
 Describes the configuration for the default input values to display for a field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 AWS Mainframe Modernization Replatform with Micro Focus is available in two modes:
 + AWS Replatform with Micro Focus is a serverless managed runtime environment that is dynamically deployed with a Micro Focus backend and is fully managed by AWS. AWS Replatform with Micro Focus provides a cloud-native API layer for interacting with Micro Focus. In this managed approach, only Micro Focus is available for replatforming. The UniKix solution isn't available.

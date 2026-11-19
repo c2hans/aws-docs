@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyTargetGroupAttributes
-<a name="API_ModifyTargetGroupAttributes"></a>
 
 Modifies the specified attributes of the specified target group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/applications-console-mo
 ---
 
 # Monitoring Lambda applications
-<a name="applications-console-monitoring"></a>
 
 The **Applications** section of the Lambda console includes a **Monitoring** tab where you can review an Amazon CloudWatch dashboard with aggregate metrics for the resources in your application.
 

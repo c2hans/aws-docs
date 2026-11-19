@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Reten
 ---
 
 # RetentionProperties
-<a name="API_RetentionProperties"></a>
 
 Retention properties contain the duration for which your time-series data must be stored in the magnetic store and the memory store.
 

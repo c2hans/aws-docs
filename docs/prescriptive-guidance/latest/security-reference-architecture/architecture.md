@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # The AWS Security Reference Architecture
-<a name="architecture"></a>
 
 The following diagram illustrates the AWS SRA. This architectural diagram brings together all the AWS security-related services. It is built around a simple, three-tier web architecture that can fit on a single page. In such a workload, there is a *web tier* through which users connect and interact with the *application tier, which handles the actual business logic of the application: taking inputs from the user, processing data, and generating outputs.* The application tier stores and retrieves information from the *data tier*. The architecture is purposefully modular and provides high-level abstraction for many modern web applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/python-context.html
 ---
 
 # Using the Lambda context object to retrieve Python Event Function information
-<a name="python-context"></a>
 
 When Lambda runs your Event Function, it passes a context object to the [handler](python-handler.md). This object provides methods and properties that provide information about the invocation, function, and execution environment. For more information on how the context object is passed to the function handler, see [Define Lambda Event Function handler in Python](python-handler.md).
 

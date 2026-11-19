@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaKubernetes
 ---
 
 # Monitor Kubernetes with AWS Private CA
-<a name="PcaKubernetes-monitor"></a>
 
 To monitor the Kubernetes cluster private CA, use the techniques outlined in [Monitor AWS Private CA resources](logging-and-monitoring.md). You can use the following to monitor a private CA:
 + [AWS Private CA CloudWatch metrics](PcaCloudWatch.md)

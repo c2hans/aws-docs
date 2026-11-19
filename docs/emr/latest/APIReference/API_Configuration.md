@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_Configuratio
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 **Note**
 Amazon EMR releases 4.x or later.
@@ -20,7 +19,7 @@ Required: No
 
  ** Configurations **   <a name="EMR-Type-Configuration-Configurations"></a>
 A list of additional configurations to apply within a configuration object.
-Type: Array of [Configuration](#API_Configuration) objects
+Type: Array of [Configuration](API_Configuration.md) objects
 Required: No
 
  ** Properties **   <a name="EMR-Type-Configuration-Properties"></a>

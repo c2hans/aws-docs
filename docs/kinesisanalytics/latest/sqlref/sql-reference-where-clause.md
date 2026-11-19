@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # WHERE clause
-<a name="sql-reference-where-clause"></a>
 
 The WHERE clause extracts records that meet a specified condition. The condition can be a numeric or string comparison, or use the BETWEEN, LIKE, OR IN operators: see [Streaming SQL Operators](sql-reference-streaming-operators.md). Conditions can be combined using logical operators such as AND, OR, and NOT.
 

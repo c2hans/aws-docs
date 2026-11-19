@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 3a. Launch the hub stack for AWS Organizations
-<a name="step-3a.-launch-the-hub-stack-for-aws-organizations"></a>
 
 This CloudFormation template deploys the Quota Monitor for AWS into your primary account.
 

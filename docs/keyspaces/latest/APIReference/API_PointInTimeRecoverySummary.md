@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_PointI
 ---
 
 # PointInTimeRecoverySummary
-<a name="API_PointInTimeRecoverySummary"></a>
 
 The point-in-time recovery status of the specified table.
 

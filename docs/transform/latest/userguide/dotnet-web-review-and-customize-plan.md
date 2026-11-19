@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-re
 ---
 
 # Review and customize transformation plan
-<a name="dotnet-web-review-and-customize-plan"></a>
 
 In the *Prepare for transformation* phase, after selecting repositories and resolving missing dependencies, AWS Transform will generate a modernization plan for review.
 

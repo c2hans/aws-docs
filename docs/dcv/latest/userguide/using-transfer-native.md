@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-transfer-nati
 ---
 
 # Transferring files using Windows, Linux and macOs clients
-<a name="using-transfer-native"></a>
 
 The steps for uploading, downloading, and renaming files depend on the client used.
 

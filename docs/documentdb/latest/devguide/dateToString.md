@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateToString.
 ---
 
 # $dateToString
-<a name="dateToString"></a>
 
 The `$dateToString` aggregation operator in Amazon DocumentDB is used to convert a date or timestamp value to a string representation. This is useful when you need to format the date and time in a specific way for display or further processing.
 

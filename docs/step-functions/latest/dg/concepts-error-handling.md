@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-
 ---
 
 # Handling errors in Step Functions workflows
-<a name="concepts-error-handling"></a>
 
 All states, except `Pass` and `Wait` states, can encounter runtime errors. Errors can happen for various reasons, including the following:
 + **State machine definition issues** - such as a Choice state without a matching rule

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InventoryTableCo
 ---
 
 # InventoryTableConfigurationUpdates
-<a name="API_InventoryTableConfigurationUpdates"></a>
 
  The specified updates to the S3 Metadata inventory table configuration.
 

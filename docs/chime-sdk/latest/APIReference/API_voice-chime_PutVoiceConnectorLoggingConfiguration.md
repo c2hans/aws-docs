@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutVoiceConnectorLoggingConfiguration
-<a name="API_voice-chime_PutVoiceConnectorLoggingConfiguration"></a>
 
 Updates a Voice Connector's logging configuration.
 

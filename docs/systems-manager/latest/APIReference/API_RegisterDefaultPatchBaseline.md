@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RegisterDefaultPatchBaseline
-<a name="API_RegisterDefaultPatchBaseline"></a>
 
 Defines the default patch baseline for the relevant operating system.
 

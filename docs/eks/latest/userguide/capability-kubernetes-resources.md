@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/capability-kubernet
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Capability Kubernetes resources
-<a name="capability-kubernetes-resources"></a>
 
 After you enable a capability on your cluster, you will most often interact with it by creating and managing Kubernetes custom resources in your cluster. Each capability provides its own set of custom resource definitions (CRDs) that extend the Kubernetes API with capability-specific functionality.
 

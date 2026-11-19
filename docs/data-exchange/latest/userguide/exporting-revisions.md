@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/exporting
 ---
 
 # Exporting revisions from AWS Data Exchange
-<a name="exporting-revisions"></a>
 
 Both providers and subscribers can export revisions of a data set to an S3 bucket that they have permissions to access.
 

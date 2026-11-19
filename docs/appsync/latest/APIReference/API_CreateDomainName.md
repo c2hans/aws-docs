@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateDo
 ---
 
 # CreateDomainName
-<a name="API_CreateDomainName"></a>
 
 Creates a custom `DomainName` object.
 

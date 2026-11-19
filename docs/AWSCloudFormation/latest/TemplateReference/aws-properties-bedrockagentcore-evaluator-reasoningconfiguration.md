@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Evaluator ReasoningConfiguration
-<a name="aws-properties-bedrockagentcore-evaluator-reasoningconfiguration"></a>
 
 <a name="aws-properties-bedrockagentcore-evaluator-reasoningconfiguration-description"></a>The `ReasoningConfiguration` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md).
 

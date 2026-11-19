@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionEventIn
 ---
 
 # PutFunctionEventInvokeConfig
-<a name="API_PutFunctionEventInvokeConfig"></a>
 
 Configures options for [asynchronous invocation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html) on a function, version, or alias. If a configuration already exists for a function, version, or alias, this operation overwrites it. If you exclude any settings, they are removed. To set one option without affecting existing settings for other options, use [UpdateFunctionEventInvokeConfig](API_UpdateFunctionEventInvokeConfig.md).
 

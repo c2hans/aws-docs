@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # BatchGetPolicy
-<a name="API_BatchGetPolicy"></a>
 
 Retrieves information about a group (batch) of policies.
 

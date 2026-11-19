@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-iot.ht
 ---
 
 # Controlling access to Kinesis Video Streams resources using AWS IoT
-<a name="how-iot"></a>
 
 This section describes how to enable a device (for example, a camera) to send audio and video data to one particular Kinesis video stream only. You can do this by using the AWS IoT credentials provider and an AWS Identity and Access Management (IAM) role.
 

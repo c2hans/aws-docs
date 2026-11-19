@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/http.html
 ---
 
 # Configuring HTTP-level settings within the AWS SDK for Rust
-<a name="http"></a>
 
 The AWS SDK for Rust provides built-in HTTP functionality that is used by the AWS service clients that you create in your code.
 

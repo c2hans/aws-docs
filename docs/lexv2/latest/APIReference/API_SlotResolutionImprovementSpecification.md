@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotResolu
 ---
 
 # SlotResolutionImprovementSpecification
-<a name="API_SlotResolutionImprovementSpecification"></a>
 
 Contains specifications for the assisted slot resolution feature.
 

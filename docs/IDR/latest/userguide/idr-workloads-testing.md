@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-workloads-testi
 ---
 
 # Test onboarded workloads in Incident Detection and Response
-<a name="idr-workloads-testing"></a>
 
 After [Alarm Ingestion](idr-gs-alarm-ingestion.md) completes, AWS Incident Detection and Response enables monitoring for your workload and sends a Go-Live confirmation. Your workload is actively monitored from this point forward.
 

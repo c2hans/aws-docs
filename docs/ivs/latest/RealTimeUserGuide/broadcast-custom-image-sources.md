@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-c
 ---
 
 # IVS Broadcast SDK: Custom Image Sources \| Real-Time Streaming
-<a name="broadcast-custom-image-sources"></a>
 
 Custom image-input sources allow an application to provide its own image input to the broadcast SDK, instead of being limited to the preset cameras. A custom image source can be as simple as a semi-transparent watermark or static “be right back” scene, or it can allow the app to do additional custom processing like adding beauty filters to the camera.
 

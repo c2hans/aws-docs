@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/tut-res
 ---
 
 # Tutorial: Restoring a DB cluster from a DB cluster snapshot using the AWS CLI
-<a name="tut-restore-cluster.CLI"></a>
 
 In this tutorial, you restore a DB cluster from a DB cluster snapshot using the AWS CLI. Restoring a DB cluster from a snapshot using the AWS CLI has two steps:
 

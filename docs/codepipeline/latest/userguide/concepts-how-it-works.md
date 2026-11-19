@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts-h
 ---
 
 # How pipeline executions work
-<a name="concepts-how-it-works"></a>
 
 This section provides an overview of the way CodePipeline processes a set of changes. CodePipeline tracks each pipeline execution that starts when a pipeline is started manually or a change is made to the source code. CodePipeline uses the following execution modes to handle the way each execution progresses through the pipeline. For more information, see [Set or change the pipeline execution mode](execution-modes.md).
 + SUPERSEDED mode: A more recent execution can overtake an older one. This is the default.

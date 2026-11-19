@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-gcp-setu
 ---
 
 # Configuring Amazon Inspector to integrate with Google Cloud Platform
-<a name="inspector-gcp-setup-inspector"></a>
 
 Create a connector in Amazon Inspector to begin scanning your Google Cloud Platform (GCP) resources for vulnerabilities.
 

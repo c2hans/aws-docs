@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Import trail events to an event data store with the AWS CLI
-<a name="lake-cli-import-trail-events"></a>
 
 This section shows how to create and configure an event data store by running the [create-event-data-store](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/create-event-data-store.html) command and then how to import the events to that event data store by using the [start-import](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/start-import.html) command. For more information about importing trail events, see [Copy trail events to an event data store](cloudtrail-copy-trail-to-lake-eds.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # JobActionOptions
-<a name="API_geojobs_JobActionOptions"></a>
 
 Additional options for configuring job action parameters. Currently, only `ValidateAddress` is supported.
 

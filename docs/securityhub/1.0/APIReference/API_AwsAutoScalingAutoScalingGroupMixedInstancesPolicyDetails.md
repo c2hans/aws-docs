@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails
-<a name="API_AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetails"></a>
 
 The mixed instances policy for the automatic scaling group.
 

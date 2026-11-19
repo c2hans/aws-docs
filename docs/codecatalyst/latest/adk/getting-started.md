@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/getting-started.
 ---
 
 # Getting started with the Action Development Kit
-<a name="getting-started"></a>
 
 Learn how to create your action workspace, bootstrap and develop your action, and then test and validate it.
 

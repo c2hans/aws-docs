@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/r-sagemaker-get-star
 ---
 
 # Get started with R in SageMaker AI
-<a name="r-sagemaker-get-started"></a>
 
 This topic explains how to get started using the R software environment in SageMaker AI. For more information about using R with SageMaker AI, see [Resources for using R with Amazon SageMaker AI](r-guide.md).
 

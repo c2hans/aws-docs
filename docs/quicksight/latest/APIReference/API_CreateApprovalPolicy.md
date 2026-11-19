@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateApprovalPolicy
-<a name="API_CreateApprovalPolicy"></a>
 
 Creates an approval policy in Quick Sight.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Manag
 ---
 
 # ManagedCertificateRequest
-<a name="API_ManagedCertificateRequest"></a>
 
 An object that represents the request for the Amazon CloudFront managed ACM certificate.
 

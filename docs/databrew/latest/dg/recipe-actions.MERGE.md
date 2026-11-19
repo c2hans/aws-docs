@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MERGE.
 ---
 
 # MERGE
-<a name="recipe-actions.MERGE"></a>
 
 Merges two or more columns into a new column.
 

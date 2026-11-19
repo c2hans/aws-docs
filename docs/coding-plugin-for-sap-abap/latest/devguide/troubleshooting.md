@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # Troubleshooting AWS Coding Plugin for SAP ABAP
-<a name="troubleshooting"></a>
 
 Most problems with AWS Coding Plugin for SAP ABAP ("Coding Plugin") surface as a banner in the chat panel that names the problem and offers an action. The following list covers the problems you are most likely to encounter, most common first.
 

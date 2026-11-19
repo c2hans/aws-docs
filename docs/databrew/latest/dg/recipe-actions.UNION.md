@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.UNION.
 ---
 
 # UNION
-<a name="recipe-actions.UNION"></a>
 
 Combines the rows from two or more datasets into a single result.
 

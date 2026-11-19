@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Upgra
 ---
 
 # UpgradeTarget
-<a name="API_UpgradeTarget"></a>
 
 The version of the database engine that an instance can be upgraded to.
 

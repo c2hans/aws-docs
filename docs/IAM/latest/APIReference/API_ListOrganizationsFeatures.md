@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOrganiza
 ---
 
 # ListOrganizationsFeatures
-<a name="API_ListOrganizationsFeatures"></a>
 
 Lists the centralized root access features enabled for your organization. For more information, see [Centrally manage root access for member accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user-access-management).
 

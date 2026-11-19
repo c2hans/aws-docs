@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Deep health checks
-<a name="sagemaker-hyperpod-eks-resiliency-deep-health-checks"></a>
 
 SageMaker HyperPod performs *deep health checks* on cluster instances during the creation and update of HyperPod clusters. You can also request deep health checks on-demand for a SageMaker HyperPod cluster using [StartClusterHealthCheck](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartClusterHealthCheck.html) API. The deep health checks ensure the reliability and stability of the SageMaker HyperPod clusters by testing the underlying hardware and infrastructure components. This proactive approach helps identify and mitigate potential issues early in the cluster lifecycle.
 

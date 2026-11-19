@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/limits.html
 ---
 
 # Amazon DocumentDB quotas
-<a name="limits"></a>
 
 This topic describes the resource quotas and naming constraints for Amazon DocumentDB (with MongoDB compatibility).
 

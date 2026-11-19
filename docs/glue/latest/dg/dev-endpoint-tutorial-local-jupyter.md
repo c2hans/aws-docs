@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dev-endpoint-tutorial-loc
 ---
 
 # Tutorial: Set up a Jupyter notebook in JupyterLab to test and debug ETL scripts
-<a name="dev-endpoint-tutorial-local-jupyter"></a>
 
 In this tutorial, you connect a Jupyter notebook in JupyterLab running on your local machine to a development endpoint. You do this so that you can interactively run, debug, and test AWS Glue extract, transform, and load (ETL) scripts before deploying them. This tutorial uses Secure Shell (SSH) port forwarding to connect your local machine to an AWS Glue development endpoint. For more information, see [Port forwarding](https://en.wikipedia.org/wiki/Port_forwarding) on Wikipedia.
 

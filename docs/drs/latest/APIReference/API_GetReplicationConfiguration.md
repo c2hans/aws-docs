@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_GetReplicati
 ---
 
 # GetReplicationConfiguration
-<a name="API_GetReplicationConfiguration"></a>
 
 Gets a ReplicationConfiguration, filtered by Source Server ID.
 

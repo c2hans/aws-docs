@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Container Insights performance log events for Amazon EKS and Kubernetes
-<a name="Container-Insights-reference-performance-logs-EKS"></a>
 
 The following are examples of the performance log events that Container Insights collects from Amazon EKS and Kubernetes clusters.
 

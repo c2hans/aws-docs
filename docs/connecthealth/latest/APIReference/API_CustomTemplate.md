@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cu
 ---
 
 # CustomTemplate
-<a name="API_CustomTemplate"></a>
 
 Configuration for using a custom note template with specific instructions
 

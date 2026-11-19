@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Generative AI use cases for extensibility
-<a name="generative-ai-capabilities-extensibility"></a>
 
 Extensibility enables seamless integration with existing tools and workflows while allowing organizations to tailor the AI system to their specific needs. This capability provides robust APIs, SDKs, and customizable interfaces that facilitate the integration of AI functionalities into popular development and project management tools. For instance, organizations can enhance Jira with AI-powered features for automated ticket prioritization, effort estimation, and sprint planning. You can augment Jenkins pipelines with AI for intelligent build optimization and predictive test selection.
 

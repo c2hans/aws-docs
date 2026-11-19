@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopE
 ---
 
 # StopEntitiesDetectionJob
-<a name="API_StopEntitiesDetectionJob"></a>
 
 Stops an entities detection job in progress.
 

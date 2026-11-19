@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Me
 ---
 
 # MetadataAttributeValue
-<a name="API_agent_MetadataAttributeValue"></a>
 
 Contains the value of the metadata attribute. Choose a `type` and include the field that corresponds to it.
 

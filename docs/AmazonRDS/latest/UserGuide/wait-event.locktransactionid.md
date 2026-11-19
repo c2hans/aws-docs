@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.lo
 ---
 
 # Lock:transactionid
-<a name="wait-event.locktransactionid"></a>
 
 The `Lock:transactionid` event occurs when a transaction is waiting for a row-level lock.
 

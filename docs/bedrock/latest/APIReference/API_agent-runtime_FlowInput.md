@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowInput
-<a name="API_agent-runtime_FlowInput"></a>
 
 Contains information about an input into the prompt flow and where to send it.
 

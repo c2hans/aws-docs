@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/reliability.ht
 ---
 
 # Best Practices for Reliability
-<a name="reliability"></a>
 
 This section provides guidance about making workloads running on EKS resilient and highly-available
 

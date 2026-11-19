@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceProfile
-<a name="API_voice-chime_GetVoiceProfile"></a>
 
 Retrieves the details of the specified voice profile.
 

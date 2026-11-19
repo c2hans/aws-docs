@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/loc-sdk
 ---
 
 # Amazon Location client
-<a name="loc-sdk-client"></a>
 
 With AWS SDK v3, the SDK is separated out by service. You can install just the parts that you need. For example, to install the Amazon Location client and the credentials provider for Amazon Cognito, use the following commands.
 

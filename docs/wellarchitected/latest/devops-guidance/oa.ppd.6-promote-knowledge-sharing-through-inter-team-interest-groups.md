@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.PPD.6] Promote knowledge sharing through inter-team interest groups
-<a name="oa.ppd.6-promote-knowledge-sharing-through-inter-team-interest-groups"></a>
 
  **Category:** RECOMMENDED
 

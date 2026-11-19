@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paypal-support.html
 ---
 
 # AWS Glue support for PayPal
-<a name="paypal-support"></a>
 
 AWS Glue supports PayPal as follows:
 

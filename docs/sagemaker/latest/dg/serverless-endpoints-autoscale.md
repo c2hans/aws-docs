@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints
 ---
 
 # Automatically scale Provisioned Concurrency for a serverless endpoint
-<a name="serverless-endpoints-autoscale"></a>
 
  Amazon SageMaker AI automatically scales in or out on-demand serverless endpoints. For serverless endpoints with Provisioned Concurrency you can use Application Auto Scaling to scale up or down the Provisioned Concurrency based on your traffic profile, thus optimizing costs.
 

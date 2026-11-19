@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Managing your AWS payments
-<a name="manage-payments"></a>
 
 To open an AWS account, you must have a valid payment method on file. Use the procedures in this chapter to add, update, or remove payment methods and to make payments.
 

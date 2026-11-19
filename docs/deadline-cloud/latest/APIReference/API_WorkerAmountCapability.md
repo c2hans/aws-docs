@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_W
 ---
 
 # WorkerAmountCapability
-<a name="API_WorkerAmountCapability"></a>
 
 The details of the worker amount capability.
 

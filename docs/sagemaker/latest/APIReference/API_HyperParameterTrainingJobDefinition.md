@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTrainingJobDefinition
-<a name="API_HyperParameterTrainingJobDefinition"></a>
 
 Defines the training jobs launched by a hyperparameter tuning job.
 

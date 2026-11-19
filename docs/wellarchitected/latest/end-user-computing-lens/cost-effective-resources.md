@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Cost effective resources
-<a name="cost-effective-resources"></a>
 
 |  EUCCOST04: How do you allocate cost to your business owners?  |
 | --- |

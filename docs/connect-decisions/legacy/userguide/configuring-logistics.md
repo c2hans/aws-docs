@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/confi
 ---
 
 # Logistics
-<a name="configuring-logistics"></a>
 
 You can view the logistics details for all the items ordered as part of a order. You can select the **Material Name** to view the corresponding material summary for any supply chain process.
 

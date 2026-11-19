@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using AWSSDK.Extensions.NETCore.Setup and the IConfiguration interface
-<a name="net-dg-config-netcore"></a>
 
 (This topic was formerly titled, "Configuring the AWS SDK for .NET with .NET Core")
 

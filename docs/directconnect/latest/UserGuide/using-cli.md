@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/using-cli
 ---
 
 # Use the Direct Connect CLI
-<a name="using-cli"></a>
 
 You can use the AWS CLI to create and work with Direct Connect resources.
 

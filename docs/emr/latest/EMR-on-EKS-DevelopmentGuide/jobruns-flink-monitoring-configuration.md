@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Use monitoring configuration to monitor Flink Kubernetes operator and Flink jobs
-<a name="jobruns-flink-monitoring-configuration"></a>
 
 Monitoring configuration lets you easily set up log archiving of your Flink application and operator logs to S3 and/or CloudWatch (you can choose either one or both). Doing so adds a FluentD sidecar to your JobManager and TaskManager pods and subsequently forwards these components' logs to your configured sinks.
 

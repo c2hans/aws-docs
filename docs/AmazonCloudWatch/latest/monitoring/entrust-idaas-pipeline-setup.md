@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/entru
 ---
 
 # CloudWatch pipelines configuration for Entrust IDaaS
-<a name="entrust-idaas-pipeline-setup"></a>
 
 Collects identity and access management audit logs from Entrust IDaaS using OAuth2 authentication.
 

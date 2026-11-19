@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeLocations
-<a name="API_DescribeLocations"></a>
 
 Lists the Direct Connect locations in the current AWS Region. These are the locations that can be selected when calling [CreateConnection](API_CreateConnection.md) or [CreateInterconnect](API_CreateInterconnect.md).
 

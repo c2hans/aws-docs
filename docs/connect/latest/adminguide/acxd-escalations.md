@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-escalatio
 ---
 
 # Managing escalations
-<a name="acxd-escalations"></a>
 
 Escalations let an agentic CX designer conversation hand control back to a flow in Amazon Connect Customer when the user needs human support or the application should leave the conversational AI experience.
 

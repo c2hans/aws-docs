@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-ex
 ---
 
 # Examples to set up Amazon MSK Connect resources
-<a name="msk-connect-examples"></a>
 
 This section includes examples to help you set up Amazon MSK Connect resources such as common third-party connectors and configuration providers.
 

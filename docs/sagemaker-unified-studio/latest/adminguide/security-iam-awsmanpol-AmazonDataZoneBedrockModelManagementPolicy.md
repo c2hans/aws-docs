@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: AmazonDataZoneBedrockModelManagementPolicy
-<a name="security-iam-awsmanpol-AmazonDataZoneBedrockModelManagementPolicy"></a>
 
 Provides permissions to manage Amazon Bedrock model access, including creating, tagging and deleting application inference profiles.
 

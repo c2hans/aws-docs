@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Delete a project
-<a name="delete-project-idc"></a>
 
 Before deleting a project, ensure that all important data and resources have been backed up or migrated, as the deletion process removes all project content permanently.
 

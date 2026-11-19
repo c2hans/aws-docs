@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/setup-teams-pol
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Customer managed policy examples for teams using AWS Cloud9
-<a name="setup-teams-policy-examples"></a>
 
 The following are some examples of policies that you can use to restrict the environments that users in a group can create in an AWS account.
 +  [Prevent users in a group from creating environments](#setup-teams-policy-examples-prevent-environments)

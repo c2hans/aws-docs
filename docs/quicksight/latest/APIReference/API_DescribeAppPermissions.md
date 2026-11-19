@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAppPermissions
-<a name="API_DescribeAppPermissions"></a>
 
 Describes the resource permissions for an app.
 

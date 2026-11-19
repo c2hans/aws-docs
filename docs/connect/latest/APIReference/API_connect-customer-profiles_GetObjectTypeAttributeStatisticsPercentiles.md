@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetObjectTypeAttributeStatisticsPercentiles
-<a name="API_connect-customer-profiles_GetObjectTypeAttributeStatisticsPercentiles"></a>
 
 Contains percentile statistics for object type attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-concepts.h
 ---
 
 # Amazon SES email receiving concepts and use cases
-<a name="receiving-email-concepts"></a>
 
 When you use Amazon SES as your email receiver, you tell the service what to do with your mail. The primary method, receipt rules, gives you fine-grained control over your email receiving by utilizing *recipient-based control* to specify a set of actions to take based on the recipient. The other method, IP address filters, provides a broad level of *IP-based control* to block or allow mail based on the originating IP address or range of addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CommitmentPurchaseAnalysisConfiguration
-<a name="API_CommitmentPurchaseAnalysisConfiguration"></a>
 
 The configuration for the commitment purchase analysis.
 

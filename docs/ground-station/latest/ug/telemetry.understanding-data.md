@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/telemetry.under
 ---
 
 # Understand telemetry data
-<a name="telemetry.understanding-data"></a>
 
  Telemetry data is delivered as Base64-encoded JSON records to your Kinesis Data Streams stream. Each record contains information collected during your satellite contact, including metadata about the contact and the sampled telemetry measurements.
 

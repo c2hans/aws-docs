@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/getting-started.html
 ---
 
 # Getting started with Amazon Lex V2
-<a name="getting-started"></a>
 
 ## Overview
 <a name="getting-started-overview"></a>

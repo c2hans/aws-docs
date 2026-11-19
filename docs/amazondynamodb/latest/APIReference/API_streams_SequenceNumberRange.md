@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # SequenceNumberRange
-<a name="API_streams_SequenceNumberRange"></a>
 
 The beginning and ending sequence numbers for the stream records contained within a shard.
 

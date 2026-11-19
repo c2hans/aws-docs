@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/cold-data-tiering-op
 ---
 
 # Cold Data Tiering Options
-<a name="cold-data-tiering-options"></a>
 
 The following sections discuss cold data tiering options on AWS.
 

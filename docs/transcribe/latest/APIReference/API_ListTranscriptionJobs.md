@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListT
 ---
 
 # ListTranscriptionJobs
-<a name="API_ListTranscriptionJobs"></a>
 
 Provides a list of transcription jobs that match the specified criteria. If no criteria are specified, all transcription jobs are returned.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListStreams
-<a name="API_ListStreams"></a>
 
 Gets summary information about live streams in your account, in the AWS region where the API request is processed.
 

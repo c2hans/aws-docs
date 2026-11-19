@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/execution-alias
 ---
 
 # How Step Functions associates executions with a version or alias
-<a name="execution-alias-version-associate"></a>
 
 Step Functions associates an execution with a version or alias based on the Amazon Resource Name (ARN) that you use to invoke the [StartExecution](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html) API action. Step Functions performs this action at the execution start time.
 

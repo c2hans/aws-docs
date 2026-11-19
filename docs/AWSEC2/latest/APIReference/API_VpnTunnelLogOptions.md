@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnTunnel
 ---
 
 # VpnTunnelLogOptions
-<a name="API_VpnTunnelLogOptions"></a>
 
 Options for logging VPN tunnel activity.
 

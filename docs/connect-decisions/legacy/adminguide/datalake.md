@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/data
 ---
 
 # Data lake
-<a name="datalake"></a>
 
 The following APIs are used for creating and managing data flows and connections in data lake.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-real
 ---
 
 # Creating generic pub/sub APIs powered by serverless WebSockets in AWS AppSync
-<a name="aws-appsync-real-time-create-generic-api-serverless-websocket"></a>
 
 **Important**
 As of Mar 13, 2025, you can build a real-time PubSub API powered by WebSockets using AWS AppSync Events. For more information, see [Publish events via WebSocket](https://docs.aws.amazon.com/appsync/latest/eventapi/publish-websocket.html) in the *AWS AppSync Events Developer Guide*.

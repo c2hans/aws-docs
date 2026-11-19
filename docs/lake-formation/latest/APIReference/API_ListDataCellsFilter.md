@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListDataCellsFilter
-<a name="API_ListDataCellsFilter"></a>
 
 Lists all the data cell filters on a table.
 

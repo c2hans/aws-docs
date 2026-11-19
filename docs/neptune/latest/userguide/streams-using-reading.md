@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-using-r
 ---
 
 # Reading Neptune stream data
-<a name="streams-using-reading"></a>
 
 The following examples show how to read records from the property graph stream endpoint. You can use the AWS CLI, the AWS SDK for Python (Boto3), **awscurl**, or **curl**.
 

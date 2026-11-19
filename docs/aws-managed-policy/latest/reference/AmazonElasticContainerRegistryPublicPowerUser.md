@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticContainerRegistryPublicPowerUser
-<a name="AmazonElasticContainerRegistryPublicPowerUser"></a>
 
 **Description**: Provides full access to Amazon ECR Public repositories, but does not allow repository deletion or policy changes.
 

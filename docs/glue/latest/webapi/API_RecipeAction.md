@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RecipeAction.html
 ---
 
 # RecipeAction
-<a name="API_RecipeAction"></a>
 
 Actions defined in the AWS Glue Studio data preparation recipe node.
 

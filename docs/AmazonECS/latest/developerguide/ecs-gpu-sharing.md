@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-
 ---
 
 # Share GPUs on Amazon ECS
-<a name="ecs-gpu-sharing"></a>
 
 Many GPU workloads, such as inference and small model serving, use only a fraction of a GPU's compute and memory. Without sharing, the rest of that capacity sits idle. With Amazon ECS, you can share a single physical NVIDIA GPU across multiple containers so that you can pack more workloads onto the same hardware and reduce GPU waste.
 

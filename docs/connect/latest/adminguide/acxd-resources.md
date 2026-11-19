@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-resources
 ---
 
 # Working with resources
-<a name="acxd-resources"></a>
 
 Resources are reusable building blocks that help you create, manage, and scale experiences in agentic CX designer.
 

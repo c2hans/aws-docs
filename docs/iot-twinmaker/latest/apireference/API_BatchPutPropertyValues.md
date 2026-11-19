@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ba
 ---
 
 # BatchPutPropertyValues
-<a name="API_BatchPutPropertyValues"></a>
 
 Sets values for multiple time series properties.
 

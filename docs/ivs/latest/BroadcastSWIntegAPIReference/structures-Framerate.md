@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # Framerate
-<a name="structures-Framerate"></a>
 
 Object specifying a framerate.
 

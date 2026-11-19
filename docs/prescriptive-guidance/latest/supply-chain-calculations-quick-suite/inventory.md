@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 ---
 
 # Inventory
-<a name="inventory"></a>
 
 Inventory must be managed, planned, and controlled. The purpose of inventory is to be able to satisfy customer demand without overstocking. It represents both opportunity and risk in the supply chain. For example, if there is not enough inventory, customer service and revenue will be impacted negatively. If there is too much inventory, cost to carry and capital investment will be higher than necessary, impacting profitability.
 

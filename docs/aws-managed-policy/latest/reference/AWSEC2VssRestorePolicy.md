@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2VssRestorePolicy
-<a name="AWSEC2VssRestorePolicy"></a>
 
 **Description**: Grants Amazon EC2 and AWS SSM permissions to restore SQL Server database from application consistent snapshots created by AWS VSS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # AWS KMS key policy and permissions for encrypting CloudFormation Hooks results at rest
-<a name="hooks-kms-key-policy"></a>
 
 This topic describes how to set up the AWS KMS key policy and permissions that you need when you specify a customer managed key for encrypting Hooks annotations data that's available from the [GetHookResult](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_GetHookResult.html) API.
 

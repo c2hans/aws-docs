@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_
 ---
 
 # ResourceDescription
-<a name="API_ResourceDescription"></a>
 
 Represents information about a provisioned resource.
 

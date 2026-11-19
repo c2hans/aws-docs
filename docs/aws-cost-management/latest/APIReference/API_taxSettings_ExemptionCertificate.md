@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ExemptionCertificate
-<a name="API_taxSettings_ExemptionCertificate"></a>
 
 The exemption certificate.
 

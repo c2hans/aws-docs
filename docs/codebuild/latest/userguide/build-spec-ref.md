@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-re
 ---
 
 # Build specification reference for CodeBuild
-<a name="build-spec-ref"></a>
 
 This topic provides important reference information about build specification (buildspec) files. A *buildspec* is a collection of build commands and related settings, in YAML format, that CodeBuild uses to run a build. You can include a buildspec as part of the source code or you can define a buildspec when you create a build project. For information about how a build spec works, see [How CodeBuild works](concepts.md#concepts-how-it-works).
 

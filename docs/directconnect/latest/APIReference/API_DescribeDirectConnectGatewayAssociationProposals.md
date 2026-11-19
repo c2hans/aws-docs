@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeDirectConnectGatewayAssociationProposals
-<a name="API_DescribeDirectConnectGatewayAssociationProposals"></a>
 
 Describes one or more association proposals for connection between a virtual private gateway or transit gateway and a Direct Connect gateway.
 

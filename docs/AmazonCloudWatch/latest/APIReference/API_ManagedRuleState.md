@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ManagedRuleState
-<a name="API_ManagedRuleState"></a>
 
  The status of a managed Contributor Insights rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineDetails
-<a name="API_EnabledBaselineDetails"></a>
 
 Details of the `EnabledBaseline` resource.
 

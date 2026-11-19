@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerGroundTruthExecution
-<a name="AmazonSageMakerGroundTruthExecution"></a>
 
 **Description**: Provides access to AWS services that are required to run SageMaker GroundTruth Labeling job
 

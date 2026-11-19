@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/languages.html
 ---
 
 # Supported programming languages for the AWS CDK
-<a name="languages"></a>
 
 The AWS Cloud Development Kit (AWS CDK) has first-class support for the following general-purpose programming languages:
 + TypeScript

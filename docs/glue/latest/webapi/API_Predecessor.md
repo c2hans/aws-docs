@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Predecessor.html
 ---
 
 # Predecessor
-<a name="API_Predecessor"></a>
 
 A job run that was used in the predicate of a conditional trigger that triggered this job run.
 

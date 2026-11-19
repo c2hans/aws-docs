@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/loading-data-copy-job
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Create an S3 event integration to automatically copy files from Amazon S3 buckets
-<a name="loading-data-copy-job"></a>
 
 You can use an auto-copy job to load data into your Amazon Redshift tables from files that are stored in Amazon S3. Amazon Redshift detects when new Amazon S3 files are added to the path specified in your COPY command. A COPY command is then automatically run without you having to create an external data ingestion pipeline. Amazon Redshift keeps track of which files have been loaded. Amazon Redshift determines the number of files batched together per COPY command. You can see the resulting COPY commands in system views.
 

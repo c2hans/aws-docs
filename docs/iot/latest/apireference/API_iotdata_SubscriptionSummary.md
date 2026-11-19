@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_Subs
 ---
 
 # SubscriptionSummary
-<a name="API_iotdata_SubscriptionSummary"></a>
 
 Contains information about a subscription for an MQTT client, including the topic filter and Quality of Service (QoS) level.
 

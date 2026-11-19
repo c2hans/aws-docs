@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-custom
 ---
 
 # Default customer hold: hold music
-<a name="default-customer-hold"></a>
 
 This flow starts when the customer is put on hold. It plays the audio that the customer hears while on hold.
 

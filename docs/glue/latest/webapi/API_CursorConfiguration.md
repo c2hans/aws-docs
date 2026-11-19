@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CursorConfigurati
 ---
 
 # CursorConfiguration
-<a name="API_CursorConfiguration"></a>
 
 Cursor-based pagination configuration that defines how to handle pagination using cursor tokens or next page identifiers.
 

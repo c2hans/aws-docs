@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/create-user-s
 ---
 
 # Creating the IAM user
-<a name="create-user-steps"></a>
 
 Follow these steps to create the IAM user in your AWS Marketplace seller account.
 

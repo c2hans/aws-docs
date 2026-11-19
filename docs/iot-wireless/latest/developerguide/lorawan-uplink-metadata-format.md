@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # View format of uplink messages sent from LoRaWAN devices
-<a name="lorawan-uplink-metadata-format"></a>
 
 To faciliate seamless connection between your LoRaWAN devices and the cloud, you can use AWS IoT Core for LoRaWAN. The AWS IoT Core for LoRaWAN service provides secure and reliable data exchange between your LoRaWAN devices and AWS IoT Core. It acts as a bridge, translating the LoRaWAN protocol into MQTT messages that can be seamlessly ingested by AWS IoT Core. You can use this capability in applications, such as real-time data processing, device state management, and integration with other AWS services.
 

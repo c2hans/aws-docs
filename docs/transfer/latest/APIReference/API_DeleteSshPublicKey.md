@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSshPublicKey
-<a name="API_DeleteSshPublicKey"></a>
 
 Deletes a user's Secure Shell (SSH) public key.
 

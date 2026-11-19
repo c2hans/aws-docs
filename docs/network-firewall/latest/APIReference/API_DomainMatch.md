@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DomainMatch
-<a name="API_DomainMatch"></a>
 
 The domains that a [ServerCertificateScope](API_ServerCertificateScope.md) matches for SSL/TLS inspection on a proxy mode firewall.
 

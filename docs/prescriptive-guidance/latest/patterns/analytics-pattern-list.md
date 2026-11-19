@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 ---
 
 # Analytics
-<a name="analytics-pattern-list"></a>
 
 **Topics**
 + [Analyze Amazon Redshift data in Microsoft SQL Server Analysis Services](analyze-amazon-redshift-data-in-microsoft-sql-server-analysis-services.md)

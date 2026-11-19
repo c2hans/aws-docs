@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeJo
 ---
 
 # DescribeJobQueues
-<a name="API_DescribeJobQueues"></a>
 
 Describes one or more of your job queues.
 

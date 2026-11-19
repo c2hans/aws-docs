@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Resources
-<a name="additional-resources"></a>
 
 ## AWS resources
 <a name="aws-resources"></a>

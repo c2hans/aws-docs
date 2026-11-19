@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Brand
 ---
 
 # BrandColorPalette
-<a name="API_BrandColorPalette"></a>
 
 The color palette.
 

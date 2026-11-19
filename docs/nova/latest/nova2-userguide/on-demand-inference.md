@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/on-demand-in
 ---
 
 # On-demand inference
-<a name="on-demand-inference"></a>
 
 On-demand inference provides serverless access to Amazon Nova models without requiring provisioned capacity. This mode automatically scales to handle your workload and charges based on usage.
 

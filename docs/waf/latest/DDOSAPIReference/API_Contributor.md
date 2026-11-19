@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Contribu
 ---
 
 # Contributor
-<a name="API_Contributor"></a>
 
 A contributor to the attack and their contribution.
 

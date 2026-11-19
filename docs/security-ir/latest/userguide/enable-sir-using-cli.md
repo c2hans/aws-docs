@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/enable-sir-
 ---
 
 # Enable Security Incident Response and configure your incident response team using the API/CLI
-<a name="enable-sir-using-cli"></a>
 
 This section provides steps to enable AWS Security Incident Response, designate a delegated administrator for AWS Security Incident Response, and configure your incident response team using the API/CLI.
 

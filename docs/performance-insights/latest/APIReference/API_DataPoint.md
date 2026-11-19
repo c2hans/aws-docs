@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DataPoint
-<a name="API_DataPoint"></a>
 
 A timestamp, and a single numerical value, which together represent a measurement at a particular point in time.
 

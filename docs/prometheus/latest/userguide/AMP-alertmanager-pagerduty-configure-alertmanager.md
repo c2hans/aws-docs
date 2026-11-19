@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertman
 ---
 
 # Configure alert manager to send alerts to PagerDuty
-<a name="AMP-alertmanager-pagerduty-configure-alertmanager"></a>
 
 To configure alert manager to send alerts to PagerDuty, you need to update your alert manager definition. You can do this using the AWS Management Console, AWS CLI, or AWS SDKs.
 

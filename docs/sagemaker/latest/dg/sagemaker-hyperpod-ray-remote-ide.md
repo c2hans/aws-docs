@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Accessing your development environment
-<a name="sagemaker-hyperpod-ray-remote-ide"></a>
 
 A space runs JupyterLab or Code Editor on your cluster. You reach it in a browser, or from a local IDE over a remote connection. Either way your code runs in the space and on the Ray cluster attached to it, so `ray.init()` reaches the cluster.
 

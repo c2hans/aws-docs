@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetContac
 ---
 
 # GetContactList
-<a name="API_GetContactList"></a>
 
 Returns contact list metadata. It does not return any information about the contacts present in the list.
 

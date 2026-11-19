@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/spot-fleet-roles-
 ---
 
 # Create Amazon EC2 spot fleet roles with the AWS CLI
-<a name="spot-fleet-roles-cli"></a>
 
 **To create the **AmazonEC2SpotFleetTaggingRole** IAM role for your Spot Fleet compute environments**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListPolicies
-<a name="API_ListPolicies"></a>
 
 Retrieves the list of all policies in an organization of a specified type.
 

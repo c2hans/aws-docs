@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Update the organization role stack (optional)
-<a name="update-the-organization-role-stack-optional"></a>
 
 Follow the step-by-step instructions in this section to update the organization role stack for your Organizations management account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/async-inference-invo
 ---
 
 # Invoke an Asynchronous Endpoint
-<a name="async-inference-invoke-endpoint"></a>
 
 Get inferences from the model hosted at your asynchronous endpoint with `InvokeEndpointAsync`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Transforming application development and maintenance operating models on AWS with generative AI
-<a name="introduction"></a>
 
 *Dhana Vadivelan, Amazon Web Services*
 

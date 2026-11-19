@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-cpg.html
 ---
 
 # Use Capacity Reservations with placement groups
-<a name="cr-cpg"></a>
 
 You can create Capacity Reservations in a placement group to reserve Amazon EC2 compute capacity for your workloads.
 

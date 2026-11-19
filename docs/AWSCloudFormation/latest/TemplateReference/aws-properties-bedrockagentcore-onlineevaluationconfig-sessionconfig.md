@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig SessionConfig
-<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-sessionconfig"></a>
 
  The session configuration that defines timeout settings for detecting when agent sessions are complete and ready for evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-locatio
 ---
 
 # Resolving location of IoT devices
-<a name="device-location-resolve-solvers"></a>
 
 Use AWS IoT Core Device Location to decode the measurement data from your devices, and resolve the device location using third-party solvers. The resolved location is generated as a GeoJSON payload with the geo coordinates and accuracy information. You can resolve the location of your device from the AWS IoT console, the AWS IoT Wireless API, or AWS CLI.
 

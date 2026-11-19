@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupVaultNotificationsDetails
-<a name="API_AwsBackupBackupVaultNotificationsDetails"></a>
 
 Provides details about the Amazon SNS event notifications for the specified backup vault.
 

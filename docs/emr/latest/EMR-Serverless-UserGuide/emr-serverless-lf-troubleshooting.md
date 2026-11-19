@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Troubleshooting
-<a name="emr-serverless-lf-troubleshooting"></a>
 
 See the following sections for troubleshooting solutions.
 

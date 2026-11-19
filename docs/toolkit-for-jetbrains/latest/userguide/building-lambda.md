@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/b
 ---
 
 # Working with AWS Lambda from the AWS Toolkit for JetBrains
-<a name="building-lambda"></a>
 
 The following topics describe how to work with AWS Lambda functions from the AWS Toolkit for JetBrains.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # AndroidApp
-<a name="API_geoapikeys_AndroidApp"></a>
 
 Unique identifying information for an Android app. Consists of a package name and a 20 byte SHA-1 certificate fingerprint.
 

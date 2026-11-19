@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/resource-aware-sc
 ---
 
 # Check how many resources are in-use and available
-<a name="resource-aware-scheduling-how-to-check-resources-check-resources"></a>
 
 Batch lets you query the number of available resources (`availableQuantity`), the number of resources in use (`inUseQuantity`), and the total resources (`totalQuantity`) at a given moment.
 

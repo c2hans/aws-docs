@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SearchRecommendations
-<a name="API_connect-customer-profiles_SearchRecommendations"></a>
 
 Retrieves recommendations for a profile in a specific domain. The profile is identified using a search key, which consists of a `KeyName` and a `KeyValues` list. The `KeyName` can be a predefined key (for example, `_profileId`, `_phone`, `_email`) or a custom-defined key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure-se
 ---
 
 # Configuring Amazon Inspector to integrate with Microsoft Azure
-<a name="inspector-azure-setup-inspector"></a>
 
 After you configure your Azure environment, create a connector in Amazon Inspector to begin scanning your Azure resources for vulnerabilities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # GET: Get Schedule Events
-<a name="channel-scheduling-get-schedule-events"></a>
 
 Within the system, active repeating schedules result in “schedule events”. A schedule event is an individual instance of the schedule and represents one time on the calendar when the channel will run. When new schedules are created or updated, and every hour after that, the system generates schedule events to bring the total queued schedule events to 24.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/integrate-vide
 ---
 
 # Integrate video calling and screen sharing into your custom agent application by using Connect Customer Streams JS
-<a name="integrate-video-calling-for-agents"></a>
 
 This topic is for developers. For custom agent applications, you need to make changes to support video calling and screen sharing. Following are high level steps.
 

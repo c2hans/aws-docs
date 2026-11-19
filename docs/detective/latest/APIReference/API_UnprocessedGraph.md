@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Unproc
 ---
 
 # UnprocessedGraph
-<a name="API_UnprocessedGraph"></a>
 
 Behavior graphs that could not be processed in the request.
 

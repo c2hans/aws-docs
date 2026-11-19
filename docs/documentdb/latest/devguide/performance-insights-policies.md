@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-i
 ---
 
 # Configuring access policies for Performance Insights
-<a name="performance-insights-policies"></a>
 
 To access Performance Insights, you must have the appropriate permissions from AWS Identity and Access Management (IAM). You have the following options for granting access:
 + Attach the `AmazonRDSPerformanceInsightsReadOnly` managed policy to a permission set or role.

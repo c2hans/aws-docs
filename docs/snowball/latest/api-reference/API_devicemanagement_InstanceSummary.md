@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # InstanceSummary
-<a name="API_devicemanagement_InstanceSummary"></a>
 
 The details about the instance.
 

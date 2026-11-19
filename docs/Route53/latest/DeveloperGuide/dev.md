@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dev.html
 ---
 
 # .dev
-<a name="dev"></a>
 
 Used as a secure domain for developers and technology.
 

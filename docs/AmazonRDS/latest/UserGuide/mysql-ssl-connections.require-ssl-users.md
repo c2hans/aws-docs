@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-ssl-con
 ---
 
 # Requiring SSL/TLS for specific user accounts to a MySQL DB instance on Amazon RDS
-<a name="mysql-ssl-connections.require-ssl-users"></a>
 
 You can require SSL/TLS encryption for specified user account connections to your MySQL DB instances on Amazon RDS. Protecting sensitive information from unauthorized access or interception is crucial to enforce security policies where data confidentiality is a concern.
 

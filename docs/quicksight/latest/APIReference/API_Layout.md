@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Layou
 ---
 
 # Layout
-<a name="API_Layout"></a>
 
 A `Layout` defines the placement of elements within a sheet.
 

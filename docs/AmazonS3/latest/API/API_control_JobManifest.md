@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobManif
 ---
 
 # JobManifest
-<a name="API_control_JobManifest"></a>
 
 Contains the configuration information for a job's manifest.
 

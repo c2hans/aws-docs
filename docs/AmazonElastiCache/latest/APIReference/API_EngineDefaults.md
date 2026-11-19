@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # EngineDefaults
-<a name="API_EngineDefaults"></a>
 
 Represents the output of a `DescribeEngineDefaultParameters` operation.
 

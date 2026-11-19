@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # DescribeScheduledQuery
-<a name="API_query_DescribeScheduledQuery"></a>
 
 Provides detailed information about a scheduled query.
 

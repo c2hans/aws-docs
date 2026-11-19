@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/tage
 ---
 
 # Data retrieval APIs for Tag Editor
-<a name="tageditor"></a>
 
 Tag Editor provides the following APIs for data retrieval.
 

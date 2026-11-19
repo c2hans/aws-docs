@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Troubleshoot and optimize pipelines
-<a name="troubleshoot-and-optimize-pipelines"></a>
 
 |  MIDAPERF04: How do you troubleshoot and optimize your machine performance data ingestion and processing pipelines?  |
 | --- |

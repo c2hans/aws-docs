@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Test
 ---
 
 # TestingData
-<a name="API_TestingData"></a>
 
 The dataset used for testing. Optionally, if `AutoCreate` is set, Amazon Rekognition uses the training dataset to create a test dataset with a temporary split of the training dataset.
 

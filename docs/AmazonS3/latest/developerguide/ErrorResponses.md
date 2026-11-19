@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResp
 ---
 
 # Error responses
-<a name="ErrorResponses"></a>
 
 This section provides reference information about Amazon S3 errors.
 
@@ -590,7 +589,7 @@ The following table lists Amazon S3 error codes.
 **Important**
 Amazon S3 Select is no longer available to new customers. Existing customers of Amazon S3 Select can continue to use the feature as usual. [Learn more](https://aws.amazon.com/blogs/storage/how-to-optimize-querying-your-data-in-amazon-s3/)
 
-The following table contains special errors that `SELECT Object Content` might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that `SELECT Object Content` might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error code | Description | HTTP status code |
 | --- | --- | --- |
@@ -709,7 +708,7 @@ The following table contains special errors that `SELECT Object Content` might r
 ## List of Replication-related error codes
 <a name="ReplicationErrorCodeList"></a>
 
-The following table contains special errors that the `Replication` operation might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that the `Replication` operation might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error code | Description | HTTP status code |
 | --- | --- | --- |
@@ -720,7 +719,7 @@ The following table contains special errors that the `Replication` operation mig
 ## List of Tagging-related error codes
 <a name="S3TaggingErrorCodeList"></a>
 
-The following table contains special errors that the `TagResource`, `UntagResource`, and `ListTagsForResource` operations might return for Storage Lens groups. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that the `TagResource`, `UntagResource`, and `ListTagsForResource` operations might return for Storage Lens groups. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |
@@ -733,7 +732,7 @@ The following table contains special errors that the `TagResource`, `UntagResour
 ## List of Amazon S3 annotation-related error codes
 <a name="S3AnnotationErrorCodeList"></a>
 
-The following table contains special errors that annotation operations (`PutObjectAnnotation`, `GetObjectAnnotation`, `ListObjectAnnotations`, `DeleteObjectAnnotation`, `UpdateBucketMetadataAnnotationTableConfiguration`) and annotation-related `CopyObject` behavior might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that annotation operations (`PutObjectAnnotation`, `GetObjectAnnotation`, `ListObjectAnnotations`, `DeleteObjectAnnotation`, `UpdateBucketMetadataAnnotationTableConfiguration`) and annotation-related `CopyObject` behavior might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |
@@ -759,7 +758,7 @@ The following table contains special errors that annotation operations (`PutObje
 ## List of Amazon S3 on Outposts error codes
 <a name="S3OutpostsErrorCodeList"></a>
 
-The following table contains special errors that an Amazon S3 on Outposts operation might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that an Amazon S3 on Outposts operation might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error code | Description | HTTP status code |
 | --- | --- | --- |
@@ -774,7 +773,7 @@ The following table contains special errors that an Amazon S3 on Outposts operat
 ## List of Amazon S3 Storage Lens error codes
 <a name="S3LensErrorCodeList"></a>
 
-The following table contains special errors that Amazon S3 Storage Lens operations might return. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that Amazon S3 Storage Lens operations might return. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error code | Description | HTTP status code |
 | --- | --- | --- |
@@ -817,7 +816,7 @@ The following table contains special errors that Amazon S3 Storage Lens operatio
 | TooManyRegions | The Regions container cannot have more than 50 Regions. | 400 Bad Request |
 | TooManyStorageLensGroups | You can't attach more than 50 Storage Lens groups to your Storage Lens dashboard. | 400 Bad Request |
 
-The following table contains special errors that S3 Storage Lens groups operations might return. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that S3 Storage Lens groups operations might return. For general information about general Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error code | Description | HTTP status code |
 | --- | --- | --- |
@@ -845,7 +844,7 @@ The following table contains special errors that S3 Storage Lens groups operatio
 ## List of Amazon S3 Object Lambda error codes
 <a name="S3ObjectLambdaErrorCodeList"></a>
 
-The following table contains special errors that S3 Object Lambda might return. For information about general Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that S3 Object Lambda might return. For information about general Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 Error responses received from the supporting access points during non-`GetObject` requests are sent to the caller unaltered.
 
@@ -864,7 +863,7 @@ Error responses received from the supporting access points during non-`GetObject
 ## List of Amazon S3 asynchronous error codes
 <a name="S3AsynchronousErrorCodeList"></a>
 
-The following table contains special errors that asynchronous requests might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that asynchronous requests might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 These errors are returned when you query about the state of an asynchronous request, such as by using `DescribeMultiRegionAccessPointOperation`. Because these requests are asynchronous, all of these errors have a status code of `200 OK`.
 
@@ -884,7 +883,7 @@ These errors are returned when you query about the state of an asynchronous requ
 ## List of Amazon S3 Access Grants error codes
 <a name="S3AccessGrantsErrorCodeList"></a>
 
-The following table contains special errors that S3 Access Grants requests might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that S3 Access Grants requests might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |
@@ -917,7 +916,7 @@ The following table contains special errors that S3 Access Grants requests might
 ## List of Amazon FSx-related error codes
 <a name="FSXErrorCodeList"></a>
 
-The following table contains special errors that requests made to Amazon FSx through an Amazon S3 access point might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that requests made to Amazon FSx through an Amazon S3 access point might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |
@@ -929,7 +928,7 @@ The following table contains special errors that requests made to Amazon FSx thr
 ## List of Amazon S3 Tables error codes
 <a name="S3TablesErrorCodeList"></a>
 
-The following table contains special errors that Amazon S3 Tables operations might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](#ErrorResponses).
+The following table contains special errors that Amazon S3 Tables operations might return. For general information about Amazon S3 errors and a list of error codes, see [Error responses](ErrorResponses.md).
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |

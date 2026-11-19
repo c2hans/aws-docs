@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # TagResource
-<a name="API_dax_TagResource"></a>
 
 Associates a set of tags with a DAX resource. You can call `TagResource` up to 5 times per second, per account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # IamIdentityCenterOptionsInput
-<a name="API_IamIdentityCenterOptionsInput"></a>
 
 Configuration settings for enabling and managing IAM Identity Center.
 

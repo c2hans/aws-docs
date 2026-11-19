@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/mobile-ios-androi
 ---
 
 # Differences between iOS and Android
-<a name="mobile-ios-android-differences"></a>
 
 The mobile experience is consistent across iOS and Android, with a few differences.
 + Mission Control: available on iOS. Not available on Android.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # API Contract Summary
-<a name="reference-api-contract"></a>
 
 This section summarizes the primary integration surface for clients of the Agentic Vehicle Experience. Complete endpoint specifications are in `docs/VSA_API_CONTRACT.md` in the AVX repository.
 

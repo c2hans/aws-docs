@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-using-ei
 ---
 
 # Connect to an Amazon EC2 instance using EC2 Instance Connect Endpoint
-<a name="connect-using-eice"></a>
 
 You can use EC2 Instance Connect Endpoint to connect to an Amazon EC2 instance that supports SSH or RDP.
 

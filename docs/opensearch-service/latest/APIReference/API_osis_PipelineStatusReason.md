@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineStatusReason
-<a name="API_osis_PipelineStatusReason"></a>
 
 Information about a pipeline's current status.
 

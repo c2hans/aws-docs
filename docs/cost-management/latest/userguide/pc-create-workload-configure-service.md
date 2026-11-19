@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Configure new services in my workload estimate
-<a name="pc-create-workload-configure-service"></a>
 
 This section outlines how to configure new services in a workload estimate.
 

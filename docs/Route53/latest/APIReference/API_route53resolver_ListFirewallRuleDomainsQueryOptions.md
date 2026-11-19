@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallRuleDomainsQueryOptions
-<a name="API_route53resolver_ListFirewallRuleDomainsQueryOptions"></a>
 
 Optional filters and sort order for [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md).
 

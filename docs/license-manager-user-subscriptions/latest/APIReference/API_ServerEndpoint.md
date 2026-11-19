@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ServerEndpoint
-<a name="API_ServerEndpoint"></a>
 
 A network endpoint through which you can access one or more servers.
 

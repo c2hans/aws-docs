@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetPropertyPathSegment
-<a name="API_AssetPropertyPathSegment"></a>
 
 Represents one level between a property and the root of the asset.
 

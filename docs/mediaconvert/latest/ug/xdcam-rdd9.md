@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/xdcam-rdd9.html
 ---
 
 # XDCAM RDD9 output requirements
-<a name="xdcam-rdd9"></a>
 
 MediaConvert supports the following combinations of encoding settings when your output **MXF profile** is **XDCAM RDD9**.
 

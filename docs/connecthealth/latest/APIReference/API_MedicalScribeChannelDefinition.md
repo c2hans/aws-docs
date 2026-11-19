@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeChannelDefinition
-<a name="API_MedicalScribeChannelDefinition"></a>
 
 Defines a channel in the audio stream
 

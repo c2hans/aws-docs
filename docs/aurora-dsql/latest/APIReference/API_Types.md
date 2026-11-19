@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Type
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon Aurora DSQL API contains several data types that various actions use. This section describes each data type in detail.
 

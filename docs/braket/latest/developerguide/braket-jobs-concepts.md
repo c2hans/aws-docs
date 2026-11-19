@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Key concepts for Hybrid Jobs
-<a name="braket-jobs-concepts"></a>
 
 This section explains the key concepts of the `AwsQuantumJob.create` function provided by the Amazon Braket Python SDK and mapping to the container file structure.
 

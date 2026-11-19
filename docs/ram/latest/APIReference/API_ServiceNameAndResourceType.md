@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ServiceNameA
 ---
 
 # ServiceNameAndResourceType
-<a name="API_ServiceNameAndResourceType"></a>
 
 Information about a shareable resource type and the AWS service to which resources of that type belong.
 

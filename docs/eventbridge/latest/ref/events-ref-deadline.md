@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-deadli
 ---
 
 # AWS Deadline Cloud events
-<a name="events-ref-deadline"></a>
 
 Deadline Cloud sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

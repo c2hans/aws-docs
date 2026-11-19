@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # UpdateIndexType
-<a name="API_UpdateIndexType"></a>
 
 Changes the type of the index from one of the following types to the other. For more information about indexes and the role they perform in AWS Resource Explorer, see [Turning on cross-Region search by creating an aggregator index](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-aggregator-region.html) in the * AWS Resource Explorer User Guide*.
 +  ** `AGGREGATOR` index type**

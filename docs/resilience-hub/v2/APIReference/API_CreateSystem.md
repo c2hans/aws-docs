@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateSystem
-<a name="API_CreateSystem"></a>
 
 Creates a system that represents a logical grouping of services.
 

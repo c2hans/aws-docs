@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-codesigni
 ---
 
 # Creating code signing configurations for Lambda
-<a name="configuration-codesigning-create"></a>
 
 To enable code signing for a function, you create a *code signing configuration* and attach it to the function. A code signing configuration defines a list of allowed signing profiles and the policy action to take if any of the validation checks fail.
 

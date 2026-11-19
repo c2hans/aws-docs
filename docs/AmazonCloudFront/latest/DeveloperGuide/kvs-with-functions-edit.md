@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Update a key value store
-<a name="kvs-with-functions-edit"></a>
 
 When you update a key value store, you can change the key-value pairs, or change the association between the key value store and the function.
 

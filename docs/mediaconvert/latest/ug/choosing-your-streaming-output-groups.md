@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/choosing-your-str
 ---
 
 # Choosing your ABR streaming output groups
-<a name="choosing-your-streaming-output-groups"></a>
 
 To create media assets for people to stream to their devices, choose one or more of the adaptive bitrate (ABR) output groups: Apple HLS, DASH ISO, Microsoft Smooth Streaming, or CMAF. The type of output group determines which media players can play the files that MediaConvert creates from that output group.
 

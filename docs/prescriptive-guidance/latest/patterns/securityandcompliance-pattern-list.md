@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Security, identity & compliance
-<a name="securityandcompliance-pattern-list"></a>
 
 **Topics**
 + [Automate incident response and forensics](automate-incident-response-and-forensics.md)

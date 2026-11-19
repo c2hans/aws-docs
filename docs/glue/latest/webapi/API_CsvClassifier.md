@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CsvClassifier.htm
 ---
 
 # CsvClassifier
-<a name="API_CsvClassifier"></a>
 
 A classifier for custom `CSV` content.
 

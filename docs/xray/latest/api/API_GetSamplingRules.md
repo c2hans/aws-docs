@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingRules.htm
 ---
 
 # GetSamplingRules
-<a name="API_GetSamplingRules"></a>
 
 Retrieves all sampling rules.
 

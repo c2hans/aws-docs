@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Alias.html
 ---
 
 # Alias
-<a name="API_Alias"></a>
 
 An alias for an edge.
 

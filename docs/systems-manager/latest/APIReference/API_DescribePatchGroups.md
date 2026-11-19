@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribePatchGroups
-<a name="API_DescribePatchGroups"></a>
 
 Lists all patch groups that have been registered with patch baselines.
 

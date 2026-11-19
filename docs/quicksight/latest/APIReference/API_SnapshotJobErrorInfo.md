@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotJobErrorInfo
-<a name="API_SnapshotJobErrorInfo"></a>
 
 An object that contains information on the error that caused the snapshot job to fail.
 

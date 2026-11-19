@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RegistrationTypeFilter
-<a name="API_RegistrationTypeFilter"></a>
 
 The filter definition for filtering registration types that meets a specified criteria.
 

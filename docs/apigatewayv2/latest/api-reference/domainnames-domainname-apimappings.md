@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domain
 ---
 
 # ApiMappings
-<a name="domainnames-domainname-apimappings"></a>
 
 Represents a collection of API mappings.
 

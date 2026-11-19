@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeMetricsExport
-<a name="API_DescribeMetricsExport"></a>
 
 Describes the metrics of the application configuration being exported.
 

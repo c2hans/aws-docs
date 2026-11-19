@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabaseClones
-<a name="API_ListAutonomousDatabaseClones"></a>
 
 Lists the clones of the specified Autonomous Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Placement
 ---
 
 # PlacementGroupInfo
-<a name="API_PlacementGroupInfo"></a>
 
 Describes the placement group support of the instance type.
 

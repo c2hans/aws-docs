@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # Skipping the current replication error for RDS for MySQL
-<a name="Appendix.MySQL.CommonDBATasks.SkipError"></a>
 
 You can skip an error on your read replica if the error is causing your read replica to stop responding and the error doesn't affect the integrity of your data.
 

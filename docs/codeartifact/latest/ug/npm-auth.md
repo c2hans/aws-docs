@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/npm-auth.html
 ---
 
 # Configure and use npm with CodeArtifact
-<a name="npm-auth"></a>
 
 After you create a repository in CodeArtifact, you can use the npm client to install and publish packages. The recommended method for configuring npm with your repository endpoint and authorization token is by using the `aws codeartifact login` command. You can also configure npm manually.
 

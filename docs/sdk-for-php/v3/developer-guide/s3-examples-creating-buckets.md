@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-exampl
 ---
 
 # Creating and using Amazon S3 buckets with the AWS SDK for PHP Version 3
-<a name="s3-examples-creating-buckets"></a>
 
 The following examples show how to:
 + Return a list of buckets owned by the authenticated sender of the request using [ListBuckets](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-s3-2006-03-01.html#listbuckets).

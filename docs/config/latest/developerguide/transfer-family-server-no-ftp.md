@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-fa
 ---
 
 # transfer-family-server-no-ftp
-<a name="transfer-family-server-no-ftp"></a>
 
 Checks if a server created with AWS Transfer Family uses FTP for endpoint connection. The rule is NON\_COMPLIANT if the server protocol for endpoint connection is FTP-enabled.
 

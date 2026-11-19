@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.ht
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon SageMaker Service
 <a name="Welcome_Amazon_SageMaker_Service"></a>

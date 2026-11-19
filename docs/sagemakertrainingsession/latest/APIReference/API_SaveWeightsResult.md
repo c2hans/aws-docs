@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SaveWeightsResult
-<a name="API_SaveWeightsResult"></a>
 
 The result of saving model weights.
 

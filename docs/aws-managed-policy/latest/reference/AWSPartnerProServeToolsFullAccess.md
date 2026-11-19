@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerProServeToolsFullAccess
-<a name="AWSPartnerProServeToolsFullAccess"></a>
 
 **Description**: Provides full access to ProServe tools.
 

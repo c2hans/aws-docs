@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PayloadPart
-<a name="API_agent-runtime_PayloadPart"></a>
 
 Contains a part of an agent response and citations for it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_QARes
 ---
 
 # QAResult
-<a name="API_QAResult"></a>
 
 The QA result that is made from the `DashboardVisual` or `GeneratedAnswer`.
 

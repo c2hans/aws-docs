@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MWAA::Environment ModuleLoggingConfiguration
-<a name="aws-properties-mwaa-environment-moduleloggingconfiguration"></a>
 
 Defines the type of logs to send for the Apache Airflow log type (e.g. `DagProcessingLogs`).
 

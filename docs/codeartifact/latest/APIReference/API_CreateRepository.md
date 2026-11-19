@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Cre
 ---
 
 # CreateRepository
-<a name="API_CreateRepository"></a>
 
  Creates a repository.
 

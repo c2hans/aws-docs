@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to search for contact and opening hours
-<a name="how-to-search-opening-hours"></a>
 
 The `SearchText` API enables you to search for contacts and opening hours of a POI (Point of Interest).
 

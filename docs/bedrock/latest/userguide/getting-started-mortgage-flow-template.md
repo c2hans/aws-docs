@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started
 ---
 
 # CloudFormation templates
-<a name="getting-started-mortgage-flow-template"></a>
 
 The `cloudformation-mortgage-flow-setup.zip` file that you download contains the following files:
 + `deploy.sh` – A shell script that deploys your resources and prepares the main CloudFormation template that you'll use.

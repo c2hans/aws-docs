@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_L
 ---
 
 # LogDeliveryConfiguration
-<a name="API_LogDeliveryConfiguration"></a>
 
 Configuration for sending InfluxDB engine logs to send to specified S3 bucket.
 

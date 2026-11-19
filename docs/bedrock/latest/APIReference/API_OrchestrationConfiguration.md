@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Orchestr
 ---
 
 # OrchestrationConfiguration
-<a name="API_OrchestrationConfiguration"></a>
 
 The configuration details for the model to process the prompt prior to retrieval and response generation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create an Amazon ECS task definition and mount a file system on EC2 instances using Amazon EFS
-<a name="create-an-amazon-ecs-task-definition-and-mount-a-file-system-on-ec2-instances-using-amazon-efs"></a>
 
 *Durga Prasad Cheepuri, Amazon Web Services*
 

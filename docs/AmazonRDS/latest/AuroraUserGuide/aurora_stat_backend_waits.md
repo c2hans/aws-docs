@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_backend\_waits
-<a name="aurora_stat_backend_waits"></a>
 
 Displays statistics for wait activity for a specific backend process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Troubleshooting private connections
-<a name="configuring-integrations-and-knowledge-troubleshooting-private-connections"></a>
 
 This page describes common problems you might encounter when creating or using a [private connection](configuring-integrations-and-knowledge-connecting-to-privately-hosted-tools.md) for AWS DevOps Agent, and how to resolve them. Each section describes a symptom, the most likely causes, and the steps to fix it.
 

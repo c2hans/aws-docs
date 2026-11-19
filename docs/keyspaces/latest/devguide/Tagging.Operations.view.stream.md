@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/Tagging.Operat
 ---
 
 # View the tags of a stream
-<a name="Tagging.Operations.view.stream"></a>
 
 The following examples show how to view the tags of a stream in Amazon Keyspaces using CQL or the AWS CLI.
 

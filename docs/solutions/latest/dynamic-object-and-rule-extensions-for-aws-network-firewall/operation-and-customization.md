@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Operation and customization
-<a name="operation-and-customization"></a>
 
 ## Data backup and restore
 <a name="data-backup-and-restore"></a>

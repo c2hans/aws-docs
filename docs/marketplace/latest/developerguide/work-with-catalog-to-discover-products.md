@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Discover products and pricing
-<a name="work-with-catalog-to-discover-products"></a>
 
 You can use the AWS Marketplace Discovery API to programmatically search the catalog, retrieve detailed product information, and access pricing details including public and private offers. This section describes common workflows for discovering products and evaluating pricing.
 

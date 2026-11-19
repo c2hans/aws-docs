@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Reg
 ---
 
 # RegionDescription
-<a name="API_RegionDescription"></a>
 
 The replicated Region information for a directory.
 

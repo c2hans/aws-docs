@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-associate-vc-step
 ---
 
 # Associating a configuration with a Voice Connector for the Amazon Chime SDK
-<a name="ca-associate-vc-steps"></a>
 
 After you use the console to create a call analytics configuration, you use the configuration by associating a Voice Connector with it. The Voice Connector then automatically invokes call the analytics services specified in your configuration. The Voice Connector invokes call analytics for each call.
 

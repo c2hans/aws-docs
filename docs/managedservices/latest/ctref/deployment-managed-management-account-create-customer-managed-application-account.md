@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Management Account \| Create Customer-Managed Application Account
-<a name="deployment-managed-management-account-create-customer-managed-application-account"></a>
 
 Create a customer-managed application account in a multi-account AWS landing zone. Customer-managed accounts give you full control to operate the infrastructure within the centralized architecture managed by AMS. Multi-account AWS landing zone core accounts must already be onboarded to AWS Managed Services (AMS).
 

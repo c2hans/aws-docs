@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfig
 ---
 
 # UpdateConfigurationSetTrackingOptions
-<a name="API_UpdateConfigurationSetTrackingOptions"></a>
 
 Modifies an association between a configuration set and a custom domain for open and click event tracking.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Filtering visualization data
-<a name="working-with-visualizations-filtering"></a>
 
 This section contains information about how to filter profiling data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # BatchDeleteInstrumentationConfigurations
-<a name="API_BatchDeleteInstrumentationConfigurations"></a>
 
 Deletes multiple instrumentation configurations in a single request. Supports two mutually exclusive selection methods:
 + By scope: delete all configurations matching a service, environment, and instrumentation type.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-authent
 ---
 
 # Quorum authentication process for AWS CloudHSM Management Utility
-<a name="quorum-authentication-overview"></a>
 
 The following steps summarize the quorum authentication processes. For the specific steps and tools, see [User management with quorum authentication enabled for AWS CloudHSM Management Utility](quorum-authentication-crypto-officers.md).
 

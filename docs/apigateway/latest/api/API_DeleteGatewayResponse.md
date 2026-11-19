@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteGatewayR
 ---
 
 # DeleteGatewayResponse
-<a name="API_DeleteGatewayResponse"></a>
 
 Clears any customization of a GatewayResponse of a specified response type on the given RestApi and resets it with the default settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Detailed
 ---
 
 # DetailedStatusCodesMetrics
-<a name="API_control_DetailedStatusCodesMetrics"></a>
 
 The container element for Amazon S3 Storage Lens detailed status code metrics. Detailed status code metrics generate metrics for HTTP status codes, such as `200 OK`, `403 Forbidden`, `503 Service Unavailable` and others.
 

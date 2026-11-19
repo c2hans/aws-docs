@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # AWS WAF
-<a name="aws-waf-2"></a>
 
 This alarm is created only when CloudFront and AWS WAF are deployed.
 

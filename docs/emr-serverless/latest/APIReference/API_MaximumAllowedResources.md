@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_M
 ---
 
 # MaximumAllowedResources
-<a name="API_MaximumAllowedResources"></a>
 
 The maximum allowed cumulative resources for an application. No new resources will be created once the limit is hit.
 

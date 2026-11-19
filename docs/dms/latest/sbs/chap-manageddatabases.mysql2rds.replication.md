@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-manageddatabases.mys
 ---
 
 # Migrate MySQL database with AWS DMS ongoing replication
-<a name="chap-manageddatabases.mysql2rds.replication"></a>
 
 To configure the ongoing replication in AWS DMS, enter the native start point for MySQL, which you have retrieved at the end of the full load process as described for each tool. The native start point will be similar to `mysql-bin-changelog.000024:373`.
 

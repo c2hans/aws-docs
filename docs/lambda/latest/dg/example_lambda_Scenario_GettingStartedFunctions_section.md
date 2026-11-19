@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_Scenario
 ---
 
 # Learn the basics of Lambda with an AWS SDK
-<a name="example_lambda_Scenario_GettingStartedFunctions_section"></a>
 
 The following code examples show how to:
 + Create an IAM role and Lambda function, then upload handler code.

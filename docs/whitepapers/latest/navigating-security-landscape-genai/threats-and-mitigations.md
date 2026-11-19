@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Threats and mitigations
-<a name="threats-and-mitigations"></a>
 
  In this section, we discuss the main threats we encountered and mitigation strategies.
 

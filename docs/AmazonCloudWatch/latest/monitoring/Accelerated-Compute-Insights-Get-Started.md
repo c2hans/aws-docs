@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Accel
 ---
 
 # Get started with Accelerated Compute Insights
-<a name="Accelerated-Compute-Insights-Get-Started"></a>
 
 Amazon CloudWatch Accelerated Compute Insights monitors self-hosted AI inference workloads that run on accelerated compute in Amazon EKS clusters. Collection uses the Amazon CloudWatch Observability Amazon EKS add-on with OTel Container Insights enabled.
 

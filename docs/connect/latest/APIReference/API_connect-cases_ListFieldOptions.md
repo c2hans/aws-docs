@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListFieldOptions
-<a name="API_connect-cases_ListFieldOptions"></a>
 
 Lists all of the field options for a field identifier in the domain.
 

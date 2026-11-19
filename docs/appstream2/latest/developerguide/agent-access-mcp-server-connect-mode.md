@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 ---
 
 # Connection modes
-<a name="agent-access-mcp-server-connect-mode"></a>
 
 You can control how your agent waits for the desktop session to become available by setting the `x-amzn-agentaccess-connect-mode` header on your Model Context Protocol (MCP) requests.
 

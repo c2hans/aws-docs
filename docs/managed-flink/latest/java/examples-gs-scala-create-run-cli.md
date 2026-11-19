@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/examples-gs-sc
 ---
 
 # Create and run the application (CLI)
-<a name="examples-gs-scala-create-run-cli"></a>
 
 In this section, you use the AWS Command Line Interface to create and run the Managed Service for Apache Flink application. Use the *kinesisanalyticsv2* AWS CLI command to create and interact with Managed Service for Apache Flink applications.
 

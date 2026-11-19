@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Paramet
 ---
 
 # ParameterConfiguration
-<a name="API_ParameterConfiguration"></a>
 
  An object that provides the current value of a security control parameter and identifies whether it has been customized.
 

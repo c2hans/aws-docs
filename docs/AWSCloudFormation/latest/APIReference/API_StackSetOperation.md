@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackSetOperation
-<a name="API_StackSetOperation"></a>
 
 The structure that contains information about a StackSet operation.
 

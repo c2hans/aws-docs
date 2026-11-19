@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # Choice
-<a name="API_Choice"></a>
 
 A choice available to answer question.
 

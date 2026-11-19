@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Detach
 ---
 
 # DetachClusterNodeVolume
-<a name="API_DetachClusterNodeVolume"></a>
 
  Detaches your Amazon Elastic Block Store (Amazon EBS) volume from a node in your EKS orchestrated SageMaker HyperPod cluster.
 

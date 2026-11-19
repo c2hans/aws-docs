@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TopicRuleDes
 ---
 
 # TopicRuleDestination
-<a name="API_TopicRuleDestination"></a>
 
 A topic rule destination.
 

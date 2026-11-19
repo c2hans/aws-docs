@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/logging-and-mo
 ---
 
 # Logging and monitoring Connect Customer
-<a name="logging-and-monitoring"></a>
 
 Monitoring is important for maintaining the reliability, availability, and performance of your contact center.
 

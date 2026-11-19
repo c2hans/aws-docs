@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dsql-cluste
 ---
 
 # dsql-cluster-deletion-protection-enabled
-<a name="dsql-cluster-deletion-protection-enabled"></a>
 
 Checks if an Amazon Aurora DSQL cluster has deletion protection enabled. The rule is NON\_COMPLIANT if configuration.DeletionProtectionEnabled is false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Landing zone considerations for a large migration
-<a name="landing-zone"></a>
 
 A *landing zone* is a well-architected AWS environment that is scalable and secure. By establishing standards for the landing zone, such as defining the number of accounts and designing the subnets and security groups, you build a solid foundation. This foundation gives you the ability to enable, provision, and operate your environment for both business agility and governance at scale while accelerating your cloud adoption journey. For more information about landing zones and strategies for building them,  see [Setting up a secure and scalable multi-account AWS environment](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-aws-environment/welcome.html).
 

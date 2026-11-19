@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Installed AWS Tools for PowerShell on AWS CloudShell
-<a name="pstools-getting-set-up-cloudshell"></a>
 
 `AWS.Tools` is pre-installed on AWS CloudShell as described in [Pre-installed software](https://docs.aws.amazon.com/cloudshell/latest/userguide/vm-specs.html#pre-installed-software) in the [AWS CloudShell User Guide](https://docs.aws.amazon.com/cloudshell/latest/userguide/). Since console credentials are automatically passed to CloudShell, a user with permissions to open CloudShell can immediately run Tools for PowerShell cmdlets without additional installation or configuration.
 

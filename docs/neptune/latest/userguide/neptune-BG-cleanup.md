@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-BG-clea
 ---
 
 # Cleaning up after the Neptune Blue/Green solution has completed
-<a name="neptune-BG-cleanup"></a>
 
 After you have promoted the staging (green) cluster to production, clean up the resources created by the Neptune Blue/Green solution:
 + Delete the Amazon EC2 instance that was created to run the solution.

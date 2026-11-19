@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Salesforc
 ---
 
 # SalesforceKnowledgeArticleConfiguration
-<a name="API_SalesforceKnowledgeArticleConfiguration"></a>
 
 Provides the configuration information for the knowledge article types that Amazon Kendra indexes. Amazon Kendra indexes standard knowledge articles and the standard fields of knowledge articles, or the custom fields of custom knowledge articles, but not both
 

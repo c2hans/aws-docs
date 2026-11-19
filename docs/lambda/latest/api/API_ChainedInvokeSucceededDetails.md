@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeSucce
 ---
 
 # ChainedInvokeSucceededDetails
-<a name="API_ChainedInvokeSucceededDetails"></a>
 
 Details about a chained invocation that succeeded.
 

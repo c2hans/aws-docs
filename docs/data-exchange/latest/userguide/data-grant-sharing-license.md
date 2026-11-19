@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/data-gran
 ---
 
 # Sharing your AWS Data Exchange licenses
-<a name="data-grant-sharing-license"></a>
 
 **Overview for receivers**
 

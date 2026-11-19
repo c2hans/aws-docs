@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateServiceAction
-<a name="API_UpdateServiceAction"></a>
 
 Updates a self-service action.
 

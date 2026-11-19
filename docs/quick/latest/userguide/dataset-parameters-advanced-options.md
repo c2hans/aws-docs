@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/dataset-parameter
 ---
 
 # Advanced use cases of dataset parameters
-<a name="dataset-parameters-advanced-options"></a>
 
 This section covers more advanced options and use cases working with dataset parameters and dropdown controls. Use the following walkthroughs to create dynamic dropdown values with dataset parameters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/aws-cli
 ---
 
 # AWS Elemental MediaConvert CreateJob Example Using the AWS CLI
-<a name="aws-cli"></a>
 
 A job does the work of transcoding a media file. When you create a job using the AWS CLI, you specify the job settings that AWS Elemental MediaConvert requires to perform the transcoding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationAssignmentsFilter
-<a name="API_ListApplicationAssignmentsFilter"></a>
 
 A structure that describes a filter for application assignments.
 

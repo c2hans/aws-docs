@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/data
 ---
 
 # Data Encryption
-<a name="data-encryption"></a>
 
 This topic provides information specific to Amazon Connect Decisions about encryption in transit and encryption at rest.
 

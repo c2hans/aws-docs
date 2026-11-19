@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 A complex type containing details about a Suricata rule. Contains:
 +  `SID`

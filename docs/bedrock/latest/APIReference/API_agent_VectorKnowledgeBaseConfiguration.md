@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ve
 ---
 
 # VectorKnowledgeBaseConfiguration
-<a name="API_agent_VectorKnowledgeBaseConfiguration"></a>
 
 Contains details about the model used to create vector embeddings for the knowledge base.
 

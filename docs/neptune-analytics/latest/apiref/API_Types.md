@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Type
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon Neptune Graph API contains several data types that various actions use. This section describes each data type in detail.
 

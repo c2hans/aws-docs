@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # RootCauseCluster
-<a name="API_RootCauseCluster"></a>
 
 A cluster of similar root causes identified within a failure subcategory.
 

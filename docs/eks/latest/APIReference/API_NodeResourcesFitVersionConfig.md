@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodeResource
 ---
 
 # NodeResourcesFitVersionConfig
-<a name="API_NodeResourcesFitVersionConfig"></a>
 
 The NodeResourcesFit version configuration with default value and constraints.
 

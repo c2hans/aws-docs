@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-gatewa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure CNI for the Hybrid Nodes gateway
-<a name="hybrid-nodes-gateway-cni"></a>
 
 The Amazon EKS Hybrid Nodes gateway requires specific Cilium configuration to enable VXLAN-based connectivity between your VPC and hybrid nodes. You must enable Cilium VTEP (VXLAN Tunnel Endpoint) support and disable the L7 proxy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatModelJobTaskSummary
-<a name="API_ThreatModelJobTaskSummary"></a>
 
 Contains summary information about a threat model job task.
 

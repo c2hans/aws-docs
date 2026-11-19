@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.h
 ---
 
 # CodePipeline concepts
-<a name="concepts"></a>
 
 Modeling and configuring your automated release process is easier if you understand the concepts and terms used in AWS CodePipeline. Here are some concepts to know about as you use CodePipeline.
 

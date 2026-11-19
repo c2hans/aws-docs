@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # iOS tests in AWS Device Farm
-<a name="test-types-ios-tests"></a>
 
 Device Farm provides support for several automation test types for iOS devices, and a built-in test.
 

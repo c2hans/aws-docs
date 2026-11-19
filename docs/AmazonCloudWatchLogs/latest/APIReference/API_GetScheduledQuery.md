@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetScheduledQuery
-<a name="API_GetScheduledQuery"></a>
 
 Retrieves details about a specific scheduled query, including its configuration, execution status, and metadata.
 

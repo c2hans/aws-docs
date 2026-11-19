@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Prerequisites
-<a name="datasets-prereqs"></a>
 
 Before you can manage datasets, make sure the following are in place.
 

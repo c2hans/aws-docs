@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/contro
 ---
 
 # POST Ad Avail State: Start or Stop Ad Avail on a Channel
-<a name="control-ad-avail-on-channel-start-or-stop"></a>
 
 Start or stop the ad avail blanking on a channel.
 

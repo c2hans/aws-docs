@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Enable your applications on Amazon ECS
-<a name="CloudWatch-Application-Signals-Enable-ECSMain"></a>
 
 Enable CloudWatch Application Signals on Amazon ECS by using the custom setup steps described in this section.
 

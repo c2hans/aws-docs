@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopColumnStatist
 ---
 
 # StopColumnStatisticsTaskRunSchedule
-<a name="API_StopColumnStatisticsTaskRunSchedule"></a>
 
 Stops a column statistics task run schedule.
 

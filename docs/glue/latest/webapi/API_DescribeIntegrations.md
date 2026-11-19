@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DescribeIntegrati
 ---
 
 # DescribeIntegrations
-<a name="API_DescribeIntegrations"></a>
 
 The API is used to retrieve a list of integrations.
 

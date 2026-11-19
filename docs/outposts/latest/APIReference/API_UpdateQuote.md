@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_UpdateQ
 ---
 
 # UpdateQuote
-<a name="API_UpdateQuote"></a>
 
 Updates the specified quote. You can modify the requested capacities, constraints, payment options, payment terms, or Outpost association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-l
 ---
 
 # Validate templates with `cfn-lint`
-<a name="cfn-lint"></a>
 
 AWS CloudFormation Linter (`cfn-lint`) checks JSON and YAML templates against the [CloudFormation resource provider schemas](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/resource-type-schemas.html) and additional rules. It can find invalid resource properties, unsupported property values, broken references, and common best-practice problems. Use it to catch these problems before you send a template to CloudFormation. If a template uses the AWS Serverless Application Model (AWS SAM) transform, `cfn-lint` applies the transform before it checks the template.
 

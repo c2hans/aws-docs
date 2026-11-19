@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeleteUserAttributes
-<a name="API_DeleteUserAttributes"></a>
 
 Deletes attributes from the currently signed-in user. For example, your application can submit a request to this operation when a user wants to remove their `birthdate` attribute value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentInfo
-<a name="API_DeploymentInfo"></a>
 
 Information about a deployment.
 

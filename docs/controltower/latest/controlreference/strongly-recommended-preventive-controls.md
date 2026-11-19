@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/str
 ---
 
 # Strongly recommended controls with preventive behavior
-<a name="strongly-recommended-preventive-controls"></a>
 
 The following strongly recommended controls have preventive behavior.
 

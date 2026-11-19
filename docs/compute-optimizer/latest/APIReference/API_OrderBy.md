@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # OrderBy
-<a name="API_OrderBy"></a>
 
 Describes how the recommendations are ordered.
 

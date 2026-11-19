@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/solution-jvm.ht
 ---
 
 # Solution for monitoring JVM applications with Amazon Managed Grafana
-<a name="solution-jvm"></a>
 
 Applications built with Java Virtual Machines (JVM) have specialized monitoring needs. This page describes a template that provides a solution for monitoring JVM-based applications running on your Amazon EKS cluster. The solution can be installed using [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/guide/home.html).
 

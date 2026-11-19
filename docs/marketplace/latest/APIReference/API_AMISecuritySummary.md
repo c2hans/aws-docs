@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AMIS
 ---
 
 # AMISecuritySummary
-<a name="API_AMISecuritySummary"></a>
 
 The details of the resource assessed under the AMI Security framework.
 

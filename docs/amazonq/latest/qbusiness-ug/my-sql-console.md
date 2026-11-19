@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/my-sql-conso
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Connecting Amazon Q Business to MySQL using the console
-<a name="my-sql-console"></a>
 
 The following procedure outlines how to connect Amazon Q Business to MySQL using the AWS Management Console.
 

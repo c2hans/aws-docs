@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_S3Deta
 ---
 
 # S3Details
-<a name="API_S3Details"></a>
 
 Public details for a customer-managed S3 integration. The sensitive external ID is intentionally omitted.
 

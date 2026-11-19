@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Error codes
-<a name="next-gen-api-error-codes"></a>
 
 The following table lists error codes returned by the next generation of Resilience Hub API.
 

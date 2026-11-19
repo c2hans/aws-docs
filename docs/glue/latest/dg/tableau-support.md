@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tableau-support.html
 ---
 
 # AWS Glue support for Tableau
-<a name="tableau-support"></a>
 
 AWS Glue supports Tableau as follows:
 

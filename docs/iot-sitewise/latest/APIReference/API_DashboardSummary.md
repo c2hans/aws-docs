@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Das
 ---
 
 # DashboardSummary
-<a name="API_DashboardSummary"></a>
 
 Contains a dashboard summary.
 

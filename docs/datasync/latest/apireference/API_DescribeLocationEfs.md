@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationEfs
-<a name="API_DescribeLocationEfs"></a>
 
 Provides details about how an AWS DataSync transfer location for an Amazon EFS file system is configured.
 

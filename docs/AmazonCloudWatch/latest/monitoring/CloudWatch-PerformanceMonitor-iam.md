@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Identity and access management for Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-iam"></a>
 
 Performance Monitor uses AWS Identity and Access Management (IAM) policies and a service-linked role to control access. You can use IAM to do the following:
 + Control which users can create, edit, or delete monitors.

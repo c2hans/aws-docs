@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationAssignments
-<a name="API_ListApplicationAssignments"></a>
 
 Lists AWS account users that are assigned to an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RegistryRecordIamCredentialProvider
-<a name="API_RegistryRecordIamCredentialProvider"></a>
 
 IAM credential provider configuration for authenticating with an external source using SigV4 signing during synchronization.
 

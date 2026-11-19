@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputs-inp
 ---
 
 # Inputs: partners
-<a name="inputs-inputid-partners"></a>
 
 ## URI
 <a name="inputs-inputid-partners-url"></a>

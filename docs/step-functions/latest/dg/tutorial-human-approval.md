@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-human-
 ---
 
 # Deploying a workflow that waits for human approval in Step Functions
-<a name="tutorial-human-approval"></a>
 
 This tutorial shows you how to deploy a human approval project that allows an AWS Step Functions execution to pause during a task, and wait for a user to respond to an email. The workflow progresses to the next state once the user has approved the task to proceed.
 

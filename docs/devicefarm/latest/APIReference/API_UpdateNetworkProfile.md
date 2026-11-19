@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateNetworkProfile
-<a name="API_UpdateNetworkProfile"></a>
 
 Updates the network profile.
 

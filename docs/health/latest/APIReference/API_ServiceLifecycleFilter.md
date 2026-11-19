@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_ServiceLi
 ---
 
 # ServiceLifecycleFilter
-<a name="API_ServiceLifecycleFilter"></a>
 
 A filter for narrowing down service lifecycle results.
 

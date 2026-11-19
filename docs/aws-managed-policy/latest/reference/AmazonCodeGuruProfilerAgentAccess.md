@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCodeGuruProfilerAgentAccess
-<a name="AmazonCodeGuruProfilerAgentAccess"></a>
 
 **Description**: Provides access required by Amazon CodeGuru Profiler agent.
 

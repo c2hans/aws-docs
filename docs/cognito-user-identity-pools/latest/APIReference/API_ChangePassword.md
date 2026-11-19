@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ChangePassword
-<a name="API_ChangePassword"></a>
 
 Changes the password for the currently signed-in user.
 

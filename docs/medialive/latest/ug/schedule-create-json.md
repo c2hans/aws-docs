@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-create-json
 ---
 
 # JSON payload for create actions
-<a name="schedule-create-json"></a>
 
 The following sections show the structure of the payload and an example of the payload for every type of create action for a MediaLive schedule.
 

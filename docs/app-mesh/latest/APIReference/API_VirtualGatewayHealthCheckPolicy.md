@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayHealthCheckPolicy
-<a name="API_VirtualGatewayHealthCheckPolicy"></a>
 
 An object that represents the health check policy for a virtual gateway's listener.
 

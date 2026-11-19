@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Metadat
 ---
 
 # MetadataGenerationRunTypeStat
-<a name="API_MetadataGenerationRunTypeStat"></a>
 
 The statistics of the metadata generation run type.
 

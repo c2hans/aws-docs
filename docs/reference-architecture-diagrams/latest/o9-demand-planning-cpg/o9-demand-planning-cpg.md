@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/o
 ---
 
 # o9 Demand Planning for CPG
-<a name="o9-demand-planning-cpg"></a>
 
 Publication date: **July 8, 2022 ([Diagram history](#o9-history))**
 

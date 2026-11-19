@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Frame
 ---
 
 # FrameworkControl
-<a name="API_FrameworkControl"></a>
 
 Contains detailed information about all of the controls of a framework. Each framework must contain at least one control.
 

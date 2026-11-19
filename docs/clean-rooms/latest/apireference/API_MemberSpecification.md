@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MemberSpecification
-<a name="API_MemberSpecification"></a>
 
 Basic metadata used to construct a new member.
 

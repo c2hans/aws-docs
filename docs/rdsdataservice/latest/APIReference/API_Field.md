@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_F
 ---
 
 # Field
-<a name="API_Field"></a>
 
 Contains a value.
 

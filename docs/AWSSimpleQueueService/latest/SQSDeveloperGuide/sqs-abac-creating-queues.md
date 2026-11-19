@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Creating IAM users and Amazon SQS queues
-<a name="sqs-abac-creating-queues"></a>
 
 The following examples explain how to create an ABAC policy to control access to Amazon SQS using the AWS Management Console and CloudFormation.
 

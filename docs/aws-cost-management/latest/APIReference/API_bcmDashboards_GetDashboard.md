@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetDashboard
-<a name="API_bcmDashboards_GetDashboard"></a>
 
 Retrieves the configuration and metadata of a specified dashboard, including its widgets and layout settings.
 

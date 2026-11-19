@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Start
 ---
 
 # StartTestRun
-<a name="API_StartTestRun"></a>
 
 Starts a run of a test. Each run scopes to the current resources in the service and produces a pass or fail outcome.
 

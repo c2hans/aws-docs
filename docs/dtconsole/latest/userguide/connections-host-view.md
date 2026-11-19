@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-h
 ---
 
 # View host details
-<a name="connections-host-view"></a>
 
 You can use the Developer Tools console or the **get-host** command in the AWS Command Line Interface (AWS CLI) to view details for a host.
 

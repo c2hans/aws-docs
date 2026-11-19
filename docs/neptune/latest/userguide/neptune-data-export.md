@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-data-ex
 ---
 
 # Exporting data from a Neptune DB cluster
-<a name="neptune-data-export"></a>
 
 Neptune provides several ways to export data from your DB cluster, depending on the data model, format, and scale of export you need.
 

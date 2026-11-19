@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_OTAUpdateFil
 ---
 
 # OTAUpdateFile
-<a name="API_OTAUpdateFile"></a>
 
 Describes a file to be associated with an OTA update.
 

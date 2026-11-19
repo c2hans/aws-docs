@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointMessage
-<a name="API_DestinationEndpointMessage"></a>
 
 A status message for a destination endpoint.
 

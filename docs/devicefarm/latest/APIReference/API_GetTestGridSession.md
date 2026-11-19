@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetTe
 ---
 
 # GetTestGridSession
-<a name="API_GetTestGridSession"></a>
 
 A session is an instance of a browser created through a `RemoteWebDriver` with the URL from ` CreateTestGridUrlResult`. You can use the following to look up sessions:
 + The session ARN.

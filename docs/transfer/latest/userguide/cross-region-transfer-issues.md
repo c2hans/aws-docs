@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/cross-region-t
 ---
 
 # Troubleshoot cross-region transfer issues
-<a name="cross-region-transfer-issues"></a>
 
 This section describes possible solutions for issues related to transferring files across AWS Regions.
 

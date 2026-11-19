@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Assoc
 ---
 
 # AssociateBackupVaultMpaApprovalTeam
-<a name="API_AssociateBackupVaultMpaApprovalTeam"></a>
 
 Associates an MPA approval team with a backup vault.
 

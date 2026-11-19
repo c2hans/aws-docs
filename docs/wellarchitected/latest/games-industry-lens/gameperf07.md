@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Networking and content delivery
-<a name="gameperf07"></a>
 
 | GAMEPERF07: How do you design your matchmaking service to optimize performance? |
 | --- |

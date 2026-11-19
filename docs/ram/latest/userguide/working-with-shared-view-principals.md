@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared
 ---
 
 # View principals sharing with you
-<a name="working-with-shared-view-principals"></a>
 
 You can view a list of all the principals that are sharing resources with you. You can see which resources and resource shares they're sharing with you.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Displays the tags associated with a CloudWatch Logs resource. Currently, log groups and destinations support tagging.
 

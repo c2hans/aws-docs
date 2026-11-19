@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # RemediationSummary
-<a name="API_RemediationSummary"></a>
 
 A high-level remediation summary returned in the detail response.
 

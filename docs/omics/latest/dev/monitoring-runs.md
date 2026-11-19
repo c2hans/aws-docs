@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/monitoring-runs.html
 ---
 
 # Run lifecycle in a HealthOmics workflow
-<a name="monitoring-runs"></a>
 
 You can track the progress of a run by monitoring the run status. HealthOmics updates the run status as a run proceeds through its lifecycle.
 

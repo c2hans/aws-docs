@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-tra
 ---
 
 # Preventing common Route 53 transfer issues
-<a name="domain-transfer-troubleshooting"></a>
 
 If you encounter issues while your domain transfer is in progress, here are the most common problems and how to resolve them:
 

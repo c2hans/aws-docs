@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # SystemDescription
-<a name="structures-SystemDescription"></a>
 
 Object specifying client system characteristics.
 

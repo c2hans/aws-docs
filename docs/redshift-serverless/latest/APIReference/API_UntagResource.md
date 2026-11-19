@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag or set of tags from a resource.
 

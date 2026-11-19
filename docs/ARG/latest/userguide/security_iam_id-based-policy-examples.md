@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/security_iam_id-bas
 ---
 
 # AWS Resource Groups identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, IAM principals, such as roles and users, don't have permission to create or modify Resource Groups resources. They also can't perform tasks using the AWS Management Console, AWS CLI, or AWS API. An IAM administrator must create IAM policies that grant the principals permission to perform specific API operations on the specified resources they need. The administrator must then attach those policies to the principals that require those permissions.
 

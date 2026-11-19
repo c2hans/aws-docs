@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS Billing Conductor API contains several data types that various actions use. This section describes each data type in detail.
 

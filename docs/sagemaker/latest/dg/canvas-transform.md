@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-transform.htm
 ---
 
 # Transform data
-<a name="canvas-transform"></a>
 
 Amazon SageMaker Data Wrangler provides numerous ML data transforms to streamline cleaning and featurizing your data. Using the interactive data preparation tools in Data Wrangler, you can sample datasets of any size with a variety of sampling techniques and start exploring your data in a matter of minutes. After finalizing your data transforms on the sampled data, you can then scale the data flow to apply those transformations to the entire dataset.
 

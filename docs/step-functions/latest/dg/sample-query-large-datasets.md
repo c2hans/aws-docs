@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sample-query-la
 ---
 
 # Query large datasets using an AWS Glue crawler
-<a name="sample-query-large-datasets"></a>
 
 This sample project demonstrates how to ingest a large data set in Amazon S3 and partition it through AWS Glue Crawlers, then execute Amazon Athena queries against that partition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # ProfileAssociation
-<a name="API_route53profiles_ProfileAssociation"></a>
 
  An association between a Route 53 Profile and a VPC.
 

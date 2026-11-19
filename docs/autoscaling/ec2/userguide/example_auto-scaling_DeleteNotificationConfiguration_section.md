@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-s
 ---
 
 # Use `DeleteNotificationConfiguration` with a CLI
-<a name="example_auto-scaling_DeleteNotificationConfiguration_section"></a>
 
 The following code examples show how to use `DeleteNotificationConfiguration`.
 

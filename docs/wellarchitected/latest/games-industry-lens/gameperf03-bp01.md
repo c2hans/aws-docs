@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF03-BP01 Use Amazon GameLift Anywhere and a GameLift testing toolkit
-<a name="gameperf03-bp01"></a>
 
  To enhance performance efficiency through an iterative development process, utilize Amazon GameLift Anywhere along with the Amazon GameLift Testing Toolkit to establish a comprehensive testing environment.
 

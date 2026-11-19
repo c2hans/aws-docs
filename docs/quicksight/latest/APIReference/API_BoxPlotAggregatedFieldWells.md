@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BoxPl
 ---
 
 # BoxPlotAggregatedFieldWells
-<a name="API_BoxPlotAggregatedFieldWells"></a>
 
 The aggregated field well for a box plot.
 

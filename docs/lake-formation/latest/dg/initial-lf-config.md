@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/initial-lf-conf
 ---
 
 # Set up AWS Lake Formation
-<a name="initial-lf-config"></a>
 
  The following sections provide information on setting up Lake Formation for the first time. Not all of the topics in this section are required to start using Lake Formation. You can use the instructions to set up the Lake Formation permissions model to manage your existing AWS Glue Data Catalog objects and data locations in Amazon Simple Storage Service (Amazon S3).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # SampleResponse
-<a name="API_SampleResponse"></a>
 
 The response containing generated samples and optional log-probabilities.
 

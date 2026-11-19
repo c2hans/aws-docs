@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/ase-operations.
 ---
 
 # Operations
-<a name="ase-operations"></a>
 
 ## Tagging AWS resources
 <a name="tagging-sap-ase"></a>

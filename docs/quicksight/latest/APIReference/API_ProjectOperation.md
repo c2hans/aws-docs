@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Proje
 ---
 
 # ProjectOperation
-<a name="API_ProjectOperation"></a>
 
 A transform operation that projects columns. Operations that come after a projection can only refer to projected columns.
 

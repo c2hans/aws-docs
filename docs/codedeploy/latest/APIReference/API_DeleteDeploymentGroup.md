@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Delet
 ---
 
 # DeleteDeploymentGroup
-<a name="API_DeleteDeploymentGroup"></a>
 
 Deletes a deployment group.
 

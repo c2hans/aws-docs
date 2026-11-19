@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-com
 ---
 
 # Start and monitor command executions
-<a name="iot-remote-command-execution-start-monitor"></a>
 
 After creating a Command, start an Execution on the target device. The device updates results and publishes status to MQTT reserved Topics. Retrieve and monitor Execution status from your account.
 

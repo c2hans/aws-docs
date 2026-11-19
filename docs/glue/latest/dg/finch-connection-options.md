@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/finch-connection-options.
 ---
 
 # Finch connection options
-<a name="finch-connection-options"></a>
 
 The following are connection options for Finch:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Finch object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-consol
 ---
 
 # AWS Console Mobile Application events
-<a name="events-ref-consoleapp"></a>
 
 Console Mobile Application sends service events to EventBridge via AWS CloudTrail.
 

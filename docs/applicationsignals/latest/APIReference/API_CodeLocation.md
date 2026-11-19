@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # CodeLocation
-<a name="API_CodeLocation"></a>
 
 Identifies a code location to instrument, including the programming language, code unit, class, method, file path, and optional line number.
 

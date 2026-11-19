@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automating-sagemaker
 ---
 
 # Events that Amazon SageMaker AI sends to Amazon EventBridge
-<a name="automating-sagemaker-with-eventbridge"></a>
 
 Amazon EventBridge monitors status change events in Amazon SageMaker AI. EventBridge enables you to automate SageMaker AI and respond automatically to events such as a training job status change or endpoint status change. Events from SageMaker AI are delivered to EventBridge in near real time. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule. To create a rule, see [Creating rules that react to events in EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html). If you use AWS CLI, see [put-rule](https://docs.aws.amazon.com/cli/latest/reference/events/put-rule.html) from the *AWS CLI Command Reference*.
 

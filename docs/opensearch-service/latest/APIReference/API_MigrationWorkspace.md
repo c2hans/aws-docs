@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MigrationWorkspace
-<a name="API_MigrationWorkspace"></a>
 
 The target workspace configuration for a migration. You can specify an existing workspace by ID or request creation of a new workspace.
 

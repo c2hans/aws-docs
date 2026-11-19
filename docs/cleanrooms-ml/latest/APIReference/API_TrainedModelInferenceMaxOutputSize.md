@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelInferenceMaxOutputSize
-<a name="API_TrainedModelInferenceMaxOutputSize"></a>
 
 Information about the maximum output size for a trained model inference job.
 

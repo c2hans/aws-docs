@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Data preparation with SQL in Studio
-<a name="sagemaker-sql-extension"></a>
 
 Amazon SageMaker Studio provides a built-in SQL extension. This extension allows data scientists to perform tasks such as sampling, exploratory analysis, and feature engineering directly within their JupyterLab notebooks. It leverages AWS Glue connections to maintain a centralized data source catalog. The catalog stores metadata about various data sources. Through this SQL environment, data scientists can browse data catalogs, explore their data, author complex SQL queries, and further process the results in Python.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Data sink – Kafka
-<a name="data-sink-kafka"></a>
 
  This data sink will stream the clickstream data collected by the ingestion endpoint into a topic in a Kafka cluster. Currently, guidance support Amazon Managed Streaming for Apache Kafka (Amazon MSK) or a self-hosted Kafka cluster.
 

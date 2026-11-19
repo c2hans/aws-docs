@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetNetwork
 ---
 
 # GetNetworkSettings
-<a name="API_GetNetworkSettings"></a>
 
 Retrieves all network-level settings for a Wickr network, including client metrics, data retention, and other configuration options.
 

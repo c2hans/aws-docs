@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ContactFilter
-<a name="API_connect-cases_ContactFilter"></a>
 
 A filter for related items of type `Contact`.
 

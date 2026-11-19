@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Capabilit
 ---
 
 # CapabilityReportCapability
-<a name="API_CapabilityReportCapability"></a>
 
 The capability used in capability report.
 

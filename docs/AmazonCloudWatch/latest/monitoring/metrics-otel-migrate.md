@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # Migrate from Classic to OTel metrics
-<a name="metrics-otel-migrate"></a>
 
 Customers currently publishing custom metrics through PutMetricData or EMF can migrate incrementally to the OTel path. There is no flag day — migration happens workload by workload at your own pace.
 

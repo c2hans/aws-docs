@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Key AWS services
-<a name="key-aws-services-ops"></a>
 + [AWS Lambda](https://aws.amazon.com/lambda/)
 + [AWS IoT Core](https://aws.amazon.com/iot-core/)
 + [AWS Glue](https://aws.amazon.com/glue/)

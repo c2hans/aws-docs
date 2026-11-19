@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/addon-upgrade.html
 ---
 
 # Default add-on updates
-<a name="addon-upgrade"></a>
 
 This topic explains how to update the default pre-installed add-ons that are included on EKS clusters.
 

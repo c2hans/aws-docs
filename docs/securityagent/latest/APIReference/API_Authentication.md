@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Au
 ---
 
 # Authentication
-<a name="API_Authentication"></a>
 
 The authentication configuration for an actor, specifying the provider type and credentials.
 

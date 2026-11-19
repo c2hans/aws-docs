@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::TransitGatewayAttachmentNatConfiguration NatRule
-<a name="aws-properties-ec2-transitgatewayattachmentnatconfiguration-natrule"></a>
 
 <a name="aws-properties-ec2-transitgatewayattachmentnatconfiguration-natrule-description"></a>The `NatRule` property type specifies Property description not available. for an [AWS::EC2::TransitGatewayAttachmentNatConfiguration](aws-resource-ec2-transitgatewayattachmentnatconfiguration.md).
 

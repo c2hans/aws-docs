@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceFleetConfig ApplicationConfiguration
-<a name="aws-properties-emr-instancefleetconfig-applicationconfiguration"></a>
 
 <a name="aws-properties-emr-instancefleetconfig-applicationconfiguration-description"></a>The `ApplicationConfiguration` property type specifies Property description not available. for an [AWS::EMR::InstanceFleetConfig](aws-resource-emr-instancefleetconfig.md).
 
@@ -55,5 +54,5 @@ Property description not available.
 `Configurations`  <a name="cfn-emr-instancefleetconfig-applicationconfiguration-configurations"></a>
 Property description not available.
 *Required*: No
-*Type*: Array of [ApplicationConfiguration](#aws-properties-emr-instancefleetconfig-applicationconfiguration)
+*Type*: Array of [ApplicationConfiguration](aws-properties-emr-instancefleetconfig-applicationconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

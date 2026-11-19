@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the cost, security, and Region considerations for planning your deployment.

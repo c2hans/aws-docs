@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/import-LF
 ---
 
 # Importing AWS Data Exchange assets from AWS Lake Formation (Preview)
-<a name="import-LF-asset"></a>
 
 When you import assets from AWS Lake Formation to AWS Data Exchange, the IAM permissions that you use must include the following abilities:
 + Write to, grant, and revoke Lake Formation permissions

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDedica
 ---
 
 # PutDedicatedIpPoolScalingAttributes
-<a name="API_PutDedicatedIpPoolScalingAttributes"></a>
 
 Used to convert a dedicated IP pool to a different scaling mode.
 

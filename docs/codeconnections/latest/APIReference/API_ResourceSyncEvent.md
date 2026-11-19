@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # ResourceSyncEvent
-<a name="API_ResourceSyncEvent"></a>
 
 Information about a resource sync event for the resource associated with a sync configuration.
 

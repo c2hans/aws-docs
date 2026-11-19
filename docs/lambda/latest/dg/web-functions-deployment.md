@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-deploymen
 ---
 
 # Deployment patterns
-<a name="web-functions-deployment"></a>
 
 To release a new version of your AWS Lambda Web Function application, you create a new revision. Endpoints with `autoDeploymentMode` set to **LatestRevision** route all traffic to it after it becomes **Active**. Endpoints with `autoDeploymentMode` set to **Disabled** keep serving their current revisions until you update the revision weights. You control how traffic moves from the current revision to the new one using the endpoint's auto-deployment mode and revision weights. The following sections explain both auto-deployment modes, common deployment patterns (canary, blue-green, and rollback), and the rules that govern revision weights.
 

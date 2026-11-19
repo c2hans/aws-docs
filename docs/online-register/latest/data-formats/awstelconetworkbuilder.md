@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awst
 ---
 
 # Data retrieval APIs for AWS Telco Network Builder
-<a name="awstelconetworkbuilder"></a>
 
 AWS Telco Network Builder provides the following APIs for data retrieval.
 

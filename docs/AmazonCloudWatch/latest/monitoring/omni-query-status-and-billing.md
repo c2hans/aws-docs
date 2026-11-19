@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Query status and billing
-<a name="omni-query-status-and-billing"></a>
 
 After you start a query with `StartTelemetryQuery`, call `GetTelemetryQueryResults` to read its status and results. For information about query limits, including the query timeout, see [Explore and query your telemetry](omni-explore-and-query-your-telemetry.md). The `status` field in the response has one of the following values.
 

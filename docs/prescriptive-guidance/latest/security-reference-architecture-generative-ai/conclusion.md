@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 The architectures presented in this guide offer a comprehensive framework for organizations that use AWS services to take advantage of generative AI capabilities securely and efficiently. These architectures combine the fully managed functionality of Amazon Bedrock with security best practices to provide a solid foundation for integrating generative AI into traditional cloud workloads and organizational processes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/vm-re
 ---
 
 # System requirements for Virtual Machines (VMs)
-<a name="vm-req"></a>
 
 This section describes the system requirements for AWS Elemental Live if you're using a virtual machine (VM).
 

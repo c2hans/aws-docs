@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/using-service-lin
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Using Roles to Connect Migration Hub to Application Discovery Service
-<a name="using-service-linked-roles-discovery-service-role"></a>
 
 Migration Hub uses the service-linked role named **AWSServiceRoleForMigrationHub**. The role allows Migration Hub to call the Application Discovery Service on your behalf. This enables AWS Migration Hub to match migration tracking updates to servers and applications that you've discovered.
 

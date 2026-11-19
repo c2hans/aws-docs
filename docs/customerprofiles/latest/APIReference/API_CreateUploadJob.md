@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateUploadJob
-<a name="API_connect-customer-profiles_CreateUploadJob"></a>
 
 Creates an Upload job to ingest data for segment imports. The metadata is created for the job with the provided field mapping and unique key.
 

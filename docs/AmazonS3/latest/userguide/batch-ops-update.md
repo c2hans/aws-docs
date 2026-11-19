@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-upda
 ---
 
 # Creating a Batch Operations job to update object encryption
-<a name="batch-ops-update"></a>
 
 To update the server-side encryption type of more than one Amazon S3 object with a single request, you can use S3 Batch Operations. You can use S3 Batch Operations through the Amazon S3 console, AWS Command Line Interface (AWS CLI) AWS SDKs, or the Amazon S3 REST API.
 

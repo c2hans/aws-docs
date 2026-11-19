@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpo
 ---
 
 # Creating a subscription to an Amazon SNS topic
-<a name="sns-create-subscribe-endpoint-to-topic"></a>
 
 To receive messages published to [a topic](sns-create-topic.md), you must *subscribe* an [endpoint](#sns-endpoints) to the topic. When you subscribe an endpoint to a topic, the endpoint begins to receive messages published to the associated topic.
 

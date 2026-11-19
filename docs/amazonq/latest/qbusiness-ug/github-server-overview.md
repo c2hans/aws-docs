@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/github-serve
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # GitHub (Server) connector overview
-<a name="github-server-overview"></a>
 
 The following table gives an overview of the Amazon Q Business GitHub (Server) connector and its supported features.
 

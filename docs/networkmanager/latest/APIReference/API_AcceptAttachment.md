@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AcceptAttachment
-<a name="API_AcceptAttachment"></a>
 
 Accepts a core network attachment request.
 

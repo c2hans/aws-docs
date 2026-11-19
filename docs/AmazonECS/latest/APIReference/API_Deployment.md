@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # Deployment
-<a name="API_Deployment"></a>
 
 The details of an Amazon ECS service deployment. This is used only when a service uses the `ECS` deployment controller type.
 

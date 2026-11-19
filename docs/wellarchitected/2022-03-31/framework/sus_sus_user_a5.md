@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS02-BP04 Optimize geographic placement of workloads for user locations
-<a name="sus_sus_user_a5"></a>
 
  Analyze network access patterns to identify where your customers are connecting from geographically. Select Regions and services that reduce the distance network traffic must travel to decrease the total network resources required to support your workload.
 

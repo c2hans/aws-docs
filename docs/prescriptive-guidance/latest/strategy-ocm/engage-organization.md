@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-oc
 ---
 
 # Point 4. Engage the Organization
-<a name="engage-organization"></a>
 
 Engage the Organization is intended to activate the strategies and plans that have been created and to use the insights gained from the various assessments that you have already conducted. As the transformation starts to take place, the burden of the transformation begins to shift from the cloud transformation team and cross-functional leaders to the employee base. Engage the Organization contains five subpoints:
 + [4.1 Implement change management plans](#engage-change)

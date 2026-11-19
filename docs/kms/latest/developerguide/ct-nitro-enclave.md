@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-nitro-encla
 ---
 
 # Monitoring requests for Nitro enclaves
-<a name="ct-nitro-enclave"></a>
 
 For Nitro enclave attestation, the CloudTrail log includes the module ID (`attestationDocumentModuleId`), image digest (`attestationDocumentEnclaveImageDigest`), and platform configuration registers (PCRs) from the attestation document.
 

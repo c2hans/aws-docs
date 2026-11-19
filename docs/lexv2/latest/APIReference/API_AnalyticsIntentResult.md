@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentResult
-<a name="API_AnalyticsIntentResult"></a>
 
 An object containing the results for the intent metrics you requested and the bin and/or group(s) they refer to, if applicable.
 

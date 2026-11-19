@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-as
 ---
 
 # Associate a Route 53 Profile to VPCs
-<a name="profile-associate-vpcs"></a>
 
 To associate a Route 53 Profile to a VPC, follow the guidance in this topic. Choose a tab to associate a Route 53 Profile to a VPC by using the Route 53 console, or AWS CLI.
 + [Console](#profile-associate-vpcs-console)

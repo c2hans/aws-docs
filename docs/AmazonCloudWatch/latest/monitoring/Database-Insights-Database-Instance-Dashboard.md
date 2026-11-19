@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 ---
 
 # Viewing the Database Instance Dashboard for CloudWatch Database Insights
-<a name="Database-Insights-Database-Instance-Dashboard"></a>
 
 Use the Database Instance Dashboard to view a snapshot of the health of a DB instance.
 

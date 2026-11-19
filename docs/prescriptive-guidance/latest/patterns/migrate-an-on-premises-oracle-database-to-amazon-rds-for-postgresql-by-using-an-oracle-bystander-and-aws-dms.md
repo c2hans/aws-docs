@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Oracle database to Amazon RDS for PostgreSQL by using an Oracle bystander and AWS DMS
-<a name="migrate-an-on-premises-oracle-database-to-amazon-rds-for-postgresql-by-using-an-oracle-bystander-and-aws-dms"></a>
 
 *Cady Motyka, Amazon Web Services*
 

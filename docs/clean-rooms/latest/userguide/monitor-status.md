@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/monitor-sta
 ---
 
 # Monitoring members
-<a name="monitor-status"></a>
 
 As a collaboration creator, after you have created a collaboration, you can monitor the status of all members on the **Members** tab. This helps ensure proper access control and cost management across your collaboration.
 

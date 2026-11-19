@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 ---
 
 # Data retrieval APIs for AWS Network Firewall
-<a name="awsnetworkfirewall"></a>
 
 AWS Network Firewall provides the following APIs for data retrieval.
 

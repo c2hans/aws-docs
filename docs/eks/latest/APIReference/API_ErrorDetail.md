@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ErrorDetail.
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 An object representing an error when an asynchronous operation fails.
 

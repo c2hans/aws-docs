@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/monitoring-cloudwat
 ---
 
 # Monitor AWS FIS usage metrics using Amazon CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 You can use Amazon CloudWatch to monitor the impact of AWS FIS experiments on targets. You can also monitor your AWS FIS usage.
 

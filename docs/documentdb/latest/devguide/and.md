@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/and.html
 ---
 
 # $and
-<a name="and"></a>
 
 The `$and` operator in Amazon DocumentDB is used to combine multiple expressions and evaluate them as a single condition. It returns `true` if all the provided expressions evaluate to `true`, and `false` otherwise. This operator is useful for applying multiple criteria to a query.
 

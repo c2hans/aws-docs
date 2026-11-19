@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # CloudFormation Hooks target filters
-<a name="hooks-target-filtering"></a>
 
 This topic provides guidance on configuring target filters for CloudFormation Hooks. You can use target filters for more granular control over when and on which resources your Hook is invoked. You can configure filters ranging from simple resource type targeting to more complex combinations of resource types, actions, and invocation points.
 

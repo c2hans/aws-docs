@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Creating an AWS Lambda function by using the AWS Toolkit for JetBrains
-<a name="create-new-lambda"></a>
 
 You can use the AWS Toolkit for JetBrains to create an AWS Lambda function that is part of an AWS serverless application. Or you can create a standalone Lambda function.
 

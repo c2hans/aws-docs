@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/schema-launch-st
 ---
 
 # Launching a schema in the AWS AppSync console
-<a name="schema-launch-start"></a>
 
 In this example, you will create a `Todo` API that allows users to create `Todo` items for daily chore reminders like {{Finish task}} or {{Pick up groceries}}. This API will demonstrate how to use GraphQL operations where the state persists in a DynamoDB table.
 

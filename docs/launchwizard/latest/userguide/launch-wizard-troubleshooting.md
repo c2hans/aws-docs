@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Troubleshoot AWS Launch Wizard for SQL Server
-<a name="launch-wizard-troubleshooting"></a>
 
 Each application in your account in the same AWS Region can be uniquely identified by the application name specified at the time of a deployment. The application name can be used to view the details related to the application launch.
 

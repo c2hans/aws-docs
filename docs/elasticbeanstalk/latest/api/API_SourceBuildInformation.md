@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_SourceBu
 ---
 
 # SourceBuildInformation
-<a name="API_SourceBuildInformation"></a>
 
 Location of the source code for an application version.
 

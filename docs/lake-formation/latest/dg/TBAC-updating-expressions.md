@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-updating-e
 ---
 
 # Updating LF-Tag expressions
-<a name="TBAC-updating-expressions"></a>
 
 Only data lake administrators, the LF-Tag expression creator, and principals that have `Alter` or `Super` permission on the LF-Tag expression can update an LF-Tag expression. In addition to `Alter` permission, you also need the `lakeformation:UpdateLFTagExpression` IAM permission and `Grant with LF-Tag` permission on all underlying keys-values on the new expression body to update expressions.
 

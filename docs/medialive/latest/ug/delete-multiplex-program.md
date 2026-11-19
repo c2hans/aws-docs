@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/delete-multiplex-pro
 ---
 
 # Deleting multiplexes, programs, and channels
-<a name="delete-multiplex-program"></a>
 
 In MediaLive, you can delete a multiplex, the programs in a multiplex, and the channels in a multiplex. There are specific rules that are based on the state of the item that you want to work with, as described in this section.
 

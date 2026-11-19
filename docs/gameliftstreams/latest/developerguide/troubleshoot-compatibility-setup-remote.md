@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/tr
 ---
 
 # Set up a remote Amazon EC2 machine to troubleshoot Proton
-<a name="troubleshoot-compatibility-setup-remote"></a>
 
  If you don't have a local Ubuntu machine, follow these instructions to set up a remote machine instead.
 

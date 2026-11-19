@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_FunctionSum
 ---
 
 # FunctionSummary
-<a name="API_FunctionSummary"></a>
 
 A summary of a web function.
 

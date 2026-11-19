@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/managing-backups.ht
 ---
 
 # Backing up in Oracle Database@AWS
-<a name="managing-backups"></a>
 
 Oracle Database@AWS provides multiple backup options to protect your Oracle databases. You can use Oracle managed backups that integrate seamlessly with Amazon S3 or create your own user-managed backups using Oracle Recovery Manager (RMAN).
 

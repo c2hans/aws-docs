@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Tutorial: Working with Amazon DynamoDB and Apache Hive
-<a name="EMRforDynamoDB.Tutorial"></a>
 
 In this tutorial, you will launch an Amazon EMR cluster, and then use Apache Hive to process data stored in a DynamoDB table.
 

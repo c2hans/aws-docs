@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_serv
 ---
 
 # Amazon ECS service deployment controllers and strategies
-<a name="ecs_service-options"></a>
 
 Before you deploy your service, determine the options for deploying it, and the features the service uses.
 

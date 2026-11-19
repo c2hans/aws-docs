@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/msg-status-sdk.html
 ---
 
 # Configuring delivery status logging using the AWS SDKs
-<a name="msg-status-sdk"></a>
 
 The AWS SDKs provide APIs in several languages to set topic attributes for message delivery status logging. For example, use the [SetTopicAttributes](https://docs.aws.amazon.com/sns/latest/api/API_SetTopicAttributes.html) API to configure:
 + `LambdaSuccessFeedbackRoleArn` – IAM role for successful message delivery to Lambda endpoints.

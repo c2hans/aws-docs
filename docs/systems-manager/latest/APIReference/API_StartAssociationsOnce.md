@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StartAssociationsOnce
-<a name="API_StartAssociationsOnce"></a>
 
 Runs an association immediately and only one time. This operation can be helpful when troubleshooting associations.
 

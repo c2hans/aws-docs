@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceExperimentSchedule
-<a name="API_InferenceExperimentSchedule"></a>
 
 The start and end times of an inference experiment.
 

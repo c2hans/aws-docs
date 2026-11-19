@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-d
 ---
 
 # Default flows in Connect Customer for your contact center
-<a name="contact-flow-default"></a>
 
 Connect Customer includes a set of default flows that have already been published. It uses them to power your contact center.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composit
 ---
 
 # IVS Composite Recording \| Real-Time Streaming
-<a name="rt-composite-recording"></a>
 
 This document explains how to use the composite-recording feature within [server-side composition](server-side-composition.md). Composite recording allows you to generate HLS recordings of an IVS stage by effectively combining all stage publishers into one view using an IVS server, and then saving the resulting video to an S3 bucket.
 

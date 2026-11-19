@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/storing-events-b
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Store event data using batch import
-<a name="storing-events-batch-import"></a>
 
 With the batch import feature, you can quickly and easily upload large historical event datasets in Amazon Fraud Detector using the console, the API, or the AWS SDK. To use batch import, create an input file in CSV format that contains all your event data, upload the CSV file onto Amazon S3 bucket, and start an *Import* job. Amazon Fraud Detector first validates the data based on the event type, and then automatically imports the entire dataset. After the data is imported, it’s ready to be used for training new models or for re-training existing models.
 

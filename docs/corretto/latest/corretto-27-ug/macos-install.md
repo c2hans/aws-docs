@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/macos-ins
 ---
 
 # Amazon Corretto 27 Installation Instructions for macOS 11 or later
-<a name="macos-install"></a>
 
  This topic describes how to install and uninstall Amazon Corretto 27 on a host running the Mac OS version 11 or later. You must have administrator permissions to install and uninstall Amazon Corretto 27.
 

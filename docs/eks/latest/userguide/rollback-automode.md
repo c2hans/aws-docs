@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/rollback-automode.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Rollback EKS Auto Mode clusters
-<a name="rollback-automode"></a>
 
 When you initiate a version rollback on a cluster running EKS Auto Mode, Amazon EKS automatically manages the rollback of Auto Mode worker nodes before reverting the control plane. This page explains how Auto Mode node rollback works, how to speed it up, and how to cancel it if needed.
 

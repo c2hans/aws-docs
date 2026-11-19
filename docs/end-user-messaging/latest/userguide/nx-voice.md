@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Setup Voice
-<a name="nx-voice"></a>
 
 Voice lets you deliver audio messages to your recipients by placing an automated phone call. AWS End User Messaging converts a text script into speech, so you can reach recipients on mobile phones and landlines without recording audio yourself. Common use cases include spoken one-time passcodes and verification codes, time-sensitive alerts, appointment and payment reminders, and reaching recipients who cannot receive SMS.
 

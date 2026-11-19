@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/get-and-v
 ---
 
 # Getting and viewing your CloudTrail log files
-<a name="get-and-view-cloudtrail-log-files"></a>
 
 After you create a trail and configure it to capture the log files you want, you need to be able to find the log files and interpret the information they contain.
 

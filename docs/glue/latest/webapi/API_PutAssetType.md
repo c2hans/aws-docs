@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutAssetType.html
 ---
 
 # PutAssetType
-<a name="API_PutAssetType"></a>
 
 Creates or updates an asset type in AWS Glue Data Catalog. An asset type defines the structure of assets by specifying which forms they include. If an asset type with the given name already exists, it is updated.
 

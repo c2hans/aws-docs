@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateReportConfiguration
-<a name="API_ExperimentTemplateReportConfiguration"></a>
 
 Describes the experiment report configuration. For more information, see [Experiment report configurations for AWS FIS](https://docs.aws.amazon.com/fis/latest/userguide/experiment-report-configuration).
 

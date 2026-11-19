@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-configure-
 ---
 
 # Configure AWS credentials to use the IDT UI
-<a name="lts-configure-aws-credentials"></a>
 
 You must configure your IAM user credentials for the AWS user you created in [Create an AWS account](lts-idt-dev-tester-prereqs.md#lts-config-aws-account). You can specify your credentials in one of two ways:
 + In a credentials file

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/control
 ---
 
 # Controlling Network Traffic
-<a name="control-network-traffic"></a>
 
 To help control network traffic to your WorkSpaces Applications streaming instances, consider these options:
 + When you launch an Amazon AppStream streaming instance, you launch it into a subnet in your VPC. You can deploy streaming instances in a private subnet if they should not be accessible from the internet.

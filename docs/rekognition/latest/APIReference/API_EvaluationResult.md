@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Eval
 ---
 
 # EvaluationResult
-<a name="API_EvaluationResult"></a>
 
 The evaluation results for the training of a model.
 

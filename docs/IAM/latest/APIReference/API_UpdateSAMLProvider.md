@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateSAMLPr
 ---
 
 # UpdateSAMLProvider
-<a name="API_UpdateSAMLProvider"></a>
 
 Updates the metadata document, SAML encryption settings, and private keys for an existing SAML provider. To rotate private keys, add your new private key and then remove the old key in a separate request.
 

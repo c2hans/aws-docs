@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CampaignFilters
-<a name="API_connect-outbound-campaigns-v2_CampaignFilters"></a>
 
 Contains the filters to apply when retrieving campaigns.
 

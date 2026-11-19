@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapUnixFil
 ---
 
 # OntapUnixFileSystemUser
-<a name="API_OntapUnixFileSystemUser"></a>
 
 The FSx for ONTAP UNIX file system user that is used for authorizing all file access requests that are made using the S3 access point.
 

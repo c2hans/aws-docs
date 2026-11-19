@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/backup-netvaul
 ---
 
 # Testing your setup by using Quest NetVault Backup
-<a name="backup-netvault"></a>
 
 You can back up your data to virtual tapes, archive the tapes, and manage your virtual tape library (VTL) devices by using Quest (formerly Dell) NetVault Backup.
 

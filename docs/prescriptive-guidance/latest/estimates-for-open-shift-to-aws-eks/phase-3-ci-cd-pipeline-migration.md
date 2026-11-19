@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Phase 3: CI/CD pipeline migration
-<a name="phase-3-ci-cd-pipeline-migration"></a>
 
 **Considering migration** **scope of 1 cluster \| 100\+ applications. The following table represents the CI/CD setup effort.**
 

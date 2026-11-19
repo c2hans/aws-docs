@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/metrics.ht
 ---
 
 # Aggregate data from properties and other assets (metrics)
-<a name="metrics"></a>
 
 Metrics are mathematical expressions that use aggregation functions to process all input data points and output a single data point per specified time interval. For example, a metric can calculate the average hourly temperature from a temperature data stream.
 

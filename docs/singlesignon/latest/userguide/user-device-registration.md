@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/user-devic
 ---
 
 # Registering your device for MFA
-<a name="user-device-registration"></a>
 
 For users in the Identity Center directory, use the following procedure within the AWS access portal to register your new device for multi-factor authentication (MFA).
 

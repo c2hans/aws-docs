@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/replacing-agen
 ---
 
 # Replacing your AWS DataSync agent
-<a name="replacing-agent"></a>
 
 To replace an AWS DataSync agent, you must create a new agent and update any transfer locations that are using the old agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/detective
 ---
 
 # Integration with Amazon Detective
-<a name="detective-integration"></a>
 
 **Integration type:** Subscriber
 

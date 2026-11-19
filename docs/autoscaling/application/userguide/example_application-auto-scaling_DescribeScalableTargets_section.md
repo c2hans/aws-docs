@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/exampl
 ---
 
 # Use `DescribeScalableTargets` with a CLI
-<a name="example_application-auto-scaling_DescribeScalableTargets_section"></a>
 
 The following code examples show how to use `DescribeScalableTargets`.
 

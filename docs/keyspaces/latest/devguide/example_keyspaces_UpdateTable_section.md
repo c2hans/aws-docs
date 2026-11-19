@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/example_keyspa
 ---
 
 # Use `UpdateTable` with an AWS SDK
-<a name="example_keyspaces_UpdateTable_section"></a>
 
 The following code examples show how to use `UpdateTable`.
 

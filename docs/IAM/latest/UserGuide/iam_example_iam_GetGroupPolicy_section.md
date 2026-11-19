@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Get
 ---
 
 # Use `GetGroupPolicy` with a CLI
-<a name="iam_example_iam_GetGroupPolicy_section"></a>
 
 The following code examples show how to use `GetGroupPolicy`.
 

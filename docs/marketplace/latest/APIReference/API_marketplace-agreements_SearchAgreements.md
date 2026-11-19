@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SearchAgreements
-<a name="API_marketplace-agreements_SearchAgreements"></a>
 
 Searches across all agreements that a proposer or an acceptor has in AWS Marketplace. The search returns a list of agreements with basic agreement information.
 
@@ -66,6 +65,7 @@ The following filters are supported:
 +  `EndTimeBehaviorReasonCode` – The reason why the agreement doesn't renew at its end date. Values include `PROPOSER_RENEW_OPTED_OUT`, `ACCEPTOR_RENEW_OPTED_OUT`, `NO_RENEWAL_TERM`, and `RENEWAL_LIMIT_EXHAUSTED`.
 +  `InitialAgreementId` – The unique identifier of the very first agreement in a chain of related agreements. Use this filter to return every agreement in the same chain.
 +  `LicenseArn` – The Amazon Resource Name (ARN) of the AWS License Manager license associated with an entitlement granted by the agreement.
++  `IncludesContactOfType` – The type of contact information on file for the agreement. Supported value includes `ACCEPTOR`.
 A proposer can use any combination of the preceding filters along with `AgreementType`, which is required.
 The following filter combinations are supported when the `PartyType` is `Acceptor`:
 +  `AgreementType`
@@ -131,6 +131,7 @@ Required: No
             }
          ],
          "freeTrialEndTime": number,
+         "includesContactOfType": [ "string" ],
          "initialAgreementId": "string",
          "lastUpdateTime": number,
          "proposalSummary": {

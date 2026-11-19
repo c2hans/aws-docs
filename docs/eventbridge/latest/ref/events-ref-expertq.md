@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-expert
 ---
 
 # ExpertQ events
-<a name="events-ref-expertq"></a>
 
 ExpertQ sends service events to EventBridge via AWS CloudTrail.
 

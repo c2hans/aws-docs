@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_Namespace.html
 ---
 
 # Namespace
-<a name="API_Namespace"></a>
 
 A complex type that contains information about a specified namespace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Li
 ---
 
 # ListDICOMImportJobs
-<a name="API_ListDICOMImportJobs"></a>
 
 List import jobs created for a specific data store.
 

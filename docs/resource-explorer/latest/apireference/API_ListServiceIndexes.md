@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListServiceIndexes
-<a name="API_ListServiceIndexes"></a>
 
 Lists all Resource Explorer indexes across the specified AWS Regions. This operation returns information about indexes including their ARNs, types, and Regions.
 

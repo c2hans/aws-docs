@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentDisa
 ---
 
 # IntentDisambiguationSettings
-<a name="API_IntentDisambiguationSettings"></a>
 
 Configures the Intent Disambiguation feature that helps resolve ambiguous user inputs when multiple intents could match. When enabled, the system presents clarifying questions to users, helping them specify their exact intent for improved conversation accuracy.
 

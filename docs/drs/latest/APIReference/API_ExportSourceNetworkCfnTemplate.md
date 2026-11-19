@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ExportSource
 ---
 
 # ExportSourceNetworkCfnTemplate
-<a name="API_ExportSourceNetworkCfnTemplate"></a>
 
 Export the Source Network CloudFormation template to an S3 bucket.
 

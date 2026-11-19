@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Best practices
-<a name="best-practices-perf"></a>
 
  The following are the performance efficiency questions, best practices, and prescriptive guidance for high performance computing workloads.
 

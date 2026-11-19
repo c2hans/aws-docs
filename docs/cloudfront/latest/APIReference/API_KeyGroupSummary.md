@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyGr
 ---
 
 # KeyGroupSummary
-<a name="API_KeyGroupSummary"></a>
 
 Contains information about a key group.
 

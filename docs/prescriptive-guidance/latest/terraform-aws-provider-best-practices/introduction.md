@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Best practices for using the Terraform AWS Provider
-<a name="introduction"></a>
 
 *Michael Begin, Amazon Web Services*
 

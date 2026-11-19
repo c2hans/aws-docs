@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Outpos
 ---
 
 # Outpost
-<a name="API_Outpost"></a>
 
 A data type that represents an Outpost.
 

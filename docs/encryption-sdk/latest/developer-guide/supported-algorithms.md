@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/su
 ---
 
 # Supported algorithm suites in the AWS Encryption SDK
-<a name="supported-algorithms"></a>
 
 An *algorithm suite* is a collection of cryptographic algorithms and related values. Cryptographic systems use the algorithm implementation to generate the ciphertext message.
 

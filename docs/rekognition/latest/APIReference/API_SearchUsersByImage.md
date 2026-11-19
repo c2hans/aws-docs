@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchUsersByImage
-<a name="API_SearchUsersByImage"></a>
 
 Searches for UserIDs using a supplied image. It first detects the largest face in the image, and then searches a specified collection for matching UserIDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connection-properties.htm
 ---
 
 # AWS Glue connection properties
-<a name="connection-properties"></a>
 
 This topic includes information about properties for AWS Glue connections.
 

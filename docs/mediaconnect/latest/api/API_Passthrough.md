@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Passthrough.
 ---
 
 # Passthrough
-<a name="API_Passthrough"></a>
 
 The configuration that passes through the value from the source. This type does not require any additional settings.
 

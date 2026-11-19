@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/websdkguide/connection-class.
 ---
 
 # Connection Class
-<a name="connection-class"></a>
 
 The Connection Class obtained by calling the [`connect` method](dcv-module.md#connect) of the `dcv` module. For an example showing how to use it, see the [Getting started](establish-connection.md#auth-conn) section.
 

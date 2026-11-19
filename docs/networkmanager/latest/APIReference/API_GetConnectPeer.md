@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetConnectPeer
-<a name="API_GetConnectPeer"></a>
 
 Returns information about a core network Connect peer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ---
 
 # Appendix A - Steps to obtain a claim-thing
-<a name="oemog-claim-thing"></a>
 
  This appendix talks about the steps to obtain a claim-thing. To generate a claim-thing certificate, follow this 7 step process. Once the certificate is generated, the next thing to do is to register as an OEM with AWS. This is a 3 step process which details information about the registration.
 

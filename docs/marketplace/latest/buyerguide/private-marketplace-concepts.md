@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-ma
 ---
 
 # Private Marketplace concepts
-<a name="private-marketplace-concepts"></a>
 
 This topic explains some of the key concepts for Private Marketplace.
 

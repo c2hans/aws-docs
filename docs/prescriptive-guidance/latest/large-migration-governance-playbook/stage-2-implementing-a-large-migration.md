@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Stage 2: Implementing a large migration
-<a name="stage-2-implementing-a-large-migration"></a>
 
 In the previous stage, you established all of the tools, templates, plans, and processes that you need to govern the migration. In this stage, you use those assets to effectively manage and oversee the migration. This stage begins when the migration team begins migrating waves to the AWS Cloud. You repeat the gates in this stage for each wave or for a group of sequential waves.
 

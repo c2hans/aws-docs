@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # GetChannelMembershipPreferences
-<a name="API_messaging-chime_GetChannelMembershipPreferences"></a>
 
 Gets the membership preferences of an `AppInstanceUser` or `AppInstanceBot` for the specified channel. A user or a bot must be a member of the channel and own the membership in order to retrieve membership preferences. Users or bots in the `AppInstanceAdmin` and channel moderator roles can't retrieve preferences for other users or bots. Banned users or bots can't retrieve membership preferences for the channel from which they are banned.
 

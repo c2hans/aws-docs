@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-i686-
 ---
 
 # i686 Packages in Amazon Linux 2 not in Amazon Linux 2023
-<a name="removed-i686-AL2023.12-AL2"></a>
 
  There are 1157 binary packages for the i686 architecure in Amazon Linux 2 no longer in Amazon Linux 2023 as Amazon Linux 2023 no longer ships any i686 user space.
 

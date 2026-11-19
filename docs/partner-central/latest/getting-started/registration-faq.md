@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/r
 ---
 
 # Registration FAQs
-<a name="registration-faq"></a>
 
 ## Our organization has multiple AWS account IDs. How do I know which AWS account ID to use?
 <a name="faq-multiple-aws-accounts"></a>

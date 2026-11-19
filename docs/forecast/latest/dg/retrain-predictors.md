@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/retrain-predictors.ht
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Retraining Predictors
-<a name="retrain-predictors"></a>
 
 **Note**
 Retraining is only available for predictors created with AutoPredictor ([`CreateAutoPredictor`](API_CreateAutoPredictor.md)). You can upgrade existing legacy predictors to AutoPredictor. See [Upgrading to AutoPredictor](howitworks-predictor.md#upgrading-autopredictor).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Reoccurring ADDF deployments
-<a name="reoccurring-addf-deployments"></a>
 
 To support reoccurring ADDF deployments that add, update, or remove resources in your target accounts, SeedFarmer uses MD5 hashes, stored in the Parameter Store of your toolchain and target acccounts, to compare the currently deployed infrastructure against the infrastructure defined in the manifest files in your local code base.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-c
 ---
 
 # Step 5. Use custom visual transforms in AWS Glue Studio
-<a name="custom-visual-transform-create-gs"></a>
 
  To use a custom visual transform in AWS Glue Studio, you upload the config and source files, then select the transform from the **Action** menu. Any parameters that need values or input are available to you in the **Transform** tab.
 

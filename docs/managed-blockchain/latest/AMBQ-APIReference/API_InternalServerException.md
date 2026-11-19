@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 The request processing has failed because of an internal error in the service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/accept-task.ht
 ---
 
 # Accept a task assigned in the Contact Control Panel (CCP)
-<a name="accept-task"></a>
 
 The steps in this topic describe how to deliver tasks to an agent when their status is set to **Available** in the Contact Control Panel (CCP).
 

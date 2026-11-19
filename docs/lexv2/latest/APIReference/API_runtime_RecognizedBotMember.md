@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Re
 ---
 
 # RecognizedBotMember
-<a name="API_runtime_RecognizedBotMember"></a>
 
 The bot member that processes the request.
 

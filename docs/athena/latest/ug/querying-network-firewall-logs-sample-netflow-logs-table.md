@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-network-firewa
 ---
 
 # Create and query a table for netflow logs
-<a name="querying-network-firewall-logs-sample-netflow-logs-table"></a>
 
 1. Modify the following sample DDL statement to conform to the structure of your netflow logs. You may need to update the statement to include the columns for the latest version of the logs. For more information, see [Contents of a firewall log](https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-logging.html#firewall-logging-contents) in the *AWS Network Firewall Developer Guide*.
 

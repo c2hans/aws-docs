@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/forec
 ---
 
 # Forecast Algorithms
-<a name="forecast-algorithims"></a>
 
  AWS Supply Chain Demand Planning offers a combination of 25 built-in forecast models to create baseline demand forecasts for products with diverse demand patterns in customers’ datasets. The list of 25 forecast models includes 11 forecast ensemblers (each ensembler is unique based on the set of models that make up the ensembler and/or the metric the ensembler optimizes to) and 14 individual forecast algorithms including statistical algorithms like Autoregressive Integrated and Moving Average (ARIMA) to complex neural network algorithms like CNN-QR, Temporal Fusion Transformer and DeepAR\+. Customers have the choice of using forecast ensembler or individual forecast algorithm based on their use case and unique needs. While the forecast ensemblers offer the advantage of customers not having to manually deal with cumbersome tasks such as model selection, hyperparameter tuning and having to simply pick the forecast error metric that is best suited for the customer use case that the ensembler would optimize , the individual forecast algorithms offer flexibility for customer use cases that and best forecasted with a single model instead of an ensemble.
 

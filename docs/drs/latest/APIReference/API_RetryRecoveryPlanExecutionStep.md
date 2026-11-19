@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RetryRecover
 ---
 
 # RetryRecoveryPlanExecutionStep
-<a name="API_RetryRecoveryPlanExecutionStep"></a>
 
 Retries a failed `SERVER` type execution step.
 

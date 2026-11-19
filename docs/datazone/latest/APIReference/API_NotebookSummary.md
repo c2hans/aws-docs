@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Noteboo
 ---
 
 # NotebookSummary
-<a name="API_NotebookSummary"></a>
 
 The summary of a notebook in Amazon SageMaker Unified Studio.
 

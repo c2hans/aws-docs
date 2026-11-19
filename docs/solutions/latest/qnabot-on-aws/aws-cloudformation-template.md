@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/aws-cloud
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-template"></a>
 
 You can download the AWS CloudFormation templates for this guidance before deploying it.
 

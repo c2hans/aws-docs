@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_U
 ---
 
 # UpdateSecret
-<a name="API_UpdateSecret"></a>
 
 Modifies the details of a secret, including metadata and the secret value. To change the secret value, you can also use [PutSecretValue](API_PutSecretValue.md).
 

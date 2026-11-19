@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillScenariosFilter
-<a name="API_AWSBCMPricingCalculator_ListBillScenariosFilter"></a>
 
  Represents a filter for listing bill scenarios.
 

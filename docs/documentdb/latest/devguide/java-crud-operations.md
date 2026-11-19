@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/java-crud-ope
 ---
 
 # Performing CRUD operations in Amazon DocumentDB with Java
-<a name="java-crud-operations"></a>
 
 This section discusses performing CRUD (create, read, update, delete) operation in Amazon DocumentDB using MongoDB Java drivers.
 

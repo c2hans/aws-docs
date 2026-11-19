@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_PathOpt
 ---
 
 # PathOptions
-<a name="API_PathOptions"></a>
 
 Represents a set of options that define how DataBrew selects files for a given Amazon S3 path in a dataset.
 

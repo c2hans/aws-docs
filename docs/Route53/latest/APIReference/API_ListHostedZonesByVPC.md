@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListHost
 ---
 
 # ListHostedZonesByVPC
-<a name="API_ListHostedZonesByVPC"></a>
 
 Lists all the private hosted zones that a specified VPC is associated with, regardless of which AWS account or AWS service owns the hosted zones. The `HostedZoneOwner` structure in the response contains one of the following values:
 + An `OwningAccount` element, which contains the account number of either the current AWS account or another AWS account. Some services, such as AWS Cloud Map, create hosted zones using the current account.

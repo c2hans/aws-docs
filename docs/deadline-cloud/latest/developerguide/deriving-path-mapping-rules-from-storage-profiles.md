@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/der
 ---
 
 # Derive path mapping rules from storage profiles
-<a name="deriving-path-mapping-rules-from-storage-profiles"></a>
 
  Path mapping rules describe how paths should be remapped from the job to the path's actual location on a worker host. When a task is running on a worker, the storage profile from the job is compared to the storage profile of the worker's fleet to derive the path mapping rules for the task.
 

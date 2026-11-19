@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Deploy a cloud foundation to support highly-regulated workloads and complex compliance requirements
-<a name="solution-overview"></a>
 
 The Landing Zone Accelerator on AWS (LZA) is architected to align with AWS best practices and in conformance with multiple, global compliance frameworks. We recommend customers deploy [AWS Control Tower](https://aws.amazon.com/controltower/) as the foundational landing zone and enhance their landing zone capabilities with Landing Zone Accelerator. These complementary capabilities provide a comprehensive no-code solution across 35\+ AWS services to manage and govern a multi-account environment built to support customers with highly-regulated workloads and complex compliance requirements. AWS Control Tower and Landing Zone Accelerator help you establish platform readiness with security, compliance, and operational capabilities.
 

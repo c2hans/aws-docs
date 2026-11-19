@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Manage connection pools and lifecycle in containerized environments
-<a name="best-practices-ecs-eks-connections"></a>
 
 Managing connections to Neptune effectively is essential in containerized environments where containers (pods in Kubernetes) start, stop, and scale frequently. Neptune enforces several WebSocket connection limits:
 + Each instance type has a maximum number of concurrent [WebSocket connections](https://docs.aws.amazon.com/neptune/latest/userguide/limits.html#limits-websockets)

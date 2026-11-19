@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # FirewallSyncReason
-<a name="API_FirewallSyncReason"></a>
 
 Describes why a firewall is out of sync. Exactly one of `missingFirewall`, `invalidFirewall`, or `invalidResource` contains a value.
 

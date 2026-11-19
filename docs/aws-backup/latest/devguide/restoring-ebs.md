@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-ebs
 ---
 
 # Restore an Amazon EBS volume
-<a name="restoring-ebs"></a>
 
 When you restore an Amazon Elastic Block Store (EBS) snapshot, you can choose to restore it as an EBS volume, restore it to a AWS Storage Gateway volume, or restore selected items from it to an Amazon S3 bucket.
 

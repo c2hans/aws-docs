@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-o
 ---
 
 # Invoke endpoints with OpenAI-compatible APIs
-<a name="realtime-endpoints-openai-compatible"></a>
 
 Amazon SageMaker AI real-time inference endpoints support an OpenAI-compatible API path. Customers using the OpenAI SDK, LangChain, or Strands Agents can invoke models on SageMaker AI by changing only their endpoint URL, without requiring custom clients, SigV4 wrappers, or code rewrites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Multi-Region Architecture
-<a name="multi-region-architecture"></a>
 
 Organizations are increasingly adopting AWS multi-Region security architectures to address critical business, regulatory, and operational requirements. Across the available AWS Regions and Availability Zones, customers in [human capital management (HCM)](https://aws.amazon.com/blogs/apn/adopting-multi-region-architecture-to-support-adp-high-availability-requirements/) sector (active-active high availability), [payment processing](https://aws.amazon.com/blogs/architecture/build-a-multi-region-aws-privatelink-backed-service-with-seamless-failover/) (cross-Region failover for critical payment services to reduce RTO), [financial trading and market data](https://aws.amazon.com/blogs/networking-and-content-delivery/how-lseg-connects-the-world-of-finance-using-aws-cross-region-privatelink-to-transform-global-market-data-access/) (cross-Region access to real-time global market data while meeting regional compliance), and [banking](https://aws.amazon.com/blogs/industries/part-1-bbva-building-a-multi-region-multi-country-global-data-and-ml-platform-at-scale) (multi-country data platform managing 8.4 PB across geographic boundaries) demonstrate the breadth of multi-Region adoption drivers — from resilience and data sovereignty to global performance.
 

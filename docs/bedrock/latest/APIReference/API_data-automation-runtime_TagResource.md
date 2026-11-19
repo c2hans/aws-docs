@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # TagResource
-<a name="API_data-automation-runtime_TagResource"></a>
 
 Lets you add a tag to an already created resource.
 

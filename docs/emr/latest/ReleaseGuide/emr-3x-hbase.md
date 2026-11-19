@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hbase.htm
 ---
 
 # HBase application specifics for earlier AMI versions of Amazon EMR
-<a name="emr-3x-hbase"></a>
 
 ## Supported HBase versions
 <a name="emr-3x-hbase-versions"></a>

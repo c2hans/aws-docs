@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/futbol.htm
 ---
 
 # .futbol
-<a name="futbol"></a>
 
 Used for information about soccer (futbol).
 

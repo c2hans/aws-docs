@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/vp
 ---
 
 # Connecting to AWS Payment Cryptography through a VPC endpoint
-<a name="vpc-endpoint"></a>
 
 You can connect directly to AWS Payment Cryptography through a private interface endpoint in your virtual private cloud (VPC). When you use an interface VPC endpoint, communication between your VPC and AWS Payment Cryptography is conducted entirely within the AWS network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/passth
 ---
 
 # Passthrough of Live System Status
-<a name="passthrough-live-system-status"></a>
 
 You can pass through a request for the status of an AWS Elemental Live system within the Conductor cluster as well. This passthrough command is structured slightly differently from a live\_event command.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/service
 ---
 
 # Service Region index file for Savings Plan
-<a name="service-region-index-files-for-savings-plan"></a>
 
 |  |
 | --- |

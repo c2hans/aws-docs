@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_launch
 ---
 
 # Overview of launch templates in AWS PCS
-<a name="working-with_launch-templates_overview"></a>
 
 An Amazon EC2 launch template can include more than 30 [parameters](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestLaunchTemplateData.html) that control how instances are configured. Most are fully compatible with AWS PCS, but there are some exceptions.
 

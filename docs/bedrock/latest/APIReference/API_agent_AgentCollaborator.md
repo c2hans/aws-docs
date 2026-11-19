@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ag
 ---
 
 # AgentCollaborator
-<a name="API_agent_AgentCollaborator"></a>
 
 An agent collaborator.
 

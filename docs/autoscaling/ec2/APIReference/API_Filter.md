@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Filter.
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Describes a filter that is used to return a more specific list of results from a describe operation.
 

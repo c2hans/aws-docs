@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # NetworkConfigurationDetails
-<a name="API_NetworkConfigurationDetails"></a>
 
 The network configuration that controls how an identity store can be accessed. This object is returned as part of service API responses.
 

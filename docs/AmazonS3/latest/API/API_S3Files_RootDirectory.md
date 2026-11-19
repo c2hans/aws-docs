@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_RootDire
 ---
 
 # RootDirectory
-<a name="API_S3Files_RootDirectory"></a>
 
 Specifies the root directory path and optional creation permissions for newly created directories.
 

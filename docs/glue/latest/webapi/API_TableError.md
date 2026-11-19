@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableError.html
 ---
 
 # TableError
-<a name="API_TableError"></a>
 
 An error record for table operations.
 

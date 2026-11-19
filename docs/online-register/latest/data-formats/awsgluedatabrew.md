@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsg
 ---
 
 # Data retrieval APIs for AWS Glue DataBrew
-<a name="awsgluedatabrew"></a>
 
 AWS Glue DataBrew provides the following APIs for data retrieval.
 

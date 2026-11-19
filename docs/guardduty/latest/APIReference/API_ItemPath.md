@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ItemPa
 ---
 
 # ItemPath
-<a name="API_ItemPath"></a>
 
 Information about the nested item path and hash of the protected resource.
 

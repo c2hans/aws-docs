@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueRecordsVisibility
-<a name="API_UpdateQueueRecordsVisibility"></a>
 
 Changes the visibility timeout of up to 10 records that you have received from the specified queue but not yet acknowledged. The result for each entry is reported individually in the response.
 

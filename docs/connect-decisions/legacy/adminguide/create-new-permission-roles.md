@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/crea
 ---
 
 # Creating custom user permission roles
-<a name="create-new-permission-roles"></a>
 
 In addition to default user permission roles, you can create custom user permission roles to include multiple permission roles and add specific locations and products. Follow these steps to create new permission roles.
 

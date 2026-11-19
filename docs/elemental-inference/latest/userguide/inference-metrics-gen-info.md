@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/inf
 ---
 
 # Components of a metric
-<a name="inference-metrics-gen-info"></a>
 
 AWS Elemental Inference collects data that is the basis for metrics. It collects these *datapoints* every second and sends them immediately to Amazon CloudWatch. You can use CloudWatch to generate *metrics* for these datapoints.
 

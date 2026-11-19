@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-to-referen
 ---
 
 # How to reference contact attributes in Connect Customer
-<a name="how-to-reference-attributes"></a>
 
 The way you reference contact attributes depends on how they were created and how you are accessing them.
 + For the JSON syntax for each attribute, see [List of available contact attributes in Connect Customer and their JSONPath references](connect-attrib-list.md).

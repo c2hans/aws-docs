@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Filt
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A key-value pair to filter results.
 

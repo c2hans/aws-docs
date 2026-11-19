@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesMetadataV2
-<a name="API_AutomationRulesMetadataV2"></a>
 
 Includes essential metadata information about automation rules.
 

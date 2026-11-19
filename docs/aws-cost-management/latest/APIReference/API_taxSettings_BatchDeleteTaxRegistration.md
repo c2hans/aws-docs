@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchDeleteTaxRegistration
-<a name="API_taxSettings_BatchDeleteTaxRegistration"></a>
 
 Deletes tax registration for multiple accounts in batch. This can be used to delete tax registrations for up to five accounts in one batch.
 

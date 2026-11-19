@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 3.1 – Privacy by Design
-<a name="best-practice-3.1-privacy-by-design."></a>
 
  Privacy by Design is an approach in system engineering that takes privacy into account throughout the whole engineering process. It especially focuses on systems or applications that capture and process personal data.
 

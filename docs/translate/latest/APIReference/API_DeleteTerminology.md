@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Delete
 ---
 
 # DeleteTerminology
-<a name="API_DeleteTerminology"></a>
 
 A synchronous action that deletes a custom terminology.
 

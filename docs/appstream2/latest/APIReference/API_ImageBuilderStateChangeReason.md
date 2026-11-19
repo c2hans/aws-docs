@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # ImageBuilderStateChangeReason
-<a name="API_ImageBuilderStateChangeReason"></a>
 
 Describes the reason why the last image builder state change occurred.
 

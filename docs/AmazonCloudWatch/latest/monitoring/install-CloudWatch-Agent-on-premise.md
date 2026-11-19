@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/insta
 ---
 
 # Install the CloudWatch agent on on-premises servers
-<a name="install-CloudWatch-Agent-on-premise"></a>
 
  If you downloaded the CloudWatch agent on a computer and created your agent configuration file, you can use that configuration file to install the agent in other on-premises servers.
 

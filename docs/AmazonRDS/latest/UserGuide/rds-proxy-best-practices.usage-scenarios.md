@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-bes
 ---
 
 # Common usage scenarios
-<a name="rds-proxy-best-practices.usage-scenarios"></a>
 
 **Topics**
 + [Application scalability](#rds-proxy-best-practices.application-scalability)

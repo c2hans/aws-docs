@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Comparing Oracle Database EE and SE2 features
-<a name="compare-features"></a>
 
 The following table is a short version of the list of Oracle Database Enterprise Edition (EE) features and possible alternatives in Amazon RDS for Oracle Standard Edition 2 (SE2). For a comprehensive list, see the [Oracle documentation](https://docs.oracle.com/en/database/oracle/oracle-database/19/dblic/Licensing-Information.html#GUID-0F9EB85D-4610-4EDF-89C2-4916A0E7AC87).
 

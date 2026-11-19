@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ListTagsForResource
-<a name="API_elastic_ListTagsForResource"></a>
 
 Lists all tags on a elastic cluster resource
 

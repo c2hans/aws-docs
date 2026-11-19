@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/updating-tag-based-
 ---
 
 # Update tag-based query groups
-<a name="updating-tag-based-resource-groups"></a>
 
 The following procedures show you how to update a tag-based query group.
 

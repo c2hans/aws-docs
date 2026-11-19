@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Putting Data into a Domain
-<a name="WorkingWithDataPut"></a>
 
 The following is an example of putting data into a domain using REST.
 

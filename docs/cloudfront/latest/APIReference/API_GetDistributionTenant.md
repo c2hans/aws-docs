@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetDi
 ---
 
 # GetDistributionTenant
-<a name="API_GetDistributionTenant"></a>
 
 Gets information about a distribution tenant.
 

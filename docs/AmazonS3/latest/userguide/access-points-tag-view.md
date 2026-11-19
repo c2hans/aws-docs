@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Viewing access point tags
-<a name="access-points-tag-view"></a>
 
 You can view or list tags applied to access points. For more information about tags, see [Using tags with S3 Access Points for general purpose buckets](access-points-tagging.md).
 

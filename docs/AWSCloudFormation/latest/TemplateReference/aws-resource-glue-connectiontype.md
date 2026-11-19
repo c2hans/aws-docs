@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::ConnectionType
-<a name="aws-resource-glue-connectiontype"></a>
 
 <a name="aws-resource-glue-connectiontype-description"></a>The `AWS::Glue::ConnectionType` resource Property description not available. for Glue.
 

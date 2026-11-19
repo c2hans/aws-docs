@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Accessing Prometheus metrics
-<a name="rabbitmq-prometheus-metrics"></a>
 
 **Note**
 Prometheus metrics are only available for RabbitMQ 4.2 and later. ActiveMQ brokers do not support Prometheus metrics.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Concepts and definitions
-<a name="concepts-and-definitions"></a>
 
  **Sandbox environment**
 

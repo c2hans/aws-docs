@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkInterfaceAttribute
-<a name="API_DescribeNetworkInterfaceAttribute"></a>
 
 Describes a network interface attribute. You can specify only one attribute at a time.
 

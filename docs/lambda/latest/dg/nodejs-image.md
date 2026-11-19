@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-image.html
 ---
 
 # Deploy Node.js Lambda Event Functions with container images
-<a name="nodejs-image"></a>
 
 There are three ways to build a container image for a Node.js Lambda Event Function:
 + [Using an AWS base image for Node.js](#nodejs-image-instructions)

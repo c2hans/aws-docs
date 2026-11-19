@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodePipelineCustomActionAccess
-<a name="AWSCodePipelineCustomActionAccess"></a>
 
 **Description**: Provides access for custom actions to poll for jobs details (including temporary credentials) and report status updates to AWS CodePipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Initialize Performance Monitor for a single account
-<a name="CloudWatch-PerformanceMonitor-single-account"></a>
 
 If you're monitoring VPCs in a single AWS account, follow these steps.
 

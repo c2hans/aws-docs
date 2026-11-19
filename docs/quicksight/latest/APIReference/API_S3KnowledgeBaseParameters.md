@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Kno
 ---
 
 # S3KnowledgeBaseParameters
-<a name="API_S3KnowledgeBaseParameters"></a>
 
 The parameters that are required to connect to an S3 knowledge base data source.
 

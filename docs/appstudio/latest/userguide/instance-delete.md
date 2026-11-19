@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/instance-dele
 ---
 
 # Deleting an App Studio instance
-<a name="instance-delete"></a>
 
 Use the procedure in this topic to delete your App Studio instance. If you created resources in other services for use with App Studio, review and delete them as necessary to avoid being charged.
 

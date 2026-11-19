@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/common-info-all-im-m
 ---
 
 # Parameters for Built-in Algorithms
-<a name="common-info-all-im-models"></a>
 
 The following table lists parameters for each of the algorithms provided by Amazon SageMaker AI.
 

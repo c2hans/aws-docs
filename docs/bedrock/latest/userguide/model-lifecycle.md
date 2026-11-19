@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle
 ---
 
 # Model lifecycle
-<a name="model-lifecycle"></a>
 
 This page describes the model lifecycle policy for models launched on Amazon Bedrock on or after September 7, 2026. For models launched before this date, see [Model lifecycle (Legacy)](model-lifecycle-legacy.md).
 

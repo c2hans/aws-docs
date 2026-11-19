@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Warning.h
 ---
 
 # Warning
-<a name="API_Warning"></a>
 
 The warning code and message that explains a problem with a query.
 

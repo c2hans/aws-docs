@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessEndpoint
-<a name="API_VerifiedAccessEndpoint"></a>
 
 An AWS Verified Access endpoint specifies the application that AWS Verified Access provides access to. It must be attached to an AWS Verified Access group. An AWS Verified Access endpoint must also have an attached access policy before you attached it to a group.
 

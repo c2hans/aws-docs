@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/java-context.html
 ---
 
 # Using the Lambda context object to retrieve Java Event Function information
-<a name="java-context"></a>
 
 When Lambda runs your function, it passes a context object to the [handler](java-handler.md). This object provides methods and properties that provide information about the invocation, function, and execution environment.
 

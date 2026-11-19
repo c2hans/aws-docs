@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-provis
 ---
 
 # Provision a new account with AFT
-<a name="aft-provision-account"></a>
 
 *This section assumes that you've already set up AFT and your AFT management account, and you are provisioning additional accounts.*
 

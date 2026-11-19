@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Mo
 ---
 
 # Viewing metrics in the Amazon RDS console
-<a name="USER_Monitoring"></a>
 
 Amazon RDS integrates with Amazon CloudWatch to display a variety of Aurora DB cluster metrics in the RDS console. Some metrics are apply at the cluster level, whereas others apply at the instance level. For descriptions of the instance-level and cluster-level metrics, see [Metrics reference for Amazon Aurora](metrics-reference.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/suppo
 ---
 
 # Resource types you can search for with Resource Explorer
-<a name="supported-resource-types"></a>
 
 Resource Explorer supports resource types across numerous AWS services. Resource discovery happens automatically when you access Resource Explorer with appropriate permissions. If you have, at minimum, the permissions in the `[AWSResourceExplorerReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerReadOnlyAccess.html)` managed policy, you can immediately search all tagged resources and supported untagged resources created after the [immediate resource discovery](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-immediate-resource-discovery-experience.html) release. For complete resource discovery with automatic updates, you'll also need the `iam:CreateServiceLinkedRole` permission (included in the [AWSResourceExplorerFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerFullAccess.html) managed policy). After the service-linked role is created in your account by any user, subsequent users need only the permissions in the `[AWSResourceExplorerReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSResourceExplorerReadOnlyAccess.html)` managed policy to get complete results.
 

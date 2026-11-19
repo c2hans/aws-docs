@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-watch.html
 ---
 
 # `cdk watch`
-<a name="ref-cli-cmd-watch"></a>
 
 Continuously watch a local AWS CDK project for changes to perform deployments and hotswaps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/nova-micro-lite-pro/ov
 ---
 
 # Amazon Nova Micro, Lite, Pro, and Premier
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/nova-micro-lite-pro/images/card-background.jpg)
 

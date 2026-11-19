@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SendDurableExecuti
 ---
 
 # SendDurableExecutionCallbackFailure
-<a name="API_SendDurableExecutionCallbackFailure"></a>
 
 Sends a failure response for a callback operation in a durable execution. Use this API when an external system cannot complete a callback operation successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_AmazonO
 ---
 
 # AmazonOpenSearchServerlessDestinationUpdate
-<a name="API_AmazonOpenSearchServerlessDestinationUpdate"></a>
 
 Describes an update for a destination in the Serverless offering for Amazon OpenSearch Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubRefactorSpacesServiceRolePolicy
-<a name="AWSMigrationHubRefactorSpacesServiceRolePolicy"></a>
 
 **Description**: Provides access to AWS Resources managed or used by AWS Migration Hub Refactor Spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-blueprints-
 ---
 
 # Using the Bedrock Data Automation Console
-<a name="bda-blueprints-console"></a>
 
 In Amazon Bedrock Data Automation (BDA), two major artifacts are used when processing information. Projects, which store output configurations, and Blueprints which let you customize the output format and extraction logic for your unstructured content.
 

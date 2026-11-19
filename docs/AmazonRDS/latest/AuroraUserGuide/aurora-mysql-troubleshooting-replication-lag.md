@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Troubleshooting binary log replication lag for Aurora MySQL
-<a name="aurora-mysql-troubleshooting-replication-lag"></a>
 
 This section provides guidance on binary log replication lag for Aurora MySQL configured as a binary log replica. It covers replication architecture, parallel replication, dependency tracking, monitoring, and configuration best practices.
 

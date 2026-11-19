@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-create-snapshot
 ---
 
 # Create multi-volume EBS snapshots from an EC2 instance
-<a name="ebs-create-snapshots"></a>
 
 By default, when you create multi-volume snapshots from an Amazon EC2 instance, Amazon EBS creates snapshots of all the Amazon EBS volumes that are attached to the instance. However, you can choose to exclude the root volume, or specific data volumes if needed.
 

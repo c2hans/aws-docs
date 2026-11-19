@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/managed-comparing-
 ---
 
 # Comparing personalized Amazon OpenSearch Service results to results without personalization
-<a name="managed-comparing-results"></a>
 
 The Amazon Personalize Search Ranking plugin rearranges search results based on both the ranking from Amazon Personalize and the ranking from OpenSearch. The way that the plugin re-ranks the results depends on how you configured the `personalized_search_ranking` response processor in your pipelines.
 

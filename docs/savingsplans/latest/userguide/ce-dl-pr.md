@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-dl-pr.h
 ---
 
 # Downloading your Savings Plans utilization report
-<a name="ce-dl-pr"></a>
 
 You can download a CSV file of your Savings Plans utilization report data.<a name="ce-dl-pr-howto"></a>
 

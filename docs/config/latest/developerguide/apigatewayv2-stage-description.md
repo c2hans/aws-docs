@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/apigatewayv
 ---
 
 # apigatewayv2-stage-description
-<a name="apigatewayv2-stage-description"></a>
 
 Checks if Amazon API Gateway V2 stages have a description. The rule is NON\_COMPLIANT if configuration.Description does not exist or is an empty string.
 

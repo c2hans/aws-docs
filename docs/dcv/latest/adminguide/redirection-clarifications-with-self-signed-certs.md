@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/redirection-clarif
 ---
 
 # Redirection clarifications with self-signed certificates
-<a name="redirection-clarifications-with-self-signed-certs"></a>
 
 When redirecting to a Amazon DCV session from a web-based portal or application, self-signed certificates can break the browser trust with the session if the certificate has not been previously trusted. An example case of this happening is the following:
 

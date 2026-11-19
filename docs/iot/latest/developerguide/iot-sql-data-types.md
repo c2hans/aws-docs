@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-data-t
 ---
 
 # Data types
-<a name="iot-sql-data-types"></a>
 
 The AWS IoT rules engine supports all JSON data types.
 

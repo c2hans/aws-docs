@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Manage subscriptions using the AWS CLI
-<a name="CloudWatch-InfrastructurePerformance-Subscriptions-CLI"></a>
 
 Use the AWS CLI or APIs to get Infrastructure Performance metrics and to enable or disable Amazon CloudWatch subscriptions.
 

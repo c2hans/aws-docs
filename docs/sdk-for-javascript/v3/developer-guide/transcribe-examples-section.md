@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/tr
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Amazon Transcribe examples
-<a name="transcribe-examples-section"></a>
 
 In this example, a series of Node.js modules are used to create,list, and delete transcription jobs using the following methods of the `TranscribeService` client class:
 + [`StartTranscriptionJobCommand`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/Package/-aws-sdk-client-transcribe/Class/StartTranscriptionJobCommand/)

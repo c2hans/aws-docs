@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.htm
 ---
 
 # Managed certificate renewal in AWS Certificate Manager
-<a name="managed-renewal"></a>
 
 ACM provides managed renewal for your Amazon-issued SSL/TLS certificates. This means that ACM will either renew your certificates automatically (if you are using DNS validation), or it will send you email notices when expiration is approaching. These services are provided for both public and private ACM certificates.
 

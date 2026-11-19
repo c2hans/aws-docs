@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-enrichm
 ---
 
 # CreateEnrichmentJob for Scenario Discovery
-<a name="sd-enrichment"></a>
 
 ## Prerequisites
 <a name="sd-enrichment-prereqs"></a>

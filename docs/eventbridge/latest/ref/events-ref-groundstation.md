@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-ground
 ---
 
 # AWS Ground Station events
-<a name="events-ref-groundstation"></a>
 
 AWS Ground Station sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

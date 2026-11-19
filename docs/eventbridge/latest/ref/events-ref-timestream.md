@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-timest
 ---
 
 # Amazon Timestream events
-<a name="events-ref-timestream"></a>
 
 Timestream sends service events to EventBridge via AWS CloudTrail.
 

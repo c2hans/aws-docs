@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-script-tags.htm
 ---
 
 # Identify snapshots created with Data Lifecycle Manager pre and post scripts
-<a name="dlm-script-tags"></a>
 
 Amazon Data Lifecycle Manager automatically assigns the following system tags to snapshots created with pre and post scripts.
 + Key: `aws:dlm:pre-script`; Value: `SUCCESS`\|`FAILED`

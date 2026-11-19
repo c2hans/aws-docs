@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Elastic Load Balancing API contains several data types that various actions use. This section describes each data type in detail.
 

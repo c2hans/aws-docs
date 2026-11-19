@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_External
 ---
 
 # ExternalInvocationConfiguration
-<a name="API_ExternalInvocationConfiguration"></a>
 
 The external invocation configuration for the flow module
 

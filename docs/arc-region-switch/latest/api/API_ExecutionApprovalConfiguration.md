@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Executi
 ---
 
 # ExecutionApprovalConfiguration
-<a name="API_ExecutionApprovalConfiguration"></a>
 
 Configuration for approval steps in a Region switch plan execution. Approval steps require manual intervention before the execution can proceed.
 

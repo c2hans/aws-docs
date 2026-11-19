@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Va
 ---
 
 # Value
-<a name="API_runtime_Value"></a>
 
 Information about the value provided for a slot and Amazon Lex's interpretation.
 

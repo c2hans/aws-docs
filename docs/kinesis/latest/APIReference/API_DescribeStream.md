@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeStream
-<a name="API_DescribeStream"></a>
 
 Describes the specified Kinesis data stream.
 

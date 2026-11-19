@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Security with Amazon GameLift Servers FleetIQ
-<a name="gsg-security"></a>
 
 If you're using Amazon GameLift Servers FleetIQ as a standalone feature with Amazon EC2, see [Security in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html) in the *Amazon EC2 User Guide*.
 

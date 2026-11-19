@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/usage-data.html
 ---
 
 # Configure AWS CDK Library usage data reporting
-<a name="usage-data"></a>
 
 ## What is CDK library usage data reporting?
 <a name="usage-data-intro"></a>

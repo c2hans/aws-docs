@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/step-4-in
 ---
 
 # Step 4: Interact with the chatbot
-<a name="step-4-interact-with-the-chatbot"></a>
 
 ## Getting answers using an Amazon Lex web client user interface
 <a name="getting-answers-using-an-amazon-lex-web-client-user-interface"></a>

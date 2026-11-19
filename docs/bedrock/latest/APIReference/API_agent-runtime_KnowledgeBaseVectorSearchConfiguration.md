@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBaseVectorSearchConfiguration
-<a name="API_agent-runtime_KnowledgeBaseVectorSearchConfiguration"></a>
 
 Configurations for how to perform the search query and return results. For more information, see [Query configurations](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html).
 

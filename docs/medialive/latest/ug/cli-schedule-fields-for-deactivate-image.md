@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cli-schedule-fields-
 ---
 
 # Deactivate global overlay action – payload
-<a name="cli-schedule-fields-for-deactivate-image"></a>
 
 For information about the meaning and values for the fields in the following JSON, see [Fields for deactivating a global image overlay](schedule-fields-for-deactivate-image.md).
 

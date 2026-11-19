@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-managed
 ---
 
 # ec2-managedinstance-applications-required
-<a name="ec2-managedinstance-applications-required"></a>
 
 Checks if all of the specified applications are installed on the instance. Optionally, specify the minimum acceptable version. You can also specify the platform to apply the rule only to instances running that platform.
 

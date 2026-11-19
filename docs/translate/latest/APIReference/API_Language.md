@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Langua
 ---
 
 # Language
-<a name="API_Language"></a>
 
 A supported language.
 

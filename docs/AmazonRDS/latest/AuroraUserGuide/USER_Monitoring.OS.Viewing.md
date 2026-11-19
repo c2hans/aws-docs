@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Mo
 ---
 
 # Viewing OS metrics in the RDS console
-<a name="USER_Monitoring.OS.Viewing"></a>
 
 You can view OS metrics reported by Enhanced Monitoring in the RDS console by choosing **Enhanced monitoring** for **Monitoring**.
 

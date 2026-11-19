@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/marke
 ---
 
 # Co-selling and partners
-<a name="marketplace-coselling-partners"></a>
 
 Manage co-selling opportunities and channel partner selling authorizations.
 

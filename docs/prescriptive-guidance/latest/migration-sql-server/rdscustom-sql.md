@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Amazon RDS Custom for SQL Server
-<a name="rdscustom-sql"></a>
 
 If you're unable to move to a fully managed service such as Amazon RDS because of customization requirements for third-party applications, you can migrate to [Amazon RDS Custom for SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-custom.html). With Amazon RDS Custom, you can retain administrative rights to the database and its underlying operating system to enable dependent applications.
 

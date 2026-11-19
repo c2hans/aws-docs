@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeTranscriptSegment
-<a name="API_streaming_MedicalScribeTranscriptSegment"></a>
 
 Contains a set of transcription results, along with additional information of the segment.
 

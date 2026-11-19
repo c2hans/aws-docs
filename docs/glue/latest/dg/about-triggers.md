@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/about-triggers.html
 ---
 
 # AWS Glue triggers
-<a name="about-triggers"></a>
 
 When *fired*, a trigger can start specified jobs and crawlers. A trigger fires on demand, based on a schedule, or based on a combination of events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_SendBu
 ---
 
 # Use `SendBulkEmail` with an AWS SDK
-<a name="sesv2_example_sesv2_SendBulkEmail_section"></a>
 
 The following code examples show how to use `SendBulkEmail`.
 

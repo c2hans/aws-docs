@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsCardContent
-<a name="API_RcsCardContent"></a>
 
 The content of a rich card, including title, description, media, and card-level suggested actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/c
 ---
 
 # Using SAP Credential Store
-<a name="credential-store"></a>
 
 SAP Credential Store is used in SAP Business Technology Platform to securely store credentials for secret access key authentication to AWS. You must have a subscription to use the service.
 

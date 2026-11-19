@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Playlist API
-<a name="v12-Grafana-API-Playlist"></a>
 
 Use the Playlist API to work with playlists in the Amazon Managed Grafana workspace.
 

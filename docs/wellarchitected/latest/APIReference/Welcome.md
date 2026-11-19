@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the * AWS Well-Architected API Reference*. AWS Well-Architected helps you evaluate your architectures against AWS best practices across operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
 
@@ -21,4 +20,4 @@ Describes the API operations for creating and managing workloads, conducting len
 
 For more information, see [What is AWS Well-Architected Tool?](https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool.html)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

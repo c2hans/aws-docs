@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/list-things.ht
 ---
 
 # List things
-<a name="list-things"></a>
 
 You can use the **ListThings** command to list all things in your account:
 

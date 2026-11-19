@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Changes in working with DynamoDB from version 1 to version 2 of the AWS SDK for Java
-<a name="migration-ddb-mapper"></a>
 
 **Topics**
 + [DynamoDB mapping API differences between version 1 and version 2 of the AWS SDK for Java](ddb-mapping.md)

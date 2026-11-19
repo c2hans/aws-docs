@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SchedulingConfiguration
-<a name="API_SchedulingConfiguration"></a>
 
 The scheduling configuration for a queue. Defines the strategy used to assign workers to jobs.
 

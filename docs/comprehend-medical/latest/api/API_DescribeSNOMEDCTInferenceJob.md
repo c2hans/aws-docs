@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Descri
 ---
 
 # DescribeSNOMEDCTInferenceJob
-<a name="API_DescribeSNOMEDCTInferenceJob"></a>
 
  Gets the properties associated with an InferSNOMEDCT job. Use this operation to get the status of an inference job.
 

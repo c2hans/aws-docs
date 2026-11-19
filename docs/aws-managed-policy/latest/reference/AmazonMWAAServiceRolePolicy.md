@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMWAAServiceRolePolicy
-<a name="AmazonMWAAServiceRolePolicy"></a>
 
 **Description**: The Service Linked Role used by Amazon Managed Workflows for Apache Airflow.
 

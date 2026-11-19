@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # InlineContent
-<a name="API_agent_InlineContent"></a>
 
 Contains information about content defined inline to ingest into a data source. Choose a `type` and include the field that corresponds to it.
 

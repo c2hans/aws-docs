@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/commo
 ---
 
 # Common Issues and Solutions
-<a name="common-issues-and-solutions"></a>
 
 ## Common Data Issues
 <a name="common-issues-common-data-issues"></a>

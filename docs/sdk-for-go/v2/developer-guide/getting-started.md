@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/getting-st
 ---
 
 # Get started with AWS SDK for Go
-<a name="getting-started"></a>
 
  The AWS SDK for Go requires a minimum version of Go 1.23. You can view your current version of Go by running the following command:
 

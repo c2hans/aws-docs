@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Tutorial: Use AWS Lambda with MQTT
-<a name="qs-android-tracking-lambda"></a>
 
 In order to create a connection between AWS IoT and Amazon Location, you need a Lambda function to process messages forwarded by EventBridge CloudWatch events. This function will extract any positional data, format it for Amazon Location, and submit it through the Amazon Location Tracker API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/travel-
 ---
 
 # Travel mode with Amazon Location
-<a name="travel-mode"></a>
 
 You can set a travel mode when using `CalculateRoute` or `CalculateRouteMatrix`. The mode of travel affects speed of travel and road compatibility. While the default mode of travel is by car, you can specify which mode of travel you're using while traveling along a route with the following optional parameter:
 + `TravelMode` – Specifies the mode of transport when calculating a route, such as: {{`Bicycle`}}, {{`Car`}}, {{`Motorcycle`}}, {{`Truck`}}, or {{`Walking`}}.

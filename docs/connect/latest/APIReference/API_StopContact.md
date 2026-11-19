@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StopCont
 ---
 
 # StopContact
-<a name="API_StopContact"></a>
 
 Ends the specified contact. Use this API to stop queued callbacks. It does not work for voice contacts that use the following initiation methods:
 + DISCONNECT

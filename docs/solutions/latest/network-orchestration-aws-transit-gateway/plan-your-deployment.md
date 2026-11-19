@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [cost](cost.md), [architecture](architecture-overview.md), [network security](security.md), and other considerations before deploying.
 

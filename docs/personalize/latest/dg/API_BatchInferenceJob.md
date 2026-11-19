@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_BatchInference
 ---
 
 # BatchInferenceJob
-<a name="API_BatchInferenceJob"></a>
 
 Contains information on a batch inference job.
 

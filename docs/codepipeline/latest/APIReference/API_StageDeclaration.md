@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageDeclaration
-<a name="API_StageDeclaration"></a>
 
 Represents information about a stage and its definition.
 

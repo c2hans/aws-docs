@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdateDocument
-<a name="API_UpdateDocument"></a>
 
 Updates one or more values for an SSM document.
 

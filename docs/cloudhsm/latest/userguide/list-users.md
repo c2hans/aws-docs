@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/list-users.htm
 ---
 
 # List all HSM users in the cluster using AWS CloudHSM Management Utility
-<a name="list-users"></a>
 
  Use **listUsers** command in the AWS CloudHSM Management Utility (CMU) to list all the users in the AWS CloudHSM cluster. You do not have to log in to run **listUsers** and all user types can list users.
 

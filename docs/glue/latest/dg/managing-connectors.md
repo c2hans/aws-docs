@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/managing-connectors.html
 ---
 
 # Managing connectors and connections
-<a name="managing-connectors"></a>
 
 You use the **Connections** page in AWS Glue to manage your connectors and connections.
 

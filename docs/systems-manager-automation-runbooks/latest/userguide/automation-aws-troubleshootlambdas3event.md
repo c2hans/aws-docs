@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootLambdaS3Event`
-<a name="automation-aws-troubleshootlambdas3event"></a>
 
  **Description**
 

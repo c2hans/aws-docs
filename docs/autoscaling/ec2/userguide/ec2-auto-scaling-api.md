@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Working with the Amazon EC2 Auto Scaling APIs
-<a name="ec2-auto-scaling-api"></a>
 
 The API for Amazon EC2 Auto Scaling is the protocol-level interface for Amazon EC2 Auto Scaling. When using the API, you must format every HTTPS request correctly and add a valid digital signature to every request. For more information, see the [ Amazon EC2 Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/Welcome.html).
 

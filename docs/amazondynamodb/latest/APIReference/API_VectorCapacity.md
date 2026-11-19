@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_V
 ---
 
 # VectorCapacity
-<a name="API_VectorCapacity"></a>
 
 The consumed capacity for vector index operations, including vector search request bytes and vector write request bytes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lte
 ---
 
 # LteLocalId
-<a name="API_LteLocalId"></a>
 
 LTE local identification (local ID) information.
 

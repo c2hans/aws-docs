@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/managed-prefix-list
 ---
 
 # Optimize AWS infrastructure management with prefix lists
-<a name="managed-prefix-lists-referencing"></a>
 
 You can reference a prefix list in the following AWS resources.
 

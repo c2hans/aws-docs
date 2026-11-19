@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Batch evaluation
-<a name="batch-evaluations"></a>
 
 Batch evaluation runs evaluators against multiple agent sessions in a single job with server-side orchestration. Unlike on-demand evaluation where you collect spans and call the Evaluate API yourself, batch evaluation handles session discovery, span collection, and scoring entirely on the service side. You submit a job, and the service processes all matching sessions and returns aggregate results.
 

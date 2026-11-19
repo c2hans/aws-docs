@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetHostedConfigurationVersion
-<a name="API_GetHostedConfigurationVersion"></a>
 
 Retrieves information about a specific configuration version.
 

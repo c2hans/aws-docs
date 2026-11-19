@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-out-desig
 ---
 
 # Step 2: Design the workflow
-<a name="s2110-out-design-workflow"></a>
 
 Before you start to create the SMPTE 2110 output group, plan the contents, to make sure that you observe the rules for the number of video, audio, and ancillary data streams that you can include.
 

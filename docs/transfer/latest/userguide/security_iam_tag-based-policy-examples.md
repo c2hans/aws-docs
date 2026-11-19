@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/security_iam_t
 ---
 
 # AWS Transfer Family tag-based policy examples
-<a name="security_iam_tag-based-policy-examples"></a>
 
 The following are examples of how to control access to AWS Transfer Family resources based on tags.
 

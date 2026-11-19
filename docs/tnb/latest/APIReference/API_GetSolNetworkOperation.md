@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkOperation
-<a name="API_GetSolNetworkOperation"></a>
 
 Gets the details of a network operation, including the tasks involved in the network operation and the status of the tasks.
 

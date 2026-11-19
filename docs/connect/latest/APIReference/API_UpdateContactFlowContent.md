@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactFlowContent
-<a name="API_UpdateContactFlowContent"></a>
 
 Updates the specified flow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_LineIte
 ---
 
 # LineItemGroup
-<a name="API_LineItemGroup"></a>
 
 A grouping of tables which contain LineItems, with each table identified by the table's `LineItemGroupIndex`.
 

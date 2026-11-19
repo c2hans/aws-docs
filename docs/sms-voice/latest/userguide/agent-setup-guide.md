@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/agent-setup-g
 ---
 
 # Agent setup guide
-<a name="agent-setup-guide"></a>
 
 AI coding agents can accelerate messaging development by guiding you through workflows that historically required navigating multiple documentation pages. Examples include creating a Rich Communication Services (RCS) branded agent, sending a one-time passcode, registering to send SMS, and moving from the sandbox to production. AWS End User Messaging SMS publishes an agent skill that gives your agent step-by-step, validated guidance for these tasks. An agent configured with your AWS credentials can also run the underlying API calls. Without credentials, the skill provides guidance only.
 

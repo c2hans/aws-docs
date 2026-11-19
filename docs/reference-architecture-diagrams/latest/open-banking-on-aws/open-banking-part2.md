@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/o
 ---
 
 # Open Banking on AWS: Services and operations
-<a name="open-banking-part2"></a>
 
 Publication date: **September 7, 2021 ([Diagram history](#ob-p2-history))**
 

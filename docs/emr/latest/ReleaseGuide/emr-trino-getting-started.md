@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino-gettin
 ---
 
 # Getting started with Trino
-<a name="emr-trino-getting-started"></a>
 
 The procedures in this section show you how to set up an Amazon EMR cluster in order to query metastore data sources with Trino. These metastores, which include the AWS Glue Data Catalog, store metadata and database objects and manage access permissions. The procedures cover prerequisites, recommended configuration settings, creating connectors, and running queries on metastore tables.
 

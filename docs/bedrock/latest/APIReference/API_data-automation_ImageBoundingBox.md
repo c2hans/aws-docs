@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ImageBoundingBox
-<a name="API_data-automation_ImageBoundingBox"></a>
 
 Bounding box settings for a project.
 

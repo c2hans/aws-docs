@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Unproc
 ---
 
 # UnprocessedDataSourcesResult
-<a name="API_UnprocessedDataSourcesResult"></a>
 
 Specifies the names of the data sources that couldn't be enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wir
 ---
 
 # WirelessGatewayLogOption
-<a name="API_WirelessGatewayLogOption"></a>
 
 The log options for wireless gateways and can be used to set log levels for a specific type of wireless gateway.
 

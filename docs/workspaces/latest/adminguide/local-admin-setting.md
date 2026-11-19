@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/local-admin
 ---
 
 # Manage local administrator permissions for WorkSpaces Personal
-<a name="local-admin-setting"></a>
 
 **Note**
 This feature is only available for directories managed through AWS Directory Service, including AD Connector, AWS Managed Microsoft AD, and Simple AD.

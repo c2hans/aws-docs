@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-previous
 ---
 
 # Previous versions of the Athena ODBC 2.x driver
-<a name="odbc-v2-driver-previous-versions"></a>
 
 We highly recommended that you use the [latest version](odbc-v2-driver.md) of the ODBC 2.x driver. The latest version of the driver contains the most recent improvements and fixes. Use an older version only if your application experiences incompatibilities with the latest version.
 

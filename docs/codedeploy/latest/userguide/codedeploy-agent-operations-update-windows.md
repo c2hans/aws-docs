@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Update the CodeDeploy agent on Windows Server
-<a name="codedeploy-agent-operations-update-windows"></a>
 
 You can enable automatic updates of the CodeDeploy agent with AWS Systems Manager. With Systems Manager, you can configure an update schedule for your Amazon EC2 or on-premises instances by creating an association with Systems Manager State Manager. You can also manually update the CodeDeploy agent by uninstalling the current version and installing a newer one.
 

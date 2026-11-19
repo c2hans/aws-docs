@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Metrics.html
 ---
 
 # Metrics
-<a name="API_Metrics"></a>
 
  A container specifying replication metrics-related settings enabling replication metrics and events.
 

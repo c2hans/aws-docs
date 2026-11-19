@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/subscribe
 ---
 
 # Security Lake queries for AWS source version 2 (OCSF 1.1.0)
-<a name="subscriber-query-examples2"></a>
 
 The following section provides guidance on querying data from Security Lake and includes some query examples for natively-supported AWS sources for AWS source version 2. These queries are designed to retrieve data in a specific AWS Region. These examples use us-east-1 (US East (N. Virginia)). In addition, the example queries use a `LIMIT 25` parameter, which returns up to 25 records. You can omit this parameter or adjust it based on your preferences. For more examples, see the [Amazon Security Lake OCSF Queries GitHub directory](https://github.com/awslabs/aws-security-analytics-bootstrap/tree/main/AWSSecurityAnalyticsBootstrap/amazon_security_lake_queries).
 

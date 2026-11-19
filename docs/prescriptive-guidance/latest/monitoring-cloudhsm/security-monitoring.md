@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/monitoring-
 ---
 
 # Security monitoring for AWS CloudHSM
-<a name="security-monitoring"></a>
 
 By default, AWS CloudHSM collects your HSM audit logs and sends them to Amazon CloudWatch Logs on your behalf. Security-related events are also included in this log data. We recommend that you monitor the logs for security-related events, such as the creation or deletion of certain user types or login failures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetServiceIndex
-<a name="API_GetServiceIndex"></a>
 
 Retrieves information about the Resource Explorer index in the current AWS Region. This operation returns the ARN and type of the index if one exists.
 

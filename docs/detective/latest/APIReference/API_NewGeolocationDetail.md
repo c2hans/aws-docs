@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_NewGeo
 ---
 
 # NewGeolocationDetail
-<a name="API_NewGeolocationDetail"></a>
 
 Details new geolocations used either at the resource or account level. For example, lists an observed geolocation that is an infrequent or unused location based on previous user activity.
 

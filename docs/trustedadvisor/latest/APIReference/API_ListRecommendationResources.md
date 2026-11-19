@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_L
 ---
 
 # ListRecommendationResources
-<a name="API_ListRecommendationResources"></a>
 
 List Resources of a Recommendation. This API provides global recommendations, eliminating the need to call the API in each AWS Region.
 

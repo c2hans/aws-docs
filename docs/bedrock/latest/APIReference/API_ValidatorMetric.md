@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Validato
 ---
 
 # ValidatorMetric
-<a name="API_ValidatorMetric"></a>
 
 The metric for the validator.
 

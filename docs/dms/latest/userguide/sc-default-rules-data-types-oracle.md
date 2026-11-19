@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-default-rules-da
 ---
 
 # Data type rules
-<a name="sc-default-rules-data-types-oracle"></a>
 
 The following rules apply when you convert an Oracle database to Amazon Aurora PostgreSQL or Amazon RDS for PostgreSQL.
 

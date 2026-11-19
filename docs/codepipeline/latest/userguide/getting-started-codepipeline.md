@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-st
 ---
 
 # Getting started with CodePipeline
-<a name="getting-started-codepipeline"></a>
 
 If you are new to CodePipeline, you can follow the tutorials in this guide after following the steps in this chapter to get set up.
 

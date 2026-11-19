@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Historic
 ---
 
 # HistoricalMetricResult
-<a name="API_HistoricalMetricResult"></a>
 
 Contains information about the historical metrics retrieved.
 

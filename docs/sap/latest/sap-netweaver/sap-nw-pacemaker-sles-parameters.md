@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # Parameter Reference
-<a name="sap-nw-pacemaker-sles-parameters"></a>
 
 The cluster setup relies on the following parameters. Gather this information prior to configuring Pacemaker to ensure a smooth setup process.
 

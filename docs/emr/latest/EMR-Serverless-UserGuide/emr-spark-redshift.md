@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Using Amazon Redshift integration for Apache Spark on Amazon EMR Serverless
-<a name="emr-spark-redshift"></a>
 
 With Amazon EMR release 6.9.0 and later, every release image includes a connector between [Apache Spark](https://aws.amazon.com/emr/features/spark/) and Amazon Redshift. With this connector, use Spark on Amazon EMR Serverless to process data stored in Amazon Redshift. The integration is based on the [`spark-redshift` open-source connector](https://github.com/spark-redshift-community/spark-redshift#readme). For Amazon EMR Serverless, the [Amazon Redshift integration for Apache Spark](https://docs.aws.amazon.com/redshift/latest/mgmt/spark-redshift-connector.html) is included as a native integration.
 

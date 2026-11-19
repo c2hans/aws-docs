@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # ApplyMapping class
-<a name="aws-glue-api-crawler-pyspark-transforms-ApplyMapping"></a>
 
 Applies a mapping in a `DynamicFrame`.
 

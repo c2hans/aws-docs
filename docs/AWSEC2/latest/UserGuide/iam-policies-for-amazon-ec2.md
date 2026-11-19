@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-policies-for
 ---
 
 # Identity-based policies for Amazon EC2
-<a name="iam-policies-for-amazon-ec2"></a>
 
 By default, users don't have permission to create or modify Amazon EC2 resources, or perform tasks using the Amazon EC2 API, Amazon EC2 console, or CLI. To allow users to create or modify resources and perform tasks, you must create IAM policies that grant users permission to use the specific resources and API actions they'll need, and then attach those policies to the users, groups, or IAM roles that require those permissions.
 
@@ -70,7 +69,7 @@ You can also specify multiple actions using wildcards. For example, you can spec
 ```
 
 **Note**
-Currently, the Amazon EC2 Describe\* API actions do not support resource-level permissions. For more information about resource-level permissions for Amazon EC2, see [Identity-based policies for Amazon EC2](#iam-policies-for-amazon-ec2).
+Currently, the Amazon EC2 Describe\* API actions do not support resource-level permissions. For more information about resource-level permissions for Amazon EC2, see [Identity-based policies for Amazon EC2](iam-policies-for-amazon-ec2.md).
 
 To specify all Amazon EC2 API actions, use the \* wildcard as follows:
 

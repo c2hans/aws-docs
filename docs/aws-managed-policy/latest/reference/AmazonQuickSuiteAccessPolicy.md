@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonQuickSuiteAccessPolicy
-<a name="AmazonQuickSuiteAccessPolicy"></a>
 
 **Description**: Provides permissions for Amazon Quick Suite to manage its IAM Identity Center application, identity store users and groups, user subscriptions, and QuickSight resources on your behalf.
 

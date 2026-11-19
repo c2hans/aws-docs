@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/interconne
 ---
 
 # Example Scenarios
-<a name="interconnect-pricing-scenarios"></a>
 
 The following examples show how the Tier structure is applied to your Interconnect in different scenarios.
 

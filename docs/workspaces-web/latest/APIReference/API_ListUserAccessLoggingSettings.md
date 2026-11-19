@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListUserAccessLoggingSettings
-<a name="API_ListUserAccessLoggingSettings"></a>
 
 Retrieves a list of user access logging settings.
 

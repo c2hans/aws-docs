@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteGatewayRule
-<a name="API_DeleteGatewayRule"></a>
 
 Deletes a gateway rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/samples
 ---
 
 # Code examples and tutorials for working with Amazon Location Service
-<a name="samples"></a>
 
 This topic shows a list of code examples, tutorials, and blog posts to help you learn about Amazon Location Service. Each code example includes a description of how it works.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Create a knowledge base by connecting to a structured data store
-<a name="knowledge-base-structured-create"></a>
 
 To connect a knowledge base to a structured data store, you specify the following components:
 +

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListAddressLists
-<a name="API_ListAddressLists"></a>
 
 Lists address lists for this account.
 

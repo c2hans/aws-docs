@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scalin
 ---
 
 # Auto scaling prerequisites
-<a name="endpoint-auto-scaling-prerequisites"></a>
 
 Before you can use auto scaling, you must have already created an Amazon SageMaker AI model endpoint. You can have multiple model versions for the same endpoint. Each model is referred to as a [production (model) variant](model-ab-testing.md). For more information about deploying a model endpoint, see [Deploy the Model to SageMaker AI Hosting Services](ex1-model-deployment.md#ex1-deploy-model).
 

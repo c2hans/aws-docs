@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEncryp
 ---
 
 # VpcEncryptionNonCompliantResource
-<a name="API_VpcEncryptionNonCompliantResource"></a>
 
 Describes a resource that is not compliant with VPC encryption requirements.
 

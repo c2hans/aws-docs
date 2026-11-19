@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # UpdateIdNamespace
-<a name="API_UpdateIdNamespace"></a>
 
 Updates an existing ID namespace.
 

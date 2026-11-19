@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ExportO
 ---
 
 # ExportOutputSummary
-<a name="API_ExportOutputSummary"></a>
 
 A summary of the output configuration for an export job. The populated member corresponds to the data type that was exported.
 

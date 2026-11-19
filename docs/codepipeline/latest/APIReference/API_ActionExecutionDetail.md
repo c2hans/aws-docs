@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecutionDetail
-<a name="API_ActionExecutionDetail"></a>
 
 Returns information about an execution of an action, including the action execution ID, and the name, version, and timing of the action.
 

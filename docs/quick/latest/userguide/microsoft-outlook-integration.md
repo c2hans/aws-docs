@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/microsoft-outlook
 ---
 
 # Microsoft Outlook integration
-<a name="microsoft-outlook-integration"></a>
 
 With the Microsoft Outlook connector, you can access Outlook's email, calendar, and contact APIs directly in AWS Quick through natural language.
 

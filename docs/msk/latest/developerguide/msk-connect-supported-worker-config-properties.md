@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-su
 ---
 
 # Supported worker configuration properties
-<a name="msk-connect-supported-worker-config-properties"></a>
 
 MSK Connect provides a default worker configuration. You also have the option to create a custom worker configuration to use with your connectors. The following list includes information about the worker configuration properties that Amazon MSK Connect does or does not support.
 + The `key.converter` and `value.converter` properties are required.

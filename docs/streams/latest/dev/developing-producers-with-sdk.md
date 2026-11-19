@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/developing-producers-
 ---
 
 # Develop producers using the Amazon Kinesis Data Streams API with the AWS SDK for Java
-<a name="developing-producers-with-sdk"></a>
 
 You can develop producers using the Amazon Kinesis Data Streams API with the AWS SDK for Java. If you are new to Kinesis Data Streams, start by becoming familiar with the concepts and terminology presented in [What is Amazon Kinesis Data Streams?](introduction.md) and [Use the AWS CLI to perform Amazon Kinesis Data Streams operations](getting-started.md).
 

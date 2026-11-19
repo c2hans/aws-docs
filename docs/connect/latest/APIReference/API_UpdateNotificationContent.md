@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateNo
 ---
 
 # UpdateNotificationContent
-<a name="API_UpdateNotificationContent"></a>
 
 Updates the localized content of an existing notification. This operation applies to all users for whom the notification was sent.
 

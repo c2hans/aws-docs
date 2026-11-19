@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Region availability
-<a name="availability"></a>
 
 **Note**
 Amazon Kinesis Video Streams with WebRTC is not yet supported in the AWS GovCloud (US) Region.

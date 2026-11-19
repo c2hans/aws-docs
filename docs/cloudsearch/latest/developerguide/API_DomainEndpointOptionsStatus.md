@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Do
 ---
 
 # DomainEndpointOptionsStatus
-<a name="API_DomainEndpointOptionsStatus"></a>
 
 ## Description
 <a name="API_DomainEndpointOptionsStatus_Description"></a>

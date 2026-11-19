@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/globalaccel
 ---
 
 # Security Hub CSPM controls for Global Accelerator
-<a name="globalaccelerator-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the AWS Global Accelerator service and resources.
 

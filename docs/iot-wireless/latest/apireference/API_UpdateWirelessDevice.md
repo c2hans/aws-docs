@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateWirelessDevice
-<a name="API_UpdateWirelessDevice"></a>
 
 Updates properties of a wireless device.
 

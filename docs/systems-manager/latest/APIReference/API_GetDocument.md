@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetDocument
-<a name="API_GetDocument"></a>
 
 Gets the contents of the specified AWS Systems Manager document (SSM document).
 

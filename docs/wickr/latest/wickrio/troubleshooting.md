@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/troubleshooting.htm
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Wickr IO clients troubleshooting
-<a name="troubleshooting"></a>
 
 **Topics**
 + [Bot runtime architecture](#bot-architecture)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/lambda-t
 ---
 
 # AWS Lambda tasks in Amazon SWF
-<a name="lambda-task"></a>
 
 **Topics**
 + [About AWS Lambda](#about-aws-lambda)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/bp-contact-flo
 ---
 
 # Best practices for flows in Connect Customer
-<a name="bp-contact-flows"></a>
 
 Use the list of recommended best practices in this topic when you are using and creating flows.
 + Use consistent attribute naming conventions across all AWS services. Use camel case for yourAttributeNames to avoid confusion when passing and referencing variables.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails
-<a name="API_AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails"></a>
 
  Used for CAPTCHA and challenge token settings. Determines how long a CAPTCHA or challenge timestamp remains valid after AWS WAF updates it for a successful CAPTCHA or challenge response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeActionEvent
-<a name="API_agent-runtime_NodeActionEvent"></a>
 
 Contains information about an action (operation) called by a node during execution.
 

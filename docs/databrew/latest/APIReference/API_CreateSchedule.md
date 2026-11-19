@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_CreateS
 ---
 
 # CreateSchedule
-<a name="API_CreateSchedule"></a>
 
 Creates a new schedule for one or more DataBrew jobs. Jobs can be run at a specific date and time, or at regular intervals.
 

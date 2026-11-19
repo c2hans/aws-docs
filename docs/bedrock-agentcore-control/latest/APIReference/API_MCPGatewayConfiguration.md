@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MCPGatewayConfiguration
-<a name="API_MCPGatewayConfiguration"></a>
 
 The configuration for a Model Context Protocol (MCP) gateway. This structure defines how the gateway implements the MCP protocol.
 

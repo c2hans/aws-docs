@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # Amazon S3 Encryption Client for Java examples
-<a name="java-examples"></a>
 
 The following examples show you how to use the Amazon S3 Encryption Client for Java to encrypt and decrypt Amazon S3 objects. These examples show how to use version 4.*x* of the Amazon S3 Encryption Client for Java. For more detailed examples, see the [amazon-s3-encryption-client-java](https://github.com/aws/amazon-s3-encryption-client-java/tree/main/src/examples/java/software/amazon/encryption/s3/examples) GitHub repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeleteRecommendation
-<a name="API_DeleteRecommendation"></a>
 
 Deletes a recommendation and its associated results.
 

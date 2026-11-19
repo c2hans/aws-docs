@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::NetworkConnector
-<a name="sam-resource-networkconnector"></a>
 
  Creates a AWS Lambda Network Connector that defines network connectivity for Lambda compute resources. A network connector specifies how compute resources connect to networks, for example by routing egress traffic through a customer VPC using elastic network interfaces (ENIs) that the service provisions in specified subnets and security groups. Each connector serves one compute type, either MicroVMs or Web Functions. To use a connector with an [AWS::Serverless::WebFunction](sam-resource-webfunction.md), set `ComputeTypes` to `WebFunction` and pass the connector's `LatestVersionArn` to the function's `EgressNetworkConnectorArn` property.
 

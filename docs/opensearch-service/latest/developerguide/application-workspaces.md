@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using Amazon OpenSearch Service workspaces
-<a name="application-workspaces"></a>
 
 Amazon OpenSearch Service supports creating multiple use case-specific workspaces. Each workspace provides a curated experience for popular use cases such as Observability, Security Analytics and Search. Workspace also supports collaborator management, so that you can share your workspace with only your intended collaborators and manage the permissions for each one.
 

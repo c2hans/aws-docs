@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/InputOutput-LightGBM
 ---
 
 # Input and Output interface for the LightGBM algorithm
-<a name="InputOutput-LightGBM"></a>
 
 Gradient boosting operates on tabular data, with the rows representing observations, one column representing the target variable or label, and the remaining columns representing features.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_AzureOi
 ---
 
 # AzureOidcConfig
-<a name="API_AzureOidcConfig"></a>
 
 External identity parameters for Azure Blob Storage.
 

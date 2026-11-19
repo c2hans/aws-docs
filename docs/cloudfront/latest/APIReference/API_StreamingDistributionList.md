@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingDistributionList
-<a name="API_StreamingDistributionList"></a>
 
 A streaming distribution list.
 

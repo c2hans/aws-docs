@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster
 ---
 
 # rds-cluster-default-admin-check
-<a name="rds-cluster-default-admin-check"></a>
 
 Checks if an Amazon Relational Database Service (Amazon RDS) database cluster has changed the admin username from its default value. The rule is NON\_COMPLIANT if the admin username is set to the default value.
 

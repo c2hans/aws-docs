@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-testcon
 ---
 
 # Prepare the Raspberry Pi to demonstrate MQTT message communication
-<a name="iot-dc-testconn-provision"></a>
 
 This procedure creates the resources in AWS IoT and in the Raspberry Pi to demonstrate MQTT message communication using the AWS IoT Device Client.
 

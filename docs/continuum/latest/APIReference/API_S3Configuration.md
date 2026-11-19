@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_S3Conf
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 Configuration for a customer-managed S3 integration.
 

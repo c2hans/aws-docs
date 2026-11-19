@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/endpoint-states.h
 ---
 
 # MediaConnect endpoint states
-<a name="endpoint-states"></a>
 
 Each MediaConnect endpoint has a registration state and a connection state. The registration state shows whether the endpoint is in your endpoint registry. The connection state shows whether the endpoint is connected to another endpoint.
 

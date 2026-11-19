@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2-tas
 ---
 
 # Task definitions for EC2Launch v2 startup tasks
-<a name="ec2launch-v2-task-definitions"></a>
 
 Each task that EC2Launch v2 runs during launch or startup has its own set of properties and requirements. Task details include settings for how often a task runs – once, or always, what stage of the agent boot process it runs in, syntax, and YAML document examples. For more information, review the task details shown in this reference.
 

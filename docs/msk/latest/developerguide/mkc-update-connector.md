@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-update-con
 ---
 
 # Update a connector
-<a name="mkc-update-connector"></a>
 
 ## Update connector configuration
 <a name="mkc-update-connector-configuration"></a>

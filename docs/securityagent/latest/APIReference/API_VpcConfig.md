@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Vp
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 The VPC configuration for a pentest, specifying the VPC, security groups, and subnets to use during testing.
 

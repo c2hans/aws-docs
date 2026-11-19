@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_R
 ---
 
 # RelatedControlMappingDetails
-<a name="API_RelatedControlMappingDetails"></a>
 
 A structure that describes a control's relationship status with other controls.
 

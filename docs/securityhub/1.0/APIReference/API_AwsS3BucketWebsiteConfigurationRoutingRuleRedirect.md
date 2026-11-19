@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketWebsiteConfigurationRoutingRuleRedirect
-<a name="API_AwsS3BucketWebsiteConfigurationRoutingRuleRedirect"></a>
 
 The rules to redirect the request if the condition in `Condition` is met.
 

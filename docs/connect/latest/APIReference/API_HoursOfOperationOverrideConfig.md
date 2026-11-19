@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationOverrideConfig
-<a name="API_HoursOfOperationOverrideConfig"></a>
 
 Information about the hours of operation override config: day, start time, and end time.
 

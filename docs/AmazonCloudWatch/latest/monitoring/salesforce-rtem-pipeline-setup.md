@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sales
 ---
 
 # CloudWatch pipelines configuration for Salesforce RTEM
-<a name="salesforce-rtem-pipeline-setup"></a>
 
 Collects real-time events from Salesforce using OAuth2 authentication.
 

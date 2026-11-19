@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StopAutomationExecution
-<a name="API_StopAutomationExecution"></a>
 
 Stop an Automation that is currently running.
 

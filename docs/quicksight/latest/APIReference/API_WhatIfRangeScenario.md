@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WhatI
 ---
 
 # WhatIfRangeScenario
-<a name="API_WhatIfRangeScenario"></a>
 
 Provides the forecast to meet the target for a particular date range.
 

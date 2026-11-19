@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AddressAt
 ---
 
 # AddressAttribute
-<a name="API_AddressAttribute"></a>
 
 The attributes associated with an Elastic IP address.
 

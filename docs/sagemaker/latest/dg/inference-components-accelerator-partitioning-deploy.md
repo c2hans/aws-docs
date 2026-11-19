@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-components
 ---
 
 # Deploy models to GPU partitions with inference components
-<a name="inference-components-accelerator-partitioning-deploy"></a>
 
 After your partitioned endpoint is `InService`, you deploy a model to it by creating an inference component that requests a partition type. Each copy of the inference component occupies one partition of that type. To create the endpoint, see [Create an endpoint with GPU partitions](inference-components-accelerator-partitioning-create.md).
 

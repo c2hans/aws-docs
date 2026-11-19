@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Getting started with Lambda Managed Instances
-<a name="lambda-managed-instances-getting-started"></a>
 
 ## Creating a Lambda Managed Instance function (console)
 <a name="lambda-managed-instances-getting-started-console"></a>

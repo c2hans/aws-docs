@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/custom-metri
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Viewing metrics
-<a name="custom-metrics"></a>
 
 After a sync job is finished, you can use the `DataSourceSyncJobMetrics` API operation to get the metrics associated with the sync job. Use this API operation to monitor your custom data source syncs.
 

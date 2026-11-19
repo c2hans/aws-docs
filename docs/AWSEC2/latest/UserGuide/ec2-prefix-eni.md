@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-prefix-eni.h
 ---
 
 # Prefix delegation for Amazon EC2 network interfaces
-<a name="ec2-prefix-eni"></a>
 
 You can assign a private IPv4 or IPv6 CIDR range, either automatically or manually, to your network interfaces. By assigning prefixes, you scale and simplify the management of applications, including container and networking applications that require multiple IP addresses on an instance. For more information about IPv4 and IPv6 addresses, see [Amazon EC2 instance IP addressing](using-instance-addressing.md).
 

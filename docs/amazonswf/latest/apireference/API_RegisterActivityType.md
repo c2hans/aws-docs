@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Regist
 ---
 
 # RegisterActivityType
-<a name="API_RegisterActivityType"></a>
 
 Registers a new *activity type* along with its configuration settings in the specified domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent-r
 ---
 
 # Build and orchestrate generative AI applications with Amazon Bedrock and Step Functions
-<a name="bedrock-agent-runtime_example_cross_ServerlessPromptChaining_section"></a>
 
 The following code example shows how to build and orchestrate generative AI applications with Amazon Bedrock and Step Functions.
 

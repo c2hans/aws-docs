@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Block
 ---
 
 # BlockReference
-<a name="API_BlockReference"></a>
 
 A reference to a block.
 

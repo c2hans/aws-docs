@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GlueStudioSchemaC
 ---
 
 # GlueStudioSchemaColumn
-<a name="API_GlueStudioSchemaColumn"></a>
 
 Specifies a single column in a AWS Glue schema definition.
 

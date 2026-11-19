@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ChainedInvokeTimed
 ---
 
 # ChainedInvokeTimedOutDetails
-<a name="API_ChainedInvokeTimedOutDetails"></a>
 
 Details about a chained invocation that timed out.
 

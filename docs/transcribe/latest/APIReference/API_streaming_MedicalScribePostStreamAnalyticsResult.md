@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribePostStreamAnalyticsResult
-<a name="API_streaming_MedicalScribePostStreamAnalyticsResult"></a>
 
 Contains details for the result of post-stream analytics.
 

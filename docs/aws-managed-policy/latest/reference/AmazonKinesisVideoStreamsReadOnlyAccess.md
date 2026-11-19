@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKinesisVideoStreamsReadOnlyAccess
-<a name="AmazonKinesisVideoStreamsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS Kinesis Video Streams via the AWS Management Console.
 

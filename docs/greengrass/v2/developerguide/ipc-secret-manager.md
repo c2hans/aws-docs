@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-secret-
 ---
 
 # Retrieve secret values
-<a name="ipc-secret-manager"></a>
 
 Use the secret manager IPC service to retrieve secret values from secrets on the core device. You use the [secret manager component](secret-manager-component.md) to deploy encrypted secrets to core devices. Then, you can use an IPC operation to decrypt the secret and use its value in your custom components.
 

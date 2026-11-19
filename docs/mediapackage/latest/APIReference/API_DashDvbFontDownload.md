@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashDvbFontDownload
-<a name="API_DashDvbFontDownload"></a>
 
 For use with DVB-DASH profiles only. The settings for font downloads that you want AWS Elemental MediaPackage to pass through to the manifest.
 

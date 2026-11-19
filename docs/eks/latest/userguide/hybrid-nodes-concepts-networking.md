@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-concep
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Networking concepts for hybrid nodes
-<a name="hybrid-nodes-concepts-networking"></a>
 
 This section details the core networking concepts and the constraints you must consider when designing your network topology for EKS Hybrid Nodes.
 

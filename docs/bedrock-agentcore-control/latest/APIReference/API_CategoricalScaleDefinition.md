@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CategoricalScaleDefinition
-<a name="API_CategoricalScaleDefinition"></a>
 
  The definition of a categorical rating scale option that provides a named category with its description for evaluation scoring.
 

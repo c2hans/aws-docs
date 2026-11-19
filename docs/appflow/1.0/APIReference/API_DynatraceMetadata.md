@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceMe
 ---
 
 # DynatraceMetadata
-<a name="API_DynatraceMetadata"></a>
 
  The connector metadata specific to Dynatrace.
 

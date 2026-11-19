@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-cert.html
 ---
 
 # Managing the TLS certificate
-<a name="manage-cert"></a>
 
 Amazon DCV automatically generates a self-signed certificate that's used to secure traffic between the Amazon DCV client and Amazon DCV server. By default, if no other certificate is installed, this certificate is used. The default certificate includes two files. They are the certificate itself (`dcv.pem)` and a key (`dcv.key`). For more information, please see [Redirection clarifications with self-signed certificates](redirection-clarifications-with-self-signed-certs.md).
 

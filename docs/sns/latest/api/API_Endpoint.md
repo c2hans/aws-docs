@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_Endpoint.html
 ---
 
 # Endpoint
-<a name="API_Endpoint"></a>
 
 The endpoint for mobile app and device.
 

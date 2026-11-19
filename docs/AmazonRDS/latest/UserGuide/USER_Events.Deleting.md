@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.D
 ---
 
 # Deleting an Amazon RDS event notification subscription
-<a name="USER_Events.Deleting"></a>
 
 You can delete a subscription when you no longer need it. All subscribers to the topic will no longer receive event notifications specified by the subscription.
 

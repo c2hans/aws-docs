@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_DeletePermis
 ---
 
 # DeletePermissionVersion
-<a name="API_DeletePermissionVersion"></a>
 
 Deletes one version of a customer managed permission. The version you specify must not be attached to any resource share and must not be the default version for the permission.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateProfile
-<a name="API_connect-customer-profiles_UpdateProfile"></a>
 
 Updates the properties of a profile. The ProfileId is required for updating a customer profile.
 

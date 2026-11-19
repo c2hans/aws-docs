@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # AWS Database Encryption SDK for DynamoDB
-<a name="dynamodb-encryption-client"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTypeInfoFromInstanceRequirements
-<a name="API_InstanceTypeInfoFromInstanceRequirements"></a>
 
 The list of instance types with the specified instance attributes.
 

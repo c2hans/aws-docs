@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentRe
 ---
 
 # ExperimentReportConfigurationCloudWatchDashboard
-<a name="API_ExperimentReportConfigurationCloudWatchDashboard"></a>
 
 Specifies the CloudWatch dashboard to include in the experiment report. The dashboard widgets will be captured as snapshot graphs within the report.
 

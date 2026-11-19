@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/authoring-sheets.
 ---
 
 # Working with items on sheets in AWS Quick Sight analyses
-<a name="authoring-sheets"></a>
 
 Use this section to learn how to work with visuals and other items as you author sheets in Quick Sight
 

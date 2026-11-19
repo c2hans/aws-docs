@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # LandCoverSegmentationConfigInput
-<a name="API_geospatial_LandCoverSegmentationConfigInput"></a>
 
 The input structure for Land Cover Operation type.
 

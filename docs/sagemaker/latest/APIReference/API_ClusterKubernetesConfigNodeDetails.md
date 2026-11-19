@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterKubernetesConfigNodeDetails
-<a name="API_ClusterKubernetesConfigNodeDetails"></a>
 
 Node-specific Kubernetes configuration showing both current and desired state of labels and taints for an individual cluster node.
 

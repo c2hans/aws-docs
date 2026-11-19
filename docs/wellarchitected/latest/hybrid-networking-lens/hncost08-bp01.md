@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST08-BP01 Regular cost analysis
-<a name="hncost08-bp01"></a>
 
  Review cost dashboards to identify underutilized resources, anomalous spikes, and opportunities to switch connectivity types.
 

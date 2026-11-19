@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ApiAssoc
 ---
 
 # ApiAssociation
-<a name="API_ApiAssociation"></a>
 
 Describes an `ApiAssociation` object.
 

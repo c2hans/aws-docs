@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/security-i
 AWS FinOps Agent is in preview release and is subject to change.
 
 # AWS managed policies for AWS FinOps Agent
-<a name="security-iam-awsmanpol"></a>
 
 AWS managed policies are standalone identity-based policies that AWS creates and maintains. AWS FinOps Agent uses the following managed policies for the roles it assumes. If you configure roles manually, see the [IAM setup guide](setting-up.md).
 

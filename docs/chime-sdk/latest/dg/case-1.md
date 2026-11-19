@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/case-1.html
 ---
 
 # Receiving an inbound call using the Amazon Chime SDK PSTN audio service
-<a name="case-1"></a>
 
 When a `NEW_INCOMING_CALL` event occurs, the Audio Service creates a unique `TransactionID` and unique `CallID` that persist until the `HANGUP` event occurs.
 

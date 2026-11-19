@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/doc-h
 ---
 
 # Document History for AWS Elemental Live Upgrade Guide
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental Live.
 + **API version:** 2.5 and later

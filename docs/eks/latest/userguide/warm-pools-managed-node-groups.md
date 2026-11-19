@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/warm-pools-managed-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Decrease latency for applications with long boot times using warm pools with managed node groups
-<a name="warm-pools-managed-node-groups"></a>
 
 When your applications have long initialization or boot times, scale-out events can cause delays—new nodes must fully boot and join the cluster before Pods can be scheduled on them. This latency can impact application availability during traffic spikes or rapid scaling events. Warm pools solve this problem by maintaining a pool of pre-initialized EC2 instances that have already completed the bootup process. During a scale-out event, instances move from the warm pool directly to your cluster, bypassing the time-consuming initialization steps and significantly reducing the time it takes for new capacity to become available. For more information, see [Decrease latency for applications that have long boot times using warm pools](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html) in the *Amazon EC2 Auto Scaling User Guide*.
 

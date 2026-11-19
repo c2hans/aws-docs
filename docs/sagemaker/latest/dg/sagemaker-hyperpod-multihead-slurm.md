@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # SageMaker HyperPod multi-head node support
-<a name="sagemaker-hyperpod-multihead-slurm"></a>
 
 You can create multiple controller (head) nodes in a single SageMaker HyperPod Slurm cluster, with one serving as the primary controller node and the others serving as backup controller nodes. The primary controller node is responsible for controlling the compute (worker) nodes and handling Slurm operations. The backup controller nodes constantly monitor the primary controller node. If the primary controller node fails or becomes unresponsive, one of the backup controller nodes will automatically take over as the new primary controller node.
 

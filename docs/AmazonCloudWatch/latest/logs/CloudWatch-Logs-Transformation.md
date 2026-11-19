@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Transform logs during ingestion
-<a name="CloudWatch-Logs-Transformation"></a>
 
 With logs transformation and enrichment, you can normalize all your logs in a consistent and context-rich format at the time of ingestion into CloudWatch Logs. You can add structure to your logs by using pre-configured templates for common AWS services such as AWS WAF and Amazon Route 53, or build custom transformers with native parsers such as [Grok](CloudWatch-Logs-Transformation-Configurable.md#CloudWatch-Logs-Transformation-Grok). You can also rename existing attributes and add additional metadata to your logs such as account ID, and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationMappings
-<a name="API_ListNetworkMigrationMappings"></a>
 
 Lists network migration mapping jobs, which analyze and create relationships between source and target network resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch_sns_tutoria
 ---
 
 # Tutorial: Sending Amazon Simple Notification Service alerts for failed job events
-<a name="batch_sns_tutorial"></a>
 
 In this tutorial, you configure an Amazon EventBridge event rule that only captures job events where the job has moved to a `FAILED` status. At the end of this tutorial, you can optionally also submit a job to this job queue. This is to test that you have configured your Amazon SNS alerts correctly.
 

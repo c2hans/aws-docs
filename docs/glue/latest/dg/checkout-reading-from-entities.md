@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/checkout-reading-from-ent
 ---
 
 # Reading from Checkout.com entities
-<a name="checkout-reading-from-entities"></a>
 
 **Prerequisites**
 

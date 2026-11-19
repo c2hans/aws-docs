@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-mqtt-freer
 ---
 
 # Prerequisites for OTA updates using MQTT
-<a name="ota-mqtt-freertos"></a>
 
 This section describes the general requirements for using MQTT to perform over-the-air (OTA updates).
 

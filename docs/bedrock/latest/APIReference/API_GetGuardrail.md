@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetGuard
 ---
 
 # GetGuardrail
-<a name="API_GetGuardrail"></a>
 
 Gets details about a guardrail. If you don't specify a version, the response returns details for the `DRAFT` version.
 

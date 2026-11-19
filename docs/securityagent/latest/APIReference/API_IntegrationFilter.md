@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegrationFilter
-<a name="API_IntegrationFilter"></a>
 
 A filter for listing integrations. This is a union type where you can filter by provider or provider type.
 

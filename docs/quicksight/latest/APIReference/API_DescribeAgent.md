@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAgent
-<a name="API_DescribeAgent"></a>
 
 Describes an agent.
 

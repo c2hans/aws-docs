@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-condi
 ---
 
 # Limit pushes and merges to branches in AWS CodeCommit
-<a name="how-to-conditional-branch"></a>
 
 By default, any CodeCommit repository user who has sufficient permissions to push code to the repository can contribute to any branch in that repository. This is true no matter how you add a branch to the repository: by using the console, the command line, or Git. However, you might want to configure a branch so that only some repository users can push or merge code to that branch. For example, you might want to configure a branch used for production code so that only a subset of senior developers can push or merge changes to that branch. Other developers can still pull from the branch, make their own branches, and create pull requests, but they cannot push or merge changes to that branch. You can configure this access by creating a conditional policy that uses a context key for one or more branches in IAM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # ConfigRecommendation
-<a name="API_ConfigRecommendation"></a>
 
 Defines a recommendation configuration.
 

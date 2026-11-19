@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListBu
 ---
 
 # ListBuilds
-<a name="API_ListBuilds"></a>
 
 Gets a list of build IDs, with each build ID representing a single build.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 7: Configure a migration automation server
-<a name="configure-migration-automation-server"></a>
 
 The migration automation server is used to run migration automation.
 

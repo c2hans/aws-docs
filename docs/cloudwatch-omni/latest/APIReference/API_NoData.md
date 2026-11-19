@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NoData
-<a name="API_NoData"></a>
 
 Configures how the alert reacts when an evaluation produces no data. `treatAs` carries the resulting state; defaults to `NODATA` when omitted.
 

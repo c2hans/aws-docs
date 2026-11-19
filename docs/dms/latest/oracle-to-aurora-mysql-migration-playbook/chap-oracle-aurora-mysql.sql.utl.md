@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle UTL\_FILE and MySQL integration with Amazon S3
-<a name="chap-oracle-aurora-mysql.sql.utl"></a>
 
 With AWS DMS, you can seamlessly migrate Oracle databases utilizing `UTL_FILE` and MySQL databases with Amazon S3 integration to AWS. The following sections outline the steps to configure and utilize `UTL_FILE` with Oracle and MySQL integration with Amazon S3 through AWS DMS.
 

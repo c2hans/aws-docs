@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/cross-acco
 ---
 
 # Cross-account import for AWS HealthImaging
-<a name="cross-account-imports"></a>
 
 With cross-account/cross-region import, you can import data into your HealthImaging [data store](getting-started-concepts.md#concept-data-store) from Amazon S3 buckets located in other [supported Regions](endpoints-quotas.md#endpoints). You can import data across AWS accounts, accounts owned by other [AWS Organizations](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#awsorganizations), and from open data sources like [Imaging Data Commons (IDC)](https://registry.opendata.aws/nci-imaging-data-commons/) located in the [Registry of Open Data on AWS](https://registry.opendata.aws/).
 

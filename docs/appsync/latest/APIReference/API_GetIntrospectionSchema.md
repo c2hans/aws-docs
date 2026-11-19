@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetIntro
 ---
 
 # GetIntrospectionSchema
-<a name="API_GetIntrospectionSchema"></a>
 
 Retrieves the introspection schema for a GraphQL API.
 

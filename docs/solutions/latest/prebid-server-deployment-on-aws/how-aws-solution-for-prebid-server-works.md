@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # How Guidance for Deploying a Prebid Server on AWS works
-<a name="how-aws-solution-for-prebid-server-works"></a>
 
 ## Workflow of banner ads
 <a name="workflow-of-banner-ads"></a>

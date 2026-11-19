@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Healthcare Industry Lens authors and contributors (in alphabetical order):
 +  Sanford Coker – Principal Solutions Architect, WW HCLS – Private Equity, Amazon Web Services

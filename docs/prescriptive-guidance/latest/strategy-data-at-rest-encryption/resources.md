@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS service documentation
 <a name="resources-aws-service-documentation"></a>

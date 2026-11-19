@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDeploymentAlarms
-<a name="API_DaemonDeploymentAlarms"></a>
 
 The CloudWatch alarms used to determine a daemon deployment failed.
 

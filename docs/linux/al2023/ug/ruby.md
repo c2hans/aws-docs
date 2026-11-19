@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ruby.html
 ---
 
 # Ruby in AL2023
-<a name="ruby"></a>
 
  [Ruby](https://www.ruby-lang.org/en/) in AL2023 is represented by versions 3.2 and 3.4. Amazon Linux follows the upstream support schedule and a support status of any Ruby version can always be checked on the [Ruby website](https://www.ruby-lang.org/en/). All supported Ruby versions are namespaced and can be installed on the same system simultaneously. Namespacing ensures that each Ruby installation is unique within the file system. This is achieved by renaming key directories and files based on the runtime version. The actual executable names will look like *ruby{MAJOR.MINOR}* (e.g., `ruby3.2` or `ruby3.4`). Ruby 3.4 also provides the MRI (Matz's Ruby Interpreter) namespaced binary `ruby3.4-mri`, which refers to the standard C-based reference implementation of Ruby. However, only one Ruby version can be active at a time. This active version provides the default directories and file names, such as *ruby*, *gem*, or *bundle*, pointing them to the currently active runtime.
 

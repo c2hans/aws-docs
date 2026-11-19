@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeLDAPSSettings
-<a name="API_DescribeLDAPSSettings"></a>
 
 Describes the status of LDAP security for the specified directory.
 

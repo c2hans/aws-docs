@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaVersionNumb
 ---
 
 # SchemaVersionNumber
-<a name="API_SchemaVersionNumber"></a>
 
 A structure containing the schema version information.
 

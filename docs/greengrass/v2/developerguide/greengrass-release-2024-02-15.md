@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: AWS IoT Greengrass Core v2.12.2 software update on February 15, 2024
-<a name="greengrass-release-2024-02-15"></a>
 
 This release provides version 2.12.2 of the Greengrass nucleus component and updates to AWS-provided components.
 

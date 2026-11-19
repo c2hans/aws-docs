@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AutomaticEnc
 ---
 
 # AutomaticEncryptionKeyConfiguration
-<a name="API_AutomaticEncryptionKeyConfiguration"></a>
 
 Configuration settings for automatic encryption key management, where MediaConnect handles key creation and rotation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchStatus
-<a name="API_PatchStatus"></a>
 
 Information about the approval status of a patch.
 

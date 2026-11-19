@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/integratio
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Tutorial: Lint code using a GitHub Action
-<a name="integrations-github-action-tutorial"></a>
 
 In this tutorial, you add the [Super-Linter GitHub Action](https://github.com/marketplace/actions/super-linter) to an Amazon CodeCatalyst workflow. The Super-Linter action inspects code, finds areas where the code has errors, formatting issues, and suspicious constructs, and then outputs the results to the CodeCatalyst console). After adding the linter to your workflow, you run the workflow to lint a sample Node.js application (`app.js`). You then fix the reported problems and run the workflow again to see if the fixes worked.
 

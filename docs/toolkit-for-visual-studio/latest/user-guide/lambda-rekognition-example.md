@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Tutorial: Creating an Amazon Rekognition Lambda Application
-<a name="lambda-rekognition-example"></a>
 
 This tutorial shows you how to create an Lambda application that uses Amazon Rekognition to tag Amazon S3 objects with detected labels.
 

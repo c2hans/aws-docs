@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetC
 ---
 
 # GetComposition
-<a name="API_GetComposition"></a>
 
 Get information about the specified Composition resource.
 

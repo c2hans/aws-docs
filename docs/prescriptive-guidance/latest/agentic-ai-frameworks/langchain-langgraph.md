@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # LangChain and LangGraph
-<a name="langchain-langgraph"></a>
 
 LangChain is an established framework for building agentic AI applications. LangGraph extends its capabilities to support complex, stateful agent workflows, as described in the [LangChain Blog](https://blog.langchain.dev/how-to-think-about-agent-frameworks/). Together, they provide orchestration capabilities for building autonomous AI agents that operate independently.
 

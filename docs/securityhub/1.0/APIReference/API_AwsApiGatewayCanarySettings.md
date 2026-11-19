@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiG
 ---
 
 # AwsApiGatewayCanarySettings
-<a name="API_AwsApiGatewayCanarySettings"></a>
 
 Contains information about settings for canary deployment in the stage.
 

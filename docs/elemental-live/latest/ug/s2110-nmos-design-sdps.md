@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-desi
 ---
 
 # Determine the SDPs to create
-<a name="s2110-nmos-design-sdps"></a>
 
 Determine the number of SDPs you will create in Elemental Live. Here are the rules:
 + The input must include one and only one video SDP.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_UpdateA
 ---
 
 # UpdateAutoScalingGroup
-<a name="API_UpdateAutoScalingGroup"></a>
 
  **We strongly recommend that all Auto Scaling groups use launch templates to ensure full functionality for Amazon EC2 Auto Scaling and Amazon EC2.**
 

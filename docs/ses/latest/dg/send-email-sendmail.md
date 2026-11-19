@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-sendmail.html
 ---
 
 # Integrating Amazon SES with Sendmail
-<a name="send-email-sendmail"></a>
 
 Sendmail was released in the early 1980s, and has been continuously improved ever since. It's a flexible and configurable message transfer agent (MTA) with a large community of users. Sendmail was acquired by Proofpoint in 2013, but Proofpoint continues to offer an open source version of Sendmail. You can download the [open source version of Sendmail](https://www.proofpoint.com/us/open-source-email-solution) from the Proofpoint website, or through the package managers of most Linux distributions.
 

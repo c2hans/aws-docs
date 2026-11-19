@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDB
 ---
 
 # Settings for DB instances
-<a name="USER_CreateDBInstance.Settings"></a>
 
 In the following table, you can find details about settings that you choose when you create a DB instance. The table also shows the DB engines for which each setting is supported.
 

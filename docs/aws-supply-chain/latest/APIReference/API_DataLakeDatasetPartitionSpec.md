@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataLakeDatasetPartitionSpec
-<a name="API_DataLakeDatasetPartitionSpec"></a>
 
 The partition specification for a dataset.
 

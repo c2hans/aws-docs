@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyMigrat
 ---
 
 # ModifyMigrationProject
-<a name="API_ModifyMigrationProject"></a>
 
 Modifies the specified migration project using the provided parameters.
 

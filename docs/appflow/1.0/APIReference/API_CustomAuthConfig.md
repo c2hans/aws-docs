@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomAuthC
 ---
 
 # CustomAuthConfig
-<a name="API_CustomAuthConfig"></a>
 
 Configuration information required for custom authentication.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BillingGroup
 ---
 
 # BillingGroupMetadata
-<a name="API_BillingGroupMetadata"></a>
 
 Additional information about the billing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/POSITIO
 ---
 
 # POSITION function
-<a name="POSITION"></a>
 
 Returns the location of the specified substring within a string.
 

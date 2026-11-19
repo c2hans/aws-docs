@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManag
 ---
 
 # Major engine version behavior and compatibility differences with Redis OSS
-<a name="VersionManagementConsiderations"></a>
 
 **Important**
 The following page is structured to signify all incompability differences between versions and inform you of any considerations you should make when upgrading to newer versions. This list is inclusive of any version incompability issues you may encounter when upgrading.

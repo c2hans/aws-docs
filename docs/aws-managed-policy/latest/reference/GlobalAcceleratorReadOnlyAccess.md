@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Glob
 ---
 
 # GlobalAcceleratorReadOnlyAccess
-<a name="GlobalAcceleratorReadOnlyAccess"></a>
 
 **Description**: Allow GlobalAccelerator Users Access to Read Only APIs
 

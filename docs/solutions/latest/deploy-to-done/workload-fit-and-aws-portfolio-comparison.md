@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deploy-to-done/workload
 ---
 
 # Workload Fit and AWS Portfolio Comparison
-<a name="workload-fit-and-aws-portfolio-comparison"></a>
 
 Elastic Beanstalk is one of several AWS compute services. Choosing the right one depends on your workload characteristics, team structure, and where you are in your portfolio growth. This section provides honest positioning across the AWS portfolio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Quick
 ---
 
 # QuickSuiteActionsOption
-<a name="API_QuickSuiteActionsOption"></a>
 
 Determines if Actions in Amazon Quick Suite are enabled in a dashboard..
 

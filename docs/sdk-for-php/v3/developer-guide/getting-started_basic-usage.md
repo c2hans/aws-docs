@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-s
 ---
 
 # Using the AWS SDK for PHP Version 3
-<a name="getting-started_basic-usage"></a>
 
 This chapter provides comprehensive guidance on using the AWS SDK for PHP Version 3 to interact with AWS services effectively. You'll learn essential techniques for making service requests, handling errors, and leveraging advanced SDK features to build robust PHP applications on AWS.
 

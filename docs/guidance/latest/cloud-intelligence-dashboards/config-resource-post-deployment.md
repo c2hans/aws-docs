@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Optional post-deployment activities and FAQ
-<a name="config-resource-post-deployment"></a>
 
 ## Post-deployment configuration
 <a name="post-deployment-configuration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ActionHistory
-<a name="API_budgets_ActionHistory"></a>
 
 The historical records for a budget action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/protection-plans-run
 ---
 
 # Bidirectional constraints
-<a name="protection-plans-runtime-monitoring-constraints"></a>
 
 The Runtime Monitoring sub-features and infrastructure have the following relationships:
 

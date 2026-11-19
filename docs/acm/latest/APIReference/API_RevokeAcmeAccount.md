@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_RevokeAcmeAc
 ---
 
 # RevokeAcmeAccount
-<a name="API_RevokeAcmeAccount"></a>
 
 Revokes an ACME account, preventing it from requesting or revoking certificates. This operation is irreversible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/deploy-browser
 ---
 
 # Deploy the Connect Customer browser extension
-<a name="deploy-browser-extension"></a>
 
 The Connect Customer browser extension reports the URL of each browser window to the Connect Customer Client Application so that URL rules configured in your flow block can be evaluated. Without the extension, URLs are not reported and URL rules cannot match, so browser pages that should be redacted by URL might appear in the recording. Window title rules do not depend on the extension; they match on native window titles and work without the extension installed.
 

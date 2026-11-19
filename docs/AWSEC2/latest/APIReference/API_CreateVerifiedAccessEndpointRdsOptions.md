@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessEndpointRdsOptions
-<a name="API_CreateVerifiedAccessEndpointRdsOptions"></a>
 
 Describes the RDS options for a Verified Access endpoint.
 

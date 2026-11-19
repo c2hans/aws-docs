@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Game server builds
-<a name="gamelift-console-builds"></a>
 
 The build resource represents your game server software. You upload your build package to Amazon GameLift Servers for deployment to managed EC2 fleets.
 

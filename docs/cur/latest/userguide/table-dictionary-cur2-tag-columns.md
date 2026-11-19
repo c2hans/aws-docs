@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Tags Column
-<a name="table-dictionary-cur2-tag-columns"></a>
 
 Tags column contains data about user, account, cost category and resource tags that apply to the line item. If you select this column, you need not select Resource tags and Cost category columns in your CUR 2.0.
 

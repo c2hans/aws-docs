@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateInstanceProfile
-<a name="API_CreateInstanceProfile"></a>
 
 Creates a profile that can be applied to one or more private fleet device instances.
 

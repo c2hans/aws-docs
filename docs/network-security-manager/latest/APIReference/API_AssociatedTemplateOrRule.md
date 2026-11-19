@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AssociatedTemplateOrRule
-<a name="API_AssociatedTemplateOrRule"></a>
 
 An association between a policy and either a template or a rule, as returned in outputs. Exactly one of `templateArn` or `ruleArn` is set. The corresponding request structure is `TemplateOrRuleReference`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Appendix: AWS security, identity, and compliance services
-<a name="appendix"></a>
 
 For an introduction or a refresher, see [Security, identity, and compliance on AWS](https://aws.amazon.com/products/security/) on the AWS website for a list of the AWS services that help you secure your workloads and applications in the cloud. These services are grouped into five categories: data protection, identity & access management, network & application protection, threat detection & continuous monitoring, and compliance & data privacy.
 

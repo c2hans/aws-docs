@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/up
 ---
 
 # Upgrade SAP Pacemaker clusters from ENSA1 to ENSA2
-<a name="upgrade-sap-pacemaker-clusters-from-ensa1-to-ensa2"></a>
 
 *Gergely Cserdi and Balazs Sandor Skublics, Amazon Web Services*
 

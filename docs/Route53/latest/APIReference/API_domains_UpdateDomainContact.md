@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # UpdateDomainContact
-<a name="API_domains_UpdateDomainContact"></a>
 
 This operation updates the contact information for a particular domain. You must specify information for at least one contact: registrant, administrator, or technical.
 

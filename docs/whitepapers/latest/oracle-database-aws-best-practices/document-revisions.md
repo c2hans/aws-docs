@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Document History and Contributors
-<a name="document-revisions"></a>
 
 ## Document History
 <a name="document-history"></a>

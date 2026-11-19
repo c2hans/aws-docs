@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GuardrailPiiEntityConfig
-<a name="API_amazon-q-connect_GuardrailPiiEntityConfig"></a>
 
 The PII entity to configure for the AI Guardrail.
 

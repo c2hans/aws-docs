@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Specifying input data for use in contract tests
-<a name="hooks-input-data-contract-test"></a>
 
 By default, the CloudFormation performs contract tests using input properties generated from the patterns you define in your Hook schema. However, most Hooks are complex enough that the input properties for precreating or preupdating provisioning stacks requires an understanding of the resource being provisioned. To address this, you can specify the input the CloudFormation uses when performing its contract tests.
 

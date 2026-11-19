@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Tagging resources for AMS Resource Scheduler
-<a name="res-sched-tagging"></a>
 
 Tagging resources for AMS Resource Scheduler.
 

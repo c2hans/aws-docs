@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CodeDeliveryDetailsType
-<a name="API_CodeDeliveryDetailsType"></a>
 
 The delivery details for an email or SMS message that Amazon Cognito sent for authentication or verification.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/remove-de
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Removing a delegated administrator
-<a name="remove-delegated-admin"></a>
 
 Removing the delegated administrator account stops further evidence collection for that account, but you retain access to the previously collected evidence.
 

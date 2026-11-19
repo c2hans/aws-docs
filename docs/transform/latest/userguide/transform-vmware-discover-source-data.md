@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Discovery
-<a name="transform-vmware-discover-source-data"></a>
 
 Discovery imports your inventory into AWS Transform, so that you can assess costs and plan your migration.
 

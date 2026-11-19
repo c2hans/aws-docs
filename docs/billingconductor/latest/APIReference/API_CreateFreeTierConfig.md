@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CreateFreeTierConfig
-<a name="API_CreateFreeTierConfig"></a>
 
  The possible AWS Free Tier configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalTranscriptResultStream
-<a name="API_streaming_MedicalTranscriptResultStream"></a>
 
 Contains detailed information about your streaming session.
 

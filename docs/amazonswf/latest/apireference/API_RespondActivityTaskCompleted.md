@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Respon
 ---
 
 # RespondActivityTaskCompleted
-<a name="API_RespondActivityTaskCompleted"></a>
 
 Used by workers to tell the service that the [ActivityTask](API_ActivityTask.md) identified by the `taskToken` completed successfully with a `result` (if provided). The `result` appears in the `ActivityTaskCompleted` event in the workflow history.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/arn-for
 ---
 
 # ARN formats
-<a name="arn-formats"></a>
 
 ARNs are delimited by colons, and composed of segments, which are the parts separated by colons `(:)`. The specific components and values used in the segments of an ARN depend on which AWS service the ARN is for. The following example shows how ARNs are constructed.
 

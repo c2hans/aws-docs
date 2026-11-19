@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/hardwar
 ---
 
 # Hardware patterns
-<a name="hardware-patterns"></a>
 
 | SaaS SUS 2: How do you maximize the value from the resources that the SaaS environment consumes? |
 | --- |

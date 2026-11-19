@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-str
 ---
 
 # Signature calculations for trailing headers (chunked uploads) (AWS Signature Version 4)
-<a name="sigv4-streaming-trailers"></a>
 
 When authenticating requests using the `Authorization` header, you can also upload the payload in chunks. When you send the data for the object in chunks, you also have the option of including trailing headers. (For more information, see [Signature Calculations for the Authorization Header: Transferring Payload in Multiple Chunks (Chunked Upload) (AWS Signature Version 4)](sigv4-streaming.md).) This section describes the steps you need to take when you want to include a trailing header at the end of your multiple chunk upload.
 

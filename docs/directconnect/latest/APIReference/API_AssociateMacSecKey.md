@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AssociateMacSecKey
-<a name="API_AssociateMacSecKey"></a>
 
 Associates a MAC Security (MACsec) Connection Key Name (CKN)/ Connectivity Association Key (CAK) pair with a Direct Connect connection.
 

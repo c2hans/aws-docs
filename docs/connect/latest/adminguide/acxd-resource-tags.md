@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-resource-
 ---
 
 # Resource tags
-<a name="acxd-resource-tags"></a>
 
 Resource tags help you organize, search, and identify resources in an agentic CX designer workspace.
 

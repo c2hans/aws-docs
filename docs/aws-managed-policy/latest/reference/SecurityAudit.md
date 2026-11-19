@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Secu
 ---
 
 # SecurityAudit
-<a name="SecurityAudit"></a>
 
 **Description**: The security audit template grants access to read security configuration metadata. It is useful for software that audits the configuration of an AWS account.
 

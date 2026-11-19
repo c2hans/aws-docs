@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Step 1: Configuring prerequisites
-<a name="appconfig-experimentation-creating-prerequisites"></a>
 
 Before you begin, complete the following tasks:
 

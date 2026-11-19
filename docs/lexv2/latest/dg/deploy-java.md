@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/deploy-java.html
 ---
 
 # Using a Java application to interact with an Amazon Lex V2 bot
-<a name="deploy-java"></a>
 
 The [AWS SDK for Java 2.0](https://github.com/aws/aws-sdk-java-v2) provides an interface that you can use from your Java applications to interact with your bots. Use the SDK for Java to build client applications for users.
 

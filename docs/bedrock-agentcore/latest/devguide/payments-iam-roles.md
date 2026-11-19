@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # IAM roles for AgentCore payments
-<a name="payments-iam-roles"></a>
 
 ## Role summary
 <a name="payments-iam-role-summary"></a>

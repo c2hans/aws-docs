@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Flow
-<a name="aws-resource-quicksight-flow"></a>
 
 <a name="aws-resource-quicksight-flow-description"></a>The `AWS::QuickSight::Flow` resource Property description not available. for QuickSight.
 

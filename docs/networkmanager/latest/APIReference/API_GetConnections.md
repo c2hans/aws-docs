@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetConnections
-<a name="API_GetConnections"></a>
 
 Gets information about one or more of your connections in a global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_M
 ---
 
 # MultiMeasureMapping
-<a name="API_MultiMeasureMapping"></a>
 
 Maps multiple measures from the source event to the same Timestream for LiveAnalytics record.
 

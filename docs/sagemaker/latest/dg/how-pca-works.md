@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/how-pca-works.html
 ---
 
 # How PCA Works
-<a name="how-pca-works"></a>
 
 Principal Component Analysis (PCA) is a learning algorithm that reduces the dimensionality (number of features) within a dataset while still retaining as much information as possible.
 

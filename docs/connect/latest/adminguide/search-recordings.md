@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-recordi
 ---
 
 # Search for recordings of conversations by a customer's contact ID in Connect Customer
-<a name="search-recordings"></a>
 
 To find a recording of a specific contact, you only need the contact ID. You don't need to know the date range, agent, or any other information about the contact.
 

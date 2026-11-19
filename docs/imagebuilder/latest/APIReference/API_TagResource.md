@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Tag
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds a tag to a resource.
 

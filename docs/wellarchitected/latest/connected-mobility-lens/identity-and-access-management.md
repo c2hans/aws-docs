@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Identity and access management
-<a name="identity-and-access-management"></a>
 
 | CMSEC\_3: How do you manage the identities of your vehicles and individual ECUs? |
 | --- |

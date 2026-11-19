@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListAccessPolicies
-<a name="API_ListAccessPolicies"></a>
 
 Retrieves a paginated list of access policies for an identity (an IAM Identity Center user, an IAM Identity Center group, or an IAM user) or an AWS IoT SiteWise Monitor resource (a portal or project).
 

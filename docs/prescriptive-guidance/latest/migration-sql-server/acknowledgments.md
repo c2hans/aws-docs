@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Acknowledgments
-<a name="acknowledgments"></a>
 
 The author acknowledges the following specialists for contributing to this guide:
 + Marcelo Fernandes, AWS Migrations Senior Consultant – [Choosing between Amazon EC2 and Amazon RDS](comparison.md) section

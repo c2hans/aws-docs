@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-jobs-map-runn
 ---
 
 # Tutorial: Map a running pod back to its job
-<a name="eks-jobs-map-running-pod-to-job"></a>
 
 A pod has labels that indicate the `jobId` and `uuid` of the compute environment that it belongs to. AWS Batch injects environment variables so the job’s runtime can reference job information. For more information, see [AWS Batch job environment variables](job_env_vars.md). You can view this information by running the following command. The output is as follows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_NodegroupUpd
 ---
 
 # NodegroupUpdateConfig
-<a name="API_NodegroupUpdateConfig"></a>
 
 The node group update configuration. An Amazon EKS managed node group updates by replacing nodes with new nodes of newer AMI versions in parallel. You choose the *maximum unavailable* and the *update strategy*.
 

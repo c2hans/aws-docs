@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/ja
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # SDK for JavaScript (v3) code examples
-<a name="javascript_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for JavaScript (v3) with AWS.
 

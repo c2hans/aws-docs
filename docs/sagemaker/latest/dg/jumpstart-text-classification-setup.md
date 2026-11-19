@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-text-class
 ---
 
 # Set up your evaluation environment
-<a name="jumpstart-text-classification-setup"></a>
 
 Set up SageMaker AI Studio to access JumpStart models for text classification evaluation. This section covers configuring permissions and understand the associated costs before you deploy models.
 

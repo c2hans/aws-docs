@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Allow
 ---
 
 # AllowedMethods
-<a name="API_AllowedMethods"></a>
 
 A complex type that controls which HTTP methods CloudFront processes and forwards to your Amazon S3 bucket or your custom origin. There are three choices:
 + CloudFront forwards only `GET` and `HEAD` requests.

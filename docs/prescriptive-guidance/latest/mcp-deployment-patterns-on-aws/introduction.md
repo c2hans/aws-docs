@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Model Context Protocol (MCP) Deployment Patterns on AWS
-<a name="introduction"></a>
 
 *Deepika Kumar and Lingling Cui, Amazon Web Services*
 

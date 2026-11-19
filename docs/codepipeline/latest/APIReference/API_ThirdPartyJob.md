@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Thi
 ---
 
 # ThirdPartyJob
-<a name="API_ThirdPartyJob"></a>
 
 A response to a `PollForThirdPartyJobs` request returned by CodePipeline when there is a job to be worked on by a partner action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/increase-throughpu
 ---
 
 # Updating throughput capacity
-<a name="increase-throughput-capacity"></a>
 
 You can modify a file system's throughput capacity using the Amazon FSx console, the AWS Command Line Interface (AWS CLI), or the Amazon FSx API.
 

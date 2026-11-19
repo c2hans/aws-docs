@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/create-collection-
 ---
 
 # Creating a collection
-<a name="create-collection-procedure"></a>
 
 You can use the [CreateCollection](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateCollection.html) operation to create a collection.
 

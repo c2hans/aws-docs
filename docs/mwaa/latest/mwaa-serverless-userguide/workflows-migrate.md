@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wo
 ---
 
 # Convert Python DAG to YAML definition
-<a name="workflows-migrate"></a>
 
 Amazon MWAA Serverless provides a Python to YAML DAG converter tool that helps convert you Python based DAG to YAML based definition that is ready to create a Amazon MWAA Serverless workflow. Refer to the following steps to convert your Python based DAGs to YAML based definition using AWS CLI:
 

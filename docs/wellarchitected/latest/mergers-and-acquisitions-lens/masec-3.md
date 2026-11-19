@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # MASEC 3: How do you plan to maintain your data security posture?
-<a name="masec-3"></a>
 
  Data security must be a top priority during mergers and acquisitions given the sensitivity of risks involved. Performing security due diligence, reviewing, and implementing strong controls can help reduce risks and ensure a smooth transition. With advanced planning and oversight, data security risks that often accompany mergers and acquisitions can be effectively managed.
 

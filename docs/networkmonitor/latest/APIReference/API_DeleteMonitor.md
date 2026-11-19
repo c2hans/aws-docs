@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_D
 ---
 
 # DeleteMonitor
-<a name="API_DeleteMonitor"></a>
 
 Deletes a specified monitor.
 

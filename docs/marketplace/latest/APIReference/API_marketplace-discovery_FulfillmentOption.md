@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FulfillmentOption
-<a name="API_marketplace-discovery_FulfillmentOption"></a>
 
 Describes a fulfillment option for a product. Each element contains exactly one fulfillment option type.
 

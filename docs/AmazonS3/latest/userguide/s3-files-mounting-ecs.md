@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-mount
 ---
 
 # Mounting S3 file systems on Amazon ECS
-<a name="s3-files-mounting-ecs"></a>
 
 You can attach an S3 file system to an Amazon ECS task definition and then deploy the task to access your S3 data from your containers.
 

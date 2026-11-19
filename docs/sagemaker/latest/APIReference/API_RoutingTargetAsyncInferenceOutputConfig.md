@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Routin
 ---
 
 # RoutingTargetAsyncInferenceOutputConfig
-<a name="API_RoutingTargetAsyncInferenceOutputConfig"></a>
 
 The output settings for the asynchronous requests of a routing target. Every destination writes to the same locations. `CreateInferenceRouter` and `UpdateInferenceRouter` don't check who owns the buckets. If another account owns the output bucket, requests fail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroupP
 ---
 
 # DeleteGroupPolicy
-<a name="API_DeleteGroupPolicy"></a>
 
 Deletes the specified inline policy that is embedded in the specified IAM group.
 

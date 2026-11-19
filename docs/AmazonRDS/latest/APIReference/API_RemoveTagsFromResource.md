@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Remove
 ---
 
 # RemoveTagsFromResource
-<a name="API_RemoveTagsFromResource"></a>
 
 Removes metadata tags from an Amazon RDS resource.
 

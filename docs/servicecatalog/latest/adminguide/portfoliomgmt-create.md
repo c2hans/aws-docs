@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/portfol
 ---
 
 # Creating and Deleting Portfolios
-<a name="portfoliomgmt-create"></a>
 
 Use the **Portfolios** page to create and delete portfolios.
 

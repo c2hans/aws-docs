@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Guidelines for a successful migration
-<a name="guidelines"></a>
 
 This section includes guidelines for planning your migration and for migration sprint activities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/center.htm
 ---
 
 # .center
-<a name="center"></a>
 
 Used as a generic extension for everything from research organizations to community centers.
 

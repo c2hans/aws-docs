@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RegisterT
 ---
 
 # RegisterTransitGatewayMulticastGroupSources
-<a name="API_RegisterTransitGatewayMulticastGroupSources"></a>
 
 Registers sources (network interfaces) with the specified transit gateway multicast group.
 

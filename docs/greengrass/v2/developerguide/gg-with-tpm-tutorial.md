@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-with-tpm
 ---
 
 # Tutorial: Secure Greengrass Nucleus with Trusted Platform Module (TPM)
-<a name="gg-with-tpm-tutorial"></a>
 
 **Note**
 The mechanism in this tutorial is supported only with [Install AWS IoT Greengrass Core software with manual resource provisioning](manual-installation.md).

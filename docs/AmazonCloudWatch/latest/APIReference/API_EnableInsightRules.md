@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # EnableInsightRules
-<a name="API_EnableInsightRules"></a>
 
 Enables the specified Contributor Insights rules. When rules are enabled, they immediately begin analyzing log data.
 

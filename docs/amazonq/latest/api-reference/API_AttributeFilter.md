@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Attribu
 ---
 
 # AttributeFilter
-<a name="API_AttributeFilter"></a>
 
 Enables filtering of responses based on document attributes or metadata fields.
 
@@ -12,7 +11,7 @@ Enables filtering of responses based on document attributes or metadata fields.
 
  ** andAllFilters **   <a name="qbusiness-Type-AttributeFilter-andAllFilters"></a>
 Performs a logical `AND` operation on all supplied filters.
-Type: Array of [AttributeFilter](#API_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_AttributeFilter.md) objects
 Required: No
 
  ** containsAll **   <a name="qbusiness-Type-AttributeFilter-containsAll"></a>
@@ -52,12 +51,12 @@ Required: No
 
  ** notFilter **   <a name="qbusiness-Type-AttributeFilter-notFilter"></a>
 Performs a logical `NOT` operation on all supplied filters.
-Type: [AttributeFilter](#API_AttributeFilter) object
+Type: [AttributeFilter](API_AttributeFilter.md) object
 Required: No
 
  ** orAllFilters **   <a name="qbusiness-Type-AttributeFilter-orAllFilters"></a>
  Performs a logical `OR` operation on all supplied filters.
-Type: Array of [AttributeFilter](#API_AttributeFilter) objects
+Type: Array of [AttributeFilter](API_AttributeFilter.md) objects
 Required: No
 
 ## See Also

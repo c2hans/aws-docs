@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetObjectTypeAttributeStatisticsStats
-<a name="API_connect-customer-profiles_GetObjectTypeAttributeStatisticsStats"></a>
 
 Statistical measurements for object type attributes including basic statistics and percentiles.
 

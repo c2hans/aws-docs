@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Related guides
 <a name="related-guides"></a>

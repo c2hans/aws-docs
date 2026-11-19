@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateLimitsProfile
-<a name="API_CreateLimitsProfile"></a>
 
 Creates a limits profile that defines resource usage limits for Amazon Quick Sight users.
 

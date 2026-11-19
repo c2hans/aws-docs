@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # On-premises considerations for a large migration
-<a name="on-premises"></a>
 
 On-premises infrastructure that supports your business operations must also be prepared for the large migration. By preparing the current infrastructure, you can help reduce the impact of the large migration to the business operations and application users.
 

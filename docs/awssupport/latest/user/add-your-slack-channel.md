@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/add-your-slack-ch
 ---
 
 # Configuring a Slack channel
-<a name="add-your-slack-channel"></a>
 
 After you authorize your Slack workspace, you can configure your Slack channels to use the AWS Support App.
 

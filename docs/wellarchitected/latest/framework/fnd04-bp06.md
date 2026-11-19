@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP06 Establish centralized backup standards and mechanisms
-<a name="fnd04-bp06"></a>
 
  Backups are a foundation capability every workload depends on, but without central standards each team builds its own approach. The result is inconsistent coverage, mixed retention periods, untested restore procedures, and vaults that might not survive the incident they were meant to recover from. A central backup foundation gives workload teams reliable backup and restore primitives so they do not have to design backup from scratch.
 

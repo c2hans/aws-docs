@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # WorkflowMetrics
-<a name="API_connect-customer-profiles_WorkflowMetrics"></a>
 
 Generic object containing workflow execution metrics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualServiceSpec
-<a name="API_VirtualServiceSpec"></a>
 
 An object that represents the specification of a virtual service.
 

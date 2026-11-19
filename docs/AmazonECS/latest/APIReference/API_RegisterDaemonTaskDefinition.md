@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Regist
 ---
 
 # RegisterDaemonTaskDefinition
-<a name="API_RegisterDaemonTaskDefinition"></a>
 
 Registers a new daemon task definition from the supplied `family` and `containerDefinitions`. Optionally, you can add data volumes to your containers with the `volumes` parameter. For more information, see [Daemon task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/daemon-task-definitions.html) in the *Amazon Elastic Container Service Developer Guide*.
 

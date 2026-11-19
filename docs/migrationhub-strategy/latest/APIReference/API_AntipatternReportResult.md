@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AntipatternReportResult
-<a name="API_AntipatternReportResult"></a>
 
 The anti-pattern report result.
 

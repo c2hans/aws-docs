@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/pcluster.confi
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `pcluster configure`
-<a name="pcluster.configure-v3"></a>
 
 Begins an interactive configuration wizard for AWS ParallelCluster version 3. For more information, see [Configure and create a cluster with the AWS ParallelCluster command line interface](install-v3-configuring.md).
 

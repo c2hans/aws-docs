@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::MatchingWorkflow CustomerProfilesIntegrationConfig
-<a name="aws-properties-entityresolution-matchingworkflow-customerprofilesintegrationconfig"></a>
 
 Specifies the configuration for integrating with Customer Profiles. This configuration enables AWS Entity Resolution to send matched output directly to Customer Profiles instead of Amazon S3, creating a unified customer view by automatically updating customer profiles based on match clusters.
 

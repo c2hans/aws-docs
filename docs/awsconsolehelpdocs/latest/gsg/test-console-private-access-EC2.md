@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/test-conso
 ---
 
 # Test setup with Amazon EC2
-<a name="test-console-private-access-EC2"></a>
 
 This setup demonstrates a AWS Management Console Private Access connection to Amazon Simple Storage Service from an Amazon EC2 instance. The example uses CloudFormation to create the network configuration, and connects to the Amazon EC2 Windows instance through Fleet Manager (a capability of AWS Systems Manager) using the Remote Desktop Protocol (RDP).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListAssociationVersions
-<a name="API_ListAssociationVersions"></a>
 
 Retrieves all versions of an association for a specific association ID.
 

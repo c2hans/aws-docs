@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Compute Optimizer Automation
-<a name="API_Types_Compute_Optimizer_Automation"></a>
 
 The following data types are supported by Compute Optimizer Automation:
 +  [AccountInfo](API_automation_AccountInfo.md)

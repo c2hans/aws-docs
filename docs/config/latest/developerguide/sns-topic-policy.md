@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sns-topic-p
 ---
 
 # Permissions for the Amazon SNS Topic
-<a name="sns-topic-policy"></a>
 
 **Encrypted Amazon SNS not supported**
 AWS Config does not support encrypted Amazon SNS topics.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for IAM database authentication
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.IAMdbauth"></a>
 
 With IAM database authentication in Aurora, you can authenticate to your DB cluster using AWS Identity and Access Management (IAM) database authentication. With this authentication method, you don't need to use a password when you connect to a DB cluster. Instead, you use an authentication token. For more information, see [IAM database authentication ](UsingWithRDS.IAMDBAuth.md).
 

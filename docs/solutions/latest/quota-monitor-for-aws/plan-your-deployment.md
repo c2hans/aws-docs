@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/p
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section covers cost, security, quotas, AWS Regions, and other considerations for planning your deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/turn-off
 ---
 
 # Turning off Amazon ECS cluster auto scaling
-<a name="turn-off-cluster-auto-scaling"></a>
 
 You turn off cluster auto scaling when you need more granular control of the EC2 instances that are registered to your cluster,
 

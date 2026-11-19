@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccoun
 ---
 
 # PutAccountSuppressionAttributes
-<a name="API_PutAccountSuppressionAttributes"></a>
 
 Change the settings for the account-level suppression list.
 

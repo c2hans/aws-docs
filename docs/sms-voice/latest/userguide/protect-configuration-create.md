@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/protect-confi
 ---
 
 # Create a protect configuration in AWS End User Messaging SMS
-<a name="protect-configuration-create"></a>
 
 To create a new protect configuration, you can use the AWS End User Messaging SMS console, the `CreateProtectConfiguration` action in the AWS End User Messaging SMS and voice v2 API, or the `aws sms-voice create-protect-configuration` command in the AWS CLI. This section shows how to create protect configurations using the AWS End User Messaging SMS console and the AWS CLI.
 

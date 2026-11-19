@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_G
 ---
 
 # GetQAppSessionMetadata
-<a name="API_qapps_GetQAppSessionMetadata"></a>
 
 Retrieves the current configuration of a Q App session.
 

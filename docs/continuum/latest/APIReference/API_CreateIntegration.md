@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Create
 ---
 
 # CreateIntegration
-<a name="API_CreateIntegration"></a>
 
 Creates a new integration with an external source provider. Repeating an identical request with the same clientToken returns the original integrationId, integrationArn, and createdAt. Token records are retained for eight hours after success or terminal failure, including after the integration is deleted; replaying a deleted integration's token does not recreate it. An identical request with a retained terminal failure returns the recorded error.
 

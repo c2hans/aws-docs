@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListStreams.
 ---
 
 # ListStreams
-<a name="API_ListStreams"></a>
 
 Lists all of the streams in your AWS account.
 

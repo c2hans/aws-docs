@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/eventbridge.htm
 ---
 
 # Monitoring AWS Systems Manager for SAP events using EventBridge
-<a name="eventbridge"></a>
 
 **Topics**
 + [Monitor events using EventBridge](#monitoring-events-in-eventbridge)

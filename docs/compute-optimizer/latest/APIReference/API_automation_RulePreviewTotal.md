@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RulePreviewTotal
-<a name="API_automation_RulePreviewTotal"></a>
 
 Aggregate totals for automation rule preview results, including count and estimated savings.
 

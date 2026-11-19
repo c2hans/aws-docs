@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/wo
 ---
 
 # Access the Airflow UI
-<a name="workflows-airflow-ui"></a>
 
 Amazon MWAA Serverless provides the native Apache Airflow UI for your workflows. Use it to browse your workflows, inspect workflow runs and task instances, read task logs, view a workflow's source and versions, and start a workflow run. You don't run or manage a web server. Amazon MWAA Serverless hosts the UI and opens it in a new browser tab.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/configure-cicd-acc
 ---
 
 # Setting up an AWS account to use the Amazon Inspector CI/CD integration
-<a name="configure-cicd-account"></a>
 
  To use the Amazon Inspector CI/CD integration, you must sign up for an AWS account. The AWS account must have an IAM role that grants your CI/CD pipleline access to the Amazon Inspector Scan API. Complete the tasks in the following topics to sign up for an AWS account, create an administrator user, and configure an IAM role for CI/CD integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEncr
 ---
 
 # UpdateEncryptionKey
-<a name="API_UpdateEncryptionKey"></a>
 
 Updates an encryption key. A `ResourceNotFoundException` means that an AWS owned key is being used for encryption.
 

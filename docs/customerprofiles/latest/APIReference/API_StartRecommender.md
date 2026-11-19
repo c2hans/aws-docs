@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # StartRecommender
-<a name="API_connect-customer-profiles_StartRecommender"></a>
 
 Starts a recommender that was previously stopped. Starting a recommender resumes its ability to generate recommendations.
 

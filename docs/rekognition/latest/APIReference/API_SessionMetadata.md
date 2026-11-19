@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sess
 ---
 
 # SessionMetadata
-<a name="API_SessionMetadata"></a>
 
 Contains metadata about the client that streamed the video for a Face Liveness session.
 

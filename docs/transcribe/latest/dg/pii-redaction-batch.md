@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/pii-redaction-batch
 ---
 
 # Redacting PII in your batch job
-<a name="pii-redaction-batch"></a>
 
 When redacting personally identifiable information (PII) from a transcript during a batch transcription job, Amazon Transcribe replaces each identified instance of PII with `[PII]` in the main text body of your transcript. You can also view the type of PII that is redacted in the word-for-word portion of the transcription output. For an output sample, see [Example redacted output (batch)](pii-redaction-output.md#pii-redaction-output-batch).
 

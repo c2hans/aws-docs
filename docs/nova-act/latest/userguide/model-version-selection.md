@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/model-version-
 ---
 
 # Nova Act model version selection
-<a name="model-version-selection"></a>
 
 The Nova Act service relies on a custom foundation model, specially trained for UI-forward applications such as browser automation, tool use, and Human-in-the-Loop.
 

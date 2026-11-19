@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationMetadata
-<a name="API_EvaluationMetadata"></a>
 
 Metadata information about a contact evaluation.
 

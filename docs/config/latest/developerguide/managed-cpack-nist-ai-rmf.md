@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # NIST AI Risk Management Framework (AI RMF)
-<a name="managed-cpack-nist-ai-rmf"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between the NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0) and AWS managed Config rules. It covers the technically enforceable subcategories of the GOVERN, MAP, MEASURE, and MANAGE functions. Each Config rule applies to a specific AWS resource and relates to one or more AI RMF subcategories. An AI RMF subcategory can be related to multiple Config rules. Refer to the table below for more detail and guidance related to these mappings.
 

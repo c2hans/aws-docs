@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # Parameters
-<a name="API_Parameters"></a>
 
 A list of Quick Sight parameters and the list's override values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/SynthesizeSpeechMarksSam
 ---
 
 # Speech Marks
-<a name="SynthesizeSpeechMarksSample"></a>
 
 The following code sample shows how to use Java-based applications to synthesize speech marks for inputed text. This functionality uses the SynthesizeSpeech API.
 

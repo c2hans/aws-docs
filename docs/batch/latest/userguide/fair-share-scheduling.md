@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/fair-share-schedu
 ---
 
 # Use fair-share scheduling to help schedule jobs
-<a name="fair-share-scheduling"></a>
 
 Fair-share scheduling provides a set of controls to help schedule jobs. For more information about scheduling policy parameters, see [SchedulingPolicyDetail](https://docs.aws.amazon.com/batch/latest/APIReference/API_SchedulingPolicyDetail.html).
 + **Share decay seconds –** The period of time (in seconds) that the AWS Batch scheduler uses to calculate a fair-share percentage for each share identifier. A value of zero indicates that only current usage is measured. A longer decay time gives more weight to time.

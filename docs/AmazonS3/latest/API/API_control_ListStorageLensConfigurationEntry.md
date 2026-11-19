@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListStor
 ---
 
 # ListStorageLensConfigurationEntry
-<a name="API_control_ListStorageLensConfigurationEntry"></a>
 
 Part of `ListStorageLensConfigurationResult`. Each entry includes the description of the S3 Storage Lens configuration, its home Region, whether it is enabled, its Amazon Resource Name (ARN), and config ID.
 

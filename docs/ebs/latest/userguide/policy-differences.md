@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/policy-differences.
 ---
 
 # Amazon Data Lifecycle Manager default policies vs custom policies
-<a name="policy-differences"></a>
 
 This section compares default policies and custom policies and highlights their similarities and differences.
 

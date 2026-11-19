@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NeuronDev
 ---
 
 # NeuronDeviceCoreInfo
-<a name="API_NeuronDeviceCoreInfo"></a>
 
 Describes the cores available to the neuron accelerator.
 

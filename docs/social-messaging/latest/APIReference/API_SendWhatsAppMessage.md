@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # SendWhatsAppMessage
-<a name="API_SendWhatsAppMessage"></a>
 
 Send a WhatsApp message. For examples of sending a message using the AWS CLI, see [Sending messages](https://docs.aws.amazon.com/social-messaging/latest/userguide/send-message.html) in the * * AWS End User Messaging Social User Guide* *.
 

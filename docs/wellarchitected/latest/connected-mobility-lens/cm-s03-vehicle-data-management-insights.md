@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # CM-S03 Vehicle data management and insights
-<a name="cm-s03-vehicle-data-management-insights"></a>
 
 Connected vehicles have hundreds of controllers and sensors producing thousands of individual data elements for operating, and conveying the state of a vehicle. Vehicle data management helps vehicle manufacturers to harness data as an asset, to drive sustained innovation and create actionable insights and improve their customer experience. Vehicle manufacturers are seeking cost-effective ways to simplify the process of collecting data from vehicles that are connected to the cloud help power insights and improve vehicle performance while maintaining the highest levels of confidentiality and security. There are regulations (such as CCPA and GDPR) related to data privacy and data sharing that require customers to provide data lineage and data governance capabilities.
 

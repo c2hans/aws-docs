@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cancel-port-re
 ---
 
 # Can I cancel a scheduled phone number porting in Connect Customer?
-<a name="cancel-port-request"></a>
 
 **Important**
 If you need to cancel or reschedule your porting, let us know immediately.

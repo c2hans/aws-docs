@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Recommendati
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 Provides information that describes a recommendation of a target engine.
 

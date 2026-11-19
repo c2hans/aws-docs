@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # BenefitAllocationSummary
-<a name="API_benefits_BenefitAllocationSummary"></a>
 
 A summary view of a benefit allocation containing key information for list operations.
 

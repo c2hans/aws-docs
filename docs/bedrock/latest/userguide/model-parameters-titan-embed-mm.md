@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Amazon Titan Multimodal Embeddings G1
-<a name="model-parameters-titan-embed-mm"></a>
 
 This section provides request and response body formats and code examples for using Amazon Titan Multimodal Embeddings G1.
 

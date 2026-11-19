@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/how-it-works.html
 ---
 
 # How Amazon Rekognition works
-<a name="how-it-works"></a>
 
 Amazon Rekognition provides two API sets for visual analysis:
 +  Amazon Rekognition Image for image analysis

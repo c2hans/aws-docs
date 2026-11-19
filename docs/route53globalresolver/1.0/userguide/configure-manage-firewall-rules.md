@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/conf
 ---
 
 # Configure and manage DNS Firewall rules
-<a name="configure-manage-firewall-rules"></a>
 
 ## Creating and viewing firewall rules
 <a name="creating-viewing-firewall-rules"></a>

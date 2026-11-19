@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateMe
 ---
 
 # UpdateMetricContent
-<a name="API_UpdateMetricContent"></a>
 
 Updates the calculation, unit, and/or trend indicator of an existing metric in the specified Connect Customer instance.
 

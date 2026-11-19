@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/setting
 ---
 
 # Settings in License Manager
-<a name="settings"></a>
 
 The **Settings** section of the AWS License Manager console displays settings for the current account. You must configure settings to enable associated functionality.
 

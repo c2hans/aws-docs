@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-
 ---
 
 # Tutorial: Create a variable check rule for a pipeline as an entry condition
-<a name="tutorials-varcheckrule"></a>
 
 In this tutorial, you configure a pipeline that continuously delivers files using GitHub as the source action provider in your source stage. The completed pipeline detects changes when you make a change to the source files in your source repository. The pipeline runs and then checks the output variables against the source repository name and branch name provided in the condition for entry to the build stage.
 

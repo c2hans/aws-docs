@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransferFullAccess
-<a name="AWSTransferFullAccess"></a>
 
 **Description**: Provides full access to AWS Transfer Service.
 

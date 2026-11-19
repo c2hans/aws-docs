@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcSummary
-<a name="API_RfcSummary"></a>
 
 Summary information about a request for change.
 

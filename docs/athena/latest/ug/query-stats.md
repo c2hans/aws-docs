@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-stats.html
 ---
 
 # View statistics and execution details for completed queries
-<a name="query-stats"></a>
 
 After you run a query, you can get statistics on the input and output data processed, see a graphical representation of the time taken for each phase of the query, and interactively explore execution details.
 

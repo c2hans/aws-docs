@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetData
 ---
 
 # GetDataSourceRun
-<a name="API_GetDataSourceRun"></a>
 
 Gets an Amazon DataZone data source run.
 

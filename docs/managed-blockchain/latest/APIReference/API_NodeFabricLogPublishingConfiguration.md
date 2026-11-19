@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeFabricLogPublishingConfiguration
-<a name="API_NodeFabricLogPublishingConfiguration"></a>
 
 Configuration properties for logging events associated with a peer node owned by a member in a Managed Blockchain network.
 

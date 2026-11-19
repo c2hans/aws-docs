@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/
 ---
 
 # Uploading data
-<a name="lakehouse-upload-data"></a>
 
 You can upload data to the lakehouse architecture.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/monitoring-a
 ---
 
 # Monitoring and logging
-<a name="monitoring-and-logging"></a>
 
 Use gateway-level operational logs and metrics to monitor inbound external links with custom domains. For general monitoring guidance, see Monitoring RTB Fabric.
 

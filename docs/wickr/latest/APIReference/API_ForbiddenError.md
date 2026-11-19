@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ForbiddenE
 ---
 
 # ForbiddenError
-<a name="API_ForbiddenError"></a>
 
 Access to the requested resource is forbidden. This error occurs when the authenticated user does not have the necessary permissions to perform the requested operation, even though they are authenticated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Using a Java client to connect to a Neptune DB instance
-<a name="access-graph-gremlin-java"></a>
 
 The following section walks you through the running of a complete Java sample that connects to a Neptune DB instance and performs a Gremlin traversal using the Apache TinkerPop Gremlin client.
 

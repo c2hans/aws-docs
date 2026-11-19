@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/analytics-format-
 ---
 
 # Analytics formatting per type in Quick
-<a name="analytics-format-options"></a>
 
 Use the following list to see what type of formatting works in a visualization during analysis:
 + Bar charts (both horizontal and vertical) support the following formatting:

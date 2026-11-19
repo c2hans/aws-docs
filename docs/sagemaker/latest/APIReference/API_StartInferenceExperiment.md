@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartI
 ---
 
 # StartInferenceExperiment
-<a name="API_StartInferenceExperiment"></a>
 
 Starts an inference experiment.
 

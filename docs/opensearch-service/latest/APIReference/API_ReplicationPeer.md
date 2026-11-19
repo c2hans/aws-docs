@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ReplicationPeer
-<a name="API_ReplicationPeer"></a>
 
 A domain that another domain replicates with, and the state of that relationship.
 

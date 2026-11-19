@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/thing-types-pr
 ---
 
 # Adding propagating attributes for message enrichment
-<a name="thing-types-propagating-attributes"></a>
 
 In AWS IoT Core, you can enrich MQTT messages from devices by adding propagating attributes, which are contextual metadata from thing attributes or connection details. This process, known as message enrichment, can be helpful in various scenarios. For example, you can enrich messages for every inbound publish operation without making any device side changes or needing to use rules. By leveraging propagating attributes, you can benefit from a more efficient and cost-effective way to enrich your IoT data without the complexities of configuring rules or managing republishing configurations.
 

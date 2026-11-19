@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exp
 ---
 
 # ExpressionVariable
-<a name="API_ExpressionVariable"></a>
 
 Contains expression variable information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/create-a
 ---
 
 # Creating alarms from the operational recommendations
-<a name="create-alarm"></a>
 
 AWS Resilience Hub creates an CloudFormation template that contains details to create the selected alarms in Amazon CloudWatch. After the template is generated, you can access it through an Amazon S3 URL, download the same and place it in your code pipeline or create a stack through the CloudFormation console.
 

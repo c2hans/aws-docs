@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 ---
 
 # Step 5: Customizing AI/ML settings
-<a name="step-5-customizing-aiml-settings"></a>
 
  In this version of Media2Cloud on AWS, users have a lot of flexibility on the AI/ML services that are used. They also have the ability to configure those services for their use cases.
 

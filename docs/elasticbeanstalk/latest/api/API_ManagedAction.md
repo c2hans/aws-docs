@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ManagedA
 ---
 
 # ManagedAction
-<a name="API_ManagedAction"></a>
 
 The record of an upcoming or in-progress managed action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Configured tables in AWS Clean Rooms
-<a name="working-with-configured-tables"></a>
 
 A *configured table* is a reference to an existing table in a data source. It contains an analysis rule that determines how the data can be queried in AWS Clean Rooms and can include a data access budget to control table usage. Configured tables can be associated to one or more collaborations.
 

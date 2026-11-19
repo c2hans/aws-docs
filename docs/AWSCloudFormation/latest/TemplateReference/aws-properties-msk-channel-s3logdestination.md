@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MSK::Channel S3LogDestination
-<a name="aws-properties-msk-channel-s3logdestination"></a>
 
 <a name="aws-properties-msk-channel-s3logdestination-description"></a>The `S3LogDestination` property type specifies Property description not available. for an [AWS::MSK::Channel](aws-resource-msk-channel.md).
 

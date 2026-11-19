@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Generative
 ---
 
 # GenerativeAISettings
-<a name="API_GenerativeAISettings"></a>
 
 Contains specifications about the generative AI capabilities from Amazon Bedrock that you can turn on for your bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteScheduledReport
-<a name="API_bcmDashboards_DeleteScheduledReport"></a>
 
 Deletes a specified scheduled report. This is an irreversible operation.
 

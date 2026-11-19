@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Amazon EC2 Auto Scaling account settings
-<a name="ec2-auto-scaling-account-settings"></a>
 
 Use account settings to control whether certain Amazon EC2 Auto Scaling features are enabled (turned on) for your AWS account. Each account setting has a name and a value of `enabled` or `disabled`.
 

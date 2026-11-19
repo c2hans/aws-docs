@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCod
 ---
 
 # GetCodeScan
-<a name="API_GetCodeScan"></a>
 
 Retrieves one customer-visible environment scan.
 

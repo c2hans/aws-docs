@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/supported-input
 ---
 
 # Supported types
-<a name="supported-inputs-live-types"></a>
 
 This table describes the different live media types that Elemental Live can ingest, and the type of upstream systems that support each media type.
 

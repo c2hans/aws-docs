@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RuntimeVer
 ---
 
 # RuntimeVersionInfo
-<a name="API_RuntimeVersionInfo"></a>
 
 Summary information about a runtime version returned by ListRuntimeVersions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIGuardrailVersionSummary
-<a name="API_amazon-q-connect_AIGuardrailVersionSummary"></a>
 
 The summary of the AI Guardrail version.
 

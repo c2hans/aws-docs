@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_Environme
 ---
 
 # EnvironmentMember
-<a name="API_EnvironmentMember"></a>
 
 Information about an environment member for an AWS Cloud9 development environment.
 

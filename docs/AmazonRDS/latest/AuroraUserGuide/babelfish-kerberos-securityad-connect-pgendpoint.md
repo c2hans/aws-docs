@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Connecting to Babelfish via PostgreSQL endpoint on the PostgreSQL port
-<a name="babelfish-kerberos-securityad-connect-pgendpoint"></a>
 
 You can utilize group logins created from the TDS port to connect through PostgreSQL port as well. To connect through PostgreSQL port, you need to specify the AD user's name in the format `<ad_username@FQDN>` from the PostgreSQL client applications. You can't use the `<DNS domain name\ad_username>` format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 ## Upload SSL Certificate to IAM
 <a name="upload-ssl-certificate-to-iam"></a>

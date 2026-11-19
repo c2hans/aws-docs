@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/manage-f
 ---
 
 # Deadline Cloud fleets
-<a name="manage-fleets"></a>
 
 This section explains how to manage service-managed fleets and customer-managed fleets (CMF) for Deadline Cloud.
 

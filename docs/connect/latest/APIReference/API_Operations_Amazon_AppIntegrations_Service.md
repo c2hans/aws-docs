@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # Amazon AppIntegrations Service
-<a name="API_Operations_Amazon_AppIntegrations_Service"></a>
 
 The following actions are supported by Amazon AppIntegrations Service:
 +  [CreateApplication](API_connect-app-integrations_CreateApplication.md)

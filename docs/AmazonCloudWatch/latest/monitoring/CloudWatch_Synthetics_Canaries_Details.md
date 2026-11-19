@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Viewing canary statistics and details
-<a name="CloudWatch_Synthetics_Canaries_Details"></a>
 
 You can view details about your canaries and see statistics about their runs.
 

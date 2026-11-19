@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Configure multi-source replication for Amazon Aurora MySQL
-<a name="AuroraMySQL.Replication.MultiSource"></a>
 
 With multi-source replication, you can set up an Amazon Aurora MySQL DB cluster as a replica that receives binary log events from more than one source MySQL database. Each source can be an RDS for MySQL DB instance, another Aurora MySQL DB cluster, or a MySQL database running external to Amazon RDS.
 

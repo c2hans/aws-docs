@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # Rfc
-<a name="API_Rfc"></a>
 
 A request for change. For more information, see [CreateRfc](API_CreateRfc.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ApiAuth
-<a name="sam-property-api-apiauth"></a>
 
 Configure authorization to control access to your API Gateway API.
 

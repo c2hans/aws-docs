@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toObjectId.ht
 ---
 
 # $toObjectId
-<a name="toObjectId"></a>
 
 New from version 4.0
 

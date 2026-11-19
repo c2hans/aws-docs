@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/endpoin
 ---
 
 # Endpoints
-<a name="endpoints"></a>
 
 ## URI
 <a name="endpoints-url"></a>

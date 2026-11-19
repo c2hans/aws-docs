@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_G
 ---
 
 # GetAWSOrganizationsAccessStatus
-<a name="API_GetAWSOrganizationsAccessStatus"></a>
 
 Get the Access Status for AWS Organizations portfolio share feature. This API can only be called by the management account in the organization or by a delegated admin.
 

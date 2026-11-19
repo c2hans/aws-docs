@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Validato
 ---
 
 # Validator
-<a name="API_Validator"></a>
 
 Information about a validator.
 

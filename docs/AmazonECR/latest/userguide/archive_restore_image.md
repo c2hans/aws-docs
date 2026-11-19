@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/archive_resto
 ---
 
 # Archiving an image in Amazon ECR
-<a name="archive_restore_image"></a>
 
 ## What is the ECR archival storage class?
 <a name="archive-what-is"></a>

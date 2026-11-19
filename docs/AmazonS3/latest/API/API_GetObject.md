@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObject.html
 ---
 
 # GetObject
-<a name="API_GetObject"></a>
 
 Retrieves an object from Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Set up a gateway with a Memory connector target
-<a name="memory-gateway-setup"></a>
 
 To front a Memory resource with a gateway, you create a gateway with an inbound authorizer, then add a target that uses the `agentcore-memory` connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FleetAmountCapability
-<a name="API_FleetAmountCapability"></a>
 
 The fleet amount and attribute capabilities.
 

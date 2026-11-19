@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53_e
 ---
 
 # Use `ChangeResourceRecordSets` with a CLI
-<a name="route-53_example_route-53_ChangeResourceRecordSets_section"></a>
 
 The following code examples show how to use `ChangeResourceRecordSets`.
 

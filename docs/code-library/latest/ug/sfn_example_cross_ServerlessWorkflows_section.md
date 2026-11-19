@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sfn_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use Step Functions to invoke Lambda functions
-<a name="sfn_example_cross_ServerlessWorkflows_section"></a>
 
 The following code example shows how to create an AWS Step Functions state machine that invokes AWS Lambda functions in sequence.
 

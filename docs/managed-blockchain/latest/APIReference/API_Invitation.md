@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Invitation
-<a name="API_Invitation"></a>
 
 An invitation to an AWS account to create a member and join the network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteBasePath
 ---
 
 # DeleteBasePathMapping
-<a name="API_DeleteBasePathMapping"></a>
 
 Deletes the BasePathMapping resource.
 

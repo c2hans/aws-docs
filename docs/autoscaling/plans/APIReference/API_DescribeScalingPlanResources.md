@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Descr
 ---
 
 # DescribeScalingPlanResources
-<a name="API_DescribeScalingPlanResources"></a>
 
 Describes the scalable resources in the specified scaling plan.
 

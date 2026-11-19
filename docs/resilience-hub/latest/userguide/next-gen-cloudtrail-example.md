@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Example CloudTrail event
-<a name="next-gen-cloudtrail-example"></a>
 
 The following is an example CloudTrail event for a `StartFailureModeAssessment` API call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ExportTaskEr
 ---
 
 # ExportTaskError
-<a name="API_ExportTaskError"></a>
 
 Export task error.
 

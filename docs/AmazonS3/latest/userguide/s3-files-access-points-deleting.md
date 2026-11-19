@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-acces
 ---
 
 # Deleting access points for an S3 file system
-<a name="s3-files-access-points-deleting"></a>
 
 When deleting an access point, make sure no applications are actively using the access point before deletion to avoid service disruption. Once deleted, the access point and its configuration are permanently removed.
 

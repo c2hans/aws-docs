@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/wordpress-mul
 ---
 
 # Manage multiple WordPress sites with Multisite on Lightsail
-<a name="wordpress-multisite-tutorials"></a>
 
 This section covers the following topics related to managing blogs on your WordPress Multisite instance in Amazon Lightsail:
 

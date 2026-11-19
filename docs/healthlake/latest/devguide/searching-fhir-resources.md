@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/searching-fhi
 ---
 
 # Searching FHIR resources in AWS HealthLake
-<a name="searching-fhir-resources"></a>
 
 Use FHIR [`search`](https://hl7.org/fhir/R4/http.html#search) interaction to search a set of FHIR resources in a HealthLake data store based on some filter criteria. The `search` interaction can be performed using either a `GET` or `POST` request. For searches that involve personally identifiable information (PII) or protected health information (PHI), it's recommended to use `POST` requests, as PII and PHI is added as part of the request body and is encrypted in transit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/winserv
 ---
 
 # Changes in Windows Server AMIs by OS version
-<a name="winserver-ami-changes"></a>
 
 AWS provides AMIs for Windows Server 2016 and later. These AMIs include the following high-level changes between AWS Windows AMIs for different Windows operating system versions:
 

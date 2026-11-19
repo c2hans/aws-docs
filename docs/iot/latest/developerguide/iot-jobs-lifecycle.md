@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs-lifec
 ---
 
 # Jobs and job execution states
-<a name="iot-jobs-lifecycle"></a>
 
 The following sections describe the lifecycle of an AWS IoT job and the lifecycle of a job execution.
 

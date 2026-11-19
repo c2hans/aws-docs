@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_JwtTokenT
 ---
 
 # JwtTokenTypeConfiguration
-<a name="API_JwtTokenTypeConfiguration"></a>
 
 Provides the configuration information for the JWT token type.
 

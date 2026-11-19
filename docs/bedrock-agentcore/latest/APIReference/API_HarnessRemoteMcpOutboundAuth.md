@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessRemoteMcpOutboundAuth
-<a name="API_HarnessRemoteMcpOutboundAuth"></a>
 
 Authentication method for calling a remote MCP server.
 

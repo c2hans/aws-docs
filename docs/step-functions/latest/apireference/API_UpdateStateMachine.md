@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_U
 ---
 
 # UpdateStateMachine
-<a name="API_UpdateStateMachine"></a>
 
 Updates an existing state machine by modifying its `definition`, `roleArn`, `loggingConfiguration`, or `EncryptionConfiguration`. Running executions will continue to use the previous `definition` and `roleArn`. You must include at least one of `definition` or `roleArn` or you will receive a `MissingRequiredParameter` error.
 
@@ -156,7 +155,7 @@ Type: Timestamp
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** ConflictException **
-Updating or deleting a resource can cause an inconsistent state. This error occurs when there're concurrent requests for [DeleteStateMachineVersion](API_DeleteStateMachineVersion.md), [PublishStateMachineVersion](API_PublishStateMachineVersion.md), or [UpdateStateMachine](#API_UpdateStateMachine) with the `publish` parameter set to `true`.
+Updating or deleting a resource can cause an inconsistent state. This error occurs when there're concurrent requests for [DeleteStateMachineVersion](API_DeleteStateMachineVersion.md), [PublishStateMachineVersion](API_PublishStateMachineVersion.md), or [UpdateStateMachine](API_UpdateStateMachine.md) with the `publish` parameter set to `true`.
 HTTP Status Code: 409
 HTTP Status Code: 400
 

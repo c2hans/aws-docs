@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxDeadlineResourceTrackerAccessPolicy
-<a name="AWSThinkboxDeadlineResourceTrackerAccessPolicy"></a>
 
 **Description**: Grants permissions required for the operation of AWS Thinkbox's Deadline Resource Tracker. This includes full access to some EC2 actions, including DeleteFleets and CancelSpotFleetRequests.
 

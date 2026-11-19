@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/viewing-logs-f
 ---
 
 # Logging and tracing for AI agents
-<a name="viewing-logs-for-connect-ai-agents-self-service"></a>
 
 To troubleshoot AI agent issues effectively, use the following logging and tracing options.
 + **ListSpans API (recommended for orchestrator AI agents)**: Use the [ListSpans](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ListSpans.html) API to retrieve AI agent execution traces for a session. This is the recommended starting point for debugging orchestrator AI agent interactions, as it provides granular visibility into agent orchestration flows, LLM interactions, and tool invocations, allowing you to trace how the AI agent reasoned through a request and which tools it selected and executed.

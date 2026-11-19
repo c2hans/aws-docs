@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec01-b
 ---
 
 # SEC01-BP07 Evaluate and implement new security services and features regularly
-<a name="sec01-bp07"></a>
 
  Cloud providers release new security capabilities continually. If you do not track them, your controls fall behind. Implement a repeatable way to learn about, evaluate, and adopt new features to keep your security posture current as the environment and threats evolve.
 

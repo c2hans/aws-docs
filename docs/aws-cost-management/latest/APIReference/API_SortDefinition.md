@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SortDefinition
-<a name="API_SortDefinition"></a>
 
 The details for how to sort the data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetInst
 ---
 
 # FleetInstanceMetadataOptionsRequest
-<a name="API_FleetInstanceMetadataOptionsRequest"></a>
 
 Describes the metadata options for the instances. Supported only for fleets of type `instant`.
 

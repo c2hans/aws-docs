@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Amazon API Gateway V2
-<a name="AWS_ApiGatewayV2"></a>
 
 **Resource types**
 + [AWS::ApiGatewayV2::Api](aws-resource-apigatewayv2-api.md)

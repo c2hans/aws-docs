@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/cdk-dep-ac
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'AWS CDK deploy' action YAML
-<a name="cdk-dep-action-ref"></a>
 
 The following is the YAML definition of the **AWS CDK deploy** action. To learn how to use this action, see [Deploying an AWS CDK app with a workflow](cdk-dep-action.md).
 

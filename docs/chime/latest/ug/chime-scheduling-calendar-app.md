@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-scheduling-calenda
 ---
 
 # Scheduling meetings with a calendar app
-<a name="chime-scheduling-calendar-app"></a>
 
 You can schedule meetings with your existing calendar app.
 

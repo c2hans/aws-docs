@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-troubl
 ---
 
 # Troubleshoot dashboards
-<a name="v10-dash-troubleshoot"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 10.x**.

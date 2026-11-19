@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-no
 ---
 
 # Examples and More Information: Use Your Own Algorithm or Model
-<a name="docker-containers-notebooks"></a>
 
 The following Jupyter notebooks and added information show how to use your own algorithms or pretrained models from an Amazon SageMaker notebook instance. For links to the GitHub repositories with the prebuilt Dockerfiles for the TensorFlow, MXNet, Chainer, and PyTorch frameworks and instructions on using the AWS SDK for Python (Boto3) ModelTrainers to run your own training algorithms on SageMaker AI Learner and your own models on SageMaker AI hosting, see [Prebuilt SageMaker AI Docker images for deep learning](pre-built-containers-frameworks-deep-learning.md)
 

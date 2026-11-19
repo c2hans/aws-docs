@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ListRecovery
 ---
 
 # ListRecoveryPlanExecutionSteps
-<a name="API_ListRecoveryPlanExecutionSteps"></a>
 
 Lists all steps within a Recovery Plan execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Cost
 ---
 
 # CostOptimizationHubServiceRolePolicy
-<a name="CostOptimizationHubServiceRolePolicy"></a>
 
 **Description**: Allows Cost Optimization Hub to retrieve organization information and collect optimization-related data and metadata.
 

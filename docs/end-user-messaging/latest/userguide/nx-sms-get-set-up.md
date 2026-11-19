@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # How to get set up
-<a name="nx-sms-get-set-up"></a>
 
 This topic takes you from a new AWS account to sending your first SMS message with AWS End User Messaging. Complete the following steps.
 

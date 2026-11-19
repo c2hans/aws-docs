@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrColl
 ---
 
 # CidrCollectionChange
-<a name="API_CidrCollectionChange"></a>
 
 A complex type that contains information about the CIDR collection change.
 

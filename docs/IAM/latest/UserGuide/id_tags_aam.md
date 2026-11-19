@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags_aam.html
 ---
 
 # Tag account access manager instances
-<a name="id_tags_aam"></a>
 
 You must configure permissions to allow an IAM entity (roles or users) to tag account access manager instances. You can specify one or all of the following account-access tag actions in an IAM policy:
 + `account-access:TagResource`

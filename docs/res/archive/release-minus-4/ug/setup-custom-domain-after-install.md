@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/setup-cus
 ---
 
 # Set up custom domains after RES installation
-<a name="setup-custom-domain-after-install"></a>
 
 **Note**
 *Prerequisites*: You must store Certificate and PrivateKey contents in a Secrets Manager secret before performing these steps.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Da
 ---
 
 # DatasetConfig
-<a name="API_DatasetConfig"></a>
 
 The configuration of a Dataset. Set one member, which determines the dataset type.
 

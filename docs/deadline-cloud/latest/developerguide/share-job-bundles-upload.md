@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sha
 ---
 
 # Upload a job bundle
-<a name="share-job-bundles-upload"></a>
 
 To share a job bundle from the command line, upload the bundle directory:
 

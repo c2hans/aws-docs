@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/redrive-executi
 ---
 
 # Restarting state machine executions with redrive in Step Functions
-<a name="redrive-executions"></a>
 
 You can use redrive to restart executions of Standard Workflows that didn't complete successfully in the last 14 days. These include failed, aborted, or timed out executions.
 

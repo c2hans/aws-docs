@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Viewing collections
-<a name="serverless-list"></a>
 
 You can view the existing collections in your AWS account on the **Collections** tab of the Amazon OpenSearch Service console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ElastiCache-
 ---
 
 # Tutorials: Getting started with Python and ElastiCache
-<a name="ElastiCache-Getting-Started-Tutorials"></a>
 
 This section contains hands-on tutorials to help you learn about ElastiCache for Valkey and Redis OSS. We encourage you to work through one of the language-specific tutorials.
 

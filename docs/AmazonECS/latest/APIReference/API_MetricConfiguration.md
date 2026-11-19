@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Metric
 ---
 
 # MetricConfiguration
-<a name="API_MetricConfiguration"></a>
 
 The configuration for a specific set of metrics to collect for a service.
 

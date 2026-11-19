@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Deploy and manage containers on Amazon Lightsail
-<a name="amazon-lightsail-container-services"></a>
 
 An Amazon Lightsail container service is a highly scalable compute and networking resource on which you can deploy, run, and manage containers. A container is a standard unit of software that packages code and its dependencies together so the application runs quickly and reliably from one computing environment to another.
 

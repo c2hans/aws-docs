@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 A microservice-based architecture helps overcome the limitations posed by traditional, monolithic MES. Building a microservice-based application has challenges, such as architectural complexities and operational overheads. To realize the full potential of microservice-based MES, we recommend exploring the following questions:
 + What is the limitation of the current architecture you are trying to solve?

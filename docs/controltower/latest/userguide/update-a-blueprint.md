@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/update-a-b
 ---
 
 # Update a blueprint
-<a name="update-a-blueprint"></a>
 
 The following procedures describe how to update custom blueprints and how to deploy them.
 

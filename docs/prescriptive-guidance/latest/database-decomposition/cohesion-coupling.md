@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Analyzing cohesion and coupling for database decomposition
-<a name="cohesion-coupling"></a>
 
 This section helps you analyze coupling and cohesion patterns in your monolithic database to guide its decomposition. Understanding how database components interact and depend on each other is crucial for identifying natural break points, assessing complexity, and planning a phased migration approach. This analysis reveals hidden dependencies, highlights areas that are suitable for immediate separation, and helps you prioritize decomposition efforts while minimizing transformation risks. By examining both coupling and cohesion, you can make informed decisions about the component separation sequence in order to maintain system stability throughout the transformation process.
 

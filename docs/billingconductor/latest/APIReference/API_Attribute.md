@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 The key-value pair that represents the attribute by which the `BillingGroupCostReportResults` are grouped. For example, if you want a service-level breakdown for Amazon Simple Storage Service (Amazon S3) of the billing group, the attribute will be a key-value pair of `"PRODUCT_NAME"` and `"S3"`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Compute Engine instances
-<a name="exposure-gcp-vm"></a>
 
 AWS Security Hub can generate exposure findings for GCP Compute Engine instances.
 

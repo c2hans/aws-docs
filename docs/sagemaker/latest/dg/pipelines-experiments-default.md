@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-experiment
 ---
 
 # Default Behavior
-<a name="pipelines-experiments-default"></a>
 
 **Create a pipeline**
 

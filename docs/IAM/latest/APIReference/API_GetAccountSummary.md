@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetAccountSu
 ---
 
 # GetAccountSummary
-<a name="API_GetAccountSummary"></a>
 
 Retrieves information about IAM entity usage and IAM quotas in the AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pingi
 ---
 
 # Source configuration for Ping Identity PingFederate
-<a name="pingidentity-pingfederate-source-setup"></a>
 
 ## Integrating with Ping Identity PingFederate
 <a name="pingidentity-pingfederate-integration"></a>

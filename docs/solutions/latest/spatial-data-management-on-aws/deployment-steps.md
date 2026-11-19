@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Deployment Steps
-<a name="deployment-steps"></a>
 
 ## Step 1: Launch stack
 <a name="step-1-launch-stack"></a>

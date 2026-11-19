@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_TermRel
 ---
 
 # TermRelations
-<a name="API_TermRelations"></a>
 
 The details of the term relations.
 

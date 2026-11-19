@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/dm-migrating-data-s
 ---
 
 # Selection rules for homogeneous data migrations
-<a name="dm-migrating-data-selectionrules"></a>
 
 You can use selection rules to choose the schema, tables, or both that you want to include in your replication.
 

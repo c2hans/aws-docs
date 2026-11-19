@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ResourceARNDetail.ht
 ---
 
 # ResourceARNDetail
-<a name="API_ResourceARNDetail"></a>
 
 A list of resources ARNs corresponding to the segments in a trace.
 

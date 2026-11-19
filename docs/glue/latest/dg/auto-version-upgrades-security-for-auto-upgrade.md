@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-sec
 ---
 
 # Security for auto upgrade
-<a name="auto-version-upgrades-security-for-auto-upgrade"></a>
 
 ## Encryption
 <a name="auto-version-upgrades-encryption"></a>

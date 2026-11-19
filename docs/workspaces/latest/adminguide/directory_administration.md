@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/directory_a
 ---
 
 # Set up Active Directory Administration Tools for WorkSpaces Personal
-<a name="directory_administration"></a>
 
 You'll perform most administrative tasks for your WorkSpaces directory using directory management tools, such as the Active Directory Administration Tools. However, you'll use the WorkSpaces console to perform some directory-related tasks. For more information, see [Manage directories for WorkSpaces Personal](manage-workspaces-directory.md).
 

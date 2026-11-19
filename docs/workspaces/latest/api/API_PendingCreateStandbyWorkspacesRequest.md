@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_PendingCreateS
 ---
 
 # PendingCreateStandbyWorkspacesRequest
-<a name="API_PendingCreateStandbyWorkspacesRequest"></a>
 
 Information about the standby WorkSpace.
 

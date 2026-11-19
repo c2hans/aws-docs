@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Backup and retention
-<a name="backup-and-retention"></a>
 
 **Topics**
 + [FSIREL09: How are you backing up data in the cloud?](fsirel09.md)

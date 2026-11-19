@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CaseEntr
 ---
 
 # CaseEntry
-<a name="API_CaseEntry"></a>
 
 Information about a case associated with a contact.
 

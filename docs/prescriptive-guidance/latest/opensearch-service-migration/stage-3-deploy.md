@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 3 - Deployment
-<a name="stage-3-deploy"></a>
 
 By the time you reach the deployment stage, you have completed your PoC, and you have a good idea of how to deploy your target environment to production. Keep in mind the following considerations:
 + **Validate automation** – During the deployment, run the automation that you created during the PoC, and validate that it's working as expected. Also validate that your CI/CD automation is working as expected when you make configuration code changes.

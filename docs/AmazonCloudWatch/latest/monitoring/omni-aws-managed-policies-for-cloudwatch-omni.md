@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # AWS managed policies for CloudWatch Omni
-<a name="omni-aws-managed-policies-for-cloudwatch-omni"></a>
 
 CloudWatch Omni provides AWS managed policies for the space operator role, for the domain access role of an organization domain, and for the roles that support organization-level Context Graph enablement. Each policy's details — the description, what it attaches to, the version history, and the complete JSON policy document — are published in the [AWS Managed Policy Reference](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/policy-list.html), which is generated from the policy itself and updated automatically when a policy changes. The following table links to each policy's page there.
 

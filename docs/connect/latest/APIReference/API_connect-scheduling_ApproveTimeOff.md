@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ApproveTimeOff
-<a name="API_connect-scheduling_ApproveTimeOff"></a>
 
 Approves a time off request. Evaluates agent time off balances and group time off allowances before approving. `RuleFailureAction` controls what happens when these evaluations fail. The request is rejected with `CONFLICTING_TIME_OFF_REQUEST` if it overlaps another time off request for the user that is `APPROVED` or being approved.
 

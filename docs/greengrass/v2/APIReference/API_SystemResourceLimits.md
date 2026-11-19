@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_SystemRes
 ---
 
 # SystemResourceLimits
-<a name="API_SystemResourceLimits"></a>
 
 Contains information about system resource limits that the AWS IoT Greengrass Core software applies to a component's processes. For more information, see [Configure system resource limits for components](https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-greengrass-core-v2.html#configure-component-system-resource-limits).
 

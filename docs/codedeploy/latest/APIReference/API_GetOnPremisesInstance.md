@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetOn
 ---
 
 # GetOnPremisesInstance
-<a name="API_GetOnPremisesInstance"></a>
 
  Gets information about an on-premises instance.
 

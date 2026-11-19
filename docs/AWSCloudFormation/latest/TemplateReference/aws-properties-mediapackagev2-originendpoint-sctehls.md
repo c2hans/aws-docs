@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint ScteHls
-<a name="aws-properties-mediapackagev2-originendpoint-sctehls"></a>
 
 The SCTE-35 HLS configuration associated with the origin endpoint.
 

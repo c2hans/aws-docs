@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/server-host-ke
 ---
 
 # Storing SFTP server host keys in AWS Secrets Manager
-<a name="server-host-key-storage"></a>
 
 Instead of letting Transfer Family manage your host key material, you can store the host keys for your SFTP-enabled server in a secret in AWS Secrets Manager (Secrets Manager). With Secrets Manager storage, Transfer Family stores the host key in a secret that you can encrypt with your own AWS Key Management Service (AWS KMS) key.
 

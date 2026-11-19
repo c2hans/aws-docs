@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupPatchPolicyDeploymentRolePolicy
-<a name="AWSQuickSetupPatchPolicyDeploymentRolePolicy"></a>
 
 **Description**: Provides permissions that allow Quick Setup to create resources associated with a patch policy configuration.
 

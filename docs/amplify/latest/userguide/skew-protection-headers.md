@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/skew-protection
 ---
 
 # How skew protection works
-<a name="skew-protection-headers"></a>
 
 In most cases, the default behavior of the \_dpl cookie will serve your skew protection needs. However, in the following advanced scenarios, skew protection is better enabled using the `X-Amplify-Dpl` header and `dpl` query parameter.
 + Loading your website in multiple browser tabs at the same time

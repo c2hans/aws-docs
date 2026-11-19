@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 8.2 – Encrypt data in transit
-<a name="best-practice-8-2"></a>
 
 Using encryption of data in transit makes it harder for your data to be intercepted, accessed, or tampered with while it’s moving from one point to another. Ensure that there are secure protocols and network-level encryption in place to minimize potential threats and provide the level of protection aligned with your requirements.
 

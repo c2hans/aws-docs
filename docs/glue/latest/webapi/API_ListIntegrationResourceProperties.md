@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListIntegrationRe
 ---
 
 # ListIntegrationResourceProperties
-<a name="API_ListIntegrationResourceProperties"></a>
 
 List integration resource properties for a single customer. It supports the filters, maxRecords and markers.
 

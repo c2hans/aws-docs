@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html
 ---
 
 # Using shared `config` and `credentials` files to globally configure AWS SDKs and tools
-<a name="file-format"></a>
 
 The shared AWS `config` and `credentials` files are the most common way that you can specify authentication and configuration to an AWS SDK or tool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceN
 ---
 
 # InstanceNetworkPerformanceOptionsRequest
-<a name="API_InstanceNetworkPerformanceOptionsRequest"></a>
 
 Configure network performance options for your instance that are geared towards performance improvements based on the workload that it runs.
 

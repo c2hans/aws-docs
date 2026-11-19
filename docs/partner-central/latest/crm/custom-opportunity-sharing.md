@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/custom-opport
 ---
 
 # Opportunity sharing
-<a name="custom-opportunity-sharing"></a>
 
 ## How AWS shares opportunities
 <a name="how-aws-shares-opportunities"></a>

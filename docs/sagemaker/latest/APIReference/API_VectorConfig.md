@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Vector
 ---
 
 # VectorConfig
-<a name="API_VectorConfig"></a>
 
 Configuration for your vector collection type.
 

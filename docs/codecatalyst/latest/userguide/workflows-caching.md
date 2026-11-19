@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Caching files between workflow runs
-<a name="workflows-caching"></a>
 
 When file caching is enabled, the build and test actions save on-disk files to a cache and restore them from that cache in subsequent workflow runs. Caching reduces the latency caused by building or downloading dependencies that haven’t changed between runs. CodeCatalyst also supports fallback caches, which can be used to restore partial caches containing some of the needed dependencies. This helps reduce the latency impacts of a cache miss.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeleteConstraint
-<a name="API_DeleteConstraint"></a>
 
 Deletes the specified constraint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetOutboundExt
 ---
 
 # GetOutboundExternalLink
-<a name="API_GetOutboundExternalLink"></a>
 
 Retrieves information about an outbound external link.
 

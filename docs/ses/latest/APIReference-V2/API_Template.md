@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.
 ---
 
 # Template
-<a name="API_Template"></a>
 
 An object that defines the email template to use for an email message, and the values to use for any message variables in that template. An *email template* is a type of message template that contains content that you want to reuse in email messages that you send. You can specifiy the email template by providing the name or ARN of an *email template* previously saved in your Amazon SES account or by providing the full template content.
 

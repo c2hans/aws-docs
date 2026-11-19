@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-custom-i
 ---
 
 # Custom images
-<a name="code-editor-custom-images"></a>
 
 If you need functionality that is different than what's provided by SageMaker distribution, you can bring your own image with your custom extensions and packages. You can also use it to personalize the Code Editor UI for your own branding or compliance needs.
 

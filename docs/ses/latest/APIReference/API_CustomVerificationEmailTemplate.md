@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CustomVerifi
 ---
 
 # CustomVerificationEmailTemplate
-<a name="API_CustomVerificationEmailTemplate"></a>
 
 Contains information about a custom verification email template.
 

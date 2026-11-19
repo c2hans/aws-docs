@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsMessageContent
-<a name="API_RcsMessageContent"></a>
 
 The content of an RCS message, containing the message body (text, file, rich card, or carousel) and optional message-level suggested actions.
 

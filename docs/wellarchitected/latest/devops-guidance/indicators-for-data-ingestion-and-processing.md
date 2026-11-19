@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/i
 ---
 
 # Indicators for data ingestion and processing
-<a name="indicators-for-data-ingestion-and-processing"></a>
 
 The collection, centralization, and analysis of data from various sources. With this capability, teams can make quicker, more effective decisions, enhancing their systems' agility, security, and reliability.
 

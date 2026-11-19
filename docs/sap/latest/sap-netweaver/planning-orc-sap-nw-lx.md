@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/planning-orc-sa
 ---
 
 # Planning
-<a name="planning-orc-sap-nw-lx"></a>
 
 Plan your SAP system landscape according to the SAP Master Guide for your version of SAP NetWeaver for Linux OS and Oracle database.
 +  [Deployment options](deploy-options-orc-sap-nw-lx.md)

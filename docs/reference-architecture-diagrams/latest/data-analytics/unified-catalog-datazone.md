@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Building a unified catalog with Amazon DataZone
-<a name="unified-catalog-datazone"></a>
 
 Publication date: **November 20, 2024 ([Diagram history](diagram-history.md))**
 

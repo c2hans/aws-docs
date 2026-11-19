@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC09-BP03 Automate patch management for ICS and connected data infrastructure
-<a name="midasec09-bp03"></a>
 
  Patch known vulnerabilities in a timely manner across industrial control systems (ICS), gateways, and cloud services by automating patch management processes.
 

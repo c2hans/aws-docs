@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/rules-api.html
 ---
 
 # Rules actions
-<a name="rules-api"></a>
 
 The following API actions are available for rules:
 + [CreateRule](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateRule.html)

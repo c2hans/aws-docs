@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Migrating from F5 BIG-IP to F5 BIG-IP VE on the AWS Cloud
-<a name="introduction"></a>
 
 *Suresh Veeragoni, Amazon Web Services*
 

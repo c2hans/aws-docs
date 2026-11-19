@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-applic
 ---
 
 # Write a Spark application
-<a name="emr-spark-application"></a>
 
 [Spark](https://aws.amazon.com/big-data/what-is-spark/) applications can be written in Scala, Java, or Python. There are several examples of Spark applications located on [Spark examples](https://spark.apache.org/examples.html) topic in the Apache Spark documentation. The Estimating Pi example is shown below in the three natively supported applications. You can also view complete examples in `$SPARK_HOME/examples` and at [GitHub](https://github.com/apache/spark/tree/master/examples/src/main). For more information about how to build JARs for Spark, see the [Quick start](https://spark.apache.org/docs/latest/quick-start.html) topic in the Apache Spark documentation.
 

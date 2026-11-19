@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Deploying ASP.NET Web Forms applications on AWS
-<a name="deploying"></a>
 
 ## Managing NuGet packages
 <a name="nuget-manage"></a>

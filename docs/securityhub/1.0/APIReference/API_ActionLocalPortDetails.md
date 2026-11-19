@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ActionL
 ---
 
 # ActionLocalPortDetails
-<a name="API_ActionLocalPortDetails"></a>
 
 For `NetworkConnectionAction` and `PortProbeDetails`, `LocalPortDetails` provides information about the local port that was involved in the action.
 

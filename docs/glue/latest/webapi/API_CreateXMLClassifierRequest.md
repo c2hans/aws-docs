@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateXMLClassifi
 ---
 
 # CreateXMLClassifierRequest
-<a name="API_CreateXMLClassifierRequest"></a>
 
 Specifies an XML classifier for `CreateClassifier` to create.
 

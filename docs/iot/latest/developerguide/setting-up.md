@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/setting-up.htm
 ---
 
 # Set up AWS account
-<a name="setting-up"></a>
 
 Before you use AWS IoT Core for the first time, complete the following tasks:
 

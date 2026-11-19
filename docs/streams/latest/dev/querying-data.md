@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/querying-data.html
 ---
 
 # Query your data streams in the Kinesis console
-<a name="querying-data"></a>
 
  The Data Analytics tab in the Kinesis Data Streams Console lets you query your data streams using SQL. To use this capability, follow these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PromptRo
 ---
 
 # PromptRouterSummary
-<a name="API_PromptRouterSummary"></a>
 
 Details about a prompt router.
 

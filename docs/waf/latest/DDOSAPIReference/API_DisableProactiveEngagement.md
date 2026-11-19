@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DisableP
 ---
 
 # DisableProactiveEngagement
-<a name="API_DisableProactiveEngagement"></a>
 
 Removes authorization from the Shield Response Team (SRT) to notify contacts about escalations to the SRT and to initiate proactive customer support.
 

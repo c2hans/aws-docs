@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_OutputSampl
 ---
 
 # OutputSampleFileSource
-<a name="API_OutputSampleFileSource"></a>
 
 Container for the location of a sample file used for outbound transformations.
 

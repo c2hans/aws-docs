@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesDateFilter
-<a name="API_ResourcesDateFilter"></a>
 
 Enables the filtering of AWS resources based on date and timestamp attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # Analysis
-<a name="API_Analysis"></a>
 
 Metadata structure for an analysis in Quick Sight
 

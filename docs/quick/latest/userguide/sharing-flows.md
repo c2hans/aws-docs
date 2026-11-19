@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharing-flows.htm
 ---
 
 # Sharing flows
-<a name="sharing-flows"></a>
 
 When you share a flow, you give others permission to view and run it, or to collaborate on it as co-owners.
 

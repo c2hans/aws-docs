@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.4] Provide consistent, actionable feedback to developers
-<a name="dl.ci.4-provide-consistent-actionable-feedback-to-developers"></a>
 
  **Category:** FOUNDATIONAL
 

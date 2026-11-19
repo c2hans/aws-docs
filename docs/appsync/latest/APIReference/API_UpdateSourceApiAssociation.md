@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateSo
 ---
 
 # UpdateSourceApiAssociation
-<a name="API_UpdateSourceApiAssociation"></a>
 
 Updates some of the configuration choices of a particular source API association.
 

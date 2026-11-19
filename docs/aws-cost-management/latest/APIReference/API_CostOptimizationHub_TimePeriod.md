@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TimePeriod
-<a name="API_CostOptimizationHub_TimePeriod"></a>
 
 Specifies a date range for retrieving efficiency metrics. The start date is inclusive and the end date is exclusive.
 

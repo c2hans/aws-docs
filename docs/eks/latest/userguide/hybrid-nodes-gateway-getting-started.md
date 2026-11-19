@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-gatewa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Get started with EKS Hybrid Nodes gateway
-<a name="hybrid-nodes-gateway-getting-started"></a>
 
 This page walks you through the prerequisites, environment preparation, installation, verification, and removal of the Amazon EKS Hybrid Nodes gateway. For an introduction to the gateway and its architecture, see [Amazon EKS Hybrid Nodes gateway](hybrid-nodes-gateway-overview.md).
 

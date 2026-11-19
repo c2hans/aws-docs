@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-
 ---
 
 # VOD supported codecs and input types
-<a name="supported-inputs-vod"></a>
 
 The following sections describe supported input types, input codecs, and output codecs for file-based video on demand (VOD) content.
 

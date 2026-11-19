@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/deleting-tape-
 ---
 
 # Deleting Custom Tape Pools
-<a name="deleting-tape-pools-vtl"></a>
 
 The following procedure explains how to delete a custom tape pool using the Storage Gateway console. To perform this action programmatically using the API, see [DeleteTapePool](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DeleteTapePool.html) in the *Storage Gateway API Reference*.
 

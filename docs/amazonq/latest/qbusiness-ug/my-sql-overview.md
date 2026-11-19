@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/my-sql-overv
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # MySQL connector overview
-<a name="my-sql-overview"></a>
 
 The following table gives an overview of the Amazon Q Business MySQL connector and its supported features.
 

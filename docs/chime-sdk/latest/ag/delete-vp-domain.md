@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-vp-domain.htm
 ---
 
 # Deleting voice profile domains
-<a name="delete-vp-domain"></a>
 
 You can delete any voice profile domain, regardless of who created it.
 

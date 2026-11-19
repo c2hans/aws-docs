@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/parameterized-manag
 ---
 
 # Using parameterized managed permissions in AWS RAM
-<a name="parameterized-managed-permissions"></a>
 
 A parameterized managed permission is a managed permission with placeholders in its policy conditions that you fill in with your own values. These placeholders are template parameters. They don't create a new kind of managed permission. They add variability to the policy template of an existing one.
 

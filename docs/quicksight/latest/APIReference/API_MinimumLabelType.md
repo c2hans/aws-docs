@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Minim
 ---
 
 # MinimumLabelType
-<a name="API_MinimumLabelType"></a>
 
 The minimum label of a data path label.
 

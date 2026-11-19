@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/honeycomb-AMG-d
 ---
 
 # Connect to a Honeycomb data source
-<a name="honeycomb-AMG-datasource"></a>
 
 The Honeycomb data source allows you to query and visualize Honeycomb metrics and link to Honeycomb traces from within Amazon Managed Grafana.
 

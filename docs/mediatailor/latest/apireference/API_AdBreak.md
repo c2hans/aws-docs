@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_AdBr
 ---
 
 # AdBreak
-<a name="API_AdBreak"></a>
 
 Ad break configuration parameters.
 

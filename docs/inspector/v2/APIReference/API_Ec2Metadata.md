@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Ec2Metadat
 ---
 
 # Ec2Metadata
-<a name="API_Ec2Metadata"></a>
 
 Meta data details of an Amazon EC2 instance.
 

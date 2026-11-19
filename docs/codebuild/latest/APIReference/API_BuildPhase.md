@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BuildP
 ---
 
 # BuildPhase
-<a name="API_BuildPhase"></a>
 
 Information about a stage for a build.
 

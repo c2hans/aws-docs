@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # ID mapping tables in AWS Clean Rooms
-<a name="working-with-id-mapping-tables"></a>
 
 An *ID mapping table* is a resource in AWS Clean Rooms that enables multiparty identity mapping in a collaboration.
 

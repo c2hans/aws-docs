@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Event.htm
 ---
 
 # Event
-<a name="API_Event"></a>
 
 Summary information about an AWS Health event.
 

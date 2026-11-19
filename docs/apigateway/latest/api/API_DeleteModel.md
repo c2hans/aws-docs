@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteModel.ht
 ---
 
 # DeleteModel
-<a name="API_DeleteModel"></a>
 
 Deletes a model.
 

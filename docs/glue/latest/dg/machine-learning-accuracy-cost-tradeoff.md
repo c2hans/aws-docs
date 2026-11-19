@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/machine-learning-accuracy
 ---
 
 # Deciding Between accuracy and cost
-<a name="machine-learning-accuracy-cost-tradeoff"></a>
 
 Each `FindMatches` transform contains an `accuracy-cost` parameter. You can use this parameter to specify one of the following:
 + If you are more concerned with the transform accurately reporting that two records match, then you should emphasize *accuracy*.

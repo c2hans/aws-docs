@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIQPermissionServiceRolePolicy
-<a name="AWSIQPermissionServiceRolePolicy"></a>
 
 **Description**: Allows AWS IQ to manage the role assumed by AWS IQ experts.
 

@@ -7,7 +7,6 @@ End of support notice: Amazon Managed Blockchain will stop accepting new custome
 Amazon Managed Blockchain (AMB) Access Polygon is in preview release and is subject to change.
 
 # Logging Amazon Managed Blockchain (AMB) Access Polygon events by using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 **Note**
 Amazon Managed Blockchain (AMB) Access Polygon doesn’t support management events.

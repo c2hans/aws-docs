@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/CHAP_Troublesh
 ---
 
 # Troubleshoot issues in Amazon EC2 Auto Scaling
-<a name="CHAP_Troubleshooting"></a>
 
 Amazon EC2 Auto Scaling provides specific and descriptive errors to help you troubleshoot issues. You can find the error messages in the description of the scaling activities.
 

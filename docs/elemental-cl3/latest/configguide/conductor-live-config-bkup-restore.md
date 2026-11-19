@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Restoring a backup
-<a name="conductor-live-config-bkup-restore"></a>
 
 To restore a backup version of the database on a Conductor Live, Elemental Live, or Elemental Statmux node, follow this procedure.
 

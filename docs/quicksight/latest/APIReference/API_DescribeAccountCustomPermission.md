@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAccountCustomPermission
-<a name="API_DescribeAccountCustomPermission"></a>
 
 Describes the custom permissions profile that is applied to an account.
 

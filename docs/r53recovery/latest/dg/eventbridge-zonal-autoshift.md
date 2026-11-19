@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/eventbridge-zonal-
 ---
 
 # Using zonal autoshift with Amazon EventBridge
-<a name="eventbridge-zonal-autoshift"></a>
 
 Using Amazon EventBridge, you can set up event-driven rules that monitor your zonal autoshift resources and initiate target actions that use other AWS services. For example, you can set a rule for sending out email notifications by signaling an Amazon SNS topic when a practice run starts for zonal autoshift.
 

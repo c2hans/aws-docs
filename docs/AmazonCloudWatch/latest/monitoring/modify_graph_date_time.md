@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/modif
 ---
 
 # Modify the time range or time zone format for a graph
-<a name="modify_graph_date_time"></a>
 
  This section describes how you can modify the date, time, and time zone format on a CloudWatch metrics graph. It also describes how you can zoom in on a graph to apply a specific time range. For information about creating a graph, see [Graph a metric](graph_a_metric.md).
 

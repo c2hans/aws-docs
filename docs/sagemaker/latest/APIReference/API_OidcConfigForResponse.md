@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcCo
 ---
 
 # OidcConfigForResponse
-<a name="API_OidcConfigForResponse"></a>
 
 Your OIDC IdP workforce configuration.
 

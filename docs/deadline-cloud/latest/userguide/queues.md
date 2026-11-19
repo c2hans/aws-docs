@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/queues.h
 ---
 
 # Deadline Cloud queues
-<a name="queues"></a>
 
 A queue is a farm resource that manages and processes jobs.
 

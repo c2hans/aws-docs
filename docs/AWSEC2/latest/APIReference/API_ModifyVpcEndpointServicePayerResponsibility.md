@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpc
 ---
 
 # ModifyVpcEndpointServicePayerResponsibility
-<a name="API_ModifyVpcEndpointServicePayerResponsibility"></a>
 
 Modifies the payer responsibility for your VPC endpoint service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ConfirmPr
 ---
 
 # ConfirmProductInstance
-<a name="API_ConfirmProductInstance"></a>
 
 Determines whether a product code is associated with an instance. This action can only be used by the owner of the product code. It is useful when a product code owner must verify whether another user's instance is eligible for support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-powershell.html
 ---
 
 # Building Lambda Event Functions with PowerShell
-<a name="lambda-powershell"></a>
 
 The following sections explain how common programming patterns and core concepts apply when you author Lambda Event Function code in PowerShell.
 

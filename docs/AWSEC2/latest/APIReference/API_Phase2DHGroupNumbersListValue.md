@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase2DHG
 ---
 
 # Phase2DHGroupNumbersListValue
-<a name="API_Phase2DHGroupNumbersListValue"></a>
 
 The Diffie-Hellmann group number for phase 2 IKE negotiations.
 

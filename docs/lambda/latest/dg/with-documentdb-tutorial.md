@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-documentdb-tutoria
 ---
 
 # Tutorial: Using AWS Lambda with Amazon DocumentDB Streams
-<a name="with-documentdb-tutorial"></a>
 
  In this tutorial, you create a basic Lambda Event Function that consumes events from an Amazon DocumentDB (with MongoDB compatibility) change stream. To complete this tutorial, you go through the following stages:
 + Set up your Amazon DocumentDB cluster, connect to it, and activate change streams on it.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_E
 ---
 
 # EphemerisItem
-<a name="API_EphemerisItem"></a>
 
 Ephemeris item.
 

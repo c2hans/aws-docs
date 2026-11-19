@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 An object that describes the recipients for an email.
 

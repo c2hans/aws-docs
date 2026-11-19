@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DeleteDomain
-<a name="API_DeleteDomain"></a>
 
 Deletes an Amazon OpenSearch Service domain and all of its data. You can't recover a domain after you delete it.
 

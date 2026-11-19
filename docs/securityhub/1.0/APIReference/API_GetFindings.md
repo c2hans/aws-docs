@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFind
 ---
 
 # GetFindings
-<a name="API_GetFindings"></a>
 
 Returns a list of findings that match the specified criteria.
 

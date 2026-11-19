@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/ntier
 ---
 
 # N-Tier Visibility settings
-<a name="ntier-settings"></a>
 
 You can update the forecast commits and purchase orders response settings in AWS Supply Chain.
 

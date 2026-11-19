@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeApplic
 ---
 
 # DescribeApplicationAssociations
-<a name="API_DescribeApplicationAssociations"></a>
 
 Describes the associations between the application and the specified associated resources.
 

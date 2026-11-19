@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3DeltaDirectTarg
 ---
 
 # S3DeltaDirectTarget
-<a name="API_S3DeltaDirectTarget"></a>
 
 Specifies a target that writes to a Delta Lake data source in Amazon S3.
 

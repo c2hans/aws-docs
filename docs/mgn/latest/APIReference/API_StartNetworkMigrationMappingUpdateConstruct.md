@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartNetwork
 ---
 
 # StartNetworkMigrationMappingUpdateConstruct
-<a name="API_StartNetworkMigrationMappingUpdateConstruct"></a>
 
 A construct update to apply during a mapping update operation.
 

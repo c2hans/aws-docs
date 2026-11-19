@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/ruby-command-supp
 ---
 
 # RubyGems command support
-<a name="ruby-command-support"></a>
 
 CodeArtifact supports the `gem install` and `gem push` commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-synthe
 ---
 
 # Amazon CloudWatch Synthetics events
-<a name="events-ref-synthetics"></a>
 
 CloudWatch Synthetics sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

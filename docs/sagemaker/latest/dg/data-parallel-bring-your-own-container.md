@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-bring-
 ---
 
 # Create your own Docker container with the SageMaker AI distributed data parallel library
-<a name="data-parallel-bring-your-own-container"></a>
 
 To build your own Docker container for training and use the SageMaker AI data parallel library, you must include the correct dependencies and the binary files of the SageMaker AI distributed parallel libraries in your Dockerfile. This section provides instructions on how to create a complete Dockerfile with the minimum set of dependencies for distributed training in SageMaker AI using the data parallel library.
 

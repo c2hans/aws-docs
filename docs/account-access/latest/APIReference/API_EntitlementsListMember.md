@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # EntitlementsListMember
-<a name="API_EntitlementsListMember"></a>
 
 Contains information about an entitlement in a list result.
 

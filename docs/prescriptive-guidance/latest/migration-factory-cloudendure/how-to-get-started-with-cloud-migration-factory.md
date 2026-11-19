@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # How to get started with Cloud Migration Factory
-<a name="how-to-get-started-with-cloud-migration-factory"></a>
 
 The Cloud Migration Factory solution is available to all AWS customers and partners, and it can be deployed to your AWS account in just a few minutes. To deploy Cloud Migration Factory, see the [AWS Cloud Migration Factory Solution](https://aws.amazon.com/solutions/implementations/cloud-migration-factory-on-aws/) on the AWS Solutions website. The source code is available in a [GitHub repository](https://github.com/awslabs/aws-cloudendure-migration-factory-solution). If you have any questions, email AWS Professional Services at *migration-factory-support@amazon.com*.
 

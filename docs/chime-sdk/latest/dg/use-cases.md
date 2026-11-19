@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/use-cases.html
 ---
 
 # Understanding end-to-end calls for the Amazon Chime SDK PSTN audio service
-<a name="use-cases"></a>
 
 This use case provides example code for receiving a phone call from a PSTN caller, greeting the caller with an audio message, getting the meeting PIN from the caller, playing audio, and joining the caller to the meeting.
 

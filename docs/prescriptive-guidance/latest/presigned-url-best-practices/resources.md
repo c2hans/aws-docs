@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Amazon S3 documentation
 <a name="9999999999999999s3--documentation.79adf072-a110-51eb-8f75-fff0c710c52a"></a>

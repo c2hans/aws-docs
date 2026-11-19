@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Evaluators and evaluations
-<a name="omni-agents-evaluators"></a>
 
 An evaluator scores agent behavior against a criterion (for example, whether the response was correct, relevant, or grounded in the retrieved context). An evaluation is the result of running one or more evaluators over a trace, or over the outputs your agent produces from a dataset's test cases. Because evaluators are automated, you can score hundreds of runs the way you would review one by hand. This page covers scoring on demand. To score production traffic continuously, see [Online evaluations](omni-agents-online-evaluations.md).
 

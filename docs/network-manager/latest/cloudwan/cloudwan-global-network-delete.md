@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Delete an AWS Cloud WAN global network
-<a name="cloudwan-global-network-delete"></a>
 
 Delete a Cloud WAN global network if you no longer need that network. Deleting a global can't be undone.
 

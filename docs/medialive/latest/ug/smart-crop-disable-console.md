@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smart-crop-disable-c
 ---
 
 # Disabling smart crop
-<a name="smart-crop-disable-console"></a>
 
 **To disable smart crop in all outputs**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/relationship-to-fedora.h
 ---
 
 # Relationship to Fedora
-<a name="relationship-to-fedora"></a>
 
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.

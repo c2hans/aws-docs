@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Build.
 ---
 
 # Build
-<a name="API_Build"></a>
 
 Information about a build.
 

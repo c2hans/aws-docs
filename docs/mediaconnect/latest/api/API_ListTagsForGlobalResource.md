@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListTagsForG
 ---
 
 # ListTagsForGlobalResource
-<a name="API_ListTagsForGlobalResource"></a>
 
 Lists the tags associated with a global resource in AWS Elemental MediaConnect. The API supports the following global resources: router inputs, router outputs and router network interfaces.
 

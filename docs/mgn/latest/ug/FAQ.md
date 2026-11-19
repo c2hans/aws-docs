@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/FAQ.html
 ---
 
 # FAQ
-<a name="FAQ"></a>
 
 Use this section to find answers to many frequently asked questions.
 

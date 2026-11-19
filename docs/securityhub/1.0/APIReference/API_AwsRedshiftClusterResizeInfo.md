@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterResizeInfo
-<a name="API_AwsRedshiftClusterResizeInfo"></a>
 
 Information about the resize operation for the cluster.
 

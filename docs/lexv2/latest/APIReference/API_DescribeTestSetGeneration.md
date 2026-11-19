@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeTe
 ---
 
 # DescribeTestSetGeneration
-<a name="API_DescribeTestSetGeneration"></a>
 
 Gets metadata information about the test set generation.
 

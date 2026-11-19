@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DeleteBillingGroup
-<a name="API_DeleteBillingGroup"></a>
 
  Deletes a billing group.
 

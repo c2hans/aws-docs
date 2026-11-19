@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setOnInsert.h
 ---
 
 # $setOnInsert
-<a name="setOnInsert"></a>
 
 The `$setOnInsert` operator in Amazon DocumentDB is used to set the value of a field if a document is being inserted, but it has no effect if the document is being updated.
 

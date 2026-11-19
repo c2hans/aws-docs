@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeSDK
-<a name="AmazonChimeSDK"></a>
 
 **Description**: Provides access to Amazon Chime SDK operations
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/failure-mod
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 Implementing software Failure Mode and Effects Analysis (FMEA) for AWS applications gives you a systematic approach to proactive risk management. This approach integrates with modern development practices. This guide offers a proven methodology, practical tools, and clear implementation strategy to help organizations reduce production incidents and improve application reliability.
 

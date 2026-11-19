@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_TagFilter.
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 The tag filter.
 

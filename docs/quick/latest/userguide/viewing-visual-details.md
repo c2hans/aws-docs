@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/viewing-visual-de
 ---
 
 # Viewing visual details
-<a name="viewing-visual-details"></a>
 
 When viewing a visual, you can hover your cursor over any graphical element to get details on that element. For example, when you hover over a single bar on a bar chart, information about that specific bar displays in a tooltip.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # View and manage Lightsail container service deployment versions
-<a name="amazon-lightsail-container-services-deployment-versions"></a>
 
 Every deployment that you create in your Amazon Lightsail container service is saved as a deployment version. If you modify the parameters of an existing deployment, the containers are re-deployed to your service and the modified deployment results in a new deployment version. The latest 50 deployment versions for each container service are saved. You can use any of the 50 deployment versions to create a new deployment in the same container service. In this guide, we show you how to view and manage the deployment versions of your container service.
 

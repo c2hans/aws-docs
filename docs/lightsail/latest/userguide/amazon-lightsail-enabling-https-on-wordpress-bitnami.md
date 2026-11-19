@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Secure your WordPress site with HTTPS on Lightsail
-<a name="amazon-lightsail-enabling-https-on-wordpress-bitnami"></a>
 
 **This tutorial applies to instances that use WordPress packaged by Bitnami only**
 If your instance uses the WordPress blueprint packaged by Lightsail, see [WordPress](amazon-lightsail-wordpress.md) instead.

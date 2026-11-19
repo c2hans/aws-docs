@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfi
 ---
 
 # Best practices for SAP on AWS greenfield implementations
-<a name="introduction"></a>
 
 *Almaz Thornton, Johnny Frye, and RAVEENDRA Voore, Amazon Web Services*
 

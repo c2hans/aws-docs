@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteWorkflow
-<a name="API_connect-customer-profiles_DeleteWorkflow"></a>
 
 Deletes the specified workflow and all its corresponding resources. This is an async process.
 

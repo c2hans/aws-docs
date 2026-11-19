@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # Prometheus-compatible APIs
-<a name="AMP-APIReference-Prometheus-Compatible-Apis"></a>
 
 Amazon Managed Service for Prometheus supports the following Prometheus-compatible APIs.
 

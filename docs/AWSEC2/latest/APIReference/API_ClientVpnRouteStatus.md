@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnRouteStatus
-<a name="API_ClientVpnRouteStatus"></a>
 
 Describes the state of a Client VPN endpoint route.
 

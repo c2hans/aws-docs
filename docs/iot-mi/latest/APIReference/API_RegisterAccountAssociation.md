@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RegisterA
 ---
 
 # RegisterAccountAssociation
-<a name="API_RegisterAccountAssociation"></a>
 
 Registers an account association with a managed thing, establishing a connection between a device and a third-party account.
 

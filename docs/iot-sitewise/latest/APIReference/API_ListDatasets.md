@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListDatasets
-<a name="API_ListDatasets"></a>
 
 Retrieves a paginated list of datasets for a specific target resource.
 

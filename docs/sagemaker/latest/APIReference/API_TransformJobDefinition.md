@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformJobDefinition
-<a name="API_TransformJobDefinition"></a>
 
 Defines the input needed to run a transform job using the inference specification specified in the algorithm.
 

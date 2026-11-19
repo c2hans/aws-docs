@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_F
 ---
 
 # FilterCriteria
-<a name="API_FilterCriteria"></a>
 
 The collection of event patterns used to filter events.
 

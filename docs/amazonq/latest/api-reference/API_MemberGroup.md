@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_MemberG
 ---
 
 # MemberGroup
-<a name="API_MemberGroup"></a>
 
 The sub groups that belong to a group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateG
 ---
 
 # UpdateGlossaryTerm
-<a name="API_UpdateGlossaryTerm"></a>
 
 Updates a business glossary term in Amazon DataZone.
 

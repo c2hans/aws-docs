@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/supported-
 ---
 
 # Supported clauses
-<a name="supported-clauses"></a>
 
 The `SELECT` statement is used to retrieve data from one or more views. AWS IoT SiteWise supports the `JOIN` and `INNER JOIN` operations.
 

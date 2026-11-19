@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/timestream-
 ---
 
 # Cost optimization pillar
-<a name="cost-optimization"></a>
 
 The [cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-optimization.html) of the AWS Well-Architected Framework focuses on avoiding unnecessary costs and building architectures in a cost-optimized way. The following recommendations can help you meet the cost optimization design principles and architectural best practices for Amazon Timestream for InfluxDB.
 

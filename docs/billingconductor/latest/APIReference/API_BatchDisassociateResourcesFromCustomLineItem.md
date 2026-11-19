@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # BatchDisassociateResourcesFromCustomLineItem
-<a name="API_BatchDisassociateResourcesFromCustomLineItem"></a>
 
  Disassociates a batch of resources from a percentage custom line item.
 

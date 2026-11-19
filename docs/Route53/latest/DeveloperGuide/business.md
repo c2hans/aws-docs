@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/business.h
 ---
 
 # .business
-<a name="business"></a>
 
 Used by any kind of business. Can be used as an alternative to the .biz extension.
 

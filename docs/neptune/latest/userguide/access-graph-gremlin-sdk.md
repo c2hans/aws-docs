@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Using the AWS SDK to run Gremlin queries
-<a name="access-graph-gremlin-sdk"></a>
 
 With the AWS SDK, you can run Gremlin queries against your Neptune graph using a programming language of your choice. The Neptune data API SDK (service name `neptunedata`) provides the [ExecuteGremlinQuery](https://docs.aws.amazon.com/neptune/latest/data-api/API_ExecuteGremlinQuery.html) action for submitting Gremlin queries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-es.htm
 ---
 
 # Amazon OpenSearch Service events
-<a name="events-ref-es"></a>
 
 OpenSearch Service sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

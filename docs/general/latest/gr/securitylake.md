@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/securitylake.html
 ---
 
 # Amazon Security Lake endpoints
-<a name="securitylake"></a>
 
 The following are the service endpoints for this service. To connect programmatically to an AWS service, you use an endpoint. In addition to the standard AWS endpoints, some AWS services offer FIPS endpoints in selected Regions. For more information, see [AWS service endpoints](rande.md).
 

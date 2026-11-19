@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationSearchCriteria
-<a name="API_HoursOfOperationSearchCriteria"></a>
 
 The search criteria to be used to return hours of operations.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return hours of operations.
 
  ** AndConditions **   <a name="connect-Type-HoursOfOperationSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [HoursOfOperationSearchCriteria](#API_HoursOfOperationSearchCriteria) objects
+Type: Array of [HoursOfOperationSearchCriteria](API_HoursOfOperationSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-HoursOfOperationSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [HoursOfOperationSearchCriteria](#API_HoursOfOperationSearchCriteria) objects
+Type: Array of [HoursOfOperationSearchCriteria](API_HoursOfOperationSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-HoursOfOperationSearchCriteria-StringCondition"></a>

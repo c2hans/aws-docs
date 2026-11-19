@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_QuotaSettings.
 ---
 
 # QuotaSettings
-<a name="API_QuotaSettings"></a>
 
 Quotas configured for a usage plan.
 

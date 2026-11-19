@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Architecture overview
-<a name="pm-architecture-overview"></a>
 
 The Predictive Maintenance solution follows a multi-stage architecture that processes vehicle telemetry data through parallel prediction pipelines.
 

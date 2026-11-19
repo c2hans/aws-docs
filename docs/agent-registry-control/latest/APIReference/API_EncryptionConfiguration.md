@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 The server-side encryption configuration for a registry. Specifies a customer-managed AWS KMS key used to encrypt the registry's content.
 

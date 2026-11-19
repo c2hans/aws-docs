@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/reachability-ana
 ---
 
 # Troubleshooting Reachability Analyzer
-<a name="reachability-analyzer-troubleshooting"></a>
 
 The following error messages are returned by Reachability Analyzer:
 

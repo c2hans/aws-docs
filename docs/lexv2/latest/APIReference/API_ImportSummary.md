@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ImportSumm
 ---
 
 # ImportSummary
-<a name="API_ImportSummary"></a>
 
 Provides summary information about an import in an import list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-AnalyzeEBSResourceUsage`
-<a name="automation-aws-analyze-ebs-resource-usage"></a>
 
  **Description**
 

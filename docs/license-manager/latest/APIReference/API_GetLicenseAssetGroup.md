@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetLicenseAssetGroup
-<a name="API_GetLicenseAssetGroup"></a>
 
 Gets a license asset group.
 

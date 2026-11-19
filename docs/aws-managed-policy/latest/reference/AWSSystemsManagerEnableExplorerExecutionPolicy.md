@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerEnableExplorerExecutionPolicy
-<a name="AWSSystemsManagerEnableExplorerExecutionPolicy"></a>
 
 **Description**: This policy grants administrative permissions for enabling Explorer, a capability of AWS Systems Manager. This includes permissions to update related Systems Manager service settings, and to create a service-linked role for Systems Manager.
 

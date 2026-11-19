@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 ---
 
 # Module 5: Finalize Pipeline and Test
-<a name="module-five"></a>
 
 |  |  |
 | --- |--- |

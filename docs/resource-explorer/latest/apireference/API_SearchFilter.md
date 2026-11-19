@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # SearchFilter
-<a name="API_SearchFilter"></a>
 
 A search filter defines which resources can be part of a search query result set.
 

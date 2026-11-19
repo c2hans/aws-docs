@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/using-sdi-router
 ---
 
 # Use case: Using SDI router input in a profile and channel
-<a name="using-sdi-router-input-in-a-profile-and-channel"></a>
 
 You might want to specify an SDI router input in your profile and channel. This type of input goes through a router, and is only applicable if there is at least one node in the cluster that is configured with a router. When you choose this type of input, a supplementary field appears—the **Router Input ID** field.
 

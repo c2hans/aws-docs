@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/reserved-nodes-
 ---
 
 # Working with reserved nodes
-<a name="reserved-nodes-working-with"></a>
 
 You can use the AWS Management Console, the AWS Command Line Interface, and MemoryDB API to work with reserved nodes.
 

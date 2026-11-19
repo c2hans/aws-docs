@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeView
-<a name="API_DescribeView"></a>
 
 Retrieves the view for the specified Connect Customer instance and view identifier.
 

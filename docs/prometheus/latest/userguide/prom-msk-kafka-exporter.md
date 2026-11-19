@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/prom-msk-kaf
 ---
 
 # Collect Amazon MSK consumer-group metrics
-<a name="prom-msk-kafka-exporter"></a>
 
 With a managed Kafka exporter, an Amazon Managed Service for Prometheus collector collects consumer-group metrics from your Amazon MSK cluster, such as consumer lag, committed offsets, and the number of members in each consumer group. Amazon Managed Service for Prometheus runs the exporter for you, so you do not have to install or operate an exporter yourself. Your destination can be an Amazon Managed Service for Prometheus workspace or Amazon CloudWatch. These metrics complement the JMX and Node Exporter metrics that the collector scrapes from Open Monitoring.
 

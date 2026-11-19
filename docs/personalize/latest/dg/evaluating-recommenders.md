@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/evaluating-recomme
 ---
 
 # Evaluating an Amazon Personalize domain recommender
-<a name="evaluating-recommenders"></a>
 
  You can evaluate the performance of your recommender through offline and online metrics. *Online metrics* are the empirical results you observe in your users' interactions with real-time recommendations. For example, you might record your users' click-through rate as they browse your catalog. You are responsible for generating and recording any online metrics.
 

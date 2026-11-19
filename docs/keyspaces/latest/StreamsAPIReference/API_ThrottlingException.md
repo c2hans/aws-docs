@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The request rate is too high and exceeds the service's throughput limits.
 

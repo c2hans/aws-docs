@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ses
 ---
 
 # SessionKeysAbpV1\_1
-<a name="API_SessionKeysAbpV1_1"></a>
 
 Session keys for ABP v1.1
 

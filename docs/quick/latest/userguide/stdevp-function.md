@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/stdevp-function.h
 ---
 
 # stdevp
-<a name="stdevp-function"></a>
 
 The `stdevp` function calculates the population standard deviation of the set of numbers in the specified measure, grouped by the chosen dimension or dimensions.
 

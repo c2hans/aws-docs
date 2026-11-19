@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetRevenueAttributionAllocationsTask
-<a name="API_prm_GetRevenueAttributionAllocationsTask"></a>
 
 Retrieves the current status of a previously submitted allocations task. When COMPLETE, includes the latest revision. When FAILED, includes error details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/notes-hms.html
 ---
 
 # Hive metadata store data sharing considerations and limitations
-<a name="notes-hms"></a>
 
 With AWS Glue Data Catalog metadata federation (Data Catalog federation), you can connect the Data Catalog to external metastores that store metadata for your Amazon S3 data, and securely manage data access permissions using AWS Lake Formation.
 

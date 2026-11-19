@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/b2bi-prereq.html
 ---
 
 # Prerequisites for using AWS B2B Data Interchange
-<a name="b2bi-prereq"></a>
 
 This topic describes how to sign up for an AWS account, create an admin user, and configure an Amazon S3 bucket to use with B2B Data Interchange.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/hybrid-
 ---
 
 # Install SSM Agent on hybrid Windows Server nodes
-<a name="hybrid-multicloud-ssm-agent-install-windows"></a>
 
 This topic describes how to install AWS Systems Manager SSM Agent on Windows Server machines in a [hybrid and multicloud](operating-systems-and-machine-types.md#supported-machine-types) environment. For information about installing SSM Agent on EC2 instances for Windows Server, see [Manually installing and uninstalling SSM Agent on EC2 instances for Windows Server](manually-install-ssm-agent-windows.md).
 

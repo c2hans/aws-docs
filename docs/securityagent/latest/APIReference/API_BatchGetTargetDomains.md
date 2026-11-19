@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetTargetDomains
-<a name="API_BatchGetTargetDomains"></a>
 
 Retrieves information about one or more target domains.
 

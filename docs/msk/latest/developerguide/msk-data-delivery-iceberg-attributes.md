@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Table attributes
-<a name="msk-data-delivery-iceberg-attributes"></a>
 
 The Iceberg table a Channel creates has the following attributes (designed for governance and compliance):
 + **Managed table** — The table is read-only from your perspective. You cannot modify the schema or table properties, or write to the table directly outside of the Channel.

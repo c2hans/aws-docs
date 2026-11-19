@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchStartViewerSessionRevocationError
-<a name="API_BatchStartViewerSessionRevocationError"></a>
 
 Error for a request in the batch for BatchStartViewerSessionRevocation. Each error is related to a specific channel-ARN and viewer-ID pair.
 

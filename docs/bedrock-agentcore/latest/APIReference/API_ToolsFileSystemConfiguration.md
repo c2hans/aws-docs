@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolsFileSystemConfiguration
-<a name="API_ToolsFileSystemConfiguration"></a>
 
 Specifies a file system to mount into the session by providing exactly one of the following:
 +  `s3FilesConfiguration` - Mounts an Amazon Simple Storage Service (Amazon S3) Files access point.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Tool integration strategy
-<a name="tool-integration-strategy"></a>
 
 Your choice of tool integration strategy directly affects what your agents can accomplish and how easily your system can evolve. Prioritize open protocols like the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/introduction) while strategically using framework-native tools and meta-tools. That way, you can build a set of tools that remains flexible as AI technology advances.
 

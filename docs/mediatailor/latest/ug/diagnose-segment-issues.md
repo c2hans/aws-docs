@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/diagnose-segment-i
 ---
 
 # Troubleshoot CDN segment delivery and loading issues for MediaTailor
-<a name="diagnose-segment-issues"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) segment delivery problems can cause buffering and playback interruptions. If players can't load segments or experience buffering:
 

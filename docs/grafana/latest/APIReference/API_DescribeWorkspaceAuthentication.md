@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Describe
 ---
 
 # DescribeWorkspaceAuthentication
-<a name="API_DescribeWorkspaceAuthentication"></a>
 
 Displays information about the authentication methods used in one Amazon Managed Grafana workspace.
 

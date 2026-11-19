@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/verify-
 ---
 
 # Best practices for TLS certificate verification in Amazon MQ for RabbitMQ
-<a name="verify-broker-certificate-rabbitmq"></a>
 
 Amazon MQ brokers present a server certificate that identifies the broker by its fully qualified domain name (FQDN). Your client is responsible for verifying this certificate when it establishes a TLS connection.
 

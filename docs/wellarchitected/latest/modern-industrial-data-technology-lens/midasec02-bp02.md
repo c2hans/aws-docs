@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC02-BP02 Enable multi-factor authentication (MFA) and token authorization (TA)
-<a name="midasec02-bp02"></a>
 
  Strengthen identity verification by enforcing MFA for human users and implementing token-based authorization for machines and services.
 

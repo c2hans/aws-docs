@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEBSCSIDriverPolicy
-<a name="AmazonEBSCSIDriverPolicy"></a>
 
 **Description**: IAM Policy that allows the CSI driver service account to make calls to related services such as EC2 on your behalf.
 

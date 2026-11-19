@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/cloudwatch.html
 ---
 
 # AWS Systems Manager for SAP metrics with Amazon CloudWatch
-<a name="cloudwatch"></a>
 
 You can view CloudTrail metrics for AWS Systems Manager for SAP via AWS Management Console or AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-local-s
 ---
 
 # Interact with local shadows
-<a name="ipc-local-shadows"></a>
 
 Use the shadow IPC service to interact with local shadows on a device. The device you choose to interact with can be your core device or a connected client device.
 

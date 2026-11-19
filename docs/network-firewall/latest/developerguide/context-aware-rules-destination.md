@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Matching on destination context
-<a name="context-aware-rules-destination"></a>
 
 **Note**
 Destination context matching works only for TCP and TCP-based application protocols. Network Firewall rejects destination context rules for other protocols, such as UDP and ICMP, when you create or update the rule group.

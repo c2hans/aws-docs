@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-supported
 ---
 
 # Supported Regions and models for flows
-<a name="flows-supported"></a>
 
 Amazon Bedrock Flows is supported in the following AWS Regions:
 + ap-northeast-1

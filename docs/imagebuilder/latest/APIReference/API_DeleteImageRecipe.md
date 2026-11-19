@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteImageRecipe
-<a name="API_DeleteImageRecipe"></a>
 
 Deletes an image recipe.
 

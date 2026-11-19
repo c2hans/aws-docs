@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/eventbridge
 ---
 
 # Amazon EventBridge
-<a name="eventbridge"></a>
 
 Using Amazon EventBridge, you can to react, monitor, and orchestrate events associated with AWS Security Incident Response cases and memberships. You can either route these events via Rules (for fan-out scenarios to one or more targets) or through Pipes (for point-to-point integrations with enhanced filtering, enrichment, and transformation capabilities).
 

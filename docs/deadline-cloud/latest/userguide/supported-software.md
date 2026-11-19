@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/supporte
 ---
 
 # Supported Software
-<a name="supported-software"></a>
 
 Deadline Cloud supports many digital content creation (DCC) applications for 3D rendering, animation, visual effects, and compositing. The applications in the following table are preconfigured to work out of the box with some or all of the following:
 + **Submitter** – An integrated plug-in for submitting jobs directly from the application. For more information, see [Set up your workstation](submitter.md).

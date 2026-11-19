@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeExpressGatewayService
-<a name="API_DescribeExpressGatewayService"></a>
 
 Retrieves detailed information about an Express service, including current status, configuration, managed infrastructure, and service revisions.
 

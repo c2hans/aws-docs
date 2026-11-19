@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/managing-session-s
 ---
 
 # Managing Amazon DCV Session storage
-<a name="managing-session-storage"></a>
 
 Session storage is a directory on the Amazon DCV server that clients can access when they are connected to a Amazon DCV session.
 

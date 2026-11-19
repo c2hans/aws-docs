@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateCar
 ---
 
 # CreateCarrierGateway
-<a name="API_CreateCarrierGateway"></a>
 
 Creates a carrier gateway. For more information about carrier gateways, see [Carrier gateways](https://docs.aws.amazon.com/wavelength/latest/developerguide/how-wavelengths-work.html#wavelength-carrier-gateway) in the * AWS Wavelength Developer Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Disc
 ---
 
 # DisconnectParticipant
-<a name="API_DisconnectParticipant"></a>
 
 Disconnects a specified participant from a specified stage. If the participant is publishing using an [IngestConfiguration](API_IngestConfiguration.md), DisconnectParticipant also updates the `stageArn` in the IngestConfiguration to be an empty string.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Application Transformation Service
-<a name="awsapplicationtransformationservice"></a>
 
 AWS Application Transformation Service provides the following APIs for data retrieval.
 

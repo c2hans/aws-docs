@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/storage-encryp
 ---
 
 # Troubleshoot storage and encryption issues
-<a name="storage-encryption-issues"></a>
 
 This section describes possible solutions for issues with storage and encryption.
 

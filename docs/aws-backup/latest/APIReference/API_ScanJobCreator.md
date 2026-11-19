@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanJ
 ---
 
 # ScanJobCreator
-<a name="API_ScanJobCreator"></a>
 
 Contains identifying information about the creation of a scan job, including the backup plan and rule that initiated the scan.
 

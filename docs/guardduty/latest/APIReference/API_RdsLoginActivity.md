@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsLog
 ---
 
 # RdsLoginActivity
-<a name="API_RdsLoginActivity"></a>
 
 Contains details about login activity on an Amazon RDS database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Elastic
 ---
 
 # ElasticsearchBufferingHints
-<a name="API_ElasticsearchBufferingHints"></a>
 
 Describes the buffering to perform before delivering data to the Amazon OpenSearch Service destination.
 

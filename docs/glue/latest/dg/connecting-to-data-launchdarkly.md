@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-launch
 ---
 
 # Connecting to LaunchDarkly in AWS Glue Studio
-<a name="connecting-to-data-launchdarkly"></a>
 
 LaunchDarkly is a feature-management and experimentation platform. Because you are a LaunchDarkly user, you can connect AWS Glue to your LaunchDarkly account. You can then use LaunchDarkly as a data source in your AWS Glue ETL jobs to transfer data between LaunchDarkly and AWS services or other supported applications.
 

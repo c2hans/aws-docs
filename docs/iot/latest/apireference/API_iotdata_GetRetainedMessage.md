@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdata_GetR
 ---
 
 # GetRetainedMessage
-<a name="API_iotdata_GetRetainedMessage"></a>
 
 Gets the details of a single retained message for the specified topic.
 

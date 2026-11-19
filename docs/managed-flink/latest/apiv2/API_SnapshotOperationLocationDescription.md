@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotO
 ---
 
 # SnapshotOperationLocationDescription
-<a name="API_SnapshotOperationLocationDescription"></a>
 
 Describes the location of snapshot data for a snapshot operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Device report
-<a name="device-report"></a>
 
  The Device Report provides insights into the devices, operating systems, and browsers used by your app or website users. This data helps you understand your user base and optimize for the most common configurations.
 

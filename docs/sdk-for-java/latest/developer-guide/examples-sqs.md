@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon Simple Queue Service
-<a name="examples-sqs"></a>
 
 This section provides examples of programming [Amazon Simple Queue Service](https://docs.aws.amazon.com/sqs/) using the AWS SDK for Java 2.x.
 

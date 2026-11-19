@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Swap the Auto Scaling Group Behind the Elastic Load Balancer
-<a name="swap-the-auto-scaling-group-behind-elastic-load-balancer"></a>
 
  If DNS complexities are prohibitive, consider using load balancing for traffic management to your blue and green environments. This technique uses Auto Scaling to manage the EC2 resources for your blue and green environments, scaling up or down based on actual demand. You can also control the Auto Scaling group size by updating your maximum desired instance counts for your particular group.
 

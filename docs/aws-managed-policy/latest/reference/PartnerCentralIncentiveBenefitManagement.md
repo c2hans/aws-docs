@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Part
 ---
 
 # PartnerCentralIncentiveBenefitManagement
-<a name="PartnerCentralIncentiveBenefitManagement"></a>
 
 **Description**: Policy provides access to manage all the incentive benefits in AWS Partner Central.
 

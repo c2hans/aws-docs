@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Tutorial: Delete a maintenance window using the AWS CLI
-<a name="mw-cli-tutorial-delete-mw"></a>
 
 To delete a maintenance window you created in these tutorials, run the following command.
 

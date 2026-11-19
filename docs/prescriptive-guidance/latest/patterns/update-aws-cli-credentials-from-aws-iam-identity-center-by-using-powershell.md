@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/up
 ---
 
 # Update AWS CLI credentials from AWS IAM Identity Center by using PowerShell
-<a name="update-aws-cli-credentials-from-aws-iam-identity-center-by-using-powershell"></a>
 
 *Chad Miles and Andy Bowen, Amazon Web Services*
 

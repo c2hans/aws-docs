@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Resource control policies (RCPs)
-<a name="orgs_manage_policies_rcps"></a>
 
 **Note**
 **Service control policies (SCPs) and resource control policies (RCPs)**

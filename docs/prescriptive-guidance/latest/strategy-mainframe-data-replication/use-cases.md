@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Use cases for replicating mainframe data to the AWS Cloud
-<a name="use-cases"></a>
 
 This section reviews several common use cases that have emerged as prime candidates for mainframe data replication to the AWS Cloud. These use cases span various industries and operational requirements, and each presents unique challenges and opportunities. In these scenarios, data replication can play a pivotal role in driving business innovation, agility, and resilience.
 

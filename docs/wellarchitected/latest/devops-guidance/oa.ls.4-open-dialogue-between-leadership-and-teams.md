@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.LS.4] Open dialogue between leadership and teams
-<a name="oa.ls.4-open-dialogue-between-leadership-and-teams"></a>
 
  **Category:** FOUNDATIONAL
 

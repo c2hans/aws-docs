@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetIdNamespace
-<a name="API_GetIdNamespace"></a>
 
 Returns the `IdNamespace` with a given name, if it exists.
 

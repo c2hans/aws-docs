@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gsm
 ---
 
 # GsmLocalId
-<a name="API_GsmLocalId"></a>
 
 GSM local ID information, which corresponds to the local identification parameters of a GSM cell.
 

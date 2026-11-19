@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailUsage
-<a name="API_runtime_GuardrailUsage"></a>
 
 The details on the use of the guardrail.
 

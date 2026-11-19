@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/amplify-app
 ---
 
 # amplify-app-build-spec-configured
-<a name="amplify-app-build-spec-configured"></a>
 
 Checks if AWS Amplify apps have a build specification configured. The rule is NON\_COMPLIANT if configuration.BuildSpec does not exist.
 

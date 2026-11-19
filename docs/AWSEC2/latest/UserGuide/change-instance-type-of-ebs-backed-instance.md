@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-instance-
 ---
 
 # Change the instance type for your Amazon EC2 instance
-<a name="change-instance-type-of-ebs-backed-instance"></a>
 
 Use the following instructions to change the instance type of an Amazon EBS-backed instance if the instance type that you need is compatible with the current configuration of your instance. For more information, see [Compatibility for changing the instance type](resize-limitations.md).
 

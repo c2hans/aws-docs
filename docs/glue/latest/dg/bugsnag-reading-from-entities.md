@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bugsnag-reading-from-enti
 ---
 
 # Reading from BugSnag entities
-<a name="bugsnag-reading-from-entities"></a>
 
 **Prerequisites**
 

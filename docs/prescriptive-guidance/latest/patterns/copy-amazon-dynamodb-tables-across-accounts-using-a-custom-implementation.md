@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Copy Amazon DynamoDB tables across accounts using a custom implementation
-<a name="copy-amazon-dynamodb-tables-across-accounts-using-a-custom-implementation"></a>
 
 *Ramkumar Ramanujam, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/checking-eks-runtime
 ---
 
 # Checking EKS Runtime Monitoring configuration status
-<a name="checking-eks-runtime-monitoring-enable-status"></a>
 
 Use the following APIs or AWS CLI commands to check the existing configuration status of EKS Runtime Monitoring.
 

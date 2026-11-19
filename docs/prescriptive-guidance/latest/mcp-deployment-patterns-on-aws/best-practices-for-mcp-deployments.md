@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Best practices for MCP deployments
-<a name="best-practices-for-mcp-deployments"></a>
 
 The [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) provides a set of proven principles for building secure, reliable, and efficient cloud workloads. The following practices are most relevant when you deploy MCP servers in production.
 + **Apply least-privilege access: **Grant every component — whether a function, container, or instance — only the permissions it needs for its specific task. Avoid wildcard resource permissions. Use short-lived credentials wherever possible, and don't store long-lived credentials on compute resources.

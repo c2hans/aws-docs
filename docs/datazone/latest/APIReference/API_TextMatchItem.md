@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_TextMat
 ---
 
 # TextMatchItem
-<a name="API_TextMatchItem"></a>
 
 A structure indicating matched terms for an attribute.
 

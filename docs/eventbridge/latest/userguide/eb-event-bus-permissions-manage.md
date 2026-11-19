@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bu
 ---
 
 # Managing event bus permissions in Amazon EventBridge
-<a name="eb-event-bus-permissions-manage"></a>
 
 Use the following procedure to modify the permissions for an existing event bus. For information about how to use CloudFormation to create an event bus policy, see [AWS::Events::EventBusPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-events-eventbuspolicy.html).
 

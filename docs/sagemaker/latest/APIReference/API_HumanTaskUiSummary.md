@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanT
 ---
 
 # HumanTaskUiSummary
-<a name="API_HumanTaskUiSummary"></a>
 
 Container for human task user interface information.
 

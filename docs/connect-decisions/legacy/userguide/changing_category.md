@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/chang
 ---
 
 # Demand plan
-<a name="changing_category"></a>
 
 After the forecast is generated, you can review the forecast values on the **Demand Plan** tab. The **Enterprise demand plan** is a single workbook that serves as a collaborative platform to work together. It provides a centralized location for you to consolidate and synchronize the forecasting effort.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/routingcontr
 ---
 
 # DescribeRoutingControl, DeleteRoutingControl
-<a name="routingcontrol-routingcontrolarn"></a>
 
 ## URI
 <a name="routingcontrol-routingcontrolarn-url"></a>

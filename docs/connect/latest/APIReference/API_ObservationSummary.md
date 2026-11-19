@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Observat
 ---
 
 # ObservationSummary
-<a name="API_ObservationSummary"></a>
 
 Contains summary statistics about a test case execution.
 

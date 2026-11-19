@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/tv.html
 ---
 
 # .tv
-<a name="tv"></a>
 
 Used for information about television and media.
 

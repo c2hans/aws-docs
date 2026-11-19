@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.6] Use general-purpose programming languages to generate Infrastructure-as-Code
-<a name="dl.eac.6-use-general-purpose-programming-languages-to-generate-infrastructure-as-code"></a>
 
  **Category:** RECOMMENDED
 

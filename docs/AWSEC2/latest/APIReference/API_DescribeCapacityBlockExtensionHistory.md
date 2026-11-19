@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityBlockExtensionHistory
-<a name="API_DescribeCapacityBlockExtensionHistory"></a>
 
 Describes the events for the specified Capacity Block extension during the specified time.
 

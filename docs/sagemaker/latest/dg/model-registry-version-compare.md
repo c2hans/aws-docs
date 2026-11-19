@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-versi
 ---
 
 # Compare Model Versions
-<a name="model-registry-version-compare"></a>
 
 As you generate model versions, you might want to compare models versions by viewing relevant model quality metrics side-by-side. For example, you might want to track accuracy by comparing mean squared error (MSE) values, or you might decide to remove models that perform poorly on selected measures. The following procedure shows you how to set up model version comparison in Model Registry using the Amazon SageMaker Studio Classic console.
 

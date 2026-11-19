@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpn
 ---
 
 # ModifyVpnTunnelOptionsSpecification
-<a name="API_ModifyVpnTunnelOptionsSpecification"></a>
 
 The AWS Site-to-Site VPN tunnel options to modify.
 

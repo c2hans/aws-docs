@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Compu
 ---
 
 # ComputeCapacity
-<a name="API_ComputeCapacity"></a>
 
 Describes the capacity for a fleet.
 

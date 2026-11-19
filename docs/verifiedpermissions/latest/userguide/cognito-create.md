@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cog
 ---
 
 # Creating Amazon Verified Permissions Amazon Cognito identity sources
-<a name="cognito-create"></a>
 
 The following procedure adds an identity source to an existing policy store.
 

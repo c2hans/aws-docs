@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioBedrockChatAgentUserRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioBedrockChatAgentUserRolePolicy"></a>
 
 This policy provides access to an Amazon Bedrock chat agent app's configuration and Amazon Bedrock agent in Amazon SageMaker Unified Studio.
 

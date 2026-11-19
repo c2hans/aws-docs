@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/launch-windows-issu
 ---
 
 # Windows post-launch issues
-<a name="launch-windows-issues"></a>
 
 This topic covers Windows-specific issues that can occur after you launch drill or recovery instances with AWS Elastic Disaster Recovery.
 

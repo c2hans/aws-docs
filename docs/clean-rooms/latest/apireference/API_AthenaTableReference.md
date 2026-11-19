@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Athe
 ---
 
 # AthenaTableReference
-<a name="API_AthenaTableReference"></a>
 
  A reference to a table within Athena.
 

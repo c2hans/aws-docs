@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-multi-cluster-
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure multi-cluster target groups
-<a name="auto-multi-cluster-target-groups"></a>
 
 By default, the Amazon EKS Auto Mode load balancer controller assumes full control over the target groups it configures. When a target group is registered with the controller, it deregisters any targets that aren’t currently in the cluster. This ensures the target group reflects the exact set of targets managed by that cluster.
 

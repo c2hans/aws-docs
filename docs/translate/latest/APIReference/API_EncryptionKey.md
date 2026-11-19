@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Encryp
 ---
 
 # EncryptionKey
-<a name="API_EncryptionKey"></a>
 
 The encryption key used to encrypt this object.
 

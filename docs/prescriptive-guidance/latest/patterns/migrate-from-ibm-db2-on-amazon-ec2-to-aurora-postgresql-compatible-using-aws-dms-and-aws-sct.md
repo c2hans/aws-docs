@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from IBM Db2 on Amazon EC2 to Aurora PostgreSQL-Compatible using AWS DMS and AWS SCT
-<a name="migrate-from-ibm-db2-on-amazon-ec2-to-aurora-postgresql-compatible-using-aws-dms-and-aws-sct"></a>
 
 *Sirsendu Halder and Abhimanyu Chhabra, Amazon Web Services*
 

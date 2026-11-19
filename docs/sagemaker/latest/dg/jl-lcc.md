@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jl-lcc.html
 ---
 
 # Lifecycle configurations with JupyterLab
-<a name="jl-lcc"></a>
 
 Lifecycle configurations are shell scripts that are triggered by JupyterLab lifecycle events, such as starting a new JupyterLab notebook. You can use lifecycle configurations to automate customization for your JupyterLab environment. This customization includes installing custom packages, configuring notebook extensions, preloading datasets, and setting up source code repositories.
 

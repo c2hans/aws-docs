@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Wave Planning Management (WPM)
-<a name="wave-planning-management"></a>
 
 Wave Planning Management (WPM) is a feature that helps you organize and schedule your migration workloads in an optimal way. It allows you to break down large migration projects into manageable "waves" while considering various technical constraints and business requirements.
 

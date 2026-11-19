@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteIAMUser`
-<a name="automation-aws-delete-iam-user"></a>
 
  **Description**
 

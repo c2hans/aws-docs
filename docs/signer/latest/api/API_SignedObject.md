@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SignedObject.html
 ---
 
 # SignedObject
-<a name="API_SignedObject"></a>
 
 Points to an `S3SignedObject` object that contains information about your signed code image.
 

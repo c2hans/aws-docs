@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/remediate-compromise
 ---
 
 # Remediating a potentially compromised standalone container
-<a name="remediate-compromised-standalone-container"></a>
 
 When GuardDuty generates [finding types that indicate potentially compromised container](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html#findings-table), your **Resource type** will be **Container**. If the behavior that caused the finding was expected in your environment, then consider using [Suppression rules](findings_suppression-rule.md).
 

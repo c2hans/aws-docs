@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Check MFA status
-<a name="id_credentials_mfa_checking-status"></a>
 
 Use the IAM console to check whether an AWS account root user or IAM user has a valid MFA device enabled.
 

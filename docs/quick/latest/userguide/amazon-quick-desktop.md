@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-desk
 ---
 
 # AWS Quick on desktop
-<a name="amazon-quick-desktop"></a>
 
 AWS Quick on desktop is an agentic AI teammate that connects to your local files and the tools you use every day. It builds an understanding of your work that deepens over time, so it provides relevant, personalized assistance. Agents take on work you delegate, follow through independently, and bring you the results.
 

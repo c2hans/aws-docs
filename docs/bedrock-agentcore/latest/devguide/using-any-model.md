@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/using-
 ---
 
 # Use any foundation model
-<a name="using-any-model"></a>
 
 You can use any foundation model with AgentCore Runtime The following are examples for Amazon Bedrock, Open AI, Gemini and Fireworks AI:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Data engineering
-<a name="data-eng"></a>
 
 **Automate and orchestrate data flows across your organization. **
 

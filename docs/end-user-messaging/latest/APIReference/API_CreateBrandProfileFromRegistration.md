@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # CreateBrandProfileFromRegistration
-<a name="API_CreateBrandProfileFromRegistration"></a>
 
 Creates a brand profile and populates its attributes from an existing registration. This operation runs asynchronously. Use the GetJob operation to track its progress.
 

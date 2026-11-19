@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/create-entitlements
 ---
 
 # Create Windows Server entitlements
-<a name="create-entitlements"></a>
 
 After you create a vCenter connector, you can create Windows Server entitlements for one or more virtual machines (VMs) in your Amazon Elastic VMware Service environment. After you create an entitlement, Amazon EVS starts to monitor the Windows Server entitlement usage of that VM. You can create entitlements for up to 100 VMs in a single request. You can use the Amazon EVS console or the AWS CLI.
 

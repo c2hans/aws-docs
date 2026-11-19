@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK Message Template API
-<a name="api-reference-3P-apps-message-template-client"></a>
 
 The Connect Customer SDK provides a `MessageTemplateClient` which serves as an interface that you can use to make requests to search and get content from your Connect Customer Message Template Knowledge Base.
 

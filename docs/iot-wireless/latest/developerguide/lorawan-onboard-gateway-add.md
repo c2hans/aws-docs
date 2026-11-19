@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Add a gateway to AWS IoT Core for LoRaWAN
-<a name="lorawan-onboard-gateway-add"></a>
 
 You can add your gateway to AWS IoT Core for LoRaWAN by using the console or the CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteVpcEndpointAssociation
-<a name="API_DeleteVpcEndpointAssociation"></a>
 
 Deletes the specified [VpcEndpointAssociation](API_VpcEndpointAssociation.md).
 

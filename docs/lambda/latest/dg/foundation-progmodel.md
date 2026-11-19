@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/foundation-progmodel.ht
 ---
 
 # Understanding the Lambda programming model
-<a name="foundation-progmodel"></a>
 
 Lambda Event Functions run for up to 15 minutes per invocation by default. Asynchronous and event source mapping (ESM) invocations on Lambda Managed Instances can run for up to 90 minutes. Durable Functions can run for up to one year. While both share core concepts, Durable Functions add capabilities for long-running, stateful workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/my.html
 ---
 
 # .my (Malaysia)
-<a name="my"></a>
 
 **Important**
 Since August 2024, .my domains cannot be registered by residents of Israel. This restriction applies to both new registrations and modifications, including changes of address to an Israeli location.

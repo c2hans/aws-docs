@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Strategies for building a data mesh-based enterprise solution on AWS
-<a name="introduction"></a>
 
 *Dhrubajyoti Mukherjee, Adjoa Taylor, and Siva Venkat, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-fo
 ---
 
 # Migrating from FOCUS 1.0 to FOCUS 1.2
-<a name="table-dictionary-focus-1-2-migrating"></a>
 
 AWS Data Exports allows you to create exports of FOCUS 1.2 with AWS columns, which provides the same standardized cost and usage information as FOCUS 1.0 along with several enhancements for invoice reconciliation, capacity reservation tracking, and SaaS integration. However, FOCUS 1.2 introduces breaking changes that affect existing row counts and column values. Review these changes carefully before migrating.
 

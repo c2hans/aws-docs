@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/fundamentals.html
 ---
 
 # Fundamentals for the AWS SDK for Rust
-<a name="fundamentals"></a>
 
 Learn fundamentals for programming with the AWS SDK for Rust, such as: Rust programming language fundamentals, information about SDK for Rust crates, project configuration, and SDK for Rust's use of the Tokio runtime.
 

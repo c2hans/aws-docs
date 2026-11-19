@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/archguide/permissions-ex
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # IAM role for exporting endpoints or segments
-<a name="permissions-export-endpoints"></a>
 
 You can obtain a list of endpoints by creating an export job. When you create an export job, you must specify a project ID, and you can optionally specify a segment ID. Amazon Pinpoint then exports a list of the endpoints associated with the project or segment to an Amazon Simple Storage Service (Amazon S3) bucket. The resulting file contains a JSON-formatted list of endpoints and their attributes, such as channel, address, opt-in/opt-out status, creation date, and endpoint ID.
 

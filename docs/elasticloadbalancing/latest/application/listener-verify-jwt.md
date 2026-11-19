@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Verify JWTs using an Application Load Balancer
-<a name="listener-verify-jwt"></a>
 
 You can configure an Application Load Balancer (ALB) to verify JSON Web Tokens (JWT) provided by clients for secure service-to-service (S2S) or machine-to-machine (M2M) communications. The load balancer can verify a JWT no matter how it was issued and without human interaction.
 

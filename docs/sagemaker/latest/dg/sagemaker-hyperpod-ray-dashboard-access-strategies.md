@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Access strategies and security best practices
-<a name="sagemaker-hyperpod-ray-dashboard-access-strategies"></a>
 
 An access strategy sets who can reach a Ray cluster's dashboard and Jobs API endpoint. You set it with annotations on the Ray resource.
 

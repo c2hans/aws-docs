@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Share
 ---
 
 # SharedViewConfigurations
-<a name="API_SharedViewConfigurations"></a>
 
 The shared view settings of an embedded dashboard.
 

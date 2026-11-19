@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AddTrustStoreRevocations
-<a name="API_AddTrustStoreRevocations"></a>
 
 Adds the specified revocation file to the specified trust store.
 

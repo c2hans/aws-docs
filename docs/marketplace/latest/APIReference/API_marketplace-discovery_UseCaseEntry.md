@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UseCaseEntry
-<a name="API_marketplace-discovery_UseCaseEntry"></a>
 
 An entry in the list of use cases for a listing.
 

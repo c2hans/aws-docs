@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/step
 ---
 
 # Step 3: Accept shared directory invite - Optional
-<a name="step3_accept_invite"></a>
 
 If you chose the **Share this directory with other AWS accounts** (handshake method) option in the previous procedure, you should use this procedure to finish the shared directory workflow. If you chose the **Share this directory with AWS accounts inside your organization** option, skip this step and proceed to Step 4.
 

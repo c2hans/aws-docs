@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RevenuePathS
 ---
 
 # RevenuePathStatistics
-<a name="API_RevenuePathStatistics"></a>
 
 Revenue statistics for a single content path, including the path, revenue amount, and request count.
 

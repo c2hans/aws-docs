@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/ready-c
 ---
 
 # Designing the cluster
-<a name="ready-conductor-live-cg"></a>
 
 You should make some decisions about features you want to configure on the cluster.
 

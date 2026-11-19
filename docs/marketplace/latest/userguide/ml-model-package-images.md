@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-model-pa
 ---
 
 # Creating model package images
-<a name="ml-model-package-images"></a>
 
 An Amazon SageMaker AI model package is a pre-trained model that makes predictions and does not require any further training by the buyer. You can create a model package in SageMaker AI and publish your machine learning product on AWS Marketplace. The following sections you how to create a model package for AWS Marketplace. This includes creating the container image and building and testing the image locally.
 

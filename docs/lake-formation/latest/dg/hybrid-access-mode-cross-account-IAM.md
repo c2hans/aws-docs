@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-access-m
 ---
 
 # Sharing a Lake Formation resource using hybrid access mode
-<a name="hybrid-access-mode-cross-account-IAM"></a>
 
 Allow new Data Catalog users in an external account to access Data Catalog databases and tables using IAM based policies without interrupting the existing Lake Formation cross-account sharing permissions.
 

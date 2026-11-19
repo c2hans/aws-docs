@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableR
 ---
 
 # TableRecordExpirationJobMetrics
-<a name="API_s3Buckets_TableRecordExpirationJobMetrics"></a>
 
 Provides metrics for the record expiration job that most recently ran for a table. The metrics provide insight into the amount of data that was removed when the job ran.
 

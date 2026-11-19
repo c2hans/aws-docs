@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Security best practices for AgentCore Runtime
-<a name="runtime-security-best-practices"></a>
 
 This topic consolidates security best practices for Amazon Bedrock AgentCore Runtime. Use these recommendations to secure your agent deployments, protect data, and follow the principle of least privilege.
 

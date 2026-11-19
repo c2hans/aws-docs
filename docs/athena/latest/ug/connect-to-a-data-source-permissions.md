@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-sourc
 ---
 
 # Permissions to create and use a data source in Athena
-<a name="connect-to-a-data-source-permissions"></a>
 
 ## AWS Glue Data Catalog federated connectors without Lambda permissions
 <a name="connect-to-a-data-source-permissions-managed"></a>

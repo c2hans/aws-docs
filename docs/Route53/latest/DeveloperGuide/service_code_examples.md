@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/service_co
 ---
 
 # Code examples for Route 53 using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Route 53 with an AWS software development kit (SDK).
 

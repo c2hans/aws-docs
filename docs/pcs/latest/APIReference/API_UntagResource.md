@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UntagResourc
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes tags from an AWS PCS resource. To delete a tag, specify the tag key and the Amazon Resource Name (ARN) of the AWS PCS resource.
 

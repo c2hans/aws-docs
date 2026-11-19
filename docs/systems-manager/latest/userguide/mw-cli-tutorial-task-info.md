@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Tutorial: View information about tasks and task executions using the AWS CLI
-<a name="mw-cli-tutorial-task-info"></a>
 
 This tutorial demonstrates how to use the AWS Command Line Interface (AWS CLI) to view details about your completed maintenance window tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/gdu-assess-coverage-
 ---
 
 # Runtime coverage and troubleshooting for Amazon EC2 instance
-<a name="gdu-assess-coverage-ec2"></a>
 
 For an Amazon EC2 resource, the runtime coverage is evaluated at the instance level. Coverage for Amazon EC2 also reflects the instance-level status for Amazon ECS clusters running on Amazon EC2 instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/managin
 ---
 
 # Enable Internet Access for Your Image Builder in Amazon WorkSpaces Applications
-<a name="managing-network-manual-enable-internet-access-image-builder"></a>
 
 If you plan to enable internet access for your image builder, you must do so when you create the image builder.
 

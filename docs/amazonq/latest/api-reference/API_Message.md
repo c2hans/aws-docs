@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Message
 ---
 
 # Message
-<a name="API_Message"></a>
 
 A message in an Amazon Q Business web experience.
 

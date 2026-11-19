@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-selectab
 ---
 
 # Selection Elements
-<a name="how-it-works-selectables"></a>
 
 Amazon Textract can detect selection elements such as option buttons (radio buttons), check boxes, underlined, and circled text on a document page. Selection elements can be detected in [form data](how-it-works-kvp.md) and in [tables](how-it-works-tables.md). For example, when the following table is detected on a form, Amazon Textract detects the check boxes in the table cells.
 

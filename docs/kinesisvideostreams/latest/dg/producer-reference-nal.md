@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-r
 ---
 
 # Network Abstraction Layer (NAL) adaptation flag reference
-<a name="producer-reference-nal"></a>
 
 This section contains information about available flags for the `StreamInfo.NalAdaptationFlags` enumeration.
 

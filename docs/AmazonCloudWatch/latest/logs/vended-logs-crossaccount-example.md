@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/vended-logs
 ---
 
 # Cross-account delivery example
-<a name="vended-logs-crossaccount-example"></a>
 
 In this example, two accounts are involved. The account with the log-generating resource is Account A, ID: {{123456789012}}, and the account with the log-consuming resource is Account B, ID: {{111122223333}}.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_L
 ---
 
 # ListTagsForResource
-<a name="API_qapps_ListTagsForResource"></a>
 
 Lists the tags associated with an Amazon Q Apps resource.
 

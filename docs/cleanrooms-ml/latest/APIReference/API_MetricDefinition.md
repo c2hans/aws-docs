@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Me
 ---
 
 # MetricDefinition
-<a name="API_MetricDefinition"></a>
 
 Information about the model metric that is reported for a trained model.
 

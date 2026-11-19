@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Blog: Estimated delivery time notifications
-<a name="example-delivery-notifications"></a>
 
 ![Map showing a delivery route with distance indicator, demonstrating Amazon Location Service proximity-based geofence notifications for estimated delivery time alerts.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/proximity-notifications_small.png)
 

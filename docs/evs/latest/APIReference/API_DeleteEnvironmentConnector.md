@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_DeleteEnviro
 ---
 
 # DeleteEnvironmentConnector
-<a name="API_DeleteEnvironmentConnector"></a>
 
 Deletes a connector from an Amazon EVS environment.
 

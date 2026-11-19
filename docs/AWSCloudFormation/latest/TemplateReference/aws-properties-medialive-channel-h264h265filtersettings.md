@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel H264H265FilterSettings
-<a name="aws-properties-medialive-channel-h264h265filtersettings"></a>
 
 <a name="aws-properties-medialive-channel-h264h265filtersettings-description"></a>The `H264H265FilterSettings` property type specifies Property description not available. for an [AWS::MediaLive::Channel](aws-resource-medialive-channel.md).
 

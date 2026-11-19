@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateTest
 ---
 
 # UpdateTestSet
-<a name="API_UpdateTestSet"></a>
 
 The action to update the test set.
 

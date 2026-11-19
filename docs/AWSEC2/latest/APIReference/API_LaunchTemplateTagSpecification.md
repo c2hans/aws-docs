@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateTagSpecification
-<a name="API_LaunchTemplateTagSpecification"></a>
 
 The tags specification for the launch template.
 

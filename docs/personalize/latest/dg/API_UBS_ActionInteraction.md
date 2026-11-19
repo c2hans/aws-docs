@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_ActionInte
 ---
 
 # ActionInteraction
-<a name="API_UBS_ActionInteraction"></a>
 
 Represents an action interaction event sent using the `PutActionInteractions` API.
 

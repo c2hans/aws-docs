@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/service-vpc
 ---
 
 # service-vpc-endpoint-enabled
-<a name="service-vpc-endpoint-enabled"></a>
 
 Checks if Service Endpoint for the service provided in rule parameter is created for each Amazon Virtual Private Cloud (Amazon VPC). The rule is NON\_COMPLIANT if an Amazon VPC doesn't have an Amazon VPC endpoint created for the service.
 

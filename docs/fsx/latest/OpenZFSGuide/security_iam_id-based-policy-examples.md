@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/security_iam_id-
 ---
 
 # Identity-based policy examples for Amazon FSx for OpenZFS
-<a name="security_iam_id-based-policy-examples"></a>
 
 **Topics**
 + [Policy best practices](#security_iam_service-with-iam-policy-best-practices)

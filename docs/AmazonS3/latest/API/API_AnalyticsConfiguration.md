@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnalyticsConfigu
 ---
 
 # AnalyticsConfiguration
-<a name="API_AnalyticsConfiguration"></a>
 
 Specifies the configuration and any analyses for the analytics filter of an Amazon S3 bucket.
 

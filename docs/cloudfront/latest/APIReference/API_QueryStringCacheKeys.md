@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Query
 ---
 
 # QueryStringCacheKeys
-<a name="API_QueryStringCacheKeys"></a>
 
 This field is deprecated. We recommend that you use a cache policy or an origin request policy instead of this field.
 

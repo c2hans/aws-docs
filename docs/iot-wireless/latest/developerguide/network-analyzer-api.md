@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Stream network analyzer trace messages with WebSockets
-<a name="network-analyzer-api"></a>
 
 Using the network analyzer API provided by AWS IoT Core for LoRaWAN, you can gain insights into the health and performance of your LoRaWAN network. This API provides visibility into various network metrics, including packet delivery rates, signal strengths, and device connectivity. Using the network analyzer API, you can identify and address potential issues in advance, which ensures reliable and efficient communication between your LoRaWAN devices and the cloud.
 

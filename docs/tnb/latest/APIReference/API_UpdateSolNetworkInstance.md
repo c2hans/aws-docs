@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateSolNet
 ---
 
 # UpdateSolNetworkInstance
-<a name="API_UpdateSolNetworkInstance"></a>
 
 Update a network instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Retr
 ---
 
 # RetryInfo
-<a name="API_RetryInfo"></a>
 
 Contains information about whether running a failed protected query or protected job again might succeed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connector-
 ---
 
 # Connector APIs
-<a name="action-connector-apis"></a>
 
 Connector APIs let you programmatically create and manage connections between AWS Quick and external services. These APIs support the action integration functionality that allows users to perform actions in third-party applications directly from AWS Quick chat interfaces and automated workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # ClinicalNoteGenerationSettings
-<a name="API_streaming_ClinicalNoteGenerationSettings"></a>
 
 The output configuration for aggregated transcript and clinical note generation.
 

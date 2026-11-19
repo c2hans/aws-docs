@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::ConfigurationPolicy
-<a name="aws-resource-securityhub-configurationpolicy"></a>
 
  The `AWS::SecurityHub::ConfigurationPolicy` resource creates a central configuration policy with the defined settings. Only the AWS Security Hub CSPM delegated administrator can create this resource in the home Region. For more information, see [Central configuration in Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/central-configuration-intro.html) in the *AWS Security Hub CSPM User Guide*.
 

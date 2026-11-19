@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sigv4-HTT
 ---
 
 # Creating an HTML Form (Using AWS Signature Version 4)
-<a name="sigv4-HTTPPOSTForms"></a>
 
 **Topics**
 + [HTML Form Declaration](#HTTPPOSTFormDeclaration)

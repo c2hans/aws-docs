@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrail-profi
 ---
 
 # Permissions for using cross-Region inference with Amazon Bedrock Guardrails
-<a name="guardrail-profiles-permissions"></a>
 
 Using [cross-Region inference](guardrails-cross-region.md) with Amazon Bedrock Guardrails requires adding specific permissions to your IAM role, including allowing access to guardrail profiles in other Regions.
 

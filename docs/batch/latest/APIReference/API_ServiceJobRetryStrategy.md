@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobRetryStrategy
-<a name="API_ServiceJobRetryStrategy"></a>
 
 The retry strategy for service jobs. This defines how many times to retry a failed service job and under what conditions. For more information, see [Service job retry strategies](https://docs.aws.amazon.com/batch/latest/userguide/service-job-retries.html) in the * AWS Batch User Guide*.
 

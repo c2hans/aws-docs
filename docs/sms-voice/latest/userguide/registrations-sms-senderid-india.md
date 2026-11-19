@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # India sender ID registration process in AWS End User Messaging SMS
-<a name="registrations-sms-senderid-india"></a>
 
 There are two ways to send SMS messages to recipients in India: *international routes* and *local routes*.
 

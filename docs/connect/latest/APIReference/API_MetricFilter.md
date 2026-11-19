@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricFi
 ---
 
 # MetricFilter
-<a name="API_MetricFilter"></a>
 
 A filter condition applied to a metric component in a calculation. Filters restrict the data included in the metric computation.
 

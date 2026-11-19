@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRu
 ---
 
 # UpdateRule
-<a name="API_UpdateRule"></a>
 
 Updates a rule for the specified Connect Customer instance.
 

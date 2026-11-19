@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/memory-cpu-batch-
 ---
 
 # Memory and vCPU considerations for AWS Batch on Amazon EKS
-<a name="memory-cpu-batch-eks"></a>
 
 In AWS Batch on Amazon EKS, you can specify the resources that are made available to a container. For example, you can specify `requests` or `limits` values for vCPU and memory resources.
 

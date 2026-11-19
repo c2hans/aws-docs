@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attrib
 ---
 
 # Specify attributes for instance type selection for EC2 Fleet or Spot Fleet
-<a name="ec2-fleet-attribute-based-instance-type-selection"></a>
 
 When you create an EC2 Fleet or Spot Fleet, you must specify one or more instance types for configuring the On-Demand Instances and Spot Instances in the fleet. As an alternative to manually specifying the instance types, you can specify the attributes that an instance must have, and Amazon EC2 will identify all the instance types with those attributes. This is known as *attribute-based instance type selection*. For example, you can specify the minimum and maximum number of vCPUs required for your instances, and the fleet will launch the instances using any available instance types that meet those vCPU requirements.
 

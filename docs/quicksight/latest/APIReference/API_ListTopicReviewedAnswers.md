@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListTopicReviewedAnswers
-<a name="API_ListTopicReviewedAnswers"></a>
 
 Lists all reviewed answers for a Q Topic.
 

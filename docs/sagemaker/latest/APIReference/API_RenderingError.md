@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Render
 ---
 
 # RenderingError
-<a name="API_RenderingError"></a>
 
 A description of an error that occurred while rendering the template.
 

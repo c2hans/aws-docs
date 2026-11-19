@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/cli-telemetry.html
 ---
 
 # Configure AWS CDK CLI telemetry
-<a name="cli-telemetry"></a>
 
 ## What is CDK CLI telemetry?
 <a name="telemetry-intro"></a>

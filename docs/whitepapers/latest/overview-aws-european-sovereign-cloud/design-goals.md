@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-european
 ---
 
 # Design goals
-<a name="design-goals"></a>
 
 Our approach to designing the AWS European Sovereign Cloud is to build upon the sovereign-by-design features of our existing global infrastructure and over a decade of experience operating multiple independent clouds for the most critical and restricted workloads. We designed the AWS European Sovereign Cloud to meet the stringent regulatory, data residency, and operational needs of our customers without compromise to the performance, innovation, security, or scale of the AWS Cloud. The AWS European Sovereign Cloud will be the only fully featured, independently operated sovereign cloud backed by strong technical controls, sovereign assurances, and legal protections designed to meet the needs of European governments and enterprises.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteDomainLayout
-<a name="API_connect-customer-profiles_DeleteDomainLayout"></a>
 
 Deletes the layout used to view data for a specific domain. This API can only be invoked from the Amazon Connect admin website.
 

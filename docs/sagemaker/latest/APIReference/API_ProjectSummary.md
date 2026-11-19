@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Projec
 ---
 
 # ProjectSummary
-<a name="API_ProjectSummary"></a>
 
 Information about a project.
 

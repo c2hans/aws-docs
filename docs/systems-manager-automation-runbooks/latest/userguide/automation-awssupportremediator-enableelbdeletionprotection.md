@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableElbDeletionProtection`
-<a name="automation-awssupportremediator-enableelbdeletionprotection"></a>
 
 **Description**
 

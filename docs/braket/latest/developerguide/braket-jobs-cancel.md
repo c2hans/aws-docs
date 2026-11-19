@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Cancel a Hybrid Job
-<a name="braket-jobs-cancel"></a>
 
 You may need to cancel a hybrid job in a non-terminal state. This can be done either in the console or with code.
 

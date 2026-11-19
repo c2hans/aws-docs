@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/service_code_example
 ---
 
 # Code examples for Firehose using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Firehose with an AWS software development kit (SDK).
 

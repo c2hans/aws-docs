@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Design considerations
-<a name="design-considerations"></a>
 
 ## One-way scheduled export
 <a name="one-way-scheduled-export"></a>

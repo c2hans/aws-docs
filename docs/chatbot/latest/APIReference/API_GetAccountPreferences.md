@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_GetAccou
 ---
 
 # GetAccountPreferences
-<a name="API_GetAccountPreferences"></a>
 
 Returns Amazon Q Developer account preferences.
 

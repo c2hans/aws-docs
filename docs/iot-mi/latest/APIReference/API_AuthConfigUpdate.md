@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_AuthConfi
 ---
 
 # AuthConfigUpdate
-<a name="API_AuthConfigUpdate"></a>
 
 The updated authentication configuration details for a connector destination.
 

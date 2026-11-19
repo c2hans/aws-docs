@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-s2110-pu
 ---
 
 # Create a SMPTE 2110 input
-<a name="setup-input-s2110-pull"></a>
 
 After you have obtained information from the upstream system, you can create a SMPTE 2110 input.
 

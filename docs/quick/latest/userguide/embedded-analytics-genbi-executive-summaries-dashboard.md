@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Enabling executive summaries in embedded dashboards
-<a name="embedded-analytics-genbi-executive-summaries-dashboard"></a>
 
 |  |
 | --- |

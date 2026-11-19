@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # ListEvents
-<a name="API_ListEvents"></a>
 
 Lists the events in a session, sorted by time. Optionally limit the results to events whose `eventTimestamp` falls between `eventTimestampAfter` and `eventTimestampBefore`. Returns event metadata only. Call `GetEvent` for the payload. For full-text or relevance search, use `SearchEvents`.
 

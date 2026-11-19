@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/monday-support.html
 ---
 
 # AWS Glue support for Monday
-<a name="monday-support"></a>
 
 AWS Glue supports Monday as follows:
 

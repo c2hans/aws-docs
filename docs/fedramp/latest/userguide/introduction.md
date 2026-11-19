@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/introduction.ht
 ---
 
 # AWS FedRAMP Rev5 Secure Configuration Guidance
-<a name="introduction"></a>
 
 Comprehensive security configuration guidance for AWS accounts and services aligned with FedRAMP Revision 5 Secure Configuration Guidance (SCG) requirements. This site contains FedRAMP specific guidance for AWS services. These guidances are provided as a point in time reference to how to configure AWS services and AWS top-level administration accounts in a secure fashion to align with FedRAMP.
 

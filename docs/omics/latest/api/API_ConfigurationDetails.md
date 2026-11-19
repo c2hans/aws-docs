@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ConfigurationDetail
 ---
 
 # ConfigurationDetails
-<a name="API_ConfigurationDetails"></a>
 
 Minimal details for a configuration resource.
 

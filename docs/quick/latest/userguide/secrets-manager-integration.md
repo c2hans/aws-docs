@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/secrets-manager-i
 ---
 
 # Using AWS Secrets Manager secrets instead of database credentials in Quick
-<a name="secrets-manager-integration"></a>
 
 |  |
 | --- |

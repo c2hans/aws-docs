@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # TransformedLogRecord
-<a name="API_TransformedLogRecord"></a>
 
 This structure contains information for one log event that has been processed by a log transformer.
 

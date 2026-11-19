@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Inspecting inbound traffic from the internet using firewall appliances with Gateway Load Balancer
-<a name="inspecting-inbound-traffic-fa"></a>
 
 Customers use third-party next-generation firewalls (NGFW) and intrusion prevention systems (IPS) as part of their defense in depth strategy. Traditionally these often are dedicated hardware or software/virtual appliances. You can use Gateway Load Balancer to scale these virtual appliances horizontally to inspect traffic from and to your VPC, as shown in the following figure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Formula expression tutorials
-<a name="expression-tutorials"></a>
 
 You can follow these tutorials to use formula expressions in AWS IoT SiteWise.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/lambda-func
 ---
 
 # lambda-function-settings-check
-<a name="lambda-function-settings-check"></a>
 
 Checks if the AWS Lambda function settings for runtime, role, timeout, and memory size match the expected values. The rule ignores functions with the 'Image' package type and functions with runtime set to 'OS-only Runtime'. The rule is NON\_COMPLIANT if the Lambda function settings do not match the expected values.
 

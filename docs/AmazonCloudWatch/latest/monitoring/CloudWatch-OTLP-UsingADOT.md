@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Exporting collector-less telemetry using AWS Distro for OpenTelemetry (ADOT) SDK
-<a name="CloudWatch-OTLP-UsingADOT"></a>
 
 You can use the ADOT SDKs to go collector-less and to send metrics, traces and logs directly to the OTLP endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Set up to launch AWS Service Catalog products created with AWS Launch Wizard
-<a name="launch-wizard-sap-service-catalog-setup"></a>
 
 This section provides the required steps to grant permissions to the user group. This requirement must be met to access AWS Service Catalog products created with Launch Wizard to launch those products.
 

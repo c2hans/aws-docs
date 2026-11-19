@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Learn how EKS Pod Identity grants pods access to AWS services
-<a name="pod-identities"></a>
 
 EKS Pod Identity works unchanged with isolated and confidential pods that run in Nitro Sandboxes. The credential endpoint is available inside the sandbox, and your existing Pod Identity associations apply the same way as for standard pods. No additional configuration is required. For more information, see [Pod Identity and credentials](sandboxing-metadata-credentials.md).
 

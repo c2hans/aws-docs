@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcIpv6Ci
 ---
 
 # VpcIpv6CidrBlockAssociation
-<a name="API_VpcIpv6CidrBlockAssociation"></a>
 
 Describes an IPv6 CIDR block associated with a VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-updates-es
 ---
 
 # Tutorial: Perform OTA updates on Espressif ESP32 using FreeRTOS Bluetooth Low Energy
-<a name="ota-updates-esp32-ble"></a>
 
 **Important**  <a name="deprecation-message"></a>
 This reference integration is hosted on the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).

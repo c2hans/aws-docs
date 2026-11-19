@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerHyperPodServiceRolePolicy
-<a name="AmazonSageMakerHyperPodServiceRolePolicy"></a>
 
 **Description**: This policy grants permissions to Amazon SageMaker HyperPod to related AWS services such as Amazon EKS, Amazon CloudWatch etc.
 

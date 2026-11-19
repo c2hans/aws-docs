@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC05-BP02 Empower regional teams
-<a name="dssec05-bp02"></a>
 
  Regulatory requirements change on local timelines, and a central team can't track every jurisdiction's changes fast enough to keep regional workloads compliant. Regional teams that understand their local regulations can respond faster, but only if they have authority to act within boundaries that protect the organization's security baseline. The balance to strike is delegating enough autonomy to move quickly while keeping the controls that must stay consistent, such as security baselines and data residency, non-negotiable.
 

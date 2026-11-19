@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/cur-ate-run.html
 ---
 
 # Running Amazon Athena queries
-<a name="cur-ate-run"></a>
 
 To run Athena queries on your data, first use the Athena console to check whether AWS is refreshing your data and then run your query on the Athena console. When you run your SQL, make sure that the correct database is selected from the dropdown list. You can use the following SQL to check the status.
 

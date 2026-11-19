@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.AWE.2] Offer inclusive options for both virtual and on-site collaboration
-<a name="oa.awe.2-offer-inclusive-options-for-both-virtual-and-onsite-collaboration"></a>
 
  **Category:** FOUNDATIONAL
 

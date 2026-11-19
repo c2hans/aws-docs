@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/urls-monitoring.html
 ---
 
 # Monitoring Lambda function URLs
-<a name="urls-monitoring"></a>
 
 You can use AWS CloudTrail and Amazon CloudWatch to monitor your function URLs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/quotasinfo
 ---
 
 # Accessing service quota information in the AWS Management Console
-<a name="quotasinfo"></a>
 
 If you have the necessary permissions, you can access information about service quotas from the console.
 

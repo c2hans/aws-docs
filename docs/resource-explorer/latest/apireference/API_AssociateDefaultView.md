@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # AssociateDefaultView
-<a name="API_AssociateDefaultView"></a>
 
 Sets the specified view as the default for the AWS Region in which you call this operation. When a user performs a [Search](API_Search.md) that doesn't explicitly specify which view to use, then AWS Resource Explorer automatically chooses this default view for searches performed in this AWS Region.
 

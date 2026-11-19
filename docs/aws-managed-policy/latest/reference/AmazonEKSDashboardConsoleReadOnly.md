@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSDashboardConsoleReadOnly
-<a name="AmazonEKSDashboardConsoleReadOnly"></a>
 
 **Description**: Provides read only access to view the dashboard in the Amazon EKS console. The dashboard aggregates information about multiple clusters and related resources using AWS Organizations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.ReloadTa
 ---
 
 # Reloading tables during a task
-<a name="CHAP_Tasks.ReloadTables"></a>
 
 While a task is running, you can reload a target database table using data from the source. You might want to reload a table if, during the task, an error occurs or data changes due to partition operations (for example, when using Oracle). You can reload up to 10 tables from a task.
 

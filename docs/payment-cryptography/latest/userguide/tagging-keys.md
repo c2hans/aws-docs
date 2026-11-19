@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/ta
 ---
 
 # Tagging keys
-<a name="tagging-keys"></a>
 
 In AWS Payment Cryptography, you can add tags to a AWS Payment Cryptography key when you [create a key](create-keys.md), and tag or untag existing keys unless they are pending deletion. Tags are optional, but they can be very useful.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deployment: AWS Config account
-<a name="config-resource-log-archive"></a>
 
 ## Deployment Instructions
 <a name="deployment-instructions"></a>

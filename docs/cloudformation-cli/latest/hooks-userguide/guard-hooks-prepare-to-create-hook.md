@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Prepare to create a Guard Hook
-<a name="guard-hooks-prepare-to-create-hook"></a>
 
 Before you create a Guard Hook, you must complete the following prerequisites:
 + You must have already created a Guard rule. For more information, see the [Write Guard rules for Hooks](guard-hooks-write-rules.md).

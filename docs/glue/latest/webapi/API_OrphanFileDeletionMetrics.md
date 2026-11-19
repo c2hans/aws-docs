@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OrphanFileDeletio
 ---
 
 # OrphanFileDeletionMetrics
-<a name="API_OrphanFileDeletionMetrics"></a>
 
 A structure that contains orphan file deletion metrics for the optimizer run.
 

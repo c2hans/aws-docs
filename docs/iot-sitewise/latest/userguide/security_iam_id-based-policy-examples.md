@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_i
 ---
 
 # AWS IoT SiteWise identity-based policy examples
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, entities (users and roles) don't have permission to create or modify AWS IoT SiteWise resources. They also can't perform tasks using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS API. To adjust permissions, an AWS Identity and Access Management (IAM) administrator must do the following:
 

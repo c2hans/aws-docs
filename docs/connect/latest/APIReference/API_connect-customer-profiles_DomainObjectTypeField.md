@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DomainObjectTypeField
-<a name="API_connect-customer-profiles_DomainObjectTypeField"></a>
 
 The standard domain object type.
 

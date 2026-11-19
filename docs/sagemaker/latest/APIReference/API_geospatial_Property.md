@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # Property
-<a name="API_geospatial_Property"></a>
 
 Represents a single searchable property to search on.
 

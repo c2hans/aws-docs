@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Metr
 ---
 
 # MetricGroupRequest
-<a name="API_MetricGroupRequest"></a>
 
 A metric group to enable for advanced monitoring.
 

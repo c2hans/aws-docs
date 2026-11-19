@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # GetRegistryCatalogData
-<a name="API_GetRegistryCatalogData"></a>
 
 Retrieves catalog metadata for a public registry.
 

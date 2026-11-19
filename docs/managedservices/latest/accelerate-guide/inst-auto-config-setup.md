@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Automated instance configuration setup
-<a name="inst-auto-config-setup"></a>
 
 Assuming the prerequisites have been met, adding a specific Amazon EC2 instance tag automatically initiates the AMS Accelerate automated instance configuration. Use one of the following methods to add this tag:
 

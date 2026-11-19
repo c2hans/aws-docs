@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeStream
-<a name="API_DescribeStream"></a>
 
 Returns the most current information about the specified stream. You must specify either the `StreamName` or the `StreamARN`.
 

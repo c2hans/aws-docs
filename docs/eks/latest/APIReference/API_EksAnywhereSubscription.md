@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_EksAnywhereS
 ---
 
 # EksAnywhereSubscription
-<a name="API_EksAnywhereSubscription"></a>
 
 An EKS Anywhere subscription authorizing the customer to support for licensed clusters and access to EKS Anywhere Curated Packages.
 

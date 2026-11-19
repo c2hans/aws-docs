@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/kubernetes-sagemaker
 ---
 
 # Migrate resources to the latest Operators
-<a name="kubernetes-sagemaker-operators-migrate"></a>
 
 We are stopping the development and technical support of the original version of [ SageMaker Operators for Kubernetes](https://github.com/aws/amazon-sagemaker-operator-for-k8s/tree/master).
 

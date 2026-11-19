@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/sal-cw-retenti
 ---
 
 # Managing log retention
-<a name="sal-cw-retention"></a>
 
 When you deliver server access logs to CloudWatch Logs, log retention is controlled by the retention setting on the log group. You set retention when you create the log group, or update it at any time using the CloudWatch Logs console, AWS CLI, or API.
 

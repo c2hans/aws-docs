@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTopicPermissions
-<a name="API_DescribeTopicPermissions"></a>
 
 Describes the permissions of a topic.
 

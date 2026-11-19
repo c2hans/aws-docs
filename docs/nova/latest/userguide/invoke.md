@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/invoke.html
 ---
 
 # Invoking Amazon Nova understanding models
-<a name="invoke"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For information on how to send a request to Amazon Nova 2, visit [Core inference](https://docs.aws.amazon.com/nova/latest/nova2-userguide/core-inference.html).

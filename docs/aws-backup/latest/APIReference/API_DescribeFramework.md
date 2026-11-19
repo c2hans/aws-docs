@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeFramework
-<a name="API_DescribeFramework"></a>
 
 Returns the framework details for the specified `FrameworkName`.
 

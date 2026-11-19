@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # View the results of a batch inference job
-<a name="batch-inference-results"></a>
 
 After a batch inference job is `Completed`, you can extract the results of the batch inference job from the files in the Amazon S3 bucket that you specified during creation of the job. To learn how to download an S3 object, see [Downloading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html). The S3 bucket contains the following files:
 

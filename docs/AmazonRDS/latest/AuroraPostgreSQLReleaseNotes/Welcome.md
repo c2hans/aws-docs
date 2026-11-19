@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLRelease
 ---
 
 # Release notes for Amazon Aurora PostgreSQL-Compatible Edition
-<a name="Welcome"></a>
 
 The Amazon Aurora PostgreSQL-Compatible Edition release notes provide details about the Aurora PostgreSQL versions and extensions that are available for Amazon Aurora.
 

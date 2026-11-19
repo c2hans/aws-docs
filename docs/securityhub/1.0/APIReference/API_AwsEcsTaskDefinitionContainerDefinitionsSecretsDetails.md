@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsSecretsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsSecretsDetails"></a>
 
 A secret to pass to the container.
 

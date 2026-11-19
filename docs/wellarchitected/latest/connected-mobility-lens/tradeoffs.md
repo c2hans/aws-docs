@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Tradeoffs
-<a name="tradeoffs"></a>
 
 | CMPERF\_14: What criteria have you identified where tradeoffs can be made?  |
 | --- |

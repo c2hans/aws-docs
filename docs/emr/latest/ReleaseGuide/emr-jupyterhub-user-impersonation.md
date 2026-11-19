@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-jupyterhub-u
 ---
 
 # User impersonation
-<a name="emr-jupyterhub-user-impersonation"></a>
 
 A Spark job running inside a Jupyter notebook traverses multiple applications during its execution on Amazon EMR. For example, PySpark3 code that a user runs inside Jupyter is received by Sparkmagic, which uses an HTTP POST request to submit it to Livy, which then creates a Spark job to execute on the cluster using YARN.
 

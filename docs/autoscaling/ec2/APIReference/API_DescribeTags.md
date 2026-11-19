@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 Describes the specified tags.
 

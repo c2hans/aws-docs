@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/cloudzero-plu
 ---
 
 # Configuring the AWS assistant CloudZero plugin
-<a name="cloudzero-plugin"></a>
 
 CloudZero is a cloud cost optimization platform that evaluates costs to improve cloud efficiency. If you use CloudZero to monitor your AWS costs, you can use the CloudZero plugin in the AWS assistant to access cost insights without leaving the AWS Management Console.
 

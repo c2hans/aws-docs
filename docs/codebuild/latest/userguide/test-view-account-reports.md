@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/test-view-acc
 ---
 
 # View test reports in your AWS account
-<a name="test-view-account-reports"></a>
 
 **To view test reports in your AWS account**
 

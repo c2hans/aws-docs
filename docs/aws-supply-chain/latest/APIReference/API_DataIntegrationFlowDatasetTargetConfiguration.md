@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowDatasetTargetConfiguration
-<a name="API_DataIntegrationFlowDatasetTargetConfiguration"></a>
 
 The dataset DataIntegrationFlow target configuration parameters.
 

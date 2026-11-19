@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/ManagingDelMar
 ---
 
 # Managing delete markers
-<a name="ManagingDelMarkers"></a>
 
 ## Configuring lifecycle to clean up expired delete markers automatically
 <a name="LifecycleDelMarker"></a>

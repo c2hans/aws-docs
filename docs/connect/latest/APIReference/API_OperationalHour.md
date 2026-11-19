@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 ---
 
 # OperationalHour
-<a name="API_OperationalHour"></a>
 
 Information about the hours of operations with the effective override applied.
 

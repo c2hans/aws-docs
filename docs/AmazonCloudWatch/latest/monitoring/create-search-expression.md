@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 ---
 
 # Create a CloudWatch graph with a search expression
-<a name="create-search-expression"></a>
 
 On the CloudWatch console, you can access search capability when you add a graph to a dashboard, or by using the **Metrics** view.
 

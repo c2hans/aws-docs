@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/under
 ---
 
 # Understanding Your Forecasts
-<a name="understanding-your-forecasts"></a>
 
 Amazon Connect Decisions provides forecast explainability to help you understand why the system generated particular forecasts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/aws-mcp-server.h
 ---
 
 # Configure OAuth access to AWS MCP Server
-<a name="aws-mcp-server"></a>
 
 ## Overview
 <a name="aws-mcp-server-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/best-p
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Amazon EC2 best practices
 <a name="best-practices-ec2"></a>

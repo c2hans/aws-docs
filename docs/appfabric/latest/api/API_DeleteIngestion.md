@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_DeleteIngestion
 ---
 
 # DeleteIngestion
-<a name="API_DeleteIngestion"></a>
 
 Deletes an ingestion. You must stop (disable) the ingestion and you must delete all associated ingestion destinations before you can delete an app ingestion.
 

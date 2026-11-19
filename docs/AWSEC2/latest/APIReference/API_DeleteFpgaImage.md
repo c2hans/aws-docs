@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteFpg
 ---
 
 # DeleteFpgaImage
-<a name="API_DeleteFpgaImage"></a>
 
 Deletes the specified Amazon FPGA Image (AFI).
 

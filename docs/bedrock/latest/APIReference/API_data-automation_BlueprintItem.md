@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # BlueprintItem
-<a name="API_data-automation_BlueprintItem"></a>
 
 An abbreviated summary of a blueprint.
 

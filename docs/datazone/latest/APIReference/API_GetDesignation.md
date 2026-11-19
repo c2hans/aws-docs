@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetDesi
 ---
 
 # GetDesignation
-<a name="API_GetDesignation"></a>
 
 Gets the details of a designation, including its Cedar permit policy. Returns the full designation record for both system-managed and user-created designations.
 

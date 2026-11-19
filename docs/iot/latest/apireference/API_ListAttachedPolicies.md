@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAttached
 ---
 
 # ListAttachedPolicies
-<a name="API_ListAttachedPolicies"></a>
 
 Lists the policies attached to the specified thing group.
 

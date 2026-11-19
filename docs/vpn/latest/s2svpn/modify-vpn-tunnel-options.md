@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-tunnel-opti
 ---
 
 # Modify AWS Site-to-Site VPN tunnel options
-<a name="modify-vpn-tunnel-options"></a>
 
 You can modify the tunnel options for the VPN tunnels in your Site-to-Site VPN connection. You can modify one VPN tunnel at a time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/policy-best
 ---
 
 # Policy best practices
-<a name="policy-best-practices"></a>
 
  Identity-based policies determine whether someone can create, access, or delete AWS Security Incident Response resources in your account. These actions can incur costs for your AWS account. When you create or edit identity-based policies, follow these guidelines and recommendations:
 

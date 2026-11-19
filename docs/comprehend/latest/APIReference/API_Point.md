@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Point
 ---
 
 # Point
-<a name="API_Point"></a>
 
 The X and Y coordinates of a point on a document page.
 

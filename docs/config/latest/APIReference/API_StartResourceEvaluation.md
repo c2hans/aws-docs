@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_StartReso
 ---
 
 # StartResourceEvaluation
-<a name="API_StartResourceEvaluation"></a>
 
 Runs an on-demand evaluation for the specified resource to determine whether the resource details will comply with configured AWS Config rules. You can also use it for evaluation purposes. AWS Config recommends using an evaluation context. It runs an execution against the resource details with all of the AWS Config rules in your account that match with the specified proactive mode and resource type.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/b
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Reacting to events
 <a name="reacting-to-events"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/nin.html
 ---
 
 # $nin
-<a name="nin"></a>
 
 The `$nin` operator is used to match values that are not in the specified array. It is the inverse of the `$in` operator, which matches values that are in the specified array.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Create an EventBridge rule for a CodeCommit source (CloudFormation template)
-<a name="pipelines-trigger-source-repo-changes-cfn"></a>
 
 To use CloudFormation to create a rule, update your template as shown here.<a name="proc-cfn-event-codecommit"></a>
 

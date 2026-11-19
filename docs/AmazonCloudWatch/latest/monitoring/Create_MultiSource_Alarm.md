@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Create an alarm based on a connected data source
-<a name="Create_MultiSource_Alarm"></a>
 
 You can create alarms that watch metrics from data sources that aren't in CloudWatch. For more information about creating connections to these other data sources, see [Query metrics from other data sources](MultiDataSourceQuerying.md).
 

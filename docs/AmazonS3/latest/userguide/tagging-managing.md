@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging-managi
 ---
 
 # Managing object tags
-<a name="tagging-managing"></a>
 
 This section explains how you can manage object tags using the AWS SDKs for Java and .NET or the Amazon S3 console.
 

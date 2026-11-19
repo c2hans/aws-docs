@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/restricted-
 ---
 
 # restricted-common-ports
-<a name="restricted-common-ports"></a>
 
 **Important**
 For this rule, the rule identifier (RESTRICTED\_INCOMING\_TRAFFIC) and rule name (restricted-common-ports) are different.

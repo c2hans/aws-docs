@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-con
 ---
 
 # Install the provided AWS Client VPN for Linux
-<a name="client-vpn-connect-linux-install"></a>
 
 There are multiple methods that can be used to install the AWS provided client for Linux. Use one of the methods provided in the following options. Before you begin, ensure that you've read the [requirements](client-vpn-connect-linux.md#client-vpn-connect-linux-req).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setting-up-downstrea
 ---
 
 # Coordinate with downstream systems
-<a name="setting-up-downstream-system"></a>
 
 As the final step in preparing the downstream and upstream systems in your workflow, you must speak to the operator of the downstream system and coordinate information.
 

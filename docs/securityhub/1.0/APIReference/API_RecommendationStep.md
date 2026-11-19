@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Recomme
 ---
 
 # RecommendationStep
-<a name="API_RecommendationStep"></a>
 
 Contains information about a recommended step to remediate a Security Hub finding.
 

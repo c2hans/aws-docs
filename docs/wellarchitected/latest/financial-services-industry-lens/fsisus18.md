@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISUS18: How do you define the minimum requirement in response time for customers in order to maximize your green SLA?
-<a name="fsisus18"></a>
 
 ## FSISUS18-BP01 Use a green SLA
 <a name="fsisus18-bp01-use-a-green-sla"></a>

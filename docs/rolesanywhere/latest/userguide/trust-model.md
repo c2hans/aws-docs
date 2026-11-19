@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-mod
 ---
 
 # The IAM Roles Anywhere trust model
-<a name="trust-model"></a>
 
  AWS Identity and Access Management Roles Anywhere works by bridging the trust model of IAM and Public Key Infrastructure (PKI). The model connects the role, the IAM Roles Anywhere service principal, and identities encoded in X.509 certificates, that are issued by a Certificate Authority (CA).
 

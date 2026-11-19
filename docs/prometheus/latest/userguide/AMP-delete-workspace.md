@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-delete-w
 ---
 
 # Delete an Amazon Managed Service for Prometheus workspace
-<a name="AMP-delete-workspace"></a>
 
 Deleting a workspace deletes the data that has been ingested into it.
 

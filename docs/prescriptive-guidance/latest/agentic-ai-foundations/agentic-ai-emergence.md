@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Timelines converge: the emergence of agentic AI
-<a name="agentic-ai-emergence"></a>
 
 ## 2023-2024 - enterprise-grade agent platforms
 <a name="enterprise-platform"></a>

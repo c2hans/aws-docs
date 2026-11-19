@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # X
-<a name="identity-idp-x"></a>
 
 X can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through X’s OAuth2 service and obtain access tokens for X API resources.
 

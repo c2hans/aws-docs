@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/onedriv
 ---
 
 # Use OneDrive for Business
-<a name="onedrive-end-user"></a>
 
 **Note**
 OneDrive for Business is currently not supported for Linux-based streaming instances.

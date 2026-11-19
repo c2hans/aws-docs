@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Adding a tag to an access point
-<a name="access-points-tag-add"></a>
 
 You can add tags to Amazon S3 Access Points and modify these tags. There is no additional charge for using tags on access points beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/). For more information about tagging access points, see [Using tags with S3 Access Points for general purpose buckets](access-points-tagging.md).
 

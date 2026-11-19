@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-model-
 ---
 
 # Use a Model Package to Create a Model
-<a name="sagemaker-mkt-model-pkg-model"></a>
 
 Use a model package to create a deployable model that you can use to get real-time inferences by creating a hosted endpoint or to run batch transform jobs. You can create a deployable model from a model package by using the Amazon SageMaker AI console, the low-level SageMaker API), or the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP04 Perform regular penetration testing
-<a name="sec11-bp04"></a>
 
  Automated scans and code reviews find known patterns but miss flaws that appear only when someone chains steps together or abuses business logic. Penetration testing places a skilled tester in the role of an unauthorized user to find those gaps and check whether your detective controls work. Run these tests on a regular schedule and after major changes.
 

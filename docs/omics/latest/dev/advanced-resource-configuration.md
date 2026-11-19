@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/advanced-resource-confi
 ---
 
 # Advanced resource configuration
-<a name="advanced-resource-configuration"></a>
 
 With the **omicsResourceFallbackOrder** directive you can declare an ordered list of resource (for example, accelerator and CPU) profiles for a task within your workflow. You specify this directive at the task level in WDL, or at the process or config level in Nextflow. HealthOmics searches for each profile in the order you specify for availability to reserve. If capacity isn't available within the wait timeout, HealthOmics moves to the next resource profile in the list.
 

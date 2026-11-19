@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Crea
 ---
 
 # CreatePrivateGraphEndpoint
-<a name="API_CreatePrivateGraphEndpoint"></a>
 
 Create a private graph endpoint to allow private access from to the graph from within a VPC. You can attach security groups to the private graph endpoint.
 

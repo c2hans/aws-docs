@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_WhatIfAnalysisSum
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # WhatIfAnalysisSummary
-<a name="API_WhatIfAnalysisSummary"></a>
 
 Provides a summary of the what-if analysis properties used in the [ListWhatIfAnalyses](API_ListWhatIfAnalyses.md) operation. To get the complete set of properties, call the [DescribeWhatIfAnalysis](API_DescribeWhatIfAnalysis.md) operation, and provide the `WhatIfAnalysisArn` that is listed in the summary.
 

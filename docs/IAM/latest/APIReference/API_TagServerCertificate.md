@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_TagServerCer
 ---
 
 # TagServerCertificate
-<a name="API_TagServerCertificate"></a>
 
 Adds one or more tags to an IAM server certificate. If a tag with the same key name already exists, then that tag is overwritten with the new value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Group
 ---
 
 # GroupSearchFilter
-<a name="API_GroupSearchFilter"></a>
 
 A `GroupSearchFilter` object that you want to apply to your search.
 

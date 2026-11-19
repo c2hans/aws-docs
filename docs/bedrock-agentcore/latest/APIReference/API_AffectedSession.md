@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # AffectedSession
-<a name="API_AffectedSession"></a>
 
 A session affected by a detected failure pattern, including root cause details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/extract-text-with-amazon
 ---
 
 # Extract information from unstructured documents with Amazon Bedrock and Amazon Textract
-<a name="extract-text-with-amazon-textract"></a>
 
 |  |  |
 | --- |--- |

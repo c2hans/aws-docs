@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide-classic/sns-even
 This guide documents the classic version of the AWS Wickr administration console, released before March 13, 2025. For documentation on the new AWS Wickr administration console, see [ Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Amazon SNS events for your Wickr network
-<a name="sns-events"></a>
 
 The following events are posted to the Amazon SNS topic defined by the Amazon Resource Name (ARN) value identified using the `WICKRIO_SNS_TOPIC_ARN` environment variable or the `sns_topic_arn` Secrets Manager secret value. For more information, see [Environment variables to configure data retention bot in AWS Wickr](data-retention-bot-env-variables.md) and [Secrets Manager values for AWS Wickr](data-retention-aws-secret-values.md).
 

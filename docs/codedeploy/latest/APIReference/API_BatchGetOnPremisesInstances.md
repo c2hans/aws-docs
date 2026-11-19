@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetOnPremisesInstances
-<a name="API_BatchGetOnPremisesInstances"></a>
 
 Gets information about one or more on-premises instances. The maximum number of on-premises instances that can be returned is 25.
 

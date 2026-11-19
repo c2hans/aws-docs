@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteAcmeEx
 ---
 
 # DeleteAcmeExternalAccountBinding
-<a name="API_DeleteAcmeExternalAccountBinding"></a>
 
 Deletes an external account binding. Previously fetched credentials for this binding will no longer be usable for account registration. A deleted binding cannot be recovered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolDescriptionConfigurationBundle
-<a name="API_ToolDescriptionConfigurationBundle"></a>
 
 Tool descriptions sourced from a configuration bundle version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessAgentCoreGatewayConfig
-<a name="API_HarnessAgentCoreGatewayConfig"></a>
 
 Configuration for AgentCore Gateway.
 

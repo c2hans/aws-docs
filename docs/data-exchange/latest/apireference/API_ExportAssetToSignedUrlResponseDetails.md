@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ex
 ---
 
 # ExportAssetToSignedUrlResponseDetails
-<a name="API_ExportAssetToSignedUrlResponseDetails"></a>
 
 The details of the export to signed URL response.
 

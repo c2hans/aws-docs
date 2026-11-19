@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateMlflowApp
-<a name="API_UpdateMlflowApp"></a>
 
 Updates an MLflow App.
 

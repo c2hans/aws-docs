@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-cons
 ---
 
 # Considerations and limitations
-<a name="ict-considerations-and-limitations"></a>
 
 Consider the following when you run isolated and confidential tasks.
 

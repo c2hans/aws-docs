@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-exp
 ---
 
 # Create an AutoML job for time-series forecasting using the API
-<a name="autopilot-create-experiment-timeseries-forecasting"></a>
 
 Forecasting in machine learning refers to the process of predicting future outcomes or trends based on historical data and patterns. By analyzing past time-series data and identifying underlying patterns, machine learning algorithms can make predictions and provide valuable insights into future behavior. In forecasting, the goal is to develop models that can accurately capture the relationship between input variables and the target variable over time. This involves examining various factors such as trends, seasonality, and other relevant patterns within the data. The collected information is then used to train a machine learning model. The trained model is capable of generating predictions by taking new input data and applying the learned patterns and relationships. It can provide forecasts for a wide range of use cases, such as sales projections, stock market trends, weather forecasts, demand forecasting, and many more.
 

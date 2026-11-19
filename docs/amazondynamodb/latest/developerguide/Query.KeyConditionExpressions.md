@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Que
 ---
 
 # Key condition expressions for the Query operation in DynamoDB
-<a name="Query.KeyConditionExpressions"></a>
 
 You can use any attribute name in a key condition expression, provided that the first character is `a-z` or `A-Z` and the rest of the characters (starting from the second character, if present) are `a-z`, `A-Z`, or `0-9`. In addition, the attribute name must not be a DynamoDB reserved word. (For a complete list of these, see [Reserved words in DynamoDB](ReservedWords.md).) If an attribute name does not meet these requirements, you must define an expression attribute name as a placeholder. For more information, see [Expression attribute names (aliases) in DynamoDB](Expressions.ExpressionAttributeNames.md).
 

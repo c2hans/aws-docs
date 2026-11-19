@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SlurmH
 ---
 
 # SlurmHealthMetadata
-<a name="API_SlurmHealthMetadata"></a>
 
 Metadata information about the health of a Slurm component on the controller node of a HyperPod cluster.
 

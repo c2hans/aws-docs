@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Assessme
 ---
 
 # Individual assessments
-<a name="CHAP_Tasks.AssessmentReport.Assessments"></a>
 
 This section describes individual premigration assessments.
 

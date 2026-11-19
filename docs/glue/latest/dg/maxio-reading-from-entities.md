@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/maxio-reading-from-entiti
 ---
 
 # Reading from Maxio entities
-<a name="maxio-reading-from-entities"></a>
 
 **Prerequisites**
 

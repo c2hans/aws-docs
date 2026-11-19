@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-exampl
 ---
 
 # Example queries
-<a name="sql-examples"></a>
 
 ## Metadata filtering
 <a name="sql-examples-meta-filter"></a>

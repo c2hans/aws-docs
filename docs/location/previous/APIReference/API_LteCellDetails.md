@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_LteCe
 ---
 
 # LteCellDetails
-<a name="API_LteCellDetails"></a>
 
 Details about the Long-Term Evolution (LTE) network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Prefix
 ---
 
 # PrefixAwareRoutingConfig
-<a name="API_PrefixAwareRoutingConfig"></a>
 
 The configuration for prefix-aware routing on a SageMaker real-time inference endpoint. Specify `PrefixLength` and `ConcurrencyThreshold` to control routing behavior.
 

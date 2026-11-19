@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Microsoft Workloads Lens - AWS Well-Architected Framework
-<a name="microsoft-workloads-lens"></a>
 
 Publication date: **February 2, 2026** ([Document revisions](document-revisions.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/currentOp.htm
 ---
 
 # $currentOp
-<a name="currentOp"></a>
 
 The `$currentOp` aggregation stage returns information about currently running operations in the database. This stage is useful for monitoring active queries and operations in an aggregation pipeline.
 

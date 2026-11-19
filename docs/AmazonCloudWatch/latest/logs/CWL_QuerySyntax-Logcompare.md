@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # logcompare
-<a name="CWL_QuerySyntax-Logcompare"></a>
 
 Use the `logcompare` command to compare the current time window against a baseline window shifted back by a specified duration.
 

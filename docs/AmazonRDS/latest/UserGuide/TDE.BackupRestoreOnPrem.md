@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/TDE.BackupRes
 ---
 
 # Backing up and restoring TDE certificates for on-premises databases
-<a name="TDE.BackupRestoreOnPrem"></a>
 
 You can back up TDE certificates for on-premises databases, then later restore them to RDS for SQL Server. You can also restore an RDS for SQL Server TDE certificate to an on-premises DB instance.
 

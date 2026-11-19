@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/cr
 ---
 
 # Foundations
-<a name="cryptographic-details.foundations"></a>
 
 The topics in this chapter describe the cryptographic primitives of AWS Payment Cryptography and where they are used. They also introduce the basic elements of the service.
 

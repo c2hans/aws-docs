@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Upgrading_PV_dri
 ---
 
 # Upgrade PV drivers on EC2 Windows instances
-<a name="Upgrading_PV_drivers"></a>
 
 We recommend that you install the latest PV drivers to improve the stability and performance of your EC2 Windows instances. The directions on this page help you download the driver package and run the install program.
 

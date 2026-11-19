@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Create a signed URL using a custom policy
-<a name="private-content-creating-signed-url-custom-policy"></a>
 
 To create a signed URL using a custom policy, complete the following procedure.<a name="private-content-creating-signed-url-custom-policy-procedure"></a>
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Deleting Systems Manager resources and artifacts
-<a name="systems-manager-best-practices-delete-resources"></a>
 
 We recommend that you delete Systems Manager resources and artifacts that you no longer need. The following table lists each Systems Manager tool or artifact with a link to more information about deleting those resources.
 

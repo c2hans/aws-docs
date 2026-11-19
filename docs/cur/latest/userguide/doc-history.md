@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/doc-history.html
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Data Exports.
 

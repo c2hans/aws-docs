@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVSChat::Room MessageReviewHandler
-<a name="aws-properties-ivschat-room-messagereviewhandler"></a>
 
 The MessageReviewHandler property type specifies configuration information for optional message review.
 

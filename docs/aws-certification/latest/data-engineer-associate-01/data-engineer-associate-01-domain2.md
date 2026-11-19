@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/data-engineer-a
 ---
 
 # Content Domain 2: Data Store Management
-<a name="data-engineer-associate-01-domain2"></a>
 
 **Topics**
 + [Task 2.1: Choose a data store](#data-engineer-associate-01-domain2-task1)

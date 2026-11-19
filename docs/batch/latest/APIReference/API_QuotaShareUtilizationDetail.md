@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaShareUtilizationDetail
-<a name="API_QuotaShareUtilizationDetail"></a>
 
 An object that represents the capacity utilization details of all quota shares associated with a single job queue.
 

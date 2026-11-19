@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # PushBaiduMessageTemplateContent
-<a name="API_amazon-q-connect_PushBaiduMessageTemplateContent"></a>
 
 The content of the push message template that applies to Baidu notification service.
 

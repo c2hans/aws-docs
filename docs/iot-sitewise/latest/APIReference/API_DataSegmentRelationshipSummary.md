@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DataSegmentRelationshipSummary
-<a name="API_DataSegmentRelationshipSummary"></a>
 
 Contains summary information about a data segment relationship between a source session dataset that contains the data and a curated dataset that references it, including the time series and timestamp range.
 

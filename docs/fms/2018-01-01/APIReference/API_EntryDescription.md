@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EntryDes
 ---
 
 # EntryDescription
-<a name="API_EntryDescription"></a>
 
 Describes a single rule in a network ACL.
 

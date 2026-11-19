@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetConn
 ---
 
 # GetConnection
-<a name="API_GetConnection"></a>
 
 **Note**
  AWS uses this action to install Outpost servers.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RuntimeRel
 ---
 
 # RuntimeReleaseLifecycle
-<a name="API_RuntimeReleaseLifecycle"></a>
 
 The runtime lifecycle for the runtime or alias. Optional. Used to schedule runtime deprecation. Omitting or providing an empty object removes the existing lifecycle.
 

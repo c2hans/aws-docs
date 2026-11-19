@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/rls-policies-sq
 ---
 
 # Filter expression syntax for RLS policies
-<a name="rls-policies-sql-support"></a>
 
 This section describes the syntax, operators, data types, and rules for filter expressions used in row-level security (RLS) policies. Filter expressions use a subset of PartiQL.
 

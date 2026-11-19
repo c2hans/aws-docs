@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # Benefits of using partial batch responses for Amazon SQS event sources
-<a name="benefits-partial-batch-responses"></a>
 
 Configuring partial batch responses gives your Lambda functions the ability to process partial Amazon SQS message batches and retry only failed messages. This removes the need for repetitive data transfer and increases throughput.
 

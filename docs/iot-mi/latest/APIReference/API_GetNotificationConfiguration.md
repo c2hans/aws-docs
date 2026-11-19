@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetNotifi
 ---
 
 # GetNotificationConfiguration
-<a name="API_GetNotificationConfiguration"></a>
 
  Get a notification configuration for a specified event type.
 

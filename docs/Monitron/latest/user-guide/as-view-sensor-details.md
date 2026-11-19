@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/as-view-senso
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Understanding sensor details
-<a name="as-view-sensor-details"></a>
 
 To check that a sensor is performing as expected, check its details page. The **Sensor details** page shows the following information:
 + Sensor ID

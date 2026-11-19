@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # MemoryDescription
-<a name="structures-MemoryDescription"></a>
 
 Object specifying client memory characteristics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode assessment failed event
-<a name="next-gen-eventbridge-assessment-failed"></a>
 
 The following is an example event emitted when a failure mode assessment fails.
 

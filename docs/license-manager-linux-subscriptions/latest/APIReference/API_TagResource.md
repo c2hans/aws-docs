@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add metadata tags to the specified AWS resource.
 

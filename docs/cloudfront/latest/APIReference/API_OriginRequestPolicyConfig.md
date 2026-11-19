@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginRequestPolicyConfig
-<a name="API_OriginRequestPolicyConfig"></a>
 
 An origin request policy configuration.
 

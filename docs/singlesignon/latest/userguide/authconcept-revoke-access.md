@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/authconcep
 ---
 
 # Deny user access with Service Control Policies
-<a name="authconcept-revoke-access"></a>
 
 To immediately deny access to make authorized API calls when an IAM Identity Center user's access is disabled or the user is deleted, you can:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-delete-conn
 ---
 
 # Delete a connector
-<a name="evs-env-delete-connector"></a>
 
 Delete a connector when you no longer need it. You can delete a connector with the Amazon Elastic VMware Service console or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/read-write-c
 ---
 
 # (Optional) Clean up
-<a name="read-write-cleanup-mem"></a>
 
 **Using the AWS Management Console**
 

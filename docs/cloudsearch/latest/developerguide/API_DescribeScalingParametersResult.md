@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DescribeScalingParametersResult
-<a name="API_DescribeScalingParametersResult"></a>
 
 ## Description
 <a name="API_DescribeScalingParametersResult_Description"></a>

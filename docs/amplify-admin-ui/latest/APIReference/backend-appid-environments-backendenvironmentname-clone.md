@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Environments backendEnvironmentName Clone
-<a name="backend-appid-environments-backendenvironmentname-clone"></a>
 
 A clone of an existing environment in your Amplify project.
 

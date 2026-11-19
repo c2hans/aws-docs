@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableIdentifier.h
 ---
 
 # TableIdentifier
-<a name="API_TableIdentifier"></a>
 
 A structure that describes a target table for resource linking.
 

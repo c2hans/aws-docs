@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/redirect-rewrit
 ---
 
 # Redirects and rewrites example reference
-<a name="redirect-rewrite-examples"></a>
 
 This section provides examples for a variety of common redirect scenarios.
 

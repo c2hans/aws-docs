@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-export-s3-tables.
 ---
 
 # Export metadata to S3 Tables (preview)
-<a name="catalog-export-s3-tables"></a>
 
 **Note**
 Catalog metadata export is available as a preview feature. This feature is subject to change before general availability.

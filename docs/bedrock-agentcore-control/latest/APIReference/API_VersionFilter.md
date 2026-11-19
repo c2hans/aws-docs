@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # VersionFilter
-<a name="API_VersionFilter"></a>
 
 A filter for listing configuration bundle versions.
 

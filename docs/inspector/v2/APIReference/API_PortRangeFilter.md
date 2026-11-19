@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_PortRangeF
 ---
 
 # PortRangeFilter
-<a name="API_PortRangeFilter"></a>
 
 An object that describes the details of a port range filter.
 

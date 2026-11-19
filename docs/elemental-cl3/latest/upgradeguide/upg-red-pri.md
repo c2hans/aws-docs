@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step O: Upgrade the primary Conductor node
-<a name="upg-red-pri"></a>
 
 **Warning**
 Do not clear the database of the primary Conductor Live node when you run the installer\!

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Amazon API Gateway REST API stages as targets
-<a name="gateway-target-api-gateway"></a>
 
 An API Gateway REST API target connects your gateway to a [stage](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-stages.html) of your REST API. The gateway translates incoming MCP requests into HTTP requests to your REST API and handles response formatting. When you add or update an API Gateway target, AgentCore Gateway calls API Gateway’s [GetExport](https://docs.aws.amazon.com/apigateway/latest/api/API_GetExport.html) API on your behalf.
 

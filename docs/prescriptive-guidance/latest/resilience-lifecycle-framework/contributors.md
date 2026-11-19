@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + Bruno Emer, Principal Solutions Architect, AWS

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # AgentCore harness
-<a name="harness"></a>
 
 Every agent has an orchestration layer: a loop that calls the model, picks tools, passes results back, manages context, and handles failures. Running it in production takes real infrastructure underneath: compute, a sandbox, secure tool connections, filesystem, memory, identity, and observability. Together, they form the **agent harness**, the system that lets an agent actually run.
 

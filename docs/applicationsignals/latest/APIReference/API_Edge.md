@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Edge
-<a name="API_Edge"></a>
 
 A structure that represents a connection between two nodes in a dependency graph, showing the relationship and characteristics of the connection.
 

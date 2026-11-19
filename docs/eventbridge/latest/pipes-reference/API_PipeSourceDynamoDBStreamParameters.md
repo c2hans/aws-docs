@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeSourceDynamoDBStreamParameters
-<a name="API_PipeSourceDynamoDBStreamParameters"></a>
 
 The parameters for using a DynamoDB stream as a source.
 

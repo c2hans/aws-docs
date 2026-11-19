@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Ass
 ---
 
 # AssetSummary
-<a name="API_AssetSummary"></a>
 
  Contains details about a package version asset.
 

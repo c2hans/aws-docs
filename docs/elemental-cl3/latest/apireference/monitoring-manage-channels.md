@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # Managing Channels
-<a name="monitoring-manage-channels"></a>
 
 ## Channel Status Elements
 <a name="monitoring-manage-channels-status"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/integrate-autom
 ---
 
 # Integrate Automated Reasoning checks in your application
-<a name="integrate-automated-reasoning-checks"></a>
 
 After you deploy your Automated Reasoning policy in a guardrail (see [Deploy your Automated Reasoning policy in your application](deploy-automated-reasoning-policy.md)), you can use it at runtime to validate LLM responses and act on the feedback. This page explains how to call the validation API, interpret the findings programmatically, and implement common integration patterns such as rewriting invalid responses and asking clarifying questions.
 

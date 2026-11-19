@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_Types.ht
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon Interactive Video Service Chat API contains several data types that various actions use. This section describes each data type in detail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteEva
 ---
 
 # DeleteEvaluationResults
-<a name="API_DeleteEvaluationResults"></a>
 
 Deletes the evaluation results for the specified AWS Config rule. You can specify one AWS Config rule per request. After you delete the evaluation results, you can call the [StartConfigRulesEvaluation](API_StartConfigRulesEvaluation.md) API to start evaluating your AWS resources against the rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TaskRunFilterCrit
 ---
 
 # TaskRunFilterCriteria
-<a name="API_TaskRunFilterCriteria"></a>
 
 The criteria that are used to filter the task runs for the machine learning transform.
 

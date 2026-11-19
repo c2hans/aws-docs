@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_EventBridge
 ---
 
 # EventBridgeDestinationProperties
-<a name="API_EventBridgeDestinationProperties"></a>
 
  The properties that are applied when Amazon EventBridge is being used as a destination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # DeleteGeofenceCollection
-<a name="API_WaypointGeofencing_DeleteGeofenceCollection"></a>
 
 Deletes a geofence collection from your AWS account.
 

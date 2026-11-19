@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS App2Container
-<a name="awsapp2container"></a>
 
 AWS App2Container provides the following APIs for data retrieval.
 

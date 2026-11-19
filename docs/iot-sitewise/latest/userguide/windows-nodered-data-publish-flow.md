@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/windows-no
 ---
 
 # Configure the data publish flow
-<a name="windows-nodered-data-publish-flow"></a>
 
 The data publish flow uses three nodes to create a pipeline that sends your industrial data to the cloud. This flow is essential for enabling cloud-based analytics, long-term storage, and integration with other AWS services. First, simulated device data is sent to the SiteWise Edge MQTT broker. The gateway picks up the data from the broker which allows for transmission to the AWS IoT SiteWise cloud, where you can leverage powerful analytics and visualization capabilities.
 + **Data input** - Receives device data from your industrial equipment or simulators

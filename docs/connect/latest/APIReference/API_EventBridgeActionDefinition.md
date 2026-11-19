@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EventBri
 ---
 
 # EventBridgeActionDefinition
-<a name="API_EventBridgeActionDefinition"></a>
 
 The EventBridge action definition.
 

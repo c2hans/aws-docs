@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 1: Performing sprint planning for scheduled waves
-<a name="task-one-sprint-planning"></a>
 
 In this task, you assign waves to *sprints*, which is a fixed period of time in which the migration team works on all waves within that sprint. If each sprint is 2 weeks in duration, each wave spans at least two sprints. *Sprint planning* refers to the process of assigning owners and due dates to all of the tasks within that sprint.
 

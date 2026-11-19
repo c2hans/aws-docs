@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops-und
 ---
 
 # Understanding trade-offs
-<a name="ops-understanding-tradeoffs"></a>
 
  Every operational practice has a cost. Telemetry consumes storage and attention, automation takes engineering time to build and test, quality gates add steps before a change reaches production, and runbooks have to be written and kept current. Operational excellence is not about doing the maximum of all of these. It is about investing enough in operations to deliver a reliable customer experience and a sustainable pace for your team, and no more than the business outcome justifies. Many of these decisions also reach into the other pillars, because a choice made for operability affects reliability, cost, performance, and security at the same time.
 

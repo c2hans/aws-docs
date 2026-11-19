@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_HadoopStepCo
 ---
 
 # HadoopStepConfig
-<a name="API_HadoopStepConfig"></a>
 
 A cluster step consisting of a JAR file whose main function will be executed. The main function submits a job for Hadoop to execute and waits for the job to finish or fail.
 

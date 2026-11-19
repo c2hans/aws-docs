@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateLensVersion
-<a name="API_CreateLensVersion"></a>
 
 Create a new lens version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Sear
 ---
 
 # SearchInsightsFilters
-<a name="API_SearchInsightsFilters"></a>
 
 Specifies values used to filter responses when searching for insights. You can use a `ResourceCollection`, `ServiceCollection`, array of severities, and an array of status values. Each filter type contains one or more values to search for. If you specify multiple filter types, the filter types are joined with an `AND`, and the request returns only results that match all of the specified filters.
 

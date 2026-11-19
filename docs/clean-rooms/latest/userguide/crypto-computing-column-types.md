@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/crypto-comp
 ---
 
 # Column types in Cryptographic Computing for Clean Rooms
-<a name="crypto-computing-column-types"></a>
 
 This topic provides information about column types in Cryptographic Computing for Clean Rooms.
 

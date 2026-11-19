@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # Hybrid Connectivity to AWS Transit Gateway with AWS Direct Connect
-<a name="hybrid-dx"></a>
 
 Publication date: **August 17, 2022 ([Diagram history](#hc2-diagram-history))**
 

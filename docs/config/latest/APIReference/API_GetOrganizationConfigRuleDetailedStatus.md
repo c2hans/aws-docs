@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetOrgani
 ---
 
 # GetOrganizationConfigRuleDetailedStatus
-<a name="API_GetOrganizationConfigRuleDetailedStatus"></a>
 
 Returns detailed status for each member account within an organization for a given organization AWS Config rule.
 

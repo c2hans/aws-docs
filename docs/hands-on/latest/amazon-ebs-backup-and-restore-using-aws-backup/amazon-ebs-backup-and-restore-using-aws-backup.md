@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/amazon-ebs-backup-and-re
 ---
 
 # Amazon EBS Backup & Restore using AWS Backup
-<a name="amazon-ebs-backup-and-restore-using-aws-backup"></a>
 
 |  |  |
 | --- |--- |

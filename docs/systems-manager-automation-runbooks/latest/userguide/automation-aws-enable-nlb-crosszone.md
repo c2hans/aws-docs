@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableNLBCrossZoneLoadBalancing`
-<a name="automation-aws-enable-nlb-crosszone"></a>
 
  **Description**
 

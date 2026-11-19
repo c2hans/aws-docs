@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DataReplicat
 ---
 
 # DataReplicationInitiation
-<a name="API_DataReplicationInitiation"></a>
 
 Data replication initiation.
 

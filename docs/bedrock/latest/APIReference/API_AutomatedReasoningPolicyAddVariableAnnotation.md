@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAddVariableAnnotation
-<a name="API_AutomatedReasoningPolicyAddVariableAnnotation"></a>
 
 An annotation for adding a new variable to an Automated Reasoning policy, which can be used in rule expressions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointConfigSummary
-<a name="API_EndpointConfigSummary"></a>
 
 Provides summary information for an endpoint configuration.
 

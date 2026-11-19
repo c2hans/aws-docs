@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/automated-security-response-o
 title: 'Automated Security Response on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-security-response-on-aws/
 source: aws-documentation
-generated_on: 2026-11-17
+generated_on: 2026-11-18
 ---
 
 # Automated Security Response on AWS
 
 Resolve common security threats and improve your security posture
 
-- **Version**: 4.1.1
+- **Version**: 4.1.2
 - **Released**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
@@ -45,7 +45,7 @@ Extend this solution with custom remediation and playbook implementations, using
 
 You can automatically deploy this architecture using the implementation guide and the accompanying AWS CloudFormation template.
 
-[Open implementation guide](/solutions/latest/automated-security-response-on-aws/?.html)
+[Open implementation guide](/solutions/latest/automated-security-response-on-aws/solution-overview.html)
 
 ![Architecture diagram](/images/solutions/automated-security-response-on-aws/images/automated-security-response-on-aws-architecture-diagram.png)
 
@@ -58,12 +58,12 @@ You can automatically deploy this architecture using the implementation guide an
 1. **Step 7**: **Remediate** : An AWS Systems Manager Automation document in the member account performs the action required to remediate the finding on the target resource, such as disabling Lambda public access. Optionally, you can enable the Action Log feature in the member stacks with the **EnableCloudTrailForASRActionLog** parameter. This feature captures actions taken by the solution in your Member accounts and displays them in the solution’s Amazon CloudWatch dashboard.
 1. **Step 8**: **(Optional) Create a ticket** : If you use the **TicketGenFunctionName** parameter to enable ticketing in the Admin stack, the solution invokes the provided ticket generator Lambda function. This Lambda function creates a ticket in your ticketing service after the remediation has successfully executed in the Member account. We provide stacks for integration with Jira and ServiceNow.
 1. **Step 9**: **Notify and log** : The playbook logs the results to a CloudWatch log group, sends a notification to an Amazon Simple Notification Service (Amazon SNS) topic, and updates the Security Hub finding. The solution maintains an audit trail of actions in the finding notes.
-1. **Step 10**: **(Optional) Connect to the MCP Server** : If you set the **EnableMcpServer** parameter to yes when you deploy the Admin stack, the solution deploys an optional Model Context Protocol (MCP) server, implemented as an Amazon Bedrock AgentCore gateway. The MCP server exposes the solution's tools to view findings and to run, author, or manage remediations. MCP clients connect to the server and authenticate through the same Amazon Cognito user pool as the Web UI. The tools a user can call are limited by their ASR access tier and by the individual tools an administrator grants them. The MCP server requires an Region that supports Amazon Bedrock AgentCore.
+1. **Step 10**: **(Optional) Connect to the MCP Server** : If you set the **EnableMcpServer** parameter to yes when you deploy the Admin stack, the solution deploys an optional Model Context Protocol (MCP) server, implemented as an Amazon Bedrock AgentCore gateway. The MCP server exposes the solution's tools to view findings and to run, author, or manage remediations. MCP clients connect to the server and authenticate through the same Amazon Cognito user pool as the Web UI. The tools a user can call are limited by their ASR access tier and by the individual tools an administrator grants them. The MCP server requires an AWS Region that supports Amazon Bedrock AgentCore.
 ## Deploy with confidence
 
 - **We'll walk you through it**: Get started fast. Read the implementation guide for deployment steps, architecture details, cost information, and customization options.
 
-[Open guide](/solutions/latest/automated-security-response-on-aws/?.html)
+[Open guide](/solutions/latest/automated-security-response-on-aws/solution-overview.html)
 
 - **Let's make it happen**: Ready to deploy? Open the CloudFormation template in the AWS Console to begin setting up the infrastructure you need. You'll be prompted to access your AWS account if you haven't yet logged in.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/downgr
 ---
 
 # Step F: Downgrade the nodes
-<a name="downgrades-cl3-upg-dg-cond"></a>
 
 When you downgrade, run the installer with the `--downgrade` option for each node. Downgrade in the following order:
 

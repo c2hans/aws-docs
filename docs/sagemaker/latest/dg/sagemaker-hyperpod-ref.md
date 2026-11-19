@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # SageMaker HyperPod references
-<a name="sagemaker-hyperpod-ref"></a>
 
 Find more information and references about using SageMaker HyperPod in the following topics.
 

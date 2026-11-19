@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-jra-datatovalue-
 ---
 
 # AI Innovation with FedML-AWS and Sagemaker
-<a name="rise-jra-datatovalue-fedml-aws"></a>
 
 In today’s data-driven enterprises, machine learning models are only as powerful as the data they can access. However, business-critical data often resides within SAP systems like SAP BDC, while advanced model development typically takes place in cloud-native platforms like Amazon Sagemaker.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseud
 ---
 
 # Get AWS values using pseudo parameters
-<a name="pseudo-parameter-reference"></a>
 
 Pseudo parameters are built-in variables that provide access to important AWS environment information such as account IDs, Region names, and stack details that can change between deployments or environments.
 

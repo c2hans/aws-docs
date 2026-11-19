@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Action.
 ---
 
 # Action
-<a name="API_Action"></a>
 
 Provides details about one of the following actions that affects or that was taken on a resource:
 + A remote IP address issued an AWS API call

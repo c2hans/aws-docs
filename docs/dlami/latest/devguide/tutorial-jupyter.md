@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-jupyter.h
 ---
 
 # Running Jupyter Notebook Tutorials
-<a name="tutorial-jupyter"></a>
 
 Tutorials and examples ship with each of the deep learning projects' source and in most cases they will run on any DLAMI. If you chose the [Deep Learning AMI with Conda](overview-conda.md), you get the added benefit of a few hand-picked tutorials already set up and ready to try out.
 

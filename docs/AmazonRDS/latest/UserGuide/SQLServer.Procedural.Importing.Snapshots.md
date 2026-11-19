@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Pro
 ---
 
 # Importing and exporting SQL Server data using other methods
-<a name="SQLServer.Procedural.Importing.Snapshots"></a>
 
 Following, you can find information about using snapshots to import your Microsoft SQL Server data to Amazon RDS. You can also find information about using snapshots to export your data from an RDS DB instance running SQL Server.
 

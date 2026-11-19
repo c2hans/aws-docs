@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/build-run-debug
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Define a Builder or Runner
-<a name="build-run-debug-define-builder-runner"></a>
 
 This topic shows how you can define a builder or runner. Before you define a builder or runner, make sure you have [created a builder or runner](build-run-debug.md#build-run-debug-create-builder-runner).
 

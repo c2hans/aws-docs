@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Paddle API Key
-<a name="mes-partner-PaddleApiKey"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c47b3"></a>

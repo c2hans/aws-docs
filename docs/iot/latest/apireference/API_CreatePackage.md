@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreatePackag
 ---
 
 # CreatePackage
-<a name="API_CreatePackage"></a>
 
 Creates an AWS IoT software package that can be deployed to your fleet.
 

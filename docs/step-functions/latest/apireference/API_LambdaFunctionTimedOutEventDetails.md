@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LambdaFunctionTimedOutEventDetails
-<a name="API_LambdaFunctionTimedOutEventDetails"></a>
 
 Contains details about a Lambda function timeout that occurred during an execution.
 

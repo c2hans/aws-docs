@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # FAQ
-<a name="faq"></a>
 
 The following are frequently raised questions about tagging on AWS.
 

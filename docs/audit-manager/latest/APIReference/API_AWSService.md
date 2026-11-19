@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_AW
 ---
 
 # AWSService
-<a name="API_AWSService"></a>
 
  An AWS service such as Amazon S3 or AWS CloudTrail.
 

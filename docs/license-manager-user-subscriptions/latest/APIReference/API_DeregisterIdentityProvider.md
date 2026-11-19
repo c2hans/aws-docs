@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # DeregisterIdentityProvider
-<a name="API_DeregisterIdentityProvider"></a>
 
 Deregisters the Active Directory identity provider from License Manager user-based subscriptions.
 

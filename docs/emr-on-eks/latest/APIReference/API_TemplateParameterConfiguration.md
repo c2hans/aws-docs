@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Templ
 ---
 
 # TemplateParameterConfiguration
-<a name="API_TemplateParameterConfiguration"></a>
 
 The configuration of a job template parameter.
 

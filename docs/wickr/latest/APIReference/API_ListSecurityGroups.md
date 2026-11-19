@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListSecuri
 ---
 
 # ListSecurityGroups
-<a name="API_ListSecurityGroups"></a>
 
 Retrieves a paginated list of security groups in a specified Wickr network. You can sort the results by various criteria.
 

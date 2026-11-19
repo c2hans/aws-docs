@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 The key or keys of the key-value pairs for the tag or tags assigned to a resource.
 

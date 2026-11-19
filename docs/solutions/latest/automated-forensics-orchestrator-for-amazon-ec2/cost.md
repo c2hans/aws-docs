@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used to run the Automated Forensics Orchestrator for Amazon EC2 and EKS Guidance. As of the recent revision, the monthly cost for running this Guidance with the default settings in the US East (N. Virginia) AWS Region is approximately **$235 assuming an average of one forensic instance is 50% utilized for performing forensic analysis** with 512GB of volume attached to the instance. Prices are subject to change. For full details, refer to the pricing page for each AWS service used in this Guidance.
 

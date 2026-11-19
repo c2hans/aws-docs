@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeProxy
-<a name="API_DescribeProxy"></a>
 
 Returns the data objects for the specified proxy.
 

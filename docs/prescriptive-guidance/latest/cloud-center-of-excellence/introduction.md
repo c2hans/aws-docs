@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Building a Cloud Center of Excellence within your organization
-<a name="introduction"></a>
 
 *Rishi Singla, Steve Drew, Guillaume Goutaudier, and Shankar Subramaniam, Amazon Web Services*
 

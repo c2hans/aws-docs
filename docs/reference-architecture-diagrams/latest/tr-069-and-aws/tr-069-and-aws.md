@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # TR-069 and AWS
-<a name="tr-069-and-aws"></a>
 
 Publication date: **2021 ([Diagram history](#tr069-history))**
 

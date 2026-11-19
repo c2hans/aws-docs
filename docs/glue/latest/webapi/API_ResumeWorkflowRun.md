@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ResumeWorkflowRun
 ---
 
 # ResumeWorkflowRun
-<a name="API_ResumeWorkflowRun"></a>
 
 Restarts selected nodes of a previous partially completed workflow run and resumes the workflow run. The selected nodes and all nodes that are downstream from the selected nodes are run.
 

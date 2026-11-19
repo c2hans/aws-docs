@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_MLSy
 ---
 
 # MLSyntheticDataParameters
-<a name="API_MLSyntheticDataParameters"></a>
 
 Parameters that control the generation of synthetic data for machine learning, including privacy settings and column classification details.
 

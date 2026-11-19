@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreateTagOption
-<a name="API_CreateTagOption"></a>
 
 Creates a TagOption.
 

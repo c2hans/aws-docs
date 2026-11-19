@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication-b
 ---
 
 # Replication backfill
-<a name="replication-backfill"></a>
 
 You can replicate preexisting images in your Amazon ECR private registry to your configured replication destinations. By default, replication only applies to images pushed after the replication configuration is applied. Replication backfill allows you to replicate images that you pushed before you configured replication.
 

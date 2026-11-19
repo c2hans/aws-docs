@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # TextFullAIPromptEditTemplateConfiguration
-<a name="API_amazon-q-connect_TextFullAIPromptEditTemplateConfiguration"></a>
 
 The configuration for a prompt template that supports full textual prompt configuration using a YAML prompt.
 

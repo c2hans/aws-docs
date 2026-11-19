@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeSca
 ---
 
 # ComputeScalingPolicy
-<a name="API_ComputeScalingPolicy"></a>
 
 An object that represents a scaling policy for a compute environment.
 

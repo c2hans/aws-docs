@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cos
 ---
 
 # Evaluate your DynamoDB table's auto scaling settings
-<a name="CostOptimization_AutoScalingSettings"></a>
 
 This section provides an overview of how to evaluate the auto scaling settings on your DynamoDB tables. [Amazon DynamoDB auto scaling](AutoScaling.md) is a feature that manages table and global secondary index (GSI) throughput based on your application traffic and your target utilization metric. This ensures your tables or GSIs will have the required capacity required for your application patterns.
 

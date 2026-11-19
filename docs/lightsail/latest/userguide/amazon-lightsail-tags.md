@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Organize and filter Lightsail resources using tags
-<a name="amazon-lightsail-tags"></a>
 
 With Amazon Lightsail, you can assign labels to your resources as tags. Each tag is a label consisting of a key and an optional value that can make it more efficient to manage, search for, and filter resources.
 

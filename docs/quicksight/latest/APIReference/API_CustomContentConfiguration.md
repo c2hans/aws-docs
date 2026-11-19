@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomContentConfiguration
-<a name="API_CustomContentConfiguration"></a>
 
 The configuration of a `CustomContentVisual`.
 

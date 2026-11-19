@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Connecting to your MySQL DB instance on Amazon RDS with SSL/TLS from the MySQL command-line client (encrypted)
-<a name="USER_ConnectToInstanceSSL.CLI"></a>
 
 The `mysql` client program parameters are slightly different depending on which version of MySQL or MariaDB you are using.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceProperties
-<a name="API_RecoveryInstanceProperties"></a>
 
 Properties of the Recovery Instance machine.
 

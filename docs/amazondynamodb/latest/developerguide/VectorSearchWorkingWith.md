@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Vec
 ---
 
 # Creating and searching vector indexes
-<a name="VectorSearchWorkingWith"></a>
 
 This section describes how to create and manage vector indexes, write items with vector data, and perform similarity searches using the `SearchVectors` API.
 

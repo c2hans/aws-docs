@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetEnvi
 ---
 
 # GetEnvironmentProfile
-<a name="API_GetEnvironmentProfile"></a>
 
 Gets an evinronment profile in Amazon DataZone.
 

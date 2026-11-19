@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Multicloud strategy recommendations
-<a name="recommendations"></a>
 
 Adopting a multicloud approach requires balancing the need for security, resilience, and risk management with the need for flexibility and innovation.  AWS guides organizations to adopt solutions that solve real-world business problems, and using multiple providers should similarly add value that outweighs potential additional costs and other challenges.
 

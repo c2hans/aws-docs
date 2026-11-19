@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-step-4-
 ---
 
 # Step 4: Prepare and Run the SAP Installation Prerequisites Check
-<a name="net-win-step-4-prepare-and-run-the-sap-installation-prerequisites-check"></a>
 
 1. Download the SAP installation media for SWPM (the latest appropriate version for your desired NetWeaver installation), your desired NetWeaver software version for Windows, the latest compatible SAP kernel, and any other required files (such as: the host agent, IGS, database client tools, SAP GUI, the SAPCAR archiving tool, and the SAP download manager) to an attached EBS volume as described in the prerequisites (usually from Amazon S3 using the AWS CLI tools).
 

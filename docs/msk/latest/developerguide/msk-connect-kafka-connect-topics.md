@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-ka
 ---
 
 # Understand internal topics used by Kafka Connect
-<a name="msk-connect-kafka-connect-topics"></a>
 
 An Apache Kafka Connect application that’s running in distributed mode stores its state by using internal topics in the Kafka cluster and group membership. The following are the configuration values that correspond to the internal topics that are used for Kafka Connect applications:
 + Configuration topic, specified through `config.storage.topic`

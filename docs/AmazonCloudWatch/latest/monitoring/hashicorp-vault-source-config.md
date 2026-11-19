@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/hashi
 ---
 
 # Source configuration for HashiCorp Vault
-<a name="hashicorp-vault-source-config"></a>
 
 ## Integrating with HashiCorp Vault
 <a name="hashicorp-vault-integration"></a>

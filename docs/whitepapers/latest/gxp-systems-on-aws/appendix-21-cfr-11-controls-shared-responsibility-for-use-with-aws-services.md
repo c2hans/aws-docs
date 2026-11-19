@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/ap
 ---
 
 # Appendix: 21 CFR 11 Controls – Shared Responsibility for use with AWS services
-<a name="appendix-21-cfr-11-controls-shared-responsibility-for-use-with-aws-services"></a>
 
  Applicability of 21 CFR 11 to regulated medical products and GxP systems are the responsibility of the customer, as determined by the intended use of the systems or products. AWS has mapped some of these requirements based on the AWS Shared Responsibility Model; however, customers are responsible for meeting their own regulatory obligations.
 

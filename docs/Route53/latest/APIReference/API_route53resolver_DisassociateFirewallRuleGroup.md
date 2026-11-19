@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # DisassociateFirewallRuleGroup
-<a name="API_route53resolver_DisassociateFirewallRuleGroup"></a>
 
 Disassociates a [FirewallRuleGroup](API_route53resolver_FirewallRuleGroup.md) from a VPC, to remove DNS filtering from the VPC.
 

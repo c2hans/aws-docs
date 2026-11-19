@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # DeleteCustomLineItem
-<a name="API_DeleteCustomLineItem"></a>
 
  Deletes the custom line item identified by the given ARN in the current, or previous billing period.
 

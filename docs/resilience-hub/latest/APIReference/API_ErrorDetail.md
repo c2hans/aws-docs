@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_E
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Indicates the error that was encountered while importing a resource.
 

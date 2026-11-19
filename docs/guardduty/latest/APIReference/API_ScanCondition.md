@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanCo
 ---
 
 # ScanCondition
-<a name="API_ScanCondition"></a>
 
 Contains information about the condition.
 

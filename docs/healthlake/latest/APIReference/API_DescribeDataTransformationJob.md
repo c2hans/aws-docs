@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Descr
 ---
 
 # DescribeDataTransformationJob
-<a name="API_DescribeDataTransformationJob"></a>
 
 Describes a data transformation job, including its current status, configuration, and progress information.
 

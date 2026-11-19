@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # Setting the CPU cores and threads per CPU core for a DB instance class
-<a name="SQLServer.Concepts.General.OptimizeCPU.Enabling"></a>
 
 You can configure the number of CPU cores and threads per core for the DB instance class when you perform the following operations:
 + [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md)

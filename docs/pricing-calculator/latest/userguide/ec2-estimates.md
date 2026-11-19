@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/ec2-
 ---
 
 # Generating Amazon EC2 estimates
-<a name="ec2-estimates"></a>
 
 You can use the AWS Pricing Calculator to estimate costs for your Amazon Elastic Compute Cloud (Amazon EC2) instances. This section provides the procedure on how to generate an Amazon EC2 estimate and describes the specifications, payment options, and add-ons you can choose for your Amazon EC2 estimate.
 

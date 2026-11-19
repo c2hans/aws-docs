@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_IamProp
 ---
 
 # IamPropertiesPatch
-<a name="API_IamPropertiesPatch"></a>
 
 The IAM properties patch of a connection.
 

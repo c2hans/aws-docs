@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/udf-videos.html
 ---
 
 # Videos on UDFs in Athena
-<a name="udf-videos"></a>
 
 Watch the following videos to learn more about using UDFs in Athena.
 

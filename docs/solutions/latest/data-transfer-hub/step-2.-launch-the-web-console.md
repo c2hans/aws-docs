@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/step-
 ---
 
 # Step 2. Launch the web console
-<a name="step-2.-launch-the-web-console"></a>
 
  After the stack is successfully created, navigate to the CloudFormation **Outputs** tab and select the **PortalUrl** value to access the Data Transfer Hub web console.
 

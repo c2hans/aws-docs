@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchGet
 ---
 
 # BatchGetFlowAssociation
-<a name="API_BatchGetFlowAssociation"></a>
 
 Retrieve the flow associations for the given resources.
 

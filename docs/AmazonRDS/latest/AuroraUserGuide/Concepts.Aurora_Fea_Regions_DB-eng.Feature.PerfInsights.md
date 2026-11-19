@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for Database Insights
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights"></a>
 
 Database Insights expands on existing Amazon RDS monitoring features to illustrate and help you analyze your database performance. With the Database Insights dashboard, you can visualize the database load on your Amazon RDS DB instance load and filter the load by waits, SQL statements, hosts, or users. For more information, see [Overview of Database Insights on Amazon Aurora](USER_PerfInsights.Overview.md).
 

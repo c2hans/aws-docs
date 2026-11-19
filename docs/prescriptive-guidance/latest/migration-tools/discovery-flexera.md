@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Flexera Cloud Migration and Modernization
-<a name="discovery-flexera"></a>
 
 *Last update: May 15, 2023*
 

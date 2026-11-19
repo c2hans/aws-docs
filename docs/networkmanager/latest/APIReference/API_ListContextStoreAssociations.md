@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_L
 ---
 
 # ListContextStoreAssociations
-<a name="API_ListContextStoreAssociations"></a>
 
 Returns the transit gateway associations of a context store.
 

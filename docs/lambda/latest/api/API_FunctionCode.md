@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_FunctionCode.html
 ---
 
 # FunctionCode
-<a name="API_FunctionCode"></a>
 
 The code for the Lambda function. You can either specify an object in Amazon S3, upload a .zip file archive deployment package directly, or specify the URI of a container image.
 

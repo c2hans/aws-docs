@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UnassignI
 ---
 
 # UnassignIpv6Addresses
-<a name="API_UnassignIpv6Addresses"></a>
 
 Unassigns the specified IPv6 addresses or Prefix Delegation prefixes from a network interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # CpuDescription
-<a name="structures-CpuDescription"></a>
 
 Object specifying client CPU characteristics
 

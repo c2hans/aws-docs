@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon DynamoDB and Application Auto Scaling
-<a name="services-that-can-integrate-dynamodb"></a>
 
 You can scale DynamoDB tables and global secondary indexes using target tracking scaling policies and scheduled scaling.
 

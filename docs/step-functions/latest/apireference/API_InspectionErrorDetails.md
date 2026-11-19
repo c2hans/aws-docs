@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_I
 ---
 
 # InspectionErrorDetails
-<a name="API_InspectionErrorDetails"></a>
 
 An object containing data about a handled exception in the tested state.
 

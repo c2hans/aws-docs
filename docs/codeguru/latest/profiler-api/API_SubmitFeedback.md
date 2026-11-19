@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_SubmitF
 ---
 
 # SubmitFeedback
-<a name="API_SubmitFeedback"></a>
 
 Sends feedback to CodeGuru Profiler about whether the anomaly detected by the analysis is useful or not.
 

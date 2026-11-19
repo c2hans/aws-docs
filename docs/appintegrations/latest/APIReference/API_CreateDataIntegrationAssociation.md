@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # CreateDataIntegrationAssociation
-<a name="API_connect-app-integrations_CreateDataIntegrationAssociation"></a>
 
 Creates and persists a DataIntegrationAssociation resource.
 

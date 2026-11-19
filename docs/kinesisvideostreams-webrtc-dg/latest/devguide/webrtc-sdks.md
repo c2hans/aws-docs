@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Stream live media (SDKs)
-<a name="webrtc-sdks"></a>
 
 In Amazon Kinesis Video Streams WebRTC, peers are devices that are configured for real-time, two-way streaming via a signaling channel. Amazon Kinesis Video Streams with WebRTC SDKs are easy-to-use software libraries that you can download and install on the devices and application clients that you want to configure as peers over a given signaling channel.
 

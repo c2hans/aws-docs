@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ListForms
-<a name="API_ListForms"></a>
 
 Retrieves a list of forms for a specified Amplify app and backend environment.
 

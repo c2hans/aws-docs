@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Data management
-<a name="gameperf06"></a>
 
 |  GAMEPERF06: How do you efficiently manage and analyze game server logs and store different types of game data for optimal performance?  |
 | --- |

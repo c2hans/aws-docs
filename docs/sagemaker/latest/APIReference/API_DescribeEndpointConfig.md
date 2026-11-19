@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeEndpointConfig
-<a name="API_DescribeEndpointConfig"></a>
 
 Returns the description of an endpoint configuration created using the `CreateEndpointConfig` API.
 

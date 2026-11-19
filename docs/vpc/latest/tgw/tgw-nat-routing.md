@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nat-routing.html
 ---
 
 # Routing behavior for 1:1 NAT in AWS Transit Gateway
-<a name="tgw-nat-routing"></a>
 
 After translation, other networks reach an attachment with NAT rules through its NAT addresses. A route to each NAT CIDR must therefore exist in the transit gateway route tables that send traffic to the attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Lambd
 ---
 
 # LambdaFunctionInfo
-<a name="API_LambdaFunctionInfo"></a>
 
  Information about a Lambda function specified in a deployment.
 

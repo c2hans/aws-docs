@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sqs_example_sqs_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Manage large Amazon SQS messages using Amazon S3 with an AWS SDK
-<a name="sqs_example_sqs_Scenario_SqsExtendedClient_section"></a>
 
 The following code example shows how to use the Amazon SQS Extended Client Library to work with large Amazon SQS messages.
 

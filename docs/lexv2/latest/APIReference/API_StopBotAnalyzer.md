@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_StopBotAna
 ---
 
 # StopBotAnalyzer
-<a name="API_StopBotAnalyzer"></a>
 
 Cancels an ongoing bot analysis execution. Once stopped, the analysis cannot be resumed and no recommendations will be generated.
 

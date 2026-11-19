@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Security Incident Response and AWS Organizations
-<a name="services-that-can-integrate-security-ir"></a>
 
 AWS Security Incident Response is a security service that provides 24/7, live, human-assisted security incident support to help customers respond rapidly to cybersecurity incidents such as credential theft and ransomware attacks. By integrating with Organizations you enable security coverage for your entire organization. For more information, see [ Managing AWS Security Incident Response accounts with AWS Organizations](https://docs.aws.amazon.com/security-ir/latest/userguide/security-ir-organizations.html) in the *Security Incident Response User Guide*.
 

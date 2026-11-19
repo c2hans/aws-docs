@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/document-hist
 ---
 
 # Document history for Device Farm desktop browser testing
-<a name="document-history"></a>
 
 The following table describes the documentation for this release of the guide.
 + **API version: 2015-06-23**

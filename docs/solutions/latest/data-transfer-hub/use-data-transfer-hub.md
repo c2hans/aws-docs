@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/use-d
 ---
 
 # Use Data Transfer Hub
-<a name="use-data-transfer-hub"></a>
 
  This guide provides detailed instructions to perform these tasks:
 + [Create an Amazon S3 transfer task ]()

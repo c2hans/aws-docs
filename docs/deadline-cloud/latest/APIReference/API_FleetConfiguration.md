@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FleetConfiguration
-<a name="API_FleetConfiguration"></a>
 
 Fleet configuration details.
 

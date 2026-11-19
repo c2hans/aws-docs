@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationSubnetGroups
-<a name="API_DescribeReplicationSubnetGroups"></a>
 
 Returns information about the replication subnet groups.
 

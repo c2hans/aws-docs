@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/subtract.html
 ---
 
 # $subtract
-<a name="subtract"></a>
 
 The `$subtract` operator in Amazon DocumentDB is used to subtract values. It can be used to subtract dates, numbers, or a combination of both. This operator is useful for calculating the difference between two dates or subtracting a value from a number.
 

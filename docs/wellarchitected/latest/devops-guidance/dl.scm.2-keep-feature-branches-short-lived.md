@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.SCM.2] Keep feature branches short-lived
-<a name="dl.scm.2-keep-feature-branches-short-lived"></a>
 
  **Category:** FOUNDATIONAL
 

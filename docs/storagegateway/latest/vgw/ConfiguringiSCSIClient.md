@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/ConfiguringiSC
 ---
 
 # Connecting to your volumes from a Windows client
-<a name="ConfiguringiSCSIClient"></a>
 
 A Volume Gateway exposes volumes you have created for the gateway as iSCSI targets. For more information, see [Connecting your volumes to your client](GettingStartedAccessVolumes.md).
 
@@ -16,7 +15,7 @@ The following diagram highlights the iSCSI target in the larger picture of the S
 
 You can connect to your volume from either a Windows or Red Hat Linux client. You can optionally configure CHAP for either client type.
 
-Your gateway exposes your volume as an iSCSI target with a name you specify, prepended by `iqn.1997-05.com.amazon:`. For example, if you specify a target name of `myvolume`, then the iSCSI target you use to connect to the volume is `iqn.1997-05.com.amazon:myvolume`. For more information about how to configure your applications to mount volumes over iSCSI, see [Connecting to your volumes from a Windows client](#ConfiguringiSCSIClient).
+Your gateway exposes your volume as an iSCSI target with a name you specify, prepended by `iqn.1997-05.com.amazon:`. For example, if you specify a target name of `myvolume`, then the iSCSI target you use to connect to the volume is `iqn.1997-05.com.amazon:myvolume`. For more information about how to configure your applications to mount volumes over iSCSI, see [Connecting to your volumes from a Windows client](ConfiguringiSCSIClient.md).
 
 | To | See |
 | --- | --- |

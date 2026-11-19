@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/security-i
 ---
 
 # Identity-based policies (IAM) examples
-<a name="security-iam-id-policies-examples"></a>
 
 You can attach policies to IAM identities. For example, you can do the following:
 + **Attach a permissions policy to a user or a group in your account** – To grant a user permissions to view pipelines in the console, you can attach a permissions policy to a user or group that the user belongs to.

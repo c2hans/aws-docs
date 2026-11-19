@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Acceptor
-<a name="API_marketplace-agreements_Acceptor"></a>
 
 The details of the party accepting the agreement terms. This is commonly the buyer for `PurchaseAgreement`.
 

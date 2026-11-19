@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGrouping
 ---
 
 # ListGroupingStatuses
-<a name="API_ListGroupingStatuses"></a>
 
 Returns the status of the last grouping or ungrouping action for each resource in the specified application group.
 

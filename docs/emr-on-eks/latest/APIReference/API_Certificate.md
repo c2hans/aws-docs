@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Certi
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 The entity representing certificate data generated for managed endpoint.
 

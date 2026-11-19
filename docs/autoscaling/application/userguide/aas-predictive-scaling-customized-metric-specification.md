@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/aas-pr
 ---
 
 # Advanced predictive scaling policy using custom metrics
-<a name="aas-predictive-scaling-customized-metric-specification"></a>
 
 In a predictive scaling policy, you can use predefined or custom metrics. Custom metrics are useful when the predefined metrics do not sufficiently describe your application load.
 

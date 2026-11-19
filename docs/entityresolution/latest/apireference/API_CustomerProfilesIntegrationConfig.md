@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # CustomerProfilesIntegrationConfig
-<a name="API_CustomerProfilesIntegrationConfig"></a>
 
 Specifies the configuration for integrating with Customer Profiles. This configuration enables AWS Entity Resolution to send matched output directly to Customer Profiles instead of Amazon S3, creating a unified customer view by automatically updating customer profiles based on match clusters.
 

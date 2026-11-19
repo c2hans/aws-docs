@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FlowLo
 ---
 
 # FlowLogsConfigurationResult
-<a name="API_FlowLogsConfigurationResult"></a>
 
 Contains information on the status of VPC flow logs as a data source.
 

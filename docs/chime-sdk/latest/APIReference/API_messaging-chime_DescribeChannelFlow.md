@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DescribeChannelFlow
-<a name="API_messaging-chime_DescribeChannelFlow"></a>
 
 Returns the full details of a channel flow in an Amazon Chime `AppInstance`. This is a developer API.
 

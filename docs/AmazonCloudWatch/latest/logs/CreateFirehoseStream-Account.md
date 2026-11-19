@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CreateFireh
 ---
 
 # Step 1: Create a Firehose delivery stream
-<a name="CreateFirehoseStream-Account"></a>
 
 **Important**
  Before you complete the following steps, you must use an access policy, so Firehose can access your Amazon S3 bucket. For more information, see [Controlling Access](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-iam-s3) in the *Amazon Data Firehose Developer Guide*.

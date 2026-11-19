@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetRelationalDatabaseMasterUserPassword
-<a name="API_GetRelationalDatabaseMasterUserPassword"></a>
 
 Returns the current, previous, or pending versions of the master user password for a Lightsail database.
 

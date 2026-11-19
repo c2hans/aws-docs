@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Simulate noise with OpenQASM 3.0
-<a name="braket-openqasm-noise-simulation"></a>
 
 To simulate noise with OpenQASM3, you use *pragma* instructions to add noise operators. For example, to simulate the noisy version of the [GHZ program](braket-openqasm-create-submit-task.md#braket-openqasm-example-program) provided previously, you can submit the following OpenQASM program.
 

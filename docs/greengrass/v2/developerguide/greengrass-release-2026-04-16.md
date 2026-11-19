@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # Release: AWS IoT Greengrass Core v2.17.0 software update on April 16, 2026
-<a name="greengrass-release-2026-04-16"></a>
 
 This release provides version 2.17.0 of the Greengrass nucleus component, version 2.5.0 of the Greengrass nucleus lite component, and updates to AWS-provided components.
 

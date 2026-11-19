@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-hudi-metadata-
 ---
 
 # Use Hudi metadata for improved performance
-<a name="querying-hudi-metadata-table"></a>
 
 The Apache Hudi has a [metadata table](https://hudi.apache.org/docs/next/metadata/) that contains indexing features for improved performance like file listing, data skipping using column statistics, and a bloom filter based index.
 

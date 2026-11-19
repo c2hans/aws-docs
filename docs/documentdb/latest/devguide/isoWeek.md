@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/isoWeek.html
 ---
 
 # $isoWeek
-<a name="isoWeek"></a>
 
 The `$isoWeek` operator in Amazon DocumentDB returns the ISO week number for a date. The ISO week date system is a way of numbering weeks in a year, in which the first week of a new year is the week that contains the first Thursday of that year. This is different from the Gregorian calendar, where the first week of a new year is the week that contains January 1.
 

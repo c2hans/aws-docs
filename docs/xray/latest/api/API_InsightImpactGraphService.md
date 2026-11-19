@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_InsightImpactGraphSe
 ---
 
 # InsightImpactGraphService
-<a name="API_InsightImpactGraphService"></a>
 
 Information about an application that processed requests, users that made requests, or downstream services, resources, and applications that an application used.
 

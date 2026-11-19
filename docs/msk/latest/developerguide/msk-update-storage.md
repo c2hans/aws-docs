@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-sto
 ---
 
 # Scale up Amazon MSK Standard broker storage
-<a name="msk-update-storage"></a>
 
 You can increase the amount of EBS storage per broker. You can't decrease the storage.
 

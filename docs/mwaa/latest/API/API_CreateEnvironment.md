@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_CreateEnvironment.ht
 ---
 
 # CreateEnvironment
-<a name="API_CreateEnvironment"></a>
 
 Creates an Amazon Managed Workflows for Apache Airflow (Amazon MWAA) environment.
 

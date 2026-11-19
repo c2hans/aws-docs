@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_S
 ---
 
 # StartMetricsExport
-<a name="API_StartMetricsExport"></a>
 
 Initiates the export task of metrics.
 

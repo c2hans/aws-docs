@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateResponde
 ---
 
 # CreateResponderGateway
-<a name="API_CreateResponderGateway"></a>
 
 Creates a responder gateway.
 

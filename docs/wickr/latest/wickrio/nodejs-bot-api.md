@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/nodejs-bot-api.html
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Node.js Bot API (Development toolkit)
-<a name="nodejs-bot-api"></a>
 
 This section describes the Wickr IO Node.js Bot API framework and how to use it with several examples. This API provides tools for easier and more efficient development of Wickr IO integration bots. It utilizes the Wickr IO Node.js addon APIs to make it easier to develop integrations.
 

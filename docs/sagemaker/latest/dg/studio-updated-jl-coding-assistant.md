@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-co
 ---
 
 # Using a coding assistant to expedite your machine learning workflows
-<a name="studio-updated-jl-coding-assistant"></a>
 
 ## Overview
 <a name="studio-updated-jl-coding-assistant-overview"></a>

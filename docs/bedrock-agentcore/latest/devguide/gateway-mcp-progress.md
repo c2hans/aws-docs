@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Receive progress notifications from your AgentCore gateway
-<a name="gateway-mcp-progress"></a>
 
 Progress notifications allow MCP server targets to report incremental progress on long-running tool calls. When a tool call takes time to complete, the server can send `notifications/progress` events to keep the client informed about the operation’s status. AgentCore Gateway forwards these notifications from MCP server targets to your client as Server-Sent Events (SSE) chunks.
 

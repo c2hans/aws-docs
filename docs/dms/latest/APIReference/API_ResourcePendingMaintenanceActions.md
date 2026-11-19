@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ResourcePend
 ---
 
 # ResourcePendingMaintenanceActions
-<a name="API_ResourcePendingMaintenanceActions"></a>
 
 Identifies an AWS DMS resource and any pending actions for it.
 

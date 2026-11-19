@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Migrating legacy ASP.NET Web Forms applications to AWS
-<a name="introduction"></a>
 
 *Fahad Mustafa and Adam Fisher, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GraphQLRenderConfig
-<a name="API_GraphQLRenderConfig"></a>
 
 Describes the GraphQL configuration for an API for a code generation job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CatalogDeltaSou
 ---
 
 # S3CatalogDeltaSource
-<a name="API_S3CatalogDeltaSource"></a>
 
 Specifies a Delta Lake data source that is registered in the AWS Glue Data Catalog. The data source must be stored in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/publish-L
 ---
 
 # Publishing a product in AWS Data Exchange containing AWS Lake Formation data permission data sets (Preview)
-<a name="publish-LF-data-product"></a>
 
 If you're interested in publishing products containing AWS Lake Formation data permission data sets during this Preview, contact [AWS Support](https://console.aws.amazon.com/support/home#/case/create%3FissueType=customer-service).
 

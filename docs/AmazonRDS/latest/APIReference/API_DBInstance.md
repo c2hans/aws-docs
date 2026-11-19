@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBInst
 ---
 
 # DBInstance
-<a name="API_DBInstance"></a>
 
 Contains the details of an Amazon RDS DB instance.
 

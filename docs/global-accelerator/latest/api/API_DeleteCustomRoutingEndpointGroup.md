@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteCustomRoutingEndpointGroup
-<a name="API_DeleteCustomRoutingEndpointGroup"></a>
 
 Delete an endpoint group from a listener for a custom routing accelerator.
 

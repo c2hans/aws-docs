@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/aws-amplify-ref
 ---
 
 # AWS Amplify Hosting reference
-<a name="aws-amplify-reference-chapter"></a>
 
 Use the topics in this section to find detailed reference material for AWS Amplify.
 

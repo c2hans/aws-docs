@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Up
 ---
 
 # UpdateExtension
-<a name="API_UpdateExtension"></a>
 
 Updates an AWS AppConfig extension. For more information about extensions, see [Extending workflows](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions.html) in the * AWS AppConfig User Guide*.
 

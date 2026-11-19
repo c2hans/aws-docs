@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-up-recordi
 ---
 
 # Enable contact recording
-<a name="set-up-recordings"></a>
 
 To enable the recording of voice conversations, you need to add a [Set recording and analytics behavior](set-recording-behavior.md) block to your flow. You need to do this regardless of whether your Connect Customer instance is enabled for multi-party contacts (enhanced contact monitoring) or third-party contacts.
 

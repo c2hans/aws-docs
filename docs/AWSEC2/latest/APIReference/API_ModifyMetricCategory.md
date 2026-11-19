@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyMet
 ---
 
 # ModifyMetricCategory
-<a name="API_ModifyMetricCategory"></a>
 
 Modifies the metrics in the specified metric category. The metrics that you specify replace the existing metrics.
 

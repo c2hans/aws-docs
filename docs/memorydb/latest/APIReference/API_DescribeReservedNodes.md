@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeReservedNodes
-<a name="API_DescribeReservedNodes"></a>
 
 Returns information about reserved nodes for this account, or about a specified reserved node.
 

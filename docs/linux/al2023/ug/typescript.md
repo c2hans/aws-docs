@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/typescript.html
 ---
 
 # TypeScript in AL2023
-<a name="typescript"></a>
 
 **Note**
  This document provides the essential information on TypeScript and its Node.js-based execution environment. It also covers a typical development workflow and explains how TypeScript is packaged in AL2023 to deliver a consistent and reproducible development environment.

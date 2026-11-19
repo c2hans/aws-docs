@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateProvisioningParameter
-<a name="API_UpdateProvisioningParameter"></a>
 
 The parameter key-value pair used to update a provisioned product.
 

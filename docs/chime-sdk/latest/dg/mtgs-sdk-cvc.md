@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-cvc.html
 ---
 
 # Understanding SIP integration using an Amazon Chime SDK Voice Connector
-<a name="mtgs-sdk-cvc"></a>
 
 Integrate your SIP-compatible voice infrastructure with an Amazon Chime SDK Voice Connector to make SIP voice calls. You must use the `us-east-1` or `us-east-2` Regions. You must have an IP Private Branch Exchange (PBX), Session Border Controller (SBC), or other voice infrastructure with internet access that supports Session Initiation Protocol (SIP). For more information, see [Before you begin](https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connectors.html#vc-prereq) in the *Amazon Chime SDK Administrator Guide*.
 

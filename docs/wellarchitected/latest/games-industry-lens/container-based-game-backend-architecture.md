@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Container-based game backend architecture
-<a name="container-based-game-backend-architecture"></a>
 
  This section outlines a container-based game backend architecture.
 

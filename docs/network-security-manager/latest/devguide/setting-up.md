@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Setting up AWS Network Security Manager
-<a name="setting-up"></a>
 
 With AWS Network Security Manager, you can work in two organizational models. Use it directly in a single account, or use it with AWS Organizations to manage protections across multiple accounts. The setup steps depend on which model you choose.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/hello-world.html
 ---
 
 # Tutorial: Create your first AWS CDK app
-<a name="hello-world"></a>
 
 Get started with using the AWS Cloud Development Kit (AWS CDK) by using the AWS CDK Command Line Interface (AWS CDK CLI) to develop your first CDK app, bootstrap your AWS environment, and deploy your application on AWS.
 

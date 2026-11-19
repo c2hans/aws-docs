@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Foundations of software agents
-<a name="roots"></a>
 
 ## 1959 - Oliver Selfridge: the birth of autonomy in software
 <a name="selfridge"></a>

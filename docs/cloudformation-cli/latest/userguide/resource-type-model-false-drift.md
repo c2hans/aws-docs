@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Preventing false drift detection results for resource types
-<a name="resource-type-model-false-drift"></a>
 
 When CloudFormation performs drift detection on a resource, it looks up the value for each resource property as specified in the stack template, and compares that value with the current resource property value returned by the resource `read` handler. A resource is then considered to have drifted if one or more of its properties have been deleted, or had their value changed. In some cases, however, the resource may not be able to return the exact same value in the `read` handler as was specified in the stack template, even though the value is essentially the same and shouldn't be considered as drifted.
 

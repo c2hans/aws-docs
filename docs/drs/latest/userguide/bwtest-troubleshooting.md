@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-troubleshoot
 ---
 
 # Troubleshooting the bandwidth test
-<a name="bwtest-troubleshooting"></a>
 
 ## The connection is refused, or the page will not load
 <a name="bwtest-ts-refused"></a>

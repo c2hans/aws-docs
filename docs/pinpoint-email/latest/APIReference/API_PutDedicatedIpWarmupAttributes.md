@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutDedicatedIpWarmupAttributes
-<a name="API_PutDedicatedIpWarmupAttributes"></a>
 
 ## Request Syntax
 <a name="API_PutDedicatedIpWarmupAttributes_RequestSyntax"></a>

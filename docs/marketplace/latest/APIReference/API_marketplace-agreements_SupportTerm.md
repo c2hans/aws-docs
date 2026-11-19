@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SupportTerm
-<a name="API_marketplace-agreements_SupportTerm"></a>
 
 Defines the customer support available for the acceptors when they purchase the software.
 

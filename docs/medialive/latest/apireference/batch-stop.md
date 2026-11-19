@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-stop
 ---
 
 # Batch action: stop
-<a name="batch-stop"></a>
 
 ## URI
 <a name="batch-stop-url"></a>

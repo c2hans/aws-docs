@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-co
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Define a Pipeline in JSON Format
-<a name="dp-copydata-redshift-define-pipeline-cli"></a>
 
 This example scenario shows how to copy data from an Amazon S3 bucket to Amazon Redshift.
 

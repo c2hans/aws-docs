@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteGlueIdentit
 ---
 
 # DeleteGlueIdentityCenterConfiguration
-<a name="API_DeleteGlueIdentityCenterConfiguration"></a>
 
 Deletes the existing AWS Glue Identity Center configuration, removing the integration between AWS Glue and AWS IAM Identity Center.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL RuleActionOverride
-<a name="aws-properties-wafv2-webacl-ruleactionoverride"></a>
 
 Action setting to use in the place of a rule action that is configured inside the rule group. You specify one override for each rule whose action you want to change.
 

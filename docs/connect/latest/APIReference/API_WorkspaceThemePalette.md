@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceThemePalette
-<a name="API_WorkspaceThemePalette"></a>
 
 Contains color palette configuration for different areas of a workspace.
 

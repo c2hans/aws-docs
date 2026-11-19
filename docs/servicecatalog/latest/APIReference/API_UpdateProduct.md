@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateProduct
-<a name="API_UpdateProduct"></a>
 
 Updates the specified product.
 

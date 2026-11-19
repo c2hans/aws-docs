@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/approvals-
 ---
 
 # Add a manual approval action to a pipeline in CodePipeline
-<a name="approvals-action-add"></a>
 
 You can add an approval action to a stage in a CodePipeline pipeline at the point where you want the pipeline to stop so someone can manually approve or reject the action.
 

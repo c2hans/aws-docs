@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-migrate-fargat
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Migrate from EKS Fargate to EKS Auto Mode
-<a name="auto-migrate-fargate"></a>
 
 This topic walks you through the process of migrating workloads from EKS Fargate to Amazon EKS Auto Mode using `kubectl`. The migration can be performed gradually, allowing you to move workloads at your own pace while maintaining cluster stability and application availability throughout the transition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/post-d
 ---
 
 # Post-deployment steps
-<a name="post-deployment-tasks"></a>
 
 After DeepRacer on AWS has successfully deployed, complete the following steps to get started:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Replicat
 ---
 
 # ReplicationFinding
-<a name="API_ReplicationFinding"></a>
 
 Contains information about a resource that could not be replicated across the Regions of a Global Resiliency deployment, including the reason and any action required to resolve it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_VmInstance
 ---
 
 # VmInstanceAggregation
-<a name="API_VmInstanceAggregation"></a>
 
 An aggregation of information about VM instances.
 

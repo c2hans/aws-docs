@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseOrderField
-<a name="API_amazon-q-connect_QuickResponseOrderField"></a>
 
 The quick response fields to order the quick response query results by.
 

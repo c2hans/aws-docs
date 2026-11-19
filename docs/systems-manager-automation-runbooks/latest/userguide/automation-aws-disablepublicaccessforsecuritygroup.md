@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-DisablePublicAccessForSecurityGroup`
-<a name="automation-aws-disablepublicaccessforsecuritygroup"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AnomalyDateInterval
-<a name="API_AnomalyDateInterval"></a>
 
 The time period for an anomaly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_Compatibil
 ---
 
 # Compatibility
-<a name="API_Compatibility"></a>
 
 Defines the compatibility matrix for a runtime version, indicating supported integration models, architectures, and feature availability.
 

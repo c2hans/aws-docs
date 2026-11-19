@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table with pagination using an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithPagination_section"></a>
 
 The following code examples show how to query a table with pagination.
 + Implement pagination for DynamoDB query results.

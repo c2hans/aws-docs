@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Troubleshooting Amazon Kinesis Video Streams with WebRTC
-<a name="troubleshooting"></a>
 
 Use the following information to troubleshoot common issues that you might encounter with Amazon Kinesis Video Streams with WebRTC.
 

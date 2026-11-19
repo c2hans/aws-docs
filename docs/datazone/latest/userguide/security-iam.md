@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/security-iam.h
 ---
 
 # Controlling access to Amazon DataZone resources using IAM
-<a name="security-iam"></a>
 
 You need AWS Identity and Access Management (IAM) to complete the following security-related tasks:
 + Create users and groups under your AWS account.

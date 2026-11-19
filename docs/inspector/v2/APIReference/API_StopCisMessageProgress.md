@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_StopCisMes
 ---
 
 # StopCisMessageProgress
-<a name="API_StopCisMessageProgress"></a>
 
 The stop CIS message progress.
 

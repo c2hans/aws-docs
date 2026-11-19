@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/fact-machines-hyperp
 ---
 
 # Factorization Machines Hyperparameters
-<a name="fact-machines-hyperparameters"></a>
 
 The following table contains the hyperparameters for the Factorization Machines algorithm. These are parameters that are set by users to facilitate the estimation of model parameters from data. The required hyperparameters that must be set are listed first, in alphabetical order. The optional hyperparameters that can be set are listed next, also in alphabetical order.
 

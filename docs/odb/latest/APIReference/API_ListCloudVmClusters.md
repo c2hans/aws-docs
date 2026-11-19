@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListCloudVmC
 ---
 
 # ListCloudVmClusters
-<a name="API_ListCloudVmClusters"></a>
 
 Returns information about the VM clusters owned by your AWS account or only the ones on the specified Exadata infrastructure.
 

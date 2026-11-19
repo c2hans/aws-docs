@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/service_code_e
 ---
 
 # Actions for AWS KMS using AWS SDKs
-<a name="service_code_examples_actions"></a>
 
 The following code examples demonstrate how to perform individual AWS KMS actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
 

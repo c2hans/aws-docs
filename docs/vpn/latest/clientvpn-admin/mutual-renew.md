@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/mutual-renew.
 ---
 
 # Renew your server certificate for AWS Client VPN
-<a name="mutual-renew"></a>
 
 You can renew and re-import a Client VPN server certificate that has expired. Depending on the version of OpenVPN easy-rsa that you're using, the procedure will vary. See [Easy-RSA 3 Certificate Renewal and Revocation Documentation](https://github.com/OpenVPN/easy-rsa/blob/master/doc/EasyRSA-Renew-and-Revoke.md) for more details.
 

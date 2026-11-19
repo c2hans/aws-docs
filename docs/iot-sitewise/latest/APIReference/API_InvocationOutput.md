@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Inv
 ---
 
 # InvocationOutput
-<a name="API_InvocationOutput"></a>
 
 This contains the SiteWise Assistant's response and the corresponding citation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_AcmeAccount.
 ---
 
 # AcmeAccount
-<a name="API_AcmeAccount"></a>
 
 Contains detailed information about an ACME account.
 

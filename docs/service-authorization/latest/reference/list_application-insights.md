@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon CloudWatch Application Insights
-<a name="list_application-insights"></a>
 
 Amazon CloudWatch Application Insights (service prefix: `applicationinsights`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

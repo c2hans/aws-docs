@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RowLe
 ---
 
 # RowLevelPermissionTagConfiguration
-<a name="API_RowLevelPermissionTagConfiguration"></a>
 
 The configuration of tags on a dataset to set row-level security.
 

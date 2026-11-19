@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateListener
-<a name="API_UpdateListener"></a>
 
 Updates the specified listener for the specified service.
 

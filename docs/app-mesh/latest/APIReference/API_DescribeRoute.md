@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Describ
 ---
 
 # DescribeRoute
-<a name="API_DescribeRoute"></a>
 
 Describes an existing route.
 

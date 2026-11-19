@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Related resources
-<a name="related-resources"></a>
 + [Converting SSIS to AWS Glue using AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP-converting-aws-glue-ssis.html)
 + [Amazon RDS backup and restore](https://aws.amazon.com/rds/features/backup/)
 + [AWS Glue documentation](https://docs.aws.amazon.com/glue/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Ge
 ---
 
 # Creating and connecting to an Aurora MySQL DB cluster
-<a name="CHAP_GettingStartedAurora.CreatingConnecting.Aurora"></a>
 
 This tutorial creates an EC2 instance and an Aurora MySQL DB cluster. The tutorial shows you how to access the DB cluster from the EC2 instance using a standard MySQL client. As a best practice, this tutorial creates a private DB cluster in a virtual private cloud (VPC). In most cases, other resources in the same VPC, such as EC2 instances, can access the DB cluster, but resources outside of the VPC can't access it.
 

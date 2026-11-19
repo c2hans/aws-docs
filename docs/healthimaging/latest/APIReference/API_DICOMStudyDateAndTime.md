@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_DI
 ---
 
 # DICOMStudyDateAndTime
-<a name="API_DICOMStudyDateAndTime"></a>
 
 The aggregated structure to store DICOM study date and study time for search capabilities.
 

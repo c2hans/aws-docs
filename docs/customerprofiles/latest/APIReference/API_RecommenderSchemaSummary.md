@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommenderSchemaSummary
-<a name="API_connect-customer-profiles_RecommenderSchemaSummary"></a>
 
 Provides a summary of a recommender schema's configuration and current state.
 

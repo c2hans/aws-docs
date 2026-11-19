@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/view-users-dashbo
 ---
 
 # View who has access to a shared dashboard
-<a name="view-users-dashboard"></a>
 
 Use the following procedure to see which users or groups have access to the dashboard.
 

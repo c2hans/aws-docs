@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-order-switches.h
 ---
 
 # Plan the order of input switches
-<a name="ips-order-switches"></a>
 
 We recommend that you plan the order of the input switches before you create the actions in the MediaLive schedule.
 

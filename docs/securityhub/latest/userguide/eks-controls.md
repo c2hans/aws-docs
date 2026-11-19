@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/eks-control
 ---
 
 # Security Hub CSPM controls for Amazon EKS
-<a name="eks-controls"></a>
 
 These Security Hub CSPM controls evaluate the Amazon Elastic Kubernetes Service (Amazon EKS) service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
 

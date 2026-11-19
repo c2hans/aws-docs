@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/dsbulk-upload-
 ---
 
 # Prerequisites: Steps you have to complete before you can upload data with DSBulk
-<a name="dsbulk-upload-prequs"></a>
 
 You must complete the following tasks before you can start this tutorial.
 

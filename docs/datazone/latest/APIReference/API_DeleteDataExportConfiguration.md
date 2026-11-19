@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteD
 ---
 
 # DeleteDataExportConfiguration
-<a name="API_DeleteDataExportConfiguration"></a>
 
 Deletes data export configuration for a domain.
 

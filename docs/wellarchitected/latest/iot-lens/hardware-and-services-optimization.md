@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/hardware
 ---
 
 # Hardware and services - Hardware optimization
-<a name="hardware-and-services-optimization"></a>
 
 | IOTSUS03: How do you pick the right hardware components? |
 | --- |

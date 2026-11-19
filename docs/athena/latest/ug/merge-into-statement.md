@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/merge-into-statement.ht
 ---
 
 # MERGE INTO
-<a name="merge-into-statement"></a>
 
 Conditionally updates, deletes, or inserts rows into an Apache Iceberg table. A single statement can combine update, delete, and insert actions.
 

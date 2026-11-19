@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgre
 ---
 
 # Setting up Kerberos authentication for PostgreSQL DB clusters
-<a name="postgresql-kerberos-setting-up"></a>
 
 You use AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) to set up Kerberos authentication for a PostgreSQL DB cluster. To set up Kerberos authentication, take the following steps.
 

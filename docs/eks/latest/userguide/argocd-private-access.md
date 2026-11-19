@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-private-acce
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure private endpoint access for Argo CD
-<a name="argocd-private-access"></a>
 
 By default, you can access the Argo CD endpoint over the public internet. You can configure private endpoint access so that traffic between your VPC and the Argo CD endpoint stays within the AWS network, without going through the public internet.
 

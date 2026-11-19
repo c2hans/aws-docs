@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Registe
 ---
 
 # RegisterConnectorV2
-<a name="API_RegisterConnectorV2"></a>
 
 Grants permission to complete the authorization based on input parameters.
 

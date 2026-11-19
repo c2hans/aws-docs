@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-tutor
 ---
 
 # Tutorial: Create an EventBridge pipe that filters source events
-<a name="pipes-tutorial-create-dynamodb-sqs"></a>
 
 In this tutorial, you'll create a pipe that connects a DynamoDB stream source to an Amazon SQS queue target. This includes specifying an event pattern for the pipe to use when filtering events to deliver to the queue. You'll then test the pipe to ensure that only the desired events are being delivered.
 

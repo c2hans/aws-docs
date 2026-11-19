@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Replatform
-<a name="migration-replatform-pattern-list"></a>
 
 **Topics**
 + [Export a Microsoft SQL Server database to Amazon S3 by using AWS DMS](export-a-microsoft-sql-server-database-to-amazon-s3-by-using-aws-dms.md)
@@ -13,7 +12,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Migrate Oracle Database error codes to an Amazon Aurora PostgreSQL-Compatible database](migrate-oracle-database-error-codes-to-an-amazon-aurora-postgresql-compatible-database.md)
 + [Migrate SAP ASE on Amazon EC2 to Amazon Aurora PostgreSQL-Compatible using AWS SCT and AWS DMS](migrate-sap-ase-on-amazon-ec2-to-amazon-aurora-postgresql-compatible-using-aws-sct-and-aws-dms.md)
 + [Migrate Windows SSL certificates to an Application Load Balancer using ACM](migrate-windows-ssl-certificates-to-an-application-load-balancer-using-acm.md)
-+ [Migrate an Oracle JD Edwards EnterpriseOne database to AWS by using Oracle Data Pump and AWS DMS](migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms.md)
 + [Migrate an Oracle PeopleSoft database to AWS by using AWS DMS](migrate-an-oracle-peoplesoft-database-to-aws-by-using-aws-dms.md)
 + [Migrate an on-premises MySQL database to Amazon RDS for MySQL](migrate-an-on-premises-mysql-database-to-amazon-rds-for-mysql.md)
 + [Migrate an on-premises Microsoft SQL Server database to Amazon RDS for SQL Server](migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server.md)

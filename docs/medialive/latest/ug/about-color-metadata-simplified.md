@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/about-color-metadata
 ---
 
 # General information about color space
-<a name="about-color-metadata-simplified"></a>
 
 Following is some general information about how MediaLive handles color space.
 

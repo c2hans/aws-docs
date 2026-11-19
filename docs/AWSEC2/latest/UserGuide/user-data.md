@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html
 ---
 
 # Run commands when you launch an EC2 instance with user data input
-<a name="user-data"></a>
 
 When you launch an Amazon EC2 instance, you can pass user data to the instance that is used to perform automated configuration tasks, or to run scripts after the instance starts.
 

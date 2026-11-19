@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entrie
 ---
 
 # Amazon EKS access entry authentication
-<a name="eks-access-entries"></a>
 
 Amazon EKS supports two mechanisms for granting an IAM principal permission to call the cluster's Kubernetes API: the legacy `aws-auth` ConfigMap and the newer [access entry API](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html). An access entry grants Kubernetes API access to an IAM principal without requiring you to edit a ConfigMap. AWS Batch can authenticate to your cluster through either mechanism.
 

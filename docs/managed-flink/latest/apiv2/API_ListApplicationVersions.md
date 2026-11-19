@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ListAppli
 ---
 
 # ListApplicationVersions
-<a name="API_ListApplicationVersions"></a>
 
 Lists all the versions for the specified application, including versions that were rolled back. The response also includes a summary of the configuration associated with each version.
 

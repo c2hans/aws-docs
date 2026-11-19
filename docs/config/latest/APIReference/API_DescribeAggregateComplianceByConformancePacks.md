@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAggregateComplianceByConformancePacks
-<a name="API_DescribeAggregateComplianceByConformancePacks"></a>
 
 Returns a list of the existing and deleted conformance packs and their associated compliance status with the count of compliant and noncompliant AWS Config rules within each conformance pack. Also returns the total rule count which includes compliant rules, noncompliant rules, and rules that cannot be evaluated due to insufficient data.
 

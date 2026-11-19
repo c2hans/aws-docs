@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Using AWS Managed Services to achieve operational excellence
-<a name="ams-operational-excellence"></a>
 
 AWS Managed Services (AMS) helps you manage the operations of your AWS infrastructure. Whether you're starting with a single-account or multi-account landing zone, AMS can help you adopt AWS at scale and operate efficiently and securely. The proactive, preventative, and detective capabilities in AMS are designed to reduce risk and improve reliability without constraining agility, allowing your organization to prioritize innovation, such as new features and bug fixes. The operational capabilities of AMS include 24/7/365 proactive monitoring and remediation, incident detection and management, security management, patching, backup, and cost optimization. AMS helps you implement operational best practices and provides specialized automations, skills, and experience. For more information, see [AWS Managed Services features](https://aws.amazon.com/managed-services/features/accelerate-operations-plan/).
 

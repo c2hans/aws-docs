@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionsList.h
 ---
 
 # ConnectionsList
-<a name="API_ConnectionsList"></a>
 
 Specifies the connections used by a job.
 

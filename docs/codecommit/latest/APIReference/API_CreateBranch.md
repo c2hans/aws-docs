@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Creat
 ---
 
 # CreateBranch
-<a name="API_CreateBranch"></a>
 
 Creates a branch in a repository and points the branch to a commit.
 

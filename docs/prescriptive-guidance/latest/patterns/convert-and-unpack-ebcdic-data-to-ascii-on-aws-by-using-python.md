@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Convert and unpack EBCDIC data to ASCII on AWS by using Python
-<a name="convert-and-unpack-ebcdic-data-to-ascii-on-aws-by-using-python"></a>
 
 *Luis Gustavo Dantas, Amazon Web Services*
 

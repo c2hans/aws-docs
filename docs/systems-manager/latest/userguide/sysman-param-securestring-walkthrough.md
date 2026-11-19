@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-
 ---
 
 # Creating a SecureString parameter in Parameter Store and joining a node to a Domain (PowerShell)
-<a name="sysman-param-securestring-walkthrough"></a>
 
 This walkthrough shows how to join a Windows Server node to a domain using AWS Systems Manager `SecureString` parameters and Run Command. The walkthrough uses typical domain parameters, such as the domain name and a domain user name. These values are passed as unencrypted string values. The domain password is encrypted using an AWS managed key and passed as an encrypted string.
 

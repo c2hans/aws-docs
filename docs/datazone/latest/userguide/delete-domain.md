@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/delete-domain.
 ---
 
 # Delete Amazon DataZone domains
-<a name="delete-domain"></a>
 
 In Amazon DataZone, a domain is an organizing entity for connecting together your assets, users, and their projects. For more information, see [Amazon DataZone terminology and concepts](datazone-concepts.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Viewing your shared resources in AWS RAM
-<a name="working-with-sharing-view-sr"></a>
 
 You can view the list of individual resources that you've shared, across all resource shares. The list helps you to determine which resources you're currently sharing, the number of resource shares that they're included in, and the number of principals that have access to them.
 

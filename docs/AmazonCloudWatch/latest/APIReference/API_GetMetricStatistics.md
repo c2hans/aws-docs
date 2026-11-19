@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetMetricStatistics
-<a name="API_GetMetricStatistics"></a>
 
 Gets statistics for the specified metric.
 

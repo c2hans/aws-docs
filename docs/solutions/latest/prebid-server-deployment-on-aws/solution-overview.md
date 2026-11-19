@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Deploy a Prebid Server to manage ad auction requests with AWS infrastructure
-<a name="solution-overview"></a>
 
 Guidance for Deploying a Prebid Server on AWS helps customers deploy and operate Prebid Server, an open source solution for real-time ad monetization, in their own Amazon Web Services (AWS) environment. The solution enables customers with ad-supported websites to achieve scaled access to advertising revenue through a community of more than 180\+ advertising platforms. Customers achieve full control over decision logic and access to transaction data, and realize AWS benefits like global scalability and pay-as-you-go economics. This solution hosts the Prebid Server executable program in a cost-effective way for a variety of request loads—​5,000-100,000 requests per second (RPS)--and captures operational and transaction logs from each Prebid Server container for analysis and reporting.
 

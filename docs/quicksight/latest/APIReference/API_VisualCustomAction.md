@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualCustomAction
-<a name="API_VisualCustomAction"></a>
 
 A custom action defined on a visual.
 

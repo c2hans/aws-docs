@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Vi
 ---
 
 # VideoConfiguration
-<a name="API_VideoConfiguration"></a>
 
 Object specifying a stream’s video configuration, as set up by the broadcaster (usually in an encoder). This is part of the [IngestConfigurations](API_IngestConfigurations.md) object and the deprecated [IngestConfiguration](API_IngestConfiguration.md) object. It is used for monitoring stream health.
 

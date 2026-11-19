@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/invocation-sync.html
 ---
 
 # Invoke a Lambda Event Function synchronously
-<a name="invocation-sync"></a>
 
 When you invoke a Lambda Event Function synchronously, Lambda runs the function and waits for a response. When the function completes, Lambda returns the response from the function's code with additional data, such as the version of the function that was invoked. To invoke a function synchronously with the AWS CLI, use the `invoke` command.
 

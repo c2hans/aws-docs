@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LastError
 ---
 
 # LastError
-<a name="API_LastError"></a>
 
 The last error that occurred for a VPC endpoint.
 

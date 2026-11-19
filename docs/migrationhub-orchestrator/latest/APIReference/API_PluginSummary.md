@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # PluginSummary
-<a name="API_PluginSummary"></a>
 
 The summary of the Migration Hub Orchestrator plugin.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/opencypher-para
 ---
 
 # Examples of openCypher parameterized queries
-<a name="opencypher-parameterized-queries"></a>
 
 Neptune supports parameterized openCypher queries. This lets you use the same query structure multiple times with different arguments. Since the query structure doesn't change, Neptune can cache its abstract syntax tree (AST) rather than having to parse it multiple times.
 

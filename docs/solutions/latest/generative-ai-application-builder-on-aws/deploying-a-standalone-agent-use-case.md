@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Deploying a standalone Bedrock Agent use case
-<a name="deploying-a-standalone-agent-use-case"></a>
 
 Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
 

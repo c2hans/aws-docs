@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-ubuntu.
 ---
 
 # Create an Ubuntu Amazon EC2 instance
-<a name="gs-ubuntu"></a>
 
 Do the following to create an Ubuntu Amazon EC2 instance.
 

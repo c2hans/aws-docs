@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Classific
 ---
 
 # Classification
-<a name="API_Classification"></a>
 
 A classification refers to a set of specific configurations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Edit a configuration set in AWS End User Messaging SMS
-<a name="configuration-set-edit"></a>
 
 To edit a configuration set using the AWS End User Messaging SMS console, follow these steps:
 

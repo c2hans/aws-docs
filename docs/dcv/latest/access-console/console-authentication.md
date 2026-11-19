@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/console-authen
 ---
 
 # Authentication methods
-<a name="console-authentication"></a>
 
 The Authentication Server for the Amazon DCV Access Console can be setup to use either Pluggable Authentication Modules (PAM), HTTP Header authentication, or external OAuth providers. Utilizing PAM authentication allows you to inherit your existing Linux authentication model. HTTP Header authentication provides a customizable authentication mechanism to perform additional validation before the end user reaches the authentication server. External OAuth providers, such as AWS Cognito, allow you to leverage managed identity services for user authentication and management.
 

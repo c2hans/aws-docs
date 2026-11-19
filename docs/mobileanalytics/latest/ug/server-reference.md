@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mobileanalytics/latest/ug/server-referen
 ---
 
 # REST API Reference
-<a name="server-reference"></a>
 
 **Note**
 Amazon Mobile Analytics was discontinued on April 30, 2018. The features that were previously provided by Mobile Analytics are now provided by Amazon Pinpoint. If you're new to Mobile Analytics, you should use Amazon Pinpoint instead. If you currently use Mobile Analytics, see [Migrating from Amazon Mobile Analytics to Amazon Pinpoint](migrate.md).

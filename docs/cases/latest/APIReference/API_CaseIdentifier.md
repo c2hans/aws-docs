@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CaseIdenti
 ---
 
 # CaseIdentifier
-<a name="API_connect-cases_CaseIdentifier"></a>
 
 The identifiers of a case that a batch operation returns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Configuring Elastic Load Balancing using the AWS toolkit for Visual Studio
-<a name="create_deploy_NET-linux.managing.elb"></a>
 
 Elastic Load Balancing is an Amazon web service that helps you improve the availability and scalability of your application. This service makes it easy for you to distribute application loads between two or more Amazon EC2 instances. Elastic Load Balancing improves availability through providing additional redundancy and supports traffic growth for your application.
 

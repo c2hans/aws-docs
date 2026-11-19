@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-upgrad
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Upgrade hybrid nodes for your cluster
-<a name="hybrid-nodes-upgrade"></a>
 
 The guidance for upgrading hybrid nodes is similar to self-managed Amazon EKS nodes that run in Amazon EC2. We recommend that you create new hybrid nodes on your target Kubernetes version, gracefully migrate your existing applications to the hybrid nodes on the new Kubernetes version, and remove the hybrid nodes on the old Kubernetes version from your cluster. Be sure to review the [Amazon EKS Best Practices](https://docs.aws.amazon.com/eks/latest/best-practices/cluster-upgrades.html) for upgrades before initiating an upgrade. Amazon EKS Hybrid Nodes have the same [Kubernetes version support](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) for Amazon EKS clusters with cloud nodes, including standard and extended support.
 

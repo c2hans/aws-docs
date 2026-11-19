@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetBlueprintRuns.
 ---
 
 # GetBlueprintRuns
-<a name="API_GetBlueprintRuns"></a>
 
 Retrieves the details of blueprint runs for a specified blueprint.
 

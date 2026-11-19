@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle Read-only tables and partitions and Amazon Aurora MySQL replicas
-<a name="chap-oracle-aurora-mysql.tables.readonly"></a>
 
 With AWS DMS, you can migrate data from Oracle databases to Aurora MySQL databases while maintaining read-only access to the Oracle source database during the migration process. This capability utilizes Oracle read-only tables and partitions, which create a consistent view of the data during replication. Additionally, you can replicate data from an on-premises or EC2 instance database to an Aurora MySQL database using the AWS DMS replication instance, creating an Aurora MySQL replica.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppStream::StackUserAssociation
-<a name="aws-resource-appstream-stackuserassociation"></a>
 
 The `AWS::AppStream::StackUserAssociation` resource associates the specified users with the specified stacks for Amazon WorkSpaces Applications. Users in an WorkSpaces Applications user pool cannot be assigned to stacks with fleets that are joined to an Active Directory domain.
 

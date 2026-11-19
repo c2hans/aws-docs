@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiSourceSet
 ---
 
 # NdiSourceSettings
-<a name="API_NdiSourceSettings"></a>
 
  The settings for the NDI® source. This includes the exact name of the upstream NDI sender that you want to connect to your source.
 

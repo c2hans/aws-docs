@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ValidateSolN
 ---
 
 # ValidateSolNetworkPackageContent
-<a name="API_ValidateSolNetworkPackageContent"></a>
 
 Validates network package content. This can be used as a dry run before uploading network package content with [PutSolNetworkPackageContent](https://docs.aws.amazon.com/tnb/latest/APIReference/API_PutSolNetworkPackageContent.html).
 

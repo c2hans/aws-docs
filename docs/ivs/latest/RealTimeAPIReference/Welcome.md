@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The Amazon Interactive Video Service (IVS) real-time API is REST compatible, using a standard HTTP API and an AWS EventBridge event stream for responses. JSON is used for both requests and responses, including errors.
 
@@ -34,4 +33,4 @@ The Amazon IVS real-time API has these tag-related operations: [TagResource](API
 
 At most 50 tags can be applied to a resource.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

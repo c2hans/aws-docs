@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-wi
 ---
 
 # AWS WickrGov in AWS GovCloud (US)
-<a name="govcloud-wickr"></a>
 
 AWS WickrGov is an end-to-end encrypted service that helps organizations collaborate across messaging, calling, file sharing, and screen sharing. Users of AWS WickrGov can also federate with other AWS WickrGov users outside their network.
 

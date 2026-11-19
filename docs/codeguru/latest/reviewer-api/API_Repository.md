@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Reposit
 ---
 
 # Repository
-<a name="API_Repository"></a>
 
 Information about an associated AWS CodeCommit repository or an associated repository that is managed by AWS CodeStar Connections (for example, Bitbucket). This `Repository` object is not used if your source code is in an associated GitHub repository.
 

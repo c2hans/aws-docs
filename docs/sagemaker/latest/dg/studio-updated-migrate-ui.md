@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-migra
 ---
 
 # Migrate the UI from Studio Classic to Studio
-<a name="studio-updated-migrate-ui"></a>
 
 The first phase for migrating an existing domain involves migrating the UI from Amazon SageMaker Studio Classic to Amazon SageMaker Studio. This phase does not include the migration of data. Users can continue working with their data the same way as they were before migration. For information about migrating data, see [(Optional) Migrate data from Studio Classic to Studio](studio-updated-migrate-data.md).
 

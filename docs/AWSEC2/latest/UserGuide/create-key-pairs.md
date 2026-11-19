@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs
 ---
 
 # Create a key pair for your Amazon EC2 instance
-<a name="create-key-pairs"></a>
 
 You can use Amazon EC2 to create your key pairs, or you can use a third-party tool to create your key pairs, and then import them to Amazon EC2.
 

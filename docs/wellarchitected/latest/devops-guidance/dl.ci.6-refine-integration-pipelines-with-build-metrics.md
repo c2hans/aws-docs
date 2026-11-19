@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.6] Refine integration pipelines with build metrics
-<a name="dl.ci.6-refine-integration-pipelines-with-build-metrics"></a>
 
  **Category:** RECOMMENDED
 

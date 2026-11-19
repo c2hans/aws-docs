@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/geometry.html
 ---
 
 # $geometry
-<a name="geometry"></a>
 
 The `$geometry` operator in Amazon DocumentDB is used to specify a GeoJSON geometry object as part of a geospatial query. This operator is used in conjunction with other geospatial query operators like `$geoWithin` and `$geoIntersects` to perform spatial queries on your data.
 

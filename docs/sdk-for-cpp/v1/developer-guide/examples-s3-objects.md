@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Operations on objects
-<a name="examples-s3-objects"></a>
 
 An Amazon S3 object represents a *file*, which is a collection of data. Every object must reside within a [bucket](examples-s3-buckets.md).
 

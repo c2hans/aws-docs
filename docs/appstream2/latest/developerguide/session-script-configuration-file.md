@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/session
 ---
 
 # Session Scripts Configuration File
-<a name="session-script-configuration-file"></a>
 
 To locate the session scripts configuration file in a Windows instance, navigate to C:\\AppStream\\SessionScripts\\config.json. On a Linux instance, navigate to /opt/appstream/SessionScripts/config.json. The file is formatted as follows.
 

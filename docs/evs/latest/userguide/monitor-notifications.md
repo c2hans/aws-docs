@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/monitor-notificatio
 ---
 
 # Get notified about host events
-<a name="monitor-notifications"></a>
 
  AWS Health tells you in advance when an EC2 instance that runs one of your Amazon Elastic VMware Service hosts is scheduled for maintenance or retirement. You can route these events with Amazon EventBridge to an Amazon SNS topic, so that your operations team gets them by email or another channel. You can set up the rule with the EventBridge console or the AWS CLI.
 

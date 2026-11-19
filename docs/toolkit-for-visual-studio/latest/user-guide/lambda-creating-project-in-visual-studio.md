@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Basic AWS Lambda Project
-<a name="lambda-creating-project-in-visual-studio"></a>
 
 You can create a Lambda function using Microsoft .NET Core project templates, in the AWS Toolkit for Visual Studio.
 

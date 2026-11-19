@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentFailureContext
-<a name="API_ComponentFailureContext"></a>
 
 Contains details about the component that caused the image creation process to fail. The details identify the first step that failed when the component ran.
 

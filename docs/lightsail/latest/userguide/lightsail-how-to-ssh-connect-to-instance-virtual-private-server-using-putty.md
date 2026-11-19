@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-how
 ---
 
 # Connect to Linux/Unix Lightsail instances with PuTTY
-<a name="lightsail-how-to-ssh-connect-to-instance-virtual-private-server-using-putty"></a>
 
 In addition to the browser-based SSH terminal in Lightsail, you can also connect to your Linux-based instance using an SSH client such as PuTTY. To learn how to set up PuTTY, see [Download and set up PuTTY to connect using SSH in Lightsail](lightsail-how-to-set-up-putty-to-connect-using-ssh.md).
 

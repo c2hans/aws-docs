@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Cloud-native network function deployment
-<a name="cloud-native-network-function-deployment"></a>
 
 CNF deployment is about the application deployment. As part of the CNF deployment, the Helm charts for the application are implemented through the CI/CD code pipeline. The callback to run individual application-specific scripts primarily involving pre- and post-checks are incorporated. The Helm charts are implemented in a sequence as per the application’s needs, and check for the status of the Kubernetes PODs before moving to the next step in the deployment. Often, ISVs provide a wrapper script to run the Helm charts and sanity checks. These ISV scripts are invoked from within AWS CodePipeline. As part of this phase, the logging and monitoring agents such as Prometheus and Fluentd are deployed in addition to Amazon CloudWatch, which logs and monitors the cloud infrastructure of the application.
 

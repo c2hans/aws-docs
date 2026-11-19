@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_SaaS
 ---
 
 # SaaSProductSummary
-<a name="API_SaaSProductSummary"></a>
 
 Object that contains summarized information about a SaaS product.
 

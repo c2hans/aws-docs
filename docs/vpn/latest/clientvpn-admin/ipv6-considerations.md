@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/ipv6-consider
 ---
 
 # IPv6 considerations for AWS Client VPN
-<a name="ipv6-considerations"></a>
 
 Client VPN now supports native IPv6 connectivity alongside existing IPv4 capabilities. You can create IPv6-only, IPv4-only, or dual-stack (both IPv4 and IPv6) endpoints to meet your networking requirements.
 

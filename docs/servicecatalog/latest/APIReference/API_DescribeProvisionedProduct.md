@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeProvisionedProduct
-<a name="API_DescribeProvisionedProduct"></a>
 
 Gets information about the specified provisioned product.
 

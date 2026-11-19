@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Troubleshoot Amazon SQS API errors
-<a name="troubleshooting-api-errors"></a>
 
 The following topics cover the most common errors returned when making Amazon SQS API calls, and how to troubleshoot them.
 

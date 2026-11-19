@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Studio
 ---
 
 # StudioLifecycleConfigDetails
-<a name="API_StudioLifecycleConfigDetails"></a>
 
 Details of the Amazon SageMaker AI Studio Lifecycle Configuration.
 

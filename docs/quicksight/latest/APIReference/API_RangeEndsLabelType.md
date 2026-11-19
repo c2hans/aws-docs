@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Range
 ---
 
 # RangeEndsLabelType
-<a name="API_RangeEndsLabelType"></a>
 
 The range ends label type of a data path label.
 

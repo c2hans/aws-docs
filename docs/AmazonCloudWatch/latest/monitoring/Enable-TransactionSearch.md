@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Enabl
 ---
 
 # Enable transaction search
-<a name="Enable-TransactionSearch"></a>
 
 You can enable [Transaction Search](CloudWatch-Transaction-Search.md) through the console or by using an API. Transaction search is configured for the entire account and switches all spans ingestion through X-Ray into cost effective collection mode using [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/). By default you will also index 1% of ingested spans for free as trace summary for analysis, which is typically sufficient given you already have full end-to-end trace visibility on all ingested spans through Transaction Search.
 

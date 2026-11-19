@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pendo-reading-from-entiti
 ---
 
 # Reading from Pendo entities
-<a name="pendo-reading-from-entities"></a>
 
  **Prerequisites**
 

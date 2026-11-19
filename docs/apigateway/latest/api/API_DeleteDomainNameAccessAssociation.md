@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteDomainNa
 ---
 
 # DeleteDomainNameAccessAssociation
-<a name="API_DeleteDomainNameAccessAssociation"></a>
 
  Deletes the DomainNameAccessAssociation resource.
 

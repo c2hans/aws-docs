@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Operations_Ama
 ---
 
 # Amazon Personalize
-<a name="API_Operations_Amazon_Personalize"></a>
 
 The following actions are supported by Amazon Personalize:
 +  [CreateBatchInferenceJob](API_CreateBatchInferenceJob.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogSource.htm
 ---
 
 # CatalogSource
-<a name="API_CatalogSource"></a>
 
 Specifies a data store in the AWS Glue Data Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ChangeProgressStage
-<a name="API_ChangeProgressStage"></a>
 
 Progress details for each stage of a domain update.
 

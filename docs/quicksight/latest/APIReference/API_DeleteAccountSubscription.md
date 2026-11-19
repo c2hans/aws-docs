@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteAccountSubscription
-<a name="API_DeleteAccountSubscription"></a>
 
 **Important**
 Deleting your Quick Sight account subscription has permanent, irreversible consequences across all AWS regions:

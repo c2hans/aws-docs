@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # SUBTRACT
-<a name="recipe-actions.functions.SUBTRACT"></a>
 
 Subtracts one number from another and returns the result in a new column.
 

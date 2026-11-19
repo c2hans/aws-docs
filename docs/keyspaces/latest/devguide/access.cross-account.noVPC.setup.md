@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/access.cross-a
 ---
 
 # Configuring cross-account access to Amazon Keyspaces without a shared VPC
-<a name="access.cross-account.noVPC.setup"></a>
 
 If the Amazon Keyspaces table and private VPC endpoint are owned by different accounts but are not sharing a VPC, applications can still connect cross-account using VPC endpoints. Because the accounts are not sharing the VPC endpoints, `Account A:111111111111`, `Account B:222222222222`, and `Account C:333333333333` require their own VPC endpoints. To the Cassandra client driver, Amazon Keyspaces appears like a single node instead of a multi-node cluster. Upon connection, the client driver reaches the DNS server which returns one of the available endpoints in the account’s VPC.
 

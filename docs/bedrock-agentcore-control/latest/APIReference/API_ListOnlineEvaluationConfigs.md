@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListOnlineEvaluationConfigs
-<a name="API_ListOnlineEvaluationConfigs"></a>
 
  Lists all online evaluation configurations in the account, providing summary information about each configuration's status and settings.
 

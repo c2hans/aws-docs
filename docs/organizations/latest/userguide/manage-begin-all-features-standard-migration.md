@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/manage-be
 ---
 
 # Standard migration process to enable all features with Organizations
-<a name="manage-begin-all-features-standard-migration"></a>
 
 This topic describes how to enable all features with the standard migration process.
 

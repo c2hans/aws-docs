@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SequenceInformation
 ---
 
 # SequenceInformation
-<a name="API_SequenceInformation"></a>
 
 Details about a sequence.
 

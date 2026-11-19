@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineExecutionFilter
-<a name="API_PipelineExecutionFilter"></a>
 
 The pipeline execution to filter on.
 

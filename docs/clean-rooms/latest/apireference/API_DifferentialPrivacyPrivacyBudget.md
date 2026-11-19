@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyPrivacyBudget
-<a name="API_DifferentialPrivacyPrivacyBudget"></a>
 
 Specifies the configured epsilon value and the utility in terms of total aggregations, as well as the remaining aggregations available.
 

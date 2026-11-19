@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpe
 ---
 
 # TagSpecification
-<a name="API_TagSpecification"></a>
 
 The tags to apply to resources when creating or modifying a DB instance or DB cluster, or when copying a DB instance snapshot. When you specify a tag, you must specify the resource type to tag, otherwise the request will fail.
 

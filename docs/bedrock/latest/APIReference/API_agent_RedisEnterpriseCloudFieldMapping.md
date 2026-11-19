@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedisEnterpriseCloudFieldMapping
-<a name="API_agent_RedisEnterpriseCloudFieldMapping"></a>
 
 Contains the names of the fields to which to map information about the vector store.
 

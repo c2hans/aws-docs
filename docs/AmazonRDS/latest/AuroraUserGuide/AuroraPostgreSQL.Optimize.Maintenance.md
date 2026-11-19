@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Improving Aurora PostgreSQL query plans
-<a name="AuroraPostgreSQL.Optimize.Maintenance"></a>
 
 Improve query plan management by evaluating plan performance and fixing plans. For more information about improving your query plans, see the following topics.
 

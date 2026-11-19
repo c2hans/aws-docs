@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.FORMAT
 ---
 
 # FORMAT\_PHONE\_NUMBER
-<a name="recipe-actions.FORMAT_PHONE_NUMBER"></a>
 
 Returns a column in which a phone number string is converted into a formatted value.
 

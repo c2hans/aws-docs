@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteConnec
 ---
 
 # DeleteConnector
-<a name="API_DeleteConnector"></a>
 
 Delete Connector.
 

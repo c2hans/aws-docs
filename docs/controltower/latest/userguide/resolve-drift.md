@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/resolve-dr
 ---
 
 # Resolve drift with Reset and Re-register
-<a name="resolve-drift"></a>
 
 Drift often occurs as you and your organization members use the landing zone.
 

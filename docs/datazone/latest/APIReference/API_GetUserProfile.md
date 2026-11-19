@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetUser
 ---
 
 # GetUserProfile
-<a name="API_GetUserProfile"></a>
 
 Gets a user profile in Amazon DataZone.
 

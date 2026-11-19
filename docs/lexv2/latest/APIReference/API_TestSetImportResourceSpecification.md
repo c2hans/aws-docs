@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetImp
 ---
 
 # TestSetImportResourceSpecification
-<a name="API_TestSetImportResourceSpecification"></a>
 
 Contains information about the test set that is imported.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Building a high availability and disaster recovery architecture for SQL Server on Amazon EC2
-<a name="introduction"></a>
 
 *Ram Yellapragada, Priya Nair, and Alysia Tran, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowResponseStream
-<a name="API_agent-runtime_FlowResponseStream"></a>
 
 The output of the flow.
 

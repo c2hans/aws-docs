@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetGraph
 ---
 
 # GetGraphqlApiEnvironmentVariables
-<a name="API_GetGraphqlApiEnvironmentVariables"></a>
 
 Retrieves the list of environmental variable key-value pairs associated with an API by its ID value.
 

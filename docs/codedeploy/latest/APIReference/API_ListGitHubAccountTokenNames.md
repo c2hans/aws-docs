@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListG
 ---
 
 # ListGitHubAccountTokenNames
-<a name="API_ListGitHubAccountTokenNames"></a>
 
 Lists the names of stored connections to GitHub accounts.
 

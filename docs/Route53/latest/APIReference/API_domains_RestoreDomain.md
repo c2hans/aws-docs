@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # RestoreDomain
-<a name="API_domains_RestoreDomain"></a>
 
 Restores a domain that has expired, or was deleted, before it becomes available for others to register. The cost of restoring your domain is billed to your AWS account.
 

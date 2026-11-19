@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Channe
 ---
 
 # ChannelSpecification
-<a name="API_ChannelSpecification"></a>
 
 Defines a named input source, called a channel, to be used by an algorithm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AgentRecommendationRemediation
-<a name="API_AgentRecommendationRemediation"></a>
 
 The core fields for a remediation.
 

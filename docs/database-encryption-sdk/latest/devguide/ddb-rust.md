@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Rust
-<a name="ddb-rust"></a>
 
 This topic explains how to install and use version 1.*x* of the Rust client-side encryption library for DynamoDB. For details about programming with the AWS Database Encryption SDK for DynamoDB, see the [Rust examples](https://github.com/aws/aws-database-encryption-sdk-dynamodb/blob/main/releases/rust/db_esdk/examples/) in the aws-database-encryption-sdk-dynamodb repository on GitHub.
 

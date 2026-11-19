@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_CreateRa
 ---
 
 # CreateRateBasedRule
-<a name="API_waf_CreateRateBasedRule"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

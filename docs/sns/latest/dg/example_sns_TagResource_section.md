@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_sns_TagResource_se
 ---
 
 # Use `TagResource` with an AWS SDK or CLI
-<a name="example_sns_TagResource_section"></a>
 
 The following code examples show how to use `TagResource`.
 

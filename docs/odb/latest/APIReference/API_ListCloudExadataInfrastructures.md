@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListCloudExa
 ---
 
 # ListCloudExadataInfrastructures
-<a name="API_ListCloudExadataInfrastructures"></a>
 
 Returns information about the Exadata infrastructures owned by your AWS account.
 

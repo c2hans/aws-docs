@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-filter-fields
 ---
 
 # Fields for filtering Macie findings
-<a name="findings-filter-fields"></a>
 
 To help you analyze findings more efficiently, the Amazon Macie console and the Amazon Macie API provide access to several sets of fields for filtering findings:
 + **Common fields** – These fields store data that applies to any type of finding. They correlate to common attributes of findings, such as severity, finding type, and finding ID.

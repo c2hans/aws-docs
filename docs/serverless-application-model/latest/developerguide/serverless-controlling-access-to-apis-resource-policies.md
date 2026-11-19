@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Resource policy example for AWS SAM
-<a name="serverless-controlling-access-to-apis-resource-policies"></a>
 
 You can control access to your APIs by attaching a resource policy within your AWS SAM template. To do this, you use the [ApiAuth](sam-property-api-apiauth.md) data type.
 

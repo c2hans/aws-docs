@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_JobIn
 ---
 
 # JobInputOptions
-<a name="API_JobInputOptions"></a>
 
 Configuration for input data location and format.
 

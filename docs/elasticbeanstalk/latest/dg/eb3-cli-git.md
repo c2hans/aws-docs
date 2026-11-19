@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-cli-git.h
 ---
 
 # Using the EB CLI with Git
-<a name="eb3-cli-git"></a>
 
 The EB CLI provides a Git integration so you can associate code branches with specific environments in Elastic Beanstalk to organize your deploys.
 

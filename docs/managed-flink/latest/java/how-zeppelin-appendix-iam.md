@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-zeppelin-a
 ---
 
 # Create custom IAM policies for Managed Service for Apache Flink Studio notebooks
-<a name="how-zeppelin-appendix-iam"></a>
 
 You normally use managed IAM policies to allow your application to access dependent resources. If you need finer control over your application's permissions, you can use a custom IAM policy. This section contains examples of custom IAM policies.
 

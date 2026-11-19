@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-quality-cl
 ---
 
 # Baseline calculation, drift detection and lifecycle with ClarifyCheck and QualityCheck steps in Amazon SageMaker Pipelines
-<a name="pipelines-quality-clarify-baseline-lifecycle"></a>
 
 The following topic discusses how baselines and model versions evolve in the Amazon SageMaker Pipelines when using the [`ClarifyCheck`](build-and-manage-steps-types.md#step-type-clarify-check) and [`QualityCheck`](build-and-manage-steps-types.md#step-type-quality-check) steps.
 

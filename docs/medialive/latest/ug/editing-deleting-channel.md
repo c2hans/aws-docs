@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/editing-deleting-cha
 ---
 
 # Editing and deleting a channel
-<a name="editing-deleting-channel"></a>
 
 You can edit an existing (saved) channel to change how it processes the input, and you can delete a channel. However, you can edit or delete a channel only when it is not running.
 

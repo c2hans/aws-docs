@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_Atta
 ---
 
 # AttachedTo
-<a name="API_AttachedTo"></a>
 
 An entity that a policy is attached to, identified by its ARN.
 

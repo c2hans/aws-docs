@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-th
 ---
 
 # Choosing the right AWS service for your microservice endpoints
-<a name="introduction"></a>
 
 *Deepika Kumar and Cecilia Yin, Amazon Web Services*
 

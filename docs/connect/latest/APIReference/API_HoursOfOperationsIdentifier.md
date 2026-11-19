@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_HoursOfO
 ---
 
 # HoursOfOperationsIdentifier
-<a name="API_HoursOfOperationsIdentifier"></a>
 
 Identifier for a hours of operations resource: ARN, ID, Name
 

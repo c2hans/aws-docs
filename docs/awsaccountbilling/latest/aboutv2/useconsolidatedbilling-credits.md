@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/usecons
 ---
 
 # Applying AWS credits
-<a name="useconsolidatedbilling-credits"></a>
 
 AWS credits are automatically applied to bills to help cover costs that are associated with eligible services. For more information about eligible services, see [Redeem Your AWS Promotional Credit](https://aws.amazon.com/awscredits/). Credits are applied until they are exhausted or they expire.
 

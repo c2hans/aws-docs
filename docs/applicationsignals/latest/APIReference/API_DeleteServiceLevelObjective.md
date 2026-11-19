@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # DeleteServiceLevelObjective
-<a name="API_DeleteServiceLevelObjective"></a>
 
 Deletes the specified service level objective.
 

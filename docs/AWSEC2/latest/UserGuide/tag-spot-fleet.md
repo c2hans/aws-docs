@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tag-spot-fleet.h
 ---
 
 # Tag a new or existing Spot Fleet request and the instances and volumes it launches
-<a name="tag-spot-fleet"></a>
 
 **Important**
 Spot Fleet uses a legacy API with no planned investment. We recommend using EC2 Fleet or an Auto Scaling group instead. For more information, see [Which is the best fleet method to use?](which-fleet-method-to-use.md).

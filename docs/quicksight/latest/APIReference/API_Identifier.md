@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Ident
 ---
 
 # Identifier
-<a name="API_Identifier"></a>
 
 The definition for the identifier.
 

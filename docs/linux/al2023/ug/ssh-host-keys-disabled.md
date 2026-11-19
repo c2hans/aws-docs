@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ssh-host-keys-disabled.h
 ---
 
 # Default SSH server configuration
-<a name="ssh-host-keys-disabled"></a>
 
 If you have SSH clients from several years ago, you might see an error when you connect to an instance. If the error tells you there's no matching host key type found, update your SSH host key to troubleshoot this issue.
 

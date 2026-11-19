@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/upda
 ---
 
 # Updating your profile
-<a name="updating-profile"></a>
 
 You can update your account and organization profile anytime on the AWS Supply Chain web application.
 

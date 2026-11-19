@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Declin
 ---
 
 # DeclineInvitations
-<a name="API_DeclineInvitations"></a>
 
 Declines invitations sent to the current member account by AWS accounts specified by their account IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchG
 ---
 
 # BatchGetFleets
-<a name="API_BatchGetFleets"></a>
 
 Gets information about one or more compute fleets.
 

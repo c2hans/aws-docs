@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Understanding AWS Managed Microsoft AD password policies
-<a name="ms_ad_password_policies"></a>
 
 AWS Managed Microsoft AD enables you to define and assign different password and account lockout policies (also referred to as [fine-grained password policies](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/adac/introduction-to-active-directory-administrative-center-enhancements--level-100-#fine_grained_pswd_policy_mgmt)) for groups of users you manage in your AWS Managed Microsoft AD domain. When you create an AWS Managed Microsoft AD directory, a default domain policy is created and applied to the Active Directory. This policy includes the following settings:
 

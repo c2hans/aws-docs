@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 ---
 
 # UpdatePlanExecutionStep
-<a name="API_UpdatePlanExecutionStep"></a>
 
 Updates a specific step in an in-progress plan execution. This operation allows you to modify the step's comment or action.
 

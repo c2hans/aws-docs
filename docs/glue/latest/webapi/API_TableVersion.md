@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableVersion.html
 ---
 
 # TableVersion
-<a name="API_TableVersion"></a>
 
 Specifies a version of a table.
 

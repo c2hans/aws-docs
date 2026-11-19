@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gradi
 ---
 
 # GradientStop
-<a name="API_GradientStop"></a>
 
 Determines the gradient stop configuration.
 

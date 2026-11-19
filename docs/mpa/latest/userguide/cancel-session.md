@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/cancel-session.html
 ---
 
 # Cancel an approval session
-<a name="cancel-session"></a>
 
 When you sign in to your organization's management account, you can cancel an approval session by navigating to the Multi-party approval console.
 

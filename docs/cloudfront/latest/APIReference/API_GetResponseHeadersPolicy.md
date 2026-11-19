@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetRe
 ---
 
 # GetResponseHeadersPolicy
-<a name="API_GetResponseHeadersPolicy"></a>
 
 Gets a response headers policy, including metadata (the policy's identifier and the date and time when the policy was last modified).
 

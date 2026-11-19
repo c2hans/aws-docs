@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dbt-reading-from-entities
 ---
 
 # Reading from dbt Cloud entities
-<a name="dbt-reading-from-entities"></a>
 
 **Prerequisites**
 

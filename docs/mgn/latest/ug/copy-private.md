@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/copy-private.html
 ---
 
 # Copy Private IP
-<a name="copy-private"></a>
 
 Choose whether you want AWS Transform MGN to ensure that the private IP used by the test or cutover instance matches the private IP used by the source server.
 

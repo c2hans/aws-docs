@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedPrincipal
-<a name="API_SubscribedPrincipal"></a>
 
 The principal that has the subscription grant for the asset.
 

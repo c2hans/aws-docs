@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Managing Security Groups from AWS Explorer
-<a name="tkv-sg-create"></a>
 
 The Toolkit for Visual Studio enables you to create and configure security groups to use with Amazon Elastic Compute Cloud (Amazon EC2) instances and CloudFormation. When you launch Amazon EC2 instances or deploy an application to CloudFormation, you specify a security group to associate with the Amazon EC2 instances. (Deployment to CloudFormation creates Amazon EC2 instances.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Authent
 ---
 
 # Authentication
-<a name="API_Authentication"></a>
 
 Denotes the user's authentication properties, such as whether it requires a password to authenticate. Used in output responses.
 

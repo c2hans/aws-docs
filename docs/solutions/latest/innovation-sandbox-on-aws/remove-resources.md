@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # End leases and eject accounts
-<a name="remove-resources"></a>
 
 ## Enable maintenance mode
 <a name="enable-maintenance-mode"></a>

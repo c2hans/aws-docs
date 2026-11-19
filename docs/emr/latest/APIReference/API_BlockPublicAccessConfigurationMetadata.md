@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_BlockPublicA
 ---
 
 # BlockPublicAccessConfigurationMetadata
-<a name="API_BlockPublicAccessConfigurationMetadata"></a>
 
 Properties that describe the AWS principal that created the `BlockPublicAccessConfiguration` using the `PutBlockPublicAccessConfiguration` action as well as the date and time that the configuration was created. Each time a configuration for block public access is updated, Amazon EMR updates this metadata.
 

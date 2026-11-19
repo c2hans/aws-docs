@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/team.html
 ---
 
 # .team
-<a name="team"></a>
 
 Used by any business or organization that wants to identify as a team.
 

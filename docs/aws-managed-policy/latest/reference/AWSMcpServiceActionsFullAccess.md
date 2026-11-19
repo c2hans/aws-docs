@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMcpServiceActionsFullAccess
-<a name="AWSMcpServiceActionsFullAccess"></a>
 
 **Description**: Provides full access to all MCP service actions. This policy does not grant access to the actions taken by the MCP, only the MCP actions themselves.
 

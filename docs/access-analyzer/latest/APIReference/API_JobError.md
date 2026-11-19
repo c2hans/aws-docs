@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # JobError
-<a name="API_JobError"></a>
 
 Contains the details about the policy generation error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TotalL
 ---
 
 # TotalLocalStorageGBRequest
-<a name="API_TotalLocalStorageGBRequest"></a>
 
 The minimum and maximum total local storage in gigabytes (GB) for instance types with local storage. This is useful for workloads that require local storage for temporary data or caching.
 

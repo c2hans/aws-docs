@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon API Gateway
-<a name="list_apigatewaymanagementapi"></a>
 
 Amazon API Gateway (service prefix: `execute-api`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

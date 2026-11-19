@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetColumnStatisti
 ---
 
 # GetColumnStatisticsTaskSettings
-<a name="API_GetColumnStatisticsTaskSettings"></a>
 
 Gets settings for a column statistics task.
 

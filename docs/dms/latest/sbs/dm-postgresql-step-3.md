@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-step-3.html
 ---
 
 # Step 3: Create Your Target Amazon RDS for PostgreSQL Database
-<a name="dm-postgresql-step-3"></a>
 
 In this step, you create a new Amazon RDS for PostgreSQL database to use as a migration target. Also, you configure a new database user on your target Amazon RDS for PostgreSQL database.
 

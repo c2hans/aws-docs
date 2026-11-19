@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/maps-colo
 ---
 
 # Color scheme
-<a name="maps-color-scheme"></a>
 
 Amazon Location Service allows you to set the color scheme for maps. The color-scheme parameter sets the map's color palette, such as `Light` or `Dark`, to better align with your application's design and accessibility needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ImageSourceIde
 ---
 
 # ImageSourceIdentifier
-<a name="API_ImageSourceIdentifier"></a>
 
 Describes the image import source.
 

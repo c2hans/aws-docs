@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CreateAp
 ---
 
 # CreateApp
-<a name="API_CreateApp"></a>
 
 Creates a new Amplify app.
 

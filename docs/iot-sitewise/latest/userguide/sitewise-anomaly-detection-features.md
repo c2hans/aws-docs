@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sitewise-a
 ---
 
 # Native anomaly detection features
-<a name="sitewise-anomaly-detection-features"></a>
 
 The AWS IoT SiteWise platform offers a range of powerful features that can transform your industrial operations:
 + **Predictive maintenance**: Detect failures early, and integrates with work order systems to act on insights.

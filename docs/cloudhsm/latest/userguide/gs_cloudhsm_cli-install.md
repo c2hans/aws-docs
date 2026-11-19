@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/gs_cloudhsm_cl
 ---
 
 # Install and configure CloudHSM CLI
-<a name="gs_cloudhsm_cli-install"></a>
 
 To interact with the HSM in your AWS CloudHSM cluster, you need the CloudHSM CLI.
 

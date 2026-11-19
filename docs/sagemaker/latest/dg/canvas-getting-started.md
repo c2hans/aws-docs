@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-getting-start
 ---
 
 # Getting started with using Amazon SageMaker Canvas
-<a name="canvas-getting-started"></a>
 
 This guide tells you how to get started with using SageMaker Canvas. If you're an IT administrator and would like more in-depth details, see [Amazon SageMaker Canvas setup and permissions management (for IT administrators)](canvas-setting-up.md) to set up SageMaker Canvas for your users.
 

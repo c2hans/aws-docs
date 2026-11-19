@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/adjusting-the-sta
 ---
 
 # Adjust the status update interval
-<a name="adjusting-the-status-update-interval"></a>
 
 By default, AWS Elemental MediaConvert sends `STATUS_UPDATE` events to Amazon EventBridge approximately once per minute. These status updates provide information about how your job is progressing. You can adjust the status update interval by specifying a different update frequency in your job.
 

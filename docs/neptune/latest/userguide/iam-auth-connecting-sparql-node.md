@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with SPARQL and Node.js
-<a name="iam-auth-connecting-sparql-node"></a>
 
 ## Querying using Signature V4 signing and the AWS SDK for Javascript V3
 <a name="iam-auth-querying-sparql-js-sdk-v3"></a>

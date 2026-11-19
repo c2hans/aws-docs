@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rul
 ---
 
 # Managing Custom Detection Rules in multiple-account environments
-<a name="custom-detection-rules-multi-account"></a>
 
 In an organization, the delegated GuardDuty administrator account manages Custom Detection Rules for member accounts centrally using *organization configurations*. The administrator declares intent for each rule, and GuardDuty applies it to member accounts automatically, including accounts that join later.
 

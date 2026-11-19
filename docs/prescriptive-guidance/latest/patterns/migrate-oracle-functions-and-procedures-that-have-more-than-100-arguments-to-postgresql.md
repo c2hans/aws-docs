@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle functions and procedures that have more than 100 arguments to PostgreSQL
-<a name="migrate-oracle-functions-and-procedures-that-have-more-than-100-arguments-to-postgresql"></a>
 
 *Srinivas Potlachervoo, Amazon Web Services*
 

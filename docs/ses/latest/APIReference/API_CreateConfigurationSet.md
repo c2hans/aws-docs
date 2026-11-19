@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfig
 ---
 
 # CreateConfigurationSet
-<a name="API_CreateConfigurationSet"></a>
 
 Creates a configuration set.
 

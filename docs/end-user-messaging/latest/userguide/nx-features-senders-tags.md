@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Manage tags for a sender ID
-<a name="nx-features-senders-tags"></a>
 
 Tags are pairs of keys and values that you can optionally apply to your AWS resources to control access or usage. Adding a tag to a resource can help you categorize and manage resources by purpose, owner, environment, or other criteria.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_CreateSer
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # CreateServiceTemplateVersion
-<a name="API_CreateServiceTemplateVersion"></a>
 
 Create a new major or minor version of a service template. A major version of a service template is a version that *isn't* backward compatible. A minor version of a service template is a version that's backward compatible within its major version.
 

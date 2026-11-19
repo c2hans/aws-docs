@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_G
 ---
 
 # GroupingRecommendation
-<a name="API_GroupingRecommendation"></a>
 
 Creates a new grouping recommendation.
 

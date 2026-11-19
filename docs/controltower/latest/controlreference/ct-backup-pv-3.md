@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.BACKUP.PV.3] Disallow modification of an AWS Backup resource that AWS Control Tower manages
-<a name="ct-backup-pv-3"></a>
 
 This control limits creation or modification of AWS Backup resources that AWS Control Tower manages.
 

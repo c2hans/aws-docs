@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/supported-featur
 ---
 
 # Supported runtime features
-<a name="supported-features"></a>
 
 The sections below describe the supported feature set of the APPSYNC\_JS runtime.
 

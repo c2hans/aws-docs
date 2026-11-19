@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/custom-copy-importi
 ---
 
 # Importing a custom model from another AWS account
-<a name="custom-copy-importing"></a>
 
 In Amazon Comprehend, you can import a custom model that's in another AWS account. When you import a model, you create a new custom model in your account. Your new custom model is a fully-trained duplicate of the model that you imported.
 

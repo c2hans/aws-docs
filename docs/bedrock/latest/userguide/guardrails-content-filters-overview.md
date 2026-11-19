@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-cont
 ---
 
 # Configure content filters for Amazon Bedrock Guardrails
-<a name="guardrails-content-filters-overview"></a>
 
 With Amazon Bedrock Guardrails, you can configure content filters to block model prompts and responses in natural language for text and images containing harmful content. For example, an e-commerce site can design its online assistant to avoid using inappropriate language and or images.
 

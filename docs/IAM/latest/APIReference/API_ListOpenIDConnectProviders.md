@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListOpenIDCo
 ---
 
 # ListOpenIDConnectProviders
-<a name="API_ListOpenIDConnectProviders"></a>
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects defined in the AWS account.
 

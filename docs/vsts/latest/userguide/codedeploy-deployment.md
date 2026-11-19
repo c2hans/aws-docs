@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/codedeploy-deploym
 ---
 
 # AWS CodeDeploy Application Deployment task
-<a name="codedeploy-deployment"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/data-source-comp
 ---
 
 # Data sources
-<a name="data-source-components"></a>
 
 In the previous section, we learned that a schema defines the shape of your data. However, we never explained where that data came from. In real projects, your schema is like a gateway that handles all requests made to the server. When a request is made, the schema acts as the single endpoint that interfaces with the client. The schema will access, process, and relay data from the data source back to the client. See the infographic below:
 

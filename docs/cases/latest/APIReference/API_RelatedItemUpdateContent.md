@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_RelatedIte
 ---
 
 # RelatedItemUpdateContent
-<a name="API_connect-cases_RelatedItemUpdateContent"></a>
 
 Represents the content of a related item to be updated. This is a union type that can contain either comment content or custom content.
 

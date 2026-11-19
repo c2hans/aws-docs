@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_update-rol
 ---
 
 # Update permissions for a role
-<a name="id_roles_update-role-permissions"></a>
 
 Use the following procedures to update a role's permissions policies and permissions boundaries.
 

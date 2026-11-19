@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/klaviyo-support.html
 ---
 
 # AWS Glue support for Klaviyo
-<a name="klaviyo-support"></a>
 
 AWS Glue supports Klaviyo as follows:
 

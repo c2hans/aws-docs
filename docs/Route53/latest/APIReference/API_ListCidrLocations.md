@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListCidr
 ---
 
 # ListCidrLocations
-<a name="API_ListCidrLocations"></a>
 
 Returns a paginated list of CIDR locations for the given collection (metadata only, does not include CIDR blocks).
 

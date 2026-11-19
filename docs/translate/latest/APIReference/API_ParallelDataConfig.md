@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Parall
 ---
 
 # ParallelDataConfig
-<a name="API_ParallelDataConfig"></a>
 
 Specifies the format and S3 location of the parallel data input file.
 

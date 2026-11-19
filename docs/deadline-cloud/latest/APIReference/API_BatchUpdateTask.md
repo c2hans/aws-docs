@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchUpdateTask
-<a name="API_BatchUpdateTask"></a>
 
 Updates multiple tasks in a single request. This is a batch version of the `UpdateTask` API.
 

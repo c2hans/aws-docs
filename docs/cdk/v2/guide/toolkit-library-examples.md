@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/toolkit-library-examples.ht
 ---
 
 # Advanced CDK Toolkit Library examples
-<a name="toolkit-library-examples"></a>
 
 Learn how to use advanced features of the AWS CDK Toolkit Library through practical examples. This guide provides detailed code samples for error handling, deployment monitoring, and cloud assembly management that build upon the basic concepts covered in other sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.CM.1] Automate alerts for security and performance issues
-<a name="o.cm.1-automate-alerts-for-security-and-performance-issues"></a>
 
  **Category:** FOUNDATIONAL
 

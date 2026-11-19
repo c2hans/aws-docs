@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceAttribute
-<a name="API_AnalyticsUtteranceAttribute"></a>
 
 An object that specifies the last used intent at the time of the utterance as an attribute to return.
 

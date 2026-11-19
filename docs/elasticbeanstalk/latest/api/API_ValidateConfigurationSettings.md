@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Validate
 ---
 
 # ValidateConfigurationSettings
-<a name="API_ValidateConfigurationSettings"></a>
 
 Takes a set of configuration settings and either a configuration template or environment, and determines whether those values are valid.
 

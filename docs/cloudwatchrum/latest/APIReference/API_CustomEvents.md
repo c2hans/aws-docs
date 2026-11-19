@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Cu
 ---
 
 # CustomEvents
-<a name="API_CustomEvents"></a>
 
 A structure that contains information about custom events for this app monitor.
 

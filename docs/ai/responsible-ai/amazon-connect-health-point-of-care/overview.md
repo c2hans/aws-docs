@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/amazon-connect-health-
 ---
 
 # Amazon Connect Health (Point of Care)
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/amazon-connect-health-point-of-care/images/card-background.jpg)
 

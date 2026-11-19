@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Kn
 ---
 
 # KnowledgeBaseOrchestrationConfiguration
-<a name="API_agent_KnowledgeBaseOrchestrationConfiguration"></a>
 
 Configures how the knowledge base orchestrates the retrieval and generation process, allowing for customization of prompts, inference parameters, and performance settings.
 

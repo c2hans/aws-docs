@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/monitoring-tas
 ---
 
 # Monitoring AWS DataSync with manual tools
-<a name="monitoring-task-manually"></a>
 
 You can track your AWS DataSync transfers from the console or the command line.
 

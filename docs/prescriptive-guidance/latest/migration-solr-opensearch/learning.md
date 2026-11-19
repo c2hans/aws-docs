@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Learning about OpenSearch
-<a name="learning"></a>
 
 Although both Solr and OpenSearch are based on Apache Lucene, they have different features and architectures. Learning the fundamentals of OpenSearch is crucial when migrating from Solr.
 

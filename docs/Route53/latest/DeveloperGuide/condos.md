@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/condos.htm
 ---
 
 # .condos
-<a name="condos"></a>
 
 Used by individuals and businesses associated with condominiums.
 

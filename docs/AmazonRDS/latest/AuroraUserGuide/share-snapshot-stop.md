@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/share-s
 ---
 
 # Stopping snapshot sharing
-<a name="share-snapshot-stop"></a>
 
 To stop sharing a DB cluster snapshot, you remove permission from the target AWS account.
 

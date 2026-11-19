@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/scheduled-scal
 ---
 
 # Delete a scheduled action
-<a name="scheduled-scaling-delete-scheduled-action"></a>
 
 To delete a scheduled action, use one of the following methods:
 

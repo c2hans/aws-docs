@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Re
 ---
 
 # RegisterOrganizationDelegatedAdmin
-<a name="API_RegisterOrganizationDelegatedAdmin"></a>
 
 Registers an organization’s member account as the CloudTrail [delegated administrator](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delegated-administrator.html).
 

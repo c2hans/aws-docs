@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ScreenshotResult
-<a name="API_ScreenshotResult"></a>
 
 The result of a screenshot action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/cloni
 ---
 
 # Cloning opportunities
-<a name="cloning-opportunities"></a>
 
 You can start creating a new opportunity by cloning any existing opportunity that is not in draft status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartWirelessDeviceImportTask
-<a name="API_StartWirelessDeviceImportTask"></a>
 
 Start import task for provisioning Sidewalk devices in bulk using an S3 CSV file.
 

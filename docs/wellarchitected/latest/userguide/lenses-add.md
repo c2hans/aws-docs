@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Adding a lens to a workload in AWS WA Tool
-<a name="lenses-add"></a>
 
 Adding a lens to a workload helps you better understand your architecture's strengths and weaknesses, identify improvements, and ensure your workloads follow best practices.
 

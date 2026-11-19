@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPrefi
 ---
 
 # IpamPrefixListResolverVersion
-<a name="API_IpamPrefixListResolverVersion"></a>
 
 Describes a version of an IPAM prefix list resolver.
 

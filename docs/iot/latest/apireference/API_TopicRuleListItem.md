@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TopicRuleLis
 ---
 
 # TopicRuleListItem
-<a name="API_TopicRuleListItem"></a>
 
 Describes a rule.
 

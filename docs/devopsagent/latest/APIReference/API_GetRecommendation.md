@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetR
 ---
 
 # GetRecommendation
-<a name="API_GetRecommendation"></a>
 
 Retrieves a specific recommendation by its ID
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Migration to partitioned beacons
-<a name="migration-to-partitioned-beacons"></a>
 
  A non-partitioned table is equivalent to a table configured with `maximumNumberOfPartitions = 1`. From a configuration perspective, migrating from a non-partitioned setup to a partitioned one is therefore treated as an increase in `maximumNumberOfPartitions`.
 

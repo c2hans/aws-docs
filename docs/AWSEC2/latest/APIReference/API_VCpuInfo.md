@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VCpuInfo.
 ---
 
 # VCpuInfo
-<a name="API_VCpuInfo"></a>
 
 Describes the vCPU configurations for the instance type.
 

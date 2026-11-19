@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/config-group-a
 ---
 
 # Set group allowance for time off in Connect Customer
-<a name="config-group-allowance-to"></a>
 
 Managers can set the maximum time off hours that agents combined can take within the Forecast Group: by hour, for each calendar day, for specific time off activities.
 

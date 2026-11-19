@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-start-stop.ht
 ---
 
 # Starting and stopping a Link device
-<a name="device-start-stop"></a>
 
 You must start or stop a Link only if it is configured as the source for a MediaConnect flow. (You don't need to start or stop the device when it is configured as the source for a MediaLive input. In this case, MediaLive automatically starts and stops the device when you start and stop the related channel.)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/migrate-scal
 ---
 
 # Migrate your scaling plan
-<a name="migrate-scaling-plan"></a>
 
 You can migrate from a scaling plan to Amazon EC2 Auto Scaling and Application Auto Scaling scaling policies.
 

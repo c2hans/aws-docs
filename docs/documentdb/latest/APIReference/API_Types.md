@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Types
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon DocumentDB (with MongoDB compatibility):
 +  [AvailabilityZone](API_AvailabilityZone.md)

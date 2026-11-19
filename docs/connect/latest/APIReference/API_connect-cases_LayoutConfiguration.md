@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # LayoutConfiguration
-<a name="API_connect-cases_LayoutConfiguration"></a>
 
 Object to store configuration of layouts associated to the template.
 

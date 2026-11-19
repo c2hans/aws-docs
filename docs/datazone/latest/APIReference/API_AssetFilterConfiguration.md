@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetFi
 ---
 
 # AssetFilterConfiguration
-<a name="API_AssetFilterConfiguration"></a>
 
 The configuration details of the asset filter.
 

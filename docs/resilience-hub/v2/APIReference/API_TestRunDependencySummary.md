@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunDependencySummary
-<a name="API_TestRunDependencySummary"></a>
 
 Contains summary information about a dependency that a test run blocked, as captured when the run started.
 

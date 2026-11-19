@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-billing-usag
 ---
 
 # Understand codes for Amazon EC2 in billing and usage reports
-<a name="ec2-billing-usage-reports"></a>
 
 When you use Amazon EC2, we include related codes in your AWS billing and usage reports. Reviewing these codes helps you understand your costs and usage patterns for Amazon EC2. Tracking and managing your expenses is essential for optimizing your costs.
 

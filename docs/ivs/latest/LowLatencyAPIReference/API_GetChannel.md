@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ge
 ---
 
 # GetChannel
-<a name="API_GetChannel"></a>
 
 Gets the channel configuration for the specified channel ARN. See also [BatchGetChannel](API_BatchGetChannel.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationStatus
-<a name="API_CapacityReservationStatus"></a>
 
 Describes the availability of capacity for a Capacity Reservation.
 

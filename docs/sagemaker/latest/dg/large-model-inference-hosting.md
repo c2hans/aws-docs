@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/large-model-inferenc
 ---
 
 # SageMaker AI endpoint parameters for large model inference
-<a name="large-model-inference-hosting"></a>
 
  You can customize the following parameters to facilitate low-latency large model inference (LMI) with SageMaker AI:
 +  **Maximum Amazon EBS volume size on the instance (`VolumeSizeInGB`)** – If the size of the model is larger than 30 GB and you are using an instance without a local disk, you should increase this parameter to be slightly larger than the size of your model.

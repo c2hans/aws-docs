@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # SetPrincipalTagAttributeMap
-<a name="API_SetPrincipalTagAttributeMap"></a>
 
 You can use this operation to use default (username and clientID) attribute or custom attribute mappings.
 

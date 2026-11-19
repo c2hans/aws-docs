@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Cre
 ---
 
 # CreateSupportPermit
-<a name="API_CreateSupportPermit"></a>
 
 Creates a support permit that authorizes an AWS support operator to perform specified actions on specified resources. The permit is cryptographically signed using a customer-managed AWS KMS key (ECC\_NIST\_P384, SIGN\_VERIFY) to ensure non-repudiation.
 

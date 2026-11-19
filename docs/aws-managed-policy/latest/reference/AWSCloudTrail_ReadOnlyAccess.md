@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudTrail\_ReadOnlyAccess
-<a name="AWSCloudTrail_ReadOnlyAccess"></a>
 
 **Description**: Provides read only access to AWS CloudTrail.
 

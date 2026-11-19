@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Enable new capabilities
-<a name="next-gen-migration-step4"></a>
 
 Take advantage of features not available in v1.
 

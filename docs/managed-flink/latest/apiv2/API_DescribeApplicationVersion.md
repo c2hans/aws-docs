@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeA
 ---
 
 # DescribeApplicationVersion
-<a name="API_DescribeApplicationVersion"></a>
 
 Provides a detailed description of a specified version of the application. To see a list of all the versions of an application, invoke the [ListApplicationVersions](API_ListApplicationVersions.md) operation.
 

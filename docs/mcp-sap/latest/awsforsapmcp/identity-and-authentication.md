@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/identity-and
 ---
 
 # Identity and Authentication
-<a name="identity-and-authentication"></a>
 
 The AWS for SAP MCP Server uses two layers of authentication: inbound authentication controls access to the Model Context Protocol (MCP) Server, and outbound authentication controls access to SAP. For more information about the authentication patterns supported by Bedrock AgentCore Identity, see [Supported authentication patterns](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-auth-patterns.html).
 

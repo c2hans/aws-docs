@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-
 ---
 
 # Amazon ECS managed scaling behavior
-<a name="managed-scaling-behavior"></a>
 
 When you have Auto Scaling group capacity providers that use managed scaling, Amazon ECS estimates the optimal number of instances to add to your cluster and uses the value to determine how many instances to request or release.
 

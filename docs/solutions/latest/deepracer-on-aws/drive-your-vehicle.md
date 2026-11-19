@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/drive-
 ---
 
 # Drive your vehicle
-<a name="drive-your-vehicle"></a>
 
 After setting up your AWS DeepRacer vehicle, you can start to drive your vehicle manually or let it drive autonomously, using the vehicle’s device console.
 

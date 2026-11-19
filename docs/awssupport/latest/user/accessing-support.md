@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/accessing-support
 ---
 
 # Manage access to AWS Support Center
-<a name="accessing-support"></a>
 
 You must have permissions to access Support Center and to [create a support case](create-support-case-from-interaction.md).
 

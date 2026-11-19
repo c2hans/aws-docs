@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Setting up the discovery tool
-<a name="discovery-tool-setup"></a>
 
 ## Prerequisites
 <a name="discovery-tool-prerequisites"></a>

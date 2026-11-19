@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_SlaFilter.
 ---
 
 # SlaFilter
-<a name="API_connect-cases_SlaFilter"></a>
 
 A filter for related items of type `SLA`.
 

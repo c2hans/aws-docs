@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_AccessPointD
 ---
 
 # AccessPointDescription
-<a name="API_AccessPointDescription"></a>
 
 Provides a description of an EFS file system access point.
 

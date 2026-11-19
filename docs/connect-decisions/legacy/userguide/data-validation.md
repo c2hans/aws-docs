@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data Validation
-<a name="data-validation"></a>
 
 Data Validation is a crucial step early in the forecast creation process that ensures the input data meets the necessary quality standards for forecasting. This feature runs a series of checks on your data, surfacing data errors that need to be fixed before proceeding to forecast creation, helping you identify and resolve issues early in the process.
 

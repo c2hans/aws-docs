@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListTargetDomains
-<a name="API_ListTargetDomains"></a>
 
 Returns a paginated list of target domain summaries in your account.
 

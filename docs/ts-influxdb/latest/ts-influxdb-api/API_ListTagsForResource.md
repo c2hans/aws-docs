@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_L
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 A list of tags applied to the resource.
 

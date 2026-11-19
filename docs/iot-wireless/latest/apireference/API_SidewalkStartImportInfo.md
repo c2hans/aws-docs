@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkStartImportInfo
-<a name="API_SidewalkStartImportInfo"></a>
 
 Information about an import task created for bulk provisioning.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-manage
 ---
 
 # AWS Managed Services events
-<a name="events-ref-managedservices"></a>
 
 AMS sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UserDetail.h
 ---
 
 # UserDetail
-<a name="API_UserDetail"></a>
 
 Contains information about an IAM user, including all the user's policies and all the IAM groups the user is in.
 

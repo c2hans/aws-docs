@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration StreamSelection
-<a name="aws-properties-mediapackage-packagingconfiguration-streamselection"></a>
 
 Limitations for outputs from the endpoint, based on the video bitrate.
 

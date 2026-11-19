@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/monitoring-experime
 ---
 
 # Monitoring AWS FIS experiments
-<a name="monitoring-experiments"></a>
 
 You can use the following tools to monitor the progress and impact of your AWS Fault Injection Service (AWS FIS) experiments.
 

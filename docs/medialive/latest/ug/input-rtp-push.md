@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-rtp-push.html
 ---
 
 # Channel input—RTP push input
-<a name="input-rtp-push"></a>
 
 Follow these guidelines to verify that the input is set up correctly.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/express-pri
 ---
 
 # Creating custom dimensions for private offers
-<a name="express-private-offers-custom-dimensions"></a>
 
 Custom dimensions are pricing dimensions that you create specifically for private offers. Unlike standard dimensions that appear in your product's public offer, custom dimensions are only visible and available within private offers. This allows you to create specialized pricing structures for individual customers without affecting your public product listing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/create-symmetr
 ---
 
 # Create a symmetric encryption KMS key
-<a name="create-symmetric-cmk"></a>
 
 This topic explains how to create the basic KMS key, a [symmetric encryption KMS key](symm-asymm-choose-key-spec.md#symmetric-cmks) for a single Region with key material from AWS KMS. You can use this KMS key to protect your resources in an AWS service.
 

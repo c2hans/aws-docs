@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemFromBackup
-<a name="API_CreateFileSystemFromBackup"></a>
 
 Creates a new Amazon FSx for Lustre, Amazon FSx for Windows File Server, or Amazon FSx for OpenZFS file system from an existing Amazon FSx backup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Asse
 ---
 
 # AssessmentTargetFilter
-<a name="API_AssessmentTargetFilter"></a>
 
 Filters assessment list results by the resource that was assessed. Provide an entity identifier, a change set identifier, or both.
 

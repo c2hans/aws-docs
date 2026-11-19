@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Transactional outbox pattern
-<a name="transactional-outbox"></a>
 
 ## Intent
 <a name="transactional-outbox-intent"></a>

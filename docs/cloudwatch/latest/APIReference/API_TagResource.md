@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_TagRe
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add one or more tags (keys and values) to a specified application. A *tag* is a label that you optionally define and associate with an application. Tags can help you categorize and manage application in different ways, such as by purpose, owner, environment, or other criteria.
 

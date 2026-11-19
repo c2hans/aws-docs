@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::CapacityProvider InfrastructureOptimization
-<a name="aws-properties-ecs-capacityprovider-infrastructureoptimization"></a>
 
 The configuration that controls how Amazon ECS optimizes your infrastructure.
 

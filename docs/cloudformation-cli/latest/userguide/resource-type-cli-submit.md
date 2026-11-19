@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # submit
-<a name="resource-type-cli-submit"></a>
 
 ## Description
 <a name="resource-type-cli-submit-description"></a>

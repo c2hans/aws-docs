@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayPeeringAttachment
-<a name="API_DeleteTransitGatewayPeeringAttachment"></a>
 
 Deletes a transit gateway peering attachment.
 

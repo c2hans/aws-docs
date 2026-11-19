@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListC
 ---
 
 # ListCachePolicies
-<a name="API_ListCachePolicies"></a>
 
 Gets a list of cache policies.
 

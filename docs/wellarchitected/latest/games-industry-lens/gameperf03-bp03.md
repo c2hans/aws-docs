@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF03-BP03 Optimize resource utilization of GameLift containers
-<a name="gameperf03-bp03"></a>
 
  To optimize resource utilization of GameLift containers, design your container fleet effectively and set precise resource limits.
 

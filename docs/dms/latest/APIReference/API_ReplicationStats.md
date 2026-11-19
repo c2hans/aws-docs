@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationS
 ---
 
 # ReplicationStats
-<a name="API_ReplicationStats"></a>
 
 This object provides a collection of statistics about a serverless replication.
 

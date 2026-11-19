@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-cell.h
 ---
 
 # Get a cell
-<a name="get-cell"></a>
 
 The following is an example of a request to get a cell, and the response.
 

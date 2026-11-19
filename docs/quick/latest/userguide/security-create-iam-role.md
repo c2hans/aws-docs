@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security-create-i
 ---
 
 # Passing IAM roles to Quick
-<a name="security-create-iam-role"></a>
 
 |  |
 | --- |

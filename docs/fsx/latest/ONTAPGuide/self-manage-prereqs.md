@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/self-manage-prereq
 ---
 
 # Prerequisites for joining an SVM to a self-managed Microsoft AD
-<a name="self-manage-prereqs"></a>
 
 Before you join an FSx for ONTAP SVM to a self-managed Microsoft AD domain, make sure that your Active Directory and network meet the requirements described in the following sections.
 

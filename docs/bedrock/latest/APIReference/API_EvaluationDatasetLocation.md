@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationDatasetLocation
-<a name="API_EvaluationDatasetLocation"></a>
 
 The location in Amazon S3 where your prompt dataset is stored.
 

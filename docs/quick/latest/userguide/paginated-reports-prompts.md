@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/paginated-reports
 ---
 
 # Setting up prompts for paginated reports
-<a name="paginated-reports-prompts"></a>
 
 AWS Quick authors can create prompts on pixel-perfect reports to allow dashboard users to filter data in on-demand and scheduled reports. *Prompts* behave the same way a filter or control behaves in an interactive sheet.
 

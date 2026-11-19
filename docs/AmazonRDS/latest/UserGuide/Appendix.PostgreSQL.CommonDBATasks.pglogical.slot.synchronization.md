@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Managing logical slot synchronization for RDS for PostgreSQL
-<a name="Appendix.PostgreSQL.CommonDBATasks.pglogical.slot.synchronization"></a>
 
 Starting in community PostgreSQL 17, a new feature to automatically synchronize logical replication slots from primary to standby servers has been introduced through the parameter `sync_replication_slots` or the related function `pg_sync_replication_slots()`, which manually synchronizes slots on execution.
 

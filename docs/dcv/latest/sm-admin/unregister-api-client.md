@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/unregister-api-clien
 ---
 
 # unregister-api-client
-<a name="unregister-api-client"></a>
 
 Deactivates a registered Session Manager client. A deactivated Session Manager client can no longer use its credentials to retrieve OAuth 2.0 access tokens.
 

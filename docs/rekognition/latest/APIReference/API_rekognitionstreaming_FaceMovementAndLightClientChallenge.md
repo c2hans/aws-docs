@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # FaceMovementAndLightClientChallenge
-<a name="API_rekognitionstreaming_FaceMovementAndLightClientChallenge"></a>
 
 Holds information about the type of face movement and light challenges that need to be performed.
 

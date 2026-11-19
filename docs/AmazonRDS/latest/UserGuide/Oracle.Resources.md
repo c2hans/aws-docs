@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Resour
 ---
 
 # Using third-party software with your RDS for Oracle DB instance
-<a name="Oracle.Resources"></a>
 
 You can host an RDS for Oracle DB instance that supports tools and third-party software.
 

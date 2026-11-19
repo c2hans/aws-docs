@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step D: Remove the secondary Conductor Live node
-<a name="upg-std-rem-sec"></a>
 
 If you have only one Conductor Live, skip this step and go to [Step E: Stop the running channels](upg-std-stop.md).
 

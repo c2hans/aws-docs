@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListNotificationEvents
-<a name="API_ListNotificationEvents"></a>
 
 Returns a list of `NotificationEvents` according to specified filters, in reverse chronological order (newest first).
 

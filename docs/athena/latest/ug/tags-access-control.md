@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tags-access-control.htm
 ---
 
 # Use tag-based IAM access control policies
-<a name="tags-access-control"></a>
 
 Having tags allows you to write an IAM policy that includes the `Condition` block to control access to a resource based on its tags. This section includes tag policy examples for workgroup and data catalog resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-codebuild
 ---
 
 # Use AWS CodeBuild with a managed proxy server
-<a name="run-codebuild-in-managed-proxy-server"></a>
 
  To run AWS CodeBuild reserved capacity fleets in a managed proxy server, you must configure the proxy server to allow or deny traffic to and from external sites using proxy rules. Note that running reserved capacity fleets in a managed proxy server is not supported for VPC, Windows, or MacOS.
 

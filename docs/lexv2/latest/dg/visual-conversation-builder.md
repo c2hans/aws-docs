@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/visual-conversation-buil
 ---
 
 # Using Visual conversation builder
-<a name="visual-conversation-builder"></a>
 
 Visual conversation builder is a drag and drop conversation builder to easily design and visualize conversation paths by using intents within a rich visual environment.
 

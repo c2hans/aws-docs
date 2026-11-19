@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connect Microsoft SQL Servers with AWS Schema Conversion Tool
-<a name="CHAP_Source.SQLServer"></a>
 
 You can use AWS SCT to convert schemas, database code objects, and application code from SQL Server to the following targets:
 + Amazon RDS for MySQL

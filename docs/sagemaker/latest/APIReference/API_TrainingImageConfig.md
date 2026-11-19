@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingImageConfig
-<a name="API_TrainingImageConfig"></a>
 
 The configuration to use an image from a private Docker registry for a training job.
 

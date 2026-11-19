@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Best practices for AWS Provider version management
-<a name="version"></a>
 
 Managing versions of the AWS Provider and associated Terraform modules carefully helps maintain stability. This section outlines best practices around version constraints, locking, and upgrades.
 

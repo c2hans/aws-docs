@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PolicyGroup.
 ---
 
 # PolicyGroup
-<a name="API_PolicyGroup"></a>
 
 Contains information about a group that a managed policy is attached to.
 

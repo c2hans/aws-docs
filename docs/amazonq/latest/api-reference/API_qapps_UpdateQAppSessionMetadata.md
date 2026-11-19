@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UpdateQAppSessionMetadata
-<a name="API_qapps_UpdateQAppSessionMetadata"></a>
 
 Updates the configuration metadata of a session for a given Q App `sessionId`.
 

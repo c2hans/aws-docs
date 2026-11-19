@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/deploy-firs
 ---
 
 # Step 6: Deploy your component
-<a name="deploy-first-component"></a>
 
 With AWS IoT Greengrass, you can deploy components to individual devices or groups of devices. When you deploy a component, AWS IoT Greengrass installs and runs that component's software on each target device. You specify which components to deploy and the configuration update to deploy for each component. You can also control how the deployment rolls out to the devices that the deployment targets. For more information, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).
 

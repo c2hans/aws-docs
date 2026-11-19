@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Platform selection considerations
-<a name="platform-selection-considerations"></a>
 
 When you select or design an agentic AI solution, consider the following:
 + **Integration depth **– Evaluate how well the solution integrates with existing data sources, tools, and protocols.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateSMBFileShareVisibility
-<a name="API_UpdateSMBFileShareVisibility"></a>
 
 Controls whether the shares on an S3 File Gateway are visible in a net view or browse list. The operation is only supported for S3 File Gateways.
 

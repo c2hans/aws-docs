@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutRemedi
 ---
 
 # PutRemediationConfigurations
-<a name="API_PutRemediationConfigurations"></a>
 
 Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the `RemediationConfiguration` object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target.
 

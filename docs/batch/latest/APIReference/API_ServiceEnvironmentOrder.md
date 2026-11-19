@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceEnv
 ---
 
 # ServiceEnvironmentOrder
-<a name="API_ServiceEnvironmentOrder"></a>
 
 Specifies the order of a service environment for a job queue. This determines the priority order when multiple service environments are associated with the same job queue.
 

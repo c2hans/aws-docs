@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListProfileObjects
-<a name="API_connect-customer-profiles_ListProfileObjects"></a>
 
 Returns a list of objects associated with a profile of a given ProfileObjectType.
 

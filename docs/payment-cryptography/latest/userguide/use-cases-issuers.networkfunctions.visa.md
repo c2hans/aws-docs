@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/us
 ---
 
 # Visa specific functions
-<a name="use-cases-issuers.networkfunctions.visa"></a>
 
 **Topics**
 + [ARQC - CVN18/CVN22](#use-cases-issuers.networkfunctions.visa.cvn18)

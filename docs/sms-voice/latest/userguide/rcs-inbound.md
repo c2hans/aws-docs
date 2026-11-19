@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-inbound.h
 ---
 
 # Receiving inbound RCS messages
-<a name="rcs-inbound"></a>
 
 AWS End User Messaging supports two-way RCS messaging, allowing you to receive text messages from your customers. Inbound RCS messages follow the same pattern as SMS two-way messaging: incoming messages are delivered to an Amazon SNS topic that you configure, and you process them using Lambda functions or other SNS subscribers.
 

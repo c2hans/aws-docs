@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTSiteWise::ComputationModel AssetPropertyBindingValue
-<a name="aws-properties-iotsitewise-computationmodel-assetpropertybindingvalue"></a>
 
 Represents a data binding value referencing a specific asset property. It's used to bind computation model variables to actual asset property values for processing.
 

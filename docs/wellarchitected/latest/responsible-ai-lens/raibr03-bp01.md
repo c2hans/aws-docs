@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR03-BP01 Identify the likelihood of each potential harm
-<a name="raibr03-bp01"></a>
 
  Establish a risk rating methodology that considers the likelihood of the event occurring. The risk likelihood indicates the probability of a harmful event occurring when the system is deployed for the use case.
 

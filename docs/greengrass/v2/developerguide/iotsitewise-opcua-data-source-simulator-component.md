@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise
 ---
 
 # IoT SiteWise OPC UA data source simulator
-<a name="iotsitewise-opcua-data-source-simulator-component"></a>
 
 The IoT SiteWise OPC UA data source simulator component (`aws.iot.SiteWiseEdgeOpcuaDataSourceSimulator`) starts a local OPC UA server that generates sample data. Use this OPC UA server to simulate a data source read by the [IoT SiteWise OPC UA collector component](iotsitewise-opcua-collector-component.md) on an AWS IoT SiteWise gateway. Then, you can explore AWS IoT SiteWise features using this sample data. For more information about AWS IoT SiteWise gateways, see [Using AWS IoT SiteWise at the edge](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gateways-ggv2.html) in the *AWS IoT SiteWise User Guide*.
 

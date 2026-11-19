@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleExportJobError
-<a name="API_AssetBundleExportJobError"></a>
 
 Describes an error that occurred during an Asset Bundle export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/iac-g
 ---
 
 # Start a resource scan with CloudFormation IaC generator
-<a name="iac-generator-start-resource-scan"></a>
 
 Before you create a template from existing resources, you first must initiate a resource scan to discover your current resources and their relationships.
 

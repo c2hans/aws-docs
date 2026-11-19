@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/b2b-tutorials.html
 ---
 
 # AWS B2B Data Interchange: tutorials
-<a name="b2b-tutorials"></a>
 
 This chapter provides complete tutorials for both inbound and outbound EDI processing using AWS B2B Data Interchange. Choose the tutorial that matches your use case:
 + **Outbound EDI Tutorial:** Generate X12 EDI documents from your internal JSON data for sending to trading partners: [Outbound EDI tutorial](outbound-edi-tutorial.md).

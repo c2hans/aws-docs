@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/doc-history.htm
 ---
 
 # Document history for user guide
-<a name="doc-history"></a>
 
 The following table describes the main changes to the documentation for AWS Elemental Live. For notification about updates to this documentation, you can subscribe to an RSS feed.
 

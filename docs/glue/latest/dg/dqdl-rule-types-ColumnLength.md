@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-ColumnLen
 ---
 
 # ColumnLength
-<a name="dqdl-rule-types-ColumnLength"></a>
 
 Checks whether the length of each row in a column conforms to a given expression.
 

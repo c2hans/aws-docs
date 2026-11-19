@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Keyspaces (for Apache Cassandra)
-<a name="amazonkeyspacesforapachecassandra"></a>
 
 Amazon Keyspaces (for Apache Cassandra) provides the following APIs for data retrieval.
 

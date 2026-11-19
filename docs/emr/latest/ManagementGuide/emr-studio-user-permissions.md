@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-us
 ---
 
 # Configure EMR Studio user permissions for Amazon EC2 or Amazon EKS
-<a name="emr-studio-user-permissions"></a>
 
 You must configure user permissions policies for Amazon EMR Studio so that you can set fine-grained user and group permissions. For information about how user permissions work in EMR Studio, see [Access control](how-emr-studio-works.md#emr-studio-access-control) in [How Amazon EMR Studio works](how-emr-studio-works.md).
 

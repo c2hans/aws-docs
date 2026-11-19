@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/a
 ---
 
 # Linking AWS Partner Central and AWS accounts
-<a name="account-linking"></a>
 
 **Why account linking?**
 AWS updated the [APN fee policy](https://partnercentral.awspartner.com/partnercentral2/s/newsletter?url=APN-Fee-Requirement-Changes-for-2025) and launched the new [AWS Partner Central in the AWS Console](https://aws.amazon.com/about-aws/whats-new/2025/11/aws-partner-central-available-management-console/) on the AWS website. Both changes require an AWS account, which legacy AWS Partner Central does not support.

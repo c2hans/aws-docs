@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # PosixUser
-<a name="API_PosixUser"></a>
 
 The POSIX user.
 

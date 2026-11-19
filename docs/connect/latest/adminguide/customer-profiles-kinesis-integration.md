@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Create a Kinesis Integration with Connect Customer Customer Profiles
-<a name="customer-profiles-kinesis-integration"></a>
 
  The following steps outline the process of streaming objects from an Amazon Kinesis Data Stream into Connect Customer Customer Profiles. First complete the prerequisite, then complete the two integration steps:
 

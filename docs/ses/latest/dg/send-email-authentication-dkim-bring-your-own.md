@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-
 ---
 
 # Provide your own DKIM authentication token (BYODKIM) in Amazon SES
-<a name="send-email-authentication-dkim-bring-your-own"></a>
 
 As an alternative to using [Easy DKIM](send-email-authentication-dkim-easy.md), you can instead configure DKIM authentication by using your own public-private key pair. This process is known as *Bring Your Own DKIM* (*BYODKIM*).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-RemoveNetworkACLUnrestrictedSSHRDP`
-<a name="aws-remove-nacl-unrestricted-ssh-rdp"></a>
 
  **Description**
 

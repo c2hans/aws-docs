@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTo
 ---
 
 # RouteTollPassValidityPeriod
-<a name="API_RouteTollPassValidityPeriod"></a>
 
 Period for which the pass is valid.
 

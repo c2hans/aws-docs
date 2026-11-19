@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # StartCodegenJob
-<a name="API_StartCodegenJob"></a>
 
 Starts a code generation job for a specified Amplify app and backend environment.
 

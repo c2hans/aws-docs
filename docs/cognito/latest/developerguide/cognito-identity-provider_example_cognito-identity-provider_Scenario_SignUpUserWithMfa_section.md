@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Sign up a user with an Amazon Cognito user pool that requires MFA using an AWS SDK
-<a name="cognito-identity-provider_example_cognito-identity-provider_Scenario_SignUpUserWithMfa_section"></a>
 
 The following code examples show how to:
 + Sign up and confirm a user with a username, password, and email address.

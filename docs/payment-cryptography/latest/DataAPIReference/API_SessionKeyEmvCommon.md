@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyEmvCommon
-<a name="API_SessionKeyEmvCommon"></a>
 
 Parameters to derive session key for an Emv common payment card for ARQC verification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetLoadBalancers
-<a name="API_GetLoadBalancers"></a>
 
 Returns information about all load balancers in an account.
 

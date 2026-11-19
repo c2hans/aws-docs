@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/step-s
 ---
 
 # How step scaling for Application Auto Scaling works
-<a name="step-scaling-policy-overview"></a>
 
 This topic describes how step scaling works and introduces the key elements of a step scaling policy.
 

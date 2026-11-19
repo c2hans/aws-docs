@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/protecting-data.
 ---
 
 # Protecting your Amazon FSx for OpenZFS data
-<a name="protecting-data"></a>
 
 Amazon FSx for OpenZFS provides you with the following options to further protect the data stored on your file systems:
 + **Built-in Amazon FSx backups** – Supports your backup retention and compliance needs within Amazon FSx, offering both automatic daily backups and user-initiated backups.

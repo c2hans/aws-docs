@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/task-reference.htm
 ---
 
 # Task reference
-<a name="task-reference"></a>
 
 This reference describes the tasks that are included in the AWS Toolkit for Microsoft Azure DevOps.<a name="task-prerequisites"></a>
 

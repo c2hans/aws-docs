@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ReleaseLabel
 ---
 
 # ReleaseLabelFilter
-<a name="API_ReleaseLabelFilter"></a>
 
 The release label filters by application or version prefix.
 

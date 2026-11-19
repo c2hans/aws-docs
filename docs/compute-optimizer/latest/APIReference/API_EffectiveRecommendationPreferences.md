@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EffectiveRecommendationPreferences
-<a name="API_EffectiveRecommendationPreferences"></a>
 
 Describes the effective recommendation preferences for a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_SearchResour
 ---
 
 # SearchResources
-<a name="API_SearchResources"></a>
 
 Returns a list of AWS resource identifiers that matches the specified query. The query uses the same format as a resource query in a [CreateGroup](API_CreateGroup.md) or [UpdateGroupQuery](API_UpdateGroupQuery.md) operation.
 

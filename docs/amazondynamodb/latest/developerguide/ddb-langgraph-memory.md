@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 ---
 
 # Semantic long-term memory for LangGraph agents
-<a name="ddb-langgraph-memory"></a>
 
 LangGraph separates two kinds of agent state. Short-term state is the conversation thread itself, which a checkpointer persists so a thread can resume, replay, and recover (see [Using DynamoDB as a checkpoint store for LangGraph agents](ddb-langgraph-checkpoint.md)). Long-term memory is what the agent knows across threads, and LangGraph models it as a store: a namespaced key-value surface the agent writes to deliberately and reads back later.
 

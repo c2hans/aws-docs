@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_G
 ---
 
 # GetEstimatedCarbonEmissionsDimensionValues
-<a name="API_GetEstimatedCarbonEmissionsDimensionValues"></a>
 
 Returns the possible dimension values available for a customer's account. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

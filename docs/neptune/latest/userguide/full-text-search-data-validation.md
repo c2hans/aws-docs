@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Validation of data mappings
-<a name="full-text-search-data-validation"></a>
 
 Data is replicated to OpenSearch from Neptune using this process:
 + If a mapping for the field in question is already present in OpenSearch:

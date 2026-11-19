@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-works-prov-me
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # How AWS Proton provisions infrastructure
-<a name="ag-works-prov-methods"></a>
 
 AWS Proton can provision infrastructure in one of several ways:
 + **AWS-managed provisioning** – AWS Proton calls the provisioning engine on your behalf. This method supports only AWS CloudFormation template bundles. For more information, see [CloudFormation IaC files](ag-infrastructure-tmp-files-cloudformation.md).

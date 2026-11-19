@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Distributed compute tasks
-<a name="genrel06"></a>
 
 | GENREL06: How do you design high-performance distributed computation tasks to maximize successful completion? |
 | --- |

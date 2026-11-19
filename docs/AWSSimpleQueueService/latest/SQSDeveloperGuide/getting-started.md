@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Using the Amazon SQS Java Messaging Library
-<a name="getting-started"></a>
 
 To get started using the Java Message Service (JMS) with Amazon SQS, use the code examples in this section. The following sections show how to create a JMS connection and a session, and how to send and receive a message.
 
@@ -189,7 +188,7 @@ For complete examples of sending and receiving objects, see [TextMessageSender.j
 ## Receiving messages asynchronously
 <a name="receive-messages-asynchronously"></a>
 
-In the example in [Using the Amazon SQS Java Messaging Library](#getting-started), a message is sent to `MyQueue` and received synchronously.
+In the example in [Using the Amazon SQS Java Messaging Library](getting-started.md), a message is sent to `MyQueue` and received synchronously.
 
 The following example shows how to receive the messages asynchronously through a listener.
 
@@ -228,7 +227,7 @@ The following example shows how to receive the messages asynchronously through a
    Thread.sleep(1000);
    ```
 
-The rest of the steps are identical to the ones in the [Using the Amazon SQS Java Messaging Library](#getting-started) example. For a complete example of an asynchronous consumer, see `AsyncMessageReceiver.java` in [Working Java examples for using JMS with Amazon SQS standard queues](sqs-jms-code-examples.md).
+The rest of the steps are identical to the ones in the [Using the Amazon SQS Java Messaging Library](getting-started.md) example. For a complete example of an asynchronous consumer, see `AsyncMessageReceiver.java` in [Working Java examples for using JMS with Amazon SQS standard queues](sqs-jms-code-examples.md).
 
 The output for this example looks similar to the following:
 
@@ -240,7 +239,7 @@ Received: Hello World!
 ## Using client acknowledge mode
 <a name="using-client-acknowledge-mode"></a>
 
-The example in [Using the Amazon SQS Java Messaging Library](#getting-started) uses `AUTO_ACKNOWLEDGE` mode where every received message is acknowledged automatically (and therefore deleted from the underlying Amazon SQS queue).
+The example in [Using the Amazon SQS Java Messaging Library](getting-started.md) uses `AUTO_ACKNOWLEDGE` mode where every received message is acknowledged automatically (and therefore deleted from the underlying Amazon SQS queue).
 
 1. To explicitly acknowledge the messages after they're processed, you must create the session with `CLIENT_ACKNOWLEDGE` mode.
 
@@ -262,7 +261,7 @@ The example in [Using the Amazon SQS Java Messaging Library](#getting-started) u
 **Note**
 In this mode, when a message is acknowledged, all messages received before this message are implicitly acknowledged as well. For example, if 10 messages are received, and only the 10th message is acknowledged (in the order the messages are received), then all of the previous nine messages are also acknowledged.
 
-The rest of the steps are identical to the ones in the [Using the Amazon SQS Java Messaging Library](#getting-started) example. For a complete example of a synchronous consumer with client acknowledge mode, see `SyncMessageReceiverClientAcknowledge.java` in [Working Java examples for using JMS with Amazon SQS standard queues](sqs-jms-code-examples.md).
+The rest of the steps are identical to the ones in the [Using the Amazon SQS Java Messaging Library](getting-started.md) example. For a complete example of a synchronous consumer with client acknowledge mode, see `SyncMessageReceiverClientAcknowledge.java` in [Working Java examples for using JMS with Amazon SQS standard queues](sqs-jms-code-examples.md).
 
 The output for this example looks similar to the following:
 

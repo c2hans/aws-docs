@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # AWS service request
-<a name="monetization-functions-types-aws-service-request"></a>
 
 ## When to use
 <a name="monetization-functions-types-aws-service-request-when"></a>

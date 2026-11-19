@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergSchemaV2
-<a name="API_s3Buckets_IcebergSchemaV2"></a>
 
 Contains details about the schema for an Iceberg table using the V2 format. This schema format supports nested and complex data types such as `struct`, `list`, and `map`, in addition to primitive types.
 

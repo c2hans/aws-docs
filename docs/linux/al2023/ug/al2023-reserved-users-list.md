@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/al2023-reserved-users-li
 ---
 
 # List of AL2023 Reserved Users
-<a name="al2023-reserved-users-list"></a>
 
 | User name | UID |
 | --- | --- |

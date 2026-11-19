@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Li
 ---
 
 # ListAppMonitors
-<a name="API_ListAppMonitors"></a>
 
 Returns a list of the Amazon CloudWatch RUM app monitors in the account.
 
@@ -45,6 +44,7 @@ Content-type: application/json
          "Id": "string",
          "LastModified": "string",
          "Name": "string",
+         "Platform": "string",
          "State": "string"
       }
    ],

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_RestoreD
 ---
 
 # RestoreDeadLetterQueueRecordsRequestEntry
-<a name="API_RestoreDeadLetterQueueRecordsRequestEntry"></a>
 
 A dead-letter record to restore, identified by its receipt handle.
 

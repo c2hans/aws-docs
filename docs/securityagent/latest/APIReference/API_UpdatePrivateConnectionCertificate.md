@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdatePrivateConnectionCertificate
-<a name="API_UpdatePrivateConnectionCertificate"></a>
 
 Updates the certificate associated with a private connection. Certificates can be added or replaced but not removed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_BatchG
 ---
 
 # BatchGetProjects
-<a name="API_BatchGetProjects"></a>
 
 Gets information about one or more build projects.
 

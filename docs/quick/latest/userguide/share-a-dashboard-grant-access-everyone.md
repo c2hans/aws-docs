@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard
 ---
 
 # Granting everyone in your AWS Quick Sight account access to a dashboard
-<a name="share-a-dashboard-grant-access-everyone"></a>
 
 Alternatively, you can share your AWS Quick Sight dashboard with everyone in your account. When you do this, everyone in your account can access the dashboard, even if they weren't granted access individually and assigned permissions. They can access the dashboard if they have a link to it (shared by you) or if it's embedded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Colu
 ---
 
 # ColumnClassificationDetails
-<a name="API_ColumnClassificationDetails"></a>
 
 Contains classification information for data columns, including mappings that specify how columns should be handled during synthetic data generation and privacy analysis.
 

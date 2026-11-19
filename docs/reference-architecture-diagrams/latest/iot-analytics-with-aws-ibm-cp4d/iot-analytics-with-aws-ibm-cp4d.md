@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Near Real-Time IoT Analytics with AWS and IBM CP4D
-<a name="iot-analytics-with-aws-ibm-cp4d"></a>
 
 Publication date: **May 12, 2023 ([Diagram history](#diagram-history))**
 

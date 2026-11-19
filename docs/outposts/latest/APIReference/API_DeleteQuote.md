@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_DeleteQ
 ---
 
 # DeleteQuote
-<a name="API_DeleteQuote"></a>
 
 Deletes the specified quote.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/security-authoriza
 ---
 
 # Understanding permissions files
-<a name="security-authorization-file-create"></a>
 
 You can create a custom permissions file or update an existing permissions file using your preferred text editor. A permissions file typically takes the following format:
 

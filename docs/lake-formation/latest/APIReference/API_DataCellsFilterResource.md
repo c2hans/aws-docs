@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DataCellsFilterResource
-<a name="API_DataCellsFilterResource"></a>
 
 A structure for a data cells filter resource.
 

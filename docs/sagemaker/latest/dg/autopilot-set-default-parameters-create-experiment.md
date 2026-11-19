@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-set-defaul
 ---
 
 # Configure the default parameters of an Autopilot experiment (for administrators)
-<a name="autopilot-set-default-parameters-create-experiment"></a>
 
 Autopilot supports setting default values to simplify the configuration of Amazon SageMaker Autopilot when you create an Autopilot experiment using the Studio Classic UI. Administrators can use Studio Classic [lifecycle configurations](studio-lcc.md) (LCC) to set infrastructure, networking, and security values in configuration files and pre-populate the [advanced settings](autopilot-automate-model-development-create-experiment-ui.md#advanced-settings) of `AutoML` jobs.
 

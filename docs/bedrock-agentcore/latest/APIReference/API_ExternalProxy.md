@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExternalProxy
-<a name="API_ExternalProxy"></a>
 
 Configuration for a customer-managed external proxy server. Includes server location, optional domain-based routing patterns, and authentication credentials.
 

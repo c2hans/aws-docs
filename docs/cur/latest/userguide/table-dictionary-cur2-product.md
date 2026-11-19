@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Product columns
-<a name="table-dictionary-cur2-product"></a>
 
 Product columns contain data about the product that is being charged in the line item.
 

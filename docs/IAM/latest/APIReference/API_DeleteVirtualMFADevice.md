@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteVirtua
 ---
 
 # DeleteVirtualMFADevice
-<a name="API_DeleteVirtualMFADevice"></a>
 
 Deletes a virtual MFA device.
 

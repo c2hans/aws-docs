@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteSpace
-<a name="API_DeleteSpace"></a>
 
 Deletes an Amazon QuickSight space.
 

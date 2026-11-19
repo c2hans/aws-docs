@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateAgentRuntimeEndpoint
-<a name="API_CreateAgentRuntimeEndpoint"></a>
 
 Creates an AgentCore Runtime endpoint.
 

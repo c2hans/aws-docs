@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/events.html
 ---
 
 # Amazon Neptune events
-<a name="events"></a>
 
 **Topics**
 + [Amazon Neptune event categories and event messages](event-lists.md)

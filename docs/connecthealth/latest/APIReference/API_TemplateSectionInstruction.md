@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Te
 ---
 
 # TemplateSectionInstruction
-<a name="API_TemplateSectionInstruction"></a>
 
 Instructions for generating a specific section of a clinical note
 

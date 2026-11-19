@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # AnalysisReport
-<a name="API_AnalysisReport"></a>
 
 A report that captures key activity from the last 30 days of network traffic monitored by your firewall.
 

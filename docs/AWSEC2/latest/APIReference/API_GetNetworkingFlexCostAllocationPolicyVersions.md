@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetwor
 ---
 
 # GetNetworkingFlexCostAllocationPolicyVersions
-<a name="API_GetNetworkingFlexCostAllocationPolicyVersions"></a>
 
 Retrieves the versions of a flex cost allocation policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # SubscriptionSummary
-<a name="API_SubscriptionSummary"></a>
 
 Summary information for a flat-rate pricing subscription, as returned by list operations.
 

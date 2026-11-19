@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-european
 ---
 
 # Design approach
-<a name="design-approach"></a>
 
 The first AWS European Sovereign Cloud Region will be located in Germany in the State of Brandenburg, and its customers will benefit from the full power of AWS with the same familiar architecture, expansive service portfolio, third-party tools and software, and APIs provided in existing AWS Regions.
 

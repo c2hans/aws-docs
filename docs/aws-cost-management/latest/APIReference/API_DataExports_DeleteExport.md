@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteExport
-<a name="API_DataExports_DeleteExport"></a>
 
 Deletes an existing data export.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning_resources
 ---
 
 # Excluding functions from Lambda code scanning
-<a name="scanning_resources_lambda_code_exclude_functions"></a>
 
  You can add tags to Lambda functions, so you can exclude them from Amazon Inspector Lambda code scans. Excluding functions from scans can prevent unactionable alerts. When you tag a function for exclusion, the tag must have the following key-value pair.
 +  Key – `InspectorCodeExclusion`

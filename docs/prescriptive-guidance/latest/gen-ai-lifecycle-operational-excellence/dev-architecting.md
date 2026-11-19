@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Architecting a successful generative AI proof of concept
-<a name="dev-architecting"></a>
 
 The journey to a production-grade generative AI application begins long before the first line of code is written. It starts with a strategically sound proof of concept (PoC). Too often, PoCs are treated as technical demos that are designed to impress rather than as rigorous experiments that are designed to promote learning. A successful PoC is a strategic tool that derisks investment by validating the following: business value, data readiness, technical feasibility, and risk mitigation. This framework transforms the PoC from a technical exercise into a comprehensive business validation process. This helps you make sure that any "go" decision is backed by evidence, not just enthusiasm.
 

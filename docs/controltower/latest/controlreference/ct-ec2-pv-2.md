@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.2] Require that an attached Amazon EBS volume is configured to encrypt data at rest
-<a name="ct-ec2-pv-2"></a>
 
 This control disallows attaching an unencrypted EBS volume to a running or stopped EC2 instance.
 

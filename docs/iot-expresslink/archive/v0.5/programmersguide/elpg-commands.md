@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v0.5/programmers
 ---
 
 # 3 ExpressLink commands
-<a name="elpg-commands"></a>
 
 These commands are sent to and from the UART. The default UART configuration shall be 115200, 8, N, 1 (baud rate: 115200; data bits: 8; parity: none; stop bits: 1). There is no hardware or software flow control for UART communications. The baud rate is NOT configurable.
 

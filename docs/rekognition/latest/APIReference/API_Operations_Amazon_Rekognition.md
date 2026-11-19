@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Oper
 ---
 
 # Amazon Rekognition
-<a name="API_Operations_Amazon_Rekognition"></a>
 
 The following actions are supported by Amazon Rekognition:
 +  [AssociateFaces](API_AssociateFaces.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/identity.html
 ---
 
 # Identity and access management in Quick
-<a name="identity"></a>
 
 |  |
 | --- |

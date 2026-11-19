@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 ---
 
 # Troubleshooting ActiveMQ on Amazon MQ
-<a name="troubleshooting-activemq"></a>
 
 Use the information in this section to help you diagnose and resolve common issues you might encounter when working with ActiveMQ on Amazon MQ brokers.
 

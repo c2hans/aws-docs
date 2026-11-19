@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Harmful events
-<a name="raibr02"></a>
 
 | RAIBR02: How will you identify and categorize potential harmful events? |
 | --- |

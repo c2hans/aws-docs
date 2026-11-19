@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluatorStatistics
-<a name="API_EvaluatorStatistics"></a>
 
 Aggregated statistics for an evaluator.
 

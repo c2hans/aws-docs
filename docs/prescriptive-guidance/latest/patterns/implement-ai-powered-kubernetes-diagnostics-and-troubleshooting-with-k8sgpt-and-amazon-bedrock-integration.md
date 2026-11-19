@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement AI-powered Kubernetes diagnostics and troubleshooting with K8sGPT and Amazon Bedrock integration
-<a name="implement-ai-powered-kubernetes-diagnostics-and-troubleshooting-with-k8sgpt-and-amazon-bedrock-integration"></a>
 
 *Ishwar Chauthaiwale, Muskan ., and Prafful Gupta, Amazon Web Services*
 

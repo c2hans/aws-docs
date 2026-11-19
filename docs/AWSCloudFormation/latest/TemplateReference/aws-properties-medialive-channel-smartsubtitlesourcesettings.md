@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel SmartSubtitleSourceSettings
-<a name="aws-properties-medialive-channel-smartsubtitlesourcesettings"></a>
 
 Settings for a caption selector that uses subtitles that AWS Elemental Inference generates from the channel audio (Smart Subtitles). The channel's InferenceSettings must specify an Elemental Inference feed (InferenceSettings.FeedArn). The feed must have a subtitling output. For more information about Smart Subtitles, see [Smart Subtitles using Elemental Inference](https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-automatic-subtitling.html) in the *AWS Elemental MediaLive User Guide*.
 

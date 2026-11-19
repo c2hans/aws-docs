@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Remediati
 ---
 
 # RemediationConfiguration
-<a name="API_RemediationConfiguration"></a>
 
 An object that represents the details about the remediation configuration that includes the remediation action, parameters, and data to execute the action.
 

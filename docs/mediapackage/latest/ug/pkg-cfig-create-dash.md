@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-create-d
 ---
 
 # Creating a DASH packaging configuration
-<a name="pkg-cfig-create-dash"></a>
 
 Create a packaging configuration that formats content for devices that support DASH-ISO.
 

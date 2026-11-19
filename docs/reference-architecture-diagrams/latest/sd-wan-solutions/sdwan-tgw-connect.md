@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # SD-WAN Connectivity with AWS Transit Gateway Connect Attachments
-<a name="sdwan-tgw-connect"></a>
 
 Publication date: **December 28, 2024 ([Diagram history](#sdwan1-diagram-history))**
 

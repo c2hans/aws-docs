@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceBot
-<a name="API_AppInstanceBot"></a>
 
 An Amazon Lex V2 chat bot created under an `AppInstance`.
 

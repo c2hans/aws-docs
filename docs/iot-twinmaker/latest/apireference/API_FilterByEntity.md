@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Fi
 ---
 
 # FilterByEntity
-<a name="API_FilterByEntity"></a>
 
 Filter by entity.
 

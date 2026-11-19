@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Namesp
 ---
 
 # NamespaceSummary
-<a name="API_s3Buckets_NamespaceSummary"></a>
 
 Contains details about a namespace.
 

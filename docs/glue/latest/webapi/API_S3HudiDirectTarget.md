@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3HudiDirectTarge
 ---
 
 # S3HudiDirectTarget
-<a name="API_S3HudiDirectTarget"></a>
 
 Specifies a target that writes to a Hudi data source in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CopyBackup.h
 ---
 
 # CopyBackup
-<a name="API_CopyBackup"></a>
 
 Copies an existing backup within the same AWS account to another AWS Region (cross-Region copy) or within the same AWS Region (in-Region copy). You can have up to five backup copy requests in progress to a single destination Region per account.
 

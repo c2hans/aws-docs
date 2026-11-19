@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # ServiceManagedEc2InstanceMarketOptions
-<a name="API_ServiceManagedEc2InstanceMarketOptions"></a>
 
 The details of the Amazon EC2 instance market options for a service managed fleet.
 

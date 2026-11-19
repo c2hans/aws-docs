@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZonePortalFullAccessPolicy
-<a name="AmazonDataZonePortalFullAccessPolicy"></a>
 
 **Description**: Provides full access to Amazon DataZone APIs
 

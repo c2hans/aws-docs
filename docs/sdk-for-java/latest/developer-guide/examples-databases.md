@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # AWS database services and AWS SDK for Java 2.x
-<a name="examples-databases"></a>
 
 AWS offers several database types: relational, key-value, in-memory, document, and [several others](https://aws.amazon.com/products/databases/). The SDK for Java 2.x support varies depending the nature of the database service in AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-create-sc
 ---
 
 # Step 4: Create your scaling plan
-<a name="gs-create-scaling-plan"></a>
 
 On the **Review and create** page, review the details of your scaling plan and choose **Create scaling plan**. You are directed to a page that shows the status of your scaling plan. The scaling plan can take a moment to finish being created while your resources are updated.
 

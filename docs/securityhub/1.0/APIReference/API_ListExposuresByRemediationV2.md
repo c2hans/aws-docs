@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListExp
 ---
 
 # ListExposuresByRemediationV2
-<a name="API_ListExposuresByRemediationV2"></a>
 
 Retrieves the exposure findings tied to a specific remediation target. Results are sorted by previous severity, highest first, and are paginated.
 

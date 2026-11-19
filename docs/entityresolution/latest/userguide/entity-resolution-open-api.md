@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/entity
 ---
 
 # Using the AWS Entity Resolution OpenAPI specification
-<a name="entity-resolution-open-api"></a>
 
 The OpenAPI specification defines all the protocols associated with AWS Entity Resolution. This specification is necessary to implement the integration.
 

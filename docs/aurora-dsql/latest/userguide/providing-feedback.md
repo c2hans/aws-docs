@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/providing-f
 ---
 
 # Providing feedback on Amazon Aurora DSQL
-<a name="providing-feedback"></a>
 
 If you encounter features that are critical for your migration but not currently supported in Aurora DSQL, AWS provides several channels for feedback:
 

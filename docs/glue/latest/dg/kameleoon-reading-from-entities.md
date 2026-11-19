@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kameleoon-reading-from-en
 ---
 
 # Reading from Kameleoon entities
-<a name="kameleoon-reading-from-entities"></a>
 
 **Prerequisites**
 

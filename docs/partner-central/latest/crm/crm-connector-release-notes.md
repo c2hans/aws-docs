@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/crm-connector
 ---
 
 # Release notes
-<a name="crm-connector-release-notes"></a>
 
 This section contains the release history for the AWS Partner Customer Relationship Management (CRM) Connector for Salesforce.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessGrant
-<a name="API_control_GetAccessGrant"></a>
 
 Get the details of an access grant from your S3 Access Grants instance.
 

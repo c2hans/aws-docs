@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_SOA.html
 ---
 
 # SOA
-<a name="API_SOA"></a>
 
 Start of Authority (SOA) properties for a public or private DNS namespace.
 

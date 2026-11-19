@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/tracki
 ---
 
 # Tracking your Amazon CloudSearch Usage and Charges
-<a name="tracking-usage"></a>
 
 The AWS account activity page enables you to track your Amazon CloudSearch usage and charges.
 

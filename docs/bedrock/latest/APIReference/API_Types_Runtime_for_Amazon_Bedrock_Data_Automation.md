@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Types_Ru
 ---
 
 # Runtime for Amazon Bedrock Data Automation
-<a name="API_Types_Runtime_for_Amazon_Bedrock_Data_Automation"></a>
 
 The following data types are supported by Runtime for Amazon Bedrock Data Automation:
 +  [AssetProcessingConfiguration](API_data-automation-runtime_AssetProcessingConfiguration.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/configure-videofxpro
 ---
 
 # Configuring the VideoFxProcessor object for the Amazon Chime SDK
-<a name="configure-videofxprocessor"></a>
 
 The following tables list the `VideoFxProcessor` properties that you can configure. The example below the tables shows a typical runtime configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteB
 ---
 
 # DeleteBackup
-<a name="API_DeleteBackup"></a>
 
 Deletes a specified AWS CloudHSM backup. A backup can be restored up to 7 days after the DeleteBackup request is made. For more information on restoring a backup, see [RestoreBackup](API_RestoreBackup.md).
 

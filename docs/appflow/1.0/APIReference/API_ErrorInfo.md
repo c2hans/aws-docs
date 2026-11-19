@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ErrorInfo.h
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
  Provides details in the event of a failed flow, including the failure count and the related error messages.
 

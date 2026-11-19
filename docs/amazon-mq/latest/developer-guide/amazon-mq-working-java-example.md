@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Working examples of using Java Message Service (JMS) with ActiveMQ
-<a name="amazon-mq-working-java-example"></a>
 
 The following examples show how you can work with ActiveMQ programmatically:
 + The OpenWire example Java code connects to a broker, creates a queue, and sends and receives a message. For a detailed breakdown and explanation, see [Connecting a Java application to your Amazon MQ broker](amazon-mq-connecting-application.md).

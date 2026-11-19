@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-terada
 ---
 
 # Connecting to Teradata Vantage in AWS Glue Studio
-<a name="connecting-to-data-teradata"></a>
 
  AWS Glue provides built-in support for Teradata Vantage. AWS Glue Studio provides a visual interface to connect to Teradata, author data integration jobs, and run them on the AWS Glue Studio serverless Spark runtime.
 

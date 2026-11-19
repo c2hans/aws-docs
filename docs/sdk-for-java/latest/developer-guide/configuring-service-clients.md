@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/conf
 ---
 
 # Configuring service clients in the AWS SDK for Java 2.x
-<a name="configuring-service-clients"></a>
 
 To programmatically access AWS services, the SDK for Java 2.x uses a client object for each AWS service. For example, if your application needs to access Amazon EC2, you create an Amazon EC2 client object—an instance of the [Ec2Client](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/ec2/Ec2Client.html) class—to interface with that service. You then use the service client to make requests to that AWS service. For most applications, you can use a [singleton instance of a service client](singleton-service-clients.md).
 

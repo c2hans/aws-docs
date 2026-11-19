@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/api-examples.h
 ---
 
 # Managed Service for Apache Flink API example code
-<a name="api-examples"></a>
 
 This topic contains example request blocks for Managed Service for Apache Flink actions.
 

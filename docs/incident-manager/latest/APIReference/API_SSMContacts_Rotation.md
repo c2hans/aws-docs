@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Rotation
-<a name="API_SSMContacts_Rotation"></a>
 
 Information about a rotation in an on-call schedule.
 

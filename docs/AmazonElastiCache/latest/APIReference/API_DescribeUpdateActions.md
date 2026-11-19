@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeUpdateActions
-<a name="API_DescribeUpdateActions"></a>
 
 Returns details of the update actions
 

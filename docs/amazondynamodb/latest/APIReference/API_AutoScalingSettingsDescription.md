@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # AutoScalingSettingsDescription
-<a name="API_AutoScalingSettingsDescription"></a>
 
 Represents the auto scaling settings for a global table or global secondary index.
 

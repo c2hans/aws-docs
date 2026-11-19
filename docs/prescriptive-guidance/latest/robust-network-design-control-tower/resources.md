@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Resources
-<a name="resources"></a>
 + [IPAM documentation](https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html)
 + [IP Address Management for AWS Control Tower](https://aws.amazon.com/blogs/networking-and-content-delivery/ip-address-management-for-aws-control-tower/) (blog post)
 + [Securely scale multi-account architecture with AWS Network Firewall and AWS Control Tower](https://aws.amazon.com/blogs/mt/scale-multi-account-architecture-aws-network-firewall-and-aws-control-tower/) (blog post)

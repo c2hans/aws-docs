@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudfront-
 ---
 
 # cloudfront-traffic-to-origin-encrypted
-<a name="cloudfront-traffic-to-origin-encrypted"></a>
 
 Checks if Amazon CloudFront distributions are encrypting traffic to custom origins. The rule is NON\_COMPLIANT if ‘OriginProtocolPolicy’ is ‘http-only’ or if ‘OriginProtocolPolicy’ is ‘match-viewer’ and ‘ViewerProtocolPolicy’ is ‘allow-all’.
 

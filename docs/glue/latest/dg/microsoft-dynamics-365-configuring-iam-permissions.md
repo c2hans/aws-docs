@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-dynamics-365-co
 ---
 
 # Policies containing the API operations for creating and using connections
-<a name="microsoft-dynamics-365-configuring-iam-permissions"></a>
 
  The following sample policy describes the required AWS permissions for creating and using connections. If you are creating a new role, create a policy that contains the following:
 

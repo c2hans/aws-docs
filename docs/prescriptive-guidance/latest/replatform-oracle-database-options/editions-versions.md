@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Editions and versions
-<a name="editions-versions"></a>
 
 In addition to choosing your licensing model, you need to choose the edition that supports your database requirements. Amazon RDS for Oracle supports the following options:
 + Oracle Database Enterprise Edition (EE) is the most common choice for production workloads in many large organizations and enterprises. EE provides key features for mission-critical applications, including Active Data Guard and Oracle Partitioning.

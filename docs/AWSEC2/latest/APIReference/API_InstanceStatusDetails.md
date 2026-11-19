@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceStatusDetails
-<a name="API_InstanceStatusDetails"></a>
 
 Describes the instance status.
 

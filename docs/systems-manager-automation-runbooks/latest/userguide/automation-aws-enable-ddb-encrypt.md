@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableEncryptionOnDynamoDbTable`
-<a name="automation-aws-enable-ddb-encrypt"></a>
 
  **Description**
 

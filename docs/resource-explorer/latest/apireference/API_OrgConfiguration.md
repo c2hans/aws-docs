@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # OrgConfiguration
-<a name="API_OrgConfiguration"></a>
 
 This is a structure that contains the status of AWS service access, and whether you have a valid service-linked role to enable multi-account search for your organization.
 

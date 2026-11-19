@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-ami-policy
 ---
 
 # Create Amazon Data Lifecycle Manager custom policy for EBS snapshots
-<a name="snapshot-ami-policy"></a>
 
 The following procedure shows you how to use Amazon Data Lifecycle Manager to automate Amazon EBS snapshot lifecycles.
 

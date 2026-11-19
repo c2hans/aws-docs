@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # FilterTimestamp
-<a name="API_AWSBCMPricingCalculator_FilterTimestamp"></a>
 
  Represents a time-based filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Customize your policy engine’s encryption
-<a name="policy-encryption"></a>
 
 Policy in AgentCore provides encryption by default to protect sensitive customer data at rest using AWS owned encryption keys. As an extra layer of protection, Policy in AgentCore allows you to encrypt your policy engines using AWS Key Management Service (AWS KMS) customer managed keys (CMK). This functionality ensures protection of sensitive data via encryption at rest, which helps you:
 + Reduce the operational burden on service’s end to protect sensitive data

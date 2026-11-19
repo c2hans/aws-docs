@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted
 ---
 
 # Migrating your source schema to your target database using AWS SCT
-<a name="CHAP_GettingStarted.SCT"></a>
 
 We recommend using DMS Schema Conversion to convert your source database schemas. For more information, see [Getting started with DMS Schema Conversion](getting-started.md). If you prefer to use the legacy AWS Schema Conversion Tool, follow the steps below.
 

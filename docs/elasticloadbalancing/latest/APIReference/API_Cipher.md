@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Cipher
-<a name="API_Cipher"></a>
 
 Information about a cipher used in a policy.
 

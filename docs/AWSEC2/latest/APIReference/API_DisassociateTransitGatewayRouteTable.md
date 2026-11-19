@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateTransitGatewayRouteTable
-<a name="API_DisassociateTransitGatewayRouteTable"></a>
 
 Disassociates a resource attachment from a transit gateway route table.
 

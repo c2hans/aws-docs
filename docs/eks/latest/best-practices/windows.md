@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows.html
 ---
 
 # Best Practices for Windows
-<a name="windows"></a>
 
 This guide provides advice about running windows containers and nodes.
 

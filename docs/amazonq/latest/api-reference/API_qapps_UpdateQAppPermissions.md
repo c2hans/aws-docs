@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UpdateQAppPermissions
-<a name="API_qapps_UpdateQAppPermissions"></a>
 
 Updates read permissions for a Amazon Q App in Amazon Q Business application environment instance.
 

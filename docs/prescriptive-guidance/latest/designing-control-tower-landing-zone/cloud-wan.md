@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # AWS Cloud WAN
-<a name="cloud-wan"></a>
 
 Although you can create your own global network by interconnecting multiple transit gateways across Regions, you can also take advantage of [AWS Cloud WAN](https://aws.amazon.com/cloud-wan/).  This service provides built-in automation, segmentation, and configuration management features that are designed specifically for building and operating global networks, based on your core network policy.
 

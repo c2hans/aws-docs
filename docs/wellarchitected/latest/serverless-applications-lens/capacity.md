@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # DynamoDB on-demand and provisioned capacity
-<a name="capacity"></a>
 
 Amazon DynamoDB is a fully managed NoSQL database service with single-digit millisecond performance at any scale, and is often used for serverless applications. DynamoDB has two pricing models for read and write throughput: on-demand mode and provisioned mode.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodeGenerationSettingsResponse
-<a name="API_MedicalCodeGenerationSettingsResponse"></a>
 
 Response containing settings for medical code generation.
 

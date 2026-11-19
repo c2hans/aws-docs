@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 ---
 
 # Replaying investigations
-<a name="working-with-devops-agent-replaying-investigations"></a>
 
 After an investigation completes, you can replay it. Replaying an investigation allows you to see how the agent handles a past incident after you change its skills, instructions, or integrations. Then you can compare the replay with the original by automated grader score, duration, and investigation timeline.
 

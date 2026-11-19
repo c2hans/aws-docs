@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Deleting metadata tables
-<a name="metadata-tables-delete-table"></a>
 
 If you want to delete the metadata tables that you created for an Amazon S3 general purpose bucket, you can delete the metadata tables from your AWS managed table bucket.
 

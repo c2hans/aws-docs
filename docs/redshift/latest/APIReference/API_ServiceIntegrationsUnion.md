@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Service
 ---
 
 # ServiceIntegrationsUnion
-<a name="API_ServiceIntegrationsUnion"></a>
 
 A list of service integrations.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EKS::Capability SsoIdentity
-<a name="aws-properties-eks-capability-ssoidentity"></a>
 
 An IAM Identity CenterIAM; Identity Center identity (user or group) that can be assigned permissions in a capability.
 

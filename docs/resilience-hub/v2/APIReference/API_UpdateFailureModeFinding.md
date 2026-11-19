@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Updat
 ---
 
 # UpdateFailureModeFinding
-<a name="API_UpdateFailureModeFinding"></a>
 
 Updates an existing finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ann
 ---
 
 # Annotation
-<a name="API_Annotation"></a>
 
 The annotation format configuration for bulk import files.
 

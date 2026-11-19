@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_EntityCon
 ---
 
 # EntityConfiguration
-<a name="API_EntityConfiguration"></a>
 
 Provides the configuration information for users or groups in your IAM Identity Center identity source to grant access your Amazon Kendra experience.
 

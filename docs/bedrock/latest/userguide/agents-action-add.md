@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-a
 ---
 
 # Add an action group to your agent in Amazon Bedrock
-<a name="agents-action-add"></a>
 
 After setting up the OpenAPI schema and Lambda function for your action group, you can create the action group. Choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-snapshots.h
 ---
 
 # Use Maven snapshots
-<a name="maven-snapshots"></a>
 
  A Maven *snapshot* is a special version of a Maven package that refers to the latest production branch code. It is a development version that precedes the final release version. You can identify a snapshot version of a Maven package by the suffix `SNAPSHOT` that's appended to the package version. For example, the snapshot of version `1.1` is `1.1-SNAPSHOT`. For more information, see [What is a SNAPSHOT version?](https://maven.apache.org/guides/getting-started/index.html#What_is_a_SNAPSHOT_version) on the Apache Maven Project website.
 

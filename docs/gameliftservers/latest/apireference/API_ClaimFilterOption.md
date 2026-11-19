@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # ClaimFilterOption
-<a name="API_ClaimFilterOption"></a>
 
  Filters which game servers may be claimed when calling `ClaimGameServer`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RequestM
 ---
 
 # RequestMetadataBaseFilters
-<a name="API_RequestMetadataBaseFilters"></a>
 
 A mapping of a metadata key to a value that it should or should not equal.
 

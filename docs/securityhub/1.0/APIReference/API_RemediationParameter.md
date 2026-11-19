@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationParameter
-<a name="API_RemediationParameter"></a>
 
 A parameter used in running the guidance steps.
 

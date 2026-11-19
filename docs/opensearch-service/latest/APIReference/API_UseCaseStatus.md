@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UseCaseStatus
-<a name="API_UseCaseStatus"></a>
 
 The status of the use case for the domain.
 

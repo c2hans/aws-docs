@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloa
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # View a workload in AWS Well-Architected Tool
-<a name="workloads-page"></a>
 
 You can view the details of workloads that you own and workloads that have been shared with you.
 

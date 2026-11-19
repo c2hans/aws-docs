@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentDetails
-<a name="API_DocumentDetails"></a>
 
 The details of a document within an Amazon Q Business index.
 

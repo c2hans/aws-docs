@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/adding-a-data-so
 ---
 
 # Adding a data source
-<a name="adding-a-data-source"></a>
 
 The following instructions describe how to add a data source to an Event API. To learn how to use event handlers to interact with your data source, see [Writing event handlers](writing-event-handlers.md).
 

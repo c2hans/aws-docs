@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFormation::ModuleDefaultVersion
-<a name="aws-resource-cloudformation-moduledefaultversion"></a>
 
 Specifies the default version of a module. The default version of the module will be used in CloudFormation operations for this account and Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Using TransferManager for Amazon S3 operations
-<a name="examples-s3-transfermanager"></a>
 
 You can use the AWS SDK for C\+\+ `TransferManager` class to reliably transfer files from the local environment to Amazon S3 and to copy objects from one Amazon S3 location to another. `TransferManager` can get the progress of a transfer and pause or resume uploads and downloads.
 

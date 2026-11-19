@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/direct-messagi
 ---
 
 # Direct messaging policy examples
-<a name="direct-messaging-policy-examples"></a>
 
 Using direct messaging requires specific policies. Direct messaging uses the SendDirectMessage HTTP API to deliver messages from a sender to a single receiver identified by its MQTT client ID. This section presents examples of policies that allow common uses of direct messaging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-securi
 ---
 
 # Amazon Security Lake events
-<a name="events-ref-securitylake"></a>
 
 Security Lake sends service events to EventBridge via AWS CloudTrail.
 

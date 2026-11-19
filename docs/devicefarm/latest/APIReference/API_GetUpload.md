@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetUp
 ---
 
 # GetUpload
-<a name="API_GetUpload"></a>
 
 Gets information about an upload.
 

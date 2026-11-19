@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/security_iam_servic
 ---
 
 # How Amazon EVS works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Elastic VMware Service, learn what IAM features are available to use with Amazon EVS. The following table lists each IAM feature in the first column and whether Amazon EVS supports it in the second column.
 

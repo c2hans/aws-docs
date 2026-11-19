@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-create-c
 ---
 
 # Creating a CMAF packaging configuration
-<a name="pkg-cfig-create-cmaf"></a>
 
 Create a packaging configuration that formats content for devices that support Apple HLS fragmented MP4 (fMP4).
 

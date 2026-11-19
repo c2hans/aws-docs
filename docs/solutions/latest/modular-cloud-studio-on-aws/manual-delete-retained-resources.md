@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Manual delete retained resources
-<a name="manual-delete-retained-resources"></a>
 
 After deleting the core stack, see the following sections for how to delete remaining resources.
 

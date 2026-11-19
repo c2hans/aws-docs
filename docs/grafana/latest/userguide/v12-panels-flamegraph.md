@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-panels-flam
 ---
 
 # Flame graph
-<a name="v12-panels-flamegraph"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 12.x**.

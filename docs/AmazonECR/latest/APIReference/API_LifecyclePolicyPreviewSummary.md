@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Lifecy
 ---
 
 # LifecyclePolicyPreviewSummary
-<a name="API_LifecyclePolicyPreviewSummary"></a>
 
 The summary of the lifecycle policy preview request.
 

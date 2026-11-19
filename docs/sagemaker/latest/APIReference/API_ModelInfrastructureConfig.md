@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelI
 ---
 
 # ModelInfrastructureConfig
-<a name="API_ModelInfrastructureConfig"></a>
 
 The configuration for the infrastructure that the model will be deployed to.
 

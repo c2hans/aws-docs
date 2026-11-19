@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Citatio
 ---
 
 # Citation
-<a name="API_Citation"></a>
 
 Citation information for AI-generated responses.
 

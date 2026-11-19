@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/directory.
 ---
 
 # .directory
-<a name="directory"></a>
 
 Used by the media sector.
 

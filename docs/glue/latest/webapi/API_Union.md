@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Union.html
 ---
 
 # Union
-<a name="API_Union"></a>
 
 Specifies a transform that combines the rows from two or more datasets into a single result.
 

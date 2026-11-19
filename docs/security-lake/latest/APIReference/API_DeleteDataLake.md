@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteDataLake
-<a name="API_DeleteDataLake"></a>
 
 When you disable Amazon Security Lake from your account, Security Lake is disabled in all AWS Regions and it stops collecting data from your sources. Also, this API automatically takes steps to remove the account from Security Lake. However, Security Lake retains all of your existing settings and the resources that it created in your AWS account in the current AWS Region.
 

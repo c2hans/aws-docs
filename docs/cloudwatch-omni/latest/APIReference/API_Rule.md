@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Top-level rule definition.
 

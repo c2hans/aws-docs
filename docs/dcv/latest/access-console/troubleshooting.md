@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/troubleshootin
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section explains how to identify and troubleshoot problems that you might have with Amazon DCV Access Console.
 

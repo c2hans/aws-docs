@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateH
 ---
 
 # UpdateHostKey
-<a name="API_UpdateHostKey"></a>
 
 Updates the host key that's specified by the `ServerId` and `HostKeyId` parameters. You can update the description of the host key, change where the host key is stored by specifying the `StorageType`, and specify the AWS KMS key used to encrypt the host key when it's stored in AWS Secrets Manager.
 

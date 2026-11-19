@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/r
 ---
 
 # Representation of data in ABAP
-<a name="representation"></a>
 
 This section covers the following topics.
 

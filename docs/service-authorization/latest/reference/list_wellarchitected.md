@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Well-Architected Tool
-<a name="list_wellarchitected"></a>
 
 AWS Well-Architected Tool (service prefix: `wellarchitected`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -38,10 +37,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   CreateAgentBasicProfile  **
-  - **IAM action:**  [wellarchitected:CreateAgentBasicProfile](#list_wellarchitected-action-CreateAgentBasicProfile)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [wellarchitected:CreateAgentBasicProfile](#list_wellarchitected-action-CreateAgentBasicProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [wellarchitected:TagResource](#list_wellarchitected-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateAgentContext  **
   - **IAM action:**  [wellarchitected:CreateAgentContext](#list_wellarchitected-action-CreateAgentContext)

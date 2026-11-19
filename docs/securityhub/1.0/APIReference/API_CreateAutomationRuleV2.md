@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateA
 ---
 
 # CreateAutomationRuleV2
-<a name="API_CreateAutomationRuleV2"></a>
 
 Creates a V2 automation rule.
 

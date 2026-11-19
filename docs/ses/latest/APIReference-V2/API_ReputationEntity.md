@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Reputatio
 ---
 
 # ReputationEntity
-<a name="API_ReputationEntity"></a>
 
 An object that contains information about a reputation entity, including its reference, type, policy, status records, and reputation impact.
 

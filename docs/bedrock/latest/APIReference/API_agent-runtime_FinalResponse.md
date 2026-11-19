@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FinalResponse
-<a name="API_agent-runtime_FinalResponse"></a>
 
 Contains details about the response to the user.
 

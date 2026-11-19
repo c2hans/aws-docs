@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Operati
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AcceptPrimaryEmailUpdate](API_AcceptPrimaryEmailUpdate.md)

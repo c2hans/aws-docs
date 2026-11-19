@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # MetricQuery
-<a name="API_MetricQuery"></a>
 
 A single query to be processed. You must provide the metric to query and append an aggregate function to the metric. For example, to find the average for the metric `db.load` you must use `db.load.avg`. Valid values for aggregate functions include `.avg`, `.min`, `.max`, and `.sum`. If no other parameters are specified, Performance Insights returns all data points for the specified metric. Optionally, you can request that the data points be aggregated by dimension group (`GroupBy`), and return only those data points that match your criteria (`Filter`).
 

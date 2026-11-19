@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Business requirements assessment template
-<a name="template-business-req"></a>
 
 Provide a description for the use case:
 

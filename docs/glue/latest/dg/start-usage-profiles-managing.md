@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/start-usage-profiles-mana
 ---
 
 # Creating and managing usage profiles
-<a name="start-usage-profiles-managing"></a>
 
 ## Creating an AWS Glue usage profile
 <a name="w2aac15c15c19b3"></a>

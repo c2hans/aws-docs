@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR profile validations for HealthLake
-<a name="reference-fhir-profile-validations"></a>
 
 AWS HealthLake supports the base [FHIR R4 specification](https://hl7.org/fhir/R4). Included in the base FHIR R4 specification are FHIR Profiles. Profiles are used on a FHIR resource type to define a more specific resource type definition using constraints and/or extensions on the base resource type. For example, a FHIR Profile can identify mandatory fields such as extensions and value sets. A resource can support multiple profiles. All HealthLake data stores support using FHIR Profiles.
 

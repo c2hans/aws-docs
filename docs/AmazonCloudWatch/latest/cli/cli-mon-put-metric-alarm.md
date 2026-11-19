@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-put-
 ---
 
 # mon-put-metric-alarm
-<a name="cli-mon-put-metric-alarm"></a>
 
 ## Description
 <a name="w2aab9c51b3"></a>

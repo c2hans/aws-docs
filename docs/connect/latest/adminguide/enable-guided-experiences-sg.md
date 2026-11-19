@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-guided-
 ---
 
 # Enable step-by-step guides in Connect Customer
-<a name="enable-guided-experiences-sg"></a>
 
 Complete the following steps so that administrators can create step-by-step guides and deploy them to users.
 

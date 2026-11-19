@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-jdbc-
 ---
 
 # Connect to Amazon DocumentDB from DbVisualizer
-<a name="connect-jdbc-DbVisualizer"></a>
 
 **Topics**
 + [Adding the Amazon DocumentDB JDBC driver](#connect-jdbc-DbVisualizer-adddriver)

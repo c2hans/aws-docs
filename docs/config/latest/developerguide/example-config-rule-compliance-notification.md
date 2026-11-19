@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/example-con
 ---
 
 # Example Compliance Change Notification
-<a name="example-config-rule-compliance-notification"></a>
 
 When AWS Config evaluates your resources against a custom or managed rule, AWS Config sends a notification that shows whether the resources are compliant against the rule.
 

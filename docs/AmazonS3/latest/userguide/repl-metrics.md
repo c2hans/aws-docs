@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/repl-metrics.h
 ---
 
 # Using S3 Replication metrics
-<a name="repl-metrics"></a>
 
 S3 Replication metrics provide detailed metrics for the replication rules in your replication configuration. With replication metrics, you can monitor minute-by-minute progress by tracking bytes pending, operations pending, operations that failed replication, and replication latency.
 
@@ -61,7 +60,7 @@ You can view S3 Replication metrics in the source general purpose bucket's **Met
 
 S3 Replication metrics are turned on automatically when you enable replication with S3 Replication Time Control (S3 RTC) by using the Amazon S3 console or the Amazon S3 REST API. You can also enable S3 Replication metrics independently of S3 RTC while [ creating or editing a rule](replication-walkthrough1.md).
 
-If you're using S3 Replication Time Control, Amazon CloudWatch begins reporting replication metrics 15 minutes after you enable S3 RTC on the respective replication rule. For more information, see [Using S3 Replication metrics](#repl-metrics).
+If you're using S3 Replication Time Control, Amazon CloudWatch begins reporting replication metrics 15 minutes after you enable S3 RTC on the respective replication rule. For more information, see [Using S3 Replication metrics](repl-metrics.md).
 
 Replication metrics track the rule IDs of the replication configuration. A replication rule ID can be specific to a prefix, a tag, or a combination of both.
 

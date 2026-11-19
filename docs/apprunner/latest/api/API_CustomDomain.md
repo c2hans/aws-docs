@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_CustomDomain.ht
 ---
 
 # CustomDomain
-<a name="API_CustomDomain"></a>
 
 Describes a custom domain that's associated with an AWS App Runner service.
 

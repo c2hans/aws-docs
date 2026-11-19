@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-sles
 ---
 
 # SAP HANA High Availability on SUSE Enterprise Linux using Pacemaker Software
-<a name="sap-hana-on-aws-sles-pacemaker"></a>
 
 **Topics**
 + [Planning](sap-hana-pacemaker-sles-planning.md)

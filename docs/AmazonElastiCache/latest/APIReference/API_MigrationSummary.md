@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # MigrationSummary
-<a name="API_MigrationSummary"></a>
 
 Provides a summary of the current migration status for a serverless cache.
 

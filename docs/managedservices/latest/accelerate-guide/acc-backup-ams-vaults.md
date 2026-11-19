@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # View backups in AMS vaults
-<a name="acc-backup-ams-vaults"></a>
 
 You can control backup vault notifications at individual vault-level using tags. You can opt out of notifications for a specific vault by adding the tag `AMSNotificationOptOut` and setting the value to `True` on a specific vault. To resume getting notifications from the vault, remove the tag.
 

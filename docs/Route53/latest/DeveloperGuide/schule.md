@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/schule.htm
 ---
 
 # .schule
-<a name="schule"></a>
 
 Used for information about German-based education, educational institutions, and school-related activities. "Schule" is a German word that means "school."
 

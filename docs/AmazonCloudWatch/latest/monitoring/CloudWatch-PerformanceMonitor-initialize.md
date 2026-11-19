@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Initialize Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-initialize"></a>
 
 Before you can use Performance Monitor, you must initialize it for your account. Initialization sets up the required permissions and creates the monitoring scope. Creating the initial topology and completing initialization can take 20 to 30 minutes.
 

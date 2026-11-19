@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Re-architecting as microservices without containers
-<a name="refactor-micro"></a>
 
 AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers, creating workload-aware cluster scaling logic, maintaining event integrations, or managing runtimes. Lambda runs your function only when needed and scales automatically, from a few requests per day to thousands per second. You pay only for the compute time that you consume—there is no charge when your code isn't running. In this approach, a monolithic application is broken down into smaller services, where each service serves a single purpose. If the service isn't constantly running, it can be implemented as a Lambda function; otherwise, the service should run in a container.
 

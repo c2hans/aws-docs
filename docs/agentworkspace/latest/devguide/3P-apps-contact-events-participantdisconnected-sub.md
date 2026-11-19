@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Subscribe to participant disconnected events in Connect Customer agent workspace
-<a name="3P-apps-contact-events-participantdisconnected-sub"></a>
 
 Subscribes to participant disconnected events. This event fires when a participant leaves or is removed from a contact.
 

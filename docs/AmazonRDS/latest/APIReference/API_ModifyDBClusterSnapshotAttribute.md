@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyDBClusterSnapshotAttribute
-<a name="API_ModifyDBClusterSnapshotAttribute"></a>
 
 Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot.
 

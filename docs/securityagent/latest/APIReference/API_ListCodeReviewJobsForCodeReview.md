@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListCodeReviewJobsForCodeReview
-<a name="API_ListCodeReviewJobsForCodeReview"></a>
 
 Returns a paginated list of code review job summaries for the specified code review configuration.
 

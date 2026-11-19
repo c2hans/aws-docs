@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedC
 ---
 
 # ListedCertificate
-<a name="API_ListedCertificate"></a>
 
 Describes the properties of a certificate.
 

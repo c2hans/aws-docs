@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductVisibilityFilter
-<a name="API_MachineLearningProductVisibilityFilter"></a>
 
 The filter for machine learning product visibility status.
 

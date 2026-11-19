@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Infrastructure monitoring
-<a name="CloudWatch-Insights-Sections"></a>
 
 The topics in this section explain CloudWatch features that can help you gain operational visibility into your AWS resources.
 

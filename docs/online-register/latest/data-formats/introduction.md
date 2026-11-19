@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/intr
 ---
 
 # Online Register of Data Formats
-<a name="introduction"></a>
 
 Use the Online Register of Data Formats to find AWS APIs that retrieve data from services. The register lists each API with its description, data access level, and a link to reference documentation. The reference documentation provides detailed information about the data format, including structures and data types.
 

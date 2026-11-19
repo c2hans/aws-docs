@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from the specified applied quota. You can specify one or more tags to remove.
 

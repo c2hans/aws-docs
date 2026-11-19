@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TO_TIME
 ---
 
 # TO\_TIMESTAMP function
-<a name="TO_TIMESTAMP"></a>
 
 TO\_TIMESTAMP converts a TIMESTAMP string to TIMESTAMPTZ.
 

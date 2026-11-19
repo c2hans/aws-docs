@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetRecommenderFilter
-<a name="API_connect-customer-profiles_GetRecommenderFilter"></a>
 
 Retrieves information about a specific recommender filter in a domain.
 

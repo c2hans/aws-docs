@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListA
 ---
 
 # ListApprovalRuleTemplates
-<a name="API_ListApprovalRuleTemplates"></a>
 
 Lists all approval rule templates in the specified AWS Region in your AWS account. If an AWS Region is not specified, the AWS Region where you are signed in is used.
 

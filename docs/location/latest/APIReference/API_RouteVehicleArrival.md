@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleArrival
-<a name="API_RouteVehicleArrival"></a>
 
 Details corresponding to the arrival for a leg.
 

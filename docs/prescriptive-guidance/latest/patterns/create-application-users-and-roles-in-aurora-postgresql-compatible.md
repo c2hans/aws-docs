@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create application users and roles in Aurora PostgreSQL-Compatible
-<a name="create-application-users-and-roles-in-aurora-postgresql-compatible"></a>
 
 *Abhishek Verma, Amazon Web Services*
 

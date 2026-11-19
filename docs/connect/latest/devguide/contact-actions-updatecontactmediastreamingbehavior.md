@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactMediaStreamingBehavior
-<a name="contact-actions-updatecontactmediastreamingbehavior"></a>
 
 Enables or disables contact media streaming for a set of participants.
 

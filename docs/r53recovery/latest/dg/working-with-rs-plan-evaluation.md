@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/working-with-rs-pl
 ---
 
 # Plan evaluation for Region switch plans
-<a name="working-with-rs-plan-evaluation"></a>
 
 When you create a multi-Region recovery plan, you need confidence that the plan will execute successfully, without errors, when you need it most. With Region switch plan evaluation, you can continuously validate your plan's configuration and permissions, and identify issues before they block a recovery.
 

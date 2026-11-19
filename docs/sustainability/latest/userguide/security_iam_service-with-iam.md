@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/userguide/security
 ---
 
 # How AWS Sustainability works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Sustainability, learn what IAM features are available to use with AWS Sustainability.
 

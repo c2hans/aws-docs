@@ -3,62 +3,64 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle JD Edwards EnterpriseOne database to AWS by using Oracle Data Pump and AWS DMS
-<a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms"></a>
 
 *Thanigaivel Thirumalai, Amazon Web Services*
 
 ## Summary
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-summary"></a>
 
-You can migrate and run your JD Edwards EnterpriseOne database on [Amazon Relational Database Service (Amazon RDS)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html). When you migrate your database to Amazon RDS, AWS can take care of backup tasks and high availability setup, so you can concentrate on maintaining your EnterpriseOne application and its functionality. For a comprehensive list of key factors to consider during the migration process, see [Oracle database migration strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/strategies.html) in AWS Prescriptive Guidance.
+You can migrate and run your JD Edwards EnterpriseOne database on [Amazon Relational Database Service (Amazon RDS)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html). When you migrate your database to Amazon RDS, AWS helps manage backup tasks and high availability setup, so you can focus on maintaining your EnterpriseOne application and its functionality. For a list of key factors to consider during the migration process, see [Oracle database migration strategies](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/strategies.html) in AWS Prescriptive Guidance.
 
 There are multiple ways to migrate an EnterpriseOne database, including:
 + Using Oracle Universal Batch Engine (UBE) R98403 for schema and table creation, and using AWS Database Migration Service (AWS DMS) for migration
-+ Using DB native tools for schema and table creation and using AWS DMS for migration
-+ Using DB native tools for the migration of existing data (full load) and using AWS DMS for change data capture (CDC) tasks
++ Using native database tools for schema and table creation, and using AWS DMS for migration
++ Using native database tools for the migration of existing data (full load), and using AWS DMS for change data capture (CDC) tasks
 
 This pattern covers the third option. It explains how to migrate your on-premises EnterpriseOne databases to Amazon RDS for Oracle by using Oracle Data Pump with [AWS DMS](https://aws.amazon.com/dms) and its CDC feature.
 
 [Oracle JD Edwards EnterpriseOne](https://www.oracle.com/applications/jd-edwards-enterpriseone/) is an enterprise resource planning (ERP) solution for organizations that manufacture, construct, distribute, service, or manage products or physical assets. JD Edwards EnterpriseOne supports various hardware, operating systems, and database platforms.
 
-When you migrate critical ERP applications such as JD Edwards EnterpriseOne, minimizing downtime is key. AWS DMS minimizes downtime by supporting both full load and continuous replication from the source database to the target database. AWS DMS also provides real-time monitoring and logging for the migration, which can help you identify and resolve any issues that could cause downtime.
+When you migrate critical ERP applications such as JD Edwards EnterpriseOne, minimizing downtime is important. AWS DMS helps minimize downtime by supporting both full load and continuous replication from the source database to the target database. AWS DMS also provides monitoring and logging for the migration, which can help you identify and address issues that could cause downtime.
 
-When you replicate changes with AWS DMS, you must specify a time or system change number (SCN) as the starting point for reading changes from the database logs. It's crucial to keep these logs accessible on the server for a designated amount of time (we recommend 15 days) to ensure that AWS DMS has access to these changes.
+When you replicate changes with AWS DMS, you must specify a time or system change number (SCN) as the starting point for reading changes from the database logs. Keep these logs accessible on the server for a specified period (we recommend 15 days) so that AWS DMS can access these changes.
 
 ## Prerequisites and limitations
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-prereqs"></a>
 
 **Prerequisites**
++ An active AWS account
 + An Amazon RDS for Oracle database provisioned in your AWS Cloud environment as the target database. For instructions, see the [Amazon RDS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html).
 + An EnterpriseOne database that’s running on premises or on an Amazon Elastic Compute Cloud (Amazon EC2) instance on AWS.
 **Note**
-This pattern is designed for migrating from on premises to AWS, but it was tested by using an EnterpriseOne database on an EC2 instance. If you plan to migrate from your on-premises environment, you must configure the appropriate network connectivity.
+This pattern is designed for migrating from on premises to AWS, but we tested it by using an EnterpriseOne database on an EC2 instance. If you plan to migrate from your on-premises environment, you must configure network connectivity between your on-premises environment and AWS.
 + Schema details. Identify which Oracle database schema (for example, DV920) you plan to migrate for EnterpriseOne. Before you start the migration process, gather the following details about the schema:
   + Schema size
   + The number of objects per object type
   + The number of invalid objects
 
 **Limitations**
-+ You have to create any schemas you want on the target Amazon RDS for Oracle database―AWS DMS doesn't create these for you. (The [Epics](#migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-epics) section describes how to use Data Pump to export and import schemas.) The schema name must already exist for the target Oracle database. Tables from the source schema are imported to the user or the schema, and AWS DMS uses the administrator or system account to connect to the target instance. To migrate multiple schemas, you can create multiple replication tasks. You can also migrate data to different schemas on a target instance. To do this, use schema transformation rules on the AWS DMS table mappings.
-+ This pattern has been tested with a demo dataset. We recommend that you validate compatibility for your dataset and customization.
-+ This pattern uses an EnterpriseOne database that’s running on Microsoft Windows. However, you can use the same process with other operating systems that are supported by AWS DMS.
++ You must create any schemas that you want on the target Amazon RDS for Oracle database―AWS Database Migration Service (AWS DMS) doesn't create them for you. (The [Epics](#migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-epics) section describes how to use Data Pump to export and import schemas.) The schema name must already exist for the target Oracle database. AWS DMS imports tables from the source schema to the user or the schema, which AWS DMS uses to connect to the target instance. To migrate multiple schemas, you can create multiple replication tasks. You can also migrate data to different schemas on a target instance. To do this, use schema transformation rules on the AWS DMS table mappings.
++ We tested this pattern with a demo dataset. Validate compatibility for your dataset and customizations.
++ This pattern uses an EnterpriseOne database that's running on Microsoft Windows. However, you can use the same process with other operating systems that AWS DMS supports.
 
 ## Architecture
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-architecture"></a>
 
-The following diagram shows a system that’s running EnterpriseOne on an Oracle database as the source database, and an Amazon RDS for Oracle database as the target database. The data is exported from the source Oracle database and imported into the target Amazon RDS for Oracle database by using Oracle Data Pump, and replicated for CDC updates by using AWS DMS.
+The following diagram shows a system that runs JD Edwards EnterpriseOne on an Oracle source database and an Amazon RDS for Oracle target database. You export the data from the source Oracle database, import it into the target Amazon RDS for Oracle database by using Oracle Data Pump, and replicate ongoing changes by using change data capture (CDC) in AWS Database Migration Service (AWS DMS).
 
-![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/c8ec3789-f80e-4f3a-a3f4-72a4541316b0/images/4e3e3477-2fe0-4a5d-b95e-05a8aafe8b68.png)
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/cff26a97-9aa4-44c6-9638-1252e48f2b2e/images/f4c7dc2a-36b0-4b0e-b7ed-031c7a68153d.png)
 
-1. Oracle Data Pump extracts data from the source database, and the data is sent to the Amazon RDS for Oracle database target.
+1. Capture the current system change number (SCN) on the source database. This SCN is the consistency point for the Data Pump export and the starting point for CDC in AWS DMS.
 
-1. CDC data is sent from the source database to a source endpoint in AWS DMS.
+1. Oracle Data Pump exports the JD Edwards EnterpriseOne schemas as of the SCN (`expdp` with `flashback_scn`). You copy the dump file to the Amazon RDS for Oracle instance over a database link by using `DBMS_FILE_TRANSFER`, and then import it by using `impdp`.
 
-1. From the source endpoint, the data is sent to the AWS DMS replication instance, where the replication task is performed.
+1. AWS DMS reads ongoing changes from the source database redo logs, starting at the SCN. The changes travel over [AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/) to the AWS DMS source endpoint.
 
-1. After the replication task is complete, the data is sent to the target endpoint in AWS DMS.
+1. The replication task on the AWS DMS replication instance continuously sends the changes to the target endpoint.
 
-1. From the target endpoint, the data is sent to the Amazon RDS for Oracle database instance.
+1. AWS DMS applies the changes to the Amazon RDS for Oracle instance in a private subnet. Replication continues until cutover.
+
+1. At cutover, you stop the JD Edwards EnterpriseOne application and the replication task, synchronize the sequence values on the target, and then point JD Edwards EnterpriseOne to the Amazon RDS for Oracle instance.
 
 ## Tools
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-tools"></a>
@@ -75,26 +77,26 @@ The following diagram shows a system that’s running EnterpriseOne on an Oracle
 
 **Migrating LOBs**
 
-If your source database contains large binary objects (LOBs) that need to be migrated to the target database, AWS DMS provides the following options:
+If your source database contains large binary objects (LOBs) that need to be migrated to the target database, AWS Database Migration Service (AWS DMS) provides the following options:
 + **Full LOB mode** – AWS DMS migrates all the LOBs from the source to the target database regardless of their size. Although the migration is slower than the other modes, the advantage is that data isn’t truncated. For better performance, you can create a separate task on the new replication instance to migrate the tables that have LOBs that are larger than a few megabytes.
 + **Limited LOB mode** – You specify the maximum size of LOB column data, which allows AWS DMS to pre-allocate resources and apply the LOBs in bulk. If the size of the LOB columns exceeds the size that is specified in the task, AWS DMS truncates the data and sends warnings to the AWS DMS log file. You can improve performance by using limited LOB mode if your LOB data size is within the limited LOB size.
 + **Inline LOB mode** – You can migrate LOBs without truncating the data or slowing the performance of your task by replicating both small and large LOBs. First, specify a value for the `InlineLobMaxSize` parameter, which is available only when full LOB mode is set to `true`. The AWS DMS task transfers the small LOBs inline, which is more efficient. Then, AWS DMS migrates the large LOBs by performing a lookup from the source table. However, inline LOB mode works only during the full load phase.
 
 **Generating sequence values**
 
-During the AWS DMS CDC process, incremental sequence numbers aren’t replicated from the source database. To avoid discrepancies in sequence values, you must generate the most recent sequence value from the source for all sequences, and apply it to the target Amazon RDS for Oracle database.
+During the AWS DMS CDC process, sequence values aren't replicated from the source database. To avoid duplicate values after cutover, inventory the sequences after the import, keep target triggers disabled during CDC, and reset each target sequence from the source value after replication stops. For the steps, see the Cut over epic.
 
 **AWS Secrets Manager**
 
 To help manage your credentials, we recommend that you follow the instructions in the blog post [Manage your AWS DMS endpoint credentials with AWS Secrets Manager](https://aws.amazon.com/blogs/database/manage-your-aws-dms-endpoint-credentials-with-aws-secrets-manager/).
 
 **Performance**
-+ **Replication instances** ‒ For guidance on choosing the best instance size, see [Selecting the best size for a replication instance](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.SizingReplicationInstance.html) in the AWS DMS documentation.
-+ **Connectivity options** ‒ To avoid latency issues, we recommend that you choose the right connectivity option. AWS Direct Connect provides the shortest path to AWS resources, because it is a dedicated connection between your corporate data centers and AWS. While in transit, your network traffic remains on the AWS global network and never goes over the internet. This reduces the chance of hitting bottlenecks or unexpected increases in latency when compared with using VPN or the public internet.
-+ **Network bandwidth** ‒ To optimize performance, verify that your network throughput is fast. If you are using a VPN tunnel between your on-premises source database and AWS DMS, ensure that the bandwidth is sufficient for your workload.
-+ **Task parallelism** ‒ You can speed up data replication by loading multiple tables in parallel during full load. This pattern uses of RDBMS endpoints, so this option applies only to the full load process. Task parallelism is controlled by the `MaxFullLoadSubTasks` parameter, which determines how many full load sub-tasks are run in parallel. By default, this parameter is set to 8, which means that eight tables (if selected in table mapping) are loaded together during full mode. You can adjust this parameter in the full-load task settings section of the JSON script for the task.
++ **Replication instances** ‒ For guidance on choosing an appropriate instance size, see [Selecting the best size for a replication instance](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.SizingReplicationInstance.html) in the AWS DMS documentation.
++ **Connectivity options** ‒ To help avoid latency issues, we recommend that you choose a connectivity option that meets your latency and bandwidth requirements. AWS Direct Connect provides a dedicated connection between your corporate data centers and AWS. While in transit, your network traffic remains on the AWS global network and doesn't go over the internet. This reduces the chance of hitting bottlenecks or unexpected increases in latency when compared with using a VPN or the public internet.
++ **Network bandwidth** ‒ To optimize performance, verify that your network throughput is sufficient for your workload. If you use a VPN tunnel between your on-premises source database and AWS DMS, verify that the VPN bandwidth is sufficient for your workload.
++ **Task parallelism** ‒ You can speed up data replication by loading multiple tables in parallel during full load. This pattern uses relational database management system (RDBMS) endpoints, so this option applies only to the full load process. The `MaxFullLoadSubTasks` parameter controls task parallelism. This parameter determines how many full load subtasks run in parallel. By default, this parameter is set to 8, which means that AWS DMS loads eight tables (if selected in table mapping) together during full load mode. You can adjust this parameter in the full-load task settings section of the JSON script for the task.
 + **Table parallelism** ‒ AWS DMS also enables you to load a single large table by using multiple parallel threads. This is particularly useful for Oracle source tables that have billions of records as well as multiple partitions and subpartitions. If the source table isn’t partitioned, you can use column boundaries for parallel loads.
-+ **Split loads** ‒ When you split loads across multiple tasks or AWS DMS instances, remember transaction boundaries when you capture changes.
++ **Split loads** ‒ When you split loads across multiple tasks or replication instances, consider transaction boundaries when you capture changes.
 
 ## Epics
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-epics"></a>
@@ -120,6 +122,8 @@ To help manage your credentials, we recommend that you follow the instructions i
 | Create JDE-specific users in the target Instance. | Create a JD Edwards profile and role by using these commands in the target instance:<pre>SQL> CREATE PROFILE "JDEPROFILE" LIMIT IDLE_TIME 15;<br />Profile created.<br /><br />SQL> CREATE ROLE "JDE_ROLE";<br />Role created.<br /><br />SQL> CREATE ROLE "JDEADMIN";<br />CREATE ROLE "JDEUSER";<br />Role created.<br />Role created.</pre><br />Grant the required permissions to the role:<pre>SQL> GRANT CREATE ANY SEQUENCE TO JDE_ROLE;<br /> GRANT DROP ANY SEQUENCE TO JDE_ROLE;<br /> GRANT CREATE ANY TRIGGER TO JDE_ROLE;<br /> GRANT DROP ANY TRIGGER TO JDE_ROLE;<br /></pre> | DBA, JDE CNC |
 | Create tablespaces in the target instance. | Create the required tablespaces in the target instance by using the following commands for the schemas that are involved in this migration:<pre>SQL> CREATE TABLESPACE <Tablespace Name for Tables>;<br />Tablespace created.<br /><br />SQL> CREATE TABLESPACE <Tablespace Name for Indexes>;<br />Tablespace created.</pre> | DBA, JDE CNC |
 | Initiate the import on the target database. | Before you start the import process, set up the roles, schemas, and tablespaces on the target Amazon RDS for Oracle database by using the data dump file.<br />To perform the import, access the target database with the Amazon RDS primary user account, and use the connection string name in the `tnsnames.ora` file, which includes the Amazon RDS for Oracle Database `tns-entry`. If necessary, you can include a remap option to import the data dump file into a different tablespace or under a different schema name.<br />To start the import, use the following code:<pre>impdp admin@orardsdb directory=DMS_TARGET_PUMP_DIR logfile=import.log dumpfile=EXPORT_DMS_DATA.DMP</pre><br />To ensure a successful import, check the import log file for any errors, and review details such as object count, row count, and invalid objects. If there are any invalid objects, recompile them. Additionally, compare the source and target database objects to confirm that they match. | DBA |
+| Inventory sequences on the source and target. | Record each sequence and its current value. You use this list to sync and validate sequences at cutover. Run this query on the source, and then on the target after the import:<br />SELECT sequence\_owner, sequence\_name, last\_number,<br /> increment\_by, cache\_size<br />FROM dba\_sequences<br />WHERE sequence\_owner IN ('<JDE schema>')<br />ORDER BY sequence\_owner, sequence\_name;<br />Confirm that the number of sequences on the target matches the source. On Amazon RDS for Oracle, run the query as the primary user, which can read DBA\_SEQUENCES. | DBA |
+| Disable triggers on the target during CDC. | Triggers on the target fire again when AWS Database Migration Service (AWS DMS) applies changes. That can call NEXTVAL on the target or duplicate audit rows. Find the enabled triggers and disable them until cutover:<br />SELECT owner, trigger\_name, table\_name<br />FROM dba\_triggers<br />WHERE owner IN ('<JDE schema>') AND status = 'ENABLED';<br />ALTER TRIGGER <owner>.<trigger\_name> DISABLE;<br />Save the list. You re-enable these triggers in the Cut over epic. | DBA |
 
 ### Provision an AWS DMS replication instance with the source and target endpoints
 <a name="provision-an-aws-dms-replication-instance-with-the-source-and-target-endpoints"></a>
@@ -138,7 +142,7 @@ To help manage your credentials, we recommend that you follow the instructions i
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the replication task. | Create the AWS DMS replication task by using the following steps:1. Open the AWS DMS console at [https://console.aws.amazon.com/dms/v2/](https://console.aws.amazon.com/dms/v2/).<br />2. In the navigation pane, under **Migrate Data**, choose **Database migration task**.<br />3. In the **Task configuration** box, for **Task identifier**, enter your task identifier.<br />4. For **Replication instance**, choose the DMS replication instance that you created.<br />5. For **Source database endpoint**, choose your source endpoint.<br />6. For **Target database endpoint**, choose your target Amazon RDS for Oracle database.<br />7. For **Migration type**, choose **Replicate data changes only**. If you receive a message that supplemental logging needs to be turned on, follow the instructions in the [Troubleshooting](#migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-troubleshooting) section.<br />8. In the **Task settings** box, choose **Specify log sequence number**.<br />9. For **System change number**, enter the Oracle database SCN that you generated from the source Oracle database.<br />10. Choose **Enable validation**.<br />11. Choose **Enable CloudWatch Logs**.<br />By activating this feature, you can validate the data and [Amazon CloudWatch](http://aws.amazon.com/cloudwatch) logs to review the AWS DMS replication instance logs.<br />12. Under **Selection rules**, complete the following:For **Schema**, choose **Enter a schema**.For **Schema name**, enter the JDE Schema name (for example: **DV920**).For **Table name**, enter **%**.For **Action**, choose **Include**.<br />13. Choose **Create task**.<br />After you create the task, AWS DMS migrates ongoing changes to the Amazon RDS for Oracle database instance from the SCN that you provided under CDC start mode. You can also verify the migration by reviewing the CloudWatch logs. | Cloud administrator, DBA |
+| Create the replication task. | Create the AWS DMS replication task by using the following steps:1. Open the AWS DMS console at [https://console.aws.amazon.com/dms/v2/](https://console.aws.amazon.com/dms/v2/).<br />2. In the navigation pane, choose **Database migration tasks**.<br />3. In the **Task configuration** box, for **Task identifier**, enter your task identifier.<br />4. For **Replication instance**, choose the AWS DMS replication instance that you created.<br />5. For **Source database endpoint**, choose your source endpoint.<br />6. For **Target database endpoint**, choose your target Amazon RDS for Oracle database.<br />7. For **Migration type**, choose **Replicate data changes only**. If you receive a message that supplemental logging needs to be turned on, follow the instructions in the [Troubleshooting](#migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-troubleshooting) section.<br />8. In the **Task settings** box, choose **Enable custom CDC start mode**.<br />9. For **System change number**, enter the Oracle database SCN that you generated from the source Oracle database.<br />10. Choose **Enable validation**.<br />11. Choose **Enable CloudWatch logs**.<br />By turning on these settings, you can validate the migrated data and use Amazon CloudWatch Logs to review the AWS DMS replication task logs.<br />12. Under **Selection rules**, complete the following:For **Schema**, choose **Enter a schema**.For **Schema name**, enter the JDE schema name (for example: **DV920**).For **Table name**, enter **%**.For **Action**, choose **Include**.<br />13. Choose **Create task**.<br />After you create the task, AWS DMS migrates ongoing changes to the Amazon RDS for Oracle database instance from the SCN that you provided under CDC start mode. You can also verify the migration by reviewing the CloudWatch logs. | Cloud administrator, DBA |
 | Repeat the replication task. | Repeat the previous steps to create replication tasks for other JD Edwards schemas that are part of the migration. | Cloud administrator, DBA, JDE CNC administrator |
 
 ### Validate the database schema on the target Amazon RDS for Oracle database
@@ -153,8 +157,14 @@ To help manage your credentials, we recommend that you follow the instructions i
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Stop replication. | Discontinue the replication procedure and stop the source application services. | Cloud administrator, DBA |
-| Launch the JD Edwards application. | Launch the target JD Edwards presentation and logic tier application on AWS, and direct it to the Amazon RDS for Oracle database.<br />When you access the application, you should notice that all connections are now established with the Amazon RDS for Oracle database. | DBA, JDE CNC administrator |
+| Stop the source application. | Stop the JD Edwards EnterpriseOne services (enterprise, web, and batch servers) that connect to the source database so that no new transactions are created. Confirm that no application sessions remain. | App owner |
+| Confirm that replication has caught up. | In the AWS DMS console, open the replication task. Confirm that the CDCLatencySource and CDCLatencyTarget metrics are near zero and that table statistics show no new changes. If data validation is turned on, confirm that no tables are in an error or mismatched state. | Cloud administrator, DBA, JDE CNC administrator |
+| Stop the replication task. | Stop the AWS DMS task for each JD Edwards schema. | DBA, Cloud administrator |
+| Generate the sequence sync script. | On the source database, generate one statement for each sequence:<br />SET PAGESIZE 0 LINESIZE 300 FEEDBACK OFF<br />SPOOL seq\_sync.sql<br />SELECT 'ALTER SEQUENCE "' \|\| sequence\_owner \|\| '"."' \|\| sequence\_name \|\|<br /> '" RESTART START WITH ' \|\| (last\_number \+ increment\_by) \|\| ';'<br />FROM dba\_sequences<br />WHERE sequence\_owner IN ('<JDE schema>');<br />SPOOL OFF<br />LAST\_NUMBER is the cached high-water mark, so the new start value is greater than any value that the source has issued. This can leave gaps in numbering but helps prevent duplicates. For sequences with a negative increment, review the generated value manually. | DBA |
+| Apply the script on the target. | Connect to the Amazon RDS for Oracle instance as the primary user (or the schema owner) and run the script:<br />SQL> @seq\_sync.sql<br />ALTER SEQUENCE ... RESTART requires Oracle Database 18c or later. On earlier releases, drop and re-create each sequence with START WITH <value>, keeping the original INCREMENT BY, CACHE, and CYCLE settings, and then grant the privileges again. | DBA |
+| Validate the sequences. | Run the inventory query from the import epic on both databases. For each sequence, the target LAST\_NUMBER must be greater than or equal to the source LAST\_NUMBER. Also compare the Next Numbers tables (F0002 and F00021) for the key document types. | DBA, App owner |
+| Re-enable triggers on the target. | Re-enable the triggers that you disabled during CDC by running ALTER TRIGGER <owner>.<trigger\_name> ENABLE; for each one. Then recompile invalid objects and confirm that the invalid-object count matches the source. | DBA |
+| Launch the JD Edwards application. | Launch the target JD Edwards presentation and logic tier application on AWS, and direct it to the Amazon RDS for Oracle database. When you access the application, confirm that all connections use the Amazon RDS for Oracle database. Enter a test transaction to confirm that numbering continues without errors. | DBA, App owner |
 | Turn off the source database. | After you confirm that there are no more connections, you can turn the source database off. | DBA |
 
 ## Troubleshooting
@@ -170,21 +180,20 @@ To help manage your credentials, we recommend that you follow the instructions i
 ## Related resources
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-resources"></a>
 + [Getting started with AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted.html)
-+ [Best Practices for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html)
++ [Best practices for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html)
 + [Migrating Oracle Databases to the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/welcome.html)
 + [AWS Database Migration Service resource type reference for AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_DMS.html)
 + [Manage your AWS DMS endpoint credentials with AWS Secrets Manager](https://aws.amazon.com/blogs/database/manage-your-aws-dms-endpoint-credentials-with-aws-secrets-manager/)
 + [Troubleshooting migration tasks in AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshooting.html#CHAP_Troubleshooting.Oracle.RecordsMissing)
-+ [Best practices for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html)
 
 ## Additional information
 <a name="migrate-an-oracle-jd-edwards-enterpriseone-database-to-aws-by-using-oracle-data-pump-and-aws-dms-additional"></a>
 
 **Transfer files using Amazon S3**
 
-To transfer the files to Amazon S3, you can use the AWS CLI or the Amazon S3 console. After you transfer the files to Amazon S3, you can use the Amazon RDS for Oracle instance to import the Data Pump files from Amazon S3.
+To transfer the files to [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/), you can use the [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/) or the Amazon S3 console. After you transfer the files to Amazon S3, you can use the Amazon RDS for Oracle instance to import the Data Pump files from Amazon S3.
 
-If you choose to transfer the dump file using Amazon S3 integration as an alternate method, perform the follow steps:
+If you choose to transfer the dump file using Amazon S3 integration as an alternative method, perform the following steps:
 
 1. Create an S3 bucket.
 
@@ -197,4 +206,4 @@ If you choose to transfer the dump file using Amazon S3 integration as an altern
 1. Perform the import using the Data Pump files.
 
 **Note**
-To transfer large data files between S3 and RDS instances, we recommend that you use the [Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html) feature.
+To transfer large data files between Amazon S3 and Amazon RDS DB instances, use the [Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html) feature.

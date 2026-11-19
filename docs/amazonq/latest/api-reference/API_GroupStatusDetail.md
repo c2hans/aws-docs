@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GroupSt
 ---
 
 # GroupStatusDetail
-<a name="API_GroupStatusDetail"></a>
 
 Provides the details of a group's status.
 

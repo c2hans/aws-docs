@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessInstance
-<a name="API_CreateVerifiedAccessInstance"></a>
 
 An AWS Verified Access instance is a regional entity that evaluates application requests and grants access only when your security requirements are met.
 

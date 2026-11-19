@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/web-functions-logging-c
 ---
 
 # Logging Web Function API calls using AWS CloudTrail
-<a name="web-functions-logging-cloudtrail"></a>
 
 With [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), you can track the actions taken by a user, role, or AWS service in AWS Lambda Web Functions. CloudTrail provides a record of these actions. CloudTrail captures Web Function invocations as data events. You can use this information to determine who invoked a Web Function, when, and from where, which helps with security analysis and operational auditing.
 

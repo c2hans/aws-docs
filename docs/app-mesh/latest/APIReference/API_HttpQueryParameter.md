@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HttpQue
 ---
 
 # HttpQueryParameter
-<a name="API_HttpQueryParameter"></a>
 
 An object that represents the query parameter in the request.
 

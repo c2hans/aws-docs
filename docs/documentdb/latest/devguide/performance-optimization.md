@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/performance-o
 ---
 
 # Performance optimization
-<a name="performance-optimization"></a>
 
 This chapter provides guidance on optimizing Amazon DocumentDB performance and troubleshooting common performance issues.
 

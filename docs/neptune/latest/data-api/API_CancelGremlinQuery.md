@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CancelGremli
 ---
 
 # CancelGremlinQuery
-<a name="API_CancelGremlinQuery"></a>
 
 Cancels a Gremlin query. See [Gremlin query cancellation](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status-cancel.html) for more information.
 

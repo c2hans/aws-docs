@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayRouteTableAnnouncement
-<a name="API_DeleteTransitGatewayRouteTableAnnouncement"></a>
 
 Advertises to the transit gateway that a transit gateway route table is deleted.
 

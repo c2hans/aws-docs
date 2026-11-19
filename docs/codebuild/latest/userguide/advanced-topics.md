@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/advanced-topi
 ---
 
 # Advanced topics
-<a name="advanced-topics"></a>
 
 This section includes several advanced topics that are useful to more experienced AWS CodeBuild users.
 

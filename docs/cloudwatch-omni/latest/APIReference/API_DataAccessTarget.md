@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DataAccessTarget
-<a name="API_DataAccessTarget"></a>
 
 One requested scope: an explicit list of actions for one service. All actions in an entry share one service prefix. The same service may appear in more than one entry.
 

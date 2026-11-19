@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ListingMetr
 ---
 
 # Listing metric filters
-<a name="ListingMetricFilters"></a>
 
 You can list all metric filters in a log group.
 

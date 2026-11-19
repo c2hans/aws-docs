@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/getting-sta
 ---
 
 # Getting started with IAM Identity Center
-<a name="getting-started-idc"></a>
 
 *IAM Identity Center* is a service that is used by administrators to manage the identities of end users. In the context of Amazon Q Developer, administrators use IAM Identity Center to manage the identities of those whom they plan on subscribing to Amazon Q Developer Pro.
 

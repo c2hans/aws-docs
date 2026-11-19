@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/supp
 ---
 
 # Supported AWS Regions
-<a name="supported-aws-regions"></a>
 
  This solution can be deployed to any AWS Region. If a service, such as Amazon Rekognition, is not currently available in the Region, the solution reduces its functionality. Analysis features such as *celebrity recognition*, *label detection*, and *face detection* will be turned off.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Authentication
-<a name="authentication"></a>
 
 All Admin API requests require authentication through Amazon Cognito:
 

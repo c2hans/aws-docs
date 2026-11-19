@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeSharedDirectories
-<a name="API_DescribeSharedDirectories"></a>
 
 Returns the shared directories in your account.
 
@@ -31,7 +30,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** [NextToken](#API_DescribeSharedDirectories_RequestSyntax) **   <a name="DirectoryService-DescribeSharedDirectories-request-NextToken"></a>
-The `DescribeSharedDirectoriesResult.NextToken` value from a previous call to [DescribeSharedDirectories](#API_DescribeSharedDirectories). Pass null if this is the first call.
+The `DescribeSharedDirectoriesResult.NextToken` value from a previous call to [DescribeSharedDirectories](API_DescribeSharedDirectories.md). Pass null if this is the first call.
 Type: String
 Required: No
 
@@ -77,7 +76,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [NextToken](#API_DescribeSharedDirectories_ResponseSyntax) **   <a name="DirectoryService-DescribeSharedDirectories-response-NextToken"></a>
-If not null, token that indicates that more results are available. Pass this value for the `NextToken` parameter in a subsequent call to [DescribeSharedDirectories](#API_DescribeSharedDirectories) to retrieve the next set of items.
+If not null, token that indicates that more results are available. Pass this value for the `NextToken` parameter in a subsequent call to [DescribeSharedDirectories](API_DescribeSharedDirectories.md) to retrieve the next set of items.
 Type: String
 
  ** [SharedDirectories](#API_DescribeSharedDirectories_ResponseSyntax) **   <a name="DirectoryService-DescribeSharedDirectories-response-SharedDirectories"></a>

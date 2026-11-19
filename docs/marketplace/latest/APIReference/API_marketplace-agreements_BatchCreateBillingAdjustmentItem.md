@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # BatchCreateBillingAdjustmentItem
-<a name="API_marketplace-agreements_BatchCreateBillingAdjustmentItem"></a>
 
 A successfully created billing adjustment request item.
 

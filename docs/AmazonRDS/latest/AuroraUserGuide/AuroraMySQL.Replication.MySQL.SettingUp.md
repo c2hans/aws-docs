@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Setting up binary log replication for Aurora MySQL
-<a name="AuroraMySQL.Replication.MySQL.SettingUp"></a>
 
 Setting up MySQL replication with Aurora MySQL involves the following steps, which are discussed in detail:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker
 ---
 
 # Docker samples for CodeBuild
-<a name="sample-docker-section"></a>
 
 This section describes sample integrations between Docker and AWS CodeBuild.
 

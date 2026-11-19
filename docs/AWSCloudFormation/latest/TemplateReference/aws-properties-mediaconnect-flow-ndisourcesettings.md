@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::Flow NdiSourceSettings
-<a name="aws-properties-mediaconnect-flow-ndisourcesettings"></a>
 
  The settings for the NDI® source. This includes the exact name of the upstream NDI sender that you want to connect to your source.
 

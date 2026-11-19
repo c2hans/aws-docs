@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_MultipleVa
 ---
 
 # MultipleValuesSetting
-<a name="API_MultipleValuesSetting"></a>
 
 Indicates whether a slot can return multiple values.
 

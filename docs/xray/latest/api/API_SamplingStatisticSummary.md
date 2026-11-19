@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingStatisticSum
 ---
 
 # SamplingStatisticSummary
-<a name="API_SamplingStatisticSummary"></a>
 
 Aggregated request sampling data for a sampling rule across all services for a 10-second window.
 

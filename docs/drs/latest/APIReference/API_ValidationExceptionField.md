@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ValidationEx
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Validate exception field.
 

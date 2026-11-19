@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RateBasedSta
 ---
 
 # RateBasedStatementManagedKeysIPSet
-<a name="API_RateBasedStatementManagedKeysIPSet"></a>
 
 The set of IP addresses that are currently blocked for a [RateBasedStatement](API_RateBasedStatement.md). This is only available for rate-based rules that aggregate on just the IP address, with the `AggregateKeyType` set to `IP` or `FORWARDED_IP`.
 

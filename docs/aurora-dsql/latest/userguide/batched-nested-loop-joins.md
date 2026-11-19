@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/batched-nes
 ---
 
 # Batched nested-loop joins in Aurora DSQL EXPLAIN plans
-<a name="batched-nested-loop-joins"></a>
 
 When a query joins a small outer input to an inner input that Aurora DSQL can scan efficiently from storage, Aurora DSQL can choose a `Nested Loop (Batched Join)` plan. This join type reduces round trips between the compute and storage layers by grouping multiple outer rows together before probing the inner side.
 

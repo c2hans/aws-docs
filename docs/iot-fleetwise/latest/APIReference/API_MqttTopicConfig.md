@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Mq
 ---
 
 # MqttTopicConfig
-<a name="API_MqttTopicConfig"></a>
 
 The MQTT topic to which the AWS IoT FleetWise campaign routes data. For more information, see [Device communication protocols](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) in the * AWS IoT Core Developer Guide*.
 

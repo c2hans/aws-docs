@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListNetwor
 ---
 
 # ListNetworks
-<a name="API_ListNetworks"></a>
 
 Retrieves a paginated list of all Wickr networks associated with your AWS account. You can sort the results by network ID or name.
 

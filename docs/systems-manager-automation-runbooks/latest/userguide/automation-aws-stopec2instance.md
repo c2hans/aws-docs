@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-StopEC2Instance`
-<a name="automation-aws-stopec2instance"></a>
 
 **Description**
 

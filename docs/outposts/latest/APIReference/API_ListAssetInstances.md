@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListAss
 ---
 
 # ListAssetInstances
-<a name="API_ListAssetInstances"></a>
 
 A list of Amazon EC2 instances, belonging to all accounts, running on the specified Outpost. Does not include Amazon EBS or Amazon S3 instances.
 

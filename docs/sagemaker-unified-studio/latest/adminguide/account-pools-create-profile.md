@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Create a project profile with an account pool
-<a name="account-pools-create-profile"></a>
 
 You can create a project profile that has your account pool associated such that you can choose accounts and regions from it when creating a project with the profile.
 

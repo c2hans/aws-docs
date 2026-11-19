@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/setup-aws.htm
 ---
 
 # Set up to use AWS Private CA
-<a name="setup-aws"></a>
 
 If you're not already an Amazon Web Services (AWS) customer, you must sign up to be able to use AWS Private CA. Your account automatically has access to all available services, but you are charged only for services that you use.
 

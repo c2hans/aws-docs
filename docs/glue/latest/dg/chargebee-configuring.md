@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/chargebee-configuring.htm
 ---
 
 # Configuring Chargebee
-<a name="chargebee-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Chargebee, you must meet the following requirements:
 

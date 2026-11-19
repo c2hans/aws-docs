@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Contin
 ---
 
 # ContinueAsNewWorkflowExecutionDecisionAttributes
-<a name="API_ContinueAsNewWorkflowExecutionDecisionAttributes"></a>
 
 Provides the details of the `ContinueAsNewWorkflowExecution` decision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Tag is key and value pair that act as metadata for organizing your AWS resources.
 

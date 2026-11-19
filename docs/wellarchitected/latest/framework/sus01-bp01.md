@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus01-b
 ---
 
 # SUS01-BP01 Understand your resource usage efficiency
-<a name="sus01-bp01"></a>
 
  *Resource usage efficiency* (RUE) provides an essential baseline for understanding your workload's resource intensity (which links to Scope 1, 2, and 3 emissions) by helping you calculate an efficiency metric for your workload. RUE is calculated by dividing the core resource provisioned metric (which could be volume of storage or normalized instance hours) by the amount of work completed (measured by a business metric or customer outcome). Track RUE over time to establish clear baselines, set improvement targets, and validate the effectiveness of your sustainability initiatives and optimization efforts.
 

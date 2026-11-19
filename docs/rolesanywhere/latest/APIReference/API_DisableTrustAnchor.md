@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Di
 ---
 
 # DisableTrustAnchor
-<a name="API_DisableTrustAnchor"></a>
 
 Disables a trust anchor. When disabled, temporary credential requests specifying this trust anchor are unauthorized.
 

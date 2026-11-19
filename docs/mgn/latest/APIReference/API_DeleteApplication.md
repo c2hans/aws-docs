@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DeleteApplic
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Delete application.
 

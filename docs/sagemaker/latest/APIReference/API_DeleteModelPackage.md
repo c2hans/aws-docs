@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelPackage
-<a name="API_DeleteModelPackage"></a>
 
 Deletes a model package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Logging disabled
-<a name="audit-chk-logging-disabled"></a>
 
 AWS IoT logs are not enabled in Amazon CloudWatch. Verifies both V1 and V2 logging.
 

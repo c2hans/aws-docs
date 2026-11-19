@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancerTlsPolicy
-<a name="API_LoadBalancerTlsPolicy"></a>
 
 Describes the TLS security policies that are available for Lightsail load balancers.
 

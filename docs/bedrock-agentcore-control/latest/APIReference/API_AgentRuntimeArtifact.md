@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # AgentRuntimeArtifact
-<a name="API_AgentRuntimeArtifact"></a>
 
 The artifact of the agent.
 

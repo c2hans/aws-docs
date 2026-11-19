@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Integrate the server SDK for game engines
-<a name="integration-engines"></a>
 
 You can use the managed Amazon GameLift Servers service with most major game engines that support C\+\+ or C\# libraries, including O3DE, Unreal Engine, and Unity. Build the version you need for your game; see the README files with each version for build instructions and minimum requirements. For more information on available Amazon GameLift Servers SDKs, supported development platforms and operating systems, see [Get Amazon GameLift Servers development tools](gamelift-supported.md) for game servers.
 

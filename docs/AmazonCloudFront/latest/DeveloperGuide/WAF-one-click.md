@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/W
 ---
 
 # Enable AWS WAF for distributions
-<a name="WAF-one-click"></a>
 
 You can enable AWS WAF when you create a distribution, or you can enable security protections for an existing access control list (ACL).
 

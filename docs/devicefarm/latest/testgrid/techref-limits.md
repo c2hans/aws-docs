@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/techref-limit
 ---
 
 # Quotas in Device Farm desktop browser testing
-<a name="techref-limits"></a>
 
 Exceeding the following limits will result in session creation failure:
 + You may have up to 50 sessions in an `active` state at any time.

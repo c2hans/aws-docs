@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentOp
 ---
 
 # ExperimentOptions
-<a name="API_ExperimentOptions"></a>
 
 Describes the options for an experiment.
 

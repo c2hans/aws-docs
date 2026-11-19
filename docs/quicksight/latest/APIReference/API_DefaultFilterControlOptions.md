@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultFilterControlOptions
-<a name="API_DefaultFilterControlOptions"></a>
 
 The option that corresponds to the control type of the filter.
 

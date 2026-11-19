@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Quer
 ---
 
 # QueryConstraintRequireOverlap
-<a name="API_QueryConstraintRequireOverlap"></a>
 
 Provides the name of the columns that are required to overlap.
 

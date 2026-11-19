@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Get started using Amazon Bedrock in SageMaker Unified Studio
-<a name="getting-started-use-amazon-bedrock-ide"></a>
 
 Amazon Bedrock in SageMaker Unified Studio offers multiple playgrounds that allow you to easily access and experiment with Amazon Bedrock models. With the [chat](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock-explore-chat-playground.html) playground, you can chat with a model through text and image prompts. With the [image and video](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/explore-image-playground.html) playground, you can use a compatible model to generate and edit images and videos.
 

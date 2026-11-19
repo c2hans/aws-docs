@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateTemplatePermissions
-<a name="update-template-permissions"></a>
 
 Use the `UpdateTemplatePermissions` operation updates the resource permissions for a template. You can grant or revoke permissions in the same command. To use this operation, you need the ID of the template that you want to update the permissions of. You can use the `ListTemplates` operation to list all templates and their corresponding template IDs.
 

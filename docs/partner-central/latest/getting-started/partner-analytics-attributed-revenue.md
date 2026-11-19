@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Attributed Revenue
-<a name="partner-analytics-attributed-revenue"></a>
 
 The Attributed Revenue dashboard provides visibility into the AWS revenue impact of your solutions as measured by Partner Revenue Measurement (PRM). The dashboard displays aggregated monthly attributed revenue by Partner product, AWS service, and billing period.
 

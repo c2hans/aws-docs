@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Configuring AWS KMS keys for AWS Support authorization
-<a name="support-authorization-kms"></a>
 
 ## Key requirements
 <a name="support-authorization-kms-requirements"></a>

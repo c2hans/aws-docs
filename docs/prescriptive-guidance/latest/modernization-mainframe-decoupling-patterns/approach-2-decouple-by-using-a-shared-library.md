@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Approach 2: Decouple by using a shared library
-<a name="approach-2-decouple-by-using-a-shared-library"></a>
 
 In this approach, the shared program AB.1 is converted into a Java common library and is packaged with the applications for migration. We recommend this approach when the shared program is a supporting library instead of a standalone service.
 

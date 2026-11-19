@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-acme-create-eab
 ---
 
 # Creating an ACME external account binding
-<a name="sdk-acme-create-eab"></a>
 
 The following example shows how to use the [CreateAcmeExternalAccountBinding](https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeExternalAccountBinding.html) function.
 

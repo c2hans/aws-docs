@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # DescribeKey
-<a name="API_geoapikeys_DescribeKey"></a>
 
 Retrieves the API key resource details.
 

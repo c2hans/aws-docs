@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Campaign
 ---
 
 # Campaign
-<a name="API_Campaign"></a>
 
 Information associated with a campaign.
 

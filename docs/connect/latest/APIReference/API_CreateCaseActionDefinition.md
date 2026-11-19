@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateCa
 ---
 
 # CreateCaseActionDefinition
-<a name="API_CreateCaseActionDefinition"></a>
 
 The `CreateCase` action definition.
 

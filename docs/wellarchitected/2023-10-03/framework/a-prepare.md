@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Prepare
-<a name="a-prepare"></a>
 
 **Topics**
 + [OPS 4. How do you implement observability in your workload?](ops-04.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceCriteria
-<a name="API_ResourceCriteria"></a>
 
 A leaf condition that matches resources by tag or by resource-type-specific configuration.
 

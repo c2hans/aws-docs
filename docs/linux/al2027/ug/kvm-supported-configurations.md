@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/kvm-supported-configurat
 ---
 
 # Requirements for running AL2027 on KVM
-<a name="kvm-supported-configurations"></a>
 
  This section describes the requirements for running Amazon Linux 2027 on KVM. The KVM images of AL2027 are available for both `aarch64` and `x86-64` architectures. These requirements are in addition to the base [AL2027 system requirements](system-requirements.md) for the KVM images.
 

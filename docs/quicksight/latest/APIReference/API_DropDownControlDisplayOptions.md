@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DropD
 ---
 
 # DropDownControlDisplayOptions
-<a name="API_DropDownControlDisplayOptions"></a>
 
 The display options of a control.
 

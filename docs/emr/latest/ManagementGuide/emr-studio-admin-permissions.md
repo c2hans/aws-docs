@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-ad
 ---
 
 # Administrator permissions to create and manage an EMR Studio
-<a name="emr-studio-admin-permissions"></a>
 
 The IAM permissions described on this page permit you to create and manage an EMR Studio. For detailed information about each required permission, see [Permissions required to manage an EMR Studio](#emr-studio-admin-permissions-table).
 

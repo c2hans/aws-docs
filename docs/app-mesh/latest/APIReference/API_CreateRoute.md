@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_CreateR
 ---
 
 # CreateRoute
-<a name="API_CreateRoute"></a>
 
 Creates a route that is associated with a virtual router.
 

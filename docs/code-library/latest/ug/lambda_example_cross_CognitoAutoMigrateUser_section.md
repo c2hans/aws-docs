@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_cr
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Automatically migrate known Amazon Cognito users with a Lambda function using an AWS SDK
-<a name="lambda_example_cross_CognitoAutoMigrateUser_section"></a>
 
 The following code example shows how to automatically migrate known Amazon Cognito users with a Lambda function.
 + Configure a user pool to call a Lambda function for the `MigrateUser` trigger.

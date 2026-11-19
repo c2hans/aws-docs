@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/engineerin
 ---
 
 # .engineering
-<a name="engineering"></a>
 
 Used by engineering firms and professionals.
 

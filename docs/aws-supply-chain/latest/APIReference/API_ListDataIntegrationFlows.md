@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # ListDataIntegrationFlows
-<a name="API_ListDataIntegrationFlows"></a>
 
 Enables you to programmatically list all data pipelines for the provided AWS Supply Chain instance.
 

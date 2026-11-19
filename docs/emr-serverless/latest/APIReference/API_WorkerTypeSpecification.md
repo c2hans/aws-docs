@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_W
 ---
 
 # WorkerTypeSpecification
-<a name="API_WorkerTypeSpecification"></a>
 
 The specifications for a worker type.
 

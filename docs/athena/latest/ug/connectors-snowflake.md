@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-snowflake.ht
 ---
 
 # Amazon Athena Snowflake connector
-<a name="connectors-snowflake"></a>
 
 The Amazon Athena connector for [Snowflake](https://www.snowflake.com/) enables Amazon Athena to run SQL queries on data stored in your Snowflake SQL database or RDS instances using JDBC.
 

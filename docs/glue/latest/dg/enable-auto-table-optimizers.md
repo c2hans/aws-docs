@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/enable-auto-table-optimiz
 ---
 
 # Enabling catalog-level automatic table optimization
-<a name="enable-auto-table-optimizers"></a>
 
  You can enable the automatic table optimization for all new Apache Iceberg tables in the Data Catalog. After creating the table, you can also explicitly update the table optimization settings manually.
 

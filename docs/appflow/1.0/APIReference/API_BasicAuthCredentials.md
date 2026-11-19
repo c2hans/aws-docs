@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_BasicAuthCr
 ---
 
 # BasicAuthCredentials
-<a name="API_BasicAuthCredentials"></a>
 
  The basic auth credentials required for basic authentication.
 

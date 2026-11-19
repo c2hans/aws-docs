@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-http-destinations
 ---
 
 # Configuring Amazon SNS message delivery to HTTP destinations using
-<a name="firehose-http-destinations"></a>
 
 This topic explains how delivery streams publish data to HTTP endpoints.
 

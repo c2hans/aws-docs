@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/co
 ---
 
 # Managing connections and variables
-<a name="connections"></a>
 
  Apache Airflow connections store the credentials and endpoint information that your tasks use to reach external systems, such as a database or an HTTP API. Apache Airflow variables store reusable configuration values as key-value pairs. Your task code retrieves a connection with `BaseHook.get_connection` and a variable with `Variable.get`. Operators that take a connection ID, such as `http_conn_id`, make the same lookup for you.
 

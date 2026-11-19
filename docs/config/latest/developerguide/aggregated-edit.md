@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregated-
 ---
 
 # Editing Aggregators for AWS Config
-<a name="aggregated-edit"></a>
 
 You can use the AWS Config console or the AWS CLI to edit your aggregators.
 

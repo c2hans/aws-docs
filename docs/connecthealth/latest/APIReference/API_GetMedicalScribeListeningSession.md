@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Ge
 ---
 
 # GetMedicalScribeListeningSession
-<a name="API_GetMedicalScribeListeningSession"></a>
 
 Retrieves details about an existing Medical Scribe listening session
 

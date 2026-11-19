@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/assisted-slot-examples.h
 ---
 
 # Examples of assisted slot resolution used in Lex V2
-<a name="assisted-slot-examples"></a>
 
 Below are some examples where assisted slot resolution is able to intelligently resolve user utterances into a value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartReplica
 ---
 
 # StartReplication
-<a name="API_StartReplication"></a>
 
 Start replication for source server irrespective of its replication type.
 

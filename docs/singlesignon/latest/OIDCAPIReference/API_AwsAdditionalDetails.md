@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API
 ---
 
 # AwsAdditionalDetails
-<a name="API_AwsAdditionalDetails"></a>
 
 This structure contains AWS-specific parameter extensions and the [identity context](https://docs.aws.amazon.com/singlesignon/latest/userguide/trustedidentitypropagation-overview.html).
 

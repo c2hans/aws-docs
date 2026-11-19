@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListTags
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS Shield.
 

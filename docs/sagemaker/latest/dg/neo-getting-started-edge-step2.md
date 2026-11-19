@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-getting-started-
 ---
 
 # Set Up Your Device
-<a name="neo-getting-started-edge-step2"></a>
 
 You will need to install packages on your edge device so that your device can make inferences. You will also need to either install [AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/latest/developerguide/what-is-gg.html) core or [Deep Learning Runtime (DLR)](https://github.com/neo-ai/neo-ai-dlr). In this example, you will install packages required to make inferences for the `coco_ssd_mobilenet` object detection algorithm and you will use DLR.
 

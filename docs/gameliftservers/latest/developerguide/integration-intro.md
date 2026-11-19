@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/in
 ---
 
 # Prepare a game for hosting with Amazon GameLift Servers
-<a name="integration-intro"></a>
 
 Before you can deploy your game for hosting on Amazon GameLift Servers, you need to prepare both your game server and game client components. This involves integrating your game server with the Amazon GameLift Servers Server SDK and building a backend service that handles player authentication and game session management.
 

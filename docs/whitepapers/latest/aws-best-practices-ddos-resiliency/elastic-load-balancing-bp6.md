@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Elastic Load Balancing (BP6)
-<a name="elastic-load-balancing-bp6"></a>
 
  Large DDoS attacks can overwhelm the capacity of a single Amazon EC2 instance. With [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/), you can reduce the risk of overloading your application by distributing traffic across many backend instances. Elastic Load Balancing can scale automatically, allowing you to manage larger volumes when you have unanticipated extra traffic, for example, because flash crowds or DDoS attacks. For applications built within an Amazon VPC, there are different types of ELBs to consider, for example: Application Load Balancer (ALB) and Network Load Balancer (NLB).
 

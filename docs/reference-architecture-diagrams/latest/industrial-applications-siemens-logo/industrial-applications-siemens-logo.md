@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # AWS Industrial Applications with Siemens LOGO\!
-<a name="industrial-applications-siemens-logo"></a>
 
 Publication date: **September 27, 2021 ([Diagram history](#slogo-diagram-history))**
 

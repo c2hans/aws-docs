@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Delet
 ---
 
 # DeleteTestSources
-<a name="API_DeleteTestSources"></a>
 
 Removes monitoring sources from a test. The operation is transactional and idempotent — removing a source that is not attached is a no-op.
 

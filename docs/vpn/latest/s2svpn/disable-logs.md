@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/disable-logs.html
 ---
 
 # Disable AWS Site-to-Site VPN logs
-<a name="disable-logs"></a>
 
 Disable VPN logging on a connection if you no longer want to track any activity on that connection. This action only disables logging and does not affect anything else for that connection. To enable or re-enable logging on a connection, see [Enable Site-to-Site VPN logs](enable-logs.md).
 

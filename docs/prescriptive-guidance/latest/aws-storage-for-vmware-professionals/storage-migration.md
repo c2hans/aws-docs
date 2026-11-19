@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Storage migration
-<a name="storage-migration"></a>
 
 AWS provides dedicated migration tools including AWS DataSync for data transfers, AWS Storage Gateway for hybrid integrations, and AWS Transfer Family for protocol-based transfers. These services use cloud-native services like S3, EBS, and EFS. Transitioning to AWS has advantages over VMware including automatic scaling versus manual capacity planning, pay-as-you-go pricing versus fixed infrastructure costs, built-in multi-AZ replication versus manual redundancy setups, and automated lifecycle policies versus manual storage administration.
 

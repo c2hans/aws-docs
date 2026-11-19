@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/view-di
 ---
 
 # View storage disk details in the Lightsail for Research console
-<a name="view-disk"></a>
 
 Complete the following steps to view the disks in your Lightsail for Research account and their details.
 

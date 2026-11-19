@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Using cloud-native technology to manage, orchestrate, and monitor microservices for MES
-<a name="management"></a>
 
 After you design the architecture for individual microservices, you should focus on ensuring that all microservices work seamlessly. Microservice-based MES is an agile, constantly evolving system that has dynamic, distributed components such as container images, databases, APIs, object stores, and queues. This constant change poses another set of architectural challenges in orchestrating, monitoring, and managing these distributed components.
 

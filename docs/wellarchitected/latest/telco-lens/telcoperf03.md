@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcop
 ---
 
 # Networking and content delivery
-<a name="telcoperf03"></a>
 
 |  TELCOPERF03: How do you select the appropriate network infrastructure for your telco workloads?  |
 | --- |

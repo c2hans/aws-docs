@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # LoggingInfo
-<a name="API_LoggingInfo"></a>
 
 Information about an Amazon Simple Storage Service (Amazon S3) bucket to write managed node-level logs to.
 

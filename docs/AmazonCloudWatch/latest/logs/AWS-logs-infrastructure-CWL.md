@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-in
 ---
 
 # Logs sent to CloudWatch Logs
-<a name="AWS-logs-infrastructure-CWL"></a>
 
 **Important**
 When you set up the log types in the following list to be sent to CloudWatch Logs, AWS creates or changes the resource policies associated with the log group receiving the logs, if needed. Continue reading this section to see the details.

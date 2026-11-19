@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 Publication date: *December 2023*
 

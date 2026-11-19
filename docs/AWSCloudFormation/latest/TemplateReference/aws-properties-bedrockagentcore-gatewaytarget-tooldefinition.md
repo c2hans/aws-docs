@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget ToolDefinition
-<a name="aws-properties-bedrockagentcore-gatewaytarget-tooldefinition"></a>
 
 A tool definition for a gateway target. This structure defines a tool that the target exposes through the Model Context Protocol.
 

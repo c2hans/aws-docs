@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_OidcConfig
 ---
 
 # OidcConfigInfo
-<a name="API_OidcConfigInfo"></a>
 
 Contains the OpenID Connect (OIDC) configuration information for Single Sign-On (SSO) authentication, including identity provider settings and client credentials.
 

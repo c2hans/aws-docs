@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # DescribeRegistries
-<a name="API_DescribeRegistries"></a>
 
 Returns details for a public registry.
 

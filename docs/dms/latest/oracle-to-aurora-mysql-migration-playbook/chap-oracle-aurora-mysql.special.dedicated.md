@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle Resource Manager and dedicated Amazon Aurora MySQL clusters
-<a name="chap-oracle-aurora-mysql.special.dedicated"></a>
 
 With AWS DMS, you can migrate Oracle Resource Manager databases to dedicated Aurora MySQL clusters.
 

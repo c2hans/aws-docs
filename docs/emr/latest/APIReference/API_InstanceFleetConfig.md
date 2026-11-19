@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceFlee
 ---
 
 # InstanceFleetConfig
-<a name="API_InstanceFleetConfig"></a>
 
 The configuration that defines an instance fleet.
 

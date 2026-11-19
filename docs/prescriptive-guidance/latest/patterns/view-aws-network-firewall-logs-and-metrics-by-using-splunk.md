@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/vi
 ---
 
 # View AWS Network Firewall logs and metrics by using Splunk
-<a name="view-aws-network-firewall-logs-and-metrics-by-using-splunk"></a>
 
 *Ivo Pinto, Amazon Web Services*
 

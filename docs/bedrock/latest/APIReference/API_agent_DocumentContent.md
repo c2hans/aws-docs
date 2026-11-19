@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Do
 ---
 
 # DocumentContent
-<a name="API_agent_DocumentContent"></a>
 
 Contains information about the content of a document. Choose a `dataSourceType` and include the field that corresponds to it.
 

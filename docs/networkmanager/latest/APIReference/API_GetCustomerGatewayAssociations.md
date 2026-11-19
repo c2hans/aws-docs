@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetCustomerGatewayAssociations
-<a name="API_GetCustomerGatewayAssociations"></a>
 
 Gets the association information for customer gateways that are associated with devices and links in your global network.
 

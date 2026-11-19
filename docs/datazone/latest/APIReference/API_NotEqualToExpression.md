@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_NotEqua
 ---
 
 # NotEqualToExpression
-<a name="API_NotEqualToExpression"></a>
 
 Specifies that a value is not equal to the expression.
 

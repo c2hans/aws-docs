@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByWebACLId
-<a name="API_ListDistributionsByWebACLId"></a>
 
 List the distributions that are associated with a specified AWS WAF web ACL.
 

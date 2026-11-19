@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # StartResourceScan
-<a name="API_StartResourceScan"></a>
 
 Immediately starts a scan of the policies applied to the specified resource.
 

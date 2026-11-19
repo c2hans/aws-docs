@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_BatchAss
 ---
 
 # BatchAssociateResource
-<a name="API_BatchAssociateResource"></a>
 
 Associate resources to a Firewall Manager resource set.
 

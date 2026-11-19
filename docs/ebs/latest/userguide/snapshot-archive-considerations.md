@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-archive-co
 ---
 
 # Considerations and limitations for archiving Amazon EBS snapshots
-<a name="snapshot-archive-considerations"></a>
 
 Keep the following in mind when archiving Amazon EBS snapshots.
 

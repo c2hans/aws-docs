@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/su
 ---
 
 # Supplier assessment
-<a name="supplier-assessment-and-cloud-management"></a>
 
 Industry guidance suggests you use a supplier's experience, knowledge, and documentation as much as possible. With so much responsibility now delegated to a supplier, the supplier assessment becomes even more important. A regulated company is still ultimately accountable for demonstrating that a GxP system is compliant, even if a supplier is responsible for parts of that system, so the regulated customer needs to establish enough trust in their supplier.
 

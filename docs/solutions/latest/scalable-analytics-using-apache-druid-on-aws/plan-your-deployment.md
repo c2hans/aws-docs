@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [Cost](cost.md), [security](security-1.md), and [quotas](quotas.md) considerations prior to deploying the guidance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageUsageInfo
-<a name="API_SendMessageUsageInfo"></a>
 
 Token usage information
 

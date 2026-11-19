@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Pro
 ---
 
 # Error handling with DynamoDB
-<a name="Programming.Errors"></a>
 
  This section describes runtime errors and how to handle them. It also describes error messages and codes that are specific to Amazon DynamoDB. For a list of common errors that apply to all AWS services, see [Access Management](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/CommonErrors.html)
 

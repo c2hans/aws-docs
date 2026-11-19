@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-agenti
 ---
 
 # Agentic migration with AI tools
-<a name="dsql-agentic-migration"></a>
 
 AI coding agents can accelerate your migration to Aurora DSQL by analyzing schemas, transforming code, and executing DDL migrations with built-in safety checks.
 

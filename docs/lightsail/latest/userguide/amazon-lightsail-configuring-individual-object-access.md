@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Grant public access to individual bucket objects in Amazon Lightsail
-<a name="amazon-lightsail-configuring-individual-object-access"></a>
 
 Use individual object access permissions to control public (unauthenticated) read-only access to individual objects in a bucket. You can make individual objects in a bucket private or public (read-only).
 

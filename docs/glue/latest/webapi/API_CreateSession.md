@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateSession.htm
 ---
 
 # CreateSession
-<a name="API_CreateSession"></a>
 
 Creates a new session.
 

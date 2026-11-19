@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/emr-kerbero
 ---
 
 # emr-kerberos-enabled
-<a name="emr-kerberos-enabled"></a>
 
 Checks if Amazon EMR clusters have Kerberos enabled. The rule is NON\_COMPLIANT if a security configuration is not attached to the cluster or the security configuration does not satisfy the specified rule parameters.
 

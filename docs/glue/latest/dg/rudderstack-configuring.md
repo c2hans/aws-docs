@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rudderstack-configuring.h
 ---
 
 # Configuring RudderStack
-<a name="rudderstack-configuring"></a>
 
 Before you can use AWS Glue to transfer data from RudderStack, you must meet the following requirements:
 

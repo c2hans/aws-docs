@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/security.comp
 ---
 
 # Compliance validation in Amazon DocumentDB
-<a name="security.compliance-validation"></a>
 
 The security and compliance of Amazon DocumentDB is assessed by third-party auditors as part of multiple AWS compliance programs, including the following:
 + System and Organization Controls (SOC) 1, 2, and 3. For more information, see [SOC](https://aws.amazon.com/compliance/soc-faqs/).

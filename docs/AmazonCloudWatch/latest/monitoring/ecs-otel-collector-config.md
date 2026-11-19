@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 ---
 
 # Step 2: Create the collector configuration
-<a name="ecs-otel-collector-config"></a>
 
 Save the following configuration. You pass it to the collector in step 3.
 

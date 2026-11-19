@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/log10.html
 ---
 
 # $log10
-<a name="log10"></a>
 
 New from version 4.0.
 

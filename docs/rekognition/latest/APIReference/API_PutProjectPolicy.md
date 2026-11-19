@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_PutP
 ---
 
 # PutProjectPolicy
-<a name="API_PutProjectPolicy"></a>
 
 **Note**
 This operation applies only to Amazon Rekognition Custom Labels.

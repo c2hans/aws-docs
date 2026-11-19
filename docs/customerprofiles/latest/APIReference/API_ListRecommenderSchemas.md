@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListRecommenderSchemas
-<a name="API_connect-customer-profiles_ListRecommenderSchemas"></a>
 
 Returns a list of recommender schemas in the specified domain.
 

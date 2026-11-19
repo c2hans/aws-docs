@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowTypeInfo
-<a name="API_WorkflowTypeInfo"></a>
 
 Contains information about a workflow type.
 

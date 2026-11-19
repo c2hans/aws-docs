@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_OperationUpdate.ht
 ---
 
 # OperationUpdate
-<a name="API_OperationUpdate"></a>
 
 An update to be applied to an operation during checkpointing.
 

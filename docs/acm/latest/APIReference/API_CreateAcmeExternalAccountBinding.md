@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeEx
 ---
 
 # CreateAcmeExternalAccountBinding
-<a name="API_CreateAcmeExternalAccountBinding"></a>
 
 Creates an external account binding (EAB) for an ACME endpoint. An EAB provides credentials that authorize an ACME client to register an account with the endpoint. Each EAB is associated with an IAM role that controls what certificate operations the ACME client can perform.
 

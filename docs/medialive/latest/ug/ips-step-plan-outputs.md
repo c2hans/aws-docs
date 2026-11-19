@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-step-plan-output
 ---
 
 # Plan the outputs
-<a name="ips-step-plan-outputs"></a>
 
 Plan the output side of the MediaLive channel in the normal way:
 + Identify all the output groups.

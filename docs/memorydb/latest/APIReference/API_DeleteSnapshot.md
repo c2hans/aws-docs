@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSnapshot
-<a name="API_DeleteSnapshot"></a>
 
 Deletes an existing snapshot. When you receive a successful response from this operation, MemoryDB immediately begins deleting the snapshot; you cannot cancel or revert this operation.
 

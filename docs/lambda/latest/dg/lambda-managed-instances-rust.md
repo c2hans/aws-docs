@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Rust support for Lambda Managed Instances
-<a name="lambda-managed-instances-rust"></a>
 
 ## Concurrency configuration
 <a name="lambda-managed-instances-rust-concurrency-config"></a>

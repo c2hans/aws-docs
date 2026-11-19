@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_DeviceQue
 ---
 
 # DeviceQueueInfo
-<a name="API_DeviceQueueInfo"></a>
 
 Information about quantum tasks and hybrid jobs queued on a device.
 

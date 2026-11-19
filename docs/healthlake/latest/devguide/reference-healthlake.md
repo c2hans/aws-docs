@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-hea
 ---
 
 # Support reference for AWS HealthLake
-<a name="reference-healthlake"></a>
 
 The following supporting reference material is available for AWS HealthLake.
 

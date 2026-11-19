@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Building a scalable web crawling system on AWS
-<a name="building"></a>
 
 This section describes how to build the web crawler described in the [Architecture](architecture.md) section. It includes a systematic approach to creating a robust dataset of companies and their associated web properties. This dataset serves as the foundation for your crawling activities. Then, this section describes how to build an ethical web crawler in Python.
 

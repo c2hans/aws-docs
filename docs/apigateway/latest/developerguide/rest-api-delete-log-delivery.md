@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Delete a log delivery for REST API execution logs
-<a name="rest-api-delete-log-delivery"></a>
 
 When you delete a log delivery, API Gateway resumes writing execution logs to the auto-managed log group (`API-Gateway-Execution-Logs_{rest-api-id}/{stage_name}`), as long as execution logging is still enabled on the stage.
 

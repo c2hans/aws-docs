@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardPublishOptions
-<a name="API_DashboardPublishOptions"></a>
 
 Dashboard publish options.
 

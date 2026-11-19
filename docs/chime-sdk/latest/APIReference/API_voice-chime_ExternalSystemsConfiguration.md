@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ExternalSystemsConfiguration
-<a name="API_voice-chime_ExternalSystemsConfiguration"></a>
 
 Contains information about an external systems configuration for a Voice Connector.
 

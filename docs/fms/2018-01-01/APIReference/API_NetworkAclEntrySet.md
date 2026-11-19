@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkA
 ---
 
 # NetworkAclEntrySet
-<a name="API_NetworkAclEntrySet"></a>
 
 The configuration of the first and last rules for the network ACL policy, and the remediation settings for each.
 

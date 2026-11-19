@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/collStats.htm
 ---
 
 # $collStats
-<a name="collStats"></a>
 
 New from version 4.0
 

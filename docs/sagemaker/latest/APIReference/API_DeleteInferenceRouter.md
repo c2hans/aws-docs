@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteInferenceRouter
-<a name="API_DeleteInferenceRouter"></a>
 
 Deletes an inference router. The endpoints and inference components that the router sends requests to aren't deleted.
 

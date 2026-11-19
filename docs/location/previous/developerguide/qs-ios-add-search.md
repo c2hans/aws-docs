@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Add Amazon Location search to your application
-<a name="qs-ios-add-search"></a>
 
  You now will add reverse geocoding search to the application, where you find the items at a location. To simplify the use of an iOS app, we will search the center of the screen. To find a new location, move the map to where you want to search. We will place a marker at the center of the map to show where we are searching.
 

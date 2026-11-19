@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/tag-subnets-auto.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Tag subnets for EKS Auto Mode
-<a name="tag-subnets-auto"></a>
 
 If you use the load balancing capability of EKS Auto Mode, you need to add AWS tags to your VPC subnets.
 

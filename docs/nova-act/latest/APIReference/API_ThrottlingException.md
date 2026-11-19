@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Throttl
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The request was throttled due to too many requests. Please try again later.
 

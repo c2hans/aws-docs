@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Capability 6. Providing secure access, usage, and implementation for AI applications
-<a name="ai-apps"></a>
 
 |  |
 | --- |

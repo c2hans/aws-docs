@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/tutorial-microservic
 ---
 
 # Learn how to use AWS Cloud Map service discovery with custom attributes using the AWS CLI
-<a name="tutorial-microservices-cli"></a>
 
 This tutorial demonstrates how you can use AWS Cloud Map service discovery with custom attributes. You'll create a microservices application that uses AWS Cloud Map to discover resources dynamically using custom attributes. The application consists of two Lambda functions that write data to and read from a DynamoDB table, with all resources registered in AWS Cloud Map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Enable Tooling blueprint
-<a name="enable-tooling-blueprint"></a>
 
 Before you can create projects with compute capabilities, you must enable the Tooling blueprint and configure its provisioning settings. The Tooling blueprint provisions IAM roles, security groups, and an Amazon SageMaker Unified Studio domain for each project.
 

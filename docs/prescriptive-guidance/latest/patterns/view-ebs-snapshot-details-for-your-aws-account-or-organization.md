@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/vi
 ---
 
 # View EBS snapshot details for your AWS account or organization
-<a name="view-ebs-snapshot-details-for-your-aws-account-or-organization"></a>
 
 *Arun Chandapillai and Parag Nagwekar, Amazon Web Services*
 

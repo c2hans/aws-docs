@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # HA and automatic scaling for ASP.NET Web Forms applications on AWS
-<a name="ha-scaling"></a>
 
 When you migrate your legacy ASP.NET Web Forms applications to AWS, achieving high availability is a critical consideration. You can use Amazon EC2 Auto Scaling groups and load balancers to distribute traffic across multiple EC2 instances. However, many ASP.NET Web Forms applications rely heavily on session state, which makes them inherently stateful. By default, the server stores the generated session IDs in memory and sends the ID back to the client through a cookie. This approach becomes problematic when you try to run the same application across multiple EC2 instances, because each instance maintains its own session state, leading to inconsistent user experiences and potential data loss.
 

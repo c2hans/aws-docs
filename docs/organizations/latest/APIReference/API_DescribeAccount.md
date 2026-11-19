@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeAccount
-<a name="API_DescribeAccount"></a>
 
 Retrieves AWS Organizations-related information about the specified account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/create
 ---
 
 # Create an account
-<a name="create-an-account"></a>
 
 You can create an account by signing up yourself, accepting an invitation from an admin, or receiving walk-up registration at a physical event.
 

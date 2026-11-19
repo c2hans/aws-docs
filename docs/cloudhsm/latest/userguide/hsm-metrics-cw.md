@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/hsm-metrics-cw
 ---
 
 # Getting CloudWatch metrics for AWS CloudHSM
-<a name="hsm-metrics-cw"></a>
 
 Use CloudWatch to monitor your AWS CloudHSM cluster in real time. The metrics can be grouped by region, cluster ID, or cluster ID and HSM ID.
 

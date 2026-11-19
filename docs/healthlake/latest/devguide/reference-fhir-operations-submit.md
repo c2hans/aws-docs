@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # FHIR `$submit` operation for HealthLake
-<a name="reference-fhir-operations-submit"></a>
 
 The `$submit` operation enables you to electronically submit prior authorization requests to payers for approval. This operation implements the [Da Vinci Prior Authorization Support (PAS) Implementation Guide](https://hl7.org/fhir/us/davinci-pas/), providing a standardized FHIR-based workflow for prior authorization submissions.
 

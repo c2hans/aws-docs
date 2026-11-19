@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetOutboundW
 ---
 
 # GetOutboundWebIdentityFederationInfo
-<a name="API_GetOutboundWebIdentityFederationInfo"></a>
 
 Retrieves the configuration information for the outbound identity federation feature in your AWS account. The response includes the unique issuer URL for your AWS account and the current enabled/disabled status of the feature. Use this operation to obtain the issuer URL that you need to configure trust relationships with external services.
 

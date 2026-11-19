@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalTransitOptions
-<a name="API_RouteIntermodalTransitOptions"></a>
 
 Options for the transit leg of the intermodal route.
 

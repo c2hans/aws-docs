@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use `PutBucketAcl` with an AWS SDK or CLI
-<a name="s3_example_s3_PutBucketAcl_section"></a>
 
 The following code examples show how to use `PutBucketAcl`.
 

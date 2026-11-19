@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/buildkite-run
 ---
 
 # Troubleshoot the webhook permission issues
-<a name="buildkite-runner-troubleshoot-webhook-permissions"></a>
 
  **Issue: **
 

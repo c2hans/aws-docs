@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # IAM: Allows IAM users to self-manage an MFA device
-<a name="reference_policies_examples_iam_mfa-selfmanage"></a>
 
 This example shows how you might create an identity-based policy that allows IAM users to self-manage their [multi-factor authentication (MFA)](id_credentials_mfa.md) device. This policy grants the permissions necessary to complete this action programmatically from the AWS API or AWS CLI.
 

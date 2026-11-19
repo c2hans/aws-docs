@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/default-access.ht
 ---
 
 # Default access policy
-<a name="default-access"></a>
 
 |  |
 | --- |

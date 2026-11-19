@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-initialization-templat
 ---
 
 # Configuring the templates
-<a name="mgn-initialization-templates"></a>
 
 As part of the initialization of AWS Transform MGN, you have the opportunity to configure three templates.
 + Replication template (mandatory)

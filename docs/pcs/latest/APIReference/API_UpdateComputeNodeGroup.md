@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateComput
 ---
 
 # UpdateComputeNodeGroup
-<a name="API_UpdateComputeNodeGroup"></a>
 
 Updates a compute node group. You can update many of the fields related to your compute node group including the configurations for networking, compute nodes, and settings specific to your scheduler (such as Slurm).
 

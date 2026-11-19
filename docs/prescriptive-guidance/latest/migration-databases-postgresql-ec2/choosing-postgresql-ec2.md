@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Choosing PostgreSQL on Amazon EC2
-<a name="choosing-postgresql-ec2"></a>
 
 You have the option to migrate your on-premises PostgreSQL database to Amazon EC2 or Amazon Relational Database Service (Amazon RDS). Important considerations include cost, storage options, high availability and disaster recovery (HADR) capabilities, organizational requirements, and business goals.
 

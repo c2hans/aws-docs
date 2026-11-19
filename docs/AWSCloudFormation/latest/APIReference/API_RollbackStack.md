@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # RollbackStack
-<a name="API_RollbackStack"></a>
 
 When specifying `RollbackStack`, you preserve the state of previously provisioned resources when an operation fails. You can check the status of the stack through the [DescribeStacks](API_DescribeStacks.md) operation.
 

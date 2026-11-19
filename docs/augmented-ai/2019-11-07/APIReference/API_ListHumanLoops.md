@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API
 ---
 
 # ListHumanLoops
-<a name="API_ListHumanLoops"></a>
 
 Returns information about human loops, given the specified parameters. If a human loop was deleted, it will not be included.
 

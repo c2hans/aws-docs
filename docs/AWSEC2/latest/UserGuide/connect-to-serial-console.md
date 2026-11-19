@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-seria
 ---
 
 # Connect to the EC2 Serial Console
-<a name="connect-to-serial-console"></a>
 
 You can connect to the serial console of your EC2 instance by using the Amazon EC2 console or through SSH. After connecting to the serial console, you can use it for troubleshooting boot, network configuration, and other issues. For more information about troubleshooting, see [Troubleshoot your Amazon EC2 instance using the EC2 Serial Console](troubleshoot-using-serial-console.md).
 

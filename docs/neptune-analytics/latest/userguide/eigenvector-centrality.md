@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/eigen
 ---
 
 # Eigenvector centrality algorithm
-<a name="eigenvector-centrality"></a>
 
 Eigenvector centrality is a centrality algorithm that measures a node's importance by accounting for both the number and the importance of the nodes connected to it. Nodes that are connected to many highly connected nodes receive higher scores. This makes eigenvector centrality useful for identifying nodes that are well-connected within influential parts of a network.
 

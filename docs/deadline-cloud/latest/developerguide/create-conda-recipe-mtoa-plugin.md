@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/cre
 ---
 
 # Create a conda build recipe for Autodesk Maya to Arnold (MtoA) plugin
-<a name="create-conda-recipe-mtoa-plugin"></a>
 
 The Maya to Arnold (MtoA) plugin adds the Arnold renderer as an option within Maya. The [MtoA sample recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2026) on the GitHub website demonstrates how to package a plugin as a separate conda package that integrates with the host application package.
 

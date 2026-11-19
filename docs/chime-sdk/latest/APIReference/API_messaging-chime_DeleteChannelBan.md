@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # DeleteChannelBan
-<a name="API_messaging-chime_DeleteChannelBan"></a>
 
 Removes a member from a channel's ban list.
 

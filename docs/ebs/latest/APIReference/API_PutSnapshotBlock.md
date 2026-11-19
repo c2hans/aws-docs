@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_PutSnapshotB
 ---
 
 # PutSnapshotBlock
-<a name="API_PutSnapshotBlock"></a>
 
 Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the `pending` state.
 

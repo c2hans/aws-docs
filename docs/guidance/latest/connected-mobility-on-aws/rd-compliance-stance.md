@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Compliance stance
-<a name="rd-compliance-stance"></a>
 
 The guidance’s remote-diagnostics implementation is not a standards-compliant SOVD REST implementation on the wire. It is deliberately stated that way so a reader building an interop story can plan accordingly. What follows is what is preserved, what is not, and how REST-client access is restored through a gateway component.
 

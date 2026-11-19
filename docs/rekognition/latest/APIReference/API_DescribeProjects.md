@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Desc
 ---
 
 # DescribeProjects
-<a name="API_DescribeProjects"></a>
 
 Gets information about your Rekognition projects.
 

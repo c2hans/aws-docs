@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldCustomTextContent
-<a name="API_TableFieldCustomTextContent"></a>
 
 The custom text content (value, font configuration) for the table link content configuration.
 

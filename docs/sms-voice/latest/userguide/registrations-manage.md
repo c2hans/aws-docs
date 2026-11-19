@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Manage registrations
-<a name="registrations-manage"></a>
 
 The following sections contain directions on how to manage a registration.
 

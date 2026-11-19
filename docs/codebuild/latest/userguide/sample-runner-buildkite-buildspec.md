@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-runner
 ---
 
 # Run buildspec commands for the INSTALL, PRE\_BUILD, and POST\_BUILD phases
-<a name="sample-runner-buildkite-buildspec"></a>
 
 By default, CodeBuild ignores any buildspec commands when running a self-hosted Buildkite runner build. To run buildspec commands during the build,
 

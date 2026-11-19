@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # UpdateLicenseAssetGroup
-<a name="API_UpdateLicenseAssetGroup"></a>
 
 Updates a license asset group.
 

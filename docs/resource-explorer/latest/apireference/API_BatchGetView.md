@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # BatchGetView
-<a name="API_BatchGetView"></a>
 
 Retrieves details about a list of views.
 
@@ -24,7 +23,7 @@ To call this operation, you must have the following permissions:
  **Related operations**
 + To create a view, use [CreateView](API_CreateView.md).
 + To list the views in an AWS Region, use [ListViews](API_ListViews.md).
-+ To get details about your views, use [GetView](API_GetView.md) or [BatchGetView](#API_BatchGetView).
++ To get details about your views, use [GetView](API_GetView.md) or [BatchGetView](API_BatchGetView.md).
 + To update a view, use [UpdateView](API_UpdateView.md).
 + To delete a view, use [DeleteView](API_DeleteView.md).
 + To make a view the default for an AWS Region, use [AssociateDefaultView](API_AssociateDefaultView.md). To remove the default for a Region, use [DisassociateDefaultView](API_DisassociateDefaultView.md).

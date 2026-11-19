@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/encryption-at
 ---
 
 # Encryption at REST for AWS HealthLake
-<a name="encryption-at-rest"></a>
 
 HealthLake provides encryption by default to protect sensitive customer data at rest by using a service owned AWS Key Management Service (AWS KMS) key. Customer-managed KMS keys are also supported and are required for both importing and exporting files from a data store. To learn more about Customer-managed KMS Key, see [Amazon Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html). Customers can choose an AWS owned KMS key or a Customer-managed KMS key when creating a data store. The encryption configuration cannot be changed after a data store has been created. If a data store is using an AWS owned KMS Key, it will be denoted as AWS\_OWNED\_KMS\_KEY and you will not see the specific key used for encryption at rest.
 

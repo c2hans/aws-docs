@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/limits-connec
 ---
 
 # Quotas for connections
-<a name="limits-connections"></a>
 
 The following tables list the quotas (also referred to as *limits*) for connections in the Developer Tools console.
 

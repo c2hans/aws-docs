@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateSecurityProfiles
-<a name="API_AssociateSecurityProfiles"></a>
 
  Associate security profiles with an Entity in an Amazon Connect instance.
 

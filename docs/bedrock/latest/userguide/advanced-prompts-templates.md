@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Advanced prompt templates
-<a name="advanced-prompts-templates"></a>
 
 With advanced prompts, you can do the following:
 + Edit the default base prompt templates that the agent uses. By overriding the logic with your own configurations, you can customize your agent's behavior.

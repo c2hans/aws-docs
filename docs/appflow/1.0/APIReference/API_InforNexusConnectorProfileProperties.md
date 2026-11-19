@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_InforNexusC
 ---
 
 # InforNexusConnectorProfileProperties
-<a name="API_InforNexusConnectorProfileProperties"></a>
 
  The connector-specific profile properties required by Infor Nexus.
 

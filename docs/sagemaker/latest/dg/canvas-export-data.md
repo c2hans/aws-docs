@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-export-data.h
 ---
 
 # Export data
-<a name="canvas-export-data"></a>
 
 Export data to apply the transforms from your data flow to the full imported dataset. You can export any node in your data flow to the following locations:
 + SageMaker Canvas dataset

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_TrustStoreConf
 ---
 
 # TrustStoreConfiguration
-<a name="API_TrustStoreConfiguration"></a>
 
 Describes the configuration of a trust store.
 

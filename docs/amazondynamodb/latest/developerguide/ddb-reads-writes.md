@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb
 ---
 
 # DynamoDB reads and writes
-<a name="ddb-reads-writes"></a>
 
 DynamoDB reads and writes refer to the operations that retrieve data from a table (reads) and insert, update, or delete data in a table (writes). When you work with DynamoDB, it's essential to understand the concepts of reads and writes, because they directly impact the performance and cost of your application.
 

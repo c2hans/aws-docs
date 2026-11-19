@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/kommo-support.html
 ---
 
 # AWS Glue support for Kommo
-<a name="kommo-support"></a>
 
 AWS Glue supports Kommo as follows:
 

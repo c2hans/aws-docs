@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-paddle
 ---
 
 # Connecting to Paddle in AWS Glue Studio
-<a name="connecting-to-data-paddle"></a>
 
 Paddle Billing is a merchant-of-record billing platform for SaaS and digital-product businesses: checkout, subscriptions, invoicing, tax, and payments. Because you are a Paddle user, you can connect AWS Glue to your Paddle account. You can then use Paddle as a data source in your AWS Glue ETL jobs to transfer data between Paddle and AWS services or other supported applications.
 

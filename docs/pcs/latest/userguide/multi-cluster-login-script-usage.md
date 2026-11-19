@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/multi-cluster-login
 ---
 
 # Using the AWS PCS multi-cluster login node configuration script
-<a name="multi-cluster-login-script-usage"></a>
 
 ## Running the script
 <a name="running-script"></a>

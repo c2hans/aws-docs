@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Export Amazon RDS for SQL Server tables to an S3 bucket by using AWS DMS
-<a name="export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms"></a>
 
 *Subhani Shaik, Amazon Web Services*
 

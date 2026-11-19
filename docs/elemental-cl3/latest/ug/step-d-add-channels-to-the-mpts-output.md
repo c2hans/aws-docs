@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-d-add-chann
 ---
 
 # Step 2. Add channels to the MPTS
-<a name="step-d-add-channels-to-the-mpts-output"></a>
 
 After you create the MPTS, you must add channels. The [channels must already exist](resource_channel.md).
 

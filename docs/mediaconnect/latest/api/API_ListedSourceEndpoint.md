@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListedSource
 ---
 
 # ListedSourceEndpoint
-<a name="API_ListedSourceEndpoint"></a>
 
 A summary of a source endpoint that the `ListSourceEndpoints` operation returns.
 

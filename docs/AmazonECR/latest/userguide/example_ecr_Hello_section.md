@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/example_ecr_H
 ---
 
 # Hello Amazon ECR
-<a name="example_ecr_Hello_section"></a>
 
 The following code examples show how to get started using Amazon ECR.
 

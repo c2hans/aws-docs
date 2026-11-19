@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # Register a third-party private extension in your account
-<a name="registry-register-private-extension"></a>
 
 This topic covers the steps to register a third-party private extension that's shared with you so it's available for use in your account.
 

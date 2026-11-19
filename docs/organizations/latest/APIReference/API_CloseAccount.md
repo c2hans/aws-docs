@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Cl
 ---
 
 # CloseAccount
-<a name="API_CloseAccount"></a>
 
 Closes an AWS member account within an organization. You can close an account when [all features are enabled ](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_support-all-features.html). You can't close the management account with this API. This is an asynchronous request that AWS performs in the background. Because `CloseAccount` operates asynchronously, it can return a successful completion message even though account closure might still be in progress. You need to wait a few minutes before the account is fully closed. To check the status of the request, do one of the following:
 + Use the `AccountId` that you sent in the `CloseAccount` request to provide as a parameter to the [DescribeAccount](API_DescribeAccount.md) operation.

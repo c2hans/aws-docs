@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-docker
 ---
 
 # Adapt the 'Publish Docker image to Amazon ECR' sample to push to Docker Hub
-<a name="sample-docker-docker-hub"></a>
 
 To adapt the 'Publish Docker image to Amazon ECR' sample so that the Docker image is pushed to Docker Hub instead of Amazon ECR, edit the sample's code. For more information about the sample, see ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](sample-docker.md) and [Run the 'Publish Docker image to Amazon ECR' sample](sample-docker.md#sample-docker-running).
 **Note**

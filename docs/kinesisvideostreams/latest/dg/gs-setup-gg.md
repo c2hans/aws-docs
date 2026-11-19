@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-setup-g
 ---
 
 # Set up the AWS IoT Greengrass V2 core device on the device
-<a name="gs-setup-gg"></a>
 
 Follow these procedures to install the AWS IoT Greengrass core nucleus software on the Amazon EC2 instance.
 

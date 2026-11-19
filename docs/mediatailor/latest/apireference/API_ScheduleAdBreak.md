@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Sche
 ---
 
 # ScheduleAdBreak
-<a name="API_ScheduleAdBreak"></a>
 
 The schedule's ad break properties.
 

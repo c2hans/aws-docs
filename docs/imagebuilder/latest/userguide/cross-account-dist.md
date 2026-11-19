@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/cross-acco
 ---
 
 # Set up cross-account AMI distribution with Image Builder
-<a name="cross-account-dist"></a>
 
 You can configure distribution settings that deliver an Image Builder AMI to other accounts that you specify.
 

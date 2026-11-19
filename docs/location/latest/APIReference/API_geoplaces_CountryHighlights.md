@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # CountryHighlights
-<a name="API_geoplaces_CountryHighlights"></a>
 
 Indicates the starting and ending index of the country in the text query that match the found title.
 

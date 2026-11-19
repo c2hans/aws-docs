@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/devops-engineer
 ---
 
 # Content Domain 3: Resilient Cloud Solutions
-<a name="devops-engineer-professional-02-domain3"></a>
 
 ## Task Statement 3.1: Implement highly available solutions to meet resilience and business requirements.
 <a name="dop-02-task-3-1"></a>

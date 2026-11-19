@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # LambdaFunctionConfiguration
-<a name="API_CostOptimizationHub_LambdaFunctionConfiguration"></a>
 
 The Lambda function configuration used for recommendations.
 

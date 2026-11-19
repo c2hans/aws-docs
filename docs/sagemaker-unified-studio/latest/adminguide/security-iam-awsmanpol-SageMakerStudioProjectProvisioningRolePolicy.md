@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioProjectProvisioningRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioProjectProvisioningRolePolicy"></a>
 
 Amazon SageMaker Unified Studio uses this policy to provision and manage resources in your account.
 

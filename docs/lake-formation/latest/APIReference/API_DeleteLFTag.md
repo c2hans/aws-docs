@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteLFTag
-<a name="API_DeleteLFTag"></a>
 
  Deletes an LF-tag by its key name. The operation fails if the specified tag key doesn't exist. When you delete an LF-Tag:
 + The associated LF-Tag policy becomes invalid.

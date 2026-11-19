@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Tag.h
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Information about the tags to assign to the retention rule.
 

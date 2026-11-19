@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchExportFindingResult
-<a name="API_BatchExportFindingResult"></a>
 
 A finding whose issue was created.
 

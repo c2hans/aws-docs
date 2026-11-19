@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowExecution
-<a name="API_DataIntegrationFlowExecution"></a>
 
 The flow execution details.
 

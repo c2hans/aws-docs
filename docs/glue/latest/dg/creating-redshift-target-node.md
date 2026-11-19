@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-target-
 ---
 
 # Creating an Amazon Redshift target node
-<a name="creating-redshift-target-node"></a>
 
 ## Permissions needed
 <a name="creating-redshift-target-node-permissions"></a>

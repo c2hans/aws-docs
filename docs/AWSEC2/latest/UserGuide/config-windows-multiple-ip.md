@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/config-windows-m
 ---
 
 # Configure secondary private IPv4 addresses for Windows instances
-<a name="config-windows-multiple-ip"></a>
 
 You can specify multiple private IPv4 addresses for your instances. After you assign a secondary private IPv4 address to an instance, you must configure the operating system on the instance to recognize the secondary private IPv4 address.
 

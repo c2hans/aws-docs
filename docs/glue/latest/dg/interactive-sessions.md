@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions.html
 ---
 
 # Getting started with AWS Glue interactive sessions using Livy
-<a name="interactive-sessions"></a>
 
 These sections describe how to run AWS Glue interactive sessions locally.
 

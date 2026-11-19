@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerGeospatialFullAccess
-<a name="AmazonSageMakerGeospatialFullAccess"></a>
 
 **Description**: This policy grants permissions that allow full access to Amazon SageMaker Geospatial through the AWS Management Console and SDK.
 

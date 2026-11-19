@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/ebs-section.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `[ebs]` section
-<a name="ebs-section"></a>
 
 Defines Amazon EBS volume configuration settings for volumes that are mounted on the head node and shared to the compute nodes through NFS.
 

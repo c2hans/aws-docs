@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectorFilters
-<a name="API_GatewayConnectorFilters"></a>
 
 The filters that determine which gateway ingress paths a connector applies to.
 

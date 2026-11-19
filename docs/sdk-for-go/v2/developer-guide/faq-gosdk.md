@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/faq-gosdk.
 ---
 
 # Frequently Asked Questions
-<a name="faq-gosdk"></a>
 
 ## How do I configure my SDK's HTTP client? Are there any guidelines or best practices?
 <a name="how-do-i-configure-my-sdks-http-client-are-there-any-guidelines-or-best-practices"></a>

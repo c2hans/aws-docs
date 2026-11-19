@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-mis
 ---
 
 # Mistral AI
-<a name="model-cards-mistral-ai"></a>
 
 The following Mistral AI models are available in Amazon Bedrock:
 

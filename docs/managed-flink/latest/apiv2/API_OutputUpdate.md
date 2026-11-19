@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_OutputUpd
 ---
 
 # OutputUpdate
-<a name="API_OutputUpdate"></a>
 
  For a SQL-based Kinesis Data Analytics application, describes updates to the output configuration identified by the `OutputId`.
 

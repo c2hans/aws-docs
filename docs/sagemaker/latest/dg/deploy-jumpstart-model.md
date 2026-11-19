@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-jumpstart-mod
 ---
 
 # Deploy a JumpStart model
-<a name="deploy-jumpstart-model"></a>
 
 You can deploy a pre-trained JumpStart model for inference using either the CLI or the SDK.
 

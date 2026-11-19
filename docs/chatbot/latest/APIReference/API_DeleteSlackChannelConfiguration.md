@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteSl
 ---
 
 # DeleteSlackChannelConfiguration
-<a name="API_DeleteSlackChannelConfiguration"></a>
 
 Deletes a Slack channel configuration for Amazon Q Developer.
 

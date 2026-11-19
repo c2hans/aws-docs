@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-p
 ---
 
 # Monitoring
-<a name="nx-push-scale-monitoring"></a>
 
 AWS End User Messaging Push gives you per-message delivery events plus a record of your API activity. This section describes how to set up each one.
 

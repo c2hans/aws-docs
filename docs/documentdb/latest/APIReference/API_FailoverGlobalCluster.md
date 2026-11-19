@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Failo
 ---
 
 # FailoverGlobalCluster
-<a name="API_FailoverGlobalCluster"></a>
 
 Promotes the specified secondary DB cluster to be the primary DB cluster in the global cluster when failing over a global cluster occurs.
 

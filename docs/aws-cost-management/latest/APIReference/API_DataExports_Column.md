@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Column
-<a name="API_DataExports_Column"></a>
 
 Includes basic information for a data column such as its description, name, and type.
 

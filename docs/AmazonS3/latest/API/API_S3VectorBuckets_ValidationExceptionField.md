@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # ValidationExceptionField
-<a name="API_S3VectorBuckets_ValidationExceptionField"></a>
 
 Contains information about a validation exception.
 

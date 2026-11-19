@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CachePolicy
-<a name="API_CachePolicy"></a>
 
 A cache policy.
 

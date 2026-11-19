@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Which fields are encrypted and signed?
-<a name="DDB-encrypted-and-signed"></a>
 
 |  |
 | --- |

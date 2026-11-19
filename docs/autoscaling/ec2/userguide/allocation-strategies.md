@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/allocation-str
 ---
 
 # Allocation strategies for multiple instance types
-<a name="allocation-strategies"></a>
 
 When you use multiple instance types, you manage how Amazon EC2 Auto Scaling fulfills your On-Demand and Spot capacities from the possible instance types. To do this, you specify allocation strategies.
 

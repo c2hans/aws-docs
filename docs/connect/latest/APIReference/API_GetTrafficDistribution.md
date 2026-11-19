@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetTraff
 ---
 
 # GetTrafficDistribution
-<a name="API_GetTrafficDistribution"></a>
 
 Retrieves the current traffic distribution for a given traffic distribution group.
 

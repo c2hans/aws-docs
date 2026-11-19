@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DhcpOptio
 ---
 
 # DhcpOptions
-<a name="API_DhcpOptions"></a>
 
 The set of DHCP options.
 

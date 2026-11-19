@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/partn
 ---
 
 # Agents for opportunity management
-<a name="partner-cosell-agent"></a>
 
 AWS Partner Central uses AI-powered agents to take action on your opportunities, including creating opportunities through conversation, recommending solutions and next steps, generating tailored sales plays, progressing opportunities through stages, and creating fund requests. The agents also surface pipeline intelligence and customer profiles to inform those actions.
 

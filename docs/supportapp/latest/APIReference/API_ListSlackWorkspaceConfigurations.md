@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_ListS
 ---
 
 # ListSlackWorkspaceConfigurations
-<a name="API_ListSlackWorkspaceConfigurations"></a>
 
 Lists the Slack workspace configurations for an AWS account.
 

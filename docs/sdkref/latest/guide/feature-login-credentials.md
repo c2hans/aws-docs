@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/feature-login-creden
 ---
 
 # Login credentials provider
-<a name="feature-login-credentials"></a>
 
 You can [use your existing AWS Management Console sign-in credentials](https://docs.amazon.aws.com/sdkref/latest/guide/access-login.html) to acquire short-term credentials that can be used for programmatic access. After you complete the browser-based authentication flow, AWS generates temporary credentials that work across local development tools like the AWS CLI, AWS Tools for PowerShell and AWS SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/transfer-EIPs-in
 ---
 
 # Transfer an Elastic IP address between AWS accounts
-<a name="transfer-EIPs-intro-ec2"></a>
 
 You can transfer an Elastic IP address from one AWS account to another. This can be helpful in the following situations:
 + **Disaster recovery** – Quickly remap the IP addresses for public-facing internet workloads during emergency events.

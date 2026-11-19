@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/gett
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Receive Push Notifications using SNS (Xamarin Android)
-<a name="getting-started-sns-android"></a>
 
 The tutorial explains how to send push notifications to a Xamarin Android application using Amazon Simple Notification Service (SNS) and the AWS Mobile SDK for .NET and Xamarin.
 

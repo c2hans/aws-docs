@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeBlueGreenDeployments
-<a name="API_DescribeBlueGreenDeployments"></a>
 
 Describes one or more blue/green deployments.
 

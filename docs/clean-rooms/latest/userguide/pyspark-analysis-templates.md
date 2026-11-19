@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/pyspark-ana
 ---
 
 # PySpark analysis templates
-<a name="pyspark-analysis-templates"></a>
 
 PySpark analysis templates require a Python user script and an optional virtual environment to use custom and open-source libraries. These files are called artifacts.
 

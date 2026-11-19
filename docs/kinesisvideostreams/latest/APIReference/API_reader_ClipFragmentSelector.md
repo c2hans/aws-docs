@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ClipFragmentSelector
-<a name="API_reader_ClipFragmentSelector"></a>
 
 Describes the timestamp range and timestamp origin of a range of fragments.
 

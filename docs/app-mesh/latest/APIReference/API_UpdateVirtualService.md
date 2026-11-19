@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_UpdateV
 ---
 
 # UpdateVirtualService
-<a name="API_UpdateVirtualService"></a>
 
 Updates an existing virtual service in a specified service mesh.
 

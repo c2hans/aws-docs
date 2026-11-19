@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Fine-tuning
-<a name="model-parallel-core-features-v2-fine-tuning"></a>
 
 Fine-tuning is a process of continuously training pre-trained models to improve performance for specific use cases.
 

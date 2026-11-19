@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Prerequisites for functions
-<a name="functions-prerequisites"></a>
 
 Before you create your first function, set up the following.
 + **A feed** – you can attach a function to a feed that you create for the purpose, or to a feed that already has other features enabled. For information about creating a feed, see [Step A: Create the feed in Elemental Inference](create-feed.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ValueWithServiceIds.
 ---
 
 # ValueWithServiceIds
-<a name="API_ValueWithServiceIds"></a>
 
 Information about a segment annotation.
 

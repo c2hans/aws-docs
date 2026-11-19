@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-edit.html
 ---
 
 # Edit domain settings
-<a name="domain-edit"></a>
 
 You can edit the settings of a domain from the SageMaker AI console or the AWS CLI. The following considerations apply when updating the settings of a domain.
 + If `DefaultUserSettings` and `DefaultSpaceSettings` are set, they cannot be unset.

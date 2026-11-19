@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Control access to REST APIs using Amazon Cognito user pools as an authorizer
-<a name="apigateway-integrate-with-cognito"></a>
 
 As an alternative to using [IAM roles and policies](permissions.md) or [Lambda authorizers](apigateway-use-lambda-authorizer.md) (formerly known as custom authorizers), you can use an [Amazon Cognito user pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html) to control who can access your API in Amazon API Gateway.
 

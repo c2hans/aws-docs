@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/list-traffic-d
 ---
 
 # List traffic distribution groups
-<a name="list-traffic-distribution-groups"></a>
 
 Use the [ListTrafficDistributionGroups](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTrafficDistributionGroups.html) API to list all traffic distribution groups.
 

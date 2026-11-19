@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/managing-fhir
 ---
 
 # Example notification payloads
-<a name="managing-fhir-subs-ex-notif-payload"></a>
 
  While a Subscription is being created, HealthLake checks for a successful subscription setup by sending a handshake bundle to your configured channel. The following payload is an example of a the handshake bundle.
 

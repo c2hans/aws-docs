@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/word-extension-gu
 ---
 
 # AWS Quick Microsoft Word extension
-<a name="word-extension-guide"></a>
 
 The AWS Quick extension for Word helps you create professional documents faster by working directly in your document to generate, edit, and review content using natural language instructions.
 

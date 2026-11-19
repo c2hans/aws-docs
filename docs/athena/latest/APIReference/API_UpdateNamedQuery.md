@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdateNam
 ---
 
 # UpdateNamedQuery
-<a name="API_UpdateNamedQuery"></a>
 
 Updates a [NamedQuery](API_NamedQuery.md) object. The database or workgroup cannot be updated.
 

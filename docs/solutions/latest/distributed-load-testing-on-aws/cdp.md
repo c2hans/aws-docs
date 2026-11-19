@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Engage an Expert
-<a name="cdp"></a>
 
 ## AWS Countdown Premium Short Term Engagements for Distributed Load Testing on AWS
 <a name="aws-countdown-premium-short-term-engagements-for-distributed-load-testing-on-aws"></a>

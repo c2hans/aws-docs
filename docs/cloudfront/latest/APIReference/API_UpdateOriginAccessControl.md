@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateOriginAccessControl
-<a name="API_UpdateOriginAccessControl"></a>
 
 Updates a CloudFront origin access control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/contextual-metadat
 ---
 
 # Increasing recommendation relevance with contextual metadata
-<a name="contextual-metadata"></a>
 
 To increase recommendation relevance, include contextual metadata for a user, such as their device type or the time of day, when you get item recommendations or get a personalized ranking.
 

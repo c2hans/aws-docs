@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Limit.ht
 ---
 
 # Limit
-<a name="API_Limit"></a>
 
 Specifies how many protections of a given type you can create.
 

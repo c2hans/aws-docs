@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsOptimi
 ---
 
 # EbsOptimizedInfo
-<a name="API_EbsOptimizedInfo"></a>
 
 Describes the optimized EBS performance for supported instance types.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Create Your First Project
-<a name="create-first-project"></a>
 
 Projects organize related assets within the library. Create a project before uploading assets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Kine
 ---
 
 # KinesisVideoStream
-<a name="API_KinesisVideoStream"></a>
 
 Kinesis video stream stream that provides the source streaming video for a Amazon Rekognition Video stream processor. For more information, see [CreateStreamProcessor](API_CreateStreamProcessor.md).
 

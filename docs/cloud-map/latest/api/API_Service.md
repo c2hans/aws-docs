@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_Service.html
 ---
 
 # Service
-<a name="API_Service"></a>
 
 A complex type that contains information about the specified service.
 

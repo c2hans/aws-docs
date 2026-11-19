@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AgentRecommendationItemSummary
-<a name="API_AgentRecommendationItemSummary"></a>
 
 Summary of an agent recommendation item, representing an AWS resource or recommendation affected by the optimization recommendation.
 

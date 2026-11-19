@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-restr
 ---
 
 # Restrict artifact access to model package deployments
-<a name="model-registry-restrict-s3-access"></a>
 
 When you share a model package across accounts, the consuming account's execution role needs `s3:GetObject` on the model artifacts in the producing account. By default, that permission applies whenever the role is used. As a result, any principal that uses the role can read the artifacts from a notebook, from a training job, or through a direct API call—not only from an endpoint deployed from a model package.
 

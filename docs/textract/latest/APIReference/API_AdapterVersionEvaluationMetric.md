@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Adapter
 ---
 
 # AdapterVersionEvaluationMetric
-<a name="API_AdapterVersionEvaluationMetric"></a>
 
 Contains information on the metrics used to evalute the peformance of a given adapter version. Includes data for baseline model performance and individual adapter version perfromance.
 

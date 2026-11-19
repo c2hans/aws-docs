@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/re
 ---
 
 # Retries in the AWS SDK for Kotlin
-<a name="retries"></a>
 
 Calls to AWS services occasionally return unexpected exceptions. Certain types of errors, such as throttling or transient errors, might be successful if the call is retried.
 

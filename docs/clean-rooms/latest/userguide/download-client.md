@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/download-cl
 ---
 
 # Step 2: Download the C3R encryption client
-<a name="download-client"></a>
 
 **To download the C3R encryption client from GitHub**
 

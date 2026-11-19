@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/ex-cu
 ---
 
 # Amazon Rekognition Custom Labels demonstration
-<a name="ex-custom-labels-demo"></a>
 
 The Amazon Rekognition Custom Labels Demonstration shows a user interface that analyzes images from your local computer by using the [DetectCustomLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectCustomLabels) API.
 

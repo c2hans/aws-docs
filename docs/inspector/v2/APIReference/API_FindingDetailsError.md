@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FindingDet
 ---
 
 # FindingDetailsError
-<a name="API_FindingDetailsError"></a>
 
 Details about an error encountered when trying to return vulnerability data for a finding.
 

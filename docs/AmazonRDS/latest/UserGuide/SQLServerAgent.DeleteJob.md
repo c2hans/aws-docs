@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServerAgen
 ---
 
 # Deleting a SQL Server Agent job
-<a name="SQLServerAgent.DeleteJob"></a>
 
 You use the `sp_delete_job` stored procedure to delete SQL Server Agent jobs on Amazon RDS for Microsoft SQL Server.
 

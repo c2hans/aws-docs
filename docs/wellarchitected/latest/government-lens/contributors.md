@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Pia Andrews, Strategic Advisor (Public Sector), Strategic Development, APAC

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SenderIdAndCountry
-<a name="API_SenderIdAndCountry"></a>
 
  The alphanumeric sender ID in a specific country that you want to describe. For more information on sender IDs see [Requesting sender IDs ](https://docs.aws.amazon.com/sms-voice/latest/userguide/sender-id-request.html) in the * AWS End User Messaging SMS User Guide*.
 

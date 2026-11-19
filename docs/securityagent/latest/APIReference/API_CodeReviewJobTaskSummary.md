@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeReviewJobTaskSummary
-<a name="API_CodeReviewJobTaskSummary"></a>
 
 Contains summary information about a code review job task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-best-
 ---
 
 # Best practices for cost attribution
-<a name="cost-mgmt-best-practices"></a>
 
 The following recommendations apply across the cost attribution mechanisms described in this chapter ([IAM principal attribution](cost-mgmt-iam-principal-tracking.md), [Application inference profiles](cost-mgmt-application-inference-profiles.md), [Projects](cost-mgmt-projects.md), [Workspaces](cost-mgmt-workspaces.md), and [Per-request metadata tagging](cost-mgmt-request-metadata.md)). They are written for teams that need accurate, durable cost attribution across many users, applications, and environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # OrderedPhoneNumber
-<a name="API_voice-chime_OrderedPhoneNumber"></a>
 
 A phone number for which an order has been placed.
 

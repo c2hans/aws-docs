@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-dimens
 ---
 
 # Metrics and dimensions for directory buckets
-<a name="metrics-dimensions-directory-buckets"></a>
 
 The metrics and dimensions that S3 Express One Zone send to Amazon CloudWatch are listed in the following tables.
 

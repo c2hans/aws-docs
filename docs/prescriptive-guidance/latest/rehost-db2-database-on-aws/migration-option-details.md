@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-db2-
 ---
 
 # Migration option details
-<a name="migration-option-details"></a>
 
 The following sections provide details for the options that correspond to the diagram in the previous section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Del
 ---
 
 # DeleteWirelessGateway
-<a name="API_DeleteWirelessGateway"></a>
 
 Deletes a wireless gateway.
 

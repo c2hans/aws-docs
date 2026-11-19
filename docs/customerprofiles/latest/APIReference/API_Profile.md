@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # Profile
-<a name="API_connect-customer-profiles_Profile"></a>
 
 The standard profile of a customer.
 

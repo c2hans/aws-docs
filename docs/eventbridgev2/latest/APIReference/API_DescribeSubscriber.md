@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_De
 ---
 
 # DescribeSubscriber
-<a name="API_DescribeSubscriber"></a>
 
 Returns the full configuration and state of a subscriber.
 

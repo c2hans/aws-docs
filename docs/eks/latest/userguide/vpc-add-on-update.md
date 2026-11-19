@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/vpc-add-on-update.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Update the Amazon VPC CNI (Amazon EKS add-on)
-<a name="vpc-add-on-update"></a>
 
 Update the Amazon EKS type of the Amazon VPC CNI plugin for Kubernetes add-on. If you haven’t added the Amazon EKS type of the add-on to your cluster, you can install it by following [Create the Amazon VPC CNI (Amazon EKS add-on)](vpc-add-on-create.md). Or, update the other type of VPC CNI installation by following [Update the Amazon VPC CNI (self-managed add-on)](vpc-add-on-self-managed-update.md).
 

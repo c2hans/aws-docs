@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Turning on the Time Travel logs for a task
-<a name="CHAP_Tasks.CustomizingTasks.TaskSettings.TimeTravel.TaskEnabling"></a>
 
 You can turn on Time Travel for an AWS DMS task using the task settings described previously. Make sure that your replication task is stopped before you turn on Time Travel.
 

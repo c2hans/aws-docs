@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_PutMethod.html
 ---
 
 # PutMethod
-<a name="API_PutMethod"></a>
 
 Add a method to an existing Resource resource.
 

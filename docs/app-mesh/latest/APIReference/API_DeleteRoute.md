@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DeleteR
 ---
 
 # DeleteRoute
-<a name="API_DeleteRoute"></a>
 
 Deletes an existing route.
 

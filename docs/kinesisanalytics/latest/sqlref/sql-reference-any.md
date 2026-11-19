@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # ANY
-<a name="sql-reference-any"></a>
 
 ```
 ANY ( <boolean_expression> )

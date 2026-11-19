@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_S3
 ---
 
 # S3DataAccessAssetSourceEntry
-<a name="API_S3DataAccessAssetSourceEntry"></a>
 
 Source details for an Amazon S3 data access asset.
 

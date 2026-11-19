@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserHierarchyGroupName
-<a name="API_UpdateUserHierarchyGroupName"></a>
 
 Updates the name of the user hierarchy group.
 

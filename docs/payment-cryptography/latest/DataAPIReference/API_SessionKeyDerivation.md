@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyDerivation
-<a name="API_SessionKeyDerivation"></a>
 
 Parameters to derive a session key for Authorization Response Cryptogram (ARQC) verification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Po
 ---
 
 # PolicyTypeSummary
-<a name="API_PolicyTypeSummary"></a>
 
 Contains information about a policy type and its status in the associated root.
 

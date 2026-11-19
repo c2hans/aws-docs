@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/HAVING_
 ---
 
 # HAVING clause
-<a name="HAVING_clause"></a>
 
 The HAVING clause applies a condition to the intermediate grouped result set that a query returns.
 

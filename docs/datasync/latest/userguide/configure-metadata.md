@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/configure-meta
 ---
 
 # Configuring how to handle files, objects, and metadata
-<a name="configure-metadata"></a>
 
 You can configure how AWS DataSync handles your files, objects, and their associated metadata when transferring between locations.
 

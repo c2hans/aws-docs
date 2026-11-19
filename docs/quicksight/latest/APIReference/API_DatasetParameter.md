@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Datas
 ---
 
 # DatasetParameter
-<a name="API_DatasetParameter"></a>
 
 A parameter that is created in a dataset. The parameter can be a string, integer, decimal, or datetime data type.
 

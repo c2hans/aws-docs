@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/compression-support-ice
 ---
 
 # Use Iceberg table compression
-<a name="compression-support-iceberg"></a>
 
 The compression options for Iceberg tables in Athena vary by engine version and file format.
 

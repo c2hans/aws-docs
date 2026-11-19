@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/using-event
 ---
 
 # Using AWS Security Incident Response Events
-<a name="using-events"></a>
 
 You can create EventBridge rules to match these events and trigger automated actions. Here are some example use cases:
 

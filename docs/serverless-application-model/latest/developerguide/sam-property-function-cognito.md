@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Cognito
-<a name="sam-property-function-cognito"></a>
 
 The object describing a `Cognito` event source type.
 

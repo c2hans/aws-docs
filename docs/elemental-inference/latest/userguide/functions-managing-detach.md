@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Stopping and deleting a function
-<a name="functions-managing-detach"></a>
 
 To stop a function without deleting it, either set the function output's `status` to `DISABLED`, or remove the output from the feed with `update-feed`. Both stop the runs and the model charges. Metadata that has already been written stays readable until it ages out.
 

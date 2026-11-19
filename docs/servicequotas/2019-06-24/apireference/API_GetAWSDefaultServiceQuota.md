@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # GetAWSDefaultServiceQuota
-<a name="API_GetAWSDefaultServiceQuota"></a>
 
 Retrieves the default value for the specified quota. The default value does not reflect any quota increases.
 

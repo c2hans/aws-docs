@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_ListHyper
 ---
 
 # ListHypervisors
-<a name="API_ListHypervisors"></a>
 
 Lists your hypervisors.
 

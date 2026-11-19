@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/describe-software-st
 ---
 
 # describe-software-statements
-<a name="describe-software-statements"></a>
 
 Describes the existing software statements.
 

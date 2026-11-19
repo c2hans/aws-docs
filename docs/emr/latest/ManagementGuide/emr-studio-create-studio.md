@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-cr
 ---
 
 # Create an EMR Studio
-<a name="emr-studio-create-studio"></a>
 
 You can create an EMR Studio for your team with the Amazon EMR console or the AWS CLI. Creating a Studio instance is part of setting up Amazon EMR Studio.
 
@@ -159,7 +158,7 @@ For more information about the `create-studio` command, see [*AWS CLI Command Re
 ## Identity provider RelayState parameters and authentication URLs
 <a name="emr-studio-idp-reference-table"></a>
 
-When you use IAM federation, and you want users to log in using your Studio URL and credentials for your identity provider (IdP), you can specify your **Identity provider (IdP) login URL** and **RelayState** parameter name when you [Create an EMR Studio](#emr-studio-create-studio).
+When you use IAM federation, and you want users to log in using your Studio URL and credentials for your identity provider (IdP), you can specify your **Identity provider (IdP) login URL** and **RelayState** parameter name when you [Create an EMR Studio](emr-studio-create-studio.md).
 
 The following table shows the standard authentication URL and RelayState parameter name for some popular identity providers.
 

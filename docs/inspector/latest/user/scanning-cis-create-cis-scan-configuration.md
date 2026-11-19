@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-cis-creat
 ---
 
 # Creating a CIS scan configuration
-<a name="scanning-cis-create-cis-scan-configuration"></a>
 
  This topic describes how to create a CIS scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationReplicationServerPolicy
-<a name="security-iam-awsmanpol-AWSApplicationMigrationReplicationServerPolicy"></a>
 
 This policy is attached to the AWS Transform MGN replication server’s instance role.
 

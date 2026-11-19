@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeletePortal
-<a name="API_DeletePortal"></a>
 
 Deletes a portal from AWS IoT SiteWise Monitor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppComponentRecommendations
-<a name="API_ListAppComponentRecommendations"></a>
 
 Lists the recommendations for an AWS Resilience Hub AppComponent.
 

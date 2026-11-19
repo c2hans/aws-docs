@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentChunkLocation
-<a name="API_runtime_DocumentChunkLocation"></a>
 
 Specifies a chunk-level location within a document, providing positioning information for cited content using logical document segments or chunks.
 

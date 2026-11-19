@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # API Gateway HTTP APIs
-<a name="http-api"></a>
 
 REST APIs and HTTP APIs are both RESTful API products. REST APIs support more features than HTTP APIs, while HTTP APIs are designed with minimal features so that they can be offered at a lower price. For more information, see [Choose between REST APIs and HTTP APIs](http-api-vs-rest.md).
 

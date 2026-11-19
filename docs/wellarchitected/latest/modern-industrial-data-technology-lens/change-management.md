@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Change management
-<a name="change-management"></a>
 
 |  MIDAREL03: How do you design your workload to adapt to changes in demand?  |
 | --- |

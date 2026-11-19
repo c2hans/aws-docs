@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-language
 ---
 
 # Amazon SNS access control architecture overview
-<a name="sns-access-policy-language-architectural-overview"></a>
 
 The following figure and table describe the main components that interact to provide access control for your resources.
 

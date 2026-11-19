@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate virtual generated columns from Oracle to PostgreSQL
-<a name="migrate-virtual-generated-columns-from-oracle-to-postgresql"></a>
 
 *Veeranjaneyulu Grandhi, Rajesh Madiwale, and Ramesh Pathuri, Amazon Web Services*
 

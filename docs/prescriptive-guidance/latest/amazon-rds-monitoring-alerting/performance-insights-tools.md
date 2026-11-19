@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Amazon RDS Performance Insights
-<a name="performance-insights-tools"></a>
 
 [Amazon RDS Performance Insights](https://aws.amazon.com/rds/performance-insights/) is a database performance tuning and monitoring tool that expands Amazon RDS monitoring features. It helps you analyze the performance of your database by visualizing the DB instance load and filtering the load by waits, SQL statements, hosts, or users. The tool combines multiple metrics into a single interactive graph that helps you identify the type of bottleneck your DB instance might have, such as lock waits, high CPU consumption, or I/O latency, and determine which SQL statements are creating the bottleneck. The following screen illustration shows an example visualization.
 

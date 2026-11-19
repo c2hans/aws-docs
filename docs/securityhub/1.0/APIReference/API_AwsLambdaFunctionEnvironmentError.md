@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionEnvironmentError
-<a name="API_AwsLambdaFunctionEnvironmentError"></a>
 
 Error messages for environment variables that could not be applied.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/transferring-a
 ---
 
 # Transferring to or from AWS storage with AWS DataSync
-<a name="transferring-aws-storage"></a>
 
 With AWS DataSync, you can transfer data to or from a number of AWS storage services. For more information, see [Where can I transfer my data with DataSync?](working-with-locations.md)
 

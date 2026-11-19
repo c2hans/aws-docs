@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EBSSavingsEstimationMode
-<a name="API_EBSSavingsEstimationMode"></a>
 
  Describes the savings estimation mode used for calculating savings opportunity for Amazon EBS volumes.
 

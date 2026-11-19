@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # EncryptionConfiguration
-<a name="API_data-automation_EncryptionConfiguration"></a>
 
 Encryption settings for a project.
 

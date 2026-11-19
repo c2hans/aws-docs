@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # Snapshot
-<a name="API_Snapshot"></a>
 
 Represents a copy of an entire Valkey or Redis OSS cluster as of the time when the snapshot was taken.
 

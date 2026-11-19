@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeregisterTargetFromMaintenanceWindow
-<a name="API_DeregisterTargetFromMaintenanceWindow"></a>
 
 Removes a target from a maintenance window.
 

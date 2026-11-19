@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetCollaboration
-<a name="API_GetCollaboration"></a>
 
 Returns metadata about a collaboration.
 

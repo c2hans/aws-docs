@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceSummary
-<a name="API_DataSourceSummary"></a>
 
 Summary information for a Amazon Kendra data source.
 

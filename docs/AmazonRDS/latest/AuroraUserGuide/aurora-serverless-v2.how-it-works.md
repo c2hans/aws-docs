@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # How Aurora serverless works
-<a name="aurora-serverless-v2.how-it-works"></a>
 
 The following overview describes how Aurora serverless works.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentAttachments
-<a name="API_RealTimeContactAnalysisSegmentAttachments"></a>
 
 Segment containing list of attachments.
 

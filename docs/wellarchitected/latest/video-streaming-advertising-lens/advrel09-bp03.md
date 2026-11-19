@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL09-BP03 Design graceful auction degradation when demand partners become unavailable
-<a name="advrel09-bp03"></a>
 
  When multiple adapters become unavailable, the auction executes with the remaining healthy demand partners. Dynamic floor price adjustments maintain publisher yield during reduced competition, and cached fallback creatives fill zero-bid auctions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Cross-account instance scheduling using account IDs or AWS Organization ID
-<a name="cross-account-instance-scheduling-using-account-ids-or-aws-organization-id"></a>
 
 This solution includes a template ([instance-scheduler-on-aws-remote.template](https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws-remote.template)) that creates the [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) roles and other necessary resources to enable the solution to start scheduling in the secondary accounts. You can review and modify permissions in the remote template before you launch the stack.
 

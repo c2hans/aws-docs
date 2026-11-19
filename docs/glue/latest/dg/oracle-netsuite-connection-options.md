@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/oracle-netsuite-connectio
 ---
 
 # Oracle NetSuite connection options
-<a name="oracle-netsuite-connection-options"></a>
 
 The following are connection options for Oracle NetSuite:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of the Oracle NetSuite entity. Example: deposit.

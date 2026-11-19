@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-stepf
 ---
 
 # AWS Step Functions and AWS X-Ray
-<a name="xray-services-stepfunctions"></a>
 
 AWS X-Ray integrates with AWS Step Functions to trace and analyze requests for Step Functions. You can visualize the components of your state machine, identify performance bottlenecks, and troubleshoot requests that resulted in an error. For more information, see [AWS X-Ray and Step Functions ](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-xray-tracing.html) in the AWS Step Functions Developer Guide.
 

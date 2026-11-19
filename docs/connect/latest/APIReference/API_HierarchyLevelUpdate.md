@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyLevelUpdate
-<a name="API_HierarchyLevelUpdate"></a>
 
 Contains information about the hierarchy level to update.
 

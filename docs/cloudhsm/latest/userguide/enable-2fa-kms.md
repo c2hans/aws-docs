@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/enable-2fa-kms
 ---
 
 # 2FA key pair requirements for AWS CloudHSM using AWS CloudHSM Management Utility
-<a name="enable-2fa-kms"></a>
 
 To enable two-factor authentication (2FA) for an AWS CloudHSM hardware security module (HSM) user, use a key that meets the following requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/maison.htm
 ---
 
 # .maison
-<a name="maison"></a>
 
 Used by the real estate sector.
 

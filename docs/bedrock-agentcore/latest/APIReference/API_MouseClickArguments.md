@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MouseClickArguments
-<a name="API_MouseClickArguments"></a>
 
 Arguments for a mouse click action.
 

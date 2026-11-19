@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_BatchR
 ---
 
 # BatchRebootClusterNodesError
-<a name="API_BatchRebootClusterNodesError"></a>
 
 Represents an error encountered when rebooting a node from a SageMaker HyperPod cluster.
 

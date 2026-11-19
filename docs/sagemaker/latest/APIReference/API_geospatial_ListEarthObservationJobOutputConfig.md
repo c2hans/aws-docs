@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ListEarthObservationJobOutputConfig
-<a name="API_geospatial_ListEarthObservationJobOutputConfig"></a>
 
 An object containing information about the output file.
 

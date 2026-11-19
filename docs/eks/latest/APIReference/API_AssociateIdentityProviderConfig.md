@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AssociateIde
 ---
 
 # AssociateIdentityProviderConfig
-<a name="API_AssociateIdentityProviderConfig"></a>
 
 Associates an identity provider configuration to a cluster.
 

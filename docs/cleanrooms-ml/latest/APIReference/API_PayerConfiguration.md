@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Pa
 ---
 
 # PayerConfiguration
-<a name="API_PayerConfiguration"></a>
 
 Specifies which member accounts are responsible for paying for compute and synthetic data generation costs in a Clean Rooms ML collaboration.
 

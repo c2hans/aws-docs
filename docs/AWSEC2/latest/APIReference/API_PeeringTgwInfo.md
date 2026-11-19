@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PeeringTg
 ---
 
 # PeeringTgwInfo
-<a name="API_PeeringTgwInfo"></a>
 
 Information about the transit gateway in the peering attachment.
 

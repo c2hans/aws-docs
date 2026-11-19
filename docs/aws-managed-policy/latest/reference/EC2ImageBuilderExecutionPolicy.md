@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2I
 ---
 
 # EC2ImageBuilderExecutionPolicy
-<a name="EC2ImageBuilderExecutionPolicy"></a>
 
 **Description**: Grants permissions that allow EC2 Image Builder to call AWS services on your behalf
 

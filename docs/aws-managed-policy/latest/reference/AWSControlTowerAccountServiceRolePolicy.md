@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSControlTowerAccountServiceRolePolicy
-<a name="AWSControlTowerAccountServiceRolePolicy"></a>
 
 **Description**: Allows AWS Control Tower to call AWS services that provide automated account configuration and centralized governance on your behalf.
 

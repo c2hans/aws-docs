@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 ---
 
 # Running commands on managed nodes
-<a name="running-commands"></a>
 
 This section includes information about how to send commands from the AWS Systems Manager console to managed nodes. This section also includes information about how to cancel a command.
 

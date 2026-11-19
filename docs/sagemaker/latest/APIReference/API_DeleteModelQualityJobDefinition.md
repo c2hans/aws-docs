@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelQualityJobDefinition
-<a name="API_DeleteModelQualityJobDefinition"></a>
 
 Deletes the secified model quality monitoring job definition.
 

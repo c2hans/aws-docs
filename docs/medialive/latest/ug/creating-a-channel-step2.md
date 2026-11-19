@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 ---
 
 # Attach inputs to the channel
-<a name="creating-a-channel-step2"></a>
 
 Before you started to create the MediaLive channel, you should have [created all of inputs](medialive-inputs.md) for all the content sources for the channel.
 

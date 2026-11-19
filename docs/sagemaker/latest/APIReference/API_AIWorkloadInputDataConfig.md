@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIWork
 ---
 
 # AIWorkloadInputDataConfig
-<a name="API_AIWorkloadInputDataConfig"></a>
 
 A channel of input data for an AI workload configuration. Each channel has a name and a data source.
 

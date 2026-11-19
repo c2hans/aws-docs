@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PrivateEndpoint
-<a name="API_PrivateEndpoint"></a>
 
 The private endpoint configuration for a gateway target. Defines how the gateway connects to private resources in your VPC.
 

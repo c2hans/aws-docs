@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-launch-wi
 ---
 
 # Launch an Amazon EMR cluster quickly
-<a name="emr-launch-with-quick-options"></a>
 
 Follow these steps to launch an Amazon EMR cluster in just a few minutes.
 

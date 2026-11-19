@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Replatforming as a Windows container
-<a name="replatform"></a>
 
 Replatforming your .NET application as a Windows container helps you achieve your business objectives with less effort than refactoring. It lets you takes advantage of container technologies without changing the core architecture of your .NET application. Windows applications can be converted to containers without much effort.
 

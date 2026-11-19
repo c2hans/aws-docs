@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-AnyDB/rhel-sap-ase-ha-set
 ---
 
 # SAP and cluster setup
-<a name="rhel-sap-ase-ha-setup"></a>
 
 This section covers the following topics.
 

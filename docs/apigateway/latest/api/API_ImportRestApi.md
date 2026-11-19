@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ImportRestApi.
 ---
 
 # ImportRestApi
-<a name="API_ImportRestApi"></a>
 
 A feature of the API Gateway control service for creating a new API from an external API definition file.
 

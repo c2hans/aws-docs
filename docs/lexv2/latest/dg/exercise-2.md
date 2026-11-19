@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/exercise-2.html
 ---
 
 # Exercise 2: Review the conversation flow
-<a name="exercise-2"></a>
 
  In this exercise you review the JSON structures that are sent between your client application and the Amazon Lex V2 bot that you created in [Exercise 1: Create a chatbot from a template](exercise-1.md). The conversation uses the [RecognizeText](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeText.html) operation to generate the JSON structures. The [RecognizeUtterance](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_RecognizeUtterance.html) returns the same information as HTTP headers in the response.
 

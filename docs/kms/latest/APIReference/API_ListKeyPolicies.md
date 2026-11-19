@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolic
 ---
 
 # ListKeyPolicies
-<a name="API_ListKeyPolicies"></a>
 
 Gets the names of the key policies that are attached to a KMS key. This operation is designed to get policy names that you can use in a [GetKeyPolicy](API_GetKeyPolicy.md) operation. The valid policy names are `default` and `AWS_RAM`.
 

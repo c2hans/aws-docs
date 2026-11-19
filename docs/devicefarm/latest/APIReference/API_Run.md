@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Run.h
 ---
 
 # Run
-<a name="API_Run"></a>
 
 Represents a test run on a set of devices with a given app package, test parameters, and so on.
 

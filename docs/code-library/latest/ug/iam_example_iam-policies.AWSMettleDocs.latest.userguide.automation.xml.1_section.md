@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam-p
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Policy to enable Automation for your account
-<a name="iam_example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.1_section"></a>
 
 The following code example shows how to This permission-based policy enablesAutomation for your account
 

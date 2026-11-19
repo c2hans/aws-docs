@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tuning-aws-
 ---
 
 # Parallelize tasks
-<a name="parallelize-tasks"></a>
 
 To optimize performance, it's important to parallelize tasks for data loads and transformations. As we discussed in [Key topics in Apache Spark](key-topics-apache-spark.md), the number of resilient distributed dataset (RDD) partitions is important, because it determines the degree of parallelism. Each task that Spark creates corresponds to an RDD partition on a 1:1 basis. To achieve the best performance, you need to understand how the number of RDD partitions is determined and how that number is optimized.
 

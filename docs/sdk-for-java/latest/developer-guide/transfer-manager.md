@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/tran
 ---
 
 # Transfer files and directories with the Amazon S3 Transfer Manager
-<a name="transfer-manager"></a>
 
 The Amazon S3 Transfer Manager is an open source, high level file transfer utility for the AWS SDK for Java 2.x. Use it to transfer files and directories to and from Amazon Simple Storage Service (Amazon S3).
 

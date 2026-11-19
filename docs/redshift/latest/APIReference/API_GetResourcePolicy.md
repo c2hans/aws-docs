@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetReso
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Get the resource policy for a specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/wazuh
 ---
 
 # CloudWatch pipelines configuration for Wazuh Platform
-<a name="wazuh-platform-pipeline-setup"></a>
 
 Collects audit logs from Wazuh Platform using Basic authentication.
 

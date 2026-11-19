@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_DeleteGat
 ---
 
 # DeleteGateway
-<a name="API_DeleteGateway"></a>
 
 Deletes a backup gateway.
 

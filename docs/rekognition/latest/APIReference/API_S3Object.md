@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_S3Ob
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
 Provides the S3 bucket name and object name.
 

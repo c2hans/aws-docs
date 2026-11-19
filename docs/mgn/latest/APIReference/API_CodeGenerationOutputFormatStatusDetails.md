@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_CodeGenerati
 ---
 
 # CodeGenerationOutputFormatStatusDetails
-<a name="API_CodeGenerationOutputFormatStatusDetails"></a>
 
 Status details for a specific code generation output format.
 

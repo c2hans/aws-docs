@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Data flow
-<a name="data-flow"></a>
 
 The data flow focus area includes the following three areas:
 + Data ingestion

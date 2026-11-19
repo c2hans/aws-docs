@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RuleGroup
 ---
 
 # RuleGroupTypePair
-<a name="API_RuleGroupTypePair"></a>
 
 Describes the type of a stateful rule group.
 

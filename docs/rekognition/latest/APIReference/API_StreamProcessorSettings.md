@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorSettings
-<a name="API_StreamProcessorSettings"></a>
 
 Input parameters used in a streaming video analyzed by a Amazon Rekognition stream processor. You can use `FaceSearch` to recognize faces in a streaming video, or you can use `ConnectedHome` to detect labels.
 

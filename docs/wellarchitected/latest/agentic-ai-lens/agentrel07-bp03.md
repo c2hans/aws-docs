@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL07-BP03 Implement distributed tracing to track system dependencies and facilitate recovery
-<a name="agentrel07-bp03"></a>
 
  Correlating logs across services by hand is slow, and during an incident slow is worse than expensive. Distributed tracing across all components with agent-specific annotations gives operators the full request path in one view and turns broad restarts into targeted recovery actions.
 

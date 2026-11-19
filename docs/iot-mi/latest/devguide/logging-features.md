@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-features.
 ---
 
 # Logging features
-<a name="logging-features"></a>
 
 Use these methods to implement logging features that managed integrations provides.
 

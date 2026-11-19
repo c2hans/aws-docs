@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Troubleshooting managed node availability
-<a name="fleet-manager-troubleshooting-managed-nodes"></a>
 
 For several AWS Systems Manager tools like Run Command, Distributor, and Session Manager, you can choose to manually select the managed nodes on which you want to run an operation. In cases like these, after you specify that you want to choose nodes manually, the system displays a list of managed nodes where you can run the operation.
 

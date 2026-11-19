@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_HttpActionHe
 ---
 
 # HttpActionHeader
-<a name="API_HttpActionHeader"></a>
 
 The HTTP action header.
 

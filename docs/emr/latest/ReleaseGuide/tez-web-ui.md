@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/tez-web-ui.html
 ---
 
 # Tez web UI
-<a name="tez-web-ui"></a>
 
 Tez has its own web user interface. To view the web UI, see the following URL.
 

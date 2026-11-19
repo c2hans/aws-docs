@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/ad.html
 ---
 
 # Active Directory authentication in Client VPN
-<a name="ad"></a>
 
 Client VPN provides Active Directory support by integrating with Directory Service. With Active Directory authentication, clients are authenticated against existing Active Directory groups. Using Directory Service, Client VPN can connect to existing Active Directories provisioned in AWS or in your on-premises network. This allows you to use your existing client authentication infrastructure. If you are using an on-premises Active Directory and you do not have an existing AWS Managed Microsoft AD, you must configure an Active Directory Connector (AD Connector). You can use one Active Directory server to authenticate the users. For more information about Active Directory integration, see the [AWS Directory Service Administration Guide](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/).
 

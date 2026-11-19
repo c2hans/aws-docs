@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ExportTas
 ---
 
 # ExportTaskS3LocationRequest
-<a name="API_ExportTaskS3LocationRequest"></a>
 
 Describes the destination for an export image task.
 

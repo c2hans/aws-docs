@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/CopyingObjects
 ---
 
 # Copying an object using multipart upload
-<a name="CopyingObjectsMPUapi"></a>
 
 Multipart upload allows you to copy objects as a set of parts. The examples in this section show you how to copy objects greater than 5 GB using the multipart upload API. For information about multipart uploads, see [Uploading and copying objects using multipart upload in Amazon S3](mpuoverview.md).
 

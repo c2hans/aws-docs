@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/PI.html
 ---
 
 # PI function
-<a name="PI"></a>
 
 The PI function returns the value of pi to 14 decimal places.
 

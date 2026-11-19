@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatelessRuleGroupReference
-<a name="API_StatelessRuleGroupReference"></a>
 
 Identifier for a single stateless rule group, used in a firewall policy to refer to the rule group.
 

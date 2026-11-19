@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListDom
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
 Lists Amazon DataZone domains.
 

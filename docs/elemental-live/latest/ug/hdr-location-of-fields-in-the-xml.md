@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hdr-location-of
 ---
 
 # Location of HDR fields in the XML
-<a name="hdr-location-of-fields-in-the-xml"></a>
 
 <a name="input-video-selector"></a>
 

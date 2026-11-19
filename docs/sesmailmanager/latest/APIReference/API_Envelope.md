@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_E
 ---
 
 # Envelope
-<a name="API_Envelope"></a>
 
 The SMTP envelope information of the email.
 

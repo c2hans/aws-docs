@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 ---
 
 # Enabling the Deadline Cloud assistant
-<a name="assistant-enable"></a>
 
 Only Deadline Cloud administrators can enable or disable the assistant. The assistant is disabled by default.
 

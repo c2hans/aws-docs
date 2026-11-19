@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetCapaci
 ---
 
 # GetCapacityManagerMonitoredTagKeys
-<a name="API_GetCapacityManagerMonitoredTagKeys"></a>
 
  Retrieves the tag keys that are currently being monitored by EC2 Capacity Manager. Monitored tag keys are included as dimensions in capacity metric data, enabling you to group and filter metrics by tag values.
 

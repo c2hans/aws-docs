@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteDirectConnectGatewayAssociation
-<a name="API_DeleteDirectConnectGatewayAssociation"></a>
 
 Deletes the association between the specified Direct Connect gateway and virtual private gateway.
 

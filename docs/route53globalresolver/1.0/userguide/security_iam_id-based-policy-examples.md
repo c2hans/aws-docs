@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/secu
 ---
 
 # Identity-based policy examples for Amazon Route 53 Global Resolver
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Route 53 Global Resolver resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

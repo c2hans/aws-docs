@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_ListQueues.h
 ---
 
 # ListQueues
-<a name="API_ListQueues"></a>
 
 Returns a list of all queues associated with a cluster.
 

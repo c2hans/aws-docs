@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-av
 ---
 
 # Select a Region for your Amazon EC2 resources
-<a name="using-regions-availability-zones-setup"></a>
 
 Amazon EC2 resources are specific to the AWS Region or zone in which they reside. When you create an Amazon EC2 resource, you select the Region for the resource.
 

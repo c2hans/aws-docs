@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Flywh
 ---
 
 # FlywheelFilter
-<a name="API_FlywheelFilter"></a>
 
 Filter the flywheels based on creation time or flywheel status.
 

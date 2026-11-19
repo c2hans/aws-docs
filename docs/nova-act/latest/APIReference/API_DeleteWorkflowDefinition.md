@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_DeleteW
 ---
 
 # DeleteWorkflowDefinition
-<a name="API_DeleteWorkflowDefinition"></a>
 
 Deletes a workflow definition and all associated resources. This operation cannot be undone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_SizeCons
 ---
 
 # SizeConstraintSetUpdate
-<a name="API_waf_SizeConstraintSetUpdate"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -16,7 +15,7 @@ Specifies the part of a web request that you want to inspect the size of and ind
 <a name="API_waf_SizeConstraintSetUpdate_Contents"></a>
 
  ** Action **   <a name="WAF-Type-waf_SizeConstraintSetUpdate-Action"></a>
-Specify `INSERT` to add a [SizeConstraintSetUpdate](#API_waf_SizeConstraintSetUpdate) to a [SizeConstraintSet](API_waf_SizeConstraintSet.md). Use `DELETE` to remove a `SizeConstraintSetUpdate` from a `SizeConstraintSet`.
+Specify `INSERT` to add a [SizeConstraintSetUpdate](API_waf_SizeConstraintSetUpdate.md) to a [SizeConstraintSet](API_waf_SizeConstraintSet.md). Use `DELETE` to remove a `SizeConstraintSetUpdate` from a `SizeConstraintSet`.
 Type: String
 Valid Values: `INSERT | DELETE`
 Required: Yes

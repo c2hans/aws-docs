@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Databas
 ---
 
 # DatabaseOutput
-<a name="API_DatabaseOutput"></a>
 
 Represents a JDBC database output object which defines the output destination for a DataBrew recipe job to write into.
 

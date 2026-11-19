@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeSe
 ---
 
 # DescribeServiceEnvironments
-<a name="API_DescribeServiceEnvironments"></a>
 
 Describes one or more of your service environments.
 

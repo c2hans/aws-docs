@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageStatusDetails
-<a name="API_ModelPackageStatusDetails"></a>
 
 Specifies the validation and image scan statuses of the model package.
 

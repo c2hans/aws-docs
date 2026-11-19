@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Appendix A: How AWS services use presigned URLs
-<a name="appendix-a"></a>
 
 This appendix provides information about AWS services and features that use presigned URLs. This information serves two purposes:
 + To provide security engineers who implement controls with information about the possible impacts of those controls.

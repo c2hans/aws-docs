@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Operational metrics
-<a name="operational-metrics"></a>
 
 AWS Professional Services can work with your internal teams to establish a delivery governance mechanism for tracking your organization's progress against the operational metrics defined in the following table. The metrics are based on real-world values and can help define your MLOps engagement. The values in the following table are guidelines only. The target values will depend on your organization's implementation.
 

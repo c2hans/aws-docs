@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # ApiGatewayProxySummary
-<a name="API_ApiGatewayProxySummary"></a>
 
 A wrapper object holding the Amazon API Gateway proxy summary.
 

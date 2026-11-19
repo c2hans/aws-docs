@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/getting-start
 ---
 
 # Migrating to Device Farm desktop browser testing from local Selenium WebDrivers
-<a name="getting-started-local"></a>
 
 If you're testing browsers locally, you can use the desktop browser testing feature to test on Firefox, Edge, and Chrome without setting up those browsers.
 

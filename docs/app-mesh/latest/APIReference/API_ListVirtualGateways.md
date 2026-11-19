@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVir
 ---
 
 # ListVirtualGateways
-<a name="API_ListVirtualGateways"></a>
 
 Returns a list of existing virtual gateways in a service mesh.
 

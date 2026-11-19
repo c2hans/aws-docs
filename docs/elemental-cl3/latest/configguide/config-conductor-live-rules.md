@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Rules and limits
-<a name="config-conductor-live-rules"></a>
 
 The following table provides a summary of the configuration rules and constraints that apply to an AWS Elemental Conductor Live cluster.
 

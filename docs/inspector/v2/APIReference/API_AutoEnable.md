@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AutoEnable
 ---
 
 # AutoEnable
-<a name="API_AutoEnable"></a>
 
 Represents which scan types are automatically enabled for new members of your Amazon Inspector organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # DB instance class types
-<a name="Concepts.DBInstanceClass.Types"></a>
 
 Amazon Aurora supports DB instance classes for the following use cases:
 + [Aurora serverless](#Concepts.DBInstanceClass.Types.serverless-v2)

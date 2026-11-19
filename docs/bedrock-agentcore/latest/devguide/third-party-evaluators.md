@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/third-
 ---
 
 # Third-party evaluators
-<a name="third-party-evaluators"></a>
 
 AgentCore Evaluations offers evaluators from the DeepEval and AutoEval open source libraries. If you already use these libraries, you can run the same metrics inside AgentCore Evaluations. The service handles hosting and evaluation code for you. With the managed option, the service also selects the model and runs inference, the same way it does for built-in evaluators.
 

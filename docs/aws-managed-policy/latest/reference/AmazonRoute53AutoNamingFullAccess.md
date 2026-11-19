@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53AutoNamingFullAccess
-<a name="AmazonRoute53AutoNamingFullAccess"></a>
 
 **Description**: Provides full access to all Route 53 Auto Naming actions.
 

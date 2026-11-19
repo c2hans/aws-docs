@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Uploa
 ---
 
 # UploadedDocumentMetadata
-<a name="API_UploadedDocumentMetadata"></a>
 
 Metadata for an uploaded document associated with a custom instruction.
 

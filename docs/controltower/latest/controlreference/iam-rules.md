@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/iam
 ---
 
 # AWS Identity and Access Management (IAM) controls
-<a name="iam-rules"></a>
 
 **Topics**
 + [[CT.IAM.PR.1] Require that an AWS Identity and Access Management (IAM) inline policy does not have a statement that includes "\*" in the Action and Resource elements](#ct-iam-pr-1-description)

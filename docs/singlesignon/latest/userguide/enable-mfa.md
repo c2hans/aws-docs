@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-mfa
 ---
 
 # MFA for Identity Center directory users
-<a name="enable-mfa"></a>
 
 **Important**
 MFA in IAM Identity Center is currently not supported for [external identity providers](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-idp.html).

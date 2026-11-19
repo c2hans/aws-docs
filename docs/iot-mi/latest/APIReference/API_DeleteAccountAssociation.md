@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteAcc
 ---
 
 # DeleteAccountAssociation
-<a name="API_DeleteAccountAssociation"></a>
 
 Remove a third-party account association for an end user.
 

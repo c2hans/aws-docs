@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ListMediaInsightsPipelineConfigurations
-<a name="API_media-pipelines-chime_ListMediaInsightsPipelineConfigurations"></a>
 
 Lists the available media insights pipeline configurations.
 

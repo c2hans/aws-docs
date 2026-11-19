@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Contextual ad targeting with Elemental Inference
-<a name="monetization-functions-elemental-inference-integration"></a>
 
 Elemental Inference analyzes video content and produces Interactive Advertising Bureau (IAB) Content Taxonomy classifications and Global Alliance for Responsible Media (GARM) brand safety signals for each shot. By integrating MediaTailor with Elemental Inference, you can enrich ad requests with contextual metadata. Your ad decision server can then target ads based on what is happening in the content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Structured outputs for Anthropic Claude models
-<a name="claude-messages-structured-outputs"></a>
 
 Claude models on Amazon Bedrock return schema-compliant JSON on both the `bedrock-runtime` and `bedrock-mantle` endpoints. Responses conform to a JSON schema that you define, which removes the need for custom parsing, retry logic, or post-processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dere
 ---
 
 # DeregisterService
-<a name="API_DeregisterService"></a>
 
 Deregister a service
 

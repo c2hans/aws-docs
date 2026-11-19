@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/use-cfn-public-registry.htm
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Using resources from the CloudFormation Public Registry
-<a name="use-cfn-public-registry"></a>
 
  The CloudFormation Public Registry is a collection of CloudFormation extensions from both AWS and third parties that are available for use by all AWS customers. You can also publish your own extension for others to use. Extensions are of two types: resources and modules. You can use public resource extensions in your AWS CDK app using the [`CfnResource`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.CfnResource.html) construct.
 

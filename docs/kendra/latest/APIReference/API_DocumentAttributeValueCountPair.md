@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentA
 ---
 
 # DocumentAttributeValueCountPair
-<a name="API_DocumentAttributeValueCountPair"></a>
 
 Provides the count of documents that match a particular document attribute or field when doing a faceted search.
 

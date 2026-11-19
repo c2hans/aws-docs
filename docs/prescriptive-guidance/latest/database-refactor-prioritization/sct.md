@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Step 3. Run AWS SCT reports
-<a name="sct"></a>
 
 In this step, you use the output from [step 2](pl-sql.md) (formatted as a CSV file) as input for running the [AWS SCT multiserver assessor](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_AssessmentReport.Multiserver.html). You must add login credentials (user ID and password), database names, and database descriptions to the CSV file before you provide it as input to the AWS SCT multiserver assessor. Follow the AWS SCT format provided in the [example](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_AssessmentReport.Multiserver.html#CHAP_AssessmentReport.Multiserver.Input) in the AWS documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # LoadWeightsForSamplingConfig
-<a name="API_training_session_runtime_LoadWeightsForSamplingConfig"></a>
 
 The configuration for loading model weights for inference and sampling without restoring optimizer state.
 

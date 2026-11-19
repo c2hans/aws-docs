@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # MCP App (Preview)
-<a name="securityhub-v2-mcp-app"></a>
 
 Security Hub provides an agentic experience with a Model Context Protocol (MCP) App. With this app, your AI agent can investigate exposure findings. It can also diagnose an existing Azure connector or assess Azure connector prerequisites before creation.
 

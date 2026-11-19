@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.EC2.PV.6] Disallow the use of deprecated Amazon EC2 RequestSpotFleet and RequestSpotInstances API actions
-<a name="ct-ec2-pv-6"></a>
 
 This control disallows usage of EC2 `RequestSpotFleet` and `RequestSpotInstances` APIs, because they are legacy APIs with no planned investment.
 

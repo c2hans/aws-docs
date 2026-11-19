@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-p
 ---
 
 # Event pattern syntax
-<a name="eb-create-pattern"></a>
 
 To create an event pattern, you specify the fields of an event that you want the event pattern to match. Only specify the fields that you use for matching.
 

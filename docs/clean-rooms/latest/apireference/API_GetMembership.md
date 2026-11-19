@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetM
 ---
 
 # GetMembership
-<a name="API_GetMembership"></a>
 
 Retrieves a specified membership for an identifier.
 

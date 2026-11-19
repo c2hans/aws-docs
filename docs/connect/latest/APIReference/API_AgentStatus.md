@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentSta
 ---
 
 # AgentStatus
-<a name="API_AgentStatus"></a>
 
 Contains information about an agent status.
 

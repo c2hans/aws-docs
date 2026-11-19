@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableCWLoggingForSessionManager`
-<a name="automation-aws-enable-cw-log-sm"></a>
 
  **Description**
 

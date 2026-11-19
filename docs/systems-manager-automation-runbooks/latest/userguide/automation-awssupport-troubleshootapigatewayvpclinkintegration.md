@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootAPIGatewayVpcLinkIntegration`
-<a name="automation-awssupport-troubleshootapigatewayvpclinkintegration"></a>
 
 ## Description
 <a name="automation-awssupport-troubleshootapigatewayvpclinkintegration-description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_UpdateCap
 ---
 
 # UpdateCapacityManagerMonitoredTagKeys
-<a name="API_UpdateCapacityManagerMonitoredTagKeys"></a>
 
  Activates or deactivates tag keys for monitoring by EC2 Capacity Manager. Activated tag keys are included as dimensions in capacity metric data, enabling you to group and filter metrics by tag values.
 

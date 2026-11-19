@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Server
 ---
 
 # ServerlessJobConfig
-<a name="API_ServerlessJobConfig"></a>
 
  The configuration for the serverless training job.
 

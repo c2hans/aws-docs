@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Next steps
-<a name="whats-next"></a>
 
 This guide focused on optimizing a SQL Server configuration for EnterpriseOne. Topics such as database disaster recovery are beyond the scope of this document but should be addressed as part of the configuration; see the [Resources](resources.md) section for additional reading.
 

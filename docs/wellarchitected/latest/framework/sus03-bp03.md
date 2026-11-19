@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus03-b
 ---
 
 # SUS03-BP03 Use the most resource-efficient computational approach
-<a name="sus03-bp03"></a>
 
  Choosing the right computational approach, from simple code to agentic AI, can impact the resource efficiency of your workload. While agentic AI can provide powerful capabilities for complex problems, it often requires more computational resources than traditional algorithmic approaches, which may be more efficient for problems where rules can be explicitly defined. Decide when to use machine learning or traditional algorithms based on the nature of the problem, data availability, and resource implications. By selecting the most appropriate approach for each use case, you minimize unnecessary resource consumption while achieving your desired outcomes.
 

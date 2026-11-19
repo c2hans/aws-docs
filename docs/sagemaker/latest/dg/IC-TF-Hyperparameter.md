@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-TF-Hyperparameter
 ---
 
 # Image Classification - TensorFlow Hyperparameters
-<a name="IC-TF-Hyperparameter"></a>
 
 Hyperparameters are parameters that are set before a machine learning model begins learning. The following hyperparameters are supported by the Amazon SageMaker AI built-in Image Classification - TensorFlow algorithm. See [Tune an Image Classification - TensorFlow model](IC-TF-tuning.md) for information on hyperparameter tuning.
 

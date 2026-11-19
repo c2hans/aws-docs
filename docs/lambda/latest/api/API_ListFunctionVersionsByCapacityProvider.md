@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListFunctionVersio
 ---
 
 # ListFunctionVersionsByCapacityProvider
-<a name="API_ListFunctionVersionsByCapacityProvider"></a>
 
 Returns a list of function versions that are configured to use a specific capacity provider.
 

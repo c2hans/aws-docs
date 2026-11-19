@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisR
 ---
 
 # AnalysisRouteTableRoute
-<a name="API_AnalysisRouteTableRoute"></a>
 
 Describes a route table route.
 

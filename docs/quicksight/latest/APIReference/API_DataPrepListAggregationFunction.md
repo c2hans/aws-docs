@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPrepListAggregationFunction
-<a name="API_DataPrepListAggregationFunction"></a>
 
 An aggregation function that concatenates values from multiple rows into a single string with a specified separator.
 

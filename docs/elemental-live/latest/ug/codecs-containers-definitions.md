@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containe
 ---
 
 # Definition of containers and codecs
-<a name="codecs-containers-definitions"></a>
 
 | Codec or Container | Direction | Statement |
 | --- | --- | --- |

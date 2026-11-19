@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Option
 ---
 
 # Option
-<a name="API_Option"></a>
 
 The details of an option.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListSlots.
 ---
 
 # ListSlots
-<a name="API_ListSlots"></a>
 
 Gets a list of slots that match the specified criteria.
 

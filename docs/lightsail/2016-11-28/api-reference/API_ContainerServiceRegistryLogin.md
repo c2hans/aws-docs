@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServiceRegistryLogin
-<a name="API_ContainerServiceRegistryLogin"></a>
 
 Describes the sign-in credentials for the container image registry of an Amazon Lightsail account.
 

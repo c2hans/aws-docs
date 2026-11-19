@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-stored-
 ---
 
 # Rotating the query logs
-<a name="mysql-stored-proc-logging"></a>
 
 The following stored procedures rotate MySQL logs to backup tables. For more information, see [MySQL database log files](USER_LogAccess.Concepts.MySQL.md).
 

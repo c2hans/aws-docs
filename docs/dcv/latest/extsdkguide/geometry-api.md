@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/geometry-api.html
 ---
 
 # Geometry API
-<a name="geometry-api"></a>
 
 ## SetCursorPoint
 <a name="setcursorpoint"></a>

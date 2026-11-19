@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Parameter
-<a name="API_Parameter"></a>
 
 The `Parameter` data type.
 

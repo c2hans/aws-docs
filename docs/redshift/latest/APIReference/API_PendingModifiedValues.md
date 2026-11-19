@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Pending
 ---
 
 # PendingModifiedValues
-<a name="API_PendingModifiedValues"></a>
 
 Describes cluster attributes that are in a pending state. A change to one or more the attributes was requested and is in progress or will be applied.
 

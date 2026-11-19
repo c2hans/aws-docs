@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteVoiceConnectorTerminationCredentials
-<a name="API_voice-chime_DeleteVoiceConnectorTerminationCredentials"></a>
 
 Deletes the specified SIP credentials used by your equipment to authenticate during call termination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/adding-servers.html
 ---
 
 # Adding source servers to AWS DRS
-<a name="adding-servers"></a>
 
 Add source servers to AWS Elastic Disaster Recovery by installing the AWS Replication Agent (the Agent) on them. The Agent can be installed on both Linux and Windows servers.
 

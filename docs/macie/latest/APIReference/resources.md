@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/resources.html
 ---
 
 # Resources
-<a name="resources"></a>
 
 The Amazon Macie REST API includes the following resources.
 

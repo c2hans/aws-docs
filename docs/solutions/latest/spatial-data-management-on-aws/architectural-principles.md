@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Architectural Principles
-<a name="architectural-principles"></a>
 
 The solution follows AWS Well-Architected Framework principles:
 

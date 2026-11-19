@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # OpenSearchIntegrationDetails
-<a name="API_OpenSearchIntegrationDetails"></a>
 
 This structure contains complete information about one CloudWatch Logs integration. This structure is returned by a [GetIntegration](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_GetIntegration.html) operation.
 

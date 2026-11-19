@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Delete an Amazon SNS event destination in AWS End User Messaging
-<a name="nx-features-configuration-sets-sns-delete"></a>
 
 Use the AWS End User Messaging console or AWS CLI to delete an Amazon SNS topic.
 

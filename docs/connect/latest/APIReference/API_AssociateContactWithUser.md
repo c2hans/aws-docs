@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateContactWithUser
-<a name="API_AssociateContactWithUser"></a>
 
 Associates a queued contact with an agent.
 

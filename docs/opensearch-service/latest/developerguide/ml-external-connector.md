@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Amazon OpenSearch Service ML connectors for third-party platforms
-<a name="ml-external-connector"></a>
 
 In this tutorial, we cover how to create a connector from OpenSearch Service to Cohere. For more information about connectors, see [Supported connectors](https://opensearch.org/docs/latest/ml-commons-plugin/remote-models/connectors/#supported-connectors).
 

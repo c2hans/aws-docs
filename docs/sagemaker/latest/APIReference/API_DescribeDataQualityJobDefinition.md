@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeDataQualityJobDefinition
-<a name="API_DescribeDataQualityJobDefinition"></a>
 
 Gets the details of a data quality monitoring job definition.
 

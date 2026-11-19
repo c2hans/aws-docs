@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetDirectConnectGatewayAttachment
-<a name="API_GetDirectConnectGatewayAttachment"></a>
 
 Returns information about a specific AWS Direct Connect gateway attachment.
 

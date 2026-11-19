@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationRule
-<a name="API_ReplicationRule"></a>
 
 An array of objects representing the replication destinations and repository filters for a replication configuration.
 

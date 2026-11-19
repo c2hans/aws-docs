@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VpcInterface
 ---
 
 # VpcInterfaceAttachment
-<a name="API_VpcInterfaceAttachment"></a>
 
  The settings for attaching a VPC interface to an resource.
 

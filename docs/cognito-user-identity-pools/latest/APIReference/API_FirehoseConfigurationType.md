@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # FirehoseConfigurationType
-<a name="API_FirehoseConfigurationType"></a>
 
 Configuration for the Amazon Data Firehose stream destination of user activity log export with threat protection.
 

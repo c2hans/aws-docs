@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Tax Settings
-<a name="API_Operations_Tax_Settings"></a>
 
 The following actions are supported by Tax Settings:
 +  [BatchDeleteTaxRegistration](API_taxSettings_BatchDeleteTaxRegistration.md)

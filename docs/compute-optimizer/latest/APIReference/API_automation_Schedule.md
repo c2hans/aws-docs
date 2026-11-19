@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Schedule
-<a name="API_automation_Schedule"></a>
 
 Configuration for scheduling when automation rules should execute, including timing and execution windows.
 

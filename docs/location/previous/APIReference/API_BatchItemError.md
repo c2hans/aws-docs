@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchItemError
-<a name="API_BatchItemError"></a>
 
 Contains the batch request error details associated with the request.
 

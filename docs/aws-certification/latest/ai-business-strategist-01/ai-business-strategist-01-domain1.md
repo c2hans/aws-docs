@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/ai-business-str
 ---
 
 # Content Domain 1: AI Fundamentals and Literacy
-<a name="ai-business-strategist-01-domain1"></a>
 
 **Topics**
 + [Task 1.1: Describe core AI concepts and define terminology.](#ai-business-strategist-01-domain1-task1)

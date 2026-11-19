@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/ove
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## Journey Overview
 <a name="journey-overview"></a>

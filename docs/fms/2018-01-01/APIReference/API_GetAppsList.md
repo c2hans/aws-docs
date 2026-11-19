@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetAppsL
 ---
 
 # GetAppsList
-<a name="API_GetAppsList"></a>
 
 Returns information about the specified AWS Firewall Manager applications list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/order-
 ---
 
 # Create an order for an Outposts rack
-<a name="order-outpost-capacity"></a>
 
 To begin using AWS Outposts, you must create a site, create an Outpost, get a quote, and place your order.
 

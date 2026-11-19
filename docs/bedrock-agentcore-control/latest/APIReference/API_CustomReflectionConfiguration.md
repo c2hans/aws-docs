@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomReflectionConfiguration
-<a name="API_CustomReflectionConfiguration"></a>
 
 Contains configurations for a custom reflection strategy.
 

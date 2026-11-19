@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Contact Lens
-<a name="API_Types_Amazon_Connect_Contact_Lens"></a>
 
 The following data types are supported by Amazon Connect Contact Lens:
 +  [Categories](API_connect-contact-lens_Categories.md)

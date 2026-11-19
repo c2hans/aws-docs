@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ServiceOperationEntity
-<a name="API_ServiceOperationEntity"></a>
 
 A structure that contains identifying information for a service operation entity.
 

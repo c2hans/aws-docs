@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-pr
 ---
 
 # Set up your instance for Resolutions
-<a name="resolutions-prerequisites"></a>
 
  Resolutions runs on Connect Customer features that have their own setup guides: AI agents, Customer Profiles, Cases, email, and attachments. Set up each feature by following its guide, which stays current as the feature changes. This page lists the features that Resolutions needs, and covers only the configuration that Resolutions depends on and those guides don't include. It's for Connect Customer administrators.
 

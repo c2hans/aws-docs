@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AudioStandardOutputConfiguration
-<a name="API_data-automation_AudioStandardOutputConfiguration"></a>
 
 Output settings for processing audio.
 

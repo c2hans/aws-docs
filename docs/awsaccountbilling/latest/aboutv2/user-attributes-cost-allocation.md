@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/user-at
 ---
 
 # Using user attributes for cost allocation
-<a name="user-attributes-cost-allocation"></a>
 
 ## Overview
 <a name="user-attributes-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeBundle
 ---
 
 # DescribeBundleAssociations
-<a name="API_DescribeBundleAssociations"></a>
 
 Describes the associations between the applications and the specified bundle.
 

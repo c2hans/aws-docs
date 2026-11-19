@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DeleteServerlessCache
-<a name="API_DeleteServerlessCache"></a>
 
 Deletes a specified existing serverless cache.
 

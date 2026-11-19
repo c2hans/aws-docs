@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ConversionT
 ---
 
 # ConversionTargetFormatDetails
-<a name="API_ConversionTargetFormatDetails"></a>
 
 Contains a structure describing the X12 details for the conversion target.
 

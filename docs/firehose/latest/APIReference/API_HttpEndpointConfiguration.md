@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_HttpEnd
 ---
 
 # HttpEndpointConfiguration
-<a name="API_HttpEndpointConfiguration"></a>
 
 Describes the configuration of the HTTP endpoint to which Kinesis Firehose delivers data.
 

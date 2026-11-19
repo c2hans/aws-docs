@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetPolicyStore
-<a name="API_GetPolicyStore"></a>
 
 Retrieves details about a policy store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Consider serverless .NET
-<a name="net-serverless"></a>
 
 ## Overview
 <a name="net-serverless-overview"></a>

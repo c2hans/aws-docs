@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MaintenanceC
 ---
 
 # MaintenanceConfiguration
-<a name="API_MaintenanceConfiguration"></a>
 
 The configuration settings for maintenance operations, including preferred maintenance windows and schedules.
 

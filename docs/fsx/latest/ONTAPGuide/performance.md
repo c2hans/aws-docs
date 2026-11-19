@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/performance.html
 ---
 
 # Amazon FSx for NetApp ONTAP performance
-<a name="performance"></a>
 
 Following is an overview of Amazon FSx for NetApp ONTAP file system performance, with a discussion of the available performance and throughput options and useful performance tips.
 

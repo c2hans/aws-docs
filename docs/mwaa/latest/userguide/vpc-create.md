@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/vpc-create.html
 ---
 
 # Create the VPC network
-<a name="vpc-create"></a>
 
 Amazon Managed Workflows for Apache Airflow requires an Amazon VPC and specific networking components to support an environment. This guide describes the different options to create the Amazon VPC network for an Amazon Managed Workflows for Apache Airflow environment.
 
@@ -28,7 +27,7 @@ The AWS Command Line Interface (AWS CLI) is an open source tool that you can use
 
 ## Before you begin
 <a name="vpc-create-how-networking"></a>
-+ The [VPC network](#vpc-create) you specify for your environment can't be changed after the environment is created.
++ The [VPC network](vpc-create.md) you specify for your environment can't be changed after the environment is created.
 + You can use private or public routing for your Amazon VPC and Apache Airflow webserver. To access a list of options, refer to [Example use cases for an Amazon VPC and Apache Airflow access mode](networking-about.md#networking-about-network-usecase).
 
 ## Options to create the Amazon VPC network

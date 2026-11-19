@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Create a photo asset management application that lets users manage photos using labels
-<a name="s3_example_cross_PAM_section"></a>
 
 The following code examples show how to create a serverless application that lets users manage photos using labels.
 

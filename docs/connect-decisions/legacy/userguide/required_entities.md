@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/requi
 ---
 
 # Demand Planning
-<a name="required_entities"></a>
 
 The following table lists the data entities and columns used by Demand Planning.
 

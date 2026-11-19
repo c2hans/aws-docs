@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/migrating-hana-tools
 ---
 
 # Migration Tools and Methodologies
-<a name="migrating-hana-tools"></a>
 
 This section provides an introduction to the tools and methodologies available to you for your SAP system migration.
 

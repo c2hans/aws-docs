@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/agent-repor
 ---
 
 # Granting agents access to seller reporting data
-<a name="agent-reporting-data-access"></a>
 
 If you work with an agent who manages your seller reporting in AWS Marketplace (AWS Marketplace), you can grant them programmatic access to your reporting data so they can retrieve it without needing your credentials. To do this, you use an AWS Identity and Access Management (IAM) policy that grants the `aws-marketplace:GetSellerReportingData` action.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Removing the single-tenant term
-<a name="removing-the-single-tenant-term"></a>
 
  As part of using the term *multi-tenant*, it’s only natural for people to want to use the term *single-tenant* to describe SaaS environments. However, given the backdrop outlined previously, the term *single-tenant* creates confusion.
 

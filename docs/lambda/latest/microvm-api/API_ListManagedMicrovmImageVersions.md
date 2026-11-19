@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ListManage
 ---
 
 # ListManagedMicrovmImageVersions
-<a name="API_ListManagedMicrovmImageVersions"></a>
 
 Lists versions of a managed MicroVM image. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

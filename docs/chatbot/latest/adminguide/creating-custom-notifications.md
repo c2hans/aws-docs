@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/creating-custo
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Testing a custom notification using Amazon Q Developer in chat applications
-<a name="creating-custom-notifications"></a>
 
  You can create custom notification content and post the message to the Amazon SNS topic used in your Amazon Q Developer in chat applications configuration. Amazon Q Developer in chat applications monitors the Amazon SNS topic and sends the custom notification to your configured channel.
 

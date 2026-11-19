@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-forge-subscri
 ---
 
 # Subscribe to Amazon Nova Forge
-<a name="nova-forge-subscribing"></a>
 
 To access Amazon Nova Forge features, complete the following steps:
 

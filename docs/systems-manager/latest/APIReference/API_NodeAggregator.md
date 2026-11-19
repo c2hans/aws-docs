@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NodeAggregator
-<a name="API_NodeAggregator"></a>
 
 One or more aggregators for viewing counts of nodes using different dimensions.
 
@@ -30,7 +29,7 @@ Required: Yes
 
  ** Aggregators **   <a name="systemsmanager-Type-NodeAggregator-Aggregators"></a>
 Information about aggregators used to refine a node summary.
-Type: Array of [NodeAggregator](#API_NodeAggregator) objects
+Type: Array of [NodeAggregator](API_NodeAggregator.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 2 items.
 Required: No
 

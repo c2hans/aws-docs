@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluationContent
-<a name="API_EvaluationContent"></a>
 
  A content block for ground truth data in evaluation reference inputs. Supports text content for expected responses and assertions.
 

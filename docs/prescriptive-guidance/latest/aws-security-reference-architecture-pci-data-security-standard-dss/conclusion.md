@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 This guidance demonstrates how the AWS Security Reference Architecture (AWS SRA) provides a strong, extensible foundation for PCI DSS v4.0.1 compliance in a multi-account AWS environment. By mapping AWS SRA patterns to PCI DSS requirements across nine control domains — Organization Architecture and Scoping, Network Security, System Hardening, Encryption and Key Management, Secure SDLC, Change Management, Access Control, Logging and Monitoring, and Vulnerability Management — the guide shows that PCI DSS compliance on AWS is an extension of sound cloud security architecture.
 

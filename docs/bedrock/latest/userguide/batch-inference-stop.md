@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # Stop a batch inference job
-<a name="batch-inference-stop"></a>
 
 To learn how to stop an ongoing batch inference job, choose the tab for your preferred method, and then follow the steps:
 

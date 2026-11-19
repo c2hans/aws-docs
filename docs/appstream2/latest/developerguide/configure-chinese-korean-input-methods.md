@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Configuring Chinese and Korean input methods on the image
-<a name="configure-chinese-korean-input-methods"></a>
 
 Although end users can select from 9 supported input methods during their streaming sessions through **Preferences** > **Input method**, certain input methods require you to pre-install the corresponding language components on the image before they can function correctly. These input methods include Chinese (Taiwan), Chinese (Pinyin), Chinese (Traditional, DaYi), and Korean.
 

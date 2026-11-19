@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # Client:ClientRead
-<a name="apg-waits.clientread"></a>
 
 The `Client:ClientRead` event occurs when Aurora PostgreSQL is waiting to receive data from the client.
 

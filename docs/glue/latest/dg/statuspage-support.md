@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/statuspage-support.html
 ---
 
 # AWS Glue support for Statuspage
-<a name="statuspage-support"></a>
 
 AWS Glue supports Statuspage as follows:
 

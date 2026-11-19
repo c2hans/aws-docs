@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # AI & machine learning
-<a name="machinelearning-pattern-list"></a>
 
 **Topics**
 + [Automate Lambda test event generation using Amazon Bedrock AgentCore](automate-lambda-test-event-generation-using-bedrock-agentcore.md)

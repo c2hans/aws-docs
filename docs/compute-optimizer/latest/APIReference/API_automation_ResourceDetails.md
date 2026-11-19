@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ResourceDetails
-<a name="API_automation_ResourceDetails"></a>
 
 Detailed configuration information for a specific AWS resource, with type-specific details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discover-tool
 ---
 
 # Security considerations
-<a name="discover-tool-security"></a>
 
 ## Securing the discovery tool VM
 <a name="securing-collector-vm"></a>

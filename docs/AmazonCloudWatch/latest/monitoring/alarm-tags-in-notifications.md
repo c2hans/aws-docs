@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Alarm tags in action payloads
-<a name="alarm-tags-in-notifications"></a>
 
 With CloudWatch, you can include an alarm's tags in the payloads it sends when the alarm changes state. You can then route, filter, or add context to notifications by using tags such as team, environment, or cost center.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # Learn how to use CalculateRoutes
-<a name="calculate-routes-how-to"></a>
 
 This section provides step-by-step instructions for using `CalculateRoutes`. This topic details guidance on finding routes with specific configurations, such as incorporating turn-by-turn navigation, setting travel modes, and adding waypoints.
 

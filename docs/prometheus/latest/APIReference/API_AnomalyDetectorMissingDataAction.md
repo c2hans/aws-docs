@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Anoma
 ---
 
 # AnomalyDetectorMissingDataAction
-<a name="API_AnomalyDetectorMissingDataAction"></a>
 
 Specifies the action to take when data is missing during anomaly detection evaluation.
 

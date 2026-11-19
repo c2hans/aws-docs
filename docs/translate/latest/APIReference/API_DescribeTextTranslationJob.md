@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Descri
 ---
 
 # DescribeTextTranslationJob
-<a name="API_DescribeTextTranslationJob"></a>
 
 Gets the properties associated with an asynchronous batch translation job including name, ID, status, source and target languages, input/output S3 buckets, and so on.
 

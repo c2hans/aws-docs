@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ModifyInstan
 ---
 
 # ModifyInstanceFleet
-<a name="API_ModifyInstanceFleet"></a>
 
 Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.
 

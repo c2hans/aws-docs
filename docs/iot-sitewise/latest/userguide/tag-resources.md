@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/tag-resour
 ---
 
 # Tag your AWS IoT SiteWise resources
-<a name="tag-resources"></a>
 
 Tagging your AWS IoT SiteWise resources provides a powerful way to categorize, manage, and retrieve organizational assets efficiently. By assigning tags, which consist of key-value pairs, you can attach descriptive metadata to your resources. The metadata from tags can be used to streamline operations. For example, in a wind farm scenario, tags allow you to label turbines with specific attributes like location, capacity, and operational status, enabling quick identification and management within AWS IoT SiteWise.
 

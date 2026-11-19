@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/access-management-
 ---
 
 # Manage access to VPC Lattice services
-<a name="access-management-overview"></a>
 
 VPC Lattice is secure by default because you must be explicit about which services and resource configurations to provide access to and with which VPCs. You can access services through a VPC association or a VPC endpoint of type service network. For multi-account scenarios, you can use [AWS Resource Access Manager](sharing.md) to share services, resource configurations, and service networks across account boundaries.
 

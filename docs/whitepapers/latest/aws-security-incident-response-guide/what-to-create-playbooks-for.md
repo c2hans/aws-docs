@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # What to create playbooks for
-<a name="what-to-create-playbooks-for"></a>
 
  Playbooks should be created for incident scenarios such as:
 +  **Expected incidents** – Playbooks should be created for incidents you anticipate. This includes threats like denial of service (DoS), ransomware, and credential compromise.

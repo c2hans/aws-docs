@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.1] Establish development environments for local development
-<a name="dl.ld.1-establish-development-environments-for-local-development"></a>
 
  **Category:** FOUNDATIONAL
 

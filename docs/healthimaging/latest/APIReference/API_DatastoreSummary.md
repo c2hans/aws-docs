@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Da
 ---
 
 # DatastoreSummary
-<a name="API_DatastoreSummary"></a>
 
 List of summaries of data stores.
 

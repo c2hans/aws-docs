@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # synch/cond/sql/MDL\_context::COND\_wait\_status
-<a name="ams-waits.cond-wait-status"></a>
 
 The `synch/cond/sql/MDL_context::COND_wait_status` event occurs when there are threads waiting on a table metadata lock.
 

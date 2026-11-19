@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceRecommendationsJob
-<a name="API_InferenceRecommendationsJob"></a>
 
 A structure that contains a list of recommendation jobs.
 

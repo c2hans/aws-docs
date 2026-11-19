@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Development troubleshooting
-<a name="troubleshooting-development"></a>
 
 This section contains information about diagnosing and fixing development issues with your Managed Service for Apache Flink application.
 

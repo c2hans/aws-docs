@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListAuto
 ---
 
 # ListAutomatedReasoningPolicyBuildWorkflows
-<a name="API_ListAutomatedReasoningPolicyBuildWorkflows"></a>
 
 Lists all build workflows for an Automated Reasoning policy, showing the history of policy creation and modification attempts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvis
 ---
 
 # CreateProvisioningTemplate
-<a name="API_CreateProvisioningTemplate"></a>
 
 Creates a provisioning template.
 

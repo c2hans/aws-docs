@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Sco
 ---
 
 # ScopeDetails
-<a name="API_ScopeDetails"></a>
 
 A structure that describes an IAM Identity Center access scope and its authorized targets.
 

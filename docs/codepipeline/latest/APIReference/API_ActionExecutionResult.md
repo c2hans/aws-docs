@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecutionResult
-<a name="API_ActionExecutionResult"></a>
 
 Execution result information, such as the external execution ID.
 

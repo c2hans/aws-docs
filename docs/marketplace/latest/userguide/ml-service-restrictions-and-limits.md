@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-service-
 ---
 
 # Service restrictions and quotas for machine learning products in AWS Marketplace
-<a name="ml-service-restrictions-and-limits"></a>
 
 This section describes restrictions and quotas on your machine learning (ML) products in AWS Marketplace.
 

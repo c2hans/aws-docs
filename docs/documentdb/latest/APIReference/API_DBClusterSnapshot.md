@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBClusterSnapshot
-<a name="API_DBClusterSnapshot"></a>
 
 Detailed information about a cluster snapshot.
 

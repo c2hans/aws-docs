@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SORT.h
 ---
 
 # SORT
-<a name="recipe-actions.SORT"></a>
 
 Sorts the data in one or more columns of a dataset in ascending, descending, or custom order.
 

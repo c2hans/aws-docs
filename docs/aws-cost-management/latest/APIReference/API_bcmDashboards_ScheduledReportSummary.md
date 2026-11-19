@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ScheduledReportSummary
-<a name="API_bcmDashboards_ScheduledReportSummary"></a>
 
 Contains summary information for a scheduled report.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Proposer
-<a name="API_marketplace-agreements_Proposer"></a>
 
 Details of the party proposing the agreement terms,. This is commonly the seller for `PurchaseAgreement`.
 

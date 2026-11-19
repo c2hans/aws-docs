@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DLM.1] Define recovery objectives to maintain business continuity
-<a name="ag.dlm.1-define-recovery-objectives-to-maintain-business-continuity"></a>
 
  **Category:** FOUNDATIONAL
 

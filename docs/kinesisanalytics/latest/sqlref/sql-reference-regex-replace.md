@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # REGEX\_REPLACE
-<a name="sql-reference-regex-replace"></a>
 
 REGEX\_REPLACE replaces a substring with an alternative substring. It returns the value of the following Java expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Timest
 ---
 
 # TimestampForCollection
-<a name="API_TimestampForCollection"></a>
 
 Details on when data collection began for a source package.
 

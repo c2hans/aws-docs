@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PIIDetection.html
 ---
 
 # PIIDetection
-<a name="API_PIIDetection"></a>
 
 Specifies a transform that identifies, removes or masks PII data.
 

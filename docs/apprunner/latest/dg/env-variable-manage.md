@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/dg/env-variable-manage.
 AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. This guide applies only to existing customers. If you're not an existing customer, AWS recommends Amazon ECS Express Mode. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Managing your environment variables
-<a name="env-variable-manage"></a>
 
 Manage the environment variables for your App Runner service by using one of the following methods:
 + [App Runner console](#env-variable-manage.console)

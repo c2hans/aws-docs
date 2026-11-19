@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Updating AMIs
-<a name="automation-tutorial-update-ami"></a>
 
 The following tutorials explain how to update Amazon Machine Image (AMIs) to include the latest patches.
 

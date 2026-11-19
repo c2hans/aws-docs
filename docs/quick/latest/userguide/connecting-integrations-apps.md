@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/connecting-integr
 ---
 
 # Connecting to integrations in apps in Quick
-<a name="connecting-integrations-apps"></a>
 
 You can connect your apps in Quick apps to external services and data sources through the integration framework in AWS Quick. The same integration model used elsewhere in Quick applies in apps in Quick. The agent registers integrations on your app, and you and your users authorize them. For more information about integrations, see [Work with integrations in AWS Quick](working-with-integrations.md).
 

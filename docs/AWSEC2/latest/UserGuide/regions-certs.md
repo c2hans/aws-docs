@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/regions-certs.ht
 ---
 
 # AWS public certificates for instance identity document signatures
-<a name="regions-certs"></a>
 
 The following AWS public certificates can be used to verify the contents of an instance's instance identity document as described in [Verify instance identity document](verify-iid.md).
 

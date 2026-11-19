@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS05-BP02 Understand monitoring requirements in your Outposts
-<a name="drhcops05-bp02"></a>
 
  Focus on similar observability and alerting as in an Availability Zone. In addition, add alerts for added responsibility such as security, networking, and capacity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Cat
 ---
 
 # Categories
-<a name="API_connect-contact-lens_Categories"></a>
 
 Provides the category rules that are used to automatically categorize contacts based on uttered keywords and phrases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Tr
 ---
 
 # TrustedCaCertificate
-<a name="API_TrustedCaCertificate"></a>
 
 A trust anchor used when validating a target endpoint's TLS certificate.
 

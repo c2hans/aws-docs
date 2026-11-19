@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_LogA
 ---
 
 # LogAnomalyShowcase
-<a name="API_LogAnomalyShowcase"></a>
 
  A cluster of similar anomalous log events found within a log group.
 

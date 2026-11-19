@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Manage the scope of your access points for directory buckets
-<a name="access-points-directory-buckets-manage-scope"></a>
 
 This section explains how to view and modify the scope of your access points for directory buckets using the AWS Command Line Interface, REST API, or AWS SDKs. You can use the access point scope to restrict access to specific prefixes or API operations.
 

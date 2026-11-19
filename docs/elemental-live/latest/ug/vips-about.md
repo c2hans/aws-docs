@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/vips-about.html
 ---
 
 # About virtual input switching
-<a name="vips-about"></a>
 
 ## Supported version of the specification
 <a name="vips-about-spec"></a>

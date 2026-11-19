@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/hybrid-nodes.html
 ---
 
 # EKS Hybrid Nodes
-<a name="hybrid-nodes"></a>
 
 ## Introduction
 <a name="_introduction"></a>

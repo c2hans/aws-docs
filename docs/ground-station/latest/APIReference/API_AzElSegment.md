@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AzElSegment
-<a name="API_AzElSegment"></a>
 
 A time segment containing azimuth elevation pointing data.
 

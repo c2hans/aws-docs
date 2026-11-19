@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/sysops-administ
 ---
 
 # Content Domain 1: Monitoring, Logging, Analysis, Remediation, and Performance Optimization
-<a name="sysops-administrator-associate-03-domain1"></a>
 
 **Topics**
 + [Task 1.1: Implement metrics, alarms, and filters by using AWS monitoring and logging services.](#sysops-administrator-associate-03-domain1-task1)

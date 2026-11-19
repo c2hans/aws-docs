@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/crfleet-concepts
 ---
 
 # Capacity Reservation Fleet concepts and planning
-<a name="crfleet-concepts"></a>
 
 The following information describes how to plan a Capacity Reservation Fleet and describes Capacity Reservation Fleet concepts including total target capacity, allocation strategy, instance type weight, and instance type priority.
 

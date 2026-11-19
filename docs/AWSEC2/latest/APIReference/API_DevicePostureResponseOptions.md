@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DevicePos
 ---
 
 # DevicePostureResponseOptions
-<a name="API_DevicePostureResponseOptions"></a>
 
 Information about the device posture options for a Client VPN endpoint.
 

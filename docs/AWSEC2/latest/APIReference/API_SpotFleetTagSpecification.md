@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotFleet
 ---
 
 # SpotFleetTagSpecification
-<a name="API_SpotFleetTagSpecification"></a>
 
 The tags for a Spot Fleet resource.
 

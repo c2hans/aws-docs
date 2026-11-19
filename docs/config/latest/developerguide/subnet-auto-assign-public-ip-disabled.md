@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/subnet-auto
 ---
 
 # subnet-auto-assign-public-ip-disabled
-<a name="subnet-auto-assign-public-ip-disabled"></a>
 
 Checks if Amazon Virtual Private Cloud (Amazon VPC) subnets are configured to automatically assign public IP addresses to instances launched within them. This rule is COMPLIANT if subnets do not auto-assign public IPv4 or IPv6 addresses. This rule is NON\_COMPLIANT if subnets auto-assign public IPv4 or IPv6 addresses.
 

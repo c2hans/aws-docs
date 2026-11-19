@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/use-pidf-lo.html
 ---
 
 # Using PIDF-LO in emergency calls
-<a name="use-pidf-lo"></a>
 
  Amazon Chime SDK Voice Connectors support enhanced 911 (E911) calling. When you place emergency calls through a Voice Connector, you can send caller location information by including a GEOPRIV Presence Information Data Format Location Object (PIDF-LO) in your SIP requests. The object must include the `Geolocation-Routing` header, set to `Yes`. We strongly recommend [validating the address](validate-emergency-addresses.md). If you don't use addresses or routing numbers, address validation may be carried out at the start of a 911 call to ensure it is routed to the appropriate Public Safety Answering Point (PSAP), meaning help may take longer to arrive.
 

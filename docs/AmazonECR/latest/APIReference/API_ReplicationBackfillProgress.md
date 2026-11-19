@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Replic
 ---
 
 # ReplicationBackfillProgress
-<a name="API_ReplicationBackfillProgress"></a>
 
 An object representing the progress of a replication backfill, including the total, completed, and failed replication counts.
 

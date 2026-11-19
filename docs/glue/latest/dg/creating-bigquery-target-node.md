@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-bigquery-target-
 ---
 
 # Creating a BigQuery target node
-<a name="creating-bigquery-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-bigquery-target-node-prerequisites"></a>

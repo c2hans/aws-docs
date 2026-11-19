@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIREL08: How do you monitor your resources to understand your workloads health?
-<a name="fsirel08"></a>
 
  High availability for applications requires the ability to detect failures and recover quickly. Workloads must be configured to emit the relevant telemetry to detect failures, so that operational processes can capture and react to these events.
 

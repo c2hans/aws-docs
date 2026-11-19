@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves the resource policy for a specified resource.
 

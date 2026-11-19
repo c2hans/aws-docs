@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceN
 ---
 
 # InstanceNetworkInterfaceSpecification
-<a name="API_InstanceNetworkInterfaceSpecification"></a>
 
 Describes a network interface.
 

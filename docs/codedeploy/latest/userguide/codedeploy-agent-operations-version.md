@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Determine the version of the CodeDeploy agent
-<a name="codedeploy-agent-operations-version"></a>
 
 You can determine the version of the CodeDeploy agent running on your instance in two ways.
 

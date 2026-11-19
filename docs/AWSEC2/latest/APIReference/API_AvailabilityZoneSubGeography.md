@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Availabil
 ---
 
 # AvailabilityZoneSubGeography
-<a name="API_AvailabilityZoneSubGeography"></a>
 
 Describes the sub-geography information for an Availability Zone or Local Zone.
 

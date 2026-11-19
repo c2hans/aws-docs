@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-component
 ---
 
 # Deregistering a MediaConnect Gateway instance
-<a name="gateway-components-instances-delete"></a>
 
 You can deregister an instance you no longer want to use within MediaConnect Gateway. By deregistering the instance, it will no longer support bridges and will not be a part of your gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Running backfill
-<a name="running-backfill"></a>
 
 After metadata has been migrated, use Reindex-from-Snapshot (RFS) to backfill documents from the source cluster snapshot into the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection.
 

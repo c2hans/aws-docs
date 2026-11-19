@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Using the AWS Management Console
-<a name="using-the-aws-management-console"></a>
 
 ## AWS CloudFormation
 <a name="aws-cloudformation"></a>

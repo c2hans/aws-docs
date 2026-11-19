@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_DeleteBot.
 ---
 
 # DeleteBot
-<a name="API_DeleteBot"></a>
 
 Deletes a bot from a specified Wickr network. This operation permanently removes the bot account and its associated data from the network.
 

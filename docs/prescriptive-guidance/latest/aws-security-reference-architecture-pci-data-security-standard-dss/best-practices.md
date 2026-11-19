@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # AWS Organization Architecture – OU and Account structure
-<a name="best-practices"></a>
 
 The AWS Security Reference Architecture (AWS SRA) organizes all AWS accounts within a single AWS Organization, structured across purpose-built Organizational Units (OUs). This multi-account design is foundational to PCI DSS compliance because AWS accounts act as hard security, access, and billing boundaries — by default, no access is permitted between accounts. This native isolation is a powerful primitive for PCI DSS scoping and segmentation that goes beyond traditional network-layer controls.
 

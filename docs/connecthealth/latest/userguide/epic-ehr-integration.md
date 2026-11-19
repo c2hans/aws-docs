@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/epic-ehr-
 ---
 
 # Epic EHR integration
-<a name="epic-ehr-integration"></a>
 
 Amazon Connect Health integrates directly with Epic EHR through the Amazon Connect Health application for Epic, which is privately listed. The integration uses OAuth2 authentication with FHIR R4 APIs, Epic public APIs, and Epic private APIs to support the agentic capabilities for patient access.
 

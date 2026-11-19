@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StopK
 ---
 
 # StopKeyPhrasesDetectionJob
-<a name="API_StopKeyPhrasesDetectionJob"></a>
 
 Stops a key phrases detection job in progress.
 

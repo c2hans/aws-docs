@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchSpaces
-<a name="API_SearchSpaces"></a>
 
 Searches for Amazon QuickSight spaces that match the specified filters.
 

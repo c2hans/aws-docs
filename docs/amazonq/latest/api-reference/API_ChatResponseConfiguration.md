@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ChatRes
 ---
 
 # ChatResponseConfiguration
-<a name="API_ChatResponseConfiguration"></a>
 
 Configuration details that define how Amazon Q Business generates and formats responses to user queries in chat interactions. This configuration allows administrators to customize response characteristics to meet specific organizational needs and communication standards.
 

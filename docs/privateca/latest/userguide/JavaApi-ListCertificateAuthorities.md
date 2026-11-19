@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-ListC
 ---
 
 # ListCertificateAuthorities
-<a name="JavaApi-ListCertificateAuthorities"></a>
 
 The following Java sample shows how to use the [ListCertificateAuthorities](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListCertificateAuthorities.html) operation.
 

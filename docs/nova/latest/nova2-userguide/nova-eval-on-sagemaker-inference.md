@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-eval-on
 ---
 
 # Evaluate with Inspect AI SDK
-<a name="nova-eval-on-sagemaker-inference"></a>
 
 This guide explains how to evaluate your customized Amazon Nova models deployed on SageMaker inference endpoints using [Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai), an open-source evaluation framework.
 

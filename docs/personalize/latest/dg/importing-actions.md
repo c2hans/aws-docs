@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/importing-actions.
 ---
 
 # Importing actions individually
-<a name="importing-actions"></a>
 
 After you complete [Creating a schema and a dataset](data-prep-creating-datasets.md) to create an [Actions dataset](actions-datasets.md), you can individually import one or more new actions into the dataset. When you individually import actions, you keep your Actions dataset current with small batch imports as your catalog grows. You can import up to 10 actions at a time. If you have a large number of new actions, we recommend that you first import data in bulk and then import action data individually as necessary. See [Importing bulk data into Amazon Personalize with a dataset import job](bulk-data-import-step.md).
 

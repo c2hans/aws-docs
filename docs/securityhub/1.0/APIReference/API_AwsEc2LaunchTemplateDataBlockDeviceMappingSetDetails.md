@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetails
-<a name="API_AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetails"></a>
 
  Information about a block device mapping for an Amazon Elastic Compute Cloud (Amazon EC2) launch template.
 

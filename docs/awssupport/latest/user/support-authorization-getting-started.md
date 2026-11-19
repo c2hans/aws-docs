@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # Getting started with AWS Support authorization
-<a name="support-authorization-getting-started"></a>
 
 This tutorial walks you through setting up AWS Support authorization and creating your first support permit. You complete the following steps:
 

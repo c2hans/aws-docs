@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/sharing-l
 ---
 
 # Sharing Lambda Layers
-<a name="sharing-lambda-layers"></a>
 
 If you've implemented functionality in a Lambda layer, you might want to share your layer without hosting a global instance of it. Sharing layers in this manner enables others to deploy an instance of your layer to their own account. This prevents client applications from depending on a global instance of your layer. The AWS Serverless Application Repository enables you to share Lambda layers in this manner easily.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Supported Regions for CloudWatch Omni
-<a name="omni-supported-regions"></a>
 
 This topic lists the AWS Regions where you can use CloudWatch Omni. For more information about AWS Regions, see [Specify which AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 

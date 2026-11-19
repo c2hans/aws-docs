@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # MultiPolygonGeometryInput
-<a name="API_geospatial_MultiPolygonGeometryInput"></a>
 
 The structure representing Polygon Geometry based on the [GeoJson spec](https://www.rfc-editor.org/rfc/rfc7946#section-3.1.6).
 

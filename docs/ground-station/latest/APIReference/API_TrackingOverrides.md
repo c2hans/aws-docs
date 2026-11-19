@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_T
 ---
 
 # TrackingOverrides
-<a name="API_TrackingOverrides"></a>
 
 Overrides the default tracking configuration on an antenna during a contact.
 

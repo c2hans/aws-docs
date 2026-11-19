@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Aggre
 ---
 
 # Aggregation
-<a name="API_Aggregation"></a>
 
 Defines an aggregation function to be applied to grouped data, creating a new column with the calculated result.
 

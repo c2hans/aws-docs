@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CustomAc
 ---
 
 # CustomActionAttachment
-<a name="API_CustomActionAttachment"></a>
 
 Defines when a custom action button should be attached to a notification.
 

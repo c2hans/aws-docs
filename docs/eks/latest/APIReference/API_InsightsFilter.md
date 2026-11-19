@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_InsightsFilt
 ---
 
 # InsightsFilter
-<a name="API_InsightsFilter"></a>
 
 The criteria to use for the insights.
 

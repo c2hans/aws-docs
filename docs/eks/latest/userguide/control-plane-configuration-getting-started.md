@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-confi
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure advanced Kubernetes control plane parameters
-<a name="control-plane-configuration-getting-started"></a>
 
 This guide walks you through setting and viewing advanced Kubernetes control plane parameters using the AWS CLI and AWS Management Console. For an explanation of each parameter and its effect on your cluster, see [Advanced Kubernetes control plane configuration](control-plane-configuration.md).
 

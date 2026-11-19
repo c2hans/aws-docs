@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_StopSe
 ---
 
 # StopServiceDeployment
-<a name="API_StopServiceDeployment"></a>
 
 Stops an ongoing service deployment.
 

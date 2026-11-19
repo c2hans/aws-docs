@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetBa
 ---
 
 # GetBackupSelection
-<a name="API_GetBackupSelection"></a>
 
 Returns selection metadata and a document in JSON format that specifies a list of resources that are associated with a backup plan.
 

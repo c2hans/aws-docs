@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/p-tag.html
 ---
 
 # Adding a pause between paragraphs
-<a name="p-tag"></a>
 
 *<p>*
 

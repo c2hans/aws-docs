@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/confi
 ---
 
 # Deleting views in Resource Explorer
-<a name="configure-views-delete"></a>
 
 When you no longer need an AWS Resource Explorer view, you can delete it. You can delete views by using the AWS Management Console or by running AWS CLI commands or their equivalent API operations in an AWS SDK.
 

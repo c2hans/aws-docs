@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-types.h
 ---
 
 # Index types
-<a name="index-types"></a>
 
 **Topics**
 + [Single field indexes](indexes-single-field.md)

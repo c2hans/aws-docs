@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCCOST05-BP01 Monitor data transfer to and from your hybrid edge workload
-<a name="drhccost05-bp01"></a>
 
  Regularly track and analyze data transfer costs.
 

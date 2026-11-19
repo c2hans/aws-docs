@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Limitati
 ---
 
 # Limitations and recommendations
-<a name="SSRS.Limitations"></a>
 
 The following limitations and recommendations apply to running SSRS and Power BI Report Server (PBIRS) on RDS for SQL Server:
 + You can't use reporting services on DB instances that have read replicas.

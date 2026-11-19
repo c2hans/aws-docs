@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost08-
 ---
 
 # COST08-BP01 Perform an analysis on the workload demand
-<a name="cost08-bp01"></a>
 
  A workload's resource needs rise and fall with usage. Match provisioned capacity to that demand to control cost while meeting performance targets. Focus analysis on workloads where demand varies most and costs the most.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Tem
 ---
 
 # Shrinking the tempdb database
-<a name="SQLServer.TempDB.Shrinking"></a>
 
 There are two ways to shrink the `tempdb` database on your Amazon RDS DB instance. You can use the `rds_shrink_tempdbfile` procedure, or you can set the `SIZE` property,
 

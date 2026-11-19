@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk console adds configuration change review on August 16, 2018
-<a name="release-2018-08-16-config-review"></a>
 
 Elastic Beanstalk added a configuration review page to the console, allowing customers to review a summary of their configuration edits before applying them.
 

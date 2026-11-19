@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/import-vm-ima
 ---
 
 # Import your VM as an image
-<a name="import-vm-image"></a>
 
 After exporting your VM from your virtualization environment, you can import it to Amazon EC2 using VM Import/Export. The import process is the same regardless of the origin of the VM.
 

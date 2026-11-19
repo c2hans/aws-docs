@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SuccessResp
 ---
 
 # SuccessResponseHandlingConfig
-<a name="API_SuccessResponseHandlingConfig"></a>
 
 Determines how Amazon AppFlow handles the success response that it gets from the connector after placing data.
 

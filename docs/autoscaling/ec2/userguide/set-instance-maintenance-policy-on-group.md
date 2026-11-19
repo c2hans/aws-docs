@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-instance-m
 ---
 
 # Set an instance maintenance policy on your Auto Scaling groups
-<a name="set-instance-maintenance-policy-on-group"></a>
 
 You can create an instance maintenance policy when you create an Auto Scaling group. You can also create it for existing groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-
 ---
 
 # Resources
-<a name="resources"></a>
 + [Amazon Redshift best practices](https://docs.aws.amazon.com/redshift/latest/dg/best-practices.html) (Amazon Redshift documentation)
 + [Amazon Redshift best practices for designing queries](https://docs.aws.amazon.com/redshift/latest/dg/c_designing-queries-best-practices.html) (Amazon Redshift documentation)
 + [Tuning query performance](https://docs.aws.amazon.com/redshift/latest/dg/c-optimizing-query-performance.html) (Amazon Redshift documentation)

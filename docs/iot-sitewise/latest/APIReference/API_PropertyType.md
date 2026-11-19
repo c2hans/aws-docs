@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pro
 ---
 
 # PropertyType
-<a name="API_PropertyType"></a>
 
 Contains a property type, which can be one of `attribute`, `measurement`, `metric`, or `transform`.
 

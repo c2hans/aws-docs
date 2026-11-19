@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ActiveDirectoryIdentityProvider
-<a name="API_ActiveDirectoryIdentityProvider"></a>
 
 Details about an Active Directory identity provider.
 

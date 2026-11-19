@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QuickCon
 ---
 
 # QuickConnectSearchCriteria
-<a name="API_QuickConnectSearchCriteria"></a>
 
 The search criteria to be used to return quick connects.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return quick connects.
 
  ** AndConditions **   <a name="connect-Type-QuickConnectSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [QuickConnectSearchCriteria](#API_QuickConnectSearchCriteria) objects
+Type: Array of [QuickConnectSearchCriteria](API_QuickConnectSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-QuickConnectSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [QuickConnectSearchCriteria](#API_QuickConnectSearchCriteria) objects
+Type: Array of [QuickConnectSearchCriteria](API_QuickConnectSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-QuickConnectSearchCriteria-StringCondition"></a>

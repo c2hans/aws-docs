@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBot.
 ---
 
 # DeleteBot
-<a name="API_DeleteBot"></a>
 
 Deletes all versions of a bot, including the `Draft` version. To delete a specific version, use the `DeleteBotVersion` operation.
 

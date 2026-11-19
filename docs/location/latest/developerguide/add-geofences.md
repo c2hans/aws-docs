@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/add-geofe
 ---
 
 # Add geofences with Amazon Location
-<a name="add-geofences"></a>
 
 Geofences contain points and vertices that form a closed boundary, which defines an area of interest. Geofence collections store and manage one or multiple geofences.
 

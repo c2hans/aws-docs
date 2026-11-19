@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-Distribut
 ---
 
 # Distribution
-<a name="dqdl-rule-types-Distribution"></a>
 
 Use the `Distribution` Analyzer to compute the frequency distribution of values in a column. The analyzer produces different outputs depending on the column data type:
 + **Numeric columns** – Generates a binned histogram. The histogram divides the column's value range into equal-width intervals (bins) and counts the number of values in each bin.

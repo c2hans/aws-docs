@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/testing-simula
 ---
 
 # Send instruction actions
-<a name="testing-simulation-action-send-instruction"></a>
 
 Send Instruction actions to simulate customer inputs during your test, allowing you to mimic how a real customer would interact with your contact center experience.
 

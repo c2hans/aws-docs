@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Statele
 ---
 
 # StatelessCustomPublishMetricAction
-<a name="API_StatelessCustomPublishMetricAction"></a>
 
 Information about metrics to publish to CloudWatch.
 

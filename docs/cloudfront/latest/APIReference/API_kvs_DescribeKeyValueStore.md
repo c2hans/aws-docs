@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_D
 ---
 
 # DescribeKeyValueStore
-<a name="API_kvs_DescribeKeyValueStore"></a>
 
 Returns metadata information about the key value store.
 

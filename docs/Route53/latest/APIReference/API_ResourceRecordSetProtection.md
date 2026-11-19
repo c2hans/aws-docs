@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceRecordSetProtection
-<a name="API_ResourceRecordSetProtection"></a>
 
 A protection for the resource record sets in a hosted zone that have the specified name and type. While the protection exists, Route 53 rejects `ChangeResourceRecordSets` requests that create, update, or delete those resource record sets.
 

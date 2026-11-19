@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-iam-p
 ---
 
 # IAM principal attribution
-<a name="cost-mgmt-iam-principal-tracking"></a>
 
 Amazon Bedrock automatically captures the [IAM principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) identity ([IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users.html) and [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)) for every inference request. You can optionally attach tags to your principals for additional cost dimensions like team, department, or cost center. This gives you per-user and per-role cost visibility without code changes or additional resources.
 

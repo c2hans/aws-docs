@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_FileM
 ---
 
 # FileModes
-<a name="API_FileModes"></a>
 
 Information about file modes in a merge or pull request.
 

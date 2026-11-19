@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackageV2::OriginEndpoint MssFilterConfiguration
-<a name="aws-properties-mediapackagev2-originendpoint-mssfilterconfiguration"></a>
 
 <a name="aws-properties-mediapackagev2-originendpoint-mssfilterconfiguration-description"></a>The `MssFilterConfiguration` property type specifies Property description not available. for an [AWS::MediaPackageV2::OriginEndpoint](aws-resource-mediapackagev2-originendpoint.md).
 

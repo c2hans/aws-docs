@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
 For additional information, see:
 + [Amazon EKS Auto Mode User Guide](https://docs.aws.amazon.com/eks/latest/userguide/automode.html)

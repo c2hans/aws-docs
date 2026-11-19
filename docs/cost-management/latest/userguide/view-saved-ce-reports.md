@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/view-sa
 ---
 
 # Viewing a Cost Explorer report
-<a name="view-saved-ce-reports"></a>
 
 You can use the console to view saved Cost Explorer reports.
 

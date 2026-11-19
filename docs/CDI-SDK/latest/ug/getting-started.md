@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/CDI-SDK/latest/ug/getting-started.html
 ---
 
 # Getting started with the AWS Cloud Digital Interface SDK
-<a name="getting-started"></a>
 
 This section describes the resources for AWS Cloud Digital Interface (CDI) SDK. These resources are available on GitHub.
 

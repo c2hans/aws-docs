@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ProtectConfigurationFilter
-<a name="API_ProtectConfigurationFilter"></a>
 
 The filter definition for filtering protect configurations that meet a specified criteria.
 

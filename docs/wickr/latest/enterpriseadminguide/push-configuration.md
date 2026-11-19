@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/push-c
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Push configuration
-<a name="push-configuration"></a>
 
 The **Push Configuration** section has available options for proxy or intermediary networking devices. This can also be used to obfuscate the infrastructure by forcing users to connect to proxies which then forward traffic to the Messaging/App server.
 

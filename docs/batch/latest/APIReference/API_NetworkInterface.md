@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_NetworkInt
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 An object that represents the elastic network interface for a multi-node parallel job node.
 

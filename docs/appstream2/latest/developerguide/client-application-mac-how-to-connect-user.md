@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-
 ---
 
 # Connect to WorkSpaces Applications
-<a name="client-application-mac-how-to-connect-user"></a>
 
 Follow these steps to connect to WorkSpaces Applications and start an application streaming session.
 

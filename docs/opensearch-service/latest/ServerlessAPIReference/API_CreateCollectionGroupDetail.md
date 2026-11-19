@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # CreateCollectionGroupDetail
-<a name="API_CreateCollectionGroupDetail"></a>
 
 Details about the created collection group.
 

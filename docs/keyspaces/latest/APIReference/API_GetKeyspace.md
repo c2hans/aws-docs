@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_GetKey
 ---
 
 # GetKeyspace
-<a name="API_GetKeyspace"></a>
 
 Returns the name of the specified keyspace, the Amazon Resource Name (ARN), the replication strategy, the AWS Regions of a multi-Region keyspace, and the status of newly added Regions after an `UpdateKeyspace` operation.
 

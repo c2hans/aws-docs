@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-p
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Preferences
-<a name="agent-preferences"></a>
 
 The **Preferences** page in the AWS WA Agent console contains account-level settings for managing organizational agent profiles.
 

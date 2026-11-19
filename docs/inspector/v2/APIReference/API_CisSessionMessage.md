@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisSession
 ---
 
 # CisSessionMessage
-<a name="API_CisSessionMessage"></a>
 
 The CIS session message.
 

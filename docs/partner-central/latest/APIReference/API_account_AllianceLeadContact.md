@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AllianceLeadContact
-<a name="API_account_AllianceLeadContact"></a>
 
 Contains contact information for the primary alliance lead responsible for partnership activities.
 

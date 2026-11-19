@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Evaluating network access options for SaaS offerings
-<a name="evaluating"></a>
 
 The metrics that are important to your organization will depend on who your customers are, your business strategy, and your organizational objectives. This guide presents metrics that you can use to choose a networking access approach, but you should prioritize those that meet the unique requirements of your use case.
 

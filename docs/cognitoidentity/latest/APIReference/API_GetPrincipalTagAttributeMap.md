@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # GetPrincipalTagAttributeMap
-<a name="API_GetPrincipalTagAttributeMap"></a>
 
 Use `GetPrincipalTagAttributeMap` to list all mappings between `PrincipalTags` and user attributes.
 

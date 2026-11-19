@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSEC02-BP01 Monitor for fraudulent access attempts
-<a name="smsec02-bp01"></a>
 
 Even when you have implemented access controls to the content you want to serve, continue to monitor for unauthorized access and perform regular checks to verify that access groups are up to date and that no unauthorized users have found their way in.
 

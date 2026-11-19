@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/update-snapshot-loc
 ---
 
 # Update Amazon EBS snapshot lock settings
-<a name="update-snapshot-lock"></a>
 
 The allowed updates depend on the lock state:
 + `governance` — you can change the lock mode and increase or decrease the lock duration or expiration date.

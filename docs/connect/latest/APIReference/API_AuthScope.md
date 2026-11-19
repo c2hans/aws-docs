@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AuthScop
 ---
 
 # AuthScope
-<a name="API_AuthScope"></a>
 
 Contains the scope configuration for an authorization code. Defines the permissions and access boundaries for the session.
 

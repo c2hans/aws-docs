@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/airship-reading-from-enti
 ---
 
 # Reading from Airship entities
-<a name="airship-reading-from-entities"></a>
 
 **Prerequisites**
 

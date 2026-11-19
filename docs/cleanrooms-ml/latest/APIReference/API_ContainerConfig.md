@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # ContainerConfig
-<a name="API_ContainerConfig"></a>
 
 Provides configuration information for the dockerized container where the model algorithm is stored.
 

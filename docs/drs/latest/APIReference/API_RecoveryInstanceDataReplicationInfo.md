@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceDataReplicationInfo
-<a name="API_RecoveryInstanceDataReplicationInfo"></a>
 
 Information about Data Replication
 

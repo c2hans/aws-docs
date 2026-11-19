@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleG
 ---
 
 # ManagedRuleGroupStatement
-<a name="API_ManagedRuleGroupStatement"></a>
 
 A rule statement used to run the rules that are defined in a managed rule group. To use this, provide the vendor name and the name of the rule group in this statement. You can retrieve the required names by calling [ListAvailableManagedRuleGroups](API_ListAvailableManagedRuleGroups.md).
 

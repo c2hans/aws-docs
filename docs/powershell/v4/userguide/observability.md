@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Observability
-<a name="observability"></a>
 
 Observability is the extent to which a system's current state can be inferred from the data it emits. The data emitted is commonly referred to as telemetry. For additional information about telemetry when using AWS services, see [Observability](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/observability.html) in the [AWS SDK for .NET Developer Guide](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/).
 

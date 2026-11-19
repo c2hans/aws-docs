@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/removing-bro
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Removing the browser extension as an integration
-<a name="removing-browser-extension"></a>
 
 To disable the browser extension to your existing web experience, Admin users can use the Amazon Q Business console or the Amazon Q Business API, AWS SDK, or AWS CLI.
 

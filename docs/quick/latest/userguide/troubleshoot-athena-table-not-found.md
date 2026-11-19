@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-athe
 ---
 
 # Table not found when using Athena with AWS Quick Sight
-<a name="troubleshoot-athena-table-not-found"></a>
 
 You can receive a "`table not found`" error if the tables in an analysis are missing from the Athena data source.
 

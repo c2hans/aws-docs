@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control
 ---
 
 # Overview of managing access permissions
-<a name="control-access-billing"></a>
 
 ## Granting access to your billing information and tools
 <a name="grantaccess"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Comparing Resources with `$diff`
-<a name="reference-fhir-operations-diff"></a>
 
 AWS HealthLake supports the `$diff` operation, which returns the changes between two FHIR resources as a FHIR `Parameters` resource. For example, after a patient's family name is corrected from `Roe` to `Major`, a `$diff` of version 1 and version 2 of that `Patient` returns one `replace` operation for `Patient.name[0].family`.
 

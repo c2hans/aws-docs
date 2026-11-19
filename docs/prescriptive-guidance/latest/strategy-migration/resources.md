@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Guides
 <a name="guides"></a>

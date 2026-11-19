@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_InExpre
 ---
 
 # InExpression
-<a name="API_InExpression"></a>
 
 Specifies whether values are in the expression.
 

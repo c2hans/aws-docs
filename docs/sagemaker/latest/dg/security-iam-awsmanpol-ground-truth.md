@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS Managed Policies for Amazon SageMaker Ground Truth
-<a name="security-iam-awsmanpol-ground-truth"></a>
 
 These AWS managed policies add permissions required to use SageMaker AI Ground Truth. The policies are available in your AWS account and are used by execution roles created from the SageMaker AI console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-resto
 ---
 
 # Restoring from a snapshot
-<a name="snapshots-restoring"></a>
 
 You can restore the data from a MemoryDB or ElastiCache (Redis OSS) .rdb snapshot file to a new cluster at any time.
 

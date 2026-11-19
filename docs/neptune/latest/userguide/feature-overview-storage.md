@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-overvie
 ---
 
 # Amazon Neptune storage, reliability and availability
-<a name="feature-overview-storage"></a>
 
 Amazon Neptune uses a distributed and shared storage architecture that scales automatically as your database storage needs grow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeAccountLimits
-<a name="API_DescribeAccountLimits"></a>
 
 Describes the current Amazon EC2 Auto Scaling resource quotas for your account.
 

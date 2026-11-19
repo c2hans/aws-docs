@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html
 ---
 
 # Configuring ODB peering to an Amazon VPC in Oracle Database@AWS
-<a name="configuring"></a>
 
 *ODB peering* is a user-created network connection that enables traffic to be routed privately between an Amazon VPC and an ODB network. After you create a peering connection using the console, CLI, or API, make sure to update your VPC route tables and configure DNS resolution. For a conceptual overview of ODB peering, see [ODB peering](how-it-works.md#how-it-works.peering). When creating the ODB peering connection, you can opt for implicit network route management to skip [Configuring VPC route tables for ODB peering](#configure-routes). To enact this feature as part of the Peering Connection workflow, specify the VPC (or underlying subnet) Route Table to which a managed route should be added.
 
@@ -457,7 +456,7 @@ If you attach or reattach the attachments on your VPC, make sure you re-enter th
 
 1. Create an ODB network. For more information, see [Step 1: Create an ODB network in Oracle Database@AWS](getting-started.md#getting-started-odb).
 
-1. Create an ODB peering connection between your ODB network and your VPC. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWS](#configuring).
+1. Create an ODB peering connection between your ODB network and your VPC. For more information, see [Configuring ODB peering to an Amazon VPC in Oracle Database@AWS](configuring.md).
 
 1. Set up a transit gateway by following the steps in [Get started with using Amazon VPC Transit Gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html). The gateway must be either in the same AWS account as the ODB network and VPC, or shared by another account.
 **Important**

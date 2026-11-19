@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationOutputOverview
-<a name="API_s3Buckets_MigrationOutputOverview"></a>
 
 Where a migration writes its reports, and the location of each report once it is written.
 

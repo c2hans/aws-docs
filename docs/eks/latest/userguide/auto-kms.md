@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-kms.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Enable EBS Volume Encryption with Customer Managed KMS Keys for EKS Auto Mode
-<a name="auto-kms"></a>
 
 You can encrypt the ephemeral root volume for EKS Auto Mode instances with a customer managed KMS key.
 

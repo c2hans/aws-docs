@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/how-it-works-datas
 ---
 
 # Creating schema JSON files for Amazon Personalize schemas
-<a name="how-it-works-dataset-schema"></a>
 
  After you [prepare your data](preparing-training-data.md), you are ready to create schema JSON files for each type of data that you are importing. These files outline the structure and content of your data, including column names and their data types.
 

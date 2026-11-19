@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/getting-started-ter
 ---
 
 # Terms and concepts for AWS RAM
-<a name="getting-started-terms-and-concepts"></a>
 
 The following concepts help explain how you can use AWS Resource Access Manager (AWS RAM) to share your resources.
 

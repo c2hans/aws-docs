@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Partner Analytics Dashboard
-<a name="partner-analytics"></a>
 
 Partner Analytics includes 8 dashboards that let you filter, sort, and drill down on the data you need to manage your ACE Opportunities and Leads, Investments, AWS-led Marketing Campaigns, and Trainings and Certifications. To navigate across dashboards within the dashboard, simply click on the desired dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_NewSessi
 ---
 
 # NewSessionDetails
-<a name="API_NewSessionDetails"></a>
 
 Payload of chat properties to apply when starting a new contact.
 

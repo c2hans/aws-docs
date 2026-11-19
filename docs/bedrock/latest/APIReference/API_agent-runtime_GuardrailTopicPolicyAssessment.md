@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailTopicPolicyAssessment
-<a name="API_agent-runtime_GuardrailTopicPolicyAssessment"></a>
 
 The details of the policy assessment used in the Guardrail.
 

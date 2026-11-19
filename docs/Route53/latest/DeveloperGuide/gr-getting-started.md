@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-getting
 ---
 
 # Tutorial: Create your first Route 53 Global Resolver
-<a name="gr-getting-started"></a>
 
 This getting started guide demonstrates the basic components of Route 53 Global Resolver and optionally creating a simple DNS filtering setup. This tutorial covers the core concepts but doesn't include production requirements like client configuration, logging, or private domain resolution.
 

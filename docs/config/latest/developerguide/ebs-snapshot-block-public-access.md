@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ebs-snapsho
 ---
 
 # ebs-snapshot-block-public-access
-<a name="ebs-snapshot-block-public-access"></a>
 
 Checks if block public access is enabled for Amazon EBS snapshots in an AWS Region. The rule is NON\_COMPLIANT if block public access is not enabled for all public sharing of EBS snapshots in an AWS Region.
 

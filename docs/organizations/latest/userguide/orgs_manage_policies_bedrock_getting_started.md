@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with Amazon Bedrock policies
-<a name="orgs_manage_policies_bedrock_getting_started"></a>
 
 Before you configure Amazon Bedrock policies, ensure you understand the prerequisites and implementation requirements. This topic guides you through the process of setting up and managing these policies in your organization.
 

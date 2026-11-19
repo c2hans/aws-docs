@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboChartSortConfiguration
-<a name="API_ComboChartSortConfiguration"></a>
 
 The sort configuration of a `ComboChartVisual`.
 

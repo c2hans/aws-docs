@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Job
 ---
 
 # JobConfiguration
-<a name="API_JobConfiguration"></a>
 
 Contains the configuration information of a job, such as the file format used to save data in Amazon S3.
 

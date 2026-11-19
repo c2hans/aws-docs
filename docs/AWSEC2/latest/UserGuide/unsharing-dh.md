@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/unsharing-dh.htm
 ---
 
 # Unshare a Dedicated Host that is shared with other AWS accounts
-<a name="unsharing-dh"></a>
 
 The Dedicated Host owner can unshare a shared Dedicated Host at any time. When you unshare a shared Dedicated Host, the following rules apply:
 + Consumers with whom the Dedicated Host was shared can no longer launch new instances onto it.

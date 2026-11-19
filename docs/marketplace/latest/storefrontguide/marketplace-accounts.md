@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/marke
 ---
 
 # Marketplace accounts
-<a name="marketplace-accounts"></a>
 
 Connect and manage your AWS Marketplace seller accounts.
 

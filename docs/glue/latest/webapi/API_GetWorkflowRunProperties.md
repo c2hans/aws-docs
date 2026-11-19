@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetWorkflowRunPro
 ---
 
 # GetWorkflowRunProperties
-<a name="API_GetWorkflowRunProperties"></a>
 
 Retrieves the workflow run properties which were set during the run.
 

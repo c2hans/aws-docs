@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/create-room-cli
 ---
 
 # CLI Instructions for Creating an IVS Chat Room
-<a name="create-room-cli"></a>
 
 This document takes you through the steps involved in creating an Amazon IVS chat room using the AWS CLI.
 

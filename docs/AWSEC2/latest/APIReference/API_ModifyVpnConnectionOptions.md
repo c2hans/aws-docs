@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVpn
 ---
 
 # ModifyVpnConnectionOptions
-<a name="API_ModifyVpnConnectionOptions"></a>
 
 Modifies the connection options for your Site-to-Site VPN connection.
 

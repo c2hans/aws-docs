@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListRelationships
-<a name="API_channel_ListRelationships"></a>
 
 Lists partner relationships based on specified criteria.
 

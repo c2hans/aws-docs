@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListCaseEdits
-<a name="API_ListCaseEdits"></a>
 
 Views the case history for edits made to a designated case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-create-h
 ---
 
 # Creating an HLS packaging configuration
-<a name="pkg-cfig-create-hls"></a>
 
 Create a packaging configuration that formats content for devices that support Apple HLS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyEmv2000
-<a name="API_SessionKeyEmv2000"></a>
 
 Parameters to derive session key for an Emv2000 payment card for ARQC verification.
 

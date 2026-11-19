@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Integrating Security Hub CSPM with Google Cloud Platform
-<a name="securityhub-gcp"></a>
 
 To monitor your Google Cloud Platform (GCP) resources, you can integrate GCP with AWS Security Hub CSPM. Security Hub CSPM then automatically enables posture management checks for your GCP environment and generates findings about your environment. More specifically, the service provides you with the following:
 

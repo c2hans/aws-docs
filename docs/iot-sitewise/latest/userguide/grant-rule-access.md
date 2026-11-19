@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/grant-rule
 ---
 
 # Grant AWS IoT the required access
-<a name="grant-rule-access"></a>
 
 You use IAM roles to control the AWS resources to which each rule has access. Before you create a rule, you must create an IAM role with a policy that allows the rule to perform actions on the required AWS resource. AWS IoT assumes this role when running a rule.
 

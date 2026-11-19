@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateDefaultFieldValue
-<a name="API_TaskTemplateDefaultFieldValue"></a>
 
 Describes a default field and its corresponding value.
 

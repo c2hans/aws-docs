@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Replication.
 ---
 
 # Replication
-<a name="API_Replication"></a>
 
 Provides information that describes a serverless replication created by the `CreateReplication` operation.
 

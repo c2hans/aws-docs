@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-subm
 ---
 
 # Submitting quantum tasks to QPUs
-<a name="braket-submit-tasks"></a>
 
 Amazon Braket provides access to several devices that can run quantum tasks. You can submit quantum tasks individually or you can set up [quantum task batching](https://docs.aws.amazon.com/braket/latest/developerguide/braket-batching-tasks.html).
 

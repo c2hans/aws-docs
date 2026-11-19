@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Question
 ---
 
 # QuestionOptionPointsConfiguration
-<a name="API_QuestionOptionPointsConfiguration"></a>
 
 Information about the points configuration for an answer option.
 

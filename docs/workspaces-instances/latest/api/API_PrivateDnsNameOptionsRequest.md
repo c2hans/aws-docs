@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Priv
 ---
 
 # PrivateDnsNameOptionsRequest
-<a name="API_PrivateDnsNameOptionsRequest"></a>
 
 Configures private DNS name settings for WorkSpace Instance.
 

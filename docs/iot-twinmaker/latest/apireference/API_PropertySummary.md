@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Pr
 ---
 
 # PropertySummary
-<a name="API_PropertySummary"></a>
 
 This is an object that contains the information of a property.
 

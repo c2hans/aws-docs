@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConformancePackStatus
-<a name="API_DescribeConformancePackStatus"></a>
 
 Provides one or more conformance packs deployment status.
 

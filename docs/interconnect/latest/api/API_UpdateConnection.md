@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_UpdateConnec
 ---
 
 # UpdateConnection
-<a name="API_UpdateConnection"></a>
 
 Modifies an existing connection. Currently we support modifications to the connection's description and/or bandwidth.
 

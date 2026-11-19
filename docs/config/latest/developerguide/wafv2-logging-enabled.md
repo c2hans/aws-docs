@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/wafv2-loggi
 ---
 
 # wafv2-logging-enabled
-<a name="wafv2-logging-enabled"></a>
 
 Checks if logging is enabled on AWS WAFv2 regional and global web access control lists (web ACLs). The rule is NON\_COMPLIANT if the logging is enabled but the logging destination does not match the value of the parameter.
 

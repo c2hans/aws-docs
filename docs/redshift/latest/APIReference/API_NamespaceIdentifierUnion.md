@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Namespa
 ---
 
 # NamespaceIdentifierUnion
-<a name="API_NamespaceIdentifierUnion"></a>
 
 Object to store union of values for a provisioned cluster or serverless namespace’s identifier.
 

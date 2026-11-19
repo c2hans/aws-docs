@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Troubleshooting issues with OpsCenter
-<a name="OpsCenter-troubleshooting"></a>
 
 This topic includes information to help you troubleshoot common errors and issues with OpsCenter.
 

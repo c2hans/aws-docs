@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListType
 ---
 
 # ListTypes
-<a name="API_ListTypes"></a>
 
 Lists the types for a given API.
 

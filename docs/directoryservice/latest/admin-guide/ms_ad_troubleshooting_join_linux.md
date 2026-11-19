@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Amazon EC2 Linux instance domain join errors
-<a name="ms_ad_troubleshooting_join_linux"></a>
 
 The following can help you troubleshoot some error messages you might encounter when joining an Amazon EC2 Linux instance to your AWS Managed Microsoft AD directory.
 

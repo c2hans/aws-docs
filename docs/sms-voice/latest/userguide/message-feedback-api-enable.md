@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/message-feedb
 ---
 
 # Send a message with message feedback in AWS End User Messaging SMS
-<a name="message-feedback-api-enable"></a>
 
 To enable message feedback when sending a message with [SendTextMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html), or [SendMediaMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html), set the `MessageFeedbackEnabled` parameter to true. When you use message feedback you have to set the message feedback status record to update your [message feedback metrics](monitoring-cloudwatch.md#cw-metrics-message-conversion.title) .
 

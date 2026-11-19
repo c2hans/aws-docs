@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AwsIo
 ---
 
 # AwsIotAnalyticsParameters
-<a name="API_AwsIotAnalyticsParameters"></a>
 
 The parameters for AWS IoT Analytics.
 

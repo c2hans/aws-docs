@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # RemediationIssueDetails
-<a name="API_RemediationIssueDetails"></a>
 
 Details about a remediation issue for a firewall type.
 

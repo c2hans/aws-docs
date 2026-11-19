@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.DataP
 ---
 
 # Data protection in AWS Database Migration Service
-<a name="CHAP_Security.DataProtection"></a>
 
 ## Data encryption
 <a name="CHAP_Security.DataProtection.DataEncryption"></a>

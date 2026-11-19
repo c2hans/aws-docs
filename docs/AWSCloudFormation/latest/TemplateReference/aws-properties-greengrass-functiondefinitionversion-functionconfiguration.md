@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Greengrass::FunctionDefinitionVersion FunctionConfiguration
-<a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration"></a>
 
 <a name="aws-properties-greengrass-functiondefinitionversion-functionconfiguration-description"></a>The group-specific configuration settings for a Lambda function. These settings configure the function's behavior in the Greengrass group. For more information, see [Controlling Execution of Greengrass Lambda Functions by Using Group-Specific Configuration](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-group-config.html) in the * AWS IoT Greengrass Version 1 Developer Guide *.
 

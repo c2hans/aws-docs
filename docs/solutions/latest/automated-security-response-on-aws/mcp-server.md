@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # MCP server for AI clients
-<a name="mcp-server"></a>
 
 The solution includes an optional Model Context Protocol (MCP) server. This server exposes the deployed solution’s operations as tools to AI coding clients such as Claude Code, Kiro, and the OpenAI Codex CLI. The server is off by default.
 

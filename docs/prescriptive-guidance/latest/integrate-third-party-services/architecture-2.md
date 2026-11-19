@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Architecture 2: VPC peering
-<a name="architecture-2"></a>
 
 You can use VPC peering to connect to a third-party account and enable direct interaction between applications and resources in your AWS account with application and services in the third-party account. [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) is a networking connection between two VPCs that allows you to route traffic between them by using private IPv4 addresses or IPv6 addresses. The VPCs do not need to be in the same AWS account or AWS Region. There is no gateway or other device; the VPCs communicate directly.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/gs-new-user-disco
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Discover on-premises resources using AWS Migration Hub discovery tools
-<a name="gs-new-user-discovery"></a>
 
 AWS Migration Hub (Migration Hub) provides a single place to discover your existing servers, plan migrations, and track the status of each application migration. Before migrating you can discover information about your on-premises server and application resources to help you build a business case for migrating or to build a migration plan.
 

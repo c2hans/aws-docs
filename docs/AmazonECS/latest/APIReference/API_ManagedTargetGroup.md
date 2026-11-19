@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedTargetGroup
-<a name="API_ManagedTargetGroup"></a>
 
 The target group associated with the Express service's Application Load Balancer. For more information about load balancer target groups, see [CreateTargetGroup](https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html) in the *Elastic Load Balancing API Reference*
 

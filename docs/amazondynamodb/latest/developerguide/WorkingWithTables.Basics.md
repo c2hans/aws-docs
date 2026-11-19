@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Wor
 ---
 
 # Basic operations on DynamoDB tables
-<a name="WorkingWithTables.Basics"></a>
 
 Similar to other database systems, Amazon DynamoDB stores data in tables. You can manage your tables using a few basic operations.
 

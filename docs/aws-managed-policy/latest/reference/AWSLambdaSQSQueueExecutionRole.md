@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaSQSQueueExecutionRole
-<a name="AWSLambdaSQSQueueExecutionRole"></a>
 
 **Description**: Provides receive message, delete message, and read attribute access to SQS queues, and write permissions to CloudWatch logs.
 

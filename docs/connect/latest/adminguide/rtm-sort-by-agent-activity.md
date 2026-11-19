@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rtm-sort-by-ag
 ---
 
 # Sort agents by activity in a real-time metrics report in Connect Customer
-<a name="rtm-sort-by-agent-activity"></a>
 
 On the real-time metrics **Agents** report, you can sort agents by **Activity** when agents are enabled to use the same channel.
 

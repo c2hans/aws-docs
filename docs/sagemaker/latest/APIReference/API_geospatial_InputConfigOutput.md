@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # InputConfigOutput
-<a name="API_geospatial_InputConfigOutput"></a>
 
 The InputConfig for an EarthObservationJob response.
 

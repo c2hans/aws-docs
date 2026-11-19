@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Perio
 ---
 
 # PeriodToDateComputation
-<a name="API_PeriodToDateComputation"></a>
 
 The period to date computation configuration.
 

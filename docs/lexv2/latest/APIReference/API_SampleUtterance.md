@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SampleUtte
 ---
 
 # SampleUtterance
-<a name="API_SampleUtterance"></a>
 
 A sample utterance that invokes an intent or respond to a slot elicitation prompt.
 

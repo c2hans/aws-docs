@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/what-is.html
 ---
 
 # What Is MediaLive?
-<a name="what-is"></a>
 
 AWS Elemental MediaLive is a real-time video service that lets you create live outputs for broadcast and streaming delivery.
 

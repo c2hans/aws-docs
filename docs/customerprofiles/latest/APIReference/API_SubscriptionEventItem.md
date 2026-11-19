@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SubscriptionEventItem
-<a name="API_connect-customer-profiles_SubscriptionEventItem"></a>
 
 Represents a single segment membership event.
 

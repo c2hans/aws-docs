@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Optimizing PostgreSQL Running on Amazon EC2 Using Amazon EBS
-<a name="optimizing-postgresql-on-ec2-using-ebs"></a>
 
 Publication date: **October 19, 2023** ([Document history](document-revisions.md))
 

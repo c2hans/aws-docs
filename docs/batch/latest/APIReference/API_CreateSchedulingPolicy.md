@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateSche
 ---
 
 # CreateSchedulingPolicy
-<a name="API_CreateSchedulingPolicy"></a>
 
 Creates an AWS Batch scheduling policy.
 

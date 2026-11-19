@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AdministrativeOverride
-<a name="API_AdministrativeOverride"></a>
 
 Information about the override status applied to a target.
 

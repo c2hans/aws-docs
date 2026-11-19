@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ReplicationStatus
-<a name="API_ReplicationStatus"></a>
 
 Represents the status of the replication of an application to a location. An application cannot be streamed from a location until it has finished replicating there.
 

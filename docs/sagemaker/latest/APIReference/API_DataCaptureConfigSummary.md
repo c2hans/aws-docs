@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataCa
 ---
 
 # DataCaptureConfigSummary
-<a name="API_DataCaptureConfigSummary"></a>
 
 The currently active data capture configuration used by your Endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/conversation-logs-monito
 ---
 
 # Monitoring conversation log status with CloudWatch metrics
-<a name="conversation-logs-monitoring"></a>
 
 Use Amazon CloudWatch to monitor delivery metrics of your conversation logs. You can set alarms on metrics so that you are aware of issues with logging if they should occur.
 

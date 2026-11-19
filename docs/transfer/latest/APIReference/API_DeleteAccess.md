@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAccess
-<a name="API_DeleteAccess"></a>
 
 Allows you to delete the access specified in the `ServerID` and `ExternalID` parameters.
 

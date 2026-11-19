@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Advantages of certifying with Matter
-<a name="advantages-matter"></a>
 
 Matter has delivered significant advantages for both smart-home consumers and the manufacturers who serve them. By establishing a common language for smart devices, Matter has addressed a previously fragmented market through simplified setup, unified management across platforms, and expanded choice and flexibility in voice control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackRuleCompliance
-<a name="API_ConformancePackRuleCompliance"></a>
 
 Compliance information of one or more AWS Config rules within a conformance pack. You can filter using AWS Config rule names and compliance types.
 

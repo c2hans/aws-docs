@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetInstan
 ---
 
 # GetInstanceTypesFromInstanceRequirements
-<a name="API_GetInstanceTypesFromInstanceRequirements"></a>
 
 Returns a list of instance types with the specified instance attributes. You can use the response to preview the instance types without launching instances. Note that the response does not consider capacity.
 

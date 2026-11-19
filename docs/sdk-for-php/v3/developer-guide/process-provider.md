@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/process-p
 ---
 
 # `process` provider in the SDK for PHP
-<a name="process-provider"></a>
 
  `Aws\Credentials\CredentialProvider::process` attempts to load credentials by executing `credential_process` value that is specified in a profile in a [shared AWS configuration file](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/expe
 ---
 
 # Working with experimental features
-<a name="experimental-features"></a>
 
 Experimental features offer early access to features in the AWS Toolkit for Visual Studio Code before they're officially released.
 

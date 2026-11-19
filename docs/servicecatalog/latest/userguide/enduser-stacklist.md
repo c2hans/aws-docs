@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 ---
 
 # Using the Provisioned products page
-<a name="enduser-stacklist"></a>
 
 The Provisioned product page lists all of the provisioned products you launch from the Products page.
 

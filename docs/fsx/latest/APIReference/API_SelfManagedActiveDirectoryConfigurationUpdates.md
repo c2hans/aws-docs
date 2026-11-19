@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_SelfManagedA
 ---
 
 # SelfManagedActiveDirectoryConfigurationUpdates
-<a name="API_SelfManagedActiveDirectoryConfigurationUpdates"></a>
 
 Specifies changes you are making to the self-managed Microsoft Active Directory configuration to which an FSx for Windows File Server file system or an FSx for ONTAP SVM is joined.
 

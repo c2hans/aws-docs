@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeAccountLimits
-<a name="API_DescribeAccountLimits"></a>
 
 Describes the current Elastic Load Balancing resource limits for your AWS account.
 

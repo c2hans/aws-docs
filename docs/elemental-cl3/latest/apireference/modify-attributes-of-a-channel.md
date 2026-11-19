@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/modify
 ---
 
 # PUT: Modify the Attributes of a Channel
-<a name="modify-attributes-of-a-channel"></a>
 
 Modify the attributes of the specified channel. The channel must be in a state that allows modifications. To check the status, use GET Channel. For information on the status, see [Channel Status Elements](monitoring-manage-channels.md#monitoring-manage-channels-status).
 

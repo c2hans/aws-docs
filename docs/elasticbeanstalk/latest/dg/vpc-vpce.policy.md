@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.poli
 ---
 
 # Using endpoint policies to control access with VPC endpoints
-<a name="vpc-vpce.policy"></a>
 
 This topic explains how you can attach a policy to VPC endpoints to controls access to your application (your service) and your Elastic Beanstalk environment.
 

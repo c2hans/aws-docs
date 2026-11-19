@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sns_example_sns_P
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Publish a large message to Amazon SNS with Amazon S3 using an AWS SDK
-<a name="sns_example_sns_PublishLargeMessage_section"></a>
 
 The following code example shows how to publish a large message to Amazon SNS using Amazon S3 to store the message payload.
 

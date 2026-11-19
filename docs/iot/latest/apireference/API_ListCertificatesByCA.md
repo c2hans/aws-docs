@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertific
 ---
 
 # ListCertificatesByCA
-<a name="API_ListCertificatesByCA"></a>
 
 List the device certificates signed by the specified CA certificate.
 

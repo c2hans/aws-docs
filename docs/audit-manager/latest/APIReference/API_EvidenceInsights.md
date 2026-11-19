@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ev
 ---
 
 # EvidenceInsights
-<a name="API_EvidenceInsights"></a>
 
 A breakdown of the latest compliance check status for the evidence in your Audit Manager assessments.
 

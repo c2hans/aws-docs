@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/agent-step-6.html
 ---
 
 # Step 6: Use the Bot
-<a name="agent-step-6"></a>
 
 For demo purposes, you provide input to the bot as the customer and as the agent. To differentiate between the two, questions asked by the customer begin with “Customer:” and answers provided by the agent begin with “Agent:”. You can choose from a menu of suggested inputs.
 

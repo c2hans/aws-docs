@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HostedZo
 ---
 
 # HostedZone
-<a name="API_HostedZone"></a>
 
 A complex type that contains general information about the hosted zone.
 

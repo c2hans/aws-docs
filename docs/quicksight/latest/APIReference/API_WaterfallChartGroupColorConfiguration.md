@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartGroupColorConfiguration
-<a name="API_WaterfallChartGroupColorConfiguration"></a>
 
 The color configuration for individual groups within a waterfall visual.
 

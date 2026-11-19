@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProjectDetails
-<a name="API_ProjectDetails"></a>
 
 Contains details about the project associated with the Engagement Invitation, including the business problem and expected outcomes.
 

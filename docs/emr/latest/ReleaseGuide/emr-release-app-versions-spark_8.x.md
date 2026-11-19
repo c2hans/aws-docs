@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-app-
 ---
 
 # Application versions in AWS runtime for Apache Spark releases
-<a name="emr-release-app-versions-spark_8.x"></a>
 
 The following table lists the application versions that are available in each Amazon EMR Spark 8.x release.
 

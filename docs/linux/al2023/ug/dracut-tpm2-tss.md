@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dracut-tpm2-tss.html
 ---
 
 # Resolving a dracut error about the `systemd-pcrphase` module and `tpm2-tss`
-<a name="dracut-tpm2-tss"></a>
 
 When you rebuild the initramfs on AL2023 (for example, by running `sudo dracut --force` or as part of a kernel package installation), **dracut** might fail with the following error:
 

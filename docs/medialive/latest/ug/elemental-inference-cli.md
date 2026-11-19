@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-
 ---
 
 # Elemental Inference features using AWS CLI
-<a name="elemental-inference-cli"></a>
 
 This section describes how to use the AWS CLI to set up AWS Elemental Inference in an AWS Elemental MediaLive channel.
 

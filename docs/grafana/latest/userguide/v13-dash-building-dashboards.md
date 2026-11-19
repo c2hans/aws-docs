@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-dash-buildi
 ---
 
 # Building dashboards
-<a name="v13-dash-building-dashboards"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

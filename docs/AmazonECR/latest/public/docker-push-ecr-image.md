@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/docker-push-ecr-
 ---
 
 # Pushing an image to a public repository in Amazon ECR public
-<a name="docker-push-ecr-image"></a>
 
 You can push your Docker images to an Amazon ECR public repository with the **docker push** command.
 

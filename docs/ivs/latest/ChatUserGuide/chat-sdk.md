@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk.html
 ---
 
 # IVS Chat Client Messaging SDK
-<a name="chat-sdk"></a>
 
 The Amazon Interactive Video Services (IVS) Chat Client Messaging SDK is for developers who are building applications with Amazon IVS. This SDK is designed to leverage the Amazon IVS architecture and will see updates, alongside Amazon IVS Chat. As a native SDK, it is designed to minimize the performance impact on your application and on the devices with which your users access your application.
 

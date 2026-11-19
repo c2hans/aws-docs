@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/tables-qualifiers.html
 ---
 
 # Understand federated table name qualifiers
-<a name="tables-qualifiers"></a>
 
 Athena uses the following terms to refer to hierarchies of data objects:
 + **Data source** – a group of databases

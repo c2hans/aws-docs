@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/console-overvie
 ---
 
 # Console overview
-<a name="console-overview"></a>
 
 The AWS Console for SAP applications provides a summary of all SAP applications registered with Systems Manager for SAP in your account and Region.
 

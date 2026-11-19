@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/builder-docum
 ---
 
 # Builder documentation
-<a name="builder-documentation"></a>
 
 The following topics contain information to help users in App Studio who are creating, editing, and publishing applications.
 

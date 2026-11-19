@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Repor
 ---
 
 # ReportDestination
-<a name="API_ReportDestination"></a>
 
 Contains information from your report job about your report destination.
 

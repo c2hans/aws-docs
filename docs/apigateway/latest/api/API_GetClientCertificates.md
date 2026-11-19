@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetClientCerti
 ---
 
 # GetClientCertificates
-<a name="API_GetClientCertificates"></a>
 
 Gets a collection of ClientCertificate resources.
 

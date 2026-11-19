@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the Region, [cost](cost.md), [security](security.md), [quota](quotas.md), and other considerations for planning your deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-cloudw
 ---
 
 # Monitor your EC2 Fleet or Spot Fleet using CloudWatch
-<a name="ec2-fleet-cloudwatch-metrics"></a>
 
 You can monitor your EC2 Fleet or Spot Fleet using the Amazon CloudWatch metrics described in this section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # What is the Model Context Protocol (MCP)?
-<a name="what-is-the-model-context-protocol-mcp"></a>
 
 ## Overview
 <a name="overview.92aa6ff4-738c-51f9-95bd-86ddb26dea59"></a>

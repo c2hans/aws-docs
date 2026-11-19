@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-insp
 ---
 
 # Inspecting the circuit
-<a name="braket-inspecting-circut"></a>
 
 Quantum circuits in Amazon Braket have a pseudo-time concept called `Moments`. Each qubit can experience a single gate per `Moment`. The purpose of `Moments` is to make circuits and their gates easier to address and to provide a temporal structure.
 

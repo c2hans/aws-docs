@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/handling-c
 ---
 
 # Handling event callbacks
-<a name="handling-callbacks"></a>
 
 **Note**
 If you're new to Amazon Cognito Sync, use [AWS AppSync](https://aws.amazon.com/appsync/). Like Amazon Cognito Sync, AWS AppSync is a service for synchronizing application data across devices.

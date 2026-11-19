@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # Location
-<a name="API_Location"></a>
 
 A union that identifies the location to instrument. Specify a `CodeLocation` for code-level instrumentation.
 

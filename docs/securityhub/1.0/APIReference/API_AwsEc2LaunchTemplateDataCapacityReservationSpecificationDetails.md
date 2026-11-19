@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetails
-<a name="API_AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetails"></a>
 
  Specifies the Capacity Reservation targeting option of an Amazon EC2 instance.
 

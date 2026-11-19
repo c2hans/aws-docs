@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MetricsDa
 ---
 
 # MetricsDataSource
-<a name="API_MetricsDataSource"></a>
 
 An object that contains details about the data source for the metrics export.
 

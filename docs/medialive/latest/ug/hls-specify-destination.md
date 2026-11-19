@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-specify-destinat
 ---
 
 # Complete the fields on the console
-<a name="hls-specify-destination"></a>
 
 The following fields configure the location and names of the HLS media and manifest files (the destination).
 + **Output group – HLS group destination** section

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-kms-
 ---
 
 # Specifying server-side encryption with AWS KMS keys (SSE-KMS) in table buckets
-<a name="s3-tables-kms-specify"></a>
 
 All Amazon S3 table buckets have encryption configured by default, and all new tables created in an table bucket are automatically encrypted at rest. Server-side encryption with Amazon S3 managed keys (SSE-S3) is the default encryption configuration for every table bucket. If you want to specify a different encryption type, you can use server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS).
 

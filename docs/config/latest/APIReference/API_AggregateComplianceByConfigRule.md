@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateComplianceByConfigRule
-<a name="API_AggregateComplianceByConfigRule"></a>
 
 Indicates whether an AWS Config rule is compliant based on account ID, region, compliance, and rule name.
 

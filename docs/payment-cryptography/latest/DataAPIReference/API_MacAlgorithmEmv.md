@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # MacAlgorithmEmv
-<a name="API_MacAlgorithmEmv"></a>
 
 Parameters that are required for EMV MAC generation and verification.
 

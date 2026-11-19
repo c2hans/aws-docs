@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/configurations-arn-
 ---
 
 # Configuration Revisions
-<a name="configurations-arn-revisions"></a>
 
 Represents the revisions of an MSK configuration.
 

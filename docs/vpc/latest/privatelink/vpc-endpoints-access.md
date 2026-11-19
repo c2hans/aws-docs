@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-acc
 ---
 
 # Control access to VPC endpoints using endpoint policies
-<a name="vpc-endpoints-access"></a>
 
 An endpoint policy is a resource-based policy that you attach to a VPC endpoint to control which AWS principals can use the endpoint to access an AWS service.
 

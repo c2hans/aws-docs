@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/get-started-ast
 ---
 
 # Deploy an Astro.js app to Amplify Hosting
-<a name="get-started-astro"></a>
 
 Use the following instructions to deploy an Astro.js application to Amplify Hosting. You can use an existing application, or create a starter application using one of the official examples that Astro provides. To create a starter application, see [Use a theme or starter template](https://docs.astro.build/en/install-and-setup/#use-a-theme-or-starter-template) in the *Astro documentation*.
 

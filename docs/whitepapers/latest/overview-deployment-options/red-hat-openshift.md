@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Red Hat OpenShift Service on AWS
-<a name="red-hat-openshift"></a>
 
  [Red Hat OpenShift Service on AWS](https://aws.amazon.com/rosa/) (ROSA) is a managed service that’s available through the AWS Management Console. With ROSA, as a Red Hat OpenShift user, you can build, scale, and manage containerized applications on AWS. You can use ROSA to create Kubernetes clusters using the Red Hat OpenShift APIs and tools, and have access to the full breadth and depth of AWS services. ROSA streamlines moving on-premises Red Hat OpenShift workloads to AWS, and offers tight integration with other AWS services. You can also access Red Hat OpenShift licensing, billing, and support all directly through AWS.
 

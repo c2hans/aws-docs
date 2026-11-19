@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-mp4-pull.html
 ---
 
 # Channel input—MP4 pull input
-<a name="input-mp4-pull"></a>
 
 To verify that the input is set up correctly, look at the **Input destinations** section. It shows the locations of the source video. You specified these locations when you created the input:
 + If the channel is set up as a standard channel, you specified two locations.

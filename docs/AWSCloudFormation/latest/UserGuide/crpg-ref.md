@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/crpg-
 ---
 
 # CloudFormation custom resource request and response reference
-<a name="crpg-ref"></a>
 
 CloudFormation manages custom resources through a request-response protocol that communicates with your custom resource provider. Each request includes a request type (`Create`, `Update`, or `Delete`) and follows this high-level workflow:
 

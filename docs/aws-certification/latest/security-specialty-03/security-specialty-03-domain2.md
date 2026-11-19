@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/security-specia
 ---
 
 # Content Domain 2: Incident Response
-<a name="security-specialty-03-domain2"></a>
 
 **Topics**
 + [Task 2.1: Design and test an incident response plan](#security-specialty-03-domain2-task1)

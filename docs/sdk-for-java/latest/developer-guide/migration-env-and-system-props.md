@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Environment variables and system properties changes
-<a name="migration-env-and-system-props"></a>
 
 | 1.x Environment Variable | 1.x System Property | 2.x Environment Variable | 2.x System Property |
 | --- | --- | --- | --- |

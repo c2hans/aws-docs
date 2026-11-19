@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfig
 ---
 
 # PutConfigurationSetDeliveryOptions
-<a name="API_PutConfigurationSetDeliveryOptions"></a>
 
 Associate a configuration set with a dedicated IP pool. You can use dedicated IP pools to create groups of dedicated IP addresses for sending specific types of email.
 

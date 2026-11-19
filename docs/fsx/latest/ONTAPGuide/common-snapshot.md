@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/common-snapshot.ht
 ---
 
 # Viewing the common snapshot
-<a name="common-snapshot"></a>
 
 The common snapshot is used to maintain incrementality between your backups. This procedure explains how to identity the common snapshot on your volume.
 

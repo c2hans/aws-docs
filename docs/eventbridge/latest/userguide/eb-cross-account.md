@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cross-ac
 ---
 
 # Sending and receiving events between AWS accounts in Amazon EventBridge
-<a name="eb-cross-account"></a>
 
 You can configure EventBridge to send and receive [events](eb-events.md) between [event buses](eb-event-bus.md) in AWS accounts. When you configure EventBridge to send or receive events between accounts, you can specify which AWS accounts can send events to or receive events from the event bus in your account. You can also allow or deny events from specific [rules](eb-rules.md) associated with the event bus, or events from specific sources. For more information, see [Simplifying cross-account access with Amazon EventBridge resource policies](https://aws.amazon.com/blogs/compute/simplifying-cross-account-access-with-amazon-eventbridge-resource-policies/)
 

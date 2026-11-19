@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/dnf-supportinfo-migrate-
 ---
 
 # Migrating from dnf-plugin-support-info v1 to v2
-<a name="dnf-supportinfo-migrate-v1-v2"></a>
 
 The dnf-plugin-support-info package has a new major version (v2) with a redesigned output format. This guide helps you update any scripts or tooling that parse `dnf supportinfo` output.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerRuleSet DeliverToQBusinessAction
-<a name="aws-properties-ses-mailmanagerruleset-delivertoqbusinessaction"></a>
 
 The action to deliver incoming emails to an Amazon Q Business application for indexing.
 

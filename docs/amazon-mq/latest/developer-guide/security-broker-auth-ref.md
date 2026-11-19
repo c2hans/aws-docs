@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/securit
 ---
 
 # Broker authentication and authorization
-<a name="security-broker-auth-ref"></a>
 
 Amazon MQ provides different authentication and authorization methods depending on your broker engine type.
 

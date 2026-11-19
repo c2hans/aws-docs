@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetGlossaryTerm.h
 ---
 
 # GetGlossaryTerm
-<a name="API_GetGlossaryTerm"></a>
 
 Retrieves a glossary term in AWS Glue Data Catalog by its identifier.
 

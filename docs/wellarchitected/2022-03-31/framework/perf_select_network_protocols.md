@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF05-BP05 Choose network protocols to improve performance
-<a name="perf_select_network_protocols"></a>
 
  Make decisions about protocols for communication between systems and networks based on the impact to the workload’s performance.
 

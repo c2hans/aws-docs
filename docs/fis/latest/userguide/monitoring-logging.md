@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/monitoring-logging.
 ---
 
 # Experiment logging for AWS FIS
-<a name="monitoring-logging"></a>
 
 You can use experiment logging to capture detailed information about your experiment as it runs.
 

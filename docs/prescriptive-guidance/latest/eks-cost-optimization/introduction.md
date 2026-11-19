@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # EKS cost optimization: Scaling, sizing, and savings
-<a name="introduction"></a>
 
 *abhay kumar, Akash Kumar, Vinodkumar Mandalapu, and Viyoma Sachdeva, Amazon Web Services*
 

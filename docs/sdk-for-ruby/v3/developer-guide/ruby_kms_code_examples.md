@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/ruby_kms
 ---
 
 # AWS KMS examples using SDK for Ruby
-<a name="ruby_kms_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Ruby with AWS KMS.
 

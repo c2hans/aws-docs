@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_GetResol
 ---
 
 # GetResolver
-<a name="API_GetResolver"></a>
 
 Retrieves a `Resolver` object.
 

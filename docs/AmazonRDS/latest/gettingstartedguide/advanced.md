@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/adv
 ---
 
 # Optimizing and scaling your Amazon RDS DB instance
-<a name="advanced"></a>
 
 This chapter includes details on advanced configurations and strategies for optimizing and scaling your Amazon RDS DB instance. These practices help ensure your database remains highly available, performs efficiently under varying workloads, and supports your business needs. It also guides you through key concepts for achieving high availability, scaling horizontally, and adapting to changing performance demands.
 

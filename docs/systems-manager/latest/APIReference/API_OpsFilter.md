@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsFilter
-<a name="API_OpsFilter"></a>
 
 A filter for viewing OpsData summaries.
 

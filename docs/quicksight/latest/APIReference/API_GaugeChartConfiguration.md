@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gauge
 ---
 
 # GaugeChartConfiguration
-<a name="API_GaugeChartConfiguration"></a>
 
 The configuration of a `GaugeChartVisual`.
 

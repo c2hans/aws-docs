@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-lim
 ---
 
 # Limitations and restrictions
-<a name="s3-vectors-limitations"></a>
 
 Amazon S3 Vectors has certain limitations and restrictions that you should be aware of when planning your vector storage and search applications.
 + Vector buckets per AWS Region in an account: 10,000

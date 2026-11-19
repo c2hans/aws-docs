@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/nsd-template.html
 ---
 
 # Network service descriptor template
-<a name="nsd-template"></a>
 
 Defines a network service descriptor (NSD) template.
 

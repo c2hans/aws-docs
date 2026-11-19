@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/t
 ---
 
 # Troubleshoot AWS SDK for SAP ABAP
-<a name="troubleshoot"></a>
 
 This section provides troubleshooting steps for possible error scenarios.
 

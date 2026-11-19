@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteCo
 ---
 
 # RouteContinueHighwayStepDetails
-<a name="API_RouteContinueHighwayStepDetails"></a>
 
 Details related to the continue highway step.
 

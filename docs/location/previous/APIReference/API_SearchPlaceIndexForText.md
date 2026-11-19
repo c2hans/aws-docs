@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Searc
 ---
 
 # SearchPlaceIndexForText
-<a name="API_SearchPlaceIndexForText"></a>
 
 **Important**
 This operation is no longer current and may be deprecated in the future. We recommend you upgrade to [`Geocode`](/location/latest/APIReference/API_geoplaces_Geocode.html) or [`SearchText`](/location/latest/APIReference/API_geoplaces_SearchText.html) unless you require Grab data.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Describ
 ---
 
 # DescribeVirtualNode
-<a name="API_DescribeVirtualNode"></a>
 
 Describes an existing virtual node.
 

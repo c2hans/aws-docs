@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeK
 ---
 
 # DescribeKeyPairs
-<a name="API_DescribeKeyPairs"></a>
 
 Describes the specified key pairs or all of your key pairs.
 

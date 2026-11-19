@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListQueuedMessages
-<a name="API_ListQueuedMessages"></a>
 
 List queued messages in the downlink queue.
 

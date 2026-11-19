@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListSavingsPlansPurchaseRecommendationGeneration
-<a name="API_ListSavingsPlansPurchaseRecommendationGeneration"></a>
 
 Retrieves a list of your historical recommendation generations within the past 30 days.
 

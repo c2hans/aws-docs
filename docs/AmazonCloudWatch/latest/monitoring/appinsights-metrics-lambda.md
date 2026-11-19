@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # AWS Lambda function
-<a name="appinsights-metrics-lambda"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

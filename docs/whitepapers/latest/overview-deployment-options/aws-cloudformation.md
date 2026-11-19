@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # AWS CloudFormation
-<a name="aws-cloudformation"></a>
 
  [AWS CloudFormation](https://aws.amazon.com/cloudformation/) is a service that enables customers to provision and manage almost any AWS resource using a custom template language expressed in YAML or JSON. An CloudFormation template creates infrastructure resources in a group called a *stack*, and allows you to define and customize all components needed to operate your application while retaining full control of these resources. Using templates introduces the ability to implement version control on your infrastructure, and the ability to quickly and reliably replicate your infrastructure.
 

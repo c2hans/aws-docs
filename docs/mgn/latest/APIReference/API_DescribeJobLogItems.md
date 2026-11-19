@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeJobL
 ---
 
 # DescribeJobLogItems
-<a name="API_DescribeJobLogItems"></a>
 
 Retrieves detailed job log items with paging.
 

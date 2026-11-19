@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetAlarmMuteRule
-<a name="API_GetAlarmMuteRule"></a>
 
 Retrieves details for a specific alarm mute rule.
 

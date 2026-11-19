@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/clou
 ---
 
 # DNS security and split-horizon use cases for Amazon Route 53 Global Resolver
-<a name="cloud-resolver-use-cases"></a>
 
 Amazon Route 53 Global Resolver addresses three primary DNS challenges for organizations:
 

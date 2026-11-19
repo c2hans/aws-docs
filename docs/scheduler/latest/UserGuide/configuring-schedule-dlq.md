@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/configuring-s
 ---
 
 # Configuring a schedule's dead-letter queue in EventBridge Scheduler
-<a name="configuring-schedule-dlq"></a>
 
  Amazon EventBridge Scheduler supports dead-letter queues (DLQ) using Amazon Simple Queue Service. When a schedule fails to invoke its target, EventBridge Scheduler delivers a JSON payload containing invocation details and any response received from the target to an Amazon SQS standard queue that you specify.
 

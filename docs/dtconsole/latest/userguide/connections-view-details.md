@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-v
 ---
 
 # View connection details
-<a name="connections-view-details"></a>
 
 You can use the Developer Tools console or the **get-connection** command in the AWS Command Line Interface (AWS CLI) to view details for a connection. To use the AWS CLI, you must have already installed a recent version of the AWS CLI or updated to the current version. For more information, see [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) in the *AWS Command Line Interface User Guide*.
 

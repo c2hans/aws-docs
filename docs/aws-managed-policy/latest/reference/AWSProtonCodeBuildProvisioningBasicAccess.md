@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSProtonCodeBuildProvisioningBasicAccess
-<a name="AWSProtonCodeBuildProvisioningBasicAccess"></a>
 
 **Description**: Permissions CodeBuild needs to run a build for AWS Proton CodeBuild Provisioning.
 

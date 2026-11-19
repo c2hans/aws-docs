@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Configuration bundle propagation and observability
-<a name="gateway-rules-propagation"></a>
 
 When the gateway resolves a configuration bundle through rules, it propagates the bundle to downstream services through OpenTelemetry (OTel) baggage headers. This enables end-to-end configuration management across your gateway and agent architecture.
 

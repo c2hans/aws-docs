@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Comparison of record distribution strategies
-<a name="service-managed-pk-comparison"></a>
 
 The following table compares the two record distribution strategies available in Kinesis Data Streams.
 

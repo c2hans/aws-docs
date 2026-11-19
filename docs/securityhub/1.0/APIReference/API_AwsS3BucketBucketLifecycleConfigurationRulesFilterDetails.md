@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails
-<a name="API_AwsS3BucketBucketLifecycleConfigurationRulesFilterDetails"></a>
 
 Identifies the objects that a rule applies to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-sec
 ---
 
 # Password management with Amazon Aurora and AWS Secrets Manager
-<a name="rds-secrets-manager"></a>
 
 Amazon Aurora integrates with Secrets Manager to manage master user passwords for your DB clusters.
 

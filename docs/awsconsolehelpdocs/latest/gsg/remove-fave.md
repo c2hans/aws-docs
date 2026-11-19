@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/remove-fav
 ---
 
 # Removing favorites in the AWS Management Console
-<a name="remove-fave"></a>
 
 You can remove services and applications from your favorites using the **Services** menu. You can also remove services by using the search results page from the search bar.
 

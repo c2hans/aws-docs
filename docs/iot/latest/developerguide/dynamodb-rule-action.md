@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/dynamodb-rule-
 ---
 
 # DynamoDB
-<a name="dynamodb-rule-action"></a>
 
 The DynamoDB (`dynamoDB`) action writes all or part of an MQTT message to an Amazon DynamoDB table.
 

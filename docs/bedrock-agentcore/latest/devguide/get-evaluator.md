@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/get-ev
 ---
 
 # Get evaluator
-<a name="get-evaluator"></a>
 
 The `GetEvaluator` API retrieves complete details of a specific custom or built-in evaluator including its configuration, status, and lock state.
 

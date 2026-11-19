@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListOr
 ---
 
 # ListOrganizationAdminAccounts
-<a name="API_ListOrganizationAdminAccounts"></a>
 
 Lists the accounts designated as GuardDuty delegated administrators. Only the organization's management account can run this API operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-licens
 ---
 
 # Linux subscriptions in AWS License Manager events
-<a name="events-ref-license-manager-linux-subscriptions"></a>
 
 Linux subscriptions in License Manager sends service events to EventBridge via AWS CloudTrail.
 

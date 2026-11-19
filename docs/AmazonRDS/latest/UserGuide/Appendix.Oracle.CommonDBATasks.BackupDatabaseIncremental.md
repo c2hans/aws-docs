@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Performing an incremental database backup
-<a name="Appendix.Oracle.CommonDBATasks.BackupDatabaseIncremental"></a>
 
 You can perform an incremental backup of your DB instance using the Amazon RDS procedure `rdsadmin.rdsadmin_rman_util.backup_database_incremental`.
 

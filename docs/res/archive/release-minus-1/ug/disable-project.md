@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/disable-p
 ---
 
 # Disable a project
-<a name="disable-project"></a>
 
 To disable a project:
 

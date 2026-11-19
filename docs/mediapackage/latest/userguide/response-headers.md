@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/response-h
 ---
 
 # MediaPackage response headers
-<a name="response-headers"></a>
 
 Use the following AWS Elemental MediaPackage response headers to help you build your workflows. For more information about response headers associated with manifest monitoring, see [Monitoring manifest update time](https://docs.aws.amazon.com/mediapackage/latest/userguide/monitoring-manifest-last-updated.html).
 

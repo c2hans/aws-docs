@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_InitializeSe
 ---
 
 # InitializeService
-<a name="API_InitializeService"></a>
 
 Initialize Elastic Disaster Recovery.
 

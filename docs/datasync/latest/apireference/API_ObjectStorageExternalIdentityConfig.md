@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ObjectS
 ---
 
 # ObjectStorageExternalIdentityConfig
-<a name="API_ObjectStorageExternalIdentityConfig"></a>
 
 Specifies cloud-provider-specific external identity parameters used when exchanging the AWS web token for an OpenID Connect token at the object storage provider.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Amazon Simple Queue Server (SQS)
-<a name="appinsights-metrics-sqs"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

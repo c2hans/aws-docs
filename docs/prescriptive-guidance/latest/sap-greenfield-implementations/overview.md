@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfi
 ---
 
 # Overview
-<a name="overview"></a>
 
 This document highlights lessons learned during a greenfield implementation of SAP on AWS.  Most of these recommendations can be applied to standard SAP on AWS migration projects as well. This article shares advice for the planning, design, and build phases of a project.   It includes lessons for the maintenance or operations phase of a project, but that phase isn't the focus of this guide. You can use a waterfall methodology or an iterative, agile, or hybrid approach to apply these best practices.
 

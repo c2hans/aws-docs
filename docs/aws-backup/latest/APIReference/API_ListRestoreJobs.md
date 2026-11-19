@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRestoreJobs
-<a name="API_ListRestoreJobs"></a>
 
 Returns a list of jobs that AWS Backup initiated to restore a saved resource, including details about the recovery process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-document-pr
 ---
 
 # Processing use cases
-<a name="bda-document-processing-examples"></a>
 
 Amazon Bedrock Data Automation allows you to process documents, images, audio, and video. through the command line interface (CLI). For each modality, the workflow consists of creating a project, invoking the analysis, and retrieving the result.
 

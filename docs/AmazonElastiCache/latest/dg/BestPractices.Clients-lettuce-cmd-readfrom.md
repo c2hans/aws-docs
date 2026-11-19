@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 ---
 
 # Distributing reads to replicas (cluster mode disabled)
-<a name="BestPractices.Clients-lettuce-cmd-readfrom"></a>
 
 For cluster mode disabled clusters with replicas, you can use Lettuce's `StaticMasterReplicaTopologyProvider` with the `ReadFrom` setting to direct writes to the primary node and distribute reads across replicas. This improves read throughput by offloading reads from the primary.
 

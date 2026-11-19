@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Con
 ---
 
 # ConditionState
-<a name="API_ConditionState"></a>
 
 Information about the state of the condition.
 

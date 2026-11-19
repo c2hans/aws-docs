@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/best-
 ---
 
 # openCypher query best practices
-<a name="best-practices-content"></a>
 
 ## Use the SET clause to remove multiple properties at once
 <a name="best-practices-content-1"></a>

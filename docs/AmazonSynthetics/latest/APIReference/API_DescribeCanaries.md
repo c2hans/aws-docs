@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # DescribeCanaries
-<a name="API_DescribeCanaries"></a>
 
 This operation returns a list of the canaries in your account, along with full details about each canary.
 

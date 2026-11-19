@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Ingestion endpoint
-<a name="ingestion-endpoint"></a>
 
  The guidance creates a web service as an ingestion endpoint to collect data sent from your SDKs. You can set below configurations for ingestion endpoint.
 + **Network type:** Specify the scheme of the application load balancer. Choose **General** for internet-facing or **Private** for internal.

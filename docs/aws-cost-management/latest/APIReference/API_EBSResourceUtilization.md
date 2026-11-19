@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EBSResourceUtilization
-<a name="API_EBSResourceUtilization"></a>
 
 The EBS field that contains a list of EBS metrics that are associated with the current instance.
 

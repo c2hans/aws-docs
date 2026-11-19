@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Da
 ---
 
 # DatasetInputConfig
-<a name="API_DatasetInputConfig"></a>
 
 Defines the Glue data source and schema mapping information.
 

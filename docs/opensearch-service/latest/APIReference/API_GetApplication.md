@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Retrieves the configuration and status of an existing OpenSearch application.
 

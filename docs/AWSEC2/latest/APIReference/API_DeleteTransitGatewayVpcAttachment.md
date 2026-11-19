@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayVpcAttachment
-<a name="API_DeleteTransitGatewayVpcAttachment"></a>
 
 Deletes the specified VPC attachment.
 

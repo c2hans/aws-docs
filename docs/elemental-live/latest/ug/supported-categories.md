@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/supported-categ
 ---
 
 # Definitions of captions categories
-<a name="supported-categories"></a>
 
 Elemental Live groups captions formats into several categories. You set up captions differently, depending on the category.
 

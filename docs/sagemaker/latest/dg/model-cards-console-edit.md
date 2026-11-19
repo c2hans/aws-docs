@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-console-
 ---
 
 # Edit a model card
-<a name="model-cards-console-edit"></a>
 
 To edit a model card, navigate to the model card of your choice by selecting its name in the Amazon SageMaker Model Card console and choose **Edit**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-settin
 ---
 
 # Set up metrics
-<a name="emr-hbase-setting-up-metrics"></a>
 
 To monitor the HBase Master, you can set up Amazon CloudWatch Agent to collect specific metrics.
 

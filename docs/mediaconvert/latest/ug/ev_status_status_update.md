@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/ev_status_status_
 ---
 
 # Events with STATUS\_UPDATE status
-<a name="ev_status_status_update"></a>
 
 MediaConvert sends the event for `STATUS_UPDATE` approximately one minute after it begins processing a job. By default, updates are sent approximately every minute after that, until the service finishes transcoding or encounters an error.
 

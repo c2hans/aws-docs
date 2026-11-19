@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_CreateEnviro
 ---
 
 # CreateEnvironment
-<a name="API_CreateEnvironment"></a>
 
 Creates an Amazon EVS environment that runs VCF software, such as SDDC Manager, NSX Manager, and vCenter Server.
 

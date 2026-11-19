@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/verify-uefi-secu
 ---
 
 # Verify whether an Amazon EC2 instance is enabled for UEFI Secure Boot
-<a name="verify-uefi-secure-boot"></a>
 
 You can use the following procedures to determine whether an Amazon EC2 is enabled for UEFI Secure Boot.
 

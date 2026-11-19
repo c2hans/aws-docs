@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-met
 ---
 
 # Amazon ECS task metadata v3 examples for tasks on Fargate
-<a name="task-metadata-endpoint-fargate-example-task-metadata-response"></a>
 
 The following JSON response is for a single-container task.
 

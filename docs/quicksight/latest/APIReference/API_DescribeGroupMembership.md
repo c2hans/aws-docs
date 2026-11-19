@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeGroupMembership
-<a name="API_DescribeGroupMembership"></a>
 
 Use the `DescribeGroupMembership` operation to determine if a user is a member of the specified group. If the user exists and is a member of the specified group, an associated `GroupMember` object is returned.
 

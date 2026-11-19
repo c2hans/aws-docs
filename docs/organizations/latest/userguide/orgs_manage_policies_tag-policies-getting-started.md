@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with tag policies
-<a name="orgs_manage_policies_tag-policies-getting-started"></a>
 
 Using tag policies involves working with multiple AWS services. To get started, review the following pages. Then follow the workflows on this page to get familiar with tag policies and their effects.
 + [Prerequisites and permissions for declarative policies for AWS Organizations](orgs_manage_policies_prereqs.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackVo
 ---
 
 # AttackVolumeStatistics
-<a name="API_AttackVolumeStatistics"></a>
 
 Statistics objects for the various data types in [AttackVolume](API_AttackVolume.md).
 

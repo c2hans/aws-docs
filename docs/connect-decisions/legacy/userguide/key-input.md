@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/key-i
 ---
 
 # Key inputs
-<a name="key-input"></a>
 
 Auto Replenishment relies on the following inputs to make accurate and informed calculations for inventory replenishment:
 + **Demand** – Demand data is the fundamental input for replenishment calculations. This data helps AWS Supply Chain understand the demand either in terms of past sales or future forecasts to be able to determine inventory requirements for future time buckets. You can provide demand forecasts or past sales history as an input for demand data. If demand forecasts are not available, you can provide sales history, and AWS Supply Chain will use historical consumption rate for replenishment calculations.

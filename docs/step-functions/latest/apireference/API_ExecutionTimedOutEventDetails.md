@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionTimedOutEventDetails
-<a name="API_ExecutionTimedOutEventDetails"></a>
 
 Contains details about the execution timeout that occurred during the execution.
 

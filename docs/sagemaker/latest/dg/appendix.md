@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/appendix.html
 ---
 
 # Appendix
-<a name="appendix"></a>
 
 Use the following information to get information about monitoring and analyzing training results.
 

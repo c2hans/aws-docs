@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Use expander strategy
-<a name="5-3-use-expander-strategy"></a>
 
 The expander determines how Cluster Autoscaler chooses which node group to scale up when multiple options can fit pending pods — the wrong strategy leads to consistently picking expensive or oversized instances.
 

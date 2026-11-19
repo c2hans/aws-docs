@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-groups-delete
 ---
 
 # Delete a group
-<a name="cr-groups-delete"></a>
 
 If you no longer need your group, you can delete it at any time. When you delete a group with running instances and active Capacity Reservations, instances that target the group continue running in their current Capacity Reservation after the group deletion. Amazon EC2 restores the capacity to the Capacity Reservation when you terminate the instances.
 

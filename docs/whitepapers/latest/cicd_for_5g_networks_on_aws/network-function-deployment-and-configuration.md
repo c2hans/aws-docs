@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Network function deployment and configuration
-<a name="network-function-deployment-and-configuration"></a>
 
 The pipeline created in the previous stage enables both ISVs and providers to decentralize and optimize the deployment of network functions. The pipeline is connected and listens to changes in the application repository, which is configured in the JSON file in step 1 of the preceding figure.
 

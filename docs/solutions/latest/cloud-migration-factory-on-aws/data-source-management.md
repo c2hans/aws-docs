@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Data source management
-<a name="data-source-management"></a>
 
 In addition to automated wave planning, the Wave Planning Manager (WPM) module also enables many-to-many relationships during import. With this capability, applications can be deployed to many servers and a server can support many applications.
 

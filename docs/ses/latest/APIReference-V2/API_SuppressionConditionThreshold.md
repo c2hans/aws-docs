@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionConditionThreshold
-<a name="API_SuppressionConditionThreshold"></a>
 
 Contains Auto Validation settings, allowing you to suppress sending to specific destination(s) if they do not meet required threshold. For details on Auto Validation, see [Auto Validation](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/email-validation.html).
 

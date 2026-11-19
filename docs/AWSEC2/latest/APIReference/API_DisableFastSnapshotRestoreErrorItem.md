@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableFa
 ---
 
 # DisableFastSnapshotRestoreErrorItem
-<a name="API_DisableFastSnapshotRestoreErrorItem"></a>
 
 Contains information about the errors that occurred when disabling fast snapshot restores.
 

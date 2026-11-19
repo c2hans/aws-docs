@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Contai
 ---
 
 # ContainerDefinition
-<a name="API_ContainerDefinition"></a>
 
 Describes the container, as part of model definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceRefreshWarmPoolProgress
-<a name="API_InstanceRefreshWarmPoolProgress"></a>
 
 Reports progress on replacing instances that are in the warm pool.
 

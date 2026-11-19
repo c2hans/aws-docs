@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Table.html
 ---
 
 # Table
-<a name="API_Table"></a>
 
 Represents a collection of related data organized in columns and rows.
 

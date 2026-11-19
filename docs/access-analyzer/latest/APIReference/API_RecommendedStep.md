@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # RecommendedStep
-<a name="API_RecommendedStep"></a>
 
 Contains information about a recommended step for an unused access analyzer finding.
 

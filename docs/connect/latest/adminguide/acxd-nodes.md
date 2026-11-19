@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/acxd-nodes.htm
 ---
 
 # Working with nodes
-<a name="acxd-nodes"></a>
 
 Nodes are the building blocks of a flow in agentic CX designer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSchema.html
 ---
 
 # GetSchema
-<a name="API_GetSchema"></a>
 
 Describes the specified schema in detail.
 

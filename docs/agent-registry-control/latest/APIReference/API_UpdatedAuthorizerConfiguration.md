@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAuthorizerConfiguration
-<a name="API_UpdatedAuthorizerConfiguration"></a>
 
 Wrapper for updating an optional authorizer configuration with PATCH semantics.
 

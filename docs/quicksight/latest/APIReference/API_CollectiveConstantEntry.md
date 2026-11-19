@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colle
 ---
 
 # CollectiveConstantEntry
-<a name="API_CollectiveConstantEntry"></a>
 
 The definition for a `CollectiveConstantEntry`.
 

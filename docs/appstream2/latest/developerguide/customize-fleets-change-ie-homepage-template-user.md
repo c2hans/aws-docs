@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Use the WorkSpaces Applications Template User Account to Change the Default Internet Explorer Home Page
-<a name="customize-fleets-change-ie-homepage-template-user"></a>
 
 Follow these steps to use the **Template User** account to change the default Internet Explorer home page.
 

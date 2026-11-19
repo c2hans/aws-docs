@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-invoke-dag
 ---
 
 # Invoking DAGs in different Amazon MWAA environments
-<a name="samples-invoke-dag"></a>
 
 The following code example creates an Apache Airflow CLI token. The code then uses a directed acyclic graph (DAG) in one Amazon MWAA environment to invoke a DAG in a different Amazon MWAA environment.
 

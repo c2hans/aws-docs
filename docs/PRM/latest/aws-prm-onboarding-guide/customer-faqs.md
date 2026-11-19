@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/cust
 ---
 
 # Customer FAQ
-<a name="customer-faqs"></a>
 
 ## 1. What is Partner Revenue Measurement?
 <a name="customer-what-is-prm-faq"></a>

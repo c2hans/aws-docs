@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAppS
 ---
 
 # AwsAppSyncGraphQlApiOpenIdConnectConfigDetails
-<a name="API_AwsAppSyncGraphQlApiOpenIdConnectConfigDetails"></a>
 
  Specifies the authorization configuration for using an OpenID Connect compliant service with your AWS AppSync GraphQL API endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/investigation
 ---
 
 # Reviewing Detective Investigations reports
-<a name="investigations-report"></a>
 
 Investigations reports lets you review the generated **Reports** for investigations that you have run previously in Detective.
 

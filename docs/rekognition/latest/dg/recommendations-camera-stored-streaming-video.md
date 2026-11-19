@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/recommendations-ca
 ---
 
 # Recommendations for camera setup (stored and streaming video)
-<a name="recommendations-camera-stored-streaming-video"></a>
 
 The following recommendations are in addition to [Recommendations for camera setup (image and video)](recommendations-camera-image-video.md).
 + The codec should be h.264 encoded.

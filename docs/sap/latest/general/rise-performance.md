@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-performance.html
 ---
 
 # Performance
-<a name="rise-performance"></a>
 
  **Enhance SAP Fiori performance with Amazon CloudFront**
 

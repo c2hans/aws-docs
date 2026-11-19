@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Storage layout
-<a name="storage"></a>
 
 When you use SQL Server database files with EnterpriseOne, they exhibit characteristics that support various disk types depending on their function.
 + `tempdb `files should be placed on NVMe instance storage. When RCSI is enabled, a substantial workload is created in the `tempdb `database to store record set snapshots. These snapshots are ephemeral and do not require the durability of traditional elastic block storage. When you use NVMe instance storage, the database will receive very low latency I/O, high IOPS, and high throughput at a low price point.

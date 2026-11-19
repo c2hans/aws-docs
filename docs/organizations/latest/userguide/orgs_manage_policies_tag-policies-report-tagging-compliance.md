@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Report tagging compliance
-<a name="orgs_manage_policies_tag-policies-report-tagging-compliance"></a>
 
 Tag policies provide reporting mode for "Basic compliance rules" and "Required tag key". You can use this mode to evaluate the compliance of an account in your organization with its effective tag policy. The generated report includes only resources that have had at least one user-defined tag at any point in their lifecycle.
 

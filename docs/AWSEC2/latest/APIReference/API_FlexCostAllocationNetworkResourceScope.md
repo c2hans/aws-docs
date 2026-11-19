@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FlexCostA
 ---
 
 # FlexCostAllocationNetworkResourceScope
-<a name="API_FlexCostAllocationNetworkResourceScope"></a>
 
 Specifies a scope of network resources for a scope-based policy association.
 

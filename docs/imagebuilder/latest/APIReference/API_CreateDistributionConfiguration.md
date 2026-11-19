@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateDistributionConfiguration
-<a name="API_CreateDistributionConfiguration"></a>
 
 Creates a new distribution configuration. Distribution configurations define and configure the outputs for your images, including the target Regions, accounts, and settings for each Region.
 

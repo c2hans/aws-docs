@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessAgentCoreRuntimeEnvironment
-<a name="API_HarnessAgentCoreRuntimeEnvironment"></a>
 
 The AgentCore Runtime environment for a harness.
 

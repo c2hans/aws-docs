@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsC
 ---
 
 # AwsEcsClusterDefaultCapacityProviderStrategyDetails
-<a name="API_AwsEcsClusterDefaultCapacityProviderStrategyDetails"></a>
 
 The default capacity provider strategy for the cluster. The default capacity provider strategy is used when services or tasks are run without a specified launch type or capacity provider strategy.
 

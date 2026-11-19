@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Toll-free number frequently asked questions
-<a name="registrations-tfn-register-faq"></a>
 
 Frequently asked questions about the toll-free number registration process.
 

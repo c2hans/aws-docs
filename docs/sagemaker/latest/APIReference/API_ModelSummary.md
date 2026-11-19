@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelS
 ---
 
 # ModelSummary
-<a name="API_ModelSummary"></a>
 
 Provides summary information about a model.
 

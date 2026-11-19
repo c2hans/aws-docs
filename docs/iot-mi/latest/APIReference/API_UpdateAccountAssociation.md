@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UpdateAcc
 ---
 
 # UpdateAccountAssociation
-<a name="API_UpdateAccountAssociation"></a>
 
 Updates the properties of an existing account association.
 

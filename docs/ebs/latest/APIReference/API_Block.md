@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_Block.html
 ---
 
 # Block
-<a name="API_Block"></a>
 
 A block of data in an Amazon Elastic Block Store snapshot.
 

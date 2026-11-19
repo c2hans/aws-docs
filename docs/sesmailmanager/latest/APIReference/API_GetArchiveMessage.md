@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetArchiveMessage
-<a name="API_GetArchiveMessage"></a>
 
 Returns a pre-signed URL that provides temporary download access to the specific email message stored in the archive.
 

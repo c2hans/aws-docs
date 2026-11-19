@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/iam-roles.html
 ---
 
 # Example IAM roles for Amazon Chime SDK messaging
-<a name="iam-roles"></a>
 
 For users to access the Amazon Chime SDK messaging features, you must define an IAM role and policy to provide credentials to users when they sign in. The IAM policy defines the resources that users can access.
 

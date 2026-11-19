@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Describ
 ---
 
 # DescribeBackups
-<a name="API_DescribeBackups"></a>
 
 Gets information about backups of AWS CloudHSM clusters. Lists either the backups you own or the backups shared with you when the Shared parameter is true.
 

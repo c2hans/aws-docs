@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 To unlock the business value of your data by adopting a scalable ML framework, consider the following next steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_XksKeyConfig
 ---
 
 # XksKeyConfigurationType
-<a name="API_XksKeyConfigurationType"></a>
 
 Information about the [external key ](https://docs.aws.amazon.com/kms/latest/developerguide/keystore-external.html#concept-external-key)that is associated with a KMS key in an external key store.
 

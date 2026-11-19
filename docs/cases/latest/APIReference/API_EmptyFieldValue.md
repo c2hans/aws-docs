@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_EmptyField
 ---
 
 # EmptyFieldValue
-<a name="API_connect-cases_EmptyFieldValue"></a>
 
 An empty value. You cannot set `EmptyFieldValue` on a field that is required on a case template.
 

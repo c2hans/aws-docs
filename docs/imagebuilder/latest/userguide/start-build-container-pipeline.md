@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/start-buil
 ---
 
 # Tutorial: Create an image pipeline with output Docker container image from the Image Builder console wizard
-<a name="start-build-container-pipeline"></a>
 
 This tutorial walks you through creating an automated pipeline to build and maintain a customized EC2 Image Builder Docker image using the **Create image pipeline** console wizard. To help you move through the steps efficiently, default settings are used when they are available, and optional sections are skipped.
 

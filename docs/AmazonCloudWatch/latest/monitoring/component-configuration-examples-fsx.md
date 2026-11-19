@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon FSx
-<a name="component-configuration-examples-fsx"></a>
 
 The following example shows a component configuration in JSON format for Amazon FSx.
 

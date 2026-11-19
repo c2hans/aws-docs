@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeEnvironmentManagedActions
-<a name="API_DescribeEnvironmentManagedActions"></a>
 
 Lists an environment's upcoming and in-progress managed actions.
 

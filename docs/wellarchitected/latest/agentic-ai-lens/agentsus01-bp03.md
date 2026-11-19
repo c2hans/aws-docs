@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSUS01-BP03 Optimize resource utilization through shared services
-<a name="agentsus01-bp03"></a>
 
  Every agent that provisions its own connection pool, cache, or processing queue pays the cost of infrastructure nobody else in the fleet benefits from. Shared services turn those duplications into one piece of infrastructure that every agent uses, so infrastructure scales with organizational demand rather than agent count.
 

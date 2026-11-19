@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Getting started with Amazon EMR on EKS in Amazon SageMaker Unified Studio
-<a name="getting-started-with-emr-on-eks"></a>
 
  Before you begin with Amazon EMR on EKS, you must have a compatible Amazon EKS cluster. If you do not have an existing Amazon EKS cluster, see [Get started with Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html) for more information regarding cost, installation and management of an Amazon EKS cluster.
 

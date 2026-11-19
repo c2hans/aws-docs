@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubDMSAccess
-<a name="AWSMigrationHubDMSAccess"></a>
 
 **Description**: Policy for Database Migration Service to assume role in customer's account to call Migration Hub
 

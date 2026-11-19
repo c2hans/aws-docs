@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/vpc-lattice_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating and managing a service networking mesh
-<a name="vpc-lattice_example_vpc_lattice_GettingStarted_055_section"></a>
 
 The following code example shows how to:
 + Create a service network

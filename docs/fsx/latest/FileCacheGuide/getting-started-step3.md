@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-starte
 ---
 
 # Step 3: Run your analysis
-<a name="getting-started-step3"></a>
 
 Now that your cache is created and mounted to a compute instance, you can use it to run your high-performance compute workload. The workload loads data from the Amazon S3 data repository as files are accessed by your workload.
 

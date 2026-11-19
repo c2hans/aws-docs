@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-core/API_NetworkCon
 ---
 
 # NetworkConnectorSummary
-<a name="API_NetworkConnectorSummary"></a>
 
 Summary information about a network connector returned by `ListNetworkConnectors`. Contains identifying fields and current state. To retrieve full configuration details, use `GetNetworkConnector`.
 

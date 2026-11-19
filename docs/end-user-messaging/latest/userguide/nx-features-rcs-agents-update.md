@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Update an RCS agent
-<a name="nx-features-rcs-agents-update"></a>
 
 Update the settings on an existing AWS RCS Agent, including whether deletion protection is enabled.
 

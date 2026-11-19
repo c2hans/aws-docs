@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/local-development
 ---
 
 # Local development
-<a name="local-development"></a>
 
  AWS Blocks is local-first. When you run `npm run dev`, your entire application runs on your local machine: backend, frontend, database, authentication, and background jobs. You don’t need an AWS account, AWS credentials, an internet connection, or a running container daemon. Every Block ships with a local implementation that exposes the same typed API as its AWS counterpart, so no emulator or additional tooling is required. The only prerequisite is Node.js version 22 or later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Database and storage selection
-<a name="database-storage-selection"></a>
 
 | SCPERF03: How do you select the database and storage for supply chain workloads? |
 | --- |

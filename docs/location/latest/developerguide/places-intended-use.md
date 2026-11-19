@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/places-in
 ---
 
 # IntendedUse
-<a name="places-intended-use"></a>
 
 **Note**
 If you store results, the higher storage pricing tier applies. Use the request parameter `IntendedUse` to specify whether the results are for single use or storage. For more information about costs associated with stored results, see [Places pricing](places-pricing.md).

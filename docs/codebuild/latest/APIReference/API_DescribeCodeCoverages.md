@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Descri
 ---
 
 # DescribeCodeCoverages
-<a name="API_DescribeCodeCoverages"></a>
 
 Retrieves one or more code coverage reports.
 

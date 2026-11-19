@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateAnomalySubscription
-<a name="API_UpdateAnomalySubscription"></a>
 
 Updates an existing cost anomaly subscription. Specify the fields that you want to update. Omitted fields are unchanged.
 

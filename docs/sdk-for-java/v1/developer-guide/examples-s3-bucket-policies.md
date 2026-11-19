@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Managing Access to Amazon S3 Buckets Using Bucket Policies
-<a name="examples-s3-bucket-policies"></a>
 
 You can set, get, or delete a *bucket policy* to manage access to your Amazon S3 buckets.
 

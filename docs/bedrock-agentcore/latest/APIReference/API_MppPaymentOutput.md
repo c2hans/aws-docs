@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MppPaymentOutput
-<a name="API_MppPaymentOutput"></a>
 
 Contains the payment credential, ready to retry the request.
 

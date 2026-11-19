@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/nor.html
 ---
 
 # $nor
-<a name="nor"></a>
 
 The `$nor` operator is used to match documents where none of the specified query conditions are true. It is similar to the logical "NOR" operation, where the result is true if none of the operands are true.
 

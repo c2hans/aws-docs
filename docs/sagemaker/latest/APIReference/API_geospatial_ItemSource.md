@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ItemSource
-<a name="API_geospatial_ItemSource"></a>
 
 The structure representing the items in the response for SearchRasterDataCollection.
 

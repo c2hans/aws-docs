@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Com
 ---
 
 # ComputeNodeExecutionDetails
-<a name="API_ComputeNodeExecutionDetails"></a>
 
 Contains detailed execution information for a compute node within a pipeline execution.
 

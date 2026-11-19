@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_GetExpe
 ---
 
 # GetExpenseAnalysis
-<a name="API_GetExpenseAnalysis"></a>
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes invoices and receipts. Amazon Textract finds contact information, items purchased, and vendor name, from input invoices and receipts.
 

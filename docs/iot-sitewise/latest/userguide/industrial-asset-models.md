@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial
 ---
 
 # Model industrial assets
-<a name="industrial-asset-models"></a>
 
 ## Assets overview
 <a name="assets-overview"></a>

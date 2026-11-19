@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_P
 ---
 
 # PendingMaintenanceAction
-<a name="API_PendingMaintenanceAction"></a>
 
 Describes a pending database maintenance action.
 

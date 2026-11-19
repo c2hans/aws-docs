@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/excel-extension-g
 ---
 
 # AWS Quick Microsoft Excel extension
-<a name="excel-extension-guide"></a>
 
 The AWS Quick extension for Excel helps you work with data faster by automating data cleaning, analysis, and visualization tasks while integrating with your enterprise data sources.
 

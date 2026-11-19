@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-agents-se
 ---
 
 # Configure DNS Suffix for EC2 Windows launch agents
-<a name="launch-agents-set-dns"></a>
 
 With Amazon EC2 launch agents, you can configure a list of DNS suffixes that Windows instances use for domain name resolution. The launch agents override the standard Windows settings in the `System\CurrentControlSet\Services\Tcpip\Parameters\SearchList` registry key by adding the following values to the DNS suffix search list:
 + The domain of the instance

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-vpc-rtmp-vpc.h
 ---
 
 # Request setup on the VPC
-<a name="setup-vpc-rtmp-vpc"></a>
 
 An Amazon VPC user must set up the VPC, and identify subnets and security groups that the upstream system and MediaLive will use.
 

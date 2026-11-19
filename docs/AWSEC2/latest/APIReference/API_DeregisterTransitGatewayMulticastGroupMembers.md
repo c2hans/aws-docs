@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deregiste
 ---
 
 # DeregisterTransitGatewayMulticastGroupMembers
-<a name="API_DeregisterTransitGatewayMulticastGroupMembers"></a>
 
 Deregisters the specified members (network interfaces) from the transit gateway multicast group.
 

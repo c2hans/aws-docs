@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-instanc
 ---
 
 # Launch instances synchronously
-<a name="launch-instances-synchronously"></a>
 
 Amazon EC2 Auto Scaling provides two methods for launching instances in your Auto Scaling group: asynchronous scaling behavior and synchronous provisioning using the LaunchInstances API.
 

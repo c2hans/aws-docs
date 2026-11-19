@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetPreferences
-<a name="API_AWSBCMPricingCalculator_GetPreferences"></a>
 
  Retrieves the current preferences for AWS Pricing Calculator.
 

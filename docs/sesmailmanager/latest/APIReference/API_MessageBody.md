@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_M
 ---
 
 # MessageBody
-<a name="API_MessageBody"></a>
 
 The textual body content of an email message.
 

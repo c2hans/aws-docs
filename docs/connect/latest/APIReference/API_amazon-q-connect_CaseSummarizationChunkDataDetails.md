@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # CaseSummarizationChunkDataDetails
-<a name="API_amazon-q-connect_CaseSummarizationChunkDataDetails"></a>
 
 Details about case summarization chunk data.
 

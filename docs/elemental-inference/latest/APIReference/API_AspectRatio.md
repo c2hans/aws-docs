@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # AspectRatio
-<a name="API_AspectRatio"></a>
 
 The width and height of the output video. Used in SubtitlingConfig to determine subtitle layout.
 

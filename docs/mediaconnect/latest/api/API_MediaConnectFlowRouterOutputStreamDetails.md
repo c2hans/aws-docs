@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaConnect
 ---
 
 # MediaConnectFlowRouterOutputStreamDetails
-<a name="API_MediaConnectFlowRouterOutputStreamDetails"></a>
 
 Configuration details for a MediaConnect flow when used as a router output destination.
 

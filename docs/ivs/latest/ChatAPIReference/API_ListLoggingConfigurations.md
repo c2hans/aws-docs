@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_ListLogg
 ---
 
 # ListLoggingConfigurations
-<a name="API_ListLoggingConfigurations"></a>
 
 Gets summary information about all your logging configurations in the AWS region where the API request is processed.
 

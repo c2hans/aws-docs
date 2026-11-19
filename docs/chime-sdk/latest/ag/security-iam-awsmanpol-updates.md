@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/security-iam-awsmanp
 ---
 
 # Amazon Chime updates to AWS managed policies
-<a name="security-iam-awsmanpol-updates"></a>
 
 The following table lists and describes the updates made to the Amazon Chime SDK IAM policy.
 

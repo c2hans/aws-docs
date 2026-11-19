@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Perf
 ---
 
 # PerformanceInsightsStat
-<a name="API_PerformanceInsightsStat"></a>
 
 A statistic in a Performance Insights collection.
 

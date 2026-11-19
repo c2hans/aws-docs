@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-ide-ho
 ---
 
 # How AWS Transform modernizes .NET applications
-<a name="dotnet-ide-how"></a>
 
 Review the following sections for details about how .NET transformation with AWS Transform works.
 

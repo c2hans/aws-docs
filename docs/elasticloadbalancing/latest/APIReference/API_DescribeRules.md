@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeRules
-<a name="API_DescribeRules"></a>
 
 Describes the specified rules or the rules for the specified listener. You must specify either a listener or rules.
 

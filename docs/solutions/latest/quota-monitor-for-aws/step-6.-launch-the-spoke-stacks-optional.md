@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 6. Launch the spoke stacks when not using AWS Organizations or hybrid environments
-<a name="step-6.-launch-the-spoke-stacks-optional"></a>
 
 Use the following procedure to launch the components necessary to monitor quotas in secondary accounts. You must launch the spoke stack in every account you want to monitor (including the account where the hub stack is deployed). You can deploy the Service Quotas spoke stack in all Regions, but only deploy the Trusted Advisor spoke stack in the Regions where the service’s data plane resides, specifically, US East 1 (N. Virginia) and AWS GovCloud (US-West).
 

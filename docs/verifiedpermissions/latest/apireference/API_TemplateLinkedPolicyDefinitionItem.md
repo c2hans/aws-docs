@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # TemplateLinkedPolicyDefinitionItem
-<a name="API_TemplateLinkedPolicyDefinitionItem"></a>
 
 Contains information about a policy created by instantiating a policy template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/input-out
 ---
 
 # Input and output formats
-<a name="input-output-formats"></a>
 
 Jobs require input data in [Apache Parquet](https://parquet.apache.org/docs/overview/) format stored in Amazon S3. Your input files must conform to a specific schema corresponding to the action you want to perform. The service writes results back to Amazon S3 in Parquet format, preserving all original input data and adding results from the processed action.
 

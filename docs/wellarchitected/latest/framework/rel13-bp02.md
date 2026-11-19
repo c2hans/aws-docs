@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 ---
 
 # REL13-BP02 Use defined recovery strategies to meet the recovery objectives
-<a name="rel13-bp02"></a>
 
  A workload needs a planned way to run from a recovery site when its primary location cannot serve it. Choosing that plan is a trade-off between how fast you recover and how much standing infrastructure you pay for and operate. Define a strategy for each workload, drawn from a small set of reusable patterns.
 

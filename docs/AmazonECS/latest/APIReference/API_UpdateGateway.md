@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateGateway
-<a name="API_UpdateGateway"></a>
 
 Modifies the configuration of a gateway. You can change only the properties that can be applied without interrupting traffic, and the configuration variant that you provide must match the gateway's type. `UpdateGateway` is an asynchronous operation: the changes are applied to each load balancer the gateway manages, and the gateway reports a status of `UPDATE_IN_PROGRESS` until the update completes. If Amazon ECS can't update one or more resources, it makes a best effort to update the rest and the gateway status changes to `UPDATE_FAILED`. Use `DescribeGateway` to inspect the gateway's `statusReason` and failures list, which gives the ARN of each load balancer that was not updated and the operation, error code, and message for each failure.
 

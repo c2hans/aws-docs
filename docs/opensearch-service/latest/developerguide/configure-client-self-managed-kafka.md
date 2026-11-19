@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with Kafka
-<a name="configure-client-self-managed-kafka"></a>
 
 You can use the [Kafka](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/kafka/) plugin to stream data from self-managed Kafka clusters to Amazon OpenSearch Service domains and OpenSearch Serverless collections. OpenSearch Ingestion supports connections from Kafka clusters configured with either public or private (VPC) networking. This topic outlines the prerequisites and steps to set up an ingestion pipeline, including configuring network settings and authentication methods such as mutual TLS (mTLS), SASL/SCRAM, or IAM.
 

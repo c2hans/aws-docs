@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagConta
 ---
 
 # TagContact
-<a name="API_TagContact"></a>
 
 Adds the specified tags to the contact resource. For more information about this API is used, see [Set up granular billing for a detailed view of your Connect Customer usage](https://docs.aws.amazon.com/connect/latest/adminguide/granular-billing.html).
 

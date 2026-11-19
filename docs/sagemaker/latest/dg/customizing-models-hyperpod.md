@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-h
 ---
 
 # HyperPod
-<a name="customizing-models-hyperpod"></a>
 
 HyperPod runs model customization on persistent compute clusters that remain available across multiple training jobs. HyperPod provides advanced fault detection and recovery, making it ideal for large-scale and long-running training workloads.
 

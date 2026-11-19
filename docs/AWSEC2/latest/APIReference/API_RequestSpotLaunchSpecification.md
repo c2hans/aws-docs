@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestSp
 ---
 
 # RequestSpotLaunchSpecification
-<a name="API_RequestSpotLaunchSpecification"></a>
 
 Describes the launch specification for an instance.
 

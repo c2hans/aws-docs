@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DBMo
 ---
 
 # DBModProvisioningAndMigration
-<a name="DBModProvisioningAndMigration"></a>
 
 **Description**: Resource provisioning and data migration permissions for database connector used in database modernization
 

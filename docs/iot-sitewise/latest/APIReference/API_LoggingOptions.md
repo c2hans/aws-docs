@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Log
 ---
 
 # LoggingOptions
-<a name="API_LoggingOptions"></a>
 
 Contains logging options.
 

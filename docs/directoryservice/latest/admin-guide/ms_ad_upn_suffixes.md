@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Adding alternate UPN suffixes to your AWS Managed Microsoft AD
-<a name="ms_ad_upn_suffixes"></a>
 
 You can simplify the management of Active Directory (AD) login names and improve the user login experience by adding alternate user principal name (UPN) suffixes to your AWS Managed Microsoft AD directory. To do that, you must be logged on with the **Admin** account or with an account that is a member of the **AWS Delegated User Principal Name Suffix Administrators** group. For more information about this group, see [What gets created with your AWS Managed Microsoft AD](ms_ad_getting_started_what_gets_created.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/searc
 ---
 
 # CloudWatch search expression examples
-<a name="search-expression-examples"></a>
 
 The following examples illustrate more search expression uses and syntax. Let's start with a search for `CPUUtilization` across all instances in the Region and then look at variations.
 

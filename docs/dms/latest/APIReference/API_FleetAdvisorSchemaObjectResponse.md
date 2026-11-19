@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_FleetAdvisor
 ---
 
 # FleetAdvisorSchemaObjectResponse
-<a name="API_FleetAdvisorSchemaObjectResponse"></a>
 
 Describes a schema object in a Fleet Advisor collector inventory.
 

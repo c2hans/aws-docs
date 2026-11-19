@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Support for Hugging Face Transformer Models
-<a name="model-parallel-extended-features-pytorch-hugging-face"></a>
 
 The SageMaker model parallelism library's tensor parallelism offers out-of-the-box support for the following Hugging Face Transformer models:
 + GPT-2, BERT, and RoBERTa (Available in the SageMaker model parallelism library v1.7.0 and later)

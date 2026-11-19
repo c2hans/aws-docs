@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Customize an Amazon GameLift Servers container fleet
-<a name="containers-design-fleet"></a>
 
 The topics in this section describe some of the optional features for Amazon GameLift Servers managed containers. You can choose to use any or all of these features.
 

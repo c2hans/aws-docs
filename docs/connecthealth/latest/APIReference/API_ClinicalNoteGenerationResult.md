@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cl
 ---
 
 # ClinicalNoteGenerationResult
-<a name="API_ClinicalNoteGenerationResult"></a>
 
 Results of clinical note generation including note, transcript, and summary
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Prerequisites
-<a name="config-resource-prerequisites"></a>
 
 ## Architecture
 <a name="architecture"></a>

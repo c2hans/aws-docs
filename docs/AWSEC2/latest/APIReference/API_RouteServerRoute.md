@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerRoute
-<a name="API_RouteServerRoute"></a>
 
 Describes a route in the route server's routing database.
 

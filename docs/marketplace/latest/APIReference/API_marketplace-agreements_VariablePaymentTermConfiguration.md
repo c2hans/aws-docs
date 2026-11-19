@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # VariablePaymentTermConfiguration
-<a name="API_marketplace-agreements_VariablePaymentTermConfiguration"></a>
 
 Additional parameters specified by the acceptor while accepting the variable payment term.
 
@@ -20,7 +19,7 @@ Valid Values: `AUTO_APPROVE_ON_EXPIRATION | WAIT_FOR_APPROVAL`
 Required: Yes
 
  ** expirationDuration **   <a name="AWSMarketplaceService-Type-marketplace-agreements_VariablePaymentTermConfiguration-expirationDuration"></a>
-Defines the duration after which a payment request is automatically approved if no further action is taken. This only applies when the payment request approval strategy is set to `AUTO_APPROVE_ON_EXPIRATION`. The duration is represented in the ISO\_8601 format (e.g., P10D for 10 days).
+Defines the duration after which a payment request is automatically approved if no further action is taken. This only applies when the payment request approval strategy is set to `AUTO_APPROVE_ON_EXPIRATION`. The duration is represented in the ISO\_8601 format (for example, P10D for 10 days).
 Type: String
 Pattern: `([-+]?)P(?:([-+]?[0-9]+)D)?(T(?:([-+]?[0-9]+)H)?(?:([-+]?[0-9]+)M)?(?:([-+]?[0-9]+)(?:[.,]([0-9]{0,9}))?S)?)?`
 Required: No

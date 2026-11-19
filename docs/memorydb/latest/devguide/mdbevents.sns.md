@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/mdbevents.sns.h
 ---
 
 # Managing MemoryDB Amazon SNS notifications
-<a name="mdbevents.sns"></a>
 
 You can configure MemoryDB to send notifications for important cluster events using Amazon Simple Notification Service (Amazon SNS). In these examples, you will configure a cluster with the Amazon Resource Name (ARN) of an Amazon SNS topic to receive notifications.
 

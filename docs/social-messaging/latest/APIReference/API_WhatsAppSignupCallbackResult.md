@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppSignupCallbackResult
-<a name="API_WhatsAppSignupCallbackResult"></a>
 
 Contains the results of WhatsAppSignupCallback.
 

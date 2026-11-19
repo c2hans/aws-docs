@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-usin
 ---
 
 # Using JSON format template variables
-<a name="cloudwatch-using-json-format-template-variables"></a>
 
  Some queries accept filters in JSON format and Grafana supports the conversion of template variables to JSON.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRepostSpaceSupportOperationsPolicy
-<a name="AWSRepostSpaceSupportOperationsPolicy"></a>
 
 **Description**: This policy allows the re:Post Space service to create, manage, and resolve Support cases that are created through the Space application.
 

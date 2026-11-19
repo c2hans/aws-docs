@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationAggregates
-<a name="API_ReservationAggregates"></a>
 
 The aggregated numbers for your reservation usage.
 

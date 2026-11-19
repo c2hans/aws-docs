@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Genera
 ---
 
 # S3GeneratedManifestDescriptor
-<a name="API_control_S3GeneratedManifestDescriptor"></a>
 
 Describes the specified job's generated manifest. Batch Operations jobs created with a ManifestGenerator populate details of this descriptor after execution of the ManifestGenerator.
 

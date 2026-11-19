@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-with-t
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using application integration SDKs with Bot Control
-<a name="waf-bot-with-tokens"></a>
 
 This section explains how to use application integration SDKs with Bot Control.
 

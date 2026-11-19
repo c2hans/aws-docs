@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/diagnose-timing-is
 ---
 
 # Resolve CDN ad break timing and synchronization issues for MediaTailor
-<a name="diagnose-timing-issues"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) ad break timing must be precisely synchronized with content markers. If ads appear at incorrect times or ad break timing is inconsistent:
 

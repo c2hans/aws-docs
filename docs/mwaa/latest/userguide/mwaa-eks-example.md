@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/mwaa-eks-example.h
 ---
 
 # Using Amazon MWAA with Amazon EKS
-<a name="mwaa-eks-example"></a>
 
 The following sample demonstrates how to use Amazon Managed Workflows for Apache Airflow with Amazon EKS.
 

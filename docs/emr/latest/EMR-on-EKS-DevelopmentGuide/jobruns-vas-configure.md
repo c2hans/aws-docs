@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Configuring vertical autoscaling for Amazon EMR on EKS
-<a name="jobruns-vas-configure"></a>
 
 You can configure vertical autoscaling when you submit Amazon EMR Spark jobs through the [StartJobRun](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html) API. Set the autoscaling-related configuration parameters on the Spark driver pod as shown in the example in [Submitting a Spark job with vertical autoscaling](jobruns-vas-gs.md#jobruns-vas-spark-submit).
 

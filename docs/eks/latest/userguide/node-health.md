@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/node-health.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Detect node health issues and enable automatic node repair
-<a name="node-health"></a>
 
 Node health refers to the operational status and capability of a Kubernetes node to effectively run workloads. A healthy node maintains expected network connectivity, has sufficient compute and storage resources, and can successfully run workloads without disruption.
 

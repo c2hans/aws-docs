@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlResourceDrift
-<a name="API_EnabledControlResourceDrift"></a>
 
 Represents drift information related to the underlying AWS resources managed by the control.
 

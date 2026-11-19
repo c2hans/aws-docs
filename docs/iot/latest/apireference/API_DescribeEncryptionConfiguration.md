@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeEncr
 ---
 
 # DescribeEncryptionConfiguration
-<a name="API_DescribeEncryptionConfiguration"></a>
 
 Retrieves the encryption configuration for resources and data of your AWS account in AWS IoT Core. For more information, see [Data encryption at rest](https://docs.aws.amazon.com/iot/latest/developerguide/encryption-at-rest.html) in the * AWS IoT Core Developer Guide*.
 

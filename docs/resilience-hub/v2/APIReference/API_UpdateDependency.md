@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Updat
 ---
 
 # UpdateDependency
-<a name="API_UpdateDependency"></a>
 
 Updates a dependency classification.
 

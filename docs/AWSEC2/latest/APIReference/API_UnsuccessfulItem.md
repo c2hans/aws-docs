@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Unsuccess
 ---
 
 # UnsuccessfulItem
-<a name="API_UnsuccessfulItem"></a>
 
 Information about items that were not successfully processed in a batch call.
 

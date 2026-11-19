@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # OrRuleStatement
-<a name="API_OrRuleStatement"></a>
 
 OR rule statement.
 

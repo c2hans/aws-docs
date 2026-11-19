@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Vectors::Index
-<a name="aws-resource-s3vectors-index"></a>
 
 The `AWS::S3Vectors::Index` resource defines a vector index within an Amazon S3 vector bucket. For more information, see [Creating a vector index in a vector bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-create-index.html) in the *Amazon Simple Storage Service User Guide*.
 

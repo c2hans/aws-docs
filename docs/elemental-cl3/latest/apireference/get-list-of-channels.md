@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/get-li
 ---
 
 # GET List: Get List of Channels
-<a name="get-list-of-channels"></a>
 
 Get a list of all channels, including the attributes of each channel. The attributes include a status.
 

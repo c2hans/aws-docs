@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EpssDetail
 ---
 
 # EpssDetails
-<a name="API_EpssDetails"></a>
 
 Details about the Exploit Prediction Scoring System (EPSS) score for a finding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AccountModific
 ---
 
 # AccountModification
-<a name="API_AccountModification"></a>
 
 Describes a modification to the configuration of Bring Your Own License (BYOL) for the specified account.
 

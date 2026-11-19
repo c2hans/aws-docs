@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AgentRegistry::RegistryRecord RegistryRecordCredentialProviderConfiguration
-<a name="aws-properties-agentregistry-registryrecord-registryrecordcredentialproviderconfiguration"></a>
 
 A credential provider configuration that specifies how to authenticate when fetching descriptor content from a registry record's source URL.
 

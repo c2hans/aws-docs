@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # cidrlookup
-<a name="CWL_QuerySyntax-Cidrlookup"></a>
 
 Use the `cidrlookup` command to enrich events by matching an IP field against CIDR ranges in a lookup table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Monitor collectors
-<a name="managed-prometheus-collectors-monitor"></a>
 
 Amazon CloudWatch managed Prometheus collectors automatically vend logs to CloudWatch Logs so you can monitor scraper health, diagnose connectivity issues, and track scraping activity. These logs include information about target discovery, scrape successes and failures, and configuration errors. For more information about collector logging, see [Logging for managed collectors](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-logging.html) in the *Amazon Managed Service for Prometheus User Guide*.
 

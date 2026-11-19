@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDashboardPublishedVersion
-<a name="API_UpdateDashboardPublishedVersion"></a>
 
 Updates the published version of a dashboard.
 

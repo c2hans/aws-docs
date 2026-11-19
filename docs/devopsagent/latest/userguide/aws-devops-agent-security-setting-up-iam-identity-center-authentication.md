@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-
 ---
 
 # Setting Up IAM Identity Center Authentication
-<a name="aws-devops-agent-security-setting-up-iam-identity-center-authentication"></a>
 
 IAM Identity Center authentication provides a centralized way to manage user access to the AWS DevOps Agent Space web application. This guide explains how to configure IAM Identity Center authentication and manage users.
 

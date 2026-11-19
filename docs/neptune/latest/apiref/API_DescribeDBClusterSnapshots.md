@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBClus
 ---
 
 # DescribeDBClusterSnapshots
-<a name="API_DescribeDBClusterSnapshots"></a>
 
 Returns information about DB cluster snapshots. This API action supports pagination.
 
@@ -77,7 +76,7 @@ Provides a list of DB cluster snapshots for the user.
 Type: Array of [DBClusterSnapshot](API_DBClusterSnapshot.md) objects
 
  ** Marker **
- An optional pagination token provided by a previous [DescribeDBClusterSnapshots](#API_DescribeDBClusterSnapshots) request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by `MaxRecords`.
+ An optional pagination token provided by a previous [DescribeDBClusterSnapshots](API_DescribeDBClusterSnapshots.md) request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by `MaxRecords`.
 Type: String
 
 ## Errors

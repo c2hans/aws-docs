@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-spot-fl
 ---
 
 # ec2-spot-fleet-request-ct-encryption-at-rest
-<a name="ec2-spot-fleet-request-ct-encryption-at-rest"></a>
 
 Checks if Amazon EC2 Spot Fleet request launch parameters set encrypted to True for attached EBS volumes. The rule is NON\_COMPLIANT if any EBS volumes has encrypted set to False. The rule does not evaluate spot fleet requests using launch templates.
 

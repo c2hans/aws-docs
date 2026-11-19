@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/amazon-aurora-m
 ---
 
 # Amazon Aurora MySQL
-<a name="amazon-aurora-mysql"></a>
 
 This guide provides security configuration requirements and implementation examples for Amazon Aurora MySQL in accordance with FedRAMP requirements.
 

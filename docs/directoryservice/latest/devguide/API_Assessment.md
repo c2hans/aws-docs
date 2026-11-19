@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Ass
 ---
 
 # Assessment
-<a name="API_Assessment"></a>
 
 Contains detailed information about a directory assessment, including configuration parameters, status, and validation results.
 

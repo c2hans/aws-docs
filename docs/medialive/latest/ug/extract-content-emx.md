@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-content-emx.
 ---
 
 # Identifying content in a MediaConnect source
-<a name="extract-content-emx"></a>
 
 The content in an AWS Elemental MediaConnect source is always a transport stream (TS). The TS is made up of one program (SPTS) or multiple programs (MPTS). Each program contains a combination of video, audio, and optional captions.
 

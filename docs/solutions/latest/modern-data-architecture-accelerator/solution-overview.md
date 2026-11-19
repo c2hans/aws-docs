@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Accelerate the Deployment of Secure and Compliant Modern Data Architectures for Advanced Analytics and AI
-<a name="solution-overview"></a>
 
 Publication date: *November 2026 (Version 1.10.0). For updates, refer to the [release notes](https://github.com/aws/modern-data-architecture-accelerator/releases/) in the GitHub repository.*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/windows-gr
 ---
 
 # Set up Grafana for SiteWise Edge
-<a name="windows-grafana"></a>
 
  Grafana® lets you create local real-time monitoring dashboards for your industrial data. By visualizing the data stored in InfluxDB®, you can provide operators with immediate insights into equipment performance, process efficiency, and potential issues. This visibility at the edge is important for time-sensitive operations and maintaining continuity during network disruptions.
 

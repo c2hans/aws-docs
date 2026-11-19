@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # limit
-<a name="CWL_QuerySyntax-Limit"></a>
 
  Use `limit` to specify the number of log events that you want your query to return. If you omit `limit`, the query defaults to returning up to 10,000 log events. You can specify a `limit` value of up to 100,000.
 

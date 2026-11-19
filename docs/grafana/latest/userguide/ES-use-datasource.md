@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/ES-use-datasour
 ---
 
 # Using the Amazon OpenSearch Service data source
-<a name="ES-use-datasource"></a>
 
 ## Metric query editor
 <a name="ES-metric-query-editor"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetInstance
-<a name="API_GetInstance"></a>
 
 Returns information about a specific Amazon Lightsail instance, which is a virtual private server.
 

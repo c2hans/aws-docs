@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/hj-view.html
 ---
 
 # Viewing harvest job details
-<a name="hj-view"></a>
 
 View all harvest jobs that you created within the last 90 days. After 90 days, a harvest job expires from your account.
 

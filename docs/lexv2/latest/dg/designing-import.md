@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/designing-import.html
 ---
 
 # Importing conversation transcripts
-<a name="designing-import"></a>
 
 Importing conversation transcripts is a three-step process:
 

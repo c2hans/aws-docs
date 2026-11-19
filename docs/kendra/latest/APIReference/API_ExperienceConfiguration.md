@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Experienc
 ---
 
 # ExperienceConfiguration
-<a name="API_ExperienceConfiguration"></a>
 
 Provides the configuration information for your Amazon Kendra experience. This includes the data source IDs and/or FAQ IDs, and user or group information to grant access to your Amazon Kendra experience.
 

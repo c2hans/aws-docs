@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/mrap-failover-
 ---
 
 # Amazon S3 Multi-Region Access Point failover controls errors
-<a name="mrap-failover-errors"></a>
 
 When you update the failover configuration for your Multi-Region Access Point, you might encounter one of these errors:
 + `HTTP 400 Bad Request`: This error can occur if you enter an invalid Multi-Region Access Point ARN while updating your failover configuration. You can confirm your Multi-Region Access Point ARN by reviewing your Multi-Region Access Point policy. To review or update your Multi-Region Access Point policy, see [Editing the Multi-Region Access Point policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingFailover.html#editing-mrap-policy). This error can also occur if you use an empty string or a random string while updating your Amazon S3 Multi-Region Access Point failover controls. Make sure to use the Multi-Region Access Point ARN format:

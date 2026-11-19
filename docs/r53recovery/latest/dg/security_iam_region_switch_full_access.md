@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Full access permissions
-<a name="security_iam_region_switch_full_access"></a>
 
 The following IAM policy grants full access for all Region switch APIs:
 

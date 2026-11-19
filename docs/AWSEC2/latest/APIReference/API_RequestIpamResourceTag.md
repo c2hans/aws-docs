@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestIp
 ---
 
 # RequestIpamResourceTag
-<a name="API_RequestIpamResourceTag"></a>
 
 A tag on an IPAM resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Executi
 ---
 
 # ExecutionResults
-<a name="API_ExecutionResults"></a>
 
 Specifies the steps in the workflow, as well as the steps to execute in case of any errors during workflow execution.
 

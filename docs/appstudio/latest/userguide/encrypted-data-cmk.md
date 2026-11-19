@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/encrypted-dat
 ---
 
 # Use encrypted data sources with CMKs
-<a name="encrypted-data-cmk"></a>
 
 This topic contains information about setting up and connecting App Studio to data sources that are encrypted using a [AWS KMS Customer Managed Key (CMK)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk).
 

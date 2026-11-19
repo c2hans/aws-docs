@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/subscribe-v
 ---
 
 # Viewing an aggregated list of Amazon Q Developer subscriptions
-<a name="subscribe-visibility"></a>
 
 **Note**
 This section does not apply to personal accounts (Builder IDs).

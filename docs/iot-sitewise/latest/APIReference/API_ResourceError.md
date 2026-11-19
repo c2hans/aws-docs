@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Res
 ---
 
 # ResourceError
-<a name="API_ResourceError"></a>
 
 Contains the details of a resource error.
 

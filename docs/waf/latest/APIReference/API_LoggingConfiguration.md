@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_LoggingConfi
 ---
 
 # LoggingConfiguration
-<a name="API_LoggingConfiguration"></a>
 
 Defines an association between logging destinations and a web ACL resource, for logging from AWS WAF. As part of the association, you can specify parts of the standard logging fields to keep out of the logs and you can specify filters so that you log only a subset of the logging records.
 

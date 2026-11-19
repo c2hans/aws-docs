@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # RoleInfo
-<a name="API_RoleInfo"></a>
 
 Provides information about the role that is assigned to the user.
 

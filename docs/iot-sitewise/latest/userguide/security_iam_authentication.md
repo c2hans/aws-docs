@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_i
 ---
 
 # Authenticate with identities in AWS IoT SiteWise
-<a name="security_iam_authentication"></a>
 
 Authentication is how you sign in to AWS using your identity credentials. You must be authenticated as the AWS account root user, an IAM user, or by assuming an IAM role.
 

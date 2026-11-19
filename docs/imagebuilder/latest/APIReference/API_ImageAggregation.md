@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageAggregation
-<a name="API_ImageAggregation"></a>
 
 Contains vulnerability counts for a specific image.
 

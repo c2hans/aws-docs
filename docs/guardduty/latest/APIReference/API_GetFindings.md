@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetFin
 ---
 
 # GetFindings
-<a name="API_GetFindings"></a>
 
 Describes Amazon GuardDuty findings specified by finding IDs.
 

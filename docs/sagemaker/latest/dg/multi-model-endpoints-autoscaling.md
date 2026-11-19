@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-endpoint
 ---
 
 # Set Auto Scaling Policies for Multi-Model Endpoint Deployments
-<a name="multi-model-endpoints-autoscaling"></a>
 
 SageMaker AI multi-model endpoints fully support automatic scaling, which manages replicas of models to ensure models scale based on traffic patterns. We recommend that you configure your multi-model endpoint and the size of your instances based on [Instance recommendations for multi-model endpoint deployments](multi-model-endpoint-instance.md) and also set up instance based auto scaling for your endpoint. The invocation rates used to trigger an auto-scale event are based on the aggregate set of predictions across the full set of models served by the endpoint. For additional details on setting up endpoint auto scaling, see [Automatically Scale Amazon SageMaker AI Models](https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scaling.html).
 

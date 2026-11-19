@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_Addition
 ---
 
 # AdditionalAuthenticationProvider
-<a name="API_AdditionalAuthenticationProvider"></a>
 
 Describes an additional authentication provider.
 

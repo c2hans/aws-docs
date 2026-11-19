@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchDev
 ---
 
 # SearchDevicesFilter
-<a name="API_SearchDevicesFilter"></a>
 
 The filter used to search for devices.
 

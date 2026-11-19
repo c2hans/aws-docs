@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForAIDevOpsPolicy
-<a name="AWSServiceRoleForAIDevOpsPolicy"></a>
 
 **Description**: This Service Linked Role provides AIDevOps ability to provide usage information.
 

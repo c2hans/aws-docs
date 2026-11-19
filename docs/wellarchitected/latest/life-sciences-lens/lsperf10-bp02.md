@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF10-BP02 Establish intelligent cache warming and preloading based on clinical workflow patterns and seasonal variations
-<a name="lsperf10-bp02"></a>
 
  Develop predictive cache warming strategies that analyze historical clinical access patterns to preload relevant reference data before peak usage periods. Implement workflow-aware preloading for scheduled procedures, seasonal health trends, and active clinical trial requirements.
 

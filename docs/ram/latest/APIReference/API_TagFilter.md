@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_TagFilter.ht
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 A tag key and optional list of possible values that you can use to filter results for tagged resources.
 

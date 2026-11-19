@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-auto-scalin
 ---
 
 # Scale an endpoint to zero instances
-<a name="endpoint-auto-scaling-zero-instances"></a>
 
 When you set up auto scaling for an endpoint, you can allow the scale-in process to reduce the number of in-service instances to zero. By doing so, you save costs during periods when your endpoint isn't serving inference requests and therefore doesn't require any active instances.
 

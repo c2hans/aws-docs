@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Use Amazon S3 as a PowerShell drive
-<a name="pstools-s3-drive"></a>
 
 *Applies to: `AWS.Tools.S3` 5.0.288 and later. The S3 drive provider and its cmdlets ship in the `AWS.Tools.S3` module, which runs on Windows PowerShell 5.1 and PowerShell 7\+ (Windows, Linux, macOS).*
 

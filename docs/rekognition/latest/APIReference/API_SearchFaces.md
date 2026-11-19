@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Sear
 ---
 
 # SearchFaces
-<a name="API_SearchFaces"></a>
 
 For a given input face ID, searches for matching faces in the collection the face belongs to. You get a face ID when you add a face to the collection using the [IndexFaces](API_IndexFaces.md) operation. The operation compares the features of the input face with faces in the specified collection.
 

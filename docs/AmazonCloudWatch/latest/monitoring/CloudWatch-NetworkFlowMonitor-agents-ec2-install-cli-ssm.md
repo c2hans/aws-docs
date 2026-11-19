@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Install agents using AWS CLI with SSM commands
-<a name="CloudWatch-NetworkFlowMonitor-agents-ec2-install-cli-ssm"></a>
 
 You can use the AWS Command Line Interface to send AWS Systems Manager commands to install and activate Network Flow Monitor agents on your EC2 instances. This method is useful for scripted or automated deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Or
 ---
 
 # OriginDetails
-<a name="API_OriginDetails"></a>
 
 Details about the origin of the data set.
 

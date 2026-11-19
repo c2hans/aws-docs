@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateGlossaryTer
 ---
 
 # UpdateGlossaryTerm
-<a name="API_UpdateGlossaryTerm"></a>
 
 Updates a glossary term in AWS Glue Data Catalog.
 

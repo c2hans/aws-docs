@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Test and monitor performance
-<a name="test-and-monitor-performance"></a>
 
 | SCPERF05: How do you test and monitor the performance of the supply chain systems? |
 | --- |

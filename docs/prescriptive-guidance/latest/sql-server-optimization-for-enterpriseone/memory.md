@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Adjust memory settings
-<a name="memory"></a>
 
 We recommend that you configure the default memory values for a SQL Server database that is running JD Edwards workloads. These include:
 + Configuring maximum and minimum memory settings

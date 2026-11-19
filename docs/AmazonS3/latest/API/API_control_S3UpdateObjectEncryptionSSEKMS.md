@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Update
 ---
 
 # S3UpdateObjectEncryptionSSEKMS
-<a name="API_control_S3UpdateObjectEncryptionSSEKMS"></a>
 
 If `SSEKMS` is specified for `UpdateObjectEncryption`, this data type specifies the AWS KMS key Amazon Resource Name (ARN) to use and whether to use an S3 Bucket Key for server-side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS).
 

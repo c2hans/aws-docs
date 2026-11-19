@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/machine-learning-iam-ac
 ---
 
 # Allow access for ML with Athena
-<a name="machine-learning-iam-access"></a>
 
 IAM principals who run Athena ML queries must be allowed to perform the `sagemaker:invokeEndpoint` action for Sagemaker endpoints that they use. Include a policy statement similar to the following in identity-based permissions policies attached to user identities. In addition, attach the [AWS managed policy: AmazonAthenaFullAccess](security-iam-awsmanpol.md#amazonathenafullaccess-managed-policy), which grants full access to Athena actions, or a modified inline policy that allows a subset of actions.
 

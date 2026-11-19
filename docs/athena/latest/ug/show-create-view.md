@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-create-view.html
 ---
 
 # SHOW CREATE VIEW
-<a name="show-create-view"></a>
 
 Shows the SQL statement that created the specified Athena or Data Catalog view. The SQL returned shows the create view syntax used in Athena. Calling `SHOW CREATE VIEW` on Data Catalog views requires Lake Formation admin or view definer permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/NICConfiguring
 ---
 
 # Configuring network adapters for your gateway
-<a name="NICConfiguring-common"></a>
 
 You can configure Storage Gateway so it can be accessed by more than one IP address. You do this by configuring your gateway to use more than one network adapter.
 

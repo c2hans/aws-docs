@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnAuthenticationRequest
-<a name="API_ClientVpnAuthenticationRequest"></a>
 
 Describes the authentication method to be used by a Client VPN endpoint. For more information, see [Authentication](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/authentication-authrization.html#client-authentication) in the * AWS Client VPN Administrator Guide*.
 

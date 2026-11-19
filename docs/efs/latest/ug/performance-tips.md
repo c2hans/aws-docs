@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/performance-tips.html
 ---
 
 # Amazon EFS performance tips
-<a name="performance-tips"></a>
 
 When using Amazon EFS, keep the following performance tips in mind.
 

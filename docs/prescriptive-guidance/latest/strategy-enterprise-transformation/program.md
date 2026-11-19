@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # AWS Enterprise Transformation program
-<a name="program"></a>
 
 The AWS Enterprise Transformation program follows the cloud journey lifecycle, and is based on best practices and lessons learned from AWScustomers and industries. The program is anchored and tailored to your organization's cloud transformation success to date. It uses the AWS Enterprise Transformation Framework to guide you in developing organizational alignment between IT and lines of business, and applying best practices and mechanisms for business strategy, culture, people, operations, and cloud financial management.
 

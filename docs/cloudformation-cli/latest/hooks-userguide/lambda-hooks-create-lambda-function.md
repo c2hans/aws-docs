@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Create Lambda functions to evaluate resources for Lambda Hooks
-<a name="lambda-hooks-create-lambda-function"></a>
 
 CloudFormation Lambda Hooks allows you to evaluate CloudFormation and AWS Cloud Control API operations against your own custom code. Your Hook can block an operation from proceeding, or issue a warning to the caller and allow the operation to proceed. When you create a Lambda Hook, you can configure it to intercept and evaluate the following CloudFormation operations:
 + Resource operations

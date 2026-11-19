@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/what
 ---
 
 # What is AWS Supply Chain?
-<a name="what-is-service"></a>
 
 AWS Supply Chain is a cloud-based supply chain management application that unifies data and provides ML-powered forecasting methods to improve demand forecasting and inventory visibility, actionable insights, built-in contextual collaboration, demand planning, supply planning, n-tier supplier visibility, and sustainability information management. AWS Supply Chain can connect to your existing enterprise resource planning (ERP) and supply chain management systems and uses ML and generative AI to transform and integrate disparate data into the supply chain data lake (SCDL). AWS Supply Chain can improve supply chain risk management without replatforming, upfront licensing fees, or long-term commitments.
 

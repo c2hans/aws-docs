@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SAMLOptionsOutput
-<a name="API_SAMLOptionsOutput"></a>
 
 Describes the SAML application configured for the domain.
 

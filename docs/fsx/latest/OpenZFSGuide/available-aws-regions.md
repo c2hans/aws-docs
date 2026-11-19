@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/available-aws-re
 ---
 
 # Availability by AWS Region
-<a name="available-aws-regions"></a>
 
 Amazon FSx for OpenZFS is available in the following AWS Regions, with deployment type and storage class support indicated for each region:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Col
 ---
 
 # ColumnType
-<a name="API_ColumnType"></a>
 
 The data type of the column.
 

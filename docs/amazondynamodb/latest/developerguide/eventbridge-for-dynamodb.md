@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/eve
 ---
 
 # Integrating DynamoDB with Amazon EventBridge
-<a name="eventbridge-for-dynamodb"></a>
 
 Amazon DynamoDB offers DynamoDB Streams for change data capture, enabling the capture of item-level changes in DynamoDB tables. DynamoDB Streams can invoke Lambda functions to process those changes, allowing event driven integration with other services and applications. DynamoDB Streams also supports filtering, which allows for efficient and targeted event processing.
 

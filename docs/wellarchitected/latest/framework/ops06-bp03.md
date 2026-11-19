@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops06-b
 ---
 
 # OPS06-BP03 Define escalation paths
-<a name="ops06-bp03"></a>
 
  When an incident exceeds what the first responder can resolve, someone must decide who acts next and with what authority. Escalation paths define when to escalate, who to involve at each level, and which actions are pre-approved, so decisions happen fast and the right people engage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreS
 ---
 
 # Overview of importing data from Amazon S3 data
-<a name="USER_PostgreSQL.S3Import.Overview"></a>
 
 **To import S3 data into Amazon RDS**
 

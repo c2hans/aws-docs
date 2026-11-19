@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Batch
 ---
 
 # BatchDescribeMergeConflicts
-<a name="API_BatchDescribeMergeConflicts"></a>
 
 Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy.
 

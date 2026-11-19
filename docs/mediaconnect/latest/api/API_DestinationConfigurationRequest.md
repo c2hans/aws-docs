@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationC
 ---
 
 # DestinationConfigurationRequest
-<a name="API_DestinationConfigurationRequest"></a>
 
 The definition of a media stream that you want to associate with the output.
 

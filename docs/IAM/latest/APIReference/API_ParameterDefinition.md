@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ParameterDef
 ---
 
 # ParameterDefinition
-<a name="API_ParameterDefinition"></a>
 
 Defines a parameter that a role template accepts. You supply values for these parameters when you create a role with [AcquireRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AcquireRole.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-boot-mo
 ---
 
 # Determine the boot mode of an EC2 instance
-<a name="instance-boot-mode"></a>
 
 The boot mode of an instance is displayed in the **Boot mode** field in the Amazon EC2 console, and by the `currentInstanceBootMode` parameter in the AWS CLI.
 

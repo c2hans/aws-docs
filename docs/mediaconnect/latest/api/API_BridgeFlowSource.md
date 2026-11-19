@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BridgeFlowSo
 ---
 
 # BridgeFlowSource
-<a name="API_BridgeFlowSource"></a>
 
  The source of the bridge. A flow source originates in MediaConnect as an existing cloud flow.
 

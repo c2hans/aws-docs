@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-bedrocka
 ---
 
 # AMAZON.BedrockAgentIntent
-<a name="built-in-intent-bedrockagent"></a>
 
 **Note**
 Before you can take advantage of the generative AI features, you must fulfill the following prerequisites

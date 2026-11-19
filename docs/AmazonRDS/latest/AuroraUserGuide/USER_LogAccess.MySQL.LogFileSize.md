@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Lo
 ---
 
 # Overview of Aurora MySQL database logs
-<a name="USER_LogAccess.MySQL.LogFileSize"></a>
 
 You can monitor the following types of Aurora MySQL log files:
 + Error log

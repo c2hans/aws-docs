@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-interrup
 ---
 
 # Monitor interruptible Capacity Reservations with EventBridge and CloudTrail
-<a name="monitor-interruptible-cr"></a>
 
 Interruptible Capacity Reservations send EventBridge notifications and CloudTrail events to help you monitor and respond to capacity changes.
 

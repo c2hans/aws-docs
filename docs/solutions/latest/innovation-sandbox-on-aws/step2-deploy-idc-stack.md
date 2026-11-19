@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Step 2: Deploy the IDC stack
-<a name="step2-deploy-idc-stack"></a>
 
 In this step, you deploy the resources required to set up IDC, including mappings, roles, policies, and other configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubles
 ---
 
 # Troubleshooting Amazon EBS volume attachments to Amazon ECS tasks
-<a name="troubleshoot-ebs-volumes"></a>
 
 You might need to troubleshoot or verify the attachment of Amazon EBS volumes to Amazon ECS tasks.
 

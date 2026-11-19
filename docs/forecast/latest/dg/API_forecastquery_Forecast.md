@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_forecastquery_For
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Forecast
-<a name="API_forecastquery_Forecast"></a>
 
 Provides information about a forecast. Returned as part of the [QueryForecast](API_forecastquery_QueryForecast.md) response.
 

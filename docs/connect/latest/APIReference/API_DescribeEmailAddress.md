@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeEmailAddress
-<a name="API_DescribeEmailAddress"></a>
 
 Describe email address form the specified Connect Customer instance.
 

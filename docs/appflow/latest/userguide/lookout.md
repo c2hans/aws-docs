@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/lookout.html
 ---
 
 # Amazon Lookout for Metrics
-<a name="lookout"></a>
 
 The following are the requirements and connection instructions for using Amazon Lookout for Metrics with Amazon AppFlow.
 

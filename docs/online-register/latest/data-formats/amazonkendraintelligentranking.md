@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Kendra Intelligent Ranking
-<a name="amazonkendraintelligentranking"></a>
 
 Amazon Kendra Intelligent Ranking provides the following APIs for data retrieval.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Migrate from version 2.x to 3.x of the AWS SDK for JavaScript
-<a name="migrating"></a>
 
 The AWS SDK for JavaScript version 3 is a major rewrite of version 2. The section describes the differences between the two versions and explains how to migrate from version 2 to version 3 of the SDK for JavaScript.
 

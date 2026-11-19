@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImportIma
 ---
 
 # ImportImageLicenseConfigurationRequest
-<a name="API_ImportImageLicenseConfigurationRequest"></a>
 
 The request information of license configurations.
 

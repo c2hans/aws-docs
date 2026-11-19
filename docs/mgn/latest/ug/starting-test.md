@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/starting-test.html
 ---
 
 # Starting a test
-<a name="starting-test"></a>
 
 To launch a test instance for a single source server or multiple source servers:
 

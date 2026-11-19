@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_servi
 ---
 
 # How routing control in Amazon Application Recovery Controller (ARC) works with IAM
-<a name="security_iam_service-with-iam-routing"></a>
 
 Before you use IAM to manage access to routing control in Amazon Application Recovery Controller (ARC), learn what IAM features are available to use with routing control.
 

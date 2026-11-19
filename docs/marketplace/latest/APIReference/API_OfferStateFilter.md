@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferStateFilter
-<a name="API_OfferStateFilter"></a>
 
 Allows filtering on the `State` of an offer.
 

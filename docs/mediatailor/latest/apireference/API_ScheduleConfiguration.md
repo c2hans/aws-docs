@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Sche
 ---
 
 # ScheduleConfiguration
-<a name="API_ScheduleConfiguration"></a>
 
 Schedule configuration parameters. A channel must be stopped before changes can be made to the schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RegisterDest
 ---
 
 # RegisterDestinationEndpoint
-<a name="API_RegisterDestinationEndpoint"></a>
 
 Registers a new destination endpoint in MediaConnect.
 

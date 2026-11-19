@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Migrating from Oracle to Amazon RDS for MySQL or Amazon Aurora MySQL with the AWS Schema Conversion Tool
-<a name="CHAP_Source.Oracle.ToMySQL"></a>
 
 To emulate Oracle database functions in your converted MySQL code, use the Oracle to MySQL extension pack in AWS SCT. For more information about extension packs, see [Using extension packs with AWS Schema Conversion Tool](CHAP_ExtensionPack.md).
 

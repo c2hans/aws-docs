@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service DeploymentConfiguration
-<a name="aws-properties-ecs-service-deploymentconfiguration"></a>
 
 Optional deployment parameters that control how many tasks run during a deployment and the ordering of stopping and starting tasks.
 

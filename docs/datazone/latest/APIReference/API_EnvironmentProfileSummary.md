@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentProfileSummary
-<a name="API_EnvironmentProfileSummary"></a>
 
 The details of an environment profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceTesterForFreeRTOSFullAccess
-<a name="AWSIoTDeviceTesterForFreeRTOSFullAccess"></a>
 
 **Description**: Allows AWS IoT Device Tester to run the FreeRTOS qualification suite by allowing access to services including IoT, S3, and IAM
 

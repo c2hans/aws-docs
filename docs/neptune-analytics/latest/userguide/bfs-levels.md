@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bfs-l
 ---
 
 # Levels breadth-first search (BFS) algorithm
-<a name="bfs-levels"></a>
 
 The `levels` variant of breadth-first search is an algorithm for searching nodes from a starting node or nodes in breadth-first order. From there it performs a breadth-first search and records the hop level from the starting node of each node that it finds.
 

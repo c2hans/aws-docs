@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Acti
 ---
 
 # S3Activity
-<a name="API_S3Activity"></a>
 
 Contains details about Amazon S3 activity.
 

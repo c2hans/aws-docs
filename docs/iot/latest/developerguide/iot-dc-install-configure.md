@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-install
 ---
 
 # Configure the AWS IoT Device Client to test connectivity
-<a name="iot-dc-install-configure"></a>
 
 The procedures in this section configure the AWS IoT Device Client to publish an MQTT message from your Raspberry Pi.
 

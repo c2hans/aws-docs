@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ExecutionRe
 ---
 
 # ExecutionResult
-<a name="API_ExecutionResult"></a>
 
  Specifies the end result of the flow run.
 

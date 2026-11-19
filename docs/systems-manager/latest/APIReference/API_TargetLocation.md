@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # TargetLocation
-<a name="API_TargetLocation"></a>
 
 The combination of AWS Regions and AWS accounts targeted by the current Automation execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_ListAppAuthoriz
 ---
 
 # ListAppAuthorizations
-<a name="API_ListAppAuthorizations"></a>
 
 Returns a list of all app authorizations configured for an app bundle.
 

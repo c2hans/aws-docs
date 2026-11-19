@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppCallSettings
-<a name="API_WhatsAppCallSettings"></a>
 
 The calling configuration for a WhatsApp business phone number.
 

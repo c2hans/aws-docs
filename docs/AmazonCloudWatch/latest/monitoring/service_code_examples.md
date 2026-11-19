@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servi
 ---
 
 # Code examples for CloudWatch using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use CloudWatch with an AWS software development kit (SDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InstanceLifecycleConfiguration
-<a name="API_InstanceLifecycleConfiguration"></a>
 
 The configuration that manages the lifecycle of instances in a capacity provider, including idle timeout and maximum lifetime.
 

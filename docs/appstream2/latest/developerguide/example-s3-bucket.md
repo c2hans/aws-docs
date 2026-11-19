@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/example
 ---
 
 # Example: WorkSpaces Applications Application Amazon S3 bucket policy cross-service confused deputy prevention
-<a name="example-s3-bucket"></a>
 
 When you store data in an Amazon S3 bucket, the bucket might be exposed to confused deputy issues. This can leave data such as Elastic fleets, app blocks, setup scripts, application icons, and session scripts vulnerable to malicious actors.
 

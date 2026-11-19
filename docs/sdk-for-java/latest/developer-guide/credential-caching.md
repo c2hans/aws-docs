@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Credentials caching in the AWS SDK for Java 2.x
-<a name="credential-caching"></a>
 
 The AWS SDK for Java 2.x implements credential caching to improve performance and reduce calls to credentials sources. This section explains how credentials caching works and how you can configure it for your applications.
 

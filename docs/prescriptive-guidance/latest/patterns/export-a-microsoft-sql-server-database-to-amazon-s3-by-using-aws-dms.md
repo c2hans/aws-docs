@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ---
 
 # Export a Microsoft SQL Server database to Amazon S3 by using AWS DMS
-<a name="export-a-microsoft-sql-server-database-to-amazon-s3-by-using-aws-dms"></a>
 
 *Sweta Krishna, Amazon Web Services*
 

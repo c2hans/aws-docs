@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use case 2 – Data type mismatch
-<a name="data-type-mismatch"></a>
 
 Choosing the proper data type based on the data helps to provide the optimum balance between storage size and performance.
 

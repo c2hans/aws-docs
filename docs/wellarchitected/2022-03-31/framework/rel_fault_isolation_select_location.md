@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL10-BP02 Select the appropriate locations for your multi-location deployment
-<a name="rel_fault_isolation_select_location"></a>
 
 ## Desired Outcome
 <a name="desired-outcome"></a>

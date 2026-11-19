@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeExecution
-<a name="API_DescribeExecution"></a>
 
 Retrieves information about the execution.
 

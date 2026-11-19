@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customiza
 ---
 
 # Use Custom model import to import a customized open-source model into Amazon Bedrock
-<a name="model-customization-import-model"></a>
 
 You can create a custom model in Amazon Bedrock by using the Amazon Bedrock Custom Model Import feature to import Foundation Models that you have customized in other environments, such as Amazon SageMaker AI. For example, you might have a model that you have created in Amazon SageMaker AI that has proprietary model weights. You can now import that model into Amazon Bedrock and then use Amazon Bedrock features to make inference calls to the model.
 

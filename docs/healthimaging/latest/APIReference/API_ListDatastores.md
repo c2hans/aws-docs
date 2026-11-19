@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Li
 ---
 
 # ListDatastores
-<a name="API_ListDatastores"></a>
 
 List data stores.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/custom-cos
 AWS FinOps Agent is in preview release and is subject to change.
 
 # Generating cost reports
-<a name="custom-cost-reporting"></a>
 
 Ask the agent to generate financial reports in natural language. The agent creates HTML, PDF, and PPT reports with cost summaries, breakdowns by service, account, Region, or tag, trend analyses, month-over-month comparisons, and forecast projections. If you don't specify a format, the agent defaults to HTML.
 

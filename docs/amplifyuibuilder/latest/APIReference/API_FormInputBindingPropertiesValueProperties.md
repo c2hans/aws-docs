@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormInputBindingPropertiesValueProperties
-<a name="API_FormInputBindingPropertiesValueProperties"></a>
 
 Represents the data binding configuration for a specific property using data stored in AWS. For AWS connected properties, you can bind a property to data stored in an Amplify DataStore model.
 

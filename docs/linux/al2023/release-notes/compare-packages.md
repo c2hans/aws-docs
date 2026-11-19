@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/compare-packa
 ---
 
 # Package changes in Amazon Linux 2023
-<a name="compare-packages"></a>
 
 **Topics**
 + [Summary of package changes in Amazon Linux 2023](summary.md)

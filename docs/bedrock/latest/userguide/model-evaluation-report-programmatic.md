@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Review metrics for an automated model evaluation job in Amazon Bedrock (console)
-<a name="model-evaluation-report-programmatic"></a>
 
 You can review the metrics presented in a report for an automatic model evaluation job using the Amazon Bedrock console.
 

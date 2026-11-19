@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-man
 ---
 
 # Managing auto upgrade
-<a name="auto-version-upgrades-managing-auto-upgrade"></a>
 
 This section describes how to approve or decline an upgrade, how to disable auto upgrade, and how to upgrade a job after a failed evaluation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPo
 ---
 
 # GetIpamPolicyAllocationRules
-<a name="API_GetIpamPolicyAllocationRules"></a>
 
 Gets the allocation rules for an IPAM policy.
 

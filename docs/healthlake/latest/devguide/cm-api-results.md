@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/cm-api-result
 ---
 
 # HealthLake integrated NLP example requests
-<a name="cm-api-results"></a>
 
 **Example 1: `Patient` record ingested into a HealthLake data store**
 

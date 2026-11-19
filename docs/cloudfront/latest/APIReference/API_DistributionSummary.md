@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionSummary
-<a name="API_DistributionSummary"></a>
 
 A summary of the information about a CloudFront distribution.
 

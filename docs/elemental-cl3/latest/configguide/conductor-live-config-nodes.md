@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Managing nodes in the Conductor Live cluster
-<a name="conductor-live-config-nodes"></a>
 
 **Topics**
 + [Adding (recruiting) worker nodes to the cluster](conductor-live-config-nodes-add.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # SAP
-<a name="migration-migration-patterns-by-workload-sap-pattern-list"></a>
 
 **Topics**
 + [Migrate from SAP ASE to Amazon RDS for SQL Server using AWS DMS](migrate-from-sap-ase-to-amazon-rds-for-sql-server-using-aws-dms.md)

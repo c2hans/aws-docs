@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ListTagsForResource
-<a name="API_amazon-q-connect_ListTagsForResource"></a>
 
 Lists the tags for the specified resource.
 

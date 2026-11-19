@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Set up a Microsoft SQL Server failover cluster on Amazon EC2 by using FSx for Windows File Server
-<a name="microsoft-sql-failover-cluster-on-amazon-ec2"></a>
 
 *Sweta Krishna and Ramesh Babu Donti, Amazon Web Services*
 

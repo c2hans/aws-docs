@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ComponentResponse
-<a name="API_ComponentResponse"></a>
 
 An object that returns information about a component type create or update request.
 

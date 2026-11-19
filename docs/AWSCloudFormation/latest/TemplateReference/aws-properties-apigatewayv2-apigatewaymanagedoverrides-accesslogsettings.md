@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApiGatewayV2::ApiGatewayManagedOverrides AccessLogSettings
-<a name="aws-properties-apigatewayv2-apigatewaymanagedoverrides-accesslogsettings"></a>
 
 The `AccessLogSettings` property overrides the access log settings for an API Gateway-managed stage.
 

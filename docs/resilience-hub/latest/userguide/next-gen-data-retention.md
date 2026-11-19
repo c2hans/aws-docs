@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Data retention
-<a name="next-gen-data-retention"></a>
 
 The following table shows retention periods for data stored by Next generation Resilience Hub.
 

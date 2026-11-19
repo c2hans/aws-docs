@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # StreamDescription
-<a name="API_streams_StreamDescription"></a>
 
 Represents all of the data describing a particular stream.
 

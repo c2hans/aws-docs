@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get preview configuration for the given contactId in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getpreviewconfiguration"></a>
 
 This gets configuration information related to the preview experience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/manage-start.html
 ---
 
 # Starting the Connection Gateway
-<a name="manage-start"></a>
 
 Manually start the Connection Gateway service using the command line.
 

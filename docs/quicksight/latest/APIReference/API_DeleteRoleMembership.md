@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteRoleMembership
-<a name="API_DeleteRoleMembership"></a>
 
 Removes a group from a role.
 

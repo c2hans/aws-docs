@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSArtifactReportsReadOnlyAccess
-<a name="AWSArtifactReportsReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to the AWS Artifact service reports.
 

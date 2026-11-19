@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsOpportunityCustomer
-<a name="API_AwsOpportunityCustomer"></a>
 
 Represents the customer associated with the AWS opportunity. This field captures key details about the customer that are necessary for managing the opportunity.
 

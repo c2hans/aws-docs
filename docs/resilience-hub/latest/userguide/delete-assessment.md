@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/delete-a
 ---
 
 # Deleting resiliency assessments
-<a name="delete-assessment"></a>
 
 You can delete resiliency assessments in the **Assessments** view of your application.
 

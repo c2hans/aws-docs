@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Patching and upgrading
-<a name="maintenance"></a>
 
 One benefit of Amazon RDS for Oracle is the ease of maintenance. AWS does all the undifferentiated heavy lifting work behind the scenes so that your attention can be on applications and users. You can enable maintenance options during setup. Amazon RDS for Oracle will then automatically apply operating system (OS) patching, Oracle database patching, and minor database version upgrades in a predefined maintenance window.
 

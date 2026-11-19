@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # HA Cluster
-<a name="appinsights-metrics-ha-cluster"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

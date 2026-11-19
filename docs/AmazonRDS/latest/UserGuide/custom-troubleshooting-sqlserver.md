@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-troubl
 ---
 
 # Troubleshooting DB issues for Amazon RDS Custom for SQL Server
-<a name="custom-troubleshooting-sqlserver"></a>
 
 The shared responsibility model of RDS Custom provides OS shell–level access and database administrator access. RDS Custom runs resources in your account, unlike Amazon RDS, which runs resources in a system account. With greater access comes greater responsibility. In the following sections, you can learn how to troubleshoot issues with Amazon RDS Custom for SQL Server DB instances.
 

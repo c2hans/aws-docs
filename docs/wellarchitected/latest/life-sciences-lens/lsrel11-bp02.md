@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL11-BP02 Apply predictive maintenance using AI models
-<a name="lsrel11-bp02"></a>
 
  Use AI/ML models to analyze telemetry, usage logs, and maintenance records for predicting potential equipment failures. Integrating predictive insights with laboratory management systems reduces downtime, optimize calibration schedules, and extend equipment life.
 

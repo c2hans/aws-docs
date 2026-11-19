@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubFullAccess
-<a name="AWSMigrationHubFullAccess"></a>
 
 **Description**: Managed policy to provide the customer access to the Migration Hub Service
 

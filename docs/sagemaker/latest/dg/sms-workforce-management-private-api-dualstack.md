@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Enable a dual-stack workforce
-<a name="sms-workforce-management-private-api-dualstack"></a>
 
 You can enable a dual-stack workforce by using the [CreateWorkforce](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateWorkforce.html) and [UpdateWorkforce](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateWorkforce.html) API operations. Creating a dual-stack workforce, updating an existing workforce to dual-stack, and changing a workforce from dual-stack back to IPv4 are not supported in AWS Management Console.
 

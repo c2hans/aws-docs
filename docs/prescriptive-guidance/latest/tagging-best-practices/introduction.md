@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # Using best practices when tagging for monitoring, reporting, and cost optimization
-<a name="introduction"></a>
 
 *Apoorva Patrikar, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AdminAc
 ---
 
 # AdminAccount
-<a name="API_AdminAccount"></a>
 
 Represents a Security Hub CSPM administrator account designated by an organization management account.
 

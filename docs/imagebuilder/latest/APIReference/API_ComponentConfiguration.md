@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentConfiguration
-<a name="API_ComponentConfiguration"></a>
 
 Configuration details of the component. You can specify each component only once in a recipe, regardless of version. Components with a status of `DEPRECATED` or `DISABLED` can't be added to new recipes.
 

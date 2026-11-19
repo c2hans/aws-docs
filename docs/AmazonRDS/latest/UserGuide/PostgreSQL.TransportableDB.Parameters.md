@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Tr
 ---
 
 # Transportable databases parameter reference
-<a name="PostgreSQL.TransportableDB.Parameters"></a>
 
 Several parameters control the behavior of the `pg_transport` extension. Following, you can find descriptions of these parameters.
 

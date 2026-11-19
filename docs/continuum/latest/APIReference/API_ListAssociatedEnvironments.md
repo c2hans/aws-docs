@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListAs
 ---
 
 # ListAssociatedEnvironments
-<a name="API_ListAssociatedEnvironments"></a>
 
 Lists the Environments currently associated with one Collector in lexicographically ascending environmentArn order. The ARN identifies each Environment across accounts within the Collector's Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/works.html
 ---
 
 # .works
-<a name="works"></a>
 
 Used by businesses, organizations, and individuals for information about work, job, and employment services. This extension can be used as an alternative to the .com, .net, or .org extensions.
 

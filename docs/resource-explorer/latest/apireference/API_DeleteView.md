@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # DeleteView
-<a name="API_DeleteView"></a>
 
 Deletes the specified view.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Computing gradients with OpenQASM 3.0
-<a name="braket-openqasm-computing-gradients"></a>
 
 Amazon Braket supports the computation of gradients on both on-demand and local simulators when running in the `shots=0` (exact) mode. This is achieved through the use of the adjoint differentiation method. To specify the gradient you want to compute, you can provide the appropriate pragma, as demonstrated in code in the following example.
 

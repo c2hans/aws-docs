@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CloudFormation resources generated when AWS::Serverless::Function is specified
-<a name="sam-specification-generated-resources-function"></a>
 
 When an `AWS::Serverless::Function` is specified, AWS Serverless Application Model (AWS SAM) always creates an `AWS::Lambda::Function` base CloudFormation resource.
 

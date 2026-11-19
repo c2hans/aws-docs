@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # UpdateCampaignName
-<a name="API_connect-outbound-campaigns_UpdateCampaignName"></a>
 
 Updates the name of an outbound campaign.
 

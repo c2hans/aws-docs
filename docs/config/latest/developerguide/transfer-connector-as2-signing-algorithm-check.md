@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/transfer-co
 ---
 
 # transfer-connector-as2-signing-algorithm-check
-<a name="transfer-connector-as2-signing-algorithm-check"></a>
 
 Checks if AWS Transfer Family AS2 connectors are configured with a signing algorithm. The rule is NON\_COMPLIANT if configuration.As2Config.SigningAlgorithm is 'NONE'.
 

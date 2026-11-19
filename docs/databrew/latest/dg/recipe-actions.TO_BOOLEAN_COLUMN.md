@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.TO_BOO
 ---
 
 # TO\_BOOLEAN\_COLUMN
-<a name="recipe-actions.TO_BOOLEAN_COLUMN"></a>
 
 Changes the data type of an existing column to BOOLEAN.
 

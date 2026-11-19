@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/deploy-automate.htm
 ---
 
 # Automate your deployment
-<a name="deploy-automate"></a>
 
 You can create Amazon Elastic VMware Service resources step by step in the Amazon EVS console or AWS CLI, or you can use a tool that runs the steps for you. Use the following table to choose the method that fits your deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Comput
 ---
 
 # ComputeQuotaSummary
-<a name="API_ComputeQuotaSummary"></a>
 
 Summary of the compute allocation definition.
 

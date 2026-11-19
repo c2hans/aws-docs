@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CancelLoader
 ---
 
 # CancelLoaderJob
-<a name="API_CancelLoaderJob"></a>
 
 Cancels a specified load job. This is an HTTP `DELETE` request. See [Neptune Loader Get-Status API](https://docs.aws.amazon.com/neptune/latest/userguide/load-api-reference-status.htm) for more information.
 

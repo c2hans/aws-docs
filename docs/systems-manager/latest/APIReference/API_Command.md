@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Command
-<a name="API_Command"></a>
 
 Describes a command request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudwatch-mon
 ---
 
 # Monitoring metrics with Amazon CloudWatch for directory buckets
-<a name="cloudwatch-monitoring-directory-buckets"></a>
 
 Amazon CloudWatch metrics for directory buckets can help you understand and improve the performance of applications that use directory buckets. There are several sets of CloudWatch metrics that you can use with directory buckets for the S3 Express One Zone storage class and the S3 One Zone-Infrequent Access (S3 One Zone-IA; Z-IA) storage class in a local zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Types.html
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Inspector2:
 +  [Account](API_Account.md)

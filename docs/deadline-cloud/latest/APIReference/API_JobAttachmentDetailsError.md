@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobAttachmentDetailsError
-<a name="API_JobAttachmentDetailsError"></a>
 
 The error details for job attachments.
 

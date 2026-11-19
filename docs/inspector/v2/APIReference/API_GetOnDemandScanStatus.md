@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetOnDeman
 ---
 
 # GetOnDemandScanStatus
-<a name="API_GetOnDemandScanStatus"></a>
 
 Retrieves the status of a specific on-demand scan for a resource.
 

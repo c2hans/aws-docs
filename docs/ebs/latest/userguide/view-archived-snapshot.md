@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/view-archived-snaps
 ---
 
 # View archived Amazon EBS snapshots
-<a name="view-archived-snapshot"></a>
 
 ------
 #### [ Console ]

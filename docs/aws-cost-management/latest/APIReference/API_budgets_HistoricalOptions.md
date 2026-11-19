@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # HistoricalOptions
-<a name="API_budgets_HistoricalOptions"></a>
 
 The parameters that define or describe the historical data that your auto-adjusting budget is based on.
 

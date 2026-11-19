@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaConnectReadOnlyAccess
-<a name="AWSElementalMediaConnectReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS Elemental MediaConnect resources.
 

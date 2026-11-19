@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbSecurityGroupIpRange
-<a name="API_AwsRdsDbSecurityGroupIpRange"></a>
 
 IP range information for an RDS DB security group.
 

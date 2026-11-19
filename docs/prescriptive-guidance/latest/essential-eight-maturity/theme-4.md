@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 4: Manage identities
-<a name="theme-4"></a>
 
 **Essential Eight strategies covered**: Restrict administrative privileges, multi-factor authentication
 

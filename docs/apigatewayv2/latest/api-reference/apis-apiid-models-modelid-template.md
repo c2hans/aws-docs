@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # ModelTemplate
-<a name="apis-apiid-models-modelid-template"></a>
 
 Represents a model template. Supported only for WebSocket APIs.
 

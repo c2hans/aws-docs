@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FileFilter
-<a name="API_connect-cases_FileFilter"></a>
 
 A filter for related items of type `File`.
 

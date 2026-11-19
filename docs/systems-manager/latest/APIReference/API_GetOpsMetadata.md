@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetOpsMetadata
-<a name="API_GetOpsMetadata"></a>
 
 View operational metadata related to an application in Application Manager.
 

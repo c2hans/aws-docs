@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantManagedInstanceScalingScaleInPolicy
-<a name="API_ProductionVariantManagedInstanceScalingScaleInPolicy"></a>
 
 Configures the scale-in behavior for managed instance scaling.
 

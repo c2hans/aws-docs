@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-er
 ---
 
 # Amazon EventBridge Pipes error handling and troubleshooting
-<a name="eb-pipes-error-troubleshooting"></a>
 
 Understanding the types of errors EventBridge Pipes may encounter, and how EventBridge handles those errors, can help you troubleshoot issues with your pipes.
 

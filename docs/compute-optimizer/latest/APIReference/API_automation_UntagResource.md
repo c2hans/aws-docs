@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # UntagResource
-<a name="API_automation_UntagResource"></a>
 
  Removes tags from the specified resource.
 

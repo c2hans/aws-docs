@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-troubleshooti
 ---
 
 # Troubleshooting SnapStart errors for Lambda Event Functions
-<a name="snapstart-troubleshooting"></a>
 
 This page addresses common issues that occur when using Lambda SnapStart, including snapshot creation errors, timeout errors, and internal service errors.
 

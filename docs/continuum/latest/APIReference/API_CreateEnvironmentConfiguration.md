@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Create
 ---
 
 # CreateEnvironmentConfiguration
-<a name="API_CreateEnvironmentConfiguration"></a>
 
 The create Environment Configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ParseToOCSF
-<a name="API_ParseToOCSF"></a>
 
 This processor converts logs into [Open Cybersecurity Schema Framework (OCSF)](https://ocsf.io) events.
 

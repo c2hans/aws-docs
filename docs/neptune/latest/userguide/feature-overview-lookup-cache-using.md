@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-overvie
 ---
 
 # Using the lookup cache
-<a name="feature-overview-lookup-cache-using"></a>
 
 The lookup cache is only available on an `R5d` instance type, where it is automatically enabled by default. Neptune `R5d` instances have the same specifications as `R5` instances, plus up to 1.8 TB of local NVMe-based SSD storage. Lookup caches are instance-specific, and workloads that benefit can be directed specifically to `R5d` instances in a Neptune cluster, while other workloads can be directed to `R5` or other instance types.
 

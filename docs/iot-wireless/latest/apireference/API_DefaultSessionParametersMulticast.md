@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Def
 ---
 
 # DefaultSessionParametersMulticast
-<a name="API_DefaultSessionParametersMulticast"></a>
 
 The default session parameters for the multicast group.
 

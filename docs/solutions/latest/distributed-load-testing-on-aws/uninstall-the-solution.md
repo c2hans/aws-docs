@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the Distributed Load Testing on AWS solution from the AWS Management Console or by using the AWS Command Line Interface (AWS CLI). You must manually delete several retained resources created by this solution. AWS Solutions do not automatically delete storage and logging resources in case you have data to retain. As such, see the following information on how to delete S3 buckets, DynamoDB tables, CloudWatch log groups, and CloudWatch dashboards.
 

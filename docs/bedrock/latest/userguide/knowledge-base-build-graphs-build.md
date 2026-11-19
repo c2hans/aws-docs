@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Create an Amazon Bedrock knowledge base with Amazon Neptune Analytics graphs
-<a name="knowledge-base-build-graphs-build"></a>
 
 GraphRAG is fully integrated into Amazon Bedrock Knowledge Bases and uses Amazon Neptune Analytics for graph and vector storage. You can get started using GraphRAG in your knowledge bases with the AWS Management Console, the AWS CLI, or the AWS SDK.
 

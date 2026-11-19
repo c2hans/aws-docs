@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FreeTr
 ---
 
 # FreeTrialFeatureConfigurationResult
-<a name="API_FreeTrialFeatureConfigurationResult"></a>
 
 Contains information about the free trial period for a feature.
 

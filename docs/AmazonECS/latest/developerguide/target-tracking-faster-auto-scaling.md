@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/target-t
 ---
 
 # Faster auto scaling with high-resolution metrics
-<a name="target-tracking-faster-auto-scaling"></a>
 
 By default, Amazon ECS publishes `CPUUtilization` and `MemoryUtilization` metrics at 60-second resolution. You can configure 20-second resolution to drive faster service auto scaling.
 

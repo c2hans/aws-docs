@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportTask.h
 ---
 
 # ImportTask
-<a name="API_ImportTask"></a>
 
 Import task.
 

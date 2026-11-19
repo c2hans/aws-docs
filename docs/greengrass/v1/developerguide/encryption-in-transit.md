@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/encryption-
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Encryption in transit
-<a name="encryption-in-transit"></a>
 
 AWS IoT Greengrass has three modes of communication where data is in transit:
 + [Data in transit over the internet](#data-in-transit-internet). Communication between a Greengrass core and AWS IoT Greengrass over the internet is encrypted.

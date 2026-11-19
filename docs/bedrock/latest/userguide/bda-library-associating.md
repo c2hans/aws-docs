@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-library-ass
 ---
 
 # Associating Library with a Project
-<a name="bda-library-associating"></a>
 
 To use custom vocabulary, associate your library with a BDA project. This can be done in two ways:
 

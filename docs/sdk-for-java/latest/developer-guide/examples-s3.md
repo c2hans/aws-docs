@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon S3
-<a name="examples-s3"></a>
 
 This section provides background information for working with Amazon S3 by using the AWS SDK for Java 2.x. This section compliments the [Amazon S3 Java v2 examples](java_s3_code_examples.md) presented in the *Code examples* section of this guide.
 

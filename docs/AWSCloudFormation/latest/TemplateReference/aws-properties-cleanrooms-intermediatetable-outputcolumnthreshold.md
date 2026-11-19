@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::IntermediateTable OutputColumnThreshold
-<a name="aws-properties-cleanrooms-intermediatetable-outputcolumnthreshold"></a>
 
 Specifies the minimum number of distinct identities for an individual output column. This value overrides the table-wide `minimumIdentityCount` that you set in `AggregationThreshold`.
 

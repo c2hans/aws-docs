@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetPaymentInstrumentBalance
-<a name="API_GetPaymentInstrumentBalance"></a>
 
 Get the balance of a payment instrument.
 

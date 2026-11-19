@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/security
 ---
 
 # AWS Resilience Hub personas and IAM permissions reference
-<a name="security-iam-resilience-hub-personas"></a>
 
 You can grant the IAM permissions to personas that are required to work with AWS Resilience Hub by using `AWSResilienceHubAsssessmentExecutionPolicy` AWS managed policy and one of the following persona-specific policies. For more information about AWS managed policy, see [AWSResilienceHubAsssessmentExecutionPolicy](security-iam-awsmanpol.md#security_iam_aws-assessment-policy).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # DescribeGroup
-<a name="API_DescribeGroup"></a>
 
 Retrieves the group metadata and attributes from `GroupId` in an identity store.
 

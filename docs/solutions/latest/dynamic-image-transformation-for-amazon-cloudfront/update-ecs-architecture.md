@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Update ECS architecture
-<a name="update-ecs-architecture"></a>
 
 Follow these steps to update an existing ECS architecture deployment to the latest version:
 

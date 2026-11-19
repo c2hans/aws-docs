@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testin
 ---
 
 # Load testing applications
-<a name="introduction"></a>
 
 *Jonatan Reiners and Nicola D Orazio, Amazon Web Services*
 

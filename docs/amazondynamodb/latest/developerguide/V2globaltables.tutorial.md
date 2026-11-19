@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2g
 ---
 
 # Tutorials: Creating global tables
-<a name="V2globaltables.tutorial"></a>
 
 This section provides step-by-step instructions for creating DynamoDB global tables configured for your preferred consistency mode. Choose either Multi-Region Eventual Consistency (MREC) or Multi-Region Strong Consistency (MRSC) modes based on your application's requirements.
 

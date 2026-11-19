@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioni
 ---
 
 # Resources
-<a name="resources"></a>
 
 For additional information, see the following AWS resources.
 

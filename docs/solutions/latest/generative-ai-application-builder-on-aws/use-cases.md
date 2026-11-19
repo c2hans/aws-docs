@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Question answering over enterprise data**
 

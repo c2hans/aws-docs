@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTemplateAlias
-<a name="API_DescribeTemplateAlias"></a>
 
 Describes the template alias for a template.
 

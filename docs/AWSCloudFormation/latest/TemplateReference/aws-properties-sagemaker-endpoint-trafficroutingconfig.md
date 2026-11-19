@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Endpoint TrafficRoutingConfig
-<a name="aws-properties-sagemaker-endpoint-trafficroutingconfig"></a>
 
 Defines the traffic routing strategy during an endpoint deployment to shift traffic from the old fleet to the new fleet.
 

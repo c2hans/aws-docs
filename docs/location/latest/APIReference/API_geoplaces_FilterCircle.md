@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # FilterCircle
-<a name="API_geoplaces_FilterCircle"></a>
 
 The `Circle` that all results must be in.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # ModifyCapacityReservation
-<a name="API_ModifyCapacityReservation"></a>
 
 Modifies the capacity reservation of the specified load balancer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/regis
 ---
 
 # Deactivate third-party public extensions in your account
-<a name="registry-public-deactivate-extension"></a>
 
 When you no longer need an activated third-party public extension, use the following procedures to deactivate it in your account.
 

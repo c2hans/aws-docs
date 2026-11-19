@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribeNotifyTemplates
-<a name="API_DescribeNotifyTemplates"></a>
 
 Describes the specified notify templates or all notify templates in your account.
 

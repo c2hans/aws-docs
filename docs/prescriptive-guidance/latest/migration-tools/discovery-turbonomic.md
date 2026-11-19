@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Turbonomic
-<a name="discovery-turbonomic"></a>
 
 *Last update: May 15, 2023*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListLensShares
-<a name="API_ListLensShares"></a>
 
 List the lens shares associated with the lens.
 

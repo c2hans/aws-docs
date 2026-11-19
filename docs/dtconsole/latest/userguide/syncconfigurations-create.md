@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/syncconfigura
 ---
 
 # Create a sync configuration
-<a name="syncconfigurations-create"></a>
 
 You can use the **create-repository-link** command in the AWS Command Line Interface (AWS CLI) to create a link between your connection and the external repository to sync to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-de
 ---
 
 # How to perform conditional deletes
-<a name="conditional-deletes"></a>
 
 You can use conditional deletes to evaluate if your object exists or is unchanged before deleting it. You can perform conditional deletes using the `DeleteObject` or `DeleteObjects` API operations in S3 general purpose and directory buckets. To get started, when making a conditional delete request, you can use the `HTTP If-Match` header with the precondition value `*` to check if object exists or the `If-Match` header with your provided `ETag` to check if the object has been modified.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/doc-his
 ---
 
 # Document History
-<a name="doc-history"></a>
 
 The following table describes important changes to this documentation.
 + **API version: 2017-08-29**

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pinecone-connector-limita
 ---
 
 # Limitations and notes for the Pinecone connector
-<a name="pinecone-connector-limitations"></a>
 
 The following are limitations and notes for the Pinecone connector:
 + Pinecone is supported as a source only. Writing to Pinecone is not supported.

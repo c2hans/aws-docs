@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/timeseries-objective
 ---
 
 # Objective metrics
-<a name="timeseries-objective-metric"></a>
 
 Autopilot produces accuracy metrics to evaluate the model candidates and help you choose which to use to generate forecasts. You can either let Autopilot optimize the predictor for you, or you can manually choose an algorithm for your predictor. By default, Autopilot uses the Average Weighted Quantile Loss.
 

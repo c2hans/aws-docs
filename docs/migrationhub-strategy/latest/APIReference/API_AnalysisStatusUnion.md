@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AnalysisStatusUnion
-<a name="API_AnalysisStatusUnion"></a>
 
 A combination of existing analysis statuses.
 

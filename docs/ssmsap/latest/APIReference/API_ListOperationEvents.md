@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListOpera
 ---
 
 # ListOperationEvents
-<a name="API_ListOperationEvents"></a>
 
 Returns a list of operations events.
 

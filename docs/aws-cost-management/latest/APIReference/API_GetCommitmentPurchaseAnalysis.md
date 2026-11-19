@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetCommitmentPurchaseAnalysis
-<a name="API_GetCommitmentPurchaseAnalysis"></a>
 
 Retrieves a commitment purchase analysis result based on the `AnalysisId`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/managing-spaces.h
 ---
 
 # Managing a space
-<a name="managing-spaces"></a>
 
 You can perform the following actions for spaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeThin
 ---
 
 # DescribeThing
-<a name="API_DescribeThing"></a>
 
 Gets information about the specified thing.
 

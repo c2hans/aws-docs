@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Multi-Region CQRS for On-Premises Monoliths
-<a name="multi-region-cqrs-monoliths"></a>
 
 Publication date: **July 1, 2022 ([Diagram history](#diagram-history))**
 

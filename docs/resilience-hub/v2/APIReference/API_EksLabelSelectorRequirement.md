@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_EksLa
 ---
 
 # EksLabelSelectorRequirement
-<a name="API_EksLabelSelectorRequirement"></a>
 
 A single label requirement in a label selector, expressed as a key, an operator, and an optional list of values.
 

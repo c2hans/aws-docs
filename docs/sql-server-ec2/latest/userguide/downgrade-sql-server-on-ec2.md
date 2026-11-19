@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/downgrad
 ---
 
 # Evaluate if you can downgrade your Microsoft SQL Server edition
-<a name="downgrade-sql-server-on-ec2"></a>
 
 If you find that you aren't using Enterprise edition features, you can consider downgrading to Microsoft SQL Server Standard or Developer edition. By downgrading the edition, you can save on licensing costs.
 

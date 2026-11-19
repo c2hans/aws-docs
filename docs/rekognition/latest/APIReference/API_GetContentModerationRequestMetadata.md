@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetC
 ---
 
 # GetContentModerationRequestMetadata
-<a name="API_GetContentModerationRequestMetadata"></a>
 
 Contains metadata about a content moderation request, including the SortBy and AggregateBy options.
 

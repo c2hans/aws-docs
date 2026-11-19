@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GeoLoc
 ---
 
 # GeoLocation
-<a name="API_GeoLocation"></a>
 
 Contains information about the location of the remote IP address. By default, GuardDuty returns `Geolocation` with `Lat` and `Lon` as `0.0`.
 

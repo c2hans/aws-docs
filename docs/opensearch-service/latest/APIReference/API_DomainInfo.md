@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainInfo
-<a name="API_DomainInfo"></a>
 
 Information about an OpenSearch Service domain.
 

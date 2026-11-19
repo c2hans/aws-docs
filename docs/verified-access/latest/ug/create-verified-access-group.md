@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/create-verifie
 ---
 
 # Create and manage a Verified Access group
-<a name="create-verified-access-group"></a>
 
 You use Verified Access groups to organize endpoints by their security requirements. When you create a Verified Access endpoint, you associate the endpoint with a group.
 

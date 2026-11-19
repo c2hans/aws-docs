@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 2: Create a Terraform product
-<a name="getstarted-product-Terraform"></a>
 
 After installing the Terraform provisioning engine, you are ready to create a HashiCorp Terraform product in AWS Service Catalog. In this tutorial, you create a Terraform product containing a simple Amazon S3 bucket.
 

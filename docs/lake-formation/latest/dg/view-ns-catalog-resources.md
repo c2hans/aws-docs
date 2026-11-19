@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/view-ns-catalog
 ---
 
 # Viewing catalog objects
-<a name="view-ns-catalog-resources"></a>
 
  After you create the federated catalog, you can view the objects in the catalog using the Lake Formation console or AWS CLI.
 

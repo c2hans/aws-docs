@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ResourceScope
-<a name="API_ResourceScope"></a>
 
 A single resource scope entry within an AccessGrant. Associates a resource type with optional ARN patterns, tag conditions, and row-level filters.
 

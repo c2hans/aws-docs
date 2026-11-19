@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetCompositeModelSummary
-<a name="API_AssetCompositeModelSummary"></a>
 
 Contains a summary of the composite model for a specific asset.
 

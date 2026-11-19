@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_PhoneNumberInformatio
 ---
 
 # PhoneNumberInformation
-<a name="API_PhoneNumberInformation"></a>
 
 A list of phone numbers and their metadata.
 

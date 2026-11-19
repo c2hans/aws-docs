@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/welcome.ht
 ---
 
 # What is the AWS SDK for Go v2?
-<a name="welcome"></a>
 
 The AWS SDK for Go v2 provides APIs and utilities that developers can use to build Go applications that use AWS services, such as Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Simple Storage Service (Amazon S3).
 

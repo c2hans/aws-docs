@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/components.html
 ---
 
 # MemoryDB core components
-<a name="components"></a>
 
 Following, you can find an overview of the major components of a MemoryDB deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Can
 ---
 
 # CancelPipelineExecution
-<a name="API_CancelPipelineExecution"></a>
 
 Cancels a pipeline execution in the specified workspace. If the execution is not in a terminal state (such as NOT\_STARTED or RUNNING), it transitions to CANCELLING and asynchronously to CANCELLED. This operation is idempotent: calling it on an execution that is already CANCELLING or CANCELLED returns success with the current state. Calling it on a terminal execution (SUCCEEDED or FAILED) returns a conflict error. You can optionally provide a reason; it is returned in the stateDetails field when you describe the execution.
 

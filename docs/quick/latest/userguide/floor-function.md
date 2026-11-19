@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/floor-function.ht
 ---
 
 # Floor
-<a name="floor-function"></a>
 
 `floor` decrements a decimal value to the next lowest integer. For example, `floor(29.08)` returns `29`.
 

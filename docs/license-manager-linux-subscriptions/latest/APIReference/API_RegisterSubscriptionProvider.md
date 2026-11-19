@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # RegisterSubscriptionProvider
-<a name="API_RegisterSubscriptionProvider"></a>
 
 Register the supported third-party subscription provider for your Bring Your Own License (BYOL) subscription.
 

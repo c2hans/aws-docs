@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteAnalysisTemplate
-<a name="API_DeleteAnalysisTemplate"></a>
 
 Deletes an analysis template.
 

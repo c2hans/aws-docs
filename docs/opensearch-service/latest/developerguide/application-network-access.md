@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Restricting network access to OpenSearch UI applications
-<a name="application-network-access"></a>
 
 By default, an OpenSearch UI application exposes a public endpoint that accepts requests from any network location. Your users are still subject to authentication (IAM or AWS IAM Identity Center) and authorization, but anyone on the public internet can *reach* the application and its APIs.
 

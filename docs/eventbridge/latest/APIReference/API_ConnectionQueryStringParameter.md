@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectionQueryStringParameter
-<a name="API_ConnectionQueryStringParameter"></a>
 
 Any additional query string parameter for the connection. You can include up to 100 additional query string parameters per request. Each additional parameter counts towards the event payload size, which cannot exceed 64 KB.
 

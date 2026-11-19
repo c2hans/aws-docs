@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_ObjectS
 ---
 
 # ObjectStorageFederatedIdentityConfig
-<a name="API_ObjectStorageFederatedIdentityConfig"></a>
 
 Specifies federated identity parameters that allow AWS DataSync to obtain OpenID Connect token for access to customer object storage. The token allows for temporary, short-term access to the storage. DataSync automatically refreshes the token to assure uninterrupted access to the storage.
 

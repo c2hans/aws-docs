@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_EksAnywhereS
 ---
 
 # EksAnywhereSubscriptionTerm
-<a name="API_EksAnywhereSubscriptionTerm"></a>
 
 An object representing the term duration and term unit type of your subscription. This determines the term length of your subscription. Valid values are MONTHS for term unit and 12 or 36 for term duration, indicating a 12 month or 36 month subscription.
 

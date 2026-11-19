@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Configuring the position of wireless resources with AWS IoT Core for Amazon Sidewalk
-<a name="sidewalk-configure-location"></a>
 
 You can use AWS IoT Core for Amazon Sidewalk to configure the position of your Sidewalk devices and retrieve location data in real time. Geolocation is handled by the Amazon Sidewalk stack on the end device and triggered by the end device itself. The device collects location data and sends it to AWS IoT Core for Amazon Sidewalk, where you can retrieve it using AWS services.
 

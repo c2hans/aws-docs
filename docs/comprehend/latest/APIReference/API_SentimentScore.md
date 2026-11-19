@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Senti
 ---
 
 # SentimentScore
-<a name="API_SentimentScore"></a>
 
 Describes the level of confidence that Amazon Comprehend has in the accuracy of its detection of sentiments.
 

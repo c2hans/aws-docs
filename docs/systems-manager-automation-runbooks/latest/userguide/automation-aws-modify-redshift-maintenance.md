@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-ModifyRedshiftClusterMaintenanceSettings`
-<a name="automation-aws-modify-redshift-maintenance"></a>
 
  **Description**
 

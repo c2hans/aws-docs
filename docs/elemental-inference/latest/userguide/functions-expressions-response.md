@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Response expressions
-<a name="functions-expressions-response"></a>
 
 The response expression runs against the raw response body of the model, as its root. Its job is to reduce that body to the value you actually want on the timeline.
 

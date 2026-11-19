@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelI
 ---
 
 # ModelInput
-<a name="API_ModelInput"></a>
 
 Input object for the model.
 

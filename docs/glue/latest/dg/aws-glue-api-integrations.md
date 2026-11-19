@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations
 ---
 
 # Integration APIs in AWS Glue
-<a name="aws-glue-api-integrations"></a>
 
 ## Data types
 <a name="aws-glue-api-integrations-objects"></a>

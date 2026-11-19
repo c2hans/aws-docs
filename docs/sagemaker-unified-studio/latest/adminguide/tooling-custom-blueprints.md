@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Custom blueprints as Tooling
-<a name="tooling-custom-blueprints"></a>
 
 In Amazon SageMaker Unified Studio, the managed Tooling blueprint provisions a fixed set of resources for every project. When your organization requires a different foundation, you can use a custom blueprint as a project's Tooling environment instead. Assign the `TOOLING` category when you create a custom blueprint, or update an existing custom blueprint to comply with the minimum Tooling requirements in [Template requirements](#tooling-template-requirements). Amazon SageMaker Unified Studio accepts custom blueprints categorized as `TOOLING` as the first environment deployed in a project profile.
 

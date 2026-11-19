@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CreateDatasetIntegration
-<a name="API_CreateDatasetIntegration"></a>
 
 Creates a dataset integration for the caller's account in the current region and returns its ARN.
 

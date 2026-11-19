@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Setting an existing patch baseline as the default
-<a name="patch-manager-default-patch-baseline"></a>
 
 **Important**
 Any default patch baseline selections you make here do not apply to patching operations that are based on a patch policy. Patch policies use their own patch baseline specifications. For more information about patch policies, see [Patch policy configurations in Quick Setup](patch-manager-policies.md).

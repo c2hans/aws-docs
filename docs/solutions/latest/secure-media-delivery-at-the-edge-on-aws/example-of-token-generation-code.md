@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Example of token generation code
-<a name="example-of-token-generation-code"></a>
 
  Below code snippet serves as an example to show the sequence of steps that needs to be reflected in the code to produce a token at the level of playback API endpoint. It does not include the logic required to obtain the information about the video assets or how to compose viewer attributes and token policy objects, which would be specific to your use case and integration with content management system. In the API module, Lambda functions are deployed and can be considered as a more complete reference example of how to implement complementary logic and combine it with the solution’s library.
 

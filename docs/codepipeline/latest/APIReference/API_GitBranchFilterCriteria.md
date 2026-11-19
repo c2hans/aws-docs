@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Git
 ---
 
 # GitBranchFilterCriteria
-<a name="API_GitBranchFilterCriteria"></a>
 
 The Git repository branches specified as filter criteria to start the pipeline.
 

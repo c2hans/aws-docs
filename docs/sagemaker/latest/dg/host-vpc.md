@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/host-vpc.html
 ---
 
 # Give SageMaker AI Hosted Endpoints Access to Resources in Your Amazon VPC
-<a name="host-vpc"></a>
 
 ## Configure a Model for Amazon VPC Access
 <a name="host-vpc-configure"></a>

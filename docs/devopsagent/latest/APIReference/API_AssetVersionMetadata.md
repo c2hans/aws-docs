@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetVersionMetadata
-<a name="API_AssetVersionMetadata"></a>
 
 Metadata for a single version of an asset, including the version number and timestamps.
 

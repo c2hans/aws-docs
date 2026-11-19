@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListBulkImportJobs
-<a name="API_ListBulkImportJobs"></a>
 
 Retrieves a paginated list of bulk import job requests. For more information, see [List bulk import jobs (AWS CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ListBulkImportJobs.html) in the * AWS IoT SiteWise User Guide*.
 

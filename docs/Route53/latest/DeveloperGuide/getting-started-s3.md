@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-st
 ---
 
 # Use your domain for a static website in an Amazon S3 bucket
-<a name="getting-started-s3"></a>
 
 This topic shows you how to use Amazon Route 53 to route DNS traffic for your domain to an Amazon Simple Storage Service bucket that hosts a static website. You'll create alias records that point your domain to the S3 website endpoint.
 

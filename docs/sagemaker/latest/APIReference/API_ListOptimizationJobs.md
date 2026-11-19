@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListOp
 ---
 
 # ListOptimizationJobs
-<a name="API_ListOptimizationJobs"></a>
 
 Lists the optimization jobs in your account and their properties.
 

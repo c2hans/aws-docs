@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/s
 ---
 
 # Source Declarations
-<a name="source-object-declarations"></a>
 
 In Amazon Kinesis Agent for Microsoft Windows, *source declarations* describe where and what log, event, and metric data should be collected. They also optionally specify information for parsing that data so that it can be transformed. The following sections describe configurations for the built-in source types that are available in Kinesis Agent for Windows. Because Kinesis Agent for Windows is extensible, you can add custom source types. Each source type typically requires specific key-value pairs in the configuration objects that are relevant for that source type.
 

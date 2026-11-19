@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Processing changed files and writing results back
-<a name="connector-fan-out-write-back"></a>
 
 A common integration sends the files an asset version changed to an external system. It then records what that system returned on each file. For example, a publishing service returns a publish ID for every file it accepts, and you want each file in SDMA to carry its own publish ID.
 

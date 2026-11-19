@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_ActiveDirect
 ---
 
 # ActiveDirectoryBackupAttributes
-<a name="API_ActiveDirectoryBackupAttributes"></a>
 
 The Microsoft Active Directory attributes of the Amazon FSx for Windows File Server file system.
 

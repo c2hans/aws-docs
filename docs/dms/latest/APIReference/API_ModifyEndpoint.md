@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ModifyEndpoi
 ---
 
 # ModifyEndpoint
-<a name="API_ModifyEndpoint"></a>
 
 Modifies the specified endpoint.
 

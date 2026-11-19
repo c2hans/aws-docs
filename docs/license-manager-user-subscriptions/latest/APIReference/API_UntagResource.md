@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a resource.
 

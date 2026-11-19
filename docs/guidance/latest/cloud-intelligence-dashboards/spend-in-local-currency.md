@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # AWS Spend in Local Currency
-<a name="spend-in-local-currency"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

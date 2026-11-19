@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListCon
 ---
 
 # ListConfigurationPolicies
-<a name="API_ListConfigurationPolicies"></a>
 
  Lists the configuration policies that the AWS Security Hub CSPM delegated administrator has created for your organization. Only the delegated administrator can invoke this operation from the home Region.
 

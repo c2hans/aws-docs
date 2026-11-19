@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_RegionalEnd
 ---
 
 # RegionalEndpoint
-<a name="API_RegionalEndpoint"></a>
 
 Represents the endpoint configuration and state in a specific Region.
 

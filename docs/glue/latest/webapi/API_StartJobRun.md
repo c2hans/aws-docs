@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartJobRun.html
 ---
 
 # StartJobRun
-<a name="API_StartJobRun"></a>
 
 Starts a job run using a job definition.
 

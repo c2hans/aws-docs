@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Spain
-<a name="nx-reg-short-es"></a>
 
 To send messages that use a short code in Spain, you must complete the Spain short code registration.
 

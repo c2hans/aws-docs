@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/delete-faces-proce
 ---
 
 # Deleting faces from a collection
-<a name="delete-faces-procedure"></a>
 
 You can use the [DeleteFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteFaces.html) operation to delete faces from a collection. For more information, see [Managing faces in a collection](managing-face-collections.md#collections-index-faces).
 

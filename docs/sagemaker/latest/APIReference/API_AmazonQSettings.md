@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Amazon
 ---
 
 # AmazonQSettings
-<a name="API_AmazonQSettings"></a>
 
 A collection of settings that configure the Amazon Q experience within the domain.
 

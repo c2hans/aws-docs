@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_BatchG
 ---
 
 # BatchGetGraphMemberDatasources
-<a name="API_BatchGetGraphMemberDatasources"></a>
 
 Gets data source package information for the behavior graph.
 

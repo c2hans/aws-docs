@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # BaselineOverride
-<a name="API_BaselineOverride"></a>
 
 Defines the basic information about a patch baseline override.
 

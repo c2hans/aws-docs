@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Tutorial: Create a matchmaking rule set
-<a name="match-create-ruleset"></a>
 
 Before you create a matchmaking rule set for your Amazon GameLift Servers FlexMatch matchmaker, we recommend checking the [rule set syntax](match-rules-reference.md). After you create a rule set using the Amazon GameLift Servers console or the AWS Command Line Interface (AWS CLI), you can't change it.
 

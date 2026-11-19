@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_VmInstance
 ---
 
 # VmInstanceAggregationResponse
-<a name="API_VmInstanceAggregationResponse"></a>
 
 A response that contains the results of a VM instance aggregation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetTur
 ---
 
 # TestSetTurnRecord
-<a name="API_TestSetTurnRecord"></a>
 
 Contains information about a turn in a test set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/unde
 ---
 
 # Understanding access control methods in Amazon Route 53 Global Resolver
-<a name="understanding-access-control-methods"></a>
 
 Amazon Route 53 Global Resolver offers two distinct authentication methods to control client access to your DNS infrastructure. Each method serves different use cases and environments.
 

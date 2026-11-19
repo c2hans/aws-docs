@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerInferenceServiceRolePolicy
-<a name="AmazonSageMakerInferenceServiceRolePolicy"></a>
 
 **Description**: Managed policy for Service Linked Role for Amazon SageMaker Inference.
 

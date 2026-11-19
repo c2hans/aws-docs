@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeProfile
-<a name="API_DescribeProfile"></a>
 
 Returns the details of the profile that's specified by the `ProfileId`.
 

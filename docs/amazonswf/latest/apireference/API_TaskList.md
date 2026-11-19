@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TaskLi
 ---
 
 # TaskList
-<a name="API_TaskList"></a>
 
 Represents a task list.
 

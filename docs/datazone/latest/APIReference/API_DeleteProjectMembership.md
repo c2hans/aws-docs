@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteP
 ---
 
 # DeleteProjectMembership
-<a name="API_DeleteProjectMembership"></a>
 
 Deletes project membership in Amazon DataZone.
 

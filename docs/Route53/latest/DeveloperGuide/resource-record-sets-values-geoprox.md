@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for geoproximity records
-<a name="resource-record-sets-values-geoprox"></a>
 
 When you create geoproximity records, you specify the following values.
 

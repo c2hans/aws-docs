@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/data-source-inte
 ---
 
 # Data source integrations for AWS AppSync events
-<a name="data-source-integrations"></a>
 
 With AWS AppSync Events, you can create event handlers that run custom business logic on AWS AppSync's JavaScript runtime. By configuring data source integrations, you can interact with external systems like Lambdafunctions, DynamoDB tables, or Amazon RDS Aurora databases.
 

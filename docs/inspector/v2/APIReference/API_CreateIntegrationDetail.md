@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateInte
 ---
 
 # CreateIntegrationDetail
-<a name="API_CreateIntegrationDetail"></a>
 
 Contains details required to create a code security integration with a specific repository provider.
 

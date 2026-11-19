@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_LabelSummary
 ---
 
 # LabelSummary
-<a name="API_LabelSummary"></a>
 
 List of labels used by one or more of the rules of a [RuleGroup](API_RuleGroup.md). This summary object is used for the following rule group lists:
 +  `AvailableLabels` - Labels that rules add to matching requests. These labels are defined in the `RuleLabels` for a [Rule](API_Rule.md).

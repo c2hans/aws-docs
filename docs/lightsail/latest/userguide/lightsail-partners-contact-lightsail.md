@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-par
 ---
 
 # Contact Lightsail as a partner
-<a name="lightsail-partners-contact-lightsail"></a>
 
 As an Amazon Lightsail partner, you can contact the Lightsail team with questions or feedback about your efforts as a partner right from the Lightsail console. This is also how you can request service quota increases for Lightsail across your member accounts in an organization.
 

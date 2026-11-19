@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Reso
 ---
 
 # ResourceConfigurationDefinition
-<a name="API_ResourceConfigurationDefinition"></a>
 
 Describes a resource configuration.
 

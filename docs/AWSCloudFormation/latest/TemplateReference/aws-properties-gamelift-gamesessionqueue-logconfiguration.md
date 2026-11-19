@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::GameSessionQueue LogConfiguration
-<a name="aws-properties-gamelift-gamesessionqueue-logconfiguration"></a>
 
 An optional configuration that delivers game session placement insight logs to one or more destinations of your choice. Use these logs to diagnose why a game session placement is `FULFILLED`, `CANCELLED`, `TIMED_OUT`, or `FAILED`, which locations were evaluated, and the latency and cost factors that influenced each decision.
 

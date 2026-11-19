@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Available
 ---
 
 # AvailableCapacity
-<a name="API_AvailableCapacity"></a>
 
 The capacity information for instances that can be launched onto the Dedicated Host.
 

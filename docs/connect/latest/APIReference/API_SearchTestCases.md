@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchTe
 ---
 
 # SearchTestCases
-<a name="API_SearchTestCases"></a>
 
 Searches for test cases in the specified Amazon Connect instance, with optional filtering.
 

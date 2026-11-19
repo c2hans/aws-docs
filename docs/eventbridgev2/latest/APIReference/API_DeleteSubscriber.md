@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_De
 ---
 
 # DeleteSubscriber
-<a name="API_DeleteSubscriber"></a>
 
 Deletes a subscriber. Events are no longer delivered to its target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteNo
 ---
 
 # DeleteNotification
-<a name="API_DeleteNotification"></a>
 
 Deletes a notification. Once deleted, the notification is no longer visible to all users and cannot be managed through the Admin Website or APIs.
 

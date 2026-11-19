@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data lake
-<a name="data-connections"></a>
 
 You can use AWS Supply Chain to ingest your data stored in the following data sources and extract your supply chain information. AWS Supply Chain can store the extracted information in your Amazon S3 buckets and use the data for *Demand planning*, *Insights*, *Supply Planning*, *N-Tier Visibility*, *Work Order Insights*, and *Sustainability*.
 + **Amazon S3 source data** – You can use the Amazon S3 data source flow option if you don't have an ERP system, or if you use another extraction tool. You can extract raw data from your data source, map the data fields with AWS Supply Chain data model, and upload them to Amazon S3 with an integration tool of your choice. You can only upload CSV files to Amazon S3 when you're using Auto-association.

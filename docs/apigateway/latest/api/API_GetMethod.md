@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetMethod.html
 ---
 
 # GetMethod
-<a name="API_GetMethod"></a>
 
 Describe an existing Method resource.
 

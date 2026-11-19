@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/userguide/getting-started-ste
 ---
 
 # AWS Tag Editor
-<a name="getting-started-step2-tag-editor"></a>
 
 You can use the AWS Resource Groups and Tag Editor to tag your migrated resources.
 

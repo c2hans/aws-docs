@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Actor.
 ---
 
 # Actor
-<a name="API_Actor"></a>
 
 Information about the actors involved in an attack sequence.
 

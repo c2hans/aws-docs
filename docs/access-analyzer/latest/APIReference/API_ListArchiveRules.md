@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ListArchiveRules
-<a name="API_ListArchiveRules"></a>
 
 Retrieves a list of archive rules created for the specified analyzer.
 

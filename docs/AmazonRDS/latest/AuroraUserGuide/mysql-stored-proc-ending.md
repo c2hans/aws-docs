@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-s
 ---
 
 # Ending a session or query
-<a name="mysql-stored-proc-ending"></a>
 
 The following stored procedures end a session or query.
 

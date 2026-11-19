@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Definitions
-<a name="definitions"></a>
 
  Following is a list of definitions related to the AWS Well-Architected Framework and EUC workloads.
 

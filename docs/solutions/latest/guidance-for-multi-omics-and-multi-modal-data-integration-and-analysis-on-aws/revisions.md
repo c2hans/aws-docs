@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 |  Date  |  Change  |
 | --- | --- |

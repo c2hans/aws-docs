@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 ---
 
 # Deploy Serverless Application dialog box
-<a name="deploy-serverless-application-dialog"></a>
 
 The **Deploy Serverless Application** dialog box in the AWS Toolkit for JetBrains is displayed when you deploy an AWS serverless application.
 

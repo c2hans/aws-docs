@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionConfidenceThreshold
-<a name="API_SuppressionConfidenceThreshold"></a>
 
 Contains the confidence threshold settings for Auto Validation.
 

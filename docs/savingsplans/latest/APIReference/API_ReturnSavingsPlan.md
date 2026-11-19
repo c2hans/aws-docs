@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Ret
 ---
 
 # ReturnSavingsPlan
-<a name="API_ReturnSavingsPlan"></a>
 
 Returns the specified Savings Plan.
 

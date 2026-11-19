@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-multi-model-bu
 ---
 
 # Build Your Own Container for SageMaker AI Multi-Model Endpoints
-<a name="build-multi-model-build-container"></a>
 
 Refer to the following sections for bringing your own container and dependencies to multi-model endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/agent-tool
 ---
 
 # Use Image Builder with an AI coding agent
-<a name="agent-toolkit-skill"></a>
 
 The [Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html) gives AI coding agents the tools, knowledge, and guardrails they need to work with AWS services. It works with agents such as Kiro, Claude Code, Cursor, and Codex. The toolkit includes the `amazon-ec2-image-builder` skill, a curated package of instructions and reference material that guides your agent through Image Builder tasks.
 

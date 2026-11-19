@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteLicenseManagerReportGenerator
-<a name="API_DeleteLicenseManagerReportGenerator"></a>
 
 Deletes the specified report generator.
 

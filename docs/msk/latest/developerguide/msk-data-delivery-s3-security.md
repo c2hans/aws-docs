@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Security
-<a name="msk-data-delivery-s3-security"></a>
 
 **Topics**
 + [Encryption in transit](msk-data-delivery-s3-security-transit.md)

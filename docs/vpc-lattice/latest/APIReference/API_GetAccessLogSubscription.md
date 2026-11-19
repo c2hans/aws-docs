@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetA
 ---
 
 # GetAccessLogSubscription
-<a name="API_GetAccessLogSubscription"></a>
 
 Retrieves information about the specified access log subscription.
 

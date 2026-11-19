@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-error-message
 ---
 
 # Amazon SES email sending errors
-<a name="troubleshoot-error-messages"></a>
 
 This topic reviews the types of email sending-specific errors that you may encounter when you send an email through Amazon SES. If you try to send an email through Amazon SES and the call to Amazon SES fails, Amazon SES returns an error message to your application and does not send the email. The way that you observe this error message depends on the way that you call Amazon SES.
 + If you call the Amazon SES API directly, the operation returns an error. The error might be one of the errors that the [SendEmail](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation in the Amazon SES API v2 returns, or one of the errors specified in the [Common Errors](https://docs.aws.amazon.com/ses/latest/APIReference-V2/CommonErrors.html) topic of the *Amazon SES API v2 Reference*. The errors that the `SendEmail` operation returns include `MessageRejected`, `SendingPausedException`, and `MailFromDomainNotVerifiedException`.

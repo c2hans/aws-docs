@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # UpdatePatchBaseline
-<a name="API_UpdatePatchBaseline"></a>
 
 Modifies an existing patch baseline. Fields not specified in the request are left unchanged.
 

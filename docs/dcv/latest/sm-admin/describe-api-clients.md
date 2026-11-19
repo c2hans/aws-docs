@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/describe-api-clients
 ---
 
 # describe-api-clients
-<a name="describe-api-clients"></a>
 
 Lists the Session Manager clients that have been registered with the broker.
 

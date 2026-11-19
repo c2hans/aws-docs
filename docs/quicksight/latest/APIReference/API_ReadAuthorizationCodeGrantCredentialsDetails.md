@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadA
 ---
 
 # ReadAuthorizationCodeGrantCredentialsDetails
-<a name="API_ReadAuthorizationCodeGrantCredentialsDetails"></a>
 
 Read-only credentials details for OAuth2 authorization code grant flow, containing non-sensitive configuration information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/autodesk
 ---
 
 # Autodesk VRED
-<a name="autodesk-vred"></a>
 
 Autodesk VRED is a professional 3D visualization and virtual prototyping software that brings complex 3D data to life in a realistic virtual environment. VRED is widely used by designers and engineers to create product presentations, design reviews, and virtual prototypes, particularly in the automotive industry. Use this guide to render with Deadline Cloud and Autodesk VRED by distributing tasks across multiple machines.
 

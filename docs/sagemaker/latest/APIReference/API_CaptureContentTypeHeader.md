@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Captur
 ---
 
 # CaptureContentTypeHeader
-<a name="API_CaptureContentTypeHeader"></a>
 
 Configuration specifying how to treat different headers. If no headers are specified Amazon SageMaker AI will by default base64 encode when capturing the data.
 

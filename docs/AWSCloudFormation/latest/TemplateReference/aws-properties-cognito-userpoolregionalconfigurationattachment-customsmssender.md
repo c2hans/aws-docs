@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRegionalConfigurationAttachment CustomSMSSender
-<a name="aws-properties-cognito-userpoolregionalconfigurationattachment-customsmssender"></a>
 
 <a name="aws-properties-cognito-userpoolregionalconfigurationattachment-customsmssender-description"></a>The `CustomSMSSender` property type specifies Property description not available. for an [AWS::Cognito::UserPoolRegionalConfigurationAttachment](aws-resource-cognito-userpoolregionalconfigurationattachment.md).
 

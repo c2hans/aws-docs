@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # AwsSecretsManager resources in ASFF
-<a name="asff-resourcedetails-awssecretsmanager"></a>
 
 The following are examples of the AWS Security Finding Format (ASFF) syntax for `AwsSecretsManager` resources.
 

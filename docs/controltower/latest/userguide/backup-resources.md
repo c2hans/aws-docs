@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/backup-res
 ---
 
 # Resources created for AWS Backup
-<a name="backup-resources"></a>
 
 **The tables on this page show resources that are created in AWS Control Tower accounts when you enable AWS Backup.**
 

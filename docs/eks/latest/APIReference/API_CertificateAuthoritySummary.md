@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CertificateA
 ---
 
 # CertificateAuthoritySummary
-<a name="API_CertificateAuthoritySummary"></a>
 
 Summary information about a certificate authority (CA) for an Amazon EKS cluster, returned by [`ListCertificateAuthorities`](https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCertificateAuthorities.html) and the certificate-authority write operations.
 

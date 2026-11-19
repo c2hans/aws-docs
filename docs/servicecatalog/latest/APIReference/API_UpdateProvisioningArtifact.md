@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateProvisioningArtifact
-<a name="API_UpdateProvisioningArtifact"></a>
 
 Updates the specified provisioning artifact (also known as a version) for the specified product.
 

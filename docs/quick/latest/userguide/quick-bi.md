@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quick-bi.html
 ---
 
 # Visualize, analyze, and share data with analyses, dashboards, and reports in AWS Quick Sight
-<a name="quick-bi"></a>
 
 AWS Quick Sight is a comprehensive business intelligence service that enables you to transform raw data into meaningful insights through interactive visualizations, dashboards, and reports. Whether you're connecting to databases, preparing datasets, creating analyses, or sharing dashboards with stakeholders, AWS Quick Sight provides the tools you need to make data-driven decisions.
 

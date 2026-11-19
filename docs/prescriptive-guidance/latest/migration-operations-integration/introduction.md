@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Modernizing operations in the AWS Cloud
-<a name="introduction"></a>
 
 *Libin Roy and Phani Lingamallu, Amazon Web Services*
 

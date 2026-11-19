@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCodeDeployRole
-<a name="AWSCodeDeployRole"></a>
 
 **Description**: Provides CodeDeploy service access to expand tags and interact with Auto Scaling on your behalf.
 

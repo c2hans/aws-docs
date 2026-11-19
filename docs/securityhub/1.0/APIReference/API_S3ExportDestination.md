@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_S3Expor
 ---
 
 # S3ExportDestination
-<a name="API_S3ExportDestination"></a>
 
 The Amazon S3 destination for an export, including the bucket, the AWS KMS key used for encryption, and an optional object key prefix.
 

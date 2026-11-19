@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-default-rules-or
 ---
 
 # Oracle to PostgreSQL
-<a name="sc-default-rules-oracle"></a>
 
 This section describes the default rules that DMS Schema Conversion applies when it converts an Oracle source database to Amazon Aurora PostgreSQL or Amazon RDS for PostgreSQL.
 

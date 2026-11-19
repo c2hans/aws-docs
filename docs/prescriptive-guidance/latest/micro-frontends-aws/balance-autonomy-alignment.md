@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Balancing autonomy with alignment
-<a name="balance-autonomy-alignment"></a>
 
 Micro-frontend architectures favor team autonomy. However, you should distinguish between areas that support flexibility and diverse approaches to problem solving, and areas where standardization is necessary to achieve alignment. Senior leaders and architects must identify these areas early and prioritize investments to balance the security, performance, operational excellence, and reliability of micro-frontends. To find this balance, focus on the following areas: creating, testing, and releasing micro-frontends; and logging, monitoring, and alerting.
 

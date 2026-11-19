@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-alarm-c
 ---
 
 # Connect AWS IoT SiteWise Alarms to AWS IoT TwinMaker Grafana dashboards
-<a name="tm-sw-alarm-config"></a>
 
 **Note**
 This feature is in **public preview** and is subject to change.

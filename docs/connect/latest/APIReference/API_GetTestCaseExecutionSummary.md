@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetTestC
 ---
 
 # GetTestCaseExecutionSummary
-<a name="API_GetTestCaseExecutionSummary"></a>
 
 Retrieves an overview of a test execution that includes the status of the execution, start and end time, and observation summary.
 

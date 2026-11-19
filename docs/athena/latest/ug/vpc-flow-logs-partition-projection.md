@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/vpc-flow-logs-partition
 ---
 
 # Create and query a table for Amazon VPC flow logs using partition projection
-<a name="vpc-flow-logs-partition-projection"></a>
 
 Use a `CREATE TABLE` statement like the following to create a table, partition the table, and populate the partitions automatically by using [partition projection](partition-projection.md). Replace the table name `test_table_vpclogs` in the example with the name of your table. Edit the `LOCATION` clause to specify the Amazon S3 bucket that contains your Amazon VPC log data.
 

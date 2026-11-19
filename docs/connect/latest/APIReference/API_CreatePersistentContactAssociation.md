@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePe
 ---
 
 # CreatePersistentContactAssociation
-<a name="API_CreatePersistentContactAssociation"></a>
 
 Enables rehydration of chats for the lifespan of a contact. For more information about chat rehydration, see [Enable persistent chat](https://docs.aws.amazon.com/connect/latest/adminguide/chat-persistence.html) in the *Connect Customer Administrator Guide*.
 

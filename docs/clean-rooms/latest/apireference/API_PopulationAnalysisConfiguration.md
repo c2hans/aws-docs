@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Popu
 ---
 
 # PopulationAnalysisConfiguration
-<a name="API_PopulationAnalysisConfiguration"></a>
 
 Contains the configuration that defines the analysis used to populate an intermediate table.
 

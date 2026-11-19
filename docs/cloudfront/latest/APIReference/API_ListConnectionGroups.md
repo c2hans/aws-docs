@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListC
 ---
 
 # ListConnectionGroups
-<a name="API_ListConnectionGroups"></a>
 
 Lists the connection groups in your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/CLI_CreateStream
 ---
 
 # Submit a streaming step
-<a name="CLI_CreateStreaming"></a>
 
 This section covers the basics of submitting a streaming step to a cluster. A streaming application reads input from standard input and then runs a script or executable (called a mapper) against each input. The result from each of the inputs is saved locally, typically on a Hadoop Distributed File System (HDFS) partition. After all the input is processed by the mapper, a second script or executable (called a reducer) processes the mapper results. The results from the reducer are sent to standard output. You can chain together a series of streaming steps, where the output of one step becomes the input of another step.
 

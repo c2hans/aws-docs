@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsS
 ---
 
 # AwsEcsServicePlacementConstraintsDetails
-<a name="API_AwsEcsServicePlacementConstraintsDetails"></a>
 
 A placement constraint for the tasks in the service.
 

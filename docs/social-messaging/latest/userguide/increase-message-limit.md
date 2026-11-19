@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/increa
 ---
 
 # Increase messaging conversation limits in WhatsApp
-<a name="increase-message-limit"></a>
 
 Messaging limits refer to the maximum number of business-initiated conversations a business phone number can open in a 24-hour period. Business phone numbers are initially limited to 250 business-initiated conversations in a 24-hour moving period. This limit can be increased by Meta based on the quality rating of your messages and how many messages you send. Business-initiated conversations can only use template messages.
 

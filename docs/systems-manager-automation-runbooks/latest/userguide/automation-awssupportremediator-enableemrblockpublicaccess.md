@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableEmrBlockPublicAccess`
-<a name="automation-awssupportremediator-enableemrblockpublicaccess"></a>
 
 **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Built-in transformation behavior
-<a name="tdvk-builtin-behavior"></a>
 
 When Migration Assistant encounters a `dense_vector` field in a source mapping, template, or component template, it produces a `knn_vector` field on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. The transformation maps the source field’s vector definition to the equivalent OpenSearch concepts:
 +  **Dimension** — The source vector length is carried over to the `knn_vector` `dimension` property. The number of dimensions does not change.

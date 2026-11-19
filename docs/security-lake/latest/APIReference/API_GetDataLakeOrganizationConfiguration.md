@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Ge
 ---
 
 # GetDataLakeOrganizationConfiguration
-<a name="API_GetDataLakeOrganizationConfiguration"></a>
 
 Retrieves the configuration that will be automatically set up for accounts added to the organization after the organization has onboarded to Amazon Security Lake. This API does not take input parameters.
 

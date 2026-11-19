@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delete-co
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Deleting a custom control in AWS Audit Manager
-<a name="delete-controls"></a>
 
 If you created a custom control and you no longer need it, you can delete it from your Audit Manager environment. This enables you to clean up your workspace and focus on the custom controls that are relevant to your current tasks and priorities.
 

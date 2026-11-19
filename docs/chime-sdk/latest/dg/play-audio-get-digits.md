@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/play-audio-get-digit
 ---
 
 # PlayAudioAndGetDigits
-<a name="play-audio-get-digits"></a>
 
 Plays audio and gathers DTMF digits. If a failure occurs, such as a user not entering the correct number of DTMF digits, the action plays the "failure" audio and then replays the main audio until the SIP media application exhausts the number of attempts defined in the `Repeat` parameter.
 

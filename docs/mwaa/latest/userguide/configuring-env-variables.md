@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/configuring-env-va
 ---
 
 # Using Apache Airflow configuration options on Amazon MWAA
-<a name="configuring-env-variables"></a>
 
 Apache Airflow configuration options can be attached to your Amazon Managed Workflows for Apache Airflow environment as environment variables. You can choose from the suggested dropdown list or specify custom configuration options for your Apache Airflow version on the Amazon MWAA console. This topic describes the Apache Airflow configuration options available and how to use these options to override Apache Airflow configuration settings on your environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/vpc-interface-add
 ---
 
 # Adding a VPC interface to a MediaConnect flow
-<a name="vpc-interface-add"></a>
 
 To avoid streaming your content over the public internet, you can add a VPC interface to your AWS Elemental MediaConnect flow. You can add up to two VPC interfaces to each flow.
 

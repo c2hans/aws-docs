@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/setup-environment/setup-
 ---
 
 # Setting Up Your AWS Environment
-<a name="setup-environment"></a>
 
 |  |  |
 | --- |--- |

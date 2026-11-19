@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 ---
 
 # Integrate Stonebranch Universal Controller with AWS Mainframe Modernization
-<a name="integrate-stonebranch-universal-controller-with-aws-mainframe-modernization"></a>
 
 *Vaidy Sankaran and Pablo Alonso Prieto, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_VmEntitlemen
 ---
 
 # VmEntitlement
-<a name="API_VmEntitlement"></a>
 
 An object that represents a Windows Server License entitlement for a virtual machine in an Amazon EVS environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Su
 ---
 
 # SupplementalDataStorageConfiguration
-<a name="API_agent_SupplementalDataStorageConfiguration"></a>
 
 Specifies configurations for the storage location of multimedia content (images, audio, and video) extracted from multimodal documents in your data source. This content can be retrieved and returned to the end user with timestamp references for audio and video segments.
 

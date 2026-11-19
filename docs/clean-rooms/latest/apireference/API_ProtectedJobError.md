@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobError
-<a name="API_ProtectedJobError"></a>
 
 Details of the error that caused the protected job to fail.
 

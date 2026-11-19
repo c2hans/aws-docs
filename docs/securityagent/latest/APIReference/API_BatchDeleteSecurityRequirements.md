@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchDeleteSecurityRequirements
-<a name="API_BatchDeleteSecurityRequirements"></a>
 
 Batch deletes security requirements from a customer managed pack.
 

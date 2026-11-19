@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-enable-encryption-for-
 ---
 
 # Setting up Amazon SNS topic encryption with encrypted Amazon SQS queue subscription
-<a name="sns-enable-encryption-for-topic-sqs-queue-subscriptions"></a>
 
 You can enable server-side encryption (SSE) for a topic to protect its data. To allow Amazon SNS to send messages to encrypted Amazon SQS queues, the customer managed key associated with the Amazon SQS queue must have a policy statement that grants Amazon SNS service-principal access to the AWS KMS API actions `GenerateDataKey` and `Decrypt`. For more information about using SSE, see [Securing Amazon SNS data with server-side encryption](sns-server-side-encryption.md).
 

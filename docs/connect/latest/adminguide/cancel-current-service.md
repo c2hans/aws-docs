@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/cancel-current
 ---
 
 # When do I cancel my current telecom service when porting numbers to Connect Customer?
-<a name="cancel-current-service"></a>
 
 Do not cancel your existing telecom service until your phone numbers have been ported and confirmed working in Connect Customer.
 

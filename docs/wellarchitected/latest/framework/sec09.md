@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec09.h
 ---
 
 # Protecting data in transit
-<a name="sec09"></a>
 
  Data in transit is any data that moves from one system to another, whether between the components inside a workload or between the workload and the people and services that use it. While it moves, it crosses paths the organization does not fully control, and anyone positioned on that path can read or alter it unless the traffic is protected. Protecting data in transit keeps that data confidential and intact from the moment it leaves one system until it arrives at the next.
 

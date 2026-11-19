@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_DeleteMLEndp
 ---
 
 # DeleteMLEndpoint
-<a name="API_DeleteMLEndpoint"></a>
 
 Cancels the creation of a Neptune ML inference endpoint. See [Managing inference endpoints using the endpoints command](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-api-endpoints.html).
 

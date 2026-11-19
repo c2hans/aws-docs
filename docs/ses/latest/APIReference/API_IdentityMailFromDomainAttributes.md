@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_IdentityMail
 ---
 
 # IdentityMailFromDomainAttributes
-<a name="API_IdentityMailFromDomainAttributes"></a>
 
 Represents the custom MAIL FROM domain attributes of a verified identity (email address or domain).
 

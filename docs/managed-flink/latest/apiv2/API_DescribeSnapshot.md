@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DescribeS
 ---
 
 # DescribeSnapshot
-<a name="API_DescribeSnapshot"></a>
 
 Returns information about an enhanced snapshot. To see a list of the snapshots in your account, use `ListSnapshots`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AdvancedRe
 ---
 
 # AdvancedRecognitionSetting
-<a name="API_AdvancedRecognitionSetting"></a>
 
 Provides settings that enable advanced recognition settings for slot values.
 

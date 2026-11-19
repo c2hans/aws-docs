@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tas
 ---
 
 # TaskConfiguration
-<a name="API_TaskConfiguration"></a>
 
 The task execution configuration. Specify a [containerTaskConfiguration](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ContainerTaskConfiguration.html) for a custom container workload.
 

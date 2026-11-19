@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioBedrockEvaluationJobServiceRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioBedrockEvaluationJobServiceRolePolicy"></a>
 
 This policy allows Amazon Bedrock to access Amazon Bedrock models and datasets for evaluation jobs in Amazon SageMaker Unified Studio.
 

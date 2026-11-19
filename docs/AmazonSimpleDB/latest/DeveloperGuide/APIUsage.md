@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/API
 ---
 
 # API Usage
-<a name="APIUsage"></a>
 
 This section provides a high-level overview of the Amazon SimpleDB API. It describes API conventions, API versioning used to minimize the impact of service changes, and API-specific information for making REST requests.
 

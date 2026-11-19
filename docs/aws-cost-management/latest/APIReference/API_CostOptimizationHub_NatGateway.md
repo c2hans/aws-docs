@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # NatGateway
-<a name="API_CostOptimizationHub_NatGateway"></a>
 
 The NAT Gateway recommendation details.
 

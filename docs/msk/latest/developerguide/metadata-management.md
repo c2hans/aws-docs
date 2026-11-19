@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/metadata-manag
 ---
 
 # Metadata management
-<a name="metadata-management"></a>
 
 Amazon MSK supports Apache ZooKeeper or KRaft metadata management modes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDataSource
-<a name="API_DescribeDataSource"></a>
 
 Describes a data source.
 

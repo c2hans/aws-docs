@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/Asana-overvi
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Asana connector overview (Preview)
-<a name="Asana-overview"></a>
 
 The following table gives an overview of the Amazon Q Business Asana connector and its supported features.
 

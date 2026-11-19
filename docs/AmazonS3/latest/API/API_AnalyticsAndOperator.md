@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnalyticsAndOper
 ---
 
 # AnalyticsAndOperator
-<a name="API_AnalyticsAndOperator"></a>
 
 A conjunction (logical AND) of predicates, which is used in evaluating a metrics filter. The operator must have at least two predicates in any combination, and an object must match all of the predicates for the filter to apply.
 

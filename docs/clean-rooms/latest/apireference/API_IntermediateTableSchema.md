@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableSchema
-<a name="API_IntermediateTableSchema"></a>
 
 Contains the schema definition of an intermediate table.
 

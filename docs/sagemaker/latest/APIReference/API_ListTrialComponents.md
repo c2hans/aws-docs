@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTr
 ---
 
 # ListTrialComponents
-<a name="API_ListTrialComponents"></a>
 
 Lists the trial components in your account. You can sort the list by trial component name or creation time. You can filter the list to show only components that were created in a specific time range. You can also filter on one of the following:
 +  `ExperimentName`

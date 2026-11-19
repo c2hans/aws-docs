@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_rekognitio
 ---
 
 # Detect information in videos using Amazon Rekognition and the AWS SDK
-<a name="example_rekognition_VideoDetection_section"></a>
 
 The following code examples show how to:
 + Start Amazon Rekognition jobs to detect elements like people, objects, and text in videos.

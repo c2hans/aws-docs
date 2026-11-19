@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/synth
 ---
 
 # Start, stop, delete, or update runtime for multiple canaries
-<a name="synthetics_canaries_multi-action"></a>
 
 You can stop, start, delete, or update the runtime of as many as five canaries with one action. If you update the runtime of a canary, it is updated to the latest runtime available for the language and framework that the canary uses.
 

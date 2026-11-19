@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/aurora_example_au
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn the basics of Aurora with an AWS SDK
-<a name="aurora_example_aurora_Scenario_GetStartedClusters_section"></a>
 
 The following code examples show how to:
 + Create a custom Aurora DB cluster parameter group and set parameter values.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergEncryptedK
 ---
 
 # IcebergEncryptedKey
-<a name="API_IcebergEncryptedKey"></a>
 
 Encryption key structure used for Iceberg table encryption. Contains the key ID, encrypted key metadata, optional reference to the encrypting key, and additional properties for the table's encryption scheme.
 

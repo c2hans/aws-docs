@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteTableOptimi
 ---
 
 # DeleteTableOptimizer
-<a name="API_DeleteTableOptimizer"></a>
 
 Deletes an optimizer and all associated metadata for a table. The optimization will no longer be performed on the table.
 

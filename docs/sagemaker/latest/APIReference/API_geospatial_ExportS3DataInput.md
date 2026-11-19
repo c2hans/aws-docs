@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ExportS3DataInput
-<a name="API_geospatial_ExportS3DataInput"></a>
 
 The structure containing the Amazon S3 path to export the Earth Observation job output.
 

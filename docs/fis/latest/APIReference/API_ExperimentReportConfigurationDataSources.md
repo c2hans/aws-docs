@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentRe
 ---
 
 # ExperimentReportConfigurationDataSources
-<a name="API_ExperimentReportConfigurationDataSources"></a>
 
 Describes the data sources for the experiment report.
 

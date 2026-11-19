@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AlertFilterCriteria
-<a name="API_AlertFilterCriteria"></a>
 
 Filter criteria for ListAlerts. All members are optional; each omitted member is unconstrained. At most one of `names`, `namePrefix`, `ids` may be provided (mutually exclusive; the service rejects more than one). The remaining members combine with AND.
 

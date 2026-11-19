@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # AssociatePhoneNumbersWithVoiceConnector
-<a name="API_voice-chime_AssociatePhoneNumbersWithVoiceConnector"></a>
 
 Associates phone numbers with the specified Amazon Chime SDK Voice Connector.
 

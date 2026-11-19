@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-as
 ---
 
 # Associate Resolver rules to a Route 53 Profile
-<a name="profile-associate-resolver-rules"></a>
 
 For instructions for how to create a Resolver rule, see [Creating forwarding rules](resolver-rules-managing.md#resolver-rules-managing-creating-rules), and then follow the steps in this procedure to associate Resolver rules to a Profile.<a name="profile-associate-resolver-rules-procedure"></a>
 

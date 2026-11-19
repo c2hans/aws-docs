@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_AuroraP
 ---
 
 # AuroraProvisionedScalingConfiguration
-<a name="API_AuroraProvisionedScalingConfiguration"></a>
 
 Configuration for Amazon Aurora provisioned cluster scaling used in a Region switch plan.
 

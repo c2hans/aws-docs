@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Delete a phone pool in AWS End User Messaging
-<a name="nx-features-phone-pools-delete"></a>
 
 Before you can delete a pool you need to turn off **Deletion protection** and remove all but one of originators from the phone pool. For more information on how to disable deletion protection, see [Using phone pool deletion protection in AWS End User Messaging](nx-features-phone-pools-deletion-protection.md). The phone numbers and sender IDs that were associated with the pool remain in your AWS End User Messaging account.
 

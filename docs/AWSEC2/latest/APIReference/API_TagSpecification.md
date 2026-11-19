@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TagSpecif
 ---
 
 # TagSpecification
-<a name="API_TagSpecification"></a>
 
 The tags to apply to a resource when the resource is being created. When you specify a tag, you must specify the resource type to tag, otherwise the request will fail.
 

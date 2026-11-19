@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Microsoft SQL Server database to Amazon RDS for SQL Server using linked servers
-<a name="migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-linked-servers"></a>
 
 *Kevin Yung, Viqash Adwani, and Vishal Singh, Amazon Web Services*
 

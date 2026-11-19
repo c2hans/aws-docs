@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageNodeReference
-<a name="API_LineageNodeReference"></a>
 
 The reference details for the data lineage node.
 

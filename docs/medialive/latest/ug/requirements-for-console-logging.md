@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-con
 ---
 
 # Requirements for Amazon CloudWatch Logs—setting up channel logging
-<a name="requirements-for-console-logging"></a>
 
  MediaLive produces channel logs that it sends to CloudWatch Logs, where users can view them. For more information about channel logs, see [Monitoring a channel using Amazon CloudWatch Logs](monitoring-with-logs.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailI
 ---
 
 # PutEmailIdentityDkimAttributes
-<a name="API_PutEmailIdentityDkimAttributes"></a>
 
 Used to enable or disable DKIM authentication for an email identity.
 

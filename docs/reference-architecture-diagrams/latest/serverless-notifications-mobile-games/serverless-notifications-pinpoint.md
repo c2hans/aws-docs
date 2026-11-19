@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Serverless Notifications for Mobile Games with Amazon Pinpoint
-<a name="serverless-notifications-pinpoint"></a>
 
 Publication date: **March 10, 2021 ([Diagram history](#notif-pin-history))**
 

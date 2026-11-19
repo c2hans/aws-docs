@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/trusted-re
 ---
 
 # Trusted resources
-<a name="trusted-resources"></a>
 
 With AWS Management Console Private Access, you can restrict which resources users access through the AWS Management Console to those that belong to your AWS organization. These policies layer on top of the principal-based restrictions described in [Trusted identities](trusted-identities.md); they further limit which resources the allowed principals can reach after signing in.
 + **AWS Management Console VPC endpoint policies** – Use the `aws:ResourceOrgID` or `aws:ResourceAccount` condition keys. `aws:ResourceOrgID` restricts access to resources in a specific AWS organization. `aws:ResourceAccount` restricts access to resources in a specific AWS account.

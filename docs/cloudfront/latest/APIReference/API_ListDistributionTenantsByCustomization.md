@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionTenantsByCustomization
-<a name="API_ListDistributionTenantsByCustomization"></a>
 
 Lists distribution tenants by the customization that you specify.
 

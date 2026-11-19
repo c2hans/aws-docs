@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Extracti
 ---
 
 # ExtractionDefinitionNotFoundBehavior
-<a name="API_ExtractionDefinitionNotFoundBehavior"></a>
 
 The behavior configuration when an extraction definition cannot find the target value.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Partnership X12AcknowledgmentOptions
-<a name="aws-properties-b2bi-partnership-x12acknowledgmentoptions"></a>
 
 Contains options for configuring X12 acknowledgments. These options control how functional and technical acknowledgments are handled.
 

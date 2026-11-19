@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/regions-reference.h
 ---
 
 # AWS Regions for Amazon EVS
-<a name="regions-reference"></a>
 
 You create an Amazon Elastic VMware Service environment and its hosts in one Region and one Availability Zone, so check the Region before you plan your network.
 

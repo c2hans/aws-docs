@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Wave planning
-<a name="wave-planning"></a>
 
 In essence, a wave plan is a migration schedule, and it is similar to other project-planning activities. We recommend that you use *migration waves* as a means to create manageable groups, reduce risk, and organize activities around those groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-l
 ---
 
 # Migrating large, multi-terabyte MySQL or MariaDB databases to AWS
-<a name="introduction"></a>
 
 *Babaiah Valluru and Ankur Bhanawat, Amazon Web Services*
 

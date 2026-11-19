@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # IAM policies reference
-<a name="aurora-analytics-iam-policies-reference"></a>
 
 Aurora PostgreSQL requires IAM permissions to access your Iceberg and Parquet data in Amazon S3 and, optionally, AWS Glue Data Catalog or Amazon S3 Tables. The specific permissions depend on your data format and how the data is registered. This section presents examples of typical IAM policies for Aurora PostgreSQL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-limits.html
 ---
 
 # Prerequisites for using Bedrock Data Automation
-<a name="bda-limits"></a>
 
 Files for BDA need to meet certain requirements to be processed. The following tables show what those requirements are for different file types.
 

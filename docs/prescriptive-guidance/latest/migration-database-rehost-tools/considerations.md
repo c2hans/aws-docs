@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Migration waves, servers, and databases
-<a name="considerations"></a>
 
 Migration projects start with the following list of open questions, which are common across the three scenarios described in the previous section:
 + How can we build migration waves?

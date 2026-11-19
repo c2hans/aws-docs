@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetTableVersion.h
 ---
 
 # GetTableVersion
-<a name="API_GetTableVersion"></a>
 
 Retrieves a specified version of a table.
 

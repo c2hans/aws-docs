@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApp
 ---
 
 # DeleteApplicationSnapshot
-<a name="API_DeleteApplicationSnapshot"></a>
 
 Deletes a snapshot of application state.
 

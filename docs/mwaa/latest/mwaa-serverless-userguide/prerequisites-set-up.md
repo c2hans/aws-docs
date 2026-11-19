@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/pr
 ---
 
 # Prerequisites for using Amazon MWAA Serverless
-<a name="prerequisites-set-up"></a>
 
 Learn about the prerequisites you need before using Amazon MWAA Serverless. These include account setup and permissions management. You must have an AWS account before completing these tasks.
 

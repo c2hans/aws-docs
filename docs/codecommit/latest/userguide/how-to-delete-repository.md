@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delet
 ---
 
 # Delete an AWS CodeCommit repository
-<a name="how-to-delete-repository"></a>
 
 You can use the CodeCommit console or the AWS CLI to delete a CodeCommit repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_In
 ---
 
 # IngestionJobFilter
-<a name="API_agent_IngestionJobFilter"></a>
 
 The definition of a filter to filter the data.
 

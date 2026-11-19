@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ModifyReportDefinition
-<a name="API_cur_ModifyReportDefinition"></a>
 
 Allows you to programmatically update your report preferences.
 

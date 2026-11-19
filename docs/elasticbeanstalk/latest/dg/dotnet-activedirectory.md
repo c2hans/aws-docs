@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-active
 ---
 
 # Joining instances to an Active Directory domain
-<a name="dotnet-activedirectory"></a>
 
 With AWS Elastic Beanstalk, the Windows Server instances in your environment can automatically join an Active Directory domain. You manage the directory with [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html), and you turn on the join with configuration options in the `aws:elasticbeanstalk:windows:activedirectory` namespace. Each instance then joins the domain when it launches, before Elastic Beanstalk deploys your application to it. You don't write any custom join logic or manage the join yourself.
 

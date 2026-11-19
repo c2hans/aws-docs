@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteDataLakeExceptionSubscription
-<a name="API_DeleteDataLakeExceptionSubscription"></a>
 
 Deletes the specified notification subscription in Amazon Security Lake for the organization you specify.
 

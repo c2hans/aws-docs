@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-lineage-tr
 ---
 
 # Track the lineage of a pipeline
-<a name="pipelines-lineage-tracking"></a>
 
 In this tutorial, you use Amazon SageMaker Studio to track the lineage of an Amazon SageMaker AI ML Pipeline.
 

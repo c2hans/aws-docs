@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Disaggregated Prefill and Decode (DPD) deployment issues
-<a name="sagemaker-hyperpod-model-deployment-ts-dpd"></a>
 
 **Overview:** Common issues that can occur when deploying inference endpoints with Disaggregated Prefill and Decode (DPD). These problems typically involve pod startup, KV cache transfer, routing behavior, or resource allocation.
 

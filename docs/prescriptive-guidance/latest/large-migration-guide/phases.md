@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Phases of a large migration
-<a name="phases"></a>
 
 AWS segments the large migration process into three sequential phases:
 

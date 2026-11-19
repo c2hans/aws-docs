@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2FullAccess
-<a name="AmazonEC2FullAccess"></a>
 
 **Description**: Provides full access to Amazon EC2 via the AWS Management Console.
 

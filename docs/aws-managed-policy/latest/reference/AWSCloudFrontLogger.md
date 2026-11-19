@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudFrontLogger
-<a name="AWSCloudFrontLogger"></a>
 
 **Description**: Grants CloudFront Logger write permissions to CloudWatch Logs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Enforce fixed license limits with a Deadline Cloud submission hook
-<a name="examples-license-limits-hook"></a>
 
 The [license\_limits](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/submission_hooks/license_limits) sample on the GitHub website shows how to combine the Deadline Cloud [Limits](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline-cloud-limits.html) feature with a submission hook to enforce a fixed number of concurrent licenses (for example, V-Ray licenses) across all job submissions, without requiring artists to configure anything manually. For more information about submission hooks, see [submission-hooks.md](https://github.com/aws-deadline/deadline-cloud/blob/mainline/docs/submission-hooks.md) on the GitHub website.
 

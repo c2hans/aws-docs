@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/faqs-dnsbls.html
 ---
 
 # DNS Blackhole List (DNSBL) FAQs
-<a name="faqs-dnsbls"></a>
 
 *Domain Name System-based Blackhole Lists* (*DNSBLs*)—sometimes referred to as *Realtime Blackhole Lists* (*RBLs*), *deny lists*, *blocklists*, or *blacklists*—are intended to inform email providers of IP addresses that are suspected of sending unwanted email.
 

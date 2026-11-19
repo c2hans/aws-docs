@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Agent
 ---
 
 # AgentAccessSetting
-<a name="API_AgentAccessSetting"></a>
 
 A permission setting for an agent action. Each setting specifies an agent action and whether it is enabled or disabled.
 

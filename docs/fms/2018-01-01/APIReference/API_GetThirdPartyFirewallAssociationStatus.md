@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetThird
 ---
 
 # GetThirdPartyFirewallAssociationStatus
-<a name="API_GetThirdPartyFirewallAssociationStatus"></a>
 
 The onboarding status of a Firewall Manager admin account to third-party firewall vendor tenant.
 

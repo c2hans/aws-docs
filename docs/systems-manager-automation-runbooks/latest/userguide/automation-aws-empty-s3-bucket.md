@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-EmptyS3Bucket`
-<a name="automation-aws-empty-s3-bucket"></a>
 
  **Description**
 

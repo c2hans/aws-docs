@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/healthcar
 ---
 
 # Healthcare and life sciences long description template for AWS Data Exchange products
-<a name="healthcare-template"></a>
 
 When listing a product on AWS Data Exchange, you should include a long description that contains all the information necessary for subscribers to understand what your product offers. The following is template for a long description for healthcare and life sciences products.
 

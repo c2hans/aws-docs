@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-guiconnect/latest/APIReference/API_R
 ---
 
 # RecordingDestinations
-<a name="API_RecordingDestinations"></a>
 
 Determines where recordings of RDP connections are stored.
 

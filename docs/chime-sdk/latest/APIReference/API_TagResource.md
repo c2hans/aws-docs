@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_TagRes
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Applies the specified tags to the specified Amazon Chime SDK identity resource.
 

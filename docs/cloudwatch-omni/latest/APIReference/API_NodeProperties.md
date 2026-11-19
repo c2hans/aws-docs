@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NodeProperties
-<a name="API_NodeProperties"></a>
 
 Node identity attributes promoted out of the flat attribute map onto typed members. The first four are part of the node's merge key, so a node that merged across sources reports one resolved value for each.
 

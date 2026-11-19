@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_IssueA
 ---
 
 # IssueArtifactProducerSummary
-<a name="API_IssueArtifactProducerSummary"></a>
 
 The issue Artifact Producer Summary.
 

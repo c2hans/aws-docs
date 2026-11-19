@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableInlineVisualization
-<a name="API_TableInlineVisualization"></a>
 
 The inline visualization of a specific type to display within a chart.
 

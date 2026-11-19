@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # DocumentDB
-<a name="sam-property-function-documentdb"></a>
 
 The object describing a `DocumentDB` event source type. For more information, see [Using AWS Lambda with Amazon DocumentDB](https://docs.aws.amazon.com/lambda/latest/dg/with-documentdb.html) in the *AWS Lambda Developer Guide*.
 

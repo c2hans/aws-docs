@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_EventCategorie
 ---
 
 # EventCategoriesMap
-<a name="API_EventCategoriesMap"></a>
 
 Contains the results of a successful invocation of the [DescribeEventCategories](API_DescribeEventCategories.md) action.
 

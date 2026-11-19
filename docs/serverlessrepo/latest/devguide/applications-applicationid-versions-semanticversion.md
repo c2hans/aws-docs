@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/applicati
 ---
 
 # Applications applicationId Versions semanticVersion
-<a name="applications-applicationid-versions-semanticversion"></a>
 
 ## URI
 <a name="applications-applicationid-versions-semanticversion-url"></a>

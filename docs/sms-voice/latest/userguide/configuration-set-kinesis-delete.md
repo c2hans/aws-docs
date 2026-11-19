@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # Delete an Amazon Data Firehose event destination in AWS End User Messaging SMS
-<a name="configuration-set-kinesis-delete"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to delete an Amazon Data Firehose event destination.
 

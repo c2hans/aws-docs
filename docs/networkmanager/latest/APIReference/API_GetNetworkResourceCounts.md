@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetNetworkResourceCounts
-<a name="API_GetNetworkResourceCounts"></a>
 
 Gets the count of network resources, by resource type, for the specified global network.
 

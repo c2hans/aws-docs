@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-identify.htm
 ---
 
 # Identifying a shared AWS Cloud Map namespace
-<a name="sharing-identify"></a>
 
 Owners and consumers can identify shared namespaces using the AWS Cloud Map console and AWS CLI. The namespace owner can be identified by using the `ResourceOwner` property. The AWS account that creates a service or registers an instance in the shared namespace can be identified by using the `CreatedByAccount` property.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Modernization approaches
-<a name="approaches"></a>
 
 When it comes to historian modernization, you can take any of the following approaches:
 + [Migrate existing OT system applications to an on-premises containerized platform](#migrate-containerized-platform)

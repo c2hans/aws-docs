@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Con
 ---
 
 # Conditionally Putting and Deleting Data
-<a name="ConditionalPutDelete"></a>
 
 This section describes how to update or delete data when a specific condition is met.
 

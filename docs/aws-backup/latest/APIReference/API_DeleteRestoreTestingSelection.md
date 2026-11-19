@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteRestoreTestingSelection
-<a name="API_DeleteRestoreTestingSelection"></a>
 
 Input the Restore Testing Plan name and Restore Testing Selection name.
 

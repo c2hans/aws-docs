@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Understanding and implementing micro-frontends on AWS
-<a name="introduction"></a>
 
 *Luca Mezzalira, Matteo Figus, Alexander Guensche, and Harun Hasdal, Amazon Web Services*
 

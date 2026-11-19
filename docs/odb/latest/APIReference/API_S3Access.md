@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_S3Access.htm
 ---
 
 # S3Access
-<a name="API_S3Access"></a>
 
 The configuration for Amazon S3 access from the ODB network.
 

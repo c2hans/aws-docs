@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_RDFGraphSumm
 ---
 
 # RDFGraphSummaryValueMap
-<a name="API_RDFGraphSummaryValueMap"></a>
 
 Payload for an RDF graph summary response.
 

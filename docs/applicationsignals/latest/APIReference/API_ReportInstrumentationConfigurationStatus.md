@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ReportInstrumentationConfigurationStatus
-<a name="API_ReportInstrumentationConfigurationStatus"></a>
 
 Reports the status of one or more instrumentation configurations from SDK instances. Use this to record when configurations become ready, hit errors, become active, or are disabled by limits.
 

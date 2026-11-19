@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # DataSegmentSummary
-<a name="API_DataSegmentSummary"></a>
 
 Contains summary information about a data segment, including its source dataset, time series, timestamp range, and enrichment status.
 

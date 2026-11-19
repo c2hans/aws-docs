@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
 This section describes the components and AWS services that make up MDAA, and how they work together.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteA
 ---
 
 # DeleteAutomationRuleV2
-<a name="API_DeleteAutomationRuleV2"></a>
 
 Deletes a V2 automation rule.
 

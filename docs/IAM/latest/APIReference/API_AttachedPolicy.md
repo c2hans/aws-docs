@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachedPoli
 ---
 
 # AttachedPolicy
-<a name="API_AttachedPolicy"></a>
 
 Contains information about an attached policy.
 

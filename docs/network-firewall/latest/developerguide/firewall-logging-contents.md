@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Contents of a AWS Network Firewall log
-<a name="firewall-logging-contents"></a>
 
 The Network Firewall logs contain the following information:
 + **firewall\_name** – The name of the firewall that's associated with the log entry.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Encryption
-<a name="data-protection-encryption"></a>
 
 Encryption is a general best practice to protect the confidentiality and integrity of sensitive information. You should use your existing data classification levels and have at least one AWS Key Management Service (AWS KMS) key per level. For example, you could define a KMS key for data classified as **Confidential**, one for **Internal-Only**, and one for** Sensitive**. This helps you make sure that only authorized users have permissions to use the keys associated with each classification level.
 

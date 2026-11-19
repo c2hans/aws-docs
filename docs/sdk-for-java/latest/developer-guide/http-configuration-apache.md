@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure the Apache-based HTTP client
-<a name="http-configuration-apache"></a>
 
 **Note**
 `ApacheHttpClient` is deprecated because Apache HttpClient 4.x is in maintenance mode. Use the Apache HttpClient 5.x based [Apache5HttpClient](http-configuration-apache5.md).

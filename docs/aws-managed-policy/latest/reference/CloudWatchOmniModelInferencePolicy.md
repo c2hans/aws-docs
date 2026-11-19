@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchOmniModelInferencePolicy
-<a name="CloudWatchOmniModelInferencePolicy"></a>
 
 **Description**: Managed policy for customers to attach to CloudWatch Omni so that CloudWatch Omni features can make Bedrock Model Inference calls such as in Agent Playground or Evaluations
 

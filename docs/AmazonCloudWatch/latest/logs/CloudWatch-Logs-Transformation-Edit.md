@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Edit a log-group-level transformer
-<a name="CloudWatch-Logs-Transformation-Edit"></a>
 
 Use these steps to edit an existing log transformer.
 

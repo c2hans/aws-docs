@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetPromp
 ---
 
 # GetPromptFile
-<a name="API_GetPromptFile"></a>
 
 Gets the prompt file.
 

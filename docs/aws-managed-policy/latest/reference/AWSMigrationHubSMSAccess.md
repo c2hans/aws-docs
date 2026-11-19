@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubSMSAccess
-<a name="AWSMigrationHubSMSAccess"></a>
 
 **Description**: Policy for Server Migration Service to assume role in customer's account to call Migration Hub
 

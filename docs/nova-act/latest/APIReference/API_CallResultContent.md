@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_CallRes
 ---
 
 # CallResultContent
-<a name="API_CallResultContent"></a>
 
 Content returned from a tool call execution.
 

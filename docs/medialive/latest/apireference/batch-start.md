@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/batch-star
 ---
 
 # Batch action: start
-<a name="batch-start"></a>
 
 ## URI
 <a name="batch-start-url"></a>

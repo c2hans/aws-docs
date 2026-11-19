@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # UpdateEventIntegration
-<a name="API_connect-app-integrations_UpdateEventIntegration"></a>
 
 Updates the description of an event integration.
 

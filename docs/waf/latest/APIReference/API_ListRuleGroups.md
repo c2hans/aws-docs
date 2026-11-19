@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListRuleGrou
 ---
 
 # ListRuleGroups
-<a name="API_ListRuleGroups"></a>
 
 Retrieves an array of [RuleGroupSummary](API_RuleGroupSummary.md) objects for the rule groups that you manage.
 

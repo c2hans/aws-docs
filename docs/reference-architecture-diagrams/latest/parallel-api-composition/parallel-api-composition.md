@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Parallel API Composition in AWS
-<a name="parallel-api-composition"></a>
 
 Publication date: **May 17, 2022 ([Diagram history](#diagram-history))**
 

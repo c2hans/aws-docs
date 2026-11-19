@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_MapCo
 ---
 
 # MapConfigurationUpdate
-<a name="API_MapConfigurationUpdate"></a>
 
 Specifies the political view for the style.
 

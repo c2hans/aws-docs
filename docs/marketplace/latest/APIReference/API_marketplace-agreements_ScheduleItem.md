@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ScheduleItem
-<a name="API_marketplace-agreements_ScheduleItem"></a>
 
 An individual installment of the payment that includes the date and amount of the charge.
 

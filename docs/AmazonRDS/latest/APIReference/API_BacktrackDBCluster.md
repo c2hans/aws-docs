@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Backtr
 ---
 
 # BacktrackDBCluster
-<a name="API_BacktrackDBCluster"></a>
 
 Backtracks a DB cluster to a specific time, without creating a new DB cluster.
 

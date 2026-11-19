@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Vast
 ---
 
 # VastResponse
-<a name="API_VastResponse"></a>
 
 The settings that control how MediaTailor processes VAST responses from the ad decision server.
 

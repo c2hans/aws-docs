@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_G
 ---
 
 # GetDbParameterGroup
-<a name="API_GetDbParameterGroup"></a>
 
 Returns a Timestream for InfluxDB DB parameter group.
 

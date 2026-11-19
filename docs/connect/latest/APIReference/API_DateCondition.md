@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DateCond
 ---
 
 # DateCondition
-<a name="API_DateCondition"></a>
 
 An object to specify the hours of operation override date condition.
 

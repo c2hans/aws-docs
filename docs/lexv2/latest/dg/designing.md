@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/designing.html
 ---
 
 # Creating Amazon Lex V2 bots using the Automated Chatbot Designer
-<a name="designing"></a>
 
 The Automated Chatbot Designer helps you design bots from existing conversation transcripts. It analyzes the transcripts and suggests an initial design with intents and slot types. You can iterate on the bot design, add prompts, build, test, and deploy the bot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SendDelegati
 ---
 
 # SendDelegationToken
-<a name="API_SendDelegationToken"></a>
 
 Sends the exchange token for an accepted delegation request.
 

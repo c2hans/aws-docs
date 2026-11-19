@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-iam-permissions.h
 ---
 
 # IAM permissions required for KCL consumer applications
-<a name="kcl-iam-permissions"></a>
 
  You must add the following permissions to the IAM role or user associated with your KCL consumer application.
 

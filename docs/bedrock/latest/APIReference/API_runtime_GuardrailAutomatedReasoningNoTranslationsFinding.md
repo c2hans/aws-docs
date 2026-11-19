@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningNoTranslationsFinding
-<a name="API_runtime_GuardrailAutomatedReasoningNoTranslationsFinding"></a>
 
 Indicates that no relevant logical information could be extracted from the input for validation.
 

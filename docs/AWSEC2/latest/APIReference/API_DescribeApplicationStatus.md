@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeApplicationStatus
-<a name="API_DescribeApplicationStatus"></a>
 
 Describes the aggregated application health status for the specified instances. The following rules apply:
 + The instance-level status is derived from all application status checks with the aggregation setting set to `included`.

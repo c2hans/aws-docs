@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingTypeCount
-<a name="API_FindingTypeCount"></a>
 
 Contains the number of findings of a finding type.
 

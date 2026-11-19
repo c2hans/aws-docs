@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/run-build-cli
 ---
 
 # Start running builds automatically (AWS CLI)
-<a name="run-build-cli-auto-start"></a>
 
 If your source code is stored in a GitHub or a GitHub Enterprise Server repository, you can use GitHub webhooks to have AWS CodeBuild rebuild your source code whenever a code change is pushed to the repository.
 

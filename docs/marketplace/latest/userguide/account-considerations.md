@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/account-con
 ---
 
 # Account considerations
-<a name="account-considerations"></a>
 
 Choosing the right AWS account for your AWS Marketplace seller registration is an important decision that will support your marketplace business. Here are key considerations to help you make the best choice:
 

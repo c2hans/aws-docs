@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Organization structure layer of an ADM operating model
-<a name="org-structure-layer"></a>
 
 The organization structure layer encompasses people, process, and technology. This layer is where the most visible and profound changes occur when organizations introduce generative AI in the ADM operating model. Roles evolve, organizations reimagine processes, and technology stacks expand to include generative AI tools.
 

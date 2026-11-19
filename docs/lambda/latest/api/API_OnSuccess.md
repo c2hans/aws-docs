@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_OnSuccess.html
 ---
 
 # OnSuccess
-<a name="API_OnSuccess"></a>
 
 A destination for events that were processed successfully.
 

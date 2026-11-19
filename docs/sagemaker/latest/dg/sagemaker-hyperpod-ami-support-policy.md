@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-a
 ---
 
 # Amazon SageMaker HyperPod AMI support policy
-<a name="sagemaker-hyperpod-ami-support-policy"></a>
 
 Amazon SageMaker HyperPod provides pre-built Amazon Machine Images (AMIs) optimized for distributed training and inference workloads. This page details the support policy for HyperPod AMI releases.
 

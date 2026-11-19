@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Create your application in AWS SAM
-<a name="using-sam-cli-init"></a>
 
 After completing [Getting started](serverless-getting-started.md) and reading [How to use AWS Serverless Application Model (AWS SAM)](chapter-using-sam.md), you will be ready to create an AWS SAM project in your developer environment. Your AWS SAM project will serve as the starting point for writing your serverless application. For a list of AWS SAM CLI `sam init` command options, see [sam init](sam-cli-command-reference-sam-init.md).
 

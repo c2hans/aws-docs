@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/ssr-deployment-
 ---
 
 # Using the Amplify Hosting deployment specification to configure build output
-<a name="ssr-deployment-specification"></a>
 
 The Amplify Hosting deployment specification is a file system based specification that defines the directory structure that facilitates deployments to Amplify Hosting. A framework can generate this expected directory structure as the output of its build command, enabling the framework to take advantage of Amplify Hosting’s service primitives. Amplify Hosting understands the structure of the deployment bundle and deploys it accordingly.
 

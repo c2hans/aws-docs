@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_MetadataMode
 ---
 
 # MetadataModelProperties
-<a name="API_MetadataModelProperties"></a>
 
 The properties of the metadata model.
 

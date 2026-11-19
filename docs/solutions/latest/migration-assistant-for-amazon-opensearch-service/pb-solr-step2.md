@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 2: Configure the workflow
-<a name="pb-solr-step2"></a>
 
 Open the workflow configuration on the Migration Console pod:
 

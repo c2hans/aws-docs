@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_GetConsol
 ---
 
 # GetConsoleAuthorizationConfiguration
-<a name="API_GetConsoleAuthorizationConfiguration"></a>
 
 Retrieves AWS Management Console authorization configuration for an AWS account or organization. The operation automatically detects whether the `targetId` is an account ID or an organization ID.
 

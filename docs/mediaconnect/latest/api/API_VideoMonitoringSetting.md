@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_VideoMonitor
 ---
 
 # VideoMonitoringSetting
-<a name="API_VideoMonitoringSetting"></a>
 
 Specifies the configuration for video stream metrics monitoring.
 

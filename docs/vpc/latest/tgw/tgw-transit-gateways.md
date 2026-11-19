@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html
 ---
 
 # Transit gateways in AWS Transit Gateway
-<a name="tgw-transit-gateways"></a>
 
 A transit gateway enables you to attach VPCs and VPN connections and route traffic between them. A transit gateway works across AWS accounts, and you can use AWS RAM to share your transit gateway with other accounts. After you share a transit gateway with another AWS account, the account owner can attach their VPCs to your transit gateway. A user from either account can delete the attachment at any time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ImageSource
-<a name="API_runtime_ImageSource"></a>
 
 The source for an image.
 

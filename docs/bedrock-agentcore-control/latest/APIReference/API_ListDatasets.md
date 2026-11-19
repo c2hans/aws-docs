@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListDatasets
-<a name="API_ListDatasets"></a>
 
  Lists all datasets in the caller's account, paginated.
 

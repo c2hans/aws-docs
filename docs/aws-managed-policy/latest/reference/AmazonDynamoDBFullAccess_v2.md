@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDynamoDBFullAccess\_v2
-<a name="AmazonDynamoDBFullAccess_v2"></a>
 
 **Description**: Provides full access to Amazon DynamoDB
 

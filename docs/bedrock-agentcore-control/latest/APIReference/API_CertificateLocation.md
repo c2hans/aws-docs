@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CertificateLocation
-<a name="API_CertificateLocation"></a>
 
 The location from which to retrieve a certificate.
 

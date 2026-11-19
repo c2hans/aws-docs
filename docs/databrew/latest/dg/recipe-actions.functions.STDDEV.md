@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # STANDARD\_DEVIATION
-<a name="recipe-actions.functions.STDDEV"></a>
 
  Returns the standard deviation from the selected source columns in a new column.
 

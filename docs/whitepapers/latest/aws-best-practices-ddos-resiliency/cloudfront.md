@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Amazon CloudFront
-<a name="cloudfront"></a>
 
  Amazon CloudFront is a content delivery network (CDN) that helps protect HTTP/S-based applications in the following ways:
 +  CloudFront protects your backend services by validating connections at multiple network layers. Each request must establish a proper TCP or UDP (for QUIC and HTTP/3) session, complete a TLS handshake (for HTTPS), and provide a well-formed HTTP gRPC request. This multi-layer validation filters out malformed or incomplete connection attempts before they reach your origin.

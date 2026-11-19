@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetAuthorizers
 ---
 
 # GetAuthorizers
-<a name="API_GetAuthorizers"></a>
 
 Describe an existing Authorizers resource.
 

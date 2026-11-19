@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/service_code_e
 ---
 
 # Basic examples for AWS IoT using AWS SDKs
-<a name="service_code_examples_basics"></a>
 
 The following code examples show how to use the basics of AWS IoT with AWS SDKs.
 

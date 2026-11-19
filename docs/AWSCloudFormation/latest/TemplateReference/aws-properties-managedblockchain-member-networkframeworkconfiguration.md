@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ManagedBlockchain::Member NetworkFrameworkConfiguration
-<a name="aws-properties-managedblockchain-member-networkframeworkconfiguration"></a>
 
  Configuration properties relevant to the network for the blockchain framework that the network uses.
 

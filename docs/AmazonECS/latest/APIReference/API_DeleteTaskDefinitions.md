@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Delete
 ---
 
 # DeleteTaskDefinitions
-<a name="API_DeleteTaskDefinitions"></a>
 
 Deletes one or more task definitions.
 

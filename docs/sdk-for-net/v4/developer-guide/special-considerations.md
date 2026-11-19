@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Special considerations for the AWS SDK for .NET
-<a name="special-considerations"></a>
 
 This section contains considerations for special cases where the normal configurations or procedures aren't appropriate or sufficient.
 

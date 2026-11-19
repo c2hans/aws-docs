@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-iso
 ---
 
 # Updating Attestable AMIs that have no interactive access
-<a name="working-with-isolated-amis"></a>
 
 After you launch an instance using an isolated compute environment AMI, there is no way for any user or operator to connect to the instance. This means that there is no way to install or update any software on the instance after launch.
 

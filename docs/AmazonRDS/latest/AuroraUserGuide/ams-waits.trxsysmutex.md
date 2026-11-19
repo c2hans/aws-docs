@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # synch/mutex/innodb/trx\_sys\_mutex
-<a name="ams-waits.trxsysmutex"></a>
 
 The `synch/mutex/innodb/trx_sys_mutex` event occurs when there is high database activity with a large number of transactions.
 

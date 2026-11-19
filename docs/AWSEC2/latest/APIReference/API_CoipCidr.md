@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CoipCidr.
 ---
 
 # CoipCidr
-<a name="API_CoipCidr"></a>
 
  Information about a customer-owned IP address range.
 

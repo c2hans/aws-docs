@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # lookup
-<a name="CWL_QuerySyntax-Lookup"></a>
 
 Use `lookup` to enrich your query results with reference data from a lookup table. You can populate a lookup table with CSV data that you upload to Amazon CloudWatch Logs, or with the results of a completed or cancelled log query. When a query runs, the `lookup` command matches a field in your log events against a field in the lookup table and appends the specified output fields to the results.
 

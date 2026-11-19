@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/setting-u
 ---
 
 # Setting up Amazon Cognito users
-<a name="setting-up-cognito-users"></a>
 
 Research and Engineering Studio (RES) allows you to set up Amazon Cognito as a native user directory. This allows users to log in to the web portal and Linux-based VDIs with Amazon Cognito user identities. Administrators can import multiple users into the user pool using a csv file from the AWS Console. For more details on bulk user import, see [Importing users into user pools from a CSV file](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-using-import-tool.html) in the *Amazon Cognito Developer Guide*. RES supports using a Amazon Cognito-based native user directory and SSO together.
 

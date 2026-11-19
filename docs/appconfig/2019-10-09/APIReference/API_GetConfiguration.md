@@ -3,14 +3,13 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ge
 ---
 
 # GetConfiguration
-<a name="API_GetConfiguration"></a>
 
 (Deprecated) Retrieves the latest deployed configuration.
 
 **Important**
 Note the following important information.
 This API action is deprecated. Calls to receive configuration data should use the [StartConfigurationSession](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_StartConfigurationSession.html) and [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html) APIs instead.
- [GetConfiguration](#API_GetConfiguration) is a priced call. For more information, see [Pricing](https://aws.amazon.com/systems-manager/pricing/).
+ [GetConfiguration](API_GetConfiguration.md) is a priced call. For more information, see [Pricing](https://aws.amazon.com/systems-manager/pricing/).
 
 ## Request Syntax
 <a name="API_GetConfiguration_RequestSyntax"></a>
@@ -30,9 +29,9 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** [ClientConfigurationVersion](#API_GetConfiguration_RequestSyntax) **   <a name="appconfig-GetConfiguration-request-uri-ClientConfigurationVersion"></a>
-The configuration version returned in the most recent [GetConfiguration](#API_GetConfiguration) response.
- AWS AppConfig uses the value of the `ClientConfigurationVersion` parameter to identify the configuration version on your clients. If you don’t send `ClientConfigurationVersion` with each call to [GetConfiguration](#API_GetConfiguration), your clients receive the current configuration. You are charged each time your clients receive a configuration.
-To avoid excess charges, we recommend you use the [StartConfigurationSession](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/StartConfigurationSession.html) and [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/GetLatestConfiguration.html) APIs, which track the client configuration version on your behalf. If you choose to continue using [GetConfiguration](#API_GetConfiguration), we recommend that you include the `ClientConfigurationVersion` value with every call to [GetConfiguration](#API_GetConfiguration). The value to use for `ClientConfigurationVersion` comes from the `ConfigurationVersion` attribute returned by [GetConfiguration](#API_GetConfiguration) when there is new or updated data, and should be saved for subsequent calls to [GetConfiguration](#API_GetConfiguration).
+The configuration version returned in the most recent [GetConfiguration](API_GetConfiguration.md) response.
+ AWS AppConfig uses the value of the `ClientConfigurationVersion` parameter to identify the configuration version on your clients. If you don’t send `ClientConfigurationVersion` with each call to [GetConfiguration](API_GetConfiguration.md), your clients receive the current configuration. You are charged each time your clients receive a configuration.
+To avoid excess charges, we recommend you use the [StartConfigurationSession](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/StartConfigurationSession.html) and [GetLatestConfiguration](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/GetLatestConfiguration.html) APIs, which track the client configuration version on your behalf. If you choose to continue using [GetConfiguration](API_GetConfiguration.md), we recommend that you include the `ClientConfigurationVersion` value with every call to [GetConfiguration](API_GetConfiguration.md). The value to use for `ClientConfigurationVersion` comes from the `ConfigurationVersion` attribute returned by [GetConfiguration](API_GetConfiguration.md) when there is new or updated data, and should be saved for subsequent calls to [GetConfiguration](API_GetConfiguration.md).
 For more information about working with configurations, see [Retrieving feature flags and configuration data in AWS AppConfig](http://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the * AWS AppConfig User Guide*.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 

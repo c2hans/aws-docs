@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/getting-started-co
 ---
 
 # Step 4: Getting started using the Amazon Rekognition console
-<a name="getting-started-console"></a>
 
 The Amazon Rekognition console allows you to manage resources related to Rekognition Custom Labels and the Custom Moderation feature. The console only provides demos of other Rekognition features.
 

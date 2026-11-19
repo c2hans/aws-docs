@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # ParameterGroupStatus
-<a name="API_dax_ParameterGroupStatus"></a>
 
 The status of a parameter group.
 

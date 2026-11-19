@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting-ad
 ---
 
 # MediaTailor ad skipping troubleshooting guide
-<a name="troubleshooting-ad-skipping-overview"></a>
 
 Ad skipping is one of the most common issues that MediaTailor customers report. This guide helps you identify ad skipping issues and provides step-by-step troubleshooting procedures.
 

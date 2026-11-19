@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-i
 ---
 
 # Manually installing SSM Agent on Amazon Linux 2 and Amazon Linux 2023 instances
-<a name="agent-install-al2"></a>
 
 In most cases, the Amazon Machine Images (AMIs) for Amazon Linux 2 and Amazon Linux 2023 that are provided by AWS come with AWS Systems Manager Agent (SSM Agent) preinstalled by default. For more information, see [Find AMIs with the SSM Agent preinstalled](ami-preinstalled-agent.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantToken
-<a name="API_ParticipantToken"></a>
 
 Object specifying a participant token in a stage.
 

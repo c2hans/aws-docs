@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeInputExecutionChainItem
-<a name="API_agent-runtime_NodeInputExecutionChainItem"></a>
 
 Represents an item in the execution chain for node input tracking.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DeviceConfigurationType
-<a name="API_DeviceConfigurationType"></a>
 
 The device-remembering configuration for a user pool.
 

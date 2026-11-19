@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/Troubleshooting.html
 ---
 
 # Troubleshooting AWS Site-to-Site VPN customer gateway device
-<a name="Troubleshooting"></a>
 
 When troubleshooting issues with your customer gateway device, it's important to have a structured approach. The first two topics in this section provide generalized flowcharts for troubleshooting issues when using a device configured for dynamic routing (BGP enabled), and a device configured for static routing (without BGP enabled), respectively. Following those topics are device-specific troubleshooting guides for Cisco, Juniper, and Yamaha customer gateway devices.
 

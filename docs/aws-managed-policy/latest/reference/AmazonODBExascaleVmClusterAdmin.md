@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBExascaleVmClusterAdmin
-<a name="AmazonODBExascaleVmClusterAdmin"></a>
 
 **Description**: Provides administrative access to manage Exascale VM cluster resources in Oracle Database@AWS.
 

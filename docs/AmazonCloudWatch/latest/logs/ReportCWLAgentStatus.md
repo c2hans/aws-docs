@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/ReportCWLAg
 ---
 
 # Report the CloudWatch Logs agent status
-<a name="ReportCWLAgentStatus"></a>
 
 Use the following procedure to report the status of the CloudWatch Logs agent on your EC2 instance.
 

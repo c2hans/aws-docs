@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AWS-logs-in
 ---
 
 # Console-specific permissions
-<a name="AWS-logs-infrastructure-V2-console"></a>
 
 In addition to the permissions listed in the previous sections, if you are setting up log delivery using the console instead of the APIs, you also need the following additional permissions:
 

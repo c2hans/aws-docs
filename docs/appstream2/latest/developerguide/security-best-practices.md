@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/securit
 ---
 
 # Security Best Practices in Amazon WorkSpaces Applications
-<a name="security-best-practices"></a>
 
  Cloud security at Amazon Web Services (AWS) is the highest priority. Security and compliance is a shared responsibility between AWS and the customer. For more information, refer to the [*Shared Responsibility Model*](https://aws.amazon.com/compliance/shared-responsibility-model/). As an AWS and WorkSpaces Applications customer, it is important to implement security measures on different layers such as stack, fleet, image, and networking.
 

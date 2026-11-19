@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Assoc
 ---
 
 # AssociateAppBlockBuilderAppBlock
-<a name="API_AssociateAppBlockBuilderAppBlock"></a>
 
 Associates the specified app block builder with the specified app block.
 

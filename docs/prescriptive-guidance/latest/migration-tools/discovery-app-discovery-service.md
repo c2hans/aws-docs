@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # AWS Application Discovery Service
-<a name="discovery-app-discovery-service"></a>
 
 *Last update: May 15, 2023*
 

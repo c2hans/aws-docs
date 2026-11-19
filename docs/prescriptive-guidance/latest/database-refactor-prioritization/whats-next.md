@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Next steps
-<a name="whats-next"></a>
 
 The process described in this guide helps you identify and prioritize database candidates that you can migrate to open-source database engines such as PostgreSQL or MySQL with minimal effort. After you have the list of databases, you can plan the migration. For more information, follow the links in the [Resources](resources.md) section.
 

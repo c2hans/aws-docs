@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisTranscriptItemRedaction
-<a name="API_RealTimeContactAnalysisTranscriptItemRedaction"></a>
 
 Object describing redaction applied to the segment.
 

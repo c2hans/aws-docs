@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # Set up a method request in API Gateway
-<a name="api-gateway-method-settings-method-request"></a>
 
 Setting up a method request involves performing the following tasks, after creating a [RestApi](https://docs.aws.amazon.com/apigateway/latest/api/API_RestApi.html) resource:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Loadi
 ---
 
 # LoadingAnimation
-<a name="API_LoadingAnimation"></a>
 
 The configuration of loading animation in free-form layout.
 

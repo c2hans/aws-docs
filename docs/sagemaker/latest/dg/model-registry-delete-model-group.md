@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-delet
 ---
 
 # Delete a Model Group
-<a name="model-registry-delete-model-group"></a>
 
 This procedure demonstrates how to delete a Model Group in the Amazon SageMaker Studio console. When you delete a Model Group, you lose access to the model versions in the Model Group.
 

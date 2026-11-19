@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DeleteGlobalReplicationGroup
-<a name="API_DeleteGlobalReplicationGroup"></a>
 
 Deleting a Global datastore is a two-step process:
 + First, you must [DisassociateGlobalReplicationGroup](API_DisassociateGlobalReplicationGroup.md) to remove the secondary clusters in the Global datastore.

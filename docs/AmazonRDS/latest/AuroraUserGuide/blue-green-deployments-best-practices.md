@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-gr
 ---
 
 # Best practices for Amazon Aurora blue/green deployments
-<a name="blue-green-deployments-best-practices"></a>
 
 The following are best practices for blue/green deployments.
 

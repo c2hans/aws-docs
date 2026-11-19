@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Working with managed nodes
-<a name="fleet-manager-managed-nodes"></a>
 
 A *managed node* is any machine configured for AWS Systems Manager. You can configure the following machine types as managed nodes:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 ---
 
 # Complete channel and input details
-<a name="creating-a-channel-step1"></a>
 
 The **Channel and input details** section of the **Create channel** page lets you do the following in the MediaLive that you are creating:
 + Select the IAM role that AWS Elemental MediaLive will use to access the channel when the channel is running (started).

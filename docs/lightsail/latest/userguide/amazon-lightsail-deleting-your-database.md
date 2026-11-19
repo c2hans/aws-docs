@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete a Lightsail database and create a final snapshot
-<a name="amazon-lightsail-deleting-your-database"></a>
 
 Delete your managed database in Amazon Lightsail if you no longer need it. You stop incurring charges for the database as soon as it’s deleted.
 

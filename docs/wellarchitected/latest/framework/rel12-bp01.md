@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 ---
 
 # REL12-BP01 Use playbooks to investigate failures
-<a name="rel12-bp01"></a>
 
  A playbook guides responders through detecting, analyzing, containing, and resolving a failure scenario. Playbooks shorten the time to diagnose an incident and make investigations repeatable.
 

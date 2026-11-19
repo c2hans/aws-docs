@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Public
 ---
 
 # PublicWorkforceTaskPrice
-<a name="API_PublicWorkforceTaskPrice"></a>
 
 Defines the amount of money paid to an Amazon Mechanical Turk worker for each task performed.
 

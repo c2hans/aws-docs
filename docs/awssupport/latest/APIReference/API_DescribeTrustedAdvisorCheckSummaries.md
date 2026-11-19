@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeTrustedAdvisorCheckSummaries
-<a name="API_DescribeTrustedAdvisorCheckSummaries"></a>
 
 Returns the results for the AWS Trusted Advisor check summaries for the check IDs that you specified. You can get the check IDs by calling the [DescribeTrustedAdvisorChecks](API_DescribeTrustedAdvisorChecks.md) operation.
 

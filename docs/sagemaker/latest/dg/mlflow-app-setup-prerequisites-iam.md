@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-app-setup-pre
 ---
 
 # Set up IAM permissions for MLflow Apps
-<a name="mlflow-app-setup-prerequisites-iam"></a>
 
 You must configure the necessary IAM service roles to get started with MLflow Apps in Amazon SageMaker AI.
 

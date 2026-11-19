@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/authenticate-c
 ---
 
 # Flow block in Connect Customer: Authenticate Customer
-<a name="authenticate-customer"></a>
 
 This topic defines the flow block to authenticate customers and route them to specific paths within a flow based on the authentication result.
 

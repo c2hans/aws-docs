@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS access control architecture
-<a name="sqs-creating-custom-policies-architecture"></a>
 
 The following diagram describes the access control for your Amazon SQS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-run-errors.ht
 ---
 
 # Run failure reasons
-<a name="workflows-run-errors"></a>
 
 If a run fails, use the [GetRun](https://docs.aws.amazon.com/omics/latest/api/API_GetRun.html) API operation to retrieve the failure reason.
 

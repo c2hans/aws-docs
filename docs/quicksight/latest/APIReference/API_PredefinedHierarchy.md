@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Prede
 ---
 
 # PredefinedHierarchy
-<a name="API_PredefinedHierarchy"></a>
 
 The option that determines the hierarchy of the fields that are defined during data preparation. These fields are available to use in any analysis that uses the data source.
 

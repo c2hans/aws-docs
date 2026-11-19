@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Automation strategy for SAP operations in the AWS Cloud
-<a name="introduction"></a>
 
 *Sergej Trisic, Kaustubh Kulkarni, and Shashank Rai, Amazon Web Services*
 

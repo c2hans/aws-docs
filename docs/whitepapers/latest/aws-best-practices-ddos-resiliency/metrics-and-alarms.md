@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Metrics and alarms
-<a name="metrics-and-alarms"></a>
 
 As a best practice you should be using infrastructure and application monitoring tools to check the availability of your application to help detect whether your application is being impacted by a DDoS event, as an option you can configure application and infrastructure Route 53 [health checks](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html) for the resources to help improve the detection of DDoS events. For more information about health checks, see [AWS WAF, Firewall Manager and Shield Advanced Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/health-checks-examples.html).
 

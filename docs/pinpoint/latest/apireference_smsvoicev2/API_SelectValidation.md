@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SelectValidation
-<a name="API_SelectValidation"></a>
 
 Validation rules for a select field.
 

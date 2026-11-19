@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckValidFinding
-<a name="API_AutomatedReasoningCheckValidFinding"></a>
 
 Indicates that the claims are definitively true and logically implied by the premises, with no possible alternative interpretations.
 

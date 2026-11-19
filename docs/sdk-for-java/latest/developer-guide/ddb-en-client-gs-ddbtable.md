@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Create a DynamoDB table if needed
-<a name="ddb-en-client-gs-ddbtable"></a>
 
 After you have created a `DynamoDbTable` instance, use it to perform a *one-time* creation of a table in DynamoDB.
 

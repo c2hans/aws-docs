@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Configure probes and load balancer health checks
-<a name="probes-checks"></a>
 
 Kubernetes provides several ways to perform application health checks in addition to load balancer health checks. You can run the following Kubernetes built-in probes together with the load balancer health check as a command in the pod's context or as an HTTP/TCP probe to kubelet or the host IP address.
 

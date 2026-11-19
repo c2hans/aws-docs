@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudformation_ex
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating your first infrastructure stack
-<a name="cloudformation_example_cloudformation_GettingStarted_021_section"></a>
 
 The following code example shows how to:
 + Create a CloudFormation template

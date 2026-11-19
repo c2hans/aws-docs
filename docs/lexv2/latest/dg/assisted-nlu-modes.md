@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/assisted-nlu-modes.html
 ---
 
 # Assisted NLU mode - Primary and Fallback
-<a name="assisted-nlu-modes"></a>
 
 Assisted NLU runs in one of the following modes. Choose the mode that matches how well your bot already performs and how much control you want the LLM to have over each turn.
 

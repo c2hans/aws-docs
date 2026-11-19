@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Policy
-<a name="aws-resource-bedrockagentcore-policy"></a>
 
 Specifies a Cedar authorization policy within an Amazon Bedrock AgentCore policy engine. A policy defines the authorization logic that controls what actions your AI agents can perform.
 

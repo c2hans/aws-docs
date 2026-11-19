@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/chargebee-reading-from-en
 ---
 
 # Reading from Chargebee entities
-<a name="chargebee-reading-from-entities"></a>
 
 **Prerequisites**
 

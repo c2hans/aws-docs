@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListD
 ---
 
 # ListDeploymentConfigs
-<a name="API_ListDeploymentConfigs"></a>
 
 Lists the deployment configurations with the user or AWS account.
 

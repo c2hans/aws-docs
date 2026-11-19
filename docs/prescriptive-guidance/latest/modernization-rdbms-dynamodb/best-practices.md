@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 This section summarizes recommendations in addition to the best practices discussed in previous sections (such as storing items that are greater than 400 KB in Amazon S3, using indexes, single table design, and transactions).
 

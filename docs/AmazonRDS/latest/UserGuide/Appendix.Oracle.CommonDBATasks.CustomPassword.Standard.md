@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # The create\_verify\_function procedure
-<a name="Appendix.Oracle.CommonDBATasks.CustomPassword.Standard"></a>
 
 You can create a custom function to verify passwords by using the Amazon RDS procedure `rdsadmin.rdsadmin_password_verify.create_verify_function`. The `create_verify_function` procedure is supported for all versions of RDS for Oracle.
 

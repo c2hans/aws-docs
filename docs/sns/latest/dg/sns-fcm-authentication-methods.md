@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-fcm-authentication-met
 ---
 
 # Amazon SNS integration with Firebase Cloud Messaging authentication setup
-<a name="sns-fcm-authentication-methods"></a>
 
 This topic describes how to obtain the required FCM API (HTTP v1) credentials from Google to use with the AWS API, AWS CLI and the AWS Management Console.
 

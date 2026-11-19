@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/verify.html
 ---
 
 # Step 5: Verify the installations
-<a name="verify"></a>
 
 After you have set up the agent, set up the broker, and configured both on the Amazon DCV server, you need to verify that the installations are functioning properly.
 

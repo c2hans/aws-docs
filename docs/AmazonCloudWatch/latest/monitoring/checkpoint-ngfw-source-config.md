@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/check
 ---
 
 # Source configuration for Check Point NGFW
-<a name="checkpoint-ngfw-source-config"></a>
 
 ## Integrating with Check Point NGFW
 <a name="checkpoint-ngfw-integration"></a>

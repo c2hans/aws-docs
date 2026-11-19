@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-train-model.html
 ---
 
 # Train a Model
-<a name="ex1-train-model"></a>
 
 In this step, you choose a training algorithm and run a training job for the model. The [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) provides classes to train your model while orchestrating the machine learning (ML) lifecycle accessing the SageMaker AI features for training and the AWS infrastructures, such as Amazon Elastic Container Registry (Amazon ECR), Amazon Elastic Compute Cloud (Amazon EC2), Amazon Simple Storage Service (Amazon S3). For more information about built-in algorithms, see [Built-in algorithms and pretrained models in Amazon SageMaker](algos.md).
 

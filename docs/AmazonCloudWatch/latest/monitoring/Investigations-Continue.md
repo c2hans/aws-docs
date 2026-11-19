@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # View and continue an open investigation
-<a name="Investigations-Continue"></a>
 
 Use the steps in this section to view and continue and existing investigation
 

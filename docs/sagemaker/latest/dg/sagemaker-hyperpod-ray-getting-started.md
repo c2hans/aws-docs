@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Getting started with Ray on HyperPod
-<a name="sagemaker-hyperpod-ray-getting-started"></a>
 
 Ray on HyperPod runs on the open source KubeRay operator and its custom resources, unchanged. To get started you need only a HyperPod cluster orchestrated by Amazon EKS and the KubeRay operator installed on it. HyperPod then adds features around Ray that you adopt in one of two ways.
 

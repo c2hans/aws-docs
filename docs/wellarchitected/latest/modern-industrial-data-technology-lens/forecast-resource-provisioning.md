@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Forecast resource provisioning
-<a name="forecast-resource-provisioning"></a>
 
 | MIDACOST04: How do you leverage historical manufacturing data to forecast resource provisioning? |
 | --- |

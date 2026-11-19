@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ResourcePendingMaintenanceAction
-<a name="API_elastic_ResourcePendingMaintenanceAction"></a>
 
 Provides information about a pending maintenance action for a resource.
 

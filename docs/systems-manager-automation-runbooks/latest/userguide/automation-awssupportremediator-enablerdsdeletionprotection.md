@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableRdsDeletionProtection`
-<a name="automation-awssupportremediator-enablerdsdeletionprotection"></a>
 
 **Description**
 

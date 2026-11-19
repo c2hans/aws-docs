@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/performance-im
 ---
 
 # Use performance best practices
-<a name="performance-improving"></a>
 
 This section describes special considerations for designing an application for performance.
 

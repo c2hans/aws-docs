@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionCoverage
-<a name="API_DetectionCoverage"></a>
 
 Contains information about your detection coverage, such as the status of protection plans and foundational data sources.
 

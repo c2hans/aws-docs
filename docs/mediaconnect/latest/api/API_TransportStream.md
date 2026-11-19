@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TransportStr
 ---
 
 # TransportStream
-<a name="API_TransportStream"></a>
 
  The metadata of an elementary transport stream.
 

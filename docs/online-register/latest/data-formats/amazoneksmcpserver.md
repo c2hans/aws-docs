@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon EKS MCP Server
-<a name="amazoneksmcpserver"></a>
 
 Amazon EKS MCP Server provides the following APIs for data retrieval.
 

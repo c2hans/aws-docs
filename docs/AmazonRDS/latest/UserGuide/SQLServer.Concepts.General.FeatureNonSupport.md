@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Con
 ---
 
 # Features not supported and features with limited support
-<a name="SQLServer.Concepts.General.FeatureNonSupport"></a>
 
 The following Microsoft SQL Server features aren't supported on Amazon RDS:
 + Azure Arc–enabled features

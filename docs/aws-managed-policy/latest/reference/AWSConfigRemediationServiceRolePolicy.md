@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSConfigRemediationServiceRolePolicy
-<a name="AWSConfigRemediationServiceRolePolicy"></a>
 
 **Description**: Allows AWS Config to remediate noncompliant resources on your behalf.
 

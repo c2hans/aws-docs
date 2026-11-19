@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Devfile events
-<a name="devenvironment-devfile-events"></a>
 
 Currently, CodeCatalyst only supports `postStart` events in your devfile. For more information, see [postStartObject](https://devfile.io/docs/2.0.0/adding-event-bindings#post-start-object) in the Devfile.io documentation.
 

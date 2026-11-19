@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Traditional virtualization primer
-<a name="traditional-virtualization-primer"></a>
 
  Virtualization, at a high level, enables a single physical computer system to run multiple operating systems at once. A virtualization system (“host”) implements translation, emulation, and restriction functions that allow it to provide one or more virtualized operating systems (“guest”) with virtual representations of their own self-contained hardware (“virtual machines” or “VMs”). One of the primary benefits of virtualization is the ability to make efficient use of a single powerful server by dividing its resources among multiple virtual machines each of which is allocated an amount of resources which is optimal for its assigned tasks.
 

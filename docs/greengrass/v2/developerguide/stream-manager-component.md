@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/stream-mana
 ---
 
 # Stream manager
-<a name="stream-manager-component"></a>
 
 The stream manager component (`aws.greengrass.StreamManager`) enables you to process data streams to transfer to the AWS Cloud from Greengrass core devices.
 

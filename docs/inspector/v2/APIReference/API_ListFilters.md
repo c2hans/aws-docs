@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListFilter
 ---
 
 # ListFilters
-<a name="API_ListFilters"></a>
 
 Lists the filters associated with your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/COLLECT
 ---
 
 # COLLECT\_LIST function
-<a name="COLLECT_LIST"></a>
 
 The COLLECT\_LIST function collects and returns a list of non-unique elements.
 

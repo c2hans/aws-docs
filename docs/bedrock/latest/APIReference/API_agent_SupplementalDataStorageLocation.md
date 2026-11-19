@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Su
 ---
 
 # SupplementalDataStorageLocation
-<a name="API_agent_SupplementalDataStorageLocation"></a>
 
 Contains information about a storage location for multimedia content (images, audio, and video) extracted from multimodal documents in your data source.
 

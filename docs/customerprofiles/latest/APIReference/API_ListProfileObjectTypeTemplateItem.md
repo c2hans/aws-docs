@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListProfileObjectTypeTemplateItem
-<a name="API_connect-customer-profiles_ListProfileObjectTypeTemplateItem"></a>
 
 A ProfileObjectTypeTemplate in a list of ProfileObjectTypeTemplates.
 

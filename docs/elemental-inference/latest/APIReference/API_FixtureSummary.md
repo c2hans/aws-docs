@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # FixtureSummary
-<a name="API_FixtureSummary"></a>
 
 Contains information about one fixture. It is used in the SearchFixtures response.
 

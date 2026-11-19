@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceS
 ---
 
 # GetResourceShareInvitations
-<a name="API_GetResourceShareInvitations"></a>
 
 Retrieves details about invitations that you have received for resource shares.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIdentitySyncReadOnlyAccess
-<a name="AWSIdentitySyncReadOnlyAccess"></a>
 
 **Description**: Read only access to the Identity Sync service
 

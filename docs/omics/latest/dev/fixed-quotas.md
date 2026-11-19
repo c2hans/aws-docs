@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/fixed-quotas.html
 ---
 
 # HealthOmics fixed size quotas
-<a name="fixed-quotas"></a>
 
 In addition to the [HealthOmics service quotas](service-quotas.md), HealthOmics includes quotas that have fixed sizes. You cannot request an increase for these values.
 

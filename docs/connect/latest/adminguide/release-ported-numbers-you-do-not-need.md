@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/release-ported
 ---
 
 # Release numbers that you ported to Connect Customer that you no longer need
-<a name="release-ported-numbers-you-do-not-need"></a>
 
 You do not have to keep phone numbers assigned to your Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetUsersCo
 ---
 
 # GetUsersCount
-<a name="API_GetUsersCount"></a>
 
 Retrieves the count of users in a Wickr network, categorized by their status (pending, active, rejected) and showing how many users can still be added.
 

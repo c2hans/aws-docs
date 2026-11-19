@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AutoDetectionConfiguration
-<a name="API_AutoDetectionConfiguration"></a>
 
 The customer-defined auto-detection settings for a registry.
 

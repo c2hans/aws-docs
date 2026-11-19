@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Exp
 ---
 
 # ExportJobSummary
-<a name="API_ExportJobSummary"></a>
 
 Contains summary information about a dataset export job.
 

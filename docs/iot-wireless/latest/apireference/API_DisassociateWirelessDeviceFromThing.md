@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateWirelessDeviceFromThing
-<a name="API_DisassociateWirelessDeviceFromThing"></a>
 
 Disassociates a wireless device from its currently associated thing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # OperationEvent
-<a name="API_OperationEvent"></a>
 
 Contains detailed information about an event that occurred during a CloudFormation operation.
 

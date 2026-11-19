@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeO
 ---
 
 # DescribeOrganizationConfigRules
-<a name="API_DescribeOrganizationConfigRules"></a>
 
 Returns a list of organization AWS Config rules.
 

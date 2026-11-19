@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Create
 ---
 
 # CreateReportGroup
-<a name="API_CreateReportGroup"></a>
 
  Creates a report group. A report group contains a collection of reports.
 

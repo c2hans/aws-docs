@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_EntityD
 ---
 
 # EntityDetectorConfiguration
-<a name="API_EntityDetectorConfiguration"></a>
 
 Configuration of entity detection for a profile job. When undefined, entity detection is disabled.
 

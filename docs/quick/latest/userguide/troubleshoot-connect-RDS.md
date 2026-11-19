@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-conn
 ---
 
 # I can't connect to RDS
-<a name="troubleshoot-connect-RDS"></a>
 
 For details on troubleshooting connections to Amazon RDS, see [Creating a dataset from a database](create-a-database-data-set.md).
 

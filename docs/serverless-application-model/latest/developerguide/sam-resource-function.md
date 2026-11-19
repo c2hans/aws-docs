@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::Function
-<a name="sam-resource-function"></a>
 
 The `AWS::Serverless::Function` resource creates a Lambda Event Function, an AWS Identity and Access Management (IAM) execution role, and event source mappings that trigger the function.
 
 Event Function is the documentation name for the original Lambda function type, previously known as Lambda functions. The `AWS::Serverless::Function` resource type, the `AWS::Lambda::Function` resource that it generates, and their properties still use *function*, so you don't need to change your templates.
 
-The [AWS::Serverless::Function](#sam-resource-function) resource also supports the `Metadata` resource attribute, so you can instruct AWS SAM to build custom runtimes that your application requires. For more information about building custom runtimes, see [Building Lambda Event Functions with custom runtimes in AWS SAM](building-custom-runtimes.md).
+The [AWS::Serverless::Function](sam-resource-function.md) resource also supports the `Metadata` resource attribute, so you can instruct AWS SAM to build custom runtimes that your application requires. For more information about building custom runtimes, see [Building Lambda Event Functions with custom runtimes in AWS SAM](building-custom-runtimes.md).
 
 This resource also supports the `Connectors` resource `Attribute`. For more information, see [Managing resource permissions with AWS SAM connectors](managing-permissions-connectors.md).
 
@@ -481,7 +480,7 @@ The ARN of the underlying Lambda function.
 ### Simple function
 <a name="sam-resource-function-examples-simple-function"></a>
 
-The following is a basic example of an [AWS::Serverless::Function](#sam-resource-function) resource of package type `Zip` (default) and function code in an Amazon S3 bucket.
+The following is a basic example of an [AWS::Serverless::Function](sam-resource-function.md) resource of package type `Zip` (default) and function code in an Amazon S3 bucket.
 
 #### YAML
 <a name="sam-resource-function-examples-simple-function--yaml"></a>
@@ -497,7 +496,7 @@ Properties:
 ### Function properties example
 <a name="sam-resource-function-examples-function-properties-example"></a>
 
-The following is an example of an [AWS::Serverless::Function](#sam-resource-function) of package type `Zip` (default) that uses `InlineCode`, `Layers`, `Tracing`, `Policies`, `Amazon EFS` file system, and an `Api` event source.
+The following is an example of an [AWS::Serverless::Function](sam-resource-function.md) of package type `Zip` (default) that uses `InlineCode`, `Layers`, `Tracing`, `Policies`, `Amazon EFS` file system, and an `Api` event source.
 
 #### YAML
 <a name="sam-resource-function-examples-function-properties-example--yaml"></a>

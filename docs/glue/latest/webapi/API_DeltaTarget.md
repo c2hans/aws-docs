@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeltaTarget.html
 ---
 
 # DeltaTarget
-<a name="API_DeltaTarget"></a>
 
 Specifies a Delta data store to crawl one or more Delta tables.
 

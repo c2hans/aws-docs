@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Data mobility migration tools
-<a name="data-mobility"></a>
 
 Data mobility tools help you move large volumes of data and databases to the AWS Cloud efficiently and securely. Capabilities of these tools might include automated data validation, compression, deduplication, and bandwidth optimization. These tools are designed for different network constraints, data volumes, and security requirements.
 

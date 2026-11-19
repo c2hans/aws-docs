@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationPerformanceMetric
-<a name="API_AIRecommendationPerformanceMetric"></a>
 
 An expected performance metric for a recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RebootWorkspac
 ---
 
 # RebootWorkspaces
-<a name="API_RebootWorkspaces"></a>
 
 Reboots the specified WorkSpaces.
 

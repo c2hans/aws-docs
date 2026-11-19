@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-tutori
 ---
 
 # Step 4: Create route server endpoints
-<a name="route-server-tutorial-create-endpoints"></a>
 
 Complete the steps in this section to create route server endpoints. Create two endpoints per subnet for redundancy.
 

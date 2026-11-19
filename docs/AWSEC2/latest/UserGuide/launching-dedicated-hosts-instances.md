@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-dedica
 ---
 
 # Launch Amazon EC2 instances on an Amazon EC2 Dedicated Host
-<a name="launching-dedicated-hosts-instances"></a>
 
 After you have allocated a Dedicated Host, you can launch instances onto it. You can't launch instances with `host` tenancy if you do not have active Dedicated Hosts with enough available capacity for the instance type that you are launching.
 

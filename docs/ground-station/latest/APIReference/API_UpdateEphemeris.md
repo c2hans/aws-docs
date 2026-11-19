@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UpdateEphemeris
-<a name="API_UpdateEphemeris"></a>
 
 Update an existing ephemeris.
 

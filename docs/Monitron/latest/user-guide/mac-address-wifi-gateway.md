@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/mac-address-w
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Retrieving MAC address details
-<a name="mac-address-wifi-gateway"></a>
 
 To retrieve your Amazon Monitron gateway's Media Access Control (MAC) address, you can scan the QR code on the gateway device with your mobile phone. Amazon Monitron returns both the MAC address and gateway ID when you scan the QR code.
 

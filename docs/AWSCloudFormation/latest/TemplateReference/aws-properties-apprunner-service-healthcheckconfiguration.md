@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service HealthCheckConfiguration
-<a name="aws-properties-apprunner-service-healthcheckconfiguration"></a>
 
 Describes the settings for the health check that AWS App Runner performs to monitor the health of a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Citations as a trust pattern
-<a name="kg-citations"></a>
 
 Grounded responses are only as useful as the caller’s ability to trust them. AVX implements a structured citation pattern as a first-class feature of every KB-grounded response:
 + Every passage retrieved by the `knowledge()` tool carries a `source` attribute — the document name and (where available) section heading from the Knowledge Base metadata.

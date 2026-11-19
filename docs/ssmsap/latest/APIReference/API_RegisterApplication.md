@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_RegisterA
 ---
 
 # RegisterApplication
-<a name="API_RegisterApplication"></a>
 
 Register an SAP application with AWS Systems Manager for SAP. You must meet the following requirements before registering.
 

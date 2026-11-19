@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Babelfish supports XML datatype methods
-<a name="babelfish-xml-datatype-methods"></a>
 
 Starting with version 4.4.0, Babelfish now supports the xml datatype method .EXIST().
 

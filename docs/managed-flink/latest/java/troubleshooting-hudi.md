@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Hudi configuration best practices
-<a name="troubleshooting-hudi"></a>
 
 To run Hudi connectors on Managed Service for Apache Flink we recommend the following configuration changes.
 

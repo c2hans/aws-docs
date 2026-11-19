@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueSum
 ---
 
 # QueueSummary
-<a name="API_QueueSummary"></a>
 
 A summary of a queue. Returned by [ListQueues](API_ListQueues.md). To retrieve a queue's configuration attributes, use [DescribeQueue](API_DescribeQueue.md).
 

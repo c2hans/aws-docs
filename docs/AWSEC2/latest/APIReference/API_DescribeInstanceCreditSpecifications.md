@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceCreditSpecifications
-<a name="API_DescribeInstanceCreditSpecifications"></a>
 
 Describes the credit option for CPU usage of the specified burstable performance instances. The credit options are `standard` and `unlimited`.
 

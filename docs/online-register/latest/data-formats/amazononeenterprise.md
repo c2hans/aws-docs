@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon One Enterprise
-<a name="amazononeenterprise"></a>
 
 Amazon One Enterprise provides the following APIs for data retrieval.
 

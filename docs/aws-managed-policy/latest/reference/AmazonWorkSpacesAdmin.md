@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesAdmin
-<a name="AmazonWorkSpacesAdmin"></a>
 
 **Description**: Provides access to Amazon WorkSpaces administrative actions via AWS SDK and CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Viewing audit logs
-<a name="Appendix.SQLServer.Options.Audit.AuditRecords"></a>
 
 Your audit logs are stored in `D:\rdsdbdata\SQLAudit`.
 

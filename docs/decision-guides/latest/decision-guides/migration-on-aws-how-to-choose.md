@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/m
 ---
 
 # Choosing AWS migration services and tools
-<a name="migration-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

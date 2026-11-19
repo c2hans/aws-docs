@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/arguide/control-ta
 AWS Service Catalog AppRegistry is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Service Catalog AppRegistry availability change](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-registry-availability-change.html).
 
 # Controlling the resources associated to applications
-<a name="control-tags"></a>
 
  This topic includes policy templates that you can use to control how tag key-value pairs are associated to applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/deploy-comp
 ---
 
 # Step 4: Deploy and test the component on a core device
-<a name="deploy-component-defer-updates"></a>
 
 In this section, you deploy the component to the core device to test its functionality. On the core device, you create the virtual battery level file to imitate a real battery. Then, you create additional deployments and observe the component log files on the core device to see the component defer and acknowledge updates.
 

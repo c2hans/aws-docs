@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-
 ---
 
 # Create expressions to define container instances for Amazon ECS tasks
-<a name="cluster-query-language"></a>
 
 Cluster queries are expressions that allow you to group objects. For example, you can group container instances by attributes such as Availability Zone, instance type, or custom metadata. For more information, see [Amazon ECS container instance attributes](task-placement-constraints.md#attributes).
 

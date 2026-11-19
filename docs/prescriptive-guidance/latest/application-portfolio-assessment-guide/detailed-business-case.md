@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Detailed business case
-<a name="detailed-business-case"></a>
 
 In this stage, we recommend validating and expanding the scope of the business case to provide a greater level of detail to support the transformation program. The quickly assembled initial directional business case is designed to provide enough confidence to invest in the foundational steps and next level of detailed planning.
 

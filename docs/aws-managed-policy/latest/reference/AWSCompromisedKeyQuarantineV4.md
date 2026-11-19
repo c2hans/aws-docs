@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCompromisedKeyQuarantineV4
-<a name="AWSCompromisedKeyQuarantineV4"></a>
 
 **Description**: Denies access to certain actions, applied by AWS in the event that an IAM user's credentials have been compromised or exposed publicly. The policy aims to limit the potential damage that may be caused by fraud-related activity leading to unauthorized charges. Do NOT remove this policy. Instead, please follow the instructions specified in the support case created for you regarding this event. AWSCompromisedKeyQuarantineV4 is an AWS managed policy.
 

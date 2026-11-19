@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LookupTableConfiguration
-<a name="API_LookupTableConfiguration"></a>
 
 Configuration for a lookup table destination. Use it to automatically refresh a lookup table with query results on a schedule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_UpdateKeyDes
 ---
 
 # UpdateKeyDescription
-<a name="API_UpdateKeyDescription"></a>
 
 Updates the description of a KMS key. To see the description of a KMS key, use [DescribeKey](API_DescribeKey.md).
 

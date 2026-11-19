@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/tls.html
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Enforcing a minimum TLS version in the AWS SDK for Go
-<a name="tls"></a>
 
 To add increased security when communicating with AWS services, you should configure your client to use TLS 1.2 or later.
 

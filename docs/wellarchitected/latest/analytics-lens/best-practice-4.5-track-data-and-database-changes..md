@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 4.5 – Track data and database changes
-<a name="best-practice-4.5-track-data-and-database-changes."></a>
 
  Data auditing involves monitoring a database to track the actions of a user or process, and to audit the changes that have occurred to the data.
 

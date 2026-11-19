@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/builds-workin
 ---
 
 # Builds in AWS CodeBuild
-<a name="builds-working"></a>
 
 A *build* represents a set of actions performed by AWS CodeBuild to create output artifacts (for example, a JAR file) based on a set of input artifacts (for example, a collection of Java class files).
 

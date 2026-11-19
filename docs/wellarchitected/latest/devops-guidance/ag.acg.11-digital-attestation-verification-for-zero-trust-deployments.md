@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.11] Digital attestation verification for zero trust deployments
-<a name="ag.acg.11-digital-attestation-verification-for-zero-trust-deployments"></a>
 
  **Category:** RECOMMENDED
 

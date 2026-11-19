@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAnalysis
-<a name="API_UpdateAnalysis"></a>
 
 Updates an analysis in Amazon Quick Sight
 

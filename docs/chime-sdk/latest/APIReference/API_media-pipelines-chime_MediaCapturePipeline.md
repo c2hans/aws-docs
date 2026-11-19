@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaCapturePipeline
-<a name="API_media-pipelines-chime_MediaCapturePipeline"></a>
 
 A media pipeline object consisting of an ID, source type, source ARN, a sink type, a sink ARN, and a configuration object.
 

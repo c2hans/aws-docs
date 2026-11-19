@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ScheduledQueryConfiguration
-<a name="API_ScheduledQueryConfiguration"></a>
 
 The configuration of the CloudWatch Logs scheduled query that backs a log alarm.
 

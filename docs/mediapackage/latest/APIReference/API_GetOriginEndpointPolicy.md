@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetOriginEndpointPolicy
-<a name="API_GetOriginEndpointPolicy"></a>
 
 Retrieves the specified origin endpoint policy that's configured in AWS Elemental MediaPackage.
 

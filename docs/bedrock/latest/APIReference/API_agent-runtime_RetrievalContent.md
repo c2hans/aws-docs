@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrievalContent
-<a name="API_agent-runtime_RetrievalContent"></a>
 
 The content retrieved from a knowledge source.
 

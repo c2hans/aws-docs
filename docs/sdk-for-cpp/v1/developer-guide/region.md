@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/region.ht
 ---
 
 # Setting the AWS Region for the AWS SDK for C\+\+
-<a name="region"></a>
 
 You can access AWS services that operate in a specific geographic area by using AWS Regions. This can be useful both for redundancy and to keep your data and applications running close to where you and your users access them.
 

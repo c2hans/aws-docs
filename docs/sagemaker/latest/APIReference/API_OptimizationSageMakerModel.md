@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationSageMakerModel
-<a name="API_OptimizationSageMakerModel"></a>
 
 A SageMaker model to use as the source or destination for an optimization job.
 

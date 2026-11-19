@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/supported-instance-types.ht
 ---
 
 # Amazon EC2 instance types supported by AL1
-<a name="supported-instance-types"></a>
 
 **Warning**
  Amazon Linux 1 (AL1, formerly Amazon Linux AMI) is no longer supported. This guide is available only for reference purposes.

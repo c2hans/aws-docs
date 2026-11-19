@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Cloud design patterns, architectures, and implementations
-<a name="introduction"></a>
 
 *Anitha Deenadayalan, Amazon Web Services*
 

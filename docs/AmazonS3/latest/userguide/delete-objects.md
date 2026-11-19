@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-objects
 ---
 
 # Deleting a single object
-<a name="delete-objects"></a>
 
 You can use the Amazon S3 console or the DELETE API to delete a single existing object from an S3 bucket. For more information about deleting objects in Amazon S3, see [Deleting Amazon S3 objects](DeletingObjects.md).
 

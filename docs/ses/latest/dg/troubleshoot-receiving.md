@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-receiving.htm
 ---
 
 # Problems with emails received from Amazon SES
-<a name="troubleshoot-receiving"></a>
 
 This section discusses some common issues that you might see when you receive emails that were sent from Amazon SES.
 

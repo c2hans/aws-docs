@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-describe.html
 ---
 
 # Describing a certificate
-<a name="sdk-describe"></a>
 
 The following example shows how to use the [DescribeCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeCertificate.html) function.
 

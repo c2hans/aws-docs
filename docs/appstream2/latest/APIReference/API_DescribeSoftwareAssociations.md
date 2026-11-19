@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeSoftwareAssociations
-<a name="API_DescribeSoftwareAssociations"></a>
 
 Retrieves license included application associations for a specified resource.
 

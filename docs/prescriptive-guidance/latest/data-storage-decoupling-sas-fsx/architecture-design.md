@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-storag
 ---
 
 # Architecture design
-<a name="architecture-design"></a>
 
 This section provides high-level guidance on how to meet the recommended infrastructure requirements from SAS and how to design your AWS architecture for a SAS deployment.
 

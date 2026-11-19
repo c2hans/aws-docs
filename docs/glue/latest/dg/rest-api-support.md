@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rest-api-support.html
 ---
 
 # AWS Glue support for REST API
-<a name="rest-api-support"></a>
 
 AWS Glue supports REST API as follows:
 

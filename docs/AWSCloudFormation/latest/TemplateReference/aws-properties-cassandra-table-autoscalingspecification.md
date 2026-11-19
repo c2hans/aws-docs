@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table AutoScalingSpecification
-<a name="aws-properties-cassandra-table-autoscalingspecification"></a>
 
 The optional auto scaling capacity settings for a table in provisioned capacity mode.
 

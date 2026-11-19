@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # EventDestination
-<a name="API_EventDestination"></a>
 
 Contains information about an event destination.
 

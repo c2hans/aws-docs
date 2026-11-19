@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::VerifiedAccessEndpoint NetworkInterfaceOptions
-<a name="aws-properties-ec2-verifiedaccessendpoint-networkinterfaceoptions"></a>
 
 Describes the network interface options when creating an AWS Verified Access endpoint using the `network-interface` type.
 

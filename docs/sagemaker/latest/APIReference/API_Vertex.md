@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Vertex
 ---
 
 # Vertex
-<a name="API_Vertex"></a>
 
 A lineage entity connected to the starting entity(ies).
 

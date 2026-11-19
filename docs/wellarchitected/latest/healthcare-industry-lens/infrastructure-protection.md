@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | HCL\_SEC5. How does your organization protect critical systems? |
 | --- |

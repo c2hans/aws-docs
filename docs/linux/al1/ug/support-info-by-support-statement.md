@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/support-info-by-support-sta
 ---
 
 # AL1 Package support statements
-<a name="support-info-by-support-statement"></a>
 
 The following topics provide package support statement information for packages in AL1.
 

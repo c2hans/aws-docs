@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/iceberg-generate-column-s
 ---
 
 # Generating column statistics for Iceberg tables
-<a name="iceberg-generate-column-stats"></a>
 
 Follow these steps to configure a schedule for generating statistics in the Data Catalog using AWS Glue console or AWS CLI or the or run the **StartColumnStatisticsTaskRun** operation.
 

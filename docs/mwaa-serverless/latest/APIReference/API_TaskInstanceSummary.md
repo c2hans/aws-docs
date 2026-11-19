@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # TaskInstanceSummary
-<a name="API_TaskInstanceSummary"></a>
 
 Summary information about a task instance within a workflow run, including its status and execution details.
 

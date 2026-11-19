@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_MethodSetting.
 ---
 
 # MethodSetting
-<a name="API_MethodSetting"></a>
 
 Specifies the method setting properties.
 

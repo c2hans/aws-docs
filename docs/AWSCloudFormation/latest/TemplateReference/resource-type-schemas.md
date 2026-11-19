@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # CloudFormation resource provider schemas
-<a name="resource-type-schemas"></a>
 
 In addition to the resource specification, CloudFormation makes available the resource provider schemas for the AWS resources by Region. Each resource provider schema is a JSON-formatted text file that defines the properties and attributes of a specific resource.
 

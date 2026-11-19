@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## F5 documentation
 <a name="f5-documentation"></a>

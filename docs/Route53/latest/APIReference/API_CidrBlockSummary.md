@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CidrBloc
 ---
 
 # CidrBlockSummary
-<a name="API_CidrBlockSummary"></a>
 
 A complex type that lists the CIDR blocks.
 

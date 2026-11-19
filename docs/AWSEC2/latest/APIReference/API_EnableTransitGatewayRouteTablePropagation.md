@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableTra
 ---
 
 # EnableTransitGatewayRouteTablePropagation
-<a name="API_EnableTransitGatewayRouteTablePropagation"></a>
 
 Enables the specified attachment to propagate routes to the specified propagation route table.
 

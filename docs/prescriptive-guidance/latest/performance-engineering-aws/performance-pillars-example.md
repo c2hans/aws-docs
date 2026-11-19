@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/performance
 ---
 
 # Performance engineering pillars in action
-<a name="performance-pillars-example"></a>
 
 The following reference architecture demonstrates performance engineering pillars for testing a specific API.
 

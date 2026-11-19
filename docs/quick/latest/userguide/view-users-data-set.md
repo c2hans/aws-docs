@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/view-users-data-s
 ---
 
 # Viewing and editing the permissions of users that a dataset is shared with
-<a name="view-users-data-set"></a>
 
 If you have owner permissions on a dataset, you can use the following procedure to view, edit, or change user access to it.
 

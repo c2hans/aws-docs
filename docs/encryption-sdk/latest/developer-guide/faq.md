@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/fa
 ---
 
 # Frequently asked questions
-<a name="faq"></a>
 
 **Topics**
 + [How is the AWS Encryption SDK different from the AWS SDKs?](#aws-sdks)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateIngres
 ---
 
 # UpdateIngressGatewayBridgeRequest
-<a name="API_UpdateIngressGatewayBridgeRequest"></a>
 
  Update an existing ingress-type bridge.
 

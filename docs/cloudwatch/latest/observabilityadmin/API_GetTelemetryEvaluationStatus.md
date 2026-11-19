@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # GetTelemetryEvaluationStatus
-<a name="API_GetTelemetryEvaluationStatus"></a>
 
  Returns the current onboarding status of the telemetry config feature, including the status of the feature and reason the feature failed to start or stop.
 

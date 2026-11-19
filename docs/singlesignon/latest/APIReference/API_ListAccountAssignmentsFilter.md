@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountAssignmentsFilter
-<a name="API_ListAccountAssignmentsFilter"></a>
 
 A structure that describes a filter for account assignments.
 

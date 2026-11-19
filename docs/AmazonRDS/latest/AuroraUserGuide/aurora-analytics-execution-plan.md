@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Execution plan
-<a name="aurora-analytics-execution-plan"></a>
 
 Aurora PostgreSQL integrates with PostgreSQL's EXPLAIN infrastructure to help you understand how queries are executed, identify pushdown opportunities, and diagnose performance issues. This topic explains how to read foreign table query execution plans, the different plan types, and the factors that influence plan choices.
 

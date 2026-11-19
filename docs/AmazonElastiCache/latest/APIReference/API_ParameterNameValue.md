@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ParameterNameValue
-<a name="API_ParameterNameValue"></a>
 
 Describes a name-value pair that is used to update the value of a parameter.
 

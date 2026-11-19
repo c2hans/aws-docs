@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/archive-output-
 ---
 
 # Archive output with other containers
-<a name="archive-output-with-other-containers"></a>
 
 Other archive outputs do not support passthrough of the SCTE-35 messages or manifest decoration. Therefore, the only workable option is the default behavior:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Installing third-party plugins in Amazon OpenSearch Service
-<a name="plugins-third-party"></a>
 
 Amazon OpenSearch Service supports third-party plugins from selected partners. These plugins can enhance your OpenSearch setup with additional features such as custom analyzers, tokenizers, or encryption capabilities. Follow the specific installation and configuration instructions provided by the third-party developers to ensure proper integration with your OpenSearch Service domain.
 

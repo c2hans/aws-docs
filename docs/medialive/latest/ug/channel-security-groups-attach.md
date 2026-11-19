@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # Step 2: Attach the channel security group to the channel
-<a name="channel-security-groups-attach"></a>
 
 When you create a channel with SRT outputs in listener mode, you must attach a channel security group.
 

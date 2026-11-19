@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-compiler-te
 ---
 
 # TensorFlow
-<a name="training-compiler-tensorflow"></a>
 
 Bring your own TensorFlow model to SageMaker AI, and run the training job with SageMaker Training Compiler.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Set
 ---
 
 # SetTaskStatus
-<a name="API_SetTaskStatus"></a>
 
 Task runners call `SetTaskStatus` to notify AWS Data Pipeline that a task is completed and provide information about the final status. A task runner makes this call regardless of whether the task was sucessful. A task runner does not need to call `SetTaskStatus` for tasks that are canceled by the web service during a call to [ReportTaskProgress](API_ReportTaskProgress.md).
 

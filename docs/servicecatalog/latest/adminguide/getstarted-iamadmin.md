@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Grant permissions to AWS Service Catalog administrators
-<a name="getstarted-iamadmin"></a>
 
 As a catalog administrator, you require access to the AWS Service Catalog administrator console view and IAM permissions that allow you to perform tasks such as the following:
 + Creating and managing portfolios

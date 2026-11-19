@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-smart-sifting-
 ---
 
 # Supported frameworks and AWS Regions
-<a name="train-smart-sifting-what-is-supported"></a>
 
 Before using SageMaker smart sifting data loader, check if your framework of choice is supported, that the instance types are available in your AWS account, and that your AWS account is in one of the supported AWS Regions.
 

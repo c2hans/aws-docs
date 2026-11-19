@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/athena_example_at
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteWorkGroup` with an AWS SDK or CLI
-<a name="athena_example_athena_DeleteWorkGroup_section"></a>
 
 The following code examples show how to use `DeleteWorkGroup`.
 

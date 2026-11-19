@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_MinimumT
 ---
 
 # MinimumThroughputBillingCommitmentInput
-<a name="API_MinimumThroughputBillingCommitmentInput"></a>
 
 Represents the request parameters for configuring minimum throughput billing commitment.
 

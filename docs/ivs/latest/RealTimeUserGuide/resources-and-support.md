@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/resources-a
 ---
 
 # IVS Resources and Support \| Real-Time Streaming
-<a name="resources-and-support"></a>
 
 This document lists resources to help support your use of Amazon IVS real-time streaming.
 

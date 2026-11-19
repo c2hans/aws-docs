@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-voice
 ---
 
 # Set up live media streaming of customer audio in Connect Customer
-<a name="customer-voice-streams"></a>
 
 In Connect Customer, you can capture customer audio during an interaction with your contact center by sending the audio to a Kinesis video stream. Depending on your settings, audio can be captured for the entire interaction—until the interaction with the agent is complete—or only one direction:
 + What the customer hears, including what the agent says and system prompts.

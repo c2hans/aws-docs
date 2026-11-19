@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-e
 ---
 
 # Creating data streams using the Kinesis Data Streams API and the AWS SDK for PHP Version 3
-<a name="kinesis-example-data-stream"></a>
 
 Amazon Kinesis Data Streams allows you to send real-time data. Create a data producer with Kinesis Data Streams that delivers data to the configured destination every time you add data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeSour
 ---
 
 # DescribeSourceNetworks
-<a name="API_DescribeSourceNetworks"></a>
 
 Lists all Source Networks or multiple Source Networks filtered by ID.
 

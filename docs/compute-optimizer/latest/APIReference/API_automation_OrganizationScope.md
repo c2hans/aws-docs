@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # OrganizationScope
-<a name="API_automation_OrganizationScope"></a>
 
  Defines the scope for organization-level rules when previewing matching actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-authent
 ---
 
 # Custom authentication and authorization
-<a name="custom-authentication"></a>
 
  AWS IoT Core lets you define custom authorizers so that you can manage your own client authentication and authorization. This is useful when you need to use authentication mechanisms other than the ones that AWS IoT Core natively supports. (For more information about the natively supported mechanisms, see [Client authentication](client-authentication.md)).
 

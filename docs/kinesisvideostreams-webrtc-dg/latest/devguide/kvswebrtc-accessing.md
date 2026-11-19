@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Access Kinesis Video Streams with WebRTC
-<a name="kvswebrtc-accessing"></a>
 
 You can work with Kinesis Video Streams with WebRTC in any of the following ways:
 

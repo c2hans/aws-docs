@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Workflo
 ---
 
 # WorkflowDefinitionSummary
-<a name="API_WorkflowDefinitionSummary"></a>
 
 Summary information about a workflow definition, used in list operations.
 

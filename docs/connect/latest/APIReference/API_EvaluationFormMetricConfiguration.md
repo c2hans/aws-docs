@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormMetricConfiguration
-<a name="API_EvaluationFormMetricConfiguration"></a>
 
 Information about the metric configuration for an evaluation form question. Use this to associate a business outcome metric with a question.
 

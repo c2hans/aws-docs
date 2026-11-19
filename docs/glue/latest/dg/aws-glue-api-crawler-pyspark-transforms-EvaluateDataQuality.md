@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # EvaluateDataQuality class
-<a name="aws-glue-api-crawler-pyspark-transforms-EvaluateDataQuality"></a>
 
 Evaluates a data quality ruleset against a `DynamicFrame` and returns a new `DynamicFrame` with results of the evaluation.
 

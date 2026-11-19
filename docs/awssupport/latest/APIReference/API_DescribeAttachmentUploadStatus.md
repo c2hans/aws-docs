@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeAttachmentUploadStatus
-<a name="API_DescribeAttachmentUploadStatus"></a>
 
 Returns the current status, file name, and progress of a multipart attachment upload that was started with [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md). Use this operation to track where an upload is in the workflow. While parts are still being uploaded and reported through [CompleteAttachmentUpload](API_CompleteAttachmentUpload.md), the `uploadStatus` is `attachment-not-ready` and `uploadProgress` reports the total number of parts and how many have been completed so far. After every part has been reported and the service finishes processing the upload asynchronously, the `uploadStatus` becomes `attachment-ready` and the `uploadId` can be attached to a case through [CreateCase](API_CreateCase.md) or [AddCommunicationToCase](API_AddCommunicationToCase.md).
 

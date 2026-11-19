@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_In
 ---
 
 # IngestionStatus
-<a name="API_IngestionStatus"></a>
 
 A table showing information about the most recent successful and failed attempts to ingest events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SageM
 ---
 
 # SageMaker AI Insights OpenTelemetry metrics reference
-<a name="SageMaker-AI-Insights-Metrics"></a>
 
 This section provides a comprehensive list of OpenTelemetry metrics emitted by SageMaker AI detailed observability. Detailed observability is built on OpenTelemetry (OTel) and collects fine‐grained operational metrics from the GPU, node, and inference framework layers, publishing them to CloudWatch with rich labels.
 

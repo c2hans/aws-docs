@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode using geospatial context
-<a name="how-to-geocode-geospatial"></a>
 
 The Geocode API enables you to use geospatial context (such as bias position) to get desired results.
 

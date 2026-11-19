@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/r
 ---
 
 # Revenue Management Architecture for Lodging
-<a name="revenue-management-lodging"></a>
 
 Publication date: **October 5, 2022 ([Diagram history](#revmgmt-history))**
 

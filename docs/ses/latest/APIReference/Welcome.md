@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  This document contains reference information for the [Amazon Simple Email Service](https://aws.amazon.com/ses/) (Amazon SES) API, version 2010-12-01. This document is best used in conjunction with the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html).
 
@@ -16,4 +15,4 @@ This documentation contains reference information related to the following:
 +  [Common Parameters](https://docs.aws.amazon.com/ses/latest/APIReference/CommonParameters.html)
 +  [Common Errors](https://docs.aws.amazon.com/ses/latest/APIReference/CommonErrors.html)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

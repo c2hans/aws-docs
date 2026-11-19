@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-bes
 ---
 
 # Best practices for using FSx for Windows File Server with Amazon ECS
-<a name="wfsx-best-practices"></a>
 
 Make note of the following best practice recommendations when you use FSx for Windows File Server with Amazon ECS.
 

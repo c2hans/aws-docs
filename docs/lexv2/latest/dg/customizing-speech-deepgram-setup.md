@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/customizing-speech-deepg
 ---
 
 # Setting up Deepgram speech model preference
-<a name="customizing-speech-deepgram-setup"></a>
 
 Deepgram is a third-party speech recognition service that provides advanced AI-powered speech-to-text capabilities with support for real-time and batch processing. Deepgram offers enhanced accuracy across various audio conditions, multiple languages, and specialized models for different use cases. For more information about Deepgram's offerings, see [https://deepgram.com/](https://deepgram.com/). To use Deepgram as your speech recognition model preference, you need to complete a one-time setup process to configure your Deepgram API key and store it securely in AWS Secrets Manager.
 

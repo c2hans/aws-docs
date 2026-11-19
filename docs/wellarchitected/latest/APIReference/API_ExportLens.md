@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ExportLens
-<a name="API_ExportLens"></a>
 
 Export an existing lens.
 

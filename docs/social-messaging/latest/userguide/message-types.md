@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/messag
 ---
 
 # WhatsApp message types
-<a name="message-types"></a>
 
 This topic lists the supported message types and a description of their use. For a list of message types, see [Messages](https://developers.facebook.com/docs/whatsapp/conversation-types/) in the *WhatsApp Business Platform Cloud API Reference*.
 

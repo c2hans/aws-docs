@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Up
 ---
 
 # UpdatePolicy
-<a name="API_UpdatePolicy"></a>
 
 Updates an existing policy with a new name, description, or content. If you don't supply any parameter, that value remains unchanged. You can't change a policy's type.
 

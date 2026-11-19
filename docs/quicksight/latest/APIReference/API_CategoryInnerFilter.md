@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Categ
 ---
 
 # CategoryInnerFilter
-<a name="API_CategoryInnerFilter"></a>
 
 A `CategoryInnerFilter` filters text values for the `NestedFilter`.
 

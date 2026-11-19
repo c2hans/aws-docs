@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/choosing-workfl
 ---
 
 # Choosing workflow type in Step Functions
-<a name="choosing-workflow-type"></a>
 
 When you create a state machine, you must choose a **Type** of either *Standard* (default) or *Express*, referred to commonly as a standard workflow or an express workflow.
 

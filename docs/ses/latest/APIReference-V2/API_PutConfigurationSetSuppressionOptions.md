@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfig
 ---
 
 # PutConfigurationSetSuppressionOptions
-<a name="API_PutConfigurationSetSuppressionOptions"></a>
 
 Specify the suppression list preferences for a configuration set. You can also use this operation to specify a `SuppressionScope` to override the suppression scope of the tenant or account for emails sent using this configuration set.
 

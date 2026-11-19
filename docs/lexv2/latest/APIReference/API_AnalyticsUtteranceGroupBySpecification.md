@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceGroupBySpecification
-<a name="API_AnalyticsUtteranceGroupBySpecification"></a>
 
 Contains the category by which to group the utterances.
 

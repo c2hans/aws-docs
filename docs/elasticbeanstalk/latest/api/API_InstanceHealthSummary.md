@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Instance
 ---
 
 # InstanceHealthSummary
-<a name="API_InstanceHealthSummary"></a>
 
 Represents summary information about the health of an instance. For more information, see [Health Colors and Statuses](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanced-status.html).
 

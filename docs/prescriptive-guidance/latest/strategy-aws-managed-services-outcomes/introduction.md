@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Using AWS Managed Services to achieve target business outcomes
-<a name="introduction"></a>
 
 *Natarajan Elayappan and Nitin Verma, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ServerSideEncryptionConfiguration
-<a name="API_voice-chime_ServerSideEncryptionConfiguration"></a>
 
 A structure that contains the configuration settings for server-side encryption.
 

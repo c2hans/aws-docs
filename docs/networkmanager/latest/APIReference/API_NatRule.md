@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NatRule
-<a name="API_NatRule"></a>
 
 Describes a NAT rule of an attachment.
 

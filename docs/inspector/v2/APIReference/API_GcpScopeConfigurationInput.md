@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GcpScopeCo
 ---
 
 # GcpScopeConfigurationInput
-<a name="API_GcpScopeConfigurationInput"></a>
 
 The scope of Google Cloud Platform (GCP) resources to scan, defined separately for VM, container image, and serverless scanning. Provide this when you create or update a GCP connector.
 

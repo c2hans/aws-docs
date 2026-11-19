@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use the MCP Inspector
-<a name="gateway-using-inspector"></a>
 
 The MCP Inspector, available through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) , is a developer tool that helps you test and debug MCP servers by through an interactive interface. You can connect your AgentCore gateway to the MCP inspector to help you debug your gateway targets.
 

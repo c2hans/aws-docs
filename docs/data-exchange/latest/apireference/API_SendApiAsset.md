@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Se
 ---
 
 # SendApiAsset
-<a name="API_SendApiAsset"></a>
 
 This operation invokes an API Gateway API asset. The request is proxied to the provider’s API Gateway API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/example_mediapack
 ---
 
 # Use `ListChannels` with an AWS SDK or CLI
-<a name="example_mediapackage_ListChannels_section"></a>
 
 The following code examples show how to use `ListChannels`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-supp
 ---
 
 # Languages supported by Amazon Bedrock Guardrails
-<a name="guardrails-supported-languages"></a>
 
 Amazon Bedrock Guardrails supports a variety of languages. The following sections detail language support for the specific policies offered by Amazon Bedrock Guardrails.
 

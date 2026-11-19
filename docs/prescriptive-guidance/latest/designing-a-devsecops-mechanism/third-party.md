@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Third-party and open source code bases
-<a name="third-party"></a>
 
 Using existing third-party and open source code bases can offer significant advantages such as reducing time to market and providing stable solutions. For example, designing a standardized virtual private cloud (VPC) infrastructure with connectivity to shared resources, routes, and a transit gateway can take time to develop correctly. Often, it's easier to use an existing code base.
 

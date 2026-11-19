@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Cancel a Capacity Reservation
-<a name="capacity-reservations-release"></a>
 
 You can cancel a Capacity Reservation that is in one of the following states:
 + `assessing`

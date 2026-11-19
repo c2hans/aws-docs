@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContain
 ---
 
 # EksContainerDetail
-<a name="API_EksContainerDetail"></a>
 
 The details for container properties that are returned by `DescribeJobs` for jobs that use Amazon EKS.
 

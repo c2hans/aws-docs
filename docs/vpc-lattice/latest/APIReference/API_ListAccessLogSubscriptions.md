@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListAccessLogSubscriptions
-<a name="API_ListAccessLogSubscriptions"></a>
 
 Lists the access log subscriptions for the specified service network or service.
 

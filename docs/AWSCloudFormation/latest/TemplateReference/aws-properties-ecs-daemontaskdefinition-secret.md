@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::DaemonTaskDefinition Secret
-<a name="aws-properties-ecs-daemontaskdefinition-secret"></a>
 
 An object representing the secret to expose to your container. Secrets can be exposed to a container in the following ways:
 + To inject sensitive data into your containers as environment variables, use the `secrets` container definition parameter.

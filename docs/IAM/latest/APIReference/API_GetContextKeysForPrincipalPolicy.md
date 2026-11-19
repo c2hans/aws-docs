@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetContextKe
 ---
 
 # GetContextKeysForPrincipalPolicy
-<a name="API_GetContextKeysForPrincipalPolicy"></a>
 
 Gets a list of all of the context keys referenced in all the IAM policies that are attached to the specified IAM entity. The entity can be an IAM user, group, or role. If you specify a user, then the request also includes all of the policies attached to groups that the user is a member of.
 

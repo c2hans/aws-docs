@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Determining the last failover time for Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.LastFailover"></a>
 
 To determine the last failover time, use the following stored procedure:
 

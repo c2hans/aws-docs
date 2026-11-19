@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Row.html
 ---
 
 # Row
-<a name="API_Row"></a>
 
 The rows that make up a query result table.
 

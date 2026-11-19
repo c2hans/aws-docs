@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/securit
 ---
 
 # How Amazon Location Service works with unauthenticated users
-<a name="security_iam_unauthenticated-users"></a>
 
 Many scenarios for using Amazon Location Service, including showing maps on the web or in a mobile application, require allowing access to users who haven't signed in with IAM. For these unauthenticated scenarios, you have two options.
 + **Use API keys** – To grant access to unauthenticated users, you can create API Keys that give read-only access to your Amazon Location Service resources. This is useful in a case where you do not want to authenticate every user. For example, a web application. For more information about API keys, see [Allow unauthenticated guest access to your application using API keys](using-apikeys.md).

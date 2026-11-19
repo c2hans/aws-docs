@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_UntagReso
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a specified resource.
 

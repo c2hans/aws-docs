@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/param-c
 ---
 
 # Creating a Parameter Store parameter using the AWS CLI
-<a name="param-create-cli"></a>
 
 You can use the AWS Command Line Interface (AWS CLI) to create `String`, `StringList`, and `SecureString` parameter types. After deleting a parameter, wait for at least 30 seconds to create a parameter with the same name.
 

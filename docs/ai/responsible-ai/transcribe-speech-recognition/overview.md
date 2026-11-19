@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/transcribe-speech-reco
 ---
 
 # Amazon Transcribe
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/transcribe-speech-recognition/images/card-background.jpg)
 

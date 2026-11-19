@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RemoveListenerCertificates
-<a name="API_RemoveListenerCertificates"></a>
 
 Removes the specified certificate from the certificate list for the specified HTTPS or TLS listener.
 

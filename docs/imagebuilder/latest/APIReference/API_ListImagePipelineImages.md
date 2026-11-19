@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImagePipelineImages
-<a name="API_ListImagePipelineImages"></a>
 
 Returns a list of images created by the specified pipeline.
 

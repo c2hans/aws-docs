@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-accoun
 ---
 
 # AWS Account Management events
-<a name="events-ref-account"></a>
 
 Account Management sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/amplitude-connection-opti
 ---
 
 # Amplitude connection options
-<a name="amplitude-connection-options"></a>
 
 The following are connection options for Amplitude:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Amplitude object to read.

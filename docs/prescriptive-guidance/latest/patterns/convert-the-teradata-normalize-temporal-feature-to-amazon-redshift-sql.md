@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Convert the Teradata NORMALIZE temporal feature to Amazon Redshift SQL
-<a name="convert-the-teradata-normalize-temporal-feature-to-amazon-redshift-sql"></a>
 
 *Po Hong, Amazon Web Services*
 

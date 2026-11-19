@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Mainframe Modernization Service
-<a name="awsmainframemodernizationservice"></a>
 
 AWS Mainframe Modernization Service provides the following APIs for data retrieval.
 

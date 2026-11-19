@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/data-encryption.ht
 ---
 
 # Data encryption in Amazon Personalize
-<a name="data-encryption"></a>
 
 The following information explains where Amazon Personalize uses data encryption to protect your data.
 

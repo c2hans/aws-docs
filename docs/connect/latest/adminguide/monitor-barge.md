@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/monitor-barge.
 ---
 
 # Barge into live voice and chat conversations between contact center agents and customers
-<a name="monitor-barge"></a>
 
 **New to monitoring?**
 **New user?** Check out the [Connect Customer Supervisor Experience Workshop](https://catalog.workshops.aws/amazon-connect-supervisor-experience). This online course has a section on how to monitor contacts.

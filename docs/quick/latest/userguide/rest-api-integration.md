@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/rest-api-integrat
 ---
 
 # REST API Connection integration
-<a name="rest-api-integration"></a>
 
 With REST API Connection integration in AWS Quick, you can perform actions with custom REST APIs and web services. This integration supports action execution only.
 

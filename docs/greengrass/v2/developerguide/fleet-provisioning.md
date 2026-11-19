@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provi
 ---
 
 # Install AWS IoT Greengrass Core software with AWS IoT fleet provisioning
-<a name="fleet-provisioning"></a>
 
 This feature is available for v2.4.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 

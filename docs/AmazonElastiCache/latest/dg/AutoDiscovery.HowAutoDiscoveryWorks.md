@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoDiscover
 ---
 
 # How Auto Discovery Works
-<a name="AutoDiscovery.HowAutoDiscoveryWorks"></a>
 
 **Topics**
 + [Connecting to Cache Nodes](#AutoDiscovery.HowAutoDiscoveryWorks.Connecting)

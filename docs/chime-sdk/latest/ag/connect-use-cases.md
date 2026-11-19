@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/connect-use-cases.ht
 ---
 
 # Amazon Connect Customer for customer-facing interactions
-<a name="connect-use-cases"></a>
 
 If your solution involves customers or consumers interacting with your business, use Amazon Connect Customer. This applies whether the interaction uses AI agents, agentic self-service, live agents, or automated handling.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/choosing-model-t
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Choose a model type
-<a name="choosing-model-type"></a>
 
 The following model types are available in Amazon Fraud Detector. Choose a model type that works for your use case.
 + **Online Fraud Insights**

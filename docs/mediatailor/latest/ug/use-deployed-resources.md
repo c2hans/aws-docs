@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/use-deployed-resou
 ---
 
 # Use the CloudFormation deployed resources for CDN and MediaTailor integration
-<a name="use-deployed-resources"></a>
 
 AWS Elemental MediaTailor resources deployed by the AWS CloudFormation stack provide several important outputs that you'll use to access your content with ad insertion. After the CloudFormation stack is created successfully, you'll need to understand how to use the outputs to access your content with ads inserted. This is similar to how you would use MediaTailor URLs in a manual setup, but the CloudFormation deployment provides these URLs automatically.
 

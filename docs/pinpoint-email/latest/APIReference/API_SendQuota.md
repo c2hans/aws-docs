@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_S
 ---
 
 # SendQuota
-<a name="API_SendQuota"></a>
 
 An object that contains information about the per-day and per-second sending limits for your Amazon Pinpoint account in the current AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/findings-investigate-s
 ---
 
 # Investigating sensitive data with Macie findings
-<a name="findings-investigate-sd"></a>
 
 When you run sensitive data discovery jobs or Amazon Macie performs automated sensitive data discovery, Macie captures details about the location of each occurrence of sensitive data that it finds in Amazon Simple Storage Service (Amazon S3) objects. This includes sensitive data that Macie detects using [managed data identifiers](managed-data-identifiers.md), and data that matches the criteria of [custom data identifiers](custom-data-identifiers.md) that you configure a job or Macie to use.
 

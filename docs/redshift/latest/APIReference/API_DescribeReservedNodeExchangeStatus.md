@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeReservedNodeExchangeStatus
-<a name="API_DescribeReservedNodeExchangeStatus"></a>
 
 Returns exchange status details and associated metadata for a reserved-node exchange. Statuses include such values as in progress and requested.
 

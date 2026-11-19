@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetMe
 ---
 
 # BatchGetMemberEc2DeepInspectionStatus
-<a name="API_BatchGetMemberEc2DeepInspectionStatus"></a>
 
 Retrieves Amazon Inspector deep inspection activation status of multiple member accounts within your organization. You must be the delegated administrator of an organization in Amazon Inspector to use this API.
 

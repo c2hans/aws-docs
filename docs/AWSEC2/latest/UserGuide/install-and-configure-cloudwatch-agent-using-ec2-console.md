@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-and-conf
 ---
 
 # Install and configure the CloudWatch agent using the Amazon EC2 console to add additional metrics
-<a name="install-and-configure-cloudwatch-agent-using-ec2-console"></a>
 
 | Description |
 | --- |

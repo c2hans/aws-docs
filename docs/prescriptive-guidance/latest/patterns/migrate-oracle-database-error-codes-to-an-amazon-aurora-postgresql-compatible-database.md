@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle Database error codes to an Amazon Aurora PostgreSQL-Compatible database
-<a name="migrate-oracle-database-error-codes-to-an-amazon-aurora-postgresql-compatible-database"></a>
 
 *Sai Parthasaradhi and Veeranjaneyulu Grandhi, Amazon Web Services*
 

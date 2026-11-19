@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_D
 ---
 
 # DeleteEmailIdentity
-<a name="API_DeleteEmailIdentity"></a>
 
 Deletes an email identity that you previously verified for use with Amazon Pinpoint. An identity can be either an email address or a domain name.
 

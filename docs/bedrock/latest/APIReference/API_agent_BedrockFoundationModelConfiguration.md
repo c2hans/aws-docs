@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Be
 ---
 
 # BedrockFoundationModelConfiguration
-<a name="API_agent_BedrockFoundationModelConfiguration"></a>
 
 Settings for a foundation model used to parse documents for a data source.
 

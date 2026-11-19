@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ReplacementV
 ---
 
 # ReplacementValueEntry
-<a name="API_ReplacementValueEntry"></a>
 
 Contains the list of replacement values for a single template parameter used when creating a role from a role template.
 

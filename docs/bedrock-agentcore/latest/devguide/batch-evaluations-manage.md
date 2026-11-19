@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Manage batch evaluations
-<a name="batch-evaluations-manage"></a>
 
 After you start a batch evaluation, you can check its status and results, list your batch evaluations, stop a running job, and delete a job that you no longer need.
 

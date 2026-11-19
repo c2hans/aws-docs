@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-moni
 ---
 
 # Monitor and troubleshoot managed external secrets
-<a name="mes-monitor"></a>
 
 Managed external secrets provide comprehensive monitoring capabilities through AWS CloudTrail logs and Amazon CloudWatch metrics. All rotation activities are logged with detailed information about success, failure, and any errors encountered during the process.
 

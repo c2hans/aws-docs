@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-limits.html
 ---
 
 # Limitations and troubleshooting
-<a name="canvas-limits"></a>
 
 The following section outlines troubleshooting help and limitations that apply when using Amazon SageMaker Canvas. You can use these this topic to help troubleshoot any issues you encounter.
 

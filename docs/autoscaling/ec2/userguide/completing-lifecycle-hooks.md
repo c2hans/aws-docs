@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/completing-lif
 ---
 
 # Complete a lifecycle action in an Auto Scaling group
-<a name="completing-lifecycle-hooks"></a>
 
 When an Auto Scaling group responds to a lifecycle event, it puts the instance in a wait state and sends an event notification. You can perform a custom action while the instance is in a wait state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TextDocum
 ---
 
 # TextDocumentStatistics
-<a name="API_TextDocumentStatistics"></a>
 
 Provides information about text documents indexed in an index.
 

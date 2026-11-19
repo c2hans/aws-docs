@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/iamserviceaccounts.htm
 ---
 
 # IAM Roles for Service Accounts
-<a name="iamserviceaccounts"></a>
 
 **Tip**
  `eksctl` supports configuring fine-grained permissions to EKS running apps via [EKS Pod Identity Associations](pod-identity-associations.md)

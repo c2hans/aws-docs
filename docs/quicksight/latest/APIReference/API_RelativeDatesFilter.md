@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Relat
 ---
 
 # RelativeDatesFilter
-<a name="API_RelativeDatesFilter"></a>
 
 A `RelativeDatesFilter` filters relative dates values.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_GetDe
 ---
 
 # GetDevicePosition
-<a name="API_GetDevicePosition"></a>
 
 Retrieves a device's most recent position according to its sample time.
 

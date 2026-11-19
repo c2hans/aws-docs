@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticFileSystemServiceRolePolicy
-<a name="AmazonElasticFileSystemServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Elastic File System to manage AWS resources on your behalf
 

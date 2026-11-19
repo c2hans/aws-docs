@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ServiceTier
-<a name="API_runtime_ServiceTier"></a>
 
 Specifies the processing tier configuration used for serving the request.
 

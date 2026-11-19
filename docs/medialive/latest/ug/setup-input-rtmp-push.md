@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-rtmp-pus
 ---
 
 # Create an RTMP push input
-<a name="setup-input-rtmp-push"></a>
 
 After you have created the input security group, you can create the RTMP push input.
 

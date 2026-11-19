@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/getting-started-min-privs
 ---
 
 # Review IAM permissions needed for the AWS Glue Studio user
-<a name="getting-started-min-privs"></a>
 
 To use AWS Glue Studio, the user must have access to various AWS resources. The user must be able to view and select Amazon S3 buckets, IAM policies and roles, and AWS Glue Data Catalog objects.
 

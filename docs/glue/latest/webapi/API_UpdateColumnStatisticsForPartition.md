@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateColumnStati
 ---
 
 # UpdateColumnStatisticsForPartition
-<a name="API_UpdateColumnStatisticsForPartition"></a>
 
 Creates or updates partition statistics of columns.
 

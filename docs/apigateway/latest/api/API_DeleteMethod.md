@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteMethod.h
 ---
 
 # DeleteMethod
-<a name="API_DeleteMethod"></a>
 
 Deletes an existing Method resource.
 

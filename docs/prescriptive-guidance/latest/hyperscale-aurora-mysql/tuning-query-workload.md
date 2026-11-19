@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Tuning your query workload
-<a name="tuning-query-workload"></a>
 
 A well-tuned workload will take you a long way in achieving a stable solution for hypergrowth. If your workload is not well tuned, no matter the power of the Amazon Aurora cluster that you use, you will encounter bottlenecks that will degrade performance and impact the user experience of your application. The best practice is to have a process in place from the start that helps you identify and tune problematic queries in your system.
 

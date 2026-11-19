@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Update a JWT authorizer
-<a name="rest-api-jwt-authorizer-update"></a>
 
 You update a JWT authorizer by replacing its whole configuration. API Gateway accepts a single `replace` operation on the `/jwtConfiguration` path, with the complete configuration as the value. API Gateway keeps nothing from the previous configuration, so any issuer or claim rule that you leave out is removed. API Gateway runs OIDC discovery again for every issuer on each update.
 

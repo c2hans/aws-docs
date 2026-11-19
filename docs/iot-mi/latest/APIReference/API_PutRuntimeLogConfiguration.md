@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_PutRuntim
 ---
 
 # PutRuntimeLogConfiguration
-<a name="API_PutRuntimeLogConfiguration"></a>
 
 Set the runtime log configuration for a specific managed thing.
 

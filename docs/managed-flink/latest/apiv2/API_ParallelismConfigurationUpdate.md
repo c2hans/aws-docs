@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Paralleli
 ---
 
 # ParallelismConfigurationUpdate
-<a name="API_ParallelismConfigurationUpdate"></a>
 
 Describes updates to parameters for how an application executes multiple tasks simultaneously.
 

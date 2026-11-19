@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AutomatedSnapshotPauseRequestOptions
-<a name="API_AutomatedSnapshotPauseRequestOptions"></a>
 
 Specifies the automated snapshot pause request options for the domain.
 

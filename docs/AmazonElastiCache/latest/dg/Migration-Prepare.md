@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Migration-Pr
 ---
 
 # Preparing your source and target for migration
-<a name="Migration-Prepare"></a>
 
 With these steps you can prepare to migrate your data from a self-managed Valkey or Redis OSS source on Amazon EC2 to a node-based ElastiCache cluster.
 

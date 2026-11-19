@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Personalization in Magento eCommerce on AWS for CPG
-<a name="magento-personalization-cpg"></a>
 
 Publication date: **May 20, 2021 ([Diagram history](#magpers-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table using a begins\_with condition with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithBeginsWithCondition_section"></a>
 
 The following code examples show how to query a table using a begins\_with condition.
 + Use the begins\_with function in a key condition expression.

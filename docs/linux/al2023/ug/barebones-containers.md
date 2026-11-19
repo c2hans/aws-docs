@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/barebones-containers.htm
 ---
 
 # Building bare-bones AL2023 container images
-<a name="barebones-containers"></a>
 
 The AL2023 container image is built from the same software components that are included in the AL2023 AMI. It includes a software that enables the base container layer to behave similarly to running on an Amazon EC2 instance, such as the package manager `dnf`. This section explains how you can construct a container from scratch that includes only the bare minimum dependencies needed for an application.
 

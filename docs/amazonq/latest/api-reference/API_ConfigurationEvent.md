@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Configu
 ---
 
 # ConfigurationEvent
-<a name="API_ConfigurationEvent"></a>
 
 A configuration event activated by an end user request to select a specific chat mode.
 

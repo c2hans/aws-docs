@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Sample tracking and geofence application for Android
-<a name="qs-android-tracking"></a>
 
 This topic covers the Android tutorial designed to demonstrate the key features of using the Amazon Location geofences and trackers in a mobile application. The applications demonstrate how a tracker and geonfence interact using a combination of Lambda, AWS IoT and Amazon Location features.
 

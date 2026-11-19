@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # SOURCE
-<a name="CWL_QuerySyntax-Source"></a>
 
 Including `SOURCE` in a query is a useful way to specify the log groups and/or data sources to include in a query when you are using the AWS CLI or API to create a query. The `SOURCE` command is supported only in the AWS CLI and API, not in the CloudWatch console. When you use the CloudWatch console to start a query, you use the console interface to specify the log groups.
 

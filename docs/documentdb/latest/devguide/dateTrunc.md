@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateTrunc.htm
 ---
 
 # $dateTrunc
-<a name="dateTrunc"></a>
 
 New from version 8.0
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Working with Partner Verification
-<a name="working-with-partner-verification"></a>
 
 ## Managing Partner Verification
 <a name="managing-partner-verification"></a>

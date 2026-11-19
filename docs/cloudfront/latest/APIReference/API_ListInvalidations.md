@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListI
 ---
 
 # ListInvalidations
-<a name="API_ListInvalidations"></a>
 
 Lists invalidation batches.
 

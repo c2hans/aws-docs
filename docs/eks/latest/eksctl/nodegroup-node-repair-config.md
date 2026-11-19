@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/nodegroup-node-repair-
 ---
 
 # Support Node Repair Configuration for EKS Managed Nodegroups
-<a name="nodegroup-node-repair-config"></a>
 
 EKS Managed Nodegroups supports Node Repair, where the health of managed nodes are monitored, and unhealthy worker nodes are replaced or rebooted in response. eksctl now provides comprehensive configuration options for fine-grained control over node repair behavior.
 

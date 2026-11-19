@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_CreateR
 ---
 
 # CreateRecipe
-<a name="API_CreateRecipe"></a>
 
 Creates a new DataBrew recipe.
 

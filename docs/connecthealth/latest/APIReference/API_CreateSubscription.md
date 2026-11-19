@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Cr
 ---
 
 # CreateSubscription
-<a name="API_CreateSubscription"></a>
 
 Creates a new Subscription within a Domain for billing and user management.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/access-iam-users.htm
 ---
 
 # Using long-term credentials to authenticate AWS SDKs and tools
-<a name="access-iam-users"></a>
 
 **Warning**
 To avoid security risks, don't use IAM users for authentication when developing purpose-built software or working with real data. Instead, use federation with an identity provider such as [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html).

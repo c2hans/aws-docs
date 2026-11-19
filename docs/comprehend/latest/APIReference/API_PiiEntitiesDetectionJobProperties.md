@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_PiiEn
 ---
 
 # PiiEntitiesDetectionJobProperties
-<a name="API_PiiEntitiesDetectionJobProperties"></a>
 
 Provides information about a PII entities detection job.
 

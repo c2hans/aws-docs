@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 ---
 
 # Update the guidance
-<a name="update-the-guidance"></a>
 
  If you have previously deployed the guidance, follow this procedure to update the guidance's CloudFormation stack to get the latest version of the guidance's framework.
 

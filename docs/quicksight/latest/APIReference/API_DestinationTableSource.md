@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Desti
 ---
 
 # DestinationTableSource
-<a name="API_DestinationTableSource"></a>
 
 Specifies the source of data for a destination table, including the transform operation and column mappings.
 

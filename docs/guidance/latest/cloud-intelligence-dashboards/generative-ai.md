@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Generative AI with CID
-<a name="generative-ai"></a>
 
 ## Ask your dashboards anything
 <a name="ask-your-dashboards-anything"></a>

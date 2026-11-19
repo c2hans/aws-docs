@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Managing assertions (AWS CLI)
-<a name="next-gen-managing-assertions-cli"></a>
 
 The following examples use a service ARN in `us-east-1`. Replace the service ARN and assertion ID with your own values.
 

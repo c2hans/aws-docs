@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # TradeOff
-<a name="API_TradeOff"></a>
 
 A negative trade-off from acting on the recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Intercept the Quick Connect action in Connect Customer agent workspace
-<a name="3P-apps-contact-interceptor-add-quick-connect"></a>
 
 Registers an interceptor for the Quick Connect action, which runs when the user chooses the Quick Connect or transfer button. To block the built-in Quick Connect experience and present your own transfer UI, return `{ continue: false }` (or `false`).
 

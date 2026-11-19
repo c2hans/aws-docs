@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-classic-
 ---
 
 # Amazon Bedrock Agents Classic maintenance mode
-<a name="agents-classic-maintenance-mode"></a>
 
 Amazon Bedrock Agents (launched November 2023) is now Amazon Bedrock Agents Classic and will no longer be open to new customers starting on July 30, 2026. For capabilities similar to Amazon Bedrock Agents Classic, explore Amazon Bedrock AgentCore. Amazon Bedrock continues to be available, but the Agents Classic service will be in maintenance mode.
 

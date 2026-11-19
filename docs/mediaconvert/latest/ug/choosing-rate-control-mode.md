@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/choosing-rate-con
 ---
 
 # Comparison of QVBR with other rate control modes
-<a name="choosing-rate-control-mode"></a>
 
 The rate control mode that you choose depends on the way that you will distribute your asset. AWS Elemental MediaConvert offers the following choices for bitrate mode:
 

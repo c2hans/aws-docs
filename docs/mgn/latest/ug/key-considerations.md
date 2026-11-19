@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/key-considerations.html
 ---
 
 # Launch template key considerations
-<a name="key-considerations"></a>
 
 There are several key considerations when configuring your EC2 launch template. Review these key considerations as well as the [full launch settings](detailed-considerations.md) before creating your launch template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/complia
 ---
 
 # Compliance validation for AWS Systems Manager
-<a name="compliance-validation"></a>
 
 This topic addresses AWS Systems Manager compliance with third-party assurance programs. For information about viewing compliance data for your managed nodes, see [AWS Systems Manager Compliance](systems-manager-compliance.md).
 

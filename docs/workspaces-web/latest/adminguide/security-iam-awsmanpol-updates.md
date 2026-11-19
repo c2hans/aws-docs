@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/securit
 Amazon WorkSpaces Secure Browser will no longer be open to new customers starting October 29, 2026. If you would like to use Amazon WorkSpaces Secure Browser, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon WorkSpaces Secure Browser availability change](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/workspaces-secure-browser-maintenance-mode.html).
 
 # WorkSpaces Secure Browser updates to AWS managed policies
-<a name="security-iam-awsmanpol-updates"></a>
 
 View details about updates to AWS managed policies for WorkSpaces Secure Browser since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the [Document history for the Amazon WorkSpaces Secure Browser Administration Guide](doc-history.md) page.
 

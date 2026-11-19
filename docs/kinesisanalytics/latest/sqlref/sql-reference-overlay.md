@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # OVERLAY
-<a name="sql-reference-overlay"></a>
 
 ```
  OVERLAY ( <original-string>

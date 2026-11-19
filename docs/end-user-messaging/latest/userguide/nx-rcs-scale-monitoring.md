@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Monitoring
-<a name="nx-rcs-scale-monitoring"></a>
 
 AWS End User Messaging gives you several complementary views of your RCS messaging: aggregate delivery health in Amazon CloudWatch, per-message delivery receipts with channel attribution, and granular message events that you route to a destination. This topic describes how to set up each one.
 

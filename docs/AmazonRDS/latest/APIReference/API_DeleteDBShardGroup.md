@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBShardGroup
-<a name="API_DeleteDBShardGroup"></a>
 
 Deletes an Aurora Limitless Database DB shard group.
 

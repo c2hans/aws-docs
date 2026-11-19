@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MeetingF
 ---
 
 # MeetingFeaturesConfiguration
-<a name="API_MeetingFeaturesConfiguration"></a>
 
 The configuration settings of the features available to a meeting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateConfiguredModelAlgorithm
-<a name="API_CreateConfiguredModelAlgorithm"></a>
 
 Creates a configured model algorithm using a container image stored in an ECR repository.
 

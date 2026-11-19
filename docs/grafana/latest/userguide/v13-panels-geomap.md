@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-panels-geom
 ---
 
 # Geomap
-<a name="v13-panels-geomap"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

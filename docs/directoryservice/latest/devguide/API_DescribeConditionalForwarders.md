@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeConditionalForwarders
-<a name="API_DescribeConditionalForwarders"></a>
 
 Obtains information about the conditional forwarders for this account.
 

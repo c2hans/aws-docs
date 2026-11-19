@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_P
 ---
 
 # PlanningStatistics
-<a name="API_PlanningStatistics"></a>
 
 Statistics related to the processing of a query statement.
 

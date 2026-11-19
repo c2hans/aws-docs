@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Prompt security
-<a name="gensec04"></a>
 
 | GENSEC04: How do you secure system and user prompts? |
 | --- |

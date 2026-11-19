@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bes
 ---
 
 # Best practices for designing and architecting with DynamoDB
-<a name="best-practices"></a>
 
 Use this section to quickly find recommendations for maximizing performance and minimizing throughput costs when working with DynamoDB.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sns_example_sns_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetTopicAttributes` with an AWS SDK or CLI
-<a name="sns_example_sns_GetTopicAttributes_section"></a>
 
 The following code examples show how to use `GetTopicAttributes`.
 

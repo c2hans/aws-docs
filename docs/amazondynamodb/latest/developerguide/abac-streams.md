@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/aba
 ---
 
 # Using attribute-based access control with DynamoDB Streams
-<a name="abac-streams"></a>
 
 DynamoDB Streams supports attribute-based access control (ABAC), the same authorization strategy described in [Using resource-based policies for DynamoDB](attribute-based-access-control.md). With DynamoDB Streams ABAC, you attach tags to your streams and use tag-based conditions in your IAM policies to control access to them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Up
 ---
 
 # UpdateAvailabilityOptionsResult
-<a name="API_UpdateAvailabilityOptionsResult"></a>
 
 ## Description
 <a name="API_UpdateAvailabilityOptionsResult_Description"></a>

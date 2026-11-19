@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestG
 ---
 
 # TestGridProject
-<a name="API_TestGridProject"></a>
 
 A Selenium testing project. Projects are used to collect and collate sessions.
 

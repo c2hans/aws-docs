@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobOutputConfigurationInput
-<a name="API_ProtectedJobOutputConfigurationInput"></a>
 
  The protected job output configuration input.
 

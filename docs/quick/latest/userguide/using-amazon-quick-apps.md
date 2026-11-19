@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quic
 ---
 
 # Build web applications with apps in AWS Quick
-<a name="using-amazon-quick-apps"></a>
 
 You can use apps in AWS Quick to build interactive web applications by describing what you need in natural language. You tell the apps in Quick agent what your app should do, who it is for, and what data it needs. The agent builds a working app in real time while you watch. You refine it through ongoing conversation. You can then publish and share the app for daily use across your organization.
 

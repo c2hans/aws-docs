@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # DisconnectionEvent
-<a name="API_rekognitionstreaming_DisconnectionEvent"></a>
 
 Contains information regarding if a disconnection event took place during the Face Liveness session. Disconnection events may indicate processing is complete at the server side.
 

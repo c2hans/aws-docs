@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DeleteExasca
 ---
 
 # DeleteExascaleDbStorageVault
-<a name="API_DeleteExascaleDbStorageVault"></a>
 
 Deletes the specified Exascale storage vault.
 

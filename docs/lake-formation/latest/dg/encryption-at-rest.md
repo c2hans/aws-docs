@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/encryption-at-r
 ---
 
 # Encryption at Rest
-<a name="encryption-at-rest"></a>
 
 AWS Lake Formation supports data encryption in the following areas:
 + Data in your Amazon Simple Storage Service (Amazon S3) data lake.

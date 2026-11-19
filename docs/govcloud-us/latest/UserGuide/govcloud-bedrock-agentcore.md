@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-be
 ---
 
 # Amazon Bedrock AgentCore in AWS GovCloud (US)
-<a name="govcloud-bedrock-agentcore"></a>
 
 Amazon Bedrock AgentCore is an agentic platform for building, deploying, and operating effective agents securely at scale—no infrastructure management needed. The platform accelerates agents to production with composable services that work with any framework and any model, providing a gateway for secure tool and data access, enterprise-grade runtime with dynamic scaling, and comprehensive monitoring capabilities.
 

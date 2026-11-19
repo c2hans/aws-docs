@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/salesforce-a
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Configuring a Salesforce plugin for Amazon Q Business
-<a name="salesforce-actions"></a>
 
 Salesforce is a customer relationship management (CRM) tool for managing customer interactions. If you’re a Salesforce user, you can create an Amazon Q Business plugin to allow your end users to perform the following actions from within their web experience chat:
 + Managing cases (create, delete, update, get)

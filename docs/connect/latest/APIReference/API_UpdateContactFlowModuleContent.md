@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactFlowModuleContent
-<a name="API_UpdateContactFlowModuleContent"></a>
 
 Updates specified flow module for the specified Connect Customer instance.
 

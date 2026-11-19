@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 ---
 
 # Shared responsibility model
-<a name="shared-responsibility-model"></a>
 
 The [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) that applies to AWS services also applies to Autonomous Driving Data Framework (ADDF). The following entities share the responsibility to secure ADDF as set out in the following diagram:
 + **AWS** – The cloud infrastructure provider offering AWS services.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Deploy publicly available foundation models with the `ModelBuilder` class
-<a name="jumpstart-foundation-models-use-python-sdk-model-class"></a>
 
 You can deploy a built-in algorithm or pre-trained model to a SageMaker AI endpoint in just a few lines of code using the SageMaker Python SDK.
 

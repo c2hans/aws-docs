@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AssociatePackages
-<a name="API_AssociatePackages"></a>
 
 Operation in the Amazon OpenSearch Service API for associating multiple packages with a domain simultaneously.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-simi
 ---
 
 # Similar-Items recipe
-<a name="native-recipe-similar-items"></a>
 
 **Note**
  All RELATED\_ITEMS recipes use interactions data. Choose Similar-Items if you have also have item metadata and want Amazon Personalize to use it to find similar items. Or choose the [SIMS recipe](native-recipe-sims.md) if you want to configure more hyperparameters for the model.

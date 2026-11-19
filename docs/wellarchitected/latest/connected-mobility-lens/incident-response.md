@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
 | CMSEC\_22: Does your team deploy a VSOC? If so, what are the required capabilities of a VSOC? |
 | --- |

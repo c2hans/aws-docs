@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/list
 ---
 
 # Update a TLS listener for your Network Load Balancer
-<a name="listener-update-certificates"></a>
 
 After you create a TLS listener, you can replace the default certificate, add or remove certificates from the certificate list, update the security policy, or update the ALPN policy.
 

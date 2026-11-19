@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Convert a license type for Linux in License Manager
-<a name="conversion-procedures-linux"></a>
 
 You can use either the License Manager Console or the AWS CLI to convert the license type of eligible Ubuntu LTS, RHEL, and RHEL for SAP instances.
 

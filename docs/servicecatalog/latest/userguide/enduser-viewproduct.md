@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 ---
 
 # Viewing product details
-<a name="enduser-viewproduct"></a>
 
  The Product details page displays information about a product, including a description of the product, details about product versions, and support information.
 

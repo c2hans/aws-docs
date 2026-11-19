@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupDetails
-<a name="API_AwsAutoScalingAutoScalingGroupDetails"></a>
 
 Provides details about an auto scaling group.
 

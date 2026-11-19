@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/at-rest-encrypt
 ---
 
 # At-Rest Encryption in MemoryDB
-<a name="at-rest-encryption"></a>
 
 To help keep your data secure, MemoryDB and Amazon S3 provide different ways to restrict access to data in your clusters. For more information, see [MemoryDB and Amazon VPC](vpcs.md) and [Identity and access management in MemoryDB](iam.md).
 

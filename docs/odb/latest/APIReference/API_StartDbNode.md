@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_StartDbNode.
 ---
 
 # StartDbNode
-<a name="API_StartDbNode"></a>
 
 Starts the specified DB node in a VM cluster.
 

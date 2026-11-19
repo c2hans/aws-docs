@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/recommendations-ca
 ---
 
 # Recommendations for camera setup (streaming video)
-<a name="recommendations-camera-streaming-video"></a>
 
 The following recommendation is in addition to [Recommendations for camera setup (stored and streaming video)](recommendations-camera-stored-streaming-video.md).
 

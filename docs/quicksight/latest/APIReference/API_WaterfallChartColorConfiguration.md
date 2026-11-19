@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallChartColorConfiguration
-<a name="API_WaterfallChartColorConfiguration"></a>
 
 The color configuration of a waterfall visual.
 

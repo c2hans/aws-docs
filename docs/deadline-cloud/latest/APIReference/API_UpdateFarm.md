@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateFarm
-<a name="API_UpdateFarm"></a>
 
 Updates a farm.
 

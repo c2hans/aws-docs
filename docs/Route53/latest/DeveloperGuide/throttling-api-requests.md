@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/throttling
 ---
 
 # Throttling for Amazon Route 53 API requests
-<a name="throttling-api-requests"></a>
 
 **Important**
 Amazon Route 53 updated its API throttling behavior. The update includes increasing the requests per second limit and introducing change-based throttling. This page describes the updated limits in detail.

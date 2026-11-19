@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/addi
 ---
 
 # Managing user permission roles
-<a name="adding-users-groups"></a>
 
 As an AWS Supply Chain administrator, you can either use the default user permission roles or create custom permission roles. AWS Supply Chain has the following default user permission roles:
 + **Administrator** – Access to create, view, and manage all data and user permissions.

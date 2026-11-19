@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Online
 ---
 
 # OnlineStoreSecurityConfig
-<a name="API_OnlineStoreSecurityConfig"></a>
 
 The security configuration for `OnlineStore`.
 

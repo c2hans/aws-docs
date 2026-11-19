@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateWirelessGatewayFromCertificate
-<a name="API_DisassociateWirelessGatewayFromCertificate"></a>
 
 Disassociates a wireless gateway from its currently associated certificate.
 

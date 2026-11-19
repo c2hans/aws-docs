@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Set up AWS App Mesh sample workload on an Amazon EKS cluster with the Fargate launch type
-<a name="ContainerInsights-Prometheus-Sample-Workloads-appmesh-Fargate"></a>
 
 Use these instructions if you are setting up App Mesh on a cluster running Amazon EKS with the Fargate launch type.
 

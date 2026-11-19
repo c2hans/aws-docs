@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating Windows failover clusters
-<a name="migrating-failover-workloads"></a>
 
 A [Microsoft failover cluster](https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview) is a group of servers with mostly shared storage between them. You can use failover clusters to facilitate high availability for your applications and services. You can also migrate your failover clusters to the AWS Cloud to benefit from its reliability, performance, and lower TCO.
 

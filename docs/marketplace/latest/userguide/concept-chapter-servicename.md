@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/concept-cha
 ---
 
 # Managing AMI-based products as an AWS Marketplace seller
-<a name="concept-chapter-servicename"></a>
 
 As an AWS Marketplace seller, you can manage and update your single [Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#AmazonMachineImage) products. AMI-based products include a set of one or more versions of the software and metadata about the product as a whole. When you create the product, you configure its properties in AWS Marketplace, including your product name, description, and pricing. You also determine the appropriate categories for your product and add keywords so your product appears in relevant searches. After you create, your single-AMI product, you can submit change requests to make changes to your product or version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReadSetActivatio
 ---
 
 # GetReadSetActivationJob
-<a name="API_GetReadSetActivationJob"></a>
 
 Returns detailed information about the status of a read set activation job in JSON format.
 

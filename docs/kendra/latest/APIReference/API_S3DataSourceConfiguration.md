@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_S3DataSou
 ---
 
 # S3DataSourceConfiguration
-<a name="API_S3DataSourceConfiguration"></a>
 
 Provides the configuration information to connect to an Amazon S3 bucket.
 

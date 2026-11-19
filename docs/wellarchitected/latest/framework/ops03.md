@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03.h
 ---
 
 # Adopt change flow processes with quality gates
-<a name="ops03"></a>
 
  Adopt approaches that improve the flow of changes into production and that help refactoring, fast feedback on quality, and bug fixing. These processes accelerate beneficial changes entering production, limit deployment issues, and enable the rapid identification and remediation of issues introduced through deployment activities.
 

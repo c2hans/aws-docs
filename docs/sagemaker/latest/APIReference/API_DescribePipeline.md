@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribePipeline
-<a name="API_DescribePipeline"></a>
 
 Describes the details of a pipeline.
 

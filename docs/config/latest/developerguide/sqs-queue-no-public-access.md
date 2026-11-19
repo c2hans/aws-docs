@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sqs-queue-n
 ---
 
 # sqs-queue-no-public-access
-<a name="sqs-queue-no-public-access"></a>
 
 Checks if the SQS queue access policy allows public access. The rule is NON\_COMPLIANT if the SQS queue access policy allows public access.
 

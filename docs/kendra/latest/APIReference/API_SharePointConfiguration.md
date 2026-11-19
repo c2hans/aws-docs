@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SharePoin
 ---
 
 # SharePointConfiguration
-<a name="API_SharePointConfiguration"></a>
 
 Provides the configuration information to connect to Microsoft SharePoint as your data source.
 

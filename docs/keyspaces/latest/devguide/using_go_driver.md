@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/using_go_drive
 ---
 
 # Using a Cassandra Go client driver to access Amazon Keyspaces programmatically
-<a name="using_go_driver"></a>
 
 This section shows you how to connect to Amazon Keyspaces by using a Go Cassandra client driver. To provide users and applications with credentials for programmatic access to Amazon Keyspaces resources, you can do either of the following:
 + Create service-specific credentials that are associated with a specific AWS Identity and Access Management (IAM) user.

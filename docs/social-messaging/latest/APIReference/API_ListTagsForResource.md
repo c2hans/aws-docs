@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List all tags associated with a resource, such as a phone number or WABA.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CURRENT\_TIME
-<a name="sql-reference-current-time"></a>
 
 Returns the current Amazon Kinesis Data Analytics system time when the query executes. Time is in UTC, not the local time zone.
 

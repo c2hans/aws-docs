@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::ClientVpnEndpoint ClientConnectOptions
-<a name="aws-properties-ec2-clientvpnendpoint-clientconnectoptions"></a>
 
 Indicates whether client connect options are enabled. The default is `false` (not enabled).
 

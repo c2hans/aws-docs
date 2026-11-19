@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Live
 ---
 
 # LivePreRollConfiguration
-<a name="API_LivePreRollConfiguration"></a>
 
 The configuration for pre-roll ad insertion.
 

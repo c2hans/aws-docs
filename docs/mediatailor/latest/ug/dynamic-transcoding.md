@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dynamic-transcodin
 ---
 
 # Dynamic transcoding
-<a name="dynamic-transcoding"></a>
 
 Dynamic transcoding is the default ad transcoding behavior in MediaTailor. When an ad, bumper, or slate needs to be transcoded, MediaTailor automatically inspects the origin manifest and derives transcoding settings at runtime, without any configuration on your part.
 

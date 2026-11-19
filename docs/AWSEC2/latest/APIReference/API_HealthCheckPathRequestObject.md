@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthChe
 ---
 
 # HealthCheckPathRequestObject
-<a name="API_HealthCheckPathRequestObject"></a>
 
 Describes a health check path for an application status check request.
 

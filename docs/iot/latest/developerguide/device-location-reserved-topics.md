@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-locatio
 ---
 
 # Resolving device location using AWS IoT Core Device Location MQTT topics
-<a name="device-location-reserved-topics"></a>
 
 You can use reserved MQTT topics to get the latest location information for your devices with the AWS IoT Core Device Location feature.
 

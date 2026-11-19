@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetMaintenanceWindow
-<a name="API_GetMaintenanceWindow"></a>
 
 Retrieves a maintenance window.
 

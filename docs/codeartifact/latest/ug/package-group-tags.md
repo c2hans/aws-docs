@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/package-group-tag
 ---
 
 # Tag a package group in CodeArtifact
-<a name="package-group-tags"></a>
 
 Tags are key-value pairs associated with AWS resources. You can apply tags to your package groups in CodeArtifact. For information about CodeArtifact resource tagging, use cases, tag key and value constraints, and supported resource types, see [Tagging resources](tag-resources.md).
 

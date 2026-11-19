@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Opera
 ---
 
 # Amazon Timestream Query
-<a name="API_Operations_Amazon_Timestream_Query"></a>
 
 The following actions are supported by Amazon Timestream Query:
 +  [CancelQuery](API_query_CancelQuery.md)

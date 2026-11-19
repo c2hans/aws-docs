@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/partnercentral-se
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetOpportunity` with an AWS SDK
-<a name="partnercentral-selling_example_partnercentral-selling_GetOpportunity_section"></a>
 
 The following code examples show how to use `GetOpportunity`.
 

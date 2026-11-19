@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceDetails
-<a name="API_ServiceDetails"></a>
 
 Union of service-specific configuration details for service registration.
 

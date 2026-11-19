@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Storage architecture
-<a name="storage-architecture"></a>
 
 | HCL\_PERF4. How do you define and test storage performance requirements? |
 | --- |

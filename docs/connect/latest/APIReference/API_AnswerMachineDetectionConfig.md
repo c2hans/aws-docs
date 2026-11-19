@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AnswerMa
 ---
 
 # AnswerMachineDetectionConfig
-<a name="API_AnswerMachineDetectionConfig"></a>
 
 Configuration of the answering machine detection.
 

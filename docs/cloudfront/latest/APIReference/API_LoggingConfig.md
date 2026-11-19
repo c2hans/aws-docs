@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Loggi
 ---
 
 # LoggingConfig
-<a name="API_LoggingConfig"></a>
 
 A complex type that specifies whether access logs are written for the distribution.
 

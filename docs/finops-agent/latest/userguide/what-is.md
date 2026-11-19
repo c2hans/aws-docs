@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/finops-agent/latest/userguide/what-is.ht
 AWS FinOps Agent is in preview release and is subject to change.
 
 # What is AWS FinOps Agent (preview)?
-<a name="what-is"></a>
 
 **Note**
 **Powered by Amazon Bedrock**: AWS FinOps Agent is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.

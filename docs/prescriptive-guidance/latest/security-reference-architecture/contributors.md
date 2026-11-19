@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 **Primary author:**
 + Avik Mukherjee, AWS Senior Security Solutions Architect

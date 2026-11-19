@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-localzone
 ---
 
 # Local snapshots in Local Zones
-<a name="snapshots-localzones"></a>
 
 Amazon EBS snapshots are a point-in-time copy of your EBS volumes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-confi
 ---
 
 # Set languages
-<a name="ai-agent-configure-language-support"></a>
 
 Agents can ask for assistance in the [language](supported-languages.md#supported-languages-contact-lens) of your choice when you set the locale on AI agents. AI agents then provide answers and recommended step-by-step guides in that language.
 

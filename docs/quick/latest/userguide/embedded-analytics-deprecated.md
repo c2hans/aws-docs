@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedded-analytic
 ---
 
 # Embedding analytics using the GetDashboardEmbedURL and GetSessionEmbedURL API operations
-<a name="embedded-analytics-deprecated"></a>
 
 |  |
 | --- |

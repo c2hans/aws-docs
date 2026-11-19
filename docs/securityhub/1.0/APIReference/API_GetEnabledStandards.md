@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetEnab
 ---
 
 # GetEnabledStandards
-<a name="API_GetEnabledStandards"></a>
 
 Returns a list of the standards that are currently enabled.
 

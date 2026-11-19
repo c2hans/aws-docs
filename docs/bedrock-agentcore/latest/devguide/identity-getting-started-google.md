@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Integrate with Google Drive using OAuth2
-<a name="identity-getting-started-google"></a>
 
 This getting started tutorial walks you through the essential steps to start using Amazon Bedrock AgentCore Identity for your AI agents. You’ll learn how to set up your development environment, install the necessary SDKs, create your first agent identity, and allow your agent to access external resources securely.
 

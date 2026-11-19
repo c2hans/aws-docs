@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchPer
 ---
 
 # LaunchPermissionModifications
-<a name="API_LaunchPermissionModifications"></a>
 
 Describes a launch permission modification.
 

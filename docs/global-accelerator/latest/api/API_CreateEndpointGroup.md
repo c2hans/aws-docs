@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Create
 ---
 
 # CreateEndpointGroup
-<a name="API_CreateEndpointGroup"></a>
 
 Create an endpoint group for the specified listener. An endpoint group is a collection of endpoints in one AWS Region. A resource must be valid and active when you add it as an endpoint.
 

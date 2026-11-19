@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteOr
 ---
 
 # RouteOriginOptions
-<a name="API_RouteOriginOptions"></a>
 
 Origin related options.
 

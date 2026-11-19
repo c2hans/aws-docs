@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/in
 ---
 
 # Introduction
-<a name="introduction"></a>
 
  Prioritization of cloud technologies in the life sciences sector is steadily increasing as customers seek out highly reliable, scalable, and secure solutions to operate their regulated IT systems. [Amazon Web Services](https://aws.amazon.com/) (AWS) provides cloud services designed to help customers run their most sensitive workloads in the cloud, including the computerized systems that support Good Manufacturing Practice, Good Laboratory Practice, and Good Clinical Practice (GxP). GxP guidelines are established by the US Food and Drug Administration (FDA) and exist to ensure safe development and manufacturing of medical devices, pharmaceuticals, biologics, and other food and medical product industries.
 

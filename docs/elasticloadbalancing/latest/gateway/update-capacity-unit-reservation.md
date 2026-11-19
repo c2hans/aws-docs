@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/upda
 ---
 
 # Update or terminate Load balancer Capacity Unit reservations for your Gateway Load Balancer
-<a name="update-capacity-unit-reservation"></a>
 
 **Update or terminate a LCU reservation**
 The steps in this procedure explain how to update or terminate a LCU reservation on your load balancer.

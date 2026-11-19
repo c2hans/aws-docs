@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteCon
 ---
 
 # DeleteConformancePack
-<a name="API_DeleteConformancePack"></a>
 
 Deletes the specified conformance pack and all the AWS Config rules, remediation actions, and all evaluation results within that conformance pack.
 

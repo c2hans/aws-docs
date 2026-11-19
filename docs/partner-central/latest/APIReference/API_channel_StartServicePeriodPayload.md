@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StartServicePeriodPayload
-<a name="API_channel_StartServicePeriodPayload"></a>
 
 Payload for start service period handshake requests.
 

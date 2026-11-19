@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/im-me
 ---
 
 # Accessing Amazon Rekognition Custom Labels evaluation metrics (SDK)
-<a name="im-metrics-api"></a>
 
 The [DescribeProjectVersions](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions) operation provides access to metrics beyond those provided in the console.
 

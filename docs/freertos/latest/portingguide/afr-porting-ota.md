@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Porting the AWS IoT over-the-air (OTA) update library
-<a name="afr-porting-ota"></a>
 
 With FreeRTOS over-the-air (OTA) updates, you can do the following:
 + Deploy new firmware images to a single device, a group of devices, or your entire fleet.

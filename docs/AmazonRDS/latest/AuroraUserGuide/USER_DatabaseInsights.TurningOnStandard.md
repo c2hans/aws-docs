@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Da
 ---
 
 # Turning on the Standard mode of Database Insights for Amazon Aurora
-<a name="USER_DatabaseInsights.TurningOnStandard"></a>
 
 To turn on the Standard mode of Database Insights for Amazon Aurora, use the following procedures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-backups.h
 ---
 
 # Creating user-initiated backups
-<a name="creating-backups"></a>
 
 The following procedure describes how to create a user-initiated backup of a volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # S3 client differences between version 1 and version 2 of the AWS SDK for Java
-<a name="migration-s3-client"></a>
 
 In this topic, the differences between the S3 clients in version 1 and version 2 of SDK for Java are organized by how the [migration tool](migration-tool.md) can automate the migration. The tool supports migration of most methods from V1 to V2, but some methods require manual migration. In additional to S3 client methods, some S3 V1 classes do not have a direct V2 equivalent requiring you to manually migrate them.
 

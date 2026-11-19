@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ReshardingConfiguration
-<a name="API_ReshardingConfiguration"></a>
 
 A list of `PreferredAvailabilityZones` objects that specifies the configuration of a node group in the resharded cluster.
 

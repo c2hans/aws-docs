@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Sourc
 ---
 
 # Source
-<a name="API_Source"></a>
 
 The source of collected metrics for a scraper.
 

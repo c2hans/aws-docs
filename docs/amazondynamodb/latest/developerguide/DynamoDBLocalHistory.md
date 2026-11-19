@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # Release history for DynamoDB local
-<a name="DynamoDBLocalHistory"></a>
 
 The following table describes the important changes in each release of *DynamoDB local*.
 

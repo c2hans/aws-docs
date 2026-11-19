@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Consuming Data from InforOS over SFTP
-<a name="consuming-data-from-inforos"></a>
 
 Publication date: **March 20, 2021 ([Diagram history](#cdi-diagram-history))**
 

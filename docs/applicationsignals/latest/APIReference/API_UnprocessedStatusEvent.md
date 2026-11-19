@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # UnprocessedStatusEvent
-<a name="API_UnprocessedStatusEvent"></a>
 
 A status event that could not be processed by the service.
 

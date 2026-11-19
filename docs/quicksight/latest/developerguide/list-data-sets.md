@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/list-da
 ---
 
 # ListDataSets
-<a name="list-data-sets"></a>
 
 Use the `ListDataSets` API operation to list all of the datasets that belong to a particular AWS account in an AWS Region. Following is an example AWS CLI command for this operation.
 

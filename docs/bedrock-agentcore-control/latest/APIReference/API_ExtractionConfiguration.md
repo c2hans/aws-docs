@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ExtractionConfiguration
-<a name="API_ExtractionConfiguration"></a>
 
 Contains extraction configuration information for a memory strategy.
 

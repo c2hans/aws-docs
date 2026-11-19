@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Connect Customer Testing language concepts
-<a name="testing-language-concepts"></a>
 
 The following terms are used in the Testing language.
 

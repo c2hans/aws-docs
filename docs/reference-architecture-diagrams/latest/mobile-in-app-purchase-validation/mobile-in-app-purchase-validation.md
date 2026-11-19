@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Mobile In-App Purchase Validation on AWS
-<a name="mobile-in-app-purchase-validation"></a>
 
 Publication date: **January 1, 2021 ([Diagram history](#iap-history))**
 

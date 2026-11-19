@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubernetesNe
 ---
 
 # KubernetesNetworkConfigResponse
-<a name="API_KubernetesNetworkConfigResponse"></a>
 
 The Kubernetes network configuration for the cluster. The response contains a value for **serviceIpv6Cidr** or **serviceIpv4Cidr**, but not both.
 

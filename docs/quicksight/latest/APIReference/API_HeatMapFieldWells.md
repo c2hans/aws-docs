@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_HeatM
 ---
 
 # HeatMapFieldWells
-<a name="API_HeatMapFieldWells"></a>
 
 The field well configuration of a heat map.
 

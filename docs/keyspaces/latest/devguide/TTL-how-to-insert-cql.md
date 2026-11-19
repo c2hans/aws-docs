@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL-how-to-ins
 ---
 
 # Use the `INSERT` statement to set custom Time to Live (TTL) values for new rows
-<a name="TTL-how-to-insert-cql"></a>
 
 **Note**
 Before you can set custom TTL values for rows using the `INSERT` statement, you must first enable custom TTL on the table. For more information, see [Update table with custom Time to Live (TTL)](TTL-how-to-enable-custom-alter.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/redshift-co
 ---
 
 # Security Hub CSPM controls for Amazon Redshift
-<a name="redshift-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Redshift service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
 

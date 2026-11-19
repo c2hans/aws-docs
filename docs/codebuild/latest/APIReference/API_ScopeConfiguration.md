@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ScopeC
 ---
 
 # ScopeConfiguration
-<a name="API_ScopeConfiguration"></a>
 
 Contains configuration information about the scope for a webhook.
 

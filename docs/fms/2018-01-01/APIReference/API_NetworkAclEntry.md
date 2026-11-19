@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkA
 ---
 
 # NetworkAclEntry
-<a name="API_NetworkAclEntry"></a>
 
 Describes a rule in a network ACL.
 

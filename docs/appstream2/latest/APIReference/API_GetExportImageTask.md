@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_GetEx
 ---
 
 # GetExportImageTask
-<a name="API_GetExportImageTask"></a>
 
 Retrieves information about an export image task, including its current state, progress, and any error details.
 

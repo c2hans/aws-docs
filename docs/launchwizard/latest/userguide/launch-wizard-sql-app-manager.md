@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Manage Launch Wizard application resources with AWS Systems Manager Application Manager
-<a name="launch-wizard-sql-app-manager"></a>
 
 AWS Systems Manager Application Manager, a capability of AWS Systems Manager, helps you to investigate and remediate issues with your AWS resources that make up an application. Application Manager aggregates operations information from multiple AWS services and Systems Manager capabilities to a single console.
 

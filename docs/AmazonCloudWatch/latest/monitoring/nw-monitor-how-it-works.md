@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # How Network Synthetic Monitor works
-<a name="nw-monitor-how-it-works"></a>
 
 Network Synthetic Monitor is fully managed by AWS, and doesn't require separate agents on monitored resources. Instead, you specify *probes* by providing a VPC subnet and on-premises IP addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetConnections.ht
 ---
 
 # GetConnections
-<a name="API_GetConnections"></a>
 
 Retrieves a list of connection definitions from the Data Catalog.
 

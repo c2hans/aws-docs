@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-or
 ---
 
 # Disassociating Security Hub CSPM member accounts from your organization
-<a name="accounts-orgs-disassociate"></a>
 
 To stop receiving and viewing findings from an AWS Security Hub CSPM member account, you can disassociate the member account from your organization.
 

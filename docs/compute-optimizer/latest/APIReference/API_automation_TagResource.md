@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # TagResource
-<a name="API_automation_TagResource"></a>
 
  Adds tags to the specified resource.
 

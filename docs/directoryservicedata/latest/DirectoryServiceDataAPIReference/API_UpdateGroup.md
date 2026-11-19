@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # UpdateGroup
-<a name="API_UpdateGroup"></a>
 
  Updates group information.
 

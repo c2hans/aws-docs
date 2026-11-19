@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SourceS3Location
-<a name="API_taxSettings_SourceS3Location"></a>
 
 The Amazon S3 bucket in your account where your tax document is located.
 

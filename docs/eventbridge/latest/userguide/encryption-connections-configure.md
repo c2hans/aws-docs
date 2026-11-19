@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/encryption-
 ---
 
 # Configuring encryption on connections
-<a name="encryption-connections-configure"></a>
 
 You can specify the KMS key for EventBridge to use when you create or update a connection.
 

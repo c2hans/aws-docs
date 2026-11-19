@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateAttributes
-<a name="API_amazon-q-connect_MessageTemplateAttributes"></a>
 
 The attributes that are used with the message template.
 

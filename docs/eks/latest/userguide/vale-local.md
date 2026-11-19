@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/vale-local.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View style feedback as you type by installing Vale locally
-<a name="vale-local"></a>
 
 You can see style feedback as you type. This helps identify awkward writing and typos.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDashboardModel
-<a name="API_ModelDashboardModel"></a>
 
 A model displayed in the Amazon SageMaker Model Dashboard.
 

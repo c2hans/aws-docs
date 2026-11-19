@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEREL02-BP01 Implement a scaling strategy that incorporates the state of active player game sessions
-<a name="gamerel02-bp01"></a>
 
  Implement a solution for automatically scaling your game infrastructure in a manner that incorporates the stateful nature of your actively connected player sessions and gracefully handles scaling activities without disrupting gameplay.
 

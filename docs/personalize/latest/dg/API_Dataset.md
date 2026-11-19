@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Dataset.html
 ---
 
 # Dataset
-<a name="API_Dataset"></a>
 
 Provides metadata for a dataset.
 

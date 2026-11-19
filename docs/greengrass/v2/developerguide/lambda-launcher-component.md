@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-laun
 ---
 
 # Lambda launcher
-<a name="lambda-launcher-component"></a>
 
 The Lambda launcher component (`aws.greengrass.LambdaLauncher`) starts and stops AWS Lambda functions on AWS IoT Greengrass core devices. This component also sets up any containerization and runs processes as the users that you specify.
 

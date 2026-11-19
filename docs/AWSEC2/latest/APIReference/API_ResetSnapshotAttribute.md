@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetSnap
 ---
 
 # ResetSnapshotAttribute
-<a name="API_ResetSnapshotAttribute"></a>
 
 Resets permission settings for the specified snapshot.
 

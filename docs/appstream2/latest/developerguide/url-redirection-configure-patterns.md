@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/url-red
 ---
 
 # Configure URL patterns (allowlist)
-<a name="url-redirection-configure-patterns"></a>
 
 The URL patterns field defines which links redirect to the local browser. Only URLs that match these patterns are redirected. All other URLs open in the remote session.
 

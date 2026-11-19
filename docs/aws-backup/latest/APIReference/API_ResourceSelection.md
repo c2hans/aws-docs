@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resou
 ---
 
 # ResourceSelection
-<a name="API_ResourceSelection"></a>
 
 This contains metadata about resource selection for tiering configurations.
 

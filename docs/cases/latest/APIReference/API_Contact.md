@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_Contact.ht
 ---
 
 # Contact
-<a name="API_connect-cases_Contact"></a>
 
 An object that represents an Connect Customer contact object.
 

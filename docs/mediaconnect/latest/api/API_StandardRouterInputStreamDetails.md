@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardRout
 ---
 
 # StandardRouterInputStreamDetails
-<a name="API_StandardRouterInputStreamDetails"></a>
 
 Configuration details for a standard router input stream type.
 

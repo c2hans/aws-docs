@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/paypal-reading-from-entit
 ---
 
 # Reading from PayPal entities
-<a name="paypal-reading-from-entities"></a>
 
 **Prerequisite**
 

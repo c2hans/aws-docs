@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeBudgets
-<a name="API_budgets_DescribeBudgets"></a>
 
 Lists the budgets that are associated with an account.
 

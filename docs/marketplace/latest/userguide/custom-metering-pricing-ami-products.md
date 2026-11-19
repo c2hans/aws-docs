@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/custom-mete
 ---
 
 # Custom metering pricing for AMI products with AWS Marketplace Metering Service
-<a name="custom-metering-pricing-ami-products"></a>
 
 With the AWS Marketplace Metering Service, you can modify your software to send metering records to an endpoint to capture usage. You can select a usage category and define up to 24 dimensions for that one category. These dimensions are metered once per hour, aggregated, and charged against a price plan that you define. As a seller, you must determine which dimension you want to use. After the AMI is published, you will not be able to change it. The following sections provide information about AWS Marketplace Metering Service.
 

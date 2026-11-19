@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_UserAccessTaskI
 ---
 
 # UserAccessTaskItem
-<a name="API_UserAccessTaskItem"></a>
 
 Contains information about a user access task.
 

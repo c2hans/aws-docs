@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Dele
 ---
 
 # DeletePrivateGraphEndpoint
-<a name="API_DeletePrivateGraphEndpoint"></a>
 
 Deletes a private graph endpoint.
 

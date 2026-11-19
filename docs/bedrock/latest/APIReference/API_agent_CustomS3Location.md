@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cu
 ---
 
 # CustomS3Location
-<a name="API_agent_CustomS3Location"></a>
 
 Contains information about the Amazon S3 location of the file containing the content to ingest into a knowledge base connected to a custom data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Unlocking the value of your data at scale in the financial services industry
-<a name="introduction"></a>
 
 *Brian Cavanagh, Junaid Baba, Sarah Bourial, Sokratis Kartakis, Dhrubajyoti Mukherjee, Maren Suilmann, Maira Ladeira Tanke, Pauline Ting, and Amine Ait el harraj, Amazon Web Services*
 

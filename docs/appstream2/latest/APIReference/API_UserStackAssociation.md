@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_UserS
 ---
 
 # UserStackAssociation
-<a name="API_UserStackAssociation"></a>
 
 Describes a user in the user pool and the associated stack.
 

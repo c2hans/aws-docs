@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflo
 ---
 
 # Creating signal maps for AWS media workflows
-<a name="monitor-with-workflow-monitor-configure-signal-maps-create"></a>
 
 You can use workflow monitor signal maps to create a visual mapping of all connected AWS resources in your media workflow.
 

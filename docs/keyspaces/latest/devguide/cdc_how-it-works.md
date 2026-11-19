@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cdc_how-it-wor
 ---
 
 # How change data capture (CDC) streams work in Amazon Keyspaces
-<a name="cdc_how-it-works"></a>
 
 This section provides an overview of how change data capture (CDC) streams work in Amazon Keyspaces.
 

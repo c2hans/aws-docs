@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04-b
 ---
 
 # REL04-BP01 Identify the kind of distributed systems you depend on
-<a name="rel04-bp01"></a>
 
  Distributed systems communicate in one of three styles: synchronous, asynchronous, or batch. Each style carries different failure characteristics, latency behavior, and coupling. When you know which style each dependency uses, you can choose error handling, timeouts, and retry strategies that match how that dependency behaves. Misidentifying the style leads to brittle chains, indefinite waits, and duplicate processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # ChannelDefinition
-<a name="API_streaming_ChannelDefinition"></a>
 
 Makes it possible to specify which speaker is on which audio channel. For example, if your agent is the first participant to speak, you would set `ChannelId` to `0` (to indicate the first channel) and `ParticipantRole` to `AGENT` (to indicate that it's the agent speaking).
 

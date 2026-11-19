@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/proserv-get
 ---
 
 # Getting started with professional services products in AWS Marketplace
-<a name="proserv-getting-started"></a>
 
 As a seller, you can offer professional services to AWS Marketplace buyers. Professional services include services to assess, migrate, support, manage, and train others in how to use AWS services and products in AWS Marketplace. Your product definition tells buyers about the services that you offer and explains why they should select your company for those services. AWS Marketplace allows buyers to contact you. You agree on a contract, and then you create a private offer that allows the buyer to purchase your services for a fixed cost. The following sections show you how to get started with a professional services product, providing the steps that you need to create your first product and offer it to your customers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateIpGroup.
 ---
 
 # CreateIpGroup
-<a name="API_CreateIpGroup"></a>
 
 Creates an IP access control group.
 

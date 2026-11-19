@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNCOST02-BP03 Analyze network traffic patterns for optimization opportunities
-<a name="hncost02-bp03"></a>
 
  Analyzing network traffic patterns in hybrid environments is crucial for optimizing performance across cloud components. By examining data flow, organizations can identify latency issues caused by network distance, data volume, and traffic spikes that impact application responsiveness. Traffic pattern monitoring enables businesses to make informed decisions about workload placement and data prioritization, ultimately creating a more efficient hybrid infrastructure that balances performance needs with cost considerations.
 

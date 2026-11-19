@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The guidance provides the following features:
 

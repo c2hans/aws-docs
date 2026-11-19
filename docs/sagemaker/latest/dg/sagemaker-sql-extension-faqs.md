@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Frequently asked questions
-<a name="sagemaker-sql-extension-faqs"></a>
 
 The following FAQs answer common general questions for the SQL extension in JupyterLab.
 

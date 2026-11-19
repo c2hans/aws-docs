@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.2] Consistently provision local environments
-<a name="dl.ld.2-consistently-provision-local-environments"></a>
 
  **Category:** FOUNDATIONAL
 

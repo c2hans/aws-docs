@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Security FAQ
-<a name="security-access-faq"></a>
 
 AMS provides 24/7/365 follow-the-sun support through global operation centers. Dedicated AMS operations engineers actively monitor dashboards and incident queues. Usually, AMS manages your accounts through automation. In rare circumstances that require specific troubleshooting or deployment expertise, an AMS operations engineer might access your AWS accounts.
 

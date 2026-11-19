@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartPiiEntitiesDetectionJob
-<a name="API_StartPiiEntitiesDetectionJob"></a>
 
 Starts an asynchronous PII entity detection job for a collection of documents.
 

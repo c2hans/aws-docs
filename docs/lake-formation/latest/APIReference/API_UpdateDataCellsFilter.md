@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateDataCellsFilter
-<a name="API_UpdateDataCellsFilter"></a>
 
 Updates a data cell filter.
 

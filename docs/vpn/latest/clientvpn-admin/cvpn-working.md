@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working.
 ---
 
 # Work with AWS Client VPN
-<a name="cvpn-working"></a>
 
 The following topics explain the primary administrative tasks needed to work with Client VPN:
 + **Access the self-service portal** — Configure access to the Client VPN self-service portal so that clients can download the Client VPN endpoint configuration file themselves. For information on accessing the self-service portal, see [AWS Client VPN access to the self-service portal](cvpn-self-service-portal.md).

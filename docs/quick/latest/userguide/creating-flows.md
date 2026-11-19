@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/creating-flows.ht
 ---
 
 # Creating flows
-<a name="creating-flows"></a>
 
  You can create flows using natural language, the visual editor, by duplicating an existing flow, or from a chat agent conversation.
 

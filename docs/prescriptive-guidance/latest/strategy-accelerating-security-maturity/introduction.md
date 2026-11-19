@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Crawl, walk, run: Accelerating security maturity in the AWS Cloud
-<a name="introduction"></a>
 
 *Chad Lorenc, Ivy Gin, and Sayali Paseband, Amazon Web Services*
 

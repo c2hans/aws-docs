@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-policy-
 ---
 
 # iam-policy-no-statements-with-full-access
-<a name="iam-policy-no-statements-with-full-access"></a>
 
 Checks if AWS Identity and Access Management (IAM) policies that you create grant permissions to all actions on individual AWS resources. The rule is NON\_COMPLIANT if any customer managed IAM policy allows full access to at least 1 AWS service.
 

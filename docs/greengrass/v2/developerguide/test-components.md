@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/test-compon
 ---
 
 # Test AWS IoT Greengrass components with local deployments
-<a name="test-components"></a>
 
 If you develop a Greengrass component on a core device, you can create a local deployment to install and test it. Follow the steps in this section to create a local deployment.
 

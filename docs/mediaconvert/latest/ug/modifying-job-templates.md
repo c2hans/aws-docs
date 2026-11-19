@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/modifying-job-tem
 ---
 
 # Modifying a template
-<a name="modifying-job-templates"></a>
 
 You can change the settings and field values in your custom job templates. You can't change system job templates, but you can modify the settings in jobs that you start from a system job template, before you create the job.
 

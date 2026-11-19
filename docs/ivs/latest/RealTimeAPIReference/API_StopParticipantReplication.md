@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stop
 ---
 
 # StopParticipantReplication
-<a name="API_StopParticipantReplication"></a>
 
 Stops a replicated participant session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_Deployment.htm
 ---
 
 # Deployment
-<a name="API_Deployment"></a>
 
 An immutable representation of a RestApi resource that can be called by users using Stages. A deployment must be associated with a Stage for it to be callable over the Internet.
 

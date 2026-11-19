@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleExecutionInput
-<a name="API_RuleExecutionInput"></a>
 
 Input information used for a rule execution.
 

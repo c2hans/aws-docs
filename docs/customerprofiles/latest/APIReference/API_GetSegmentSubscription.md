@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetSegmentSubscription
-<a name="API_connect-customer-profiles_GetSegmentSubscription"></a>
 
 Returns the current subscription configuration, execution schedule, and status for segment membership events.
 

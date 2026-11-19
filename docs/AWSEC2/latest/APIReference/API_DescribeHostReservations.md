@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeH
 ---
 
 # DescribeHostReservations
-<a name="API_DescribeHostReservations"></a>
 
 Describes reservations that are associated with Dedicated Hosts in your account.
 

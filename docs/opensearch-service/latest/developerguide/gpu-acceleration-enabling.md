@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Enabling GPU-acceleration
-<a name="gpu-acceleration-enabling"></a>
 
 You can enable GPU-acceleration when creating or updating an OpenSearch domain or OpenSearch Serverless collection with the AWS Management Console, AWS CLI, or AWS SDK.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/retreive-iam-info.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Retrieve IAM information about an Amazon EKS add-on
-<a name="retreive-iam-info"></a>
 
 Before you create an add-on, use the AWS CLI to determine:
 + If the add-on requires IAM permissions

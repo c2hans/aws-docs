@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Download and configure the C\+\+ producer library code
-<a name="producersdk-cpp-download"></a>
 
 For information about how to download and configure the C\+\+ producer library, see [Amazon Kinesis Video Streams CPP Producer, GStreamer Plugin and JNI](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp).
 

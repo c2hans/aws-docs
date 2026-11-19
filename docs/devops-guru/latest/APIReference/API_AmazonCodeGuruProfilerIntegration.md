@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Amaz
 ---
 
 # AmazonCodeGuruProfilerIntegration
-<a name="API_AmazonCodeGuruProfilerIntegration"></a>
 
 Information about your account's integration with Amazon CodeGuru Profiler. This returns whether DevOps Guru is configured to consume recommendations generated from Amazon CodeGuru Profiler.
 

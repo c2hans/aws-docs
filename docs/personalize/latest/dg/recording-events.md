@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/recording-events.h
 ---
 
 # Recording real-time events to influence recommendations
-<a name="recording-events"></a>
 
  An *event* is an interaction between a user and your catalog. It can be an interaction with an *item*, such as a user purchasing an item or watching a video, or it can be taking an *action*, such as applying for a credit card or enrolling in a membership program.
 

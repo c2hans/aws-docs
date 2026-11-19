@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-st
 ---
 
 # Check the Health Status of a Neptune Instance
-<a name="access-graph-status"></a>
 
 Amazon Neptune provides a mechanism to check the status of the graph database on the host. It's also a good way to confirm that you are able to connect to an instance.
 

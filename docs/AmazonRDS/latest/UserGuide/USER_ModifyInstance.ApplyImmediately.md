@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ModifyIn
 ---
 
 # Using the schedule modifications setting
-<a name="USER_ModifyInstance.ApplyImmediately"></a>
 
 When you modify your DB instance, you decide when you want the modifications to occur.
 

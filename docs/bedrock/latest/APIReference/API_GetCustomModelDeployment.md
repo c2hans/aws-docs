@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetCusto
 ---
 
 # GetCustomModelDeployment
-<a name="API_GetCustomModelDeployment"></a>
 
 Retrieves information about a custom model deployment, including its status, configuration, and metadata. Use this operation to monitor the deployment status and retrieve details needed for inference requests.
 

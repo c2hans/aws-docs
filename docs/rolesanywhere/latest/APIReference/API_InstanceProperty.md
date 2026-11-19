@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_In
 ---
 
 # InstanceProperty
-<a name="API_InstanceProperty"></a>
 
 A key-value pair you set that identifies a property of the authenticating instance.
 

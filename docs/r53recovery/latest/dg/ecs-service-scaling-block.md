@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/ecs-service-scalin
 ---
 
 # Amazon ECS service scaling execution block
-<a name="ecs-service-scaling-block"></a>
 
 The ECS service scaling execution block allows you to scale your ECS service in a destination Region as part of your multi-Region recovery process. You can define a percentage of capacity, relative to the Region that Region switch fails over from or deactivates.
 

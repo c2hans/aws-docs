@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-applic
 ---
 
 # Amazon CloudWatch Application Insights events
-<a name="events-ref-applicationinsights"></a>
 
 CloudWatch Application Insights sends service events directly to EventBridge.
 

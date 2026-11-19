@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started
 ---
 
 # Step 1: Do Initial Setup
-<a name="getting-started-chat-create-account"></a>
 
 Before proceeding, you must:
 

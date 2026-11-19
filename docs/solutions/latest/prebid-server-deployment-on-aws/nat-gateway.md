@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # NAT gateway
-<a name="nat-gateway"></a>
 
 The solution creates each of the following alarms for each of the two NAT gateways.
 

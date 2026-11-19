@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/writing-bes
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 This guide discusses a set of document-level challenges for RAG applications and best practices to mitigate them. These learnings are curated from interviewing and discussing with industry leaders, and they are backed by enterprise use cases.
 

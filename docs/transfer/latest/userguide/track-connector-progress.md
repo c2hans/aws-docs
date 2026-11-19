@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/track-connecto
 ---
 
 # Monitoring SFTP connectors
-<a name="track-connector-progress"></a>
 
 You can monitor the status of your connector operations using any of the following ways. Choose the approach that meet your needs.
 

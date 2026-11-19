@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Complete
 ---
 
 # CompleteAttachedFileUpload
-<a name="API_CompleteAttachedFileUpload"></a>
 
 Allows you to confirm that the attached file has been uploaded using the pre-signed URL provided in the StartAttachedFileUpload API.
 

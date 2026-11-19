@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-data-tiering.htm
 ---
 
 # SAP Data Tiering
-<a name="sap-data-tiering"></a>
 
 SAP data tiering is a data management strategy that’s used to separate your data into different categories (hot, warm, and cold tiers) by various characteristics of the data. The most common characteristics used to assign the data to the correct categories are:
 + data access frequency

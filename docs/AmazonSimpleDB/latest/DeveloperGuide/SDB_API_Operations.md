@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB
 ---
 
 # Operations
-<a name="SDB_API_Operations"></a>
 
 **Topics**
 + [BatchDeleteAttributes](SDB_API_BatchDeleteAttributes.md)

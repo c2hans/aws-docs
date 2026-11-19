@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/virtualization-virsh.htm
 ---
 
 # Manage virtual machines with virsh on Amazon Linux 2023
-<a name="virtualization-virsh"></a>
 
 Running `qemu-system-x86_64` by hand is convenient for a one-off guest, but it means re-typing a long command line every time and managing the process yourself. libvirt solves that: you describe the guest once in an XML document called a *domain*, and the libvirt daemon builds the QEMU command line, starts and stops the guest, and keeps track of it. `virsh` is the command line client that talks to that daemon.
 

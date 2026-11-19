@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/update-sa
 ---
 
 # Updating a sample in AWS Marketplace Management Portal
-<a name="update-sample"></a>
 
 After you publish a product, you can update the samples in AWS Marketplace Management Portal.
 

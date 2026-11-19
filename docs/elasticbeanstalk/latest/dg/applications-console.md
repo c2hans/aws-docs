@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-
 ---
 
 # Elastic Beanstalk application management console
-<a name="applications-console"></a>
 
 This topic explains how you can use the AWS Elastic Beanstalk console to manage applications, application versions, and saved configurations.
 

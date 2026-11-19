@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingNodeConfigurationFlowValidationDetails
-<a name="API_agent_MissingNodeConfigurationFlowValidationDetails"></a>
 
 Details about a node missing a required configuration.
 

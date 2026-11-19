@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/sched-timing-types.h
 ---
 
 # Types of timing for actions
-<a name="sched-timing-types"></a>
 
 There are several ways to specify the timing for an action:
 + Fixed – Perform the action at a specific time that you specify.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Regis
 ---
 
 # RegisteredUserQSearchBarEmbeddingConfiguration
-<a name="API_RegisteredUserQSearchBarEmbeddingConfiguration"></a>
 
 Information about the Q search bar embedding experience.
 

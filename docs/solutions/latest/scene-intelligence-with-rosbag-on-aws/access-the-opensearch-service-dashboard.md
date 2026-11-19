@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Access the OpenSearch Service dashboard
-<a name="access-the-opensearch-service-dashboard"></a>
 
 The solution sends the metadata to OpenSearch Service. The solution provides a proxy to access the OpenSearch Service dashboard. To access the proxy securely, the solution uses AWS Systems Manager and tunnel to the instance and leverage port-forwarding to the dashboard.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/supportedaudio.html
 ---
 
 # Audio requirements
-<a name="supportedaudio"></a>
 
 ## Supported audio
 <a name="nielsen-watermarks-input-audio"></a>

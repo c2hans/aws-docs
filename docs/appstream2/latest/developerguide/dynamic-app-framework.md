@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/dynamic
 ---
 
 # Application Entitlements from a Dynamic App Provider Using the Dynamic Application Framework
-<a name="dynamic-app-framework"></a>
 
 **Note**
 Managing application entitlement with the Dynamic Application Framework is currently not supported for Linux-based stacks.

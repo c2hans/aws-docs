@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DetectProfileObjectType
-<a name="API_connect-customer-profiles_DetectProfileObjectType"></a>
 
 The process of detecting profile object type mapping by using given objects.
 

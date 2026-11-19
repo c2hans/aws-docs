@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_lambda_
 ---
 
 # Creating your first serverless function
-<a name="iam_example_lambda_GettingStarted_019_section"></a>
 
 The following code example shows how to:
 + Create an IAM role for Lambda

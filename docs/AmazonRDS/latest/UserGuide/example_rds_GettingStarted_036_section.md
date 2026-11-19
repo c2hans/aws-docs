@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_G
 ---
 
 # Creating a relational database instance
-<a name="example_rds_GettingStarted_036_section"></a>
 
 The following code example shows how to:
 + Set up networking components

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # UpdateMediaPipelineKinesisVideoStreamPool
-<a name="API_media-pipelines-chime_UpdateMediaPipelineKinesisVideoStreamPool"></a>
 
 Updates an Amazon Kinesis Video Stream pool in a media pipeline.
 

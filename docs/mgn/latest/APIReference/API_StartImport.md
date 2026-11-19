@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartImport.
 ---
 
 # StartImport
-<a name="API_StartImport"></a>
 
 Start import.
 

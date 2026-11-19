@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/stop-build.ht
 ---
 
 # Stop builds in AWS CodeBuild
-<a name="stop-build"></a>
 
 You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to stop a build in AWS CodeBuild.
 

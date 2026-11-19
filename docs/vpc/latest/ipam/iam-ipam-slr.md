@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/iam-ipam-slr.html
 ---
 
 # Service-linked roles for IPAM
-<a name="iam-ipam-slr"></a>
 
 IPAM uses AWS Identity and Access Management (IAM) service-linked roles. A service-linked role is a unique type of IAM role. Service-linked roles are predefined by IPAM and include all the permissions that the service requires to call other AWS services on your behalf.
 

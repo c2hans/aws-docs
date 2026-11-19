@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateOpenZF
 ---
 
 # UpdateOpenZFSVolumeConfiguration
-<a name="API_UpdateOpenZFSVolumeConfiguration"></a>
 
 Used to specify changes to the OpenZFS configuration for the volume that you are updating.
 

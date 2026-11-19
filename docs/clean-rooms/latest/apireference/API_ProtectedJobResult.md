@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedJobResult
-<a name="API_ProtectedJobResult"></a>
 
 Details about the job results.
 

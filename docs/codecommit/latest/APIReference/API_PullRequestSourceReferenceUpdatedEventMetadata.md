@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestSourceReferenceUpdatedEventMetadata
-<a name="API_PullRequestSourceReferenceUpdatedEventMetadata"></a>
 
 Information about an update to the source branch of a pull request.
 

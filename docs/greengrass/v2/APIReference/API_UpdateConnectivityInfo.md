@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_UpdateCon
 ---
 
 # UpdateConnectivityInfo
-<a name="API_UpdateConnectivityInfo"></a>
 
 Updates connectivity information for a Greengrass core device.
 

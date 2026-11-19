@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13-b
 ---
 
 # REL13-BP05 Automate recovery
-<a name="rel13-bp05"></a>
 
  During an incident, manual steps invite mistakes and extend downtime. Automate recovery so it runs reliably and repeatably, observe it while it works, and maintain the ability to stop it if it goes wrong.
 

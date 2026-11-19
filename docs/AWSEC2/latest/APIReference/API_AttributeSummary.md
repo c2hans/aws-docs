@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Attribute
 ---
 
 # AttributeSummary
-<a name="API_AttributeSummary"></a>
 
 A summary report for the attribute across all Regions.
 

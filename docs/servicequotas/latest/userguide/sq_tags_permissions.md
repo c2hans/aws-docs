@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/sq_tags_p
 ---
 
 # Enabling the required permissions for tagging Service Quotas resources
-<a name="sq_tags_permissions"></a>
 
 You must configure permissions to allow your users or roles to manage tags in Service Quotas. The permissions that are required to administer tags generally correspond to the API operations for the task.
 

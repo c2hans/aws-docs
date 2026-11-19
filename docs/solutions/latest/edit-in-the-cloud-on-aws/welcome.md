@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/edit-in-the-cloud-on-aw
 ---
 
 # Solution welcome
-<a name="welcome"></a>
 
 This AWS Solution is now Guidance. For more information, refer to the [Edit in the cloud on AWS](https://aws-solutions-library-samples.github.io/media-entertainment/edit-in-the-cloud-on-aws.html) landing page.
 

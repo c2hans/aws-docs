@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeSubscribedWorkteam
-<a name="API_DescribeSubscribedWorkteam"></a>
 
 Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.
 

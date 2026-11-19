@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 ---
 
 # Step 2: Upload a video or image file
-<a name="step-2-upload-a-video-or-image-file"></a>
 
  After the solution successfully launches, you can start uploading video or image files for processing. The solution sends two emails: one with the subscription confirmation for the Amazon SNS topic to send ingestion, analysis, labeling, and error notifications, and one with instructions for signing into the solution's provided web interface.
 

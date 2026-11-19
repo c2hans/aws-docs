@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsRe
 ---
 
 # S3 on Outposts supported regions
-<a name="S3OutpostsRegions"></a>
 
 S3 on Outposts is supported in the following AWS Regions.
 + US East (N. Virginia) (us-east-1)

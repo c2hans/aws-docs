@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/load-test-stop.html
 ---
 
 # Stop your load test
-<a name="load-test-stop"></a>
 
 You might want to stop a job that is currently running if you began a job by mistake or no longer need to run the job. Stop your load test jobs programmatically with the `StopInferenceRecommendationsJob` API, or through Studio Classic or the SageMaker AI console.
 

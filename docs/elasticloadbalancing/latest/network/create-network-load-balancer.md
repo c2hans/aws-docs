@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/crea
 ---
 
 # Create a Network Load Balancer
-<a name="create-network-load-balancer"></a>
 
 A Network Load Balancer takes requests from clients and distributes them across targets in a target group, such as EC2 instances. For more information, see the [Network Load Balancer overview](introduction.md#network-load-balancer-overview).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryRecordRightExpression
-<a name="API_MemoryRecordRightExpression"></a>
 
 The right-hand side of a memory record metadata filter expression.
 

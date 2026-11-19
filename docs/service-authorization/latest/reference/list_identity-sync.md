@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Identity Sync
-<a name="list_identity-sync"></a>
 
 AWS Identity Sync (service prefix: `identity-sync`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

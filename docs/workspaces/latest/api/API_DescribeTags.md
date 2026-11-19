@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeTags.h
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 Describes the specified tags for the specified WorkSpaces resource.
 

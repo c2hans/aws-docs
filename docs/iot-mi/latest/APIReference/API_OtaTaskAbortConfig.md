@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskAb
 ---
 
 # OtaTaskAbortConfig
-<a name="API_OtaTaskAbortConfig"></a>
 
 Over-the-air (OTA) task abort config.
 

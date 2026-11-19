@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Provisioning and orchestration
-<a name="provisioning"></a>
 
 **Create, manage, and distribute catalogs of approved cloud products to users.**
 

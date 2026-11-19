@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteDo
 ---
 
 # DeleteDomainName
-<a name="API_DeleteDomainName"></a>
 
 Deletes a custom `DomainName` object.
 

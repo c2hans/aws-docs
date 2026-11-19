@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Fille
 ---
 
 # FilledMapConfiguration
-<a name="API_FilledMapConfiguration"></a>
 
 The configuration for a `FilledMapVisual`.
 

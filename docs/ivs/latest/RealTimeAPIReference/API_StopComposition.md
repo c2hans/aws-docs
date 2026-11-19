@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stop
 ---
 
 # StopComposition
-<a name="API_StopComposition"></a>
 
 Stops and deletes a Composition resource. Any broadcast from the Composition resource is stopped.
 

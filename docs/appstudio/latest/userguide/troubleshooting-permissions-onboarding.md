@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting App Studio setup, permissions, and onboarding
-<a name="troubleshooting-permissions-onboarding"></a>
 
 This topic includes information about troubleshooting common issues when setting up or onboarding to App Studio, and managing permissions.
 

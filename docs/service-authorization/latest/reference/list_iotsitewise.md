@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS IoT SiteWise
-<a name="list_iotsitewise"></a>
 
 AWS IoT SiteWise (service prefix: `iotsitewise`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

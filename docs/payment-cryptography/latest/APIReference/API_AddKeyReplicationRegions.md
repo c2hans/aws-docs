@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # AddKeyReplicationRegions
-<a name="API_AddKeyReplicationRegions"></a>
 
 Adds replication AWS Regions to an existing AWS Payment Cryptography key, enabling the key to be used for cryptographic operations in additional AWS Regions.
 

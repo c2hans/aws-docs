@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartCon
 ---
 
 # StartContactRecording
-<a name="API_StartContactRecording"></a>
 
 Starts recording the contact:
 + If the API is called *before* the agent joins the call, recording starts when the agent joins the call.

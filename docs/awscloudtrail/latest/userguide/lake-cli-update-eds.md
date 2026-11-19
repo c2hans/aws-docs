@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cli-
 ---
 
 # Update an event data store with the AWS CLI
-<a name="lake-cli-update-eds"></a>
 
 This section provides examples that show how to update an event data store's settings by running the AWS CLI `update-event-data-store` command.
 

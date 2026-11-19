@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/rele
 ---
 
 # EMR Serverless 7.5.0
-<a name="release-version-750"></a>
 
 The following table lists the application versions available with EMR Serverless 7.5.0.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSBehavio
 ---
 
 # DNS constraints and behaviors
-<a name="DNSBehavior"></a>
 
 DNS messaging is subject to factors that affect how you create and use hosted zones and records. This section explains these factors.
 

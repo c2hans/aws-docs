@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/add-user.html
 ---
 
 # Add users and set up service accounts
-<a name="add-user"></a>
 
 ## Fine grained access control - our recommendation
 <a name="add-user-access-control"></a>

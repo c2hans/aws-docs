@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Optimi
 ---
 
 # OptimizationJobOutputConfig
-<a name="API_OptimizationJobOutputConfig"></a>
 
 Details for where to store the optimized model that you create with the optimization job.
 

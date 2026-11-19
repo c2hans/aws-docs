@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Even
 ---
 
 # EventSourcesConfig
-<a name="API_EventSourcesConfig"></a>
 
 Information about the integration of DevOps Guru as consumer with another AWS service, such as AWS CodeGuru Profiler via EventBridge.
 

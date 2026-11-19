@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_ecs_Ser
 ---
 
 # Configure container service connectivity
-<a name="iam_example_ecs_ServiceConnect_085_section"></a>
 
 The following code example shows how to:
 + Create the VPC infrastructure

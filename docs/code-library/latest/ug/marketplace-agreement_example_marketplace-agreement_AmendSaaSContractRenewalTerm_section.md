@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-agree
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Amend a SaaS contract agreement renewal term using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_AmendSaaSContractRenewalTerm_section"></a>
 
 The following code examples show how to amend a SaaS contract agreement to add or update its renewal term.
 

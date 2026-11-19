@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Use the Guidance
-<a name="use-the-guidance"></a>
 
  This section provides a user guide for using the AWS Guidance.
 

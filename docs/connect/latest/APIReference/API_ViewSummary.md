@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ViewSumm
 ---
 
 # ViewSummary
-<a name="API_ViewSummary"></a>
 
 A summary of a view's metadata.
 

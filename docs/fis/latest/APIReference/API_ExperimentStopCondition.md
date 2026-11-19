@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentSt
 ---
 
 # ExperimentStopCondition
-<a name="API_ExperimentStopCondition"></a>
 
 Describes the stop condition for an experiment.
 

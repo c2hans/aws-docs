@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyPreviewParametersInput
-<a name="API_DifferentialPrivacyPreviewParametersInput"></a>
 
 The epsilon and noise parameters that you want to preview.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-for-inte
 ---
 
 # Billing for interrupted Spot Instances
-<a name="billing-for-interrupted-spot-instances"></a>
 
 When a Spot Instance is interrupted, you're charged for instance and EBS volume usage, and you might incur other charges, as follows.
 

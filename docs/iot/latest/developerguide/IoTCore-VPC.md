@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/IoTCore-VPC.ht
 ---
 
 # Using AWS IoT Core with interface VPC endpoints
-<a name="IoTCore-VPC"></a>
 
 With AWS IoT Core, you can create [IoT control plane endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/connect-to-iot.html#iot-service-endpoint-intro) and [IoT data endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-devices.html) within your virtual private cloud (VPC) by using [interface VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint). Interface VPC endpoints are powered by AWS PrivateLink, an AWS technology that you can use to access services running on AWS by using private IP addresses. For more information, see [Amazon Virtual Private Cloud](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html).
 

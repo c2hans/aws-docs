@@ -11,7 +11,6 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
 
 # Example: Tumbling Window Using ROWTIME
-<a name="examples-window-tumbling-rowtime"></a>
 
 When a windowed query processes each window in a non-overlapping manner, the window is referred to as a *tumbling window*. For details, see [Tumbling Windows (Aggregations Using GROUP BY)](tumbling-window-concepts.md). This Amazon Kinesis Data Analytics example uses the `ROWTIME` column to create tumbling windows. The `ROWTIME` column represents the time the record was read by the application.
 

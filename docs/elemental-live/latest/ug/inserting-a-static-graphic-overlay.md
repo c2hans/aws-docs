@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/inserting-a-sta
 ---
 
 # Procedure
-<a name="inserting-a-static-graphic-overlay"></a>
 
 |   | Step | Methods available |
 | --- | --- | --- |

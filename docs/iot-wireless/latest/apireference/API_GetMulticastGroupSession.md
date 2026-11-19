@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetMulticastGroupSession
-<a name="API_GetMulticastGroupSession"></a>
 
 Gets information about a multicast group session.
 

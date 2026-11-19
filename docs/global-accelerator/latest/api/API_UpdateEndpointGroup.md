@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateEndpointGroup
-<a name="API_UpdateEndpointGroup"></a>
 
 Update an endpoint group. A resource must be valid and active when you add it as an endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-paid-amis-
 ---
 
 # Purchase a paid AMI in the AWS Marketplace
-<a name="using-paid-amis-purchasing-paid-ami"></a>
 
 You must sign up for (purchase) a paid AMI before you can launch an Amazon EC2 instance using the AMI.
 

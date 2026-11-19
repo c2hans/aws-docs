@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/unexpected-failure.
 ---
 
 # What to do when a working certificate fails unexpectedly
-<a name="unexpected-failure"></a>
 
 If you have successfully associated an ACM certificate with an integrated service, but the certificate stops working and the integrated service begins returning errors, the cause may be a change in the permissions that the service needs in order to use an ACM certificate.
 

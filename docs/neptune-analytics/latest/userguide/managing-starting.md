@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/manag
 ---
 
 # Starting a Neptune Analytics graph
-<a name="managing-starting"></a>
 
  You can start a Neptune Analytics graph that has been stopped to resume normal operations. The started graph automatically deploys with the latest engine version, ensuring you benefit from the newest capabilities and security updates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_CloudWa
 ---
 
 # CloudWatchLoggingOptions
-<a name="API_CloudWatchLoggingOptions"></a>
 
 Describes the Amazon CloudWatch logging options for your Firehose stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/partn
 ---
 
 # Responding to requests as a Partner
-<a name="partner_response_sustainability"></a>
 
 As a Partner, you can accept or decline Partner requests, review and respond to data requests.
 

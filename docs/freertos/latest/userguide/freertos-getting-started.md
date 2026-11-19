@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-getti
 ---
 
 # Get Started with FreeRTOS
-<a name="freertos-getting-started"></a>
 
 **Important**  <a name="deprecation-message-general"></a>
 This page refers to the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).

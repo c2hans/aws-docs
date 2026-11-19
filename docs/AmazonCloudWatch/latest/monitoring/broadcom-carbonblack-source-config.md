@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/broad
 ---
 
 # Source configuration for Broadcom Carbon Black
-<a name="broadcom-carbonblack-source-config"></a>
 
 ## Integrating with Broadcom Carbon Black
 <a name="broadcom-carbonblack-integration"></a>

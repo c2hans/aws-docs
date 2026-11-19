@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Release notes
-<a name="release-notes"></a>
 
  To be notified about updates to this whitepaper, subscribe to the RSS feed.
 

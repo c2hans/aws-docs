@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_KeyPair.html
 ---
 
 # KeyPair
-<a name="API_KeyPair"></a>
 
 Describes a key pair.
 

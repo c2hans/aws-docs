@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSEC01-BP04 Implement access monitoring to generative AI services and foundation models
-<a name="gensec01-bp04"></a>
 
  Generative AI services and foundation models can be resource intensive to use and can be misused. Implementing access monitoring on these services and models helps to identify, triage and resolve unintended access quickly.
 

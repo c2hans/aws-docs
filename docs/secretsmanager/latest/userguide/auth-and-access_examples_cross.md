@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and
 ---
 
 # Access AWS Secrets Manager secrets from a different account
-<a name="auth-and-access_examples_cross"></a>
 
 To allow users in one account to access secrets in another account (*cross-account access*), you must allow access both in a resource policy and in an identity policy. This is different than granting access to identities in the same account as the secret.
 

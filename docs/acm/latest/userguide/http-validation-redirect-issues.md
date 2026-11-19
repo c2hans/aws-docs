@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/http-validation-red
 ---
 
 # HTTP redirect issues
-<a name="http-validation-redirect-issues"></a>
 
 If you're using a redirect instead of serving the content directly, follow these steps to verify your configuration.
 

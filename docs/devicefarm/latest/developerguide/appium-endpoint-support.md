@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/appium-
 ---
 
 # Supported features and versions
-<a name="appium-endpoint-support"></a>
 
 During a remote access session, you can select the major version of the Appium server that runs on your device. Choose the version that supports the Appium features that your tests require.
 

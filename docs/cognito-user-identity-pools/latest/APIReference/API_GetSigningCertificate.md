@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetSigningCertificate
-<a name="API_GetSigningCertificate"></a>
 
 Given a user pool ID, returns the signing certificate for SAML 2.0 federation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsGuar
 ---
 
 # AwsGuardDutyDetectorDataSourcesDnsLogsDetails
-<a name="API_AwsGuardDutyDetectorDataSourcesDnsLogsDetails"></a>
 
  An object that contains information on the status of DNS logs as a data source for the detector.
 

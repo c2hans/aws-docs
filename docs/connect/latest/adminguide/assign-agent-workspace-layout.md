@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-agent-w
 ---
 
 # Assign an agent workspace layout to agents
-<a name="assign-agent-workspace-layout"></a>
 
 To assign a layout to agents, create a workspace, select a layout, and assign the workspace to agents. Agents who are not assigned a workspace continue to use the original layout of the agent workspace.
 

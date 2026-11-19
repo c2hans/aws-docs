@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_PiiOu
 ---
 
 # PiiOutputDataConfig
-<a name="API_PiiOutputDataConfig"></a>
 
 Provides configuration parameters for the output of PII entity detection jobs.
 

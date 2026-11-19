@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveFilterCondition
-<a name="API_ArchiveFilterCondition"></a>
 
 A filter condition used to include or exclude emails when exporting from or searching an archive.
 

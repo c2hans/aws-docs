@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListCostCategoryResourceAssociations
-<a name="API_ListCostCategoryResourceAssociations"></a>
 
 Returns resource associations of all cost categories defined in the account. You have the option to use `CostCategoryArn` to get the association for a specific cost category. For benefit level sharing, the resource ARN is `arn:aws:billing::<accountId>:benefitlevelsharing/<ri|sp>/<benefitId>/<prioritized|restricted>` or `arn:aws:billing::<payerAccountId>:benefitlevelsharing/credit/<creditId>`. For a Reserved Instance, `<accountId>` is the management account. For a Savings Plan, it's the account that owns the Savings Plan. For benefit group sharing, the resource ARN is `arn:aws:billing::<payerAccountId>:benefitgroupsharing/<risp|credit>/<payerAccountId>`. `ListCostCategoryResourceAssociations` supports pagination. The request can have a `MaxResults` range up to 100.
 

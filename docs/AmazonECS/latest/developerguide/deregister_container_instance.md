@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deregist
 ---
 
 # Deregistering an Amazon ECS container instance
-<a name="deregister_container_instance"></a>
 
 **Important**
 This topic is for container instances created in Amazon EC2 only. For more information about deregistering external instances, see [Deregistering an Amazon ECS external instance](ecs-anywhere-deregistration.md).

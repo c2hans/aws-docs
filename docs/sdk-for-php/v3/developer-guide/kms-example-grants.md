@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kms-examp
 ---
 
 # Working with grants using the AWS KMS API and the AWS SDK for PHP version 3
-<a name="kms-example-grants"></a>
 
 A grant is another mechanism for providing permissions. It is an alternative to the key policy. You can use grants to give long-term access that allows AWS principals to use your AWS Key Management Service (AWS KMS) customer-managed [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys). For more information, see [Grants in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) in the *AWS Key Management Service Developer Guide*.
 

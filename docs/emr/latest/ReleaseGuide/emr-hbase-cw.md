@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-cw.htm
 ---
 
 # Monitoring EMR HBase with Amazon CloudWatch
-<a name="emr-hbase-cw"></a>
 
 Starting from EMR 7.0, Amazon EMR provide the Amazon CloudWatch Agent to send metrics to CloudWatch or Prometheus, replacing the Ganglia monitoring system. You can find more details in the [Amazon CloudWatch Agent Configuration Guide](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/AmazonCloudWatchAgent-config-700.html).
 

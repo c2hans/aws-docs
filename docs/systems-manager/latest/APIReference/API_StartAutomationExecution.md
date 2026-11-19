@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StartAutomationExecution
-<a name="API_StartAutomationExecution"></a>
 
 Initiates execution of an Automation runbook.
 

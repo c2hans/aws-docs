@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # AuthorizingClaimMatchValueType
-<a name="API_AuthorizingClaimMatchValueType"></a>
 
 The value and match operator used to authorize a claim during JWT validation.
 

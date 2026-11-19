@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AcceptPortfolioShare
-<a name="API_AcceptPortfolioShare"></a>
 
 Accepts an offer to share the specified portfolio.
 

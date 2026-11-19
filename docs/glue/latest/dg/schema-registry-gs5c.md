@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry-gs5c.html
 ---
 
 # Adding a schema version
-<a name="schema-registry-gs5c"></a>
 
 When you add a schema version, you will need to compare the versions to make sure the new schema will be accepted.
 

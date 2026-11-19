@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html
 ---
 
 # What Is Amazon Managed Workflows for Apache Airflow?
-<a name="what-is-mwaa"></a>
 
 Use Amazon Managed Workflows for Apache Airflow, a managed service for [Apache Airflow](https://airflow.apache.org/), to set up and run data pipelines in the cloud at scale. Apache Airflow is an open-source tool used to create, schedule, and monitor *workflows*.
 

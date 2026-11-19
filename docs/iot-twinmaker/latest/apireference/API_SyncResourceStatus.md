@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sy
 ---
 
 # SyncResourceStatus
-<a name="API_SyncResourceStatus"></a>
 
 The sync resource status.
 

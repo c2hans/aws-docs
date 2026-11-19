@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/lambda-l
 ---
 
 # Lambda hooks for Amazon ECS service deployments
-<a name="lambda-lifecycle-hooks"></a>
 
 Lambda hooks are Lambda functions that Amazon ECS invokes at specific stages of a deployment. You can use hooks to run validation tests, enforce governance policies, or implement custom logic before the deployment proceeds.
 

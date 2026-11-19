@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/experiment-template
 ---
 
 # AWS FIS experiment template components
-<a name="experiment-templates"></a>
 
 You use the following components to construct experiment templates:
 

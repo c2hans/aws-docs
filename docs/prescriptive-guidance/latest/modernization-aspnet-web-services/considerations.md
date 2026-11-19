@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Other considerations
-<a name="considerations"></a>
 
 So far, we've discussed using API Gateway and Windows containers to modernize your legacy ASP.NET web services on AWS. Here are some other considerations to take into account:
 + Security

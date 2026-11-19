@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/maintenance-how.html
 ---
 
 # How MediaLive performs channel maintenance
-<a name="maintenance-how"></a>
 
 At some point during the maintenance window (red mark), MediaLive starts the maintenance. There is no notification that maintenance is about to start on the channel.
 

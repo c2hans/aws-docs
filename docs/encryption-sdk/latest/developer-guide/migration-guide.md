@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/mi
 ---
 
 # How to migrate and deploy the AWS Encryption SDK
-<a name="migration-guide"></a>
 
 When migrating from an AWS Encryption SDK version earlier than 1.7.*x* to version 2.0.*x* or later, you must transition safely to encrypting with [key commitment](concepts.md#key-commitment). Otherwise, your application will encounter ciphertexts that it cannot decrypt. If you are using AWS KMS master key providers, you must update to new constructors that create master key providers in strict mode or discovery mode.
 

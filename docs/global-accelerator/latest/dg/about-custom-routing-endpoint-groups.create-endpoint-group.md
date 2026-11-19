@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 ---
 
 # Add an endpoint group for a custom routing accelerator in Global Accelerator
-<a name="about-custom-routing-endpoint-groups.create-endpoint-group"></a>
 
 You work with an endpoint group for your custom routing accelerator on the AWS Global Accelerator console or by using an API operation. You can add or remove VPC subnet endpoints from an endpoint group at any time.
 

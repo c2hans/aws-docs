@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AntipatternSeveritySummary
-<a name="API_AntipatternSeveritySummary"></a>
 
  Contains the summary of anti-patterns and their severity.
 

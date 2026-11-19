@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # ROUND
-<a name="recipe-actions.functions.ROUND"></a>
 
 Rounds a numerical value to the nearest integer in a new column. It rounds up when the fraction is 0.5 or more.
 

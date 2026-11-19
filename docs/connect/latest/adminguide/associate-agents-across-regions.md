@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/associate-agen
 ---
 
 # Associate agents to Connect Customer instances across multiple AWS Regions
-<a name="associate-agents-across-regions"></a>
 
 To allow your agents to sign-in to both AWS Regions and process contacts from either Region, you must first assign them to a traffic distribution group.
 

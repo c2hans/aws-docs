@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Architecture selection
-<a name="architecture-selection"></a>
 
 | DRHCPERF01: How do you achieve performant workload configuration? |
 | --- |

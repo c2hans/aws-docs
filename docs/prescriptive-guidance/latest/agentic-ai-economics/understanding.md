@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Understanding agentic AI economics
-<a name="understanding"></a>
 
 One of the key principles is to determine when to use AI agents and when to use traditional deterministic methods. Organizations must systematically evaluate which jobs warrant agentic automation and which should use traditional automation or continued human operation. This decision requires understanding the relationship between the task characteristics, risk tolerance, and operational approach.
 

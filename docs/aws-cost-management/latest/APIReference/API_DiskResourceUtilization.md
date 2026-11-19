@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DiskResourceUtilization
-<a name="API_DiskResourceUtilization"></a>
 
 The field that contains a list of disk (local storage) metrics that are associated with the current instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-anal
 ---
 
 # Analysis templates in AWS Clean Rooms
-<a name="create-analysis-template"></a>
 
 Analysis templates work with the [Custom analysis rule in AWS Clean Rooms](analysis-rules-custom.md). With an analysis template, you can define parameters to help you reuse the same query. AWS Clean Rooms supports a subset of parameterization with literal values.
 

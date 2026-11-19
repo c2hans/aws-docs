@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/js
 ---
 
 # AWS Encryption SDK for JavaScript examples
-<a name="js-examples"></a>
 
 The following examples show you how to use the AWS Encryption SDK for JavaScript to encrypt and decrypt data.
 

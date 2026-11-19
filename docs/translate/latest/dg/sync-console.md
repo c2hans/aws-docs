@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/sync-console.html
 ---
 
 # Real-time translation using the console
-<a name="sync-console"></a>
 
 To use the console for real-time translations, paste input text into the **Source language** text box or provide the input text as a file. Optionally, you can set features such as the desired formality level, profanity masking, brevity, and custom terminology.
 

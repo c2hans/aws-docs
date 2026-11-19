@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListAtta
 ---
 
 # ListAttacks
-<a name="API_ListAttacks"></a>
 
 Returns all ongoing DDoS attacks or all DDoS attacks during a specified time period.
 

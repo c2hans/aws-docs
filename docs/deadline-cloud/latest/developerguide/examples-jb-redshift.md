@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Render Redshift scenes on Deadline Cloud
-<a name="examples-jb-redshift"></a>
 
 The [redshift-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/redshift-2025) job bundle on the GitHub website renders Redshift scenes using the standalone `redshiftCmdLine.exe` renderer that ships with Cinema 4D 2025. The bundle is designed for Windows systems. Cinema 4D is used because it is available in the `deadline-cloud` conda channel and includes the Redshift CLI renderer.
 

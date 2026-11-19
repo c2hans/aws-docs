@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # ListActivities
-<a name="API_ListActivities"></a>
 
 Lists the existing activities.
 

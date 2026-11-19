@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/datase
 ---
 
 # Manage dataset examples
-<a name="datasets-examples"></a>
 
 After a dataset reaches `ACTIVE` status, you can add, update, delete, and list examples in the Draft. All example mutations are asynchronous (HTTP 202) and use all-or-nothing semantics — if any example ID is not found, the entire batch fails with `ResourceNotFoundException`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # NEGATE
-<a name="recipe-actions.functions.NEGATE"></a>
 
 Negates a value and returns the result in a new column.
 

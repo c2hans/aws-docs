@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AndStatement
 ---
 
 # AndStatement
-<a name="API_AndStatement"></a>
 
 A logical rule statement used to combine other rule statements with AND logic. You provide more than one [Statement](API_Statement.md) within the `AndStatement`.
 

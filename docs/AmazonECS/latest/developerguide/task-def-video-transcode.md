@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-def
 ---
 
 # Specifying video transcoding in an Amazon ECS task definition
-<a name="task-def-video-transcode"></a>
 
 In the following example, the syntax that's used for a task definition of a Linux container on Amazon EC2 is provided. This task definition is for container images that are built following the procedure that's provided in the [Xilinx documentation](https://xilinx.github.io/video-sdk/v1.5/container_setup.html#creating-a-docker-image-for-vt1-usage). If you use this example, replace `image` with your own image, and copy your video files into the instance in the `/home/ec2-user` directory.
 

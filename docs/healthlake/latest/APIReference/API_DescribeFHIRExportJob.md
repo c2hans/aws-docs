@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Descr
 ---
 
 # DescribeFHIRExportJob
-<a name="API_DescribeFHIRExportJob"></a>
 
 Get FHIR export job properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-events
 ---
 
 # Connect Customer contact events
-<a name="contact-events"></a>
 
 With Connect Customer, you can subscribe to a near real-time stream of contact (voice calls, chat, task, and email) events (for example, call is queued) in your Connect Customer contact center.
 

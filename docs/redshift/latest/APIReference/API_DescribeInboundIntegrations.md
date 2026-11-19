@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeInboundIntegrations
-<a name="API_DescribeInboundIntegrations"></a>
 
 Returns a list of inbound integrations.
 
@@ -20,7 +19,7 @@ Pattern: `^arn:aws[a-z\-]*:.+:[a-z0-9\-]*:[0-9]*:integration:[0-9a-f]{8}-[0-9a-f
 Required: No
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeInboundIntegrations](#API_DescribeInboundIntegrations) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeInboundIntegrations](API_DescribeInboundIntegrations.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

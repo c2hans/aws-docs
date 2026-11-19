@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/vif-route
 ---
 
 # Download the Direct Connect router configuration file
-<a name="vif-router-config"></a>
 
 After you create the virtual interface and the interface state is up, you can download the router configuration file for your router.
 

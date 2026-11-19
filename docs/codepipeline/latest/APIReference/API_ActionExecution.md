@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionExecution
-<a name="API_ActionExecution"></a>
 
 Represents information about the run of an action.
 

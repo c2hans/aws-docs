@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Modify the allowed and denied IP sets (optional)
-<a name="modify-the-allowed-and-denied-ip-sets-optional"></a>
 
 After deploying this solution’s CloudFormation stack, you can manually modify the allowed and denied IP sets to add or remove IP addresses as necessary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-refe
 ---
 
 # Reference queries for the Connect Customer data lake
-<a name="data-lake-reference-queries"></a>
 
 This topic provides Athena SQL queries (Trino engine v3) for calculating common Connect Customer metrics from data lake tables. All queries use double-quoted identifiers and assume a `connect_datalake` database name. Adjust the database name to match your Glue catalog configuration.
 

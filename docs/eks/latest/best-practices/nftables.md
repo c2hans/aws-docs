@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/nftables.html
 ---
 
 # Running kube-proxy in nftables Mode
-<a name="nftables"></a>
 
 With `kube-proxy` in nftables mode, Amazon EKS can resolve the [network latency issue](https://docs.aws.amazon.com/eks/latest/best-practices/control-plane.html#reliability_cprunning_large_clusters) common in large clusters with over 1,000 services running kube-proxy in iptables mode. Iptables mode processes packet filtering rules sequentially for the first packet of each connection, which causes this performance issue. nftables is the successor to iptables, and the nftables `kube-proxy` backend addresses this latency issue by processing packets in near-constant time regardless of cluster size. To avoid this issue, configure your cluster to run `kube-proxy` in nftables mode.
 

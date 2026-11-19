@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # Bm25Score
-<a name="API_S3VectorBuckets_Bm25Score"></a>
 
 The raw BM25 relevance score for a single searchable metadata key.
 

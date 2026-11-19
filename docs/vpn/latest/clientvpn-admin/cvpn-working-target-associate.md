@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Associate a target network with an AWS Client VPN endpoint
-<a name="cvpn-working-target-associate"></a>
 
 You can associate one or more target networks (subnets) with a Client VPN endpoint using either the Amazon VPC Console or the AWS CLI. Before you associate a target network with a Client VPN endpoint, familiarize yourself with the requirements. See [Requirements for creating a target network](cvpn-working-target.md#cvpn-create-target-reqs).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharin
 ---
 
 # Viewing managed permissions
-<a name="working-with-sharing-view-permissions"></a>
 
 You can view details about managed permissions that are available to assign to resource types in your resource shares. You can identify the managed permissions that are assigned to resource shares. To see these details, use the **Managed permissions library** in the AWS RAM console.
 

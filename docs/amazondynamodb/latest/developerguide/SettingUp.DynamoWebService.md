@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Set
 ---
 
 # Setting up DynamoDB (web service)
-<a name="SettingUp.DynamoWebService"></a>
 
  To use the Amazon DynamoDB web service:
 

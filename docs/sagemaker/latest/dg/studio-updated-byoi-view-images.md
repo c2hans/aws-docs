@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-byoi-
 ---
 
 # View your custom image details
-<a name="studio-updated-byoi-view-images"></a>
 
 The following page provides instructions on how to view your custom image details in the SageMaker AI image store.
 

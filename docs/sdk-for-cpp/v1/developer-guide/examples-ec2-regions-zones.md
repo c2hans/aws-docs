@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Using Regions and Availability Zones for Amazon EC2
-<a name="examples-ec2-regions-zones"></a>
 
 ## Prerequisites
 <a name="codeExamplePrereq"></a>

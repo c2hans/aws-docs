@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/refer
 ---
 
 # Reference
-<a name="reference"></a>
 
 This section lists the data entities within the reference category.
 

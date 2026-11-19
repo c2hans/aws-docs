@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetUserDefinedFun
 ---
 
 # GetUserDefinedFunctions
-<a name="API_GetUserDefinedFunctions"></a>
 
 Retrieves multiple function definitions from the Data Catalog.
 

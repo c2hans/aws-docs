@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSCustomPreviewServiceRolePolicy
-<a name="AmazonRDSCustomPreviewServiceRolePolicy"></a>
 
 **Description**: Amazon RDS Custom Preview Service Role Policy
 

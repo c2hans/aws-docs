@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ThreatI
 ---
 
 # ThreatIntelIndicator
-<a name="API_ThreatIntelIndicator"></a>
 
 Details about the threat intelligence related to a finding.
 

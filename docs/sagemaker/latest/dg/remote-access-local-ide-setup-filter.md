@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-local-
 ---
 
 # Filter your Studio spaces
-<a name="remote-access-local-ide-setup-filter"></a>
 
 You can use filtering to display only the relevant Amazon SageMaker AI spaces in the AWS Toolkit for Visual Studio Code explorer. The following provides information on manual filtering and automated filtering. For more information on the definitions of manual and automatic filtering, see [Filtering overview](remote-access-remote-setup-filter.md#remote-access-remote-setup-filter-overview).
 

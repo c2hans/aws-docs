@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillingPeriod
-<a name="API_invoicing_BillingPeriod"></a>
 
  The billing period for which you want to retrieve invoice-related documents.
 

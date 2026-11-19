@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::Framework FrameworkControl
-<a name="aws-properties-backup-framework-frameworkcontrol"></a>
 
 Contains detailed information about all of the controls of a framework. Each framework must contain at least one control.
 

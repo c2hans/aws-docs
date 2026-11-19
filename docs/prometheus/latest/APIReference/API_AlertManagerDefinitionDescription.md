@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Alert
 ---
 
 # AlertManagerDefinitionDescription
-<a name="API_AlertManagerDefinitionDescription"></a>
 
 The details of an alert manager definition. It is the configuration for the alert manager, including information about receivers for routing alerts.
 

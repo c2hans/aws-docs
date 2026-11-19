@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_M
 ---
 
 # Message
-<a name="API_Message"></a>
 
 Represents the email message that you're sending. The `Message` object consists of a subject line and a message body.
 

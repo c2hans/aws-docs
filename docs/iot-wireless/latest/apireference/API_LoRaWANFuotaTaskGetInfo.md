@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANFuotaTaskGetInfo
-<a name="API_LoRaWANFuotaTaskGetInfo"></a>
 
 The LoRaWAN information returned from getting a FUOTA task.
 

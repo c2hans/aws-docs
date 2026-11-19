@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example-Python-server-co
 ---
 
 # Python example: Python Server Code (server.py)
-<a name="example-Python-server-code"></a>
 
 This section provides the code for the Python server described in [Python example (HTML5 Client and Python Server)](examples-python.md).
 

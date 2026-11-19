@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP05 Maintain an auditable cloud inventory record
-<a name="fnd05-bp05"></a>
 
  An auditable inventory record captures what resources exist, how they are configured, and how they have changed over time. It emphasizes completeness, immutability of history, and alignment with evidence. A well-maintained, audit-ready inventory improves security investigations and forensic reconstruction.
 

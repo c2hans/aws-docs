@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_OpenS
 ---
 
 # OpenSearchExporterConfiguration
-<a name="API_OpenSearchExporterConfiguration"></a>
 
 The configuration for exporting metrics to an Amazon OpenSearch Service domain.
 

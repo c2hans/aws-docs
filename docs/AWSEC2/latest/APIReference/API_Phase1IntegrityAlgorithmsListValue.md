@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Phase1Int
 ---
 
 # Phase1IntegrityAlgorithmsListValue
-<a name="API_Phase1IntegrityAlgorithmsListValue"></a>
 
 The integrity algorithm for phase 1 IKE negotiations.
 

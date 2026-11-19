@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/channels-sms-originating-i
 ---
 
 # Sender IDs in Amazon SNS
-<a name="channels-sms-originating-identities-sender-ids"></a>
 
 **Important**
 The Amazon SNS SMS Developer Guide has been updated. Amazon SNS has integrated with [AWS End User Messaging SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-service.html) for the delivery of SMS messages. This guide contains the latest information on how to create, configure, and manage your Amazon SNS SMS messages.

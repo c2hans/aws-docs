@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-fis.html
 ---
 
 # Perform resilience testing with AWS Fault Injection Service
-<a name="kinesis-fis"></a>
 
 AWS Fault Injection Service is a fully managed service that helps you perform fault injection experiments on your AWS workloads. AWS FIS integration with Amazon Kinesis Data Streams enables you to test your application resilience against common Amazon Kinesis Data Streams API errors in a controlled environment. This capability allows you to validate error handling, retry logic, and monitor systems before encountering failures. For more information, see [What is AWS Fault Injection Service?](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html).
 

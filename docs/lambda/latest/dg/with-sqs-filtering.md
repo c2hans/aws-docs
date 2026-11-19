@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-sqs-filtering.html
 ---
 
 # Using event filtering with an Amazon SQS event source
-<a name="with-sqs-filtering"></a>
 
 You can use event filtering to control which records from a stream or queue Lambda sends to your Event Function. For general information about how event filtering works, see [Control which events Lambda sends to your Event Function](invocation-eventfiltering.md).
 

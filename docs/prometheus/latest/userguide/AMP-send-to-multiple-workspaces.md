@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-send-to-
 ---
 
 # Use cross Region workspaces to add high availability in Amazon Managed Service for Prometheus
-<a name="AMP-send-to-multiple-workspaces"></a>
 
 To add cross-Region availability to your data, you can send metrics to multiple workspaces across AWS Regions. Prometheus supports both multiple writers and cross-Region writing.
 

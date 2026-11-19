@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIDP01-BP03 Identify auxiliary datasets needed to operate your system
-<a name="raidp01-bp03"></a>
 
  Auxiliary data covers additional data that affects your system behavior beyond the training, validation, and evaluation datasets, such as knowledge bases used at inference time by RAG systems. Identify auxiliary data sources that affect system behavior during operation. Determine whether auxiliary datasets should be identical between evaluation and deployment environments or if differences are acceptable based on your use case requirements.
 

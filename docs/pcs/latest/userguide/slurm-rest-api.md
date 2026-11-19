@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-rest-api.html
 ---
 
 # Slurm REST API in AWS PCS
-<a name="slurm-rest-api"></a>
 
 AWS PCS provides managed support for Slurm's native REST API through `slurmrestd`, delivering an HTTP interface for programmatic cluster interaction. You can submit jobs, monitor cluster status, and manage resources through standard HTTP requests without requiring direct shell access to your cluster.
 

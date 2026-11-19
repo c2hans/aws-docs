@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # GetSuiteDefinition
-<a name="API_iotdeviceadvisor_GetSuiteDefinition"></a>
 
 Gets information about a Device Advisor test suite.
 

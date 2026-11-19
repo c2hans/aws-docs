@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 ---
 
 # Performance efficiency pillar
-<a name="performance-efficiency"></a>
 
 The [performance efficiency pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/perf-dp.html) of the AWS Well-Architected Framework focuses on optimizing the use of cloud resources to meet performance goals while adapting to fluctuating demands and emerging technologies. It emphasizes continuously fine-tuning systems to maintain efficiency in a dynamic cloud environment.
 

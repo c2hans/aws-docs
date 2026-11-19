@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # How resilience testing works
-<a name="next-gen-resilience-testing-concepts"></a>
 
 Resilience testing uses three core concepts:
 + **Test template** – A pre-configured, recommended test that defines which resilience capability to validate. A test template specifies the actions to perform, and declares the parameters it accepts.

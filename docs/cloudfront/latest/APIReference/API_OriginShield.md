@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginShield
-<a name="API_OriginShield"></a>
 
 CloudFront Origin Shield.
 

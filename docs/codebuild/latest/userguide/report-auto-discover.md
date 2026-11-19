@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/report-auto-d
 ---
 
 # Auto-discover reports in CodeBuild
-<a name="report-auto-discover"></a>
 
 With auto-discovery, CodeBuild searches through all your build files after the build phase has completed, searches for any supported report file types, and automatically creates new test and code coverage report groups and reports. For any discovered report types, CodeBuild creates new report groups with the following pattern:
 

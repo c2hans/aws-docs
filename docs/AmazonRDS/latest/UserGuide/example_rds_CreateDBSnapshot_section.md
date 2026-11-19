@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_C
 ---
 
 # Use `CreateDBSnapshot` with an AWS SDK or CLI
-<a name="example_rds_CreateDBSnapshot_section"></a>
 
 The following code examples show how to use `CreateDBSnapshot`.
 

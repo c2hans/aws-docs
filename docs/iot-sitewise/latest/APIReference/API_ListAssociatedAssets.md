@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListAssociatedAssets
-<a name="API_ListAssociatedAssets"></a>
 
 Retrieves a paginated list of associated assets.
 

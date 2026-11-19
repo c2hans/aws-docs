@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # PUT: Swap Allocation
-<a name="working-with-mpts-swap-allocation"></a>
 
 Swap the allocation values (values of the `allocation_message_priority` element) in two related MPTS outputs.
 

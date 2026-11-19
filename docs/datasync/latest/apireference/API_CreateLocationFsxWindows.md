@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateL
 ---
 
 # CreateLocationFsxWindows
-<a name="API_CreateLocationFsxWindows"></a>
 
 Creates a transfer *location* for an Amazon FSx for Windows File Server file system. AWS DataSync can use this location as a source or destination for transferring data.
 

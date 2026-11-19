@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-vie
 ---
 
 # View the agent schedule in the agent workspace in Connect Customer
-<a name="scheduling-view-schedule-staff"></a>
 
 If your organization uses the forecasting, capacity planning, and scheduling features of Connect Customer you can view your schedule in the agent workspace.
 

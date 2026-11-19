@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # AWS Infrastructure Setup
-<a name="sap-nw-pacemaker-rhel-infra-setup"></a>
 
 This section covers the one-time setup tasks required to prepare your AWS environment for the cluster deployment:
 

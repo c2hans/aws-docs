@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DisassociateConnectionsFromResiliencyGroup
-<a name="API_DisassociateConnectionsFromResiliencyGroup"></a>
 
 Disassociates one or more connections from the specified resiliency group. This operation is atomic: either all of the specified connections are disassociated, or the operation fails and no changes are made.
 

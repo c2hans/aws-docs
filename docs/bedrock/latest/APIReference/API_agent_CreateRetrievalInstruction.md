@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cr
 ---
 
 # CreateRetrievalInstruction
-<a name="API_agent_CreateRetrievalInstruction"></a>
 
 Creates a new retrieval instruction. The retrieval instruction is usable once its status becomes ACTIVE. Use GetRetrievalInstruction to check whether it is ready.
 

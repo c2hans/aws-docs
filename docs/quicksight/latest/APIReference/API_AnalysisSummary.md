@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Analy
 ---
 
 # AnalysisSummary
-<a name="API_AnalysisSummary"></a>
 
 The summary metadata that describes an analysis.
 

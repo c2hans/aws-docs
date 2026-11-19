@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageDescription
-<a name="API_PackageDescription"></a>
 
 Details about a package.
 

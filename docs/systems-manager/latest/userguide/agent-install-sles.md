@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/agent-i
 ---
 
 # Manually install SSM Agent on SUSE Linux Enterprise Server instances
-<a name="agent-install-sles"></a>
 
 In most cases, the Amazon Machine Images (AMIs) for SUSE Linux Enterprise Server (SLES) that are provided by AWS come with AWS Systems Manager Agent (SSM Agent) preinstalled by default. For more information, see [Find AMIs with the SSM Agent preinstalled](ami-preinstalled-agent.md).
 

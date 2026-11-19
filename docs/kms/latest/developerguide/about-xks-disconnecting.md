@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/about-xks-disc
 ---
 
 # Disconnect an external key store
-<a name="about-xks-disconnecting"></a>
 
 When you disconnect an external key store with [VPC endpoint service connectivity](choose-xks-connectivity.md#xks-vpc-connectivity) from its external key store proxy, AWS KMS deletes its interface endpoint to the VPC endpoint service and removes the network infrastructure that it created to support the connection. No equivalent process is required for external key stores with public endpoint connectivity. This action does not affect the VPC endpoint service or any of its supporting components, and it does not affect the external key store proxy or any external components.
 

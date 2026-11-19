@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/TBAC-creating-t
 ---
 
 # Creating LF-Tag expressions
-<a name="TBAC-creating-tag-expressions"></a>
 
 You need to define all LF-Tags in Lake Formation, and assign them to Data Catalog resources before they can be used to create expressions. An LF-Tag expression consists of one more keys and one or more possible values for each key.
 

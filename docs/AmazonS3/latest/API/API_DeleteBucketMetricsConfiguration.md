@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketMetr
 ---
 
 # DeleteBucketMetricsConfiguration
-<a name="API_DeleteBucketMetricsConfiguration"></a>
 
 Deletes a metrics configuration for the Amazon CloudWatch request metrics (specified by the metrics configuration ID) from the bucket. Note that this doesn't include the daily storage metrics.
 

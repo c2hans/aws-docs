@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KeyPa
 ---
 
 # KeyPairCredentials
-<a name="API_KeyPairCredentials"></a>
 
 The combination of username, private key and passphrase that are used as credentials.
 

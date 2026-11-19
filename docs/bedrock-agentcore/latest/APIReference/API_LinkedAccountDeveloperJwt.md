@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # LinkedAccountDeveloperJwt
-<a name="API_LinkedAccountDeveloperJwt"></a>
 
 Authentication method using JWT with key ID and subject claims.
 

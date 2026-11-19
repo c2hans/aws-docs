@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/custom-ami-v3.
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # AWS ParallelCluster AMI customization
-<a name="custom-ami-v3"></a>
 
 There are scenarios where building a custom AMI for AWS ParallelCluster is necessary. This section covers what to consider when building a custom AWS ParallelCluster AMI.
 

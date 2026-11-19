@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MediaStreamPipeline
-<a name="API_media-pipelines-chime_MediaStreamPipeline"></a>
 
 Structure that contains the settings for a media stream pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens
 ---
 
 # Concatenating multiline or stack-trace Amazon ECS log messages
-<a name="firelens-concatanate-multiline"></a>
 
 Beginning with AWS for Fluent Bit version 2.22.0, a multiline filter is included. The multiline filter helps concatenate log messages that originally belong to one context but were split across multiple records or log lines. For more information about the multiline filter, see the [ Fluent Bit documentation](https://docs.fluentbit.io/manual/pipeline/filters/multiline-stacktrace).
 

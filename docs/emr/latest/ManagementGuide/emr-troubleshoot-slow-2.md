@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Step 2: Check the EMR cluster environment
-<a name="emr-troubleshoot-slow-2"></a>
 
 Check your environment to see if there are service outages or you have exceeded an AWS service limit.
 

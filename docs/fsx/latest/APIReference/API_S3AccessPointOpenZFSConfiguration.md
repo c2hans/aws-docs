@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3AccessPoin
 ---
 
 # S3AccessPointOpenZFSConfiguration
-<a name="API_S3AccessPointOpenZFSConfiguration"></a>
 
 Describes the FSx for OpenZFS attachment configuration of an S3 access point attachment.
 

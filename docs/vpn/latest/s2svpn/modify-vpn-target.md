@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-target.html
 ---
 
 # Modify the target gateway of an AWS Site-to-Site VPN connection
-<a name="modify-vpn-target"></a>
 
 You can modify the target gateway of an AWS Site-to-Site VPN connection. The following migration options are available:
 + An existing virtual private gateway to a transit gateway

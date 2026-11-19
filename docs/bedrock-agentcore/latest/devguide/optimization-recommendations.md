@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimi
 ---
 
 # Recommendations
-<a name="optimization-recommendations"></a>
 
 Recommendations use AI to generate optimized agent configurations from real session traces. Instead of manually rewriting prompts or tool descriptions, you point the service at your agent’s traces, specify a target evaluator as the reward signal, and receive an optimized configuration.
 

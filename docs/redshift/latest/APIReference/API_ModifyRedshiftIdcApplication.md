@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyR
 ---
 
 # ModifyRedshiftIdcApplication
-<a name="API_ModifyRedshiftIdcApplication"></a>
 
 Changes an existing Amazon Redshift IAM Identity Center application.
 

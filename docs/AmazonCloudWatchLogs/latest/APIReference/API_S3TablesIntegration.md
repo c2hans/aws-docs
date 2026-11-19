@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # S3TablesIntegration
-<a name="API_S3TablesIntegration"></a>
 
 Contains information about the S3 Tables integration configuration for a configuration template.
 

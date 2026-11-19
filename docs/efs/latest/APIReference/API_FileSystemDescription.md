@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_FileSystemDe
 ---
 
 # FileSystemDescription
-<a name="API_FileSystemDescription"></a>
 
 A description of the file system.
 

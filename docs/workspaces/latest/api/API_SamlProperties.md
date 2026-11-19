@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_SamlProperties
 ---
 
 # SamlProperties
-<a name="API_SamlProperties"></a>
 
 Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
 

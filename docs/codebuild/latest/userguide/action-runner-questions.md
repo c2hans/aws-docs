@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/action-runner
 ---
 
 # About the CodeBuild-hosted GitHub Actions runner
-<a name="action-runner-questions"></a>
 
 The following are some common questions about the CodeBuild-hosted GitHub Actions runner.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an AWS member account from AWS Organizations to AWS Control Tower
-<a name="migrate-an-aws-member-account-from-aws-organizations-to-aws-control-tower"></a>
 
 *Rodolfo Jr. Cerrada, Amazon Web Services*
 

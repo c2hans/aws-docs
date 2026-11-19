@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-instanc
 ---
 
 # ec2-instances-in-vpc
-<a name="ec2-instances-in-vpc"></a>
 
 **Important**
 For this rule, the rule identifier (INSTANCES\_IN\_VPC) and rule name (ec2-instances-in-vpc) are different.

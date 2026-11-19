@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-custo
 ---
 
 # Modify a PyTorch Training Script
-<a name="model-parallel-customize-training-script-pt"></a>
 
 In this section, you learn how to modify PyTorch training scripts to configure the SageMaker model parallelism library for auto-partitioning and manual partitioning.
 

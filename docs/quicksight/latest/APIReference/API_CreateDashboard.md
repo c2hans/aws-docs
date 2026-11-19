@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateDashboard
-<a name="API_CreateDashboard"></a>
 
 Creates a dashboard from either a template or directly with a `DashboardDefinition`. To first create a template, see the ` [CreateTemplate](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateTemplate.html) ` API operation.
 

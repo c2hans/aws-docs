@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # GROUP BY clause
-<a name="sql-reference-group-by-clause"></a>
 
 ## Syntax Chart for the GROUP BY Clause
 <a name="sqlrf-groupbyclause-syntax-chart"></a>

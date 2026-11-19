@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/join-web-client.html
 ---
 
 # Joining meetings in the web app
-<a name="join-web-client"></a>
 
 If you don't have the Amazon Chime desktop client, you can use the web app to join meetings. See [1. Know the system requirements](chime-requirements.md) to confirm that your web browser is compatible with Amazon Chime.
 

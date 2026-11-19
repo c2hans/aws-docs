@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/a
 ---
 
 # AWS Explorer
-<a name="aws-explorer"></a>
 
 AWS Explorer provides convenient access to several features in the AWS Toolkit for JetBrains. These include managing connections from the toolkit to AWS accounts, switching AWS Regions, working with AWS Lambda functions and AWS CloudFormation stacks in accounts, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_DeleteWebFu
 ---
 
 # DeleteWebFunctionRevision
-<a name="API_DeleteWebFunctionRevision"></a>
 
 Deletes a web function revision. You cannot delete a revision that is currently serving traffic on an endpoint.
 

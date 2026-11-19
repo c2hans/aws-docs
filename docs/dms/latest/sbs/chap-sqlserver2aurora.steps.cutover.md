@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-sqlserver2aurora.ste
 ---
 
 # Step 8: Cut Over to Aurora MySQL
-<a name="chap-sqlserver2aurora.steps.cutover"></a>
 
 To move connections from your Microsoft SQL Server database to your Amazon Aurora MySQL database, do the following:
 

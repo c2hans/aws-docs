@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.Customiz
 ---
 
 # Using data masking to hide sensitive information
-<a name="CHAP_Tasks.CustomizingTasks.TableMapping.SelectionTransformation.Masking"></a>
 
 To conceal sensitive data stored in one or more columns of the tables being migrated, you can leverage Data Masking transformation rule actions. Starting from version 3.5.4, AWS DMS allows the use of data masking transformation rule actions in table mapping, enabling you to alter the contents of one or more columns during the migration process. AWS DMS loads the modified data into the target tables.
 

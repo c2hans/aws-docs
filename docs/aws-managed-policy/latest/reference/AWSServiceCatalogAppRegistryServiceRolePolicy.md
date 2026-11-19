@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceCatalogAppRegistryServiceRolePolicy
-<a name="AWSServiceCatalogAppRegistryServiceRolePolicy"></a>
 
 **Description**: Allows Service Catalog AppRegistry to manage Resource Groups on your behalf
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DataTransfe
 ---
 
 # DataTransferApi
-<a name="API_DataTransferApi"></a>
 
 The API of the connector application that Amazon AppFlow uses to transfer your data.
 

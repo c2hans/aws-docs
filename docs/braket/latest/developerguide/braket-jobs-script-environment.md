@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Define the environment for your algorithm script
-<a name="braket-jobs-script-environment"></a>
 
 Amazon Braket supports environments defined by containers for your algorithm script:
 + A base container (the default, if no `image_uri` is specified)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Me
 ---
 
 # MetricDestinationSummary
-<a name="API_MetricDestinationSummary"></a>
 
 A structure that displays information about one destination that CloudWatch RUM sends extended metrics to.
 

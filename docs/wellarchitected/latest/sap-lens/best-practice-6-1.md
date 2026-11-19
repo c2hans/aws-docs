@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 6.1 – Ensure that security and auditing are built into the SAP network design
-<a name="best-practice-6-1"></a>
 
 Protecting access to the network that hosts your SAP workloads is the first line of defense against malicious activity. Evaluate your business requirements and the specific SAP solution to determine the ports, protocols, and traffic patterns that need to be enabled. Consider the security standards of your organization and the tools and patterns available to simplify network design. Audit on a regular basis or as changes occur.
 

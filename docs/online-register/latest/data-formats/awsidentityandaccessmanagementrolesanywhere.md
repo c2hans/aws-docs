@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS Identity and Access Management Roles Anywhere
-<a name="awsidentityandaccessmanagementrolesanywhere"></a>
 
 AWS Identity and Access Management Roles Anywhere provides the following APIs for data retrieval.
 

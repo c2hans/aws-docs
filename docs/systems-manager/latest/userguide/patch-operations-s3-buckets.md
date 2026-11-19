@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-o
 ---
 
 # Reference: Amazon S3 buckets for patching operations
-<a name="patch-operations-s3-buckets"></a>
 
 In the course of performing various Patch Manager patching operations, AWS Systems Manager Agent (SSM Agent) accesses certain Amazon Simple Storage Service (Amazon S3) buckets that are owned and maintained by Amazon Web Services (AWS). These S3 buckets are publicly accessible, and by default, SSM Agent connects to them using `HTTP` calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CancelConnection
-<a name="API_account_CancelConnection"></a>
 
 Cancels an existing connection between partners, terminating the partnership relationship.
 

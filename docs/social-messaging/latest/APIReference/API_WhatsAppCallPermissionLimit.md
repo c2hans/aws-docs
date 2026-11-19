@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppCallPermissionLimit
-<a name="API_WhatsAppCallPermissionLimit"></a>
 
 A time-bound restriction on a calling action, such as the number of calls allowed within a time period.
 

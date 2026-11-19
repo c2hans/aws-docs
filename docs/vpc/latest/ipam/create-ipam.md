@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/create-ipam.html
 ---
 
 # Create an IPAM
-<a name="create-ipam"></a>
 
 Follow the steps in this section to create your IPAM. If you have delegated an IPAM administrator, these steps should be completed by the IPAM account.
 

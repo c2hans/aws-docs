@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteTypeAnnotation
-<a name="API_AutomatedReasoningPolicyDeleteTypeAnnotation"></a>
 
 An annotation for removing a custom type from an Automated Reasoning policy.
 

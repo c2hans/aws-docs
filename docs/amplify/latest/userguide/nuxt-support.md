@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/nuxt-support.ht
 ---
 
 # Amplify support for Nuxt.js
-<a name="nuxt-support"></a>
 
 Nuxt is a framework for creating full stack web applications with Vue.js.
 

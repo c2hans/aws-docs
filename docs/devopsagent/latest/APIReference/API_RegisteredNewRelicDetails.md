@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredNewRelicDetails
-<a name="API_RegisteredNewRelicDetails"></a>
 
 Details specific to a registered NewRelic instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Performance Insights metrics for DB instances
-<a name="db-instance-performance-insights"></a>
 
 Performance Insights monitors different types of metrics, as discussed in the following sections.
 

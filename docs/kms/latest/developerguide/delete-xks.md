@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/delete-xks.htm
 ---
 
 # Delete an external key store
-<a name="delete-xks"></a>
 
 When you delete an external key store, AWS KMS deletes all metadata about the external key store from AWS KMS, including information about its external key store proxy. This operation does not affect the [external key store proxy](keystore-external.md#concept-xks-proxy), [external key manager](keystore-external.md#concept-ekm), [external keys](keystore-external.md#concept-external-key), or any AWS resources that you created to support the external key store, such as an Amazon VPC or a VPC endpoint service.
 

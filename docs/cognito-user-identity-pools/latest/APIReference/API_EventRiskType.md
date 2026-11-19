@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # EventRiskType
-<a name="API_EventRiskType"></a>
 
 The risk evaluation by adaptive authentication, as displayed in an `AdminListUserAuthEvents` response. Contains evaluations of compromised-credentials detection and assessed risk level and action taken by adaptive authentication.
 

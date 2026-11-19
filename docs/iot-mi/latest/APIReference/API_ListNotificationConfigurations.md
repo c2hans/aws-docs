@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListNotif
 ---
 
 # ListNotificationConfigurations
-<a name="API_ListNotificationConfigurations"></a>
 
  List all notification configurations.
 

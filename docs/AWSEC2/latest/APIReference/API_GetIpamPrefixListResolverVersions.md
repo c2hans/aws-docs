@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamPr
 ---
 
 # GetIpamPrefixListResolverVersions
-<a name="API_GetIpamPrefixListResolverVersions"></a>
 
 Retrieves version information for an IPAM prefix list resolver.
 

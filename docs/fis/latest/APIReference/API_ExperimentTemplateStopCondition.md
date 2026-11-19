@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateStopCondition
-<a name="API_ExperimentTemplateStopCondition"></a>
 
 Describes a stop condition for an experiment template.
 

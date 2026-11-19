@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/security-prot
 ---
 
 # SMS protocol security best practices
-<a name="security-protocol-best-practices"></a>
 
 Given the limitations of the SMS protocols, here are some industry best practices to consider depending on your use case and your own security assessments:
 + Choose a short time-to-live (TTL) for one time passwords (OTP).

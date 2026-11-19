@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Source
 ---
 
 # SourceRegion
-<a name="API_SourceRegion"></a>
 
 Contains an AWS Region name as the result of a successful call to the `DescribeSourceRegions` action.
 

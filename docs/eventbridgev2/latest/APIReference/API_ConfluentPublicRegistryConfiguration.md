@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Co
 ---
 
 # ConfluentPublicRegistryConfiguration
-<a name="API_ConfluentPublicRegistryConfiguration"></a>
 
 Authentication configuration for public Confluent Schema Registry via EventBridge Connection.
 

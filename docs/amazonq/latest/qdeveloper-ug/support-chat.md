@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/support-cha
 ---
 
 # Using Amazon Q Developer to chat with AWS Support
-<a name="support-chat"></a>
 
 This console experience is now part of the AWS assistant.
 

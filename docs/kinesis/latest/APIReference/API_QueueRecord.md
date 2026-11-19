@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueRec
 ---
 
 # QueueRecord
-<a name="API_QueueRecord"></a>
 
 A data stream record, as delivered through a queue.
 

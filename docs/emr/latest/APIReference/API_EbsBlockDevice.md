@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_EbsBlockDevi
 ---
 
 # EbsBlockDevice
-<a name="API_EbsBlockDevice"></a>
 
 Configuration of requested EBS block device associated with the instance group.
 

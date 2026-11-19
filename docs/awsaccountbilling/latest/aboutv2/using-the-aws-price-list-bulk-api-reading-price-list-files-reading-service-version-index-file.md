@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-t
 ---
 
 # Reading the service version index file
-<a name="using-the-aws-price-list-bulk-api-reading-price-list-files-reading-service-version-index-file"></a>
 
 |  |
 | --- |

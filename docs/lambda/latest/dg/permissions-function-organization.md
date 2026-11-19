@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/permissions-function-or
 ---
 
 # Granting function access to an organization
-<a name="permissions-function-organization"></a>
 
 To grant permissions to all accounts in an [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) organization, we recommend using `put-resource-policy` to create a full JSON policy with the `aws:PrincipalOrgID` condition key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListGroundStations
-<a name="API_ListGroundStations"></a>
 
 Returns a list of ground stations.
 

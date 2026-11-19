@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # OutboundCallConfig
-<a name="API_connect-outbound-campaigns_OutboundCallConfig"></a>
 
 Contains outbound call configuration for an outbound campaign.
 

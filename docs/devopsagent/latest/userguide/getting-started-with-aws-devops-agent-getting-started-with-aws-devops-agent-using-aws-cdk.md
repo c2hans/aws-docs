@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # Getting started with AWS DevOps Agent using AWS CDK
-<a name="getting-started-with-aws-devops-agent-getting-started-with-aws-devops-agent-using-aws-cdk"></a>
 
 ## Overview
 <a name="overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Data transfer in Lightsail
-<a name="amazon-lightsail-faq-data-transfer-allowance"></a>
 
 ## What if I exceed my data transfer plan allowance for instances?
 <a name="data-transfer-allowance-what-if-i-exceed-data-transfer-plan-allowance"></a>

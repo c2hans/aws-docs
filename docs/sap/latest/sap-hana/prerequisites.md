@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/prerequisites.html
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 ## Specialized Knowledge
 <a name="specialized-knowledge"></a>

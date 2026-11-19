@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingIndexin
 ---
 
 # ThingIndexingConfiguration
-<a name="API_ThingIndexingConfiguration"></a>
 
 The thing indexing configuration. For more information, see [Managing Thing Indexing](https://docs.aws.amazon.com/iot/latest/developerguide/managing-index.html).
 

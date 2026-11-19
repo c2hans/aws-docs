@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # CardVerificationValue1
-<a name="API_CardVerificationValue1"></a>
 
 Card data parameters that are required to verify CVV (Card Verification Value) for the payment card.
 

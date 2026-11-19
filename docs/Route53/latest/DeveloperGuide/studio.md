@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/studio.htm
 ---
 
 # .studio
-<a name="studio"></a>
 
 Used as a general extension, but ideal for those in the real estate, art, or entertainment industries.
 

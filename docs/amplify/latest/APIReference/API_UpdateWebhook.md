@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_UpdateWe
 ---
 
 # UpdateWebhook
-<a name="API_UpdateWebhook"></a>
 
 Updates a webhook.
 

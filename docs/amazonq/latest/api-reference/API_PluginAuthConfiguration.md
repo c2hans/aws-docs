@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PluginA
 ---
 
 # PluginAuthConfiguration
-<a name="API_PluginAuthConfiguration"></a>
 
 Authentication configuration information for an Amazon Q Business plugin.
 

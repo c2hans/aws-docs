@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/working-with-capabi
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Working with capability resources
-<a name="working-with-capabilities"></a>
 
 List, describe, update, and delete capability resources on your Amazon EKS clusters.
 

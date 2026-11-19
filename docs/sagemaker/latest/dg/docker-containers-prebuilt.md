@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-pr
 ---
 
 # Pre-built SageMaker AI Docker images
-<a name="docker-containers-prebuilt"></a>
 
 Amazon SageMaker AI provides containers for its built-in algorithms and pre-built Docker images for some of the most common machine learning frameworks, such as Apache MXNet, TensorFlow, PyTorch, and Chainer. It also supports machine learning libraries such as scikit-learn and SparkML.
 

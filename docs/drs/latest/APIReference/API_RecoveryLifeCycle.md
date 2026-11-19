@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryLife
 ---
 
 # RecoveryLifeCycle
-<a name="API_RecoveryLifeCycle"></a>
 
 An object representing the Source Network recovery Lifecycle.
 

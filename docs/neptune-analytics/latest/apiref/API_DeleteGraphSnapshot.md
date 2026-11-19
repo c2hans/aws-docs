@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Dele
 ---
 
 # DeleteGraphSnapshot
-<a name="API_DeleteGraphSnapshot"></a>
 
 Deletes the specifed graph snapshot.
 

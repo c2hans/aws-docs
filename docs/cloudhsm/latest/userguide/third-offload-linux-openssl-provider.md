@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/third-offload-
 ---
 
 # AWS CloudHSM SSL/TLS offload on Linux using NGINX or HAProxy with OpenSSL Provider
-<a name="third-offload-linux-openssl-provider"></a>
 
 This topic provides step-by-step instructions for setting up SSL/TLS server identity offload with AWS CloudHSM on a Linux web server using NGINX or HAProxy with the OpenSSL Provider.
 

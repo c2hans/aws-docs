@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/setup-amazon-be
 ---
 
 # Set up Amazon Bedrock Marketplace
-<a name="setup-amazon-bedrock-marketplace"></a>
 
 You can use the [Amazon Bedrock Full Access policy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonBedrockFullAccess.html) to provide permissions to SageMaker AI. We recommend using the managed policy, but if you can't use the managed policy, make sure that your IAM role has the following permissions.
 

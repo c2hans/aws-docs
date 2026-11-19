@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Alarm data queries
-<a name="alarm-data-queries"></a>
 
 CloudWatch alarms can monitor various data sources. Choose the appropriate query type based on your monitoring needs.
 

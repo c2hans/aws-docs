@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::HubV2 NetworkScanning
-<a name="aws-properties-securityhub-hubv2-networkscanning"></a>
 
 <a name="aws-properties-securityhub-hubv2-networkscanning-description"></a>The `NetworkScanning` property type specifies Property description not available. for an [AWS::SecurityHub::HubV2](aws-resource-securityhub-hubv2.md).
 

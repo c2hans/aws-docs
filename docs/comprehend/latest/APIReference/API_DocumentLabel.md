@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentLabel
-<a name="API_DocumentLabel"></a>
 
 Specifies one of the label or labels that categorize the document being analyzed.
 

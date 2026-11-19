@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # Tagging practices to avoid
-<a name="tagging-practices-to-avoid"></a>
 
 While there are practices to implement when tagging objects or infrastructure on AWS, there are also practices to avoid.
 

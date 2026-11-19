@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UsageProfileDefin
 ---
 
 # UsageProfileDefinition
-<a name="API_UsageProfileDefinition"></a>
 
 Describes an AWS Glue usage profile.
 

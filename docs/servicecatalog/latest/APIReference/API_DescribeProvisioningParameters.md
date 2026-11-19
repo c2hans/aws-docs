@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeProvisioningParameters
-<a name="API_DescribeProvisioningParameters"></a>
 
 Gets information about the configuration required to provision the specified product using the specified provisioning artifact.
 

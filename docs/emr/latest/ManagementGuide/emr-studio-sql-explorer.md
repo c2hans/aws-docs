@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-sq
 ---
 
 # Browse data with SQL Explorer for EMR Studio
-<a name="emr-studio-sql-explorer"></a>
 
 **Note**
 SQL Explorer for EMR Studio isn't supported with Amazon EMR Serverless interactive applications or in a Studio with IAM Identity Center trusted identity propagation enabled.

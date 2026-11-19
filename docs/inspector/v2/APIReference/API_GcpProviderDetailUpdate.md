@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GcpProvide
 ---
 
 # GcpProviderDetailUpdate
-<a name="API_GcpProviderDetailUpdate"></a>
 
 The configuration details specific to Google Cloud Platform (GCP) for updating a connector, including the scan scope and locations to scan.
 

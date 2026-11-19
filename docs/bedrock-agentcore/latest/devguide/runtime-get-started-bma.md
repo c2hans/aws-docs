@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Get started with Amazon Bedrock Managed Agents (with OpenAI) on AgentCore Runtime
-<a name="runtime-get-started-bma"></a>
 
 **Note**
 Amazon Bedrock Managed Agents (with OpenAI) is in preview. Features and APIs may change before general availability.

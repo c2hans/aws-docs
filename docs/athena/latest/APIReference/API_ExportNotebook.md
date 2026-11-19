@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ExportNot
 ---
 
 # ExportNotebook
-<a name="API_ExportNotebook"></a>
 
 Exports the specified notebook and its metadata.
 

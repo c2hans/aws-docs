@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # Aggregate functions
-<a name="recipe-actions.functions.aggregate"></a>
 
 Following, find reference topics for aggregate functions that work with recipe actions.
 

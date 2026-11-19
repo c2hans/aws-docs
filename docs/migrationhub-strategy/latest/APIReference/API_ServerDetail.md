@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ServerDetail
-<a name="API_ServerDetail"></a>
 
  Detailed information about a server.
 

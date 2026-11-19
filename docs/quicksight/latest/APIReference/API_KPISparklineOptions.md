@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KPISp
 ---
 
 # KPISparklineOptions
-<a name="API_KPISparklineOptions"></a>
 
 The options that determine the visibility, color, type, and tooltip visibility of the sparkline of a KPI visual.
 

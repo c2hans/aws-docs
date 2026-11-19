@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/percent
 ---
 
 # PERCENTILE function
-<a name="percentile"></a>
 
 The PERCENTILE function is used to calculates the exact percentile value by first sorting the values in the `col` column and then finding the value at the specified `percentage`.
 

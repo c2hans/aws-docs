@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardSourceTemplate
-<a name="API_DashboardSourceTemplate"></a>
 
 Dashboard source template.
 

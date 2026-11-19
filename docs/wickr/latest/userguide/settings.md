@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/settings.html
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # AWS Wickr Settings
-<a name="settings"></a>
 
 You can modify your account settings, manage contacts, manage client settings, refer friends, access support resources, and check for updates in the settings section of the Wickr client.
 

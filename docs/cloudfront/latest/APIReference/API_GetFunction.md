@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetFu
 ---
 
 # GetFunction
-<a name="API_GetFunction"></a>
 
 Gets the code of a CloudFront function. To get configuration information and metadata about a function, use `DescribeFunction`.
 

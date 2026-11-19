@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionJobSummary
-<a name="API_IngestionJobSummary"></a>
 
 Summary information about an ingestion job.
 

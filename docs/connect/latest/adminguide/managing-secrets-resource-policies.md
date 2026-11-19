@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/managing-secre
 ---
 
 # Managing secrets and resource policies
-<a name="managing-secrets-resource-policies"></a>
 
 When you [configure a third-party speech provider](configure-third-party-speech-providers.md), you will need to create a secret in Secrets Manager that contains the speech provider's API key. Creating the secret is a two step process:
 + Create the secret containing the API key. For instructions, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html).

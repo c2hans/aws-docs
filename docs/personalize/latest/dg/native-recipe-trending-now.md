@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-tren
 ---
 
 # Trending-Now recipe
-<a name="native-recipe-trending-now"></a>
 
  The Trending-Now recipe (aws-trending-now) generates recommendations for items that are rapidly becoming more popular with your users. You might use the Trending-Now recipe if items gaining in popularity are more relevant to your customers. For example, your customers might highly value what other users are interacting with. Common uses include recommending viral social media content, breaking news articles, or recent sports videos.
 

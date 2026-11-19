@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Configure destination
-<a name="configure-ingestion"></a>
 
 Once you've created the Kinesis Video Streams resources, you need to tell the signaling channel which stream to save it to.
 

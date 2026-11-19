@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListCollaborations
-<a name="API_ListCollaborations"></a>
 
 Lists collaborations the caller owns, is active in, or has been invited to.
 

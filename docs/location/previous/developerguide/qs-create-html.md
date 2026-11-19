@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-crea
 ---
 
 # Create the HTML for your Amazon Location application
-<a name="qs-create-html"></a>
 
 In this tutorial, you will create a static HTML page that embeds a map, and allows the user to find what's at a location on the map. The app will consist of three files: an HTML file and CSS file for the webpage, and a JavaScript (.js) file for the code that creates the map and responds to the user's interactions and map events.
 

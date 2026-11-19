@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/management
 ---
 
 # .management
-<a name="management"></a>
 
 Used for information about the business world and company management.
 

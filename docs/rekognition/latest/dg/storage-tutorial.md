@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/storage-tutorial.h
 ---
 
 # Storing Amazon Rekognition Data with Amazon RDS and DynamoDB
-<a name="storage-tutorial"></a>
 
 When using Amazon Rekognition’s APIs, it’s important to remember that the API operations don’t save any of the generated labels. You can save these labels by placing them in database, along with identifiers for the respective images.
 

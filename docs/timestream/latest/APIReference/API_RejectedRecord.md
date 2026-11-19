@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Rejec
 ---
 
 # RejectedRecord
-<a name="API_RejectedRecord"></a>
 
  Represents records that were not successfully inserted into Timestream due to data validation issues that must be resolved before reinserting time-series data into the system.
 

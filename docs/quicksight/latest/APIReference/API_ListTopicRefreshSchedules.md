@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListTopicRefreshSchedules
-<a name="API_ListTopicRefreshSchedules"></a>
 
 Lists all of the refresh schedules for a topic.
 

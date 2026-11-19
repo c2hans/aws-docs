@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetS
 ---
 
 # GetServiceNetwork
-<a name="API_GetServiceNetwork"></a>
 
 Retrieves information about the specified service network.
 

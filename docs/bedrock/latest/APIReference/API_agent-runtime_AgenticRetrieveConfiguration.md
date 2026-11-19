@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveConfiguration
-<a name="API_agent-runtime_AgenticRetrieveConfiguration"></a>
 
 Configuration settings for the agentic retrieval operation.
 

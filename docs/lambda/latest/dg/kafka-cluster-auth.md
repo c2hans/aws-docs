@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/kafka-cluster-auth.html
 ---
 
 # Configuring cluster authentication methods in Lambda
-<a name="kafka-cluster-auth"></a>
 
 Lambda supports several methods to authenticate with your self-managed Apache Kafka cluster. Make sure that you configure the Kafka cluster to use one of these supported authentication methods. For more information about Kafka security, see the [Security](http://kafka.apache.org/documentation.html#security) section of the Kafka documentation.
 

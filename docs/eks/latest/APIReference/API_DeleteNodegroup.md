@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteNodegr
 ---
 
 # DeleteNodegroup
-<a name="API_DeleteNodegroup"></a>
 
 Deletes a managed node group.
 

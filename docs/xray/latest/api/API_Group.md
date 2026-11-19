@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Group.html
 ---
 
 # Group
-<a name="API_Group"></a>
 
 Details and metadata for a group.
 

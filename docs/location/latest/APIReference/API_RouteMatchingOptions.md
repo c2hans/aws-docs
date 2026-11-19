@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatchingOptions
-<a name="API_RouteMatchingOptions"></a>
 
 Options related to route matching.
 

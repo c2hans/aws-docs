@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html
 ---
 
 # Core toolchain packages glibc, gcc, binutils
-<a name="core-glibc"></a>
 
 A subset of packages in Amazon Linux is designated as core toolchain packages. As a major part of AL2023, core packages receive five years of support. We might change the version of a package, but long-term support applies to the package included in the Amazon Linux release.
 

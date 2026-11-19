@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Configuring the Dockerrun.aws.json v2 file
-<a name="create_deploy_docker_v2config"></a>
 
 `Dockerrun.aws.json v2` is an Elastic Beanstalk configuration file that describes how to deploy a set of Docker containers hosted in an ECS cluster in an Elastic Beanstalk environment. The Elastic Beanstalk platform creates an ECS *task definition*, which includes an ECS *container definition*. These definitions are described in the `Dockerrun.aws.json` configuration file.
 

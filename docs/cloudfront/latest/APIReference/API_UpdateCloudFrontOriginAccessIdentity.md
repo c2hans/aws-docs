@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateCloudFrontOriginAccessIdentity
-<a name="API_UpdateCloudFrontOriginAccessIdentity"></a>
 
 Update an origin access identity.
 

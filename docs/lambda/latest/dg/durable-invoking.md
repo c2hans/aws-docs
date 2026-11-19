@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-invoking.html
 ---
 
 # Invoking Lambda durable functions
-<a name="durable-invoking"></a>
 
 Durable Lambda functions support the same invocation methods as other Lambda functions. You can invoke durable functions synchronously, asynchronously, or through event source mappings. The invocation process is identical to other functions, but durable functions provide additional capabilities for long-running executions and automatic state management.
 

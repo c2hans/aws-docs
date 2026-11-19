@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Further reading
-<a name="further-reading"></a>
 +  [Setting up secure, well-governed machine learning environments on AWS](https://aws.amazon.com/blogs/mt/setting-up-machine-learning-environments-aws/) (AWS blog)
 +  [Configuring Amazon SageMaker AI Studio for teams and groups with complete resource isolation](https://aws.amazon.com/blogs/machine-learning/configuring-amazon-sagemaker-studio-for-teams-and-groups-with-complete-resource-isolation/) (AWS blog)
 +  [Onboarding Amazon SageMaker AI Studio with AWS SSO and Okta Universal Directory](https://aws.amazon.com/blogs/machine-learning/onboarding-amazon-sagemaker-studio-with-aws-sso-and-okta-universal-directory/) (AWS blog)

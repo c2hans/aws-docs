@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeGateway
-<a name="API_DescribeGateway"></a>
 
 Retrieves information about a gateway.
 

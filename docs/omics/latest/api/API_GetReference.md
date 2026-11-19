@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReference.html
 ---
 
 # GetReference
-<a name="API_GetReference"></a>
 
 Downloads parts of data from a reference genome and returns the reference file in the same format that it was uploaded.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor across accounts and Regions
-<a name="CloudWatch-Cross-Account-Methods"></a>
 
 To enable unified monitoring across accounts, CloudWatch offers the following features:
 + **[CloudWatch cross-account observability](CloudWatch-Unified-Cross-Account.md)**– facilitate observability within a single Region with the Observability Access Manager (OAM) service. You can link accounts and easily view metrics, logs, traces, and other telemetry between accounts. This helps you to unify observability in central monitoring accounts that view telemetry shared from source accounts, and operate on this shared telemetry as if it were native to the monitoring account.

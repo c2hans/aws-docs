@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ControlPlane
 ---
 
 # ControlPlaneScalingConfig
-<a name="API_ControlPlaneScalingConfig"></a>
 
 The control plane scaling tier configuration. For more information, see EKS Provisioned Control Plane in the Amazon EKS User Guide.
 

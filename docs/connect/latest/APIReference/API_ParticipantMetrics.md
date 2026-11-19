@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantMetrics
-<a name="API_ParticipantMetrics"></a>
 
 Information about a participant's interactions in a contact.
 

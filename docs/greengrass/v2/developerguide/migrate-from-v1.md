@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-fro
 ---
 
 # Migrate from AWS IoT Greengrass Version 1
-<a name="migrate-from-v1"></a>
 
 AWS IoT Greengrass Version 2 is a major version release of the AWS IoT Greengrass Core software, APIs, and console. AWS IoT Greengrass V2 introduces several improvements to AWS IoT Greengrass V1, such as modular applications, deployments to large fleets of devices, and support for additional platforms.
 

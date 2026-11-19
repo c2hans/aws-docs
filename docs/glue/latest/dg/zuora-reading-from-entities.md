@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zuora-reading-from-entiti
 ---
 
 # Reading from Zuora entities
-<a name="zuora-reading-from-entities"></a>
 
 **Prerequisites**
 

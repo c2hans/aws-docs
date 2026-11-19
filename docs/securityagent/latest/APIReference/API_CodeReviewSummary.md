@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeReviewSummary
-<a name="API_CodeReviewSummary"></a>
 
 Contains summary information about a code review.
 

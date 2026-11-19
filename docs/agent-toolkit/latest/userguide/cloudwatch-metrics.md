@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/cloudwatc
 ---
 
 # AWS MCP Server CloudWatch metrics
-<a name="cloudwatch-metrics"></a>
 
 AWS MCP Server automatically publishes metrics to Amazon CloudWatch at no additional cost. You can use these metrics to monitor usage patterns, track success rates, identify errors, and set up alarms for your AWS MCP Server operations.
 

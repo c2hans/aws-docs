@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ResultData
-<a name="API_amazon-q-connect_ResultData"></a>
 
 Information about the result.
 

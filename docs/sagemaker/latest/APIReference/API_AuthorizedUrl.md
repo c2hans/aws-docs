@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Author
 ---
 
 # AuthorizedUrl
-<a name="API_AuthorizedUrl"></a>
 
 Contains a presigned URL and its associated local file path for downloading hub content artifacts.
 

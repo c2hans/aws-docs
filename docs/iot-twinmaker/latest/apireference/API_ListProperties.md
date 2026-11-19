@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListProperties
-<a name="API_ListProperties"></a>
 
 This API lists the properties of a component.
 

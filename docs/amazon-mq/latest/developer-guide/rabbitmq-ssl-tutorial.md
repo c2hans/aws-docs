@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Using SSL certificate authentication for Amazon MQ for RabbitMQ
-<a name="rabbitmq-ssl-tutorial"></a>
 
 This tutorial describes how to configure SSL certificate authentication for your Amazon MQ for RabbitMQ brokers using a private certificate authority.
 

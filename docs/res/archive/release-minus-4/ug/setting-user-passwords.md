@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/setting-u
 ---
 
 # Setting passwords for users
-<a name="setting-user-passwords"></a>
 
 1. From the [Directory Service console,](https://console.aws.amazon.com/directoryservicev2/) select the directory for the created stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListRul
 ---
 
 # ListRulesets
-<a name="API_ListRulesets"></a>
 
 List all rulesets available in the current account or rulesets associated with a specific resource (dataset).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # EbsInstanceBlockDevice
-<a name="API_devicemanagement_EbsInstanceBlockDevice"></a>
 
 Describes a parameter used to set up an Amazon Elastic Block Store (Amazon EBS) volume in a block device mapping.
 

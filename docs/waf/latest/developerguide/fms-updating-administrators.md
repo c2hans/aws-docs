@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/fms-updating-a
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Updating a Firewall Manager administrator account
-<a name="fms-updating-administrators"></a>
 
 The following procedure describes how to update a Firewall Manager administrator account using the Firewall Manager console.
 

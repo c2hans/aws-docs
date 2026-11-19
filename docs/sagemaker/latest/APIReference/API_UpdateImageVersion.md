@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateImageVersion
-<a name="API_UpdateImageVersion"></a>
 
 Updates the properties of a SageMaker AI image version.
 

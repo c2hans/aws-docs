@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateSegmentEstimate
-<a name="API_connect-customer-profiles_CreateSegmentEstimate"></a>
 
 Creates a segment estimate query.
 

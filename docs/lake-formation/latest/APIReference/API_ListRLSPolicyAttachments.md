@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListRLSPolicyAttachments
-<a name="API_ListRLSPolicyAttachments"></a>
 
 Lists the row-level security policy attachments in the Data Catalog. You can filter the results by resource, principal, or policy name.
 

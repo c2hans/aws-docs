@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/fsx-lustre-
 ---
 
 # fsx-lustre-copy-tags-to-backups
-<a name="fsx-lustre-copy-tags-to-backups"></a>
 
 Checks if the Amazon FSx for Lustre file systems are configured to copy tags to backups. The rule is NON\_COMPLIANT if Lustre file systems are not configured to copy tags to backups.
 

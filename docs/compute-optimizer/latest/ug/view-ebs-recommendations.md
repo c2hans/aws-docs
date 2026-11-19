@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-ebs-rec
 ---
 
 # Viewing Amazon EBS volume recommendations
-<a name="view-ebs-recommendations"></a>
 
 AWS Compute Optimizer generates volume type, volume size, IOPS, and throughput recommendations for Amazon Elastic Block Store (Amazon EBS) volumes. Recommendations for your EBS volumes are displayed in the following pages of the AWS Compute Optimizer console:
 + The **EBS volumes recommendations** page lists each of your current volumes, their [finding classifications](#ebs-recommendations-findings), their current volume type, and their current hourly price.

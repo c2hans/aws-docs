@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInterfacePrivateIpAddress
-<a name="API_NetworkInterfacePrivateIpAddress"></a>
 
 Describes the private IPv4 address of a network interface.
 

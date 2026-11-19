@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # SchemaStatusReason
-<a name="API_SchemaStatusReason"></a>
 
 A reason why the schema status is set to its current value.
 

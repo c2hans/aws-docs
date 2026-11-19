@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListTypeVersions
-<a name="API_ListTypeVersions"></a>
 
 Returns summary information about the versions of an extension.
 

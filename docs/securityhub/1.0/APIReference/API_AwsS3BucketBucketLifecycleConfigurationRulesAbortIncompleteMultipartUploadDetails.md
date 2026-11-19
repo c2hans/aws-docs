@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails
-<a name="API_AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetails"></a>
 
 Information about what Amazon S3 does when a multipart upload is incomplete.
 

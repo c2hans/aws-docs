@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # CustomizableMetricParameters
-<a name="API_CustomizableMetricParameters"></a>
 
  Defines the various metric parameters that can be customized, such as threshold and headroom.
 

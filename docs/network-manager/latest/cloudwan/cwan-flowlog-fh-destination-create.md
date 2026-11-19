@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flo
 ---
 
 # Create the AWS Cloud WAN Flow Logs destination account role for Amazon Data Firehose
-<a name="cwan-flowlog-fh-destination-create"></a>
 
 From the destination account, create the destination role in the AWS Identity and Access Management console.
 

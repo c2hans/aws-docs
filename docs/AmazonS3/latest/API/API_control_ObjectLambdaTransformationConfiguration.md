@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLa
 ---
 
 # ObjectLambdaTransformationConfiguration
-<a name="API_control_ObjectLambdaTransformationConfiguration"></a>
 
 A configuration used when creating an Object Lambda Access Point transformation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Shed load
-<a name="shed-load"></a>
 
 Improving response times and increasing available resources for critical workflows might require getting rid of extraneous load. Many of the solutions covered in this section are trade-off decisions. They have consequences to the application, and they must be carefully considered. Consider these using these solutions in the following situations:
 + You are already on the largest size instances, especially for the primary, writable database instance.

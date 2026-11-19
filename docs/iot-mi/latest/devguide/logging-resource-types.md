@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-resource-
 ---
 
 # Supported resource types
-<a name="logging-resource-types"></a>
 
 Each resource type corresponds to specific Managed Integrations workflows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2redshift.s
 ---
 
 # Step 8: Create AWS DMS Source and Target Endpoints
-<a name="chap-rdsoracle2redshift.steps.createsourcetargetendpoints"></a>
 
 While your replication instance is being created, you can specify the source and target database endpoints using the [AWS Management Console](https://console.aws.amazon.com/). However, you can only test connectivity after the replication instance has been created, because the replication instance is used in the connection.
 

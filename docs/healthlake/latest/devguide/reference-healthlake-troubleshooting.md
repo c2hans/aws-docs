@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-hea
 ---
 
 # Troubleshooting AWS HealthLake
-<a name="reference-healthlake-troubleshooting"></a>
 
 The following topics provide troubleshooting advice for errors and issues that you might encounter when using the AWS CLI, AWS SDKs, or HealthLake console. If you find an issue that is not listed in this section, use the **Provide feedback** button on the right sidebar of this page to report it.
 

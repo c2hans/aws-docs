@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_JoinI
 ---
 
 # JoinInstruction
-<a name="API_JoinInstruction"></a>
 
 The instructions associated with a join.
 

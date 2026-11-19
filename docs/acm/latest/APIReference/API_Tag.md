@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A key-value pair that identifies or specifies metadata about an ACM resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF03-BP03 Tailored service configuration by use case
-<a name="lsperf03-bp03"></a>
 
  Customize infrastructure and service configurations to align with the specific requirements of each workload category. Fine-tune compute, storage, and networking parameters for research environments to maximize throughput and processing efficiency, while configuring clinical environments with emphasis on consistent performance, redundancy, and predictable behavior under each condition.
 

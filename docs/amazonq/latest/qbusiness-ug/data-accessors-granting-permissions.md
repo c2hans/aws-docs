@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/data-accesso
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Add a data accessor (ISV) to connect to your Amazon Q index
-<a name="data-accessors-granting-permissions"></a>
 
 After setting up your application environment and connecting your data source(s), Amazon Q Business begins indexing your enterprise data. You still need to add the software providers (ISVs) as a data accessor and provide configuration details to the ISV to retrieve content from your Amazon Q index. By adding a data accessor, you grant their AWS account to access the Amazon Q index via the `SearchRelevantContent` API operation.
 

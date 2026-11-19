@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/smpte-2038-setup-out
 ---
 
 # How MediaLive uses the SMPTE 2038 stream
-<a name="smpte-2038-setup-output"></a>
 
 If you set up to prefer SMPTE 2038 in an input, MediaLive uses the data according to the following rules.
 

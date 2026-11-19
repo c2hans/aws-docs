@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRo
 ---
 
 # RouteRoundaboutExitStepDetails
-<a name="API_RouteRoundaboutExitStepDetails"></a>
 
 Details about the roundabout step.
 

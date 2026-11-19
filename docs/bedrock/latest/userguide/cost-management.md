@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-management
 ---
 
 # Track usage and costs in Amazon Bedrock
-<a name="cost-management"></a>
 
 Amazon Bedrock provides multiple ways to attribute model inference usage and costs to specific users, teams, applications, environments, or experiments. You can use a single mechanism or combine several. For example, use IAM principal attribution for per-user visibility alongside projects for per-application tagging, and request metadata for per-call experiment tracking.
 

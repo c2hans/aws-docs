@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # Send a draft email contact in Connect Customer agent workspace
-<a name="3P-apps-email-requests-sendemail"></a>
 
 Sends both agent initiated and agent reply draft email contacts. Upon successfully sending the email, the contact will transition to ENDED state.
 

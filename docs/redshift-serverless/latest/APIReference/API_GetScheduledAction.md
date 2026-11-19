@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetScheduledAction
-<a name="API_GetScheduledAction"></a>
 
 Returns information about a scheduled action.
 

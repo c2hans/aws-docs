@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-tagging.
 ---
 
 # Using tags with S3 tables
-<a name="table-tagging"></a>
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 tables. You can tag S3 tables when you create them or manage tags on existing tables. For general information about tags, see [Tagging for cost allocation or attribute-based access control (ABAC)](tagging.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ranger-ap
 ---
 
 # Considerations for using Amazon EMR with Apache Ranger
-<a name="emr-ranger-app-support"></a>
 
 ## Supported applications for Amazon EMR with Apache Ranger
 <a name="emr-ranger-app-support-list"></a>

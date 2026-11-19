@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DevEndpoint.html
 ---
 
 # DevEndpoint
-<a name="API_DevEndpoint"></a>
 
 A development endpoint where a developer can remotely debug extract, transform, and load (ETL) scripts.
 

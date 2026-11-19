@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encr
 ---
 
 # AWS KMS key management
-<a name="Overview.Encryption.Keys"></a>
 
  Amazon RDS automatically integrates with [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/) for key management. Amazon RDS uses envelope encryption. For more information about envelope encryption, see [ Envelope encryption](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#enveloping) in the *AWS Key Management Service Developer Guide*.
 

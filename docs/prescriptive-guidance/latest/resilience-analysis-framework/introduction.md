@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Resilience analysis framework
-<a name="introduction"></a>
 
 *John Formento, Jason Barto, Bruno Emer, Mike Haken, and Steven Hooper, Amazon Web Services*
 

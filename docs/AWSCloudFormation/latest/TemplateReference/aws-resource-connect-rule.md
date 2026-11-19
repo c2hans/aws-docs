@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::Rule
-<a name="aws-resource-connect-rule"></a>
 
 Creates a rule for the specified Connect Customer instance.
 
@@ -25,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Function](#cfn-connect-rule-function)" : {{String}},
       "[InstanceArn](#cfn-connect-rule-instancearn)" : {{String}},
       "[Name](#cfn-connect-rule-name)" : {{String}},
+      "[PreEvaluationFilters](#cfn-connect-rule-preevaluationfilters)" : {{PreEvaluationFilters}},
       "[PublishStatus](#cfn-connect-rule-publishstatus)" : {{String}},
       "[Tags](#cfn-connect-rule-tags)" : {{[ Tag, ... ]}},
       "[TriggerEventSource](#cfn-connect-rule-triggereventsource)" : {{RuleTriggerEventSource}}
@@ -43,6 +43,8 @@ Properties:
   [Function](#cfn-connect-rule-function): {{String}}
   [InstanceArn](#cfn-connect-rule-instancearn): {{String}}
   [Name](#cfn-connect-rule-name): {{String}}
+  [PreEvaluationFilters](#cfn-connect-rule-preevaluationfilters): {{
+    PreEvaluationFilters}}
   [PublishStatus](#cfn-connect-rule-publishstatus): {{String}}
   [Tags](#cfn-connect-rule-tags): {{
     - Tag}}
@@ -77,6 +79,12 @@ The name of the rule.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9._-]{1,200}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PreEvaluationFilters`  <a name="cfn-connect-rule-preevaluationfilters"></a>
+The pre-evaluation filters for the rule, that restrict the rule to be applied to only certain resources based on the resource's attributes, such as tags assigned to a contact. The pre-evaluation filters are applied even before rule conditions are evaluated and are used to enforce tag-based-access-control while applying rules.
+*Required*: No
+*Type*: [PreEvaluationFilters](aws-properties-connect-rule-preevaluationfilters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PublishStatus`  <a name="cfn-connect-rule-publishstatus"></a>
@@ -124,6 +132,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `RuleArn`  <a name="RuleArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the rule.
+
+`RuleCapabilityTiers`  <a name="RuleCapabilityTiers-fn::getatt"></a>
+The list of capability tiers associated with the rule. Used for categorizing rules by capability (for example, `GenerativeAI`).
 
 ## Examples
 <a name="aws-resource-connect-rule--examples"></a>

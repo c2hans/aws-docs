@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-mget.html
 ---
 
 # JSON.MGET
-<a name="json-mget"></a>
 
 Get serialized JSONs at the path from multiple document keys. Return null for non-existent key or JSON path.
 

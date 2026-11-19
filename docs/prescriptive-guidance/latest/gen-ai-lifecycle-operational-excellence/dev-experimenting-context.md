@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Understanding context engineering for generative AI
-<a name="dev-experimenting-context"></a>
 
 With the foundation model selected, the real experimentation begins. This is where abstract business requirements transform into concrete interactions with the models. The journey from basic prompts to sophisticated context engineering is rarely linear. It's an iterative discovery process where each experiment reveals new insights into what the model needs to perform effectively.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # How Distributed Load Testing on AWS works
-<a name="how-distributed-load-testing-on-aws-works"></a>
 
 The following detailed breakdown shows the steps involved in running a test scenario.
 

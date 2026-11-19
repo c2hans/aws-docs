@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Managed services
-<a name="smsus08"></a>
 
 A self-managed component provisioned for one team's peak sits idle most of the time. Managed services aggregate demand across customers and scale to match, reaching higher average utilization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeInputStream
-<a name="API_MedicalScribeInputStream"></a>
 
 Input stream for Medical Scribe containing audio and configuration events
 

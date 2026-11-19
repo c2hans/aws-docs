@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/obse
 ---
 
 # Configuring observability features in the AWS SDK for Java 2.x
-<a name="observability"></a>
 
 Telemetry is the automated collection and transmission of data from remote sources that enable you to monitor and analyze your system's behavior.
 

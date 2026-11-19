@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-kb-edit.
 ---
 
 # Modify an agent-knowledge base association
-<a name="agents-kb-edit"></a>
 
 To learn how to modify an agent-knowledge base association, choose the tab for your preferred method, and then follow the steps:
 

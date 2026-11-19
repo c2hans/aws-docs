@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 ---
 
 # Integrated Cloud Financial Management partners
-<a name="integrated-cloud-financial-management-partners"></a>
 
  The M&G Guide recommends you consider the following questions when choosing an AWS Partner solution for Cloud Financial Management:
 +  Does it help track spending at desired granularity and trace it back to approved initiatives, or allocate costs to the right business unit or project?

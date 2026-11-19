@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Respon
 ---
 
 # RespondActivityTaskFailed
-<a name="API_RespondActivityTaskFailed"></a>
 
 Used by workers to tell the service that the [ActivityTask](API_ActivityTask.md) identified by the `taskToken` has failed with `reason` (if specified). The `reason` and `details` appear in the `ActivityTaskFailed` event added to the workflow history.
 

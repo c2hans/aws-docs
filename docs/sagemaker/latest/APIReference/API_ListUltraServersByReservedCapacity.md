@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListUl
 ---
 
 # ListUltraServersByReservedCapacity
-<a name="API_ListUltraServersByReservedCapacity"></a>
 
 Lists all UltraServers that are part of a specified reserved capacity.
 

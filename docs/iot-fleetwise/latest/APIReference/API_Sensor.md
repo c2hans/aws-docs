@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Se
 ---
 
 # Sensor
-<a name="API_Sensor"></a>
 
 An input component that reports the environmental condition of a vehicle.
 

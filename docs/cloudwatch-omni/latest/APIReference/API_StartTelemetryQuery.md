@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # StartTelemetryQuery
-<a name="API_StartTelemetryQuery"></a>
 
 Starts a telemetry query within a session.
 

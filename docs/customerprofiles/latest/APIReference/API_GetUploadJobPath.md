@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # GetUploadJobPath
-<a name="API_connect-customer-profiles_GetUploadJobPath"></a>
 
 This API retrieves the pre-signed URL and client token for uploading the file associated with the upload job.
 

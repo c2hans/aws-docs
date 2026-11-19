@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_LambdaCon
 ---
 
 # LambdaConfig
-<a name="API_LambdaConfig"></a>
 
 Configuration details for an AWS Lambda function used as an endpoint for a cloud connector.
 

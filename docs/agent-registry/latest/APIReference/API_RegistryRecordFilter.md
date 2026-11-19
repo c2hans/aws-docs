@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry/latest/APIReference/API_R
 ---
 
 # RegistryRecordFilter
-<a name="API_RegistryRecordFilter"></a>
 
  A single filter applied to a `ListDiscoverableRegistryRecords` request.
 

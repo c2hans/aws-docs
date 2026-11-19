@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/libcrypto
 ---
 
 # Using a custom libcrypto library in the AWS SDK for C\+\+
-<a name="libcrypto"></a>
 
  By default, the AWS SDK for C\+\+ uses the default system cryptographic library for transport layer security. However, the SDK for C\+\+ can optionally be configured to use a different libcrypto library when building the SDK from source. This functionally means that all cryptographic operations will be diverted to a custom implementation of OpenSSL. For example, you might want to use the [`AWS-LC`](https://github.com/aws/aws-lc) library in [FIPS mode](https://aws.amazon.com/blogs/security/aws-lc-is-now-fips-140-3-certified/) to achieve a FIPS standard in your application.
 

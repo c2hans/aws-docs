@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mou
 ---
 
 # MountSource
-<a name="API_MountSource"></a>
 
 The data source configuration for a mount. Specify exactly one of the following.
 

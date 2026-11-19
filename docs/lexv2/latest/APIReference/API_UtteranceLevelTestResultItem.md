@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceL
 ---
 
 # UtteranceLevelTestResultItem
-<a name="API_UtteranceLevelTestResultItem"></a>
 
 Contains information about multiple utterances in the results of a test set execution.
 

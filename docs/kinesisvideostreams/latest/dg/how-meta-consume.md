@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-meta-c
 ---
 
 # Consume metadata embedded in a Kinesis video stream
-<a name="how-meta-consume"></a>
 
 To consume the metadata in a Kinesis video stream, use an implementation of `MkvTagProcessor`:
 

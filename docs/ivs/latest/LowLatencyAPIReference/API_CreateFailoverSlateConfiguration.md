@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreateFailoverSlateConfiguration
-<a name="API_CreateFailoverSlateConfiguration"></a>
 
 Creates a new failover slate configuration.
 

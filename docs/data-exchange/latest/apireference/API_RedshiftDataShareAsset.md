@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RedshiftDataShareAsset
-<a name="API_RedshiftDataShareAsset"></a>
 
 The Amazon Redshift datashare asset.
 

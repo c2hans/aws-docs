@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing-replay.ht
 ---
 
 # Simulate HTTP traffic using static replay in the AWS SDK for Rust
-<a name="testing-replay"></a>
 
 The AWS SDK for Rust provides multiple approaches for testing your code that interacts with AWS services. This topic describes how to use the `StaticReplayClient` to create a fake HTTP client that can be used instead of the standard HTTP client that is normally used by AWS services. This client returns the HTTP responses that you specify rather than communicating with the service over the network, so that tests get known data for testing purposes.
 

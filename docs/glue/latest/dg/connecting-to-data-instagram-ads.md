@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-instag
 ---
 
 # Connecting to Instagram Ads
-<a name="connecting-to-data-instagram-ads"></a>
 
 Instagram is a popular photo-sharing app that lets you connect with brands, celebrities, thought leaders, friends, family, and more. It is a photo-sharing and social networking service. Users can take photos or short videos and share them with their followers. Instagram ads are posts for which businesses can pay to serve to Instagram users.
 

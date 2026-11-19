@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SnsDestin
 ---
 
 # SnsDestination
-<a name="API_SnsDestination"></a>
 
 An object that defines an Amazon SNS destination for email events. You can use Amazon SNS to send notifications when certain email events occur.
 

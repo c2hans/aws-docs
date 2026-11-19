@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023
 ---
 
 # Amazon Linux 2023 version 2023.1.20230719 release notes
-<a name="relnotes-2023.1.20230719"></a>
 
 This topic includes Amazon Linux 2023 (AL2023) release notes updates for the 2023.1.20230719 release
 
@@ -45,7 +44,7 @@ If you only have questions about AL2023, feel free to start or join a [discussio
 ### New packages in AL2023.1.20230719 since AL2023.1.20230705
 <a name="new-AL2023.1.20230705-AL2023.1.20230719"></a>
 
- Comparing AL2023.1.20230705 version 2023.1.20230705 to AL2023.1.20230719 version [2023.1.20230719](#relnotes-2023.1.20230719).
+ Comparing AL2023.1.20230705 version 2023.1.20230705 to AL2023.1.20230719 version [2023.1.20230719](relnotes-2023.1.20230719.md).
 
 | Package Type | Number of new packages in AL2023.1.20230719 compared to AL2023.1.20230705 |
 | --- | --- |
@@ -63,7 +62,7 @@ New packages in AL2023.1.20230719:
 ### AL2023.1.20230719 upgrades from AL2023.1.20230705
 <a name="vercmp-AL2023.1.20230705-AL2023.1.20230719"></a>
 
- Comparing [2023.1.20230705](relnotes-2023.1.20230705.md) to [2023.1.20230719](#relnotes-2023.1.20230719).
+ Comparing [2023.1.20230705](relnotes-2023.1.20230705.md) to [2023.1.20230719](relnotes-2023.1.20230719.md).
 
 | Package Type | Count |
 | --- | --- |

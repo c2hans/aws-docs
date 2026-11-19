@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # GroupMembershipExistenceResult
-<a name="API_GroupMembershipExistenceResult"></a>
 
 Indicates whether a resource is a member of a group in the identity store.
 

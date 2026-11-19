@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListAutos
 ---
 
 # ListAutoshifts
-<a name="API_ListAutoshifts"></a>
 
 Returns the autoshifts for an AWS Region. By default, the call returns only `ACTIVE` autoshifts. Optionally, you can specify the `status` parameter to return `COMPLETED` autoshifts.
 

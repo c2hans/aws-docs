@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Condition.
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 Provides an expression that evaluates to true or false.
 

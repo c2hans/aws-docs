@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateTableReplicaAutoScaling
-<a name="API_UpdateTableReplicaAutoScaling"></a>
 
 Updates auto scaling settings on your global tables at once.
 

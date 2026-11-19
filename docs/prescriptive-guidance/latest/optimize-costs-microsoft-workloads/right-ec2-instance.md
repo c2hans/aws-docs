@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Select the right EC2 instance for SQL Server workloads
-<a name="right-ec2-instance"></a>
 
 |
 |

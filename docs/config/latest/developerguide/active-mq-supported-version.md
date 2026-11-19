@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/active-mq-s
 ---
 
 # active-mq-supported-version
-<a name="active-mq-supported-version"></a>
 
  Checks if an Amazon MQ ActiveMQ broker is running on a specified minimum supported engine version. The rule is NON\_COMPLIANT if the ActiveMQ broker is not running on the minimum supported engine version that you specify.
 

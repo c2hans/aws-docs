@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Establish a multicloud-enabled CCoE
-<a name="ccoe"></a>
 
 If you have decided to adopt a multicloud strategy, we recommend that you centralize your cloud leadership efforts through a transformation office or a [Cloud Center of Excellence (CCoE)](https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/building-a-cloud-center-of-excellence-ccoe-to-transform-the-entire-enterprise.html). A CCoE develops and evangelizes an approach for implementing cloud technology at scale across an organization. For successful cloud adoption, design your CCoE to include representatives who can speak for the teams and departments involved. Start small and incrementally grow the CCoE to meet your needs as you progress through your cloud transformation. Your cloud provider representatives, such as your AWS account manager and solutions architect, can provide resources to guide you through the creation of your CCoE.
 

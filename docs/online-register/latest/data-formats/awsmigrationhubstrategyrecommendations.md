@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsm
 ---
 
 # Data retrieval APIs for AWS Migration Hub Strategy Recommendations
-<a name="awsmigrationhubstrategyrecommendations"></a>
 
 AWS Migration Hub Strategy Recommendations provides the following APIs for data retrieval.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::WebACL DefaultAction
-<a name="aws-properties-wafv2-webacl-defaultaction"></a>
 
 In a [AWS::WAFv2::WebACL](aws-resource-wafv2-webacl.md), this is the action that you want AWS WAF to perform when a web request doesn't match any of the rules in the `WebACL`. The default action must be a terminating action.
 

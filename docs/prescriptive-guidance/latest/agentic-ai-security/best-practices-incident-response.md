@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # 8. Incident response and business continuity for agentic AI systems on AWS
-<a name="best-practices-incident-response"></a>
 
 Like most existing enterprise technologies, a [business continuity plan](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/business-continuity-plan-bcp.html) is vital to manage organizational risk. Agentic AI systems require the same level of planning and care as traditional technology systems. However, as these systems begin to take on human-like activities, an additional risk might emerge where human operators are no longer adequately skilled to handle the workloads of agentic AI systems in a failure scenario.
 

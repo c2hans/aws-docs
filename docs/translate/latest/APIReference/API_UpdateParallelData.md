@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Update
 ---
 
 # UpdateParallelData
-<a name="API_UpdateParallelData"></a>
 
 Updates a previously created parallel data resource by importing a new input file from Amazon S3.
 

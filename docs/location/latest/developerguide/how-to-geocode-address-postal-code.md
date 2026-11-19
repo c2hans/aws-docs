@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to geocode an address number with a postal code
-<a name="how-to-geocode-address-postal-code"></a>
 
 In countries where postal codes are highly specific (linking only a few addresses on the same street), an address can be found using only the house number and postal code. This practice is common in transportation and parcel delivery logistics. This feature is supported in Canada, the United Kingdom, the Netherlands, the United States (ZIP\+4), Israel, Ireland, and Singapore. In both Ireland and Singapore, postal codes provide exact location details down to the specific house number.
 

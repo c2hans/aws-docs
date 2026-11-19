@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Creating a DAX cluster using the AWS CLI
-<a name="DAX.create-cluster.cli"></a>
 
 This section describes how to create an Amazon DynamoDB Accelerator (DAX) cluster using the AWS Command Line Interface (AWS CLI). If you haven't already done so, you must install and configure the AWS CLI. To do this, see the following instructions in the *AWS Command Line Interface User Guide*:
 + [Installing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)

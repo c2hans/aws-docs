@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RuleCondition
-<a name="API_RuleCondition"></a>
 
 Information about a condition for a rule.
 

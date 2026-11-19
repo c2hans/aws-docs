@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateBillin
 ---
 
 # UpdateBillingGroup
-<a name="API_UpdateBillingGroup"></a>
 
 Updates information about the billing group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # UpdateCampaignDialerConfig
-<a name="API_connect-outbound-campaigns_UpdateCampaignDialerConfig"></a>
 
 Updates [DialerConfig](https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API_DialerConfig.html) for an outbound campaign.
 

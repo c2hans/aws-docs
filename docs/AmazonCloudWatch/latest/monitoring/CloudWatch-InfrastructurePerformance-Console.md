@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor using the console
-<a name="CloudWatch-InfrastructurePerformance-Console"></a>
 
 View the network performance between two Regions, between two Availability Zones, or within an Availability Zone. After you choose a starting and ending date, and a period by which to aggregate performance, the network performance metrics display in the **Health status timeline** and **Network latency timeline** for that time period. You can also subscribe to or unsubscribe from Amazon CloudWatch metrics. When you subscribe, you can view performance metrics in CloudWatch.
 

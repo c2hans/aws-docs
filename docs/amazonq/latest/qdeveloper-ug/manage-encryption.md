@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/manage-encr
 ---
 
 # Managing the encryption method in Amazon Q Developer
-<a name="manage-encryption"></a>
 
 **Note**
 This section does not apply to personal accounts (Builder IDs).

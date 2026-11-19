@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTWirelessReadOnlyAccess
-<a name="AWSIoTWirelessReadOnlyAccess"></a>
 
 **Description**: Allows the associated identity read only access to AWS IoT wireless.
 

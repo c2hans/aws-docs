@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetSu
 ---
 
 # GetSuite
-<a name="API_GetSuite"></a>
 
 Gets information about a suite.
 

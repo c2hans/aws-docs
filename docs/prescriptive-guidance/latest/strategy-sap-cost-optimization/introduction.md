@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Cost optimization strategy for SAP workloads in the AWS Cloud
-<a name="introduction"></a>
 
 *Chris Grudzinski and Sergej Trisic, Amazon Web Services*
 

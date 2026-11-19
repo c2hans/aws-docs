@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateMarketplaceRevenueShare
-<a name="API_prm_CreateMarketplaceRevenueShare"></a>
 
 Creates a new marketplace revenue share resource in the specified catalog.
 

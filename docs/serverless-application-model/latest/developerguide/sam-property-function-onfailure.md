@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # OnFailure
-<a name="sam-property-function-onfailure"></a>
 
 A destination for events that failed processing.
 

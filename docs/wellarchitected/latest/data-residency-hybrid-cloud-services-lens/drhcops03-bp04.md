@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS03-BP04 Implement failover automation, and test your disaster recovery strategies
-<a name="drhcops03-bp04"></a>
 
  Implement failover automations, and validate the automations through ongoing tests. Verify that your automation adheres to the boundaries of the data residency requirements.
 

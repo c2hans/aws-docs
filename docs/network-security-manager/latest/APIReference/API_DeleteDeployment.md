@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeleteDeployment
-<a name="API_DeleteDeployment"></a>
 
 Deletes the specified deployment.
 

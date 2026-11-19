@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ContextFailedDetai
 ---
 
 # ContextFailedDetails
-<a name="API_ContextFailedDetails"></a>
 
 Details about a context that failed.
 

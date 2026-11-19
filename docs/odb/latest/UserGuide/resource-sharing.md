@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/resource-sharing.ht
 ---
 
 # Resource sharing in Oracle Database@AWS
-<a name="resource-sharing"></a>
 
 With Oracle Database@AWS, you can share Exadata infrastructure, your ODB network, and your Exascale storage vault across multiple AWS accounts in the same AWS organization. This enables you to provision infrastructure once and reuse it across trusted accounts, allowing you to reduce costs while separating responsibilities.
 

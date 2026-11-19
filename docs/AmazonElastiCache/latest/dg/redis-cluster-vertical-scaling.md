@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/redis-cluste
 ---
 
 # Online vertical scaling by modifying node type
-<a name="redis-cluster-vertical-scaling"></a>
 
 By using online vertical scaling with Valkey and Redis OSS, you can scale your Valkey or Redis OSS clusters dynamically with minimal downtime. This allows your Valkey or Redis OSS cluster to serve requests even while scaling.
 

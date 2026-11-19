@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 An API operation for adding one or more tags (key-value pairs) to a resource.
 

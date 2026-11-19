@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AggregateOperatio
 ---
 
 # AggregateOperation
-<a name="API_AggregateOperation"></a>
 
 Specifies the set of parameters needed to perform aggregation in the aggregate transform.
 

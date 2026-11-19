@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_ap
 ---
 
 # InvalidParameterDetail
-<a name="API_appconfigdata_InvalidParameterDetail"></a>
 
 Information about an invalid parameter.
 

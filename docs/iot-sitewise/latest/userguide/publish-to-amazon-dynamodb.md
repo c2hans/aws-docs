@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/publish-to
 ---
 
 # Publish property value updates to Amazon DynamoDB
-<a name="publish-to-amazon-dynamodb"></a>
 
 This tutorial introduces a convenient way to store your data by using [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), making it easier to access historical asset data without repeatedly querying the AWS IoT SiteWise API. After you complete this tutorial, you can create custom software that consumes your asset data, such as a live map of wind speed and direction over an entire wind farm. If you want to monitor and visualize your data without implementing a custom software solution, see [Monitor data with AWS IoT SiteWise Monitor](monitor-data.md).
 

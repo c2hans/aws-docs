@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/send-message.h
 ---
 
 # Flow block in Connect Customer: Send message
-<a name="send-message"></a>
 
 This topic defines the flow block for sending a message to a customer.
 

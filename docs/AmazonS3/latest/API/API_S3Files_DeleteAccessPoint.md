@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_DeleteAc
 ---
 
 # DeleteAccessPoint
-<a name="API_S3Files_DeleteAccessPoint"></a>
 
 Deletes an S3 File System Access Point. This operation is irreversible.
 

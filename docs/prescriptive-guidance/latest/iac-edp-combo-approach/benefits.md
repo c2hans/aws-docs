@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # Benefits
-<a name="benefits"></a>
 
 This section covers some of the main benefits of using IaC and EDP to solve common problems with managing or provisioning IT infrastructure resources.
 

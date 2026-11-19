@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailMes
 ---
 
 # EmailMessageReference
-<a name="API_EmailMessageReference"></a>
 
 Information about the reference when the referenceType is `EMAIL_MESSAGE`. Otherwise, null.
 

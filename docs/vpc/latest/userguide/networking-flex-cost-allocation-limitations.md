@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Networking Flexible Cost Allocation limitations
-<a name="networking-flex-cost-allocation-limitations"></a>
 
 To use Networking Flexible Cost Allocation (FCA), you need to be aware of the following limitations. For the traffic that each resource type allocates, see [Allocate EC2 instance data transfer](networking-flex-cost-allocation-ec2.md), [Allocate NAT gateway costs](networking-flex-cost-allocation-natgw.md), and [Allocate VPC peering data transfer](networking-flex-cost-allocation-pcx.md).
 

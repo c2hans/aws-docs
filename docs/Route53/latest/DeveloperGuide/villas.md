@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/villas.htm
 ---
 
 # .villas
-<a name="villas"></a>
 
 Used by real estate agents and property owners who have villas to sell, rent, or lease.
 

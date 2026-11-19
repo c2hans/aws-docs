@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary-u
 ---
 
 # Updating a custom vocabulary
-<a name="custom-vocabulary-updating"></a>
 
 To update the content of an existing custom vocabulary, use the [`UpdateVocabulary`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UpdateVocabulary.html) operation.
 

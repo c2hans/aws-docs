@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleEksRequirements
-<a name="API_DetectionRuleEksRequirements"></a>
 
 The requirements for running a Runtime Monitoring custom detection rule on Amazon EKS.
 

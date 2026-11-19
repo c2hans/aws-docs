@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Covera
 ---
 
 # CoverageEcsClusterDetails
-<a name="API_CoverageEcsClusterDetails"></a>
 
 Contains information about Amazon ECS cluster runtime coverage details.
 

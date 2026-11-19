@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Calling the Amazon RDS Data API with the AWS CLI
-<a name="data-api.calling.cli"></a>
 
 You can call RDS Data API (Data API) using the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Project governance playbook for AWS large migrations
-<a name="introduction"></a>
 
 *Bill David, Pratik Chunawala, Wally Lu, Tuhin Mukherjee, Amit Rudraraju, and Senay Swinney, Amazon Web Services*
 

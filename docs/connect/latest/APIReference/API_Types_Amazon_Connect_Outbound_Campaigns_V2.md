@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Outbound Campaigns V2
-<a name="API_Types_Amazon_Connect_Outbound_Campaigns_V2"></a>
 
 The following data types are supported by Amazon Connect Outbound Campaigns V2:
 +  [AbandonmentRatePacingConfig](API_connect-outbound-campaigns-v2_AbandonmentRatePacingConfig.md)

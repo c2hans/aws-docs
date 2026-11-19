@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/troubleshooting-fai
 ---
 
 # Troubleshooting failback errors
-<a name="troubleshooting-failback"></a>
 
 Use this section to troubleshoot issues that occur during the failback process — from Failback Client setup through reverse replication.
 

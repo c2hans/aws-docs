@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Distr
 ---
 
 # DistributionConfig
-<a name="API_DistributionConfig"></a>
 
 A distribution configuration.
 

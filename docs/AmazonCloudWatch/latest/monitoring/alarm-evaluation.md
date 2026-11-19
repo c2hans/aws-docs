@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 ---
 
 # Alarm evaluation
-<a name="alarm-evaluation"></a>
 
 ## Metric alarm states
 <a name="alarm-states"></a>

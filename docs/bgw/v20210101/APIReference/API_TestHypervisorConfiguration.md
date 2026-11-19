@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_TestHyper
 ---
 
 # TestHypervisorConfiguration
-<a name="API_TestHypervisorConfiguration"></a>
 
 Tests your hypervisor configuration to validate that backup gateway can connect with the hypervisor and its resources.
 

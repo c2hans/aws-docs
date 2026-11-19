@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkEndpoint
-<a name="API_NetworkEndpoint"></a>
 
 Contains information about network endpoints that were observed in the attack sequence.
 

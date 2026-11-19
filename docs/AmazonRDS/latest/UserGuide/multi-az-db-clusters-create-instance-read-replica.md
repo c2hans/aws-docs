@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-c
 ---
 
 # Creating a DB instance read replica from a Multi-AZ DB cluster
-<a name="multi-az-db-clusters-create-instance-read-replica"></a>
 
 You can create a DB instance read replica from a Multi-AZ DB cluster in order to scale beyond the compute or I/O capacity of the cluster for read-heavy database workloads. You can direct this excess read traffic to one or more DB instance read replicas. You can also use read replicas to migrate from a Multi-AZ DB cluster to a DB instance.
 

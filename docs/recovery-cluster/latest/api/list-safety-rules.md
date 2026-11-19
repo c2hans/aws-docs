@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/list-safety-
 ---
 
 # List safety rules
-<a name="list-safety-rules"></a>
 
 The following is an example of a request to list the safety rules in a control panel, and the response.
 

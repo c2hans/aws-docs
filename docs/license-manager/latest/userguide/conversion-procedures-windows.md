@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Convert a license type for Windows and SQL Server in License Manager
-<a name="conversion-procedures-windows"></a>
 
 You can use either the License Manager Console or the AWS CLI to convert the license type of eligible Windows and SQL Server instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardVisualId
-<a name="API_DashboardVisualId"></a>
 
 A structure that contains the following elements:
 + The `DashboardId` of the dashboard that has the visual that you want to embed.

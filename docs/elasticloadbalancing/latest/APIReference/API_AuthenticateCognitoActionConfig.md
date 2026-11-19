@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AuthenticateCognitoActionConfig
-<a name="API_AuthenticateCognitoActionConfig"></a>
 
 Request parameters to use when integrating with Amazon Cognito to authenticate users.
 

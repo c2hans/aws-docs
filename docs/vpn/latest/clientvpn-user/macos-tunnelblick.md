@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/macos-tunnelbl
 ---
 
 # Establish an AWS Client VPN connection on macOS
-<a name="macos-tunnelblick"></a>
 
 You can establish a VPN connection using the Tunnelblick client application on a macOS computer.
 

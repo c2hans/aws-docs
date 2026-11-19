@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # HiddenCaseRule
-<a name="API_connect-cases_HiddenCaseRule"></a>
 
 A rule that controls field visibility based on conditions. Fields can be shown or hidden dynamically based on values in other fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetwor
 ---
 
 # GetNetworkInsightsAccessScopeAnalysisFindings
-<a name="API_GetNetworkInsightsAccessScopeAnalysisFindings"></a>
 
 Gets the findings for the specified Network Access Scope analysis.
 

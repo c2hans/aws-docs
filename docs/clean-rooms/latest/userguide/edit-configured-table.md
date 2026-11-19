@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-config
 ---
 
 # Editing a configured table
-<a name="edit-configured-table"></a>
 
 Prerequisites:
 + An AWS account with access to AWS Clean Rooms

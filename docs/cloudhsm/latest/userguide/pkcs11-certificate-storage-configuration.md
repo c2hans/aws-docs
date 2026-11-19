@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certifi
 ---
 
 # Enabling certificate storage
-<a name="pkcs11-certificate-storage-configuration"></a>
 
  You can enable certificate storage on hsm2m.medium clusters using the PKCS \#11 library configuration tool. This feature is available in SDK versions 5.13 and later. For a list of operations that support the certificate object type, see [Certificate storage API operations](pkcs11-certificate-storage-api.md).
 

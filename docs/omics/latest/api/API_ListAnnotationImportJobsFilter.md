@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationImpor
 ---
 
 # ListAnnotationImportJobsFilter
-<a name="API_ListAnnotationImportJobsFilter"></a>
 
 A filter for annotation import jobs.
 

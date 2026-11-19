@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Delet
 ---
 
 # DeleteCertificateAuthority
-<a name="JavaApi-DeleteCertificateAuthority"></a>
 
 The following Java sample shows how to use the [DeleteCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeleteCertificateAuthority.html) operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeApprovalRequirement
-<a name="API_ChangeTypeApprovalRequirement"></a>
 
 The kind of approval that is required for the execution of a change type.
 

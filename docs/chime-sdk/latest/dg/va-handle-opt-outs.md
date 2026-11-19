@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-handle-opt-outs.h
 ---
 
 # Handling opt outs for speaker search for the Amazon Chime SDK
-<a name="va-handle-opt-outs"></a>
 
 You can handle opt outs for end users and entire organizations. Opting out has the following effects:
 + After you opt out, voice analytics will not use any new enrollment audio for model training, and it will not use any enrollment audio collected and stored prior to your opting out.

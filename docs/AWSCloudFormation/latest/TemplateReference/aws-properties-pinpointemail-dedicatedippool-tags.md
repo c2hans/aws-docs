@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PinpointEmail::DedicatedIpPool Tags
-<a name="aws-properties-pinpointemail-dedicatedippool-tags"></a>
 
 An object that defines the tags (keys and values) that you want to associate with the dedicated IP pool.
 

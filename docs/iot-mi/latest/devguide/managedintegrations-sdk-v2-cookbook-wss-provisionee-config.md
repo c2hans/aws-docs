@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Configure provisionees for WiFi Simple Setup
-<a name="managedintegrations-sdk-v2-cookbook-wss-provisionee-config"></a>
 
 **On this page:**
 + [Provisionee requirements](#managedintegrations-sdk-v2-cookbook-wss-provisionee-requirements)

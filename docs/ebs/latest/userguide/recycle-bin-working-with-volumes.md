@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-working
 ---
 
 # Recover deleted volumes from the Recycle Bin
-<a name="recycle-bin-working-with-volumes"></a>
 
 This topic explains how to recover Amazon EBS volumes from the Recycle Bin.
 

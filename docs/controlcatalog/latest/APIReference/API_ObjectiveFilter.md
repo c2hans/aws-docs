@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_O
 ---
 
 # ObjectiveFilter
-<a name="API_ObjectiveFilter"></a>
 
 An optional filter that narrows the list of objectives to a specific domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ru
 ---
 
 # RumEvent
-<a name="API_RumEvent"></a>
 
 A structure that contains the information for one performance event that RUM collects from a user session with your application.
 

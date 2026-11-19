@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get the AWS Region of a contact in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getcontactregion"></a>
 
 Returns the AWS Region that the given contact is handled in, for example `us-east-1`.
 

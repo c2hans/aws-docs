@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-configure.
 ---
 
 # Creating and configuring an Amazon SQS event source mapping
-<a name="services-sqs-configure"></a>
 
 To process Amazon SQS messages with Lambda, configure your queue with the appropriate settings, then create a Lambda event source mapping.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-sec
 ---
 
 # Example bucket policies for directory buckets
-<a name="s3-express-security-iam-example-bucket-policies"></a>
 
 This section provides example directory bucket policies. To use these policies, replace the `{{user input placeholders}}` with your own information.
 

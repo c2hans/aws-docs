@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEntityResolutionConsoleReadOnlyAccess
-<a name="AWSEntityResolutionConsoleReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to AWS Entity Resolution via the AWS Management Console.
 

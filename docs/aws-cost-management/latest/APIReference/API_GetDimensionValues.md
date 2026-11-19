@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetDimensionValues
-<a name="API_GetDimensionValues"></a>
 
 Retrieves all available filter values for a specified filter over a period of time. You can search the dimension values for an arbitrary string.
 
@@ -76,7 +75,7 @@ Pattern: `^arn:aws[a-z-]*:(billing)::[0-9]{12}:billingview/[-a-zA-Z0-9/:_+=.-@]{
 Required: No
 
  ** [Context](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-Context"></a>
-The context for the call to `GetDimensionValues`. This can be `RESERVATIONS` or `COST_AND_USAGE`. The default value is `COST_AND_USAGE`. If the context is set to `RESERVATIONS`, the resulting dimension values can be used in the `GetReservationUtilization` operation. If the context is set to `COST_AND_USAGE`, the resulting dimension values can be used in the `GetCostAndUsage` operation.
+The context for the call to `GetDimensionValues`. This can be `COST_AND_USAGE`, `RESERVATIONS`, or `SAVINGS_PLANS`. The default value is `COST_AND_USAGE`. If the context is set to `RESERVATIONS`, the resulting dimension values can be used in the `GetReservationUtilization` operation. `GetReservationCoverage` filters match cost and usage data, so use `COST_AND_USAGE` values for them. If the context is set to `SAVINGS_PLANS`, the resulting dimension values can be used in the `GetSavingsPlansUtilization` and `GetSavingsPlansUtilizationDetails` operations. If the context is set to `COST_AND_USAGE`, the resulting dimension values can be used in the `GetCostAndUsage` operation.
 If you set the context to `COST_AND_USAGE`, you can use the following dimensions for searching:
 + AZ - The Availability Zone. An example is `us-east-1a`.
 + BILLING\_ENTITY - The AWS seller that your account is with. Possible values are the following:
@@ -86,46 +85,46 @@ If you set the context to `COST_AND_USAGE`, you can use the following dimensions
   - AISPL (Amazon Internet Services Pvt. Ltd.): The local Indian entity that's an acting reseller for AWS services in India.
 
   - AWS Marketplace: The entity that supports the sale of solutions that are built on AWS by third-party software providers.
-+ CACHE\_ENGINE - The Amazon ElastiCache operating system. Examples are Windows or Linux.
-+ DEPLOYMENT\_OPTION - The scope of Amazon Relational Database Service deployments. Valid values are `SingleAZ` and `MultiAZ`.
-+ DATABASE\_ENGINE - The Amazon Relational Database Service database. Examples are Aurora or MySQL.
++ CACHE\_ENGINE - The Amazon ElastiCache engine. Examples are `Redis`, `Valkey`, and `Memcached`.
++ DEPLOYMENT\_OPTION - The scope of Amazon Relational Database Service deployments. Examples are `Single-AZ` and `Multi-AZ`.
++ DATABASE\_ENGINE - The Amazon Relational Database Service database engine. Examples are `Aurora MySQL`, `Aurora PostgreSQL`, and `MySQL`.
 + INSTANCE\_TYPE - The type of Amazon EC2 instance. An example is `m4.xlarge`.
-+ INSTANCE\_TYPE\_FAMILY - A family of instance types optimized to fit different use cases. Examples are `Compute Optimized` (for example, `C4`, `C5`, `C6g`, and `C7g`), `Memory Optimization` (for example, `R4`, `R5n`, `R5b`, and `R6g`).
++ INSTANCE\_TYPE\_FAMILY - A family of instance types optimized to fit different use cases. The value is the family code, such as `m5` or `c6g` for Amazon EC2. The casing of the code follows each service's product catalog, for example `R6G` for Amazon Relational Database Service.
 + INVOICING\_ENTITY - The name of the entity that issues the AWS invoice.
 + LEGAL\_ENTITY\_NAME - The name of the organization that sells you AWS services, such as Amazon Web Services.
 + LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
-+ OPERATING\_SYSTEM - The operating system. Examples are Windows or Linux.
++ OPERATING\_SYSTEM - The operating system. Examples are `Linux/UNIX`, `Windows (Amazon VPC)`, and `Red Hat Enterprise Linux`.
 + OPERATION - The action performed. Examples include `RunInstance` and `CreateBucket`.
-+ PLATFORM - The Amazon EC2 operating system. Examples are Windows or Linux.
++ PLATFORM - The operating system or platform of the usage. Examples are `Linux/UNIX`, `Windows (Amazon VPC)`, and `Red Hat Enterprise Linux`.
 + PRODUCT\_ATTRIBUTE - The product attributes of supported services, such as the model provider or the model for Amazon Bedrock.
-+ PURCHASE\_TYPE - The reservation type of the purchase that this usage is related to. Examples include On-Demand Instances and Standard Reserved Instances.
++ PURCHASE\_TYPE - The reservation type of the purchase that this usage is related to. Examples include `On Demand Instances`, `Standard Reserved Instances`, `Spot Instances`, and `Savings Plans`.
 + RESERVATION\_ID - The unique identifier for an AWS Reservation Instance.
 + SAVINGS\_PLAN\_ARN - The unique identifier for your Savings Plans.
-+ SAVINGS\_PLANS\_TYPE - Type of Savings Plans (EC2 Instance or Compute).
++ SAVINGS\_PLANS\_TYPE - Type of Savings Plans. Examples are `ComputeSavingsPlans` and `EC2InstanceSavingsPlans`.
 + SERVICE - The AWS service such as Amazon DynamoDB.
-+ TENANCY - The tenancy of a resource. Examples are shared or dedicated.
++ TENANCY - The tenancy of a resource. Examples are `Shared`, `Dedicated`, and `Host`.
 + USAGE\_TYPE - The type of usage. An example is DataTransfer-In-Bytes. The response for the `GetDimensionValues` operation includes a unit attribute. Examples include GB and Hrs.
 + USAGE\_TYPE\_GROUP - The grouping of common usage types. An example is Amazon EC2: CloudWatch – Alarms. The response for this operation includes a unit attribute.
 + REGION - The AWS Region.
-+ RECORD\_TYPE - The different types of charges such as Reserved Instance (RI) fees, usage costs, tax refunds, and credits.
-+ RESOURCE\_ID - The unique identifier of the resource. ResourceId is an opt-in feature only available for last 14 days for EC2-Compute Service.
++ RECORD\_TYPE - The different types of charges such as Reserved Instance (RI) fees, usage costs, tax refunds, and credits. Examples include `Usage`, `Credit`, `Tax`, `Recurring`, `Upfront`, and `Support`.
++ RESOURCE\_ID - The unique identifier of the resource. ResourceId is an opt-in feature that is available for the last 14 days, for the services that you opt in to in AWS Cost Management Console preferences.
+Dimension values are case-sensitive and must match exactly when you use them in a filter. Use `GetDimensionValues` to list the values that are available for your account.
 If you set the context to `RESERVATIONS`, you can use the following dimensions for searching:
 + AZ - The Availability Zone. An example is `us-east-1a`.
-+ CACHE\_ENGINE - The Amazon ElastiCache operating system. Examples are Windows or Linux.
-+ DEPLOYMENT\_OPTION - The scope of Amazon Relational Database Service deployments. Valid values are `SingleAZ` and `MultiAZ`.
 + INSTANCE\_TYPE - The type of Amazon EC2 instance. An example is `m4.xlarge`.
-+ LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
-+ PLATFORM - The Amazon EC2 operating system. Examples are Windows or Linux.
++ INSTANCE\_TYPE\_FAMILY - The family of the instance type. An example is `m5`.
++ LINKED\_ACCOUNT - The AWS ID of the member account. The `name` attribute contains the full name of the member account.
++ PLATFORM - The platform of the reservation. For Amazon EC2, examples are `Linux/UNIX`, `Windows`, and `Red Hat Enterprise Linux`. For Amazon Relational Database Service and Amazon ElastiCache, the value is the engine, such as `MySQL` or `Redis`. These values can differ from the `COST_AND_USAGE` values, for example `Windows` instead of `Windows (Amazon VPC)`.
 + REGION - The AWS Region.
-+ SCOPE (Utilization only) - The scope of a Reserved Instance (RI). Values are regional or a single Availability Zone.
-+ TAG (Coverage only) - The tags that are associated with a Reserved Instance (RI).
-+ TENANCY - The tenancy of a resource. Examples are shared or dedicated.
++ SCOPE (Utilization only) - The scope of a Reserved Instance (RI). Values are `Region` and `Availability Zone`.
++ SERVICE - The AWS service of the reservation, such as Amazon Relational Database Service.
++ TENANCY - The tenancy of the reservation. Values are `Shared` and `Dedicated`.
 If you set the context to `SAVINGS_PLANS`, you can use the following dimensions for searching:
-+ SAVINGS\_PLANS\_TYPE - Type of Savings Plans (EC2 Instance or Compute)
++ SAVINGS\_PLANS\_TYPE - Type of Savings Plans. Examples are `ComputeSavingsPlans`, `EC2InstanceSavingsPlans`, `SageMakerSavingsPlans`, and `DatabaseSavingsPlans`.
 + PAYMENT\_OPTION - The payment option for the given Savings Plans (for example, All Upfront)
 + REGION - The AWS Region.
 + INSTANCE\_TYPE\_FAMILY - The family of instances (For example, `m5`)
-+ LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
++ LINKED\_ACCOUNT - The AWS ID of the member account. The `name` attribute contains the full name of the member account.
 + SAVINGS\_PLAN\_ARN - The unique identifier for your Savings Plans.
 Type: String
 Valid Values: `COST_AND_USAGE | RESERVATIONS | SAVINGS_PLANS`
@@ -148,36 +147,16 @@ Pattern: `[\S\s]*`
 Required: No
 
  ** [Filter](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-Filter"></a>
-Use `Expression` to filter in various Cost Explorer APIs.
-Not all `Expression` types are supported in each API. Refer to the documentation for each specific API to see what is supported.
-There are two patterns:
-+ Simple dimension values.
-  + There are four types of simple dimension values: `CostCategories`, `Tags`, `Dimensions`, and `ProductAttributes`.
-    + Specify the `CostCategories` field to define a filter that acts on Cost Categories.
-    + Specify the `Tags` field to define a filter that acts on Cost Allocation Tags.
-    + Specify the `Dimensions` field to define a filter that acts on the [`DimensionValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
-    + Specify the `ProductAttributes` field to define a filter that acts on the product attributes of supported services, such as Amazon Bedrock. Only `GetCostAndUsage`, `GetCostAndUsageWithResources`, `GetDimensionValues` (in the `COST_AND_USAGE` context), `GetTags`, and `GetCostCategories` support `ProductAttributes`. For the supported services, keys and `SERVICE` filter rules, see [`ProductAttributeValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ProductAttributeValues.html).
-  + For each filter type, you can set the dimension name and values for the filters that you plan to use.
-    + For example, you can filter for `REGION==us-east-1 OR REGION==us-west-1`. For `GetRightsizingRecommendation`, the Region is a full name (for example, `REGION==US East (N. Virginia)`.
-    + The corresponding `Expression` for this example is as follows: `{ "Dimensions": { "Key": "REGION", "Values": [ "us-east-1", "us-west-1" ] } }`
-    + As shown in the previous example, lists of dimension values are combined with `OR` when applying the filter.
-  + You can also set different match options to further control how the filter behaves. Not all APIs support match options. Refer to the documentation for each specific API to see what is supported.
-    + For example, you can filter for linked account names that start with "a".
-    + The corresponding `Expression` for this example is as follows: `{ "Dimensions": { "Key": "LINKED_ACCOUNT_NAME", "MatchOptions": [ "STARTS_WITH" ], "Values": [ "a" ] } }`
-+ Compound `Expression` types with logical operations.
-  + You can use multiple `Expression` types and the logical operators `AND/OR/NOT` to create a list of one or more `Expression` objects. By doing this, you can filter by more advanced options.
-  + For example, you can filter by `((REGION == us-east-1 OR REGION == us-west-1) OR (TAG.Type == Type1)) AND (USAGE_TYPE != DataTransfer)`.
-  + The corresponding `Expression` for this example is as follows: `{ "And": [ {"Or": [ {"Dimensions": { "Key": "REGION", "Values": [ "us-east-1", "us-west-1" ] }}, {"Tags": { "Key": "TagName", "Values": ["Value1"] } } ]}, {"Not": {"Dimensions": { "Key": "USAGE_TYPE", "Values": ["DataTransfer"] }}} ] } `
-**Note**
-Because each `Expression` can have only one operator, the service returns an error if more than one is specified. The following example shows an `Expression` object that creates an error: ` { "And": [ ... ], "Dimensions": { "Key": "USAGE_TYPE", "Values": [ "DataTransfer" ] } } `
-The following is an example of the corresponding error message: `"Expression has more than one roots. Only one root operator is allowed for each expression: And, Or, Not, Dimensions, Tags, CostCategories"`
-For the `GetRightsizingRecommendation` action, a combination of OR and NOT isn't supported. OR isn't supported between different dimensions, or dimensions and tags. NOT operators aren't supported. Dimensions are also limited to `LINKED_ACCOUNT`, `REGION`, or `RIGHTSIZING_TYPE`.
-For the `GetReservationPurchaseRecommendation` action, only NOT is supported. AND and OR aren't supported. Dimensions are limited to `LINKED_ACCOUNT`.
+To filter your results, use an [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object.
+The supported filter shapes depend on `Context` and on whether you specify `SortBy`:
++  `COST_AND_USAGE` without `SortBy`: a single `Dimensions`, `Tags`, or `CostCategories` expression, or one `And` of such expressions. `Or`, `Not`, and an `And` inside another `And` aren't supported.
++  `COST_AND_USAGE` with `SortBy`: `And`, `Or`, and `Not` are supported, nested up to four levels.
++  `RESERVATIONS` and `SAVINGS_PLANS`: a single `Dimensions` expression, a `Not` expression that contains one `Dimensions` expression, or one `And` of such expressions. Each dimension can appear only once. `Or`, `Tags`, `CostCategories`, and an `And` inside another `And` aren't supported. For `RESERVATIONS`, don't specify `MatchOptions`. For `SAVINGS_PLANS`, `MatchOptions` can be only `EQUALS`, or `EQUALS` and `CASE_SENSITIVE`. `SortBy` isn't supported in these contexts.
 Type: [Expression](API_Expression.md) object
 Required: No
 
  ** [MaxResults](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-MaxResults"></a>
-This field is only used when SortBy is provided in the request. The maximum number of objects that are returned for this request. If MaxResults isn't specified with SortBy, the request returns 1000 results as the default value for this parameter.
+The maximum number of objects that are returned for this request. If MaxResults isn't specified with SortBy, the request returns 1000 results as the default value for this parameter. This field takes effect only when you specify SortBy in the request. If you don't specify SortBy, Cost Explorer ignores MaxResults.
 For `GetDimensionValues`, MaxResults has an upper limit of 1000.
 Type: Integer
 Valid Range: Minimum value of 1.
@@ -244,39 +223,38 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [DimensionValues](#API_GetDimensionValues_ResponseSyntax) **   <a name="awscostmanagement-GetDimensionValues-response-DimensionValues"></a>
-The filters that you used to filter your request. Some dimensions are available only for a specific context.
+The dimension values that match your request. Some dimensions are available only for a specific context.
 If you set the context to `COST_AND_USAGE`, you can use the following dimensions for searching:
 + AZ - The Availability Zone. An example is `us-east-1a`.
-+ DATABASE\_ENGINE - The Amazon Relational Database Service database. Examples are Aurora or MySQL.
++ DATABASE\_ENGINE - The Amazon Relational Database Service database engine. Examples are `Aurora MySQL`, `Aurora PostgreSQL`, and `MySQL`.
 + INSTANCE\_TYPE - The type of Amazon EC2 instance. An example is `m4.xlarge`.
 + LEGAL\_ENTITY\_NAME - The name of the organization that sells you AWS services, such as Amazon Web Services.
 + LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
-+ OPERATING\_SYSTEM - The operating system. Examples are Windows or Linux.
++ OPERATING\_SYSTEM - The operating system. Examples are `Linux/UNIX`, `Windows (Amazon VPC)`, and `Red Hat Enterprise Linux`.
 + OPERATION - The action performed. Examples include `RunInstance` and `CreateBucket`.
-+ PLATFORM - The Amazon EC2 operating system. Examples are Windows or Linux.
-+ PURCHASE\_TYPE - The reservation type of the purchase to which this usage is related. Examples include On-Demand Instances and Standard Reserved Instances.
++ PLATFORM - The operating system or platform of the usage. Examples are `Linux/UNIX`, `Windows (Amazon VPC)`, and `Red Hat Enterprise Linux`.
++ PURCHASE\_TYPE - The reservation type of the purchase to which this usage is related. Examples include `On Demand Instances`, `Standard Reserved Instances`, `Spot Instances`, and `Savings Plans`.
 + SERVICE - The AWS service such as Amazon DynamoDB.
 + USAGE\_TYPE - The type of usage. An example is DataTransfer-In-Bytes. The response for the `GetDimensionValues` operation includes a unit attribute. Examples include GB and Hrs.
 + USAGE\_TYPE\_GROUP - The grouping of common usage types. An example is Amazon EC2: CloudWatch – Alarms. The response for this operation includes a unit attribute.
-+ RECORD\_TYPE - The different types of charges such as RI fees, usage costs, tax refunds, and credits.
-+ RESOURCE\_ID - The unique identifier of the resource. ResourceId is an opt-in feature only available for last 14 days for EC2-Compute Service. You can opt-in by enabling `Hourly` and `Resource Level Data` in AWS Cost Management Console preferences.
++ RECORD\_TYPE - The different types of charges such as RI fees, usage costs, tax refunds, and credits. Examples include `Usage`, `Credit`, `Tax`, `Recurring`, `Upfront`, and `Support`.
++ RESOURCE\_ID - The unique identifier of the resource. ResourceId is an opt-in feature that is available for the last 14 days. You can opt in by enabling resource-level data for the services that you want in AWS Cost Management Console preferences.
 If you set the context to `RESERVATIONS`, you can use the following dimensions for searching:
 + AZ - The Availability Zone. An example is `us-east-1a`.
-+ CACHE\_ENGINE - The Amazon ElastiCache operating system. Examples are Windows or Linux.
-+ DEPLOYMENT\_OPTION - The scope of Amazon Relational Database Service deployments. Valid values are `SingleAZ` and `MultiAZ`.
 + INSTANCE\_TYPE - The type of Amazon EC2 instance. An example is `m4.xlarge`.
-+ LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
-+ PLATFORM - The Amazon EC2 operating system. Examples are Windows or Linux.
++ INSTANCE\_TYPE\_FAMILY - The family of the instance type. An example is `m5`.
++ LINKED\_ACCOUNT - The AWS ID of the member account. The `name` attribute contains the full name of the member account.
++ PLATFORM - The platform of the reservation. For Amazon EC2, examples are `Linux/UNIX`, `Windows`, and `Red Hat Enterprise Linux`. For Amazon Relational Database Service and Amazon ElastiCache, the value is the engine, such as `MySQL` or `Redis`. These values can differ from the `COST_AND_USAGE` values, for example `Windows` instead of `Windows (Amazon VPC)`.
 + REGION - The AWS Region.
-+ SCOPE (Utilization only) - The scope of a Reserved Instance (RI). Values are regional or a single Availability Zone.
-+ TAG (Coverage only) - The tags that are associated with a Reserved Instance (RI).
-+ TENANCY - The tenancy of a resource. Examples are shared or dedicated.
++ SCOPE (Utilization only) - The scope of a Reserved Instance (RI). Values are `Region` and `Availability Zone`.
++ SERVICE - The AWS service of the reservation, such as Amazon Relational Database Service.
++ TENANCY - The tenancy of the reservation. Values are `Shared` and `Dedicated`.
 If you set the context to `SAVINGS_PLANS`, you can use the following dimensions for searching:
-+ SAVINGS\_PLANS\_TYPE - Type of Savings Plans (EC2 Instance or Compute)
++ SAVINGS\_PLANS\_TYPE - Type of Savings Plans. Examples are `ComputeSavingsPlans`, `EC2InstanceSavingsPlans`, `SageMakerSavingsPlans`, and `DatabaseSavingsPlans`.
 + PAYMENT\_OPTION - Payment option for the given Savings Plans (for example, All Upfront)
 + REGION - The AWS Region.
 + INSTANCE\_TYPE\_FAMILY - The family of instances (For example, `m5`)
-+ LINKED\_ACCOUNT - The description in the attribute map that includes the full name of the member account. The value field contains the AWS ID of the member account.
++ LINKED\_ACCOUNT - The AWS ID of the member account. The `name` attribute contains the full name of the member account.
 + SAVINGS\_PLAN\_ARN - The unique identifier for your Savings Plan
 Type: Array of [DimensionValuesWithAttributes](API_DimensionValuesWithAttributes.md) objects
 
@@ -291,7 +269,7 @@ The number of results that AWS returned at one time.
 Type: Integer
 
  ** [TotalSize](#API_GetDimensionValues_ResponseSyntax) **   <a name="awscostmanagement-GetDimensionValues-response-TotalSize"></a>
-The total number of search results.
+The total number of search results. When you specify `SortBy`, `TotalSize` equals `ReturnSize`: the number of values that Cost Explorer returns after it applies the `MaxResults` limit, not the number of values that match the request. In the `COST_AND_USAGE` context without `SortBy`, `TotalSize` can be greater than `ReturnSize`.
 Type: Integer
 
 ## Errors

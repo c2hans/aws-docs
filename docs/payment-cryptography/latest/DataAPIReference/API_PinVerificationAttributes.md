@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # PinVerificationAttributes
-<a name="API_PinVerificationAttributes"></a>
 
 Parameters that are required for PIN data verification.
 

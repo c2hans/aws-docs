@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Observability for the Custom Event Bus: metrics, logs, and CloudTrail
-<a name="eb-custom-bus-observability"></a>
 
 Three sources tell you what a bus and its subscribers are doing. Amazon CloudWatch metrics in the `AWS/EventsV2` namespace are on for every subscriber; to alarm when deliveries fail, alarm on `OnFailureDestinationDelivered` or `EventsDropped`, or on `EventDeliveryAttempts` minus `EventsDelivered` with metric math. Subscriber logs record each delivery attempt as a JSON record; they are off until you set `LogConfiguration.Level` on the subscriber. AWS CloudTrail records the API calls that create and change buses, subscribers, and event sources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # ListSipMediaApplications
-<a name="API_voice-chime_ListSipMediaApplications"></a>
 
 Lists the SIP media applications under the administrator's AWS account.
 

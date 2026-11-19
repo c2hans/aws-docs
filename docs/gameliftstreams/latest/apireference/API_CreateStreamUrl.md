@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # CreateStreamUrl
-<a name="API_CreateStreamUrl"></a>
 
 Creates a stream URL that grants temporary access to a stream session in a web browser without requiring an AWS account or client integration.
 

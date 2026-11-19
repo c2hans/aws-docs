@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/addon-depot.html
 ---
 
 # Use the Amazon EVS custom add-on depot
-<a name="addon-depot"></a>
 
 The Amazon Elastic VMware Service custom add-on depot provides the Amazon EVS custom vendor add-on for ESX cluster images. You get the depot URL with the `GetDepotUrl` API action, and then add the URL as a download source in vSphere Lifecycle Manager (vLCM). You use the AWS CLI or the API for this task, because the Amazon EVS console doesn’t provide the URL.
 

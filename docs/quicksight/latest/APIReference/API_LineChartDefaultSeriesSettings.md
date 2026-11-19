@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartDefaultSeriesSettings
-<a name="API_LineChartDefaultSeriesSettings"></a>
 
 The options that determine the default presentation of all line series in `LineChartVisual`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # IPAM
-<a name="ipam"></a>
 
 [Amazon VPC IP Address Manager (IPAM)](https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html) is an AWS feature that helps you manage all your organization's public and private IP addresses. IPAM categorizes IP addresses in different business units and specific AWS Regions. IPAM tracks the IP addresses that are already in use and leftover IP addresses. It also helps avoid overlapping IP addresses and provides specific CIDR blocks to the VPC based on the selected netmask.
 

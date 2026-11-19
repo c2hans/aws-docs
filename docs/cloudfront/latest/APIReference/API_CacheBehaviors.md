@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cache
 ---
 
 # CacheBehaviors
-<a name="API_CacheBehaviors"></a>
 
 A complex type that contains zero or more `CacheBehavior` elements.
 

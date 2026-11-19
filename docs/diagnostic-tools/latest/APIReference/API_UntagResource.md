@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tag keys from the specified resource.
 

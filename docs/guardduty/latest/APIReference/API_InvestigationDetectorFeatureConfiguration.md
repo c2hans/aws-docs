@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationDetectorFeatureConfiguration
-<a name="API_InvestigationDetectorFeatureConfiguration"></a>
 
 Contains information about the configuration of a detector feature. Each member is optional.
 

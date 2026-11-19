@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF
 ---
 
 # Writing your app to use web identity federation
-<a name="WIF.RunningYourApp"></a>
 
 To use web identity federation, your app must assume the IAM role that you created. From that point on, the app honors the access policy that you attached to the role.
 

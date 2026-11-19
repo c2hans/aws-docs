@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/instagram-ads-configuring
 ---
 
 # Configuring Instagram Ads
-<a name="instagram-ads-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Instagram Ads, you must meet these requirements:
 

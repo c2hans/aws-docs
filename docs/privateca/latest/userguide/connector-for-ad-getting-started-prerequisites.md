@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # Set up Connector for AD
-<a name="connector-for-ad-getting-started-prerequisites"></a>
 
 The steps in this section are prerequisites to using Connector for AD. It assumes that you've already created an AWS account. After you complete the steps on this page, you can get started with creating a connector for AD.
 

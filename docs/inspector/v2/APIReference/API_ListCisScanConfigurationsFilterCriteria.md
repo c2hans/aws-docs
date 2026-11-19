@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCisSca
 ---
 
 # ListCisScanConfigurationsFilterCriteria
-<a name="API_ListCisScanConfigurationsFilterCriteria"></a>
 
 A list of CIS scan configurations filter criteria.
 

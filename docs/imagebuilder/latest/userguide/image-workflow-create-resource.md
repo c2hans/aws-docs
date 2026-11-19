@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-work
 ---
 
 # Create an image workflow
-<a name="image-workflow-create-resource"></a>
 
 When you create an image workflow, you have more control over your image creation process. You can specify the workflow that runs when Image Builder builds your image, the workflows that run when it tests the image, and the workflow that runs when it distributes the image. You can also specify a customer managed key to encrypt your workflow resources. To learn more about encryption for your workflow resources, see [Encryption and key management in Image Builder](data-protection.md#ib-encryption).
 

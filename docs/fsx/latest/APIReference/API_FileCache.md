@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCache.ht
 ---
 
 # FileCache
-<a name="API_FileCache"></a>
 
 A description of a specific Amazon File Cache resource, which is a response object from the `DescribeFileCaches` operation.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudVmCluster
-<a name="aws-resource-odb-cloudvmcluster"></a>
 
 The `AWS::ODB::CloudVmCluster` resource creates a VM cluster on the specified Exadata infrastructure in the Oracle Database. A VM cluster provides the compute resources for Oracle Database workloads.
 

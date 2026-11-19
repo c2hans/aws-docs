@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_VpcSecurityGro
 ---
 
 # VpcSecurityGroupMembership
-<a name="API_VpcSecurityGroupMembership"></a>
 
 This data type is used as a response element for queries on VPC security group membership.
 

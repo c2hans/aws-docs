@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Categ
 ---
 
 # CategoricalDimensionField
-<a name="API_CategoricalDimensionField"></a>
 
 The dimension type field with categorical type columns..
 

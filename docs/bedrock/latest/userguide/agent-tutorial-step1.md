@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agent-tutorial-
 ---
 
 # Step 1: Create a Lambda function
-<a name="agent-tutorial-step1"></a>
 
 First, create a Lambda function that your agent will invoke to perform actions. In this procedure, you'll create a Python Lambda function that returns the current date and time when invoked. You'll set up the function with basic permissions, add the necessary code to handle requests from your Amazon Bedrock agent, and deploy the function so it's ready to be connected to your agent.
 

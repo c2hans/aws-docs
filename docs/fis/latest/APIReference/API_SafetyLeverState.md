@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_SafetyLeverS
 ---
 
 # SafetyLeverState
-<a name="API_SafetyLeverState"></a>
 
  Describes the state of the safety lever.
 

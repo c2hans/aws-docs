@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UntagRe
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from an AWS resource.
 

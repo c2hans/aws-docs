@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-shift-t
 ---
 
 # How agents create shift trade requests
-<a name="create-shift-trade-request"></a>
 
 **Tip**
  Check out this video that shows how agents use shift exchange: [How Agents Use the Shift Exchange Feature to Trade Shifts](https://www.youtube.com/watch?v=Q6i-DW5g-GM) on the Connect Customer Enablement channel on YouTube.

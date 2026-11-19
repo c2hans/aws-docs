@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ComputeConfi
 ---
 
 # ComputeConfigResponse
-<a name="API_ComputeConfigResponse"></a>
 
 Indicates the status of the request to update the compute capability of your EKS Auto Mode cluster.
 

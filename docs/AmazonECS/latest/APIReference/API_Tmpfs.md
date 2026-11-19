@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Tmpfs.
 ---
 
 # Tmpfs
-<a name="API_Tmpfs"></a>
 
 The container path, mount options, and size of the tmpfs mount.
 

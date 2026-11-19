@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # What changes with Next generation Resilience Hub
-<a name="next-gen-what-changes"></a>
 
 Next generation Resilience Hub introduces a new application modeling hierarchy, GenAI-powered assessments, and automatic dependency discovery. This section summarizes the key changes.
 + **New hierarchy** – The v1 concept of an "application" maps to a "service" as the primary unit of assessment. Services are grouped within systems, and user journeys describe the paths through them.

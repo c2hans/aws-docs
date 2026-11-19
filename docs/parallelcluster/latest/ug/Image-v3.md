@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/Image-v3.html
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `Image` section
-<a name="Image-v3"></a>
 
 **Note**
 Unsupported versions of the official AMIs distributed by AWS ParallelCluster will be made unavailable after 18 months of inactivity. These old images contain outdated software and cannot receive support in case of issues. We strongly suggest moving to the latest supported version.

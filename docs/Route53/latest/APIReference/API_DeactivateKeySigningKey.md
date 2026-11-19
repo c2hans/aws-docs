@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Deactiva
 ---
 
 # DeactivateKeySigningKey
-<a name="API_DeactivateKeySigningKey"></a>
 
 Deactivates a key-signing key (KSK) so that it will not be used for signing by DNSSEC. This operation changes the KSK status to `INACTIVE`.
 

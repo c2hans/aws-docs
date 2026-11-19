@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/ex-cs
 ---
 
 # Creating a manifest file from a CSV file
-<a name="ex-csv-manifest"></a>
 
 This example Python script simplifies the creation of a manifest file by using a Comma Separated Values (CSV) file to label images. You create the CSV file. The manifest file is suitable for [Multi-label image classification](getting-started.md#gs-multi-label-image-classification-example) or [Multi-label image classification](getting-started.md#gs-multi-label-image-classification-example). For more information, see [Find objects, scenes, and concepts](understanding-custom-labels.md#tm-classification).
 

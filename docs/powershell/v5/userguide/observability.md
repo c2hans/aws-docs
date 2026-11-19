@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Observability
-<a name="observability"></a>
 
 Observability is the extent to which a system's current state can be inferred from the data it emits. The data emitted is commonly referred to as telemetry. For additional information about telemetry when using AWS services, see [Observability](https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/observability.html) in the [AWS SDK for .NET Developer Guide](https://docs.aws.amazon.com/sdk-for-net/latest/developer-guide/).
 

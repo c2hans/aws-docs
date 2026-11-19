@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Chal
 ---
 
 # Challenge
-<a name="API_Challenge"></a>
 
 Describes the type and version of the challenge being used for the Face Liveness session.
 

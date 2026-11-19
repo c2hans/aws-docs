@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteHostnameRewrite
-<a name="API_GatewayRouteHostnameRewrite"></a>
 
 An object representing the gateway route host name to rewrite.
 

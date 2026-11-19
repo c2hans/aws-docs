@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ib-i
 ---
 
 # Adding and restricting Amazon EC2 instances for AWS Marketplace
-<a name="single-ib-instance-types"></a>
 
 As an AWS Marketplace seller, you can manage which instances buyers can use. You can add a new instance for your product that buyers can use. Similarly, if you want to prevent new buyers from using your product from a specific instance, you can restrict the instance.
 

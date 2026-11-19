@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/php.html
 ---
 
 # PHP in AL2
-<a name="php"></a>
 
  AL2 currently provides two fully supported versions of the [PHP](https://www.php.net/) programming language as part of [AL2 Extras Library](al2-extras.md). Each PHP version is supported for the same time frame as upstream PHP as listed under deprecated date in [List of Amazon Linux 2 Extras](al2-extras-list.md).
 

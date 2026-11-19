@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgeApiDestinationsServiceRolePolicy
-<a name="AmazonEventBridgeApiDestinationsServiceRolePolicy"></a>
 
 **Description**: Allows EventBridge to access Secret Manager resources on your behalf.
 

@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetSavingsPlansCoverage
-<a name="API_GetSavingsPlansCoverage"></a>
 
-Retrieves the Savings Plans covered for your account. This enables you to see how much of your cost is covered by a Savings Plan. An organization’s management account can see the coverage of the associated member accounts. This supports dimensions, cost categories, and nested expressions. For any time period, you can filter data for Savings Plans usage with the following dimensions:
+Retrieves the Savings Plans covered for your account. This enables you to see how much of your cost is covered by a Savings Plan. An organization’s management account can see the coverage of the associated member accounts. The filter supports dimensions and cost categories, combined with one level of `And` or `Not`. For details, see `Filter`. For any time period, you can filter data for Savings Plans usage with the following dimensions:
 +  `LINKED_ACCOUNT`
 +  `REGION`
 +  `SERVICE`
-+  `INSTANCE_FAMILY`
++  `INSTANCE_TYPE_FAMILY`
 
 To determine valid values for a dimension, use the `GetDimensionValues` operation.
 
@@ -80,9 +79,13 @@ Filters Savings Plans coverage data by dimensions. You can filter data for Savin
 +  `LINKED_ACCOUNT`
 +  `REGION`
 +  `SERVICE`
-+  `INSTANCE_FAMILY`
- `GetSavingsPlansCoverage` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension. If there are multiple values for a dimension, they are OR'd together.
-Cost category is also supported.
++  `INSTANCE_TYPE_FAMILY`
+ `GetSavingsPlansCoverage` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations. The filter must have one of the following shapes:
++ A `Dimensions` or `CostCategories` expression.
++ A `Not` expression that contains one `Dimensions` or `CostCategories` expression.
++ An `And` expression with two or more operands, where each operand has one of the two shapes above.
+ `Or` and `Tags` expressions aren't supported. An `And` expression can't contain another `And`, and a `Not` expression can't contain an `And` or another `Not`.
+Each dimension can appear only once in the filter, including inside `Not`, and you can use only one `CostCategories` expression. To filter on several values of a dimension, put all of the values in one expression. Cost Explorer combines the values in one expression with OR.
 Type: [Expression](API_Expression.md) object
 Required: No
 
@@ -94,7 +97,7 @@ Valid Values: `DAILY | MONTHLY | HOURLY`
 Required: No
 
  ** [GroupBy](#API_GetSavingsPlansCoverage_RequestSyntax) **   <a name="awscostmanagement-GetSavingsPlansCoverage-request-GroupBy"></a>
-You can group the data using the attributes `INSTANCE_FAMILY`, `REGION`, or `SERVICE`.
+You can group the data using the attributes `INSTANCE_TYPE_FAMILY`, `REGION`, or `SERVICE`.
 Type: Array of [GroupDefinition](API_GroupDefinition.md) objects
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSuggestedAnswerTranscriptMillisecondOffsets
-<a name="API_EvaluationSuggestedAnswerTranscriptMillisecondOffsets"></a>
 
 The milliseconds offset for transcript reference in suggested answer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_As
 ---
 
 # AssociateChannel
-<a name="API_AssociateChannel"></a>
 
 Associates a delivery [Channel](https://docs.aws.amazon.com/notifications/latest/userguide/managing-delivery-channels.html) with a particular `NotificationConfiguration`. Supported Channels include Amazon Q Developer in chat applications, the AWS Console Mobile Application, and emails (notifications-contacts).
 

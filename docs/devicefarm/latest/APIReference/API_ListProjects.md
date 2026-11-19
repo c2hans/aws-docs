@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListP
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Gets information about projects.
 

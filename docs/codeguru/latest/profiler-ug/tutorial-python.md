@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/tutorial-pyt
 ---
 
 # Python sample application
-<a name="tutorial-python"></a>
 
 In this tutorial, you’ll walk through the complete set up necessary to run Amazon CodeGuru Profiler within a sample application. You’ll then be able to view the profiling group's resulting runtime data.
 

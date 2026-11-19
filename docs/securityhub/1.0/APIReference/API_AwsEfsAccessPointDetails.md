@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEfsA
 ---
 
 # AwsEfsAccessPointDetails
-<a name="API_AwsEfsAccessPointDetails"></a>
 
 Provides information about an Amazon EFS access point.
 

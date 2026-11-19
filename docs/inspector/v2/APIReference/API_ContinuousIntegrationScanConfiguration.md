@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Continuous
 ---
 
 # ContinuousIntegrationScanConfiguration
-<a name="API_ContinuousIntegrationScanConfiguration"></a>
 
 Configuration settings for continuous integration scans that run automatically when code changes are made.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-gi
 ---
 
 # Remove a GitLab integration
-<a name="remove-gitlab"></a>
 
 Remove a GitLab integration when you no longer need AWS Security Agent to access repositories from a specific GitLab account or group.
 

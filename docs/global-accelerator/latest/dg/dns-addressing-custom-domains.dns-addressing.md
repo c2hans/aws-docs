@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/dns-address
 ---
 
 # Support for DNS addressing in AWS Global Accelerator
-<a name="dns-addressing-custom-domains.dns-addressing"></a>
 
 When you create an accelerator with an IPv4 IP address type, Global Accelerator provisions two static IPv4 addresses for you. It also assigns a default Domain Name System (DNS) name to your accelerator, similar to `a1234567890abcdef.awsglobalaccelerator.com`, that points to the static IP addresses.
 

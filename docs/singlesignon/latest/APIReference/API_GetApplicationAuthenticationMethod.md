@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetApplicationAuthenticationMethod
-<a name="API_GetApplicationAuthenticationMethod"></a>
 
 Retrieves details about an authentication method used by an application.
 

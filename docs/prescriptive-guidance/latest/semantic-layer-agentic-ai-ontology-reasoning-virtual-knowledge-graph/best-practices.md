@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Best Practices
 <a name="best-practices.ca73332b-417d-569d-9a98-213e91e782c3"></a>

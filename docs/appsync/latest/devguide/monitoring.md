@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/monitoring.html
 ---
 
 # Using CloudWatch to monitor and log GraphQL API data
-<a name="monitoring"></a>
 
 You can log and debug your GraphQL API using CloudWatch metrics and CloudWatch logs. These tools enable developers to monitor performance, troubleshoot issues, and optimize their GraphQL operations effectively.
 

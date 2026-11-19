@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSUS04-BP02 Use digital twins to optimize resource usage through in silico experimentation
-<a name="lssus04-bp02"></a>
 
  Implement digital twin technologies to create virtual representations of manufacturing processes that enable in silico experimentation and optimization without consuming physical resources. Use these virtual environments to test different operational scenarios, optimize process parameters, and minimize resource consumption before implementing changes in physical systems. Use simulation capabilities to reduce the need for physical experiments while improving process efficiency and sustainability outcomes.
 

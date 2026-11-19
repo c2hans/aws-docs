@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Import from Amazon S3 Vectors to OpenSearch Serverless
-<a name="s3-opensearch-vector-bucket-integration"></a>
 
 Amazon S3 Vectors delivers the first cloud object store with native support to store and query vectors. S3 Vectors provides cost-effective, elastic, and durable vector storage that can be queried based on semantic meaning and similarity. It delivers sub-second query response times and up to 90% lower costs for uploading, storing, and querying vectors.
 

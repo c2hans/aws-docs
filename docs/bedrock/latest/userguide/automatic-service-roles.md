@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/automatic-servi
 ---
 
 # Service role requirements for automatic model evaluation jobs
-<a name="automatic-service-roles"></a>
 
 To create an automatic model evaluation job, you must specify a service role. The policy you attach grants Amazon Bedrock access to resources in your account, and allows Amazon Bedrock to invoke the selected model on your behalf.
 

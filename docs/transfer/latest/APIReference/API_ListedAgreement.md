@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListedA
 ---
 
 # ListedAgreement
-<a name="API_ListedAgreement"></a>
 
 Describes the properties of an agreement.
 

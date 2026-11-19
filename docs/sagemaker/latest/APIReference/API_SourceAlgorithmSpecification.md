@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Source
 ---
 
 # SourceAlgorithmSpecification
-<a name="API_SourceAlgorithmSpecification"></a>
 
 A list of algorithms that were used to create a model package.
 

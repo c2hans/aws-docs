@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 4: Reviewing and improving the migration runbooks
-<a name="task-four-runbook-improvement"></a>
 
 This task consists of the following steps:
 + [Step 1: Review the completed waves and identify gaps in the current migration runbook](#step-one-review-waves)

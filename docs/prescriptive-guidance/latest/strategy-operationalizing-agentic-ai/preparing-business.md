@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Preparing the business for agentic AI at scale
-<a name="preparing-business"></a>
 
 As the [focus areas](focus-areas.md) described in this guide converge, agentic AI shifts from isolated functions into a unified intelligence layer that can be understood as a capability platform. This platform doesn't just execute tasks. It evolves, adapts, and coordinates across domains. Agents become modular, reusable, and discoverable services that accelerate innovation, reduce cognitive load, and drive measurable outcomes across the enterprise. This platform view sets the stage for scalable intelligence embedded throughout the operating model.
 

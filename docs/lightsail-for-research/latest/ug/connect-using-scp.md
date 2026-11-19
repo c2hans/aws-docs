@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/connect
 ---
 
 # Transfer files to Lightsail for Research virtual computers using Secure Copy
-<a name="connect-using-scp"></a>
 
 You can transfer files from your local computer to a virtual computer in Amazon Lightsail for Research using Secure Copy (SCP). With this process, you can transfer multiple files, or entire directories, at one time.
 

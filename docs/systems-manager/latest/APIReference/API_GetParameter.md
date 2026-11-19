@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetParameter
-<a name="API_GetParameter"></a>
 
 Get information about a single parameter by specifying the parameter name.
 

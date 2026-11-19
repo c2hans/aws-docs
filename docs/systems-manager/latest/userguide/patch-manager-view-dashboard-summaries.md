@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Viewing patch Dashboard summaries
-<a name="patch-manager-view-dashboard-summaries"></a>
 
 The **Dashboard** tab in Patch Manager gives you a summary view in the console that you can use to monitor your patching operations in a consolidated view. Patch Manager is a tool in AWS Systems Manager. On the **Dashboard** tab, you can view the following:
 + A snapshot of how many managed nodes are compliant and noncompliant with patching rules.

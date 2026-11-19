@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/downgr
 ---
 
 # Step C: Stop the running channels
-<a name="downgrades-cl3-upg-stop-chan"></a>
 
 You must stop all running channels before you downgrade.
 

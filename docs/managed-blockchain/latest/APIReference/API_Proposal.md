@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Proposal
-<a name="API_Proposal"></a>
 
 Properties of a proposal on a Managed Blockchain network.
 

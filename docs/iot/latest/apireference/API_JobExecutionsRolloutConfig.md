@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_JobExecution
 ---
 
 # JobExecutionsRolloutConfig
-<a name="API_JobExecutionsRolloutConfig"></a>
 
 Allows you to create a staged rollout of a job.
 

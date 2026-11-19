@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # FeatureConfigurations
-<a name="API_invoicing_FeatureConfigurations"></a>
 
 Contains the default feature configuration settings for a procurement portal.
 

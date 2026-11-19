@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-cgw-conn
 ---
 
 # Disassociate a Connect peer using AWS Network Manager
-<a name="nm-cgw-connect-disassociate"></a>
 
 You can disassociate a Connect peer from a device in one of the following ways:
 + On the **Transit gateways** page

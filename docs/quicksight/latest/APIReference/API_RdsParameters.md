@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RdsPa
 ---
 
 # RdsParameters
-<a name="API_RdsParameters"></a>
 
 The parameters for Amazon RDS.
 

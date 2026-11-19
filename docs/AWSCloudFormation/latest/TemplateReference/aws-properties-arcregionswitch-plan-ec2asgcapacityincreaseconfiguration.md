@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan Ec2AsgCapacityIncreaseConfiguration
-<a name="aws-properties-arcregionswitch-plan-ec2asgcapacityincreaseconfiguration"></a>
 
 Configuration for increasing the capacity of Amazon EC2 Auto Scaling groups during a Region switch.
 

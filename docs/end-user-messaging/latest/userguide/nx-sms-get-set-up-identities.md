@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Step 1: Get a phone number
-<a name="nx-sms-get-set-up-identities"></a>
 
 To send SMS messages, you need an origination identity. For SMS, an origination identity is either a phone number or a sender ID. The types available to you depend on the destination country and the regulations that apply there:
 

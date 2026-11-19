@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetMarke
 ---
 
 # GetMarketplaceModelEndpoint
-<a name="API_GetMarketplaceModelEndpoint"></a>
 
 Retrieves details about a specific endpoint for a model from Amazon Bedrock Marketplace.
 

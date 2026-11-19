@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Comparison of SAP-C02 and SAP-C03
-<a name="sap-03-comparison"></a>
 
 **Topics**
 + [Side-by-side comparison](#sap-03-comparison-side-by-side)

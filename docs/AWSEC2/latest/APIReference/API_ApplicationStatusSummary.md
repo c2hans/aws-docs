@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Applicati
 ---
 
 # ApplicationStatusSummary
-<a name="API_ApplicationStatusSummary"></a>
 
 Provides a summary of the application-level health status for an instance.
 

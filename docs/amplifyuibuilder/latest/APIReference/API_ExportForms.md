@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ExportForms
-<a name="API_ExportForms"></a>
 
 Exports form configurations to code that is ready to integrate into an Amplify app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/automating-ec2
 ---
 
 # Use EventBridge to handle Auto Scaling events
-<a name="automating-ec2-auto-scaling-with-eventbridge"></a>
 
 Amazon EventBridge, formerly called CloudWatch Events, helps you set up event-driven rules that monitor resources and initiate target actions that use other AWS services.
 

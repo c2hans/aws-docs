@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/what-is-accessing.ht
 ---
 
 # Accessing MediaLive
-<a name="what-is-accessing"></a>
 
 You can access MediaLive using any of the following methods:
 + **AWS Management Console** – The procedures throughout this guide explain how to use the AWS Management Console to perform tasks for AWS Elemental MediaLive.

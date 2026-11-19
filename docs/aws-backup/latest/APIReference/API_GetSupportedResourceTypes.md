@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_GetSu
 ---
 
 # GetSupportedResourceTypes
-<a name="API_GetSupportedResourceTypes"></a>
 
 Returns the AWS resource types supported by AWS Backup.
 

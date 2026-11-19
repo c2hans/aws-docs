@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Clust
 ---
 
 # ClusterMasterUserSecret
-<a name="API_ClusterMasterUserSecret"></a>
 
 Contains the secret managed by Amazon DocumentDB in AWS Secrets Manager for the master user password.
 

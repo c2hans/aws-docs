@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-
 ---
 
 # Device Shadow REST API
-<a name="device-shadow-rest-api"></a>
 
 A shadow exposes the following URI for updating state information:
 

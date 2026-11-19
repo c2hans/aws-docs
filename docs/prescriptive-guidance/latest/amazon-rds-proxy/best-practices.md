@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend configuring Amazon RDS Proxy to connect to Amazon RDS databases using security mechanisms such as TLS/SSL. This way, RDS Proxy can act as an additional layer of security between client applications and the database. RDS Proxy supports TLS protocol version 1.2. RDS Proxy uses certificates from AWS Certificate Manager (ACM), which allows rotation of certificates without any need to update the proxy connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
 As serverless and AI workloads scale, cost visibility and control become foundational to sustainable operations. Unlike traditional compute, where costs are predictable per instance-hour, serverless and generative AI services introduce new dimensions of cost:
 + Inference costs by token usage (for example, Amazon Bedrock)

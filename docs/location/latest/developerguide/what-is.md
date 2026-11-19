@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/what-is.h
 ---
 
 # What is Amazon Location Service
-<a name="what-is"></a>
 
 Amazon Location Service is a fully-managed service that makes it easy to add location functionality to your applications. Amazon Location uses high-quality geospatial data to provide capabilities such as maps, places, routes, trackers, and geofences. In addition to these capabilities, Amazon Location helps you maintain control of your data for privacy and security. It enables you to access location data simply with developer tools and move your applications to production faster with included monitoring and management capabilities.
 

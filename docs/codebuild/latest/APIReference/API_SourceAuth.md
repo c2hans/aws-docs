@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Source
 ---
 
 # SourceAuth
-<a name="API_SourceAuth"></a>
 
 Information about the authorization settings for AWS CodeBuild to access the source code to be built.
 

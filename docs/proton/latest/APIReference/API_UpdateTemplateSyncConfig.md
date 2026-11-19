@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_UpdateTem
 AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # UpdateTemplateSyncConfig
-<a name="API_UpdateTemplateSyncConfig"></a>
 
 Update template sync configuration parameters, except for the `templateName` and `templateType`. Repository details (branch, name, and provider) should be of a linked repository. A linked repository is a repository that has been registered with AWS Proton. For more information, see [CreateRepository](API_CreateRepository.md).
 

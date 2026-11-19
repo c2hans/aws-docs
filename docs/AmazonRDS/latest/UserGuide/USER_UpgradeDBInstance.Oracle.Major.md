@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Oracle major version upgrades
-<a name="USER_UpgradeDBInstance.Oracle.Major"></a>
 
 To perform a major version upgrade, modify the DB instance manually. Major version upgrades don't occur automatically.
 

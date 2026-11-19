@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_CreateCon
 ---
 
 # CreateConnectorDestination
-<a name="API_CreateConnectorDestination"></a>
 
 Create a connector destination for connecting a cloud-to-cloud (C2C) connector to the customer's AWS account.
 

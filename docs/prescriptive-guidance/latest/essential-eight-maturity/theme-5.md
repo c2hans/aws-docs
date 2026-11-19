@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 5: Establish a data perimeter
-<a name="theme-5"></a>
 
 **Essential Eight strategy covered**: Restrict administrative privileges
 

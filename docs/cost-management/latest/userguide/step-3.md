@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/step-3.
 ---
 
 # Reviewing your bills and usage
-<a name="step-3"></a>
 
 Use features in the Billing and Cost Management console to view your current AWS charges and AWS usage.
 

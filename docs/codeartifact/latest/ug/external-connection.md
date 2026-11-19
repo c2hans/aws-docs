@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/external-connecti
 ---
 
 # Connect a CodeArtifact repository to a public repository
-<a name="external-connection"></a>
 
 You can add an external connection between a CodeArtifact repository and an external, public repository such as [https://npmjs.com](https://npmjs.com) or the [Maven Central repository](https://repo.maven.apache.org/maven2/). Then, when you request a package from the CodeArtifact repository that's not already present in the repository, the package can be fetched from the external connection. This makes it possible to consume open-source dependencies used by your application.
 

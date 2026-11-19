@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Dis
 ---
 
 # DisposePackageVersions
-<a name="API_DisposePackageVersions"></a>
 
  Deletes the assets in package versions and sets the package versions' status to `Disposed`. A disposed package version cannot be restored in your repository because its assets are deleted.
 

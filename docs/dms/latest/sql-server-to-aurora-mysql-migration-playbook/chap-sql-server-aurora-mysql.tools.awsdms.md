@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # AWS Database Migration Service overview
-<a name="chap-sql-server-aurora-mysql.tools.awsdms"></a>
 
 This topic provides conceptual content about AWS Database Migration Service (AWS DMS). It introduces you to the key features and benefits of AWS DMS, explaining how it can help you migrate databases to AWS quickly and securely.
 

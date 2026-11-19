@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_At
 ---
 
 # AttachPolicy
-<a name="API_AttachPolicy"></a>
 
 Attaches a policy to a root, an organizational unit (OU), or an individual account. How the policy affects accounts depends on the type of policy. Refer to the * AWS Organizations User Guide* for information about each policy type:
 +  [SERVICE\_CONTROL\_POLICY](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html)

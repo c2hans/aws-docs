@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EstimatedMonthlySavings
-<a name="API_automation_EstimatedMonthlySavings"></a>
 
  Contains information about estimated monthly cost savings.
 

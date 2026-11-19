@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-res
 ---
 
 # Summarize query results in natural language
-<a name="query-results-summary"></a>
 
 **Note**
 The query summarization feature is in preview release for CloudTrail Lake and is subject to change.

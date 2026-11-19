@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Net Amortized cost
-<a name="net-amortized-cost"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

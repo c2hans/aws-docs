@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Wor
 ---
 
 # WorkflowStepMetadata
-<a name="API_WorkflowStepMetadata"></a>
 
 Runtime details and status for the workflow step.
 

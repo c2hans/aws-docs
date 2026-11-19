@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RfcRestrictedExecutionTimesOverride
-<a name="API_RfcRestrictedExecutionTimesOverride"></a>
 
 An ID and name for an option for overriding preset restrictions on execution of a change.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/security-groups-for
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Assign security groups to individual Pods
-<a name="security-groups-for-pods"></a>
 
  **Applies to**: Linux nodes with Amazon EC2 instances
 

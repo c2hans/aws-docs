@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Glue
 ---
 
 # GlueTableReference
-<a name="API_GlueTableReference"></a>
 
 A reference to a table within an AWS Glue data catalog.
 

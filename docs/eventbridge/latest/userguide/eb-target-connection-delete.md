@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-target-c
 ---
 
 # Deleting connections in EventBridge
-<a name="eb-target-connection-delete"></a>
 
 You can delete a connection if you are no longer using it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAgentSkillsAdditionalDataFields
-<a name="API_UpdatedAgentSkillsAdditionalDataFields"></a>
 
 The set of agent skills additional-data fields that can be individually updated.
 

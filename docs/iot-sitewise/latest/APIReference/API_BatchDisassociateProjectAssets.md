@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchDisassociateProjectAssets
-<a name="API_BatchDisassociateProjectAssets"></a>
 
 Disassociates a group (batch) of assets from an AWS IoT SiteWise Monitor project.
 

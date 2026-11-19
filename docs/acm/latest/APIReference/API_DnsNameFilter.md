@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DnsNameFilte
 ---
 
 # DnsNameFilter
-<a name="API_DnsNameFilter"></a>
 
 Filters certificates by DNS name.
 

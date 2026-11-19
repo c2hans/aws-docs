@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC09-BP03 Automate detection of unintended data access
-<a name="sec_protect_data_transit_auto_unintended_access"></a>
 
  Use tools such as Amazon GuardDuty to automatically detect suspicious activity or attempts to move data outside of defined boundaries. For example, GuardDuty can detect Amazon Simple Storage Service (Amazon S3) read activity that is unusual with the [Exfiltration:S3/AnomalousBehavior finding](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-s3.html#exfiltration-s3-objectreadunusual). In addition to GuardDuty, [Amazon VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html), which capture network traffic information, can be used with Amazon EventBridge to trigger detection of abnormal connections–both successful and denied. [Amazon S3 Access Analyzer](http://aws.amazon.com/blogs/storage/protect-amazon-s3-buckets-using-access-analyzer-for-s3) can help assess what data is accessible to who in your Amazon S3 buckets.
 

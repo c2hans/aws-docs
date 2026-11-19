@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DatabaseInput.htm
 ---
 
 # DatabaseInput
-<a name="API_DatabaseInput"></a>
 
 The structure used to create or update a database.
 

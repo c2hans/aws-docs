@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OAuthConf
 ---
 
 # OAuthConfig
-<a name="API_OAuthConfig"></a>
 
 Configuration details for OAuth authentication with a third-party service.
 

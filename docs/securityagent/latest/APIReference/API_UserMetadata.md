@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Us
 ---
 
 # UserMetadata
-<a name="API_UserMetadata"></a>
 
 Contains metadata about a user member, including the username and email address.
 

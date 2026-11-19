@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_id-ba
 ---
 
 # Identity-based policy examples for zonal shift in ARC
-<a name="security_iam_id-based-policy-examples-zonal"></a>
 
 By default, users and roles don't have permission to create or modify ARC resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

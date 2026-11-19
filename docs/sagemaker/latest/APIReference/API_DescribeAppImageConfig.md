@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeAppImageConfig
-<a name="API_DescribeAppImageConfig"></a>
 
 Describes an AppImageConfig.
 

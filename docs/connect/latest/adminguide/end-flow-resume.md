@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/end-flow-resum
 ---
 
 # Flow block in Connect Customer: End flow / Resume
-<a name="end-flow-resume"></a>
 
 ## Description
 <a name="end-flow-resume-description"></a>

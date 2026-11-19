@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-pipeline-r
 ---
 
 # Run Real-time Predictions with an Inference Pipeline
-<a name="inference-pipeline-real-time"></a>
 
 You can use trained models in an inference pipeline to make real-time predictions directly without performing external preprocessing. When you configure the pipeline, you can choose to use the built-in feature transformers already available in Amazon SageMaker AI. Or, you can implement your own transformation logic using just a few lines of scikit-learn or Spark code.
 

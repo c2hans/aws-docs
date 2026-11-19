@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc
 ---
 
 # DeleteVpcEndpointConnectionNotifications
-<a name="API_DeleteVpcEndpointConnectionNotifications"></a>
 
 Deletes the specified VPC endpoint connection notifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Type
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The following data types are supported by Amazon Rekognition:
 +  [AgeRange](API_AgeRange.md)

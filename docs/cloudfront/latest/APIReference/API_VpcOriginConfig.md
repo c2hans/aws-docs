@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_VpcOr
 ---
 
 # VpcOriginConfig
-<a name="API_VpcOriginConfig"></a>
 
 An Amazon CloudFront VPC origin configuration.
 

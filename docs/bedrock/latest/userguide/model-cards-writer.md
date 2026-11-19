@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-wri
 ---
 
 # Writer
-<a name="model-cards-writer"></a>
 
 The following Writer models are available in Amazon Bedrock:
 

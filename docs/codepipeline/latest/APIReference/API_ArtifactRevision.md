@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Art
 ---
 
 # ArtifactRevision
-<a name="API_ArtifactRevision"></a>
 
 Represents revision details of an artifact.
 

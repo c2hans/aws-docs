@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactS
 ---
 
 # ContactSearchSummaryAgentInfo
-<a name="API_ContactSearchSummaryAgentInfo"></a>
 
 Information about the agent who accepted the contact.
 

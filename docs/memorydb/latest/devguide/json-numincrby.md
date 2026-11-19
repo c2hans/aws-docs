@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-numincrby.
 ---
 
 # JSON.NUMINCRBY
-<a name="json-numincrby"></a>
 
 Increment the number values at the path by a given number.
 

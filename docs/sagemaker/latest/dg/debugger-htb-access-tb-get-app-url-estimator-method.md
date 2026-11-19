@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-htb-access-
 ---
 
 # Open TensorBoard using the `get_app_url` function as an `ModelTrainer` class method
-<a name="debugger-htb-access-tb-get-app-url-estimator-method"></a>
 
 If you are in the process of running a training job using the `ModelTrainer` class of the SageMaker Python SDK and have an active object of the `ModelTrainer` class, you can also access the [`get_app_url` function as a class method](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) of the `ModelTrainer` class. Open the TensorBoard application or retrieve an unsigned URL by running the `get_app_url` method as follows. The `get_app_url` class method pulls the training job name from the ModelTrainer and opens the TensorBoard application with the specified job.
 

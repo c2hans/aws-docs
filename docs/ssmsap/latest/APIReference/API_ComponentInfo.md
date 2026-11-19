@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Component
 ---
 
 # ComponentInfo
-<a name="API_ComponentInfo"></a>
 
 This is information about the component of your SAP application, such as Web Dispatcher.
 

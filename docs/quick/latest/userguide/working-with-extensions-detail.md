@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-exte
 ---
 
 # Connect AWS Quick to your existing tools with extensions
-<a name="working-with-extensions-detail"></a>
 
 **Note**
 The AWS Quick browser extension, Microsoft Outlook extension, Microsoft Word extension, Microsoft Excel extension, and Microsoft PowerPoint extension don't require admin setup to install and use. For the Slack and Microsoft Teams extensions, your Quick admin must [configure AWS Quick access](https://docs.aws.amazon.com/quicksuite/latest/userguide/extension-access.html) before authors can deploy them.

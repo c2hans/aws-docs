@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/maxio-connector-limitatio
 ---
 
 # Limitations and notes for the Maxio connector
-<a name="maxio-connector-limitations"></a>
 
 The following are limitations and notes for the Maxio connector:
 + Maxio is supported as a source only. Writing to Maxio is not supported.

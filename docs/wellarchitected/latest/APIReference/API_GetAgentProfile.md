@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetAgentProfile
-<a name="API_GetAgentProfile"></a>
 
 Retrieves detailed information about an optimization profile, including its configuration and metadata.
 

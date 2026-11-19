@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Troubleshoot an access denied error in Amazon SQS
-<a name="troubleshooting-access-denied"></a>
 
 The following topics cover the most common causes of `AccessDenied` or `AccessDeniedException` errors on Amazon SQS API calls. For more information on how to troubleshoot these errors, see [How do I troubleshoot "AccessDenied" or "AccessDeniedException" errors on Amazon SQS API calls?](https://repost.aws/knowledge-center/sqs-accessdenied-errors) in the *AWS Knowledge Center Guide*.
 

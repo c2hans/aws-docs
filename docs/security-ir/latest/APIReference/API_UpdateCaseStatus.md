@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Upda
 ---
 
 # UpdateCaseStatus
-<a name="API_UpdateCaseStatus"></a>
 
 Updates the state transitions for a designated cases.
 

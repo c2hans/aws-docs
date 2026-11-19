@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceMeteringRegisterUsage
-<a name="AWSMarketplaceMeteringRegisterUsage"></a>
 
 **Description**: Provides permissions to register a resource and track usage through AWS Marketplace Metering Service.
 

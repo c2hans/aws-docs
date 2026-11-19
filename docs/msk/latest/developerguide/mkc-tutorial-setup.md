@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-tutorial-s
 ---
 
 # Set up resources required for MSK Connect
-<a name="mkc-tutorial-setup"></a>
 
 In this step you create the following resources that you need for this getting-started scenario:
 + An Amazon S3 bucket to serve as the destination that receives data from the connector.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSub
 ---
 
 # DeleteSubnet
-<a name="API_DeleteSubnet"></a>
 
 Deletes the specified subnet. You must terminate all running instances in the subnet before you can delete the subnet.
 

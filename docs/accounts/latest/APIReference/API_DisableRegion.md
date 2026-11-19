@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_Disable
 ---
 
 # DisableRegion
-<a name="API_DisableRegion"></a>
 
 Disables (opts-out) a particular Region for an account.
 

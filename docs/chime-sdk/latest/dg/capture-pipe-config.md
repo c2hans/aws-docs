@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/capture-pipe-config.
 ---
 
 # Creating media capture pipelines for Amazon Chime SDK meetings
-<a name="capture-pipe-config"></a>
 
 Media capture pipelines capture audio, video, and content share streams, plus meeting events and data messages. All media capture pipelines save their data to an [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (S3) bucket that you create. You can create one media capture pipeline per Amazon Chime SDK meeting.
 

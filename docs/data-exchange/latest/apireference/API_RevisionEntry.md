@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RevisionEntry
-<a name="API_RevisionEntry"></a>
 
 A revision is a container for one or more assets.
 

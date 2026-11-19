@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Allocate VPC peering data transfer
-<a name="networking-flex-cost-allocation-pcx"></a>
 
 When you associate a Networking Flexible Cost Allocation (FCA) policy with a VPC peering connection, the data transfer charges for traffic over the connection are itemized at the granularity that you choose in the policy. Without a policy, the charges appear as a single charge.
 

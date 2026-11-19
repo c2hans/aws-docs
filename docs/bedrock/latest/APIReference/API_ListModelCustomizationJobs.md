@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListMode
 ---
 
 # ListModelCustomizationJobs
-<a name="API_ListModelCustomizationJobs"></a>
 
 Returns a list of model customization jobs that you have submitted. You can filter the jobs to return based on one or more criteria.
 

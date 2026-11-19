@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageHeartbeatEvent
-<a name="API_SendMessageHeartbeatEvent"></a>
 
 Heartbeat event to keep connection alive
 

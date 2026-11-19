@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # RemediationStep
-<a name="API_RemediationStep"></a>
 
 One step within a remediation procedure.
 

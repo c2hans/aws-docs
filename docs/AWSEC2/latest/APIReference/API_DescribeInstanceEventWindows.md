@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceEventWindows
-<a name="API_DescribeInstanceEventWindows"></a>
 
 Describes the specified event windows or all event windows.
 

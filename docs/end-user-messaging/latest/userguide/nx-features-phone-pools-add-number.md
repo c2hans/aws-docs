@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Add a phone number, sender ID, or RCS agent to a phone pool
-<a name="nx-features-phone-pools-add-number"></a>
 
 Follow these directions to add a phone number, sender ID, or RCS agent to a phone pool. The configuration of every phone number or sender ID that you add to a pool has to match the configuration of the phone pool. For example, if you create a pool and the first phone number added has two-way messaging enabled, the other phone numbers that you add to the pool must also have two-way messaging enabled.
 

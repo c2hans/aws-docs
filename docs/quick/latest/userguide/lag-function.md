@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/lag-function.html
 ---
 
 # lag
-<a name="lag-function"></a>
 
 The `lag` function calculates the lag (previous) value for a measure based on specified partitions and sorts.
 

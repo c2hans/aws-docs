@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Clien
 ---
 
 # ClientCredentialsGrantMetadata
-<a name="API_ClientCredentialsGrantMetadata"></a>
 
 Configuration for OAuth 2.0 client credentials grant authentication, including client ID, client secret, token endpoint, and optional scopes.
 

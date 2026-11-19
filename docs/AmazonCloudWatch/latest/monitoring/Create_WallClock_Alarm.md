@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Creat
 ---
 
 # Create a metric alarm that uses a wall clock evaluation window
-<a name="Create_WallClock_Alarm"></a>
 
 You can create a metric alarm that aligns its evaluation window to wall clock boundaries instead of a sliding window. For information about how wall clock windows work and when to use them, see [Wall clock window](alarm-evaluation-window.md#wall-clock-window).
 

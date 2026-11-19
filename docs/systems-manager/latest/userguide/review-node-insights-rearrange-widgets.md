@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/review-
 ---
 
 # Rearranging widgets in the **Review node insights** page
-<a name="review-node-insights-rearrange-widgets"></a>
 
 You can customize the layout in the **Review node insights** page by rearranging widgets.
 

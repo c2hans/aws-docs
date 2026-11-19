@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeKeyRegistration
-<a name="API_DescribeKeyRegistration"></a>
 
 Describes all customer managed key registrations in a Quick Sight account.
 

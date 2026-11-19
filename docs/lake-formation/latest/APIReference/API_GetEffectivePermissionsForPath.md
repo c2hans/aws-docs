@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetEffectivePermissionsForPath
-<a name="API_GetEffectivePermissionsForPath"></a>
 
 Returns the Lake Formation permissions for a specified table or database resource located at a path in Amazon S3. `GetEffectivePermissionsForPath` will not return databases and tables if the catalog is encrypted.
 

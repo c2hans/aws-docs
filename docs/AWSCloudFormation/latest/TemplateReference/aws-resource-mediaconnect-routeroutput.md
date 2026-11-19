@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterOutput
-<a name="aws-resource-mediaconnect-routeroutput"></a>
 
 The `AWS::MediaConnect::RouterOutput` resource defines a connection point in the MediaConnect router that can send content to your destination endpoint. You can configure a router output with either a Regional routing scope or a global routing scope.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/deregister-sap-
 ---
 
 # Deregister SAP application
-<a name="deregister-sap-application"></a>
 
 The following steps will guide you through deregistration your SAP HANA application or of your single node setup of SAP ABAP application registered with Systems Manager for SAP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/describe-view.html
 ---
 
 # DESCRIBE VIEW
-<a name="describe-view"></a>
 
 Shows the list of columns for the specified Athena or AWS Glue Data Catalog view. Useful for examining the attributes of a complex view.
 

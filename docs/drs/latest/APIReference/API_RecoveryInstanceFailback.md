@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryInst
 ---
 
 # RecoveryInstanceFailback
-<a name="API_RecoveryInstanceFailback"></a>
 
 An object representing failback related information of the Recovery Instance.
 

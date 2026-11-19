@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon SageMaker
-<a name="list_sagemaker"></a>
 
 Amazon SageMaker (service prefix: `sagemaker`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -2780,10 +2779,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   InvokeEndpoint  **
   - **SDK client:** sagemaker-runtime
-  - **IAM action:**  [sagemaker:InvokeEndpoint](#list_sagemaker-action-InvokeEndpoint)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Read
+  - **IAM action:**  [sagemaker:CallWithBearerToken](#list_sagemaker-action-CallWithBearerToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [sagemaker:InvokeEndpoint](#list_sagemaker-action-InvokeEndpoint)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   InvokeEndpointAsync  **
   - **SDK client:** sagemaker-runtime

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Join your Raspberry Pi to your Wi-Fi network
-<a name="producersdk-cpp-rpi-wifi"></a>
 
 If you are using an attached monitor and keyboard, proceed to [Configure the Raspberry Pi camera](producersdk-cpp-rpi-camera.md).
 

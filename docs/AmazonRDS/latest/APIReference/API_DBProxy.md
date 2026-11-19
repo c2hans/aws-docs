@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBProx
 ---
 
 # DBProxy
-<a name="API_DBProxy"></a>
 
 The data structure representing a proxy managed by the RDS Proxy.
 

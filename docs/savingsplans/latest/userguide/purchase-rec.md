@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/purchase-r
 ---
 
 # Evaluating Savings Plans recommendations
-<a name="purchase-rec"></a>
 
 You can visit your **Recommendations** page to see the Savings Plans that AWS recommends to help you save on eligible usage. These recommendations can be refreshed at any time to make it easy for you to purchase the optimal Savings Plans to help you save. You can directly add Savings Plans that are recommended for your account to your cart. For more information about how to view your **Recommendations** page, or to learn how recommendations are calculated, see [Understanding Savings Plans recommendations](sp-recommendations.md).<a name="purchase-rec-howto"></a>
 

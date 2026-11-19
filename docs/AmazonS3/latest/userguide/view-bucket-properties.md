@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/view-bucket-pr
 ---
 
 # Viewing the properties for an S3 general purpose bucket
-<a name="view-bucket-properties"></a>
 
 You can view properties for any Amazon S3 bucket you own. These settings include the following:
 + **Bucket Versioning** – Keep multiple versions of an object in one general purpose bucket by using versioning. By default, versioning is disabled for a new bucket. For information about enabling versioning, see [Enabling versioning on buckets](manage-versioning-examples.md).

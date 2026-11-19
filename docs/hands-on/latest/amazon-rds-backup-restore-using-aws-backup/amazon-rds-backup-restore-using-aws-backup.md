@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/amazon-rds-backup-restor
 ---
 
 # Amazon RDS Backup & Restore Using AWS Backup
-<a name="amazon-rds-backup-restore-using-aws-backup"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/review-candidate
 ---
 
 # Review candidate results
-<a name="review-candidate-results"></a>
 
 After a candidate completes an evaluation, you can review the results on the candidate results page. There are two ways to open it:
 + **From Amazon Connect Talent** – On the job candidates page, choose a candidate ID to open their results. For more information about the job candidates page, see [Candidates](candidates.md).

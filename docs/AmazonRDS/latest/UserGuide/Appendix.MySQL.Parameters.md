@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # Parameters for MySQL
-<a name="Appendix.MySQL.Parameters"></a>
 
 By default, a MySQL DB instance uses a DB parameter group that is specific to a MySQL database. This parameter group contains parameters for the MySQL database engine. For information about working with parameter groups and setting parameters, see [Parameter groups for Amazon RDS](USER_WorkingWithParamGroups.md).
 

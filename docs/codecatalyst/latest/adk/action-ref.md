@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/adk/action-ref.html
 ---
 
 # Action reference
-<a name="action-ref"></a>
 
 The following is the action definition YAML reference for your custom actions. You can define inputs, outputs, and resource integrations in the action definition YAML file. Once the action is defined, it can be referenced in your CI workflow file.
 

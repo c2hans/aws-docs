@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd06-b
 ---
 
 # FND06-BP06 Build strategies for commitment discounts and volume-based pricing
-<a name="fnd06-bp06"></a>
 
  Establish an organization-wide strategy for using cloud pricing models and commitment-based discounts across all accounts. Centralize management of commitment-based offerings to maximize cost savings while maintaining operational flexibility. Surface commitment and reservation recommendations at the organization level so purchasing decisions reflect consolidated usage.
 

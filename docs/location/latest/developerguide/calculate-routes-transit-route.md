@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # How to find a transit route
-<a name="calculate-routes-transit-route"></a>
 
 The CalculateRoutes API supports the `Transit` travel mode to calculate routes using public transportation such as buses, subways, trains, and monorails. Transit routes include pedestrian legs for walking to and from transit stops.
 

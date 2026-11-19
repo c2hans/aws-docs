@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # CONVERT\_TIMEZONE
-<a name="recipe-actions.functions.CONVERT_TIMEZONE"></a>
 
 Converts a time value from the source column into a new column based on a specified timezone.
 

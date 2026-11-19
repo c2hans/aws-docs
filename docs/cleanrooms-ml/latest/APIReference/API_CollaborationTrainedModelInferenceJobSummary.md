@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # CollaborationTrainedModelInferenceJobSummary
-<a name="API_CollaborationTrainedModelInferenceJobSummary"></a>
 
 Provides summary information about a trained model inference job in a collaboration.
 

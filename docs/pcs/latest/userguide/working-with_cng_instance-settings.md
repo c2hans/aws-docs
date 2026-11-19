@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_in
 ---
 
 # Configuring instance settings for compute node groups in AWS PCS
-<a name="working-with_cng_instance-settings"></a>
 
 Instance settings are the AMI, security groups, and SSH key pair that you specify on a compute node group. AWS PCS uses them to launch compute nodes. You can use instance settings with or without a custom launch template. To run setup scripts on compute nodes without launch template user data, use node lifecycle actions. For more information, see [Node lifecycle actions](cng-node-lifecycle-actions.md).
 

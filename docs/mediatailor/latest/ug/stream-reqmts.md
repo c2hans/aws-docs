@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/stream-reqmts.html
 ---
 
 # Input source requirements for MediaTailor ad insertion
-<a name="stream-reqmts"></a>
 
 A input source must meet the following requirements to work with MediaTailor:
 + Use Apple HLS (HTTP Live Streaming) or MPEG DASH (Dynamic Adaptive Streaming over HTTP)

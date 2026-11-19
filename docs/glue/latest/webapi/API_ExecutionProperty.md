@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ExecutionProperty
 ---
 
 # ExecutionProperty
-<a name="API_ExecutionProperty"></a>
 
 An execution property of a job.
 

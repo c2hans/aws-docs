@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # TargetTrackingMetric
-<a name="API_TargetTrackingMetric"></a>
 
 Represents a specific metric.
 

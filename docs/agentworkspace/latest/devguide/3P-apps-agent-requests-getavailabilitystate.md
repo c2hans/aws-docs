@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Get the current availability state of the agent in Connect Customer agent workspace
-<a name="3P-apps-agent-requests-getavailabilitystate"></a>
 
 Returns the current availability state of the agent currently logged in to the Connect Customer agent workspace, along with the next pending state if one is queued because the agent is handling an active contact.
 

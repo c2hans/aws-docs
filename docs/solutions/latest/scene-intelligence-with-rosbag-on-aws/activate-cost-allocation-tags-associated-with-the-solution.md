@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 ---
 
 # Activate cost allocation tags associated with the solution
-<a name="activate-cost-allocation-tags-associated-with-the-solution"></a>
 
 After you activate Cost Explorer, you must activate the cost allocation tags associated with this solution to see the costs for this solution. The cost allocation tags can only be activated from the management account for the organization. To activate cost allocation tags:
 

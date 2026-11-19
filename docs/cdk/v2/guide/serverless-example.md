@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/serverless-example.html
 ---
 
 # Tutorial: Create a serverless Hello World application
-<a name="serverless-example"></a>
 
 In this tutorial, you use the AWS Cloud Development Kit (AWS CDK) to create a simple serverless `Hello World` application that implements a basic API backend consisting of the following:
 +  **Amazon API Gateway REST API** – Provides an HTTP endpoint that is used to invoke your function through an HTTP GET request.

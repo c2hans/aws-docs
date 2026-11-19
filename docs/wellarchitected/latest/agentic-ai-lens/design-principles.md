@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/d
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
 The Agentic AI Lens is built on a set of design principles that reflect the unique characteristics of autonomous AI agents. These principles guide architectural decisions across all six pillars and provide a foundation for evaluating agentic AI system designs.
 + **Decompose agentic workloads into specialized, bounded agents:** Single-purpose agents with declared scope, explicit limits, and clear authority are easier to evaluate, secure, scale, evolve, and replace than monolithic ones. Decomposition is the foundation that every pillar's controls depend on.

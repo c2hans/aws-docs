@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iot_example_iot_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `SearchIndex` with an AWS SDK or CLI
-<a name="iot_example_iot_SearchIndex_section"></a>
 
 The following code examples show how to use `SearchIndex`.
 

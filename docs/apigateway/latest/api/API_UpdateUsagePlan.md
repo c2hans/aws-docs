@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsagePla
 ---
 
 # UpdateUsagePlan
-<a name="API_UpdateUsagePlan"></a>
 
 Updates a usage plan of a given plan Id.
 

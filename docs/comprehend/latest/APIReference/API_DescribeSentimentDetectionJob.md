@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeSentimentDetectionJob
-<a name="API_DescribeSentimentDetectionJob"></a>
 
 Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
 

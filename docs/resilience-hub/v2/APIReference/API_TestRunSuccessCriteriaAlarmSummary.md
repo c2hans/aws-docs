@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunSuccessCriteriaAlarmSummary
-<a name="API_TestRunSuccessCriteriaAlarmSummary"></a>
 
 Summary information about a success criteria alarm snapshot captured for a test run.
 

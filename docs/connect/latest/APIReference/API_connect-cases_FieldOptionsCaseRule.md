@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldOptionsCaseRule
-<a name="API_connect-cases_FieldOptionsCaseRule"></a>
 
 Rules that control which options are available in a child field based on the selected value in a parent field.
 

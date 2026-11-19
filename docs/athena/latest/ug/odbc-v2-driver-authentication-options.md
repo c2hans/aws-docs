@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-authenti
 ---
 
 # Authentication options
-<a name="odbc-v2-driver-authentication-options"></a>
 
 You can connect to Amazon Athena using the following authentication types. For all types, the connection string name is `AuthenticationType`, the parameter type is `Required`, and the default value is `IAM Credentials`. For information about the parameters for each authentication type, visit the corresponding link. For common authentication parameters, see [Common authentication parameters](odbc-v2-driver-common-authentication-parameters.md).
 

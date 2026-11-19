@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridSessions
-<a name="API_ListTestGridSessions"></a>
 
 Retrieves a list of sessions for a [TestGridProject](API_TestGridProject.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-support.html
 ---
 
 # AWS Glue support for HubSpot
-<a name="hubspot-support"></a>
 
 AWS Glue supports HubSpot as follows:
 

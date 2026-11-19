@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-custom-manifests
 ---
 
 # Fields for customizing the paths inside the manifests
-<a name="hls-custom-manifests"></a>
 
 Inside the main manifest, there are paths to each child manifest. Inside each child manifest, there are paths to the media files for that manifest.
 

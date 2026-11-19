@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/servi
 ---
 
 # Terminology used in Demand Planning
-<a name="servicename-terminology"></a>
 
 The following is the common terminology that you may frequently use in Demand Planning.
 + **Enterprise demand plan** – A single planning workbook that consolidates forecast input from multiple stakeholders to create a unified forecast. It can consist of multiple planning cycles, enabling iterative refinement of forecast based on evolving forecast input dataset. The enterprise demand plan displays two status points:

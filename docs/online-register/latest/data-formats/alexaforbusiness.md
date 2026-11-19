@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/alex
 ---
 
 # Data retrieval APIs for Alexa for Business
-<a name="alexaforbusiness"></a>
 
 Alexa for Business provides the following APIs for data retrieval.
 

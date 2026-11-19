@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mod.html
 ---
 
 # $mod
-<a name="mod"></a>
 
 The `$mod` operator is an arithmetic operator that performs a modulo operation on a number. It returns the remainder of dividing one number by another. This operator is commonly used to determine if a number is odd or even, or to distribute items into a finite number of groups.
 

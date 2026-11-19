@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predicti
 ---
 
 # Predictions with custom models
-<a name="canvas-make-predictions"></a>
 
 Use the custom model that you've built in SageMaker Canvas to make predictions for your data. The following sections show you how to make predictions for numeric and categorical prediction models, time series forecasts, image prediction models, and text prediction models.
 

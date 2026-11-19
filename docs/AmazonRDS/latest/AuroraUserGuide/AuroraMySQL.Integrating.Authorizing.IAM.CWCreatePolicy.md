@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Creating an IAM policy to access CloudWatch Logs resources
-<a name="AuroraMySQL.Integrating.Authorizing.IAM.CWCreatePolicy"></a>
 
 Aurora can access CloudWatch Logs to export audit log data from an Aurora DB cluster. However, you must first create an IAM policy that provides the log group and log stream permissions that allow Aurora to access CloudWatch Logs.
 

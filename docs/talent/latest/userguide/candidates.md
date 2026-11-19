@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/candidates.html
 ---
 
 # Candidates
-<a name="candidates"></a>
 
 The job candidates page shows all candidates for a specific job and their evaluation results. To open it, navigate to **Jobs** and choose a job.
 

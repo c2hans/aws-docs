@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # DeleteKnowledgeBase
-<a name="API_amazon-q-connect_DeleteKnowledgeBase"></a>
 
 Deletes the knowledge base.
 

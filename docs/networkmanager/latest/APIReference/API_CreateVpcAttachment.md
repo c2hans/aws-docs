@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CreateVpcAttachment
-<a name="API_CreateVpcAttachment"></a>
 
 Creates a VPC attachment on an edge location of a core network.
 

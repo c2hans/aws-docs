@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetFound
 ---
 
 # GetFoundationModelAvailability
-<a name="API_GetFoundationModelAvailability"></a>
 
 Get information about the Foundation model availability.
 

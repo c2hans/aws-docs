@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ips-step-plan-attach
 ---
 
 # Design the selectors for each input
-<a name="ips-step-plan-attachments"></a>
 
 After you follow step 3 to organize sources into different inputs and input types (static and dynamic), you must identify the content to extract from each MediaLive input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-managing-execut
 ---
 
 # Managing durable executions
-<a name="durable-managing-executions"></a>
 
 After a durable execution starts, you can change what happens to it without changing your function code. Each operation acts on one execution, identified by its execution ARN. New invocations of your function and other executions aren't affected.
 + **Stop** – End an execution permanently. Stopping an execution doesn't undo work that completed steps already did. For more information, see [Stopping an execution](#durable-managing-executions-stop).

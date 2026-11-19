@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-age
 ---
 
 # Subscribing to SSM Agent notifications
-<a name="ssm-agent-subscribe-notifications"></a>
 
 Amazon Simple Notification Service (Amazon SNS) can notify you when new versions of AWS Systems Manager Agent (SSM Agent) are released. Use the following procedure to subscribe to these notifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingDocumen
 ---
 
 # ThingDocument
-<a name="API_ThingDocument"></a>
 
 The thing search index document.
 

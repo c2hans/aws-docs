@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/static-graphic-
 ---
 
 # Static graphic overlay
-<a name="static-graphic-overlay"></a>
 
 You can insert a static overlay into the event so that it appears on the video in one or more of the video outputs. You can configure the static overlay with a start time and duration. You can insert the static overlay at any position on the video frame, as specified by x/y coordinates. You can configure with an opacity and with fade-in and/or fade- out.
 

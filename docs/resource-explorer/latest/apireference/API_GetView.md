@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # GetView
-<a name="API_GetView"></a>
 
 Retrieves details of the specified view.
 

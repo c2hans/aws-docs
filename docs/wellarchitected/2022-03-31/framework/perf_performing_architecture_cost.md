@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF01-BP03 Factor cost requirements into decisions
-<a name="perf_performing_architecture_cost"></a>
 
  Workloads often have cost requirements for operation. Use internal cost controls to select resource types and sizes based on predicted resource need.
 

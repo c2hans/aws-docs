@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-sns.html
 ---
 
 # Invoking Lambda Event Functions with Amazon SNS notifications
-<a name="with-sns"></a>
 
 You can use a Lambda Event Function to process Amazon Simple Notification Service (Amazon SNS) notifications. Amazon SNS supports Lambda Event Functions as a target for messages sent to a topic. You can subscribe your function to topics in the same account or in other AWS accounts. For a detailed walkthrough, see [Tutorial: Using AWS Lambda with Amazon Simple Notification Service](with-sns-example.md).
 

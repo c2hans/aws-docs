@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # CognitoUserPoolConfigurationDetail
-<a name="API_CognitoUserPoolConfigurationDetail"></a>
 
 The configuration for an identity source that represents a connection to an Amazon Cognito user pool used as an identity provider for Verified Permissions.
 

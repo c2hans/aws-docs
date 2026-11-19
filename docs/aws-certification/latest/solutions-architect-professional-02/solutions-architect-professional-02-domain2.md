@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 2: Design for New Solutions
-<a name="solutions-architect-professional-02-domain2"></a>
 
 **Topics**
 + [Task 2.1: Design a deployment strategy to meet business requirements](#solutions-architect-professional-02-domain2-task1)

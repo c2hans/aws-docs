@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::MountTarget
-<a name="aws-resource-s3files-mounttarget"></a>
 
 The `AWS::S3Files::MountTarget` resource specifies a mount target for an Amazon S3 Files file system. Mount targets provide network access to the file system from compute resources in a specific Availability Zone and VPC.
 

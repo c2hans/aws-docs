@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetCaptureData
-<a name="API_GetCaptureData"></a>
 
 Retrieves video data for a specific time range.
 

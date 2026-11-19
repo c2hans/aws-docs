@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dat
 ---
 
 # Data residency controls with detective behavior
-<a name="data-residency-detective-controls"></a>
 
 The following data residency controls have detective behavior.
 

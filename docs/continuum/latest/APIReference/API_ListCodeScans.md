@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListCo
 ---
 
 # ListCodeScans
-<a name="API_ListCodeScans"></a>
 
 Lists customer-visible scans for one environment in descending scanRunId order.
 

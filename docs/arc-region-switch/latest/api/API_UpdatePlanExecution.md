@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_UpdateP
 ---
 
 # UpdatePlanExecution
-<a name="API_UpdatePlanExecution"></a>
 
 Updates an in-progress plan execution. This operation allows you to modify certain aspects of the execution, such as adding a comment or changing the action.
 

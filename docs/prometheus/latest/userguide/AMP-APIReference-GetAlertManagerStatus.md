@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # GetAlertManagerStatus
-<a name="AMP-APIReference-GetAlertManagerStatus"></a>
 
 The `GetAlertManagerStatus` retrieves information about the status of alert manager.
 

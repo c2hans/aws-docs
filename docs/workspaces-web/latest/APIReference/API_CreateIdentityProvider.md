@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateIdentityProvider
-<a name="API_CreateIdentityProvider"></a>
 
 Creates an identity provider resource that is then associated with a web portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Overview of JD Edwards EnterpriseOne behavior on SQL Server
-<a name="overview"></a>
 
 EnterpriseOne business logic is primarily handled within applications. Only basic data manipulation language (DML) statements are passed to the database from the application. In standard processing, the record set is opened on the database but is managed by the application. The application then typically performs multiple DML operations for each record in the record set. This approach generates a substantial volume of *chatty* DML operations against the database. The latency of each DML operation is one of the key drivers of performance. Because of this architecture, CPU usage of the database that supports EnterpriseOne tends to be minimal, whereas network and disk I/O characteristics are the primary drivers of process performance. EnterpriseOne database tuning focuses heavily on the minimization of DML latency.
 

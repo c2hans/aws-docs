@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/image-verification.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Validate container image signatures during deployment
-<a name="image-verification"></a>
 
 If you use [AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html) and want to verify signed container images at the time of deployment, you can use one of the following solutions:
 +  [Gatekeeper and Ratify](https://ratify.dev/docs/1.0/quickstarts/ratify-on-aws) – Use Gatekeeper as the admission controller and Ratify configured with an AWS Signer plugin as a web hook for validating signatures.

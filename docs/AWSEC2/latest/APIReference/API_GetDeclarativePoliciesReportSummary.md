@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetDeclar
 ---
 
 # GetDeclarativePoliciesReportSummary
-<a name="API_GetDeclarativePoliciesReportSummary"></a>
 
 Retrieves a summary of the account status report.
 

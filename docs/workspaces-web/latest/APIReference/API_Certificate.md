@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 The certificate.
 

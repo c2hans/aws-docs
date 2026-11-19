@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-prep-aif.html
 ---
 
 # Input prepare and automatic input failover
-<a name="input-prep-aif"></a>
 
 Your MediaLive channel might include some inputs that are set up as [automatic input failover pairs](automatic-input-failover.md).
 

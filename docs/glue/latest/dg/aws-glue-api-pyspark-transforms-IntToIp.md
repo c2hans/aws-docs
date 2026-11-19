@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-tran
 ---
 
 # IntToIp class
-<a name="aws-glue-api-pyspark-transforms-IntToIp"></a>
 
 The `IntToIp` transform converts the integer value of source column or other value to the corresponding IPv4 value in then target column, and returns the result in a new column.
 

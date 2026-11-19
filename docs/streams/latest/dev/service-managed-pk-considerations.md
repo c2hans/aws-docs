@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Important considerations
-<a name="service-managed-pk-considerations"></a>
 + **KPL upgrade for null partition keys** – Customers who want to send records without a partition key should upgrade to the latest KPL version. For customers who continue to provide partition keys, no KPL or KCL changes are required. For more information, see [KPL and KCL with service-managed streams](service-managed-pk-kpl.md).
 + **AWS SDK considerations** – If you use the AWS SDK directly (rather than the KPL or KCL) to produce to or consume from a service-managed stream, review the following before you enable `AUTO`:
   + **Producers** – Upgrade to the latest SDK version to omit the partition key when writing to a service-managed stream. On the latest SDK, `PartitionKey` is optional, so you can call `PutRecord` and `PutRecords` without it. If you continue to supply a partition key, no SDK change is required — the service accepts the value and ignores it for shard placement. Before you enable `AUTO` and start sending null partition keys on a stream that existing consumers read from, update those consumers to handle an absent `PartitionKey`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 ---
 
 # Integrate AgentCore Memory with LangChain or LangGraph
-<a name="memory-integrate-lang"></a>
 
  [LangChain and LangGraph](https://www.langchain.com/langgraph) are powerful open-source frameworks for developing agents through a graph-based architecture. They provide a simple interface for defining agent interactions with the user, its tools, and memory.
 

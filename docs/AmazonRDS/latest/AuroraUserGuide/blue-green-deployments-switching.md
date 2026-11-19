@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-gr
 ---
 
 # Switching a blue/green deployment in Amazon Aurora
-<a name="blue-green-deployments-switching"></a>
 
 A *switchover* transitions the DB cluster, including its DB instances, in the green environment to be the production DB cluster. Before you switch over, production traffic is routed to the cluster in the blue environment. After you switch over, production traffic is routed to the DB cluster in the green environment.
 

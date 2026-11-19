@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetMulticastGroup
-<a name="API_GetMulticastGroup"></a>
 
 Gets information about a multicast group.
 

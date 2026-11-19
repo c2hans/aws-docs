@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 ---
 
 # Security
-<a name="assistant-security"></a>
 
 The Deadline Cloud assistant operates within the existing Deadline Cloud security model:
 + **Read-only access** – The assistant only performs read operations (Get, List, Search) on Deadline Cloud resources and CloudWatch logs. It cannot modify your resources.

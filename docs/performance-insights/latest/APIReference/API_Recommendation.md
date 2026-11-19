@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # Recommendation
-<a name="API_Recommendation"></a>
 
 The list of recommendations for the insight.
 

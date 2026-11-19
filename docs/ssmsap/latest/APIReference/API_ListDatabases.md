@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListDatab
 ---
 
 # ListDatabases
-<a name="API_ListDatabases"></a>
 
 Lists the SAP HANA databases of an application registered with AWS Systems Manager for SAP.
 

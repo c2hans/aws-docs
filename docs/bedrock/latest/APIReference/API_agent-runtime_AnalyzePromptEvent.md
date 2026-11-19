@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AnalyzePromptEvent
-<a name="API_agent-runtime_AnalyzePromptEvent"></a>
 
 An event in which the prompt was analyzed in preparation for optimization.
 

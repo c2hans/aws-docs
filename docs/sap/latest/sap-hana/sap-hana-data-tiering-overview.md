@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-data-tierin
 ---
 
 # SAP HANA Data Tiering on AWS Overview
-<a name="sap-hana-data-tiering-overview"></a>
 
  * [Last updated](data-tiering-document-revisions.md): December 2022*
 

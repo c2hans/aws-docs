@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailPiiEntityFilter
-<a name="API_runtime_GuardrailPiiEntityFilter"></a>
 
 A Personally Identifiable Information (PII) entity configured in a guardrail.
 

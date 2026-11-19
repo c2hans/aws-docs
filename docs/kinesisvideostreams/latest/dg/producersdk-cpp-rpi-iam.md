@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Create an IAM user with permission to write to Kinesis Video Streams
-<a name="producersdk-cpp-rpi-iam"></a>
 
 If you haven't already done so, set up an AWS Identity and Access Management (IAM) user with permissions to write to a Kinesis video stream.
 

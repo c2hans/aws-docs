@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobPreemptionSummary
-<a name="API_ServiceJobPreemptionSummary"></a>
 
 Summarizes the preemptions of the service job. This field appears on a service job when it has been preempted.
 

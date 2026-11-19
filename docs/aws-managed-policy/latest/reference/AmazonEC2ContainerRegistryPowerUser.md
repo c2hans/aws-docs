@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ContainerRegistryPowerUser
-<a name="AmazonEC2ContainerRegistryPowerUser"></a>
 
 **Description**: Provides full access to Amazon EC2 Container Registry repositories, but does not allow repository deletion or policy changes.
 
@@ -18,13 +17,13 @@ You can attach `AmazonEC2ContainerRegistryPowerUser` to your users, groups, and 
 <a name="AmazonEC2ContainerRegistryPowerUser-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: December 21, 2015, 17:05 UTC
-+ **Edited time:** December 10, 2019, 20:48 UTC
++ **Edited time:** November 17, 2026, 21:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser`
 
 ## Policy version
 <a name="AmazonEC2ContainerRegistryPowerUser-version"></a>
 
-**Policy version:** v3 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -56,6 +55,13 @@ The policy's default version is the version that defines the permissions for the
         "ecr:PutImage"
       ],
       "Resource" : "*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "signin:CreateBearerToken"
+      ],
+      "Resource" : "arn:aws:signin:*:*:service-principal/ecr.amazonaws.com"
     }
   ]
 }

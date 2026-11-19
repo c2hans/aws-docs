@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AbortInc
 ---
 
 # AbortIncompleteMultipartUpload
-<a name="API_control_AbortIncompleteMultipartUpload"></a>
 
 The container for abort incomplete multipart upload
 

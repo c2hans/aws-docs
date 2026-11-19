@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-compute.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Manage compute resources by using nodes
-<a name="eks-compute"></a>
 
 A Kubernetes node is a machine that runs containerized applications. Each node has the following components:
 +  ** [Container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) ** – Software that’s responsible for running the containers.

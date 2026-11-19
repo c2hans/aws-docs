@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_IntelligentTieri
 ---
 
 # IntelligentTieringConfiguration
-<a name="API_IntelligentTieringConfiguration"></a>
 
 Specifies the S3 Intelligent-Tiering configuration for an Amazon S3 bucket.
 

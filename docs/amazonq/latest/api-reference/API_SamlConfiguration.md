@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_SamlCon
 ---
 
 # SamlConfiguration
-<a name="API_SamlConfiguration"></a>
 
 Provides the SAML 2.0 compliant identity provider (IdP) configuration information Amazon Q Business needs to deploy a Amazon Q Business web experience.
 

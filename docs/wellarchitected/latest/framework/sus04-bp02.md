@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus04-b
 ---
 
 # SUS04-BP02 Select appropriate file formats, compression, and software implementation
-<a name="sus04-bp02"></a>
 
  Choose file formats, encodings, compression techniques, and software implementations that minimize the storage and processing resources your workload consumes while maintaining required functionality.
 

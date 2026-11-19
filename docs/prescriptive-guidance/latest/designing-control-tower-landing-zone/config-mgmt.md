@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Managing the configuration of AWS resources
-<a name="config-mgmt"></a>
 
 The [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) service enables you to assess, audit, and evaluate the configurations of your AWS resources. It provides a detailed view of how your resources are configured, shows how they relate to one another, and tracks how these configurations change over time. It's similar to a configuration management database that continuously monitors and records your AWS resource configurations, making it easier to audit resource compliance, analyze security postures, and troubleshoot configuration changes across your AWS environment. This service helps you maintain security and governance by tracking resource inventory, configuration history, and configuration change notifications to enable security and regulatory compliance.
 

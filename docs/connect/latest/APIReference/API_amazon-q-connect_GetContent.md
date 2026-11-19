@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GetContent
-<a name="API_amazon-q-connect_GetContent"></a>
 
 Retrieves content, including a pre-signed URL to download the content.
 

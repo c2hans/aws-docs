@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/reboot-work
 ---
 
 # Reboot a WorkSpace in WorkSpaces Personal
-<a name="reboot-workspaces"></a>
 
 Occasionally, you might need to reboot (restart) a WorkSpace manually. Rebooting a WorkSpace disconnects the user and then performs a shutdown and reboot of the WorkSpace. To avoid data loss, make sure the user saves any open documents and other application files before you reboot the WorkSpace. The user data, operating system, and system settings are not affected.
 

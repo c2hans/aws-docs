@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/building-paths.html
 ---
 
 # Creating conversation paths
-<a name="building-paths"></a>
 
 Typically, Amazon Lex V2 manages the flow of conversations with your users. For simple bots, the default flow can be enough to create a good experience for your users. However, for more complex bots, you might want to take control of the conversation and direct the flow into more complex paths.
 

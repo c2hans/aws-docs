@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/close-connection-options.
 ---
 
 # Close CRM connection options
-<a name="close-connection-options"></a>
 
 The following are connection options for Close CRM:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Close CRM object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/srgs-tokens.html
 ---
 
 # Tokens
-<a name="srgs-tokens"></a>
 
 The following table shows the token specifications supported by the grammar slot type. For more information, see [ Tokens ](https://www.w3.org/TR/speech-grammar/#S2.1) in the *Speech recognition grammar specification version 1* W3C recommendation.
 

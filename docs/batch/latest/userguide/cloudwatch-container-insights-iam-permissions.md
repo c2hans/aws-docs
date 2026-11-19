@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch-contai
 ---
 
 # IAM permissions for Container Insights
-<a name="cloudwatch-container-insights-iam-permissions"></a>
 
 To enable or change Container Insights on a compute environment, AWS Batch requires the `ecs:UpdateCluster` permission. How you provide this permission depends on your compute environment's service role configuration.
 

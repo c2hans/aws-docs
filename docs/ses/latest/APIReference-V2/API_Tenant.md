@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Tenant.ht
 ---
 
 # Tenant
-<a name="API_Tenant"></a>
 
 A structure that contains details about a tenant.
 

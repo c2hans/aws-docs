@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Blocked
 ---
 
 # BlockedPhrasesConfiguration
-<a name="API_BlockedPhrasesConfiguration"></a>
 
 Provides information about the phrases blocked from chat by your chat control configuration.
 

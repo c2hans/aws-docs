@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Pro
 ---
 
 # ProvisionPermissionSet
-<a name="API_ProvisionPermissionSet"></a>
 
 The process by which a specified permission set is provisioned to the specified target.
 

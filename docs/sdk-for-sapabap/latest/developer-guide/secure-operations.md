@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/s
 ---
 
 # Secure operations
-<a name="secure-operations"></a>
 
 ## Encryption Of Data At Rest
 <a name="rest"></a>

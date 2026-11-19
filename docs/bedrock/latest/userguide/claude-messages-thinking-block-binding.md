@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Preserved thinking
-<a name="claude-messages-thinking-block-binding"></a>
 
 ## Overview
 <a name="claude-messages-thinking-block-binding-overview"></a>

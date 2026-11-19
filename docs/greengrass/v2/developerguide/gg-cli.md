@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli.html
 ---
 
 # Greengrass Command Line Interface
-<a name="gg-cli"></a>
 
 The Greengrass Command Line Interface (CLI) lets you interact with AWS IoT Greengrass Core on your device to locally develop components and debug issues. For example, you can use the Greengrass CLI to create a local deployment and restart a component on the core device.
 

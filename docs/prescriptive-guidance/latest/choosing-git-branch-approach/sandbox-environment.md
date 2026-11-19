@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Sandbox environment
-<a name="sandbox-environment"></a>
 
 The *sandbox environment* is where developers write code, make mistakes, and perform proof of concept work. You can deploy to a sandbox environment from a local workstation or through a script on a local workstation.
 

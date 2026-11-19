@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Get
 ---
 
 # GetPackageVersionReadme
-<a name="API_GetPackageVersionReadme"></a>
 
  Gets the readme file or descriptive text for a package version.
 

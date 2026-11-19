@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RegionS
 ---
 
 # RegionSwitchPlanConfiguration
-<a name="API_RegionSwitchPlanConfiguration"></a>
 
 Configuration for nested Region switch plans. This allows one Region switch plan to trigger another plan as part of its execution.
 

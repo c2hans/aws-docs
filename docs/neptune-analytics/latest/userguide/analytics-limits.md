@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/analy
 ---
 
 # Limits for Neptune Analytics
-<a name="analytics-limits"></a>
 
 ## Regions
 <a name="limits-regions"></a>

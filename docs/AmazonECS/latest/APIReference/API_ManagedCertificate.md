@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedCertificate
-<a name="API_ManagedCertificate"></a>
 
 The ACM certificate associated with the HTTPS domain created for the Express service.
 

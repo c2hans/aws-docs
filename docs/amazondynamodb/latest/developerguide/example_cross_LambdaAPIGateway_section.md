@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use API Gateway to invoke a Lambda function
-<a name="example_cross_LambdaAPIGateway_section"></a>
 
 The following code examples show how to create an AWS Lambda function invoked by Amazon API Gateway.
 

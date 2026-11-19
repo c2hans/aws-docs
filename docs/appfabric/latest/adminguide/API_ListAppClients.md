@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/API_ListAppC
 ---
 
 # ListAppClients
-<a name="API_ListAppClients"></a>
 
 |  |
 | --- |

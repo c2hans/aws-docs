@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessGroupPolicy
-<a name="API_ModifyVerifiedAccessGroupPolicy"></a>
 
 Modifies the specified AWS Verified Access group policy.
 

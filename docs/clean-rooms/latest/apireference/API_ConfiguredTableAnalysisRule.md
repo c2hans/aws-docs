@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAnalysisRule
-<a name="API_ConfiguredTableAnalysisRule"></a>
 
 A configured table analysis rule, which limits how data for this table can be used.
 

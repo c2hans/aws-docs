@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # ScalableTargetAction
-<a name="API_ScalableTargetAction"></a>
 
 Represents the minimum and maximum capacity for a scheduled action.
 

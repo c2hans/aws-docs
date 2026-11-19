@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListEndpointAccess
-<a name="API_ListEndpointAccess"></a>
 
 Returns an array of `EndpointAccess` objects and relevant information.
 

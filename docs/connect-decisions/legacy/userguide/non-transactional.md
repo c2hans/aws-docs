@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/non-t
 ---
 
 # Planning configuration data
-<a name="non-transactional"></a>
 
 This section lists all the required fields used by Supply Planning and describes how each field is used. For information on data fields required for Supply Planning, see [Supply Planning](entities-supply-planning.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/WebVTT-in-HLS.htm
 ---
 
 # WebVTT input captions (as part of an HLS source)
-<a name="WebVTT-in-HLS"></a>
 
 AWS Elemental MediaConvert supports WebVTT as an input captions format either as a sidecar file or as part of an HLS source. If your input WebVTT captions are in a sidecar file, see [IMSC, SCC, SMPTE-TT, SRT, STL, TTML (sidecar) input captions](sidecar-input.md).
 

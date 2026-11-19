@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConvert::CertificateAssociation
-<a name="aws-resource-mediaconvert-certificateassociation"></a>
 
 <a name="aws-resource-mediaconvert-certificateassociation-description"></a>The `AWS::MediaConvert::CertificateAssociation` resource Property description not available. for MediaConvert.
 

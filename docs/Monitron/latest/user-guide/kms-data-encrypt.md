@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/kms-data-encr
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # AWS KMS and data encryption in Amazon Monitron
-<a name="kms-data-encrypt"></a>
 
 Amazon Monitron encrypts your data and project information using one of two types of keys through AWS Key Management Service (AWS KMS). You can choose one of the following:
 + An AWS owned key. This is the default encryption key and is used if you do not choose **Custom encryption settings** when setting up your project.

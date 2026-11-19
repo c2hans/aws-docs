@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # GCP federation role
-<a name="cloud-connector-gcp-federation-role"></a>
 
 The GCP federation role lets Systems Manager obtain a web identity token from AWS Security Token Service (AWS STS) and exchange it for GCP credentials through OIDC federation. Automation assumes this role during runbook execution to authenticate to your GCP environment. Systems Manager also assumes this role directly to validate the Cloud Connector before any State Manager association exists.
 

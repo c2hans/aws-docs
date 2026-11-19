@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessEndpointEniOptions
-<a name="API_ModifyVerifiedAccessEndpointEniOptions"></a>
 
 Describes the options when modifying a Verified Access endpoint with the `network-interface` type.
 

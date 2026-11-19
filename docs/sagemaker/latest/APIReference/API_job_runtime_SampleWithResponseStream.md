@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_ru
 ---
 
 # SampleWithResponseStream
-<a name="API_job_runtime_SampleWithResponseStream"></a>
 
 Sends a streaming inference request to the model during a job execution. Returns the response as a stream of payload chunks. Each turn is captured for later use.
 

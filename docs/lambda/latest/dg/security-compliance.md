@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/security-compliance.htm
 ---
 
 # Compliance validation for AWS Lambda
-<a name="security-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Lambda as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

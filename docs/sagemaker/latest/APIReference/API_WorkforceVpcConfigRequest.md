@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Workfo
 ---
 
 # WorkforceVpcConfigRequest
-<a name="API_WorkforceVpcConfigRequest"></a>
 
 The VPC object you use to create or update a workforce.
 

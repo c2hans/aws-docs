@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreatePrivateConnection
-<a name="API_CreatePrivateConnection"></a>
 
 Creates a Private Connection to a target resource.
 

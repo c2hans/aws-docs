@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-gatewa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Amazon EKS Hybrid Nodes gateway troubleshooting
-<a name="hybrid-nodes-gateway-troubleshooting"></a>
 
 This page provides guidance for diagnosing and resolving common issues with the Amazon EKS Hybrid Nodes gateway. Each section describes a symptom, possible causes, diagnostic steps, and resolutions. For operational details, see [Amazon EKS Hybrid Nodes gateway operations](hybrid-nodes-gateway-operations.md).
 

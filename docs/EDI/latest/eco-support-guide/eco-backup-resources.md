@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-backup-
 ---
 
 # Resources that EDI Cloud Operations backs up
-<a name="eco-backup-resources"></a>
 
 The following table lists the AWS resources that ECO backs up for EDI with the default backup plan.
 

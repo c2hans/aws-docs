@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/create
 ---
 
 # Creating billing groups
-<a name="create-billing-group"></a>
 
 ## Using Billing Conductor as a standalone service
 <a name="create-billing-group-standalone"></a>

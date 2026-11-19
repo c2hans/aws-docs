@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # Card
-<a name="API_qapps_Card"></a>
 
 A card representing a component or step in an Amazon Q App's flow.
 

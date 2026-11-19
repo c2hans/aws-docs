@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheSubnetGroup
-<a name="API_CacheSubnetGroup"></a>
 
 Represents the output of one of the following operations:
 +  `CreateCacheSubnetGroup`

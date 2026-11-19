@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_TestF
 ---
 
 # TestFunction
-<a name="API_TestFunction"></a>
 
 Tests a CloudFront function.
 

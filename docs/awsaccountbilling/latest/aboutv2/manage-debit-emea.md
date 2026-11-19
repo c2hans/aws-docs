@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Managing your SEPA direct debit payment method
-<a name="manage-debit-emea"></a>
 
  AWS Europe customers can add a bank account to allow SEPA direct debit payments. You can use any personal or business bank account, provided that the account is located at a branch in a SEPA-supported country and payments are in the Euro currency.
 

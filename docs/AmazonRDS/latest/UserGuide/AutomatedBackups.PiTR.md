@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBack
 ---
 
 # Restoring to a specified time from a replicated backup for Amazon RDS
-<a name="AutomatedBackups.PiTR"></a>
 
 You can restore a DB instance to a specific point in time from a replicated backup using the Amazon RDS console. You can also use the `restore-db-instance-to-point-in-time` AWS CLI command or the `RestoreDBInstanceToPointInTime` RDS API operation.
 

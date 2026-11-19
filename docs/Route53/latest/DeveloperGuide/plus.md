@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/plus.html
 ---
 
 # .plus
-<a name="plus"></a>
 
 Used as a general extension, but ideal for plus-size clothing, add-on software, or any product that offers "extra" features or dimensions.
 

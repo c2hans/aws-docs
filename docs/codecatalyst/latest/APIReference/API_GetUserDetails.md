@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetUserDetails
-<a name="API_GetUserDetails"></a>
 
 Returns information about a user.
 

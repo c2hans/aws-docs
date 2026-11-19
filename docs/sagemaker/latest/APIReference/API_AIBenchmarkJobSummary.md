@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIBenc
 ---
 
 # AIBenchmarkJobSummary
-<a name="API_AIBenchmarkJobSummary"></a>
 
 Summary information about an AI benchmark job.
 

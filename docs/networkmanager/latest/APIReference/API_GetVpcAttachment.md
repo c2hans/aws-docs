@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetVpcAttachment
-<a name="API_GetVpcAttachment"></a>
 
 Returns information about a VPC attachment.
 

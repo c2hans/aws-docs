@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationS3
-<a name="API_UpdateLocationS3"></a>
 
 Modifies the following configuration parameters of the Amazon S3 transfer location that you're using with AWS DataSync.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SelfGra
 ---
 
 # SelfGrantStatusOutput
-<a name="API_SelfGrantStatusOutput"></a>
 
 The details for the self granting status for a data source.
 

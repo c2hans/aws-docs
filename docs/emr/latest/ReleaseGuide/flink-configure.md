@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/flink-configure.
 ---
 
 # Configuring Flink in Amazon EMR
-<a name="flink-configure"></a>
 
 ## Configure Flink with Hive Metastore and Glue Catalog
 <a name="flink-configure-hive"></a>

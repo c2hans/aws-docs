@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Extend
 ---
 
 # ExtendTrainingPlan
-<a name="API_ExtendTrainingPlan"></a>
 
 Extends an existing training plan by purchasing an extension offering. This allows you to add additional compute capacity time to your training plan without creating a new plan or reconfiguring your workloads.
 

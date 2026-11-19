@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Working with Networking Flexible Cost Allocation
-<a name="networking-flex-cost-allocation-work-with"></a>
 
 Complete the following tasks to set up FCA.
 

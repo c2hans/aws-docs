@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ServiceLi
 ---
 
 # ServiceLinkVirtualInterface
-<a name="API_ServiceLinkVirtualInterface"></a>
 
 Describes the service link virtual interfaces that establish connectivity between AWS Outpost and on-premises networks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/deploy-bundles
 ---
 
 # Deployment with WorkSpaces Core bundles
-<a name="deploy-bundles"></a>
 
 To deploy a Amazon WorkSpaces Core-based virtual desktop infrastructure (VDI) using WorkSpaces Core bundles, customers must meet the following requirements:
 

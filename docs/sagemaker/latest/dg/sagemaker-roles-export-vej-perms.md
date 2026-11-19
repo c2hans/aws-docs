@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles-expo
 ---
 
 # `ExportVectorEnrichmentJob` API: Execution Role Permissions
-<a name="sagemaker-roles-export-vej-perms"></a>
 
 For an execution role that you can pass in a `ExportVectorEnrichmentJob` API request, you can attach the following minimum permissions policy to the role:
 

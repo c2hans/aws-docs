@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutProvisionedConc
 ---
 
 # PutProvisionedConcurrencyConfig
-<a name="API_PutProvisionedConcurrencyConfig"></a>
 
 Adds a provisioned concurrency configuration to a function's alias or version.
 

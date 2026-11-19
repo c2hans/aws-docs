@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # OperationResultFilter
-<a name="API_OperationResultFilter"></a>
 
 The status that operation results are filtered by.
 

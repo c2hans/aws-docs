@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Step 4: Review failure mode findings and recommendations
-<a name="next-gen-tutorial-review-findings"></a>
 
 Once the assessment completes, review the results to understand the potential failure modes in your service and the recommended improvements.
 

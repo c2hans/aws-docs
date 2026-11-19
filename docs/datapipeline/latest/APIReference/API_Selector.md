@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Sel
 ---
 
 # Selector
-<a name="API_Selector"></a>
 
 A comparison that is used to determine whether a query should return this object.
 

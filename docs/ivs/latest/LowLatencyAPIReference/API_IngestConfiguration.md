@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_In
 ---
 
 # IngestConfiguration
-<a name="API_IngestConfiguration"></a>
 
 Object specifying the ingest configuration set up by the broadcaster, usually in an encoder.
 

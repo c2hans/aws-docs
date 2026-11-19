@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Cre
 ---
 
 # CreateDevEnvironment
-<a name="API_CreateDevEnvironment"></a>
 
 Creates a Dev Environment in Amazon CodeCatalyst, a cloud-based development environment that you can use to quickly work on the code stored in the source repositories of your project.
 

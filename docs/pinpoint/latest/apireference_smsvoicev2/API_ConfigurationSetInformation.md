@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ConfigurationSetInformation
-<a name="API_ConfigurationSetInformation"></a>
 
 Information related to a given configuration set in your AWS account.
 

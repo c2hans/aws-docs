@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateRep
 ---
 
 # UpdateReputationEntityPolicy
-<a name="API_UpdateReputationEntityPolicy"></a>
 
 Update the reputation management policy for a reputation entity. The policy determines how the entity responds to reputation findings, such as automatically pausing sending when certain thresholds are exceeded.
 

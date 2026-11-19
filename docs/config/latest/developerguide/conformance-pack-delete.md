@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/conformance
 ---
 
 # Deleting Conformance Packs for AWS Config
-<a name="conformance-pack-delete"></a>
 
 You can use the AWS Config console or the AWS CLI to delete conformance packs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListIngressPoints
-<a name="API_ListIngressPoints"></a>
 
 List all ingress endpoint resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # WebRTCConnection
-<a name="API_connect-participant_WebRTCConnection"></a>
 
 Creates the participant’s WebRTC connection data required for the client application (mobile or web) to connect to the call.
 

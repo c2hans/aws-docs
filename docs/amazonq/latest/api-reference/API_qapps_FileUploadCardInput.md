@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_F
 ---
 
 # FileUploadCardInput
-<a name="API_qapps_FileUploadCardInput"></a>
 
 Represents a file upload card. It can optionally receive a `filename` and `fileId` to set a default file. If not received, the user must provide the file when the Q App runs.
 

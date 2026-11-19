@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListManagedR
 ---
 
 # ListManagedRuleSets
-<a name="API_ListManagedRuleSets"></a>
 
 Retrieves the managed rule sets that you own.
 

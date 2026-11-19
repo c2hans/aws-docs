@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/trou
 ---
 
 # Troubleshoot configuration issues in Amazon Route 53 Global Resolver
-<a name="troubleshoot-configuration-issues"></a>
 
 Amazon Route 53 Global Resolver offers extensive configuration options for DNS views, authentication, and firewall rules, which can sometimes lead to configuration conflicts or mismatches. Identify and resolve common Amazon Route 53 Global Resolver configuration problems that affect DNS resolution.
 

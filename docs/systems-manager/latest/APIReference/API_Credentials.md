@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Credentials
-<a name="API_Credentials"></a>
 
 The temporary security credentials, which include an access key ID, a secret access key, and a security (or session) token.
 

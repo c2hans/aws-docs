@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 2.2 – Create test data and provision staging environment
-<a name="best-practice-2.2---create-test-data-and-provision-staging-environment."></a>
 
  Using a known and unchanging dataset for test purposes helps ensure that when changes are made to the analytics environment or analytics application code, test results can be compared to previous versions.
 

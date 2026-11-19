@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # CentralizationRuleSource
-<a name="API_CentralizationRuleSource"></a>
 
 Configuration specifying the source of telemetry data to be centralized.
 

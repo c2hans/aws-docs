@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/cer-annotation-mani
 ---
 
 # PDF annotation files
-<a name="cer-annotation-manifest"></a>
 
 For PDF annotations, you use SageMaker AI Ground Truth to create a labeled dataset in an augmented manifest file. Ground Truth is a data labeling service that helps you (or a workforce that you employ) to build training datasets for machine learning models. Amazon Comprehend accepts augmented manifest files as training data for custom models. You can provide these files when you create a custom entity recognizer by using the Amazon Comprehend console or the [CreateEntityRecognizer](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_CreateEntityRecognizer.html) API action.
 

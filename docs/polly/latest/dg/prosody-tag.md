@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/prosody-tag.html
 ---
 
 # Controlling volume, speaking rate, and pitch
-<a name="prosody-tag"></a>
 
 *<prosody>*
 

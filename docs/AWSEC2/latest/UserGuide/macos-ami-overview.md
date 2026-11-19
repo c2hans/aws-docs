@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/macos-ami-overvi
 ---
 
 # Amazon EC2 macOS AMIs release notes
-<a name="macos-ami-overview"></a>
 
 The following information provides details about the packages included by default in the EC2 macOS AMIs and summarizes the changes for each EC2 macOS AMI release.
 

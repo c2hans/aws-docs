@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Create Analysis (Required)
-<a name="create-analysis"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/listing-applicable-advis
 ---
 
 # Listing applicable Advisories
-<a name="listing-applicable-advisories"></a>
 
  The `dnf` package manager has access to metadata describing what Advisories are fixed in what package versions. It can thus list what Advisories are applicable to an instance or container image.
 

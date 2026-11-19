@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/qualy
 ---
 
 # Known Qualys CSAM platform limitations
-<a name="qualys-csam-limitations"></a>
 
 The following table describes known Qualys CSAM platform limitations.
 

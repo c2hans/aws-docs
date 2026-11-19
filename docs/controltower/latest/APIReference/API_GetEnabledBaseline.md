@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 ---
 
 # GetEnabledBaseline
-<a name="API_GetEnabledBaseline"></a>
 
 Retrieve details of an `EnabledBaseline` resource by specifying its identifier.
 

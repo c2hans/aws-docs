@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-bed
 ---
 
 # Using S3 Vectors with Amazon Bedrock Knowledge Bases
-<a name="s3-vectors-bedrock-kb"></a>
 
 S3 Vectors integrates with [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/) and [Amazon SageMaker AI Unified Studio](https://aws.amazon.com/sagemaker/unified-studio/) to simplify and reduce the cost of vector storage for retrieval augmented generation (RAG) applications.
 

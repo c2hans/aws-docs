@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # AudioOverrideConfiguration
-<a name="API_data-automation_AudioOverrideConfiguration"></a>
 
 Sets whether your project will process audio or not.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SecurityLakeDirectQueryDataSource
-<a name="API_SecurityLakeDirectQueryDataSource"></a>
 
  Configuration details for a Security Lake data source that can be used for direct queries.
 

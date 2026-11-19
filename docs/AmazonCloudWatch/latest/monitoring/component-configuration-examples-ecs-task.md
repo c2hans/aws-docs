@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # Amazon ECS tasks
-<a name="component-configuration-examples-ecs-task"></a>
 
 The following example shows a component configuration in JSON format for an Amazon ECS task.
 

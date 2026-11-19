@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ac
 ---
 
 # ActorMessage
-<a name="API_ActorMessage"></a>
 
 A message received at an actor's server-generated email MFA address.
 

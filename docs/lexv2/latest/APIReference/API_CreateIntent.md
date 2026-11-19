@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateInte
 ---
 
 # CreateIntent
-<a name="API_CreateIntent"></a>
 
 Creates an intent.
 

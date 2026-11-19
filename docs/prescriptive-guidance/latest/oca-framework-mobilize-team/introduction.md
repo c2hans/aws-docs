@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # AWS Organizational Change Acceleration (OCA) 6-Point Framework - 1. Mobilize Team
-<a name="introduction"></a>
 
 *Scott Watson, Tierra Jennings-Hill, and Nicole Lenz, Amazon Web Services*
 

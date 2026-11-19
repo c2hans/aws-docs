@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteExperiment
-<a name="API_DeleteExperiment"></a>
 
 Deletes an SageMaker experiment. All trials associated with the experiment must be deleted first. Use the [ListTrials](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrials.html) API to get a list of the trials associated with the experiment.
 

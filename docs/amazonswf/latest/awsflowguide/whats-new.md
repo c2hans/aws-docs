@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/whats-new.
 ---
 
 # Document History
-<a name="whats-new"></a>
 
 The following table describes the important changes to the documentation since the last release of the *AWS Flow Framework for Java Developer Guide*.
 + **API version:** 2012-01-25

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Generate manual backfill requests from a game server
-<a name="match-backfill-server"></a>
 
 You can manually initiate match backfill requests from the game server process that is hosting the game session. The server process has the most up-to-date information on players connected to the game and the status of empty player slots.
 

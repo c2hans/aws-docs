@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/neptune-clu
 ---
 
 # neptune-cluster-snapshot-iam-database-auth-enabled
-<a name="neptune-cluster-snapshot-iam-database-auth-enabled"></a>
 
 Checks if Amazon Neptune cluster snapshots have IAM database authentication enabled. The rule is NON\_COMPLIANT if configuration.iamdatabaseAuthenticationEnabled is false.
 

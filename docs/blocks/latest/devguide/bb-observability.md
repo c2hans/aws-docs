@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/bb-observability.
 ---
 
 # Observability
-<a name="bb-observability"></a>
 
 This section covers Blocks for monitoring, logging, and tracing.
 

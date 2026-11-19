@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Remove an AWS Cloud WAN resource attachment tag
-<a name="cloudwan-tag-remove"></a>
 
 You can remove any resource tag that you've associated with an attachment.
 

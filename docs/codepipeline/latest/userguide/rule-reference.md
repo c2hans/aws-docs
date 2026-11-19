@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-refer
 ---
 
 # Rule structure reference
-<a name="rule-reference"></a>
 
 This section is a reference for rule configuration only. For a conceptual overview of the pipeline structure, see [CodePipeline pipeline structure reference](reference-pipeline-structure.md).
 

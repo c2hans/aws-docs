@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Desc
 ---
 
 # DescribeConnection
-<a name="API_DescribeConnection"></a>
 
 Retrieves details about a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CoverageByTime
-<a name="API_CoverageByTime"></a>
 
 Reservation coverage for a specified period, in hours.
 

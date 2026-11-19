@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupPol
 ---
 
 # ListGroupPolicies
-<a name="API_ListGroupPolicies"></a>
 
 Lists the names of the inline policies that are embedded in the specified IAM group.
 

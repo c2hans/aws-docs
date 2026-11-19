@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Particip
 ---
 
 # ParticipantTimerConfiguration
-<a name="API_ParticipantTimerConfiguration"></a>
 
 Configuration information for the timer. After the timer configuration is set, it persists for the duration of the chat. It persists across new contacts in the chain, for example, transfer contacts.
 

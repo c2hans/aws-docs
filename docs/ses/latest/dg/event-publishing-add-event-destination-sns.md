@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-add-event
 ---
 
 # Set up an Amazon SNS event destination for event publishing
-<a name="event-publishing-add-event-destination-sns"></a>
 
 An Amazon SNS event destination notifies you about the email sending events you specify in a configuration set. Because an Amazon SNS event destination can only be set up in a configuration set, you have to [create a configuration set](event-publishing-create-configuration-set.md) before you add the event destination to the configuration set.
 

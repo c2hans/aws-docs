@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-mariadb2auroramysql.
 ---
 
 # Test the endpoints for MariaDB database migration
-<a name="chap-mariadb2auroramysql.testendpoints"></a>
 
 1. On the navigation pane, choose **Endpoints**.
 

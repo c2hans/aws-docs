@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_To
 ---
 
 # ToolInputSchema
-<a name="API_agent_ToolInputSchema"></a>
 
 The input schema for the tool. For more information, see [Use a tool to complete an Amazon Bedrock model response](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 

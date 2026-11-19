@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/dedicated-anten
 ---
 
 # AWS Ground Station Dedicated Antennas
-<a name="dedicated-antennas"></a>
 
  AWS Ground Station Dedicated Antennas are custom-built antenna systems that AWS manages on your behalf. Unlike the public AWS Ground Station antennas where you share antenna time with other customers, a Dedicated Antenna provides you with dedicated access to an antenna built to your specifications. You can have one or more Dedicated Antennas. A Dedicated Antenna is connected to the global AWS network, and you interact with it using the same AWS Ground Station APIs and workflows that you use with public antennas, with the addition of enhanced visibility into antenna utilization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-complianc
 ---
 
 # RCS registration denial reasons
-<a name="rcs-compliance-denial-reasons"></a>
 
 When a registration is denied, AWS End User Messaging provides a denial reason that explains why the registration was not approved. The following table lists all RCS registration denial reasons and the recommended action for each.
 

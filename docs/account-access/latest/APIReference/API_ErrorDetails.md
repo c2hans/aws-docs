@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # ErrorDetails
-<a name="API_ErrorDetails"></a>
 
 Contains information about an error that occurred during application processing.
 

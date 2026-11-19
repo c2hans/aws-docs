@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbomgen-plugin-api
 ---
 
 # Plugin API reference
-<a name="sbomgen-plugin-api-reference"></a>
 
  Complete API reference for inspector-sbomgen Lua plugins. For a guide on writing plugins, see [Plugin developer guide](sbomgen-plugin-developer-guide.md). For testing, see [Plugin testing guide](sbomgen-plugin-testing-guide.md).
 

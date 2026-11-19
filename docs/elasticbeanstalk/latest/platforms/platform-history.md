@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platfo
 ---
 
 # Platform history
-<a name="platform-history"></a>
 
 **Topics**
 + [Docker platform history](platform-history-docker.md)

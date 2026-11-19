@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-the-sof
 ---
 
 # (Optional) Run the Greengrass software (Linux)
-<a name="run-the-software"></a>
 
 **Note**
 These steps do not apply to nucleus lite.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianArrival
-<a name="API_RoutePedestrianArrival"></a>
 
 Details corresponding to the arrival for a leg.
 

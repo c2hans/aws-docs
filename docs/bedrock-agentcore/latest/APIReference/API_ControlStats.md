@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ControlStats
-<a name="API_ControlStats"></a>
 
 Statistics for the control variant in an A/B test.
 

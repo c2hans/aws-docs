@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon S3
-<a name="list_s3"></a>
 
 Amazon S3 (service prefix: `s3`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_TagR
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites tags for the specified AWS DevOps Agent resource.
 

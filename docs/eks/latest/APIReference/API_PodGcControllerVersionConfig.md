@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PodGcControl
 ---
 
 # PodGcControllerVersionConfig
-<a name="API_PodGcControllerVersionConfig"></a>
 
 The pod garbage collection controller version configuration.
 

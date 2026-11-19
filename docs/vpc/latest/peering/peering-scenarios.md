@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/peering-scenarios.htm
 ---
 
 # VPC peering connection networking scenarios
-<a name="peering-scenarios"></a>
 
 There are a number of reasons you might need to set up a VPC peering connection between your VPCs, or between a VPC that you own and a VPC in a different AWS account. The following scenarios can help you determine which configuration is best suited to your networking requirements.
 

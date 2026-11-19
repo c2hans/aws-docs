@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LustreLogCre
 ---
 
 # LustreLogCreateConfiguration
-<a name="API_LustreLogCreateConfiguration"></a>
 
 The Lustre logging configuration used when creating or updating an Amazon FSx for Lustre file system. An Amazon File Cache is created with Lustre logging enabled by default, with a setting of `WARN_ERROR` for the logging events. which can't be changed.
 

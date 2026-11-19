@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Repos
 ---
 
 # RepositoryTriggerExecutionFailure
-<a name="API_RepositoryTriggerExecutionFailure"></a>
 
 A trigger failed to run.
 

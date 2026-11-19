@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetUsageProfile.h
 ---
 
 # GetUsageProfile
-<a name="API_GetUsageProfile"></a>
 
 Retrieves information about the specified AWS Glue usage profile.
 

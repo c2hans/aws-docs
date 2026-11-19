@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # ListFeeds
-<a name="API_ListFeeds"></a>
 
 Displays a list of feeds that belong to this AWS account.
 

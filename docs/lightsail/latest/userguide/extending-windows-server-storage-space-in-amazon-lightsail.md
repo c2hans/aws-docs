@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/extending-win
 ---
 
 # Extend the file system of your Windows Server instance in Lightsail
-<a name="extending-windows-server-storage-space-in-amazon-lightsail"></a>
 
 After you use a snapshot to create a new Windows Server instance with a larger plan, you may see that the available storage space is lower than that specified by the plan. This is typically because the additional storage space provided by the larger plan has not been allocated; therefore, it’s not being used by the active volume. The steps in this topic show you how to extend the file system of your Windows Server instance to use the maximum storage space available.
 

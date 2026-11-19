@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A complex type that contains a `Tag` key and `Tag` value.
 

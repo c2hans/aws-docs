@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelCreation
-<a name="API_StartMetadataModelCreation"></a>
 
 Queues the creation of a metadata model in the source metadata tree. If other requests created by `Start*` operations are already in the migration project's queue, the creation begins after they complete.
 

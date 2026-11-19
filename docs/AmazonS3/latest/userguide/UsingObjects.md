@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingObjects.h
 ---
 
 # Amazon S3 objects overview
-<a name="UsingObjects"></a>
 
 Amazon S3 is an object store that uses unique key-values to store as many objects as you want. You store these objects in one or more buckets, and each object can be up to 50 TB in size. An object consists of the following:
 

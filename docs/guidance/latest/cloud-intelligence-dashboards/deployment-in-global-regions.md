@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Deployment in Global Regions
-<a name="deployment-in-global-regions"></a>
 
 **Note**
 Since November 2024, Cloud Intelligence Dashboards use [AWS Cost And Usage Report 2.0](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html) (CUR 2.0) as the main source for Foundational Dashboards. If you are deploying in China Regions, please follow the [China deployment instructions](deployment-in-china.md). If you have Legacy CUR setup, you can check [migration process](migration-to-cur.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/preserve-cl
 ---
 
 # Guidelines and restrictions for client IP address preservation in Global Accelerator
-<a name="preserve-client-ip-address.how-to-enable-preservation"></a>
 
 As you prepare for and use client IP address preservation in AWS Global Accelerator, be aware of the following guidelines and restrictions.
 

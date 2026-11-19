@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Use `DeleteAlarmMuteRule` with an AWS SDK
-<a name="example_cloudwatch_DeleteAlarmMuteRule_section"></a>
 
 The following code examples show how to use `DeleteAlarmMuteRule`.
 

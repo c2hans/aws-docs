@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Getting started with AWS CloudHSM key\_mgmt\_util
-<a name="key_mgmt_util-getting-started"></a>
 
 AWS CloudHSM includes two command line tools with the [AWS CloudHSM client software](kmu-install-and-configure-client-linux.md#kmu-install-client). The [cloudhsm\_mgmt\_util](cloudhsm_mgmt_util-reference.md) tool includes commands to manage HSM users. The [key\_mgmt\_util](key_mgmt_util-reference.md) tool includes commands to manage keys. To get started with the key\_mgmt\_util command line tool, see the following topics.
 

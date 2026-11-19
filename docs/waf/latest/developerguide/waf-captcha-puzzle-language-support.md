@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-pu
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # CAPTCHA puzzle language support
-<a name="waf-captcha-puzzle-language-support"></a>
 
 This section lists what languages are supported in AWS WAF CAPTCHA puzzles.
 

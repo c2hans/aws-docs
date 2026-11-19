@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-dropnull-field
 ---
 
 # Using DropNullFields to remove fields with null values
-<a name="transforms-dropnull-fields"></a>
 
  Use the *DropNullFields* transform to remove fields from the dataset if all values in the field are ‘null’. By default, AWS Glue Studio will recognize null objects, but some values such as empty strings, strings that are “null”, -1 integers or other placeholders such as zeros, are not automatically recognized as nulls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GrokClassifier.ht
 ---
 
 # GrokClassifier
-<a name="API_GrokClassifier"></a>
 
 A classifier that uses `grok` patterns.
 

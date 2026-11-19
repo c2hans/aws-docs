@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Well-Architected machine learning design principles
-<a name="design-principles"></a>
 
  Well-Architected ML design principles are a set of considerations used as the basis for a well-architected ML workload.
 

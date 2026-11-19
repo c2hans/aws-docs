@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Document Revisions
-<a name="document-revisions"></a>
 
 To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Whitepaper updated](#document-revisions) | Updated throughout for latest deployment services and strategies | May 31, 2024 |
-| [Minor update](#document-revisions) | *Blue/Green Deployments* section revised for clarity. | April 8, 2021 |
-| [Whitepaper updated](#document-revisions) | Updated with latest services and features. | June 3, 2020 |
-| [Initial publication](#document-revisions) | Whitepaper first published | March 1, 2015 |
+| [Whitepaper updated](document-revisions.md) | Updated throughout for latest deployment services and strategies | May 31, 2024 |
+| [Minor update](document-revisions.md) | *Blue/Green Deployments* section revised for clarity. | April 8, 2021 |
+| [Whitepaper updated](document-revisions.md) | Updated with latest services and features. | June 3, 2020 |
+| [Initial publication](document-revisions.md) | Whitepaper first published | March 1, 2015 |

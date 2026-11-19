@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ContinuousHype
 ---
 
 # ContinuousHyperParameterRange
-<a name="API_ContinuousHyperParameterRange"></a>
 
 Provides the name and range of a continuous hyperparameter.
 

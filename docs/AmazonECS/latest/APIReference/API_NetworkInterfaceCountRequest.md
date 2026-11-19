@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Networ
 ---
 
 # NetworkInterfaceCountRequest
-<a name="API_NetworkInterfaceCountRequest"></a>
 
 The minimum and maximum number of network interfaces for instance type selection. This is useful for workloads that require multiple network interfaces.
 

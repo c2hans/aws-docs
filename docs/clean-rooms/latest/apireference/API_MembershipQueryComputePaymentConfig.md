@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipQueryComputePaymentConfig
-<a name="API_MembershipQueryComputePaymentConfig"></a>
 
 An object representing the payment responsibilities accepted by the collaboration member for query compute costs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/layout-control
 ---
 
 # Layout controls
-<a name="layout-controls"></a>
 
 ![Add permissions to allow users to view Profile Explorer layouts.](https://docs.aws.amazon.com/connect/latest/adminguide/images/layout-controls-1.png)
 

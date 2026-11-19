@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Valida
 ---
 
 # ValidationProofOutput
-<a name="API_ValidationProofOutput"></a>
 
 The validation Proof Output.
 

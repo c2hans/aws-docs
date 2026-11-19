@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OneDr
 ---
 
 # OneDriveClientCredentials
-<a name="API_OneDriveClientCredentials"></a>
 
 The client credentials for connecting to a Microsoft OneDrive data source using two-legged OAuth (2LO) certificate-based authentication. OneDrive connections access files stored in your OneDrive storage. The tenant ID and client ID are supplied through `OneDriveParameters`.
 

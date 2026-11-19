@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontology-l
 ---
 
 # SNOMED CT linking
-<a name="ontology-linking-snomed"></a>
 
  Use **InferSNOMEDCT** to detect medical entities and link them to concepts from the 2022-03 version of the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED CT). SNOMED CT provides you with a comprehensive vocabulary of medical concepts, including medical conditions and anatomy, medical tests, treatments, and procedures. To learn more about SNOMED CT, visit [SNOMED CT](https://www.snomed.org/value-of-snomedct).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-outboun
 ---
 
 # Enable outbound calls in your Connect Customer instance
-<a name="enable-outbound-calls"></a>
 
 Before your agents can make outbound calls to customers, you need to set up your Connect Customer instance for outbound communications.
 

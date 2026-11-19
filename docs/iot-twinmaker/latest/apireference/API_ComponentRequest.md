@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Co
 ---
 
 # ComponentRequest
-<a name="API_ComponentRequest"></a>
 
 An object that sets information about a component type create or update request.
 

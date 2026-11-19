@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.9] Integrate software provenance tracking throughout the development lifecycle
-<a name="ag.acg.9-integrate-software-provenance-tracking-throughout-the-development-lifecycle"></a>
 
  **Category:** RECOMMENDED
 

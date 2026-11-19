@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListD
 ---
 
 # ListDevicePools
-<a name="API_ListDevicePools"></a>
 
 Gets information about device pools.
 

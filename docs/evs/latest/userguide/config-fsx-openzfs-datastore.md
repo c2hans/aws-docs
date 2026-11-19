@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/config-fsx-openzfs-
 ---
 
 # Configure FSx for OpenZFS as principal storage for diskless hosts
-<a name="config-fsx-openzfs-datastore"></a>
 
 This page applies to Self-deployed environments that run VCF 9.x on diskless hosts. For how EVS-deployed environments (VCF 5.2.x) differ, see [Differences between deployment modes](deployment-mode-differences.md).
 

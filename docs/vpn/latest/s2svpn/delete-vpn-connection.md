@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vpn-connection.
 ---
 
 # Delete an AWS Site-to-Site VPN connection
-<a name="delete-vpn-connection"></a>
 
 After you delete your Site-to-Site VPN connection, it remains visible for a short while with a state of `deleted`, and then the entry is automatically removed.
 

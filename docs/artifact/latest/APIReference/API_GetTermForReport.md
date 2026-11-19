@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetTerm
 ---
 
 # GetTermForReport
-<a name="API_GetTermForReport"></a>
 
 Get the Term content associated with a single report.
 

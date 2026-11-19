@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/managing-tr
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What is a transitive dependency conflict?
 <a name="what-is-a-transitive-dependency-conflict-.f9005849-2994-57d8-aed3-152368e4eb96"></a>

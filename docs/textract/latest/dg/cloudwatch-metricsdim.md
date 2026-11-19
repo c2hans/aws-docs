@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/cloudwatch-metricsdim
 ---
 
 # CloudWatch Metrics for Amazon Textract
-<a name="cloudwatch-metricsdim"></a>
 
 This section contains information about the Amazon CloudWatch metrics and the *Operation* dimension that are available for Amazon Textract.
 

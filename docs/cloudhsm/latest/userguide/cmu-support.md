@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cmu-support.ht
 ---
 
 # Supported platforms for AWS CloudHSM Management Utility
-<a name="cmu-support"></a>
 
 This topic describes the Linux and Windows platforms that the AWS CloudHSM Management Utility (CMU) supports.
 

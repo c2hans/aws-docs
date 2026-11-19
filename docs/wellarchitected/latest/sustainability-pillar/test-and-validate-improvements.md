@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Test and validate improvements
-<a name="test-and-validate-improvements"></a>
 
  Perform small tests with minimized investment to reduce the risk of a large-scale effort.
 

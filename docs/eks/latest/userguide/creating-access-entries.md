@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/creating-access-ent
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create access entries
-<a name="creating-access-entries"></a>
 
 Before creating access entries, consider the following:
 + A properly set authentication mode. See [Change authentication mode to use access entries](setting-up-access-entries.md).

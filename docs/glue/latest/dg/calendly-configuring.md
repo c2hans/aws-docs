@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/calendly-configuring.html
 ---
 
 # Configuring Calendly
-<a name="calendly-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Calendly, you must meet the following requirements:
 

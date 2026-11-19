@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # GetCanaryRuns
-<a name="API_GetCanaryRuns"></a>
 
 Retrieves a list of runs for a specified canary.
 

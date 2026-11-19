@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListIdNamespaces
-<a name="API_ListIdNamespaces"></a>
 
 Returns a list of all ID namespaces.
 

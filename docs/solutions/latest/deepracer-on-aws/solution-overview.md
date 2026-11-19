@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/soluti
 ---
 
 # Overview
-<a name="solution-overview"></a>
 
 Publication date: September 2026.
 

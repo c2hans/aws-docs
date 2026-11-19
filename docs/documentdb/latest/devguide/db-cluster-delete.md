@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-de
 ---
 
 # Deleting an Amazon DocumentDB cluster
-<a name="db-cluster-delete"></a>
 
 You can delete an Amazon DocumentDB cluster using the AWS Management Console or the AWS CLI. To delete a cluster, the cluster must be in the *available* state and must not have any instances associated with it. If the cluster is stopped, first start the cluster, wait for the cluster to become *available*, and then delete the cluster. For more information, see [Stopping and starting an Amazon DocumentDB cluster](db-cluster-stop-start.md).
 

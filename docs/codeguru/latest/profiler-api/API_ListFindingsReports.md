@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_ListFin
 ---
 
 # ListFindingsReports
-<a name="API_ListFindingsReports"></a>
 
 List the available reports for a given profiling group and time range.
 

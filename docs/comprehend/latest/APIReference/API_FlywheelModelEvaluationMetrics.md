@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Flywh
 ---
 
 # FlywheelModelEvaluationMetrics
-<a name="API_FlywheelModelEvaluationMetrics"></a>
 
 The evaluation metrics associated with the evaluated model.
 

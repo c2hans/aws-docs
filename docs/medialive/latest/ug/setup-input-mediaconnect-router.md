@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-mediacon
 ---
 
 # Create a MediaConnect Router input
-<a name="setup-input-mediaconnect-router"></a>
 
 Unlike MediaConnect Inputs, with MediaConnect Router Inputs there is no MediaConnect setup step required to create an input. Instead, you can creating the input in MediaLive makes it available in the MediaConnect router I/O interface as an available destination.
 

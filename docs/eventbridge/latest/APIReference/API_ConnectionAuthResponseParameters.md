@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectionAuthResponseParameters
-<a name="API_ConnectionAuthResponseParameters"></a>
 
 Tthe authorization parameters to use for the connection.
 

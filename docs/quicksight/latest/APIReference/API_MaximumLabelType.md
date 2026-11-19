@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Maxim
 ---
 
 # MaximumLabelType
-<a name="API_MaximumLabelType"></a>
 
 The maximum label of a data path label.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Source contribution
-<a name="smperf02"></a>
 
 Source quality and transport reliability constrain what the entire downstream pipeline can deliver. Contribution protocol choice and source acquisition quality have a direct effect on what viewers ultimately see.
 

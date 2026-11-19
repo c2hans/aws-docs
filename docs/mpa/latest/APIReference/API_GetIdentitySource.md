@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_GetIdentityS
 ---
 
 # GetIdentitySource
-<a name="API_GetIdentitySource"></a>
 
 Returns details for an identity source. For more information, see [Identity Source](https://docs.aws.amazon.com/mpa/latest/userguide/mpa-concepts.html) in the *Multi-party approval User Guide*.
 

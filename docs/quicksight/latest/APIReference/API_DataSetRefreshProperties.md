@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetRefreshProperties
-<a name="API_DataSetRefreshProperties"></a>
 
 The refresh properties of a dataset.
 

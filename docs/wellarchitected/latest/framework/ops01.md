@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops01.h
 ---
 
 # Observe from multiple perspectives
-<a name="ops01"></a>
 
  Implement observability in your workload so that you can understand its state and make data-driven decisions based on business requirements.
 

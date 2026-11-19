@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestR
 ---
 
 # TestReportMetrics
-<a name="API_TestReportMetrics"></a>
 
 Contains aggregated metrics across all tests in a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotAna
 ---
 
 # ListBotAnalyzerHistory
-<a name="API_ListBotAnalyzerHistory"></a>
 
 Retrieves a list of historical bot analysis executions for a specific bot. You can filter the results by locale and bot version.
 

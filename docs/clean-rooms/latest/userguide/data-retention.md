@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/data-retent
 ---
 
 # Data retention in AWS Clean Rooms
-<a name="data-retention"></a>
 
 Any data that is temporarily read into an AWS Clean Rooms collaboration is deleted after the query completes.
 

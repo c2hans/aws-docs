@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RejectVpc
 ---
 
 # RejectVpcPeeringConnection
-<a name="API_RejectVpcPeeringConnection"></a>
 
 Rejects a VPC peering connection request. The VPC peering connection must be in the `pending-acceptance` state. Use the [DescribeVpcPeeringConnections](API_DescribeVpcPeeringConnections.md) request to view your outstanding VPC peering connection requests. To delete an active VPC peering connection, or to delete a VPC peering connection request that you initiated, use [DeleteVpcPeeringConnection](API_DeleteVpcPeeringConnection.md).
 

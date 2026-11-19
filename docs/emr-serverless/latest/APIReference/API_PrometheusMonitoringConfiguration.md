@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_P
 ---
 
 # PrometheusMonitoringConfiguration
-<a name="API_PrometheusMonitoringConfiguration"></a>
 
 The monitoring configuration object you can configure to send metrics to Amazon Managed Service for Prometheus for a job run.
 

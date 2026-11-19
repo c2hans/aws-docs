@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteIPSet
-<a name="API_DeleteIPSet"></a>
 
 Deletes the IPSet specified by the `ipSetId`. IPSets are called trusted IP lists in the console user interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Determining the best purpose-built technology for MES
-<a name="technologies"></a>
 
 After you decompose MES into microservices and prioritize development based on the impact on business outcomes, the next task is to determine the technology stack for specific microservices and the system as a whole. Typically, an MES, and, inherently, its microservices, are two-tier applications that include an application or computing layer, and the persistence or database layer. The user interface is generally a shared service among all microservices. Different components of the UI can be unique to each microservice, or each microservice can have its own micro-UI component. These microservices would have different computing and data storage requirements, which might require other technology stacks, as illustrated in the following diagram. For example, long-running computing with a relational database might be the best choice for some microservices, whereas event-driven, on-demand computing and NoSQL databases might be better suited to other microservices. AWS offers a broad range of options for each technology layer, so you can choose the best service based on the purpose of the microservice.
 

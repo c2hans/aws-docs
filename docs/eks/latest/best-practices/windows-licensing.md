@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-licens
 ---
 
 # Windows Server version and License
-<a name="windows-licensing"></a>
 
 ## Windows Server version
 <a name="_windows_server_version"></a>

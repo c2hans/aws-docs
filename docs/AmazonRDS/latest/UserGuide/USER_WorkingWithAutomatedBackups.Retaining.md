@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Retaining automated backups
-<a name="USER_WorkingWithAutomatedBackups.Retaining"></a>
 
 **Note**
 You can only retain automated backups of DB instances, not Multi-AZ DB clusters.

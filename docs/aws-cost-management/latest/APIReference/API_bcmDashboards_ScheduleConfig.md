@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ScheduleConfig
-<a name="API_bcmDashboards_ScheduleConfig"></a>
 
 Defines the schedule for a scheduled report, including the cron expression, time zone, active period, and the schedule state.
 

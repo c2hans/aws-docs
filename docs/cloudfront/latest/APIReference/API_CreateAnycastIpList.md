@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateAnycastIpList
-<a name="API_CreateAnycastIpList"></a>
 
 Creates an Anycast static IP list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Un
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from the resource with the specified ARN.
 

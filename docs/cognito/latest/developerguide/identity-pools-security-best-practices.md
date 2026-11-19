@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/identity-p
 ---
 
 # Security best practices for Amazon Cognito identity pools
-<a name="identity-pools-security-best-practices"></a>
 
 Amazon Cognito identity pools provide temporary AWS credentials for your application. AWS accounts often contain both the resources that your application users need, and private back-end resources. The IAM roles and policies that make up AWS credentials can grant access to any of these resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-DeleteDynamoDbTable`
-<a name="automation-aws-deletedynamodbtable"></a>
 
  **Description**
 

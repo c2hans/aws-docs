@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/client-mac.html
 ---
 
 # macOS client
-<a name="client-mac"></a>
 
 The Amazon DCV macOS client is supported on Apple Mac computers only. The macOS client is a standalone application that runs on the macOS operating system.
 

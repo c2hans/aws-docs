@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TagFieldS
 ---
 
 # TagFieldSpecificationResponse
-<a name="API_TagFieldSpecificationResponse"></a>
 
 A single resource's tag configuration associated with the Flow Logs Amazon EC2 Tags feature fields in your custom log format.
 

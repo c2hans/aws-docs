@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/u
 ---
 
 # Updating a TLS inspection configuration in Network Firewall
-<a name="updating-tls-configuration"></a>
 
 To change your TLS inspection configuration settings, use the following procedure:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DbIormConfig
 ---
 
 # DbIormConfig
-<a name="API_DbIormConfig"></a>
 
 The IORM configuration settings for the database.
 

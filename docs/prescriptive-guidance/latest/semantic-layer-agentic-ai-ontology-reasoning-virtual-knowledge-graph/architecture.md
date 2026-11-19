@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 ## High-Level Architecture (HLA)
 <a name="high-level-architecture--hla-.4ebd0208-8328-5d69-8c44-ec50939c0967"></a>

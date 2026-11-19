@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ListEnfo
 ---
 
 # ListEnforcedGuardrailsConfiguration
-<a name="API_ListEnforcedGuardrailsConfiguration"></a>
 
 Lists the account-level enforced guardrail configurations.
 

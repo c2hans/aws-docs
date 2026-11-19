@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # UpdateFirewallPolicyChangeProtection
-<a name="API_UpdateFirewallPolicyChangeProtection"></a>
 
 Modifies the flag, `ChangeProtection`, which indicates whether it is possible to change the firewall. If the flag is set to `TRUE`, the firewall is protected from changes. This setting helps protect against accidentally changing a firewall that's in use.
 

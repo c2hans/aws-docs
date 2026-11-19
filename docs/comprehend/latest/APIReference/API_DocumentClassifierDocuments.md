@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Docum
 ---
 
 # DocumentClassifierDocuments
-<a name="API_DocumentClassifierDocuments"></a>
 
 The location of the training documents. This parameter is required in a request to create a semi-structured document classification model.
 

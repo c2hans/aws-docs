@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutE
 ---
 
 # PutEventsRequestEntry
-<a name="API_PutEventsRequestEntry"></a>
 
 Represents an event to be submitted.
 

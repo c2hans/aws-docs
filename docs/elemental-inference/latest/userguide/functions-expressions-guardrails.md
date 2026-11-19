@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Expression limits and guardrails
-<a name="functions-expressions-guardrails"></a>
 
 Expressions run in a sandbox with an allowlist of built-in functions and always-on limits on CPU time, memory, and stack depth. The limits apply to the sample run when you save the function and to every run on a feed. The following table lists the limits and guardrails.
 

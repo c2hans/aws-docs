@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceRecord
-<a name="API_ResourceRecord"></a>
 
 Information specific to the resource record.
 

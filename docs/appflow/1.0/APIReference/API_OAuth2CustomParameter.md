@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_OAuth2Custo
 ---
 
 # OAuth2CustomParameter
-<a name="API_OAuth2CustomParameter"></a>
 
 Custom parameter required for OAuth 2.0 authentication.
 

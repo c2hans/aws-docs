@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/procuremen
 ---
 
 # Configuring AWS Marketplace to integrate with Coupa
-<a name="procurement-system-integration-coupa"></a>
 
 The topics in this section explain how to integrate AWS Marketplace with a Coupa procurment system
 

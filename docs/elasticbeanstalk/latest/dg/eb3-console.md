@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-console.h
 ---
 
 # **eb console**
-<a name="eb3-console"></a>
 
 ## Description
 <a name="eb3-consoledescription"></a>

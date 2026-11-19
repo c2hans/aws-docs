@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/launchdarkly-connection-o
 ---
 
 # LaunchDarkly connection options
-<a name="launchdarkly-connection-options"></a>
 
 The following are connection options for LaunchDarkly:
 + `ENTITY_NAME` – (Required) Used for Read. The entity path of the LaunchDarkly object to read. Use the nested forms described in [Reading from LaunchDarkly entities](launchdarkly-reading-from-entities.md) for project-scoped and environment-scoped entities.

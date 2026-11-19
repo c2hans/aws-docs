@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_AlfrescoC
 ---
 
 # AlfrescoConfiguration
-<a name="API_AlfrescoConfiguration"></a>
 
 Provides the configuration information to connect to Alfresco as your data source.
 

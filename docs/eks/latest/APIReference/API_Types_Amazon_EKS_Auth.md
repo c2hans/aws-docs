@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Types_Amazon
 ---
 
 # Amazon EKS Auth
-<a name="API_Types_Amazon_EKS_Auth"></a>
 
 The following data types are supported by Amazon EKS Auth:
 +  [AssumedRoleUser](API_auth_AssumedRoleUser.md)

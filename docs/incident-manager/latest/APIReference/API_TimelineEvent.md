@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # TimelineEvent
-<a name="API_TimelineEvent"></a>
 
 A significant event that happened during the incident.
 

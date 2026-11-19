@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 ---
 
 # UpdateAccountCustomizations
-<a name="API_UpdateAccountCustomizations"></a>
 
 Updates one or more account customization settings. You can update account color, visible services, and visible Regions in a single request. Only the settings that you include in the request body are modified. Omitted settings remain unchanged. To reset a setting to its default behavior, set the value to `null` for visible Regions and visible services, or `none` for account color. This operation is idempotent.
 

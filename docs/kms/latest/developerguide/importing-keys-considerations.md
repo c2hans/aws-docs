@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Special considerations for imported key material
-<a name="importing-keys-considerations"></a>
 
 Before you decide to import key material into AWS KMS, you should understand the following characteristics of imported key material.
 

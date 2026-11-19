@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/jvm-
 ---
 
 # Set the JVM TTL for DNS name lookups
-<a name="jvm-ttl-dns"></a>
 
 The Java virtual machine (JVM) caches DNS name lookups. When the JVM resolves a hostname to an IP address, it caches the IP address for a specified period of time, known as the *time-to-live* (TTL).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/call-contact.html
 ---
 
 # Calling a contact
-<a name="call-contact"></a>
 
 The steps in this section explain how to call a contact. The steps assume that you have one or more contacts in Amazon Chime.
 

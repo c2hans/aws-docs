@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # NotificationDestinationConfig
-<a name="API_NotificationDestinationConfig"></a>
 
 The structure that contains the information required to deliver a notification to a customer.
 

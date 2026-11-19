@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/targettracking.html
 ---
 
 # Target tracking
-<a name="targettracking"></a>
 
 With target tracking, you can adjust endpoint provisioning to fit your capacity needs based on usage. The number of inference units automatically adjust so that the utilized capacity is within a target percentage of the provisioned capacity. You can use target tracking to accommodate temporary surges of use for your document classification endpoints and entity recognizer endpoints. For more information, see [Target tracking scaling policies for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html).
 

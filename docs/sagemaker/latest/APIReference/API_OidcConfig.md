@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OidcCo
 ---
 
 # OidcConfig
-<a name="API_OidcConfig"></a>
 
 Use this parameter to configure your OIDC Identity Provider (IdP).
 

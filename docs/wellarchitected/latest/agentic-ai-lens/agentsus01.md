@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Resource reusability
-<a name="agentsus01"></a>
 
  Organizations that invest in reusable agent infrastructure accelerate every subsequent project while reducing cumulative resource consumption. As agents are used more, the opportunity to optimize, share, and recycle agent resources increases. Shared resources pose a less significant burden on the overall architecture, creating a more sustainable workflow.
 

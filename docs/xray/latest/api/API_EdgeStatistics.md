@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_EdgeStatistics.html
 ---
 
 # EdgeStatistics
-<a name="API_EdgeStatistics"></a>
 
 Response statistics for an edge.
 

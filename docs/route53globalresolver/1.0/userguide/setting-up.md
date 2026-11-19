@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/sett
 ---
 
 # Setting up account access for Amazon Route 53 Global Resolver
-<a name="setting-up"></a>
 
 Before you start using Amazon Route 53 Global Resolver, you need an AWS account and the appropriate permissions to access Amazon Route 53 Global Resolver resources. This includes creating IAM users and roles with the necessary permissions.
 

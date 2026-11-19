@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/set-up.html
 ---
 
 # Setting up ElastiCache
-<a name="set-up"></a>
 
 To use the ElastiCache web service, follow these steps.
 

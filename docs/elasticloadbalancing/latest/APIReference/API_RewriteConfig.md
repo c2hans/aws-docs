@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RewriteConfig
-<a name="API_RewriteConfig"></a>
 
 Information about a rewrite transform. This transform matches a pattern and replaces it with the specified string.
 

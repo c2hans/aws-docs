@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-teams-connectio
 ---
 
 # Microsoft Teams connection option reference
-<a name="microsoft-teams-connection-options"></a>
 
 The following are connection options for Microsoft Teams:
 +  `ENTITY_NAME`(String) - (Required) Used for Read. The name of your Object in Microsoft Teams.

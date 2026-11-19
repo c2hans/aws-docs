@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::AutoScalingGroup DistributionSegment
-<a name="aws-properties-autoscaling-autoscalinggroup-distributionsegment"></a>
 
 Use this structure to specify the capacity types that Amazon EC2 Auto Scaling prioritizes when it launches instances.
 

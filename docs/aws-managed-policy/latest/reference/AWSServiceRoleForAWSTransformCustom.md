@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForAWSTransformCustom
-<a name="AWSServiceRoleForAWSTransformCustom"></a>
 
 **Description**: Allows AWS Transform Custom to publish CloudWatch metrics to your account on your behalf.
 

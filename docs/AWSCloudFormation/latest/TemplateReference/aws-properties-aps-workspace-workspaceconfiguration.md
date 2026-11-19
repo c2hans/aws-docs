@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Workspace WorkspaceConfiguration
-<a name="aws-properties-aps-workspace-workspaceconfiguration"></a>
 
 Use this structure to define label sets and the ingestion limits for time series that match label sets, and to specify the retention period of the workspace.
 

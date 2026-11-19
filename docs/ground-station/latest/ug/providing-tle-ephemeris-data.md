@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-tle-e
 ---
 
 # Provide TLE ephemeris data
-<a name="providing-tle-ephemeris-data"></a>
 
 **Important**
  The ephemeris API is currently in a Preview state

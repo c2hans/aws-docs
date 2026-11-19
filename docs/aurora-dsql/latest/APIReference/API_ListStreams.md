@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_List
 ---
 
 # ListStreams
-<a name="API_ListStreams"></a>
 
 Retrieves information about a list of streams for a cluster.
 

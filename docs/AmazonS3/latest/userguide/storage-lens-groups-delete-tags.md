@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-g
 ---
 
 # Deleting an AWS resource tag from a Storage Lens group
-<a name="storage-lens-groups-delete-tags"></a>
 
 The following examples demonstrate how to delete an AWS resource tag from a Storage Lens group. You can delete tags by using the Amazon S3 console, AWS Command Line Interface (AWS CLI), and AWS SDK for Java.
 

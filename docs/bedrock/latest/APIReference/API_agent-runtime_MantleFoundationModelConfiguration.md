@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # MantleFoundationModelConfiguration
-<a name="API_agent-runtime_MantleFoundationModelConfiguration"></a>
 
 Configuration for a Mantle foundation model.
 

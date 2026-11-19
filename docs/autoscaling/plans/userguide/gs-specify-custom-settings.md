@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-specify-c
 ---
 
 # Step 3: Configure advanced settings (optional)
-<a name="gs-specify-custom-settings"></a>
 
 Now that you have specified the scaling strategy to use for each resource type, you can choose to customize any of the default settings on a per resource basis using the **Configure advanced settings** step. For each resource type, there are multiple groups of settings that you can customize. In most cases, however, the default settings should be more efficient, with the possible exception of the values for minimum capacity and maximum capacity, which should be carefully adjusted.
 

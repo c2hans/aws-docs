@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCloudWatchEvidentlyFullAccess
-<a name="AmazonCloudWatchEvidentlyFullAccess"></a>
 
 **Description**: Provides full only access to Amazon CloudWatch Evidently. Also provides access to related Amazon S3, Amazon SNS, Amazon CloudWatch, and other related services.
 

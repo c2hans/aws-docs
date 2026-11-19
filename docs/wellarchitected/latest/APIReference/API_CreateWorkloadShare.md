@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateWorkloadShare
-<a name="API_CreateWorkloadShare"></a>
 
 Create a workload share.
 

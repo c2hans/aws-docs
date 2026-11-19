@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/siemens-ap
 ---
 
 # Requirements for the AWS IoT SiteWise Edge application
-<a name="siemens-app-gateway-requirements"></a>
 
 To run AWS IoT SiteWise Edge on Siemens Industrial Edge, you need the following:
 + A [Siemens Digital Exchange Platform](https://www.dex.siemens.com/) account.

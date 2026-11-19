@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerProductSort
-<a name="API_ContainerProductSort"></a>
 
 Objects that allows sorting on container products based on certain fields and sorting order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Delete
 ---
 
 # DeleteExpressGatewayService
-<a name="API_DeleteExpressGatewayService"></a>
 
 Deletes an Express service and removes all associated AWS resources. This operation stops service tasks, removes the Application Load Balancer, target groups, security groups, auto-scaling policies, and other managed infrastructure components.
 

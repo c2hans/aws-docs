@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Aut
 ---
 
 # Using the AWS SDK to configure auto scaling on Amazon DynamoDB tables
-<a name="AutoScaling.HowTo.SDK"></a>
 
 In addition to using the AWS Management Console and the AWS Command Line Interface (AWS CLI), you can write applications that interact with Amazon DynamoDB auto scaling. This section contains two Java programs that you can use to test this functionality:
 + `EnableDynamoDBAutoscaling.java`

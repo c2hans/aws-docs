@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/manage-catalog.html
 ---
 
 # Managing the Data Catalog
-<a name="manage-catalog"></a>
 
  The AWS Glue Data Catalog is a central metadata repository that stores structural and operational metadata for your Amazon S3 data sets. Managing the Data Catalog effectively is crucial for maintaining data quality, performance, security, and governance.
 

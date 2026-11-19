@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListTelemetryFields
-<a name="API_ListTelemetryFields"></a>
 
 Lists fields available for telemetry queries.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/direct-connect_co
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for Direct Connect using AWS SDKs
-<a name="direct-connect_code_examples"></a>
 
 The following code examples show you how to use AWS Direct Connect with an AWS software development kit (SDK).
 

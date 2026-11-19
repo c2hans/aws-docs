@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/con
 ---
 
 # Using the AWS CLI to retrieve and validate connection information for Amazon RDS
-<a name="connecting-cli"></a>
 
 While the AWS Command Line Interface (AWS CLI) doesn't directly connect to a database for querying or interactive use, it provides tools to manage and test the connectivity of your Amazon RDS DB instance. You can retrieve connection details, validate network configurations, and generate authentication tokens if you're using IAM authentication. This section explains how to use the AWS CLI to prepare to connect to your database using a client tool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/macie-terms.html
 ---
 
 # Concepts and terminology in Macie
-<a name="macie-terms"></a>
 
 In Amazon Macie, we build on common AWS concepts and terminology and use these additional terms.
 

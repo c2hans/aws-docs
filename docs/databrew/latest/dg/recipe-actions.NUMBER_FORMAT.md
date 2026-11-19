@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.NUMBER
 ---
 
 # NUMBER\_FORMAT
-<a name="recipe-actions.NUMBER_FORMAT"></a>
 
 Returns a column in which a numeric value is converted into a formatted string.
 

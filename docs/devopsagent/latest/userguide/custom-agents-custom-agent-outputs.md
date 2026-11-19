@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/custom-agen
 ---
 
 # Custom agent outputs
-<a name="custom-agents-custom-agent-outputs"></a>
 
 Custom agents produce text responses in the invocation trajectory and can create persistent resources within your Agent Space — artifacts and recommendations. They can also send notifications to your configured notification channels as they work. While agents can additionally perform actions through Model Context Protocol (MCP) tools — such as creating tickets or updating external systems — this page covers the outputs tied directly to your Agent Space.
 

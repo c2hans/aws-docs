@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # In-store monitoring use case
-<a name="smart-grocery-in-store-monitoring"></a>
 
 With this use case, you can build an in-store monitoring solution by using IoT sensors, computer vision, and AWS analytics services for real-time operations visibility.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelConfiguration
-<a name="API_ModelConfiguration"></a>
 
 Defines the model configuration. Includes the specification name and environment parameters.
 

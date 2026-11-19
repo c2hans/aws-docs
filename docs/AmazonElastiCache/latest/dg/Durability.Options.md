@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.O
 ---
 
 # Durability options
-<a name="Durability.Options"></a>
 
 ElastiCache for Valkey offers two durability options: synchronous and asynchronous writes.
 

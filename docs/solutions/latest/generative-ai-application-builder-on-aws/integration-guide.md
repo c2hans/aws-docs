@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Integration guide
-<a name="integration-guide"></a>
 
 The entire solution is designed to be easily extensible. The orchestration layer of this solution is built using [LangChain](https://www.langchain.com/). You can add any model provider, knowledge base, or conversation memory type supported by LangChain (or a third party that provides LangChain connectors for these components) to this solution.
 

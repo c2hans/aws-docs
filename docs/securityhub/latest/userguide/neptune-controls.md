@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/neptune-con
 ---
 
 # Security Hub CSPM controls for Neptune
-<a name="neptune-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Neptune service and resources.
 

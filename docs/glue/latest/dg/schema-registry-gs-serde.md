@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry-gs-serde.
 ---
 
 # Installing SerDe Libraries
-<a name="schema-registry-gs-serde"></a>
 
 The SerDe libraries provide a framework for serializing and deserializing data.
 

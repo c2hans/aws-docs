@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/cloudtrail-req
 ---
 
 # Identifying Amazon S3 requests using CloudTrail
-<a name="cloudtrail-request-identification"></a>
 
 In Amazon S3, you can identify requests using an AWS CloudTrail event log. AWS CloudTrail is the preferred way of identifying Amazon S3 requests, but if you are using Amazon S3 server access logs, see [Using Amazon S3 server access logs to identify requests](using-s3-access-logs-to-identify-requests.md).
 

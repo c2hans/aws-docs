@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemCreatedMetadata
-<a name="API_SystemCreatedMetadata"></a>
 
 Metadata for a system created event.
 

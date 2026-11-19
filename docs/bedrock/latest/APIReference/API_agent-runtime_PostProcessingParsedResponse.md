@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PostProcessingParsedResponse
-<a name="API_agent-runtime_PostProcessingParsedResponse"></a>
 
 Details about the response from the Lambda parsing of the output from the post-processing step.
 

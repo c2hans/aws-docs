@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetRateBased
 ---
 
 # GetRateBasedStatementManagedKeys
-<a name="API_GetRateBasedStatementManagedKeys"></a>
 
 Retrieves the IP addresses that are currently blocked by a rate-based rule instance. This is only available for rate-based rules that aggregate solely on the IP address or on the forwarded IP address.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/tutorial-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Tutorial for Delegates: Reviewing a control set
-<a name="tutorial-for-delegates"></a>
 
 This tutorial describes how to review a control set that was shared with you by an audit owner in AWS Audit Manager.
 

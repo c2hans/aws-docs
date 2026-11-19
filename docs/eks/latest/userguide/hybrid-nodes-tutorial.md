@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-tutori
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Run on-premises workloads on hybrid nodes
-<a name="hybrid-nodes-tutorial"></a>
 
 In an EKS cluster with hybrid nodes enabled, you can run on-premises and edge applications on your own infrastructure with the same Amazon EKS clusters, features, and tools that you use in AWS Cloud.
 

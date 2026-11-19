@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_UpdateAppAuthor
 ---
 
 # UpdateAppAuthorization
-<a name="API_UpdateAppAuthorization"></a>
 
 Updates an app authorization within an app bundle, which allows AppFabric to connect to an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/filtering-nested-with-d
 ---
 
 # Filter arrays with nested values
-<a name="filtering-nested-with-dot"></a>
 
 Large arrays often contain nested structures, and you need to be able to filter, or search, for values within them.
 

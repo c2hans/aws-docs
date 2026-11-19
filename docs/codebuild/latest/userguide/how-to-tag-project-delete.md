@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-tag-pr
 ---
 
 # Remove a tag from a project
-<a name="how-to-tag-project-delete"></a>
 
 You can remove one or more tags associated with a project. Removing a tag does not delete the tag from other AWS resources that are associated with that tag.
 

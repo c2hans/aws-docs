@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DeleteNetworkSettings
-<a name="API_DeleteNetworkSettings"></a>
 
 Deletes network settings.
 

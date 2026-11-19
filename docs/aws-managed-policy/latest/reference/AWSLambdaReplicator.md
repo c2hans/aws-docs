@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaReplicator
-<a name="AWSLambdaReplicator"></a>
 
 **Description**: Grants Lambda Replicator necessary permissions to replicate functions across regions
 

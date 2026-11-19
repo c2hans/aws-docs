@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # UpdateCustomLineItem
-<a name="API_UpdateCustomLineItem"></a>
 
  Update an existing custom line item in the current or previous billing period.
 

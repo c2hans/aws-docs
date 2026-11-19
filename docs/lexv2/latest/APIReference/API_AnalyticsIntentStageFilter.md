@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentStageFilter
-<a name="API_AnalyticsIntentStageFilter"></a>
 
 Contains fields describing a condition by which to filter the intent stages. The expression may be understood as `name` `operator` `values`. For example:
 +  `IntentName CO Book` – The intent name contains the string "Book."

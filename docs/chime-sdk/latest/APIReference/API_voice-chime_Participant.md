@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # Participant
-<a name="API_voice-chime_Participant"></a>
 
 The phone number and proxy phone number for a participant in an Amazon Chime SDK Voice Connector proxy session.
 

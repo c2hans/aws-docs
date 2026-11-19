@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/doc-history.h
 ---
 
 # Document history for AL2027 release notes
-<a name="doc-history"></a>
 
 The following table describes the documentation for this release of Amazon Linux 2027.
 

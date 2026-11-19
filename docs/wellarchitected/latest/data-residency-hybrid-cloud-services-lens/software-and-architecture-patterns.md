@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Software and architecture patterns
-<a name="software-and-architecture-patterns"></a>
 
 | DRHCSUS03: How do you monitor workloads and evaluate architectures to support your sustainability goals? |
 | --- |

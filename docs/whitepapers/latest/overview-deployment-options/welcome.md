@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Overview of Deployment Options on AWS
-<a name="welcome"></a>
 
 Publication date: **May 31, 2024** ([Document Revisions](document-revisions.md))
 

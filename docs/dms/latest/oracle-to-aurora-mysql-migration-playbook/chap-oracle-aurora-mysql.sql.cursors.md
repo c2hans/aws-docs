@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL cursors
-<a name="chap-oracle-aurora-mysql.sql.cursors"></a>
 
 With AWS DMS, you can efficiently migrate data from Oracle and MySQL databases to other database services or engines, including handling complex data types, such as cursors. A cursor is a database object that allows traversal over rows from a query, facilitating operations like looping through result sets.
 

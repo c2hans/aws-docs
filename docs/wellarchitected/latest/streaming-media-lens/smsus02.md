@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Alignment to demand
-<a name="smsus02"></a>
 
 Streaming demand varies by orders of magnitude across the day and across events. Infrastructure sized for a theoretical peak sits idle most of its life.
 

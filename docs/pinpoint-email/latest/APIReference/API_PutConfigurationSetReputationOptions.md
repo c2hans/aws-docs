@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_P
 ---
 
 # PutConfigurationSetReputationOptions
-<a name="API_PutConfigurationSetReputationOptions"></a>
 
 Enable or disable collection of reputation metrics for emails that you send using a particular configuration set in a specific AWS Region.
 

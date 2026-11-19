@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html
 ---
 
 # Getting started with AWS IoT Core tutorials
-<a name="iot-gs"></a>
 
 Whether you're new to IoT or you have years of experience, these resources present the AWS IoT concepts and terms that will help you start using AWS IoT.
 + **Look** inside AWS IoT and its components in [How AWS IoT works](aws-iot-how-it-works.md).

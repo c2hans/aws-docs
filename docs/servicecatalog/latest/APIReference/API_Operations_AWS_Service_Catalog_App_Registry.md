@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_O
 ---
 
 # AppRegistry
-<a name="API_Operations_AWS_Service_Catalog_App_Registry"></a>
 
 The following actions are supported by AppRegistry:
 +  [AssociateAttributeGroup](API_app-registry_AssociateAttributeGroup.md)

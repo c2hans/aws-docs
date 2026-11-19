@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetManage
 ---
 
 # GetManagedPrefixListAssociations
-<a name="API_GetManagedPrefixListAssociations"></a>
 
 Gets information about the resources that are associated with the specified managed prefix list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubS3S
 ---
 
 # HubS3StorageConfig
-<a name="API_HubS3StorageConfig"></a>
 
 The Amazon S3 storage configuration of a hub.
 

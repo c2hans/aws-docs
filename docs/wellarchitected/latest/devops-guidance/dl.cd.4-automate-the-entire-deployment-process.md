@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CD.4] Automate the entire deployment process
-<a name="dl.cd.4-automate-the-entire-deployment-process"></a>
 
  **Category:** FOUNDATIONAL
 

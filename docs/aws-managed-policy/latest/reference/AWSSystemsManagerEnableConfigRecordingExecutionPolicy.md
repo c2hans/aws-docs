@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerEnableConfigRecordingExecutionPolicy
-<a name="AWSSystemsManagerEnableConfigRecordingExecutionPolicy"></a>
 
 **Description**: Provides permissions for AWS Systems Manager Quick Setup to enable and configure AWS Config configuration recording.
 

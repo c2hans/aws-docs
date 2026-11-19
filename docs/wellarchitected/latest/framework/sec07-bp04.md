@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec07-b
 ---
 
 # SEC07-BP04 Define scalable data lifecycle management
-<a name="sec07-bp04"></a>
 
  Lifecycle management defines how data is handled when it arrives, how it is transformed, how long it is kept, and how it is destroyed. Tie these rules to your classification levels to keep protection appropriate as data ages and make retention and destruction deliberate.
 

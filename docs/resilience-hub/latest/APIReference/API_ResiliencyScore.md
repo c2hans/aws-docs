@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResiliencyScore
-<a name="API_ResiliencyScore"></a>
 
 The overall resiliency score, returned as an object that includes the disruption score and outage score.
 

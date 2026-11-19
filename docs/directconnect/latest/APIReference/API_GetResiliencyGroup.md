@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ge
 ---
 
 # GetResiliencyGroup
-<a name="API_GetResiliencyGroup"></a>
 
 Gets information about the specified resiliency group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobeanalytics-reading-fr
 ---
 
 # Reading from Adobe Analytics entities
-<a name="adobeanalytics-reading-from-entities"></a>
 
  **Prerequisites**
 

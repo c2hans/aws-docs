@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Delet
 ---
 
 # DeleteGeofenceCollection
-<a name="API_DeleteGeofenceCollection"></a>
 
 Deletes a geofence collection from your AWS account.
 

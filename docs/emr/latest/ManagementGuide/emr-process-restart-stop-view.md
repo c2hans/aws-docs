@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-process-r
 ---
 
 # View and restart Amazon EMR and application processes (daemons)
-<a name="emr-process-restart-stop-view"></a>
 
 When you troubleshoot a cluster, you may want to list running processes. You may also want to stop or restart processesS. For example, you can restart a process after you change a configuration or notice a problem with a particular process after you analyze log files and error messages.
 

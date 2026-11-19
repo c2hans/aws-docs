@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSICOST19: Do you use the cloud to drive innovation and operational excellence of your business model to impact both the top and bottom line?
-<a name="fsicost19"></a>
 
  Today, technology and digital solutions are an integral part of FSI operations, however IT cost is not the biggest block within all expenditures in the profit and loss of FSI customers (personnel and marketing have greater impacts on cost). Using AWS Cloud solutions and services to change the way you operate impacts your profitability in the short and long term.
 

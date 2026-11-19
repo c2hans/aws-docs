@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorEn
 ---
 
 # ConnectorEntity
-<a name="API_ConnectorEntity"></a>
 
  The high-level entity that can be queried in Amazon AppFlow. For example, a Salesforce entity might be an *Account* or *Opportunity*, whereas a ServiceNow entity might be an *Incident*.
 

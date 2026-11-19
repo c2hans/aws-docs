@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # DataCollectionDetails
-<a name="API_DataCollectionDetails"></a>
 
  Detailed information about an assessment.
 

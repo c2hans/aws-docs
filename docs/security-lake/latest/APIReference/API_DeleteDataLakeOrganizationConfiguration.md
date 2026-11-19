@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteDataLakeOrganizationConfiguration
-<a name="API_DeleteDataLakeOrganizationConfiguration"></a>
 
 Turns off automatic enablement of Amazon Security Lake for member accounts that are added to an organization in AWS Organizations. Only the delegated Security Lake administrator for an organization can perform this operation. If the delegated Security Lake administrator performs this operation, new member accounts won't automatically contribute data to the data lake.
 

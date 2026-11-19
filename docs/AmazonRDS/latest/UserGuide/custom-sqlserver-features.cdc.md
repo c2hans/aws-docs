@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlser
 ---
 
 # Change data capture (CDC) support with RDS Custom for SQL Server
-<a name="custom-sqlserver-features.cdc"></a>
 
 ## Overview
 <a name="custom-sqlserver-features.cdc.overview"></a>

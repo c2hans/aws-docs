@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Types.ht
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon CloudWatch Internet Monitor API contains several data types that various actions use. This section describes each data type in detail.
 

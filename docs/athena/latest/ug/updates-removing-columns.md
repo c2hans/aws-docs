@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-removing-column
 ---
 
 # Remove columns
-<a name="updates-removing-columns"></a>
 
 You may need to remove columns from tables if they no longer contain data, or to restrict access to the data in them.
 + You can remove columns from tables in JSON, Avro, and in Parquet and ORC if they are read by name. For information, see [Understand index access for Apache ORC and Apache Parquet](handling-schema-updates-chapter.md#index-access).

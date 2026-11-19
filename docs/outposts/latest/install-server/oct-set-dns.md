@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-set-d
 ---
 
 # set-dns
-<a name="oct-set-dns"></a>
 
 The **set-dns** command sets the DNS (Domain Name Server) IP address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/CURRENT
 ---
 
 # CURRENT\_DATE function
-<a name="CURRENT_DATE_function"></a>
 
 CURRENT\_DATE returns a date in the current session time zone (UTC by default) in the default format: YYYY-MM-DD.
 

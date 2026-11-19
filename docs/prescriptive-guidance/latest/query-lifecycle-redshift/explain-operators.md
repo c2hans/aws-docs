@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # EXPLAIN operators for Amazon Redshift query plans
-<a name="explain-operators"></a>
 
 This section briefly describes the operators that you see most often in the `EXPLAIN` output.
 

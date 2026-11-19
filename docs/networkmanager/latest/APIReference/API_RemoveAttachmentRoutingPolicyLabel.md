@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RemoveAttachmentRoutingPolicyLabel
-<a name="API_RemoveAttachmentRoutingPolicyLabel"></a>
 
 Removes a routing policy label from an attachment.
 

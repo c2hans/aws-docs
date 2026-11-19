@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/microsoft-onenote
 ---
 
 # Microsoft OneNote integration
-<a name="microsoft-onenote-integration"></a>
 
 With the Microsoft OneNote connector, you can manage notebooks, sections, and pages from your Microsoft 365 account directly in AWS Quick through natural language. The connector uses Microsoft Graph for OneNote operations.
 

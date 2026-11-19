@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EnableIns
 ---
 
 # EnableInstanceSqlHaStandbyDetections
-<a name="API_EnableInstanceSqlHaStandbyDetections"></a>
 
 Enable Amazon EC2 instances running in an SQL Server High Availability cluster for SQL Server High Availability instance standby detection monitoring. Once enabled, AWS monitors the metadata for the instances to determine whether they are active or standby nodes in the SQL Server High Availability cluster. If the instances are determined to be standby failover nodes, AWS automatically applies SQL Server licensing fee waiver for those instances.
 

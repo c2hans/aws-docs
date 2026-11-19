@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/appli
 ---
 
 # Application datasets used in AWS Supply Chain Analytics
-<a name="application_datasets"></a>
 
 The following are the list of application datasets displayed in AWS Supply Chain Analytics.
 

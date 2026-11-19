@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-4.h
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # CIS AWS Benchmark v1.4.0
-<a name="CIS-1-4"></a>
 
 AWS Audit Manager provides two prebuilt standard frameworks that support the Center for Internet Security (CIS) AWS Foundations Benchmark v1.4.0.
 

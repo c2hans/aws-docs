@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Forec
 ---
 
 # ForecastConfiguration
-<a name="API_ForecastConfiguration"></a>
 
 The forecast configuration that is used in a line chart's display properties.
 

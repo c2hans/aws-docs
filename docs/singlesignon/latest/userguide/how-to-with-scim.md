@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-wit
 ---
 
 # Enable automatic provisioning
-<a name="how-to-with-scim"></a>
 
 Use the following procedure to enable automatic provisioning of users and groups from your IdP to IAM Identity Center using the SCIM protocol.
 

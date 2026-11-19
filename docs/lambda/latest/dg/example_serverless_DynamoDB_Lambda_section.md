@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_serverless_Dyna
 ---
 
 # Invoke a Lambda function from a DynamoDB trigger
-<a name="example_serverless_DynamoDB_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that receives an event triggered by receiving records from a DynamoDB stream. The function retrieves the DynamoDB payload and logs the record contents.
 

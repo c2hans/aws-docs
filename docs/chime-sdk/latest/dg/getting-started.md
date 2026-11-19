@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/getting-started.html
 ---
 
 # Getting started with Amazon Chime SDK messaging
-<a name="getting-started"></a>
 
 The topics in this section explain how to start building an Amazon Chime SDK messaging application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityResult
 ---
 
 # DataQualityResultsV2FilterCriteria
-<a name="API_DataQualityResultsV2FilterCriteria"></a>
 
 Describes the criteria used to filter the data quality results returned by `ListDataQualityResultsV2`.
 

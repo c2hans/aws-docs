@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UntagRe
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Untags a resource in Amazon DataZone.
 

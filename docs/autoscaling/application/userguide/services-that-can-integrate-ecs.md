@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon ECS and Application Auto Scaling
-<a name="services-that-can-integrate-ecs"></a>
 
 You can scale ECS services using target tracking scaling policies, predictive scaling policies, step scaling policies, and scheduled scaling.
 

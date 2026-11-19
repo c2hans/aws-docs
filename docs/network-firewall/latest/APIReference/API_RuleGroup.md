@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleGroup
-<a name="API_RuleGroup"></a>
 
 The object that defines the rules in a rule group. This, along with [RuleGroupResponse](API_RuleGroupResponse.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](API_DescribeRuleGroup.md).
 

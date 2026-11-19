@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/monitoring-cloud
 ---
 
 # Monitoring with Amazon CloudWatch
-<a name="monitoring-cloudwatch"></a>
 
 Amazon CloudWatch collects and processes raw data from your FSx for Windows File Server file system into readable, near real-time metrics. These statistics are retained for a period of 15 months, giving you to access historical information to help gain perspectives on how your workflow or file system is performing.
 

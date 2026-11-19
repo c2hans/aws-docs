@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/h
 ---
 
 # AWS Direct Connect in Active/Passive Configuration
-<a name="hybrid-dx-active-passive"></a>
 
 Publication date: **August 17, 2022 ([Diagram history](#hc5-diagram-history))**
 

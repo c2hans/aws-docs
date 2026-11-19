@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_MemoryG
 ---
 
 # MemoryGiBPerVCpuRequest
-<a name="API_MemoryGiBPerVCpuRequest"></a>
 
 Specifies the minimum and maximum for the `MemoryGiBPerVCpu` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

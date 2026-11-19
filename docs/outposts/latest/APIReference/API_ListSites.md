@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListSit
 ---
 
 # ListSites
-<a name="API_ListSites"></a>
 
 Lists the Outpost sites for your AWS account. Use filters to return specific results.
 

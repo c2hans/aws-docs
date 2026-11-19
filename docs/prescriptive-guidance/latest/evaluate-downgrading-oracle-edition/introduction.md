@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 ---
 
 # Evaluate downgrading Oracle databases to Standard Edition 2 on AWS
-<a name="introduction"></a>
 
 *Lanre (Lan-Ray) showunmi and Bhavesh Rathod, Amazon Web Services*
 

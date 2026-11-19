@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_WorkflowRunStatis
 ---
 
 # WorkflowRunStatistics
-<a name="API_WorkflowRunStatistics"></a>
 
 Workflow run statistics provides statistics about the workflow run.
 

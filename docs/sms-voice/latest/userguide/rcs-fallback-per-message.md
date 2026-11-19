@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-fallback-
 ---
 
 # Configuring per-message SMS or MMS fallback
-<a name="rcs-fallback-per-message"></a>
 
 When you send an RCS message, the recipient's device might not support RCS, or the message might expire before delivery. With per-message fallback, you can specify alternative SMS or MMS content that AWS End User Messaging delivers automatically when the RCS message cannot reach the recipient. You configure fallback on each `SendRcsMessage` request by including the `FallbackConfiguration` parameter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Metadata
 ---
 
 # MetadataAttributeSchema
-<a name="API_MetadataAttributeSchema"></a>
 
 Defines the schema for a metadata attribute used in Knowledge Base vector searches. Metadata attributes provide additional context for documents and can be used for filtering and reranking search results.
 

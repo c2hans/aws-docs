@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeMetadata
-<a name="API_MergeMetadata"></a>
 
 Returns information about a merge or potential merge between a source reference and a destination reference in a pull request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-codeco
 ---
 
 # AWS CodeCommit events
-<a name="events-ref-codecommit"></a>
 
 CodeCommit sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

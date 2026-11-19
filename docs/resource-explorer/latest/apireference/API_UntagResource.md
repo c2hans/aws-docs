@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tag key and value pairs from an AWS Resource Explorer view or index.
 

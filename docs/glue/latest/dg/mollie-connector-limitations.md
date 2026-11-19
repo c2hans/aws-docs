@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mollie-connector-limitati
 ---
 
 # Limitations and notes for the Mollie connector
-<a name="mollie-connector-limitations"></a>
 
 The following are limitations and notes for the Mollie connector:
 + Mollie is supported as a source only. Writing to Mollie is not supported.

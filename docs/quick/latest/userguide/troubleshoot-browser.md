@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-brow
 ---
 
 # AWS Quick Sight isn't working in my browser
-<a name="troubleshoot-browser"></a>
 
 If you can't view AWS Quick Sight correctly in your Google Chrome browser, take the following steps to fix the problem.
 

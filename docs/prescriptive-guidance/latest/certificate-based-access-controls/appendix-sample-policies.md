@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/certificate
 ---
 
 # Appendix: Sample profile and role policies
-<a name="appendix-sample-policies"></a>
 
 ## Sample policies for Application 1
 <a name="appendix-sample-policies-app-1"></a>

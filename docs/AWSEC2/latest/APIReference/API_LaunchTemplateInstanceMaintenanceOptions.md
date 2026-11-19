@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateInstanceMaintenanceOptions
-<a name="API_LaunchTemplateInstanceMaintenanceOptions"></a>
 
 The maintenance options of your instance.
 

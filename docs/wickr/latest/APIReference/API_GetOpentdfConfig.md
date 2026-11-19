@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GetOpentdf
 ---
 
 # GetOpentdfConfig
-<a name="API_GetOpentdfConfig"></a>
 
 Retrieves the OpenTDF integration configuration for a Wickr network.
 

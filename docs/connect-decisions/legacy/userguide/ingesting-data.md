@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/inges
 ---
 
 # Ingesting data for existing connections
-<a name="ingesting-data"></a>
 
 The following are the ingestion options if you're using Amazon S3:
 + **Append** – To append the ingestion data or for incremental ingestion, all files from the source path are combined into a single dataset before being ingested into data lake. This method ensures completeness of data for files spanning multiple days. When you remove files from the source path in your S3 bucket, files that are only available in the source path are ingested into data lake.

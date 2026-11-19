@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Initiate jobs by using a workflow
-<a name="initiate-jobs"></a>
 
 Create a flow of jobs called a workflow. Jobs in the workflow are interconnected with dependencies on successful completion of the previous jobs.
 

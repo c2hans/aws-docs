@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-c
 ---
 
 # s3-bucket-cross-region-replication-enabled
-<a name="s3-bucket-cross-region-replication-enabled"></a>
 
 Checks if you have enabled S3 Cross-Region Replication for your Amazon S3 buckets. The rule is NON\_COMPLIANT if there are no replication rules enabled for Cross-Region Replication.
 

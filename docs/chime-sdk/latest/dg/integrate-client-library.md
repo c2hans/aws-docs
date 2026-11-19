@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/integrate-client-lib
 ---
 
 # Integrating Amazon Chime SDK messaging with client libraries
-<a name="integrate-client-library"></a>
 
 To use the messaging features of the Amazon Chime SDK, you must integrate your client application with the following client libraries:
 + **AWS SDK** – Contains APIs for sending messages and managing resources.

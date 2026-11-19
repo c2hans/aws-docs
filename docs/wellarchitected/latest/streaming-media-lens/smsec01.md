@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Identity and access management
-<a name="smsec01"></a>
 
 Authentication and authorization systems control who can access content and how. This covers viewer-facing identity (subscription tiers, geo-restrictions) and infrastructure-level access (origin restrictions, CDN authentication).
 

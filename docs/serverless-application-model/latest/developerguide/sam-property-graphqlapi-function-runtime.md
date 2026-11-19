@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Runtime
-<a name="sam-property-graphqlapi-function-runtime"></a>
 
 The runtime of your pipeline resolver or function. Specifies the name and version to use.
 

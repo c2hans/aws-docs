@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Using an Oracle database link to transfer dump files
-<a name="oracle-database-link"></a>
 
 An Oracle database link is a schema object in one database that enables you to access objects in another database. To use the database link to move the Oracle Database dump files from the source to the target, create the database link in the source system and confirm connectivity between the source and the target. For more information about how to create an Oracle database link and confirm that it works as expected, see the [Oracle documentation](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-DATABASE-LINK.html#GUID-D966642A-B19E-449D-9968-1121AF06D793).
 

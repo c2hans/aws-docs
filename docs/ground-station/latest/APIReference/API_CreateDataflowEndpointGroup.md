@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # CreateDataflowEndpointGroup
-<a name="API_CreateDataflowEndpointGroup"></a>
 
 Creates a `DataflowEndpoint` group containing the specified list of ` DataflowEndpoint` objects.
 

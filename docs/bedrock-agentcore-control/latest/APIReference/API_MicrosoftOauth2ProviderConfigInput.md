@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MicrosoftOauth2ProviderConfigInput
-<a name="API_MicrosoftOauth2ProviderConfigInput"></a>
 
 Input configuration for a Microsoft OAuth2 provider.
 

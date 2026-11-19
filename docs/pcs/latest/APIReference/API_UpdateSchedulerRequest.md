@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateSchedu
 ---
 
 # UpdateSchedulerRequest
-<a name="API_UpdateSchedulerRequest"></a>
 
 The scheduler configuration for updating a cluster. Use this to specify the scheduler version to update to.
 

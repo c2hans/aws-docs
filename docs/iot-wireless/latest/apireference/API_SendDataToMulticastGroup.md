@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sen
 ---
 
 # SendDataToMulticastGroup
-<a name="API_SendDataToMulticastGroup"></a>
 
 Sends the specified data to a multicast group.
 

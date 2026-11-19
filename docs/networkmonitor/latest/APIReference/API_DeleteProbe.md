@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_D
 ---
 
 # DeleteProbe
-<a name="API_DeleteProbe"></a>
 
 Deletes the specified probe. Once a probe is deleted you'll no longer incur any billing fees for that probe.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Anal
 ---
 
 # S3Analysis
-<a name="API_S3Analysis"></a>
 
 Contains an analysis of Amazon S3 activity or exposure. The members that can be set depend on `AnalysisType`: `S3_EXPOSURE` (`FindingSubtype`, `EffectivePermission`, `BlockPublicAccessSettings`, and `Exposure`), `S3_ACTOR_CONTEXT` (`UserAgent`, `UserAgentClassification`, `SourceIp`, `IpReputation`, and `ActorAssessment`), and `S3_PEN_TEST` (`UserAgent`, `S3ApiActivity`, `SourceContext`, and `AuthorizationAssessment`).
 

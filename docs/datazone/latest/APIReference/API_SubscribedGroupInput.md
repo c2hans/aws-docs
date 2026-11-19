@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedGroupInput
-<a name="API_SubscribedGroupInput"></a>
 
 The details of the subscribed group.
 

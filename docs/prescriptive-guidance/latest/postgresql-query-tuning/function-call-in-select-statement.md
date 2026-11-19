@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Use case 3 – Function call in the SELECT statement
-<a name="function-call-in-select-statement"></a>
 
 Calling a function in a `where` clause can reduce query performance when the function is `VOLATILE` and you don't use the `select` keyword while calling the function:
 

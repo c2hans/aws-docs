@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteSl
 ---
 
 # DeleteSlackWorkspaceAuthorization
-<a name="API_DeleteSlackWorkspaceAuthorization"></a>
 
 Deletes the Slack workspace authorization that allows channels to be configured in that workspace. This requires all configured channels in the workspace to be deleted.
 

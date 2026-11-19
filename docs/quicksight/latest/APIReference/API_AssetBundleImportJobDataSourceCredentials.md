@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDataSourceCredentials
-<a name="API_AssetBundleImportJobDataSourceCredentials"></a>
 
 The login credentials to use to import a data source resource.
 

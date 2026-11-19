@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Monitorin
 ---
 
 # MonitoringConfiguration
-<a name="API_MonitoringConfiguration"></a>
 
 Contains the configuration settings for managed log persistence, delivering logs to Amazon S3 buckets, Amazon CloudWatch log groups etc.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Glue
-<a name="list_glue"></a>
 
 AWS Glue (service prefix: `glue`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 
@@ -332,6 +331,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteCustomEntityType  **
   - **IAM action:**  [glue:DeleteCustomEntityType](#list_glue-action-DeleteCustomEntityType)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteDataQualityEvaluationConfig  **
+  - **IAM action:**  [glue:DeleteDataQualityEvaluationConfig](#list_glue-action-DeleteDataQualityEvaluationConfig)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

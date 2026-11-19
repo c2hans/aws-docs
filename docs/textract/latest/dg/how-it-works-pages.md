@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-pages.ht
 ---
 
 # Pages
-<a name="how-it-works-pages"></a>
 
 A document consists of one or more pages. A [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) object of type `PAGE` exists for each page of the document. A `PAGE` block object contains a list of the child IDs for the lines of text, key-value pairs, tables, Queries, and Query Results that are detected on the document page.
 

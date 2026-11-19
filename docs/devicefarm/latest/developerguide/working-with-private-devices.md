@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/working
 ---
 
 # Private devices in AWS Device Farm
-<a name="working-with-private-devices"></a>
 
 A private device is a physical mobile device that AWS Device Farm deploys on your behalf in an Amazon data center. This device is exclusive to your AWS account.
 

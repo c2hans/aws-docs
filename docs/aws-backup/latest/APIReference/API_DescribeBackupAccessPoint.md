@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeBackupAccessPoint
-<a name="API_DescribeBackupAccessPoint"></a>
 
 Returns metadata about a backup access point, including its status and the details of the underlying Amazon S3 access point.
 

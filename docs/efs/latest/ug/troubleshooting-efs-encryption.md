@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-encryp
 ---
 
 # Troubleshooting encryption
-<a name="troubleshooting-efs-encryption"></a>
 
 **Topics**
 + [Mounting with encryption of data in transit fails](#mounting-tls-fails)

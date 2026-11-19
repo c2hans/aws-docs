@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SummaryMetricsResult
-<a name="API_CostOptimizationHub_SummaryMetricsResult"></a>
 
 The results or descriptions for the additional metrics, based on whether the metrics were or were not requested.
 

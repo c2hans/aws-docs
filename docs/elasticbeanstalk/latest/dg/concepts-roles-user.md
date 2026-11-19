@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts-role
 ---
 
 # Elastic Beanstalk user policy
-<a name="concepts-roles-user"></a>
 
 Create IAM users for each user who uses Elastic Beanstalk to avoid using your root account or sharing credentials. As a security best practice, only grant these users permissions to access services and features that they need.
 

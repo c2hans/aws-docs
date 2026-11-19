@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Sch
 ---
 
 # Schedule
-<a name="API_Schedule"></a>
 
 A schedule configures when and how often a pipeline will automatically create a new image.
 

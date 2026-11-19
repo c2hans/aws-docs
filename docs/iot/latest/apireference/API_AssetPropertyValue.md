@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AssetPropert
 ---
 
 # AssetPropertyValue
-<a name="API_AssetPropertyValue"></a>
 
 An asset property value entry containing the following information.
 

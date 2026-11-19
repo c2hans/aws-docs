@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Revok
 ---
 
 # RevokeRestoreAccessBackupVault
-<a name="API_RevokeRestoreAccessBackupVault"></a>
 
 Revokes access to a restore access backup vault, removing the ability to restore from its recovery points and permanently deleting the vault.
 

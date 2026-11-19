@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 | CONTAINER\_BUILD\_SEC\_04: How do you manage your container image boundaries? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceCustomActionsDetails
-<a name="API_RuleGroupSourceCustomActionsDetails"></a>
 
 A custom action definition. A custom action is an optional, non-standard action to use for stateless packet handling.
 

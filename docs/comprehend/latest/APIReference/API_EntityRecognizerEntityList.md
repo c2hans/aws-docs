@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerEntityList
-<a name="API_EntityRecognizerEntityList"></a>
 
 Describes the entity list submitted with an entity recognizer.
 

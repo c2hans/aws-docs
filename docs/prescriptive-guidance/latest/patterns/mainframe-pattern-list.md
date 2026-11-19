@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Mainframes
-<a name="mainframe-pattern-list"></a>
 
 **Topics**
 + [Build a Micro Focus Enterprise Server PAC with Amazon EC2 Auto Scaling and Systems Manager](build-a-micro-focus-enterprise-server-pac-with-amazon-ec2-auto-scaling-and-systems-manager.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationResourceData
-<a name="API_InvestigationResourceData"></a>
 
 Contains details that are specific to the type of a resource. The member that is set matches the `ResourceType` of the resource, except that `RdsDbInstance` and `RdsDbUser` can be set together.
 

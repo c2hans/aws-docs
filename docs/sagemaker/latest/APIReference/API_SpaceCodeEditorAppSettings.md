@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceC
 ---
 
 # SpaceCodeEditorAppSettings
-<a name="API_SpaceCodeEditorAppSettings"></a>
 
 The application settings for a Code Editor space.
 

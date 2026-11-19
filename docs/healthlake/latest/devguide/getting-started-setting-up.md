@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/getting-start
 ---
 
 # Setting up AWS HealthLake
-<a name="getting-started-setting-up"></a>
 
 In this chapter, you use the AWS Management Console to set up the required permissions to start using AWS HealthLake and create a data store. To set up permissions to create a data store, you create an IAM user or role that is a data lake administrator and HealthLake administrator. You make this user a data lake administrator in AWS Lake Formation. The data lake administrator grants Lake Formation access to resources needed to use Amazon Athena to query a data store. After you create a HealthLake data store, you can set up permissions for importing and exporting files.
 

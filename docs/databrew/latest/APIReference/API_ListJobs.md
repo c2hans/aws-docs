@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListJob
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Lists all of the DataBrew jobs that are defined.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/delete-rec
 ---
 
 # Delete a recovery group
-<a name="delete-recovery-group"></a>
 
 The following is an example of a request to delete a recovery group. Note that there is no response on success when you delete a recovery group.
 

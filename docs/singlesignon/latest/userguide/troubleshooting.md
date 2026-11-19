@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/troublesho
 ---
 
 # Troubleshooting IAM Identity Center issues
-<a name="troubleshooting"></a>
 
 The following can help you troubleshoot some common issues you might encounter while setting up or using the IAM Identity Center console.
 

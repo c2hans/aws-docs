@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Reference
-<a name="reference"></a>
 
 ## Contributors
 <a name="contributors"></a>

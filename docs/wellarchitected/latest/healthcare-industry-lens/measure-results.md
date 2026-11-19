@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Measure results
-<a name="measure-results"></a>
 
 | HCL\_SUS5. How does your organization measure the effectiveness of sustainability efforts? |
 | --- |

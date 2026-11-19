@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules-conditions.html
 ---
 
 # Rule conditions
-<a name="eb-rules-conditions"></a>
 
 Rule conditions compare a property of an accepted email or one of its recipients with a configured value. Use the `Conditions` list to identify the recipients to which a rule applies. Use the `Unless` list to remove recipients from that match.
 

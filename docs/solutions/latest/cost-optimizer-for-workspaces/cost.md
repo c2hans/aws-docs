@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. The total cost of running this solution depends on the number of WorkSpaces that this solution monitors. As of the latest revision, the cost for running this solution with default settings in the US East (N. Virginia) Region is approximately **$42.00 per month** for 1,000 WorkSpaces. This reflects Amazon VPC, Amazon CloudWatch, Amazon DynamoDB, Amazon ECS (Fargate), Amazon S3, and AWS Lambda charges and does not include the cost of the individual WorkSpaces (refer to [Amazon WorkSpaces Pricing](https://aws.amazon.com/workspaces/pricing)).
 

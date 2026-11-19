@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Amazon FSx
-<a name="storage-fsx"></a>
 
 Amazon FSx for Windows File Server is a fully managed file storage service that's designed for Windows workloads. It provides you with a simple and scalable solution to run your Windows-based applications and workloads, without the need for complex storage infrastructure management. You can use FSx for Windows File Server to provision and access shared file storage that supports your Windows applications natively, including Microsoft SQL Server, Microsoft SharePoint, and custom .NET applications. Additionally, FSx for Windows File Server helps you manage costs through flexible pricing options, such as pay-as-you-go and storage quotas, and through data deduplication that reduces your storage footprint.
 

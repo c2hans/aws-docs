@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dat
 ---
 
 # Controls that enhance data residency protection
-<a name="data-residency-controls"></a>
 
 These elective controls complement your enterprise's data residency posture. By applying these controls together, you can set up your multi-account environment to help detect and inhibit the purposeful or accidental creation, sharing, or copying of data, outside of your selected AWS Region or Regions.
 

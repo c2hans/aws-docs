@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # CreateProxySession
-<a name="API_voice-chime_CreateProxySession"></a>
 
 Creates a proxy session for the specified Amazon Chime SDK Voice Connector for the specified participant phone numbers.
 

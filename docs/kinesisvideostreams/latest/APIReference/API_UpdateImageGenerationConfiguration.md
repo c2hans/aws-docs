@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateImageGenerationConfiguration
-<a name="API_UpdateImageGenerationConfiguration"></a>
 
 Updates the `StreamInfo` and `ImageProcessingConfiguration` fields.
 

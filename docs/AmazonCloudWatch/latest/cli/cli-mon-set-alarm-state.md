@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-set-
 ---
 
 # mon-set-alarm-state
-<a name="cli-mon-set-alarm-state"></a>
 
 ## Description
 <a name="w2aab9c55b3"></a>

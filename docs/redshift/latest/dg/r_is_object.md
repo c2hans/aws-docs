@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_is_object.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # IS\_OBJECT function
-<a name="r_is_object"></a>
 
 Checks whether a variable is an object. The IS\_OBJECT function returns `true` for objects, including empty objects. The function returns `false` for any other values, including null.
 

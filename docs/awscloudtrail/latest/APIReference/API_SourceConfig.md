@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_So
 ---
 
 # SourceConfig
-<a name="API_SourceConfig"></a>
 
  Contains configuration information about the channel.
 

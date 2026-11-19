@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/peering-configuration
 ---
 
 # VPC peering configurations with routes to an entire VPC
-<a name="peering-configurations-full-access"></a>
 
 You can configure VPC peering connections so that your route tables have access to the entire CIDR block of the peer VPC. For more information about scenarios in which you might need a specific VPC peering connection configuration, see [VPC peering connection networking scenarios](peering-scenarios.md). For more information about creating and working with VPC peering connections, see [VPC peering connections](working-with-vpc-peering.md).
 

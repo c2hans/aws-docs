@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/g
 ---
 
 # Global settings
-<a name="global-settings"></a>
 
 Use `/n/AWS1/IMG` IMG transacation for AWS SDK for SAP ABAP, and Custom Business Configuration application for AWS SDK for SAP ABAP - BTP edition to configure the global settings. This topic uses IMG and Custom Business Configuration interchangeably.
 

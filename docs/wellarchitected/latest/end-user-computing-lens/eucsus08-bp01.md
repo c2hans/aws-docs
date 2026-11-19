@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS08-BP01 Extend device lifecycle, and review a bring your own device (BYOD) strategy
-<a name="eucsus08-bp01"></a>
 
  The strategy defines policies for device usage, security, and compliance while optimizing costs through efficient lifecycle management. Implementing a robust device lifecycle strategy fosters standardization, security, and productivity across an organization's device fleet.
 

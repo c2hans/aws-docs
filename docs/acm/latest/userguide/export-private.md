@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/export-private.html
 ---
 
 # Export an AWS Certificate Manager private certificate
-<a name="export-private"></a>
 
 You can export a certificate issued by AWS Private CA for use anywhere in your private PKI environment. The exported file contains the certificate, the certificate chain, and the encrypted private key. This file must be stored securely. For more information about AWS Private CA, see [AWS Private Certificate Authority User Guide](https://docs.aws.amazon.com/privateca/latest/userguide/).
 

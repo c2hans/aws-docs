@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ResetRunt
 ---
 
 # ResetRuntimeLogConfiguration
-<a name="API_ResetRuntimeLogConfiguration"></a>
 
 Reset a runtime log configuration for a specific managed thing.
 

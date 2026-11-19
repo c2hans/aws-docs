@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-vers
 ---
 
 # AWS NVMe Windows driver version history
-<a name="nvme-driver-version-history"></a>
 
 The following table shows which AWS NVMe drivers run on each version of Windows Server on Amazon EC2.
 

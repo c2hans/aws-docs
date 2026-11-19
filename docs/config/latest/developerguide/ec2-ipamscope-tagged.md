@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-ipamsco
 ---
 
 # ec2-ipamscope-tagged
-<a name="ec2-ipamscope-tagged"></a>
 
 Checks if Amazon EC2 IPAM Scopes have tags. Optionally, required tag keys can be specified. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

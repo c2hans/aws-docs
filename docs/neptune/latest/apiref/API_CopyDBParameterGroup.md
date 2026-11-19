@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CopyDBParamete
 ---
 
 # CopyDBParameterGroup
-<a name="API_CopyDBParameterGroup"></a>
 
 Copies the specified DB parameter group.
 

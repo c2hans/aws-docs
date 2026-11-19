@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContactMethods
-<a name="API_GetContactMethods"></a>
 
 Returns information about the configured contact methods. Specify a protocol in your request to return information about a specific contact method.
 

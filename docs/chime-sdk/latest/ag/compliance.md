@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/compliance.html
 ---
 
 # Compliance validation for the Amazon Chime SDK
-<a name="compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS services as part of multiple AWS compliance programs, such as SOC, PCI, FedRAMP, and HIPAA.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/https-singlei
 ---
 
 # Terminating HTTPS on EC2 instances running Ruby
-<a name="https-singleinstance-ruby"></a>
 
 For Ruby container types, the way you enable HTTPS depends on the type of application server used.
 

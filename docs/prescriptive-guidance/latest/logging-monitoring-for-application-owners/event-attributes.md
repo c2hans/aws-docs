@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # Event attributes
-<a name="event-attributes"></a>
 
 Each log entry needs to include sufficiently detailed information for monitoring and analysis. You could log full content data, but it's more efficient to log an extract or summary properties. The application logs must record the *when*, *where*, *who*, *what*, and *which* of each event. The properties for these will be different depending on the architecture, class of application, and the host system or device.
 

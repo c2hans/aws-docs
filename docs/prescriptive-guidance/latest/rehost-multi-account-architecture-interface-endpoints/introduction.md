@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 ---
 
 # Rehosting your applications in a multi-account architecture on AWS by using VPC interface endpoints
-<a name="introduction"></a>
 
 *Dipin Jain and Saurabh Shankar, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # SourceAuthenticationConfiguration
-<a name="API_SourceAuthenticationConfiguration"></a>
 
 The authentication configuration for connecting to the source during migration.
 

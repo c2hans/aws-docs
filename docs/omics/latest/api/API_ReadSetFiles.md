@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReadSetFiles.html
 ---
 
 # ReadSetFiles
-<a name="API_ReadSetFiles"></a>
 
 Files in a read set.
 

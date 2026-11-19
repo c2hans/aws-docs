@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Domai
 ---
 
 # DomainItem
-<a name="API_DomainItem"></a>
 
 The domain for the specified distribution tenant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Azur
 ---
 
 # AzureConfiguration
-<a name="API_AzureConfiguration"></a>
 
 Configuration for Azure subscription integration.
 

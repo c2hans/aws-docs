@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartD
 ---
 
 # StartDBCluster
-<a name="API_StartDBCluster"></a>
 
 Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the `StopDBCluster` operation.
 

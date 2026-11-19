@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/monitor-sagemaker
 ---
 
 # Monitor service jobs in an AWS Batch queue
-<a name="monitor-sagemaker-job-queue"></a>
 
 You can monitor the status of jobs in your SageMaker Training job queue using `list-service-jobs`, and `get-job-queue-snapshot`.
 

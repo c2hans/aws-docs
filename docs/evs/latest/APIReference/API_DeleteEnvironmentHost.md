@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_DeleteEnviro
 ---
 
 # DeleteEnvironmentHost
-<a name="API_DeleteEnvironmentHost"></a>
 
 Deletes a host from an Amazon EVS environment.
 

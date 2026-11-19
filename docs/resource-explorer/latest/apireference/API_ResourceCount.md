@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ResourceCount
-<a name="API_ResourceCount"></a>
 
 Information about the number of results that match the query. At this time, AWS Resource Explorer doesn't count more than 1,000 matches for any query. This structure provides information about whether the query exceeded this limit.
 

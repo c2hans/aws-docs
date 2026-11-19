@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/system-tables-for-tro
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # System tables for troubleshooting data loads
-<a name="system-tables-for-troubleshooting-data-loads"></a>
 
 The following Amazon Redshift system tables can be helpful in troubleshooting data load issues:
 + Query [STL\_LOAD\_ERRORS](r_STL_LOAD_ERRORS.md) to discover the errors that occurred during specific loads.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeServices
-<a name="API_DescribeServices"></a>
 
 Returns the current list of AWS services and a list of service categories for each service. You then use service names and categories in your [CreateCase](API_CreateCase.md) requests. Each AWS service has its own set of categories.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Reviewing the details of controls in Security Hub CSPM
-<a name="securityhub-standards-control-details"></a>
 
 Selecting a control on the **Controls** page or standard details page of the Security Hub CSPM console takes you to a page of control details.
 

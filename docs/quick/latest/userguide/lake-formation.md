@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/lake-formation.ht
 ---
 
 # Authorizing connections through AWS Lake Formation
-<a name="lake-formation"></a>
 
 |  |
 | --- |

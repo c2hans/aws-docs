@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Multi-factor authentication
-<a name="multi-factor-authentication"></a>
 
 |
 |

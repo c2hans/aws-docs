@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetCampaignState
-<a name="API_connect-outbound-campaigns_GetCampaignState"></a>
 
 Returns the state of an outbound campaign.
 

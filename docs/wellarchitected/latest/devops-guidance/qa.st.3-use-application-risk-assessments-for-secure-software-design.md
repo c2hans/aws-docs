@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.ST.3] Use application risk assessments for secure software design
-<a name="qa.st.3-use-application-risk-assessments-for-secure-software-design"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/integrate-eml-wit
 ---
 
 # Integrating router I/Os with MediaLive
-<a name="integrate-eml-with-router"></a>
 
 You can integrate your AWS Elemental MediaLive channels with your router I/Os in AWS Elemental MediaConnect. This enables you to combine the flexibility of the router with the processing and encoding capabilities of MediaLive.
 

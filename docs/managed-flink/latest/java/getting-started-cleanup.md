@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/getting-starte
 ---
 
 # Clean up AWS resources
-<a name="getting-started-cleanup"></a>
 
 This section includes procedures for cleaning up AWS resources created in this Getting Started (DataStream API) tutorial.
 

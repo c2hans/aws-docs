@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_OpenIDConnec
 ---
 
 # OpenIDConnectProviderListEntry
-<a name="API_OpenIDConnectProviderListEntry"></a>
 
 Contains the Amazon Resource Name (ARN) for an IAM OpenID Connect provider.
 

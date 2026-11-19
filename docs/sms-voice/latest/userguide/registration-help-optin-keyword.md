@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Inbound keyword opt-in
-<a name="registration-help-optin-keyword"></a>
 
 Use this pattern for **promotional advertisements** (flyers, webpages, emails, social posts, in-store signage) that advertise a keyword for users to text. All required disclosures must appear on the advertisement itself. The user texts the keyword to opt in, and the auto-reply confirmation must also contain all disclosures.
 

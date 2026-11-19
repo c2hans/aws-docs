@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/linux-file-trans
 ---
 
 # Transfer files to a Linux instance using SCP
-<a name="linux-file-transfer-scp"></a>
 
 One way to transfer files between your local computer and a Linux instance is to use the secure copy protocol (SCP). SCP is a good option for simple operations, such as as one-time file copies. SCP secures files transfers using the same .pem file that you use to connect to an instance using SSH. If you need to keep files synchronized, or if the files are large, **rsync** is faster and more efficient than SCP. For security, use **rsync** over SSH, as **rsync** transfers data using plain text by default.
 

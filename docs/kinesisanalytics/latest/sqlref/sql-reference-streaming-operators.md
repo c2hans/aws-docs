@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Streaming SQL Operators
-<a name="sql-reference-streaming-operators"></a>
 <a name="TOC1"></a>
 **Subquery Operators**
 Operators are used in queries and subqueries to combine or test data for various properties, attributes, or relationships.

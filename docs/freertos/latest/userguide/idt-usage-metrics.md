@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-usage-metr
 ---
 
 # Submit IDT usage metrics
-<a name="idt-usage-metrics"></a>
 
 If you provide AWS credentials with required permissions, AWS IoT Device Tester collects and submits usage metrics to AWS. This is an opt-in feature and is used to improve IDT functionality. IDT collects information such as the following:
 + The AWS account ID used to run IDT

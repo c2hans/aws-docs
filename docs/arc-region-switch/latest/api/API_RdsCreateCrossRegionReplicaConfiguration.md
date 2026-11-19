@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RdsCrea
 ---
 
 # RdsCreateCrossRegionReplicaConfiguration
-<a name="API_RdsCreateCrossRegionReplicaConfiguration"></a>
 
 Configuration for creating an Amazon RDS cross-Region read replica during post-recovery in a Region switch.
 

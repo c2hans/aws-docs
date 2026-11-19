@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/debug-emr-yar
 ---
 
 # Debugging EMR steps Using YARN application IDs
-<a name="debug-emr-yarn"></a>
 
 One effective way to debug steps that launch YARN-based applications (such as Spark steps) is to leverage the Yarn Application ID information available in the Amazon EMR console.
 

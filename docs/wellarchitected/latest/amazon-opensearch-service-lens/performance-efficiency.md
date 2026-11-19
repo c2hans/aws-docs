@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Performance efficiency
-<a name="performance-efficiency"></a>
 
 The performance efficiency pillar refers to the ability to deliver optimal performance while efficiently using system resources. Amazon OpenSearch Service is designed to handle large-scale distributed search and analytics workloads, and achieving performance efficiency is crucial for delivering timely and responsive results. The following questions and best practices are designed to complement the best practices in the Well-Architected Performance Efficiency Pillar whitepaper.
 

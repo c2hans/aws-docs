@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/fivetran-support.html
 ---
 
 # AWS Glue support for Fivetran
-<a name="fivetran-support"></a>
 
 AWS Glue supports Fivetran as follows:
 

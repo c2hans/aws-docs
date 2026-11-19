@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-rese
 ---
 
 # Working with reserved queues in AWS Elemental MediaConvert
-<a name="working-with-reserved-queues"></a>
 
 With reserved queues, you can purchase transcoding capacity for a 12-month period. The following topics provide information about working with reserved queues, such as creating and deleting queues, and allocating resources.
 

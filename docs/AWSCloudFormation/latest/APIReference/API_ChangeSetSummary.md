@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ChangeSetSummary
-<a name="API_ChangeSetSummary"></a>
 
 The `ChangeSetSummary` structure describes a change set, its status, and the stack with which it's associated.
 

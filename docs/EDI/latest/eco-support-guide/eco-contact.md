@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-contact
 ---
 
 # Contacting EDI Cloud Operations
-<a name="eco-contact"></a>
 
 Your designated E-SDM provides advisory assistance across EDI and has a detailed understanding of your use case and technology architecture for your managed environment. Your E-SDM works with account managers, technical account managers (TAMs), cloud architects (CAs), and AWS solutions architects (SAs), as applicable. The E-SDM is your primary point of contact for EDI.
 

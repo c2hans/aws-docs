@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Use `CreateQueue` with an AWS SDK or CLI
-<a name="example_sqs_CreateQueue_section"></a>
 
 The following code examples show how to use `CreateQueue`.
 

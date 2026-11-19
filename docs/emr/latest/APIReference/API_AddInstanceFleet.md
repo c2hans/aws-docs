@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_AddInstanceF
 ---
 
 # AddInstanceFleet
-<a name="API_AddInstanceFleet"></a>
 
 Adds an instance fleet to a running cluster.
 

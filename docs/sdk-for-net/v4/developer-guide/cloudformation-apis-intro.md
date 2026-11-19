@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Accessing CloudFormation with the AWS SDK for .NET
-<a name="cloudformation-apis-intro"></a>
 
 The AWS SDK for .NET supports [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/), which creates and provisions AWS infrastructure deployments predictably and repeatedly.
 

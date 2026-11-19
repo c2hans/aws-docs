@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetConnec
 ---
 
 # GetConnectorDestination
-<a name="API_GetConnectorDestination"></a>
 
 Get connector destination details linked to a cloud-to-cloud (C2C) connector.
 

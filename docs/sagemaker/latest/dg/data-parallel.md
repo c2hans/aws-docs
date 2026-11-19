@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html
 ---
 
 # Run distributed training with the SageMaker AI distributed data parallelism library
-<a name="data-parallel"></a>
 
 The SageMaker AI distributed data parallelism (SMDDP) library extends SageMaker training capabilities on deep learning models with near-linear scaling efficiency by providing implementations of collective communication operations optimized for AWS infrastructure.
 

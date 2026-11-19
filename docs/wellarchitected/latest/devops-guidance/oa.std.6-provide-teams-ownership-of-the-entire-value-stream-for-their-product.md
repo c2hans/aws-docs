@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.6] Provide teams ownership of the entire value stream for their product
-<a name="oa.std.6-provide-teams-ownership-of-the-entire-value-stream-for-their-product"></a>
 
  **Category:** FOUNDATIONAL
 

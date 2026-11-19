@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerFilter
-<a name="API_EntityRecognizerFilter"></a>
 
 Provides information for filtering a list of entity recognizers. You can only specify one filtering parameter in a request. For more information, see the `ListEntityRecognizers` operation./>
 

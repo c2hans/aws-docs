@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Alex
 ---
 
 # AlexaForBusinessDeviceSetup
-<a name="AlexaForBusinessDeviceSetup"></a>
 
 **Description**: Provide device setup access to AlexaForBusiness services
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # LinuxCapabilities
-<a name="API_LinuxCapabilities"></a>
 
 A set of Linux capabilities that are added to a container's default Docker configuration for a container defined in the [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html). For more detailed information about these Linux capabilities, see the [capabilities(7)](https://man7.org/linux/man-pages/man7/capabilities.7.html) Linux manual page.
 

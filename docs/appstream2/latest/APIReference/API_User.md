@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_User.
 ---
 
 # User
-<a name="API_User"></a>
 
 Describes a user in the user pool.
 

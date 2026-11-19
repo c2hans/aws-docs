@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GlobalTableGlobalSecondaryIndexSettingsUpdate
-<a name="API_GlobalTableGlobalSecondaryIndexSettingsUpdate"></a>
 
 Represents the settings of a global secondary index for a global table that will be modified.
 

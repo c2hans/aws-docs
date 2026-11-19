@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/use-notifications.html
 ---
 
 # Using chat notifications
-<a name="use-notifications"></a>
 
 By default, Amazon Chime displays a notification whenever you recieve a chat message. You can take several actions on notifications. For example, you can use your operating system settings to turn off notifications. You can also drag the notification to another part of your screen, or use Amazon Chime's settings to turn off just the notification sound.
 

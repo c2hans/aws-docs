@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # HistoricalUsageEntity
-<a name="API_AWSBCMPricingCalculator_HistoricalUsageEntity"></a>
 
  Represents historical usage data for a specific entity.
 

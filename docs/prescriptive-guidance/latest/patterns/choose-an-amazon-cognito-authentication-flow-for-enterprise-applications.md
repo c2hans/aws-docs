@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ch
 ---
 
 # Choose an Amazon Cognito authentication flow for enterprise applications
-<a name="choose-an-amazon-cognito-authentication-flow-for-enterprise-applications"></a>
 
 *Michael Daehnert and Fabian Jahnke, Amazon Web Services*
 

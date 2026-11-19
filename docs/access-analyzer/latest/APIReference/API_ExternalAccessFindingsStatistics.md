@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # ExternalAccessFindingsStatistics
-<a name="API_ExternalAccessFindingsStatistics"></a>
 
 Provides aggregate statistics about the findings for the specified external access analyzer.
 

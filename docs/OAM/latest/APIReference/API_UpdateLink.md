@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_UpdateLink.h
 ---
 
 # UpdateLink
-<a name="API_UpdateLink"></a>
 
 Use this operation to change what types of data are shared from a source account to its linked monitoring account sink. You can't change the sink or change the monitoring account with this operation.
 

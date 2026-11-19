@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-expo
 ---
 
 # Exporting your estimates
-<a name="pc-export-estimates"></a>
 
 You can export your AWS Pricing Calculator workload estimates as a JSON or CSV file. You can only export your workload estimates through the AWS Cost Management console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteComman
 ---
 
 # DeleteCommandExecution
-<a name="API_DeleteCommandExecution"></a>
 
 Delete a command execution.
 

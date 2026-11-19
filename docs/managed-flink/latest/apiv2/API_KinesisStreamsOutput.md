@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisSt
 ---
 
 # KinesisStreamsOutput
-<a name="API_KinesisStreamsOutput"></a>
 
 When you configure a SQL-based Kinesis Data Analytics application's output, identifies a Kinesis data stream as the destination. You provide the stream Amazon Resource Name (ARN).
 

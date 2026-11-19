@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Setting up Systems Manager console access
-<a name="systems-manager-setting-up-console-access"></a>
 
 To use AWS Systems Manager in the AWS Management Console, you must have the correct permissions configured.
 

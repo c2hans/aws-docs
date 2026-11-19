@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListL
 ---
 
 # ListLimitsProfiles
-<a name="API_ListLimitsProfiles"></a>
 
 Lists all limits profiles in an Amazon Quick Sight account. Results are paginated. Use the `maxResults` parameter to limit the number of results returned in a single call, and use the `nextToken` parameter to retrieve the next page of results.
 

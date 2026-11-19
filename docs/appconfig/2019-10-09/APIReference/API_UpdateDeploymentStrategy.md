@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Up
 ---
 
 # UpdateDeploymentStrategy
-<a name="API_UpdateDeploymentStrategy"></a>
 
 Updates a deployment strategy.
 

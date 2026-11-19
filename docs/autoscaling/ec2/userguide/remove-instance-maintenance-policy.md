@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/remove-instanc
 ---
 
 # Remove an instance maintenance policy
-<a name="remove-instance-maintenance-policy"></a>
 
 If you want to stop using an instance maintenance policy with your Auto Scaling group, you can remove it.
 

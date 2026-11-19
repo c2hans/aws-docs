@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-register-clu
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Register target clusters
-<a name="argocd-register-clusters"></a>
 
 Register clusters to enable Argo CD to deploy applications to them. You can register the same cluster where Argo CD is running (local cluster) or remote clusters in different accounts or regions. Once a cluster is registered, it will remain in an Unknown connection state until you create an application within that cluster. To create an Argo CD application after your cluster is registered, see [Create Applications](argocd-create-application.md).
 

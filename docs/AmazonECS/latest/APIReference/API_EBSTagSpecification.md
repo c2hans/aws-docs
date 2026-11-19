@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_EBSTag
 ---
 
 # EBSTagSpecification
-<a name="API_EBSTagSpecification"></a>
 
 The tag specifications of an Amazon EBS volume.
 

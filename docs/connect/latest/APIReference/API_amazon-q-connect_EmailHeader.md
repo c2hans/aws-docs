@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # EmailHeader
-<a name="API_amazon-q-connect_EmailHeader"></a>
 
 The email header to include in email messages.
 

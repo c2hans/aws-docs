@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ---
 
 # Conclusion
-<a name="next-steps"></a>
 
 This guide provided you with the knowledge to harness golden images to scale your manufacturing processes. We recommend that you select your preferred [provisioning method](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/device-manufacturing-provisioning.html) for your devices carefully, and consider whether your hardware design will use a [hardware security module (HSM)](https://docs.aws.amazon.com/greengrass/v2/developerguide/hardware-security.html) for high security posture. These choices affect how you implement your production line and subsequent field deployments.
 

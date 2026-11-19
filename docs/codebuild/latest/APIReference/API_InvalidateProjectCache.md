@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Invali
 ---
 
 # InvalidateProjectCache
-<a name="API_InvalidateProjectCache"></a>
 
 Resets the cache for a project.
 

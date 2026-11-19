@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-create
 ---
 
 # Creating reports from an analysis in AWS Quick Sight
-<a name="qs-reports-create-reports"></a>
 
 Pixel perfect reports are created at the sheet level of an analysis in AWS Quick Sight. When you create a new analysis or a new sheet in an existing analysis, you choose whether to make the new sheet an **Interactive dashboard** or a **Pixel perfect report**. This way, you can have analyses for interactive dashboards only, analyses for pixel perfect reports only, or you can have an analysis that includes both interactive dashboards and pixel perfect reports.
 

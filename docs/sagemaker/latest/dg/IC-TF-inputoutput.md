@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/IC-TF-inputoutput.ht
 ---
 
 # Input and output interface for the Image Classification - TensorFlow algorithm
-<a name="IC-TF-inputoutput"></a>
 
 Each of the pretrained models listed in TensorFlow Hub Models can be fine-tuned to any dataset with any number of image classes. Be mindful of how to format your training data for input to the Image Classification - TensorFlow model.
 + **Training data input format:** Your training data should be a directory with as many subdirectories as the number of classes. Each subdirectory should contain images belonging to that class in .jpg, .jpeg, or .png format.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NodeSemantics
-<a name="API_NodeSemantics"></a>
 
 Semantic description of the service a context graph node represents.
 

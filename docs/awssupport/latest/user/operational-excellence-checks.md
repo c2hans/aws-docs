@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/operational-excel
 ---
 
 # Operational Excellence
-<a name="operational-excellence-checks"></a>
 
 You can use the following checks for the operational excellence category.
 

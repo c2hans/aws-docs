@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteHo
 ---
 
 # DeleteHostedZone
-<a name="API_DeleteHostedZone"></a>
 
 Deletes a hosted zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-throug
 ---
 
 # Throughput modes
-<a name="feature-store-throughput-mode"></a>
 
 Amazon SageMaker Feature Store provides two pricing models to choose from: on-demand (`On-demand`) and provisioned (`Provisioned`) throughput modes. `On-demand` works best for less predictable traffic, while `Provisioned` works best for consistent and predictable traffic.
 

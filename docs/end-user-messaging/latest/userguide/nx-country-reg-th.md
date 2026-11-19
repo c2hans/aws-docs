@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Thailand registration
-<a name="nx-country-reg-th"></a>
 
 The following registrations are available for Thailand.
 

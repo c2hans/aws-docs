@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/issues-edi
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Editing and collaborating on issues in CodeCatalyst
-<a name="issues-edit-collaborate-issue"></a>
 
 **Contents**
 + [Editing an issue](issues-edit-issue.md)

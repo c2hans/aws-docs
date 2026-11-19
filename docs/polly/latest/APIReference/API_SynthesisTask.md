@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_SynthesisT
 ---
 
 # SynthesisTask
-<a name="API_SynthesisTask"></a>
 
 SynthesisTask object that provides information about a speech synthesis task.
 

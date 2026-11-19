@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/view-manage
 ---
 
 # Viewing Compliance History for your AWS Resources with AWS Config
-<a name="view-manage-resource-console"></a>
 
 **Important**
 The `AWS::Config::ResourceCompliance` resource type is used to store historical compliance results for resources. Recording this resource type is **not required** for Config rules to evaluate resources or for viewing current compliance status in the console.

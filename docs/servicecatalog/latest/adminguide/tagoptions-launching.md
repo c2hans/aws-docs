@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagopti
 ---
 
 # Launching a Product with TagOptions
-<a name="tagoptions-launching"></a>
 
 When a user launches a product that has TagOptions, AWS Service Catalog performs the following actions on your behalf:
 + Collects all TagOptions for the product and the launching portfolio.

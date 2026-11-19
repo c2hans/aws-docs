@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/apache-kafka-r
 ---
 
 # Apache Kafka
-<a name="apache-kafka-rule-action"></a>
 
 The Apache Kafka (Kafka) action sends messages directly to your [Amazon Managed Streaming for Apache Kafka](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) (Amazon MSK), Apache Kafka clusters managed by third-party providers such as [Confluent Cloud](https://www.confluent.io/), or self-managed Apache Kafka clusters. With Kafka rule action, you can route your IoT data to Kafka clusters. This enables you to build high-performance data pipelines for various purposes, such as streaming analytics, data integration, visualization, and mission-critical business applications.
 

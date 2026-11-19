@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-res
 ---
 
 # Restoring an expired or deleted domain
-<a name="domain-restore-expired"></a>
 
 If you don't renew a domain before the end of the late-renewal period or if you accidentally delete the domain, for some registries for top-level domains (TLDs), you can [restore](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_RestoreDomain.html) the domain before it becomes available for others to register.
 

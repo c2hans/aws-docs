@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/pmp-eventb
 ---
 
 # AWS Marketplace Private Marketplace EventBridge events
-<a name="pmp-eventbridge"></a>
 
 Private marketplace administrators and buyers receive *events* from AWS Marketplace every time a buyer creates a request for a product. They also receive events when the request is approved or declined. The events contain details such as product IDs and seller names.
 

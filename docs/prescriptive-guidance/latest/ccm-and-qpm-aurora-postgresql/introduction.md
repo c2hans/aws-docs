@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm
 ---
 
 # Use CCM and QPM to optimize recovery performance and execution plans in Amazon Aurora PostgreSQL
-<a name="introduction"></a>
 
 *Raunak Rishabh, Rohit Kapoor, and Sujitha Sasikumaran, Amazon Web Services*
 

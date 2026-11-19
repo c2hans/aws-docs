@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Snowflake Key Pair
-<a name="mes-partner-Snowflake"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c53b3"></a>

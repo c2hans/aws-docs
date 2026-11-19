@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Clean up
-<a name="clean-up"></a>
 
 ## Delete the example resources
 <a name="delete-the-example-resources"></a>

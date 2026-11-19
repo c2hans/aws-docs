@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestA
 ---
 
 # TestAction
-<a name="API_TestAction"></a>
 
 Represents a fault action that a test runs, along with the resource type it targets.
 

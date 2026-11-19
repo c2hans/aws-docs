@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/encryption-at
 ---
 
 # Encryption at rest
-<a name="encryption-at-rest"></a>
 
 **Important**
  Dual-layer server-side encryption with AWS KMS (DSSE-KMS) is only available in the AWS GovCloud (US) Regions.

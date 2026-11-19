@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutEventsSystemMetadata
-<a name="API_PutEventsSystemMetadata"></a>
 
 System metadata for PutEvents entries. ContentType is not applicable (always application/eventbridge\+json, set server-side).
 

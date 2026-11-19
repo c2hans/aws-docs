@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GroupNameAnd
 ---
 
 # GroupNameAndArn
-<a name="API_GroupNameAndArn"></a>
 
 The name and ARN of a group.
 

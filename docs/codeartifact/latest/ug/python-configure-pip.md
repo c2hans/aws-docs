@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/python-configure-
 ---
 
 # Configure and use pip with CodeArtifact
-<a name="python-configure-pip"></a>
 
 [pip](https://pypi.org/project/pip/) is the package installer for Python packages. To use pip to install Python packages from your CodeArtifact repository, you must first configure the pip client with your CodeArtifact repository information and credentials.
 

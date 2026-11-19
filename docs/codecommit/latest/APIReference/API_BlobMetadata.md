@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_BlobM
 ---
 
 # BlobMetadata
-<a name="API_BlobMetadata"></a>
 
 Returns information about a specific Git blob object.
 

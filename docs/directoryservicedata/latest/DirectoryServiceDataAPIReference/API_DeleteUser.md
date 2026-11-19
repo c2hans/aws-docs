@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # DeleteUser
-<a name="API_DeleteUser"></a>
 
 Deletes a user.
 

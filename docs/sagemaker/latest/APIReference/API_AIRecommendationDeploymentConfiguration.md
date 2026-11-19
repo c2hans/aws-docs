@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationDeploymentConfiguration
-<a name="API_AIRecommendationDeploymentConfiguration"></a>
 
 The deployment configuration for a recommendation.
 

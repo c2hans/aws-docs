@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Ge
 ---
 
 # GetSession
-<a name="API_runtime_GetSession"></a>
 
 Returns session information for a specified bot, alias, and user.
 

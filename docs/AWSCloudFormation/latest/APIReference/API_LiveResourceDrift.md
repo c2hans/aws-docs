@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # LiveResourceDrift
-<a name="API_LiveResourceDrift"></a>
 
 Contains drift information for a resource property, including actual value, previous deployment value, and drift detection timestamp.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ty
 ---
 
 # AWS AppConfig Data
-<a name="API_Types_AWS_AppConfig_Data"></a>
 
 The following data types are supported by AWS AppConfig Data:
 +  [BadRequestDetails](API_appconfigdata_BadRequestDetails.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # Tutorial: Run a query that produces a time series visualization
-<a name="CWL_AnalyzeLogData_VisualizationQuery"></a>
 
 When you run a query that uses the `bin()` function to group the returned results by a time period, you can view the results as a line graph, stacked area graph, pie chart, or bar chart. This helps you more efficiently visualize trends in log events over time.
 

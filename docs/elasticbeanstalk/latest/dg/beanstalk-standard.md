@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/beanstalk-sta
 ---
 
 # Beanstalk Standard
-<a name="beanstalk-standard"></a>
 
 Deploy your application to a managed platform on Amazon Elastic Compute Cloud (Amazon EC2) instances that Elastic Beanstalk provisions and operates.
 

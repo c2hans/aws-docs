@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Send logs to CloudWatch Logs
-<a name="Container-Insights-EKS-logs"></a>
 
 To send logs from your containers to Amazon CloudWatch Logs, you can use Fluent Bit. For more information, see [Fluent Bit](https://fluentbit.io/).
 

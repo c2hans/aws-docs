@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/chat-with-conn
 ---
 
 # Use the Contact Control Panel (CCP) in Connect Customer to chat with contacts
-<a name="chat-with-connect-contacts"></a>
 
 When you set your status in the CCP to **Available**, Connect Customer delivers calls or chats to you, based on the settings in your [routing profile](routing-profiles.md). An administrator can specify that up to 10 chat conversations can be routed to you at the same time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_tr
 ---
 
 # Best practices
-<a name="orgs_transfer_billing-best-practices"></a>
 
 This page covers best practices for before you start using billing transfer, while you use it, and before you stop using it (if applicable).
 

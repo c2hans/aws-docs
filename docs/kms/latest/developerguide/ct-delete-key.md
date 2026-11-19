@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-delete-key.
 ---
 
 # DeleteKey
-<a name="ct-delete-key"></a>
 
 These examples show the AWS CloudTrail log entry that is generated when a KMS key is deleted. To delete a KMS key, you use the [ScheduleKeyDeletion](https://docs.aws.amazon.com/kms/latest/APIReference/API_ScheduleKeyDeletion.html) operation. After the specified waiting period expires, AWS KMS deletes the KMS key and records an entry like the following one in your CloudTrail log to record that event.
 

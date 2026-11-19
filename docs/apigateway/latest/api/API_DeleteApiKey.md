@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteApiKey.h
 ---
 
 # DeleteApiKey
-<a name="API_DeleteApiKey"></a>
 
 Deletes the ApiKey resource.
 

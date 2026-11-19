@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF05-BP05 Consider the benefits of additional AWS storage services
-<a name="eucperf05-bp05"></a>
 
  As an alternative to internal storage, some workloads benefit from shared storage for collaboration or to enable persisting data in centralized locations. Using non-internal storage services delivers storage with customizable performance, which gives administrators more control for common storage attributes like IOPS, throughput, and volume size that directly impact performance and user experience.
 

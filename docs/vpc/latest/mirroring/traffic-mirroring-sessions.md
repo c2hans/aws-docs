@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-s
 ---
 
 # Understand traffic mirror session concepts
-<a name="traffic-mirroring-sessions"></a>
 
 A *traffic mirror session* establishes a relationship between a traffic mirror source and a traffic mirror target. Traffic mirror sessions are evaluated based on the ascending session number that you define when you create the session.
 

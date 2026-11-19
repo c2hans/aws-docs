@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Delete policies
-<a name="sagemaker-hyperpod-eks-operate-console-ui-governance-policies-delete"></a>
 
 You can delete your **Cluster policy** and **Compute allocation** configurations using the SageMaker AI console or AWS CLI. The following page provides instructions on how to delete your SageMaker HyperPod task governance policies and configurations.
 

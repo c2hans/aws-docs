@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/using-power-bi-with-a
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 If you’re looking to use Microsoft Power BI Desktop, we generally find that customers start experimenting with the software on premises, connecting to data sources over the internet. While private connectivity options exist for using Site-to-Site VPN and Direct Connect, many customers have concluded that running Microsoft Power BI Desktop in Amazon WorkSpaces provides a better performing experience.
 

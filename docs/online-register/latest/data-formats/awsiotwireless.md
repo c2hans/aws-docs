@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsi
 ---
 
 # Data retrieval APIs for AWS IoT Wireless
-<a name="awsiotwireless"></a>
 
 AWS IoT Wireless provides the following APIs for data retrieval.
 

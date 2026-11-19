@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-content-sh
 ---
 
 # Add basic information
-<a name="jumpstart-content-sharing-info"></a>
 
 Adding a model in JumpStart involves providing some basic information about the model you want to train. This information helps define the characteristics and capabilities of your model, as well as improving its discoverability and searchability. To create a new model, follow these steps:
 

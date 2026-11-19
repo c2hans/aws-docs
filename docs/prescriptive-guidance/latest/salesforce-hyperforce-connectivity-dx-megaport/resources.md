@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/salesforce-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS documentation
 <a name="9999999999999999aws--documentation.df4d7dec-6d35-51ce-a648-561ecd9d0dea"></a>

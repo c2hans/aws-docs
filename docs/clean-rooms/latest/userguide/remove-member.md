@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/remove-memb
 ---
 
 # Removing members from a collaboration
-<a name="remove-member"></a>
 
 **Note**
 Before you begin, note that removing a member:

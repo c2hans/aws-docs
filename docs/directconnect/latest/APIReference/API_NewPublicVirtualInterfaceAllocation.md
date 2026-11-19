@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Ne
 ---
 
 # NewPublicVirtualInterfaceAllocation
-<a name="API_NewPublicVirtualInterfaceAllocation"></a>
 
 Information about a public virtual interface to be provisioned on a connection.
 

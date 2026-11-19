@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tas
 ---
 
 # TaskSummary
-<a name="API_TaskSummary"></a>
 
 Contains summary information about a task.
 

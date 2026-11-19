@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/finding-u
 ---
 
 # Finding untagged and mistagged resources for your organization with Resource Explorer
-<a name="finding-untagged-mistagged-resources"></a>
 
 To find untagged resources in your account, use AWS Resource Explorer with a query that uses `tag:none`. Resource Explorer provides comprehensive search capabilities to identify resources that lack proper tagging or have inconsistent tag values across your organization.
 

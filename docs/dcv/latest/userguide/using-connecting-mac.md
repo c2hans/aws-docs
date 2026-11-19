@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-ma
 ---
 
 # Connecting to a Amazon DCV session using the macOS client
-<a name="using-connecting-mac"></a>
 
 **To connect to a session using the macOS client**
 

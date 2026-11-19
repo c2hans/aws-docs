@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CancelMetada
 ---
 
 # CancelMetadataModelConversion
-<a name="API_CancelMetadataModelConversion"></a>
 
 Cancels a single metadata model conversion operation that was started with `StartMetadataModelConversion`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/domo-connection-limitatio
 ---
 
 # Domo limitations
-<a name="domo-connection-limitations"></a>
 
 The following are limitations or notes for Domo:
 + Due to an SDK limitation, filtration does not work as expected for the queryable fields that starts with '\_' (for example: \_BATCH\_ID ).

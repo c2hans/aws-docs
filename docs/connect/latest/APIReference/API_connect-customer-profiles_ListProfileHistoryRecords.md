@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListProfileHistoryRecords
-<a name="API_connect-customer-profiles_ListProfileHistoryRecords"></a>
 
 Returns a list of history records for a specific profile, for a specific domain.
 

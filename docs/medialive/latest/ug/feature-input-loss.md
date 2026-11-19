@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-input-loss.h
 ---
 
 # Handling loss of video input
-<a name="feature-input-loss"></a>
 
 You can customize the way that MediaLive handles media when the video input into the channel is lost.
 

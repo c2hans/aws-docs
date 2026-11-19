@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AccountTakeoverActionsType
-<a name="API_AccountTakeoverActionsType"></a>
 
 A list of account-takeover actions for each level of risk that Amazon Cognito might assess with threat protection features.
 

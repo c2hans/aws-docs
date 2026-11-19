@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Cloud
 ---
 
 # CloudWatchConfiguration
-<a name="API_CloudWatchConfiguration"></a>
 
 The configuration identifies the CloudWatch dataset used as a scraper destination.
 

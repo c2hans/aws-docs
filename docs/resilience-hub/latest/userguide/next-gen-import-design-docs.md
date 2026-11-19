@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Import design documents
-<a name="next-gen-import-design-docs"></a>
 
 Design documents provide additional architectural context that the next generation of Resilience Hub uses during failure mode assessments. You can upload design documents stored in Amazon S3 as input sources for your service.
 

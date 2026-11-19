@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DomainDel
 ---
 
 # DomainDeliverabilityTrackingOption
-<a name="API_DomainDeliverabilityTrackingOption"></a>
 
 An object that contains information about the Deliverability dashboard subscription for a verified domain that you use to send email and currently has an active Deliverability dashboard subscription. If a Deliverability dashboard subscription is active for a domain, you gain access to reputation, inbox placement, and other metrics for the domain.
 

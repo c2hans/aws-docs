@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Hyperparameters reference
-<a name="model-customize-mtrl-hyperparams"></a>
 
 The following table lists all configurable hyperparameters for multi-turn RL training jobs. Recipe defaults are included below.
 

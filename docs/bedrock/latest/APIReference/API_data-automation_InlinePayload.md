@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # InlinePayload
-<a name="API_data-automation_InlinePayload"></a>
 
 Inline payload for ingestion jobs.
 

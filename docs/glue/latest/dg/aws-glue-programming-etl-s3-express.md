@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using Amazon S3 Express One Zone with AWS Glue
-<a name="aws-glue-programming-etl-s3-express"></a>
 
 With AWS Glue version 5.1 and higher, you can read and write data in [Amazon S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-high-performance.html#s3-express-one-zone) directory buckets from your ETL jobs. S3 Express One Zone is a high-performance, single-zone Amazon S3 storage class that delivers consistent, single-digit millisecond data access for latency-sensitive applications.
 

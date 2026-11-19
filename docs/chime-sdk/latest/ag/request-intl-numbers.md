@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/request-intl-numbers
 ---
 
 # Requesting international phone numbers
-<a name="request-intl-numbers"></a>
 
 The steps in this section explain how to request international phone numbers for use with the Amazon Chime SDK. You can only use international numbers with the **SIP Media Application Dial-In** product type.
 

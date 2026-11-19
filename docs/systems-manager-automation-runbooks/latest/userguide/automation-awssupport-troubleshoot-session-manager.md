@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootSessionManager`
-<a name="automation-awssupport-troubleshoot-session-manager"></a>
 
  **Description**
 

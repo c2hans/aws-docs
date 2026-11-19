@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListIdentityResolutionJobs
-<a name="API_connect-customer-profiles_ListIdentityResolutionJobs"></a>
 
 Lists all of the Identity Resolution Jobs in your domain. The response sorts the list by `JobStartTime`.
 

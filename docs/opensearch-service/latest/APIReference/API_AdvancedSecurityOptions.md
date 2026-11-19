@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AdvancedSecurityOptions
-<a name="API_AdvancedSecurityOptions"></a>
 
 Container for fine-grained access control settings.
 

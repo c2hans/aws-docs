@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeQueue
-<a name="API_DescribeQueue"></a>
 
 Returns a description of the specified queue, including its status, the data stream it delivers records from, and its configuration attributes.
 

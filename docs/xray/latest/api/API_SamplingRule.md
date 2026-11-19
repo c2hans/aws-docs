@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingRule.html
 ---
 
 # SamplingRule
-<a name="API_SamplingRule"></a>
 
 A sampling rule that services use to decide whether to instrument a request. Rule fields can match properties of the service, or properties of a request. The service can ignore rules that don't match its properties.
 

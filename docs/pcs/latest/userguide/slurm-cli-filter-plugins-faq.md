@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-cli-filter-pl
 ---
 
 # Frequently asked questions about Slurm CLI Filter Plugins in AWS PCS
-<a name="slurm-cli-filter-plugins-faq"></a>
 
 Review these frequently asked questions about CLI Filter Plugins.
 

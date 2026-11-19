@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Monitor the solution with Service Catalog AppRegistry
-<a name="monitor-the-solution-with-service-catalog-appregistry"></a>
 
 How to monitor the Live Streaming on AWS with Amazon S3 solution with AppRegistry
 

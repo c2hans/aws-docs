@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListRecordingConfigurations
-<a name="API_ListRecordingConfigurations"></a>
 
 Gets summary information about all recording configurations in your account, in the AWS region where the API request is processed.
 

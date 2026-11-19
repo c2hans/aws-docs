@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeM
 ---
 
 # DescribeMetricCategories
-<a name="API_DescribeMetricCategories"></a>
 
 Describes the specified metric categories, or all of your metric categories.
 

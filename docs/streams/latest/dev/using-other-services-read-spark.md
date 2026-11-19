@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/using-other-services-
 ---
 
 # Apache Spark
-<a name="using-other-services-read-spark"></a>
 
 Apache Spark is a unified analytics engine for large-scale data processing. It provides high-level APIs in Java, Scala, Python and R, and an optimized engine that supports general execution graphs. You can use Apache Spark to build stream processing applications that consume the data in your Kinesis data streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/customize-synth.html
 ---
 
 # Customize CDK stack synthesis
-<a name="customize-synth"></a>
 
 You can customize AWS Cloud Development Kit (AWS CDK) stack synthesis by modifying the default synthesizer, using other available built-in synthesizers, or creating your own synthesizer.
 

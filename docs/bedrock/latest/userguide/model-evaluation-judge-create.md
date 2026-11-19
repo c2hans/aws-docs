@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Create a model evaluation job that uses an LLM as a judge
-<a name="model-evaluation-judge-create"></a>
 
 You can create a model evaluation job using the AWS Management Console, AWS CLI, or a supported AWS SDK.
 

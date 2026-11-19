@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Conn
 ---
 
 # ConnectedHomeSettingsForUpdate
-<a name="API_ConnectedHomeSettingsForUpdate"></a>
 
  The label detection settings you want to use in your stream processor. This includes the labels you want the stream processor to detect and the minimum confidence level allowed to label objects.
 

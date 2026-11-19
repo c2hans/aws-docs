@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Network
 ---
 
 # NetworkConfig
-<a name="API_NetworkConfig"></a>
 
 The network configuration for a notebook run in Amazon SageMaker Unified Studio.
 

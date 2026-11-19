@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/troubleshooting-efs-fileop
 ---
 
 # Troubleshooting file operation errors related to quotas
-<a name="troubleshooting-efs-fileop-errors"></a>
 
 When you access EFS file systems, certain limits on the files in the file system apply. Exceeding these limits causes file operation errors. For more information about file-based limits in Amazon EFS, see [Amazon EFS quotas](limits.md).
 

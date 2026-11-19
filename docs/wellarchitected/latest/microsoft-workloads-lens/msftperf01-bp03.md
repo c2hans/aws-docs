@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTPERF01-BP03 Run serverless Microsoft applications on AWS Lambda
-<a name="msftperf01-bp03"></a>
 
  Use cases such as event-driven, like message processing and API routes, application-based function, like packaging and entire cross-platform ASP.NET runtime, file processing, mobile backend, cloud automation, and similar are usually suitable for running on AWS Lambda.
 

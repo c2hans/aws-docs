@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Troubleshooting
-<a name="Investigations-Troubleshooting"></a>
 
 **Topics**
 + [CloudWatch investigations cannot assume the necessary IAM roles or permissions. Please verify required roles and permissions are correctly configured](#Investigations-Troubleshooting-Permissions)

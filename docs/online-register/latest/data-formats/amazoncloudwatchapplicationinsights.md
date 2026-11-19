@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon CloudWatch Application Insights
-<a name="amazoncloudwatchapplicationinsights"></a>
 
 Amazon CloudWatch Application Insights provides the following APIs for data retrieval.
 

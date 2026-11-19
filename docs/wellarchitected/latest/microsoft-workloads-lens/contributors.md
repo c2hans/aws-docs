@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and groups contributed to this document:
 +  Bruno Lopes, Sr. Geo SSA Containers, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-custom-ami-
 ---
 
 # Cluster management with custom AMIs
-<a name="hyperpod-custom-ami-cluster-management"></a>
 
 After the custom AMI is built, you can use it for creating or updating an Amazon SageMaker HyperPod cluster. You can also scale up or add instance groups that use the new AMI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/security-permis
 ---
 
 # Permissions example scenario
-<a name="security-permissions-example-scenario"></a>
 
 The following scenario helps demonstrate how you can set up permissions to secure access to data in AWS Lake Formation.
 

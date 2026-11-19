@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-582-release.
 ---
 
 # Amazon EMR release 5.8.2
-<a name="emr-582-release"></a>
 
 ## 5.8.2 application versions
 <a name="emr-582-app-versions"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/search
 ---
 
 # Searching DynamoDB Data with Amazon CloudSearch
-<a name="searching-dynamodb-data"></a>
 
 You can specify a DynamoDB table as a source when configuring indexing options or uploading data to a search domain through the console. This enables you to quickly set up a search domain to experiment with searching data stored in DynamoDB database tables.
 

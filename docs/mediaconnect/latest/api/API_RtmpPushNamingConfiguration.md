@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpPushNami
 ---
 
 # RtmpPushNamingConfiguration
-<a name="API_RtmpPushNamingConfiguration"></a>
 
 The configuration settings for the RTMP (Real-Time Messaging Protocol) application and stream names.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migrating Windows Server
-<a name="migrating-windows-server-workloads"></a>
 
 This section focuses on the different options available for migrating Windows Server to AWS.
 

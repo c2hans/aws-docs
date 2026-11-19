@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tutorial-add-crawler.html
 ---
 
 # Tutorial: Adding an AWS Glue crawler
-<a name="tutorial-add-crawler"></a>
 
 For this AWS Glue scenario, you're asked to analyze arrival data for major air carriers to calculate the popularity of departure airports month over month. You have flights data for the year 2016 in CSV format stored in Amazon S3. Before you transform and analyze your data, you catalog its metadata in the AWS Glue Data Catalog.
 

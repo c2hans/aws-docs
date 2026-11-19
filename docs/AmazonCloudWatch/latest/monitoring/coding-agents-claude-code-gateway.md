@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/codin
 ---
 
 # Set up Claude Code with the Claude apps gateway
-<a name="coding-agents-claude-code-gateway"></a>
 
 The Claude apps gateway is a self-hosted service that sits between your developers' Claude Code clients and the model provider. Developers sign in with your corporate identity provider (IdP) instead of holding API keys or cloud credentials. The gateway holds the upstream credential, enforces model access and managed settings by IdP group, and relays usage telemetry to your observability stack—including Amazon CloudWatch.
 

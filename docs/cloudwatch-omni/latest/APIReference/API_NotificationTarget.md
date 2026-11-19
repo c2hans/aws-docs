@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NotificationTarget
-<a name="API_NotificationTarget"></a>
 
 The destination for a notification.
 

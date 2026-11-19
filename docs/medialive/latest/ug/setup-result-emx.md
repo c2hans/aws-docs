@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-result-emx.htm
 ---
 
 # Result of this procedure
-<a name="setup-result-emx"></a>
 
 The results of this setup are illustrated in the diagram that follows. There are three main components:
 + The upstream system (purple box)

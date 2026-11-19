@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetF
 ---
 
 # GetFaceLivenessSessionResults
-<a name="API_GetFaceLivenessSessionResults"></a>
 
 Retrieves the results of a specific Face Liveness session. It requires the `sessionId` as input, which was created using `CreateFaceLivenessSession`. Returns the corresponding Face Liveness confidence score, a reference image that includes a face bounding box, and audit images that also contain face bounding boxes. The Face Liveness confidence score ranges from 0 to 100.
 

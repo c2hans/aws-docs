@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansAmortizedCommitment
-<a name="API_SavingsPlansAmortizedCommitment"></a>
 
 The amortized amount of Savings Plans purchased in a specific account during a specific time interval.
 

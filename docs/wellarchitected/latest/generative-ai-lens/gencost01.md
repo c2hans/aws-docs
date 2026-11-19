@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Model selection and cost optimization
-<a name="gencost01"></a>
 
 | GENCOST01: How do you select the appropriate model to optimize costs? |
 | --- |

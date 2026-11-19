@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local-test-
 ---
 
 # Using mocked service integrations for testing in Step Functions Local
-<a name="sfn-local-test-sm-exec"></a>
 
 **Step Functions Local is unsupported**
 Step Functions Local does **not** provide feature parity and is **unsupported**.

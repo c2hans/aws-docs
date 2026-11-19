@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Dataset access and versioning
-<a name="raidp04"></a>
 
 | RAIDP04: How will you manage dataset access and versioning?  |
 | --- |

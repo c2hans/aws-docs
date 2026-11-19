@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # TimePeriod
-<a name="API_automation_TimePeriod"></a>
 
 Defines a time range with inclusive start time and exclusive end time for filtering and analysis.
 

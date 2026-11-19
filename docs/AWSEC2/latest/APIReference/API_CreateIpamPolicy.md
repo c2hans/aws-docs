@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateIpa
 ---
 
 # CreateIpamPolicy
-<a name="API_CreateIpamPolicy"></a>
 
 Creates an IPAM policy.
 

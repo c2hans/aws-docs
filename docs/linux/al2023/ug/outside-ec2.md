@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html
 ---
 
 # Using Amazon Linux 2023 outside of Amazon EC2
-<a name="outside-ec2"></a>
 
  The Amazon Linux 2023 container images can be run in compatible container runtime environments. For more information on how to use Amazon Linux 2023 inside a container, see [AL2023 in containers](container.md).
 

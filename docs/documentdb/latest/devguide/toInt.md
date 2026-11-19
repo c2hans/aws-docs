@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toInt.html
 ---
 
 # $toInt
-<a name="toInt"></a>
 
 New from version 4.0
 

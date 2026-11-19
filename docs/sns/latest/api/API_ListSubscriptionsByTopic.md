@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_ListSubscriptionsByTo
 ---
 
 # ListSubscriptionsByTopic
-<a name="API_ListSubscriptionsByTopic"></a>
 
 Returns a list of the subscriptions to a specific topic. Each call returns a limited list of subscriptions, up to 100. If there are more subscriptions, a `NextToken` is also returned. Use the `NextToken` parameter in a new `ListSubscriptionsByTopic` call to get further results.
 

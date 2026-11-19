@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericalAggregationFunction
-<a name="API_NumericalAggregationFunction"></a>
 
 Aggregation for numerical values.
 

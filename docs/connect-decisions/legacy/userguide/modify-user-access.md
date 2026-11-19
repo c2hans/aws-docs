@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/modif
 ---
 
 # Modifying existing user access
-<a name="modify-user-access"></a>
 
 To modify existing user access, follow these steps:
 

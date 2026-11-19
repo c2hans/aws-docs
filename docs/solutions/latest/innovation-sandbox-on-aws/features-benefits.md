@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Features and benefits
-<a name="features-benefits"></a>
 
  **Automate the creation of a sandbox environment**
 

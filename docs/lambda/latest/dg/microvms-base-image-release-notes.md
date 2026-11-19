@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-base-image-rel
 ---
 
 # Base image release notes
-<a name="microvms-base-image-release-notes"></a>
 
 This page lists the changes in each version of the AWS Lambda MicroVMs managed base image. For information about how base image versioning and deprecation works, see [MicroVM base images](microvms-images.md#microvms-images-base-images).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtListenerS
 ---
 
 # SrtListenerStandardSourceEndpointConfiguration
-<a name="API_SrtListenerStandardSourceEndpointConfiguration"></a>
 
 The configuration settings for a source endpoint that uses SRT in listener mode.
 

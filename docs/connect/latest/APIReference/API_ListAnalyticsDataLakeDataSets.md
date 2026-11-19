@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAnal
 ---
 
 # ListAnalyticsDataLakeDataSets
-<a name="API_ListAnalyticsDataLakeDataSets"></a>
 
 Lists the data lake datasets available to associate with for a given Connect Customer instance.
 

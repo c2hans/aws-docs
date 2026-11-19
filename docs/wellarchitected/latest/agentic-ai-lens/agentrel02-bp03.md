@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL02-BP03 Implement behavioral anomaly detection and monitoring
-<a name="agentrel02-bp03"></a>
 
  Generic logs miss what matters most for agents: decision points, tool invocations, and LLM interactions. Structured telemetry with behavioral baselines exposes anomalies early and gives operators the audit trail they need to reconstruct why an agent did what it did.
 

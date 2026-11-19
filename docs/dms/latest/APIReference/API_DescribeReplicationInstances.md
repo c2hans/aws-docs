@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationInstances
-<a name="API_DescribeReplicationInstances"></a>
 
 Returns information about replication instances for your account in the current region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # RefreshToken
-<a name="API_RefreshToken"></a>
 
 **Note**
 This is for internal use.

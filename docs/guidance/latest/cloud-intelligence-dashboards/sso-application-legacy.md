@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # SSO Application (Legacy Guide)
-<a name="sso-application-legacy"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

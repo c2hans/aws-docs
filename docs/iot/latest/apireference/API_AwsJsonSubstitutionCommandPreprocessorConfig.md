@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AwsJsonSubst
 ---
 
 # AwsJsonSubstitutionCommandPreprocessorConfig
-<a name="API_AwsJsonSubstitutionCommandPreprocessorConfig"></a>
 
 Configures the command to treat the `payloadTemplate` as a JSON document for preprocessing. This preprocessor substitutes placeholders with parameter values to generate the command execution request payload.
 

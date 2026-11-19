@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/co
 ---
 
 # Update an Amazon GameLift Servers managed container fleet
-<a name="containers-update-fleet"></a>
 
 You can update most of the properties of a managed container fleet, including the container group definitions. Depending on the settings being updated, a fleet update might initiate a new fleet deployment. In a fleet deployment, all instances in the fleet are removed and replaced with instances with the new configuration. Settings that require a deployment include:
 + Container group definitions, including updates to container images

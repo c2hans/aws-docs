@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsn
 ---
 
 # Data retrieval APIs for AWS Network Manager Chat
-<a name="awsnetworkmanagerchat"></a>
 
 AWS Network Manager Chat provides the following APIs for data retrieval.
 

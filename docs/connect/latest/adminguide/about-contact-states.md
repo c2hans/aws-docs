@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/about-contact-
 ---
 
 # About contact states in Connect Customer
-<a name="about-contact-states"></a>
 
 Contact states are events that appear in the lifecycle of a contact. You can locate them in two places: the real-time metrics reports and the agent event stream.
 

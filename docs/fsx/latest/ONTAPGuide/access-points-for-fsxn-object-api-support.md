@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/access-points-for-
 ---
 
 # Access point compatibility
-<a name="access-points-for-fsxn-object-api-support"></a>
 
 You can use access points to access data stored on an FSx for ONTAP volume using the following Amazon S3 APIs for data acccess. All the operations listed below can accept either access point ARNs or access point aliases.
 

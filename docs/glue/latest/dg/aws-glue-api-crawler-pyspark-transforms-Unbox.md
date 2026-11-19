@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # Unbox class
-<a name="aws-glue-api-crawler-pyspark-transforms-Unbox"></a>
 
 Unboxes (reformats) a string field in a `DynamicFrame`.
 

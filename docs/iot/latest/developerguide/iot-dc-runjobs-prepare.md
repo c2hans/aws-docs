@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-runjobs
 ---
 
 # Prepare the Raspberry Pi to run jobs
-<a name="iot-dc-runjobs-prepare"></a>
 
 The procedures in this section describe how to prepare your Raspberry Pi to run jobs by using the AWS IoT Device Client.
 

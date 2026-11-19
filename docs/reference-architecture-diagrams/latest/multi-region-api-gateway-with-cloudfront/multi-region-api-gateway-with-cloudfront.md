@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Multi-region API Gateway with CloudFront
-<a name="multi-region-api-gateway-with-cloudfront"></a>
 
 Publication date: **April 19, 2022 ([Diagram history](#diagram-history))**
 

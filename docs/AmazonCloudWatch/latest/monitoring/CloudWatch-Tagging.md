@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Tagging your Amazon CloudWatch resources
-<a name="CloudWatch-Tagging"></a>
 
  A *tag* is a custom attribute label that you or AWS assigns to an AWS resource.
 

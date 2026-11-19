@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatModelJobTask
-<a name="API_ThreatModelJobTask"></a>
 
 Represents an individual task within a threat model job.
 

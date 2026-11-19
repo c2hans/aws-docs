@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Graceful degradation and configuration management
-<a name="agentrel08"></a>
 
  Agents that detect degradation accurately through thorough telemetry and maintain consistent configuration across all instances make informed decisions about when to activate graceful degradation. Consistent configuration management helps agents have reliable, up-to-date information about capabilities and limitations across the agent environment.
 

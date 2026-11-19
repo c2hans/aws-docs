@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-cli/configuring-sm-cli.htm
 ---
 
 # Configuring the Amazon DCV Session Manager command line interface
-<a name="configuring-sm-cli"></a>
 
 This section provides instructions for configuring the settings of the Session Manager command line interface (CLI) for use with the Broker. Once you have configured these settings, you can perform session management tasks from the command line and able to automate remote desktop workflows in Amazon DCV servers.
 

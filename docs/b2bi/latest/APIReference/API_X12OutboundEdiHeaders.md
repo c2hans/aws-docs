@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12Outbound
 ---
 
 # X12OutboundEdiHeaders
-<a name="API_X12OutboundEdiHeaders"></a>
 
 A structure containing the details for an outbound EDI object.
 

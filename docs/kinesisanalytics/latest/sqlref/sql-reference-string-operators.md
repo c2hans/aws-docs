@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # String Operators
-<a name="sql-reference-string-operators"></a>
 
 You can use string operators for streaming SQL, including concatenation and string pattern comparison, to combine and compare strings.
 

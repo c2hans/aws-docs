@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/r
 ---
 
 # AWS billing and usage reports for CloudFront
-<a name="reports-billing"></a>
 
 AWS provides two usage reports for CloudFront:
 + The AWS billing report is a high-level view of all activity for AWS services that you're using, including CloudFront.
@@ -42,6 +41,7 @@ The billing report includes the following values that apply to CloudFront:
   + A code that identifies the type of data transfer
   + `Invalidations`
   + `Executions-CloudFrontFunctions`
+  + `NetworkCalls-CloudFrontFunctions`
   + `KeyValueStore-APIOperations`
   + `KeyValueStore-EdgeReads`
   + `RealTimeLog-KinesisDataStream`
@@ -82,6 +82,7 @@ The CloudFront usage report includes the following values:
   + A code that identifies the type of data transfer
   + `Invalidations`
   + `Executions-CloudFrontFunctions`
+  + `NetworkCalls-CloudFrontFunctions`
   + `KeyValueStore-APIOperations`
   + `KeyValueStore-EdgeReads`
   + `RealTimeLog-KinesisDataStream`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Understanding the DevOps environments
-<a name="understanding-the-dev-ops-environments"></a>
 
 To understand the branching strategies, you must understand the purpose and activities that occur in each environment. Establishing several environments helps you separate the development activities into stages, monitor those activities, and prevent the unintentional release of unapproved features. You can have one or more AWS accounts in each environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Contact-scoped applications
-<a name="integrate-aws-managed-apps-contact-scoped"></a>
 
 This section describes how to launch and manage AWS managed applications that are tied to specific customer contacts. Contact scoping itself is not specific to AWS managed applications. For the registration-time scope that a publisher selects for an application, and for guidance on designing an application around a single contact, see [Application scoping for Connect Customer applications](getting-started-application-contact-scope.md).
 

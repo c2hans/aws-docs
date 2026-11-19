@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_s
 ---
 
 # Record
-<a name="API_streams_Record"></a>
 
 A description of a unique event within a stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpoi
 ---
 
 # SourceEndpointConnectionDetails
-<a name="API_SourceEndpointConnectionDetails"></a>
 
 The connection details for a source endpoint. After the source endpoint connects to a destination endpoint, MediaConnect populates these details to describe the connected destination and how the source delivers content to it. This is a union type, so exactly one of its members is set, depending on the source endpoint type.
 

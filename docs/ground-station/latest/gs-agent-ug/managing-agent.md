@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/managi
 ---
 
 # Manage the agent
-<a name="managing-agent"></a>
 
  The AWS Ground Station Agent provides the following capabilities for configuring, starting, stopping, upgrading, downgrading and uninstalling the agent using built-in Linux command tooling.
 
@@ -176,7 +175,7 @@ Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
 Installed Packages
 Name        : aws-groundstation-agent
 Arch        : x86_64
-Version     : 1.0.5953.0
+Version     : 1.0.8022.0
 Release     : 1
 Size        : XX M
 Repo        : installed

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 1: Use managed services
-<a name="theme-1"></a>
 
 **Essential Eight strategies covered**: Patch applications, restrict administrative privileges, patch operating systems
 

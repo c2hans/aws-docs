@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget SchemaDefinition
-<a name="aws-properties-bedrockagentcore-gatewaytarget-schemadefinition"></a>
 
 A schema definition for a gateway target. This structure defines the structure of the API that the target exposes.
 
@@ -53,13 +52,13 @@ The description of the schema definition. This description provides information 
 `Items`  <a name="cfn-bedrockagentcore-gatewaytarget-schemadefinition-items"></a>
 The items in the schema definition. This field is used for array types to define the structure of the array elements.
 *Required*: No
-*Type*: [SchemaDefinition](#aws-properties-bedrockagentcore-gatewaytarget-schemadefinition)
+*Type*: [SchemaDefinition](aws-properties-bedrockagentcore-gatewaytarget-schemadefinition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Properties`  <a name="cfn-bedrockagentcore-gatewaytarget-schemadefinition-properties"></a>
 The properties of the schema definition. These properties define the fields in the schema.
 *Required*: No
-*Type*: Object of [SchemaDefinition](#aws-properties-bedrockagentcore-gatewaytarget-schemadefinition)
+*Type*: Object of [SchemaDefinition](aws-properties-bedrockagentcore-gatewaytarget-schemadefinition.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Required`  <a name="cfn-bedrockagentcore-gatewaytarget-schemadefinition-required"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/troubleshoot-common-
 ---
 
 # Common issues
-<a name="troubleshoot-common-issues"></a>
 
 The following are troubleshooting tips to help you solve common issues while you work with a Firehose stream.
 

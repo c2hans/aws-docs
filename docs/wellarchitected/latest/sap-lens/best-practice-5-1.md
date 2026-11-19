@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 5.1 – Define security roles and responsibilities
-<a name="best-practice-5-1"></a>
 
 By defining the requirements to secure your SAP workloads, you can identify risks that must be addressed and ensure that security-related roles and responsibilities are appropriately assigned. In the suggestions, we discuss standards for AWS, SAP, and any service providers to form a baseline on which you can build your security strategy.
 

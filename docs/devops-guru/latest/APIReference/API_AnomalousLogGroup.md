@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Anom
 ---
 
 # AnomalousLogGroup
-<a name="API_AnomalousLogGroup"></a>
 
  An Amazon CloudWatch log group that contains log anomalies and is used to generate an insight.
 

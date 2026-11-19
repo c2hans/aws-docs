@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_GetResour
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves the account's consolidated AWS Sign-In resource-based policy. Returns the complete policy document that aggregates all permission statements into a single policy.
 

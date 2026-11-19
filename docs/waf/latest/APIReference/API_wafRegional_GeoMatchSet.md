@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # GeoMatchSet
-<a name="API_wafRegional_GeoMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -21,7 +20,7 @@ Type: Array of [GeoMatchConstraint](API_wafRegional_GeoMatchConstraint.md) objec
 Required: Yes
 
  ** GeoMatchSetId **   <a name="WAF-Type-wafRegional_GeoMatchSet-GeoMatchSetId"></a>
-The `GeoMatchSetId` for an `GeoMatchSet`. You use `GeoMatchSetId` to get information about a `GeoMatchSet` (see [GeoMatchSet](#API_wafRegional_GeoMatchSet)), update a `GeoMatchSet` (see [UpdateGeoMatchSet](API_wafRegional_UpdateGeoMatchSet.md)), insert a `GeoMatchSet` into a `Rule` or delete one from a `Rule` (see [UpdateRule](API_wafRegional_UpdateRule.md)), and delete a `GeoMatchSet` from AWS WAF (see [DeleteGeoMatchSet](API_wafRegional_DeleteGeoMatchSet.md)).
+The `GeoMatchSetId` for an `GeoMatchSet`. You use `GeoMatchSetId` to get information about a `GeoMatchSet` (see [GeoMatchSet](API_wafRegional_GeoMatchSet.md)), update a `GeoMatchSet` (see [UpdateGeoMatchSet](API_wafRegional_UpdateGeoMatchSet.md)), insert a `GeoMatchSet` into a `Rule` or delete one from a `Rule` (see [UpdateRule](API_wafRegional_UpdateRule.md)), and delete a `GeoMatchSet` from AWS WAF (see [DeleteGeoMatchSet](API_wafRegional_DeleteGeoMatchSet.md)).
  `GeoMatchSetId` is returned by [CreateGeoMatchSet](API_wafRegional_CreateGeoMatchSet.md) and by [ListGeoMatchSets](API_wafRegional_ListGeoMatchSets.md).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
@@ -29,7 +28,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** Name **   <a name="WAF-Type-wafRegional_GeoMatchSet-Name"></a>
-A friendly name or description of the [GeoMatchSet](#API_wafRegional_GeoMatchSet). You can't change the name of an `GeoMatchSet` after you create it.
+A friendly name or description of the [GeoMatchSet](API_wafRegional_GeoMatchSet.md). You can't change the name of an `GeoMatchSet` after you create it.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `.*\S.*`

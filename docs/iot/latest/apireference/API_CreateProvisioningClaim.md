@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateProvis
 ---
 
 # CreateProvisioningClaim
-<a name="API_CreateProvisioningClaim"></a>
 
 Creates a provisioning claim.
 

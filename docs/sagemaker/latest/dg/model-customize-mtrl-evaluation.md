@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-mtrl
 ---
 
 # Model evaluation
-<a name="model-customize-mtrl-evaluation"></a>
 
  Evaluation runs your agent against a prompt set and reports reward, pass@k, and trajectory metrics. Use it to compare a fine-tuned model against its base or benchmark a candidate before deployment.
 

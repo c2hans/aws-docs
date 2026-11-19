@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon DevOps Guru
-<a name="amazondevopsguru"></a>
 
 Amazon DevOps Guru provides the following APIs for data retrieval.
 

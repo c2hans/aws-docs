@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-drift.html
 ---
 
 # `cdk drift`
-<a name="ref-cli-cmd-drift"></a>
 
 Detect configuration drift for resources that you define, manage, and deploy using the AWS Cloud Development Kit (AWS CDK). Drift occurs when a stack’s actual configuration differs from its expected configuration, which happens when resources are modified outside of AWS CloudFormation.
 

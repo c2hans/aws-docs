@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/monitoring-c
 ---
 
 # Creating CloudWatch alarms for RTB Fabric
-<a name="monitoring-cloudwatch-alarms"></a>
 
 You can create CloudWatch alarms to monitor RTB Fabric metrics and automatically notify you when metric values cross specified thresholds. This helps you proactively respond to issues with your RTB gateways and links.
 

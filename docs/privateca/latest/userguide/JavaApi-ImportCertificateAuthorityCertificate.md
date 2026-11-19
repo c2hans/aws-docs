@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Impor
 ---
 
 # ImportCertificateAuthorityCertificate
-<a name="JavaApi-ImportCertificateAuthorityCertificate"></a>
 
 The following Java sample shows how to use the [ImportCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ImportCertificateAuthorityCertificate.html) operation.
 

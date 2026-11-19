@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteSe
 ---
 
 # DeleteSession
-<a name="API_DeleteSession"></a>
 
 Deletes a session for the specified Connect Customer instance.
 

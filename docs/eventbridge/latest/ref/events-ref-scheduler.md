@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-schedu
 ---
 
 # Amazon EventBridge Scheduler events
-<a name="events-ref-scheduler"></a>
 
 EventBridge Scheduler sends service events to EventBridge via AWS CloudTrail.
 

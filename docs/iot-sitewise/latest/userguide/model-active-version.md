@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/model-acti
 ---
 
 # Asset model versions
-<a name="model-active-version"></a>
 
  AWS IoT SiteWise supports asynchronous processing of create and update operations on asset models and component models. It also updates the status of the model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GetPlan
 ---
 
 # GetPlanEvaluationStatus
-<a name="API_GetPlanEvaluationStatus"></a>
 
 Retrieves the evaluation status of a Region switch plan. The evaluation status provides information about the last time the plan was evaluated and any warnings or issues detected.
 

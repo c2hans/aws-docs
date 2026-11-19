@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/redirec
 ---
 
 # Redirect a Streaming Session from the Web Browser to the WorkSpaces Applications Client
-<a name="redirect-streaming-session-from-web-to-client"></a>
 
 You can configure WorkSpaces Applications to redirect a streaming session from a web browser to the WorkSpaces Applications client. That way, when your users sign in to WorkSpaces Applications and start a streaming session in their web browser, their session is redirected to the WorkSpaces Applications client. To do so, perform these steps.
 

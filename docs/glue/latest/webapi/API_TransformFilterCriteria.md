@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TransformFilterCr
 ---
 
 # TransformFilterCriteria
-<a name="API_TransformFilterCriteria"></a>
 
 The criteria used to filter the machine learning transforms.
 

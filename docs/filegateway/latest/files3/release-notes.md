@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/release-notes.
 ---
 
 # Release notes for gateway appliance software
-<a name="release-notes"></a>
 
 These release notes describe the new and updated features, improvements, and fixes that are included with each version of the Amazon S3 File Gateway appliance. Each software version is identified by its release date and a unique version number.
 

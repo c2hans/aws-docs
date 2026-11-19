@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeSourceKinesisStreamParameters
-<a name="API_PipeSourceKinesisStreamParameters"></a>
 
 The parameters for using a Kinesis stream as a source.
 

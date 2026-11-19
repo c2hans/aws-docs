@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_ses_S
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Verify an email identity and send messages with Amazon SES using an AWS SDK
-<a name="ses_example_ses_Scenario_SendEmail_section"></a>
 
 The following code example shows how to:
 + Add and verify an email address with Amazon SES.

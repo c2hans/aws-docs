@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-users-pe
 ---
 
 # Create users and assign permissions
-<a name="emla-deploy-users-permissions"></a>
 
 If you haven't set up users who will run channels on on-premises hardware, you should do that now. If your organization is a current user of MediaLive and you are now deploying MediaLive Anywhere, you must modify the permissions for your existing users. See [Identity and Access Management for AWS Elemental MediaLive](security-iam.md) and [Setting up IAM permissions for users](setting-up-for-production.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeWorkspace
-<a name="API_DescribeWorkspace"></a>
 
 Retrieves information about a workspace.
 

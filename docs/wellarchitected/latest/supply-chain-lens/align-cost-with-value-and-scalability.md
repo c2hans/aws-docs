@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Align cost with value and scalability
-<a name="align-cost-with-value-and-scalability"></a>
 
 |  SCCOST01: How do you balance your scalability requirements against overall IT infrastructure cost considerations?  |
 | --- |

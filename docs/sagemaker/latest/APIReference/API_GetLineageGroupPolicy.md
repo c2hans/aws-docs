@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GetLin
 ---
 
 # GetLineageGroupPolicy
-<a name="API_GetLineageGroupPolicy"></a>
 
 The resource policy for the lineage group.
 

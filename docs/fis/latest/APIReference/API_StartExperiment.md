@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_StartExperim
 ---
 
 # StartExperiment
-<a name="API_StartExperiment"></a>
 
 Starts running an experiment from the specified experiment template.
 

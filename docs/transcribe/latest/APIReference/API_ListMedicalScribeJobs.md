@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListM
 ---
 
 # ListMedicalScribeJobs
-<a name="API_ListMedicalScribeJobs"></a>
 
 Provides a list of Medical Scribe jobs that match the specified criteria. If no criteria are specified, all Medical Scribe jobs are returned.
 

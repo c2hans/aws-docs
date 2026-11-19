@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetComp
 ---
 
 # GetComplianceInquiryMetadata
-<a name="API_GetComplianceInquiryMetadata"></a>
 
 Get the metadata for a single compliance inquiry.
 

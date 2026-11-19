@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelCompositeModel
-<a name="API_AssetModelCompositeModel"></a>
 
 Contains information about a composite model in an asset model. This object contains the asset property definitions that you define in the composite model.
 

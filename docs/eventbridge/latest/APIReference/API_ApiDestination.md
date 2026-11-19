@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ApiD
 ---
 
 # ApiDestination
-<a name="API_ApiDestination"></a>
 
 Contains details about an API destination.
 

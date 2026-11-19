@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListU
 ---
 
 # ListUserJourneys
-<a name="API_ListUserJourneys"></a>
 
 Lists user journeys for a system.
 

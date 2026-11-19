@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TableObject
-<a name="API_TableObject"></a>
 
 Specifies the details of a governed table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dist
 ---
 
 # DistributeDataset
-<a name="API_DistributeDataset"></a>
 
  A training dataset or a test dataset used in a dataset distribution operation. For more information, see [DistributeDatasetEntries](API_DistributeDatasetEntries.md).
 

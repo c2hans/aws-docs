@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteReplicaAction
-<a name="API_DeleteReplicaAction"></a>
 
 Represents a replica to be removed.
 

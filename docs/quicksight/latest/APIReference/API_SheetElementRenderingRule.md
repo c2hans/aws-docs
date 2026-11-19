@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetElementRenderingRule
-<a name="API_SheetElementRenderingRule"></a>
 
 The rendering rules of a sheet that uses a free-form layout.
 

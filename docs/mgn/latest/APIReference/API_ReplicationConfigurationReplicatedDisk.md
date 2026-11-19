@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ReplicationC
 ---
 
 # ReplicationConfigurationReplicatedDisk
-<a name="API_ReplicationConfigurationReplicatedDisk"></a>
 
 Replication Configuration replicated disk.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/monitron-logg
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Logging and Monitoring in Amazon Monitron
-<a name="monitron-logging"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your Amazon Monitron applications. To monitor Amazon Monitron console and mobile app actions, you can use AWS CloudTrail.
 

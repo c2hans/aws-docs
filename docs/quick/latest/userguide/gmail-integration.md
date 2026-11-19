@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/gmail-integration
 ---
 
 # Gmail integration
-<a name="gmail-integration"></a>
 
 With the Gmail connector, you can access Gmail directly in AWS Quick through natural language. You can read and send emails, manage labels and drafts, organize threads, and search contacts without leaving AWS Quick.
 

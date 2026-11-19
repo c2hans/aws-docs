@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Learn the basics of the DynamoDB Enhanced Client API
-<a name="ddb-en-client-use"></a>
 
 This topic discusses the basic features of the DynamoDB Enhanced Client API and compares it to the [standard DynamoDB client API](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/dynamodb/package-summary.html).
 

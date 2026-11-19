@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Limit
-<a name="API_Limit"></a>
 
 Information about an Elastic Load Balancing resource limit for your AWS account.
 

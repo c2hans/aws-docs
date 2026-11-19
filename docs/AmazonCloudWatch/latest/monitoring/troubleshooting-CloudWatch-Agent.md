@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/troub
 ---
 
 # Troubleshooting the CloudWatch agent
-<a name="troubleshooting-CloudWatch-Agent"></a>
 
  You can use the information in this section to troubleshoot issues you might encounter with the CloudWatch agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ValidationExceptionField
-<a name="API_AWSBCMPricingCalculator_ValidationExceptionField"></a>
 
  Represents a field that failed validation in a request.
 

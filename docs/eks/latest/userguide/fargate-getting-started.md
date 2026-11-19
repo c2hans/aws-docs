@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/fargate-getting-sta
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Get started with AWS Fargate for your cluster
-<a name="fargate-getting-started"></a>
 
 This topic describes how to get started running Pods on AWS Fargate with your Amazon EKS cluster.
 

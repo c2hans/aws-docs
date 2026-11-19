@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/concatArrays.
 ---
 
 # $concatArrays
-<a name="concatArrays"></a>
 
 The `$concatArrays` aggregation operator in Amazon DocumentDB is used to concatenate two or more arrays into a single array. This can be useful when you need to combine multiple arrays of data into a single array for further processing or analysis.
 

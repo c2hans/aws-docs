@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.ht
 ---
 
 # Rules in Amazon EventBridge
-<a name="eb-rules"></a>
 
 You specify what EventBridge does with the events delivered to each event bus. To do this, you create *rules*. A rule specifies which events to send to which [targets](eb-targets.md) for processing. A single rule can send an event to multiple targets, which then run in parallel.
 

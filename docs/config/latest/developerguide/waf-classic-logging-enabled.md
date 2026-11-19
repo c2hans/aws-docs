@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/waf-classic
 ---
 
 # waf-classic-logging-enabled
-<a name="waf-classic-logging-enabled"></a>
 
 Checks if logging is enabled on AWS WAF classic global web access control lists (web ACLs). The rule is NON\_COMPLIANT for a global web ACL, if it does not have logging enabled.
 

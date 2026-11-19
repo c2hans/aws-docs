@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Security in Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-security"></a>
 
 **Topics**
 + [Data protection in Performance Monitor](CloudWatch-PerformanceMonitor-data-protection.md)

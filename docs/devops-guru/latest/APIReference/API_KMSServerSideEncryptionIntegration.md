@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_KMSS
 ---
 
 # KMSServerSideEncryptionIntegration
-<a name="API_KMSServerSideEncryptionIntegration"></a>
 
  Information about the KMS encryption used with DevOps Guru.
 

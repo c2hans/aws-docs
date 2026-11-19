@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StringRe
 ---
 
 # StringReference
-<a name="API_StringReference"></a>
 
 Information about a reference when the `referenceType` is `STRING`. Otherwise, null.
 

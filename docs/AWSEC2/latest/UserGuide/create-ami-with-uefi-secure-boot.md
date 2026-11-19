@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ami-with-
 ---
 
 # Create a Linux AMI with custom UEFI Secure Boot keys
-<a name="create-ami-with-uefi-secure-boot"></a>
 
 These instructions show you how to create a Linux AMI with UEFI Secure Boot and custom-made private keys. Amazon Linux supports UEFI Secure Boot starting with AL2023 release 2023.1. For more information, see [UEFI Secure Boot on AL2023](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) in the *Amazon Linux 2023 User Guide*.
 

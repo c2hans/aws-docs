@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Working with Domains
-<a name="WorkingWithDomains"></a>
 
 This section describes how to work create, list, export, and delete domains.
 

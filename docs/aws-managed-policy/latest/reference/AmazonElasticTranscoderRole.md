@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonElasticTranscoderRole
-<a name="AmazonElasticTranscoderRole"></a>
 
 **Description**: Default policy for the Amazon Elastic Transcoder service role.
 

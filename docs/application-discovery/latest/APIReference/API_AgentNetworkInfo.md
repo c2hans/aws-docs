@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # AgentNetworkInfo
-<a name="API_AgentNetworkInfo"></a>
 
 Network details about the host where the agent/collector resides.
 

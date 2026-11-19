@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateIamInstanceProfile
-<a name="API_AssociateIamInstanceProfile"></a>
 
 Associates an IAM instance profile with a running or stopped instance. You cannot associate more than one IAM instance profile with an instance.
 

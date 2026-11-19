@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Public
 ---
 
 # PublicAccess
-<a name="API_PublicAccess"></a>
 
 Describes the public access policies that apply to the S3 bucket.
 

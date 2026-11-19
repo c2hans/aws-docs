@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open
 ---
 
 # AI model customization job submission
-<a name="model-customize-open-weight-job"></a>
 
 The SageMaker AI model customization capability can be accessed from Amazon SageMaker Studio’s Models page in the left hand panel. You can also find the Assets page where you can create and manage your model customization Datasets and Evaluators.
 

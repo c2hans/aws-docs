@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RemoveBridge
 ---
 
 # RemoveBridgeOutput
-<a name="API_RemoveBridgeOutput"></a>
 
  Removes an output from a bridge.
 

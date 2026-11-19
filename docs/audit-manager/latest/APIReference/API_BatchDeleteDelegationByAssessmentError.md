@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ba
 ---
 
 # BatchDeleteDelegationByAssessmentError
-<a name="API_BatchDeleteDelegationByAssessmentError"></a>
 
  An error entity for the `BatchDeleteDelegationByAssessment` API. This is used to provide more meaningful errors than a simple string message.
 

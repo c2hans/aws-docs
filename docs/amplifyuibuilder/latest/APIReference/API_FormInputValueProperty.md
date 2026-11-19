@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FormInputValueProperty
-<a name="API_FormInputValueProperty"></a>
 
 Describes the configuration for an input field on a form. Use `FormInputValueProperty` to specify the values to render or bind by default.
 
@@ -17,7 +16,7 @@ Required: No
 
  ** concat **   <a name="amplifyuibuilder-Type-FormInputValueProperty-concat"></a>
 A list of form properties to concatenate to create the value to assign to this field property.
-Type: Array of [FormInputValueProperty](#API_FormInputValueProperty) objects
+Type: Array of [FormInputValueProperty](API_FormInputValueProperty.md) objects
 Required: No
 
  ** value **   <a name="amplifyuibuilder-Type-FormInputValueProperty-value"></a>

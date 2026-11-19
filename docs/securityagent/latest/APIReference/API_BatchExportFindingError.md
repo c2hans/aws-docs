@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchExportFindingError
-<a name="API_BatchExportFindingError"></a>
 
 A finding whose issue could not be created, with the cause of the failure.
 

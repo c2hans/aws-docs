@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Identit
 ---
 
 # IdentityDocument
-<a name="API_IdentityDocument"></a>
 
 The structure that lists each document processed in an AnalyzeID operation.
 

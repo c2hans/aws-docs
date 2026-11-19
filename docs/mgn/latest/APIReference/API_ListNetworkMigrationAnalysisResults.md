@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListNetworkM
 ---
 
 # ListNetworkMigrationAnalysisResults
-<a name="API_ListNetworkMigrationAnalysisResults"></a>
 
 Lists the results of network migration analyses, showing connectivity and compatibility findings for migrated resources.
 

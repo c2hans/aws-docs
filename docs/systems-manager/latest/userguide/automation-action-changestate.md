@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:changeInstanceState` – Change or assert instance state
-<a name="automation-action-changestate"></a>
 
 Changes or asserts the state of the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
  This section describes the [cost](cost.md), [security](security.md), [Regions](#supported-aws-regions), and other considerations prior to deploying the solution.
 

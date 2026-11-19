@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Best practices for firewall rules
-<a name="firewall-rule-groups-best-practices"></a>
 
 The following recommendations help you build firewall rule groups that behave predictably and are easy to maintain. The IPS engine uses standard Suricata compatible rules, so you can author IPS rules the same way you'd author rules for any Suricata deployment.
 + **Start from a drop-by-default posture.** Keep the firewall default action set to **Drop** and write accept rules only for the traffic you intend to allow. This is the firewall engine's security model—an allow list is easier to reason about than a denylist, and anything you forget to allow is blocked rather than exposed. Change the default action to **Accept** only when you have a specific reason to allow traffic by default.

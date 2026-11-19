@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # AWS automations for SAP administration and operations
-<a name="automations"></a>
 
 Using AWS services and tools, you can choose which AWS automations to implement and customize for your specific requirements. The following are examples of AWS services and tools that you can use to automate SAP administration and operations:
 + Managing access using AWS IAM Identity Center (successor to AWS Single Sign-On)

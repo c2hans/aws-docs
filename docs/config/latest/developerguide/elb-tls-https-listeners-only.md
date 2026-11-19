@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elb-tls-htt
 ---
 
 # elb-tls-https-listeners-only
-<a name="elb-tls-https-listeners-only"></a>
 
 Checks if your Classic Load Balancer is configured with SSL or HTTPS listeners. The rule is NON\_COMPLIANT if a listener is not configured with SSL or HTTPS.
 + If the Classic Load Balancer does not have a listener configured, then the rule returns `NOT_APPLICABLE`.

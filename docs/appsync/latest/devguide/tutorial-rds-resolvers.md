@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-rds-res
 ---
 
 # Using Aurora Serverless v2 with AWS AppSync
-<a name="tutorial-rds-resolvers"></a>
 
 Connect your GraphQL API to Aurora Serverless databases using AWS AppSync. This integration lets you execute SQL statements through GraphQL queries, mutations, and subscriptions - giving you a flexible way to interact with your relational data.
 

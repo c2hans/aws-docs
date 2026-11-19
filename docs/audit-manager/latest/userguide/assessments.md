@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/assessmen
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Managing assessments in AWS Audit Manager
-<a name="assessments"></a>
 
 An Audit Manager assessment is based on a framework, which is a grouping of controls. Using a framework as a starting point, you can create an assessment that collects evidence for the controls in that framework. In your assessment, you can also define the scope of your audit. This includes specifying the AWS accounts that you want to collect evidence for.
 

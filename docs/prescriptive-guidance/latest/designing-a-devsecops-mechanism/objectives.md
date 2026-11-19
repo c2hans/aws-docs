@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Objectives
-<a name="objectives"></a>
 
 Design decisions regarding DevSecOps mechanisms are frequently made in isolation, which can lead to downstream challenges for users of the platform and other stakeholders. In traditional user story development, developers must imagine themselves in the users' shoes to determine which features to implement and how to best implement them within the given time frame.
 

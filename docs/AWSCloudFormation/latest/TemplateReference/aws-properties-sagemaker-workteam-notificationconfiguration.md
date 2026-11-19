@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::Workteam NotificationConfiguration
-<a name="aws-properties-sagemaker-workteam-notificationconfiguration"></a>
 
 Configures Amazon SNS notifications of available or expiring work items for work teams.
 

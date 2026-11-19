@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # CreateWhatsAppMessageTemplateMedia
-<a name="API_CreateWhatsAppMessageTemplateMedia"></a>
 
 Uploads media for use in a WhatsApp message template.
 

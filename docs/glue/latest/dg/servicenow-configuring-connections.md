@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/servicenow-configuring-co
 ---
 
 # Configuring ServiceNow connections
-<a name="servicenow-configuring-connections"></a>
 
 The grant type determines how AWS Glue communicates with ServiceNow to request access to your data. Your choice affects the requirements that you must meet before you create the connection. ServiceNow supports only the AUTHORIZATION\_CODE grant type for OAuth 2.0.
 + This grant type is considered "three-legged" OAuth as it relies on redirecting users to a third-party authorization server to authenticate the user. It is used when creating connections via the AWS Glue console. The AWS Glue console will redirect the user to ServiceNow where the user must login and allow AWS Glue the requested permissions to access their ServiceNow instance.

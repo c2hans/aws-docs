@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based
 ---
 
 # Dynamic scaling for Amazon EC2 Auto Scaling
-<a name="as-scale-based-on-demand"></a>
 
 Dynamic scaling scales the capacity of your Auto Scaling group as traffic changes occur.
 

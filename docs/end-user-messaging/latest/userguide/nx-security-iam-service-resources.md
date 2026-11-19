@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Policy resources for AWS End User Messaging
-<a name="nx-security-iam-service-resources"></a>
 
 **Supports policy resources: Yes**
 

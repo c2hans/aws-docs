@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Working with MPTS
-<a name="working-with-mpts"></a>
 
 **Topics**
 + [POST: Create an MPTS](working-with-mpts-create.md)

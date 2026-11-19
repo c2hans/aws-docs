@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Importing files from Amazon S3
-<a name="connector-s3-import"></a>
 
 You can use the Amazon S3 Import connector to browse a source bucket, select files or folders, and import them into SDMA without downloading and re-uploading through the portal. SDMA copies the selected files into your library using AWS Deadline Cloud and verifies integrity during the transfer. When the job completes, the imported files appear as a new asset in your project.
 

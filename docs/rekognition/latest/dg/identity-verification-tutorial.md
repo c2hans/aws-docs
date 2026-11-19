@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/identity-verificat
 ---
 
 # Using Amazon Rekognition for Identity Verification
-<a name="identity-verification-tutorial"></a>
 
 Amazon Rekognition provides users with several operations that enable the simple creation of identity verification systems. Amazon Rekognition allows the user to detect faces in an image and then compare any detected faces to other faces by comparing face data. This face data is stored in server-side containers called Collections. By making use of Amazon Rekognition’s face detection, face comparison, and collection management operations, you can create an application with an identity verification solution.
 

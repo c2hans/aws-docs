@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Tim
 ---
 
 # TimeseriesItem
-<a name="API_TimeseriesItem"></a>
 
 A single timeseries item to process. Exactly one of timeSeriesId or propertyAlias must be provided.
 

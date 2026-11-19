@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_DebugS
 ---
 
 # DebugSession
-<a name="API_DebugSession"></a>
 
 Contains information about the debug session for a build. For more information, see [Viewing a running build in Session Manager](https://docs.aws.amazon.com/codebuild/latest/userguide/session-manager.html).
 

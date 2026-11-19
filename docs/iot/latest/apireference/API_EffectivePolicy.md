@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_EffectivePol
 ---
 
 # EffectivePolicy
-<a name="API_EffectivePolicy"></a>
 
 The policy that has the effect on the authorization results.
 

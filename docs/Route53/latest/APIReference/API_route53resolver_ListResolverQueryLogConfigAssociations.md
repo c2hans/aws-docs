@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListResolverQueryLogConfigAssociations
-<a name="API_route53resolver_ListResolverQueryLogConfigAssociations"></a>
 
 Lists information about associations between Amazon VPCs and query logging configurations.
 

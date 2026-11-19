@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Twitt
 ---
 
 # TwitterParameters
-<a name="API_TwitterParameters"></a>
 
 The parameters for Twitter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/infr
 ---
 
 # Infrastructure Security in Amazon Route 53 Global Resolver
-<a name="infrastructure-security"></a>
 
 As a managed service, Amazon Route 53 Global Resolver is protected by the AWS global network security procedures that are described in the [Amazon Web Services: Overview of Security Processes](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf) whitepaper.
 

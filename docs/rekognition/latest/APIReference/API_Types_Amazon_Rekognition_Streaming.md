@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Type
 ---
 
 # Amazon Rekognition Streaming
-<a name="API_Types_Amazon_Rekognition_Streaming"></a>
 
 The following data types are supported by Amazon Rekognition Streaming:
 +  [BoundingBox](API_rekognitionstreaming_BoundingBox.md)

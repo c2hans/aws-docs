@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-rtp-vpc.
 ---
 
 # Create an input for RTP push from Amazon VPC
-<a name="setup-input-rtp-vpc"></a>
 
 After the Amazon VPC user has set up on the VPC, you can create the RTP VPC push input in MediaLive.
 

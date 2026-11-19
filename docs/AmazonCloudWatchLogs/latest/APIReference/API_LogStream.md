@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogStream
-<a name="API_LogStream"></a>
 
 Represents a log stream, which is a sequence of log events from a single emitter of logs.
 

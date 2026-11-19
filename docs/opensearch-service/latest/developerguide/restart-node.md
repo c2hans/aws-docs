@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Rebooting a data node in Amazon OpenSearch Service
-<a name="restart-node"></a>
 
 **To reboot a data node**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # LambdaIntegrationSummary
-<a name="API_connect-outbound-campaigns-v2_LambdaIntegrationSummary"></a>
 
 The summary of the integration with Lambda.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerBearerTokenConfig
-<a name="API_MCPServerBearerTokenConfig"></a>
 
 Bearer token configuration for MCP server (RFC 6750).
 

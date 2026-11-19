@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP04 Establish controls to manage access based on lifecycle
-<a name="fnd02-bp04"></a>
 
  Monitor and adjust the permissions you grant to principals (users, roles, and groups) as their relationship with your organization changes. Update group memberships as people change roles, and remove access when someone leaves the organization.
 

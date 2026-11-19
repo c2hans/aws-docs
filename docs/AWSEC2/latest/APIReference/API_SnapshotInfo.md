@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SnapshotI
 ---
 
 # SnapshotInfo
-<a name="API_SnapshotInfo"></a>
 
 Information about a snapshot.
 

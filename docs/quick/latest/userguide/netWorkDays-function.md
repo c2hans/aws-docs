@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/netWorkDays-funct
 ---
 
 # netWorkDays
-<a name="netWorkDays-function"></a>
 
 `netWorkDays` returns the number of working days between the provided two date fields or even custom date values generated using other Quick date functions such as `parseDate` or `epochDate` as an integer.
 

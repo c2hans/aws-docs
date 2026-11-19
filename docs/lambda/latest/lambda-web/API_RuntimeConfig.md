@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_RuntimeConf
 ---
 
 # RuntimeConfig
-<a name="API_RuntimeConfig"></a>
 
 The runtime configuration for a web function revision.
 

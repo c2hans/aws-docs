@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultGridLayoutConfiguration
-<a name="API_DefaultGridLayoutConfiguration"></a>
 
 The options that determine the default settings for a grid layout configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entit
 ---
 
 # N-Tier Visibility
-<a name="entities-n-tier"></a>
 
 The table below list the data entities and columns used by N-Tier Visibility.
 

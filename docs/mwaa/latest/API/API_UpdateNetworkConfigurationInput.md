@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateNetworkConfigu
 ---
 
 # UpdateNetworkConfigurationInput
-<a name="API_UpdateNetworkConfigurationInput"></a>
 
 Defines the VPC networking components used to secure and enable network traffic between the AWS resources for your environment. For more information, refer to [About networking on Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/networking-about.html).
 

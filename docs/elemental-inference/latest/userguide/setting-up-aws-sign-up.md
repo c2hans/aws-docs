@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/set
 ---
 
 # Signing up for AWS
-<a name="setting-up-aws-sign-up"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

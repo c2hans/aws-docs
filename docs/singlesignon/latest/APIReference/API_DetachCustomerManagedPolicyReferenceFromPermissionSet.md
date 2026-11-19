@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Det
 ---
 
 # DetachCustomerManagedPolicyReferenceFromPermissionSet
-<a name="API_DetachCustomerManagedPolicyReferenceFromPermissionSet"></a>
 
 Detaches the specified customer managed policy from the specified [PermissionSet](API_PermissionSet.md).
 

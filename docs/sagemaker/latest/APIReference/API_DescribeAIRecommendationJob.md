@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeAIRecommendationJob
-<a name="API_DescribeAIRecommendationJob"></a>
 
 Returns details of an AI recommendation job, including its status, model source, performance targets, optimization recommendations, and deployment configurations.
 

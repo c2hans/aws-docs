@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/enable-multius
 ---
 
 # Enable multi-user in-app, web, and video calling
-<a name="enable-multiuser-inapp"></a>
 
 Connect Customer supports adding additional users to join the in-app, web, and video call in an existing call. You can add up to four additional users to an ongoing or scheduled in-app, web or video call, for a total of six participants: the agent, the first user, and four other participants (users or agents).
 

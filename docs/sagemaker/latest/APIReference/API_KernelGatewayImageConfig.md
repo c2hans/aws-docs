@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Kernel
 ---
 
 # KernelGatewayImageConfig
-<a name="API_KernelGatewayImageConfig"></a>
 
 The configuration for the file system and kernels in a SageMaker AI image running as a KernelGateway app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-goog
 ---
 
 # Google Ads connector for Amazon AppFlow
-<a name="connectors-google-ads"></a>
 
 Google Ads is a platform that advertisers use to display ads on the web, such as in Google search results, YouTube videos, mobile apps, and on websites. If you are a Google Ads user, you can use Amazon AppFlow to transfer data about your account, ad campaigns, and ad groups to certain AWS services or other supported applications.
 

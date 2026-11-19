@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_AlgorithmImage
 ---
 
 # AlgorithmImage
-<a name="API_AlgorithmImage"></a>
 
 Describes an algorithm image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SubmitAu
 ---
 
 # SubmitAutoEvaluationActionDefinition
-<a name="API_SubmitAutoEvaluationActionDefinition"></a>
 
 Information about the submit automated evaluation action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # Temenos T24 Transact: Service architecture
-<a name="temenos-t24-service"></a>
 
 Publication date: **November 12, 2021 ([Diagram history](#t24-svc-history))**
 

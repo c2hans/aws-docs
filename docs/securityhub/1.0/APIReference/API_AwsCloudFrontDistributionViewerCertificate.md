@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionViewerCertificate
-<a name="API_AwsCloudFrontDistributionViewerCertificate"></a>
 
 Provides information about the TLS/SSL configuration that the CloudFront distribution uses to communicate with viewers.
 

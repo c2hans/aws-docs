@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/create-nfs-loc
 ---
 
 # Configuring AWS DataSync transfers with an NFS file server
-<a name="create-nfs-location"></a>
 
 With AWS DataSync, you can transfer data between your Network File System (NFS) file server and the following AWS storage services:
 + [Amazon S3](create-s3-location.md)

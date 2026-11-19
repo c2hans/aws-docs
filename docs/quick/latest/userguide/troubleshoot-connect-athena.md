@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-conn
 ---
 
 # I can't connect to Amazon Athena
-<a name="troubleshoot-connect-athena"></a>
 
 |  |
 | --- |

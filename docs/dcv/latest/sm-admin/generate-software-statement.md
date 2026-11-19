@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/generate-software-st
 ---
 
 # generate-software-statement
-<a name="generate-software-statement"></a>
 
 Generates a software statement.
 

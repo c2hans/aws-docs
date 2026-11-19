@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # DeleteResourceSnapshotJob
-<a name="API_DeleteResourceSnapshotJob"></a>
 
  Use this action to deletes a previously created resource snapshot job. The job must be in a stopped state before it can be deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/temporary-delegatio
 ---
 
 # Building your integration
-<a name="temporary-delegation-building-integration"></a>
 
 ## Understanding the Request Lifecycle
 <a name="temporary-delegation-request-lifecycle"></a>

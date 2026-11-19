@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # DNS zone walking
-<a name="best-practices-resolver-zone-walking"></a>
 
 A DNS zone walking attack attempts to get all content from DNSSEC-signed DNS zones. If VPC Resolver team detects a traffic pattern that matches the ones generated when DNS zones are walked on your endpoint, the service team throttles the traffic on your endpoint. As a consequence you might observe a high percentage of your DNS queries timing out.
 

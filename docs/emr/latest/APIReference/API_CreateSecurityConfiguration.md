@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CreateSecuri
 ---
 
 # CreateSecurityConfiguration
-<a name="API_CreateSecurityConfiguration"></a>
 
 Creates a security configuration, which is stored in the service and can be specified when a cluster is created.
 

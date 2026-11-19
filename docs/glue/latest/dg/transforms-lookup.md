@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-lookup.html
 ---
 
 # Using the Lookup transform to add matching data from a catalog table
-<a name="transforms-lookup"></a>
 
  The **Lookup** transform allows you to add columns from a defined catalog table when the keys match the defined lookup columns in the data. This is equivalent to doing a left outer join between the data and the lookup table using as condition matching columns.
 

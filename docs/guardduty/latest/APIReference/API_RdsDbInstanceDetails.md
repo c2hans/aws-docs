@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_RdsDbI
 ---
 
 # RdsDbInstanceDetails
-<a name="API_RdsDbInstanceDetails"></a>
 
 Contains information about the resource type `RDSDBInstance` involved in a GuardDuty finding.
 

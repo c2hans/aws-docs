@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/aws-myAppl
 ---
 
 # myApplications availability change
-<a name="aws-myApplications-availability-change"></a>
 
 myApplications no longer allows creation of new applications or updates of existing applications. Existing users may continue to access and view their previously created applications. AWS will continue to address critical security patches and operational issues. No new features, integrations, or regional expansions will be released.
 

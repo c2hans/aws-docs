@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-concep
 ---
 
 # AWS AppSync Events concepts
-<a name="event-api-concepts"></a>
 
 Before you get started, review the following topics to help you understand the fundamental concepts of AWS AppSync Events.
 

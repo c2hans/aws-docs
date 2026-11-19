@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/se
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Set up the SDK for JavaScript
-<a name="setting-up"></a>
 
 The topics in this section explain how to install and load the SDK for JavaScript so you can access the web services supported by the SDK.
 

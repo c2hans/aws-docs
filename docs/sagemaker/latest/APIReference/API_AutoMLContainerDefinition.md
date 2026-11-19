@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLContainerDefinition
-<a name="API_AutoMLContainerDefinition"></a>
 
 A list of container definitions that describe the different containers that make up an AutoML candidate. For more information, see [ ContainerDefinition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ContainerDefinition.html).
 

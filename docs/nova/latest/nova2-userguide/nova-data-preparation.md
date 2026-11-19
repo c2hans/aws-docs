@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-data-pr
 ---
 
 # Data preparation
-<a name="nova-data-preparation"></a>
 
 This section provides data preparation guides for each training technique and model version.
 

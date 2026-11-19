@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 ---
 
 # Deleting a scan configuration
-<a name="code-security-assessments-delete-configuration"></a>
 
  You can delete a scan configuration at any time. This topic describes how to delete a scan configuration.
 

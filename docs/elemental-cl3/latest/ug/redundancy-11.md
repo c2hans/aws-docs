@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/redundancy-11.ht
 ---
 
 # 1-to-1 redundancy
-<a name="redundancy-11"></a>
 
 ## Setup
 <a name="redundancy-11-setup"></a>

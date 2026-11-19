@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Repor
 ---
 
 # ReportDeliveryChannel
-<a name="API_ReportDeliveryChannel"></a>
 
 Contains information from your report plan about where to deliver your reports, specifically your Amazon S3 bucket name, S3 key prefix, and the formats of your reports.
 

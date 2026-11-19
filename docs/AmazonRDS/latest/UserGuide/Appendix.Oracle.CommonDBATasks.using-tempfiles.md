@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Working with tempfiles in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.using-tempfiles"></a>
 
 ## Adding a tempfile to the instance store on a read replica
 <a name="Appendix.Oracle.CommonDBATasks.adding-tempfile-replica"></a>

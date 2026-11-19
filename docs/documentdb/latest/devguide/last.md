@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/last.html
 ---
 
 # $last
-<a name="last"></a>
 
 The `$last` operator in Amazon DocumentDB is used to return the last element in an array that matches the query criteria. It is particularly useful for retrieving the most recent or the last element in an array that satisfies a specific condition.
 

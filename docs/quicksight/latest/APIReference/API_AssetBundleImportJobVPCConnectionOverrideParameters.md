@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobVPCConnectionOverrideParameters
-<a name="API_AssetBundleImportJobVPCConnectionOverrideParameters"></a>
 
 The override parameters for a single VPC connection that is imported.
 

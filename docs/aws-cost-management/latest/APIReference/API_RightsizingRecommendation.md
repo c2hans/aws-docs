@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RightsizingRecommendation
-<a name="API_RightsizingRecommendation"></a>
 
 Recommendations to rightsize resources.
 

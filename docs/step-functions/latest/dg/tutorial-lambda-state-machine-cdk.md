@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-lambda
 ---
 
 # Using AWS CDK to create a Standard workflow in Step Functions
-<a name="tutorial-lambda-state-machine-cdk"></a>
 
 You can use the AWS Cloud Development Kit (AWS CDK) Infrastructure as Code (IAC) framework, to create an AWS Step Functions state machine that contains an AWS Lambda function.
 

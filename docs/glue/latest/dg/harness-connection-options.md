@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/harness-connection-option
 ---
 
 # Harness connection options
-<a name="harness-connection-options"></a>
 
 The following are connection options for Harness:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Harness object to read.

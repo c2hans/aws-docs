@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [ApproveRfc](API_ApproveRfc.md)

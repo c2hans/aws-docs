@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetSequenceStore.ht
 ---
 
 # GetSequenceStore
-<a name="API_GetSequenceStore"></a>
 
 Retrieves metadata for a sequence store using its ID and returns it in JSON format.
 

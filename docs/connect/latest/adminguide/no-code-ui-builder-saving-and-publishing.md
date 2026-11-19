@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/no-code-ui-bui
 ---
 
 # Save and publish views
-<a name="no-code-ui-builder-saving-and-publishing"></a>
 
 Views are versioned, so you can audit and reuse earlier versions of a view.
 

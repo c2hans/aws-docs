@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Disable
 ---
 
 # DisableImportFindingsForProduct
-<a name="API_DisableImportFindingsForProduct"></a>
 
 Disables the integration of the specified product with Security Hub CSPM. After the integration is disabled, findings from that product are no longer sent to Security Hub CSPM.
 

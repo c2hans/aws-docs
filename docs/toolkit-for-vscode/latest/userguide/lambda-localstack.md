@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/lamb
 ---
 
 # AWS Lambda with LocalStack support
-<a name="lambda-localstack"></a>
 
 Build, test, and debug your serverless applications with LocalStack support in the AWS Toolkit for Visual Studio Code. LocalStack is an AWS Cloud emulator that allows for local testing of serverless applications.
 

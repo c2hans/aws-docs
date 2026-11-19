@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html
 ---
 
 # Tags for AWS Identity and Access Management resources
-<a name="id_tags"></a>
 
 A *tag* is a custom attribute label that you can assign to an AWS resource. Each tag has two parts:
 + A *tag key* (for example, `CostCenter`, `Environment`, `Project`, or `Purpose`).

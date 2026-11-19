@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessGrantsInstanceEntry
-<a name="API_control_ListAccessGrantsInstanceEntry"></a>
 
 Information about the S3 Access Grants instance.
 

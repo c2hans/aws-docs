@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_IdcA
 ---
 
 # IdcAuthConfiguration
-<a name="API_IdcAuthConfiguration"></a>
 
 Configuration for AWS Identity Center (IdC) authentication flow for the Operator App.
 

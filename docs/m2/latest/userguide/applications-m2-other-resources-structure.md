@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-othe
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Structure of AWS Transform for mainframe managed applications
-<a name="applications-m2-other-resources-structure"></a>
 
 If you use the AWS Transform for mainframe refactoring pattern, the AWS Transform for mainframe runtime engine expects the following structure in the folder specified by `app-location` in your application definition:
 

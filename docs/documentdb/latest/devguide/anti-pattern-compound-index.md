@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/anti-pattern-
 ---
 
 # Compound index with more than 3 attributes
-<a name="anti-pattern-compound-index"></a>
 
 ## Overview
 <a name="compound-index-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
 This section describes the components and AWS services that make up this solution and the architecture details on how these components work together. These components are meant to accomplish one of the following scenarios:
 +  **Metadata migration** - Migrating cluster metadata, such as index settings, aliases, and templates.

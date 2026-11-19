@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # TemplateSummary
-<a name="API_TemplateSummary"></a>
 
 Provides a summary of a WhatsApp message template's key attributes.
 

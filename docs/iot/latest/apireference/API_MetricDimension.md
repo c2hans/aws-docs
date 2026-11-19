@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MetricDimens
 ---
 
 # MetricDimension
-<a name="API_MetricDimension"></a>
 
 The dimension of a metric.
 

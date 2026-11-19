@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Equi
 ---
 
 # EquipmentDetection
-<a name="API_EquipmentDetection"></a>
 
 Information about an item of Personal Protective Equipment (PPE) detected by [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md). For more information, see [DetectProtectiveEquipment](API_DetectProtectiveEquipment.md).
 

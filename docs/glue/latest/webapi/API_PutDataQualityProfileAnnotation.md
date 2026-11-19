@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutDataQualityPro
 ---
 
 # PutDataQualityProfileAnnotation
-<a name="API_PutDataQualityProfileAnnotation"></a>
 
 Annotate all datapoints for a Profile.
 

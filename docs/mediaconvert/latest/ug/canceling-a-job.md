@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/canceling-a-job.h
 ---
 
 # Canceling a job
-<a name="canceling-a-job"></a>
 
 The following procedure explains how to cancel a job using the AWS Elemental MediaConvert console.
 

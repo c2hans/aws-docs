@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Amazon EKS and Kubernetes Container Insights with enhanced observability metrics
-<a name="Container-Insights-metrics-enhanced-EKS"></a>
 
 The following tables list the metrics and dimensions that Container Insights with enhanced observability collects for Amazon EKS and Kubernetes. These metrics are in the `ContainerInsights` namespace. For more information, see [Metrics](cloudwatch_concepts.md#Metric).
 

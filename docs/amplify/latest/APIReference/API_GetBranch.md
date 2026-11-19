@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetBranc
 ---
 
 # GetBranch
-<a name="API_GetBranch"></a>
 
 Returns a branch for an Amplify app.
 

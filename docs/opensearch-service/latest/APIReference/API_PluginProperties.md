@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PluginProperties
-<a name="API_PluginProperties"></a>
 
 Basic information about the plugin.
 

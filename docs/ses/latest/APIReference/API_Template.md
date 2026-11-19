@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_Template.htm
 ---
 
 # Template
-<a name="API_Template"></a>
 
 The content of the email, composed of a subject line and either an HTML part or a text-only part.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QuickCon
 ---
 
 # QuickConnectSummary
-<a name="API_QuickConnectSummary"></a>
 
 Contains summary information about a quick connect.
 

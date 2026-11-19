@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-onboard-
 ---
 
 # Set up ingestion from an existing Prometheus server in Kubernetes on Fargate
-<a name="AMP-onboard-ingest-metrics-existing-Prometheus-fargate"></a>
 
 Amazon Managed Service for Prometheus supports ingesting metrics from Prometheus servers in self-managed Kubernetes clusters running on Fargate. To ingest metrics from Prometheus servers in Amazon EKS clusters running on Fargate, override the default configs in a config file named amp\_ingest\_override\_values.yaml as follows:
 

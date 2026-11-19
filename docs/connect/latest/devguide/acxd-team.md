@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-team.html
 ---
 
 # Team
-<a name="acxd-team"></a>
 
 Manage account-level team settings. Each account has a single team resource.
 

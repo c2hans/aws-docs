@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # LambdaConfiguration
-<a name="API_messaging-chime_LambdaConfiguration"></a>
 
 Stores metadata about a Lambda processor.
 

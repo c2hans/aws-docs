@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AgreementViewSummary
-<a name="API_marketplace-agreements_AgreementViewSummary"></a>
 
 A summary of the agreement, including top-level attributes (for example, the agreement ID, proposer, and acceptor).
 
@@ -38,7 +37,7 @@ Pattern: `[A-Za-z]+`
 Required: No
 
  ** endTime **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AgreementViewSummary-endTime"></a>
-The date and time when the agreement ends. The field is `null` for pay-as-you-go agreements, which don’t have end dates.
+The date and time when the agreement ends. The field is `null` for pay-as-you-go agreements, which don't have end dates.
 Type: Timestamp
 Required: No
 
@@ -74,6 +73,12 @@ Required: No
 The date and time when the free trial of the agreement ends. This field is present only when the agreement includes a free trial.
 For an agreement that includes both a free trial and usage-based pricing, the agreement converts to paid usage at this time.
 Type: Timestamp
+Required: No
+
+ ** includesContactOfType **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AgreementViewSummary-includesContactOfType"></a>
+The types of contact information on file for the agreement. For example, `ACCEPTOR` indicates that the acceptor's contact information is on file, which you can retrieve with `GetAgreementContacts`.
+Type: Array of strings
+Valid Values: `ACCEPTOR`
 Required: No
 
  ** initialAgreementId **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AgreementViewSummary-initialAgreementId"></a>

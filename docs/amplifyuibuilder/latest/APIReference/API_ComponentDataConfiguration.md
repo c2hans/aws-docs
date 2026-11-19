@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentDataConfiguration
-<a name="API_ComponentDataConfiguration"></a>
 
 Describes the configuration for binding a component's properties to data.
 

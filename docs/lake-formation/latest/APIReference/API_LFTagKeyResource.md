@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagKeyResource
-<a name="API_LFTagKeyResource"></a>
 
 A structure containing an LF-tag key and values for a resource.
 

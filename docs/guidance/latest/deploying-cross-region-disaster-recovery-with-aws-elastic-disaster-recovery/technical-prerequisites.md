@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Technical prerequisites
-<a name="technical-prerequisites"></a>
 
 ## Technical prerequisites
 <a name="technical-prerequisites"></a>

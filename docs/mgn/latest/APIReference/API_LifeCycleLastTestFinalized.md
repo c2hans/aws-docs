@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LifeCycleLas
 ---
 
 # LifeCycleLastTestFinalized
-<a name="API_LifeCycleLastTestFinalized"></a>
 
 Lifecycle last Test finalized.
 

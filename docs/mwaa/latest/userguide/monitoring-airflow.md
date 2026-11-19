@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/monitoring-airflow
 ---
 
 # Accessing Airflow logs in Amazon CloudWatch
-<a name="monitoring-airflow"></a>
 
 Amazon MWAA can send Apache Airflow logs to Amazon CloudWatch. You can access logs for multiple environments from a single location to easily identify Apache Airflow task delays or workflow errors without additional third-party tools. Apache Airflow logs need to be enabled on the Amazon Managed Workflows for Apache Airflow console to access Apache Airflow DAG processing, tasks, webserver, worker logs in CloudWatch.
 

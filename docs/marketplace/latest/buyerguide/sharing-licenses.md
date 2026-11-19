@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/sharing-li
 ---
 
 # Sharing your licenses
-<a name="sharing-licenses"></a>
 
 Only AMI, container, machine learning, data products, Oracle Database@AWS, and third-party Amazon Bedrock model subscriptions have licenses that can be shared.
 

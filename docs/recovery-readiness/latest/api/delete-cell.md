@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/delete-cel
 ---
 
 # Delete a cell
-<a name="delete-cell"></a>
 
 The following is an example of a request to delete a cell. Deleting a cell doesn't return a response.
 

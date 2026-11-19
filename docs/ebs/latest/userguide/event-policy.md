@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/event-policy.html
 ---
 
 # Automate cross-account snapshot copies with Data Lifecycle Manager
-<a name="event-policy"></a>
 
 Automating cross-account snapshot copies enables you to copy your Amazon EBS snapshots to specific Regions in an isolated account and encrypt those snapshots with an encryption key. This enables you to protect yourself against data loss in the event of your account being compromised.
 

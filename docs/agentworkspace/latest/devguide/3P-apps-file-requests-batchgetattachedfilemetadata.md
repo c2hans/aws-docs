@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-f
 ---
 
 # Get metadata about multiple attached files in Connect Customer agent workspace
-<a name="3P-apps-file-requests-batchgetattachedfilemetadata"></a>
 
 Get metadata about multiple attached files on an associated resource while handling an active contact. The activeContactId is the id of the contact the agent is actively viewing. Each attached file provided in the input list must be associated with the associatedResourceArn in the RelatedAttachments request object.
 

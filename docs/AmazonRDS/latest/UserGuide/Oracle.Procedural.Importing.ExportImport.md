@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Proced
 ---
 
 # Importing using Oracle Export/Import
-<a name="Oracle.Procedural.Importing.ExportImport"></a>
 
 You might consider Oracle Export/Import utilities for migrations in the following conditions:
 + Your data size is small.

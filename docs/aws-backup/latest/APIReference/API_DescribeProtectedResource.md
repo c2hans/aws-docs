@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Descr
 ---
 
 # DescribeProtectedResource
-<a name="API_DescribeProtectedResource"></a>
 
 Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.
 

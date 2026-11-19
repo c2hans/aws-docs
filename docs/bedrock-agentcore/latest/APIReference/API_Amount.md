@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # Amount
-<a name="API_Amount"></a>
 
 Represents a monetary amount with a currency.
 

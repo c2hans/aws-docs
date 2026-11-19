@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-
 ---
 
 # AWS-SSM-Automation-DiagnosisBucketPolicy
-<a name="AWS-SSM-Automation-DiagnosisBucketPolicy"></a>
 
 **Description**: Provides permissions to access the SSM Diagnosis S3 bucket for diagnosis and remediation of issues.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListResourceScans
-<a name="API_ListResourceScans"></a>
 
 List the resource scans from newest to oldest. By default it will return up to 10 resource scans.
 

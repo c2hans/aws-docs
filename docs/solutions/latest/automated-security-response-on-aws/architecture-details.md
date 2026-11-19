@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Architecture details
-<a name="architecture-details"></a>
 
 This section describes the components and AWS services that make up this solution and the architecture details on how these components work together.
 
@@ -30,6 +29,7 @@ The solution uses the following services. Core services are required to use the 
 |  [Amazon Inspector](https://aws.amazon.com/inspector/)  |  **Supporting**. The solution ingests Amazon Inspector `Inspector.InstanceVulnerability` findings and remediates the affected Amazon EC2 instances. |
 |  [Amazon GuardDuty](https://aws.amazon.com/guardduty/)  |  **Supporting**. The solution ingests Amazon GuardDuty `GuardDuty.IAMUser` findings and contains the affected IAM principal. |
 |  [Amazon Macie](https://aws.amazon.com/macie/)  |  **Supporting**. The solution ingests Amazon Macie `Macie.SensitiveDataS3Object` findings and blocks public access to the affected Amazon S3 bucket. |
+|  [IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/)  |  **Supporting**. The solution ingests IAM Access Analyzer `IAMAccessAnalyzer.ExternalAccess` findings and tightens the resource policy of the affected Amazon S3 bucket or AWS KMS key. |
 |  [Amazon S3](https://aws.amazon.com/s3)  |  **Supporting**. Stores exported remediation history and log data.<br />Hosts the solution’s Web UI as a Single-page Application (SPA). |
 |  [Amazon CloudFront](https://aws.amazon.com/cloudfront)  |  **Supporting**. Delivers the solution’s Web UI |
 |  [Amazon API Gateway](https://aws.amazon.com/apigateway)  |  **Supporting**. Creates the solution’s REST API to support the user interface. |

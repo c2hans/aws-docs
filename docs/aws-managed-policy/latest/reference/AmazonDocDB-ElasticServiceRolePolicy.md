@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDocDB-ElasticServiceRolePolicy
-<a name="AmazonDocDB-ElasticServiceRolePolicy"></a>
 
 **Description**: Allows Amazon DocumentDB-Elastic to manage AWS resources on your behalf.
 

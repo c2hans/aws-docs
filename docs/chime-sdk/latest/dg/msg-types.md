@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/msg-types.html
 ---
 
 # Understanding Amazon Chime SDK message types
-<a name="msg-types"></a>
 
 You send messages through channels. You can send `STANDARD`, `CONTROL`, or `SYSTEM` messages.
 + `STANDARD` messages can be up to 4KB in size and contain metadata. Metadata is arbitrary, and you can use it in a variety of ways, such as containing a link to an attachment.

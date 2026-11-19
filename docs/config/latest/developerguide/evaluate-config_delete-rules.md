@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Deleting AWS Config Rules
-<a name="evaluate-config_delete-rules"></a>
 
 You can use the AWS Config console or the AWS SDKs to delete your rules.
 

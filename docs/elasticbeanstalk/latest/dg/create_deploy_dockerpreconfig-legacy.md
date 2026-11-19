@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Legacy platforms
-<a name="create_deploy_dockerpreconfig-legacy"></a>
 
 This chapter lists content related to previous Docker platforms that are no longer supported by AWS Elastic Beanstalk. The topics listed here remain in this document as a reference for any customers that used these features or components prior to their retirement.
 

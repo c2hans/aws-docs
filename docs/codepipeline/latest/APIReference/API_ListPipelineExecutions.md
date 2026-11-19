@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListPipelineExecutions
-<a name="API_ListPipelineExecutions"></a>
 
 Gets a summary of the most recent executions for a pipeline.
 

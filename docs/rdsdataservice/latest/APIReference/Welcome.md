@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon RDS provides an HTTP endpoint to run SQL statements on an Amazon Aurora DB cluster. To run these statements, you use the RDS Data API (Data API).
 
@@ -13,4 +12,4 @@ Data API is available with the following types of Aurora databases:
 
 For more information about the Data API, see [Using RDS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.html) in the *Amazon Aurora User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

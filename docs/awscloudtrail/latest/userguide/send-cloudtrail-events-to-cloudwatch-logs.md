@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/send-clou
 ---
 
 # Sending events to CloudWatch Logs
-<a name="send-cloudtrail-events-to-cloudwatch-logs"></a>
 
 When you configure your trail to send events to CloudWatch Logs, CloudTrail sends only the events that match your trail settings. For example, if you configure your trail to log data events only, your trail sends data events only to your CloudWatch Logs log group. CloudTrail supports sending data, Insights, and management events to CloudWatch Logs. For more information, see [Working with CloudTrail log files](cloudtrail-working-with-log-files.md).
 

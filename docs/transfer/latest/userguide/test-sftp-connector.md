@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/test-sftp-conn
 ---
 
 # Test an SFTP connector
-<a name="test-sftp-connector"></a>
 
 After you create an SFTP connector, we recommend that you test it before you attempt to transfer any files using your new connector.
 

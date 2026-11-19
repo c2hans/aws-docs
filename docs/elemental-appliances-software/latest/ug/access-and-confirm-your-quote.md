@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-appliances-software/latest/ug/
 ---
 
 # Review your quote for AWS Elemental appliances and software
-<a name="access-and-confirm-your-quote"></a>
 
 After you receive a quote from your account manager, review the quote to either confirm the quote or to request changes.
 

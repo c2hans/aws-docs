@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/shared-resour
 ---
 
 # Working with shared resources in AWS End User Messaging SMS
-<a name="shared-resources"></a>
 
 AWS End User Messaging SMS integrates with AWS Resource Access Manager (AWS RAM) to enable resource sharing. AWS RAM is a service that enables you to share some AWS End User Messaging SMS resources with other AWS accounts or through AWS Organizations. With AWS RAM, you share resources that you own by creating a *resource share*. A resource share specifies the resources to share, and the consumers with whom to share them. Consumers can include:
 + Specific AWS accounts inside or outside of its organization in AWS Organizations

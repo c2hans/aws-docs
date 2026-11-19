@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/controls-ov
 ---
 
 # Evaluating compliance status and control status
-<a name="controls-overall-status"></a>
 
 The `Compliance.Status` field of the AWS Security Finding Format describes the result of a control finding. AWS Security Hub CSPM uses the compliance status of control findings to determine an overall control status. The control status is displayed on the details page of a control on the Security Hub CSPM console.
 

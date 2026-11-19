@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-APIRefer
 ---
 
 # ListAlertManagerReceivers
-<a name="AMP-APIReference-ListAlertManagerReceivers"></a>
 
 The `ListAlertManagerReceivers` operation retrieves information about the receivers configured in alert manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Q in Connect
-<a name="list_q-in-connect"></a>
 
 Amazon Q in Connect (service prefix: `wisdom`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

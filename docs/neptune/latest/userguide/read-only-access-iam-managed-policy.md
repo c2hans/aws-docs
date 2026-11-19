@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/read-only-acces
 ---
 
 # Granting `NeptuneReadOnlyAccess` to Amazon Neptune databases using AWS managed policy
-<a name="read-only-access-iam-managed-policy"></a>
 
 The [NeptuneReadOnlyAccess](https://console.aws.amazon.com/iam/home#policies/NeptuneReadOnlyAccess) managed policy below grants read-only access to all Neptune actions and resources for both administrative and data-access purposes.
 

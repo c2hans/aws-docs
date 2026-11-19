@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/logg
 ---
 
 # Logging with the SDK for Java 2.x
-<a name="logging-slf4j"></a>
 
 The AWS SDK for Java 2.x uses [SLF4J](https://www.slf4j.org/manual.html), which is an abstraction layer that enables the use of any one of several logging systems at runtime.
 

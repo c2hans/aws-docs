@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/address-f
 ---
 
 # Address Form SDK
-<a name="address-form-sdk"></a>
 
 The Address Form SDK streamlines building smart address-entry forms. Address forms built with the SDK provide relevant address suggestions as users begin typing. When a user selects a suggestion, an address form automatically fills in fields such as city, state, and postal code. This reduces errors and speeds up data entry by minimizing manual input. Users can also preview the selected address on a map and adjust its location pin to indicate specific entrances or pick-up locations, significantly improving accuracy.
 

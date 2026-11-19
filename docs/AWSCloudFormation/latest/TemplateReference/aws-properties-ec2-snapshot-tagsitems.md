@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::Snapshot TagsItems
-<a name="aws-properties-ec2-snapshot-tagsitems"></a>
 
 <a name="aws-properties-ec2-snapshot-tagsitems-description"></a>The `TagsItems` property type specifies Property description not available. for an [AWS::EC2::Snapshot](aws-resource-ec2-snapshot.md).
 

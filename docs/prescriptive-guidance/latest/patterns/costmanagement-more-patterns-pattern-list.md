@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # More patterns
-<a name="costmanagement-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Automatically inventory AWS resources across multiple accounts and Regions](automate-aws-resource-inventory.md)

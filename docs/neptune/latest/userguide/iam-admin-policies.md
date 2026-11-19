@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-admin-polic
 ---
 
 # Creating custom IAM policy statements to administer Amazon Neptune
-<a name="iam-admin-policies"></a>
 
 Administrative policy statements let you control what an IAM user can do to manage a Neptune database.
 

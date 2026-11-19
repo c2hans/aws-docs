@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troublesho
 ---
 
 # Troubleshooting prompt examples
-<a name="spark-troubleshooting-agent-prompt-examples"></a>
 
 You can use the following prompt examples in the troubleshooting experience.
 

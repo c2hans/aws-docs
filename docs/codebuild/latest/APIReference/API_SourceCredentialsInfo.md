@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Source
 ---
 
 # SourceCredentialsInfo
-<a name="API_SourceCredentialsInfo"></a>
 
  Information about the credentials for a GitHub, GitHub Enterprise, GitLab, GitLab Self Managed, or Bitbucket repository.
 

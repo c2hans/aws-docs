@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssignedSessionAction
-<a name="API_AssignedSessionAction"></a>
 
 The action for a session defined by the session action ID.
 

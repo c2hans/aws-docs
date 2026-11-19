@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinO
 ---
 
 # FinOpsAgentOperatorPolicy
-<a name="FinOpsAgentOperatorPolicy"></a>
 
 **Description**: Provides access to use the AWS FinOps Agent web app for an Agent.
 

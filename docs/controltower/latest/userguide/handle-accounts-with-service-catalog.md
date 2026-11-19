@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/handle-acc
 ---
 
 # Interact with AWS Control Tower accounts from AWS Service Catalog
-<a name="handle-accounts-with-service-catalog"></a>
 
 This section tells how to handle your AWS Control Tower accounts with the capabilities of AWS Service Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Edit a keyword used by a phone number in AWS End User Messaging
-<a name="nx-features-keywords-number-edit"></a>
 
 Use the AWS End User Messaging console or AWS CLI to edit keyword responses for your phone number.
 

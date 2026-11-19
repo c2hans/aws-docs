@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Maintaining model performance
-<a name="genperf02"></a>
 
 | GENPERF02: How do you verify your generative AI workload maintains acceptable performance levels? |
 | --- |

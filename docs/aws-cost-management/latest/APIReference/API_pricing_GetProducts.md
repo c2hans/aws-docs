@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetProducts
-<a name="API_pricing_GetProducts"></a>
 
 Returns a list of all products that match the filter criteria.
 

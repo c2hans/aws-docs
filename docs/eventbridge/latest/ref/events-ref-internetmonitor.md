@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-intern
 ---
 
 # Amazon CloudWatch Internet Monitor events
-<a name="events-ref-internetmonitor"></a>
 
 Internet Monitor sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

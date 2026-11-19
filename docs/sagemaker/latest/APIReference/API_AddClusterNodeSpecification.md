@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddClu
 ---
 
 # AddClusterNodeSpecification
-<a name="API_AddClusterNodeSpecification"></a>
 
 Specifies an instance group and the number of nodes to add to it.
 

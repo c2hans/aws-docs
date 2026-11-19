@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeConnec
 ---
 
 # DescribeConnectClientAddIns
-<a name="API_DescribeConnectClientAddIns"></a>
 
 Retrieves a list of Connect Customer client add-ins that have been created.
 

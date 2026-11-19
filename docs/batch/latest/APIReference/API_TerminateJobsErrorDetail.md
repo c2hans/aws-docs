@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJ
 ---
 
 # TerminateJobsErrorDetail
-<a name="API_TerminateJobsErrorDetail"></a>
 
 An object that contains the details of a job that couldn't be terminated by a `TerminateJobs` operation.
 

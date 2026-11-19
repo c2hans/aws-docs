@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/conce
 ---
 
 # Concepts
-<a name="concepts-storefront"></a>
 
 ## Automated offers
 <a name="automated-offers"></a>

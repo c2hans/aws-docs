@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_rekognitio
 ---
 
 # Build an Amazon Rekognition collection and find faces in it using an AWS SDK
-<a name="example_rekognition_Usage_FindFacesInCollection_section"></a>
 
 The following code example shows how to:
 + Create an Amazon Rekognition collection.

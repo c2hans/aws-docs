@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OntapVolumeC
 ---
 
 # OntapVolumeConfiguration
-<a name="API_OntapVolumeConfiguration"></a>
 
 The configuration of an Amazon FSx for NetApp ONTAP volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SnapshotI
 ---
 
 # SnapshotInfo
-<a name="API_SnapshotInfo"></a>
 
 Provides summary information about an enhanced snapshot.
 

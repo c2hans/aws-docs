@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-alertman
 ---
 
 # Use Amazon SNS as an alert receiver
-<a name="AMP-alertmanager-receiver-createtopic"></a>
 
 You can use an existing Amazon SNS topic as an alert receiver for Amazon Managed Service for Prometheus, or you can create a new one. We recommend that you use a topic of the **Standard** type, so that you can forward alerts from the topic to email, SMS, or HTTP.
 

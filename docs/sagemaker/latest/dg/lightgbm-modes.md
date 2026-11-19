@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lightgbm-modes.html
 ---
 
 # How to use SageMaker AI LightGBM
-<a name="lightgbm-modes"></a>
 
 You can use LightGBM as an Amazon SageMaker AI built-in algorithm. The following section describes how to use LightGBM with the SageMaker Python SDK. For information on how to use LightGBM from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 + **Use LightGBM as a built-in algorithm**

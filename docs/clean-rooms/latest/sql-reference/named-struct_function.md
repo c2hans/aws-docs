@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/named-s
 ---
 
 # NAMED\_STRUCT constructor function
-<a name="named-struct_function"></a>
 
 The NAMED\_STRUCT constructor function creates a struct with the given field names and values.
 

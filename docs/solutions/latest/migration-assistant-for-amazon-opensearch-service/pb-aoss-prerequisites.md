@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Prerequisites
-<a name="pb-aoss-prerequisites"></a>
 
 Confirm all of the following before you start:
 + The source Amazon OpenSearch Service domain is healthy and reachable, and you know its HTTPS endpoint and engine version.

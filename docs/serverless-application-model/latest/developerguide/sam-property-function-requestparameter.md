@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # RequestParameter
-<a name="sam-property-function-requestparameter"></a>
 
 Configure Request Parameter for a specific Api\+Path\+Method.
 

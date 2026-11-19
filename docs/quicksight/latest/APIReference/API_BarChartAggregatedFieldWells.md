@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarCh
 ---
 
 # BarChartAggregatedFieldWells
-<a name="API_BarChartAggregatedFieldWells"></a>
 
 The aggregated field wells of a bar chart.
 

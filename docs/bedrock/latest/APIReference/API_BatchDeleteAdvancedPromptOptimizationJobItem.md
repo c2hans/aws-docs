@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteAdvancedPromptOptimizationJobItem
-<a name="API_BatchDeleteAdvancedPromptOptimizationJobItem"></a>
 
 Information about a successfully deleted job.
 

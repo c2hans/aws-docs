@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LambdaFunctionScheduleFailedEventDetails
-<a name="API_LambdaFunctionScheduleFailedEventDetails"></a>
 
 Contains details about a failed Lambda function schedule event that occurred during an execution.
 

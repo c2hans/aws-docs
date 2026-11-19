@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Testing and validation
-<a name="testing-and-validation"></a>
 
 In AI-driven serverless architectures, traditional unit and integration testing is still critical. However, new test types are needed to accommodate large language model (LLM) unpredictability, serverless concurrency, and workflow orchestration.
 

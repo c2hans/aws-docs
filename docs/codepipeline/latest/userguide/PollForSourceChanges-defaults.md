@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/PollForSou
 ---
 
 # Valid settings for the `PollForSourceChanges` parameter
-<a name="PollForSourceChanges-defaults"></a>
 
 The `PollForSourceChanges` parameter default is determined by the method used to create the pipeline, as described in the following table. In many cases, the `PollForSourceChanges` parameter defaults to true and must be disabled.
 

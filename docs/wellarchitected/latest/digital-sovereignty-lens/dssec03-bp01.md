@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC03-BP01 Validate policy effectiveness through automated analysis
-<a name="dssec03-bp01"></a>
 
  Manual policy validation is error-prone and doesn't scale well with the complexity of modern cloud environments. Automated reasoning tools analyze access policies to identify potential security gaps, over-permissive access, and unintended permissions before deployment.
 

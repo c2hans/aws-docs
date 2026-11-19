@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 This guide covered common use cases for multi-Region architectures, fundamentals of implementing these architectures, and implications of this approach. You can apply these fundamentals to any workload and use the information as a framework to help decide whether a multi-Region architecture is the right approach for your business.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessInstance
-<a name="API_ModifyVerifiedAccessInstance"></a>
 
 Modifies the configuration of the specified AWS Verified Access instance.
 

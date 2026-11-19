@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Guidance Overview
-<a name="guidance-overview"></a>
 
 Publication date: *July 2026*
 

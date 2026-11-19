@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 Deploying this guidance with the default parameters builds the following environment in the AWS Cloud.
 

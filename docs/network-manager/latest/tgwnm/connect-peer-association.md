@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/connect-pee
 ---
 
 # Add a Connect peer association using AWS Network Manager
-<a name="connect-peer-association"></a>
 
 Create a transit gateway Connect peer association using the Network Manager console on either of the following pages:
 + On the **Transit gateways** page

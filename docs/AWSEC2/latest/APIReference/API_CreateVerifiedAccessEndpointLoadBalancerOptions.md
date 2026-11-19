@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessEndpointLoadBalancerOptions
-<a name="API_CreateVerifiedAccessEndpointLoadBalancerOptions"></a>
 
 Describes the load balancer options when creating an AWS Verified Access endpoint using the `load-balancer` type.
 

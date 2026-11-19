@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Cell placement
-<a name="cell-placement"></a>
 
  Cell placement it is another responsibility of the control plane and refers to the activities of onboarding new tenants and customers and also creating the cells themselves. To do these activities some level of observability is required such as:
 +  Capacity of each cell

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GpuDevice
 ---
 
 # GpuDeviceInfo
-<a name="API_GpuDeviceInfo"></a>
 
 Describes the GPU accelerators for the instance type.
 

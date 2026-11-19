@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteCo
 ---
 
 # DeleteContactFlowModuleVersion
-<a name="API_DeleteContactFlowModuleVersion"></a>
 
 Removes a specific version of a contact flow module.
 

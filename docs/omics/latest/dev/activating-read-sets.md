@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/activating-read-sets.ht
 ---
 
 # Activating read sets in HealthOmics
-<a name="activating-read-sets"></a>
 
 You can activate read sets that are archived with the **start-read-set-activation-job** API operation, or through the AWS CLI, as shown in the following example. Replace the `{{sequence store ID}}` and `{{read set id}}` with your sequence store ID and read set IDs.
 

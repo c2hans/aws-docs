@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/full-table-cred
 ---
 
 # Application integration for full table access
-<a name="full-table-credential-vending"></a>
 
 Follow these steps to enable third-party query engines to access data without the IAM session tag validation:
 

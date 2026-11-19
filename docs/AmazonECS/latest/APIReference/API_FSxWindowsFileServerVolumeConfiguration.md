@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_FSxWin
 ---
 
 # FSxWindowsFileServerVolumeConfiguration
-<a name="API_FSxWindowsFileServerVolumeConfiguration"></a>
 
 This parameter is specified when you're using [Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html) file system for task storage.
 

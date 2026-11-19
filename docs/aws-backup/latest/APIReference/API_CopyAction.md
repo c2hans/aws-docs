@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_CopyA
 ---
 
 # CopyAction
-<a name="API_CopyAction"></a>
 
 The details of the copy operation.
 

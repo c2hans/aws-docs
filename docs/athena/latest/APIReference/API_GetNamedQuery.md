@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNamedQ
 ---
 
 # GetNamedQuery
-<a name="API_GetNamedQuery"></a>
 
 Returns information about a single query. Requires that you have access to the workgroup in which the query was saved.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityM
 ---
 
 # CapacityManagerMonitoredTagKey
-<a name="API_CapacityManagerMonitoredTagKey"></a>
 
  Describes a tag key that is being monitored by Capacity Manager, including its activation status and the earliest available data point.
 

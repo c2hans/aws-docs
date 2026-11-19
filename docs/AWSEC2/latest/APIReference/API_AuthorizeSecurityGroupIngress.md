@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Authorize
 ---
 
 # AuthorizeSecurityGroupIngress
-<a name="API_AuthorizeSecurityGroupIngress"></a>
 
 Adds the specified inbound (ingress) rules to a security group.
 

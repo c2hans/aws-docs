@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/get-started.htm
 ---
 
 # Get started with AWS Systems Manager for SAP
-<a name="get-started"></a>
 
 To get started with using AWS Systems Manager for SAP, ensure that you complete the following prerequisites for setup. You must run these steps on all Amazon EC2 instances in your setup.
 

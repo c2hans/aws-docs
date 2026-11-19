@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2V
 ---
 
 # AwsEc2VpcEndpointServiceServiceTypeDetails
-<a name="API_AwsEc2VpcEndpointServiceServiceTypeDetails"></a>
 
 The service type information for a VPC endpoint service.
 

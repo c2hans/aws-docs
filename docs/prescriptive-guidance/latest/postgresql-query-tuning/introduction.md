@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Optimizing PostgreSQL query performance
-<a name="introduction"></a>
 
 *Veeranjaneyulu Grandhi, Tirumala Dasari, Vamsikrishna Jammula, Srinivas Potlachervoo, and Naga Srinivas Reddy Ravulapati, Amazon Web Services*
 

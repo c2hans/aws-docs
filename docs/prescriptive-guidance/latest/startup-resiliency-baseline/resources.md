@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS Well-Architected Framework
 <a name="resources-well-architected"></a>

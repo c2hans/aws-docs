@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Expose your data lake as a GraphQL API
-<a name="data-lake-graphql-api"></a>
 
 Publication date: **April 25, 2022 ([Diagram history](diagram-history.md))**
 

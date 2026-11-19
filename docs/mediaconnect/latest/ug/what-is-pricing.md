@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/what-is-pricing.h
 ---
 
 # Pricing for MediaConnect
-<a name="what-is-pricing"></a>
 
 As with other AWS products, there are no contracts or minimum commitments for using MediaConnect. Pricing varies by resource type.
 

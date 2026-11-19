@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-depl
 ---
 
 # deployment
-<a name="gg-cli-deployment"></a>
 
 Use the `deployment` command to interact with local components on your core device.
 

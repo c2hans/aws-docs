@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_VpcConfig
 ---
 
 # VpcConfiguration
-<a name="API_VpcConfiguration"></a>
 
 Describes the parameters of a VPC used by the application.
 

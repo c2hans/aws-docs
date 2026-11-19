@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CreateRe
 ---
 
 # CreateResolver
-<a name="API_CreateResolver"></a>
 
 Creates a `Resolver` object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/testing-and-
 ---
 
 # Testing and using links
-<a name="testing-and-using-links"></a>
 
 **Note**
  Link addresses will only be visible and accessible from within your VPC.

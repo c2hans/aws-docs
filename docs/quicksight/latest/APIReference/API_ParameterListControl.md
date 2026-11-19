@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterListControl
-<a name="API_ParameterListControl"></a>
 
 A control to display a list with buttons or boxes that are used to select either a single value or multiple values.
 

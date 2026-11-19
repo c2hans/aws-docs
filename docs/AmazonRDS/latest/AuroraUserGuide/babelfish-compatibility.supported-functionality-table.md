@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Supported functionalities in Babelfish by version
-<a name="babelfish-compatibility.supported-functionality-table"></a>
 
 In the following tables, you can find the list of all the functionalities supported by different Babelfish versions. For lists of unsupported functionality, see [Unsupported functionalities in Babelfish](babelfish-compatibility.tsql.limitations-unsupported.md). For information about various Babelfish releases, see the [*Release Notes for Aurora PostgreSQL*](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/Welcome.html).
 

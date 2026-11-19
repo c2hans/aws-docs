@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-cus
 ---
 
 # Update custom composite models (components)
-<a name="update-custom-composite-models"></a>
 
 You can use the AWS IoT SiteWise API to update a custom composite model, or the AWS IoT SiteWise console to update components.
 

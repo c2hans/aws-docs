@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateC
 ---
 
 # UpdateConnectorV2
-<a name="API_UpdateConnectorV2"></a>
 
 Grants permission to update a connectorV2 based on its id and input parameters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RecommendationSummary
-<a name="API_CostOptimizationHub_RecommendationSummary"></a>
 
 The summary of rightsizing recommendations, including de-duped savings from all types of recommendations.
 

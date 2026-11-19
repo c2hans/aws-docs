@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Referencing a predefined variable
-<a name="workflows-working-with-variables-reference-output-vars"></a>
 
 You can reference predefined variables in any action within an Amazon CodeCatalyst workflow.
 

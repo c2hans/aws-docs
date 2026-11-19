@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceM
 ---
 
 # InstanceMetadataDefaultsResponse
-<a name="API_InstanceMetadataDefaultsResponse"></a>
 
 The default instance metadata service (IMDS) settings that were set at the account level in the specified AWS  Region.
 

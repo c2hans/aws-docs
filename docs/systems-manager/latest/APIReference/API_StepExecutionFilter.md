@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # StepExecutionFilter
-<a name="API_StepExecutionFilter"></a>
 
 A filter to limit the amount of step execution information returned by the call.
 

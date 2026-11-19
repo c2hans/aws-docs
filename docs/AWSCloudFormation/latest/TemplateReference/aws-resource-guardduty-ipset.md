@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GuardDuty::IPSet
-<a name="aws-resource-guardduty-ipset"></a>
 
 The `AWS::GuardDuty::IPSet` resource helps you create a list of trusted IP addresses that you can use for secure communication with AWS infrastructure and applications. Once you activate this list, GuardDuty will not generate findings when there is an activity associated with these safe IP addresses.
 

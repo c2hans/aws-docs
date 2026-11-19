@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Stage 2: Implement observability
-<a name="implement-observability"></a>
 
 At this stage, you start the process for your teams to incrementally work their way to the North Star.
 

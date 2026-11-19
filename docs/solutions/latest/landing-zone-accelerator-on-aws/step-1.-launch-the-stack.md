@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Step 1. Launch the stack
-<a name="step-1.-launch-the-stack"></a>
 
 This automated AWS CloudFormation template deploys the Landing Zone Accelerator on AWS in the AWS Cloud. You must complete the applicable steps in [Prerequisites](prerequisites.md) before launching the stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Operations_Amazo
 ---
 
 # Amazon S3 Tables
-<a name="API_Operations_Amazon_S3_Tables"></a>
 
 The following actions are supported by Amazon S3 Tables:
 +  [CompleteTableMigration](API_s3Buckets_CompleteTableMigration.md)

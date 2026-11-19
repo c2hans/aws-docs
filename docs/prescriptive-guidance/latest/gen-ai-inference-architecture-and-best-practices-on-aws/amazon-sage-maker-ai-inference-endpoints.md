@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Amazon SageMaker AI inference endpoints
-<a name="amazon-sage-maker-ai-inference-endpoints"></a>
 
 SageMaker AI Inference endpoints deliver a managed inference environment purpose-built for deploying foundation models (FMs) and other ML models at scale, while giving teams control over the underlying instances, inference engine, and optimization strategy.
 

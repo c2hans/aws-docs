@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TargetCon
 ---
 
 # TargetConfigurationRequest
-<a name="API_TargetConfigurationRequest"></a>
 
 Details about the target configuration.
 

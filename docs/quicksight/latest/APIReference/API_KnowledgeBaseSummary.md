@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBaseSummary
-<a name="API_KnowledgeBaseSummary"></a>
 
 A summary of a knowledge base, including its identifier, name, status, and metadata.
 

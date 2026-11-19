@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Working with dynamic references
-<a name="dynamic-references"></a>
 
 MDAA allows use of dynamic references in configuration files, building on CloudFormation Dynamic References:
 

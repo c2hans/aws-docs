@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-loopin
 ---
 
 # Use looping constructs in AWSTOE
-<a name="toe-looping-constructs"></a>
 
 This section provides information to help you create looping constructs in the AWSTOE. Looping constructs define a repeated sequence of instructions. You can use the following types of looping constructs in AWSTOE:
 + `for` constructs – Iterate over a bounded sequence of integers.

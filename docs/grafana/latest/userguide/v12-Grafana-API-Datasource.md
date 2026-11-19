@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Data Source API
-<a name="v12-Grafana-API-Datasource"></a>
 
 Use the Data Source API to create, update, delete, and work with data sources in the Amazon Managed Grafana workspace.
 

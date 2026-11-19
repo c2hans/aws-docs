@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK AppController API
-<a name="api-reference-3P-apps-app-controller"></a>
 
 The Connect Customer SDK provides an `AppControllerClient` to control applications in the Connect Customer agent workspace.
 

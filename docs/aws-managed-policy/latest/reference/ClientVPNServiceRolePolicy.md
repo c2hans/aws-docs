@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clie
 ---
 
 # ClientVPNServiceRolePolicy
-<a name="ClientVPNServiceRolePolicy"></a>
 
 **Description**: Policy to enable AWS Client VPN to manage your Client VPN endpoints.
 

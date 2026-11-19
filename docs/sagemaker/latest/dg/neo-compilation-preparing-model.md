@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-compilation-prep
 ---
 
 # Prepare Model for Compilation
-<a name="neo-compilation-preparing-model"></a>
 
 SageMaker Neo requires machine learning models to satisfy specific input data shapes. The input shape required for compilation depends on the deep learning framework you use. Once your model input shape is correctly formatted, save your model according to the requirements below. Once you have a saved model, compress the model artifacts.
 

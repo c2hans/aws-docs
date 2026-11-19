@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Resources
-<a name="resources"></a>
 
 For additional information and resources, see the following resources:
 + [Amazon FSx for NetApp ONTAP Documentation](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoSour
 ---
 
 # MarketoSourceProperties
-<a name="API_MarketoSourceProperties"></a>
 
  The properties that are applied when Marketo is being used as a source.
 

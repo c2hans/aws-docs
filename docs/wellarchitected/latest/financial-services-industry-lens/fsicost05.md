@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSICOST05: How do you track anomalies in your ongoing costs for AWS services?
-<a name="fsicost05"></a>
 
  Understanding your organization's costs and drivers is critical for managing your cost and usage effectively, and identifying cost-reduction opportunities. Accurate cost and usage monitoring allows you to make more informed decisions about where to allocate resources within your organization.
 

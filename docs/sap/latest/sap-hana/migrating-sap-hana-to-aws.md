@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/migrating-sap-hana-t
 ---
 
 # Migrating SAP HANA to AWS: Patterns for AWS Migrations
-<a name="migrating-sap-hana-to-aws"></a>
 
  *Last updated: May, 2024*
 

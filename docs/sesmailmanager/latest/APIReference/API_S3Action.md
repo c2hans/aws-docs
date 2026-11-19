@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # S3Action
-<a name="API_S3Action"></a>
 
 Writes the MIME content of the email to an S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # How the AWS Database Encryption SDK works
-<a name="how-it-works"></a>
 
 |  |
 | --- |

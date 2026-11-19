@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Release notes
-<a name="sagemaker-eks-checkpointless-release-notes"></a>
 
 See the following release notes to track the latest updates for the SageMaker HyperPod checkpointless training.
 

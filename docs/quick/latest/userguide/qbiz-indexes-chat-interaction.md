@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-chat
 ---
 
 # Interacting with your Amazon Q Business indexes
-<a name="qbiz-indexes-chat-interaction"></a>
 
 Once you've connected your Amazon Q Business index to AWS Quick, you can interact with it through chat using agents.
 

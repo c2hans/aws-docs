@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Rad
 ---
 
 # RadiusSettings
-<a name="API_RadiusSettings"></a>
 
 Contains information about a Remote Authentication Dial In User Service (RADIUS) server.
 

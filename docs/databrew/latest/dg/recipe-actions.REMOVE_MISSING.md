@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REMOVE
 ---
 
 # REMOVE\_MISSING
-<a name="recipe-actions.REMOVE_MISSING"></a>
 
 Returns only the rows in which a specified column isn't missing data.
 

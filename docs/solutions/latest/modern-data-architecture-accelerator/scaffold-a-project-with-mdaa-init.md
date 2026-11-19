@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Scaffold a project with `mdaa init`
-<a name="scaffold-a-project-with-mdaa-init"></a>
 
 Starting with MDAA 1.8.0, the CLI has an `init` action that scaffolds a new configuration project from a starter kit, so you no longer need to clone the MDAA repository and copy the `starter_kits/` files by hand. `init` runs interactively: it prompts you to choose a starter kit, fills in the `<YOUR_…​>` placeholder values in the generated config, pins `mdaa_version` in `mdaa.yaml` so deploys use the same version that generated the schemas, and writes versioned JSON schemas and module documentation under `.mdaa/<version>/` along with AI steering files for Kiro, Claude Code, and GitHub Copilot.
 

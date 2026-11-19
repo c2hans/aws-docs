@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pipel
 ---
 
 # Sinks
-<a name="pipeline-sinks"></a>
 
 Sinks define the destination where processed data is sent. Logs pipelines use the `cloudwatch_logs` sink and can route events among multiple log groups. Metrics pipelines use exactly one `cloudwatch_metrics` sink.
 

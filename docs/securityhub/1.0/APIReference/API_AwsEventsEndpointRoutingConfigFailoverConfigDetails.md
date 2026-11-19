@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEven
 ---
 
 # AwsEventsEndpointRoutingConfigFailoverConfigDetails
-<a name="API_AwsEventsEndpointRoutingConfigFailoverConfigDetails"></a>
 
  The failover configuration for an endpoint. This includes what triggers failover and what happens when it's triggered.
 

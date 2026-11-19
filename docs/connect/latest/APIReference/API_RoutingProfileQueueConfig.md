@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileQueueConfig
-<a name="API_RoutingProfileQueueConfig"></a>
 
 Contains information about the queue and channel for which priority and delay can be set.
 

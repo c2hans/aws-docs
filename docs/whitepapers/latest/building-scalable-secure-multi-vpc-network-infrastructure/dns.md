@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # DNS
-<a name="dns"></a>
 
 When you launch an instance into a VPC, excluding the default VPC, AWS provides the instance with a private DNS hostname (and potentially a public DNS hostname) depending on the [DNS attributes](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support) you specify for the VPC and if your instance has a public IPv4 address. When the `enableDnsSupport` attribute is set to `true`, you get a DNS resolution within the VPC from Route 53 Resolver (\+2 IP offset to the VPC CIDR). By default, Route 53 Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or Elastic Load Balancing load balancers. With VPC peering, hosts in one VPC can resolve public DNS hostnames to private IP addresses for instances in peered VPCs, provided the option to do so is enabled. The same is applicable for VPCs connected via AWS Transit Gateway. For more information, refer to [Enabling DNS Resolution Support for a VPC Peering Connection](https://docs.aws.amazon.com/vpc/latest/peering/modify-peering-connections.html).
 

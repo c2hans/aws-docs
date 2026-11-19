@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Getting started with spark-submit for Amazon EMR on EKS
-<a name="spark-submit-gs"></a>
 
 Amazon EMR 6.10.0 and higher supports spark-submit for running Spark applications on an Amazon EKS cluster. The section that follows shows you how to submit a command for a Spark application.
 

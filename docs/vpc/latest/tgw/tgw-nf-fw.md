@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nf-fw.html
 ---
 
 # AWS Transit Gateway network function attachments
-<a name="tgw-nf-fw"></a>
 
 AWS Transit Gateway supports network function attachments for AWS Network Firewall and Gateway Load Balancer. How you create and manage the attachment depends on its type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-e
 ---
 
 # Pulling an image to your local environment from an Amazon ECR private repository
-<a name="docker-pull-ecr-image"></a>
 
 If you want to run a Docker image that is available in Amazon ECR, you can pull it to your local environment with the **docker pull** command. You can do this from either your default registry or from a registry associated with another AWS account.
 

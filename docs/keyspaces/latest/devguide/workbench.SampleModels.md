@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/workbench.Samp
 ---
 
 # Sample data models in NoSQL Workbench
-<a name="workbench.SampleModels"></a>
 
 The home page for the modeler and visualizer displays a number of sample models that ship with NoSQL Workbench. This section describes these models and their potential uses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApiGatewayTargetConfiguration
-<a name="API_ApiGatewayTargetConfiguration"></a>
 
 The configuration for an Amazon API Gateway target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/work-with.html
 ---
 
 # Working with the AWS CDK library
-<a name="work-with"></a>
 
 Import and use the AWS Cloud Development Kit (AWS CDK) library to define your AWS Cloud infrastructure with a [supported programming language](languages.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixTrafficOptions
-<a name="API_RouteMatrixTrafficOptions"></a>
 
 Traffic related options.
 

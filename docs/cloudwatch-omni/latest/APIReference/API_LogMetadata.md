@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # LogMetadata
-<a name="API_LogMetadata"></a>
 
 One LOGS query selector block on a node. The `attributes` map's keys are AND'd; each selects with `col = value`. Deliberately RAW/un-normalized so the selector matches the store, not the node's merged identity.
 

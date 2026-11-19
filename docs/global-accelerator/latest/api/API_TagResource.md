@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_TagRes
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add tags to an accelerator resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListEventConfigurations
-<a name="API_ListEventConfigurations"></a>
 
 List event configurations where at least one event topic has been enabled.
 

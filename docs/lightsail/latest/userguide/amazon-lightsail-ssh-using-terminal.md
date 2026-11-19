@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Connect to Lightsail Linux or Unix instances with the SSH command
-<a name="amazon-lightsail-ssh-using-terminal"></a>
 
 If your local machine uses a Linux or Unix operating system, including macOS, then you can connect to your Linux or Unix instance in Amazon Lightsail using the SSH client through a terminal window.
 

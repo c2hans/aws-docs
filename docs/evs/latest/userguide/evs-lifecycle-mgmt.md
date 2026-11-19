@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-lifecycle-mgmt.
 ---
 
 # Update and upgrade
-<a name="evs-lifecycle-mgmt"></a>
 
 You’re responsible for patching, updating, and upgrading the VMware Cloud Foundation (VCF) software in your Amazon Elastic VMware Service environment. This includes ESX, vCenter Server, vSAN, NSX, SDDC Manager, and VCF Operations, and any third-party integrations that you add, such as data protection solutions. For the full split of responsibilities, see [Shared responsibility and support](plan-shared-responsibility.md).
 

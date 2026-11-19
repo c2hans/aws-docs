@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/create-enclave.html
 ---
 
 # Creating an enclave
-<a name="create-enclave"></a>
 
 After your enclave applications have been packaged as an enclave image file (`.eif`), you are ready to create the enclave.
 

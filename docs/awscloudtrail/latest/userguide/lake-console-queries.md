@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-cons
 ---
 
 # View sample queries with the CloudTrail console
-<a name="lake-console-queries"></a>
 
 The CloudTrail console provides a number of sample queries that can help you get started writing your own queries.
 

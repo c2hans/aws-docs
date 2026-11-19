@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # Uninstall the solution
-<a name="uninstall"></a>
 
 You can uninstall Cost Optimizer for Amazon WorkSpaces from the AWS Management Console or by using the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI). Delete all the spoke account stacks and then delete the hub account stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Choosing the automatic scaling approach
-<a name="scaling"></a>
 
 Elasticity is one of the major advantages of using Amazon EMR. There are two main options for automatically scaling your resources:
 + Managed scaling

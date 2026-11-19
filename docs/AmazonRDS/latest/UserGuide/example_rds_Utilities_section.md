@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_U
 ---
 
 # Use `Utilities` with an AWS SDK
-<a name="example_rds_Utilities_section"></a>
 
 The following code example shows how to use `Utilities`.
 

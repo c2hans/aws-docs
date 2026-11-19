@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # RouteSummary
-<a name="API_RouteSummary"></a>
 
 The summary information for the routes as a response to `ListRoutes`.
 

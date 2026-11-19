@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateRelationalDatabaseFromSnapshot
-<a name="API_CreateRelationalDatabaseFromSnapshot"></a>
 
 Creates a new database from an existing database snapshot in Amazon Lightsail.
 

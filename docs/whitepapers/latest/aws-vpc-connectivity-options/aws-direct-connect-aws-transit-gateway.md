@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # AWS Direct Connect \+ AWS Transit Gateway
-<a name="aws-direct-connect-aws-transit-gateway"></a>
 
  [AWS Direct Connect](https://aws.amazon.com/directconnect/) \+ [AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html), using [transit VIF attachment to Direct Connect gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-dcg-attachments.html), enables your network to connect several regional centralized routers over a private dedicated connection. The following diagram shows connecting to two routers.
 

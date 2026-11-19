@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Unt
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tags from a support permit resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PurchaseOptionAssociatedEntity
-<a name="API_marketplace-discovery_PurchaseOptionAssociatedEntity"></a>
 
 A product, offer, and optional offer set associated with a purchase option.
 

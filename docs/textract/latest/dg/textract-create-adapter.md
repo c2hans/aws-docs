@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-create-adapt
 ---
 
 # Create an Adapter
-<a name="textract-create-adapter"></a>
 
 To customize the Amazon Textract base model, create an adapter. To do so, use the [CreateAdapter](https://docs.aws.amazon.com/textract/latest/APIReference/API_CreateAdapter.html) operation. When calling `CreateAdapter,` you provide an AdapterName and FeatureType as an input. Currently Queries is the only feature type supported.
 

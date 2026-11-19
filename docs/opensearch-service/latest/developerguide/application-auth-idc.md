@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # AWS IAM Identity Center authentication for OpenSearch UI
-<a name="application-auth-idc"></a>
 
 With AWS IAM Identity Center, your team gets a browser-based single sign-on experience. Your users sign in with their AWS IAM Identity Center credentials instead of generating presigned URLs.
 

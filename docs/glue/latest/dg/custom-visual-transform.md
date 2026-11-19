@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform.h
 ---
 
 # Transform data with custom visual transforms
-<a name="custom-visual-transform"></a>
 
  Custom visual transforms allow you to create transforms and make them available for use in AWS Glue Studio jobs. Custom visual transforms enable ETL developers, who may not be familiar with coding, to search and use a growing library of transforms using the AWS Glue Studio interface.
 

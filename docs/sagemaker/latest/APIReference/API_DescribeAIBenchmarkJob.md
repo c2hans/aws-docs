@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeAIBenchmarkJob
-<a name="API_DescribeAIBenchmarkJob"></a>
 
 Returns details of an AI benchmark job, including its status, configuration, target endpoint, and timing information.
 

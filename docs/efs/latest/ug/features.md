@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/features.html
 ---
 
 # Features of Amazon EFS
-<a name="features"></a>
 
 Following are features of Amazon EFS.
 

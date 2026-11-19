@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::Gateway InterceptorPayloadExclusionSelector
-<a name="aws-properties-bedrockagentcore-gateway-interceptorpayloadexclusionselector"></a>
 
 <a name="aws-properties-bedrockagentcore-gateway-interceptorpayloadexclusionselector-description"></a>The `InterceptorPayloadExclusionSelector` property type specifies Property description not available. for an [AWS::BedrockAgentCore::Gateway](aws-resource-bedrockagentcore-gateway.md).
 

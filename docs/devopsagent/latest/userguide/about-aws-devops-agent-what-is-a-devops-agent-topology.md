@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # What is a DevOps Agent Topology?
-<a name="about-aws-devops-agent-what-is-a-devops-agent-topology"></a>
 
 AWS DevOps Agent's automatically discovers and visualizes the resources and relationships within your applications and uses the resulting topology to understand your infrastructure during incident investigations and when making preventative recommendations.
 

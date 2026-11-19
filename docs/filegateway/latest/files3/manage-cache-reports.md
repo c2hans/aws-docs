@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/manage-cache-r
 ---
 
 # View and manage cache reports for your S3 File Gateway
-<a name="manage-cache-reports"></a>
 
 Cache reports list files that are currently in the local cache for a specific file share, according to filters and criteria that you specify. You can view a list of existing cache reports for a specific file share, check report progress and status, and delete reports you no longer need using the AWS Storage Gateway API or the Storage Gateway console.
 

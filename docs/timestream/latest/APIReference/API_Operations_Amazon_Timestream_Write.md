@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Opera
 ---
 
 # Amazon Timestream Write
-<a name="API_Operations_Amazon_Timestream_Write"></a>
 
 The following actions are supported by Amazon Timestream Write:
 +  [CreateBatchLoadTask](API_CreateBatchLoadTask.md)

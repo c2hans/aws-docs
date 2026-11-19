@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_InputSerializati
 ---
 
 # InputSerialization
-<a name="API_InputSerialization"></a>
 
 Describes the serialization format of the object.
 

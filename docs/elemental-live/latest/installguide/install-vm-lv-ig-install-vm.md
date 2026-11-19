@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step B: Deploy the VM
-<a name="install-vm-lv-ig-install-vm"></a>
 
 Perform these steps from your workstation.
 

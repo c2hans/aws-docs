@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SubdomainAttachableResource
-<a name="API_SubdomainAttachableResource"></a>
 
 Describes a Lightsail resource that a subdomain is associated with, or is being associated with.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/admin-controls.ht
 ---
 
 # Admin controls
-<a name="admin-controls"></a>
 
 Administrators can configure various settings and controls for Quick Research to ensure it meets organizational policies and security requirements.
 

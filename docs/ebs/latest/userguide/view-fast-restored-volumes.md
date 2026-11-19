@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/view-fast-restored-
 ---
 
 # View Amazon EBS volumes restored using fast snapshot restore
-<a name="view-fast-restored-volumes"></a>
 
 When you create a volume from a snapshot that is enabled for fast snapshot restore in the Availability Zone for the volume, it is restored using fast snapshot restore.
 

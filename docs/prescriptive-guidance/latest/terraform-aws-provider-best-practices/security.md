@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 ---
 
 # Security best practices
-<a name="security"></a>
 
 Properly managing authentication, access controls, and security is critical for secure use of the Terraform AWS Provider. This section outlines best practices around:
 + IAM roles and permissions for least-privilege access

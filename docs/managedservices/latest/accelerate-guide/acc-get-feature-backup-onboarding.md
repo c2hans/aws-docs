@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Onboarding AWS Backup in Accelerate
-<a name="acc-get-feature-backup-onboarding"></a>
 
 To configure backups, you need to create backup policies called *backup plans*. A backup plan specifies which AWS resources to back up, how frequently they need to be backed up, and the backup retention period. We recommend evaluating your organization's continuity, security, and compliance requirements to determine what backup plans you need.
 

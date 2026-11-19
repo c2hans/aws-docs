@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # LUMINAI Refinery Advisor on AWS
-<a name="luminai-refinery-advisor-on-aws"></a>
 
 Publication date: **February 29, 2024 ([Diagram history](diagram-history.md))**
 

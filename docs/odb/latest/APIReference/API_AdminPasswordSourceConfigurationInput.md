@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AdminPasswor
 ---
 
 # AdminPasswordSourceConfigurationInput
-<a name="API_AdminPasswordSourceConfigurationInput"></a>
 
 The input configuration for the admin password source. This is a union, so only one of the following members can be specified.
 

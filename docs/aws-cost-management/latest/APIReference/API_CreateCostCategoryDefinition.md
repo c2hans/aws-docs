@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateCostCategoryDefinition
-<a name="API_CreateCostCategoryDefinition"></a>
 
 Creates a new cost category with the requested name and rules.
 

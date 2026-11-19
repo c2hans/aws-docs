@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceC
 ---
 
 # InstanceCreditSpecification
-<a name="API_InstanceCreditSpecification"></a>
 
 Describes the credit option for CPU usage of a burstable performance instance.
 

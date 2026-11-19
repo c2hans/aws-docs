@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTest
 ---
 
 # ListTestCases
-<a name="API_ListTestCases"></a>
 
 Lists the test cases present in the specific Amazon Connect instance.
 

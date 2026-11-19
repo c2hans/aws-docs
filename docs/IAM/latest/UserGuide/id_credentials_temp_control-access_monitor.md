@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Monitor and control actions taken with assumed roles
-<a name="id_credentials_temp_control-access_monitor"></a>
 
 An [IAM role](id_roles.md) is an object in IAM that is assigned [permissions](access_policies.md). When you [assume that role](id_roles_manage-assume.md) using an IAM identity or an identity from outside of AWS, you receive a session with the permissions that are assigned to the role.
 

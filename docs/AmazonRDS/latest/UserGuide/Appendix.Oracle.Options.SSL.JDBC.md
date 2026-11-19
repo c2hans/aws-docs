@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Setting up an SSL connection over JDBC
-<a name="Appendix.Oracle.Options.SSL.JDBC"></a>
 
 To use an SSL connection over JDBC, you must create a keystore, trust the Amazon RDS root CA certificate, and use the code snippet specified following.
 

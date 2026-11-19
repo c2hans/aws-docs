@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/exploring-anomali
 ---
 
 # Exploring anomalies per category or dimension
-<a name="exploring-anomalies-per-category-or-dimension"></a>
 
 The main section of the **Explore anomalies** screen is locked to the lower right of the screen. It remains here no matter how many other sections of the screen are open. If multiple anomalies exist, you can scroll out to highlight them. The chart displays anomalies in color ranges and shows where they occur over a period of time.
 

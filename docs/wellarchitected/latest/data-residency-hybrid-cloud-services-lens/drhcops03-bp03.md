@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS03-BP03 Build redundant network connectivity
-<a name="drhcops03-bp03"></a>
 
  Create redundant network connections to avoid connectivity loss to the Region and your workloads.
 

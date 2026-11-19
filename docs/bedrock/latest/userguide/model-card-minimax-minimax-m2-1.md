@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mini
 ---
 
 # MiniMax M2.1
-<a name="model-card-minimax-minimax-m2-1"></a>
 
 ## ![MiniMax logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/minimax2.1.png) MiniMax — MiniMax M2.1
 <a name="model-card-minimax-minimax-m2-1-header"></a>

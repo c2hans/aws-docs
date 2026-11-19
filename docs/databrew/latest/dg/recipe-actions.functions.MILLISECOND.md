@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # MILLISECOND
-<a name="recipe-actions.functions.MILLISECOND"></a>
 
 Creates a new column containing the millisecond value from a source column or input value.
 

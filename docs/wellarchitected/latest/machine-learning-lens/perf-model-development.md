@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model development
-<a name="perf-model-development"></a>
 
 **Topics**
 + [MLPERF04-BP01 Optimize training and inference instance types](mlperf04-bp01.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-trou
 ---
 
 # Troubleshooting
-<a name="qbiz-indexes-troubleshooting"></a>
 
 ## Amazon Q Business not seen in Integrations page
 <a name="qbiz-not-seen-in-integrations"></a>

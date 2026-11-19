@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-ai-age
 ---
 
 # Use AI agents for real-time assistance
-<a name="connect-ai-agent"></a>
 
 |  |
 | --- |

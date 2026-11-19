@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeResourcePolicy
-<a name="API_DescribeResourcePolicy"></a>
 
 Returns information about the resource-based policy attached to an Amazon Managed Service for Prometheus workspace.
 

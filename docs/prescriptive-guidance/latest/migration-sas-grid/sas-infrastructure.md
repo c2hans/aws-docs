@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # SAS infrastructure
-<a name="sas-infrastructure"></a>
 
 The following diagram shows the infrastructure components of SAS Grid Manager. The illustration is simplified to highlight major components that provide end-user functionality or that must be considered when planning resource allocations for processing, memory, network, and I/O.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListBran
 ---
 
 # ListBranches
-<a name="API_ListBranches"></a>
 
 Lists the branches of an Amplify app.
 

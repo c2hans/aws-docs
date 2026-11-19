@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-trigger
 ---
 
 # Triggers
-<a name="aws-glue-api-jobs-trigger"></a>
 
 The Triggers API describes the data types and API related to creating, updating, or deleting, and starting and stopping job triggers in AWS Glue.
 

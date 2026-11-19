@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Inves
 ---
 
 # Security in CloudWatch investigations
-<a name="Investigations-Security"></a>
 
 This section includes topics about how CloudWatch investigations integrate with AWS security and permissions features.
 

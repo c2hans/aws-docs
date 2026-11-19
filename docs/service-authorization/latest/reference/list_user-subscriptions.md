@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS User Subscriptions
-<a name="list_user-subscriptions"></a>
 
 AWS User Subscriptions (service prefix: `user-subscriptions`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

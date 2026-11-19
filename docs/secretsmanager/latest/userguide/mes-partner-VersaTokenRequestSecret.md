@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Versa Networks Token Request Credential
-<a name="mes-partner-VersaTokenRequestSecret"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c65b3"></a>
@@ -21,7 +20,7 @@ The following are the fields that must be contained in the Secrets Manager secre
 ```
 
 host
-The base URL of the Versa Networks host that issues access tokens, for example `https://versa.example.com` or `https://203.0.113.10:9182`. The host can be a fully qualified domain name or an IP address. The URL must use HTTPS. Add the port if your deployment does not serve on 443, and do not include a path or a trailing slash.
+The base URL of the Versa Networks host that issues access tokens, for example `https://versa.example.com`. The host can be a fully qualified domain name or an IP address. The URL must use HTTPS. Do not include a path or a trailing slash.
 The host must present a certificate from a trusted certificate authority, issued for the name or IP address that you enter. Secrets Manager rejects a self-signed certificate.
 
 clientId

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Neptune
 ---
 
 # NeptuneGlobalDatabaseConfiguration
-<a name="API_NeptuneGlobalDatabaseConfiguration"></a>
 
 Configuration for Amazon Neptune global databases used in a Region switch plan.
 

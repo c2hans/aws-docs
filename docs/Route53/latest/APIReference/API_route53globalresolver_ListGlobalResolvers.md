@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListGlobalResolvers
-<a name="API_route53globalresolver_ListGlobalResolvers"></a>
 
 Lists all Route 53 Global Resolver instances in your account with pagination support.
 

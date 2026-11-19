@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/optimization-prerequisite
 ---
 
 # Table optimization prerequisites
-<a name="optimization-prerequisites"></a>
 
 The table optimizer assumes the permissions of the AWS Identity and Access Management (IAM) role that you specify when you enable optimization options (compaction, snapshot retention, and orphan file deletion) for a table. You can either create a single role for all optimizers or create separate roles for each optimizer.
 

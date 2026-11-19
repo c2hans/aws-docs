@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Region
-<a name="API_geoplaces_Region"></a>
 
 The region or state results should be to be present in.
 

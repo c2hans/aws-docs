@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListMetricAttr
 ---
 
 # ListMetricAttributions
-<a name="API_ListMetricAttributions"></a>
 
 Lists metric attributions.
 

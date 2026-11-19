@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteRu
 ---
 
 # DeleteRule
-<a name="API_DeleteRule"></a>
 
 Deletes a rule for the specified Connect Customer instance.
 

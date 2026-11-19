@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_quick_prot
 ---
 
 # (Optional) Enable protection plans for existing member accounts
-<a name="guardduty_quick_protection_plan_config"></a>
 
 The following procedure includes steps to enable protection plans for existing member accounts by using the **Accounts** page. For steps to do this by using API or AWS CLI, see documents related to the specific protection plan.
 

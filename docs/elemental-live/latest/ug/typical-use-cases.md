@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/typical-use-cas
 ---
 
 # Typical use cases
-<a name="typical-use-cases"></a>
 
 ## Use case 1
 <a name="use-case-1"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_GetIngestionDes
 ---
 
 # GetIngestionDestination
-<a name="API_GetIngestionDestination"></a>
 
 Returns information about an ingestion destination.
 

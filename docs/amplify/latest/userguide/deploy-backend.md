@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/deploy-backend.
 ---
 
 # Building a backend for an application
-<a name="deploy-backend"></a>
 
 With AWS Amplify you can build a fullstack application with data, authentication, storage, and frontend hosting that is deployed to AWS.
 

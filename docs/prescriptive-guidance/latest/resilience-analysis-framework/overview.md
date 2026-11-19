@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Overview of the framework
-<a name="overview"></a>
 
 The resilience analysis framework was developed by identifying the desired resilience properties of a workload. Desired properties are the things that you want to be true about the system. Resilience is typically measured by availability, so five properties are the characteristics of a highly available distributed system: redundancy, sufficient capacity, timely output, correct output, and fault isolation. These properties are shown in the following diagram.
 

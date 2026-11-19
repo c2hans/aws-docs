@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/grafana-enterpr
 ---
 
 # Connect to a ServiceNow data source
-<a name="grafana-enterprise-servicenow-datasource"></a>
 
 This is the ServiceNow data source that is used to connect to ServiceNow instances.
 

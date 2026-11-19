@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Region selection
-<a name="smsus01"></a>
 
 Region selection determines the baseline environmental cost of a streaming service. The energy mix of the Region and the distance content travels to viewers are fixed before any other optimization takes effect.
 

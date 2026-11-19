@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonKinesisVideoStreamsFullAccess
-<a name="AmazonKinesisVideoStreamsFullAccess"></a>
 
 **Description**: Provides full access to Amazon Kinesis Video Streams via the AWS Management Console.
 

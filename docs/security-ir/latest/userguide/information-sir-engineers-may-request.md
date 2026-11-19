@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/information
 ---
 
 # Information Security Incident Response engineers may request
-<a name="information-sir-engineers-may-request"></a>
 
  To investigate your incident effectively, AWS Security Incident Response engineers may ask you to provide:
 +  **Timeline details** - When you first detected the incident and any relevant events leading up to it

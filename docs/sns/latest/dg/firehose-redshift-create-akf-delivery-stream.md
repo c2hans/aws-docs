@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/firehose-redshift-create-a
 ---
 
 # Create an delivery stream
-<a name="firehose-redshift-create-akf-delivery-stream"></a>
 
 **To create an Firehose delivery stream for delivering Amazon SNS notifications to Amazon Redshift**
 

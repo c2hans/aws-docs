@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/DocumentHist
 ---
 
 # Document history
-<a name="DocumentHistory"></a>
 
 The following table describes the important changes to the Amazon CloudWatch CLI Reference. This documentation is associated with the 2010-08-01 release of CloudWatch. This guide was last updated on 7 November 2017.
 

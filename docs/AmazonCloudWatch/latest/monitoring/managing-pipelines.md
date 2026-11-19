@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Managing pipelines
-<a name="managing-pipelines"></a>
 
 After creating pipelines, you can monitor their performance and manage their configuration through the Pipelines tab.
 

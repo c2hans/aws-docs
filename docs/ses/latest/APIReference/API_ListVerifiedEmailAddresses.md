@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListVerified
 ---
 
 # ListVerifiedEmailAddresses
-<a name="API_ListVerifiedEmailAddresses"></a>
 
 Deprecated. Use the `ListIdentities` operation to list the email addresses and domains associated with your account.
 

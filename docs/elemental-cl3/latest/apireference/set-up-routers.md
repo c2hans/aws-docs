@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # Setting Up Routers
-<a name="set-up-routers"></a>
 
 The `Router` element holds information about a router that is attached to SDI cards on the AWS Elemental Live node.
 

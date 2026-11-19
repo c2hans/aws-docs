@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/viewing-your
 ---
 
 # Viewing your export jobs
-<a name="viewing-your-exports"></a>
 
 This section shows you how to view the export jobs that you created in the last seven days.
 

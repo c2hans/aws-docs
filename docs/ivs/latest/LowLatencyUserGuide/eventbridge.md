@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/eventbrid
 ---
 
 # Using Amazon EventBridge with IVS Low-Latency Streaming
-<a name="eventbridge"></a>
 
 You can use Amazon EventBridge to monitor your Amazon Interactive Video Service (IVS) streams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EntitiesDefinition
-<a name="API_EntitiesDefinition"></a>
 
 Contains the list of entities to be considered during an authorization request. This includes all principals, resources, and actions required to successfully evaluate the request.
 

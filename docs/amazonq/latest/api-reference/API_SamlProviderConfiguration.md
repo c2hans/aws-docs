@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_SamlPro
 ---
 
 # SamlProviderConfiguration
-<a name="API_SamlProviderConfiguration"></a>
 
 Information about the SAML 2.0-compliant identity provider (IdP) used to authenticate end users of an Amazon Q Business web experience.
 

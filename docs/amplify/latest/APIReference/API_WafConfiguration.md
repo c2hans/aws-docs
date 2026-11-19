@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_WafConfi
 ---
 
 # WafConfiguration
-<a name="API_WafConfiguration"></a>
 
 Describes the Firewall configuration for a hosted Amplify application. Firewall support enables you to protect your web applications with a direct integration with AWS WAF. For more information about using AWS WAF protections for an Amplify application, see [Firewall support for hosted sites](https://docs.aws.amazon.com/amplify/latest/userguide/WAF-integration.html) in the * Amplify User Guide*.
 

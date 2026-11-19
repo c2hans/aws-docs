@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-alias-de
 ---
 
 # Delete an alias of an agent in Amazon Bedrock
-<a name="agents-alias-delete"></a>
 
 To learn how to delete an alias of an agent, choose the tab for your preferred method, and then follow the steps:
 

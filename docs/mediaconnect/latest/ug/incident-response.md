@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/incident-response
 ---
 
 # Logging and monitoring
-<a name="incident-response"></a>
 
 This section provides an overview of the options for logging and monitoring in AWS Elemental MediaConnect for security purposes. For more information about logging and monitoring in MediaConnect see [Monitoring and tagging in AWS Elemental MediaConnect](monitor.md).
 

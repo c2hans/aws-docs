@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ResourceDataSyncSource
-<a name="API_ResourceDataSyncSource"></a>
 
 Information about the source of the data included in the resource data sync.
 

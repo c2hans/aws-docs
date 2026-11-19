@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CreateToken](API_CreateToken.md)

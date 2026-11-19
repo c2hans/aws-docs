@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cheap.html
 ---
 
 # .cheap
-<a name="cheap"></a>
 
 Used by e-commerce websites to promote and sell inexpensive products.
 

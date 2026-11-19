@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QueueInf
 ---
 
 # QueueInfo
-<a name="API_QueueInfo"></a>
 
 If this contact was queued, this contains information about the queue.
 

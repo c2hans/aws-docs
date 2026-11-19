@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/photos.htm
 ---
 
 # .photos
-<a name="photos"></a>
 
 Used by photographers and anyone interested in photos.
 

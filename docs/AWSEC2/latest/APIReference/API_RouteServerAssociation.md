@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerAssociation
-<a name="API_RouteServerAssociation"></a>
 
 Describes the association between a route server and a VPC.
 

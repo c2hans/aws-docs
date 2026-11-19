@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Step.htm
 ---
 
 # Step
-<a name="API_Step"></a>
 
 Describes an execution step, for an execution job, for an Amplify app.
 

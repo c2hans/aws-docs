@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/cw-log-examp
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Amazon Q Business chat message and feedback log examples
-<a name="cw-log-examples"></a>
 
 The following are examples of Amazon Q Business chat message and feedback logs in CloudWatch Logs.
 

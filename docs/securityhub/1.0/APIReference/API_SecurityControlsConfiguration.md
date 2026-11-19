@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Securit
 ---
 
 # SecurityControlsConfiguration
-<a name="API_SecurityControlsConfiguration"></a>
 
  An object that defines which security controls are enabled in an AWS Security Hub CSPM configuration policy. The enablement status of a control is aligned across all of the enabled standards in an account.
 

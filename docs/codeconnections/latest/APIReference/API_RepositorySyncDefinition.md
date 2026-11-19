@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # RepositorySyncDefinition
-<a name="API_RepositorySyncDefinition"></a>
 
 The definition for a repository with a sync configuration.
 

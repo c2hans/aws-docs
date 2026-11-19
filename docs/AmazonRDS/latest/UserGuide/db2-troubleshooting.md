@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-troublesh
 ---
 
 # Troubleshooting for Amazon RDS for Db2
-<a name="db2-troubleshooting"></a>
 
 The following content can help you troubleshoot issues that you encounter with RDS for Db2.
 

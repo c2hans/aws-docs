@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-ta
 ---
 
 # Manage AWS End User Messaging SMS tags for phone pools
-<a name="phone-pool-tags"></a>
 
 Tags are pairs of keys and values that you can optionally apply to your AWS resources to control access or usage. To change the name of a Pool by editing the value of the Name key/value pair.
 

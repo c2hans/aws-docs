@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InterceptorConfiguration
-<a name="API_InterceptorConfiguration"></a>
 
 The interceptor configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteVe
 ---
 
 # RouteVehicleTravelStep
-<a name="API_RouteVehicleTravelStep"></a>
 
 Steps of a leg that correspond to the travel portion of the leg.
 

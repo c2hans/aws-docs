@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc
 ---
 
 # DeleteVpcEndpoints
-<a name="API_DeleteVpcEndpoints"></a>
 
 Deletes the specified VPC endpoints.
 

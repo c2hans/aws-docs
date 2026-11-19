@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy an Amazon API Gateway API on an internal website using private endpoints and an Application Load Balancer
-<a name="deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer"></a>
 
 *Saurabh Kothari, Amazon Web Services*
 

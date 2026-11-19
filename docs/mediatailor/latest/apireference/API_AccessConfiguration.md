@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Acce
 ---
 
 # AccessConfiguration
-<a name="API_AccessConfiguration"></a>
 
 Access configuration parameters.
 

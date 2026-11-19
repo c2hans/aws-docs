@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/sidew
 ---
 
 # Obtain device JSON files for provisioning
-<a name="sidewalk-json-get"></a>
 
 After you've added your Sidewalk device to AWS IoT Core for Amazon Sidewalk, download the JSON file that contains the information required to provision your end device. You can retrieve this information using the AWS IoT console or the AWS CLI. For more information about how to provision the device, see [Provisioning and registering your end device](https://docs.sidewalk.amazon/provisioning/) in the *Amazon Sidewalk documentation*.
 

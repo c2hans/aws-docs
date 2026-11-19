@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_OutputC
 ---
 
 # OutputConfig
-<a name="API_OutputConfig"></a>
 
 Sets whether or not your output will go to a user created bucket. Used to set the name of the bucket, and the prefix on the output file.
 

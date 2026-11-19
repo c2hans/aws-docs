@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::PlaybackRestrictionPolicy
-<a name="aws-resource-ivs-playbackrestrictionpolicy"></a>
 
 The `AWS::IVS::PlaybackRestrictionPolicy` resource specifies an Amazon IVS playback restriction policy. A playback restriction policy constrains playback by country and/or origin sites. For more information, see [Undesired Content and Viewers](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/undesired-content.html) in the *Amazon IVS Low-Latency Streaming User Guide*.
 

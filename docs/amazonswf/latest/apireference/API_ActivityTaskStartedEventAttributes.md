@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskStartedEventAttributes
-<a name="API_ActivityTaskStartedEventAttributes"></a>
 
 Provides the details of the `ActivityTaskStarted` event.
 

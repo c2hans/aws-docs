@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Up
 ---
 
 # UpdateAgentCollaborator
-<a name="API_agent_UpdateAgentCollaborator"></a>
 
 Updates an agent's collaborator.
 

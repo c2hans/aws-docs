@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-id-nam
 ---
 
 # Editing ID namespace associations
-<a name="edit-id-namespace-association"></a>
 
 As a collaboration member, you can edit the ID namespace associations that you have created.
 

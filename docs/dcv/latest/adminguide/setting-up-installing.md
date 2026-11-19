@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-install
 ---
 
 # Step 1: Install the Amazon DCV Server
-<a name="setting-up-installing"></a>
 
 The following topics describe how to install the latest version of the Amazon DCV server on Windows, Linux, and macOS. Follow these steps if you're installing Amazon DCV on an Amazon EC2 instance or other on-premises or cloud-based server.
 

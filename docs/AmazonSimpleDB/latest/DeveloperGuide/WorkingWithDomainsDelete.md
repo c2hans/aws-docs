@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Deleting a Domain
-<a name="WorkingWithDomainsDelete"></a>
 
 The following is an example of deleting a domain using REST.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeUpdateStatus
-<a name="API_DataLakeUpdateStatus"></a>
 
 The status of the last `UpdateDataLake` or `DeleteDataLake` API request. This is set to Completed after the configuration is updated, or removed if deletion of the data lake is successful.
 

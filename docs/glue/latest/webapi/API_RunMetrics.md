@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RunMetrics.html
 ---
 
 # RunMetrics
-<a name="API_RunMetrics"></a>
 
 Metrics for the optimizer run.
 

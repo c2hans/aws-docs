@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provi
 ---
 
 # AWS IoT fleet provisioning plugin changelog
-<a name="fleet-provisioning-changelog"></a>
 
 The following table describes the changes in each version of the AWS IoT fleet provisioning by claim plugin (`aws.greengrass.FleetProvisioningByClaim`).
 

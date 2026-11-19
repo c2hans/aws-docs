@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-datapi
 ---
 
 # AWS Data Pipeline events
-<a name="events-ref-datapipeline"></a>
 
 AWS Data Pipeline sends service events to EventBridge via AWS CloudTrail.
 

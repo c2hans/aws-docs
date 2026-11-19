@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/walkthr
 ---
 
 # Walkthrough: Use the AWS CLI with Run Command
-<a name="walkthrough-cli"></a>
 
 The following sample walkthrough shows you how to use the AWS Command Line Interface (AWS CLI) to view information about commands and command parameters, how to run commands, and how to view the status of those commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Database logs
-<a name="database-logs"></a>
 
 MySQL and MariaDB databases generate logs that you can access for auditing and troubleshooting. Those logs are:
 + [Audit](https://mariadb.com/kb/en/mariadb-audit-plugin-log-format/) – The audit trail is a set of records that log the server's activity. For each client session, it records who connected to the server (user name and host), which queries were run, which tables were accessed, and which server variables were changed.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Provisi
 ---
 
 # ProvisioningProperties
-<a name="API_ProvisioningProperties"></a>
 
 The provisioning properties of an environment blueprint.
 

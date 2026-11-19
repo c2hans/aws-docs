@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twilio-connection-options
 ---
 
 # Twilio connection options
-<a name="twilio-connection-options"></a>
 
 The following are connection options for Twilio:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Twilio.

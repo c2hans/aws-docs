@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # SamlConfigOptions
-<a name="API_SamlConfigOptions"></a>
 
 Describes SAML options for an OpenSearch Serverless security configuration in the form of a key-value map.
 

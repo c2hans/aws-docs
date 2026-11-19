@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/data-encryption
 ---
 
 # Data encryption
-<a name="data-encryption"></a>
 
 Amazon Bedrock uses encryption to protect data at rest and data in transit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/legal.html
 ---
 
 # .legal
-<a name="legal"></a>
 
 Used by members of the legal profession.
 

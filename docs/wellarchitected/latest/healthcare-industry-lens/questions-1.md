@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Questions
-<a name="questions-1"></a>
 
 | HCL\_OPS7. How does your organization identify and prioritize which interoperability standards to adopt? |
 | --- |

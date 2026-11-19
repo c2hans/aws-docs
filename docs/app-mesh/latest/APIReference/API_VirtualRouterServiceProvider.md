@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualRouterServiceProvider
-<a name="API_VirtualRouterServiceProvider"></a>
 
 An object that represents a virtual node service provider.
 

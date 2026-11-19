@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/monitoring-zero-etl
 ---
 
 # Monitoring zero-ETL integration
-<a name="monitoring-zero-etl"></a>
 
 Regular monitoring of your zero-ETL integration ensures optimal performance and helps identify issues early.
 

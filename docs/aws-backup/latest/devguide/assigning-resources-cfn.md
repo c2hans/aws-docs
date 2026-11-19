@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-res
 ---
 
 # Assign AWS Backup resources through CloudFormation
-<a name="assigning-resources-cfn"></a>
 
 This end-to-end CloudFormation template creates a resource assignment, a backup plan, and a destination backup vault:
 + A backup vault named {{CloudFormationTestBackupVault}}.

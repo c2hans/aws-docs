@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_HybridJob
 ---
 
 # HybridJobQueueInfo
-<a name="API_HybridJobQueueInfo"></a>
 
 Information about the queue for a specified hybrid job.
 

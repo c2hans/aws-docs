@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/prereq-runtime-monit
 ---
 
 # Prerequisites for AWS Fargate (Amazon ECS only) support
-<a name="prereq-runtime-monitoring-ecs-support"></a>
 
 This section includes the prerequisites for monitoring runtime behavior of your Fargate-Amazon ECS resources. After these prerequisites are met, see [Enabling GuardDuty Runtime Monitoring](runtime-monitoring-configuration.md).
 

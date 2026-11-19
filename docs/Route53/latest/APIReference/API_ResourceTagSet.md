@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Resource
 ---
 
 # ResourceTagSet
-<a name="API_ResourceTagSet"></a>
 
 A complex type containing a resource and its associated tags.
 

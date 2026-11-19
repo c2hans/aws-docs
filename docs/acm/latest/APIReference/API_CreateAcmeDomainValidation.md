@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CreateAcmeDo
 ---
 
 # CreateAcmeDomainValidation
-<a name="API_CreateAcmeDomainValidation"></a>
 
 Creates a domain validation for an ACME endpoint. Domain validations authorize the endpoint to issue certificates for specified domain names. You configure prevalidation to prove domain ownership.
 

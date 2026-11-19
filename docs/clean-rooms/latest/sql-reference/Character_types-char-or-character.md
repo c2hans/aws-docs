@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/Charact
 ---
 
 # CHAR or CHARACTER
-<a name="Character_types-char-or-character"></a>
 
 Use a CHAR or CHARACTER column to store fixed-length strings. These strings are padded with blanks, so a CHAR(10) column always occupies 10 bytes of storage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/list-cells
 ---
 
 # List cells for an account
-<a name="list-cells"></a>
 
 The following is an example of a request to list the cells in an account, and the response.
 

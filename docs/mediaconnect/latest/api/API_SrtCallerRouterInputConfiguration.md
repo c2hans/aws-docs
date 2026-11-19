@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtCallerRou
 ---
 
 # SrtCallerRouterInputConfiguration
-<a name="API_SrtCallerRouterInputConfiguration"></a>
 
 The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in caller mode, including the source address and port, minimum latency, stream ID, and decryption key configuration.
 

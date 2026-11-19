@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemSummary
-<a name="API_SystemSummary"></a>
 
 Contains summary information about a system.
 

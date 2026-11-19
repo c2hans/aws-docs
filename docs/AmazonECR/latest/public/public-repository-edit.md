@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/public-repositor
 ---
 
 # Editing an Amazon ECR public repository
-<a name="public-repository-edit"></a>
 
 An existing public repository can be edited to change the catalog data details that are visible in the Amazon ECR Public Gallery.
 

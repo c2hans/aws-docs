@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Profi
 ---
 
 # ProfileMappingSource
-<a name="API_ProfileMappingSource"></a>
 
 Contains raw content to use as the source when creating a data transformation profile directly from a mapping.
 

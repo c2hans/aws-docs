@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDataZoneFullAccess
-<a name="AmazonDataZoneFullAccess"></a>
 
 **Description**: Provides full access to Amazon DataZone via the AWS Management Console as well as limited access to related services that are required by it.
 

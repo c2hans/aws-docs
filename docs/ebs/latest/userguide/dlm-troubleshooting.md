@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-troubleshooting
 ---
 
 # Troubleshoot Amazon Data Lifecycle Manager issues
-<a name="dlm-troubleshooting"></a>
 
 The following documentation can help you troubleshoot problems that you might encounter.
 

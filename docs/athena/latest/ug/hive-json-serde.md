@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/hive-json-serde.html
 ---
 
 # Hive JSON SerDe
-<a name="hive-json-serde"></a>
 
 The Hive JSON SerDe is commonly used to process JSON data like events. These events are represented as single-line strings of JSON-encoded text separated by a new line. The Hive JSON SerDe does not allow duplicate keys in `map` or `struct` key names.
 

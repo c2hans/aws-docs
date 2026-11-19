@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifySamlProp
 ---
 
 # ModifySamlProperties
-<a name="API_ModifySamlProperties"></a>
 
 Modifies multiple properties related to SAML 2.0 authentication, including the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
 

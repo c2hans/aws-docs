@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVer
 ---
 
 # CreateVerifiedAccessTrustProvider
-<a name="API_CreateVerifiedAccessTrustProvider"></a>
 
 A trust provider is a third-party entity that creates, maintains, and manages identity information for users and devices. When an application request is made, the identity information sent by the trust provider is evaluated by Verified Access before allowing or denying the application request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Route domain traffic to a Lightsail container service
-<a name="amazon-lightsail-point-domain-to-container-service"></a>
 
 You must point your registered domain names to your Amazon Lightsail container service after you enabled custom domains for your service. You do this by adding an alias record to the DNS zone of each of the domains specified on the certificates that you're using with your container service. All of the records that you add should point to the default domain (e.g., `https://<ServiceName>.<RandomGUID>.<AWSRegion>.cs.amazonlightsail.com`) of your container service.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Evolving your operating model
-<a name="evolving-your-ops-model"></a>
 
  The models provided progressively move towards more autonomy at the workload level, matching the two-pizza team principle. It is important to understand that this journey from a traditional approach to decentralized DevOps (as a foundation for continued evolution to a two-pizza team model) is likely to take time and require building maturity across a number of capabilities. Therefore, we have provided an example of how you may transition between models as your team and organization move along the enterprise transformation journey. In each change or model, you are evolving towards a more autonomous, but still organizationally-aligned team.
 

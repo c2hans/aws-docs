@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MonitorC
 ---
 
 # MonitorContact
-<a name="API_MonitorContact"></a>
 
 Initiates silent monitoring of a contact. The Contact Control Panel (CCP) of the user specified by *userId* will be set to silent monitoring mode on the contact.
 

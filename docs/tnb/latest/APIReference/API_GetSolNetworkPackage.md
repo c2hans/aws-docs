@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkPackage
-<a name="API_GetSolNetworkPackage"></a>
 
 Gets the details of a network package.
 

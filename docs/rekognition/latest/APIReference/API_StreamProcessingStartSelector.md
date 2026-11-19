@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessingStartSelector
-<a name="API_StreamProcessingStartSelector"></a>
 
 This is a required parameter for label detection stream processors and should not be used to start a face search stream processor.
 

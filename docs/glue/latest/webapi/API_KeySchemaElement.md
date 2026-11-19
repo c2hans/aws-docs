@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_KeySchemaElement.
 ---
 
 # KeySchemaElement
-<a name="API_KeySchemaElement"></a>
 
 A partition key pair consisting of a name and a type.
 

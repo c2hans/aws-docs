@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CookieSynchronizationConfiguration
-<a name="API_CookieSynchronizationConfiguration"></a>
 
 The configuration that specifies which cookies should be synchronized from the end user's local browser to the remote browser.
 

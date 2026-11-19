@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIPERF04: How do you select your network architecture?
-<a name="fsiperf04"></a>
 
  Use performance requirements to drive the selection of network components and architecture.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_pro
 ---
 
 # Aurora DSQL dialect for SQLAlchemy
-<a name="SECTION_program-with-dsql-dialect-for-sqlalchemy"></a>
 
 The Amazon Aurora DSQL dialect for SQLAlchemy (`aurora-dsql-sqlalchemy`) integrates SQLAlchemy object-relational mapping (ORM) with Aurora DSQL. It handles IAM authentication, Secure Sockets Layer (SSL) configuration, DDL generation differences (async indexes, identity columns), and connection management, so you can use the full SQLAlchemy API against a distributed Aurora DSQL cluster with minimal configuration. For more information, see the [Aurora DSQL dialect for SQLAlchemy](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/sqlalchemy) and the [SQLAlchemy pet clinic example application](https://github.com/awslabs/aurora-dsql-orms/tree/main/python/sqlalchemy/examples/pet-clinic-app) on the GitHub website.
 

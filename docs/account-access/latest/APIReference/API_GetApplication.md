@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_G
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Retrieves details about an account access manager application, including its status, identity source, and tags.
 

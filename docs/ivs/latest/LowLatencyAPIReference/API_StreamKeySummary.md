@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StreamKeySummary
-<a name="API_StreamKeySummary"></a>
 
 Summary information about a stream key.
 

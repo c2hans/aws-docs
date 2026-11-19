@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ma
 ---
 
 # Make requests
-<a name="making-requests"></a>
 
 Use a service client to make requests to an AWS service. The AWS SDK for Kotlin provides Domain Specific Languages (DSLs) following a [type-safe builder](https://kotlinlang.org/docs/type-safe-builders.html) pattern to create requests. Nested structures of requests are also accessible through their DSLs.
 

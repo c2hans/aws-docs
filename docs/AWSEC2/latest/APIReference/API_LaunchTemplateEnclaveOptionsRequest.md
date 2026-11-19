@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateEnclaveOptionsRequest
-<a name="API_LaunchTemplateEnclaveOptionsRequest"></a>
 
 Indicates whether the instance is enabled for AWS Nitro Enclaves. For more information, see [What is Nitro Enclaves?](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html) in the * AWS Nitro Enclaves User Guide*.
 

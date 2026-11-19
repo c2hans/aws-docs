@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_All.html
 ---
 
 # All
-<a name="API_All"></a>
 
 Inspect all of the elements that AWS WAF has parsed and extracted from the web request component that you've identified in your [FieldToMatch](API_FieldToMatch.md) specifications.
 

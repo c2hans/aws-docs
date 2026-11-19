@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/flows-nodes.htm
 ---
 
 # Node types for your flow
-<a name="flows-nodes"></a>
 
 Amazon Bedrock Flows provides the following node types to build your flow. When you configure a node, you provide the following fields:
 + Name – Enter a name for the node.

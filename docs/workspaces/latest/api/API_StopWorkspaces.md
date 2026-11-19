@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StopWorkspaces
 ---
 
 # StopWorkspaces
-<a name="API_StopWorkspaces"></a>
 
 Stops the specified WorkSpaces.
 

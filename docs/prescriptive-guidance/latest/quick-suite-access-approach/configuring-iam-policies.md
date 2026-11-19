@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Configuring IAM policies for Quick access
-<a name="configuring-iam-policies"></a>
 
 For more information about how AWS Identity and Access Management (IAM) policies work, see [AWS Quick policies (identity-based)](https://docs.aws.amazon.com/quicksuite/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies) in the Quick documentation, and see [Policies and permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the IAM documentation. For sample policies for Quick, see [IAM policy examples for Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html).
 

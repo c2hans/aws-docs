@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/deactive-user-op.
 ---
 
 # Implement the AWS.DeactivateUser operation
-<a name="deactive-user-op"></a>
 
 ## User deactivation overview
 <a name="deactivate-user-overview"></a>

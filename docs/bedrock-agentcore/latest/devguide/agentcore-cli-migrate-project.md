@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Migrate an existing project
-<a name="agentcore-cli-migrate-project"></a>
 
 Use `agentcore migrate` to upgrade an AgentCore CLI v0 project in place.
 

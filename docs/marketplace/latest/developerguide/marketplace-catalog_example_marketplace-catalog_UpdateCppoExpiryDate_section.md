@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Update the expiration date of a CPPO using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_UpdateCppoExpiryDate_section"></a>
 
 The following code examples show how to update the expiration date of a CPPO to give buyers more time to evaluate and accept the offer.
 

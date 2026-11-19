@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Res
 ---
 
 # ResetAllResourceLogLevels
-<a name="API_ResetAllResourceLogLevels"></a>
 
 Removes the log-level overrides for all resources; wireless devices, wireless gateways, and FUOTA tasks.
 

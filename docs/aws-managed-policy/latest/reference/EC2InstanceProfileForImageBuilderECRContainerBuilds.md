@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2I
 ---
 
 # EC2InstanceProfileForImageBuilderECRContainerBuilds
-<a name="EC2InstanceProfileForImageBuilderECRContainerBuilds"></a>
 
 **Description**: EC2 Instance profile for building container images with EC2 Image Builder. This policy grants the user broad permissions to upload ECR images.
 

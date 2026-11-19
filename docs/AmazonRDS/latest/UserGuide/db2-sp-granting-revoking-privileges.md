@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-sp-granti
 ---
 
 # Stored procedures for granting and revoking privileges for RDS for Db2
-<a name="db2-sp-granting-revoking-privileges"></a>
 
 The built-in stored procedures described in this topic manage users, roles, groups, and authorization for Amazon RDS for Db2 databases. To run these procedures, the master user must first connect to the `rdsadmin` database.
 

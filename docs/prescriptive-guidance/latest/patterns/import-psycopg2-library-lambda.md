@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Import the psycopg2 library to AWS Lambda to interact with your PostgreSQL database
-<a name="import-psycopg2-library-lambda"></a>
 
 *Louis Hourcade, Amazon Web Services*
 

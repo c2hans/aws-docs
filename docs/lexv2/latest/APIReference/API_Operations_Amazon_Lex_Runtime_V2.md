@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Operations
 ---
 
 # Amazon Lex Runtime V2
-<a name="API_Operations_Amazon_Lex_Runtime_V2"></a>
 
 The following actions are supported by Amazon Lex Runtime V2:
 +  [DeleteSession](API_runtime_DeleteSession.md)

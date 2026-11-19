@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Resourc
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 The policy that is attached to a resource.
 

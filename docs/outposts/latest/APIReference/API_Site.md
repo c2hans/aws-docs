@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Site.ht
 ---
 
 # Site
-<a name="API_Site"></a>
 
 Information about a site.
 

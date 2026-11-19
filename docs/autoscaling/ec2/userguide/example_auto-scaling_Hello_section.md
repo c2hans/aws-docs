@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-s
 ---
 
 # Hello Auto Scaling
-<a name="example_auto-scaling_Hello_section"></a>
 
 The following code examples show how to get started using Auto Scaling.
 

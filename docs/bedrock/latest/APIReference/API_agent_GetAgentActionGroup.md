@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetAgentActionGroup
-<a name="API_agent_GetAgentActionGroup"></a>
 
 Gets information about an action group for an agent.
 

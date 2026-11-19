@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_LogC
 ---
 
 # LogConfigurationForChannel
-<a name="API_LogConfigurationForChannel"></a>
 
 The log configuration for the channel.
 

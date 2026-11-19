@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Troubleshooting AD Connector
-<a name="ad_connector_troubleshooting"></a>
 
 The following can help you troubleshoot some common issues you might encounter when creating or using your AD Connector.
 

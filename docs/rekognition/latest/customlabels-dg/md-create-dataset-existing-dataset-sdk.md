@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-cr
 ---
 
 # Creating a dataset using an existing dataset (SDK)
-<a name="md-create-dataset-existing-dataset-sdk"></a>
 
 The following procedure shows you how to create a dataset from an existing dataset by using the [CreateDataset](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateDataset) operation.
 

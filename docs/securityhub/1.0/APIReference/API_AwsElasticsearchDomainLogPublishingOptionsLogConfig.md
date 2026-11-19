@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainLogPublishingOptionsLogConfig
-<a name="API_AwsElasticsearchDomainLogPublishingOptionsLogConfig"></a>
 
 The log configuration.
 

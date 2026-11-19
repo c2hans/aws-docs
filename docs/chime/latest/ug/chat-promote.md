@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chat-promote.html
 ---
 
 # Promoting members to administrator
-<a name="chat-promote"></a>
 
 By default, chat room members can only send and read messages. As needed, you can promote members to administrator, and they can perform the tasks listed in this section. Also, if you want to leave a chat room, and you're the only administrator, you must promote someone to administrator before you can leave.
 

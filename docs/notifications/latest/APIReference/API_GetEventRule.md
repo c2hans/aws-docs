@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ge
 ---
 
 # GetEventRule
-<a name="API_GetEventRule"></a>
 
 Returns a specified `EventRule`.
 

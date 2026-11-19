@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/swf-hell
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Building a Simple Amazon SWF Application
-<a name="swf-hello"></a>
 
 This topic will introduce you to programming [Amazon SWF](https://aws.amazon.com/swf/) applications with the AWS SDK for Java, while presenting a few important concepts along the way.
 

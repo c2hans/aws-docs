@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/schema-component
 ---
 
 # GraphQL schemas
-<a name="schema-components"></a>
 
 The GraphQL schema is the foundation of a GraphQL API. It serves as the blueprint that defines the shape of your data. It's also a contract between your client and server that defines how your data will be retrieved and/or modified.
 

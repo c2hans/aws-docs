@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-delete.h
 ---
 
 # Deleting a run cache
-<a name="workflow-cache-delete"></a>
 
 You can delete a run cache if no active runs are using it. If any runs are using the run cache, wait for the runs to complete or you can cancel the runs.
 

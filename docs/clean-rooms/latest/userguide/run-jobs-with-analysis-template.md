@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/run-jobs-wi
 ---
 
 # Running a PySpark job on a configured table using a PySpark analysis template
-<a name="run-jobs-with-analysis-template"></a>
 
 This procedure demonstrates how to use a PySpark analysis template in the AWS Clean Rooms console to analyze configured tables with the **Custom** analysis rule.
 

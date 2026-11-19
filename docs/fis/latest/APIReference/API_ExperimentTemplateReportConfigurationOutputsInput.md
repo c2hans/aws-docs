@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateReportConfigurationOutputsInput
-<a name="API_ExperimentTemplateReportConfigurationOutputsInput"></a>
 
 Specifies the outputs for the experiment templates.
 

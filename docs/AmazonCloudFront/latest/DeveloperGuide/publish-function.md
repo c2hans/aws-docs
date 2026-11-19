@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Publish functions
-<a name="publish-function"></a>
 
 When you publish your function, this copies the function from the `DEVELOPMENT` stage to the `LIVE` stage.
 

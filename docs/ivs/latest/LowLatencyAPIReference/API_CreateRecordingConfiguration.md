@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Cr
 ---
 
 # CreateRecordingConfiguration
-<a name="API_CreateRecordingConfiguration"></a>
 
 Creates a new recording configuration, used to enable recording to Amazon S3.
 

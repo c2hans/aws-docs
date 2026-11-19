@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Confluenc
 ---
 
 # ConfluenceAttachmentConfiguration
-<a name="API_ConfluenceAttachmentConfiguration"></a>
 
 Configuration of attachment settings for the Confluence data source. Attachment settings are optional, if you don't specify settings attachments, Amazon Kendra won't index them.
 

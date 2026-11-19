@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/using-s
 ---
 
 # Using CloudFormation StackSets
-<a name="using-stacksets"></a>
 
 **Note**
 AutoTags are not currently supported with CloudFormation StackSets.

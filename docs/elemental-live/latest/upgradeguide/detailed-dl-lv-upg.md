@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/detai
 ---
 
 # Downloading AWS Elemental Live software
-<a name="detailed-dl-lv-upg"></a>
 
 These are the detailed steps for downloading software files from the [AWS Elemental Support Center](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/supportcenter).
 

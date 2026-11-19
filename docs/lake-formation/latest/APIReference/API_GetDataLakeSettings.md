@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GetDataLakeSettings
-<a name="API_GetDataLakeSettings"></a>
 
 Retrieves the list of the data lake administrators of a AWS Lake Formation-managed data lake.
 

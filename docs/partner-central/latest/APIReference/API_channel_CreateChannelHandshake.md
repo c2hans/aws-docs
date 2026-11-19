@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateChannelHandshake
-<a name="API_channel_CreateChannelHandshake"></a>
 
 Creates a new channel handshake request to establish a partnership with another AWS account.
 

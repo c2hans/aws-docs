@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/alas.html
 ---
 
 # Amazon Linux Security advisories for AL2023
-<a name="alas"></a>
 
  Although we work hard to make Amazon Linux secure, at times there will be security issues that require fixing. An *advisory* is issued when a fix is available. The primary location where we publish advisories is the Amazon Linux Security Center (ALAS). For more information, see [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2023.html).
 

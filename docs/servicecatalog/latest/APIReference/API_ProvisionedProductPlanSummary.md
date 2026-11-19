@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisionedProductPlanSummary
-<a name="API_ProvisionedProductPlanSummary"></a>
 
 Summary information about a plan.
 

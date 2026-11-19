@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Design principles
-<a name="design-principles"></a>
 
  There are four general design principles to facilitate good design for hybrid cloud workloads. These design principles help keep data where it needs to be to meet regulatory or compliance needs. The design principles are as follows:
 +  **Classify data:** To comply with data residency requirements, it is important to understand and classify which workloads and which datasets need to stay on-premises and which ones can be moved to the Region.

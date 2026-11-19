@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SubmitCo
 ---
 
 # SubmitContactEvaluation
-<a name="API_SubmitContactEvaluation"></a>
 
 Submits a contact evaluation in the specified Connect Customer instance. Answers included in the request are merged with existing answers for the given evaluation. If no answers or notes are passed, the evaluation is submitted with the existing answers and notes. You can delete an answer or note by passing an empty object (`{}`) to the question identifier.
 

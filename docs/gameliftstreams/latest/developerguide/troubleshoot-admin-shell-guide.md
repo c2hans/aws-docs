@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/tr
 ---
 
 # Stream session admin shell
-<a name="troubleshoot-admin-shell-guide"></a>
 
 Use the [CreateStreamSessionAdminShell](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamSessionAdminShell.html) API to connect to the live runtime environment of your stream session. Use the terminal connection to troubleshoot application issues by inspecting logs, checking running processes, examining GPU utilization, and debugging your application state in real time.
 

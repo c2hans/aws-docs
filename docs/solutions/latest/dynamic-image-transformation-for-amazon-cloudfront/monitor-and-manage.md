@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Monitor and manage
-<a name="monitor-and-manage"></a>
 
 Use the Admin UI to:
 + View and edit existing origins, policies, and mappings

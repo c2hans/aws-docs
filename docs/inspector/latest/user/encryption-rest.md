@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/encryption-rest.ht
 ---
 
 # Encryption at rest
-<a name="encryption-rest"></a>
 
  By default, Amazon Inspector stores data at rest using AWS encryption solutions. Amazon Inspector encrypts data, such as the following:
 +  Resource inventory collected with AWS Systems Manager.

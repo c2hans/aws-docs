@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_EnableEn
 ---
 
 # EnableEnhancedMonitoring
-<a name="API_EnableEnhancedMonitoring"></a>
 
 Enables enhanced Kinesis data stream monitoring for shard-level metrics.
 

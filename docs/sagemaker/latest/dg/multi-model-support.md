@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-support.
 ---
 
 # Supported algorithms, frameworks, and instances for multi-model endpoints
-<a name="multi-model-support"></a>
 
 For information about the algorithms, frameworks, and instance types that you can use with multi-model endpoints, see the following sections.
 

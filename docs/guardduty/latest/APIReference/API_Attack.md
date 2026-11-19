@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Attack
 ---
 
 # Attack
-<a name="API_Attack"></a>
 
 Contains a MITRE ATT&CK tactic and technique observed during an attack, with the findings that are associated with them.
 

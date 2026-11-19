@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Recommended OUs and accounts
-<a name="recommended-ous-and-accounts"></a>
 
  This section provides details on the recommended OUs and, when applicable, a set of recommended AWS accounts.
 

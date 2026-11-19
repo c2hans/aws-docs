@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SageM
 ---
 
 # SageMaker AI Insights
-<a name="SageMaker-Insights"></a>
 
 Use SageMaker AI Insights to monitor and troubleshoot SageMaker AI inference endpoints at scale. The dashboard displays curated metrics and visualizations across three views—**Performance**, **Capacity**, and **Reliability**—so you can quickly identify issues, optimize resource utilization, and make sure high availability across your endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringDefaultValues
-<a name="API_StringDefaultValues"></a>
 
 The default values of the `StringParameterDeclaration`.
 

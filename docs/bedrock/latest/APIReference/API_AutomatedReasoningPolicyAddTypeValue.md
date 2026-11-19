@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAddTypeValue
-<a name="API_AutomatedReasoningPolicyAddTypeValue"></a>
 
 Represents a single value that can be added to an existing custom type in the policy.
 

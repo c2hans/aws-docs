@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with offer sets
-<a name="work-with-offer-sets"></a>
 
 AWS Marketplace offer sets enable sellers to package multiple private offers into unified multi-product transactable packages for buyers. This capability addresses growing customer demand for comprehensive, end-to-end solutions in complex enterprise environments.
 

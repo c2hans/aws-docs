@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS Service Catalog deploy action reference
-<a name="action-reference-ServiceCatalog"></a>
 
 You use an AWS Service Catalog action to deploy templates using your pipeline. These are resource templates that you have created in Service Catalog.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateWorkspace
-<a name="API_DisassociateWorkspace"></a>
 
 Removes the association between a workspace and one or more users or routing profiles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_HandlerC
 ---
 
 # HandlerConfigs
-<a name="API_HandlerConfigs"></a>
 
 The configuration for the `OnPublish` and `OnSubscribe` handlers.
 

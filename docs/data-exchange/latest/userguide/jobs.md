@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/jobs.html
 ---
 
 # Jobs in AWS Data Exchange
-<a name="jobs"></a>
 
 AWS Data Exchange jobs are asynchronous import or export operations.
 

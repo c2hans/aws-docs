@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Supply credentials in code using the AWS SDK for Java 2.x
-<a name="credentials-explicit"></a>
 
 If the default credential chain or a specific or custom provider or provider chain doesn't work for your application, you can supply temporary credentials directly in code. These can be [IAM role credentials](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html) as[ described above](credentials-temporary.md#credentials-temporary-from-portal) or temporary credentials retrieved from AWS Security Token Service (AWS STS). If you retrieved temporary credentials using AWS STS, provide them to an AWS service client as shown in the following code example.
 

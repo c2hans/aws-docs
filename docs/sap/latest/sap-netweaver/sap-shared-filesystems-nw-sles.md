@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-shared-file
 ---
 
 # SAP Shared File Systems
-<a name="sap-shared-filesystems-nw-sles"></a>
 
 **Topics**
 + [Select Shared Storage](#select-storage-type-nw-sles)

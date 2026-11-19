@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-read-
 ---
 
 # Read restored objects
-<a name="emr-hadoop-read-restore-objects"></a>
 
  With Amazon EMR release 7.2.0 and higher, you can read restored Glacier objects from the S3 location of the table with the `S3A` protocol. Engines in previous releases don't distinguish between Glacier and Glacier Deep Archive files, which means you would get an `AmazonS3Exception` if you tried to access an in-progress Glacier file with `S3A`. This read operation ignores archived Glacier files if they still in progress of being restored. To enable this behavior, use the setting `fs.s3a.glacier.read.restored.objects`. This setting can be three values:
 + **READ\_ALL** – this value indicates that Amazon EMR shouldn't account for the storage classes retrieved from Amazon S3. This is the default behavior.

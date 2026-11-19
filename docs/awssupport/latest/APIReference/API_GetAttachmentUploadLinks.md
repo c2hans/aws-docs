@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAt
 ---
 
 # GetAttachmentUploadLinks
-<a name="API_GetAttachmentUploadLinks"></a>
 
 Returns one or more presigned upload URLs for uploading a large file attachment to a support case by using a multipart upload workflow. The maximum file size that you can upload with this workflow is 150 MB, and parts can be up to 100 MB each. Initiate a new upload by providing `fileName` and `fileSizeBytes`; the response returns a unique `uploadId`, the part size, the total number of parts, and a list of presigned upload URLs for the requested range of parts. A maximum of 10 upload URLs are returned per call. To retrieve more upload URLs for an upload that's already in progress, call `GetAttachmentUploadLinks` again with the existing `uploadId` and a new `uploadRange`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use checksums to work with an Amazon S3 object using an AWS SDK
-<a name="s3_example_s3_Scenario_UseChecksums_section"></a>
 
 The following code example shows how to use checksums to work with an Amazon S3 object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Clust
 ---
 
 # ClusterMarker
-<a name="API_ClusterMarker"></a>
 
 The cluster marker that is a part of the cluster marker configuration.
 

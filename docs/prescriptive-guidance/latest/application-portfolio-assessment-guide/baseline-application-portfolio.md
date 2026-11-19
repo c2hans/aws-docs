@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Establishing a baseline for the application portfolio
-<a name="baseline-application-portfolio"></a>
 
 To create high-confidence migration wave plans, you must establish a baseline for the portfolio of applications and its associated infrastructure. A portfolio baseline provides a comprehensive view of the migration scope, including technical dependencies and migration strategy. The portfolio baseline provides clarity about which applications are in-scope of migration and that the data points outlined in the [Understanding complete assessment data requirements](understanding-complete-assessment-data-requirements.md) section are collected. Likewise, all the associated infrastructure (compute, storage networks) is understood and mapped to the applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/security-iam-s
 ---
 
 # Configure access to an Amazon S3 bucket for data export
-<a name="security-iam-s3-export-permissions"></a>
 
 When you use the `exportConfig` parameter in the `CreateWorkflowDefinition` API operation, Nova Act exports Agent Trajectory Data to an Amazon S3 bucket that you specify. To allow this, you must attach an identity-based policy to the calling identity that grants the required Amazon S3 permissions.
 

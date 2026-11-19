@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## Frameworks and models
 <a name="frameworks-and-models"></a>

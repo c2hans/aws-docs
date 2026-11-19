@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_CreateS
 ---
 
 # CreateSite
-<a name="API_CreateSite"></a>
 
  Creates a site for an Outpost.
 

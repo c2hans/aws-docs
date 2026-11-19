@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # Member
-<a name="API_Member"></a>
 
 A member object that contains identifying information for a specified member.
 

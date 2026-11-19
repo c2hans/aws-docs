@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_DeleteSche
 ---
 
 # DeleteSchedulingPolicy
-<a name="API_DeleteSchedulingPolicy"></a>
 
 Deletes the specified scheduling policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Put
 ---
 
 # PutApplicationSessionConfiguration
-<a name="API_PutApplicationSessionConfiguration"></a>
 
 Updates the session configuration for an application in IAM Identity Center.
 

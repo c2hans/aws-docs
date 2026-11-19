@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OwnerGr
 ---
 
 # OwnerGroupProperties
-<a name="API_OwnerGroupProperties"></a>
 
 The properties of the domain unit owners group.
 

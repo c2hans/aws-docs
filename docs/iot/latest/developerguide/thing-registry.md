@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry
 ---
 
 # Managing things with the registry
-<a name="thing-registry"></a>
 
 You use the AWS IoT console, AWS IoT API, or the AWS CLI to interact with the registry. The following sections show how to use the CLI to work with the registry.
 

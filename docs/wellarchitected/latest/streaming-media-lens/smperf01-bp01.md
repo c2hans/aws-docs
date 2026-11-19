@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF01-BP01 Select origin technology appropriate for your workload
-<a name="smperf01-bp01"></a>
 
 Select origin technology that matches your streaming media workload's
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Describe
 ---
 
 # DescribeChimeWebhookConfigurations
-<a name="API_DescribeChimeWebhookConfigurations"></a>
 
 Lists Amazon Chime webhook configurations optionally filtered by ChatConfigurationArn.
 

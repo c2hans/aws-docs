@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/quickbooks-connection-opt
 ---
 
 # QuickBooks connection options
-<a name="quickbooks-connection-options"></a>
 
 The following are connection options for QuickBooks:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in QuickBooks.

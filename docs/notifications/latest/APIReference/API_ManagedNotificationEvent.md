@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Ma
 ---
 
 # ManagedNotificationEvent
-<a name="API_ManagedNotificationEvent"></a>
 
 A notification-focused representation of an event. They contain semantic information used by AccountContacts or Additional Channels to create end-user notifications.
 

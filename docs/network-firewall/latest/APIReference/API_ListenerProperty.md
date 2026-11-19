@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListenerProperty
-<a name="API_ListenerProperty"></a>
 
 Open port for taking HTTP or HTTPS traffic.
 

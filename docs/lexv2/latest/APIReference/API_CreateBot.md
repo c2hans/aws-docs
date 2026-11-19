@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateBot.
 ---
 
 # CreateBot
-<a name="API_CreateBot"></a>
 
 Creates an Amazon Lex conversational bot.
 

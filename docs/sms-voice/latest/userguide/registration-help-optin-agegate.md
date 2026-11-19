@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Age-restricted content opt-in
-<a name="registration-help-optin-agegate"></a>
 
 Use this pattern when your campaign involves **age-restricted content** that is legally permitted (such as restaurants serving alcohol, tobacco products over short codes, or gun advocacy/safety training). A full date-of-birth age gate must appear before the SMS consent — the user cannot consent to messages until age is verified.
 

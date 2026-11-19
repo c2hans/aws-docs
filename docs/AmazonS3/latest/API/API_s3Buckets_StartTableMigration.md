@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_StartT
 ---
 
 # StartTableMigration
-<a name="API_s3Buckets_StartTableMigration"></a>
 
 Starts migrating an AWS Glue Data Catalog table into a new table in a table bucket. The migration runs asynchronously: this operation returns the migration ID and its initial state, and you track progress with `GetTableMigration`.
 

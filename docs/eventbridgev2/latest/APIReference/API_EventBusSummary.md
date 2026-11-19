@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ev
 ---
 
 # EventBusSummary
-<a name="API_EventBusSummary"></a>
 
 Summary of an event bus, as returned by ListEventBuses.
 

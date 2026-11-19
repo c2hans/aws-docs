@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-mgn-metrics-alerts.ht
 ---
 
 # Review alerts on applications in a wave
-<a name="wave-mgn-metrics-alerts"></a>
 
 The application **Alerts** metric provides an aggregated overview of the alerts related to the wave's associated applications. You can look up an individual application **Alerts** status in the **Applications** table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/single-instanc
 ---
 
 # Connect Customer: Single Instance or Multiple Instances?
-<a name="single-instance-multiple-instances"></a>
 
 ## Single instance of Connect Customer (including single ACGR pair)
 <a name="single-instance-connect"></a>

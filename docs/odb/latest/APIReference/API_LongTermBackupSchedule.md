@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_LongTermBack
 ---
 
 # LongTermBackupSchedule
-<a name="API_LongTermBackupSchedule"></a>
 
 The long-term backup schedule for an Autonomous Database.
 

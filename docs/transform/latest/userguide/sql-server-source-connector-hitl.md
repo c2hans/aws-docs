@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-server-so
 ---
 
 # Setting up source code connector and HITL review
-<a name="sql-server-source-connector-hitl"></a>
 
 ## Connect source code repository
 <a name="sql-server-connect-database-repo"></a>

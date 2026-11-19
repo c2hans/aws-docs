@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Repl
 ---
 
 # ReplicationConfig
-<a name="API_ReplicationConfig"></a>
 
 Endpoints can replicate all events to the secondary Region.
 

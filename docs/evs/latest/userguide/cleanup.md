@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/cleanup.html
 ---
 
 # Clean up network resources
-<a name="cleanup"></a>
 
 After you delete your Amazon Elastic VMware Service environment, delete the network resources that you created for it, so that they don’t continue to incur costs. You delete them in reverse order of creation, using the Amazon VPC console or the AWS CLI as described in the linked Amazon VPC topics.
 

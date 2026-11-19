@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Direct
 ---
 
 # DirectDeploySettings
-<a name="API_DirectDeploySettings"></a>
 
 The model deployment settings for the SageMaker Canvas application.
 

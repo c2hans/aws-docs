@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # UpdateTemplate
-<a name="API_UpdateTemplate"></a>
 
 Update template configuration to define the information included in certificates.
 

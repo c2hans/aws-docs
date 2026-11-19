@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data-
 ---
 
 # Data Validation Report Access
-<a name="data-validation-report-access"></a>
 
 When creating a forecast for the first time, navigate to the **Demand Planning** module in Supply Chain and choose **Create a Plan**. The system guides you through three steps: Data Ingestion, Plan Configuration, and finally, Forecast Generation. After completing data ingestion and plan configuration, choose **Generate Forecast** to initiate data validation. Each new forecast generation creates a fresh validation report based on the current state of your data.
 

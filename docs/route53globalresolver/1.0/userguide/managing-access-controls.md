@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/mana
 ---
 
 # Managing access controls with access sources and tokens in Amazon Route 53 Global Resolver
-<a name="managing-access-controls"></a>
 
 Amazon Route 53 Global Resolver provides two primary methods for controlling client device access: access sources for IP-based authentication and access tokens for token-based authentication. This chapter covers both approaches, helping you choose the right authentication method for your environment and implement comprehensive access controls.
 

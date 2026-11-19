@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Der
 ---
 
 # DeregisterEventTopic
-<a name="API_DeregisterEventTopic"></a>
 
 Removes the specified directory as a publisher to the specified Amazon SNS topic.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + Abhay kumar, Lead Consultant, AWS

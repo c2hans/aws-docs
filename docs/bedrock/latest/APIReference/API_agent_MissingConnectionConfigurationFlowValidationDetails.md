@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mi
 ---
 
 # MissingConnectionConfigurationFlowValidationDetails
-<a name="API_agent_MissingConnectionConfigurationFlowValidationDetails"></a>
 
 Details about a connection missing required configuration.
 

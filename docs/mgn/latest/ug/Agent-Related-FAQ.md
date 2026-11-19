@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Agent-Related-FAQ.html
 ---
 
 # Agent questions
-<a name="Agent-Related-FAQ"></a>
 
 This section contains answers to questions about the AWS Replication Agent.
 

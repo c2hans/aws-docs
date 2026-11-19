@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 ---
 
 # Filtering what fields are indexed in Neptune full-text search
-<a name="full-text-search-non-string-indexing-filters"></a>
 
 There are two fields in the CloudFormation template details that let you specify property or predicate keys or datatypes to exclude from OpenSearch indexing:
 

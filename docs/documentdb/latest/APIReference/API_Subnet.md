@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Subne
 ---
 
 # Subnet
-<a name="API_Subnet"></a>
 
  Detailed information about a subnet.
 

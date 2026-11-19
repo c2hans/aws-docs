@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ControlP
 ---
 
 # ControlPlaneUserAttributeFilter
-<a name="API_ControlPlaneUserAttributeFilter"></a>
 
 An object that can be used to specify Tag conditions or Hierarchy Group conditions inside the `SearchFilter`.
 

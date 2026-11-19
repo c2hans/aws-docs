@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cmd-nitro-sign-eif.
 ---
 
 # nitro-cli sign-eif
-<a name="cmd-nitro-sign-eif"></a>
 
 Signs an existing enclave image file (`.eif`). You must specify a private key and a signing certificate. For the private key, you can use a KMS key ARN or a local private key file.
 

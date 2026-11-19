@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # CreateChannelBan
-<a name="API_messaging-chime_CreateChannelBan"></a>
 
 Permanently bans a member from a channel. Moderators can't add banned members to a channel. To undo a ban, you first have to `DeleteChannelBan`, and then `CreateChannelMembership`. Bans are cleaned up when you delete users or channels.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Upd
 ---
 
 # UpdateApplicationPortalOptions
-<a name="API_UpdateApplicationPortalOptions"></a>
 
 A structure that describes the options for the access portal associated with an application that can be updated.
 

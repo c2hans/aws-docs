@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # TagResource
-<a name="API_iotdeviceadvisor_TagResource"></a>
 
 Adds to and modifies existing tags of an IoT Device Advisor resource.
 

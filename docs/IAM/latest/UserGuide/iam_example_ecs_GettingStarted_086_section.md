@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_ecs_Get
 ---
 
 # Create a container task for the serverless launch type
-<a name="iam_example_ecs_GettingStarted_086_section"></a>
 
 The following code example shows how to:
 + Create the cluster

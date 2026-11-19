@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_LexTranscr
 ---
 
 # LexTranscriptFilter
-<a name="API_LexTranscriptFilter"></a>
 
 The object that contains transcript filter details that are associated with a bot recommendation.
 

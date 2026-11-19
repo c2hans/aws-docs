@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/FIPS-ex
 ---
 
 # Exceptions
-<a name="FIPS-exceptions"></a>
 
 FIPS-compliant connections are not supported in the following scenarios:
 + Administration of WorkSpaces Applications through the WorkSpaces Applications console

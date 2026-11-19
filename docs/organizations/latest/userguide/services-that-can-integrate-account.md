@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Account Management and AWS Organizations
-<a name="services-that-can-integrate-account"></a>
 
 AWS Account Management helps you manage the account information and metadata for all of the AWS accounts in your organization. You can set, modify, or delete the alternate contact information for each of your organization's member accounts. For more information, see [Using AWS Account Management in your organization](https://docs.aws.amazon.com/accounts/latest/reference/using-orgs.html) in the *AWS Account Management User Guide*.
 

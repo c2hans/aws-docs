@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationAdjustmentDetails
-<a name="API_CapacityReservationAdjustmentDetails"></a>
 
 Describes the configuration that a Capacity Reservation will have after a pending adjustment is applied.
 

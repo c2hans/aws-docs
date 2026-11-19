@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyStoreAliasItem
-<a name="API_PolicyStoreAliasItem"></a>
 
 Contains information about a policy store alias.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-get-logs.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Retrieve node logs using kubectl and Amazon S3
-<a name="auto-get-logs"></a>
 
 Learn how to retrieve node logs from an Amazon EKS node that runs the EKS node monitoring agent. The agent collects log and configuration bundles from the node and uploads them to your S3 bucket.
 

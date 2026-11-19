@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListActionExecutions
-<a name="API_ListActionExecutions"></a>
 
 Lists the action executions that have occurred in a pipeline.
 

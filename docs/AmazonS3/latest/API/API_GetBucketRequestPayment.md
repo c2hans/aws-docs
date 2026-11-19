@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketRequest
 ---
 
 # GetBucketRequestPayment
-<a name="API_GetBucketRequestPayment"></a>
 
 **Note**
 This operation is not supported for directory buckets.

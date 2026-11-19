@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutomationEventStep
-<a name="API_automation_AutomationEventStep"></a>
 
  Contains information about a step in an automation event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/assigning-res
 ---
 
 # Assign resources using the AWS Backup console
-<a name="assigning-resources-console"></a>
 
 **To navigate to the **Assign resources** page:**
 

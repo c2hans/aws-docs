@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-
 ---
 
 # Create an Amazon Bedrock knowledge base with an Amazon Kendra GenAI index
-<a name="knowledge-base-kendra-genai-index-create"></a>
 
  For more information about using an Amazon Kendra GenAI index, see [ Amazon Kendra GenAI index](https://docs.aws.amazon.com/kendra/latest/dg/hiw-index-types.html#kendra-gen-ai-index) in the *Amazon Kendra Developer Guide*.
 

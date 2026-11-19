@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDashboardsQAConfiguration
-<a name="API_UpdateDashboardsQAConfiguration"></a>
 
 Updates a Dashboard QA configuration.
 

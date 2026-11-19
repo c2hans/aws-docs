@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ListCapabil
 ---
 
 # ListCapabilities
-<a name="API_ListCapabilities"></a>
 
 Lists the capabilities associated with your AWS account for your current or specified region. A trading capability contains the information required to transform incoming EDI documents into JSON or XML outputs.
 

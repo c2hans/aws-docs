@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseContents
-<a name="API_amazon-q-connect_QuickResponseContents"></a>
 
 The content of the quick response stored in different media types.
 

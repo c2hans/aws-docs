@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Topic naming (Prefixed vs Identical)
-<a name="msk-replicator-topic-naming"></a>
 
 MSK Replicator has two topic name configuration modes: *Prefixed* (default) or *Identical* topic name replication.
 

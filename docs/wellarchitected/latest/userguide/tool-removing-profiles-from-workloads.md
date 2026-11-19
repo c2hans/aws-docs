@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool-re
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Removing a profile from a workload in AWS WA Tool
-<a name="tool-removing-profiles-from-workloads"></a>
 
 Removing a profile from the workload reverts the workload to the version prior to when the profile was associated with it, and workload review questions and risks are no longer prioritized.
 

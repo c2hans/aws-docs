@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-ki
 ---
 
 # How to use custom prefixes and dynamic partitioning
-<a name="partition-projection-kinesis-firehose-example-using-custom-prefixes-and-dynamic-partitioning"></a>
 
 Firehose can be configured with [custom prefixes](https://docs.aws.amazon.com/firehose/latest/dev/s3-prefixes.html) and [dynamic partitioning](https://docs.aws.amazon.com/firehose/latest/dev/dynamic-partitioning.html). Using these features, you can configure the Amazon S3 keys and set up partitioning schemes that better support your use case. You can also use partition projection with these partitioning schemes and configure them accordingly.
 

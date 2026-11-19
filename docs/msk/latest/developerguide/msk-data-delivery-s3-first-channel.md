@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Create your first Channel
-<a name="msk-data-delivery-s3-first-channel"></a>
 
 To create your first Channel, complete the following steps:
 

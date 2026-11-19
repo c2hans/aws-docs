@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Offline migration
 <a name="offline"></a>

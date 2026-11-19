@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Networ
 ---
 
 # NetworkGeoLocation
-<a name="API_NetworkGeoLocation"></a>
 
 Contains information about network endpoint location.
 

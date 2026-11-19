@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Error
 ---
 
 # ErrorInfo
-<a name="API_ErrorInfo"></a>
 
 Error information for the SPICE ingestion of a dataset.
 

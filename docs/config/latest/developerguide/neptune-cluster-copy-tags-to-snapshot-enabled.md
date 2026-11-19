@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/neptune-clu
 ---
 
 # neptune-cluster-copy-tags-to-snapshot-enabled
-<a name="neptune-cluster-copy-tags-to-snapshot-enabled"></a>
 
 Checks if an Amazon Neptune cluster is configured to copy all tags to snapshots when the snapshots are created. The rule is NON\_COMPLIANT if 'copyTagsToSnapshot' is set to false.
 

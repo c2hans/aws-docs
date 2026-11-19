@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/bulk-opera
 ---
 
 # Import metadata examples
-<a name="bulk-operations-import-metadata-example"></a>
 
 This section shows how to create metadata files to import asset models and assets with a single bulk import operation.
 

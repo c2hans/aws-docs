@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSSEC01-BP03 Set up alerts for IAM configuration changes and perform audits
-<a name="lssec01-bp03"></a>
 
  Compliance-related access rules should be automated with alerting or automated risk mitigation actions.
 

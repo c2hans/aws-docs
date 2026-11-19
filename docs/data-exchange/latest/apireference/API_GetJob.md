@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 This operation returns information about a job.
 

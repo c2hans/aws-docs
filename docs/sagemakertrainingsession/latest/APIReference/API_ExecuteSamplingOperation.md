@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ExecuteSamplingOperation
-<a name="API_ExecuteSamplingOperation"></a>
 
 Submits an asynchronous sampling operation to generate text or compute log-probabilities from the model associated with the specified training session. The session must be in `Running` or `Blocked` state. Use `GetSamplingOperationResult` to poll for the result.
 

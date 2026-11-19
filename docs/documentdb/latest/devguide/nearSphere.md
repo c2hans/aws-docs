@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/nearSphere.ht
 ---
 
 # $nearSphere
-<a name="nearSphere"></a>
 
 The `$nearSphere` operator in Amazon DocumentDB is used to find documents that are within a specified distance of a geospatial point. This operator is particularly useful for geo-spatial queries, such as finding all restaurants within a certain radius of a given location.
 

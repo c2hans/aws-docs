@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeCon
 ---
 
 # DescribeConnectorEntity
-<a name="API_DescribeConnectorEntity"></a>
 
  Provides details regarding the entity used with the connector, with a description of the data model for each field in that entity.
 

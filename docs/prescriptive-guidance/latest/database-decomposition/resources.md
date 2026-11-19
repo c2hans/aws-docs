@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Resources
-<a name="resources"></a>
 
 The following additional resources and tools can help your organization on its database decomposition journey.
 

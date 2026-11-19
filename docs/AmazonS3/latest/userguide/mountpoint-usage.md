@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint-usa
 ---
 
 # Configuring and using Mountpoint
-<a name="mountpoint-usage"></a>
 
 To use Mountpoint for Amazon S3, your host needs valid AWS credentials with access to the Amazon S3 bucket or buckets that you would like to mount. For different ways to authenticate, see Mountpoint [AWS Credentials](https://github.com/awslabs/mountpoint-s3/blob/main/doc/CONFIGURATION.md#aws-credentials) on GitHub.
 

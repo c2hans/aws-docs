@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.124a33df-5acb-50c9-aa8b-775871e86604"></a>

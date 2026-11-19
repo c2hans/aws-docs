@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-km
 ---
 
 # Configure AWS KMS key policies for CloudTrail
-<a name="create-kms-key-policy-for-cloudtrail"></a>
 
 You can create an AWS KMS key in three ways:
 + The CloudTrail console

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-use-inst
 ---
 
 # Code Editor application instances and images
-<a name="code-editor-use-instances"></a>
 
 Only some instances are compatible with Code Editor applications. You can choose the instance type that is compatible with your use case from the **Instance** dropdown menu.
 

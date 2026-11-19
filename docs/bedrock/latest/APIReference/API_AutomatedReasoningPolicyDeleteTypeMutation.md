@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDeleteTypeMutation
-<a name="API_AutomatedReasoningPolicyDeleteTypeMutation"></a>
 
 A mutation operation that removes a custom type from the policy definition during the build process.
 

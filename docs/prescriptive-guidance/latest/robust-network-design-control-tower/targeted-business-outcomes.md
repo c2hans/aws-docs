@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Objectives and benefits
-<a name="targeted-business-outcomes"></a>
 
 By implementing the configuration set up in this guide, you can achieve the following outcomes:
 + An Amazon VPC IP Address Manager (IPAM) that manages the entire organization's CIDRs

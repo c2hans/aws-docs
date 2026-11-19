@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/workflow-decry
 ---
 
 # Setting up a managed workflow for decrypting a file
-<a name="workflow-decrypt-tutorial"></a>
 
 This tutorial illustrates how to set up a managed workflow that contains a decrypt step. The tutorial also shows how to upload an encrypted file to an Amazon S3 bucket and then view the decrypted file in that same bucket.
 

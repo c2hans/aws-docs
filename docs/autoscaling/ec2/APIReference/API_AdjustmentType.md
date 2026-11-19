@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Adjustm
 ---
 
 # AdjustmentType
-<a name="API_AdjustmentType"></a>
 
 Describes a policy adjustment type.
 

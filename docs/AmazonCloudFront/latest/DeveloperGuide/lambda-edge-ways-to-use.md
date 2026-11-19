@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Ways to use Lambda@Edge
-<a name="lambda-edge-ways-to-use"></a>
 
 There are many uses for Lambda@Edge processing with your Amazon CloudFront distribution, such as the following examples:
 + A Lambda function can inspect cookies and rewrite URLs so that users see different versions of a site for A/B testing.

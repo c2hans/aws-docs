@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Routin
 ---
 
 # RoutingTargetAsyncInferenceNotificationConfig
-<a name="API_RoutingTargetAsyncInferenceNotificationConfig"></a>
 
 The Amazon SNS topics that the inference router publishes to. The router publishes one notification for each request. The notification contains the location of the result, not the result itself. The destination endpoints also send their own notifications, if they're configured to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/additional-
 ---
 
 # Additional programs, tools, and assistants for AWS Marketplace sellers
-<a name="additional-seller-tools"></a>
 
 AWS Marketplace provides you with seller tools that you can use to sell and manage your products. You can use these tools to gain insight into your customer base and help better understand your sales. This topic provides a information about these tools with links to additional resources.
 

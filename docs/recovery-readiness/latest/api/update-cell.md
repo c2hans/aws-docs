@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/update-cel
 ---
 
 # Update a cell
-<a name="update-cell"></a>
 
 The following is an example of a request to update a cell, and the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_MessageTag.h
 ---
 
 # MessageTag
-<a name="API_MessageTag"></a>
 
 Contains the name and value of a tag that you can provide to `SendEmail` or `SendRawEmail` to apply to an email.
 

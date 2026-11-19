@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-desc
 ---
 
 # mon-describe-alarms
-<a name="cli-mon-describe-alarms"></a>
 
 ## Description
 <a name="w2aab9c23b3"></a>

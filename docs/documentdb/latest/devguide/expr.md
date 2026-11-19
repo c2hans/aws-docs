@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/expr.html
 ---
 
 # $expr
-<a name="expr"></a>
 
 New from version 4.0.
 

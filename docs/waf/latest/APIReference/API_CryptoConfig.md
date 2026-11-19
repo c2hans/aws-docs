@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CryptoConfig
 ---
 
 # CryptoConfig
-<a name="API_CryptoConfig"></a>
 
 The cryptocurrency payment configuration for AI bot monetization. Contains the list of blockchain payment networks where you receive payments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/degre
 ---
 
 # .degreeDistribution algorithm
-<a name="degreeDistribution"></a>
 
 The `.degreeDistribution` algorithm is a tool for analyzing and visualizing the structural characteristics of a graph. It calculates the frequency distribution of vertex degrees across the entire network and provides basic statistics of the distribution.
 

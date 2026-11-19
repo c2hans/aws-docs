@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/manage-retaine
 ---
 
 # Manage retained instances
-<a name="manage-retained-instances"></a>
 
  Monitor and control Amazon EC2 instances that have been moved to a retained state. Use CloudWatch metrics to track retained instances, then manually terminate retained instances after completing your custom actions.
 

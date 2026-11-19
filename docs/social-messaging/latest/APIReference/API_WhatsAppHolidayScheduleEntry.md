@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # WhatsAppHolidayScheduleEntry
-<a name="API_WhatsAppHolidayScheduleEntry"></a>
 
 A date-specific override to the weekly operating hours, such as a holiday.
 

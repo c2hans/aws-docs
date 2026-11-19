@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setWindowFiel
 ---
 
 # $setWindowFields
-<a name="setWindowFields"></a>
 
 New from version 8.0.2.
 

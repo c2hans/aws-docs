@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchAnalyses
-<a name="API_SearchAnalyses"></a>
 
 Searches for analyses that belong to the user specified in the filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/repo-policies.htm
 ---
 
 # Repository policies
-<a name="repo-policies"></a>
 
 CodeArtifact uses resource-based permissions to control access. Resource-based permissions let you specify who has access to a repository and what actions they can perform on it. By default, only the repository owner has access to a repository. You can apply a policy document that allows other IAM principals to access your repository.
 

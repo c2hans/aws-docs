@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/embeddings-schema.
 ---
 
 # Complete embeddings request and response schema
-<a name="embeddings-schema"></a>
 
 ## Complete synchronous schema
 <a name="embeddings-schema-sync"></a>

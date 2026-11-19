@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy
-<a name="SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Bedrock Knowledge Bases to access Amazon Bedrock models and data sources in SageMaker Studio.
 

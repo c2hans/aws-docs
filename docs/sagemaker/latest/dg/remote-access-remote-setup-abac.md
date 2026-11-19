@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/remote-access-remote
 ---
 
 # Advanced access control
-<a name="remote-access-remote-setup-abac"></a>
 
 Amazon SageMaker AI supports [attribute-based access control (ABAC)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) to achieve fine-grained access control for Remote IDE connections using ABAC policies. The following are example ABAC policies for Remote IDE connections.
 

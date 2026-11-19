@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp
 ---
 
 # Request temporary security credentials
-<a name="id_credentials_temp_request"></a>
 
 To request temporary security credentials, you can use AWS Security Token Service (AWS STS) operations in the AWS API. These include operations to create and provide trusted users with temporary security credentials that can control access to your AWS resources. For more information about AWS STS, see [Temporary security credentials in IAM](id_credentials_temp.md). To learn about the different methods that you can use to request temporary security credentials by assuming a role, see [Methods to assume a role](id_roles_manage-assume.md).
 

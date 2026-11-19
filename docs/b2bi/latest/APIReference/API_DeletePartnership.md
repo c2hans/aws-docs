@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_DeletePartn
 ---
 
 # DeletePartnership
-<a name="API_DeletePartnership"></a>
 
 Deletes the specified partnership. A partnership represents the connection between you and your trading partner. It ties together a profile and one or more trading capabilities.
 

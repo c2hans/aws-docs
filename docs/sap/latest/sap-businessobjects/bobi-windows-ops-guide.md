@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-wind
 ---
 
 # SAP BusinessObjects Business Intelligence Platform on AWS Deployment and Operations Guide for Windows
-<a name="bobi-windows-ops-guide"></a>
 
  *SAP specialists, Amazon Web Services*
 

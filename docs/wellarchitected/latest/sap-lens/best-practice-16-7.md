@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 16.7 – Continually optimize sizing and configuration based on performance data
-<a name="best-practice-16-7"></a>
 
 Review performance metrics on a regular basis outside of your incident response process. By doing so, you can discover system components that are undersized, oversized, or no longer used at all. A regular performance optimization cadence should be established for your SAP workloads, focusing on right sizing your system components for real user load. This activity will improve user experience, eliminate unneeded aspects of your architecture, and help improve both the cost effectiveness and resilience of your workload.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/landing-zo
 ---
 
 # Landing zone schemas
-<a name="landing-zone-schemas"></a>
 
 A landing zone is an AWS resource, which is created by means of schemas. Each AWS Control Tower landing zone version has a unique schema.
 

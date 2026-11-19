@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Successf
 ---
 
 # SuccessfulRequest
-<a name="API_SuccessfulRequest"></a>
 
 Request for which contact was successfully created.
 

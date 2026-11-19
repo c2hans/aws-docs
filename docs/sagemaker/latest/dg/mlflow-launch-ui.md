@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-launch-ui.htm
 ---
 
 # Launch the MLflow UI using a presigned URL
-<a name="mlflow-launch-ui"></a>
 
 You can access the MLflow UI to view your experiments using a presigned URL. You can launch the MLflow UI either through Studio or using the AWS CLI in a terminal of your choice.
 

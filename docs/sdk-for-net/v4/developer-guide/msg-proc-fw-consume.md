@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Consume messages with the AWS Message Processing Framework for .NET
-<a name="msg-proc-fw-consume"></a>
 
 The AWS Message Processing Framework for .NET allows you to consume messages that have been [published](msg-proc-fw-publish.md) by using the framework or one of the messaging services. The messages can be consumed in a variety of ways, some of which are described below.
 

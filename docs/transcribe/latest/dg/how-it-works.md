@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/how-it-works.html
 ---
 
 # How Amazon Transcribe works
-<a name="how-it-works"></a>
 
 Amazon Transcribe uses machine learning models to convert speech to text.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # ThreatsDetectedItemCount
-<a name="API_ThreatsDetectedItemCount"></a>
 
 Contains total number of infected files.
 

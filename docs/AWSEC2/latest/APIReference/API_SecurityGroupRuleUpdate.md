@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SecurityG
 ---
 
 # SecurityGroupRuleUpdate
-<a name="API_SecurityGroupRuleUpdate"></a>
 
 Describes an update to a security group rule.
 

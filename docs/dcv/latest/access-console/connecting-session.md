@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/connecting-ses
 ---
 
 # Connecting to a session
-<a name="connecting-session"></a>
 
 You can connect to a session after it has been created. You can connect to a session from either the DCV web client, or a native Windows or macOS client application.
 

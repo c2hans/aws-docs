@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # CreateCustomDomainAssociation
-<a name="API_CreateCustomDomainAssociation"></a>
 
 Creates a custom domain association for Amazon Redshift Serverless.
 

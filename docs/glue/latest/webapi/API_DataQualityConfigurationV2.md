@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityConfig
 ---
 
 # DataQualityConfigurationV2
-<a name="API_DataQualityConfigurationV2"></a>
 
 The run configuration for a data quality result.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/hadoop-numa.html
 ---
 
 # Turn on non-uniform memory access awareness for YARN containers
-<a name="hadoop-numa"></a>
 
 With Amazon EMR versions 6.x and later, you can use non-uniform memory access (NUMA) for multiprocessing your data on clusters. NUMA is a computer memory design pattern where the processor can access its own local memory faster than memory on another processor or shared between processors. YARN containers have better performance with NUMA because they can bind to a specific NUMA node that serves all subsequent memory allocations. This reduces the amount of times that your cluster has to access remote memory.
 

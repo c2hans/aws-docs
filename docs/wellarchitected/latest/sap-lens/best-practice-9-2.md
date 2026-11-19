@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 9.2 – Perform periodic tests for security bugs
-<a name="best-practice-9-2"></a>
 
 As described in the Well-Architected Framework Security Pillar incident response sections on simulations, assembling a runbook and conducting game days are recommended for all workloads, including those for SAP on AWS. This type of periodic testing can identify new attack vectors and vulnerabilities as well as prepare your SAP security resources for a rapid and effective response in the event of a security incident.
 

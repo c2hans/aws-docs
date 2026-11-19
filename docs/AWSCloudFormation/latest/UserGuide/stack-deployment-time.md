@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Understand stack deployment time
-<a name="stack-deployment-time"></a>
 
 When you create, update, or delete a stack, CloudFormation provisions each resource in your template and reports that the stack operation is complete when your resources are ready to serve traffic. This topic describes how CloudFormation provisions a stack, what affects how long a stack operation takes, and how you can shorten deployment time.
 

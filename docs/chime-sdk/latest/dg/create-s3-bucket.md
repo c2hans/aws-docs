@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-s3-bucket.htm
 ---
 
 # Creating an Amazon S3 bucket for Amazon Chime SDK media capture pipelines
-<a name="create-s3-bucket"></a>
 
 You can use the Amazon S3 console the AWS SDKs, or the AWS CLI to to create an Amazon S3 bucket. For more information, refer to [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html), in the *Amazon Simple Storage Service (S3) User Guide*.
 

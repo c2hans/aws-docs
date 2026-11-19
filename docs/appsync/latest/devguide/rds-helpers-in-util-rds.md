@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/rds-helpers-in-u
 ---
 
 # Amazon RDS helpers in $util.rds
-<a name="rds-helpers-in-util-rds"></a>
 
 **Note**
 We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-js-version.html).

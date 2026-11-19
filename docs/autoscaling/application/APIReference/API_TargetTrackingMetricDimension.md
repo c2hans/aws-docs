@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # TargetTrackingMetricDimension
-<a name="API_TargetTrackingMetricDimension"></a>
 
 Describes the dimension of a metric.
 

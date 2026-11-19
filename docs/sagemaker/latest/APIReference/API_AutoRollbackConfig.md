@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoRo
 ---
 
 # AutoRollbackConfig
-<a name="API_AutoRollbackConfig"></a>
 
 Automatic rollback configuration for handling endpoint deployment failures and recovery.
 

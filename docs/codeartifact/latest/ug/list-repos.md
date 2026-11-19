@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/list-repos.html
 ---
 
 # List repositories
-<a name="list-repos"></a>
 
 Use the commands in this topic to list repositories in an AWS account or domain.
 

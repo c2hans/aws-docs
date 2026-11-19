@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/modalities-video.h
 ---
 
 # Video understanding
-<a name="modalities-video"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 video understanding guide, visit [Video understanding](https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-multimodal-models.html#video-understanding).

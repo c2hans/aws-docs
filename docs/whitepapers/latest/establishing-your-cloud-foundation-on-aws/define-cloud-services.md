@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Define how cloud services are adopted
-<a name="define-cloud-services"></a>
 
 Before you start building your cloud environment, you need to define policies on cloud consumption. Having your governance policies well-defined, will ensure that the foundational environment you build will support your workloads, and will enable you to define processes to follow to deploy, operate, and govern the different workloads across your environment.
 

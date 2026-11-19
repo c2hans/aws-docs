@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-faq.h
 ---
 
 # Frequently asked questions
-<a name="cost-mgmt-faq"></a>
 
 This section answers common questions about choosing and combining the Amazon Bedrock cost attribution mechanisms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaFunctionMemoryProjectedMetric
-<a name="API_LambdaFunctionMemoryProjectedMetric"></a>
 
 Describes a projected utilization metric of an AWS Lambda function recommendation option.
 

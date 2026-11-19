@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF05-BP02 Select appropriate encoding settings for your content type and quality targets
-<a name="smperf05-bp02"></a>
 
 Choose encoding parameters matched to your content characteristics
 

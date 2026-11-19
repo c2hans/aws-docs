@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS Cost Explorer Service
-<a name="awscostexplorerservice"></a>
 
 AWS Cost Explorer Service provides the following APIs for data retrieval.
 

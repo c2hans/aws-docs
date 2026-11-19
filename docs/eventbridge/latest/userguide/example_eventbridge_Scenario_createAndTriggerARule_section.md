@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/example_eve
 ---
 
 # Create and trigger a rule in Amazon EventBridge using an AWS SDK
-<a name="example_eventbridge_Scenario_createAndTriggerARule_section"></a>
 
 The following code example shows how to create and trigger a rule in Amazon EventBridge.
 

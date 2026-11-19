@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 2.1 IT and business leader alignment
-<a name="alignment"></a>
 
 ## Overview
 <a name="alignment-overview"></a>

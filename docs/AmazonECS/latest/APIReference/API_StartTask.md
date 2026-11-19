@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_StartT
 ---
 
 # StartTask
-<a name="API_StartTask"></a>
 
 Starts a new task from the specified task definition on the specified container instance or instances.
 

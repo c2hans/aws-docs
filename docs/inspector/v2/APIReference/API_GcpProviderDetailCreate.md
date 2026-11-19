@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GcpProvide
 ---
 
 # GcpProviderDetailCreate
-<a name="API_GcpProviderDetailCreate"></a>
 
 The configuration details specific to Google Cloud Platform (GCP) for creating a connector, including the AWS Config connector association, scan scope, and locations to scan.
 

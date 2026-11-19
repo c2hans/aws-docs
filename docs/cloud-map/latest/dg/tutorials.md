@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/tutorials.html
 ---
 
 # Getting started with AWS Cloud Map
-<a name="tutorials"></a>
 
 The following guides show you how to set up to use AWS Cloud Map and perform common tasks using AWS Cloud Map namespaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Optimizing generative AI security and responsible AI
-<a name="optimizing-generative-ai-security-and-responsible-ai"></a>
 
  Understanding the distinct yet complementary roles of generative AI security and [responsible AI](https://aws.amazon.com/ai/responsible-ai/) is essential for comprehensive risk management. While security safeguards systems and data assets, responsible AI addresses broader safety imperatives including bias prevention, output reliability, and ethical considerations. Both security and responsible AI controls must be integrated throughout the entire AI system lifecycle within an organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentc
 ---
 
 # Get started with Amazon Bedrock AgentCore
-<a name="agentcore-get-started-cli"></a>
 
 This quickstart gets you from zero to a running agent in a few minutes using the AgentCore CLI. You will install the CLI, scaffold a project, test locally, deploy to AWS, and invoke your agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/upgrade-to-lat
 ---
 
 # Upgrade to the latest Connect Customer Contact Control Panel (CCP).
-<a name="upgrade-to-latest-ccp"></a>
 
 The URL for the latest Contact Control Panel (CCP) ends with **ccp-v2**
 

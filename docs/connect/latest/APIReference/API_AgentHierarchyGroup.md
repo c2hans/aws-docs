@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentHie
 ---
 
 # AgentHierarchyGroup
-<a name="API_AgentHierarchyGroup"></a>
 
 Information about an agent hierarchy group.
 

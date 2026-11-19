@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationGuidanceContext
-<a name="API_RemediationGuidanceContext"></a>
 
 The context behind the remediation target's existence and guidance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AddRol
 ---
 
 # AddRoleToDBInstance
-<a name="API_AddRoleToDBInstance"></a>
 
 Associates an AWS Identity and Access Management (IAM) role with a DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # EnableAvailabilityZonesForLoadBalancer
-<a name="API_EnableAvailabilityZonesForLoadBalancer"></a>
 
 Adds the specified Availability Zones to the set of Availability Zones for the specified load balancer in EC2-Classic or a default VPC.
 

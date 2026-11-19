@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Limitations and caveats for firewall rules in a Next Generation policy
-<a name="nwfw-v2-firewall-engine-limitations"></a>
 
 The IPS engine in a Next Generation policy uses the same Suricata compatible stateful rules as a Classic Network Firewall policy, so the limitations and caveats earlier in this section apply to IPS rules as well. The *firewall engine* in a Next Generation policy uses Suricata compatible firewall-mode rules, which have the following additional limitations. For the full reference on which actions, scopes, hooks, and keywords you can combine in a firewall rule, see [Valid combinations and constraints for firewall rules](firewall-rule-constraints.md).
 + **The `config` action isn't supported.** A firewall rule's primary action must be `accept`, `drop`, `reject`, `rejectdst`, or `rejectboth`. The Suricata firewall-mode `config` action isn't supported.

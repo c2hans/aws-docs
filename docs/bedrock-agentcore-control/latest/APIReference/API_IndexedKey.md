@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # IndexedKey
-<a name="API_IndexedKey"></a>
 
 A metadata key indexed for filtering.
 

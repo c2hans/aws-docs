@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Exec
 ---
 
 # ExecuteQuery
-<a name="API_ExecuteQuery"></a>
 
 Execute an openCypher query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SessionMetadataShape
-<a name="API_SessionMetadataShape"></a>
 
 Metadata for a specific session in a batch evaluation, including ground truth data and test scenario identifiers.
 

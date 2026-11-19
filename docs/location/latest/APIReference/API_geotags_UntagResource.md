@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geotags
 ---
 
 # UntagResource
-<a name="API_geotags_UntagResource"></a>
 
 Removes one or more tags from the specified Amazon Location resource.
 

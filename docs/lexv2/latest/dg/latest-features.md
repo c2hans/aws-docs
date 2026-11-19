@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/latest-features.html
 ---
 
 # Latest features
-<a name="latest-features"></a>
 
 This topic provides information about the latest features that Amazon Lex V2 offers:
 

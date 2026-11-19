@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/partn
 ---
 
 # Discovering and managing partner connections
-<a name="partner-connections"></a>
 
 This section provides detailed instructions for the Partner Discovery and Partner Connections features in AWS Partner Central, helping AWS Partners discover, connect, and collaborate with other AWS Partners.
 

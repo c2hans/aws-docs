@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListPortfolios
-<a name="API_ListPortfolios"></a>
 
 Lists all portfolios in the catalog.
 

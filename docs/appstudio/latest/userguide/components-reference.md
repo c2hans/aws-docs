@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/components-re
 ---
 
 # Components reference
-<a name="components-reference"></a>
 
 This topic details each of App Studio's components, their properties, and includes configuration examples.
 

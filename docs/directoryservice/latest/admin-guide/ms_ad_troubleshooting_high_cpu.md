@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Troubleshooting AWS Managed Microsoft AD high CPU utilization
-<a name="ms_ad_troubleshooting_high_cpu"></a>
 
 The following can help you troubleshoot high CPU issues on AWS Managed Microsoft AD domain controllers.
 

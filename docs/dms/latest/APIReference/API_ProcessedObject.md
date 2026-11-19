@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ProcessedObj
 ---
 
 # ProcessedObject
-<a name="API_ProcessedObject"></a>
 
 The database object that the schema conversion operation currently uses.
 

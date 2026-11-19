@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/index-aggregat
 ---
 
 # Querying for aggregate data
-<a name="index-aggregate"></a>
 
 AWS IoT provides four APIs (`GetStatistics`, `GetCardinality`, `GetPercentiles`, and `GetBucketsAggregation`) that allow you to search your device fleet for aggregate data.
 

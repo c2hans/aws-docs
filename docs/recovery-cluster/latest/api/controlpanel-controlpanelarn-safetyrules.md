@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel
 ---
 
 # ListSafetyRules
-<a name="controlpanel-controlpanelarn-safetyrules"></a>
 
 ## URI
 <a name="controlpanel-controlpanelarn-safetyrules-url"></a>

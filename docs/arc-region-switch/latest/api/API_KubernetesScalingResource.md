@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Kuberne
 ---
 
 # KubernetesScalingResource
-<a name="API_KubernetesScalingResource"></a>
 
 Defines a Kubernetes resource to scale in an Amazon EKS cluster.
 

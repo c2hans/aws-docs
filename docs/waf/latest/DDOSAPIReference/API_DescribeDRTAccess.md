@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Describe
 ---
 
 # DescribeDRTAccess
-<a name="API_DescribeDRTAccess"></a>
 
 Returns the current role and list of Amazon S3 log buckets used by the Shield Response Team (SRT) to access your AWS account while assisting with attack mitigation.
 

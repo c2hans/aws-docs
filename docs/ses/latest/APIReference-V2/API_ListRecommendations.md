@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListRecom
 ---
 
 # ListRecommendations
-<a name="API_ListRecommendations"></a>
 
 Lists the recommendations present in your Amazon SES account in the current AWS Region.
 

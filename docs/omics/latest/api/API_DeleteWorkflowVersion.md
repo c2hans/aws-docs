@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteWorkflowVersi
 ---
 
 # DeleteWorkflowVersion
-<a name="API_DeleteWorkflowVersion"></a>
 
 Deletes a workflow version. Deleting a workflow version doesn't affect any ongoing runs that are using the workflow version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Docker platform updates on December 7, 2020
-<a name="release-2020-12-07-docker"></a>
 
 This release provides new versions for AWS Elastic Beanstalk Docker platforms. The release includes security updates.
 

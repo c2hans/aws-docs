@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/logging-using-cloud
 ---
 
 # Monitoring with Elastic Disaster Recovery
-<a name="logging-using-cloudtrail"></a>
 
 ## Logging AWS Elastic Disaster Recovery API calls using AWS CloudTrail
 <a name="logging-using-cloudtrail-"></a>

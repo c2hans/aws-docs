@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MemoryStrategy
-<a name="API_MemoryStrategy"></a>
 
 Contains information about a memory strategy.
 

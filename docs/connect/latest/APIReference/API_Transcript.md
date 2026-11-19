@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Transcri
 ---
 
 # Transcript
-<a name="API_Transcript"></a>
 
 A structure that defines search criteria and matching logic to search for contacts by matching text with transcripts analyzed by Connect Customer Contact Lens.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 ---
 
 # LlamaIndex
-<a name="supported-frameworks-llamaindex"></a>
 
 This page explains how to instrument a [LlamaIndex](https://docs.llamaindex.ai/) agent, how spans are identified, and how evaluation fields are extracted. It closes with [best practices](#llamaindex-best-practices) for structuring a LlamaIndex agent so that it can be evaluated reliably.
 

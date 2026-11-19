@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Sig
 ---
 
 # SigningKeyInfo
-<a name="API_SigningKeyInfo"></a>
 
 The signing key used to cryptographically sign a support permit.
 

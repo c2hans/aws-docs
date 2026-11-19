@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::EventSource
-<a name="aws-resource-eventsv2-eventsource"></a>
 
 Resource schema for `AWS::EventsV2::EventSource`. A managed event source that forwards AWS service events or partner events onto a custom event bus.
 

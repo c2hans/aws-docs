@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetBillingAdjustmentRequest
-<a name="API_marketplace-agreements_GetBillingAdjustmentRequest"></a>
 
 Retrieves detailed information about a specific billing adjustment request. Sellers (proposers) can use this operation to view the status and details of a billing adjustment request they submitted.
 
@@ -102,7 +101,7 @@ Pattern: `[A-Z]+`
  ** [originalInvoiceId](#API_marketplace-agreements_GetBillingAdjustmentRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_GetBillingAdjustmentRequest-response-originalInvoiceId"></a>
 The identifier of the original invoice being adjusted.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 
  ** [status](#API_marketplace-agreements_GetBillingAdjustmentRequest_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_GetBillingAdjustmentRequest-response-status"></a>
 The current status of the billing adjustment request.

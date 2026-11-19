@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/quick-s
 ---
 
 # Using the Quick Setup API to manage configurations and deployments
-<a name="quick-setup-api"></a>
 
 You can use the API provided by Quick Setup to create and manage configurations and deployments using the AWS CLI or your preferred SDK. You can also use CloudFormation to create a configuration manager resource that deploys configurations. Using the API, you create configuration managers that deploy configuration *definitions*. Configuration definitions contain all of the necessary information to deploy a particular configuration type. For more information about the Quick Setup API, see the [Quick Setup API Reference](https://docs.aws.amazon.com/quick-setup/latest/APIReference/).
 

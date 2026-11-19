@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/bu
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Building the SDK for Browsers
-<a name="building-sdk-for-browsers"></a>
 
 The SDK for JavaScript is provided as a JavaScript file with support included for a default set of services. This file is typically loaded into browser scripts using a ` <script>` tag that references the hosted SDK package. However, you may need support for services other than the default set or otherwise need to customize the SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-mediapackag
 ---
 
 # Create a MediaPackage output group
-<a name="creating-mediapackage-output-group"></a>
 
 When you [planned the workflow for your channel](identify-downstream-system.md), you might have determined that you want to include a MediaPackage output group. (Or you might have decided to use an [HLS output group to deliver to MediaPackage](hls-destinations-emp.md).)
 

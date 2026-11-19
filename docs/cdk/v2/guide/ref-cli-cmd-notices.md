@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-notices.html
 ---
 
 # `cdk notices`
-<a name="ref-cli-cmd-notices"></a>
 
 Display notices for your CDK application.
 

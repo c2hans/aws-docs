@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-extras.html
 ---
 
 # AL2 Extras Library
-<a name="al2-extras"></a>
 
 **Warning**
  The `epel` Extra enables the third party EPEL7 repository. As of 2024-06-30 the third-party EPEL7 repository is *no longer being maintained*.

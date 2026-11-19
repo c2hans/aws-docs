@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListTagSyncT
 ---
 
 # ListTagSyncTasks
-<a name="API_ListTagSyncTasks"></a>
 
 Returns a list of tag-sync tasks.
 

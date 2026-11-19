@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_En
 ---
 
 # EnableTrustAnchor
-<a name="API_EnableTrustAnchor"></a>
 
 Enables a trust anchor. When enabled, certificates in the trust anchor chain are authorized for trust validation.
 

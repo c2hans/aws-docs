@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_L
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # ListDirectories
-<a name="API_ListDirectories"></a>
 
 Lists directories created within an account.
 
@@ -91,7 +90,7 @@ Type: String
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** AccessDeniedException **
-Access denied or directory not found. Either you don't have permissions for this directory or the directory does not exist. Try calling [ListDirectories](#API_ListDirectories) and check your permissions.
+Access denied or directory not found. Either you don't have permissions for this directory or the directory does not exist. Try calling [ListDirectories](API_ListDirectories.md) and check your permissions.
 HTTP Status Code: 403
 
  ** InternalServiceException **

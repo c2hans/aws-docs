@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/add-up
 ---
 
 # Adding or updating a resource policy for an ID namespace
-<a name="add-update-resource-policy-id-namespace"></a>
 
 A resource policy allows the creator of the ID mapping resource to access your ID namespace resource.
 

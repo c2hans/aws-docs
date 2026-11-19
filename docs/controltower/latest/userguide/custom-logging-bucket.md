@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/custom-log
 ---
 
 # Bring your own Amazon S3 bucket for log delivery
-<a name="custom-logging-bucket"></a>
 
 When you set up or update a landing zone (version 4.0 or later), you can use your own Amazon S3 bucket for log delivery instead of the default bucket that AWS Control Tower creates and manages.
 

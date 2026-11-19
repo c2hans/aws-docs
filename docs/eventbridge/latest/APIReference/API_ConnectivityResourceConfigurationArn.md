@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Conn
 ---
 
 # ConnectivityResourceConfigurationArn
-<a name="API_ConnectivityResourceConfigurationArn"></a>
 
 The Amazon Resource Name (ARN) of the Amazon VPC Lattice resource configuration for the resource endpoint.
 

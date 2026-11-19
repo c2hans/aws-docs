@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # HealthStatus
-<a name="API_bcmDashboards_HealthStatus"></a>
 
 Contains the health status information for a scheduled report, including the status code and any reasons for an unhealthy state.
 

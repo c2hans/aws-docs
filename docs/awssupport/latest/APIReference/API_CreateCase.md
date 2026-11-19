@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Creat
 ---
 
 # CreateCase
-<a name="API_CreateCase"></a>
 
 Creates a case in the Support Center. This operation is similar to how you create a case in the Support Center [Create Case](https://console.aws.amazon.com/support/home#/case/create) page.
 

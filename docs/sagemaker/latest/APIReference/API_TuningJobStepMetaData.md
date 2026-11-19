@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Tuning
 ---
 
 # TuningJobStepMetaData
-<a name="API_TuningJobStepMetaData"></a>
 
 Metadata for a tuning step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelExplainabilityJobDefinition
-<a name="API_DeleteModelExplainabilityJobDefinition"></a>
 
 Deletes an Amazon SageMaker AI model explainability job definition.
 

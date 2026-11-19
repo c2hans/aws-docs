@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Using an OpenSearch Ingestion pipeline with OpenTelemetry Collector
-<a name="configure-client-otel"></a>
 
 You can use the [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) to ingest logs, traces, and metrics into OpenSearch Ingestion pipelines. A single pipeline can be used to ingest all logs, traces, and metrics to different indices on a domain or collection. You can also use pipelines to ingest only logs, traces, or metrics individually.
 

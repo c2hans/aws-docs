@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-is-security.html
 ---
 
 # Interactive sessions with IAM
-<a name="glue-is-security"></a>
 
  These sections describe security considerations for AWS Glue interactive sessions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-data-model.html
 ---
 
 # Call analytics data model for the Amazon Chime SDK
-<a name="ca-data-model"></a>
 
 The information in this section lists and describes Amazon Chime SDK call analytics data model, a set of tables in an AWS Glue data catalog.
 

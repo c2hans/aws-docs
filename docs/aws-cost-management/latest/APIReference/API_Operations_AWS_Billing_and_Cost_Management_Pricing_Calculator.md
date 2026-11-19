@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Pricing Calculator
-<a name="API_Operations_AWS_Billing_and_Cost_Management_Pricing_Calculator"></a>
 
 The following actions are supported by AWS Pricing Calculator:
 +  [BatchCreateBillScenarioCommitmentModification](API_AWSBCMPricingCalculator_BatchCreateBillScenarioCommitmentModification.md)

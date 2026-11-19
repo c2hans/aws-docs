@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-send
 ---
 
 # SendGrid connector for Amazon AppFlow
-<a name="connectors-sendgrid"></a>
 
 SendGrid is a marketing automation platform and email marketing service. If you're a SendGrid user, your account contains data about your SendGrid activity, such as your lists, segments, and campaigns. You can use Amazon AppFlow to transfer data from SendGrid to certain AWS services or other supported applications.
 

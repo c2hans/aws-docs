@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor
 ---
 
 # Long duration tests
-<a name="device-advisor-tests-long-duration"></a>
 
 Long duration tests is a new test suite that monitors a device's behavior when it operates over longer periods of time. Compared to running individual tests that focus on specific behaviors of a device, the long duration test examines the device's behavior in a variety of real-world scenarios over the device's lifespan. Device Advisor orchestrates the tests in the most efficient possible order. The test generates results and logs, including a summary log with useful metrics about the device's performance while under test.
 

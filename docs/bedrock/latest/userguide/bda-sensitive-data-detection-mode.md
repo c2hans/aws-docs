@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-sensitive-d
 ---
 
 # Detection mode
-<a name="bda-sensitive-data-detection-mode"></a>
 
 Use this setting to control how BDA handles sensitive data detection. You can perform detection only, or both detection and redaction.
 

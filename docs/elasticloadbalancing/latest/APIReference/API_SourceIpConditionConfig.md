@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # SourceIpConditionConfig
-<a name="API_SourceIpConditionConfig"></a>
 
 Information about a source IP condition.
 

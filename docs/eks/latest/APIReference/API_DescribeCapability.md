@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeCapa
 ---
 
 # DescribeCapability
-<a name="API_DescribeCapability"></a>
 
 Returns detailed information about a specific managed capability in your Amazon EKS cluster, including its current status, configuration, health information, and any issues that may be affecting its operation.
 

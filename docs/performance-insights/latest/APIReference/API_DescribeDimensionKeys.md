@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DescribeDimensionKeys
-<a name="API_DescribeDimensionKeys"></a>
 
 For a specific time period, retrieve the top `N` dimension keys for a metric.
 

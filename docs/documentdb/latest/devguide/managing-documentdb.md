@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/managing-docu
 ---
 
 # Managing Amazon DocumentDB clusters and instances
-<a name="managing-documentdb"></a>
 
 These sections cover the various components and their related tasks for managing your Amazon DocumentDB (with MongoDB compatibility) implementation.
 

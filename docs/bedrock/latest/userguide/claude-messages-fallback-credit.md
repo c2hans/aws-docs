@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Fallback credit for refused requests (beta)
-<a name="claude-messages-fallback-credit"></a>
 
 Prompt caches are per model. When a Claude model refuses a request and you retry the same conversation on a different model, the conversation prefix that was already cached for the first model is written into the new model's cache in full, at cache-write rates. Fallback credit removes this extra cost. The refusal carries a one-time credit token. When you include the token on the retry, the retry is billed as though the conversation had been on the fallback model from the start: the overlapping prefix is billed as cache-read tokens instead of cache-write tokens.
 

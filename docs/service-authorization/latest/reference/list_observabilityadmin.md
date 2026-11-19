@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon CloudWatch Observability Admin Service
-<a name="list_observabilityadmin"></a>
 
 Amazon CloudWatch Observability Admin Service (service prefix: `observabilityadmin`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

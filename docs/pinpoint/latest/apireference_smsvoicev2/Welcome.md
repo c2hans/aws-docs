@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the * AWS End User Messaging SMS, version 2 API Reference*. This guide provides information about AWS End User Messaging SMS, version 2 API resources, including supported HTTP methods, parameters, and schemas.
 
@@ -17,4 +16,4 @@ The * AWS End User Messaging SMS version 2 API Reference* is available in severa
 
 In each Region, AWS maintains multiple Availability Zones. These Availability Zones are physically isolated from each other, but are united by private, low-latency, high-throughput, and highly redundant network connections. These Availability Zones enable us to provide very high levels of availability and redundancy, while also minimizing latency. To learn more about the number of Availability Zones that are available in each Region, see [AWS Global Infrastructure.](http://aws.amazon.com/about-aws/global-infrastructure/)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

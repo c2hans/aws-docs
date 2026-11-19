@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-7.8.0-20250228
-<a name="emr-eks-7.8.0-20250228"></a>
 
 **Release notes**: `emr-7.8.0-20250228` was released in February 2025. This is the initial release of Amazon EMR 7.8.0 (Spark).
 

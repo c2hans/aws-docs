@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated
 ---
 
 # Isolated and confidential tasks
-<a name="isolated-confidential-tasks"></a>
 
 Isolated and confidential tasks are a trusted execution capability of Amazon ECS Managed Instances. Each Amazon ECS task runs in its own lightweight virtual machine (VM) within an Amazon EC2 instance, managed by the AWS Nitro Hypervisor, which gives you hardware-enforced isolation between tasks on the same instance. Multiple isolated tasks can run on a single Managed Instance.
 

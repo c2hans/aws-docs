@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GlobalRe
 ---
 
 # GlobalResiliencyMetadata
-<a name="API_GlobalResiliencyMetadata"></a>
 
 Information about the global resiliency configuration for the contact, including traffic distribution details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/apprunner-s
 ---
 
 # apprunner-service-no-public-access
-<a name="apprunner-service-no-public-access"></a>
 
 Checks if AWS AppRunner Services are not publicly accessible. The rule is NON\_COMPLIANT if service.configuration.NetworkConfiguration.IngressConfiguration.IsPubliclyAccessible is False.
 

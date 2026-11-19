@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Get
 ---
 
 # GetApplicationAccessScope
-<a name="API_GetApplicationAccessScope"></a>
 
 Retrieves the authorized targets for an IAM Identity Center access scope for an application.
 

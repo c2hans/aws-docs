@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PacingStrategy
-<a name="API_connect-outbound-campaigns-v2_PacingStrategy"></a>
 
 A pacing constraint that the dialer enforces for an outbound campaign.
 

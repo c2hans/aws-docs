@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/data-provider-trouble
 ---
 
 # Troubleshooting
-<a name="data-provider-troubleshooting"></a>
 
 This section provides help to analyze installation problems.
 

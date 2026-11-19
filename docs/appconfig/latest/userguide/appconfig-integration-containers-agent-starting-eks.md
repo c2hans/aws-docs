@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-int
 ---
 
 # Starting the AWS AppConfig agent for Amazon EKS integration
-<a name="appconfig-integration-containers-agent-starting-eks"></a>
 
 The AWS AppConfig Agent sidecar container is automatically available in your Amazon EKS environment. To use it, you must start it. The following procedure describes how to use the Amazon EKS `kubectl` command line tool to start the agent.
 

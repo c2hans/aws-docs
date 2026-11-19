@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/troubleshoo
 ---
 
 # Troubleshooting AWS Clean Rooms
-<a name="troubleshooting"></a>
 
 If you encounter issues while using AWS Clean Rooms, you can use the AWS MCP Server to automatically diagnose problems, or refer to the common issues listed in the topics below for manual resolution.
 

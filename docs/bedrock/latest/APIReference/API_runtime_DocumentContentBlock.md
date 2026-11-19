@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentContentBlock
-<a name="API_runtime_DocumentContentBlock"></a>
 
 Contains the actual content of a document that can be processed by the model and potentially cited in the response.
 

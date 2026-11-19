@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotResourceGeneration
-<a name="API_DescribeBotResourceGeneration"></a>
 
 Returns information about a request to generate a bot through natural language description, made through the `StartBotResource` API. Use the `generatedBotLocaleUrl` to retrieve the Amazon S3 object containing the bot locale configuration. You can then modify and import this configuration.
 

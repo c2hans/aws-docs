@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FederatedTable.ht
 ---
 
 # FederatedTable
-<a name="API_FederatedTable"></a>
 
 A table that points to an entity outside the AWS Glue Data Catalog.
 

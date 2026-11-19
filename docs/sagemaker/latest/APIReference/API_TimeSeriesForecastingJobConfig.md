@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TimeSe
 ---
 
 # TimeSeriesForecastingJobConfig
-<a name="API_TimeSeriesForecastingJobConfig"></a>
 
 The collection of settings used by an AutoML job V2 for the time-series forecasting problem type.
 

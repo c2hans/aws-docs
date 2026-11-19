@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 In many large enterprises, SAP workloads run customer-critical business processes. For this reason, we started by designing the operation of SAP workloads on AWS with business needs in mind. We then focused on technologies that help you fulfill your business objectives. Reliable, secure, and automated operations of SAP on AWS are important. Automating SAP workloads improves consistency and scalability, reduces costs, and significantly accelerates innovation by freeing up human resources and improving metrics.  You can free up SAP and infrastructure resources from manual operational tasks and use them for higher value tasks and innovations, thereby improving business outcomes.
 

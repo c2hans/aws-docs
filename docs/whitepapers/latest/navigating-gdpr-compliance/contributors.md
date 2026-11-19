@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + Tim Anderson, Technical Industry Specialist, Amazon Web Services

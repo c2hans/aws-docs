@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL 11. How do you design your workload to withstand component failures?
-<a name="rel-11"></a>
 
 Workloads with a requirement for high availability and low mean time to recovery (MTTR) must be architected for resiliency.
 

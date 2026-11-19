@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # Build
-<a name="API_Build"></a>
 
 Properties describing a custom game build.
 

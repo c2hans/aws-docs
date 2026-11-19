@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Define teams
-<a name="match-design-rulesets-large-teams"></a>
 
 The process of defining team size and structure is the same as with small matches, but the way FlexMatch fills the teams is different. This affects how matches are likely to look like when only partially filled. You may want to adjust your minimum team sizes in response.
 

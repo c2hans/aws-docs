@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Ident
 ---
 
 # IdentityProviderConfiguration
-<a name="API_IdentityProviderConfiguration"></a>
 
 The identity provider configuration selected when the data store was created.
 

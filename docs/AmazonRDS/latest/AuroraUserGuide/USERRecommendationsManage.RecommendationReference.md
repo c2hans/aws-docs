@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USERRec
 ---
 
 # Recommendations from Amazon Aurora reference
-<a name="USERRecommendationsManage.RecommendationReference"></a>
 
 Amazon Aurora generates recommendations for a resource when the resource is created or modified. You can find examples of recommendations from Amazon Aurora in the following table.
 

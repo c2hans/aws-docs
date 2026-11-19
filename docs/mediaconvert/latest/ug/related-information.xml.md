@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/related-informati
 ---
 
 # AWS Elemental MediaConvert related information
-<a name="related-information.xml"></a>
 
 Find links to code examples, tutorials, and other helpful information for getting started with AWS Elemental MediaConvert.
 

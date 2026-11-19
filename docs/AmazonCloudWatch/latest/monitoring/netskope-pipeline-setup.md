@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/netsk
 ---
 
 # CloudWatch pipelines configuration for Netskope
-<a name="netskope-pipeline-setup"></a>
 
 Collects security events and alerts from Netskope using REST API v2 token-based authentication.
 

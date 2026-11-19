@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CrossPillarBenefit
-<a name="API_CrossPillarBenefit"></a>
 
 A benefit on a different pillar from acting on the recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ScriptBootst
 ---
 
 # ScriptBootstrapActionConfig
-<a name="API_ScriptBootstrapActionConfig"></a>
 
 Configuration of the script to run during a bootstrap action.
 

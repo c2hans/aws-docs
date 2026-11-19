@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_S3Bucke
 ---
 
 # S3BucketRepository
-<a name="API_S3BucketRepository"></a>
 
 Information about an associated repository in an S3 bucket. The associated repository contains a source code .zip file and a build artifacts .zip file that contains .jar or .class files.
 

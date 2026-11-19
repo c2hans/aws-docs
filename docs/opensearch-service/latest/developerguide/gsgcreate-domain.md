@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Create an Amazon OpenSearch Service domain
-<a name="gsgcreate-domain"></a>
 
 **Important**
 This is a concise tutorial for configuring a *test * Amazon OpenSearch Service domain. Do not use this process to create production domains. For a comprehensive version of the same process, see [Creating and managing Amazon OpenSearch Service domains](createupdatedomains.md).

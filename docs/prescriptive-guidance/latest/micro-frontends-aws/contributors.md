@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals contributed to this guide.
 + Matteo Figus, Principal Solutions Architect, AWS

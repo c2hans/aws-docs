@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # RevisionWeights
-<a name="sam-property-webfunction-revisionweights"></a>
 
 Specifies how a Web Function endpoint splits traffic across revisions. Use this property when `AutoDeploymentMode` is `Disabled`, for example to run a canary or blue/green deployment.
 

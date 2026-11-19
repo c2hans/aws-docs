@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # Run an A/B test for agents hosted outside of AgentCore
-<a name="ab-testing-3p-agents"></a>
 
 You can A/B test an agent hosted outside AgentCore Runtime, for example on AWS Lambda, Amazon EKS, or Amazon ECS. AgentCore Gateway routes traffic between variants, online evaluation scores each session, and the service computes per-variant statistical significance. Instrument the agent for observability, register it as an AgentCore Gateway target, and enable Gateway tracing so sessions can be attributed to a variant.
 

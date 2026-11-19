@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit
-<a name="automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit"></a>
 
 *Helton Ribeiro, Petrus Batalha, and Ricardo Morais, Amazon Web Services*
 

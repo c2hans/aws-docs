@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_WF_RATIO_TO_REPORT.
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # RATIO\_TO\_REPORT window function
-<a name="r_WF_RATIO_TO_REPORT"></a>
 
 Calculates the ratio of a value to the sum of the values in a window or partition. The ratio to report value is determined using the formula:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # AWS Elemental Inference function quotas
-<a name="functions-quotas"></a>
 
 The following quotas and limits apply to functions. To request an increase to a quota that you can change, see [Quotas for AWS Elemental Inference](quotas.md).
 

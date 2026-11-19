@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/notification-
 ---
 
 # Edit a notification rule
-<a name="notification-rule-edit"></a>
 
 You can edit a notification rule to change its name, the events for which it sends notifications, the detail type, or the target or targets to which it sends notifications. You can use the Developer Tools console or the AWS CLI to edit a notification rule.<a name="notification-rule-edit-console"></a>
 

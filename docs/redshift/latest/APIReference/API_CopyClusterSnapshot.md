@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_CopyClu
 ---
 
 # CopyClusterSnapshot
-<a name="API_CopyClusterSnapshot"></a>
 
 Copies the specified automated cluster snapshot to a new manual cluster snapshot. The source must be an automated snapshot and it must be in the available state.
 

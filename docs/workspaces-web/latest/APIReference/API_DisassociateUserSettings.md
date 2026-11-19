@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateUserSettings
-<a name="API_DisassociateUserSettings"></a>
 
 Disassociates user settings from a web portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # DisassociateResolverRule
-<a name="API_route53resolver_DisassociateResolverRule"></a>
 
 Removes the association between a specified Resolver rule and a specified VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/programm
 ---
 
 # Setting task priority in Amazon SWF
-<a name="programming-priority"></a>
 
 By default, tasks on a task list are delivered based upon their *arrival time*: tasks that are scheduled first are generally run first, as far as possible. By setting an optional *task priority*, you can give priority to certain tasks: Amazon SWF will attempt to deliver higher-priority tasks on a task list before those with lower priority.
 

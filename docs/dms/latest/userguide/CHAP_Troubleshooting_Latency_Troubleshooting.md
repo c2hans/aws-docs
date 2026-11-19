@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # Troubleshooting latency issues
-<a name="CHAP_Troubleshooting_Latency_Troubleshooting"></a>
 
 This section contains troubleshooting steps for replication latency.
 

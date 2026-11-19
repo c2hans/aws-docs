@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_OrderableRep
 ---
 
 # OrderableReplicationInstance
-<a name="API_OrderableReplicationInstance"></a>
 
 In response to the `DescribeOrderableReplicationInstances` operation, this object describes an available replication instance. This description includes the replication instance's type, engine version, and allocated storage.
 

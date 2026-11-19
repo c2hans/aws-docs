@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/embedde
 ---
 
 # Embed assets with Quick Sight
-<a name="embedded-analytics"></a>
 
 With Quick Sight Embedded Analytics, you can integrate business analytics into your own applications and web portals. This empowers end users to gain deeper and faster insights through the embedded assets for easier in-depth analysis of your data.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sfn_example_cross
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Build and orchestrate generative AI applications with Amazon Bedrock and Step Functions
-<a name="sfn_example_cross_ServerlessPromptChaining_section"></a>
 
 The following code example shows how to build and orchestrate generative AI applications with Amazon Bedrock and Step Functions.
 

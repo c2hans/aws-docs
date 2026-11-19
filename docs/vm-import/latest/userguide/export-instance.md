@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/export-instan
 ---
 
 # Start an instance export task
-<a name="export-instance"></a>
 
 When you export your instance using VM Import/Export, the exported file is written to the specified S3 bucket using the following S3 key:
 

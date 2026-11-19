@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # MetricDimension
-<a name="API_MetricDimension"></a>
 
 Describes the dimension names and values associated with a metric.
 

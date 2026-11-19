@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MulticastSou
 ---
 
 # MulticastSourceSettings
-<a name="API_MulticastSourceSettings"></a>
 
  The settings related to the multicast source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Com
 ---
 
 # Computer
-<a name="API_Computer"></a>
 
 Contains information about a computer account in a directory.
 

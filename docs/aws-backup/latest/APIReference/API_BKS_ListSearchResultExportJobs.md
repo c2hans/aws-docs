@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_L
 ---
 
 # ListSearchResultExportJobs
-<a name="API_BKS_ListSearchResultExportJobs"></a>
 
 This operation exports search results of a search job to a specified destination S3 bucket.
 

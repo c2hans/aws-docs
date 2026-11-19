@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeReviewSettings
-<a name="API_CodeReviewSettings"></a>
 
 The code review settings for an agent space, controlling which types of scanning are enabled.
 

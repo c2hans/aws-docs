@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2ContainerServiceEventsRole
-<a name="AmazonEC2ContainerServiceEventsRole"></a>
 
 **Description**: Policy to enable CloudWatch Events for EC2 Container Service
 

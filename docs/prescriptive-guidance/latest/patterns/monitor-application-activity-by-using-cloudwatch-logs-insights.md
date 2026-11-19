@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Monitor application activity by using CloudWatch Logs Insights
-<a name="monitor-application-activity-by-using-cloudwatch-logs-insights"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

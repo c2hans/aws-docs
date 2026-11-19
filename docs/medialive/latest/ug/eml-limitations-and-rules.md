@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-limitations-and-
 ---
 
 # MediaLive feature rules and limits
-<a name="eml-limitations-and-rules"></a>
 
 The following table provides a summary of many of the rules and constraints that apply to AWS Elemental MediaLive features. You can't change any of these constraints.
 
@@ -56,7 +55,7 @@ MediaLive also includes quotas, which you can change. For more information about
   - Maximum of one Archive output groups in a channel. Maximum of one MediaConnect Router output group in a channel.<br />Maximum of five outputs in a MediaConnect Router output group.<br />Maximum of 100 Mbps on a MediaConnect Router output.<br />MediaConnect Router output groups are not yet supported in opt-in regions.<br />For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
 
 - **Output encodes, frame capture**
-  - For frame capture encodes:+  Maximum of three frame capture encodes in a channel. The single encode in a Frame capture output group, and each (optional) [frame capture encode](#eml-limitations-and-rules) in an HLS output group both count towards this limit. <br />+  Maximum of three Frame capture outputs in each HLS output group. For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
+  - For frame capture encodes:+  Maximum of three frame capture encodes in a channel. The single encode in a Frame capture output group, and each (optional) [frame capture encode](eml-limitations-and-rules.md) in an HLS output group both count towards this limit. <br />+  Maximum of three Frame capture outputs in each HLS output group. For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
 
 - **Output video encodes, UHD resolution, and input type**
   - A channel with a CDI input allows one UHD output encode (maximum).<br />The maximum number of *channels *with UHD is a quota that you can change, as described in [Quotas in MediaLive](limits.md). If you are using a CDI input, the maximum number of UHD *outputs* is a limitation. You can't change it.

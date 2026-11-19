@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_ListLaunchAc
 ---
 
 # ListLaunchActions
-<a name="API_ListLaunchActions"></a>
 
 Lists resource launch actions.
 

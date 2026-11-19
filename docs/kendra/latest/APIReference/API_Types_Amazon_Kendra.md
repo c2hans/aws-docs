@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Types_Ama
 ---
 
 # Amazon Kendra
-<a name="API_Types_Amazon_Kendra"></a>
 
 The following data types are supported by Amazon Kendra:
 +  [AccessControlConfigurationSummary](API_AccessControlConfigurationSummary.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/feature
 ---
 
 # Peripheral Devices
-<a name="feature-support-peripheral-devices"></a>
 
 The WorkSpaces Applications client provides the following support for peripheral devices such as monitors, webcams, mice, keyboards, and drawing tablets.
 

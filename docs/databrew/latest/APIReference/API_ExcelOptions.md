@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ExcelOp
 ---
 
 # ExcelOptions
-<a name="API_ExcelOptions"></a>
 
 Represents a set of options that define how DataBrew will interpret a Microsoft Excel file when creating a dataset from that file.
 

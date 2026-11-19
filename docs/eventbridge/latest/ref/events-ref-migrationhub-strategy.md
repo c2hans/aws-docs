@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-migrat
 ---
 
 # AWS Migration Hub Strategy Recommendations events
-<a name="events-ref-migrationhub-strategy"></a>
 
 Strategy Recommendations sends service events to EventBridge via AWS CloudTrail.
 

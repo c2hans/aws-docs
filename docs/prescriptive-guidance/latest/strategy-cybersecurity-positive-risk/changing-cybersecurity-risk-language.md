@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Changing cybersecurity risk language
-<a name="changing-cybersecurity-risk-language"></a>
 
 Part of the challenge of adopting positive risk for cybersecurity is that the technical and domain-specific terminology is focused on negative risk, such as *threats*, *vulnerabilities*, and *security controls*. The cybersecurity industry must evolve and expand its vocabulary to include language that emphasizes the positive business outcomes (or positive risks) that cybersecurity brings to the business. Terms such *business advantage*, *benefits*, and *business value* highlight cybersecurity's contribution to the organization.
 

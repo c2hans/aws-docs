@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-prep-experie
 ---
 
 # Data Preparation Experience (New)
-<a name="data-prep-experience-new"></a>
 
 Data preparation transforms raw data into a format optimized for analysis and visualization. In business intelligence, this crucial process involves cleaning, structuring, and enriching data to enable meaningful business insights.
 

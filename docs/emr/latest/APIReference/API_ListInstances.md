@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListInstance
 ---
 
 # ListInstances
-<a name="API_ListInstances"></a>
 
 Provides information for all active Amazon EC2 instances and Amazon EC2 instances terminated in the last 30 days, up to a maximum of 2,000. Amazon EC2 instances in any of the following states are considered active: AWAITING\_FULFILLMENT, PROVISIONING, BOOTSTRAPPING, RUNNING.
 

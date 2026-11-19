@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ge
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Returns the named resource policy attached to an event bus. Fails with ResourceNotFoundException when the event bus or the named policy does not exist.
 

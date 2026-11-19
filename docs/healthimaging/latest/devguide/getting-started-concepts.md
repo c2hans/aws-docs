@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/getting-st
 ---
 
 # AWS HealthImaging concepts
-<a name="getting-started-concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of AWS HealthImaging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/back-u
 ---
 
 # POST: Backup Database Now
-<a name="back-up-conductor-database-backup-now"></a>
 
 To initiate an immediate database backup, send the following command.
 

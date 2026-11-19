@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Guidance to set up, operate, leverage scalable analytics capabilities, and manage a hosting environment for Apache Druid on AWS
-<a name="solution-overview"></a>
 
 The Scalable Analytics using Apache Druid on AWS Guidance allows you to efficiently deploy, operate, manage and customize a cost-effective, highly available, resilient, and fault-tolerant hosting environment for Apache Druid analytics databases on AWS. We expect that customers will be familiar with Apache Druid before deploying and using this guidance.
 

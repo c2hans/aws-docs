@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/edit-wave.html
 ---
 
 # Edit wave
-<a name="edit-wave"></a>
 
 To edit a wave, choose **Edit wave**. You will see the **Edit wave** prompt, which allows you to edit the following parameters:
 + **Wave name** – Select a wave name. The name must be unique per account per region. Note that uniqueness verification for wave name in Migration Application Service is case-insensitive.

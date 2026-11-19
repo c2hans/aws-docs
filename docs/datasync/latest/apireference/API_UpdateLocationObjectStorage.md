@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateL
 ---
 
 # UpdateLocationObjectStorage
-<a name="API_UpdateLocationObjectStorage"></a>
 
 Modifies the following configuration parameters of the object storage transfer location that you're using with AWS DataSync.
 

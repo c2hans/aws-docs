@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeSchedule
 ---
 
 # KubeSchedulerConfigResponse
-<a name="API_KubeSchedulerConfigResponse"></a>
 
 The Kubernetes scheduler configuration for an Amazon EKS cluster.
 

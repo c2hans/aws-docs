@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetResourcePolicy
-<a name="API_billing_GetResourcePolicy"></a>
 
 Returns the resource-based policy document attached to the resource in `JSON` format.
 

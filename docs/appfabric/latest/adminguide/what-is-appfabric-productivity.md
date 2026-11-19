@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/what-is-appf
 ---
 
 # What is AWS AppFabric for productivity?
-<a name="what-is-appfabric-productivity"></a>
 
 |  |
 | --- |

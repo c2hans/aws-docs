@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tags from your resource.
 

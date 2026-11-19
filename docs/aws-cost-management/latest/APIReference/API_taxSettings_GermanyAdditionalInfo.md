@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GermanyAdditionalInfo
-<a name="API_taxSettings_GermanyAdditionalInfo"></a>
 
 Contains additional tax information associated with your Tax Registration Number (TRN) in Germany, such as the economic identification number and Steuernummer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBClus
 ---
 
 # DBClusterSnapshotAttributesResult
-<a name="API_DBClusterSnapshotAttributesResult"></a>
 
 Contains the results of a successful call to the `DescribeDBClusterSnapshotAttributes` API action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Database.
 ---
 
 # Database
-<a name="API_Database"></a>
 
 The SAP HANA database of the application registered with AWS Systems Manager for SAP.
 

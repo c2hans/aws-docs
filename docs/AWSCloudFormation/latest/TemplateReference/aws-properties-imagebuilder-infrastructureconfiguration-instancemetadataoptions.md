@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::InfrastructureConfiguration InstanceMetadataOptions
-<a name="aws-properties-imagebuilder-infrastructureconfiguration-instancemetadataoptions"></a>
 
 The instance metadata service (IMDS) settings that Image Builder applies to the EC2 build and test instances it launches. These settings control how software on those instances retrieves instance metadata and IAM role credentials.
 

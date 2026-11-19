@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # Item
-<a name="API_connect-participant_Item"></a>
 
 An item - message or event - that has been sent.
 

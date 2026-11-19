@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchUpdatePartit
 ---
 
 # BatchUpdatePartition
-<a name="API_BatchUpdatePartition"></a>
 
 Updates one or more partitions in a batch operation.
 

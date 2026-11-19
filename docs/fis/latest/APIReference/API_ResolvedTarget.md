@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ResolvedTarg
 ---
 
 # ResolvedTarget
-<a name="API_ResolvedTarget"></a>
 
 Describes a resolved target.
 

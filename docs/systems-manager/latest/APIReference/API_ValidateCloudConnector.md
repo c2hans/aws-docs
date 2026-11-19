@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ValidateCloudConnector
-<a name="API_ValidateCloudConnector"></a>
 
 Validates the configuration and connectivity of a cloud connector.
 

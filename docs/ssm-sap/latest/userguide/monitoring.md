@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/monitoring.html
 ---
 
 # Monitoring Systems Manager for SAP
-<a name="monitoring"></a>
 
  AWS Systems Manager for SAP works with other AWS tools to enable you to monitor SAP workloads. These tools include the following:
 + Use **Amazon CloudWatch** and **Amazon EventBridge** to monitor AWS Systems Manager for SAP processes.

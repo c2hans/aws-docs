@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zendesk-configuring.html
 ---
 
 # Configuring Zendesk
-<a name="zendesk-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Zendesk, you must meet these requirements:
 

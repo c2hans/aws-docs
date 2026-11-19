@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/coding-plugin-for-sap-abap/latest/devgui
 ---
 
 # Using the AWS Coding Plugin for SAP ABAP chat panel
-<a name="using-chat"></a>
 
 The Coding Plugin chat panel is where you work with Kiro inside Eclipse. You open it as an Eclipse view, type a prompt, and Kiro replies in the same panel. With separate tabs, you can hold more than one conversation at a time. With the selector bar, you can set the model and mode Kiro uses.
 

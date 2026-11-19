@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationMetrics
-<a name="API_RecommendationMetrics"></a>
 
 The metrics of recommendations.
 

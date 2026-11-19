@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/f
 ---
 
 # JavaScript runtime 1.0 features for CloudFront Functions
-<a name="functions-javascript-runtime-10"></a>
 
 The CloudFront Functions JavaScript runtime environment is compliant with [ECMAScript (ES) version 5.1](https://262.ecma-international.org/5.1/) and also supports some features of ES versions 6 through 9. It also provides some nonstandard methods that are not part of the ES specifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Remov
 ---
 
 # RemoveFromGlobalCluster
-<a name="API_RemoveFromGlobalCluster"></a>
 
 Detaches an Amazon DocumentDB secondary cluster from a global cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary in a different region.
 

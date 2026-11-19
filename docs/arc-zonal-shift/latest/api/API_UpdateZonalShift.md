@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_UpdateZon
 ---
 
 # UpdateZonalShift
-<a name="API_UpdateZonalShift"></a>
 
 Update an active zonal shift in Amazon Application Recovery Controller in your AWS account. You can update a zonal shift to set a new expiration, or edit or replace the comment for the zonal shift.
 

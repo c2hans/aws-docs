@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/cas-trouble
 ---
 
 # Troubleshooting the AWS Marketplace Commerce Analytics Service
-<a name="cas-troubleshooting"></a>
 
 You can troubleshoot issues with the AWS Marketplace Commerce Analytics Service, which programmatically provides product and customers data from AWS Marketplace. You might need to troubleshoot the Commerce Analytics Service when you encounter errors or other configuration issues. The following sections guide you through the troubleshooting process, covering steps to diagnose and resolve common problems with the Commerce Analytics Service.
 

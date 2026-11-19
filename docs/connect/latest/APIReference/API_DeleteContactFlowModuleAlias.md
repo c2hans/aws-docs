@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteCo
 ---
 
 # DeleteContactFlowModuleAlias
-<a name="API_DeleteContactFlowModuleAlias"></a>
 
 Removes an alias reference, breaking the named connection to the underlying module version without affecting the version itself.
 

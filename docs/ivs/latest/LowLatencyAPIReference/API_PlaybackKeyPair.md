@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Pl
 ---
 
 # PlaybackKeyPair
-<a name="API_PlaybackKeyPair"></a>
 
 A key pair used to sign and validate a playback authorization token.
 

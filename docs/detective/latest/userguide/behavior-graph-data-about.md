@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/behavior-grap
 ---
 
 # Data in a Detective behavior graph
-<a name="behavior-graph-data-about"></a>
 
 In Amazon Detective, you conduct investigations using data from a Detective behavior graph. In this section you can learn about the core data sources used in a Detective behavior graph and how Detective uses the source data to populate it.
 

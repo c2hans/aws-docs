@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_NetworkAccessC
 ---
 
 # NetworkAccessConfiguration
-<a name="API_NetworkAccessConfiguration"></a>
 
 Describes the network details of a WorkSpaces Pool.
 

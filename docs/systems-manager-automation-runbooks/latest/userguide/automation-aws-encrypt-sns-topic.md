@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EncryptSNSTopic`
-<a name="automation-aws-encrypt-sns-topic"></a>
 
  **Description**
 

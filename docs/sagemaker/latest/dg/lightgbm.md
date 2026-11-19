@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/lightgbm.html
 ---
 
 # LightGBM
-<a name="lightgbm"></a>
 
 [LightGBM](https://lightgbm.readthedocs.io/en/latest/) is a popular and efficient open-source implementation of the Gradient Boosting Decision Tree (GBDT) algorithm. GBDT is a supervised learning algorithm that attempts to accurately predict a target variable by combining an ensemble of estimates from a set of simpler and weaker models. LightGBM uses additional techniques to significantly improve the efficiency and scalability of conventional GBDT. This page includes information about Amazon EC2 instance recommendations and sample notebooks for LightGBM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Architecture 3.2: Transit Gateway peering
-<a name="architecture-3-2"></a>
 
 In this configuration, you deploy two transit gateways, one in your account and another in the third-party account, and you attach them with a peering connection. Because the peering attachment supports static routing, you can associate a route table to the peering attachment, and you can point routes in the transit gateway route tables to the peering attachment route table. This routes traffic between the peered transit gateways.
 

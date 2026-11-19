@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIm
 ---
 
 # ListImageVersions
-<a name="API_ListImageVersions"></a>
 
 Lists the versions of a specified image and their properties. The list can be filtered by creation time or modified time.
 

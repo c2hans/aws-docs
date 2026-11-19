@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/route53-res
 ---
 
 # route53-resolver-resolver-endpoint-tagged
-<a name="route53-resolver-resolver-endpoint-tagged"></a>
 
 Checks if Amazon Route 53 Resolver resolver endpoints have tags. Optionally, you can specify tag keys. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

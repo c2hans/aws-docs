@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/dev-loc
 ---
 
 # How to use Amazon Location SDK and libraries
-<a name="dev-location-libraries"></a>
 
 The Amazon Location SDK is a set of open source libraries that provide useful functionality for developing Amazon Location applications. The following functionality is included:
 + **Amazon Location client** – The Amazon Location objects in the AWS SDK v3 are bundled and packaged for ease of use in web development.

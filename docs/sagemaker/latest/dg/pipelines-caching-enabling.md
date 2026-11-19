@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-caching-en
 ---
 
 # Turn on step caching
-<a name="pipelines-caching-enabling"></a>
 
 To turn on step caching, you must add a `CacheConfig` property to the step definition. `CacheConfig` properties use the following format in the pipeline definition file:
 

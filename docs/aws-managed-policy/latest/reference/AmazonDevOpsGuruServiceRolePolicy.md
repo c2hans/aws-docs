@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDevOpsGuruServiceRolePolicy
-<a name="AmazonDevOpsGuruServiceRolePolicy"></a>
 
 **Description**: A service-linked role required for Amazon DevOpsGuru to access your resources.
 

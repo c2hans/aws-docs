@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateMulticastGroup
-<a name="API_UpdateMulticastGroup"></a>
 
 Updates properties of a multicast group session.
 

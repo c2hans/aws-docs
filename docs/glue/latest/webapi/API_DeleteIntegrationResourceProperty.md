@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteIntegration
 ---
 
 # DeleteIntegrationResourceProperty
-<a name="API_DeleteIntegrationResourceProperty"></a>
 
 This API is used for deleting the `ResourceProperty` of the AWS Glue connection (for the source) or AWS Glue database ARN (for the target).
 

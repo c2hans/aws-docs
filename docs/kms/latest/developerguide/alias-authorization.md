@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/alias-authoriz
 ---
 
 # Use aliases to control access to KMS keys
-<a name="alias-authorization"></a>
 
 You can control access to KMS keys based on the aliases that are associated with the KMS key. To do so, use the [kms:RequestAlias](conditions-kms.md#conditions-kms-request-alias) and [kms:ResourceAliases](conditions-kms.md#conditions-kms-resource-aliases) condition keys. This feature is part of AWS KMS support for [attribute-based access control](abac.md) (ABAC).
 

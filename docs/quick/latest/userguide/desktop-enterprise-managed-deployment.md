@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-enterpris
 ---
 
 # Managed deployment configuration
-<a name="desktop-enterprise-managed-deployment"></a>
 
 |  |
 | --- |

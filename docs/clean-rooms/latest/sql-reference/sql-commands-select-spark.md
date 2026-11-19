@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-com
 ---
 
 # SELECT
-<a name="sql-commands-select-spark"></a>
 
 The SELECT command returns rows from tables and user-defined functions.
 

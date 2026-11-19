@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS Resilience Hub
-<a name="awsresiliencehub"></a>
 
 AWS Resilience Hub provides the following APIs for data retrieval.
 

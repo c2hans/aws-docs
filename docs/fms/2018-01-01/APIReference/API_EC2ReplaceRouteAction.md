@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_EC2Repla
 ---
 
 # EC2ReplaceRouteAction
-<a name="API_EC2ReplaceRouteAction"></a>
 
 Information about the ReplaceRoute action in Amazon EC2.
 

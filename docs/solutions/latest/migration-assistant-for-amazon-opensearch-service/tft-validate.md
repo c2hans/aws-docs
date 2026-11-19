@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Validate the transformed metadata
-<a name="tft-validate"></a>
 
 After metadata migration completes, confirm that the field types on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection match what you expect. Use the Migration Console to retrieve the mapping for a migrated index directly from the target:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-permissio
 ---
 
 # IAM policies and permissions
-<a name="flywheels-permissions"></a>
 
 You configure the following policies and permissions to use flywheels:
 + [Configure IAM user permissions](#flywheels-permissions-iam) for users to access flywheel operations.

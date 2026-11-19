@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-deploy
 ---
 
 # AWS Marketplace Deployment Services events
-<a name="events-ref-deployment-marketplace"></a>
 
 AWS Marketplace Deployment Services sends service events to EventBridge via AWS CloudTrail.
 

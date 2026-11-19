@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/edge-apis-
 ---
 
 # Configure session timeouts for AWS IoT SiteWise Edge
-<a name="edge-apis-session-timeout"></a>
 
 SiteWise Edge allows you to configure session timeouts for the SiteWise Edge API. This feature enhances security by automatically terminating inactive sessions after a specified time-period. This section guides you through the process of configuring the session timeout using the AWS IoT SiteWise console.
 

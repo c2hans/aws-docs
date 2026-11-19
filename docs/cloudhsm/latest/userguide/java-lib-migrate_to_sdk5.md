@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-lib-migra
 ---
 
 # Migrate your JCE provider from AWS CloudHSM Client SDK 3 to Client SDK 5
-<a name="java-lib-migrate_to_sdk5"></a>
 
 Use this topic to migrate your [JCE provider](java-library.md) from AWS CloudHSM Client SDK 3 to Client SDK 5. For benefits on migrating, see [Benefits of AWS CloudHSM Client SDK 5](client-sdk-5-benefits.md).
 

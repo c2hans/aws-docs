@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketTagging
 ---
 
 # PutBucketTagging
-<a name="API_PutBucketTagging"></a>
 
 **Note**
 This operation is not supported for directory buckets.

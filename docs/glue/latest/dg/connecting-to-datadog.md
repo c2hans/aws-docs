@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-datadog.htm
 ---
 
 # Connecting to Datadog
-<a name="connecting-to-datadog"></a>
 
 Datadog is a monitoring and analytics platform for cloud-scale applications, including infrastructure, applications, services, and tools.
 

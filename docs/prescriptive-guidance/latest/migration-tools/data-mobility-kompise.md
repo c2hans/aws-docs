@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Komprise Elastic Data Migration
-<a name="data-mobility-kompise"></a>
 
 *Last update: November 15, 2024*
 

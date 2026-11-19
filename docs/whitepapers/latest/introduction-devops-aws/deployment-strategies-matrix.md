@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Deployment strategies matrix
-<a name="deployment-strategies-matrix"></a>
 
  The following matrix lists the supported deployment strategies for [Amazon Elastic Container Service](https://aws.amazon.com/ecs) (Amazon ECS), AWS Lambda, and Amazon EC2/on-premises.
 + Amazon ECS is a fully managed orchestration service.

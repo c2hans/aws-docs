@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-python-
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Gremlin Python
-<a name="gremlin-python-iam-auth"></a>
 
 ## Overview
 <a name="gremlin-python-iam-auth-overview"></a>

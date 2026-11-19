@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Findin
 ---
 
 # FindingTypeDocumentation
-<a name="API_FindingTypeDocumentation"></a>
 
 Contains information about a finding type from the GuardDuty documentation.
 

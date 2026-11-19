@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Restrictions on Lambda@Edge
-<a name="lambda-at-edge-function-restrictions"></a>
 
 The following restrictions apply only to Lambda@Edge.
 

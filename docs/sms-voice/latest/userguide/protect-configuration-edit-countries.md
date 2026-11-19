@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/protect-confi
 ---
 
 # Change a protect configuration country rules in AWS End User Messaging SMS
-<a name="protect-configuration-edit-countries"></a>
 
 Protect configuration country rules either *Allow*, *Block*, *Monitor*, or *Filter* messages for each destination country. To update protect configuration country rules, you can use the AWS End User Messaging SMS console or the `aws sms-voice update-protect-configuration-country-rule-set` command in the AWS CLI. This section shows how to update the protect configuration country rules using the AWS End User Messaging SMS console and the AWS CLI.
 

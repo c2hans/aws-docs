@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_OtaTaskEx
 ---
 
 # OtaTaskExecutionRolloutConfig
-<a name="API_OtaTaskExecutionRolloutConfig"></a>
 
 Over-the-air (OTA) task rollout config.
 

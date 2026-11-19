@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateAccess
 ---
 
 # CreateAccessKey
-<a name="API_CreateAccessKey"></a>
 
  Creates a new AWS secret access key and corresponding AWS access key ID for the specified user. The default status for new keys is `Active`.
 

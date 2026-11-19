@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Row
 ---
 
 # Row
-<a name="API_Row"></a>
 
 Represents a single row in the query results.
 

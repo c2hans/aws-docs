@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/intro.html
 ---
 
 # Introduction
-<a name="intro"></a>
 
 ## How Amazon WorkSpaces Core works
 <a name="how-core-works"></a>

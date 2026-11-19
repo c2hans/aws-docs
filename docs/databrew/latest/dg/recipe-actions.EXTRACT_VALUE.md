@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.EXTRAC
 ---
 
 # EXTRACT\_VALUE
-<a name="recipe-actions.EXTRACT_VALUE"></a>
 
 Creates a new column with an extracted value from a user-specified path. If the source column is of the Map, Array, or Struct type, each field in the path should be escaped using back ticks (for example, `name`).
 

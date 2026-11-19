@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-7.11.0-flink-latest
-<a name="emr-eks-7.11.0-flink-latest"></a>
 
 **Release notes**: `emr-7.11.0-flink-latest` currently points to `emr-7.11.0-flink-20251020`
 

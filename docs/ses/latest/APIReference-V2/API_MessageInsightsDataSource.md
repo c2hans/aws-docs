@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageIn
 ---
 
 # MessageInsightsDataSource
-<a name="API_MessageInsightsDataSource"></a>
 
 An object that contains filters applied when performing the Message Insights export.
 

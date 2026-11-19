@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Lending
 ---
 
 # LendingField
-<a name="API_LendingField"></a>
 
 Holds the normalized key-value pairs returned by AnalyzeDocument, including the document type, detected text, and geometry.
 

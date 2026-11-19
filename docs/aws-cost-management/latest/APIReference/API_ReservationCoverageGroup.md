@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ReservationCoverageGroup
-<a name="API_ReservationCoverageGroup"></a>
 
 A group of reservations that share a set of attributes.
 

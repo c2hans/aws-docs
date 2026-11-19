@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.h
 ---
 
 # IP addressing for your VPCs and subnets
-<a name="vpc-ip-addressing"></a>
 
 IP addresses enable resources in your VPC to communicate with each other, and with resources over the internet.
 

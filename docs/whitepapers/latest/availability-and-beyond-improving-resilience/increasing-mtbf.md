@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Increasing MTBF
-<a name="increasing-mtbf"></a>
 
  The final component to improving availability is increasing the MTBF. This can apply to both the software as well as the AWS services used to run it.
 

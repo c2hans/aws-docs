@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use third-party Git source repositories in AWS CodePipeline
-<a name="use-third-party-git-source-repositories-in-aws-codepipeline"></a>
 
 *Kirankumar Chandrashekar, Amazon Web Services*
 

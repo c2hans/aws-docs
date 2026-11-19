@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_U
 ---
 
 # UpdateDbInstance
-<a name="API_UpdateDbInstance"></a>
 
 Updates a Timestream for InfluxDB DB instance.
 

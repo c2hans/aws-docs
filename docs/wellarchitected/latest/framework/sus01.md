@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus01.h
 ---
 
 # Measure and monitor sustainability
-<a name="sus01"></a>
 
  This capability covers guidance on how to understand and monitor the emissions associated with your AWS usage. It helps you verify that your provisioned resources are generating real business value and that these resources are used fully.
 

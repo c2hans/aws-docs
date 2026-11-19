@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon MQ objects
-<a name="API_Type_Resource_MQ"></a>
 
 ****Amazon MQ objects****
 + [AwsAmazonMqBrokerDetails](API_AwsAmazonMqBrokerDetails.md)

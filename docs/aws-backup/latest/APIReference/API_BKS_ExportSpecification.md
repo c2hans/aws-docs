@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_E
 ---
 
 # ExportSpecification
-<a name="API_BKS_ExportSpecification"></a>
 
 This contains the export specification object.
 

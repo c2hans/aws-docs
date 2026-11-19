@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/vdm-ses-deliverability.htm
 ---
 
 # SES deliverability
-<a name="vdm-ses-deliverability"></a>
 
 SES deliverability provides insights and recommendations for email sent through Amazon SES—helping you monitor delivery rates, track engagement, identify reputation issues, and resolve configuration problems that affect inbox placement.
 

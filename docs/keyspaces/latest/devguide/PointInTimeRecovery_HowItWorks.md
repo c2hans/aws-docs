@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/PointInTimeRec
 ---
 
 # How point-in-time recovery works in Amazon Keyspaces
-<a name="PointInTimeRecovery_HowItWorks"></a>
 
 This section provides an overview of how Amazon Keyspaces point-in-time recovery (PITR) works. For more information about pricing, see [Amazon Keyspaces (for Apache Cassandra) pricing](https://aws.amazon.com/keyspaces/pricing).
 

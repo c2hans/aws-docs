@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GetContentSummary
-<a name="API_amazon-q-connect_GetContentSummary"></a>
 
 Retrieves summary information about the content.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Generat
 ---
 
 # GeneratedReport
-<a name="API_GeneratedReport"></a>
 
 Information about a generated execution report.
 

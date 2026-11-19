@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Proces
 ---
 
 # ProcessorFeature
-<a name="API_ProcessorFeature"></a>
 
 Contains the processor features of a DB instance class.
 

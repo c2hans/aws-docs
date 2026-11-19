@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05-b
 ---
 
 # OPS05-BP02 Develop and test playbooks to respond to incidents
-<a name="ops05-bp02"></a>
 
  A playbook is a step-by-step guide for investigating an incident from symptoms to root cause. You use playbooks to scope impact and diagnose problems consistently, whether a deployment failed or a service is degraded. Without them, investigation depends on individual recall and trial and error, which slows response and produces uneven results.
 

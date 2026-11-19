@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/monitoring-eventbridge.htm
 ---
 
 # Monitoring SES events using Amazon EventBridge
-<a name="monitoring-eventbridge"></a>
 
 EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Events are JSON-formatted messages that typically represent a change in a resource or environment, or other management event.
 

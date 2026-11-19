@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ko
 ---
 
 # X-Ray examples using SDK for Kotlin
-<a name="kotlin_xray_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Kotlin with X-Ray.
 

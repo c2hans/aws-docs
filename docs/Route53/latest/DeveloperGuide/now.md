@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/now.html
 ---
 
 # .now
-<a name="now"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

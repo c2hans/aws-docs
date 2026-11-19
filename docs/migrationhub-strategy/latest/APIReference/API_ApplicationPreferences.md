@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ApplicationPreferences
-<a name="API_ApplicationPreferences"></a>
 
  Application preferences that you specify.
 

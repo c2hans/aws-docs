@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestExecut
 ---
 
 # TestExecutionSummary
-<a name="API_TestExecutionSummary"></a>
 
 Summarizes metadata about the test execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileSearchFilter
-<a name="API_RoutingProfileSearchFilter"></a>
 
 Filters to be applied to search results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-insta
 ---
 
 # State change events for Amazon EC2 instances
-<a name="monitoring-instance-state-changes"></a>
 
 Amazon EC2 sends an `EC2 Instance State-change Notification` event to Amazon EventBridge when the state of an instance changes.
 

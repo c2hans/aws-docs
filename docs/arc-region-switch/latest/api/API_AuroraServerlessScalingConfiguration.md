@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_AuroraS
 ---
 
 # AuroraServerlessScalingConfiguration
-<a name="API_AuroraServerlessScalingConfiguration"></a>
 
 Configuration for Amazon Aurora Serverless scaling used in a Region switch plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Get a brand profile
-<a name="nx-features-brand-profiles-get"></a>
 
 View a single brand profile to see its name, ID, ARN, status, deletion protection setting, and timestamps.
 

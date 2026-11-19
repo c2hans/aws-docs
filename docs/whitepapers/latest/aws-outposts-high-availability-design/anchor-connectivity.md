@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Anchor connectivity
-<a name="anchor-connectivity"></a>
 
  An [Outpost service link](https://docs.aws.amazon.com/outposts/latest/userguide/region-connectivity.html) connects to either public or private anchors (not both) in a specific Availability Zone (AZ) in the Outpost’s parent Region. Outpost servers initiate outbound service link VPN connections from their service link IP addresses to the anchor points in the anchor AZ. These connections use UDP and TCP port 443. AWS is responsible for the availability of the anchor points in the Region.
 

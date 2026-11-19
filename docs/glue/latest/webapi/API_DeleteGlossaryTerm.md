@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteGlossaryTer
 ---
 
 # DeleteGlossaryTerm
-<a name="API_DeleteGlossaryTerm"></a>
 
 Deletes a glossary term from AWS Glue Data Catalog.
 

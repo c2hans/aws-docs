@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Preview.
 ---
 
 # Preview
-<a name="API_Preview"></a>
 
 Information about agent-first preview mode outbound strategy configuration.
 

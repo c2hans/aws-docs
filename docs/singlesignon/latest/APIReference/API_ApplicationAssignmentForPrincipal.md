@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_App
 ---
 
 # ApplicationAssignmentForPrincipal
-<a name="API_ApplicationAssignmentForPrincipal"></a>
 
 A structure that describes an application to which a principal is assigned.
 

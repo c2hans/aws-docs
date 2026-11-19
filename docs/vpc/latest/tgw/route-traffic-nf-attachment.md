@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/route-traffic-nf-attachme
 ---
 
 # Route traffic through an AWS Transit Gateway network function attachment
-<a name="route-traffic-nf-attachment"></a>
 
 After creating a network function attachment, associate it with a transit gateway route table and create static routes that send traffic to the attachment for inspection. Route propagation from a network function attachment is not supported. For information about route table associations, see [Associate a transit gateway route table](associate-tgw-route-table.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ssm-automat
 ---
 
 # ssm-automation-block-public-sharing
-<a name="ssm-automation-block-public-sharing"></a>
 
 Checks if AWS Systems Manager Documents has block public sharing enabled. The rule is NON\_COMPLIANT if Systems Manager Documents has block public sharing disabled.
 

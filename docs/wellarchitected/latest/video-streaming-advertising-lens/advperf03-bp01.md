@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF03-BP01 Choose appropriate block storage options to power your advertising workload
-<a name="advperf03-bp01"></a>
 
  Choose the block storage service that fits each workload's performance and stability requirements. Mismatched block storage configuration is a common source of latency spikes and throttling events in production advertising systems.
 

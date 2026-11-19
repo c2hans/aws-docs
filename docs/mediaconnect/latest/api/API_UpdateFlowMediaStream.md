@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateFlowMe
 ---
 
 # UpdateFlowMediaStream
-<a name="API_UpdateFlowMediaStream"></a>
 
  Updates an existing media stream.
 

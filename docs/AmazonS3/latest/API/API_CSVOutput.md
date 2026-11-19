@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CSVOutput.html
 ---
 
 # CSVOutput
-<a name="API_CSVOutput"></a>
 
 Describes how uncompressed comma-separated values (CSV)-formatted results are formatted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RoutingP
 ---
 
 # RoutingProfileSearchCriteria
-<a name="API_RoutingProfileSearchCriteria"></a>
 
 The search criteria to be used to return routing profiles.
 
@@ -15,12 +14,12 @@ The `name` and `description` fields support "contains" queries with a minimum of
 
  ** AndConditions **   <a name="connect-Type-RoutingProfileSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [RoutingProfileSearchCriteria](#API_RoutingProfileSearchCriteria) objects
+Type: Array of [RoutingProfileSearchCriteria](API_RoutingProfileSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-RoutingProfileSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [RoutingProfileSearchCriteria](#API_RoutingProfileSearchCriteria) objects
+Type: Array of [RoutingProfileSearchCriteria](API_RoutingProfileSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-RoutingProfileSearchCriteria-StringCondition"></a>

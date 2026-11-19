@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateTy
 ---
 
 # UpdateType
-<a name="API_UpdateType"></a>
 
 Updates a `Type` object.
 

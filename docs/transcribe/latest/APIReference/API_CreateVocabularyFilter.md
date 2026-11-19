@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Creat
 ---
 
 # CreateVocabularyFilter
-<a name="API_CreateVocabularyFilter"></a>
 
 Creates a new custom vocabulary filter.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/create-content-q.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create docs content with Amazon Q
-<a name="create-content-q"></a>
 
 You can use Amazon Q to create and revise docs content. This is an easy way to get started on a new page. Amazon Q is available as an extension to Visual Studio (VS) Code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/select-idp
 ---
 
 # Optionally self-manage AWS account access
-<a name="select-idp"></a>
 
 You can select whether AWS Control Tower sets up AWS account access with AWS Identity and Access Management (IAM), or whether to self-manage AWS account access—either with AWS IAM Identity Center users, roles, and permissions that you can set up and customize on your own, or with another method *such as an external IdP, either for direct account federation or federation to multiple accounts by means of IAM Identity Center*. You can change this selection later.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-env
 ---
 
 # Neptune dataplane engine, fast reset, and general structure APIs
-<a name="data-api-dp-environment-APIs"></a>
 
 **Engine operations:**
 + [GetEngineStatus (action)](#GetEngineStatus)

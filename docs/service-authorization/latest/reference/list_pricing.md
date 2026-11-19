@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Price List
-<a name="list_pricing"></a>
 
 AWS Price List (service prefix: `pricing`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

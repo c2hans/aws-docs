@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Enable custom identity broker access to the AWS console
-<a name="id_roles_providers_enable-console-custom-url"></a>
 
 You can write and run code to create a URL that lets users who sign in to your organization's network securely access the AWS Management Console. The URL includes a sign-in token that you get from AWS and that authenticates the user to AWS. The resulting console session might include a distinct `AccessKeyId` due to federation. To trace the access key usage for federation sign-in through related CloudTrail events, see [Logging IAM and AWS STS API calls with AWS CloudTrail](cloudtrail-integration.md) and [AWS Management Console sign-in events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html).
 

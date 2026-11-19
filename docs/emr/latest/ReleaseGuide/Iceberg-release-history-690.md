@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Iceberg-release-
 ---
 
 # Amazon EMR 6.9.0 - Iceberg release notes
-<a name="Iceberg-release-history-690"></a>
 
 ## Amazon EMR 6.9.0 - Iceberg changes
 <a name="Iceberg-release-history-changes-690"></a>

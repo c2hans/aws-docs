@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_EventDestina
 ---
 
 # EventDestination
-<a name="API_EventDestination"></a>
 
 Contains information about an event destination.
 

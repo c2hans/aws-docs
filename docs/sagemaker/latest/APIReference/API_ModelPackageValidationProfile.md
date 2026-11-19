@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageValidationProfile
-<a name="API_ModelPackageValidationProfile"></a>
 
 Contains data, such as the inputs and targeted instance types that are used in the process of validating the model package.
 

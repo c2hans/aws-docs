@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectT
 ---
 
 # Connecting to your DB instance using Oracle SQL developer
-<a name="USER_ConnectToOracleInstance.SQLDeveloper"></a>
 
 In this procedure, you connect to your DB instance by using Oracle SQL Developer. To download a standalone version of this utility, see the [ Oracle SQL developer downloads page](https://www.oracle.com/tools/downloads/sqldev-downloads.html).
 

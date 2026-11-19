@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/assign-to-cvc.html
 ---
 
 # Assigning numbers to a Voice Connector or Voice Connector group
-<a name="assign-to-cvc"></a>
 
 The following steps explain how to assign phone numbers to Amazon Chime SDK Voice Connectors and Voice Connector groups. Assigning numbers enables you to place calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Troubleshooting issues with HTTP API Lambda integrations
-<a name="http-api-troubleshooting-lambda"></a>
 
 The following provides troubleshooting advice for errors and issues that you might encounter when using [AWS Lambda integrations](http-api-develop-integrations-lambda.md) with HTTP APIs.
 

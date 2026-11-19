@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImageUsageReports
-<a name="API_DescribeImageUsageReports"></a>
 
 Describes the configuration and status of image usage reports, filtered by report IDs or image IDs.
 

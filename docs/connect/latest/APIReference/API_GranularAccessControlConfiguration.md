@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Granular
 ---
 
 # GranularAccessControlConfiguration
-<a name="API_GranularAccessControlConfiguration"></a>
 
 Contains granular access control configuration for security profiles, including data table access permissions.
 

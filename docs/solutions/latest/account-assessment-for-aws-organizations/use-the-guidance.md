@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Use the guidance
-<a name="use-the-guidance"></a>
 
 **Dependencies outside this guidance’s scope**
 Dependencies outside the scope of this guidance can impact the account migration between AWS Organizations (for example, [quotas for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html), resources shared by [AWS RAM](https://aws.amazon.com/ram/), and service-managed CloudFormation [StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html)).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketBucketVersioningConfiguration
-<a name="API_AwsS3BucketBucketVersioningConfiguration"></a>
 
 Describes the versioning state of an S3 bucket.
 

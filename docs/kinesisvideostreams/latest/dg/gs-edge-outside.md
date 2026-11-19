@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-edge-ou
 ---
 
 # Deploy in non-AWS IoT Greengrass mode
-<a name="gs-edge-outside"></a>
 
 This section provides a comprehensive guide to use Amazon Kinesis Video Streams outside of the AWS IoT Greengrass environment. Whether you're working with edge devices or other platforms, this information will help you set up and utilize Kinesis Video Streams effectively.
 

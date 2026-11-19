@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/u
 ---
 
 # Unreal Engine's Pixel Streaming on AWS
-<a name="unreal-engine-pixel-streaming"></a>
 
 Publication date: **January 6, 2023 ([Diagram history](#pixel-history))**
 

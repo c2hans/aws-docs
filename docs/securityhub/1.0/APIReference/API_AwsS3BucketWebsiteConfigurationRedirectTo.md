@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Bu
 ---
 
 # AwsS3BucketWebsiteConfigurationRedirectTo
-<a name="API_AwsS3BucketWebsiteConfigurationRedirectTo"></a>
 
 The redirect behavior for requests to the website.
 

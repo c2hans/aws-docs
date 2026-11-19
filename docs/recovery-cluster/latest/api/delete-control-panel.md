@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/delete-contr
 ---
 
 # Delete a control panel
-<a name="delete-control-panel"></a>
 
 The following is an example of a request to delete a control panel. Deleting a control panel doesn't return a response.
 

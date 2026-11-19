@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunSourceEventDetail
-<a name="API_TestRunSourceEventDetail"></a>
 
 The payload of a test run source event. Exactly one member is set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RateCardItem
-<a name="API_marketplace-agreements_RateCardItem"></a>
 
 Defines the per unit rates for each individual product dimension.
 
@@ -21,7 +20,7 @@ Pattern: `(.)+`
 Required: No
 
  ** price **   <a name="AWSMarketplaceService-Type-marketplace-agreements_RateCardItem-price"></a>
-Per unit price for the product dimension that’s used for calculating the amount to be charged.
+Per unit price for the product dimension that's used for calculating the amount to be charged.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`

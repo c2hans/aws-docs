@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteReferenceStor
 ---
 
 # DeleteReferenceStore
-<a name="API_DeleteReferenceStore"></a>
 
 Deletes a reference store and returns a response with no body if the operation is successful. You can only delete a reference store when it does not contain any reference genomes. To empty a reference store, use `DeleteReference`.
 

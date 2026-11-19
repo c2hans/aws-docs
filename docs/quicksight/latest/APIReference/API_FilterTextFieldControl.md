@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Filte
 ---
 
 # FilterTextFieldControl
-<a name="API_FilterTextFieldControl"></a>
 
 A control to display a text box that is used to enter a single entry.
 

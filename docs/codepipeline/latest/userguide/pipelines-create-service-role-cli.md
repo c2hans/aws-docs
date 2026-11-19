@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Create the CodePipeline service role (CLI)
-<a name="pipelines-create-service-role-cli"></a>
 
 Before you create a pipeline with the AWS CLI or CloudFormation, you must create a CodePipeline service role for your pipeline and attach the service role policy and the trust policy. To use the CLI to create your service role, use the steps below to first create a trust policy JSON and the role policy JSON as separate files in the directory where you will run the CLI commands.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-endpoint
 ---
 
 # Multi-model endpoints
-<a name="multi-model-endpoints"></a>
 
 Multi-model endpoints provide a scalable and cost-effective solution to deploying large numbers of models. They use the same fleet of resources and a shared serving container to host all of your models. This reduces hosting costs by improving endpoint utilization compared with using single-model endpoints. It also reduces deployment overhead because Amazon SageMaker AI manages loading models in memory and scaling them based on the traffic patterns to your endpoint.
 

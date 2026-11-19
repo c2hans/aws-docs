@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonRevision
-<a name="API_DaemonRevision"></a>
 
 Information about a daemon revision. A daemon revision is a snapshot of the daemon's configuration at the time a deployment was initiated.
 

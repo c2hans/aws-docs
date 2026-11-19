@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Security
-<a name="sec-security"></a>
 
 The following question focuses on these considerations for security. (For a list of security questions and best practices, see the [Appendix](a-security.md).).
 

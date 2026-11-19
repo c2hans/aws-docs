@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NeptuneGraph::Graph
-<a name="aws-resource-neptunegraph-graph"></a>
 
 The `AWS::NeptuneGraph::Graph` resource creates an Amazon Neptune Analytics graph. Amazon Neptune Analytics is a memory-optimized graph database engine for analytics. For more information, see [Amazon Neptune Analytics](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/what-is-neptune-analytics.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEfsA
 ---
 
 # AwsEfsAccessPointPosixUserDetails
-<a name="API_AwsEfsAccessPointPosixUserDetails"></a>
 
 Provides details for all file system operations using this Amazon EFS access point.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchFilterValue
 ---
 
 # SearchFilterValue
-<a name="API_SearchFilterValue"></a>
 
 A filter value. Exactly one of `stringValue` or `longValue` must be specified.
 

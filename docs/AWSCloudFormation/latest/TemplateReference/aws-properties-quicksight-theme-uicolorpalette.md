@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QuickSight::Theme UIColorPalette
-<a name="aws-properties-quicksight-theme-uicolorpalette"></a>
 
 The theme colors that apply to UI and to charts, excluding data colors. The colors description is a hexadecimal color code that consists of six alphanumerical characters, prefixed with `#`, for example \#37BFF5. For more information, see [Using Themes in AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *AWS Quick User Guide.*
 

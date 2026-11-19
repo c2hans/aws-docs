@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Upda
 ---
 
 # UpdateCaseComment
-<a name="API_UpdateCaseComment"></a>
 
 Updates an existing case comment.
 

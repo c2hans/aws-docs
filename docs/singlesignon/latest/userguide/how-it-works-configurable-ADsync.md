@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-it-wor
 ---
 
 # How configurable AD sync works
-<a name="how-it-works-configurable-ADsync"></a>
 
 IAM Identity Center refreshes the AD-based identity data in the identity store by using the following process. To learn more about the prerequisites, see [Prerequisites and considerations](provision-users-from-ad-configurable-ADsync.md#prerequisites-configurable-ADsync).
 

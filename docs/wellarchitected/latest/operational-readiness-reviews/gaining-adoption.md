@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Gaining adoption
-<a name="gaining-adoption"></a>
 
 While the ORR name may imply on the surface that it is a “pre-launch” checklist, the process is actually built into the entire Software Development Lifecycle (SDLC). To be the most effective, ORRs should be integrated with, and adopted across that lifecycle. The following diagram demonstrates how AWS views the adoption spectrum for ORRs.
 

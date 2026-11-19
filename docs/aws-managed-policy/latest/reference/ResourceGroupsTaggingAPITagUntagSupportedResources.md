@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Reso
 ---
 
 # ResourceGroupsTaggingAPITagUntagSupportedResources
-<a name="ResourceGroupsTaggingAPITagUntagSupportedResources"></a>
 
 **Description**: Provides permissions to tag and untag all the resources supported by Resource Groups Tagging API. This policy also grants the permissions required to retrieve all tagged, or previously tagged, resources through the Resource Groups Tagging API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ListMediaPipelineKinesisVideoStreamPools
-<a name="API_media-pipelines-chime_ListMediaPipelineKinesisVideoStreamPools"></a>
 
 Lists the video stream pools in the media pipeline.
 

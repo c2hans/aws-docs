@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/using-service-lin
 ---
 
 # Using service-linked roles for AWS Support Plans
-<a name="using-service-linked-roles-sup-plans"></a>
 
 AWS Support Plans uses an AWS Identity and Access Management (IAM) [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) to read and update AWS resources used to manage your account's support plan on your behalf.
 

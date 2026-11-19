@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fa
 End of support notice: Amazon Managed Blockchain (AMB) will stop accepting new customers on October 29, 2026. Existing customers can continue using Amazon Managed Blockchain (AMB) until September 29, 2027. After September 29, 2027 you will no longer be able to access Amazon Managed Blockchain (AMB). For more information, see [Amazon Managed Blockchain (AMB) end of support](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/managed-blockchain-end-of-support.html).
 
 # Step 8: Invite Another AWS Account to be a Member and Create a Multi-Member Channel
-<a name="get-started-joint-channel"></a>
 
 Now that you have a Hyperledger Fabric network set up using Amazon Managed Blockchain (AMB), with an initial member in your AWS account and a VPC endpoint with a service name, you are ready to invite additional members. You invite additional members by creating a proposal for an invitation that existing members vote on. Since the blockchain network at this point consists of only one member, the first member always has the only vote on the invitation proposal for the second member. In the steps that follow, the network creator has an initial member named `org1` and the invited member is named `org2`. For proof of concept, you can create an invitation proposal for an additional member in the same AWS account that you used to create the network, or you can create an invitation proposal for a different AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNet
 ---
 
 # CreateNetworkInsightsAccessScope
-<a name="API_CreateNetworkInsightsAccessScope"></a>
 
 Creates a Network Access Scope.
 

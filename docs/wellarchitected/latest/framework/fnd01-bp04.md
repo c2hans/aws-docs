@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd01-b
 ---
 
 # FND01-BP04 Establish a strategy for experimental and temporary environments
-<a name="fnd01-bp04"></a>
 
  Teams need safe places to experiment with new ideas without putting production at risk. They also need rigorous controls as changes move closer to customer-facing systems. Environments with progressive controls let teams test early, and only validated changes reach critical workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # ImportDataFormat
-<a name="API_ImportDataFormat"></a>
 
 The import data format contains the specifications of the input file that would be passed to the address list import job.
 

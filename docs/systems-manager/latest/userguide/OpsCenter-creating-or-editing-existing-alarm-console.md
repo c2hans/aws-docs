@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Configuring a CloudWatch alarm to create OpsItems (console)
-<a name="OpsCenter-creating-or-editing-existing-alarm-console"></a>
 
 You can manually create an alarm or update an existing alarm to create OpsItems from Amazon CloudWatch.
 

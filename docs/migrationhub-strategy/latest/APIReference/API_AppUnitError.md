@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AppUnitError
-<a name="API_AppUnitError"></a>
 
 Error in the analysis of the application unit.
 

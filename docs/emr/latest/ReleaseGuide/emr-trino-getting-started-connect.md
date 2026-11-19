@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-trino-gettin
 ---
 
 # Connect to the primary node for the Amazon EMR cluster and run queries
-<a name="emr-trino-getting-started-connect"></a>
 
 ## Provision test data and configure permissions
 <a name="emr-trino-getting-started-pre-data"></a>

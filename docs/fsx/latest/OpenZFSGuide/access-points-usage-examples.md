@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/access-points-us
 ---
 
 # Using access points
-<a name="access-points-usage-examples"></a>
 
 The following examples demonstrate how to use access points to access file data stored on an FSx for OpenZFS volume using the S3 API. For a full list of the Amazon S3 API operations supported by access points attached to an FSx for OpenZFS volume, see [Access point compatibility](access-points-object-api-support.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANGatewayVersion
-<a name="API_LoRaWANGatewayVersion"></a>
 
 LoRaWANGatewayVersion object.
 

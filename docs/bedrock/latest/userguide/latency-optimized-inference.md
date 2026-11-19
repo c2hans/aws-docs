@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/latency-optimiz
 ---
 
 # Optimize model inference for latency
-<a name="latency-optimized-inference"></a>
 
 **Note**
 The Latency Optimized Inference feature is in preview release for Amazon Bedrock and is subject to change.

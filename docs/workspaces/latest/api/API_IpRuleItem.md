@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_IpRuleItem.htm
 ---
 
 # IpRuleItem
-<a name="API_IpRuleItem"></a>
 
 Describes a rule for an IP access control group.
 

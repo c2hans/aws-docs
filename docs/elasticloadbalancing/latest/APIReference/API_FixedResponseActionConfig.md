@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # FixedResponseActionConfig
-<a name="API_FixedResponseActionConfig"></a>
 
 Information about an action that returns a custom HTTP response.
 

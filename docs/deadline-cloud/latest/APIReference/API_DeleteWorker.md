@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteWorker
-<a name="API_DeleteWorker"></a>
 
 Deletes a worker.
 

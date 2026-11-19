@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_ListCo
 ---
 
 # ListCodeFindings
-<a name="API_ListCodeFindings"></a>
 
 Lists the findings in an environment in descending findingId order.
 

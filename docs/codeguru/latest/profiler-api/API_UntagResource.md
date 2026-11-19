@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_UntagRe
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
  Use to remove one or more tags from a resource.
 

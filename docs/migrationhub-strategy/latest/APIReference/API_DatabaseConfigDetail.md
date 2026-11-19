@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # DatabaseConfigDetail
-<a name="API_DatabaseConfigDetail"></a>
 
  Configuration information used for assessing databases.
 

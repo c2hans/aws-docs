@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_version
-<a name="aurora_version"></a>
 
 Returns the string value of the Amazon Aurora PostgreSQL-Compatible Edition version number.
 

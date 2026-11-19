@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-t
 ---
 
 # Tax item data feed
-<a name="data-feed-tax-item"></a>
 
 This data feed provides information about tax calculations for a customer invoice.
 

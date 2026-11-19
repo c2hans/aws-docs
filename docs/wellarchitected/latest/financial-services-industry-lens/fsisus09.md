@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISUS09: How do you optimize areas of your code that use the most resources?
-<a name="fsisus09"></a>
 
  Analyze and optimize your code's efficiency to improve resource utilization.
 

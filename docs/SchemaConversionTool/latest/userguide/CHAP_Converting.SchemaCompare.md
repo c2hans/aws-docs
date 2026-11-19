@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Comparing schemas in AWS Schema Conversion Tool
-<a name="CHAP_Converting.SchemaCompare"></a>
 
 If you made changes to your source or target schema after you migrated, you can compare the two database schemas using AWS SCT. You can compare schemas for versions the same as or earlier than the source schema.
 

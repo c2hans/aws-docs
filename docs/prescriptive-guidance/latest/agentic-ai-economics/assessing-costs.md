@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Assessing human-process costs
-<a name="assessing-costs"></a>
 
 Understanding your true process costs is fundamental to making informed decisions about agentic AI system investments. First, you must establish an accurate baseline of what your current processes cost are, including all hidden expenses, failure rates, and opportunity costs. This helps you develop precise ROI calculations and make strategic decisions. This comprehensive cost assessment serves as the critical foundation for evaluating whether agentic AI systems can deliver genuine value as productive companions.
 

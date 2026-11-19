@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL04-BP02 Architect defensively against failures
-<a name="advrel04-bp02"></a>
 
  Some system failures come from external partners or dependencies that are outside of your control. Implement circuit breakers, retries, and fallbacks to gracefully handle failures from external dependencies, and avoid cascading failures within your system.
 

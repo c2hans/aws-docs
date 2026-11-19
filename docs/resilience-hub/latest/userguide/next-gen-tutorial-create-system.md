@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Create a system
-<a name="next-gen-tutorial-create-system"></a>
 
 **Console:**
 

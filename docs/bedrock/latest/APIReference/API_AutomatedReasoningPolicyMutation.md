@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyMutation
-<a name="API_AutomatedReasoningPolicyMutation"></a>
 
 A container for various mutation operations that can be applied to an Automated Reasoning policy, including adding, updating, and deleting policy elements.
 

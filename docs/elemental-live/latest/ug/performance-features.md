@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-fea
 ---
 
 # Features that affect performance
-<a name="performance-features"></a>
 
 ## Motion graphic overlays
 <a name="performance-features-motion-gx"></a>

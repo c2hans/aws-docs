@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackScope
-<a name="API_ConformancePackScope"></a>
 
 Defines which resources trigger an evaluation for the AWS Config rules in a conformance pack. The scope is a tag key, or a combination of a tag key and value, that is applied to every rule in the conformance pack. Specify a scope to constrain which resources trigger an evaluation for the rules. Otherwise, evaluations of rules in the conformance pack are triggered when any resource in your recording group changes in configuration.
 

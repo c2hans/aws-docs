@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDAREL02-BP02 Verify data consistency and availability across OT/IT systems through redundancy and failover mechanisms
-<a name="midarel02-bp02"></a>
 
  Manufacturing environments operate with complex interactions between OT and IT systems. When these systems fail, the impact can cascade through production lines, quality control processes, and enterprise planning systems. Successfully maintaining data consistency and system availability requires careful orchestration of data synchronization, communication paths, and recovery procedures across the manufacturing technology stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SemanticOverrideConsolidationConfigurationInput
-<a name="API_SemanticOverrideConsolidationConfigurationInput"></a>
 
 Input for semantic override consolidation configuration in a memory strategy.
 

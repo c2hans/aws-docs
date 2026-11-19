@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Metrics
 ---
 
 # Metrics
-<a name="API_Metrics"></a>
 
 Information about the statistics from the code review.
 

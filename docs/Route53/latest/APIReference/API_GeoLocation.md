@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GeoLocat
 ---
 
 # GeoLocation
-<a name="API_GeoLocation"></a>
 
 A complex type that contains information about a geographic location.
 

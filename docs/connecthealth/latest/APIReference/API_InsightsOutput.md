@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_In
 ---
 
 # InsightsOutput
-<a name="API_InsightsOutput"></a>
 
 Output of patient insights job
 

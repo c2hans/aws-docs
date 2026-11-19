@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Subscrib
 ---
 
 # SubscribeToShard
-<a name="API_SubscribeToShard"></a>
 
 This operation establishes an HTTP/2 connection between the consumer you specify in the `ConsumerARN` parameter and the shard you specify in the `ShardId` parameter. After the connection is successfully established, Kinesis Data Streams pushes records from the shard to the consumer over this connection. Before you call this operation, call [RegisterStreamConsumer](API_RegisterStreamConsumer.md) to register the consumer with Kinesis Data Streams.
 

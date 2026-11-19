@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-change
 ---
 
 # Change the tenancy of an EC2 instance
-<a name="dedicated-change-tenancy"></a>
 
 You can change the tenancy of a stopped instance after launch. The changes that you make take effect the next time the instance starts.
 

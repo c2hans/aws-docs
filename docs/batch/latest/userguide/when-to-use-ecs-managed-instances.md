@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/when-to-use-ecs-m
 ---
 
 # When to use Amazon ECS Managed Instances
-<a name="when-to-use-ecs-managed-instances"></a>
 
 Use Amazon ECS Managed Instances when your jobs need capabilities beyond what Fargate provides and you prefer not to manage the underlying Amazon EC2 infrastructure. Amazon ECS Managed Instances combines the operational simplicity of Fargate with the compute flexibility of Amazon EC2.
 

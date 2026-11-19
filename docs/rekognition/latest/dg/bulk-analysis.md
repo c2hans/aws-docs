@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/bulk-analysis.html
 ---
 
 # Bulk analysis
-<a name="bulk-analysis"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis is no longer available to new customers. For more information, see [Amazon Rekognition feature availability changes](rekognition-availability-changes.md).

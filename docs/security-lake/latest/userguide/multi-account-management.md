@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/multi-acc
 ---
 
 # Managing multiple accounts with AWS Organizations in Security Lake
-<a name="multi-account-management"></a>
 
 You can use Amazon Security Lake to collect security logs and events from multiple AWS accounts. To help automate and streamline the management of multiple accounts, we strongly recommend that you integrate Security Lake with [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
 

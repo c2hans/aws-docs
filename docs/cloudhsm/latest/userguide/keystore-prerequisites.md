@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/keystore-prere
 ---
 
 # Prerequisites for integrating AWS CloudHSM with Java Keytool and Jarsigner using Client SDK 3
-<a name="keystore-prerequisites"></a>
 
 To use the AWS CloudHSM key store, you must first initialize and configure the AWS CloudHSM JCE SDK. Use the following steps to do so.
 

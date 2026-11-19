@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Security OU – Security Tooling account
-<a name="security-tooling"></a>
 
 The following diagram illustrates the AWS security services that are configured in the Security Tooling account.
 

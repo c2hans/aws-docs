@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConformancePacksFilters
-<a name="API_DescribeConformancePacksFilters"></a>
 
 Filters for filtering results from [DescribeConformancePacks](API_DescribeConformancePacks.md) and [DescribeConformancePackStatus](API_DescribeConformancePackStatus.md) by conformance pack type.
 

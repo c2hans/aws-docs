@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryDeletionStatusItem
-<a name="API_InventoryDeletionStatusItem"></a>
 
 Status information returned by the `DeleteInventory` operation.
 

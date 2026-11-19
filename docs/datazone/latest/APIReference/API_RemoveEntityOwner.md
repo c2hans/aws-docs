@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RemoveE
 ---
 
 # RemoveEntityOwner
-<a name="API_RemoveEntityOwner"></a>
 
 Removes an owner from an entity.
 

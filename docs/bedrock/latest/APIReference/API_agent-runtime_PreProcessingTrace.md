@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PreProcessingTrace
-<a name="API_agent-runtime_PreProcessingTrace"></a>
 
 Details about the pre-processing step, in which the agent contextualizes and categorizes user inputs.
 

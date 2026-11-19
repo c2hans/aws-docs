@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SAMLProvider
 ---
 
 # SAMLProviderListEntry
-<a name="API_SAMLProviderListEntry"></a>
 
 Contains the list of SAML providers for this account.
 

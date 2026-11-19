@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/data-entities
 ---
 
 # Adding or deleting sample data
-<a name="data-entities-edit-sample-data"></a>
 
 You can add sample data to entities in an App Studio application. Because application's don't communicate with external services until they are published, sample data can be used to test your application and entity in preview environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FleetBloc
 ---
 
 # FleetBlockDeviceMappingRequest
-<a name="API_FleetBlockDeviceMappingRequest"></a>
 
 Describes a block device mapping, which defines the EBS volumes and instance store volumes to attach to an instance at launch.
 

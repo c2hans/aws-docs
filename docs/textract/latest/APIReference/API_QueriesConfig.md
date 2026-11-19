@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Queries
 ---
 
 # QueriesConfig
-<a name="API_QueriesConfig"></a>
 
 ## Contents
 <a name="API_QueriesConfig_Contents"></a>

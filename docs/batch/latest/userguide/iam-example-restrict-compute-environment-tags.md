@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-restr
 ---
 
 # Resource: Restrict the Amazon EC2 tags a principal can set on compute resources
-<a name="iam-example-restrict-compute-environment-tags"></a>
 
 Use the following policy to control the tags a principal sets when they create or update a compute environment. The policy requires the principal to always set a `CostCenter` compute resource tag with an approved value and a `Team` compute resource tag. This policy demonstrates how to use the `batch:ComputeResourcesTag/{{tag-key}}` condition key to enforce a tagging convention on the Amazon EC2 instances that a compute environment manages. For more information, see [Control access to compute resource tags with condition keys](compute-resources-tag-access-policy.md). To also restrict which tag keys a principal can set, use the complementary `batch:ComputeResourcesTagKeys` condition key. For an example, see [Example: Restrict the compute resource tag keys a principal can set](compute-resources-tag-access-policy-tagkeys-example.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateRequestV
 ---
 
 # CreateRequestValidator
-<a name="API_CreateRequestValidator"></a>
 
 Creates a RequestValidator of a given RestApi.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartRe
 ---
 
 # StartRemoteDelete
-<a name="API_StartRemoteDelete"></a>
 
 Deletes a file or directory on the remote SFTP server.
 

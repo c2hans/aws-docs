@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # AWS policy: SageMakerStudioBedrockAgentServiceRolePolicy
-<a name="security-iam-awsmanpol-SageMakerStudioBedrockAgentServiceRolePolicy"></a>
 
 This policy allows Amazon Bedrock Agents to access Amazon Bedrock models and other resources attached to an agent in Amazon SageMaker Unified Studio.
 

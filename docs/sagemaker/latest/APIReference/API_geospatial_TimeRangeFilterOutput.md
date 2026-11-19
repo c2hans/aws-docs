@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # TimeRangeFilterOutput
-<a name="API_geospatial_TimeRangeFilterOutput"></a>
 
 The output structure of the time range filter.
 

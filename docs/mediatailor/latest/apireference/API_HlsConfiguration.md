@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_HlsC
 ---
 
 # HlsConfiguration
-<a name="API_HlsConfiguration"></a>
 
 The configuration for HLS content.
 

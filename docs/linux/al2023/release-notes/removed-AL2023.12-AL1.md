@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 ---
 
 # Packages in Amazon Linux 1 not in Amazon Linux 2023
-<a name="removed-AL2023.12-AL1"></a>
 
  There are 994 source packages and 2591 non-i686 binary packages in Amazon Linux 1 no longer in Amazon Linux 2023.
 

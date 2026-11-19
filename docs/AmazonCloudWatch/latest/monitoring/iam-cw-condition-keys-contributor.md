@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-c
 ---
 
 # Condition keys for Contributor Insights log group access
-<a name="iam-cw-condition-keys-contributor"></a>
 
 To create a rule in Contributor Insights and see its results, a user must have the `cloudwatch:PutInsightRule` permission. By default, a user with this permission can create a rule that evaluates any log group in CloudWatch Logs and then view the results. Results can include contributor data from those log groups, which might contain sensitive information.
 

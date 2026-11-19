@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/word-extension.ht
 ---
 
 # AWS Quick Microsoft Word extension
-<a name="word-extension"></a>
 
 The Quick extension for Microsoft Word integrates AI-powered assistance directly in your Word document. Users can leverage Quick within Word to draft content, make formatted edits, and perform reviews with track changes and comments enabled.
 

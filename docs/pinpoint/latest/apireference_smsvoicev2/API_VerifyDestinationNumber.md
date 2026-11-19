@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # VerifyDestinationNumber
-<a name="API_VerifyDestinationNumber"></a>
 
 Use the verification code that was received by the verified destination phone number to opt-in the verified destination phone number to receive more messages.
 

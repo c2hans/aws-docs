@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_PluginT
 ---
 
 # PluginTypeMetadataSummary
-<a name="API_PluginTypeMetadataSummary"></a>
 
 Summary metadata information for a Amazon Q Business plugin.
 

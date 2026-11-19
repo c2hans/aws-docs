@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Uninstall the guidance
-<a name="uninstall-the-guidance"></a>
 
 You can uninstall the Guidance for Account Assessment for AWS Organizations by using the AWS CDK or the AWS Management Console. Some application resources are retained to prevent data loss. If you no longer need their data, manually delete the Amazon Cognito user pool, Amazon DynamoDB tables, Amazon CloudWatch Logs log groups, and Amazon S3 buckets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/map-rende
 ---
 
 # Map Rendering SDK by language
-<a name="map-rendering-by-language"></a>
 
 We recommend rendering Amazon Location Service maps using the [MapLibre](https://github.com/maplibre/maplibre-gl-js) rendering engine.
 

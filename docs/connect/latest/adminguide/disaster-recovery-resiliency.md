@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/disaster-recov
 ---
 
 # Resilience in Connect Customer
-<a name="disaster-recovery-resiliency"></a>
 
 The AWS global infrastructure is built around AWS Regions and Availability Zones (AZs). AWS Regions provide multiple physically separated and isolated AZs, which are connected with low-latency, high-throughput, and highly redundant networking. These AZs are physically separated by many miles, but still close enough together (60 miles or less) to be used as a single logical data center.
 

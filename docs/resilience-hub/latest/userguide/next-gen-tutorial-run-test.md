@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Step 6: Run your first resilience test (optional)
-<a name="next-gen-tutorial-run-test"></a>
 
 Resilience testing helps validate that your service operates and recovers as expected by injecting controlled faults using AWS Fault Injection Service (AWS FIS). In this step, you choose a test template, create a test for your service, and start a test run.
 

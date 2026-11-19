@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # PushFCMMessageTemplateContent
-<a name="API_amazon-q-connect_PushFCMMessageTemplateContent"></a>
 
 The content of the push message template that applies to FCM (Firebase Cloud Messaging) notification service.
 

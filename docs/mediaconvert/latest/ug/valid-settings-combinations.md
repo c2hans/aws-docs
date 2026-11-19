@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/valid-settings-co
 ---
 
 # Valid settings combinations and requirements
-<a name="valid-settings-combinations"></a>
 
 Use this table to confirm that the scan type settings you intend to use are valid together and that they work with the scan type of your source input.
 

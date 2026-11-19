@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ImportReferenceSour
 ---
 
 # ImportReferenceSourceItem
-<a name="API_ImportReferenceSourceItem"></a>
 
 An genome reference source.
 

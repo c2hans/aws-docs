@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/sucks.html
 ---
 
 # .sucks
-<a name="sucks"></a>
 
 Used as a general extension, but ideal for those who want to share negative experiences or warn others about scams, frauds, or faulty products.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Referencing access points with ARNs, access point aliases, or virtual-hosted–style URIs
-<a name="access-points-naming"></a>
 
 After you create an access point you can use these endpoints to preform a number of operations. When referring to an access point you can use the Amazon Resource Names (ARNs), access point alias, or virtual-hosted–style URI.
 

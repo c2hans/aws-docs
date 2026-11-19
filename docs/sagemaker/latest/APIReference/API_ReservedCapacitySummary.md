@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Reserv
 ---
 
 # ReservedCapacitySummary
-<a name="API_ReservedCapacitySummary"></a>
 
 Details of a reserved capacity for the training plan.
 

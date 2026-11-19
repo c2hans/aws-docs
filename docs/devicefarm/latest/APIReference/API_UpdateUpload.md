@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateUpload
-<a name="API_UpdateUpload"></a>
 
 Updates an uploaded test spec.
 

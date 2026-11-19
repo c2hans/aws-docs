@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListR
 ---
 
 # ListRepositories
-<a name="API_ListRepositories"></a>
 
 Gets information about one or more repositories.
 

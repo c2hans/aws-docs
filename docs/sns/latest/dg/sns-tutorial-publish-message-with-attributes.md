@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-publish-messa
 ---
 
 # Tutorial: Publishing a message with attributes to an Amazon SNS topic
-<a name="sns-tutorial-publish-message-with-attributes"></a>
 
 After you [create a topic](sns-create-topic.md) and [subscribe an endpoint to it](sns-create-subscribe-endpoint-to-topic.md), you can *publish* messages to a topic with message attributes. Message attributes let you provide structured metadata items about the message. For more information, see [Amazon SNS message attributes](sns-message-attributes.md).
 

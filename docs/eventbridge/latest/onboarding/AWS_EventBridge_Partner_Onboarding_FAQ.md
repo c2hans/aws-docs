@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/onboarding/AWS_EventB
 ---
 
 # FAQ
-<a name="AWS_EventBridge_Partner_Onboarding_FAQ"></a>
 
 1.  **What delivery guarantees will EventBridge make?**
 

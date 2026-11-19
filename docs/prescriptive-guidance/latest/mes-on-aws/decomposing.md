@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mes-on-aws/
 ---
 
 # Decomposing MES into microservices
-<a name="decomposing"></a>
 
 MES deployment at a manufacturing site can range from several months to years, because MES usually requires extensive customization and configuration to align with the unique requirements of the organization's processes. The deployment includes mapping and configuring workflows, defining user roles and permissions, setting up data collection, integrating shop floor and enterprise systems, and establishing the reporting and analytics requirements. The manufacturing site has to define its work processes in detail and in a structure that can be digitized and automated. This can involve significant organizational change, process re-engineering, and extensive retraining. Rigorous testing is also needed to identify and address any issues or discrepancies. These implementation challenges, integrations, and functionalities can impede MES implementation.
 

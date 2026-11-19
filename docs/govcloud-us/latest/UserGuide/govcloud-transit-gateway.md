@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-tr
 ---
 
 # AWS Transit Gateway in AWS GovCloud (US)
-<a name="govcloud-transit-gateway"></a>
 
 A transit gateway is a network transit hub that interconnects your virtual private clouds (VPC) and on-premises networks.
 

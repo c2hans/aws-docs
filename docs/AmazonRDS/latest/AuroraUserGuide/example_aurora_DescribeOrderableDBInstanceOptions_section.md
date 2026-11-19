@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/example
 ---
 
 # Use `DescribeOrderableDBInstanceOptions` with an AWS SDK or CLI
-<a name="example_aurora_DescribeOrderableDBInstanceOptions_section"></a>
 
 The following code examples show how to use `DescribeOrderableDBInstanceOptions`.
 

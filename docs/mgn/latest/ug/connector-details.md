@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/connector-details.html
 ---
 
 # Review details about your MGN connectors
-<a name="connector-details"></a>
 
 Click the **MGN connector name** of any MGN connector to open its details page.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/instances-api.ht
 ---
 
 # Instance actions
-<a name="instances-api"></a>
 
  The following API actions are available for instances:
 + [AssociateApprovedOrigin](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateApprovedOrigin.html)

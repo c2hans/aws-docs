@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-vpc.html
 ---
 
 # AWS.Networking.VPC
-<a name="node-vpc"></a>
 
 You must specify a CIDR block for your virtual private cloud (VPC).
 

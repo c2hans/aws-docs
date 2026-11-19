@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapNWOnHanaSingle
-<a name="launch-wizard-specifications-sap-netweaver-single"></a>
 
 The following are examples of the specifications required to create single-node deployments.
 

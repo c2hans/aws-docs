@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AttachIma
 ---
 
 # AttachImageWatermark
-<a name="API_AttachImageWatermark"></a>
 
 Attaches a watermark to a non-public AMI. The watermark is a structured identifier that automatically propagates to all derivative images created through [CreateImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateImage.html), and [CopyImage](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CopyImage.html).
 

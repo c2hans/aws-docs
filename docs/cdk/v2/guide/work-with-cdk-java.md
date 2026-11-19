@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-java.html
 ---
 
 # Working with the AWS CDK in Java
-<a name="work-with-cdk-java"></a>
 
 Java is a fully-supported client language for the AWS CDK and is considered stable. You can develop AWS CDK applications in Java using familiar tools, including the JDK (Oracle’s, or an OpenJDK distribution such as Amazon Corretto) and Apache Maven.
 

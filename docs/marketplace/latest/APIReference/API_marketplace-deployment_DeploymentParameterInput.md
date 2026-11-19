@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DeploymentParameterInput
-<a name="API_marketplace-deployment_DeploymentParameterInput"></a>
 
 The shape containing the requested deployment parameter name and secretString.
 

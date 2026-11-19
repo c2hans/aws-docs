@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd04-b
 ---
 
 # FND04-BP03 Establish standard repositories of shared resources and patterns
-<a name="fnd04-bp03"></a>
 
  In environments with many collaborating teams, central repositories of shared resources, patterns, and hardened assets let central and security teams deliver reusable and secure components to engineering teams across the organization. This approach improves consistency, strengthens security, builds resilience, speeds up delivery, and spreads best practices across the cloud environment.
 

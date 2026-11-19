@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 ## Authoring
 <a name="contributors-authoring"></a>

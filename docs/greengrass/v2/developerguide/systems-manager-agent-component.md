@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/systems-man
 ---
 
 # Systems Manager Agent
-<a name="systems-manager-agent-component"></a>
 
 The AWS Systems Manager Agent component (`aws.greengrass.SystemsManagerAgent`) installs the Systems Manager Agent, so you can manage core devices with Systems Manager. Systems Manager is an AWS service that you can use to view and control your infrastructure on AWS, including Amazon EC2 instances, on-premises servers and virtual machines (VMs), and edge devices. Systems Manager enables you to view operational data, automate operation tasks, and maintain security and compliance. For more information, see [What is AWS Systems Manager?](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) and [About Systems Manager Agent](https://docs.aws.amazon.com/systems-manager/latest/userguide/prereqs-ssm-agent.html) in the *AWS Systems Manager User Guide*.
 

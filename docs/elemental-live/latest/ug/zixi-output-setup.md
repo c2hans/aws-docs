@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/zixi-output-set
 ---
 
 # Creating the output
-<a name="zixi-output-setup"></a>
 
 1. In the Elemental Live event, go to **Output Groups** > **Reliable TS**.
 

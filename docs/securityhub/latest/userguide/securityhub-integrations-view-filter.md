@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Reviewing a list of Security Hub CSPM integrations
-<a name="securityhub-integrations-view-filter"></a>
 
 Choose your preferred method, and follow the steps to review a list of integrations in AWS Security Hub CSPM or details about a specific integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Describes the configuration of a filter.
 

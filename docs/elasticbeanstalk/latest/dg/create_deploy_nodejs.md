@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Deploying Node.js applications with Elastic Beanstalk
-<a name="create_deploy_nodejs"></a>
 
 This chapter provides instructions for configuring and deploying your Node.js web application to AWS Elastic Beanstalk. It also provides walkthroughs for common tasks such as database integration and working with the Express framework. Elastic Beanstalk makes it easy to deploy, manage, and scale your Node.js web applications using Amazon Web Services.
 

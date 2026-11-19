@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/dynamodb_example_
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create and manage DynamoDB global tables demonstrating MREC using an AWS SDK
-<a name="dynamodb_example_dynamodb_Scenario_GlobalTableOperations_section"></a>
 
 The following code example shows how to create and manage DynamoDB global tables with replicas across multiple Regions.
 + Create a table with Global Secondary Index and DynamoDB Streams.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/getting-start
 ---
 
 # Tutorial: Start building from an empty app
-<a name="getting-started-tutorial-empty"></a>
 
 In this tutorial, you'll build an internal Customer Meeting Request application using AWS App Studio. You'll learn about how to build apps in App Studio, while focusing on real-world use cases and hands-on examples. Also, you'll learn about defining data structures, UI design, and app deployment.
 

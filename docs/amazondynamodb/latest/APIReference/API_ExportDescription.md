@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_E
 ---
 
 # ExportDescription
-<a name="API_ExportDescription"></a>
 
 Represents the properties of the exported table.
 

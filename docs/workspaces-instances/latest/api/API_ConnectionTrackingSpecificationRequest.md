@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Conn
 ---
 
 # ConnectionTrackingSpecificationRequest
-<a name="API_ConnectionTrackingSpecificationRequest"></a>
 
 Defines connection tracking parameters for network interfaces.
 

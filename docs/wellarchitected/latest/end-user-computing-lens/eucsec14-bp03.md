@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC14-BP03 Limit egress channels available to users to only the required set of channels to perform their role
-<a name="eucsec14-bp03"></a>
 
  End user systems can provide multiple channels for users to export and access data. Evaluate these channels to determine their suitability in the specific use case being delivered. Block channels not required for specific use cases.
 

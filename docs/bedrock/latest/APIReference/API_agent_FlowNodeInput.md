@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowNodeInput
-<a name="API_agent_FlowNodeInput"></a>
 
 Contains configurations for an input in an Amazon Bedrock Flows node.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-
 ---
 
 # Managing Connected accounts
-<a name="manage-connected-accounts"></a>
 
 A connected account links an external payment provider account to your AWS account so that payments can be settled to that account. You can create a connected account to receive payments from AI bots and agents through [AWS WAF AI traffic monetization](https://docs.aws.amazon.com/waf/latest/developerguide/waf-ai-traffic-monetization.html).
 

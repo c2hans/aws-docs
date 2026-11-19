@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detec
 ---
 
 # Detect drift on an entire CloudFormation stack
-<a name="detect-drift-stack"></a>
 
 Performing a drift detection operation on a stack determines whether the stack has drifted from its expected template configuration, and returns detailed information about the drift status of each resource in the stack that supports drift detection.
 

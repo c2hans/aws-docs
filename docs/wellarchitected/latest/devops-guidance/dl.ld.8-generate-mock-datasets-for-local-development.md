@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.8] Generate mock datasets for local development
-<a name="dl.ld.8-generate-mock-datasets-for-local-development"></a>
 
  **Category:** OPTIONAL
 

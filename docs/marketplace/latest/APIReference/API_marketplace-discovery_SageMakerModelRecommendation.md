@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SageMakerModelRecommendation
-<a name="API_marketplace-discovery_SageMakerModelRecommendation"></a>
 
 Recommended instance types for inference with a SageMaker model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/liv
 ---
 
 # Important notes
-<a name="live-migration-notes"></a>
 
 Following is some key advice about migration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Resolv
 ---
 
 # ResolvedArtifact
-<a name="API_ResolvedArtifact"></a>
 
 Represents a resolved build artifact. A resolved artifact is an artifact that is built and deployed to the destination, such as Amazon S3.
 

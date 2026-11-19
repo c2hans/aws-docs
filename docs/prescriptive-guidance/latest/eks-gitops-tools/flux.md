@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Flux
-<a name="flux"></a>
 
 Flux is another tool for Kubernetes that implements GitOps principles in a unique way.
 

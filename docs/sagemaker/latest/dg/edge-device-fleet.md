@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet.ht
 ---
 
 # Setup for Devices and Fleets in SageMaker Edge Manager
-<a name="edge-device-fleet"></a>
 
 Fleets are collections of logically grouped devices you can use to collect and analyze data. You can use SageMaker Edge Manager to operate machine learning models on a fleet of smart cameras, smart speakers, robots, and other edge devices.
 

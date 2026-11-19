@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/reverse-g
 ---
 
 # Reverse Geocode
-<a name="reverse-geocode"></a>
 
 Reverse Geocode converts geographic coordinates into a human-readable address or place. It provides detailed address components, place type, category, and street information, with filtering options based on place type to refine results. The API can also include additional features, such as time zone information and political view adjustments.
 

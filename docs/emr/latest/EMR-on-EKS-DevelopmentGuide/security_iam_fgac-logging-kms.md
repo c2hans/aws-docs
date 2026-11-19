@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Encrypting Amazon EMR on EKS logs with managed storage
-<a name="security_iam_fgac-logging-kms"></a>
 
 The sections that follow show you how to configure encryption for logs.
 

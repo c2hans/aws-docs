@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/deprecations.html
 ---
 
 # Deprecated features of DLAMI
-<a name="deprecations"></a>
 
 The following table lists the deprecated features of AWS Deep Learning AMIs (DLAMI), the date that we deprecated them, and details about why we deprecated them.
 

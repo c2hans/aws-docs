@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatePaymentManager
-<a name="API_UpdatePaymentManager"></a>
 
 Updates an existing payment manager. This operation uses PATCH semantics, so you only need to specify the fields you want to change.
 

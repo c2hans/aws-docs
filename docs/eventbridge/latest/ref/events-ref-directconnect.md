@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-direct
 ---
 
 # AWS Direct Connect events
-<a name="events-ref-directconnect"></a>
 
 Direct Connect sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateAgentPermissions
-<a name="API_UpdateAgentPermissions"></a>
 
 Updates the resource permissions for an agent.
 

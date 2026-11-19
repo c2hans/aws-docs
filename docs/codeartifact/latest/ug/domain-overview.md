@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/domain-overview.h
 ---
 
 # Domain overview
-<a name="domain-overview"></a>
 
 When you're working with CodeArtifact, domains are useful for the following:
 +  **Deduplicated storage**: An asset only needs to be stored once in a domain, even if it's available in 1 or 1,000 repositories. That means you only pay for storage once.

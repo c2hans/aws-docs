@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_UntagResource.html
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes one or more tags from a signing profile. To remove the tags, specify a list of tag keys.
 

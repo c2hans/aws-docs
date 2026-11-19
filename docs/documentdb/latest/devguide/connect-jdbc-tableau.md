@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-jdbc-
 ---
 
 # Connect to Amazon DocumentDB from Tableau Desktop
-<a name="connect-jdbc-tableau"></a>
 
 **Topics**
 + [Adding the Amazon DocumentDB JDBC Driver](#connect-jdbc-tableau-adddriver)

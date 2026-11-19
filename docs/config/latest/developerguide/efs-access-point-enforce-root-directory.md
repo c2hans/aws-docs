@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/efs-access-
 ---
 
 # efs-access-point-enforce-root-directory
-<a name="efs-access-point-enforce-root-directory"></a>
 
 Checks if Amazon Elastic File System (Amazon EFS) access points are configured to enforce a root directory. The rule is NON\_COMPLIANT if the value of 'Path' is set to '/' (default root directory of the file system).
 

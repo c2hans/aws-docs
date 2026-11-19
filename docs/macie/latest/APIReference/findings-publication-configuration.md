@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings-publi
 ---
 
 # Findings - Publication Configuration
-<a name="findings-publication-configuration"></a>
 
 The Publication Configuration resource for findings provides settings for publishing findings to AWS Security Hub CSPM. With these settings, you can configure Amazon Macie to automatically publish all policy findings, all sensitive data findings, or both policy and sensitive data findings to Security Hub CSPM. This doesn't include findings that were suppressed (automatically archived) by a findings filter. You can also use these settings to stop publishing any findings to Security Hub CSPM. To learn more about how Macie publishes findings to Security Hub CSPM, see [Evaluating findings with AWS Security Hub CSPM](https://docs.aws.amazon.com/macie/latest/user/securityhub-integration.html) in the *Amazon Macie User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Updat
 ---
 
 # UpdateTestGridProject
-<a name="API_UpdateTestGridProject"></a>
 
 Change details of a project.
 

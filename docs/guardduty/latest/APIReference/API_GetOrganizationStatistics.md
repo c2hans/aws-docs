@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetOrg
 ---
 
 # GetOrganizationStatistics
-<a name="API_GetOrganizationStatistics"></a>
 
 Retrieves how many active member accounts have each feature enabled within GuardDuty. Only a delegated GuardDuty administrator of an organization can run this API.
 

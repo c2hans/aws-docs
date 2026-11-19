@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/mod
 ---
 
 # Editing, archiving, and deleting feeds using the console
-<a name="modify-delete-feed-console"></a>
 
 To manage an existing feed, open the Elemental Inference console at [https://console.aws.amazon.com/elemental-inference/](https://console.aws.amazon.com/elemental-inference/). In the navigation pane, choose **Feeds**, and then select the feed to open its details page.
 

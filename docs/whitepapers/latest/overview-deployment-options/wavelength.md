@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # AWS Wavelength
-<a name="wavelength"></a>
 
  [AWS Wavelength](https://aws.amazon.com/wavelength/) is an AWS infrastructure that allows you to deploy workloads closer to 5G-connected users and devices. You can use Wavelength to deploy Amazon EC2 instances, Amazon EKS clusters, and a suite of supported partner solutions available on the AWS Marketplace. Wavelength Zones are logically isolated data centers within telecommunication providers’ networks that are connected back to the AWS Region through redundant, low latency, and high-throughput connectivity.
 

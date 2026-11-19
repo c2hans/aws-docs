@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/config-rs-write-functio
 ---
 
 # Writing response streaming-enabled Lambda functions
-<a name="config-rs-write-functions"></a>
 
 Writing the handler for response streaming functions is different than typical handler patterns. When writing streaming functions, be sure to do the following:
 + Wrap your function with the `awslambda.streamifyResponse()` decorator. The `awslambda` global object is provided by Lambda's Node.js runtime environment.

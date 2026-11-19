@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListReadSets.html
 ---
 
 # ListReadSets
-<a name="API_ListReadSets"></a>
 
 Retrieves a list of read sets from a sequence store ID and returns the metadata in JSON format.
 

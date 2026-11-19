@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/loc-mob
 ---
 
 # Android Mobile Tracking SDK
-<a name="loc-mobile-tracking-android"></a>
 
 The Amazon Location mobile tracking SDK provides utilities which help easily authenticate, capture device positions, and send position updates to Amazon Location Trackers. The SDK supports local filtering of location updates with configurable update intervals. This reduces data costs and optimizes intermittent connectivity for your Android applications.
 

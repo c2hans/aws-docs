@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/cli-schedule-fields-
 ---
 
 # Input switch action – payload
-<a name="cli-schedule-fields-for-input-switch"></a>
 
 The following sections show the payload for input switch actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/getting-sup
 ---
 
 # Getting support for AWS Marketplace
-<a name="getting-support"></a>
 
 For general AWS Marketplace issues, [contact us](https://aws.amazon.com/contact-us/).
 

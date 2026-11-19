@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # LibraryTemplateButtonList
-<a name="API_LibraryTemplateButtonList"></a>
 
 Defines a button in a template from Meta's library.
 

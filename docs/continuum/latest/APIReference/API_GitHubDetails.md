@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GitHub
 ---
 
 # GitHubDetails
-<a name="API_GitHubDetails"></a>
 
 Details for a GitHub.com integration.
 

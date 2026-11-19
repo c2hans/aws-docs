@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteVo
 ---
 
 # DeleteVocabulary
-<a name="API_DeleteVocabulary"></a>
 
 Deletes the vocabulary that has the given identifier.
 

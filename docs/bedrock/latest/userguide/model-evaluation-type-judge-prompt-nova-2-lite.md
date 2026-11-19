@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Amazon Nova 2 Lite
-<a name="model-evaluation-type-judge-prompt-nova-2-lite"></a>
 
 Prompts used with Amazon Nova 2 Lite.
 

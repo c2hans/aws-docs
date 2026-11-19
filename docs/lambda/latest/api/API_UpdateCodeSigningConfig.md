@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateCodeSigningC
 ---
 
 # UpdateCodeSigningConfig
-<a name="API_UpdateCodeSigningConfig"></a>
 
 Update the code signing configuration. Changes to the code signing configuration take effect the next time a user tries to deploy a code package to the function.
 

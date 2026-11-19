@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managing-ru
 ---
 
 # List of AWS Config Managed Rules by Region Availability
-<a name="managing-rules-by-region-availability"></a>
 
 AWS Config currently supports the following managed rules. Before using these rules, see [Considerations](evaluate-config.md#evaluate-config-considerations).
 

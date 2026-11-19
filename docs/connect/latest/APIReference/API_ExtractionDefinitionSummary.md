@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Extracti
 ---
 
 # ExtractionDefinitionSummary
-<a name="API_ExtractionDefinitionSummary"></a>
 
 Summary information about an extraction definition.
 

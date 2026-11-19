@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/monitoring_schedule
 ---
 
 # Scheduler logs in AWS PCS
-<a name="monitoring_scheduler-logs"></a>
 
 You can configure AWS PCS to send detailed logging data from your cluster scheduler to Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), and Amazon Data Firehose. This can assist with monitoring and troubleshooting.
 

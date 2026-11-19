@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Email
-<a name="API_Email"></a>
 
 The email address associated with the user.
 

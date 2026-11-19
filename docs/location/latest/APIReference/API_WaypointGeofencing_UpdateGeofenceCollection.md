@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # UpdateGeofenceCollection
-<a name="API_WaypointGeofencing_UpdateGeofenceCollection"></a>
 
 Updates the specified properties of a given geofence collection.
 

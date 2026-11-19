@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/delete-tag.htm
 ---
 
 # Delete tags
-<a name="delete-tag"></a>
 
 You can delete a tag associated with your Auto Scaling group at any time.
 

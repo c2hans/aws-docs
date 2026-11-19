@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model development
-<a name="sec-model-development"></a>
 
 **Topics**
 + [MLSEC04-BP01 Secure governed ML environment](mlsec04-bp01.md)

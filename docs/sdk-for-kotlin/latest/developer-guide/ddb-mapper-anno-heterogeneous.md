@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Map heterogeneous types with annotations
-<a name="ddb-mapper-anno-heterogeneous"></a>
 
 A single DynamoDB table or attribute often holds items of several different shapes. For example, a table of vehicles may store cars, bikes, and trucks, each with its own attributes, or a single-table design may store users and orders side by side. DynamoDB Mapper handles these with a **heterogeneous family**: a base type plus a set of registered subtypes, distinguished by a string **type attribute** stored with every item.
 

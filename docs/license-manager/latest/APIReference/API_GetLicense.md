@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetLicense
-<a name="API_GetLicense"></a>
 
 Gets detailed information about the specified license.
 

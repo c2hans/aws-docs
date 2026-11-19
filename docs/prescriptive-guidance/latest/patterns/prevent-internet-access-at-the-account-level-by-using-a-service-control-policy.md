@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/pr
 ---
 
 # Prevent internet access at the account level by using a service control policy
-<a name="prevent-internet-access-at-the-account-level-by-using-a-service-control-policy"></a>
 
 *Sergiy Shevchenko, Sean O'Sullivan, and Victor Mazeo Whitaker, Amazon Web Services*
 

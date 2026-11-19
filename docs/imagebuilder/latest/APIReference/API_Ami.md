@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ami
 ---
 
 # Ami
-<a name="API_Ami"></a>
 
 Details of an Amazon EC2 AMI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Multi-Region fundamental 1: Understanding the requirements
-<a name="fundamental-1"></a>
 
 As mentioned previously, high availability and continuity of operations are common reasons for pursuing multi-Region architectures. Availability metrics measure the percentage of time a workload is available for use over a defined period, whereas continuity of operations metrics measure recovery time for large-scale, and typically longer, duration events.
 

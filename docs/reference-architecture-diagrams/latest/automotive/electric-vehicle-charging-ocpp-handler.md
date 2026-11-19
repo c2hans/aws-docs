@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Electric Vehicle Charging OCPP Handler
-<a name="electric-vehicle-charging-ocpp-handler"></a>
 
 Publication date: **November 15, 2023 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Secondary
 ---
 
 # SecondaryInterfaceAttachment
-<a name="API_SecondaryInterfaceAttachment"></a>
 
 Describes the attachment of a secondary interface to an instance.
 

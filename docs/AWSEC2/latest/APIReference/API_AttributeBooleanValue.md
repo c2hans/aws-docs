@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Attribute
 ---
 
 # AttributeBooleanValue
-<a name="API_AttributeBooleanValue"></a>
 
 Describes a value for a resource attribute that is a Boolean value.
 

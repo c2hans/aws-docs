@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSourceSearchFilter
-<a name="API_DataSourceSearchFilter"></a>
 
 A filter that you apply when searching for data sources.
 

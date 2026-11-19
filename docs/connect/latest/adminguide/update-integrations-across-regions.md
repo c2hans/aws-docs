@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/update-integra
 ---
 
 # Update integrations (3p apps) across Linked AWS regions
-<a name="update-integrations-across-regions"></a>
 
 **Warning**
 Connect Customer Global Resiliency instances created after November 5, 2026, will support replication of native integrations (3p app) and their security profile permissions. To enable this for ACGR instances created before November 5, 2026, contact [AWS Support](https://console.aws.amazon.com/support/home).

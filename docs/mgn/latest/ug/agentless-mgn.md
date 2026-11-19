@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/agentless-mgn.html
 ---
 
 # Installing the AWS Transform MGN vCenter Client for Agentless Replication on vCenter source environments
-<a name="agentless-mgn"></a>
 
 **Important**
 Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).

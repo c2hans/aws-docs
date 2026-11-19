@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyStrictTransportSecurity
-<a name="API_ResponseHeadersPolicyStrictTransportSecurity"></a>
 
 Determines whether CloudFront includes the `Strict-Transport-Security` HTTP response header and the header's value.
 

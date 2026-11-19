@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-en
 ---
 
 # redshift-enhanced-vpc-routing-enabled
-<a name="redshift-enhanced-vpc-routing-enabled"></a>
 
 Checks if Amazon Redshift cluster has 'enhancedVpcRouting' enabled. The rule is NON\_COMPLIANT if 'enhancedVpcRouting' is not enabled or if the configuration.enhancedVpcRouting field is 'false'.
 

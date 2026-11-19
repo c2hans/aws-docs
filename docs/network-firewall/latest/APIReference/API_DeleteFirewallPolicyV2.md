@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteFirewallPolicyV2
-<a name="API_DeleteFirewallPolicyV2"></a>
 
 Deletes the specified [FirewallPolicyV2](API_FirewallPolicyV2.md).
 

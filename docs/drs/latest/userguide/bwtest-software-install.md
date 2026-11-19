@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/bwtest-software-ins
 ---
 
 # Install the endpoint software
-<a name="bwtest-software-install"></a>
 
 Everything in this task runs on the Amazon EC2 instance, as an ordinary user rather than root. The procedure needs no elevated privilege. Installing the optional diagnostic tools, such as `sysstat` for the `sar` command in [Do not compare headline figures between runs](bwtest-interpreting.md#bwtest-run-variance), does need `sudo`. The whole task takes about 20 seconds after you have a shell.
 

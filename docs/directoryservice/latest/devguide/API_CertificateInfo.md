@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cer
 ---
 
 # CertificateInfo
-<a name="API_CertificateInfo"></a>
 
 Contains general information about a certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-ar
 ---
 
 # Find the key ID and key ARN
-<a name="find-cmk-id-arn"></a>
 
 To identify an AWS KMS key, you can use the [key ID](concepts.md#key-id-key-id) or the Amazon Resource Name ([key ARN](concepts.md#key-id-key-ARN)). In [cryptographic operations](kms-cryptography.md#cryptographic-operations), you can also use the [alias name](concepts.md#key-id-alias-name) or [alias ARN](concepts.md#key-id-alias-ARN).
 
@@ -33,7 +32,7 @@ For detailed information about the KMS key identifiers supported by AWS KMS, see
 
 To find the [key ID](concepts.md#key-id-key-id) and [key ARN](concepts.md#key-id-key-ARN) of an AWS KMS key, use the [ListKeys](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.html) operation.
 
-The `ListKeys` operation returns the key ID and Amazon Resource Name (ARN) of all KMS keys in the caller's account and Region.
+By default, the ListKeys operation returns the key ID and Amazon Resource Name (ARN) of all KMS keys in the caller's account and Region. To list the KMS keys that other AWS accounts shared with you through AWS Resource Access Manager (AWS RAM), use the `ResourceOwners` parameter. For more information about identifying KMS keys that are shared with you, see [Identifying a shared KMS key](key-sharing-ram.md#key-sharing-ram-identify).
 
 For example, this call to the `ListKeys` operation returns the ID and ARN of each KMS key in this fictitious account. For examples in multiple programming languages, see [Use `ListKeys` with an AWS SDK or CLI](example_kms_ListKeys_section.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/tams-input.html
 ---
 
 # Processing content from TAMS servers
-<a name="tams-input"></a>
 
 When you create jobs with AWS Elemental MediaConvert, you can process live and archived content directly from Time-addressable Media Store (TAMS) servers. MediaConvert communicates with your TAMS server to retrieve specific time segments and automatically generates the necessary manifests for processing.
 

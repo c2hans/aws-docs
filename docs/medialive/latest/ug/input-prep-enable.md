@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-prep-enable.ht
 ---
 
 # Enabling and disabling the input prepare feature
-<a name="input-prep-enable"></a>
 
 Before you add input prepare actions to the MediaLive schedule, you must enable the feature.
 

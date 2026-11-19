@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-up-bulk-ex
 ---
 
 # Set up bulk export for all of your unified customer profile data
-<a name="set-up-bulk-export"></a>
 
 **Note**
 To complete the steps in this topic, you need to have developer skills, and be experienced with using AWS KMS and Amazon S3.

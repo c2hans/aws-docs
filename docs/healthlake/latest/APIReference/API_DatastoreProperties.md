@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Datas
 ---
 
 # DatastoreProperties
-<a name="API_DatastoreProperties"></a>
 
 The data store properties.
 

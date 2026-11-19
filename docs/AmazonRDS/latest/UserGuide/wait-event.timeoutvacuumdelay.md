@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.ti
 ---
 
 # Timeout:VacuumDelay
-<a name="wait-event.timeoutvacuumdelay"></a>
 
 The `Timeout:VacuumDelay` event indicates that the cost limit for vacuum I/O has been exceeded and that the vacuum process has been put to sleep. Vacuum operations stop for the duration specified in the respective cost delay parameter and then it resumes its work. For the manual vacuum command, the delay is specified in the `vacuum_cost_delay` parameter. For the autovacuum daemon, the delay is specified in the `autovacuum_vacuum_cost_delay parameter.`
 

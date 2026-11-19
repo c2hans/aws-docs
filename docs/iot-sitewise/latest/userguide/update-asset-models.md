@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-ass
 ---
 
 # Update asset models, component models, and interfaces
-<a name="update-asset-models"></a>
 
 Use the AWS IoT SiteWise console or API to update an asset model, component model, or interface.
 

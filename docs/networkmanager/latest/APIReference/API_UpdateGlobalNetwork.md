@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateGlobalNetwork
-<a name="API_UpdateGlobalNetwork"></a>
 
 Updates an existing global network. To remove information for any of the parameters, specify an empty string.
 

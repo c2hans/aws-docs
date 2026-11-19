@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_SuggestedF
 ---
 
 # SuggestedFix
-<a name="API_SuggestedFix"></a>
 
 A suggested fix for a vulnerability in your Lambda function code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FpgaImage
 ---
 
 # FpgaImageState
-<a name="API_FpgaImageState"></a>
 
 Describes the state of the bitstream generation process for an Amazon FPGA image (AFI).
 

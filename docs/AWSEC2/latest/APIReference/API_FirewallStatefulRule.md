@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FirewallS
 ---
 
 # FirewallStatefulRule
-<a name="API_FirewallStatefulRule"></a>
 
 Describes a stateful rule.
 

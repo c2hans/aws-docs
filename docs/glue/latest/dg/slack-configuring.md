@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-configuring.html
 ---
 
 # Configuring Slack
-<a name="slack-configuring"></a>
 
 Before you can use AWS Glue to transfer data to or from Slack, you must meet these requirements:
 

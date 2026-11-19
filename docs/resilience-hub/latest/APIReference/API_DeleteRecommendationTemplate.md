@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteRecommendationTemplate
-<a name="API_DeleteRecommendationTemplate"></a>
 
 Deletes a recommendation template. This is a destructive action that can't be undone.
 

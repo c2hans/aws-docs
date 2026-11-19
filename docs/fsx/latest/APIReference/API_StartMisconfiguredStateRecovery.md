@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_StartMisconf
 ---
 
 # StartMisconfiguredStateRecovery
-<a name="API_StartMisconfiguredStateRecovery"></a>
 
 After performing steps to repair the Active Directory configuration of an FSx for Windows File Server file system, use this action to initiate the process of Amazon FSx attempting to reconnect to the file system.
 

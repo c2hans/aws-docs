@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeBack
 ---
 
 # DescribeBackups
-<a name="API_DescribeBackups"></a>
 
 Returns the description of a specific Amazon FSx backup, if a `BackupIds` value is provided for that backup. Otherwise, it returns all backups owned by your AWS account in the AWS Region of the endpoint that you're calling.
 

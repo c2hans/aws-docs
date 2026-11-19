@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlops.html
 ---
 
 # Implement MLOps
-<a name="mlops"></a>
 
 Amazon SageMaker AI supports features to implement machine learning models in production environments with continuous integration and deployment. The following topics give information about how to set up MLOps infrastructure when using SageMaker AI.
 

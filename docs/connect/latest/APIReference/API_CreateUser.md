@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateUs
 ---
 
 # CreateUser
-<a name="API_CreateUser"></a>
 
 Creates a user account for the specified Connect Customer instance.
 

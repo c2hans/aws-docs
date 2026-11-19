@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-v
 ---
 
 # Subscribe to voice enhancement mode change events in Connect Customer agent workspace
-<a name="3P-apps-voice-requests-onvoiceenhancementmodechanged"></a>
 
 Subscribes a callback function whenever voice enhancements mode is changed in user's profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOneEnterpriseInstallerAccess
-<a name="AmazonOneEnterpriseInstallerAccess"></a>
 
 **Description**: This policy grants limited read and write permissions that allow device installation and activation.
 

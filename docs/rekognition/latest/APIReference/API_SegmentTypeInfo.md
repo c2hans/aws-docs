@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Segm
 ---
 
 # SegmentTypeInfo
-<a name="API_SegmentTypeInfo"></a>
 
 Information about the type of a segment requested in a call to [StartSegmentDetection](API_StartSegmentDetection.md). An array of `SegmentTypeInfo` objects is returned by the response from [GetSegmentDetection](API_GetSegmentDetection.md).
 

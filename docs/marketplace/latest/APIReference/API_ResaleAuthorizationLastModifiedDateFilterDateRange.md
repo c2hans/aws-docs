@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Resa
 ---
 
 # ResaleAuthorizationLastModifiedDateFilterDateRange
-<a name="API_ResaleAuthorizationLastModifiedDateFilterDateRange"></a>
 
 Allows filtering on the `LastModifiedDate` of a ResaleAuthorization with date range as input.
 

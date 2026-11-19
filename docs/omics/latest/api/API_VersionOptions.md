@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VersionOptions.html
 ---
 
 # VersionOptions
-<a name="API_VersionOptions"></a>
 
  The options for an annotation store version.
 

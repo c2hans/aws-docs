@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/global-resilie
 ---
 
 # Using customer managed keys with your knowledge base
-<a name="global-resiliency-quick-responses-cmk"></a>
 
 If you encrypt your knowledge base with a customer managed key, you must tell Connect Customer agent assist which key to use in the replica Region. A KMS key is a Regional resource, so the key that protects your data in the source Region can't be used in the replica Region. The key that you nominate for the replica Region is called the *replica key*.
 

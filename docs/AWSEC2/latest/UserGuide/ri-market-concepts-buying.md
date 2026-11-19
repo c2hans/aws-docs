@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concep
 ---
 
 # Buy Reserved Instances for Amazon EC2
-<a name="ri-market-concepts-buying"></a>
 
 To buy a Reserved Instance for Amazon EC2, you can use the Amazon EC2 console, a command line tool, or an SDK to search for Reserved Instance offerings from AWS and third-party sellers, adjusting your search parameters until you find the exact match that you're looking for.
 

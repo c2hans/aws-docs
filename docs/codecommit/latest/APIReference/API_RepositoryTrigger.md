@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Repos
 ---
 
 # RepositoryTrigger
-<a name="API_RepositoryTrigger"></a>
 
 Information about a trigger for a repository.
 

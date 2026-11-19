@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Prerequisites: IAM Role and Amazon S3 Access
-<a name="bulk-load-tutorial-IAM"></a>
 
 Loading data from an Amazon Simple Storage Service (Amazon S3) bucket requires an AWS Identity and Access Management (IAM) role that has access to the bucket. Amazon Neptune assumes this role to load the data.
 

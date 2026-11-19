@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/tutorial-eb.html
 ---
 
 # Deploying an ASP.NET web app to AWS
-<a name="tutorial-eb"></a>
 
 The following tutorial demonstrates how to use the *AWS Elastic Beanstalk Deploy Application* task to deploy a web application to the AWS Cloud from an Azure DevOps build definition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC02-BP02 Validate tool inputs and outputs
-<a name="agentsec02-bp02"></a>
 
  Agents generate tool parameters from model output, which means malformed or adversarial inputs can reach tools through ordinary reasoning, not just through unauthorized callers. Schema-driven validation on inputs and sanitization on outputs keep tools operating inside their intended parameter space and help prevent error messages from disclosing internal system details.
 

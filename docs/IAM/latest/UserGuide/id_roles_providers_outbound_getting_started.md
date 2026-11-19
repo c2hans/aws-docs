@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # Getting started with outbound identity federation
-<a name="id_roles_providers_outbound_getting_started"></a>
 
 This guide shows you how to enable outbound identity federation for your AWS account and obtain your first JSON Web Token (JWT) (using the [GetWebIdentityToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html) API). You will enable the feature, establish a trust relationship with an external service, configure IAM permissions, and request a token using either AWS CLI or AWS SDK for Python (Boto3).
 

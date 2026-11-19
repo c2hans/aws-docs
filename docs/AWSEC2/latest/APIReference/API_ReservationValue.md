@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Reservati
 ---
 
 # ReservationValue
-<a name="API_ReservationValue"></a>
 
 The cost associated with the Reserved Instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Specify a Default Input Method
-<a name="configure-default-input-method"></a>
 
 To specify a default input method to be used in your users’ streaming sessions, perform the following steps.
 

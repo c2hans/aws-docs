@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_FailedD
 ---
 
 # FailedDocument
-<a name="API_FailedDocument"></a>
 
 A list of documents that could not be removed from an Amazon Q Business index. Each entry contains an error message that indicates why the document couldn't be removed from the index.
 

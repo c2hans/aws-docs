@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_Destination.
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Describes the destination file system in the replication configuration.
 

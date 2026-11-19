@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Channe
 ---
 
 # Channel
-<a name="API_Channel"></a>
 
 A channel is a named input source that training algorithms can consume.
 

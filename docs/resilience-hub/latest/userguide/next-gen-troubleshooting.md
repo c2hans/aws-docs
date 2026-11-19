@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Troubleshooting Next generation Resilience Hub
-<a name="next-gen-troubleshooting"></a>
 
 This section provides solutions for common issues you might encounter when using the next generation of Resilience Hub.
 

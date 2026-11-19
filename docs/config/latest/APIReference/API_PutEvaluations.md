@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutEvalua
 ---
 
 # PutEvaluations
-<a name="API_PutEvaluations"></a>
 
 Used by an AWS Lambda function to deliver evaluation results to AWS Config. This operation is required in every AWS Lambda function that is invoked by an AWS Config rule.
 

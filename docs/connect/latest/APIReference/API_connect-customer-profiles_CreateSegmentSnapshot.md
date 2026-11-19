@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateSegmentSnapshot
-<a name="API_connect-customer-profiles_CreateSegmentSnapshot"></a>
 
 Triggers a job to export a segment to a specified destination.
 

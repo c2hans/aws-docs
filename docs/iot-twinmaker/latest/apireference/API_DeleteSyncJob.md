@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_De
 ---
 
 # DeleteSyncJob
-<a name="API_DeleteSyncJob"></a>
 
 Delete the SyncJob.
 

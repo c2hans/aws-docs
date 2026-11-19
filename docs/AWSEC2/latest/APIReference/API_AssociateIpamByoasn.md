@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateIpamByoasn
-<a name="API_AssociateIpamByoasn"></a>
 
 Associates your Autonomous System Number (ASN) with a BYOIP CIDR that you own in the same AWS Region. For more information, see [Tutorial: Bring your ASN to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoasn.html) in the *Amazon VPC IPAM guide*.
 

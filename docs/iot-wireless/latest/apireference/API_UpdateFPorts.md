@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Upd
 ---
 
 # UpdateFPorts
-<a name="API_UpdateFPorts"></a>
 
 Object for updating the FPorts information.
 

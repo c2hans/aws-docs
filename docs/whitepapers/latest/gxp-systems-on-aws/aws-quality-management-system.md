@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/aw
 ---
 
 # AWS Quality Management System
-<a name="aws-quality-management-system"></a>
 
  As a Life Science customer with obligations under GxP requirements, you need to ensure that quality is part of manufacturing and controls during the design, development, and deployment of your GxP-regulated product. This quality assurance includes an appropriate assessment of cloud service suppliers, such as AWS, to meet the obligations of your quality system.
 

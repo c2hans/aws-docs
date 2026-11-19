@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Managing Deleted Resources for AWS Config Custom Lambda Rules
-<a name="evaluate-config_develop-rules-delete"></a>
 
 Rules reporting on deleted resources should return the evaluation result of `NOT_APPLICABLE` in order to avoid unnecessary rule evaluations.
 

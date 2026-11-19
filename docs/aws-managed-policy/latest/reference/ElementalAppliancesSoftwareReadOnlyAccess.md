@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Elem
 ---
 
 # ElementalAppliancesSoftwareReadOnlyAccess
-<a name="ElementalAppliancesSoftwareReadOnlyAccess"></a>
 
 **Description**: Read-only access to view Elemental Appliances and Software quotes and orders
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-up-ami-tools
 ---
 
 # Set up the Amazon EC2 AMI tools
-<a name="set-up-ami-tools"></a>
 
 You can use the AMI tools to create and manage Amazon S3-backed Linux AMIs. To use the tools, you must install them on your Linux instance. The AMI tools are available as both an RPM and as a .zip file for Linux distributions that don't support RPM.
 

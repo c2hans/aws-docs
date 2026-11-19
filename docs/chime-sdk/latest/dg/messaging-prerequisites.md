@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/messaging-prerequisi
 ---
 
 # Understanding the prerequisites for Amazon Chime SDK messaging
-<a name="messaging-prerequisites"></a>
 
 You need the following to use Amazon Chime SDK messaging.
 + The ability to program.

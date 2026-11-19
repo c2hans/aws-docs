@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # TextResponsePart
-<a name="API_agent-runtime_TextResponsePart"></a>
 
 Contains the part of the generated text that contains a citation, alongside where it begins and ends.
 

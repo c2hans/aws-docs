@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_GetPar
 ---
 
 # GetParallelData
-<a name="API_GetParallelData"></a>
 
 Provides information about a parallel data resource.
 

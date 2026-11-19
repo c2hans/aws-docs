@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Sharing a DB cluster snapshot
-<a name="aurora-share-snapshot"></a>
 
 Using Amazon RDS, you can share a manual DB cluster snapshot in the following ways:
 + Sharing a manual DB cluster snapshot, whether encrypted or unencrypted, enables authorized AWS accounts to copy the snapshot.

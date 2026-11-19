@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateDa
 ---
 
 # UpdateDataSource
-<a name="API_UpdateDataSource"></a>
 
 Updates a `DataSource` object.
 

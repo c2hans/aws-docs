@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ge
 ---
 
 # GetReceivedDataGrant
-<a name="API_GetReceivedDataGrant"></a>
 
 This operation returns information about a received data grant.
 

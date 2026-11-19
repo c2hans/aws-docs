@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/bumpers.html
 ---
 
 # MediaTailor bumper ad insertion
-<a name="bumpers"></a>
 
 Bumpers are short, non-skippable video or audio clips that play at the start or before the end of an ad break with AWS Elemental MediaTailor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonGrafanaCloudWatchAccess
-<a name="AmazonGrafanaCloudWatchAccess"></a>
 
 **Description**: This policy grants access to Amazon CloudWatch and the dependencies needed to use CloudWatch as a datasource within Amazon Managed Grafana.
 

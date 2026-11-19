@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/configure-main
 ---
 
 # Modify the gateway maintenance window schedule
-<a name="configure-maintenance-window-schedule"></a>
 
 If maintenance updates are turned on, your gateway automatically applies these updates according the maintenance window schedule. Urgent updates will sometimes be applied during your configured maintenance window, regardless of the maintenance updates setting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/getting-su
 ---
 
 # Getting support for AWS Marketplace
-<a name="getting-support"></a>
 
 For general AWS Marketplace issues, [contact us](https://aws.amazon.com/contact-us/). For questions about the software you purchase through AWS Marketplace, contact the software seller.
 

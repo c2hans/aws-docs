@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # DNS Firewall Foundational Rules
-<a name="resolver-dns-firewall-domain-lists"></a>
 
 DNS Firewall Foundational rules provide you with the essential DNS protections to help you get started with DNS Firewall, with two main types of foundational rules:
 + Managed domain lists, which AWS creates and maintains for you.

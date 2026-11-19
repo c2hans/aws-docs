@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supp
 ---
 
 # Supported CPU options for Amazon EC2 instance types
-<a name="cpu-options-supported-instances-values"></a>
 
 The following tables list the instance types that support specifying CPU options.
 

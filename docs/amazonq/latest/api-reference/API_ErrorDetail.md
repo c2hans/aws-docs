@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ErrorDe
 ---
 
 # ErrorDetail
-<a name="API_ErrorDetail"></a>
 
 Provides information about a Amazon Q Business request error.
 

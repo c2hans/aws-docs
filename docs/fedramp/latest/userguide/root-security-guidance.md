@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/root-security-g
 ---
 
 # Root Security Guidance
-<a name="root-security-guidance"></a>
 
 This topic discusses root security guidance.
 

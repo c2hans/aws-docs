@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # More patterns
-<a name="machinelearning-more-patterns-pattern-list"></a>
 
 **Topics**
 + [Automate the setup of inter-Region peering with AWS Transit Gateway](automate-the-setup-of-inter-region-peering-with-aws-transit-gateway.md)

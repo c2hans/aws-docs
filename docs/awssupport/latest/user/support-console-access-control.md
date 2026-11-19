@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-console-a
 ---
 
 # Adding IAM policies for the Support Center Console API operations
-<a name="support-console-access-control"></a>
 
 You must create AWS Identity and Access Management policies for the Support Center Console API operations. If you don't create these policies, you receive `AccessDenied` errors. To add these operations to your IAM policies, see [Create IAM policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html) in the *AWS Identity and Access Management User Guide*.
 

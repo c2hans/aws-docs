@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # test-e2e
-<a name="greengrass-development-kit-cli-test"></a>
 
 Use the `test-e2e` command in the AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI) to initialize, build, and run end-to-end test modules in the GDK project.
 

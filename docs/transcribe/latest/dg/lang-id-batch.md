@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/lang-id-batch.html
 ---
 
 # Language identification with batch transcription jobs
-<a name="lang-id-batch"></a>
 
 Use batch language identification to automatically identify the language, or languages, in your media file.
 

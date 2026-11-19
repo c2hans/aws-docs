@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sanke
 ---
 
 # SankeyDiagramVisual
-<a name="API_SankeyDiagramVisual"></a>
 
 A sankey diagram.
 

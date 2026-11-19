@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sesv2_example_ses
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Search and filter Amazon SES API v2 resources using an AWS SDK
-<a name="sesv2_example_sesv2_SearchFilterBasics_section"></a>
 
 The following code example shows how to:
 + Create multiple configuration sets, email identities, and tenants.

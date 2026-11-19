@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/generative-bi-q-b
 ---
 
 # Configuring an Amazon Q Business application in AWS Quick Sight
-<a name="generative-bi-q-business-configure"></a>
 
 Use the following procedure to connect an AWS Quick account with Amazon Q Business
 

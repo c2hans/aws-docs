@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/protect
 ---
 
 # Protecting Data in Transit with FIPS Endpoints
-<a name="protecting-data-in-transit-FIPS-endpoints"></a>
 
 By default, when you communicate with the WorkSpaces Applications service, whether as an administrator using the WorkSpaces Applications console, the AWS Command Line Interface (AWS CLI), or an AWS SDK, or as a user streaming from an image builder or a fleet instance, all data in transit is encrypted using TLS 1.2.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 ---
 
 # InstanceStorageInfo
-<a name="API_InstanceStorageInfo"></a>
 
 Describes the instance store features that are supported by the instance type.
 

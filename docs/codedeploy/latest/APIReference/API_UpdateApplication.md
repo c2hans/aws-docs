@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Updat
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Changes the name of an application.
 

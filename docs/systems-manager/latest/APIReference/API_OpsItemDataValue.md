@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsItemDataValue
-<a name="API_OpsItemDataValue"></a>
 
 An object that defines the value of the key and its type in the OperationalData map.
 

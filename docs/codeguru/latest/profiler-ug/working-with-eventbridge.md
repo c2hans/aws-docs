@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Working with Amazon EventBridge
-<a name="working-with-eventbridge"></a>
 
  This section helps you get started using Amazon EventBridge with Amazon CodeGuru Profiler.
 

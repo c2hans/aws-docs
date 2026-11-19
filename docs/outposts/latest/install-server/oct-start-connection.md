@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-start
 ---
 
 # start-connection
-<a name="oct-start-connection"></a>
 
 The **start-connection** command initiates a connection with the Outpost service in the Region for the Outposts server. This command sources the Signature Version 4 (SigV4) credentials from the environment variables you loaded with **export**. The connection runs asynchronously and returns immediately. To check the status of the connection, use [get-connection](oct-get-connection.md).
 

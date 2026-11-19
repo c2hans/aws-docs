@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Operate
-<a name="operate"></a>
 
 | HPCOPS06: How do you monitor your workloads to verify they are operating as expected? |
 | --- |

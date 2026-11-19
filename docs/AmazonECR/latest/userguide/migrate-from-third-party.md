@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/migrate-from-
 ---
 
 # Migrate container images from a third-party registry
-<a name="migrate-from-third-party"></a>
 
 Use this guide to perform a one-time copy of container images from an external registry into your Amazon ECR private registry where ECR Pull Through Cache is not supported.
 

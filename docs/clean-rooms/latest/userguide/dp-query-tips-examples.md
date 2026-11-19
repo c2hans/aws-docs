@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/dp-query-ti
 ---
 
 # Differential Privacy query tips and examples
-<a name="dp-query-tips-examples"></a>
 
 AWS Clean Rooms Differential Privacy uses a [general-purpose query structure](dp-sql-capabilities.md) to support a wide variety of SQL constructs such as Common Table Expressions (CTEs) for data preparation and commonly used aggregate functions such as `COUNT`, or `SUM`. In order to obfuscate the contribution of any possible user in your data by adding noise to aggregate query results at run-time, AWS Clean Rooms Differential Privacy requires that aggregate functions in the final `SELECT statement` are run on user-level data.
 

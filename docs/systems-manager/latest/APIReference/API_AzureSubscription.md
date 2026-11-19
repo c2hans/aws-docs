@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AzureSubscription
-<a name="API_AzureSubscription"></a>
 
 Information about an Azure subscription targeted by the cloud connector.
 

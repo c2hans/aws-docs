@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AddReservedInstanceAction
-<a name="API_AWSBCMPricingCalculator_AddReservedInstanceAction"></a>
 
  Represents an action to add a Reserved Instance to a bill scenario.
 

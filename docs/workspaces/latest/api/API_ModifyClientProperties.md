@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModifyClientPr
 ---
 
 # ModifyClientProperties
-<a name="API_ModifyClientProperties"></a>
 
 Modifies the properties of the specified Amazon WorkSpaces clients.
 

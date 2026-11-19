@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingSessionOutputConfig
-<a name="API_TrainingSessionOutputConfig"></a>
 
 The output configuration for a training session, including the Amazon S3 location for checkpoints and model artifacts, and optional encryption settings.
 

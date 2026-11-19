@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/edit-reaction-messa
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Edit reaction messages
-<a name="edit-reaction-messages"></a>
 
 **Note**
 The edit messages are only seen by the compliance bot installations (Wickr Enterprise) or by Data Retention bot (AWS Wickr).

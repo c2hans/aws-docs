@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/lake-formation
 ---
 
 # Configure Lake Formation permissions for Amazon DataZone
-<a name="lake-formation-permissions-for-datazone"></a>
 
 When you create an environment using the built-in data lake blueprint (**DefaultDataLake**), an AWS Glue database is added in Amazon DataZone as part of this environment's creation process. If you want to publish assets from this AWS Glue database, no additional permissions are needed.
 

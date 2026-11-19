@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fm-chat-query
 ---
 
 # Extract information from documents with document querying
-<a name="canvas-fm-chat-query"></a>
 
 **Note**
 This section assumes that you’ve completed the section above [Prerequisites for document querying](canvas-fm-chat-prereqs.md#canvas-fm-chat-prereqs-kendra).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC07-BP01 Monitor user access to EUC instances and aggregate logs in central location
-<a name="eucsec07-bp01"></a>
 
  Record events generated when users access systems to a central system to log attempted and successful user authentication, as well as access to applications. Prior to implementation, consider that the use of a central system for security events may be subject to local regulation and legal framework.
 

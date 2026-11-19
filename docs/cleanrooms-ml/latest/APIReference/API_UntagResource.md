@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Un
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes metadata tags from a specified resource.
 

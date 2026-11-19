@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Te
 ---
 
 # TextInputEvent
-<a name="API_runtime_TextInputEvent"></a>
 
 The event sent from your client application to Amazon Lex with text input from the user.
 

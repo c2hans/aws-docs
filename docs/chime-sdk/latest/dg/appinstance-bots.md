@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/appinstance-bots.htm
 ---
 
 # Using AppInstanceBots as intelligent channel agents for Amazon Chime SDK messaging
-<a name="appinstance-bots"></a>
 
 You can use `AppInstanceBots` as intelligent channel agents. The agents recognize key phrases sent via `ChannelMessages` by channel members. The bot's natural language understanding model resolves the messages. In turn, that allows one or more channel members to engage in a natural language dialog defined by the bot's model. You supply the bots, so you control the depth of dialog and integration with your enterprise systems.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/re
 ---
 
 # AWS Regions and streaming locations supported by Amazon GameLift Streams
-<a name="regions-quotas-rande"></a>
 
 An AWS Region is a collection of AWS resources in a geographic area. Each AWS Region is isolated and independent of the other Regions. For general information about AWS Regions, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *AWS General Reference*.
 

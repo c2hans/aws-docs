@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelE
 ---
 
 # ModelExplainabilityBaselineConfig
-<a name="API_ModelExplainabilityBaselineConfig"></a>
 
 The configuration for a baseline model explainability job.
 

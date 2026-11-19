@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.TEM.1] Establish dedicated testing environments
-<a name="qa.tem.1-establish-dedicated-testing-environments"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeAudioEvent
-<a name="API_streaming_MedicalScribeAudioEvent"></a>
 
 A wrapper for your audio chunks
 

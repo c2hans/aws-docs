@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteEvaluationJobItem
-<a name="API_BatchDeleteEvaluationJobItem"></a>
 
 An evaluation job for deletion, and it’s current status.
 

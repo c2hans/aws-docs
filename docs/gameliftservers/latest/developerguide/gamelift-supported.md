@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Get Amazon GameLift Servers development tools
-<a name="gamelift-supported"></a>
 
 Amazon GameLift Servers provides a set of SDKs and other tools to help you build game hosting solutions for your games. The SDKs add functionality to game servers, game clients, and backend services that enables them to interact with the Amazon GameLift Servers service. For the latest information about Amazon GameLift Servers SDK versions and compatibility, see [Amazon GameLift Servers release notes](release-notes.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/clinic.htm
 ---
 
 # .clinic
-<a name="clinic"></a>
 
 Used by the health care industry and by medical professionals.
 

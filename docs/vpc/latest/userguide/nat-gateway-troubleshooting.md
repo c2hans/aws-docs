@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-trouble
 ---
 
 # Troubleshoot NAT gateways
-<a name="nat-gateway-troubleshooting"></a>
 
 The following topics help you to troubleshoot common issues that you might encounter when creating or using a NAT gateway.
 

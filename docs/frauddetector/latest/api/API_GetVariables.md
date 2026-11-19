@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_GetVariable
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # GetVariables
-<a name="API_GetVariables"></a>
 
 Gets all of the variables or the specific variable. This is a paginated API. Providing null `maxSizePerPage` results in retrieving maximum of 100 records per page. If you provide `maxSizePerPage` the value must be between 50 and 100. To get the next page result, a provide a pagination token from `GetVariablesResult` as part of your request. Null pagination token fetches the records from the beginning.
 

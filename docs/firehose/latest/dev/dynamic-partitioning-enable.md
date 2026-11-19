@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/dynamic-partitioning
 ---
 
 # Enable dynamic partitioning in Amazon Data Firehose
-<a name="dynamic-partitioning-enable"></a>
 
 You can configure dynamic partitioning for your Firehose streams through the Amazon Data Firehose Management Console, CLI, or the APIs.
 

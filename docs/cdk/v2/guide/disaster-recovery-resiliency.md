@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/disaster-recovery-resilienc
 ---
 
 # Resilience for the AWS Cloud Development Kit (AWS CDK)
-<a name="disaster-recovery-resiliency"></a>
 
 The Amazon Web Services (AWS) global infrastructure is built around AWS Regions and Availability Zones.
 

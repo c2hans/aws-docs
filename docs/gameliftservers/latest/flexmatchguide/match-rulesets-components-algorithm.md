@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Customize the match algorithm
-<a name="match-rulesets-components-algorithm"></a>
 
 FlexMatch optimizes the default algorithm for most games to get players into acceptable matches with minimal wait time. You can customize the algorithm and adjust matchmaking for your game.
 

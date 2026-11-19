@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack-create-cli.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an ACK capability using the AWS CLI
-<a name="ack-create-cli"></a>
 
 Create an ACK capability on your Amazon EKS cluster using the AWS CLI. This procedure walks you through creating an IAM role and verifying the capability is active.
 

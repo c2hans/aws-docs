@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-oper
 ---
 
 # SAP HANA on AWS Operations Guide
-<a name="sap-hana-on-aws-operations"></a>
 
  *SAP specialists, Amazon Web Services*
 

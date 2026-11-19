@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckNoTranslationsFinding
-<a name="API_AutomatedReasoningCheckNoTranslationsFinding"></a>
 
 Indicates that no relevant logical information could be extracted from the input for validation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting and debugging apps
-<a name="troubleshooting-debugging-apps"></a>
 
 The following topics include information for troubleshooting and debugging App Studio apps.
 

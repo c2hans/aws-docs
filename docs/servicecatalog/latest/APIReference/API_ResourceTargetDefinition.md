@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # ResourceTargetDefinition
-<a name="API_ResourceTargetDefinition"></a>
 
 Information about a change to a resource attribute.
 

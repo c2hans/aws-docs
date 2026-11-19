@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/contro
 ---
 
 # Controlling Ad Avail on a Channel
-<a name="control-ad-avail-on-channel"></a>
 
 This section describes the commands available for controlling ad avail blanking on a channel.
 

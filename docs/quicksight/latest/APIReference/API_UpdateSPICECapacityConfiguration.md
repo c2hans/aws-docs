@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateSPICECapacityConfiguration
-<a name="API_UpdateSPICECapacityConfiguration"></a>
 
 Updates the SPICE capacity configuration for a Quick Sight account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTaskTimedOutEventAttributes
-<a name="API_ActivityTaskTimedOutEventAttributes"></a>
 
 Provides the details of the `ActivityTaskTimedOut` event.
 

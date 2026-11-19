@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcRou
 ---
 
 # GrpcRouteMatch
-<a name="API_GrpcRouteMatch"></a>
 
 An object that represents the criteria for determining a request match.
 

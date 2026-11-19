@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-acces
 ---
 
 # Access service networks through AWS PrivateLink
-<a name="privatelink-access-service-networks"></a>
 
 You can privately connect to a service network from your VPC using a service network VPC endpoint (service-network endpoint). A service-network endpoint lets you privately and securely access the resources and services that are associated to the service network. In this way, you can privately access multiple resources and services through a single VPC endpoint.
 

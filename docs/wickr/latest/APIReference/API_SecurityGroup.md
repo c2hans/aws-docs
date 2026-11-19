@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_SecurityGr
 ---
 
 # SecurityGroup
-<a name="API_SecurityGroup"></a>
 
 Represents a security group in a Wickr network, containing membership statistics, configuration, and all permission settings that apply to its members.
 

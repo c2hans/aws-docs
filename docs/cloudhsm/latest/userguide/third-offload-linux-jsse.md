@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/third-offload-
 ---
 
 # AWS CloudHSM SSL/TLS offload on Linux using Tomcat with JSSE
-<a name="third-offload-linux-jsse"></a>
 
 This topic provides step-by-step instructions for setting up SSL/TLS offload using Java Secure Socket Extension (JSSE) with the AWS CloudHSM JCE SDK.
 

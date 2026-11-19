@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-
 ---
 
 # IVS Infrastructure Security
-<a name="security-infrastructure"></a>
 
 As a managed service, Amazon IVS is protected by the AWS global network security procedures. These are described in [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance/).
 

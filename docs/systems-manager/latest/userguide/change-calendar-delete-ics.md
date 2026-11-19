@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # Deleting all events imported from a third-party calendar
-<a name="change-calendar-delete-ics"></a>
 
 If you no longer want events that you imported from a third-party provider, you can delete the imported iCalendar `.ics` file.
 

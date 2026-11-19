@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/security_
 ---
 
 # Resource-based policy examples for AWS Organizations
-<a name="security_iam_resource-based-policy-examples"></a>
 
 The following code examples show how you can use resource-based delegation policies. For more information, see [Delegated administrator for AWS Organizations](orgs_delegate_policies.md).
 

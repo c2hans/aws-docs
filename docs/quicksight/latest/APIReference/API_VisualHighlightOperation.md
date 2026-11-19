@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualHighlightOperation
-<a name="API_VisualHighlightOperation"></a>
 
 Defines what initiates a highlight operation on a visual, such as a click or hover.
 

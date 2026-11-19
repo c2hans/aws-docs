@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ccm-and-qpm
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS documentation
 <a name="aws-documentation"></a>

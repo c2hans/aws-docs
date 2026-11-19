@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/step-by-step-g
 ---
 
 # Set up step-by-step guides in Connect Customer
-<a name="step-by-step-guided-experiences"></a>
 
 Step-by-step guides walk users through custom user interfaces (UIs) that show them what to do at any given moment in a workflow. You can create single-step or complex workflows like claim submissions or travel rebookings for human agents, or you can create interactive forms and cards for end customer chat conversations.
 

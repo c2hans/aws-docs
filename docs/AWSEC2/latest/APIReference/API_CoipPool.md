@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CoipPool.
 ---
 
 # CoipPool
-<a name="API_CoipPool"></a>
 
 Describes a customer-owned address pool.
 

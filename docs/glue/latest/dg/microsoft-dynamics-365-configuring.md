@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/microsoft-dynamics-365-co
 ---
 
 # Configuring Microsoft Dynamics 365 CRM
-<a name="microsoft-dynamics-365-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Microsoft Dynamics 365 CRM, you must meet these requirements:
 

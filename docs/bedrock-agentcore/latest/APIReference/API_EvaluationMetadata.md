@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # EvaluationMetadata
-<a name="API_EvaluationMetadata"></a>
 
 Metadata for the evaluation, including session-specific ground truth data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeIAMPolicyAssignment
-<a name="API_DescribeIAMPolicyAssignment"></a>
 
 Describes an existing IAM policy assignment, as specified by the assignment name.
 

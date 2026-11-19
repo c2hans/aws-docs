@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StartAut
 ---
 
 # StartAutomatedReasoningPolicyTestWorkflow
-<a name="API_StartAutomatedReasoningPolicyTestWorkflow"></a>
 
 Initiates a test workflow to validate Automated Reasoning policy tests. The workflow executes the specified tests against the policy and generates validation results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RecommenderConfig
-<a name="API_connect-customer-profiles_RecommenderConfig"></a>
 
 Configuration settings that define the behavior and parameters of a recommender.
 

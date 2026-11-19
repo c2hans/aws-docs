@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Phase 3 AI-Assisted Current State Documentation
-<a name="phase-3-ai-assisted-current-state-documentation"></a>
 
 ## AI-assisted resource mapping
 <a name="ai-assisted-resource-mapping.e6f62b02-2013-5238-bffa-79320f6cec56"></a>

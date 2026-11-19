@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/com.html
 ---
 
 # .com
-<a name="com"></a>
 
 Used for commercial websites. It is the most popular extension on the internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Roles and permissions
-<a name="roles-and-permissions"></a>
 
  This guidance uses AWS CodeBuild, AWS CloudFormation, and AWS CodePipeline for Continuous Delivery (CD) and AWS Glue and Amazon Athena for scientific analysis using a genomics data lake. Review the following CodeBuild, AWS CloudFormation, CodePipeline, AWS Glue, and Amazon Athena permissions to ensure that you have the appropriate permissions activated.
 

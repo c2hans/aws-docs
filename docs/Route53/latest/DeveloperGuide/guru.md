@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/guru.html
 ---
 
 # .guru
-<a name="guru"></a>
 
 Used by those who want to share their knowledge about a variety of subjects.
 

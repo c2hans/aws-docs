@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/opt-lockin
 ---
 
 # Optimistic locking for asset model writes
-<a name="opt-locking-for-model"></a>
 
  When updating an asset model, an user does the following:
 

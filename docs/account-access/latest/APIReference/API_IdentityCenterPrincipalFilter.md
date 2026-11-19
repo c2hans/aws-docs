@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentityCenterPrincipalFilter
-<a name="API_IdentityCenterPrincipalFilter"></a>
 
 Specifies filter criteria for an IAM Identity Center principal.
 

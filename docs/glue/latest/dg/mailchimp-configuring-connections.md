@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mailchimp-configuring-con
 ---
 
 # Configuring Mailchimp connections
-<a name="mailchimp-configuring-connections"></a>
 
  Mailchimp supports following two types for authentication mechanism:
 + Mailchimp supports the `AUTHORIZATION_CODE` grant type.

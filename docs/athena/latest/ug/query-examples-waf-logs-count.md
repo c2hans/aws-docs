@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-examples-waf-logs
 ---
 
 # Count referrers, IP addresses, or matched rules
-<a name="query-examples-waf-logs-count"></a>
 
 The examples in this section query for counts of log items of interest.
 + [Count the number of referrers that contain a specified term](#waf-example-count-referrers-with-specified-term)

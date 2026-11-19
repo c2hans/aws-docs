@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sy
 ---
 
 # SyncSchedule
-<a name="API_agent_SyncSchedule"></a>
 
 The recurring schedule on which a managed knowledge base connector automatically syncs its data source. Specify exactly one of `daily`, `weekly`, or `monthly`.
 

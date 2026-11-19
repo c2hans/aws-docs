@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/i
 ---
 
 # AWS logging and monitoring tools
-<a name="incident-response"></a>
 
 This section provides an overview of the tools available for logging and monitoring in AWS Network Firewall for standard AWS security purposes. For more information about logging and monitoring in Network Firewall see [Logging and monitoring in AWS Network Firewall](logging-monitoring.md).
 

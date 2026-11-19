@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_UpdateCu
 ---
 
 # UpdateCustomModelDeployment
-<a name="API_UpdateCustomModelDeployment"></a>
 
  Updates a custom model deployment with a new custom model. This allows you to deploy updated models without creating new deployment endpoints.
 

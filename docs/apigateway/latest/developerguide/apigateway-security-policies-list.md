@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Supported security policies
-<a name="apigateway-security-policies-list"></a>
 
 The following tables describe the [security policies](apigateway-security-policies.md) that can be specified for each REST API endpoint type and custom domain name type. These policies allow you to control incoming connections. API Gateway only supports TLS 1.2 on egress. You can update the security policy for your API or custom domain name at any time.
 

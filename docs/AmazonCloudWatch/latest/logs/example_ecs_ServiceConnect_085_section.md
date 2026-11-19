@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_ecs
 ---
 
 # Configure container service connectivity
-<a name="example_ecs_ServiceConnect_085_section"></a>
 
 The following code example shows how to:
 + Create the VPC infrastructure

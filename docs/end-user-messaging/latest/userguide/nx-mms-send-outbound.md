@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-m
 ---
 
 # Outbound messaging
-<a name="nx-mms-send-outbound"></a>
 
 You send an MMS message with the `SendMediaMessage` operation, referencing media that you store in Amazon S3. Use the AWS CLI to send from your application. The example uses a phone pool as the origination identity, which is the recommended approach; you can also specify a single phone number instead. Before you send, make sure you have an MMS-capable origination identity and your media stored in Amazon S3. For setup, see [How to get set up](nx-mms-get-set-up.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Ec2Lau
 ---
 
 # Ec2LaunchTemplate
-<a name="API_Ec2LaunchTemplate"></a>
 
 Contains information about the Amazon EC2 launch template involved in a GuardDuty finding, including unique identifiers of the Amazon EC2 instances.
 

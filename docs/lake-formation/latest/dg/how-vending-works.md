@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/how-vending-wor
 ---
 
 # How Lake Formation application integration works
-<a name="how-vending-works"></a>
 
 This section describes how to use application integration API operations to integrate a third-party application (query engine) with Lake Formation.
 

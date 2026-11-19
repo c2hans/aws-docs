@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/edit
 ---
 
 # Edit attributes for your Gateway Load Balancer
-<a name="edit-load-balancer-attributes"></a>
 
 After you create a Gateway Load Balancer, you can edit its load balancer attributes.
 

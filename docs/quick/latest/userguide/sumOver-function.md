@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sumOver-function.
 ---
 
 # sumOver
-<a name="sumOver-function"></a>
 
  The `sumOver` function calculates the sum of a measure partitioned by a list of dimensions.
 

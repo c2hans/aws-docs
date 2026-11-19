@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # General template snippets
-<a name="quickref-general"></a>
 
 The following examples show different CloudFormation template features that aren't specific to an AWS service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/create-ch
 ---
 
 # Console Instructions for Creating an IVS Channel
-<a name="create-channel-console"></a>
 
 These steps are divided into three phases: initial channel setup, set up to auto-record to Amazon S3 (optional), and final channel creation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-runjobs
 ---
 
 # Tutorial: Demonstrate remote actions (jobs) with the AWS IoT Device Client
-<a name="iot-dc-runjobs"></a>
 
 In these tutorials, you'll configure and deploy jobs to your Raspberry Pi to demonstrate how you can send remote operations to your IoT devices.
 

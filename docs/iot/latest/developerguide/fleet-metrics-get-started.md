@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/fleet-metrics-
 ---
 
 # Getting started tutorial
-<a name="fleet-metrics-get-started"></a>
 
 In this tutorial, you create a [fleet metric](iot-fleet-metrics.md) to monitor your sensors' temperatures to detect potential anomalies. When creating the fleet metric, you define an [aggregation query](index-aggregate.md) that detects the number of sensors with temperatures exceeding 80 degrees Fahrenheit. You specify the query to run every 60 seconds and the query results are emitted to CloudWatch, where you can view the number of sensors that have potential high-temperature risks, and set alarms. To complete this tutorial, you'll use [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
 

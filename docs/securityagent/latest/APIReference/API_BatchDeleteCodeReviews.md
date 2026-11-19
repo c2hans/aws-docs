@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchDeleteCodeReviews
-<a name="API_BatchDeleteCodeReviews"></a>
 
 Deletes one or more code reviews from an agent space.
 

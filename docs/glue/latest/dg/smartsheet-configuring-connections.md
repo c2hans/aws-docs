@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartsheet-configuring-co
 ---
 
 # Configuring Smartsheet connections
-<a name="smartsheet-configuring-connections"></a>
 
  Smartsheet supports `AUTHORIZATION_CODE` grant type for OAuth2.
 

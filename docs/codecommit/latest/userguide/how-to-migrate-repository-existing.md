@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-migra
 ---
 
 # Migrate a Git repository to AWS CodeCommit
-<a name="how-to-migrate-repository-existing"></a>
 
 You can migrate an existing Git repository to a CodeCommit repository. The procedures in this topic show you how to migrate a project hosted on another Git repository to CodeCommit. As part of this process, you:
 + Complete the initial setup required for CodeCommit.

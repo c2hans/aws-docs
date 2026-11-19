@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixAvoidanceArea
-<a name="API_RouteMatrixAvoidanceArea"></a>
 
 Area to be avoided.
 

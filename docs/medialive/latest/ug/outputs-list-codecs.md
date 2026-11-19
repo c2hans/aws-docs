@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/outputs-list-codecs.
 ---
 
 # Codecs supported in MediaLive outputs
-<a name="outputs-list-codecs"></a>
 
 MediaLive supports the following video codecs in outputs.
 + AV1

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DSQL::Cluster
-<a name="aws-resource-dsql-cluster"></a>
 
 The `AWS::DSQL::Cluster` resource specifies an cluster. You can use this resource to create, modify, and manage clusters.
 
@@ -18,6 +17,8 @@ Creating multi-Region clusters requires additional IAM permissions beyond those 
 The witness Region specified in `multiRegionProperties.witnessRegion` cannot be the same as the cluster's Region.
 
  **Required permissions**
+
+To create a cluster, you need the following IAM permissions. Some are required only when you specify the related property.
 
 dsql:CreateCluster
 Required to create a cluster.
@@ -43,11 +44,11 @@ Resources: `arn:aws:dsql:region:account-id:cluster/*`
 Condition Keys: `dsql:WitnessRegion` (matching the specified witness region)
 
 kms:CreateGrant
-When specifying `kmsEncryptionKey`, permission to create grants on the KMS key.
+When specifying `KmsEncryptionKey`, permission to create grants on the AWS Key Management Service (AWS KMS) key.
 Resources: ARN of the specified KMS key
 
 kms:DescribeKey
-When specifying `kmsEncryptionKey`, permission to retrieve detailed information about the KMS key.
+When specifying `KmsEncryptionKey`, permission to retrieve detailed information about the KMS key.
 Resources: ARN of the specified KMS key
 
 ## Syntax
@@ -99,18 +100,18 @@ Whether deletion protection is enabled on this cluster.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsEncryptionKey`  <a name="cfn-dsql-cluster-kmsencryptionkey"></a>
-The KMS key identifier to use for encrypting the cluster. You can specify the KMS key using any of the following:
-+ Key ID: A unique identifier for the key (e.g., `1234abcd-12ab-34cd-56ef-1234567890ab`)
-+ Key ARN: The Amazon Resource Name (ARN) of the key (e.g., `arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab`)
-+ Alias name: A display name for the key (e.g., `alias/my-key`)
-+ Alias ARN: The ARN of the key alias (e.g., `arn:aws:kms:us-east-1:123456789012:alias/my-key`)
+The identifier of the AWS Key Management Service (AWS KMS) key to use for encrypting the cluster. You can specify the KMS key using any of the following:
++ Key ID: A unique identifier for the key (for example, `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`)
++ Key ARN: The Amazon Resource Name (ARN) of the key (for example, `arn:aws:kms:aa-example-1:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`)
++ Alias name: A display name for the key (for example, `alias/my-key`)
++ Alias ARN: The ARN of the key alias (for example, `arn:aws:kms:aa-example-1:111122223333:alias/my-key`)
 If you don't specify a value, the service uses `AWS_OWNED_KEY` by default.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MetricGroups`  <a name="cfn-dsql-cluster-metricgroups"></a>
-The metric groups that you enabled for advanced monitoring on the created cluster.
+The advanced monitoring metric groups to enable on the cluster.
 *Required*: No
 *Type*: Array of [MetricGroup](aws-properties-dsql-cluster-metricgroup.md)
 *Maximum*: `20`
@@ -178,7 +179,7 @@ The unique identifier assigned to the cluster upon creation.
 Property description not available.
 
 `ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
-Amazon Resource Name.
+The Amazon Resource Name (ARN) of the cluster.
 
 `Status`  <a name="Status-fn::getatt"></a>
 The current status of the cluster. Possible values include: CREATING, ACTIVE, DELETING, FAILED.
@@ -191,7 +192,7 @@ The cluster can have two additional status values when working with multi-Region
 Property description not available.
 
 `VpcEndpointServiceName`  <a name="VpcEndpointServiceName-fn::getatt"></a>
-The name of the VPC endpoint service that provides access to your cluster. Use this endpoint to establish a private connection between your VPC and the cluster.
+The name of the virtual private cloud (VPC) endpoint service that provides access to your cluster. Use this endpoint to establish a private connection between your VPC and the cluster.
 
 ## See also
 <a name="aws-resource-dsql-cluster--seealso"></a>
@@ -202,4 +203,4 @@ The name of the VPC endpoint service that provides access to your cluster. Use t
 
  See [Configuring multi-Region clusters using CloudFormation](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/mr-cluster-setup.html) to create multi-Region clusters using this CloudFormation resource.
 
- See [Encrypting Aurora DSQL clusters](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/encryption.html) for more information about encryption options and using customer managed KMS keys.
+ For more information about encryption options and using customer managed KMS keys, see [Data encryption for Amazon Aurora DSQL](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/data-encryption.html).

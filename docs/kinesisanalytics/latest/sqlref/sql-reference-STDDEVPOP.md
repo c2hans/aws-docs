@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # STDDEV\_POP
-<a name="sql-reference-STDDEVPOP"></a>
 
 Returns the square root of the [VAR\_POP](sql-reference-VARPOP.md) population variance for <number expression>, evaluated for each row remaining in the group.
 

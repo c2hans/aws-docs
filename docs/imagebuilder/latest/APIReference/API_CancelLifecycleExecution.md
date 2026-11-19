@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Can
 ---
 
 # CancelLifecycleExecution
-<a name="API_CancelLifecycleExecution"></a>
 
 Cancels a lifecycle execution – a single run of lifecycle actions that a lifecycle policy or a [StartResourceStateUpdate](API_StartResourceStateUpdate.md) request started. You can only cancel an execution that hasn't reached a terminal state. Cancellation is asynchronous and doesn't undo completed lifecycle actions.
 

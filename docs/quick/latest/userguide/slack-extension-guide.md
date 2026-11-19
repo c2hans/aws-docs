@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/slack-extension-g
 ---
 
 # AWS Quick Slack extension
-<a name="slack-extension-guide"></a>
 
 **Note**
 Before you deploy a Slack extension as an author, your AWS Quick admin must [configure AWS Quick access to Slack](https://docs.aws.amazon.com/quicksuite/latest/userguide/slack-extension.html).

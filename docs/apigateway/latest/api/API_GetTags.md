@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetTags.html
 ---
 
 # GetTags
-<a name="API_GetTags"></a>
 
 Gets the Tags collection for a given resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-work-w
 ---
 
 # How to work with the .NET agent
-<a name="dotnet-work-with-agent"></a>
 
 ## Experiences
 <a name="experiences"></a>

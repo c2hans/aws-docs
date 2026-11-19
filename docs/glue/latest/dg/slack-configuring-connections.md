@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/slack-configuring-connect
 ---
 
 # Configuring Slack connections
-<a name="slack-configuring-connections"></a>
 
  Slack supports the `AUTHORIZATION_CODE` grant type for OAuth 2.
 

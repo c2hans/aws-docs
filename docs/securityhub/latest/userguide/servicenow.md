@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/servicenow.
 ---
 
 # Integrations for ServiceNow
-<a name="servicenow"></a>
 
  This topic describes how to access the Security Hub console to configure an integration for ServiceNow ITSM. Before completing any of the procedures in this topic, you must have a subscription to ServiceNow ITSM before you can add this integration. For more information, see [the pricing page](https://www.servicenow.com/lpgp/pricing-itsm.html) on the ServiceNow website.
 

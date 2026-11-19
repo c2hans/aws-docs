@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customiza
 ---
 
 # Delete a custom model
-<a name="model-customization-delete"></a>
 
 To delete a custom model, choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-replicatio
 ---
 
 # Failback replication errors
-<a name="failback-replication-errors"></a>
 
 The following errors can occur during reverse replication (failback data sync) in AWS Elastic Disaster Recovery. Each section describes the error message, its cause, and the resolution steps.
 

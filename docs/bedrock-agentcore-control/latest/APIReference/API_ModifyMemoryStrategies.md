@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ModifyMemoryStrategies
-<a name="API_ModifyMemoryStrategies"></a>
 
 Contains information for modifying memory strategies.
 

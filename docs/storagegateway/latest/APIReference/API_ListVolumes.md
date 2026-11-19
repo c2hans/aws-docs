@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_L
 ---
 
 # ListVolumes
-<a name="API_ListVolumes"></a>
 
 Lists the iSCSI stored volumes of a gateway. Results are sorted by volume ARN. The response includes only the volume ARNs. If you want additional volume information, use the [DescribeStorediSCSIVolumes](API_DescribeStorediSCSIVolumes.md) or the [DescribeCachediSCSIVolumes](API_DescribeCachediSCSIVolumes.md) API.
 

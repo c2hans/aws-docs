@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSecu
 ---
 
 # DBSecurityGroup
-<a name="API_DBSecurityGroup"></a>
 
 Contains the details for an Amazon RDS DB security group.
 

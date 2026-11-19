@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIAMRoleManagerServiceRolePolicy
-<a name="AWSIAMRoleManagerServiceRolePolicy"></a>
 
 **Description**: Allows IAM Role Manager to manage resources in your account on your behalf.
 

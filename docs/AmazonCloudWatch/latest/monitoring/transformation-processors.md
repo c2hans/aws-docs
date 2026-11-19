@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/trans
 ---
 
 # Transformation processors
-<a name="transformation-processors"></a>
 
 Transformation processors modify the structure of log events by adding, copying, moving, or removing fields.
 

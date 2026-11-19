@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateBenefitApplication
-<a name="API_benefits_UpdateBenefitApplication"></a>
 
 Updates an existing benefit application with new information while maintaining revision control.
 

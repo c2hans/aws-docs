@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/send-channel-msg-wit
 ---
 
 # Send a channel message with notifications enabled in Amazon Chime SDK messaging
-<a name="send-channel-msg-with-notifications"></a>
 
 The [SendChannelMessage](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_SendChannelMessage.html) API has an optional `PushNotification` attribute that the Amazon Chime SDK uses to build the push notification to send to Amazon Pinpoint. Currently, the Amazon Chime SDK only supports the notification title and body fields.
 

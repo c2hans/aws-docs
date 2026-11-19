@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTRedir
 ---
 
 # Request redirection and the REST API
-<a name="RESTRedirect"></a>
 
 **Topics**
 + [Redirects and HTTP user-agents](#RESTRedirectHTTPUserAgents)

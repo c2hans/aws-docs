@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-llms-finet
 ---
 
 # Autopilot model deployment and predictions
-<a name="autopilot-llms-finetuning-deploy-models"></a>
 
 After fine-tuning a large language model (LLM), you can deploy the model for real-time text generation by setting up an endpoint to obtain interactive predictions.
 

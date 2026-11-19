@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Major version upgrades for RDS for SQL Server
-<a name="USER_UpgradeDBInstance.SQLServer.Major"></a>
 
 Amazon RDS currently supports the following major version upgrades to a Microsoft SQL Server DB instance.
 

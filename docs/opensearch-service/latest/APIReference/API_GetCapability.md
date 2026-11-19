@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetCapability
-<a name="API_GetCapability"></a>
 
 Retrieves information about a registered capability for an OpenSearch UI application, including its configuration and current status.
 

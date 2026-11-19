@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/sources.html
 ---
 
 # Managing sources in MediaConnect
-<a name="sources"></a>
 
  A source in MediaConnect can be anything that provides a live video feed, such as the following:
 + An on-premises encoder

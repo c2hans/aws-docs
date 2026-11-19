@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListIm
 ---
 
 # ListImages
-<a name="API_ListImages"></a>
 
 Lists the images in your account and their properties. The list can be filtered by creation time or modified time, and whether the image name contains a specified string.
 

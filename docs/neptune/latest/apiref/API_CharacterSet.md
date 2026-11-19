@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CharacterSet.h
 ---
 
 # CharacterSet
-<a name="API_CharacterSet"></a>
 
 Specifies a character set.
 

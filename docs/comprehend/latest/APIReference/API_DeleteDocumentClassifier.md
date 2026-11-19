@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Delet
 ---
 
 # DeleteDocumentClassifier
-<a name="API_DeleteDocumentClassifier"></a>
 
 Deletes a previously created document classifier
 

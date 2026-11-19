@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/complex-scenario-cre
 ---
 
 # Identify the access requirements
-<a name="complex-scenario-create-trusted-entity-role-step1"></a>
 
 You must identify the services that MediaLive will interact with in your deployment. Then within each service, you must identify the operations and resources that MediaLive needs access to. Finally, you must design the IAM policies that handle these requirements.
 

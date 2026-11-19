@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Delivery
-<a name="API_Delivery"></a>
 
 This structure contains information about one *delivery* in your account.
 

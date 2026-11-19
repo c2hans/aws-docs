@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/using-orgs-
 ---
 
 # Enabling trusted access for AWS Account Management
-<a name="using-orgs-trusted-access"></a>
 
 Enabling trusted access for AWS Security Incident Response allows the delegated administrator of the management account to modify the information and metadata (for example, primary or alternate contact details) specific to each member account in AWS Organizations.
 

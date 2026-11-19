@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # RuleGroupUpdate
-<a name="API_wafRegional_RuleGroupUpdate"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

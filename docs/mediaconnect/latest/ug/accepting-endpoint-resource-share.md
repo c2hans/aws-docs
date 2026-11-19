@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/accepting-endpoin
 ---
 
 # Accepting a resource share in MediaConnect
-<a name="accepting-endpoint-resource-share"></a>
 
 You can accept a resource share invitation to use endpoints that another AWS account shares with you, or reject it to decline. Invitations appear under **Inbound shares** in the MediaConnect console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ToolSchema
-<a name="API_ToolSchema"></a>
 
 A tool schema for a gateway target. This structure defines the schema for a tool that the target exposes through the Model Context Protocol.
 

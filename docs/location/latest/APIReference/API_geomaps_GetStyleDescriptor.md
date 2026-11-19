@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps
 ---
 
 # GetStyleDescriptor
-<a name="API_geomaps_GetStyleDescriptor"></a>
 
  `GetStyleDescriptor` returns information about the style.
 

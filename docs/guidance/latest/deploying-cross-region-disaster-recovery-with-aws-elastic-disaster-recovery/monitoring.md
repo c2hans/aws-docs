@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Monitoring AWS Elastic Disaster Recovery
-<a name="monitoring"></a>
 
 ## Monitoring resources
 <a name="monitoring-resources"></a>

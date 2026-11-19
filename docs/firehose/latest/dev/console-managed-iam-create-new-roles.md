@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/console-managed-iam-
 ---
 
 # Create a new IAM role from console
-<a name="console-managed-iam-create-new-roles"></a>
 
 Alternatively, you could also use the Firehose console to create a new role on your behalf.
 

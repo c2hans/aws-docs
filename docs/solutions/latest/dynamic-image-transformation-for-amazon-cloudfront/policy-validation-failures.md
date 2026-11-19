@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Policy validation failures
-<a name="policy-validation-failures"></a>
 
  **Symptoms:** - 400 Bad Request errors when creating policies - Policy creation fails in Admin UI - "Invalid policy JSON" error messages
 

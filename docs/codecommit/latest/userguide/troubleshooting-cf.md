@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/troubleshoot
 ---
 
 # Troubleshooting configuration errors and AWS CodeCommit
-<a name="troubleshooting-cf"></a>
 
 The following information might help you troubleshoot configuration errors you might see when connecting with AWS CodeCommit repositories.
 

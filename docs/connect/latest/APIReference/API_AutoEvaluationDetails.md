@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AutoEval
 ---
 
 # AutoEvaluationDetails
-<a name="API_AutoEvaluationDetails"></a>
 
 Details about automated evaluations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-enable-
 ---
 
 # Using Amazon SQS, Amazon SNS, and Lambda
-<a name="how-to-enable-disable-notification-intro"></a>
 
 Enabling notifications is a bucket-level operation. You store notification configuration information in the *notification* subresource that's associated with a bucket. After you create or change the bucket notification configuration, it usually takes about five minutes for the changes to take effect. When the notification is first enabled, an `s3:TestEvent` occurs. You can use any of the following methods to manage notification configuration:
 + **Using the Amazon S3 console** — You can use the console UI to set a notification configuration on a bucket without having to write any code. For more information, see [Enabling and configuring event notifications using the Amazon S3 console](enable-event-notifications.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-r
 ---
 
 # Create rules that send email notifications
-<a name="contact-lens-rules-email"></a>
 
 You can create rules that send email notifications to people in your organization. This helps you to respond more expediently to potential issues in your contact center. For example, you can create a rule to notify:
 + A team supervisor when there is an account escalation or cancellation.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryStatistics
-<a name="API_ProtectedQueryStatistics"></a>
 
 Contains statistics about the execution of the protected query.
 

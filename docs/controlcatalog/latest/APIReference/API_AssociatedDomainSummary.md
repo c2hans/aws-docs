@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_A
 ---
 
 # AssociatedDomainSummary
-<a name="API_AssociatedDomainSummary"></a>
 
 A summary of the domain that a common control or an objective belongs to.
 

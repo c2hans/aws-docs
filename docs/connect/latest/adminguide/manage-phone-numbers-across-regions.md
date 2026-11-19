@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-phone-n
 ---
 
 # Manage phone numbers across Regions using Connect Customer APIs
-<a name="manage-phone-numbers-across-regions"></a>
 
 The topics in this section describe how to manage phone numbers across AWS Regions by using Connect Customer APIs.
 

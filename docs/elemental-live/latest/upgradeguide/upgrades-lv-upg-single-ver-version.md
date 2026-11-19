@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/upgra
 ---
 
 # Step A: Get ready to upgrade
-<a name="upgrades-lv-upg-single-ver-version"></a>
 
 The following steps prepare you for upgrading. Perform these steps to ensure that you don't lose any data during the upgrade process.
 

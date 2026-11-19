@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/c4scep-monito
 ---
 
 # Automate Connector for SCEP using EventBridge
-<a name="c4scep-monitor-eventbridge-events"></a>
 
 You can use [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cwe-now-eb.html) to automate your AWS services and respond automatically to system events such as application availability issues or resource changes. Events from AWS services are delivered to EventBridge in near-real time. You can write simple rules to indicate which events are of interest to you and the automated actions to take when an event matches a rule. EventBridge are published at least once. For more information, see [Creating rules that react to events in EventBridge](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-Rule.html).
 

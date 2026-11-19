@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Resourc
 ---
 
 # ResourceWarning
-<a name="API_ResourceWarning"></a>
 
 Represents a warning about a resource in a Region switch plan.
 

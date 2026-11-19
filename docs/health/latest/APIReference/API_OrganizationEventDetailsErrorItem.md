@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Organizat
 ---
 
 # OrganizationEventDetailsErrorItem
-<a name="API_OrganizationEventDetailsErrorItem"></a>
 
 Error information returned when a [DescribeEventDetailsForOrganization](https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeEventDetailsForOrganization.html) operation can't find a specified event.
 
@@ -22,7 +21,7 @@ A message that describes the error.
 If you call the `DescribeEventDetailsForOrganization` operation and receive one of the following errors, follow the recommendations in the message:
 + We couldn't find a public event that matches your request. To find an event that is account specific, you must enter an AWS account ID in the request.
 + We couldn't find an account specific event for the specified AWS account. To find an event that is public, you must enter a null value for the AWS account ID in the request.
-+ Your AWS account doesn't include the AWS Support plan required to use the AWS Health API. You must have either a Business, Enterprise On-Ramp, or Enterprise Support plan.
++ Your AWS account doesn't include the AWS Support plan required to use the AWS Health API. You must have either a AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan.
 Type: String
 Required: No
 

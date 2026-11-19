@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/terraform.ht
 ---
 
 # Configure Terraform Cloud for AppFabric
-<a name="terraform"></a>
 
 HashiCorp Terraform Cloud is the world’s most widely used multi-cloud provisioning product. The Terraform ecosystem has more than 3,000 providers, 14,000 modules, and 250 million downloads. Terraform Cloud is the fastest way to adopt Terraform, providing everything practitioners, teams, and global businesses need to create and collaborate on infrastructure and manage risks for security, compliance, and operational constraints.
 

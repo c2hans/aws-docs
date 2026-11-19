@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Create the Amazon SNS topic
-<a name="sms-workforce-management-private-sns"></a>
 
 The steps for creating Amazon SNS topics for work team notifications are similar to the steps in [Getting Started](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) in the *Amazon SNS Developer Guide*, with one significant addition—you must add an access policy so that Amazon SageMaker AI can publish messages to the topic on your behalf.
 

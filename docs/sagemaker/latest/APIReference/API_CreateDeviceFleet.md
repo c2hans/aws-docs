@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateDeviceFleet
-<a name="API_CreateDeviceFleet"></a>
 
 Creates a device fleet.
 

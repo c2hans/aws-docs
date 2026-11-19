@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Integration options overview
-<a name="targeted-business-outcomes"></a>
 
 Multiple integration patterns exist for connecting AWS services with Learning Management Systems (LMS), each offering different advantages depending on your specific use case. Organizations should evaluate which approach (or combination of approaches) best meets their requirements by considering factors such as:
 + Technical complexity and available expertise

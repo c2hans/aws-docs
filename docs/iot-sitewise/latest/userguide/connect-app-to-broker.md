@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/connect-ap
 ---
 
 # Connect an application to the EMQX broker on AWS IoT SiteWise Edge
-<a name="connect-app-to-broker"></a>
 
 The EMQX broker uses Transport Layer Security (TLS) on port 8883 to encrypt all communications, ensuring your data remains protected during transmission. This section walks you through the steps to establish connections between your applications and the EMQX broker. Following these steps helps maintain the integrity and confidentiality of your industrial data. The connection process involves two main approaches: using automated IP discovery through components, or manually configuring DNS names and IP addresses as Subject Alternative Names (SANs) in your TLS certificates. Each method has its own advantages depending on your network setup and security requirements. This documentation will guide you through both options.
 

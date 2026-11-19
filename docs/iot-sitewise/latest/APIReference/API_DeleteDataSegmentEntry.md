@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Del
 ---
 
 # DeleteDataSegmentEntry
-<a name="API_DeleteDataSegmentEntry"></a>
 
 Contains information about a data segment entry to delete.
 

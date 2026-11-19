@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/monitoring-mpts-
 ---
 
 # Monitoring MPTS outputs
-<a name="monitoring-mpts-outputs"></a>
 
 **Topics**
 + [Monitoring the progress of all MPTSes](#monitoring-the-progress-of-all-mpts-outputs)

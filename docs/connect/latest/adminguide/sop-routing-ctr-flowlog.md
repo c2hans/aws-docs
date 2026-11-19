@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sop-routing-ct
 ---
 
 # Isolate routing problems by using the contact record (CTR) and contact flow logs
-<a name="sop-routing-ctr-flowlog"></a>
 
 The contact record (CTR) and contact flow logs are the **dividing line** that tells you whether a routing or contact-handling problem occurred inside Connect Customer (routing configuration and contact flows) or outside it (carrier or device). This is the same approach that audio quality troubleshooting uses when it treats the call recording as the dividing line. This page shows you which fields to read, what to conclude from them, and where to go next.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/billing
 ---
 
 # Logging and monitoring in AWS Cost Management
-<a name="billing-security-logging"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your AWS account. There are several tools available to monitor your Billing and Cost Management usage.
 

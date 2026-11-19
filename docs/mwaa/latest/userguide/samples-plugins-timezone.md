@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-plugins-ti
 ---
 
 # Changing a DAG's timezone on Amazon MWAA
-<a name="samples-plugins-timezone"></a>
 
 Apache Airflow schedules your directed acyclic graph (DAG) in UTC\+0 by default. The following steps present how you can change the timezone in which Amazon MWAA runs your DAGs with [Pendulum](https://pypi.org/project/pendulum/). Optionally, this topic demonstrates how you can create a custom plugin to change the timezone for your environment's Apache Airflow logs.
 

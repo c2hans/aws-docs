@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/scope-
 ---
 
 # Scope down access to credential providers by workload identity
-<a name="scope-credential-provider-access"></a>
 
 You can use IAM policies to control which workload identities have access to specific credential providers. This enables fine-grained access control, ensuring that only authorized agents can retrieve credentials for particular services.
 

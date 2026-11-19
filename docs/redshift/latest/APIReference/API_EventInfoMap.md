@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_EventIn
 ---
 
 # EventInfoMap
-<a name="API_EventInfoMap"></a>
 
 Describes event information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-sdk.htm
 ---
 
 # Send data with AWS SDK
-<a name="writing-with-sdk"></a>
 
 You can use the [Amazon Data Firehose API](https://docs.aws.amazon.com/firehose/latest/APIReference/) to send data to a Firehose stream using the [AWS SDK for Java](https://aws.amazon.com/sdk-for-java/), [.NET](https://aws.amazon.com/sdk-for-net/), [Node.js](https://aws.amazon.com/sdk-for-javascript/), [Python](https://aws.amazon.com/sdk-for-python/), or [Ruby](https://aws.amazon.com/sdk-for-ruby/). If you are new to Amazon Data Firehose, take some time to become familiar with the concepts and terminology presented in [What is Amazon Data Firehose?](what-is-this-service.md). For more information, see [Start Developing with Amazon Web Services](http://aws.amazon.com/developers/getting-started/).
 

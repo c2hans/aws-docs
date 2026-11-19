@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/web-crawlin
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 After collecting the raw environmental, social, and governance (ESG) data, you can do the following to extract meaningful information from the data:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys-refere
 ---
 
 # API keys reference
-<a name="api-keys-reference"></a>
 
 Generate an Amazon Bedrock API key to call the Amazon Bedrock API. The key authenticates your identity when you make requests.
 

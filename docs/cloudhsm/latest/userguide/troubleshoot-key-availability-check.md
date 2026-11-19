@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/troubleshoot-k
 ---
 
 # AWS CloudHSM error seen during key availability check
-<a name="troubleshoot-key-availability-check"></a>
 
 **Problem**: An AWS CloudHSM hardware security module (HSM) is returning the following error:
 

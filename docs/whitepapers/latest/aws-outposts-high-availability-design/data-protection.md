@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
  **For EBS Volumes:** AWS Outposts rack supports EBS volume snapshots to provide a simple and secure data protection mechanism to protect your block storage data. Snapshots are point-in-time incremental backups of your EBS volumes. By default, [snapshots of Amazon EBS volumes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html) on your Outpost are stored on Amazon S3 in the Region. If your Outposts have been configured with S3 on Outposts capacity, you can use [EBS Local Snapshots on Outposts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/snapshots-outposts.html) to store snapshots locally on your Outpost using S3 on Outposts storage.
 

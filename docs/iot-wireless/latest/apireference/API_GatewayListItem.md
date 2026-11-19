@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Gat
 ---
 
 # GatewayListItem
-<a name="API_GatewayListItem"></a>
 
 Gateway list item object that specifies the frequency and list of gateways for which the downlink message should be sent.
 

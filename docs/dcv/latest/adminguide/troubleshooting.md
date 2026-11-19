@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/troubleshooting.ht
 ---
 
 # Troubleshooting Amazon DCV
-<a name="troubleshooting"></a>
 
 This chapter explains how to identify and troubleshoot problems that you might have with Amazon DCV.
 

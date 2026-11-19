@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/manag
 ---
 
 # Managing user access
-<a name="manage-user-access"></a>
 
 AWS Supply Chain administrators can modify roles and permissions.
 

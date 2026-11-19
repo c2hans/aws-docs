@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # EncoderConfiguration
-<a name="structures-EncoderConfiguration"></a>
 
 Complex type specifying the stream’s video configuration to be used by the encoder.
 

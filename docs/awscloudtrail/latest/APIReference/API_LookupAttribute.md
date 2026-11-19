@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Lo
 ---
 
 # LookupAttribute
-<a name="API_LookupAttribute"></a>
 
 Specifies an attribute and value that filter the events returned.
 

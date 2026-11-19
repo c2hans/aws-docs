@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # GetDomainSuggestions
-<a name="API_domains_GetDomainSuggestions"></a>
 
 The GetDomainSuggestions operation returns a list of suggested domain names.
 

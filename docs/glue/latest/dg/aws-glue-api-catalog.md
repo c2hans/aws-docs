@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html
 ---
 
 # Catalog objects API
-<a name="aws-glue-api-catalog"></a>
 
 The Catalog objects API describes the data types and API related to working with catalogs in AWS Glue.
 

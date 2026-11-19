@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Real-time processing with Amazon MSK
-<a name="real-time-processing"></a>
 
 You can integrate MongoDB Atlas with [Amazon Managed Streaming for Apache Kafka (Amazon MSK)](https://aws.amazon.com/msk/) enhances real-time data processing. you can build robust, event-driven architectures by using the streaming capabilities in Amazon MSK with the MongoDB document model for agile and data-rich applications. The following diagram illustrates an example reference architecture.
 

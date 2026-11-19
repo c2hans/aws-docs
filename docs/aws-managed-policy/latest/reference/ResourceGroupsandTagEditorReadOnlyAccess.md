@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Reso
 ---
 
 # ResourceGroupsandTagEditorReadOnlyAccess
-<a name="ResourceGroupsandTagEditorReadOnlyAccess"></a>
 
 **Description**: Provides access to use Resource Groups and Tag Editor, but does not allow editing of tags via the Tag Editor.
 

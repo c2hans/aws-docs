@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/multi-Region.Su
 ---
 
 # Supported and unsupported commands
-<a name="multi-Region.SupportedCommands"></a>
 
 **Supported commands**
 

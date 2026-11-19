@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Configuring Workflow Builder
-<a name="configuring-workflow-builder"></a>
 
 Workflow Builder enables multi-agent orchestration through a supervisor agent that delegates work to specialized Agent Builder agents.
 

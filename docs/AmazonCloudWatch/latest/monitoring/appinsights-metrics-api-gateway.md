@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # API Gateway REST API stages
-<a name="appinsights-metrics-api-gateway"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

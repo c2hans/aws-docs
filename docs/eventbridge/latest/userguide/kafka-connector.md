@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/kafka-conne
 ---
 
 # Kafka connector for Amazon EventBridge
-<a name="kafka-connector"></a>
 
 The Kafka sink connector for EventBridge allows you convert records from one or more Kafka topics into events, and send those events to the event bus of your choice.
 

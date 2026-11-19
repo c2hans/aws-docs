@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/concepts.html
 ---
 
 # Notification concepts
-<a name="concepts"></a>
 
 Setting up and using notifications is easier if you understand the concepts and terms. Here are some concepts to know about as you use notifications.
 

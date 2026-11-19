@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Resource
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 Details of a resource that is associated to an Firewall Manager resource set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Insta
 ---
 
 # InstanceProfile
-<a name="API_InstanceProfile"></a>
 
 Represents the instance profile.
 

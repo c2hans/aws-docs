@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Cost
-<a name="cost"></a>
 
 You are responsible for the cost of the AWS services used while running this solution. As of this revision, the cost for running this solution with the default settings in the US East (N. Virginia) Region is approximately **$591.55 per month** when deploying the main stack, Managed VPC module, Managed Active Directory module, and FSx for Windows File Server module in the hub Region. These costs are for the resources shown in the [Sample cost table](#sample-cost-table).
 

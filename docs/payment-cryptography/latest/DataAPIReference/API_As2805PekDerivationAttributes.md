@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # As2805PekDerivationAttributes
-<a name="API_As2805PekDerivationAttributes"></a>
 
 Parameter information to use a PEK derived using AS2805.
 

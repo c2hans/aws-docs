@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_QuotaShare
 ---
 
 # QuotaShareCapacityUsage
-<a name="API_QuotaShareCapacityUsage"></a>
 
 The capacity usage for a quota share, including units of compute capacity and quantity of resources being used.
 

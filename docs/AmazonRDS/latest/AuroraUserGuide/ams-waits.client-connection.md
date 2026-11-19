@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-wai
 ---
 
 # io/socket/sql/client\_connection
-<a name="ams-waits.client-connection"></a>
 
 The `io/socket/sql/client_connection` event occurs when a thread is in the process of handling a new connection.
 

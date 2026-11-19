@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Next Steps
-<a name="next-steps-upload"></a>
 
 Now that you have uploaded your first asset, you can:
 + Add metadata to improve discoverability

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_G
 ---
 
 # GetJobRun
-<a name="API_GetJobRun"></a>
 
 Displays detailed information about a job run.
 

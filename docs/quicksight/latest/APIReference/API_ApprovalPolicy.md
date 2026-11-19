@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Appro
 ---
 
 # ApprovalPolicy
-<a name="API_ApprovalPolicy"></a>
 
 A governance approval policy that specifies which principals and governed actions require approval, and which assets the policy applies to.
 

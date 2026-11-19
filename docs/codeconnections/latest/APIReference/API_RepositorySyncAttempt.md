@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # RepositorySyncAttempt
-<a name="API_RepositorySyncAttempt"></a>
 
 Information about a repository sync attempt for a repository with a sync configuration.
 

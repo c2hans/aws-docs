@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateUser
 ---
 
 # UpdateUser
-<a name="API_UpdateUser"></a>
 
 Updates the properties of an existing user in a Wickr network. This operation allows you to modify the user's name, password, security group membership, and invite code settings.
 

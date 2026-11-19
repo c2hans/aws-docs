@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/view-template.html
 ---
 
 # View experiment templates
-<a name="view-template"></a>
 
 You can view the experiment templates that you created.
 

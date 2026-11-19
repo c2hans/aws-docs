@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UpdatePurchaseOrders
-<a name="API_marketplace-agreements_UpdatePurchaseOrders"></a>
 
 Allows acceptors to associate purchase orders with agreement charges after an agreement is created.
 

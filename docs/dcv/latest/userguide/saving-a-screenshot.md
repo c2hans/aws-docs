@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/saving-a-screenshot
 ---
 
 # Saving a screenshot
-<a name="saving-a-screenshot"></a>
 
 You can use Amazon DCV to save a screenshot of the Amazon DCV session. This functionality is available on the Windows, web browser, Linux, and macOS clients.
 

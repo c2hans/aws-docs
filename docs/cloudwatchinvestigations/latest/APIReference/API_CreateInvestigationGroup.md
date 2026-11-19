@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # CreateInvestigationGroup
-<a name="API_CreateInvestigationGroup"></a>
 
 Creates an *investigation group* in your account. Creating an investigation group is a one-time setup task for each Region in your account. It is a necessary task to be able to perform investigations.
 

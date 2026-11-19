@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAwsNetworkPerformanceMetricSubscriptions
-<a name="API_DescribeAwsNetworkPerformanceMetricSubscriptions"></a>
 
 Describes the current Infrastructure Performance metric subscriptions.
 

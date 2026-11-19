@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-access-m
 ---
 
 # Converting an AWS Glue resource to a hybrid resource
-<a name="hybrid-access-mode-new"></a>
 
 Follow these steps to register an Amazon S3 location in hybrid access mode and on-board new Lake Formation users without interrupting the existing Data Catalog users' data access.
 

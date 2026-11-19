@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model development
-<a name="cost-model-development"></a>
 
 **Topics**
 + [MLCOST04-BP01 Select optimal computing instance size](mlcost04-bp01.md)

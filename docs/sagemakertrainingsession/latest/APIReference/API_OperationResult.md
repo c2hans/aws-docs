@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # OperationResult
-<a name="API_OperationResult"></a>
 
 The result of a completed training operation. Exactly one member is populated, corresponding to the operation type that was submitted.
 

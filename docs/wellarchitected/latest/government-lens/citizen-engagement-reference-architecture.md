@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
 ---
 
 # Citizen engagement reference architecture
-<a name="citizen-engagement-reference-architecture"></a>
 
  Governments are increasingly investing in citizen facing channels: mobile applications, web portals, call center agents, and chatbots to enhance the overall citizen experience. In a regulated industry space, user engagement architectures challenge the segregation often recommended for classified workloads and in some cases with citizen engagement it’s based on verifiable identity along with:
 +  High volumes of real-time ingestion from public and private sources.

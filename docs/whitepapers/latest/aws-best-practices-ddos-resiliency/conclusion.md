@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  DDoS resilience isn't a one-time project but an ongoing practice of applying the right architecture, services, and operational readiness before an attack occurs. Throughout this whitepaper, AWS outlined a DDoS-resilient reference architecture, explained how infrastructure layer and application layer attacks differ, and mapped the AWS services and best practices that mitigate each. Adopting these recommendations helps you protect application availability, preserve customer trust, and avoid the unnecessary scaling costs that attacks can drive.
 

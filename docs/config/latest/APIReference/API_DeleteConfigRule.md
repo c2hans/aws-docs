@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteCon
 ---
 
 # DeleteConfigRule
-<a name="API_DeleteConfigRule"></a>
 
 Deletes the specified AWS Config rule and all of its evaluation results.
 

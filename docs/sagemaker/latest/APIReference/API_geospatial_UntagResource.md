@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # UntagResource
-<a name="API_geospatial_UntagResource"></a>
 
 The resource you want to untag.
 

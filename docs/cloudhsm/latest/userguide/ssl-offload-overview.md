@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ssl-offload-ov
 ---
 
 # How SSL/TLS offload with AWS CloudHSM works
-<a name="ssl-offload-overview"></a>
 
 To establish an HTTPS connection, your web server performs a handshake process with clients. As part of this process, the server offloads some of the cryptographic processing to the HSMs in the AWS CloudHSM cluster, as shown in the following figure. Each step of the process is explained below the figure.
 

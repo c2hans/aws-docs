@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Te
 ---
 
 # TextOptions
-<a name="API_TextOptions"></a>
 
 ## Description
 <a name="API_TextOptions_Description"></a>

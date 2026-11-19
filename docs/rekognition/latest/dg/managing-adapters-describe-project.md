@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/managing-adapters-
 ---
 
 # Describing a project version
-<a name="managing-adapters-describe-project"></a>
 
 You can list and describe adapters associated with a project by using the [DescribeProjectVersions](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DescribeProjectVersions.html) operation. You can specify up to 10 model versions in ProjectVersionArns. If you don't specify a value, descriptions for all model versions in the project are returned.
 

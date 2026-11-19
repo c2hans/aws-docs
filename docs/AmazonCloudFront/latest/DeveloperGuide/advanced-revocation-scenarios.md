@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/a
 ---
 
 # Advanced revocation scenarios
-<a name="advanced-revocation-scenarios"></a>
 
 For more complex certificate revocation requirements, consider these additional configurations:
 

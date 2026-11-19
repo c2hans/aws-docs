@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoo
 ---
 
 # TELCOOPS06-BP01 Implement proactive capacity reservation and diversified scaling strategies
-<a name="telcoops06-bp01"></a>
 
  Telco network functions often run on large instance types with limited availability in any single Availability Zone. They can't gracefully degrade when they fail to scale. A capacity shortage that blocks scale-out degrades service for subscribers. This best practice combines reservations, instance diversification, and predictive scaling so capacity is available when needed.
 

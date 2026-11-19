@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-home-region/latest/APIRefer
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 The AWS Migration Hub home region APIs are available specifically for working with your Migration Hub home region. You can use these APIs to determine a home region, as well as to create and work with controls that describe the home region.
 + You must make API calls for write actions (create, notify, associate, disassociate, import, or put) while in your home region, or a `HomeRegionNotSetException` error is returned.
@@ -13,4 +12,4 @@ The AWS Migration Hub home region APIs are available specifically for working wi
 
 For specific API usage, see the sections that follow in this AWS Migration Hub Home Region API reference.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_PromptRo
 ---
 
 # PromptRouterTargetModel
-<a name="API_PromptRouterTargetModel"></a>
 
 The target model for a prompt router.
 

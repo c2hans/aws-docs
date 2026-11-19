@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceSyncJobMetricTarget
-<a name="API_DataSourceSyncJobMetricTarget"></a>
 
 Maps a particular data source sync job to a particular data source.
 

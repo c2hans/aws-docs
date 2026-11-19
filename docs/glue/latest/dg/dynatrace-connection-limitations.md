@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dynatrace-connection-limi
 ---
 
 # Dynatrace limitations
-<a name="dynatrace-connection-limitations"></a>
 
 The following are limitations or notes for Dynatrace:
 + Dynatrace doesn’t support either field based or record based partitioning.

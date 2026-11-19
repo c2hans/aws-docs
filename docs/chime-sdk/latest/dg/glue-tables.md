@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/glue-tables.html
 ---
 
 # Understanding the AWS Glue data catalog tables for the Amazon Chime SDK
-<a name="glue-tables"></a>
 
 The following tables list and describe the columns, data types, and elements in an Amazon Chime SDK call analytics Glue data catalog.
 

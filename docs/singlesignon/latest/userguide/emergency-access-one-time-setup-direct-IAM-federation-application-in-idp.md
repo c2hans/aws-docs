@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/emergency-
 ---
 
 # One-time setup of a direct IAM federation application in Okta
-<a name="emergency-access-one-time-setup-direct-IAM-federation-application-in-idp"></a>
 
 1. Sign in to your Okta account as a user with administrative permissions.
 

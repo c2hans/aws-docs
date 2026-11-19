@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAutom
 ---
 
 # GetAutomatedReasoningPolicy
-<a name="API_GetAutomatedReasoningPolicy"></a>
 
 Retrieves details about an Automated Reasoning policy or policy version. Returns information including the policy definition, metadata, and timestamps.
 

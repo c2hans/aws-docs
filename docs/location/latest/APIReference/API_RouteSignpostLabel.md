@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSi
 ---
 
 # RouteSignpostLabel
-<a name="API_RouteSignpostLabel"></a>
 
 Labels presented on the sign post.
 

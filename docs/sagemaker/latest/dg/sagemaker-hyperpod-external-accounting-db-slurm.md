@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Using an external accounting database with SageMaker HyperPod Slurm clusters
-<a name="sagemaker-hyperpod-external-accounting-db-slurm"></a>
 
 Slurm stores job history, fairshare data, user associations, and quality of service (QOS) policy in a backing SQL database. By default, SageMaker HyperPod deploys MariaDB on your cluster's controller instance, so accounting works with no database for you to manage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Building a strategy for single, hybrid, and multicloud in education
-<a name="introduction"></a>
 
 *Kevin Arand, Amazon Web Services*
 

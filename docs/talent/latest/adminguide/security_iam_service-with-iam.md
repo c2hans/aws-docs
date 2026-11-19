@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/adminguide/security_iam_se
 ---
 
 # How Amazon Connect Talent works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Connect Talent, learn what IAM features are available to use with Amazon Connect Talent.
 

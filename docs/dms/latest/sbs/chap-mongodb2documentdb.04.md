@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-mongodb2documentdb.0
 ---
 
 # Create source and target endpoints for MongoDB migration
-<a name="chap-mongodb2documentdb.04"></a>
 
 The source endpoint is the endpoint for your MongoDB installation running on your Amazon EC2 instance.
 

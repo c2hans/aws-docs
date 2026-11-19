@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bda-document-pr
 ---
 
 # Processing through CLI
-<a name="bda-document-processing-cli"></a>
 
 **Input files into an S3 bucket**
 

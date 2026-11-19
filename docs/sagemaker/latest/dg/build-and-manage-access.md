@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-acc
 ---
 
 # IAM Access Management
-<a name="build-and-manage-access"></a>
 
 The following sections describe the AWS Identity and Access Management (IAM) requirements for Amazon SageMaker Pipelines. For an example of how you can implement these permissions, see [Prerequisites](define-pipeline.md#define-pipeline-prereq).
 

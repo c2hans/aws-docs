@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSU
 ---
 
 # AWSUserNotificationsServiceLinkedRolePolicy
-<a name="AWSUserNotificationsServiceLinkedRolePolicy"></a>
 
 **Description**: Allows AWS User Notifications to call AWS services on your behalf.
 

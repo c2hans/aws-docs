@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Serv
 ---
 
 # ServiceQuotasServiceRolePolicy
-<a name="ServiceQuotasServiceRolePolicy"></a>
 
 **Description**: Allows Service Quotas to create support cases on your behalf
 

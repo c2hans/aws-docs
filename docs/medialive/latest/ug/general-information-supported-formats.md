@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/general-information-
 ---
 
 # General information about supported captions formats
-<a name="general-information-supported-formats"></a>
 
  The following table shows the formats that are supported in MediaLive. It specifies whether they are supported in inputs or outputs, and specifies the standard that defines each format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeEntitiesDetectionJob
-<a name="API_DescribeEntitiesDetectionJob"></a>
 
 Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
 

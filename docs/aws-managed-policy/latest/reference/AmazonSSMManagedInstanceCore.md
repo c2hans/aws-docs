@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSSMManagedInstanceCore
-<a name="AmazonSSMManagedInstanceCore"></a>
 
 **Description**: The policy for Amazon EC2 Role to enable AWS Systems Manager service core functionality.
 

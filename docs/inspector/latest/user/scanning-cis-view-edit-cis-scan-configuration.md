@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-cis-view-
 ---
 
 # Editing a CIS scan configuration
-<a name="scanning-cis-view-edit-cis-scan-configuration"></a>
 
  This topic describes how to edit a CIS scan configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Priv
 ---
 
 # PrivateGraphEndpointSummary
-<a name="API_PrivateGraphEndpointSummary"></a>
 
 Details about a private graph endpoint.
 

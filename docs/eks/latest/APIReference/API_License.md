@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_License.html
 ---
 
 # License
-<a name="API_License"></a>
 
 An EKS Anywhere license associated with a subscription.
 

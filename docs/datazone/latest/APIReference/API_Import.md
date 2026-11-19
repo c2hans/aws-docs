@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Import.
 ---
 
 # Import
-<a name="API_Import"></a>
 
 The details of the import of the metadata form type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_RuleGro
 ---
 
 # RuleGroupSourceStatefulRulesDetails
-<a name="API_RuleGroupSourceStatefulRulesDetails"></a>
 
 A Suricata rule specification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/default-SELinux-modes-st
 ---
 
 # Default SELinux status and modes for AL2023
-<a name="default-SELinux-modes-states"></a>
 
 For AL2023, SELinux by default is `enabled` and set to `permissive` mode. In `permissive` mode, permission denials are logged but not enforced.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/acm-acme-privatelin
 ---
 
 # Issuing ACME certificates over AWS PrivateLink
-<a name="acm-acme-privatelink"></a>
 
 AWS Certificate Manager (ACM) supports issuing certificates through the Automated Certificate Management Environment (ACME) protocol over AWS PrivateLink, so that ACME clients in your VPC can issue certificates without routing traffic over the public internet. AWS PrivateLink connects your VPC directly to ACM through the Amazon network without an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 

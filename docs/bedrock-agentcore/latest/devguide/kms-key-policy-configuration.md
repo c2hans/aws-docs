@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/kms-ke
 ---
 
 # Set customer managed key policy
-<a name="kms-key-policy-configuration"></a>
 
 **Note**
 To configure a customer managed key on the token vault, use the `SetTokenVaultCMK` API operation or an AWS SDK, as described in [Configure with API operations or an AWS SDK](api-configuration-encryption.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetScheduledReport
-<a name="API_bcmDashboards_GetScheduledReport"></a>
 
 Retrieves the configuration and metadata of a specified scheduled report.
 

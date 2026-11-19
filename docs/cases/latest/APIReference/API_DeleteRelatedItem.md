@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteRela
 ---
 
 # DeleteRelatedItem
-<a name="API_connect-cases_DeleteRelatedItem"></a>
 
 Deletes the related item resource under a case.
 

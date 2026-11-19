@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/waf-regiona
 ---
 
 # waf-regional-webacl-not-empty
-<a name="waf-regional-webacl-not-empty"></a>
 
 Checks if a WAF regional Web ACL contains any WAF rules or rule groups. The rule is NON\_COMPLIANT if there are no WAF rules or rule groups present within a Web ACL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/step-1-la
 ---
 
 # Step 1: Launch the stack
-<a name="step-1-launch-the-stack"></a>
 
 This automated AWS CloudFormation template deploys the QnABot on AWS guidance in the AWS Cloud. You must set up an AWS account before launching the stack.
 

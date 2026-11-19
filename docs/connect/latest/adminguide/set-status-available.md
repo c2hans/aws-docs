@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-status-ava
 ---
 
 # Set your status to "Available" in the Contact Control Panel (CCP)
-<a name="set-status-available"></a>
 
 As a call center agent, set an **Available** status when you're ready to handle contacts.
 

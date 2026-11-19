@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Configure the discovery tool
-<a name="discovery-tool-configure"></a>
 
 ## Access the discovery tool console
 <a name="discovery-tool-access-console"></a>

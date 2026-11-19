@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # Before You Begin Using Active Directory with Amazon WorkSpaces Applications
-<a name="active-directory-prerequisites"></a>
 
 Before you use Microsoft Active Directory domains with WorkSpaces Applications, be aware of the following requirements and considerations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListExecutions
-<a name="API_ListExecutions"></a>
 
 Retrieves a paginated list of summaries of all executions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateGatewayCapabilityConfiguration
-<a name="API_UpdateGatewayCapabilityConfiguration"></a>
 
 Updates a gateway capability configuration or defines a new capability configuration. Each gateway capability defines data sources for a gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Encrypt Data at Rest
-<a name="encrypt-data-at-rest"></a>
 
 Encrypting data at rest is vital for regulatory compliance and data protection. It helps to ensure that sensitive data saved on disks is not readable by any user or application without a valid key. AWS provides multiple options for encryption at rest and encryption key management. For example, you can use the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html) with an [AWS KMS Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) created and managed in AWS KMS to encrypt arbitrary data. All AWS services that store customer data offer the ability to encrypt that data.
 

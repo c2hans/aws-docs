@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Describ
 ---
 
 # DescribeVirtualRouter
-<a name="API_DescribeVirtualRouter"></a>
 
 Describes an existing virtual router.
 

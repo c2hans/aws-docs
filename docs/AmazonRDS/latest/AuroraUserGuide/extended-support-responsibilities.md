@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/extende
 ---
 
 # Amazon Aurora and customer responsibilities with Amazon RDS Extended Support
-<a name="extended-support-responsibilities"></a>
 
 The following content describes the responsibilities of Amazon Aurora and your responsibilities with RDS Extended Support.
 

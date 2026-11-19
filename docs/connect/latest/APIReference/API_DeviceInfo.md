@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeviceIn
 ---
 
 # DeviceInfo
-<a name="API_DeviceInfo"></a>
 
 Information regarding the device.
 

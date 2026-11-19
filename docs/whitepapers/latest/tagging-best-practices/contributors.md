@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  Contributors to this document include:
 +  Chris Pates, Sr Specialist Technical Account Manager, Amazon Web Services

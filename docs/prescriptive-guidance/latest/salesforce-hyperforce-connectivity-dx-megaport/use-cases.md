@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/salesforce-
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
 The use cases in the following sections provide examples for how you can enable your users to have private, reliable connectivity to Hyperforce.
 + [Branch offices](branch-offices.md)

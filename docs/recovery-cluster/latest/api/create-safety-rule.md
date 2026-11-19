@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/create-safet
 ---
 
 # Create safety rules
-<a name="create-safety-rule"></a>
 
 The following are examples of requests to create the two types of safety rules, assertion rules and gating rules, and the responses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/uefi-secure-boot.html
 ---
 
 # UEFI Secure Boot on AL2027
-<a name="uefi-secure-boot"></a>
 
 AL2027 supports UEFI Secure Boot. You must use AL2027 with Amazon EC2 instances that support both UEFI and UEFI Secure Boot. For more information, see [Requirements to launch an Amazon EC2 instance in UEFI boot mode](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launch-instance-boot-mode.html) in the *Amazon EC2 User Guide*.
 

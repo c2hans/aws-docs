@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/adding-a-SQL-quer
 ---
 
 # Using SQL to customize data
-<a name="adding-a-SQL-query"></a>
 
 When you create a dataset or prepare your data for use in an analysis, you can customize the data in the query editor.
 

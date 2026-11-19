@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # SPARQL object prediction example
-<a name="machine-learning-sparql-inference-object-prediction"></a>
 
 *Object prediction* predicts the object value for a given subject and predicate.
 

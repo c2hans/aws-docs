@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/readinessc
 ---
 
 # GetReadinessCheck, UpdateReadinessCheck, DeleteReadinessCheck
-<a name="readinesschecks-readinesscheckname"></a>
 
 ## URI
 <a name="readinesschecks-readinesscheckname-url"></a>

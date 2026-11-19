@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Matc
 ---
 
 # MatchedUser
-<a name="API_MatchedUser"></a>
 
 Contains metadata for a UserID matched with a given face.
 

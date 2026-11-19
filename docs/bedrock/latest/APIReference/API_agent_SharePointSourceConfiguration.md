@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sh
 ---
 
 # SharePointSourceConfiguration
-<a name="API_agent_SharePointSourceConfiguration"></a>
 
 The endpoint information to connect to your SharePoint data source.
 

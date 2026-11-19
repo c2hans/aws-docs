@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step L: Re-enable high availability
-<a name="upg-std-reenable"></a>
 
 You re-enable high availability when you have more than one Conductor Live node. If you have only one Conductor node you don't need to do re-enable high availability and the upgrade process is complete when you start the channels.
 

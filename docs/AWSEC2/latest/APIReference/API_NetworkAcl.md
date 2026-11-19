@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkAc
 ---
 
 # NetworkAcl
-<a name="API_NetworkAcl"></a>
 
 Describes a network ACL.
 

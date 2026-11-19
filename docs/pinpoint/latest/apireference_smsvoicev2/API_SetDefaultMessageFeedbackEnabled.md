@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SetDefaultMessageFeedbackEnabled
-<a name="API_SetDefaultMessageFeedbackEnabled"></a>
 
 Sets a configuration set's default for message feedback.
 

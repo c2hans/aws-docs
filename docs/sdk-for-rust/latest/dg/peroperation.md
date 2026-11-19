@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/peroperation.html
 ---
 
 # Overriding a single operation configuration of a client in the AWS SDK for Rust
-<a name="peroperation"></a>
 
 After you [create a service client](config-code.md), configuration becomes immutable and will apply to all subsequent operations. While configuration can’t be modified at this point, it can be overridden on a per-operation basis.
 

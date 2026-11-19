@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/granting-locati
 ---
 
 # Granting data location permissions (same account)
-<a name="granting-location-permissions-local"></a>
 
 Follow these steps to grant data location permissions to principals in your AWS account. You can grant permissions by using the Lake Formation console, the API, or the AWS Command Line Interface (AWS CLI).
 

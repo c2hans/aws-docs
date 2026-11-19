@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteConnectInstanceConfig
-<a name="API_connect-outbound-campaigns-v2_DeleteConnectInstanceConfig"></a>
 
 Deletes configuration information for an Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS tutorials
-<a name="sqs-other-tutorials"></a>
 
 This topic provides tutorials to help you explore Amazon SQS features and functionality.
 

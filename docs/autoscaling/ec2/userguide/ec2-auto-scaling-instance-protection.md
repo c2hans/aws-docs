@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Use instance scale-in protection to control instance termination
-<a name="ec2-auto-scaling-instance-protection"></a>
 
 Instance scale-in protection gives you control over which instances Amazon EC2 Auto Scaling can terminate. A common use case for this feature is scaling container-based workloads. For more information, see [Design your applications to gracefully handle instance termination](gracefully-handle-instance-termination.md).
 

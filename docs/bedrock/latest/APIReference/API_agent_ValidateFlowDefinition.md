@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Va
 ---
 
 # ValidateFlowDefinition
-<a name="API_agent_ValidateFlowDefinition"></a>
 
 Validates the definition of a flow.
 

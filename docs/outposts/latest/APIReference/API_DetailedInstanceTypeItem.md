@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Detaile
 ---
 
 # DetailedInstanceTypeItem
-<a name="API_DetailedInstanceTypeItem"></a>
 
 Information about an instance type that can be ordered for an Outpost, including hardware specifications and supported form factors.
 

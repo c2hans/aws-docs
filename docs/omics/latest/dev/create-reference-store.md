@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/create-reference-store.
 ---
 
 # Creating a HealthOmics reference store
-<a name="create-reference-store"></a>
 
 A reference store in HealthOmics is a data store for the storage of reference genomes. You can have a single reference store in each AWS account and Region. You can create a reference store using the console or CLI.
 

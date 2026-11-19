@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_InputC
 ---
 
 # InputConfig
-<a name="API_InputConfig"></a>
 
 Contains information about the location of input model artifacts, the name and shape of the expected data inputs, and the framework in which the model was trained.
 

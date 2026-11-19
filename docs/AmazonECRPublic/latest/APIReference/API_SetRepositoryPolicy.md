@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # SetRepositoryPolicy
-<a name="API_SetRepositoryPolicy"></a>
 
 Applies a repository policy to the specified public repository to control access permissions. For more information, see [Amazon ECR repository policies](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-policies.html) in the *Amazon Elastic Container Registry Public User Guide*.
 
@@ -27,7 +26,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [force](#API_SetRepositoryPolicy_RequestSyntax) **   <a name="ecrpublic-SetRepositoryPolicy-request-force"></a>
-If the policy that you want to set on a repository policy would prevent you from setting another policy in the future, you must force the [SetRepositoryPolicy](#API_SetRepositoryPolicy) operation. This prevents accidental repository lockouts.
+If the policy that you want to set on a repository policy would prevent you from setting another policy in the future, you must force the [SetRepositoryPolicy](API_SetRepositoryPolicy.md) operation. This prevents accidental repository lockouts.
 Type: Boolean
 Required: No
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/monitoring-s3-inventor
 ---
 
 # Filtering your S3 bucket inventory in Macie
-<a name="monitoring-s3-inventory-filter"></a>
 
 To identify and focus on buckets that have specific characteristics, you can filter your S3 bucket inventory on the Amazon Macie console and in queries that you submit programmatically using the Amazon Macie API. When you create a filter, you use specific bucket attributes to define criteria for including or excluding buckets from a view or from query results. A *bucket attribute* is a field that stores specific metadata for a bucket.
 

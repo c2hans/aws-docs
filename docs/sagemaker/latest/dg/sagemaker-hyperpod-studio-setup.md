@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Setting up HyperPod in Studio
-<a name="sagemaker-hyperpod-studio-setup"></a>
 
 You need to set up the clusters depending on your choice of the cluster orchestrator to access your clusters through Amazon SageMaker Studio. In the following sections, choose the setup that matches with your orchestrator.
 

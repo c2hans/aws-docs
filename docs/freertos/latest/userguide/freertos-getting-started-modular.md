@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/freertos-getti
 ---
 
 # Get started with FreeRTOS
-<a name="freertos-getting-started-modular"></a>
 
 **Topics**
 + [Get started with Quick Connect](#freertos-getting-started-quick-connect)

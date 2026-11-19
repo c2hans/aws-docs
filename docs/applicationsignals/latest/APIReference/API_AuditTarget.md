@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # AuditTarget
-<a name="API_AuditTarget"></a>
 
 A structure that specifies the target entity for audit analysis, such as a `service`, `SLO`, `service_operation`, or `canary`.
 

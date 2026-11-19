@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sagemaker_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListTrainingJobs` with an AWS SDK
-<a name="sagemaker_example_sagemaker_ListTrainingJobs_section"></a>
 
 The following code examples show how to use `ListTrainingJobs`.
 

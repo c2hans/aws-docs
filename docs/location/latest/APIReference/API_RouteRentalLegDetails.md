@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalLegDetails
-<a name="API_RouteRentalLegDetails"></a>
 
 Populated when the Leg type is Rental, and provides additional information that is specific to rental vehicle travel.
 

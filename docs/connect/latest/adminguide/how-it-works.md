@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-it-works.h
 ---
 
 # How it works
-<a name="how-it-works"></a>
 
 Profile Explorer offers various widgets to display customer information, layouts are stored as JSON definitions, representing the complete structure and configuration of your dashboard. Each widget and component in your visual layout corresponds to a specific JSON block within this definition.
 

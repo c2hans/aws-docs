@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/monitoring-with-even
 ---
 
 # Monitoring Amazon Translate events with Amazon EventBridge
-<a name="monitoring-with-eventbridge"></a>
 
 Amazon Translate integrates with Amazon EventBridge to notify you about changes that affect your translation jobs and parallel data resources. Events from AWS services are delivered to EventBridge in near real time. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule. For example, actions that can be automatically started include:
 + Invoking an AWS Lambda function

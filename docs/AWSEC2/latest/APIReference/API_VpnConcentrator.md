@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnConcen
 ---
 
 # VpnConcentrator
-<a name="API_VpnConcentrator"></a>
 
 Describes a VPN concentrator.
 

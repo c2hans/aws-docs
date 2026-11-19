@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predicti
 ---
 
 # Evaluate your predictive scaling policies for Amazon ECS
-<a name="predictive-scaling-graphs"></a>
 
 Before you use a predictive scaling policy to scale your services, review the recommendations and other data for your policy in the Amazon ECS console. This is important because you don't want a predictive scaling policy to scale your actual capacity until you know that its predictions are accurate.
 

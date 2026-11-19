@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fu
 ---
 
 # Function
-<a name="API_agent_Function"></a>
 
 Defines parameters that the agent needs to invoke from the user to complete the function. Corresponds to an action in an action group.
 

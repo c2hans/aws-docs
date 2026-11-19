@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateFileSy
 ---
 
 # CreateFileSystemWindowsConfiguration
-<a name="API_CreateFileSystemWindowsConfiguration"></a>
 
 The configuration object for the Microsoft Windows file system used in `CreateFileSystem` and `CreateFileSystemFromBackup` operations.
 

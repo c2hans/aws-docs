@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Decal
 ---
 
 # DecalSettingsConfiguration
-<a name="API_DecalSettingsConfiguration"></a>
 
 Decal settings configuration for a column
 

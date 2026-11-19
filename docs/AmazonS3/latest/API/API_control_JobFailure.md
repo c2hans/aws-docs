@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_JobFailu
 ---
 
 # JobFailure
-<a name="API_control_JobFailure"></a>
 
 If this job failed, this element indicates why the job failed.
 

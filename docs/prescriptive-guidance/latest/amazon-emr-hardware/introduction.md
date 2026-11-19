@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Choosing the hardware for your Amazon EMR cluster
-<a name="introduction"></a>
 
 *Sayde Aguilar, Amiin Samatar, Diego Valencia, and Sunil Yadav, Amazon Web Services*
 

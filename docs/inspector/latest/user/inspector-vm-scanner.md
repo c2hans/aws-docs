@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-vm-scann
 ---
 
 # Amazon Inspector VM Scanner
-<a name="inspector-vm-scanner"></a>
 
 ## Overview
 <a name="inspector-vm-scanner-overview"></a>

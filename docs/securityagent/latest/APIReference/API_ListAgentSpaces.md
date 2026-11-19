@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListAgentSpaces
-<a name="API_ListAgentSpaces"></a>
 
 Returns a paginated list of agent space summaries in your account.
 

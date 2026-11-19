@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModel
 ---
 
 # GetModelInvocationLoggingConfiguration
-<a name="API_GetModelInvocationLoggingConfiguration"></a>
 
 Get the current configuration values for model invocation logging.
 

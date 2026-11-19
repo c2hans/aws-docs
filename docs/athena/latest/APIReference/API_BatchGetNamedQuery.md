@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_BatchGetN
 ---
 
 # BatchGetNamedQuery
-<a name="API_BatchGetNamedQuery"></a>
 
 Returns the details of a single named query or a list of up to 50 queries, which you provide as an array of query ID strings. Requires you to have access to the workgroup in which the queries were saved. Use [ListNamedQueriesInput](API_ListNamedQueriesInput.md) to get the list of named query IDs in the specified workgroup. If information could not be retrieved for a submitted query ID, information about the query ID submitted is listed under [UnprocessedNamedQueryId](API_UnprocessedNamedQueryId.md). Named queries differ from executed queries. Use [BatchGetQueryExecutionInput](API_BatchGetQueryExecutionInput.md) to get details about each unique query execution, and [ListQueryExecutionsInput](API_ListQueryExecutionsInput.md) to get a list of query execution IDs.
 

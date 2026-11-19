@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle Active Data Guard and MySQL replicas
-<a name="chap-oracle-aurora-mysql.hadr.replicas"></a>
 
 With AWS DMS, you can create and manage Oracle Active Data Guard and MySQL replicas to achieve high availability and data redundancy for your databases. Oracle Active Data Guard provides a physical standby database that remains synchronized with the primary database, while MySQL replicas maintain an identical copy of data from a source database instance.
 

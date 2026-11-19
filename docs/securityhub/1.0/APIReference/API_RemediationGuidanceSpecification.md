@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationGuidanceSpecification
-<a name="API_RemediationGuidanceSpecification"></a>
 
 The specification of the remediation target guidance. This outlines required resource parameters and permissions, remediation steps, and the end state.
 

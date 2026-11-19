@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/recomm
 ---
 
 # Recommendation encryption
-<a name="recommendations-encryption"></a>
 
 When you specify a `kmsKeyArn` on a recommendation, the service encrypts the **recommendation configuration** and **recommendation result** using envelope encryption with the AWS Encryption SDK. All other recommendation metadata (name, type, status) remains encrypted with the AWS owned key.
 

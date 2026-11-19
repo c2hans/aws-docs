@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTRuleActions
-<a name="AWSIoTRuleActions"></a>
 
 **Description**: Allows access to all AWS services supported in AWS IoT Rule Actions
 

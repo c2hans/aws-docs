@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_LocalI
 ---
 
 # LocalIpDetails
-<a name="API_LocalIpDetails"></a>
 
 Contains information about the local IP address of the connection.
 

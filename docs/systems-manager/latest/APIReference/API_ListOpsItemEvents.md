@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListOpsItemEvents
-<a name="API_ListOpsItemEvents"></a>
 
 Returns a list of all OpsItem events in the current AWS Region and AWS account. You can limit the results to events associated with specific OpsItems by specifying a filter.
 

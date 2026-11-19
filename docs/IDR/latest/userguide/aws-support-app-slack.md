@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/aws-support-app-sla
 ---
 
 # Manage Incident Detection and Response support cases with the AWS Support App in Slack
-<a name="aws-support-app-slack"></a>
 
 With the [AWS Support App in Slack](https://docs.aws.amazon.com/awssupport/latest/user/aws-support-app-for-slack.html), you can manage your Support cases in Slack, receive notifications about new [alarm initiated incidents](https://docs.aws.amazon.com/IDR/latest/userguide/incidents-idr.html) on your AWS Incident Detection and Response workload, and create [Incident Response Requests](https://docs.aws.amazon.com/IDR/latest/userguide/inbound-incident-idr.html).
 

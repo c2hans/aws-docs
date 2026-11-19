@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # SubnetOutpost
-<a name="API_SubnetOutpost"></a>
 
 The ID of the outpost subnet.
 

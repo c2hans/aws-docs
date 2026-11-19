@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TagResourc
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds the specified tags to the specified resource. If a tag key already exists, the existing value is replaced with the new value.
 

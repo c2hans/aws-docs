@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/check-logs.html
 ---
 
 # Checking the logs for the Amazon Chime SDK PTSN audio service
-<a name="check-logs"></a>
 
 If you're debugging a SIP media application, check the Cloudwatch logs for the AWS Lambda function associated with the application.
 

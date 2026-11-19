@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergRetentionC
 ---
 
 # IcebergRetentionConfiguration
-<a name="API_IcebergRetentionConfiguration"></a>
 
 The configuration for an Iceberg snapshot retention optimizer.
 

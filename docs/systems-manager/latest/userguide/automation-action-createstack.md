@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:createStack` – Create an CloudFormation stack
-<a name="automation-action-createstack"></a>
 
 Creates an AWS CloudFormation stack from a template.
 

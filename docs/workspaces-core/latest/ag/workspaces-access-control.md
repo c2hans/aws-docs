@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/ag/workspaces-acc
 ---
 
 # Identity and access management for WorkSpaces Instances
-<a name="workspaces-access-control"></a>
 
 By default, IAM users don't have permissions for WorkSpaces Instances resources and operations. To allow IAM users to manage WorkSpaces resources Instances, you must create an IAM policy that explicitly grants them permissions, and attach the policy to the IAM users or groups that require those permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL04-BP03 Monitor and manage partner SLAs against actuals
-<a name="advrel04-bp03"></a>
 
  External partners (such as DSPs, SSPs, DMPs, and measurement providers) operate under agreed service-level agreements. Continuously measure each partner's actual availability, latency, and error rates against their committed SLA. Detect, attribute, and act on degradation before it erodes auction performance or revenue.
 

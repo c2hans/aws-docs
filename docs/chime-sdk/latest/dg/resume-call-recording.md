@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/resume-call-recordin
 ---
 
 # ResumeCallRecording
-<a name="resume-call-recording"></a>
 
 The `ResumeCallRecording` action resumes the recording of a call leg. Before the recording restarts, a brief tone is played. You can pause and resume a recording multiple times for the duration of the call leg.
 

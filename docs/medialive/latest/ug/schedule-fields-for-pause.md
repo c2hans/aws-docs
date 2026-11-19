@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-
 ---
 
 # Fields for pause
-<a name="schedule-fields-for-pause"></a>
 
 In **Schedule action settings**, complete the following fields.
 

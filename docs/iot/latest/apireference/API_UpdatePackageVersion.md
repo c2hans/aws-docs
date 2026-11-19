@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdatePackag
 ---
 
 # UpdatePackageVersion
-<a name="API_UpdatePackageVersion"></a>
 
 Updates the supported fields for a specific package version.
 

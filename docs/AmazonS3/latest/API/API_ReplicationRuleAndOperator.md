@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ReplicationRuleA
 ---
 
 # ReplicationRuleAndOperator
-<a name="API_ReplicationRuleAndOperator"></a>
 
 A container for specifying rule filters. The filters determine the subset of objects to which the rule applies. This element is required only if you specify more than one filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessGatewayOutboundAuth
-<a name="API_HarnessGatewayOutboundAuth"></a>
 
 Authentication method for calling a Gateway.
 

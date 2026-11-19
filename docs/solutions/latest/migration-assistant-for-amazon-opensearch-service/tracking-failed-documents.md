@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Tracking and remediating failed documents
-<a name="tracking-failed-documents"></a>
 
 During a backfill, Reindex-from-Snapshot (RFS) retries most document errors automatically. A document counts as failed only when the error is terminal, either because the error is non-retryable or because RFS exhausted the retry limit. You can list which documents failed, determine why they failed, and remediate them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StopCont
 ---
 
 # StopContactStreaming
-<a name="API_StopContactStreaming"></a>
 
  Ends message streaming on a specified contact. To restart message streaming on that contact, call the [StartContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactStreaming.html) API.
 

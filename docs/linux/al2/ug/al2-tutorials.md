@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/al2-tutorials.html
 ---
 
 # AL2 Tutorials
-<a name="al2-tutorials"></a>
 
  The following tutorials show you how to perform common tasks using Amazon EC2 instances running AL2. For video tutorials, see [AWS Instructional videos and labs](https://www.aws.training/).
 

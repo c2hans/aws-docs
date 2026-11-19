@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-
 ---
 
 # Encryption strategy in AWS
-<a name="encryption-strategy-in-aws"></a>
 
 This section provides recommendations that apply when encrypting data in the AWS Cloud. These general encryption best practices are not specific to AWS services. This section includes the following topics:
 + Encryption of data at rest

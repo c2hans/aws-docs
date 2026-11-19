@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Process
 ---
 
 # ProcessType
-<a name="API_ProcessType"></a>
 
 Describes a process type.
 

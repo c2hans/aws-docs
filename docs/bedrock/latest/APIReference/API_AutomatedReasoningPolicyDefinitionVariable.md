@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDefinitionVariable
-<a name="API_AutomatedReasoningPolicyDefinitionVariable"></a>
 
 Represents a variable in an Automated Reasoning policy. Variables represent concepts that can have values assigned during natural language translation.
 

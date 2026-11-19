@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Engin
 ---
 
 # EngineDefaults
-<a name="API_EngineDefaults"></a>
 
 Contains the result of a successful invocation of the `DescribeEngineDefaultClusterParameters` operation.
 

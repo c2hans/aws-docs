@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/configue-auto-
 ---
 
 # Configure an Auto Scaling group to use weights
-<a name="configue-auto-scaling-group-to-use-weights"></a>
 
 You can configure an Auto Scaling group to use weights, as shown in the following AWS CLI examples. For instructions on using the console, see [Create a mixed instances group by manually choosing instance types](create-mixed-instances-group-manual-instance-type-selection.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Stopping a AgentCore Code Interpreter session
-<a name="code-interpreter-stop-session"></a>
 
 When you are finished using a Code Interpreter session, you should stop it to release resources and avoid unnecessary charges.
 

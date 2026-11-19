@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-tabl
 ---
 
 # Managing table policies
-<a name="s3-tables-table-policy"></a>
 
 You can add, delete, update, and view table policies for tables by using the Amazon S3 console, Amazon S3 REST API, AWS SDK and the AWS CLI. For more information, see the following topics. For more information about supported AWS Identity and Access Management (IAM) actions and condition keys for Amazon S3 Tables, see [Access management for S3 Tables](s3-tables-setting-up.md). For example table policies, see [Resource-based policies for S3 Tables](s3-tables-resource-based-policies.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_RawSt
 ---
 
 # RawString
-<a name="API_RawString"></a>
 
  *This data type has been deprecated.*
 

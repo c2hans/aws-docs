@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-q-ho
 ---
 
 # How the cost management capabilities in AWS assistant work
-<a name="ce-q-how-it-works"></a>
 
 ## Agentic architecture
 <a name="q-agentic-architecture"></a>

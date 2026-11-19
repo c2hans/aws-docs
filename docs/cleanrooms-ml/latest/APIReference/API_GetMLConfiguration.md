@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetMLConfiguration
-<a name="API_GetMLConfiguration"></a>
 
 Returns information about a specific ML configuration.
 

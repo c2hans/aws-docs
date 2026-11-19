@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCREL04-BP01 Implement a centralized inventory and order management system integrated with all warehouses, suppliers, and sales channels
-<a name="screl04-bp01"></a>
 
  Use event-driven architectures to propagate updates across the supply chain. Implement a centralized inventory and order management system that provides a single source of truth for product availability, allocations, and fulfillment status across all physical and digital channels. Establish real-time integration with warehouse management systems, supplier portals, and sales systems to synchronize inventory movements and order status changes throughout the fulfillment lifecycle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Resour
 ---
 
 # ResourceTag
-<a name="API_ResourceTag"></a>
 
 Tags are key-value pairs that can be associated with Amazon SWF state machines and activities.
 

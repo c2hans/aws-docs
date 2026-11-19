@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/GatewayMetrics
 ---
 
 # Monitoring Your Tape Gateway
-<a name="GatewayMetrics-vtl-common"></a>
 
 This topics in this section describe procedures and conceptual information about how to monitor your Tape Gateway. You can monitor the virtual tapes, cache storage, and the upload buffer that are associated with your Tape Gateway. You use the AWS Management Console to view metrics for your Tape Gateway. With metrics, you can track the health of your Tape Gateway and set up alarms to notify you when one or more metrics are outside a defined threshold.
 

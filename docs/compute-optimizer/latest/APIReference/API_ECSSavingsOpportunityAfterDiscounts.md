@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSSavingsOpportunityAfterDiscounts
-<a name="API_ECSSavingsOpportunityAfterDiscounts"></a>
 
  Describes the savings opportunity for Amazon ECS service recommendations after applying Savings Plans discounts.
 

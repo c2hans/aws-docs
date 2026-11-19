@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-readi
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + Michael Haken, Principal Solutions Architect, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessBeforeInvocationHook
-<a name="API_HarnessBeforeInvocationHook"></a>
 
 The configuration for a hook that runs before an invocation begins.
 

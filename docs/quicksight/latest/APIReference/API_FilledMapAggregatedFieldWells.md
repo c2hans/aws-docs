@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Fille
 ---
 
 # FilledMapAggregatedFieldWells
-<a name="API_FilledMapAggregatedFieldWells"></a>
 
 The aggregated field well of the filled map.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Set up a virtual workstation for Deadline Cloud with a script
-<a name="examples-virtual-workstation"></a>
 
 The [virtual\_workstation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/utility_scripts/virtual_workstation) scripts on the GitHub website turn a fresh Linux or Windows workstation into a Deadline Cloud submission machine. An artist who logs in finds Blender and the Deadline Cloud submitter installed, alongside Deadline Cloud monitor with a profile already configured. The only remaining step is signing in.
 

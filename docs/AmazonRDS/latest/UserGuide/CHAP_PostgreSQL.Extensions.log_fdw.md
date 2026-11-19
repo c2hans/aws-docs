@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreS
 ---
 
 # Using the log\_fdw extension to access the DB log using SQL
-<a name="CHAP_PostgreSQL.Extensions.log_fdw"></a>
 
 RDS for PostgreSQL DB instance supports the `log_fdw` extension, which you can use to access your database engine log using a SQL interface. The `log_fdw` extension provides two functions that make it easy to create foreign tables for database logs:
 + `list_postgres_log_files` – Lists the files in the database log directory and the file size in bytes.

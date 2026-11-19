@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Creating a question set
-<a name="custom-questions-create"></a>
 
 To create a question set, use the `create-question-set` command. Specify a name, and at least one question in the `--yes-no`, `--yes-no-per-option`, or `--choose-one` lists. You can also add tags with `--tags`. Elemental Inference creates the question set with its `DRAFT`.
 

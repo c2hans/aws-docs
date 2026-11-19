@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_CreateWebLoginToken.
 ---
 
 # CreateWebLoginToken
-<a name="API_CreateWebLoginToken"></a>
 
 Creates a web login token for the Airflow Web UI. To learn more, see [Creating an Apache Airflow web login token](https://docs.aws.amazon.com/mwaa/latest/userguide/call-mwaa-apis-web.html).
 

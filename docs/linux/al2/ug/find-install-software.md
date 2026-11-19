@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/find-install-software.html
 ---
 
 # Find and install software packages on an AL2 instance
-<a name="find-install-software"></a>
 
 You can use a package management tool to find and install software packages. In Amazon Linux 2, the default software package management tool is YUM. In AL2023, the default software package management tool is DNF. For more information, see [Package management tool](https://docs.aws.amazon.com/linux/al2023/ug/package-management.html) in the *Amazon Linux 2023 User Guide*.
 

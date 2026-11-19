@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingW
 ---
 
 # Deleting retained automated backups
-<a name="USER_WorkingWithAutomatedBackups-Deleting"></a>
 
 You can delete retained automated backups when they are no longer needed.
 

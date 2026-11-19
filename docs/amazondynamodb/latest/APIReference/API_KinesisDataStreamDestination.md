@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_K
 ---
 
 # KinesisDataStreamDestination
-<a name="API_KinesisDataStreamDestination"></a>
 
 Describes a Kinesis data stream destination.
 

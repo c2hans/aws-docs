@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ContentArtifactsConfiguration
-<a name="API_media-pipelines-chime_ContentArtifactsConfiguration"></a>
 
 The content artifact object.
 

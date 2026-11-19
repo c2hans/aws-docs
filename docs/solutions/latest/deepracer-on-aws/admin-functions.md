@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/admin-
 ---
 
 # Admin functions
-<a name="admin-functions"></a>
 
 **Note**
 Only admins can perform the functions in this section, unless otherwise noted.

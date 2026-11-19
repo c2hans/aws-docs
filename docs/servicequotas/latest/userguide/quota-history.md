@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/quota-his
 ---
 
 # Verifying your quota request
-<a name="quota-history"></a>
 
 Verify your quota request by viewing the request history history in the Service Quotas console. The console displays all open quota requests and requests closed in the last year.
 

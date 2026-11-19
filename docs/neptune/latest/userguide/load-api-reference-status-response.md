@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Get-Status Responses
-<a name="load-api-reference-status-response"></a>
 
  The following example response from the Neptune Get-Status API describes the overall structure of the response, explains the various fields and their data types, as well as the error handling and error log details.
 

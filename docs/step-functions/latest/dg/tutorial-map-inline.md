@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-map-in
 ---
 
 # Using Inline Map state to repeat an action in Step Functions
-<a name="tutorial-map-inline"></a>
 
 This tutorial helps you get started with using the `Map` state in Inline mode. You use the *Inline Map state* in your workflows to repeatedly perform an action. For more information about Inline mode, see [Map state in Inline mode](state-map-inline.md).
 

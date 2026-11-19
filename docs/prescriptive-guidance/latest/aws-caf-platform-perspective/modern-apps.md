@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Modern application development
-<a name="modern-apps"></a>
 
 **Build well-architected, cloud-native applications.**
 

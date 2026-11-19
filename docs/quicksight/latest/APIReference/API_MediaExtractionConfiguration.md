@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Media
 ---
 
 # MediaExtractionConfiguration
-<a name="API_MediaExtractionConfiguration"></a>
 
 The configuration for media extraction from knowledge base documents.
 

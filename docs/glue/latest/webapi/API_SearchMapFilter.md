@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SearchMapFilter.h
 ---
 
 # SearchMapFilter
-<a name="API_SearchMapFilter"></a>
 
 A filter on a map attribute's key-value pair.
 

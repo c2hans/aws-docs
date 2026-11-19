@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateQu
 ---
 
 # CreateQueue
-<a name="API_CreateQueue"></a>
 
 Creates a new queue for the specified Connect Customer instance.
 

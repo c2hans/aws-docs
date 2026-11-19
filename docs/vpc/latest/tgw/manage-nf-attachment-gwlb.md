@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/manage-nf-attachment-gwlb
 ---
 
 # Create, modify, and delete a network function attachment of type Gateway Load Balancer
-<a name="manage-nf-attachment-gwlb"></a>
 
 Create and manage a network function attachment of type Gateway Load Balancer on your transit gateway. Only the transit gateway owner can create, modify, or delete this attachment. The attachment connects the transit gateway to the Gateway Load Balancer VPC endpoint service that fronts the firewall deployment. In Amazon VPC Console, the attachment appears with a type of **Network function**.
 

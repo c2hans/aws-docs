@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS06-BP01 Design multi-layered testing frameworks
-<a name="agentops06-bp01"></a>
 
  Traditional software testing, like exact-match assertions and green-or-red unit tests, can miss important failure modes in agentic systems. A testing pyramid that covers unit, integration, end-to-end tests, and shadow layers helps teams catch behavioral regressions before they reach users.
 

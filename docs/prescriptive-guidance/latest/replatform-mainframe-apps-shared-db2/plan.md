@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Planning
-<a name="plan"></a>
 
 To navigate the mainframe legacy application's requirements effectively, organizations often begin with a comprehensive assessment of their mainframe environment.
 

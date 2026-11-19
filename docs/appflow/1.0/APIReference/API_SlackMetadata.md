@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SlackMetada
 ---
 
 # SlackMetadata
-<a name="API_SlackMetadata"></a>
 
  The connector metadata specific to Slack.
 

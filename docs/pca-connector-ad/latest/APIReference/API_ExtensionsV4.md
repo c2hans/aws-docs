@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ExtensionsV4
-<a name="API_ExtensionsV4"></a>
 
 Certificate extensions for v4 template schema
 

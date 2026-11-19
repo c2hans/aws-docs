@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/gene
 ---
 
 # Troubleshooting the AWS Toolkit for Visual Studio Code
-<a name="general-troubleshoot"></a>
 
 The following sections contain general troubleshooting information about the AWS Toolkit for Visual Studio Code and working with AWS services from the toolkit. For issues specifically related to troubleshooting SAM issues in the AWS Toolkit, see the [Troubleshooting serverless applications](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serverless-apps-troubleshooting.html) topic in this User Guide.
 

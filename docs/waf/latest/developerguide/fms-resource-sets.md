@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/fms-resource-s
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Grouping your resources in Firewall Manager
-<a name="fms-resource-sets"></a>
 
 This section decribes what a resource set is and lists considerations for using resource sets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/b
 ---
 
 # Build a Healthcare Data Pipeline on AWS with IBM Cloud Pak for Data
-<a name="build-healthcare-data-pipeline-on-aws-ibm-cp4d"></a>
 
 Publication date: **April 19, 2023 ([Diagram history](#diagram-history))**
 

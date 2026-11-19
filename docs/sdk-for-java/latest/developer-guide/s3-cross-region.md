@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/s3-c
 ---
 
 # Cross-Region access for Amazon S3
-<a name="s3-cross-region"></a>
 
 When you work with Amazon Simple Storage Service (Amazon S3) buckets, you usually know the AWS Region for the bucket. The Region you work with is determined when you create the S3 client.
 

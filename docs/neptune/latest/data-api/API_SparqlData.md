@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_SparqlData.h
 ---
 
 # SparqlData
-<a name="API_SparqlData"></a>
 
 Neptune logs are converted to SPARQL quads in the graph using the Resource Description Framework (RDF) [N-QUADS](https://www.w3.org/TR/n-quads/) language defined in the W3C RDF 1.1 N-Quads specification
 

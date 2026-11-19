@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Targ
 ---
 
 # Target
-<a name="API_Target"></a>
 
 Describes a target.
 

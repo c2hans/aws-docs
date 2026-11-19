@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeVcen
 ---
 
 # DescribeVcenterClients
-<a name="API_DescribeVcenterClients"></a>
 
 Returns a list of the installed vCenter clients.
 

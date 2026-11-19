@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PrefixLis
 ---
 
 # PrefixList
-<a name="API_PrefixList"></a>
 
 Describes prefixes for AWS services.
 

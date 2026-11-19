@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisL
 ---
 
 # AnalysisLoadBalancerListener
-<a name="API_AnalysisLoadBalancerListener"></a>
 
 Describes a load balancer listener.
 

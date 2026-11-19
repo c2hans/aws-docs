@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # MLOps checklist components
-<a name="mlops-checklist-components"></a>
 
 The MLOps checklist consists of nine different components. Each component represents an aspect of a mature MLOps system. This section covers the checklist components in detail. *Note that there is some overlap in this section because certain components depend on other components.*
 

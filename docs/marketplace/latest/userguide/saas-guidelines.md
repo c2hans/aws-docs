@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-guidel
 ---
 
 # SaaS product guidelines for AWS Marketplace
-<a name="saas-guidelines"></a>
 
 AWS Marketplace maintains the following guidelines for all software as a service (SaaS) products and offerings on AWS Marketplace to promote a safe, secure, and trustworthy platform for our customers. The following sections provide guidelines for SaaS products on AWS Marketplace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-sql-edi
 ---
 
 # Querying configured tables using the SQL code editor
-<a name="use-sql-editor"></a>
 
 As a member who can query, you can build a query manually by writing SQL code in the SQL code editor. The SQL code editor is located in the **Analysis** section of the **Analysis** tab in the AWS Clean Rooms console.
 

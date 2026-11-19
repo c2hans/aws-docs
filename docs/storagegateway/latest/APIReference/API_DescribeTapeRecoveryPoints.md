@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeTapeRecoveryPoints
-<a name="API_DescribeTapeRecoveryPoints"></a>
 
 Returns a list of virtual tape recovery points that are available for the specified tape gateway.
 

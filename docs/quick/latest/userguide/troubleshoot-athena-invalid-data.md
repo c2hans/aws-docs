@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-athe
 ---
 
 # Invalid data when using Athena with AWS Quick Sight
-<a name="troubleshoot-athena-invalid-data"></a>
 
 An invalid data error can occur when you use any operator or function in a calculated field. To address this, verify that the data in the table is consistent with the format that you supplied to the function.
 

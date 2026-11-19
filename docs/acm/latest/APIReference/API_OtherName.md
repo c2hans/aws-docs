@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_OtherName.ht
 ---
 
 # OtherName
-<a name="API_OtherName"></a>
 
 Defines a custom ASN.1 X.400 `GeneralName` using an object identifier (OID) and value. For more information, see NIST's definition of [Object Identifier (OID)](https://csrc.nist.gov/glossary/term/Object_Identifier).
 

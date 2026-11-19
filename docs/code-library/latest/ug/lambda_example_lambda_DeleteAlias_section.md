@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_la
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `DeleteAlias` with a CLI
-<a name="lambda_example_lambda_DeleteAlias_section"></a>
 
 The following code examples show how to use `DeleteAlias`.
 

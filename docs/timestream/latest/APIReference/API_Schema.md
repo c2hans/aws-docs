@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Schem
 ---
 
 # Schema
-<a name="API_Schema"></a>
 
  A Schema specifies the expected data model of the table.
 

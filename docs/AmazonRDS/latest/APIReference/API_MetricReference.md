@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Metric
 ---
 
 # MetricReference
-<a name="API_MetricReference"></a>
 
 The reference (threshold) for a metric.
 

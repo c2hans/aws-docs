@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Targ
 ---
 
 # TargetGroupSummary
-<a name="API_TargetGroupSummary"></a>
 
 Summary information about a target group.
 

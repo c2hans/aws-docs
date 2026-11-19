@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # AWS Startup Security Baseline
-<a name="introduction"></a>
 
 *Faisal Farooq, Matthew de Anda, Harsh Chunawala, and Justin Plock, Amazon Web Services*
 

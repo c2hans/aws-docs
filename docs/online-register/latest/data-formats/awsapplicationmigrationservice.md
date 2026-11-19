@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Application Migration Service
-<a name="awsapplicationmigrationservice"></a>
 
 AWS Application Migration Service provides the following APIs for data retrieval.
 

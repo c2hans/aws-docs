@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CfnSta
 ---
 
 # CfnStackDetail
-<a name="API_CfnStackDetail"></a>
 
  Details about the CloudFormation stack.
 

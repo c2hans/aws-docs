@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_FastLaunc
 ---
 
 # FastLaunchSnapshotConfigurationRequest
-<a name="API_FastLaunchSnapshotConfigurationRequest"></a>
 
 Configuration settings for creating and managing pre-provisioned snapshots for a Windows fast launch enabled AMI.
 

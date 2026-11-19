@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/assess-uss-audio.htm
 ---
 
 # Assess audio content
-<a name="assess-uss-audio"></a>
 
 Consult the following table for information about how to assess the audio source. Read across each row.
 

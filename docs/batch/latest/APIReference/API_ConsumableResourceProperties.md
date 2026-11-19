@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Consumable
 ---
 
 # ConsumableResourceProperties
-<a name="API_ConsumableResourceProperties"></a>
 
 Contains a list of consumable resources required by a job.
 

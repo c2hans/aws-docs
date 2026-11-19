@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/mc-integr
 ---
 
 # Integrating medical coding into your workflows
-<a name="mc-integration"></a>
 
 Medical coding returns structured, evidence-linked codes, so you can place it wherever coding happens in your revenue cycle. Three integration patterns are common.
 

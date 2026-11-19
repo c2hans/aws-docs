@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/logging-using-c
 ---
 
 # Logging Amazon Managed Grafana API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon Managed Grafana is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Amazon Managed Grafana as events. The calls captured include calls from the Amazon Managed Grafana console and code calls to the Amazon Managed Grafana API operations.
 

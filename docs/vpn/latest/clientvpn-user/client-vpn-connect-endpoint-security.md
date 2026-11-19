@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-con
 ---
 
 # Endpoint security software compatibility
-<a name="client-vpn-connect-endpoint-security"></a>
 
 Enterprise endpoint security products such as host-based firewalls, endpoint detection and response (EDR) agents, and antivirus software can sometimes interfere with AWS Client VPN connections. If you experience connectivity issues when using the AWS provided client, you might need to configure exclusions in your endpoint security software.
 

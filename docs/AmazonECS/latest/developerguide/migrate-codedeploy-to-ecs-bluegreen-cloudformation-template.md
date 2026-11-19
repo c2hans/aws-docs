@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-
 ---
 
 # Migrating an CloudFormation CodeDeploy blue/green deployment template to an Amazon ECS blue/green CloudFormation template
-<a name="migrate-codedeploy-to-ecs-bluegreen-cloudformation-template"></a>
 
 Migrate a CloudFormation template that uses CodeDeploy blue/green deployments for Amazon ECS services to one that uses the native Amazon ECS blue/green deployment strategy. The migration follows the "Reuse the same Elastic Load Balancing resources used for CodeDeploy" approach. For more information, see [Migrate CodeDeploy blue/green deployments to Amazon ECS blue/green deployments](migrate-codedeploy-to-ecs-bluegreen.md).
 

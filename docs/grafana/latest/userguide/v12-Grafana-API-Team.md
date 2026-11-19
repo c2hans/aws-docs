@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # Team API
-<a name="v12-Grafana-API-Team"></a>
 
 Use the Team API to work with teams in an Amazon Managed Grafana workspace. All actions in this API require that you have the Admin role.
 

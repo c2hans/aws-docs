@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-win
 ---
 
 # Kernel debugging for Windows instances over the network
-<a name="troubleshoot-windows-with-kdnet"></a>
 
 The KDNET Extensibility Module for Elastic Network Adapter (ENA) is a hardware driver support layer that enables Windows kernel debugging over the network through ENA on Amazon Elastic Compute Cloud instances. You can use the extensibility module with the Windows Debugger (WinDbg) to perform kernel-level debugging on EC2 instances running Windows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.NEST_T
 ---
 
 # NEST\_TO\_ARRAY
-<a name="recipe-actions.NEST_TO_ARRAY"></a>
 
 Converts user-selected columns into array values. The order of the selected columns is maintained while creating the resultant array. The different column data types are typecast to a common type that supports the data types of all columns.
 

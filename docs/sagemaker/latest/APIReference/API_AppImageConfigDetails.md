@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AppIma
 ---
 
 # AppImageConfigDetails
-<a name="API_AppImageConfigDetails"></a>
 
 The configuration for running a SageMaker AI image as a KernelGateway app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.DB2zOS.
 ---
 
 # Using IBM Db2 for z/OS databases as a source for AWS DMS
-<a name="CHAP_Source.DB2zOS"></a>
 
 You can migrate data from an IBM for z/OS database to any supported target database using AWS Database Migration Service (AWS DMS).
 

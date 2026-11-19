@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.DataP
 ---
 
 # Cross-region inference in AWS Database Migration Service
-<a name="CHAP_Security.DataProtection.CrossRegionInference"></a>
 
  Certain AWS Database Migration Service features use cross-region AI inference to automatically select the optimal AWS Region within your geography to process inference requests. This approach maximizes available compute resources and model availability, and is designed to provide a high-quality customer experience. With cross-region inference, you get:
 + Access to the most advanced AI capabilities and features

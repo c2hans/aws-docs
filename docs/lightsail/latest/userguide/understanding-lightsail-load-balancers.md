@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/understanding
 ---
 
 # Distribute web traffic with Lightsail load balancers
-<a name="understanding-lightsail-load-balancers"></a>
 
 A Lightsail load balancer distributes incoming web traffic among multiple Lightsail instances, in multiple Availability Zones. Load balancing increases the availability and fault tolerance of the application on your instances. You can add and remove instances from your Lightsail load balancer as your needs change, without disrupting the overall flow of requests to your application.
 

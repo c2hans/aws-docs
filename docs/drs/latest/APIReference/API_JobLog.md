@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_JobLog.html
 ---
 
 # JobLog
-<a name="API_JobLog"></a>
 
 A log outputted by a Job.
 

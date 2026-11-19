@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor-admin-st
 ---
 
 # Change the default storage size
-<a name="code-editor-admin-storage-size"></a>
 
 You can change the default storage settings of your users. You can also change the default storage settings based on your organizational requirements and the needs of your users.
 

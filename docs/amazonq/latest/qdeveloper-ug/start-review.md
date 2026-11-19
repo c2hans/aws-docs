@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/start-revie
 ---
 
 # Starting a code review with Amazon Q Developer
-<a name="start-review"></a>
 
 Amazon Q can review your entire file or codebase, or auto-review your code as you write it.
 

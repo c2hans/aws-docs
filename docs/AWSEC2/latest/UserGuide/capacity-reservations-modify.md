@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Modify a Capacity Reservation
-<a name="capacity-reservations-modify"></a>
 
 If you have an active Capacity Reservation that isn't a good fit for the workload that needs the capacity, you can modify the instance quantity, instance eligibility (`open` or `targeted`), and end time (`At specific time` or `Manually`). If you specify a new instance quantity that exceeds your remaining On-Demand Instance limit for the selected instance type, the update fails.
 

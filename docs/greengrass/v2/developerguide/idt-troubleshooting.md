@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/idt-trouble
 ---
 
 # Troubleshooting IDT for AWS IoT Greengrass V2
-<a name="idt-troubleshooting"></a>
 
 IDT for AWS IoT Greengrass V2 writes errors to various locations based on the type of errors. IDT writes errors to the console, log files, and test reports.
 

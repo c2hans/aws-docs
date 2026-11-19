@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/use-create-call-api.
 ---
 
 # Making an outbound call for using Amazon Chime SDK PSTN audio service
-<a name="use-create-call-api"></a>
 
 To create an outbound call, you use the [CreateSipMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. The API invokes the endpoint of a specified `SIP media application ID`. Customers can control the flow of the call by giving different signaling and [SipMediaApplication](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_SipMediaApplication.html) actions from the endpoint.
 

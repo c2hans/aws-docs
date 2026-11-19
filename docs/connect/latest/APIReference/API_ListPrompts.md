@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListProm
 ---
 
 # ListPrompts
-<a name="API_ListPrompts"></a>
 
 Provides information about the prompts for the specified Connect Customer instance.
 

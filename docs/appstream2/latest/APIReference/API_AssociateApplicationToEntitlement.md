@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Assoc
 ---
 
 # AssociateApplicationToEntitlement
-<a name="API_AssociateApplicationToEntitlement"></a>
 
 Associates an application to entitle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/troub
 ---
 
 # Troubleshooting Resource Explorer setup and configuration issues
-<a name="troubleshooting_setup"></a>
 
 Use the information here to help you diagnose and fix issues that can occur when you initially set up or configure AWS Resource Explorer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
  This section provides the source code for the solution, a [NodeJS library reference](nodejs-library-reference.md), an [access tokens management guide](access-tokens-management-guide.md), a [session revocation guide](session-revocation-guide.md), and [playback API integration](playback-api-integration.md).
 

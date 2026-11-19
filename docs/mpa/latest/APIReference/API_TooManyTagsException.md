@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_TooManyTagsE
 ---
 
 # TooManyTagsException
-<a name="API_TooManyTagsException"></a>
 
 The request exceeds the maximum number of tags allowed for this resource. Remove some tags, and try again.
 

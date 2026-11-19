@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListJobs.h
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Returns a list of AWS Batch jobs.
 

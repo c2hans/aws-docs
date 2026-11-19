@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # UsageBasedPricingTerm
-<a name="API_marketplace-agreements_UsageBasedPricingTerm"></a>
 
 Defines a usage-based pricing model (typically, pay-as-you-go pricing), where the customers are charged based on product usage.
 

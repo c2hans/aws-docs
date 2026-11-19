@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_pass
 ---
 
 # Manage passwords for IAM users
-<a name="id_credentials_passwords_admin-change-user"></a>
 
 IAM users who use the AWS Management Console to work with AWS resources must have a password in order to sign in. You can create, change, or delete a password for an IAM user in your AWS account.
 

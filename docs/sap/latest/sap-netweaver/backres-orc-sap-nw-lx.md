@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/backres-orc-sap
 ---
 
 # Backup & restore
-<a name="backres-orc-sap-nw-lx"></a>
 
 ## Snapshots and AMIs
 <a name="snapami-backres-orc-sap-nw-lx"></a>

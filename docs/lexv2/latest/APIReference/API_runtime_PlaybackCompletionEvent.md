@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Pl
 ---
 
 # PlaybackCompletionEvent
-<a name="API_runtime_PlaybackCompletionEvent"></a>
 
 Event sent from the client application to Amazon Lex to indicate that playback of audio is complete and that Amazon Lex should start processing the user's input.
 

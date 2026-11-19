@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/compliance-validation.html
 ---
 
 # Compliance validation for Amazon Simple Email Service
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of Amazon Simple Email Service as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

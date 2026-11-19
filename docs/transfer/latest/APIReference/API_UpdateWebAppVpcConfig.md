@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebAppVpcConfig
-<a name="API_UpdateWebAppVpcConfig"></a>
 
 Contains the VPC configuration settings for updating a web app endpoint, including the subnet IDs where the endpoint should be deployed.
 

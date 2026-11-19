@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateComputationModel
-<a name="API_UpdateComputationModel"></a>
 
 Updates the computation model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_T
 ---
 
 # TableWildcard
-<a name="API_TableWildcard"></a>
 
 A wildcard object representing every table under a database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Turkey registration
-<a name="nx-country-reg-tr"></a>
 
 The following registrations are available for Turkey.
 

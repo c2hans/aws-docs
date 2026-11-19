@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Using a secret
-<a name="workflows-secrets.using"></a>
 
 To use a secret in a workflow action, you must obtain the reference identifier of the secret and use that identifier in the workflow action.
 

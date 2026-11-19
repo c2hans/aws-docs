@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-action-lam
 ---
 
 # Lambda function examples
-<a name="receiving-email-action-lambda-example-functions"></a>
 
 This topic contains examples of Lambda functions that control mail flow.
 

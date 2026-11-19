@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-job.html
 ---
 
 # Recovery job history
-<a name="recovery-job"></a>
 
 The Recovery launch history page provides an in-depth overview for operations (Jobs) performed in Elastic Disaster Recovery.
 

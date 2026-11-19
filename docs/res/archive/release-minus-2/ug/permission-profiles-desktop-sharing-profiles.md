@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/permissio
 ---
 
 # Desktop sharing profiles
-<a name="permission-profiles-desktop-sharing-profiles"></a>
 
 Administrators can create new profiles and customize them. These profiles can be accessed by all users and are used when sharing a session with others. The maximum permissions granted within these profiles cannot exceed the desktop permissions allowed globally.
 

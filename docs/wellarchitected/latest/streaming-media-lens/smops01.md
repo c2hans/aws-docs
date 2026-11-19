@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Organization
-<a name="smops01"></a>
 
 Streaming workflows cross multiple teams (encoding, delivery, client, and operations) and require clear ownership at each stage.
 

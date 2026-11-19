@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/listen-to-digits.htm
 ---
 
 # ReceiveDigits
-<a name="listen-to-digits"></a>
 
 When a user enters digits that match the regular expression pattern specified in this action, the SIP media application invokes the AWS Lambda function.
 

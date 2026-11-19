@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeResourceGroupingRecommendationTask
-<a name="API_DescribeResourceGroupingRecommendationTask"></a>
 
 Describes the resource grouping recommendation tasks run by AWS Resilience Hub for your application.
 

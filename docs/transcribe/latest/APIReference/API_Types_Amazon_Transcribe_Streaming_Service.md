@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Types
 ---
 
 # Amazon Transcribe Streaming Service
-<a name="API_Types_Amazon_Transcribe_Streaming_Service"></a>
 
 The following data types are supported by Amazon Transcribe Streaming Service:
 +  [Alternative](API_streaming_Alternative.md)

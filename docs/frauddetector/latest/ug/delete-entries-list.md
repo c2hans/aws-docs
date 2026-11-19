@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/delete-entries-l
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Delete entries from a list
-<a name="delete-entries-list"></a>
 
 You can delete one or more entries from your lists at any time. When you delete entries in your list you don’t need to update the rule the list is associated with. The rule automatically incorporates the updated list.
 

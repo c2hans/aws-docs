@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Designing an AWS Control Tower landing zone
-<a name="introduction"></a>
 
 *Vikas Dewangan, Emelie Akerstrom, and Pooja Banerjee, Amazon Web Services*
 

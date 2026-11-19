@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-ascs-servic
 ---
 
 # Configure SAP for Cluster Control
-<a name="sap-ascs-service-control-nw-sles"></a>
 
 Modify SAP service configurations, user permissions, and system integration settings to enable proper cluster control of ASCS and ERS instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/troubleshoot-throughput-pr
 ---
 
 # Increasing throughput with Amazon SES
-<a name="troubleshoot-throughput-problems"></a>
 
 When you send emails, you can call Amazon SES as frequently as your maximum send rate allows. (For more information about your maximum send rate, see [Managing your Amazon SES sending limits](manage-sending-quotas.md).) However, each call to Amazon SES takes time to complete.
 

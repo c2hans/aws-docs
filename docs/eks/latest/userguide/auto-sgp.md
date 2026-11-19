@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-sgp.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Assign security groups to individual Pods in EKS Auto Mode
-<a name="auto-sgp"></a>
 
  **Applies to**: EKS Auto Mode clusters running Kubernetes 1.36 or later
 

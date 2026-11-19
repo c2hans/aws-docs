@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # DataAutomationLibraryItem
-<a name="API_data-automation_DataAutomationLibraryItem"></a>
 
 A data automation library item.
 

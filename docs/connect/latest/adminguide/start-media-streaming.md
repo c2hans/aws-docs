@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/start-media-st
 ---
 
 # Flow block in Connect Customer: Start media streaming
-<a name="start-media-streaming"></a>
 
 This topic defines the flow block for capturing what the customer hears and says during a contact. You can then analyze this information for training or determining customer sentiment.
 

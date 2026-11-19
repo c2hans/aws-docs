@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelL
 ---
 
 # ChannelLoggingUpdateInput
-<a name="API_ChannelLoggingUpdateInput"></a>
 
 The updated Amazon CloudWatch Logs configuration for a channel. Used in [UpdateChannel](API_UpdateChannel.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectBadge
-<a name="API_ProjectBadge"></a>
 
 Information about the build badge for the build project.
 

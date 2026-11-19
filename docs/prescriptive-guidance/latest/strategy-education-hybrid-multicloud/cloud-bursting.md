@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Cloud bursting for research computing
-<a name="cloud-bursting"></a>
 
 The research computing group at an R1 (Doctoral Universities – Very High Research Activity) research institution in the US had been running on-premises high performance computing (HPC) clusters with the Slurm scheduler for many years. Except for a few weeks of scheduled maintenance, the clusters were running at 80-95 percent utilization rate with most of their queues full.
 

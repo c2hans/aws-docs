@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PutFormType.html
 ---
 
 # PutFormType
-<a name="API_PutFormType"></a>
 
 Creates or updates a form type in AWS Glue Data Catalog. A form type defines the schema for structured metadata that can be attached to assets.
 

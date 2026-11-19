@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/api-gwv2-au
 ---
 
 # api-gwv2-authorization-type-configured
-<a name="api-gwv2-authorization-type-configured"></a>
 
 Checks if Amazon API Gatewayv2 API routes have an authorization type set. This rule is NON\_COMPLIANT if the authorization type is NONE.
 

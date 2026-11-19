@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateF
 ---
 
 # CreateFormType
-<a name="API_CreateFormType"></a>
 
 Creates a metadata form type.
 

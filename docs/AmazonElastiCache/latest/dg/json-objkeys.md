@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-objkeys
 ---
 
 # JSON.OBJKEYS
-<a name="json-objkeys"></a>
 
 Gets key names in the object values at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Considerations
-<a name="deployment-considerations"></a>
 
 Selecting the appropriate deployment pattern depends on your specific requirements, operational capabilities, and workload characteristics. Refer to the following decision matrix for different patterns:
 

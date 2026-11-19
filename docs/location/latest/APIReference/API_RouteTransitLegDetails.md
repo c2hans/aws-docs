@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitLegDetails
-<a name="API_RouteTransitLegDetails"></a>
 
 Populated when the Leg type is Transit, and provides additional information that is specific to public transit travel.
 

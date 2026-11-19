@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Migrate to Amazon OpenSearch Serverless NextGen
-<a name="migrate-to-serverless"></a>
 
 This section describes how to target an [Amazon OpenSearch Serverless NextGen](https://aws.amazon.com/opensearch-service/features/serverless/) collection when you run the Migration Assistant for Amazon OpenSearch Service solution. Targeting Amazon OpenSearch Serverless NextGen follows the same Workflow CLI lifecycle described in [Getting started with the Workflow CLI](use-the-solution.md#getting-started) — load the version-matched sample, configure the target, prove connectivity, run a pilot, and then run the full workflow. The differences are confined to how you configure the target cluster, how you grant access through a collection data access policy, and a set of platform constraints that come from the serverless model.
 

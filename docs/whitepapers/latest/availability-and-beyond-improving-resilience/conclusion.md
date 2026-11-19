@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  We established 12 rules for high availability throughout this document.
 +  **Rule 1** – Less frequent failure (longer MTBF), shorter failure detection times (shorter MTTD), and shorter repair times (shorter MTTR) are the three factors that are used to improve availability in distributed systems.

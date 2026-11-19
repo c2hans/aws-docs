@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Patterns for modeling your resource types
-<a name="resource-type-howtos"></a>
 
 Use the following patterns to model the data structures of your resource types using the Resource Provider Schema.
 

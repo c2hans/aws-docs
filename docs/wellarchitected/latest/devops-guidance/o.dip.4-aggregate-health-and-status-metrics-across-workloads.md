@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.DIP.4] Aggregate health and status metrics across workloads
-<a name="o.dip.4-aggregate-health-and-status-metrics-across-workloads"></a>
 
  **Category:** RECOMMENDED
 

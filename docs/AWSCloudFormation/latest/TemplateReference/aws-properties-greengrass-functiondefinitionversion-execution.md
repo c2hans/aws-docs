@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Greengrass::FunctionDefinitionVersion Execution
-<a name="aws-properties-greengrass-functiondefinitionversion-execution"></a>
 
 <a name="aws-properties-greengrass-functiondefinitionversion-execution-description"></a>Configuration settings for the Lambda execution environment on the AWS IoT Greengrass core.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/install-updates.html
 ---
 
 # Update instance software on your AL2 instance
-<a name="install-updates"></a>
 
 It is important to keep software up to date. Packages in a Linux distribution are updated frequently to fix bugs, add features, and protect against security exploits. When you first launch and connect to an Amazon Linux instance, you might see a message asking you to update software packages for security purposes. This section shows how to update an entire system, or just a single package.
 

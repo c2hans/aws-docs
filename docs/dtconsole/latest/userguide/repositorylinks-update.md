@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/repositorylin
 ---
 
 # Update a repository link
-<a name="repositorylinks-update"></a>
 
 You can use the **update-repository-link** command in the AWS Command Line Interface (AWS CLI) to update a specified repository link.
 

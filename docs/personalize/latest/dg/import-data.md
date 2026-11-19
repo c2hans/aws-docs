@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/import-data.html
 ---
 
 # Importing training data into Amazon Personalize datasets
-<a name="import-data"></a>
 
 After you complete [create a schema and a dataset](data-prep-creating-datasets.md), you are ready to import your training data into the dataset. When you import data, you can choose to import records in bulk, individually, or both.
 + Bulk imports involve importing a large number of historical records at once. You can prepare bulk data yourself, and import it directly into Amazon Personalize from a CSV file in Amazon S3. For information about how to prepare your data, see [Preparing training data for Amazon Personalize](preparing-training-data.md). If you need help preparing your data, you can use SageMaker AI Data Wrangler to prepare and import your bulk item interaction, user, and item data. For more information, see [Preparing and importing bulk data using Amazon SageMaker AI Data Wrangler](preparing-importing-with-data-wrangler.md).

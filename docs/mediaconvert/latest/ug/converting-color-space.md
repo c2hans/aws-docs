@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-color-
 ---
 
 # Configuring color space conversion
-<a name="converting-color-space"></a>
 
 The following procedure details how to configure a job to convert from one color space to another.
 

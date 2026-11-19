@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactE
 ---
 
 # ContactEvaluationAttributeFilter
-<a name="API_ContactEvaluationAttributeFilter"></a>
 
 An object that can be used to specify tag conditions and attribute conditions inside the `SearchFilter` for contact evaluations. This accepts an `OR` or `AND` (List of List) input where:
 + The top level list specifies conditions that need to be applied with `OR` operator.

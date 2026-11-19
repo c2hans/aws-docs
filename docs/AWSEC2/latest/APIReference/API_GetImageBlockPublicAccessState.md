@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetImageB
 ---
 
 # GetImageBlockPublicAccessState
-<a name="API_GetImageBlockPublicAccessState"></a>
 
 Gets the current state of *block public access for AMIs* at the account level in the specified AWS Region.
 

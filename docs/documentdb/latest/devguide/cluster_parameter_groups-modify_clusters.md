@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/cluster_param
 ---
 
 # Modifying Amazon DocumentDB clusters to use custom cluster parameter groups
-<a name="cluster_parameter_groups-modify_clusters"></a>
 
 When you create an Amazon DocumentDB cluster, a `default.docdb4.0` parameter group is automatically created for that cluster. You can't modify the `default` cluster parameter group. Instead, you can modify your Amazon DocumentDB cluster to associate a new customized parameter group with it.
 

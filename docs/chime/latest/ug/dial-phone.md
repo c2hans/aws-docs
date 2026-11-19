@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/dial-phone.html
 ---
 
 # Dialing phone numbers
-<a name="dial-phone"></a>
 
 The following steps explain how to dial a phone number in Amazon Chime.
 

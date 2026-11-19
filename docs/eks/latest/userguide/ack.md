@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/ack.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy AWS resources from Kubernetes with AWS Controllers for Kubernetes (ACK)
-<a name="ack"></a>
 
  AWS Controllers for Kubernetes (ACK) lets you define and manage AWS service resources directly from Kubernetes. With AWS Controllers for Kubernetes (ACK), you can manage workload resources and cloud infrastructure using Kubernetes custom resources, right alongside your application workloads using familiar Kubernetes APIs and tools.
 

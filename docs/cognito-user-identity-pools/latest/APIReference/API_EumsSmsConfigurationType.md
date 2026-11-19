@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # EumsSmsConfigurationType
-<a name="API_EumsSmsConfigurationType"></a>
 
 The configuration that Amazon Cognito uses to send SMS messages through AWS End User Messaging SMS. Provide this structure in the `EumsSms` member of `SmsConfigurationType` to use AWS End User Messaging SMS instead of Amazon SNS.
 

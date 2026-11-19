@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SchemaC
 ---
 
 # SchemaConfiguration
-<a name="API_SchemaConfiguration"></a>
 
 Specifies the schema to which you want Firehose to configure your data before it writes it to Amazon S3. This parameter is required if `Enabled` is set to true.
 

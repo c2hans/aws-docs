@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-macie2
 ---
 
 # Amazon Macie events
-<a name="events-ref-macie2"></a>
 
 Macie sends service events to EventBridge via AWS CloudTrail.
 

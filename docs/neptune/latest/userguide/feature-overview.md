@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-overvie
 ---
 
 # Overview of Amazon Neptune features
-<a name="feature-overview"></a>
 
 **Note**
 This section does not cover using the query languages that you can use to access the data in a Neptune graph.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_DisableA
 ---
 
 # DisableApplicationLayerAutomaticResponse
-<a name="API_DisableApplicationLayerAutomaticResponse"></a>
 
 Disable the Shield Advanced automatic application layer DDoS mitigation feature for the protected resource. This stops Shield Advanced from creating, verifying, and applying AWS WAF rules for attacks that it detects for the resource.
 

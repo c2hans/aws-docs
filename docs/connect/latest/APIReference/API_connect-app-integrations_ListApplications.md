@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListApplications
-<a name="API_connect-app-integrations_ListApplications"></a>
 
 Lists applications in the account.
 

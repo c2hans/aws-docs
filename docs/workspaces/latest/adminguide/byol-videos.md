@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-videos
 ---
 
 # Videos on uploading and creating BYOL images
-<a name="byol-videos"></a>
 
 For a demonstration on uploading BYOL images, watch the following videos.
 

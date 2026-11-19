@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # OpenIdConnectTokenSelectionDetail
-<a name="API_OpenIdConnectTokenSelectionDetail"></a>
 
 The token type that you want to process from your OIDC identity provider. Your policy store can process either identity (ID) or access tokens from a given OIDC identity source.
 

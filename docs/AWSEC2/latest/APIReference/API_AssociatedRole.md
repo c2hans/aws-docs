@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociatedRole
-<a name="API_AssociatedRole"></a>
 
 Information about the associated IAM roles.
 

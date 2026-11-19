@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/cancel-import
 ---
 
 # Cancel an import snapshot task
-<a name="cancel-import-task"></a>
 
 After you start an import snapshot task using VM Import/Export, you can cancel the import operation if needed.
 

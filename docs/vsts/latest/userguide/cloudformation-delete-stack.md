@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/cloudformation-del
 ---
 
 # AWS CloudFormation Delete Stack task
-<a name="cloudformation-delete-stack"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

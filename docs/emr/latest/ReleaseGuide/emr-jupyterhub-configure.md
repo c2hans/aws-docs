@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-jupyterhub-c
 ---
 
 # Configuring JupyterHub
-<a name="emr-jupyterhub-configure"></a>
 
 You can customize the configuration of JupyterHub on Amazon EMR and individual user notebooks by connecting to the cluster master node and editing configuration files. After you change values, restart the `jupyterhub` container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Control access to WebSocket APIs with AWS Lambda REQUEST authorizers
-<a name="apigateway-websocket-api-lambda-auth"></a>
 
 A Lambda authorizer function in WebSocket APIs is similar to that for [REST APIs](apigateway-use-lambda-authorizer.md#api-gateway-lambda-authorizer-lambda-function-create), with the following exceptions:
 +  You can only use a Lambda authorizer function for the `$connect` route.

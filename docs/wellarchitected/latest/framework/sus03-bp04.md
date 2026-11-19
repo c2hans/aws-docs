@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus03-b
 ---
 
 # SUS03-BP04 Use purpose-built, energy efficient hardware tailored to your workload
-<a name="sus03-bp04"></a>
 
  Software optimizations have diminishing returns when the underlying hardware isn't matched to the workload. AWS offers managed service features and [Amazon EC2](https://aws.amazon.com/ec2/) instance types to tailor the underlying hardware involved to the processing needs of a workload. For example, you can select several types of CPU architecture, purpose-built silicon for machine learning, instance storage options, or network adapter features. By selecting the right features for your workload, you can optimize the use of resources and energy and lower your environmental impact for workloads that are compute, storage, or network-bound while simultaneously improving performance and reducing costs.
 

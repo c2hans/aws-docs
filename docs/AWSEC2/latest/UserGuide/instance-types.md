@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.h
 ---
 
 # Amazon EC2 instance types
-<a name="instance-types"></a>
 
 When you launch an instance, the *instance type* that you specify determines the hardware of the host computer used for your instance. Each instance type offers different compute, memory, and storage capabilities, and is grouped in an instance family based on these capabilities. Select an instance type based on the requirements of the application or software that you plan to run on your instance. For more information about features and use cases, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
 

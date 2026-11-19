@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/overvi
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## What is the AWS Ground Station Agent?
 <a name="what-is-gs-agent"></a>

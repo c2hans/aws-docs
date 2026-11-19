@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 ---
 
 # Stateful domain list rule groups in AWS Network Firewall
-<a name="stateful-rule-groups-domain-names"></a>
 
 AWS Network Firewall supports domain name stateful network traffic inspection. You can create allow lists and deny lists with domain names that the stateful rules engine looks for in network traffic.
 

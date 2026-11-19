@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Upda
 ---
 
 # UpdateMembership
-<a name="API_UpdateMembership"></a>
 
 Updates a membership.
 

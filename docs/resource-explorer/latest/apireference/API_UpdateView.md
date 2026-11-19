@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # UpdateView
-<a name="API_UpdateView"></a>
 
 Modifies some of the details of a view. You can change the filter string and the list of included properties. You can't change the name of the view.
 

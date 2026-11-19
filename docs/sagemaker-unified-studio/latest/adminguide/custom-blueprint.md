@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Custom blueprints
-<a name="custom-blueprint"></a>
 
 Custom blueprints in Amazon SageMaker Unified Studio enable organizations to standardize and accelerate how data projects get set up. They are administrator-defined templates, powered by AWS CloudFormation, that give teams a ready-made starting point for analytics and machine learning environments.
 

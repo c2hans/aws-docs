@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Phase 3: Enable - Build organizational capability and capacity
-<a name="phase-3"></a>
 
 This phase is focused on building organizational capacity and capability, and replicating patterns of success, by implementing the detailed transformation roadmap and speeding up transformation adoption. During this phase, you use mechanisms such as the [AWS OCA 6-Point Framework](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ocm/), business case valuations, Cloud Operating Model Maturity Framework, [game day methods](https://aws.amazon.com/gameday/), and [Experience-Based Acceleration (EBA)](https://aws.amazon.com/experience-based-acceleration/). The Enable phase is illustrated in the following diagram.
 

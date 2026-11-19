@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/tagging.htm
 ---
 
 # Tagging Your AWS Config Resources
-<a name="tagging"></a>
 
 A tag is a label that you assign to an AWS resource. Each tag consists of a *key* and an optional *value*, both of which you define. Tags make it easier to manage, search for, and filter resources.
 

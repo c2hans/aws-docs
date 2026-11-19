@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Er
 ---
 
 # ErrorInformation
-<a name="API_ErrorInformation"></a>
 
 Contains error information for a pentest job that encountered an error.
 

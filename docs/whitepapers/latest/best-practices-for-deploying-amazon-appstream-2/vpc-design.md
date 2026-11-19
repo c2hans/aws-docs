@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # VPC design
-<a name="vpc-design"></a>
 
 ## Design guidelines
 <a name="design-guidelines"></a>

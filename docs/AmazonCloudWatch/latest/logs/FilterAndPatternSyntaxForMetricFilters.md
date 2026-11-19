@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/FilterAndPa
 ---
 
 # Filter pattern syntax for metric filters
-<a name="FilterAndPatternSyntaxForMetricFilters"></a>
 
 **Note**
 **How metric filters differ from CloudWatch Logs Insights queries**

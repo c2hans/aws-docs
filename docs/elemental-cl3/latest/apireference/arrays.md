@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/arrays
 ---
 
 # Arrays
-<a name="arrays"></a>
 
 In a POST or PUT, an array must include the property **type="array"**. For example:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/replacing-data-se
 ---
 
 # Replacing datasets
-<a name="replacing-data-sets"></a>
 
 In an analysis, you can add, edit, replace, or remove datasets. Use this section to learn how to replace your dataset.
 

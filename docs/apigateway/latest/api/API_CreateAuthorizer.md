@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_CreateAuthoriz
 ---
 
 # CreateAuthorizer
-<a name="API_CreateAuthorizer"></a>
 
 Adds a new Authorizer resource to an existing RestApi resource.
 

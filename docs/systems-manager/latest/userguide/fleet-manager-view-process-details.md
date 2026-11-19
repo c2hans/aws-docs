@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-m
 ---
 
 # Viewing details about OS processes using Fleet Manager
-<a name="fleet-manager-view-process-details"></a>
 
 You can use Fleet Manager view details about processes on your managed nodes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupSelection
-<a name="API_BackupSelection"></a>
 
 Used to specify a set of resources to a backup plan.
 

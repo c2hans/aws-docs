@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListBu
 ---
 
 # ListBuildBatches
-<a name="API_ListBuildBatches"></a>
 
 Retrieves the identifiers of your build batches in the current region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DeviceProxy
-<a name="API_DeviceProxy"></a>
 
 Represents the http/s proxy configuration that will be applied to a device during a run.
 

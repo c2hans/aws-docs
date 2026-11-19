@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Jobs on SageMaker HyperPod clusters
-<a name="sagemaker-hyperpod-run-jobs-slurm"></a>
 
 The following topics provide procedures and examples of accessing compute nodes and running ML workloads on provisioned SageMaker HyperPod clusters. Depending on how you have set up the environment on your HyperPod cluster, there are many ways to run ML workloads on HyperPod clusters. Examples of running ML workloads on HyperPod clusters are also provided in the [Awsome Distributed Training GitHub repository](https://github.com/aws-samples/awsome-distributed-training/). The following topics walk you through how to log in to the provisioned HyperPod clusters and get you started with running sample ML workloads.
 

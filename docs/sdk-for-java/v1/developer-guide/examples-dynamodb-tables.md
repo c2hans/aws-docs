@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/examples
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Working with Tables in DynamoDB
-<a name="examples-dynamodb-tables"></a>
 
 Tables are the containers for all items in a DynamoDB database. Before you can add or remove data from DynamoDB, you must create a table.
 

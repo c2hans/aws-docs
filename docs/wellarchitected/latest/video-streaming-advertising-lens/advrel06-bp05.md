@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVREL06-BP05 Design redundant content origin architecture with cross-region replication
-<a name="advrel06-bp05"></a>
 
  In a single-origin FAST channel architecture, a storage failure, regional impairment, or network issue causes a complete channel blackout. Replicate content origins across Regions with automatic failover at the CDN layer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_InstanceType
 ---
 
 # InstanceTypeEsxVersionsInfo
-<a name="API_InstanceTypeEsxVersionsInfo"></a>
 
 Information about ESX versions offered for each EC2 instance type.
 

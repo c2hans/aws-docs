@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMessageContent
-<a name="API_agent-runtime_AgenticRetrieveMessageContent"></a>
 
 The content of an agentic retrieval message.
 

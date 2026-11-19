@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Column.ht
 ---
 
 # Column
-<a name="API_Column"></a>
 
 Contains metadata for a column in a table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/scheduled-q
 ---
 
 # Best practices
-<a name="scheduled-queries-best-practices"></a>
 
 Follow these best practices to ensure reliable and efficient scheduled query operations:
 

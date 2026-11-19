@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FlowInputContent
-<a name="API_agent-runtime_FlowInputContent"></a>
 
 Contains information about an input into the flow.
 

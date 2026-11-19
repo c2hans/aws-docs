@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableBucket
-<a name="API_s3Buckets_GetTableBucket"></a>
 
 Gets details on a table bucket. For more information, see [Viewing details about an Amazon S3 table bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buckets-details.html) in the *Amazon Simple Storage Service User Guide*.
 

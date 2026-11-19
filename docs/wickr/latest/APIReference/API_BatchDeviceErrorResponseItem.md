@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchDevic
 ---
 
 # BatchDeviceErrorResponseItem
-<a name="API_BatchDeviceErrorResponseItem"></a>
 
 Contains error information for a device operation that failed in a batch device request.
 

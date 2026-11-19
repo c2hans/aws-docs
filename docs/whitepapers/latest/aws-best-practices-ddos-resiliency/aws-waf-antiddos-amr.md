@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – Application layer DDoS protection
-<a name="aws-waf-antiddos-amr"></a>
 
  You can use the AWS WAF [AntiDDoS managed rule group](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-anti-ddos.html) (Anti-DDoS AMR) to protect your web applications against DDoS events in one place when using AWS WAF. This AMR detection system is designed to distinguish between DDoS events and flash crowds, where many legitimate clients send a limited number of requests.
 

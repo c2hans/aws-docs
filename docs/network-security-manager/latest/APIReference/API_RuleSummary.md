@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # RuleSummary
-<a name="API_RuleSummary"></a>
 
 Summary information about a rule.
 

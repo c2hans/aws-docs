@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # The Security Design of the AWS Nitro System
-<a name="security-design-of-aws-nitro-system"></a>
 
 Publication date: **February 15, 2024** ([Document revisions](document-revisions.md))
 

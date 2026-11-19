@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/pii.html
 ---
 
 # Personally identifiable information (PII)
-<a name="pii"></a>
 
 You can use the Amazon Comprehend console or APIs to detect *personally identifiable information (PII)* in English or Spanish text documents. PII is a textual reference to personal data that could be used to identify an individual. PII examples include addresses, bank account numbers, and phone numbers.
 

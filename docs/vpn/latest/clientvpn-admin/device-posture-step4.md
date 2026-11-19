@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Step 4: Enforce the policy
-<a name="device-posture-step4"></a>
 
 When you are satisfied with the shadow-mode results, disable shadow mode to start enforcing the policy.
 

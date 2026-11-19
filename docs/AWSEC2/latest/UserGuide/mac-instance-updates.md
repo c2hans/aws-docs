@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-upd
 ---
 
 # Update the operating system and software on Amazon EC2 Mac instances
-<a name="mac-instance-updates"></a>
 
 The following topic explains how to update the operating system and software on Apple silicon Mac instances (Mac2, Mac2-m1ultra, Mac2-m2, Mac2-m2pro, Mac-m4, and Mac-m4pro) and x86 Mac instances (Mac1).
 

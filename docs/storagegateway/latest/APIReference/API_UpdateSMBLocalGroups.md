@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_U
 ---
 
 # UpdateSMBLocalGroups
-<a name="API_UpdateSMBLocalGroups"></a>
 
 Updates the list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.
 

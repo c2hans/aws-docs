@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Modify Amazon EBS snapshots
-<a name="ebs-migrate-ebs-snapshots"></a>
 
 ## Overview
 <a name="ebs-migrate-ebs-snapshots-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 ---
 
 # OIDC federation
-<a name="id_roles_providers_oidc"></a>
 
 Imagine that you are creating an application that accesses AWS resources, such as GitHub Actions that uses workflows to access Amazon S3 and DynamoDB.
 

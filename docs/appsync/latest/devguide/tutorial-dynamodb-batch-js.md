@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-dynamod
 ---
 
 # Using DynamoDB batch operations in AWS AppSync
-<a name="tutorial-dynamodb-batch-js"></a>
 
 AWS AppSync supports using Amazon DynamoDB batch operations across one or more tables in a single Region. Supported operations are `BatchGetItem`, `BatchPutItem`, and `BatchDeleteItem`. By using these features in AWS AppSync, you can perform tasks such as:
 + Passing a list of keys in a single query and returning the results from a table

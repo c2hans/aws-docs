@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/xray-adding-AWS
 ---
 
 # Use AWS data source configuration to add X-Ray as a data source
-<a name="xray-adding-AWS-config"></a>
 
 To use AWS data source configuration, first you use the Amazon Managed Grafana console to enable service-mananged IAM roles that grant the workspace the IAM policies necessary to read the X-Ray resources in your account or in your entire organizational units. Then you use the Amazon Managed Grafana workspace console to add X-Ray as a data source.
 

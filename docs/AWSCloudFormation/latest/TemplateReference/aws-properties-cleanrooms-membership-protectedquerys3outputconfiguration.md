@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::Membership ProtectedQueryS3OutputConfiguration
-<a name="aws-properties-cleanrooms-membership-protectedquerys3outputconfiguration"></a>
 
 Contains the configuration to write the query results to S3.
 

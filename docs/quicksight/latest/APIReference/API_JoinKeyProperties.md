@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_JoinK
 ---
 
 # JoinKeyProperties
-<a name="API_JoinKeyProperties"></a>
 
 Properties associated with the columns participating in a join.
 

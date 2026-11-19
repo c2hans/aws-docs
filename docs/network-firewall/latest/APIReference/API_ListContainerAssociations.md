@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ListContainerAssociations
-<a name="API_ListContainerAssociations"></a>
 
 Lists the container associations in your account and Region. Use the `NextToken` parameter in subsequent requests to retrieve additional results.
 

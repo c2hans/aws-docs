@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Salesforce Marketing Cloud connection options
-<a name="salesforce-marketing-cloud-connection-options"></a>
 
 The following are connection options for Salesforce Marketing Cloud:
 + `ENTITY_NAME`(String) - (Required) Used for Read. The name of your object in Salesforce Marketing Cloud.

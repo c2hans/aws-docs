@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetSystem
 ---
 
 # GetSystemTableConfiguration
-<a name="API_GetSystemTableConfiguration"></a>
 
 Returns the account-level system tables configuration. Fails with a `ResourceNotFoundException` if system tables are not enabled for the account.
 

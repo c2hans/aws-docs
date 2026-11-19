@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_IntegrationRes
 ---
 
 # IntegrationResponse
-<a name="API_IntegrationResponse"></a>
 
 Represents an integration response. The status code must map to an existing MethodResponse, and parameters and templates can be used to transform the back-end response.
 

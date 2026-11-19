@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Programmatic access (machine-to-machine)
-<a name="m2m-access"></a>
 
 In addition to the web UI, you can call the solution API programmatically — for example, from a CI/CD pipeline or a scheduled job. Each programmatic caller authenticates as a **machine-to-machine (M2M) client**. The client is a dedicated IAM role deployed as its own AWS CloudFormation stack. Assume the role to obtain temporary credentials for signing API requests with AWS Signature Version 4 (SigV4). Each client role is isolated, can be revoked independently, and appears as a distinct principal in AWS CloudTrail.
 

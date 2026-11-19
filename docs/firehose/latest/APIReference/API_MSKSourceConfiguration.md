@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_MSKSour
 ---
 
 # MSKSourceConfiguration
-<a name="API_MSKSourceConfiguration"></a>
 
 The configuration for the Amazon MSK cluster to be used as the source for a delivery stream.
 

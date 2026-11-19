@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appb
 ---
 
 # AWS Application Builder
-<a name="appbuilder"></a>
 
 AWS Application Builder for the AWS Toolkit for Visual Studio Code is your guide to building projects visually, iterating on them locally, and deploying your applications to AWS.
 

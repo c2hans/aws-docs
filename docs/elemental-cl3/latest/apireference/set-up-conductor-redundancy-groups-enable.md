@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST Enable: Enable Conductor Redundancy Group
-<a name="set-up-conductor-redundancy-groups-enable"></a>
 
 Enable Conductor Redundancy mode (high availability) on the two Conductor nodes in the Conductor redundancy group in order to enable the failover mode for the Conductor nodes.
 

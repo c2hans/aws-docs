@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetSSHPublic
 ---
 
 # GetSSHPublicKey
-<a name="API_GetSSHPublicKey"></a>
 
 Retrieves the specified SSH public key, including metadata about the key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 ---
 
 # Concepts and definitions
-<a name="concepts-and-definitions"></a>
 
  This section describes key concepts and defines terminology specific to this solution:
 

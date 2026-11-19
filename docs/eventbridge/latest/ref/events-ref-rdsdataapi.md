@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-rdsdat
 ---
 
 # Amazon RDS Data API events
-<a name="events-ref-rdsdataapi"></a>
 
 Amazon RDS Data API sends service events to EventBridge via AWS CloudTrail.
 

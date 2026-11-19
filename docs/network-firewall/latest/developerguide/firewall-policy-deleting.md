@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Deleting a firewall policy in AWS Network Firewall
-<a name="firewall-policy-deleting"></a>
 
 To delete a firewall policy, perform the following procedure.
 

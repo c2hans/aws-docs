@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/blocks/latest/devguide/building-blocks-r
 ---
 
 # Blocks reference
-<a name="building-blocks-reference"></a>
 
  AWS Blocks ships with built-in Blocks covering authentication, data storage, real-time messaging, AI, observability, and more. Each Block provides a typed API, automatic resource provisioning, and a local implementation for offline development.
 

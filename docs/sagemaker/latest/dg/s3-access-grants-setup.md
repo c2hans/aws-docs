@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/s3-access-grants-set
 ---
 
 # Connect Amazon S3 Access Grants with Studio JupyterLab notebooks
-<a name="s3-access-grants-setup"></a>
 
 Use the following information to grant Amazon S3 Access Grants in Studio JupyterLab notebooks.
 

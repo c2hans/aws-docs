@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Grant IAM permissions for CloudFormation Hooks
-<a name="grant-iam-permissions-for-hooks"></a>
 
 By default, a brand new user in your AWS account doesn't have permission to manage Hooks using the AWS Management Console, AWS Command Line Interface (AWS CLI), or AWS API. To grant users permission, an IAM administrator can create IAM policies. The administrator can then add the IAM policies to roles, and users can assume the roles.
 

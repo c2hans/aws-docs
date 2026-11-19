@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Optimize the remote desktop experience
-<a name="optimize-the-remote-desktop-experience"></a>
 
 Designers typically use terminal-based SSH sessions or graphical remote desktops to submit and visualize workflows. A remote desktop offers GUI-driven interactive tools (such as layout, place, and route) for tool engineers and chip designers to submit jobs. AWS offers [Amazon DCV](https://docs.aws.amazon.com/dcv/#nice-dcv), which is a high-performance remote display protocol that provides a robust user interface for engineering and physical design teams. Amazon DCV performs well over varying network conditions.
 

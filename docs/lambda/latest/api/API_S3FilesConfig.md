@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_S3FilesConfig.html
 ---
 
 # S3FilesConfig
-<a name="API_S3FilesConfig"></a>
 
 Setting controls how your function accesses data from an Amazon S3 file system.
 

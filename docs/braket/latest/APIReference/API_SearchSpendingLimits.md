@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_SearchSpe
 ---
 
 # SearchSpendingLimits
-<a name="API_SearchSpendingLimits"></a>
 
 Searches and lists spending limits based on specified filters. This operation supports pagination and allows filtering by various criteria to find specific spending limits. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

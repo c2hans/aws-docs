@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/access-ami
 ---
 
 # Accessing AMI-based software
-<a name="access-ami-software"></a>
 
 Once you purchase an Amazon Machine Image (AMI)-based software product with contract pricing, you will be directed to the product’s website for account setup and conﬁguration. The usage charges will then appear on your regular AWS account billing report.
 

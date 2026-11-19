@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/caguide/security-ia
 End of support notice: On June 30, 2027, AWS will end support for AWS re:Post Private. After June 30, 2027, you will no longer be able to access the re:Post Private console or re:Post Private resources. For more information, see [AWS re:Post Private end of support](https://docs.aws.amazon.com/repostprivate/latest/userguide/repost-private-end-of-support.html).
 
 # AWS re:Post Private identity-based policy examples
-<a name="security-iam-policy-examples"></a>
 
 **Note**
 For greater security, create federated users instead of IAM users whenever possible.

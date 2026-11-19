@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/enc
 ---
 
 # DynamoDB encryption at rest: How it works
-<a name="encryption.howitworks"></a>
 
 Amazon DynamoDB encryption at rest encrypts your data using 256-bit Advanced Encryption Standard (AES-256), which helps secure your data from unauthorized access to the underlying storage.
 

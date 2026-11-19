@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAdd
 ---
 
 # EmailAddressConfig
-<a name="API_EmailAddressConfig"></a>
 
 Configuration object that specifies an email address to be associated with a queue. This configuration contains the identifier of the email address that should be linked to the queue for routing email contacts.
 

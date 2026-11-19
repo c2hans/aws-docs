@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_De
 ---
 
 # DelegationMetadata
-<a name="API_DelegationMetadata"></a>
 
  The metadata that's associated with the delegation.
 

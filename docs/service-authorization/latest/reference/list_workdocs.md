@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon WorkDocs
-<a name="list_workdocs"></a>
 
 Amazon WorkDocs (service prefix: `workdocs`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

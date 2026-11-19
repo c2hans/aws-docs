@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SaaSConfi
 ---
 
 # SaaSConfiguration
-<a name="API_SaaSConfiguration"></a>
 
 Provides the configuration information to connect to GitHub Enterprise Cloud (SaaS).
 

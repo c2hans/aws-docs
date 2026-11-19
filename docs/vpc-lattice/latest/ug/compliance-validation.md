@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/compliance-validat
 ---
 
 # Compliance validation for Amazon VPC Lattice
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of Amazon VPC Lattice as part of multiple AWS compliance programs.
 

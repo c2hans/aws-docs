@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/put-attri
 ---
 
 # Put attribute mappings
-<a name="put-attribute-mapping"></a>
 
 ## Put attribute mappings (command line interface)
 <a name="put-attribute-mapping-cli"></a>

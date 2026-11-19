@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf03-
 ---
 
 # PERF03-BP03 Collect and record data store performance metrics
-<a name="perf03-bp03"></a>
 
  Without recorded metrics, slow queries and resource pressure in a data store stay invisible until they affect users. Metrics collected over time support data-driven tuning and confirm the store meets workload requirements.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrio/cli-commands.html
 This guide provides documentation for Wickr IO Integrations. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Wickr IO Command Line Interface (CLI)
-<a name="cli-commands"></a>
 
 The Wickr IO command line interface commands are used to perform operations on the Wickr IO clients and the integrations you associate with them. The commands are described as follows:
 

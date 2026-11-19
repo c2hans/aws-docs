@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/host-net-web-app/host-ne
 ---
 
 # Publish a .NET Application to a Windows Server 2022 Instance in Amazon Lightsail
-<a name="host-net-web-app"></a>
 
 |  |  |
 | --- |--- |

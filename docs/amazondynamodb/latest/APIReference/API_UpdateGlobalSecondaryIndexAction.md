@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateGlobalSecondaryIndexAction
-<a name="API_UpdateGlobalSecondaryIndexAction"></a>
 
 Represents the new provisioned throughput settings to be applied to a global secondary index.
 

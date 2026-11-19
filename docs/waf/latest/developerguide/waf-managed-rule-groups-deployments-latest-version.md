@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # LATEST version updates for AWS Managed Rules
-<a name="waf-managed-rule-groups-deployments-latest-version"></a>
 
 The AWS WAF Bot Control managed rule group offers a `LATEST` version that always points to the newest static version of the rule group. When AWS deploys a new static version of the rule group, it also updates `LATEST` to point to the new version. Protection packs (Web ACLs) that use `LATEST` start using the new static version at that time, without any action on your part.
 

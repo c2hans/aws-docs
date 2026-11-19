@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Lists jobs.
 

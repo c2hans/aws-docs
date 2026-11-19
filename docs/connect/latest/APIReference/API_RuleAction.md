@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleActi
 ---
 
 # RuleAction
-<a name="API_RuleAction"></a>
 
 Information about the action to be performed when a rule is triggered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/input-output-it
 ---
 
 # ItemReader (Map)
-<a name="input-output-itemreader"></a>
 
 The `ItemReader` field is a JSON object, which specifies a dataset and its location. A *Distributed Map state* uses this dataset as its input.
 

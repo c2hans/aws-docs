@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Put
 ---
 
 # PutJobFailureResult
-<a name="API_PutJobFailureResult"></a>
 
 Represents the failure of a job as returned to the pipeline by a job worker. Used for custom actions only.
 

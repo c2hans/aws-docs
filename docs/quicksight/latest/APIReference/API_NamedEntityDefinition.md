@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Named
 ---
 
 # NamedEntityDefinition
-<a name="API_NamedEntityDefinition"></a>
 
 A structure that represents a named entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-customiza
 ---
 
 # Prepare data for fine-tuning your models
-<a name="model-customization-prepare"></a>
 
 To prepare training and validation datasets for your custom model, you create `.jsonl` files, where each line is a JSON object corresponding to a record. Before you can begin a model customization job, you must at minimum prepare a training dataset. The files you create must conform to the format for the customization method and model that you choose. The records in it must conform to size requirements depending your model.
 

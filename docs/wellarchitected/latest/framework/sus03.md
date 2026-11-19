@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus03.h
 ---
 
 # Enhance workload efficiency
-<a name="sus03"></a>
 
  This capability covers best practices to enhance workload efficiency. The cloud is inherently flexible, and you can provision resources as needed. Be intentional about your choices and usage of AWS services, resources, and features. It is important that you continually evaluate your design decisions, and explore opportunities to maximize efficiency and decommission unused resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuni
 ---
 
 # Download, Prepare, and Upload Training Data
-<a name="automatic-model-tuning-ex-data"></a>
 
 For this example, you use a training dataset of information about bank customers that includes the customer's job, marital status, and how they were contacted during the bank's direct marketing campaign. To use a dataset for a hyperparameter tuning job, you download it, transform the data, and then upload it to an Amazon S3 bucket.
 

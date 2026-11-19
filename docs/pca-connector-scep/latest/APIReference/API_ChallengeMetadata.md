@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # ChallengeMetadata
-<a name="API_ChallengeMetadata"></a>
 
 Contains details about the connector's challenge.
 

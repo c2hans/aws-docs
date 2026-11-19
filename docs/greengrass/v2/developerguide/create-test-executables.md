@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-test
 ---
 
 # Create IDT test case executables
-<a name="create-test-executables"></a>
 
 You can create and place test case executables in a test suite folder in the following ways:
 + For test suites that use arguments or environment variables from the `test.json` files to determine which tests to run, you can create a single test case executable for the entire test suite, or a test executable for each test group in the test suite.

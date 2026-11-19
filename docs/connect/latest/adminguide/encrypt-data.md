@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/encrypt-data.h
 ---
 
 # Encrypt sensitive customer input in Connect Customer
-<a name="encrypt-data"></a>
 
 You can encrypt sensitive data that is collected by flows. To do this, you need to use public-key cryptography.
 

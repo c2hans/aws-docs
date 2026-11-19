@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/users.htm
 ---
 
 # Users
-<a name="users"></a>
 
 All users synced from your active directory will appear on the Users page. Users are synced by the cluster-admin user during configuration of the product. For more information on initial user configuration, see the [Configuration guide](configuration-guide.md).
 

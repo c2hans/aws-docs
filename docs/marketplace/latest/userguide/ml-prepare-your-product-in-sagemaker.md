@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-prepare-
 ---
 
 # Preparing your product in SageMaker AI
-<a name="ml-prepare-your-product-in-sagemaker"></a>
 
 Before you can publish your product in AWS Marketplace, you must prepare it in Amazon SageMaker AI. There are two types of SageMaker AI products listed in AWS Marketplace: model packages and algorithms. For more information, see [Machine learning products in AWS Marketplace](machine-learning-products.md). This topic provides an overview of the three steps that are required to prepare your product:
 

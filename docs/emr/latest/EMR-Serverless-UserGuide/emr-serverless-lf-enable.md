@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-
 ---
 
 # Using EMR Serverless with AWS Lake Formation for fine-grained access control
-<a name="emr-serverless-lf-enable"></a>
 
 ## Overview
 <a name="emr-serverless-lf-enable-overview"></a>

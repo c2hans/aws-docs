@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/adobe-rtmp-outp
 ---
 
 # Adobe RTMP output
-<a name="adobe-rtmp-output"></a>
 
 Adobe RTMP output does not support passthrough of the SCTE-35 messages but does support manifest decoration. Therefore, the workable options are:
 

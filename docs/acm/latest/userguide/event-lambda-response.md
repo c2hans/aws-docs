@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/event-lambda-respon
 ---
 
 # Responding to an event with a Lambda function
-<a name="event-lambda-response"></a>
 
 This procedure demonstrates how to use AWS Lambda to listen on Amazon EventBridge, create notifications with Amazon Simple Notification Service (SNS), and publish findings to AWS Security Hub CSPM, providing visibility to administrators and security teams. <a name="lambda-setup"></a>
 

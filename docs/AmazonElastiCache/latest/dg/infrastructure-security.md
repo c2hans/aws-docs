@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/infrastructu
 ---
 
 # Infrastructure security in AWS ElastiCache
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS ElastiCache is protected by the AWS global network security procedures that are described in the Security and Compliance section at [AWS Architecture Center](https://aws.amazon.com/architecture/).
 

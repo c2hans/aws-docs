@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Scrap
 ---
 
 # ScraperSummary
-<a name="API_ScraperSummary"></a>
 
 The `ScraperSummary` structure contains a summary of the details about one scraper in your account.
 

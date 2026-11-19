@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/infrastructur
 ---
 
 # Infrastructure security in Elastic Beanstalk
-<a name="infrastructure-security"></a>
 
 As a managed service, AWS Elastic Beanstalk is protected by the AWS global network security procedures that are described in our [ Best Practices for Security, Identity, and Compliance](https://aws.amazon.com/architecture/security-identity-compliance) website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # MpaTeamAssociation
-<a name="API_MpaTeamAssociation"></a>
 
 The details of an MPA team association with a protected operation.
 

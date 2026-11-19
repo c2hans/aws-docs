@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateOpenID
 ---
 
 # UpdateOpenIDConnectProviderThumbprint
-<a name="API_UpdateOpenIDConnectProviderThumbprint"></a>
 
 Replaces the existing list of server certificate thumbprints associated with an OpenID Connect (OIDC) provider resource object with a new list of thumbprints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Stage 5: Respond and learn
-<a name="stage-5"></a>
 
 How your application responds to disruptive events influences its reliability. Learning from experience and how your application has responded to disruption in the past is also critical to improving its reliability.
 

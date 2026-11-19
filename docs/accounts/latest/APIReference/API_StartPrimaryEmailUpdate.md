@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_StartPr
 ---
 
 # StartPrimaryEmailUpdate
-<a name="API_StartPrimaryEmailUpdate"></a>
 
 Starts the process to update the primary email address for the specified account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Dynamic client registration
-<a name="cognito-user-pools-dynamic-client-registration"></a>
 
 With dynamic client registration, applications and AI agents can register their own OAuth app clients in your user pool at runtime. They call the registration endpoint of your user pool domain, which follows the OAuth 2.0 Dynamic Client Registration Protocol. For more information, see [RFC 7591](https://www.rfc-editor.org/rfc/rfc7591) on the RFC Editor website. Registered clients count toward the [app client quota](#cognito-user-pools-dynamic-client-registration-quota) of your user pool. Dynamic client registration is available with the **Essentials** and **Plus** feature plans.
 

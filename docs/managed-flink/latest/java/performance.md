@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/performance.ht
 ---
 
 # Tune performance in Amazon Managed Service for Apache Flink
-<a name="performance"></a>
 
 This topic describes techniques to monitor and improve the performance of your Managed Service for Apache Flink application.
 

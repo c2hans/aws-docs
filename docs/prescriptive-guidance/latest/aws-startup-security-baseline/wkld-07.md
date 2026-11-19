@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 ---
 
 # WKLD.07 Log data events for S3 buckets with sensitive data
-<a name="wkld-07"></a>
 
 By default, AWS CloudTrail captures *management events*, which are events that create, modify, or delete resources in your account. Management events don't include read or write operations on individual objects in Amazon S3 buckets. To support security investigations, detection, and auditing, log data events for Amazon S3 buckets that store sensitive or business-critical data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/using_cloudwatch_eb
 ---
 
 # Amazon CloudWatch metrics for Amazon EBS
-<a name="using_cloudwatch_ebs"></a>
 
 Amazon CloudWatch metrics are statistical data that you can use to view, analyze, and set alarms on the operational behavior of your volumes.
 

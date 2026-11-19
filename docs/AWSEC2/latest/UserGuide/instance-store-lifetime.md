@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-store-l
 ---
 
 # Data persistence for Amazon EC2 instance store volumes
-<a name="instance-store-lifetime"></a>
 
 Instance store volumes are attached only at instance launch. You can't attach instance store volumes after launch. You can’t detach an instance store volume from one instance and attach it to a different instance.
 

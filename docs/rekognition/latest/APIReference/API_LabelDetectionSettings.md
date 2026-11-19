@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Labe
 ---
 
 # LabelDetectionSettings
-<a name="API_LabelDetectionSettings"></a>
 
 Contains the specified filters that should be applied to a list of returned GENERAL\_LABELS.
 

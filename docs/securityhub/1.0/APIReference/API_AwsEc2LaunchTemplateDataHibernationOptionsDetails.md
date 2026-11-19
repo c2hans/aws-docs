@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataHibernationOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataHibernationOptionsDetails"></a>
 
  Specifies whether your Amazon EC2 instance is configured for hibernation.
 

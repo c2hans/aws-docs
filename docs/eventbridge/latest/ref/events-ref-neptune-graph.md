@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-neptun
 ---
 
 # Amazon Neptune Analytics events
-<a name="events-ref-neptune-graph"></a>
 
 Neptune Analytics sends service events to EventBridge via AWS CloudTrail.
 

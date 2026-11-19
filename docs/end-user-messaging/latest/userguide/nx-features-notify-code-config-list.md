@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # List notify code configurations
-<a name="nx-features-notify-code-config-list"></a>
 
 List the notify code configurations in your account and AWS Region. Each entry shows the name, ID, code type, code length, and creation date.
 

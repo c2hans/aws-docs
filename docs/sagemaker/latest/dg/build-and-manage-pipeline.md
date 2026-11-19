@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-pip
 ---
 
 # Pipeline Structure and Execution
-<a name="build-and-manage-pipeline"></a>
 
 **Topics**
 + [Pipeline Structure](#build-and-manage-pipeline-structure)

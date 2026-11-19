@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trend
 ---
 
 # TrendArrowOptions
-<a name="API_TrendArrowOptions"></a>
 
 The options that determine the presentation of trend arrows in a KPI visual.
 

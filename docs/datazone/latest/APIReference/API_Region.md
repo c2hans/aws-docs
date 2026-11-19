@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Region.
 ---
 
 # Region
-<a name="API_Region"></a>
 
 The AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLaunchTemplateVersions
-<a name="API_DescribeLaunchTemplateVersions"></a>
 
 Describes one or more versions of a specified launch template. You can describe all versions, individual versions, or a range of versions. You can also describe all the latest versions or all the default versions of all the launch templates in your account.
 

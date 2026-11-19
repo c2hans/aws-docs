@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # ClaimMatchValueType
-<a name="API_ClaimMatchValueType"></a>
 
 The expected value used to match a claim. Exactly one member is set.
 

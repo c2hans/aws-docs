@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeProject
-<a name="API_DescribeProject"></a>
 
 Describes the details of a project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # EncryptionState
-<a name="API_EncryptionState"></a>
 
 A structure that contains the encryption configuration for the policy store and child resources.
 

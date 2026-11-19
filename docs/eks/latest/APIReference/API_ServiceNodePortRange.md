@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ServiceNodeP
 ---
 
 # ServiceNodePortRange
-<a name="API_ServiceNodePortRange"></a>
 
 The port range for Kubernetes NodePort services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Co
 ---
 
 # ConditionBasedSignalFetchConfig
-<a name="API_ConditionBasedSignalFetchConfig"></a>
 
 Specifies the condition under which a signal fetch occurs.
 

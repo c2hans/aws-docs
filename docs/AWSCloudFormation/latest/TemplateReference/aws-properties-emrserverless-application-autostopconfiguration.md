@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMRServerless::Application AutoStopConfiguration
-<a name="aws-properties-emrserverless-application-autostopconfiguration"></a>
 
 The configuration for an application to automatically stop after a certain amount of time being idle.
 

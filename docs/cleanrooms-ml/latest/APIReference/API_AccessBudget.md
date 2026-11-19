@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ac
 ---
 
 # AccessBudget
-<a name="API_AccessBudget"></a>
 
 An access budget that defines consumption limits for a specific resource within defined time periods.
 

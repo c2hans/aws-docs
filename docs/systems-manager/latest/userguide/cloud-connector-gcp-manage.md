@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 ---
 
 # Manage Cloud Connectors
-<a name="cloud-connector-gcp-manage"></a>
 
 Use the following AWS CLI commands to manage your Cloud Connectors.
 

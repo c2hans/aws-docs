@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # List of automated migration activities using Migration Factory web console
-<a name="list-of-automated-migration-activities-using-factory-web-console"></a>
 
 The Cloud Migration Factory on AWS solution deploys automated migration activities that you can leverage for your migration projects. You can follow the migration activities listed below and customize them based on your business needs.
 

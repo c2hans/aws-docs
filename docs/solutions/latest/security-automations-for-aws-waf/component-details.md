@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Component details
-<a name="component-details"></a>
 
 As described in the [Architecture diagram](architecture-overview.md#architecture-diagram), four of this solution’s components use automations to inspect IP addresses and add them to the AWS WAF block list. The following sections explain each of these components in more detail.
 

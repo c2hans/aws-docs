@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EventError.html
 ---
 
 # EventError
-<a name="API_EventError"></a>
 
 Error information for an event.
 

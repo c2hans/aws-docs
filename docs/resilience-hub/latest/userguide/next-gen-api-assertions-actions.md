@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Assertions
-<a name="next-gen-api-assertions-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

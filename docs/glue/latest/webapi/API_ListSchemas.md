@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListSchemas.html
 ---
 
 # ListSchemas
-<a name="API_ListSchemas"></a>
 
 Returns a list of schemas with minimal details. Schemas in Deleting status will not be included in the results. Empty results will be returned if there are no schemas available.
 

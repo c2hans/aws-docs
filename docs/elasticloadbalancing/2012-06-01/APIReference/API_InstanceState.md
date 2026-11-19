@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # InstanceState
-<a name="API_InstanceState"></a>
 
 Information about the state of an EC2 instance.
 

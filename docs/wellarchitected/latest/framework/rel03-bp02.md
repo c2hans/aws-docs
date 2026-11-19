@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03-b
 ---
 
 # REL03-BP02 Build services focused on specific business domains and functionality
-<a name="rel03-bp02"></a>
 
  Where you draw service boundaries decides how independently your teams and services can operate. Boundaries that follow business domains provide ownership to each team of a coherent slice of functionality so that they can set their own reliability requirements. Boundaries drawn along technical layers, such as user interface or database, force many teams to coordinate on a single change. Aligning services to business capabilities keeps failures and updates contained within one domain.
 

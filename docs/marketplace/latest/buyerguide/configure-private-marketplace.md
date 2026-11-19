@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/configure-
 ---
 
 # Configuring Private Marketplace
-<a name="configure-private-marketplace"></a>
 
 You can create multiple Private Marketplace experiences with specific procurement controls and customized branding for different AWS account groups in your organization. Private Marketplace provides a multi-step wizard for creating and configuring experiences.
 

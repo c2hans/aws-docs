@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/workloa
 ---
 
 # Cloud Workloads
-<a name="workloads"></a>
 
  Creating a software system is a lot like constructing a building. If the foundation is not solid, structural problems can undermine the integrity and function of the building. The same holds for the workloads you run in the cloud. If you neglect the six pillars of operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability, it becomes hard to build a system that meets your expectations and requirements. Building these pillars into your architecture helps you produce stable, efficient systems, so you can focus on functional requirements.
 

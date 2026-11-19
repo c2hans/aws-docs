@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_GetIdentityM
 ---
 
 # GetIdentityMailFromDomainAttributes
-<a name="API_GetIdentityMailFromDomainAttributes"></a>
 
 Returns the custom MAIL FROM attributes for a list of identities (email addresses : domains).
 

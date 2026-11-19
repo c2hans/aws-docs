@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateMarketplaceRevenueShareAllocation
-<a name="API_prm_CreateMarketplaceRevenueShareAllocation"></a>
 
 Creates a new marketplace revenue share allocation for the specified product.
 

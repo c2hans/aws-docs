@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS Performance Insights
-<a name="awsperformanceinsights"></a>
 
 AWS Performance Insights provides the following APIs for data retrieval.
 

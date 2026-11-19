@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityH
 ---
 
 # SetIdentityHeadersInNotificationsEnabled
-<a name="API_SetIdentityHeadersInNotificationsEnabled"></a>
 
 Given an identity (an email address or a domain), sets whether Amazon SES includes the original email headers in the Amazon Simple Notification Service (Amazon SNS) notifications of a specified type.
 

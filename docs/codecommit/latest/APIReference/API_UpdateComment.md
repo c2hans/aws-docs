@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdateComment
-<a name="API_UpdateComment"></a>
 
 Replaces the contents of a comment.
 

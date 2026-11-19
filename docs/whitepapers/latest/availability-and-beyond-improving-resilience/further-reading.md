@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, refer to:
 +  [Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)

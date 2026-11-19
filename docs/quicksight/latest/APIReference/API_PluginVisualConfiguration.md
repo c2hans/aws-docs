@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualConfiguration
-<a name="API_PluginVisualConfiguration"></a>
 
 The plugin visual configuration. This includes the field wells, sorting options, and persisted options of the plugin visual.
 

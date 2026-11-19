@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Start
 ---
 
 # StartTargetedSentimentDetectionJob
-<a name="API_StartTargetedSentimentDetectionJob"></a>
 
 Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the `DescribeTargetedSentimentDetectionJob` operation to track the status of a job.
 

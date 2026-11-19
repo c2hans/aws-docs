@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_run
 ---
 
 # Run a multi-node MPI job with Slurm in AWS PCS
-<a name="getting-started_run-mpi-job"></a>
 
  These instructions demonstrate using Slurm to run a message passing interface (MPI) job in AWS PCS.
 

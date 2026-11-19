@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/how-qnabo
 ---
 
 # How QnABot on AWS works
-<a name="how-qnabot-on-aws-works"></a>
 
 This guidance uses the same technology as Alexa. Amazon Lex provides the tools to tackle challenging problems such as speech recognition and language understanding through an easy-to-use fully managed service. Amazon Lex integrates with AWS Lambda to run your backend business logic for data retrieval and updates. After you build your bot, you can deploy it to chat platforms, mobile clients, and IoT devices. You can also use reports to track bot metrics. This guidance provides a scalable, secure, and easy-to-use way to build, publish, and monitor your bots.
 

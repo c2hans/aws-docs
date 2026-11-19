@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/hybrid-nodes-h
 ---
 
 # Host credentials through network disconnections
-<a name="hybrid-nodes-host-creds"></a>
 
 EKS Hybrid Nodes is integrated with AWS Systems Manager (SSM) hybrid activations and AWS IAM Roles Anywhere for temporary IAM credentials that are used to authenticate the node with the EKS control plane. Both SSM and IAM Roles Anywhere automatically refresh the temporary credentials that they manage on on-premises hosts. It is recommended to use a single credential provider across the hybrid nodes in your cluster—either SSM hybrid activations or IAM Roles Anywhere, but not both.
 

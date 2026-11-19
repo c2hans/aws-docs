@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Termina
 ---
 
 # TerminateInstanceInAutoScalingGroup
-<a name="API_TerminateInstanceInAutoScalingGroup"></a>
 
 Terminates the specified instance and optionally adjusts the desired group size. This operation cannot be called on instances in a warm pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyIngestContentAnnotation
-<a name="API_AutomatedReasoningPolicyIngestContentAnnotation"></a>
 
 An annotation for processing and incorporating new content into an Automated Reasoning policy.
 

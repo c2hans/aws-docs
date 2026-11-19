@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/walkthroug
 ---
 
 # Examples: Register an AWS Control Tower OU with APIs only
-<a name="walkthrough-baseline-steps"></a>
 
 This walkthrough of examples is a companion document. For explanations, caveats, and more information, see [Types of baselines](types-of-baselines.md).
 

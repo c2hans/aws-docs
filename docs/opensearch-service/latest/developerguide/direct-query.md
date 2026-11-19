@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with Amazon OpenSearch Service direct queries
-<a name="direct-query"></a>
 
 Use Amazon OpenSearch Service direct query to analyze data in Amazon CloudWatch Logs, Amazon S3, Amazon Security Lake, and Amazon Managed Service for Prometheus without building ingestion pipelines. This zero-ETL integration lets you query data in place using PromQL, PPL, or SQL, and explore it in **Discover**.
 

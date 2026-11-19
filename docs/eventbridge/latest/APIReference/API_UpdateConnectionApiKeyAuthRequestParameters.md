@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateConnectionApiKeyAuthRequestParameters
-<a name="API_UpdateConnectionApiKeyAuthRequestParameters"></a>
 
 Contains the API key authorization parameters to use to update the connection.
 

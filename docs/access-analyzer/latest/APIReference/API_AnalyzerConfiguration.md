@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # AnalyzerConfiguration
-<a name="API_AnalyzerConfiguration"></a>
 
 Contains information about the configuration of an analyzer for an AWS organization or account.
 

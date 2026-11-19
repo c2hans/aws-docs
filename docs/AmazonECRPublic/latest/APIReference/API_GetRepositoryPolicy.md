@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # GetRepositoryPolicy
-<a name="API_GetRepositoryPolicy"></a>
 
 Retrieves the repository policy for the specified repository.
 

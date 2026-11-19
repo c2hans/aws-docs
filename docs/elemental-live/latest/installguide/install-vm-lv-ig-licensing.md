@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step D: Set up licenses
-<a name="install-vm-lv-ig-licensing"></a>
 
 At this point, the software is installed but it is not yet enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/credentials.html
 ---
 
 # Generating the required AWS credentials
-<a name="credentials"></a>
 
  In order to install the AWS Replication Agent, you must first generate the required AWS credentials. You can create temporary credentials with AWS STS.
 

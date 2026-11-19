@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Pricing overview
-<a name="next-gen-pricing"></a>
 
 Next generation Resilience Hub uses a service-based pricing model. The following table summarizes the pricing components.
 

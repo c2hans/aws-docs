@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootOpenSearchRedYellowCluster`
-<a name="automation-troubleshoot-opensearch-red-yellow-cluster"></a>
 
  **Description**
 

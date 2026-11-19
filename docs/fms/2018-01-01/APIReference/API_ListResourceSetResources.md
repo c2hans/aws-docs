@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListReso
 ---
 
 # ListResourceSetResources
-<a name="API_ListResourceSetResources"></a>
 
 Returns an array of resources that are currently associated to a resource set.
 

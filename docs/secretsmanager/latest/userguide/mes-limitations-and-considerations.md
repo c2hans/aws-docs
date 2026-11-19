@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-limi
 ---
 
 # Limitations and considerations
-<a name="mes-limitations-and-considerations"></a>
 
 Managed external secrets does not support ephemeral secrets with lifespans less than four hours. Secrets associated with public key infrastructure certificates are also not supported.
 

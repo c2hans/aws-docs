@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_SqliMatchSta
 ---
 
 # SqliMatchStatement
-<a name="API_SqliMatchStatement"></a>
 
 A rule statement that inspects for malicious SQL code. Attackers insert malicious SQL code into web requests to do things like modify your database or extract data from it.
 

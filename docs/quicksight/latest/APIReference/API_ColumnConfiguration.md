@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnConfiguration
-<a name="API_ColumnConfiguration"></a>
 
 The general configuration of a column.
 

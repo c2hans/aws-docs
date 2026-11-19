@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # AWS EKS access setup
-<a name="configuring-integrations-and-knowledge-aws-eks-access-setup"></a>
 
 You can enable AWS DevOps Agent to investigate issues in your Amazon EKS clusters by running read-only `kubectl` commands against both public and private clusters. You can connect any number of EKS clusters to the same Agent Space.
 

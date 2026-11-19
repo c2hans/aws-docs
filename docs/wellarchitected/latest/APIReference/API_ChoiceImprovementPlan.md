@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ChoiceImprovementPlan
-<a name="API_ChoiceImprovementPlan"></a>
 
 The choice level improvement plan.
 

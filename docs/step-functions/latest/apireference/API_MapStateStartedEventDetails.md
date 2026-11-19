@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapStateStartedEventDetails
-<a name="API_MapStateStartedEventDetails"></a>
 
 Details about a Map state that was started.
 

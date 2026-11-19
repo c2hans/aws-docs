@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteInstanceOnboardingJob
-<a name="API_connect-outbound-campaigns_DeleteInstanceOnboardingJob"></a>
 
 Deletes the workflow to onboard to outbound campaigns. Only `Failed` workflows can be deleted.
 

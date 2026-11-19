@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonBedrockWebSearchReadOnly
-<a name="AmazonBedrockWebSearchReadOnly"></a>
 
 **Description**: Provides read-only access to Amazon Bedrock Web Search. Data remains within the AWS network boundary.
 

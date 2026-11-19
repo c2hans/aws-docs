@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshif
 ---
 
 # Stopping an active autoshift or practice run for a resource
-<a name="arc-zonal-autoshift.how-it-works.stop-shift"></a>
 
 To stop an in-progress autoshift for a resource you must cancel the zonal shift.
 

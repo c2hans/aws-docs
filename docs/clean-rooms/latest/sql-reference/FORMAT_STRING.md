@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/FORMAT_
 ---
 
 # FORMAT\_STRING function
-<a name="FORMAT_STRING"></a>
 
 The FORMAT\_STRING function creates a formatted string by substituting placeholders in a template string with the provided arguments. It returns a formatted string from printf-style format strings.
 

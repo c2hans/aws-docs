@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/contri
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 +  Ammar Latif, Principal Solutions Architect, Amazon Web Services

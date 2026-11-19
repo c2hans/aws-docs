@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cust
 ---
 
 # CustomLabel
-<a name="API_CustomLabel"></a>
 
 A custom label detected in an image by a call to [DetectCustomLabels](API_DetectCustomLabels.md).
 

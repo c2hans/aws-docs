@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/what-is-code-libr
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # What is the code example library?
-<a name="what-is-code-library"></a>
 
 The code example library is a collection of code examples that show you how to use AWS software development kits (SDKs) with AWS.
 

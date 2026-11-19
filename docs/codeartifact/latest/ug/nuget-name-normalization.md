@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/nuget-name-normal
 ---
 
 # NuGet package name, version, and asset name normalization
-<a name="nuget-name-normalization"></a>
 
 CodeArtifact normalizes package and asset names and package versions before storing them, which means the names or versions in CodeArtifact may be different than the ones provided when the package or asset was published.
 

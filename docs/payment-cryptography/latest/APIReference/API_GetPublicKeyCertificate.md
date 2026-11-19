@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetPublicKeyCertificate
-<a name="API_GetPublicKeyCertificate"></a>
 
 Gets the public key certificate of the asymmetric key pair that exists within AWS Payment Cryptography.
 

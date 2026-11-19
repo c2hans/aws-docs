@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Get an object from an Amazon S3 bucket using an AWS SDK, specifying an If-Modified-Since header
-<a name="s3_example_s3_GetObject_IfModifiedSince_section"></a>
 
 The following code example shows how to read data from an object in an S3 bucket, but only if that bucket has not been modified since the last retrieval time.
 
